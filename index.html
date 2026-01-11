@@ -203,7 +203,88 @@ const ALPHABETS = {
   N1: "亜尉逸姻韻渦浦疫謁猿凹翁寡禍稼蚊懐拐劾涯垣嚇核殻喝括渇褐轄且堪寛患憾棺款缶艦還閑陥頑飢偽宜擬窮糾拒享恭挟矯暁琴菌襟謹吟虞隅靴勲薫慶渓茎蛍傑嫌懸献謙顕弦呉碁侯江洪溝肯衡貢購剛拷酷懇昆唆詐宰栽砕斎索傘桟嗣肢賜璽漆遮蛇爵酌珠儒囚愁臭酬醜充汁渋銃叔淑粛塾俊准循殉庶緒叙償升奨宵尚彰抄渉症硝礁祥粧肖訟詔剰壌浄醸唇娠紳診刃甚迅酢帥睡崇枢据杉畝誓逝斉析拙窃仙栓旋繊薦践遷漸禅塑疎租喪壮捜挿曹槽荘藻霜堕妥惰駄泰濯但棚痴逐秩嫡衷弔懲挑眺勅朕津塚漬坪釣亭偵貞呈廷艇逓邸泥徹撤迭悼搭棟筒謄騰洞督凸屯軟尼妊忍寧猫把覇廃培媒賠伯舶漠肌鉢閥煩頒妃扉披罷賓頻瓶扶譜附侮沸憤雰丙併塀幣弊偏遍俸泡褒剖紡僕撲朴堀奔摩磨麻抹繭岬銘妄盲耗戻厄柳愉癒諭唯悠猶裕融庸窯羅酪履痢硫竜虜僚寮涼倫塁累鈴賄枠挨宛闇椅畏萎咽淫臼唄餌怨艶旺臆俺苛牙崖蓋骸柿顎葛釜鎌瓦韓玩伎畿亀僅巾錦駒串窟稽詣隙桁拳鍵舷股虎乞勾喉梗頃痕沙挫塞采柵拶斬叱嫉腫呪蹴拭尻芯腎須裾凄醒戚脊煎羨腺詮膳曽狙遡爽痩捉袖遜汰唾堆戴誰旦綻酎捗椎潰爪鶴諦溺填貼妬賭藤憧瞳頓那謎鍋匂虹捻罵剥箸斑氾汎眉膝肘蔽蔑蜂貌頬睦勃昧枕蜜冥麺餅冶弥湧妖沃嵐藍璃侶瞭瑠呂賂弄麓脇丼傲刹哺喩嗅嘲毀彙恣惧慄憬拉摯曖楷璧瘍箋籠緻羞訃諧貪踪辣錮剝塡頰鬱", 
 };
       // Simple Kanji Dictionary for Demo
-      const KANJI_DB = {    
+      const KANJI_DB = { 
+  // Ý nghĩa các bộ thủ tùy chỉnh
+  '丶': { sound: 'CHỦ', meaning: 'chấm' },
+  '丿': { sound: 'PHIỆT', meaning: 'nét phẩy' },
+  '亅': { sound: 'QUYẾT', meaning: 'nét móc' },
+  '亠': { sound: 'ĐẦU', meaning: 'bộ đầu' },
+  '亻': { sound: 'NHÂN ĐỨNG', meaning: 'người' },
+  '儿': { sound: 'NHÂN ĐI', meaning: 'người' },
+  '冂': { sound: 'QUYNH', meaning: 'vùng biên' },
+  '冖': { sound: 'MỊCH', meaning: 'che phủ' },
+  '冫': { sound: 'BĂNG', meaning: 'nước đá' },
+  '几': { sound: 'KỶ', meaning: 'ghế, bàn' },
+  '凵': { sound: 'KHẢM', meaning: 'há miệng' },
+  '刂': { sound: 'ĐAO', meaning: 'bộ đao' },
+  '勹': { sound: 'BAO', meaning: 'bao bọc' },
+  '匕': { sound: 'CHỦY', meaning: 'cái thìa' },
+  '匚': { sound: 'PHƯƠNG', meaning: 'tủ đựng' },
+  '卜': { sound: 'BỐC', meaning: 'xem bói' },
+  '卩': { sound: 'TIẾT', meaning: 'đốt tre' },
+  '厂': { sound: 'HÁN', meaning: 'sườn núi' },
+  '厶': { sound: 'KHƯ', meaning: 'riêng tư' },
+  '囗': { sound: 'VI', meaning: 'vây quanh' },
+  '夂': { sound: 'TRUY', meaning: 'phía sau' },
+  '夊': { sound: 'PHỘC', meaning: 'đánh khẽ' },
+  '宀': { sound: 'MIÊN', meaning: 'mái nhà' },
+  '尢': { sound: 'UÔNG', meaning: 'yếu đuối' },
+  '尸': { sound: 'THI', meaning: 'thây ma' },
+  '屮': { sound: 'TRIỆT', meaning: 'mầm non' },
+  '巛': { sound: 'XUYÊN', meaning: 'sông' },
+  '幺': { sound: 'YÊU', meaning: 'nhỏ nhắn' },
+  '广': { sound: 'NGHIỄM', meaning: 'mái nhà' },
+  '廴': { sound: 'DẪN', meaning: 'bước dài' },
+  '廾': { sound: 'CỦNG', meaning: 'chắp tay' },
+  '弋': { sound: 'DẶC', meaning: 'chiếm lấy' },
+  '彐': { sound: 'KỆ', meaning: 'đầu nhím' },
+  '彡': { sound: 'SAM', meaning: 'tóc dài' },
+  '彳': { sound: 'XÍCH', meaning: 'bước chân trái' },
+  '忄': { sound: 'TÂM', meaning: 'bộ tâm' },
+  '戈': { sound: 'QUA', meaning: 'cây qua' },
+  '扌': { sound: 'THỦ', meaning: 'bộ thủ' },
+  '攵': { sound: 'PHỘC', meaning: 'đánh khẽ' },
+  '无': { sound: 'VÔ', meaning: 'không' },
+  '曰': { sound: 'VIẾT', meaning: 'nói rằng' },
+  '歹': { sound: 'NGẠT', meaning: 'xấu xa' },
+  '殳': { sound: 'THÙ', meaning: 'binh khí' },
+  '毋': { sound: 'VÔ', meaning: 'chớ, đừng' },
+  '气': { sound: 'KHÍ', meaning: 'hơi nước' },
+  '氵': { sound: 'THỦY', meaning: 'bộ thủy' },
+  '灬': { sound: 'HỎA', meaning: 'bộ hỏa' },
+  '爻': { sound: 'HÀO', meaning: 'hào âm dương' },
+  '爿': { sound: 'TƯỜNG', meaning: 'mảnh gỗ' },
+  '犭': { sound: 'KHUYỂN', meaning: 'bộ khuyển' },
+  '瓜': { sound: 'QUA', meaning: 'quả dưa' },
+  '疒': { sound: 'NẠCH', meaning: 'bệnh tật' },
+  '癶': { sound: 'BÁT', meaning: 'trở lại' },
+  '礻': { sound: 'THỊ', meaning: 'bộ thị' },
+  '禸': { sound: 'NHỰU', meaning: 'vết chân' },
+  '禾': { sound: 'HÒA', meaning: 'lúa' },
+  '而': { sound: 'NHI', meaning: 'mà, và' },
+  '耒': { sound: 'LỖI', meaning: 'cái cày' },
+  '聿': { sound: 'DUẬT', meaning: 'cây bút' },
+  '舛': { sound: 'SUYỄN', meaning: 'sai lầm' },
+  '艮': { sound: 'CẤN', meaning: 'bền' },
+  '艹': { sound: 'THẢO', meaning: 'cỏ' },
+  '虍': { sound: 'HÔ', meaning: 'vằn hổ' },
+  '衤': { sound: 'Y', meaning: 'bộ y' },
+  '襾': { sound: 'Á', meaning: 'che đậy' },
+  '豕': { sound: 'THỈ', meaning: 'con lợn' },
+  '豸': { sound: 'TRÃI', meaning: 'con sâu' },
+  '辰': { sound: 'THẦN', meaning: 'chi thứ 5' },
+  '辶': { sound: 'SƯỚC', meaning: 'bước chân' },
+  '阝': { sound: 'ẤP/PHỤ', meaning: 'gò đất' },
+  '酉': { sound: 'DẬU', meaning: 'chi thứ 10' },
+  '釆': { sound: 'BIỆN', meaning: 'phân biệt' },
+  '隶': { sound: 'ĐÃI', meaning: 'kịp' },
+  '隹': { sound: 'CHUY', meaning: 'con chim' },
+  '韋': { sound: 'VI', meaning: 'da thuộc' },
+  '韭': { sound: 'CỬU', meaning: 'hẹ' },
+  '頁': { sound: 'HIỆT', meaning: 'trang giấy' },
+  '飠': { sound: 'THỰC', meaning: 'bộ thực' },
+  '髟': { sound: 'BƯU', meaning: 'tóc dài' },
+        // kanji n5
   '一': { sound: 'NHẤT', meaning: 'số 1' },
   '右': { sound: 'HỮU', meaning: 'bên phải' },
   '雨': { sound: 'VŨ', meaning: 'mưa' },
@@ -2779,7 +2860,7 @@ const ALPHABETS = {
               IN / LƯU PDF
             </button>
             {/* Dòng chữ chú thích nhỏ ông muốn thêm */}
-<p className="-mt-5 text-[10px] text-gray-400 text-center italic">
+<p className="-mt-5 text-[15px] text-gray-400 text-center italic">
   Nên lưu bằng máy tính
 </p>
             {/* Nút Donate nhỏ gọn dưới nút in */}
@@ -2819,7 +2900,7 @@ const ALPHABETS = {
         </div>
     )}
     
-    {!isCafeModalOpen && <p className="text-[8px] text-gray-400 mt-1 italic">Duy trì & phát triển web</p>}
+    {!isCafeModalOpen && <p className="text-[9px] text-gray-400 mt-1 italic">Duy trì & phát triển web</p>}
 </div>
     
 </div>
