@@ -202,6 +202,8 @@ const ALPHABETS = {
     'パ': { sound: 'pa', meaning: ' ' }, 'ピ': { sound: 'pi', meaning: ' ' }, 'プ': { sound: 'pu', meaning: ' ' }, 'ペ': { sound: 'pe', meaning: ' ' }, 'ポ': { sound: 'po', meaning: ' ' }
   }
 };
+
+       const RADICAL_LIST = "一丨丶丿乙亅二亠人儿亻八冂冖冫几凵刀刂力勹匕匚十卜卩厂厶又口囗土士夂夕大女子宀寸小尢尸屮山川巛工己巾干幺广廴廾弋弓彐彡彳心忄戈戸手扌支攵文斗斤方日月木欠止歹殳毋比火灬爪水氵牛犬犭田白目疒癶矢石示礻禾竹米糸羊羽耳聿肉自舌艹虫角行衣衤言谷豆貝足阝辶金門隹馬魚頁食飠";
        const KANJI_LEVELS = {
   N5: "一右雨円王音下火花貝学気休玉金九空月犬見五口校左三山四子糸字耳七車手十出女小上森人水正生青石赤先千川早草足村大男竹中虫町天田土二日入年白八百文本名木目夕立力林六引羽雲園遠黄何夏家科歌画会回海絵外角楽活間丸岩顔帰汽記弓牛魚京強教近兄形計元原言古戸午後語交光公工広考行高合国黒今才細作算姉市思止紙寺時自室社弱首秋週春書少場色食心新親図数星晴声西切雪線船前組走多太体台谷知地池茶昼朝長鳥直通弟店点電冬刀東当答頭同道読内南肉馬買売麦半番父風分聞米歩母方北妹毎万明鳴毛門夜矢野友曜用来理里話",  
   N4: "悪安暗委意医育員飲院運泳駅央横屋温化荷界開階寒感漢館岸期起客宮急球究級去橋業局曲銀区苦具君係軽決血研県庫湖向幸港号根祭坂皿仕使始指死詩歯事持次式実写者主取守酒受州拾終習集住重宿所暑助勝商昭消章乗植深申真神身進世整昔全想相送息速族他打対待代第題炭短談着柱注丁帳調追定庭笛鉄転登都度島投湯等豆動童農波配倍箱畑発反板悲皮美鼻筆氷表病秒品負部服福物平返勉放味命面問役薬油有由遊予様洋羊葉陽落流旅両緑礼列練路和愛案以位衣井茨印栄英塩岡沖億加果課貨芽賀改械害街各覚潟完官管観関願器岐希旗機季議求泣給挙漁競共協鏡極熊訓群軍郡径景芸欠結健建験固候功好康香佐差最菜材阪崎埼昨刷察札参散産残司氏試児滋治辞鹿失借種周祝順初唱松焼照省笑城信臣成清静席積折節説戦浅選然倉巣争側束続卒孫帯隊達単置仲兆低底的典伝徒努灯働徳特栃奈縄熱念敗梅博飯飛必媛標票不付夫富府阜副兵別変辺便包法望牧末満未民無約勇要養浴利梨陸料良量輪類令例冷連労老録", 
@@ -2752,6 +2754,19 @@ const ALPHABETS = {
       </div>
 
       <div>
+        {/* --- BẮT ĐẦU ĐOẠN CODE BỘ THỦ MỚI --- */}
+  <div className="py-2"> {/* Thêm py-2 để tăng khoảng cách trên dưới */}
+    <p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
+    <button 
+        onClick={() => { onChange({...config, text: RADICAL_LIST}); setIsMenuOpen(false); }}
+        /* Đã đổi style: bg-white, text-gray-600, border-gray-200, hover:bg-black */
+        className="w-full py-2.5 text-xs font-bold border border-gray-200 bg-white text-gray-600 rounded hover:bg-black hover:text-white transition"
+    >
+      Bộ thủ cơ bản
+    </button>
+  </div>
+  {/* --- KẾT THÚC ĐOẠN CODE BỘ THỦ MỚI --- */}
+        
         <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Cấp độ Kanji</p>
         <div className="grid grid-cols-5 gap-1.5">
           {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
