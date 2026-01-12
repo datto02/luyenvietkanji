@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Zen+Kurenaido&display=swap" rel="stylesheet">
     
     <!-- React & Babel -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
@@ -2813,6 +2814,32 @@ const ALPHABETS = {
     {/* Nội dung Tùy chỉnh xổ xuống */}
     {isConfigOpen && (
       <div className="mt-2 w-full bg-white border border-gray-200 rounded-2xl shadow-xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+{/* --- 0. CHỌN FONT CHỮ --- */}
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-gray-700">Kiểu chữ (Font)</label>
+          <div className="grid grid-cols-1 gap-2">
+            
+            {/* 1. Klee One: Chuẩn SGK */}
+            <button 
+              onClick={() => handleChange('fontFamily', "'Klee One', cursive")}
+              className={`w-full py-2 px-3 text-left text-sm border rounded-lg transition-all flex items-center justify-between ${config.fontFamily.includes('Klee') ? 'bg-indigo-50 border-indigo-600 text-indigo-700 ring-1 ring-indigo-600' : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'}`}
+            >
+              <span style={{ fontFamily: "'Klee One', cursive" }}>Klee One</span>
+              {config.fontFamily.includes('Klee') && <span className="text-indigo-600 font-bold">✓</span>}
+            </button>
+
+            {/* 2. Zen Kurenaido: Viết tay bút bi */}
+            <button 
+              onClick={() => handleChange('fontFamily', "'Zen Kurenaido', sans-serif")}
+              className={`w-full py-2 px-3 text-left text-sm border rounded-lg transition-all flex items-center justify-between ${config.fontFamily.includes('Zen') ? 'bg-indigo-50 border-indigo-600 text-indigo-700 ring-1 ring-indigo-600' : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'}`}
+            >
+              <span style={{ fontFamily: "'Zen Kurenaido', sans-serif", fontSize: '16px' }}>Zen Kurenaido</span>
+              {config.fontFamily.includes('Zen') && <span className="text-indigo-600 font-bold">✓</span>}
+            </button>
+            
+          </div>
+        </div>
+        
         
         {/* Số chữ mẫu */}
         <div className="space-y-2">
@@ -2878,6 +2905,7 @@ const ALPHABETS = {
               traceCount: 9,
               traceOpacity: 0.15,
               gridOpacity: 0.8,
+              fontFamily: "'Klee One', cursive",
             })}
             className="w-full py-2 text-xs font-bold text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-95"
           >
@@ -2957,7 +2985,8 @@ const ALPHABETS = {
           guideX: 0,
           guideY: 0.5,
           gridOpacity: 0.8, // đậm nhạt khung
-          gridType: 'cross' // CHANGED FROM rice TO cross
+          gridType: 'cross', // CHANGED FROM rice TO cross
+          fontFamily: "'Klee One', cursive",
         });
 
         const pages = useMemo(() => {
