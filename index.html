@@ -2742,39 +2742,32 @@ const ALPHABETS = {
             }
         };
         // --- HÀM XỬ LÝ NẠP DATA CÓ THANH PHẦN TRĂM ---
-const handleLoadLevel = (level) => {
-  // 1. Bắt đầu hiệu ứng
-  setIsLoading(true);
-  setIsMenuOpen(false); // Đóng menu chọn nhanh
-  setProgress(0);
+// --- HÀM XỬ LÝ NẠP DỮ LIỆU ĐA NĂNG (Dùng chung cho tất cả) ---
+        const handleSmartLoad = (content) => {
+            if (!content) return;
 
-  // 2. Chạy thanh phần trăm (Giả lập)
-  const interval = setInterval(() => {
-    setProgress((prev) => {
-      // Nếu lên đến 90% mà chưa xong thì giữ nguyên đợi data
-      if (prev >= 90) return 90; 
-      // Tăng ngẫu nhiên 5-15% mỗi nhịp
-      return prev + Math.floor(Math.random() * 10) + 5; 
-    });
-  }, 100);
+            setIsLoading(true);
+            setIsMenuOpen(false); // Đóng menu ngay lập tức
+            setProgress(0);
 
-  // 3. Thực hiện nạp dữ liệu (Delay 800ms để người dùng kịp nhìn thấy thanh chạy)
-  setTimeout(() => {
-    const list = KANJI_LEVELS[level];
-    if (list) {
-      onChange({ ...config, text: list });
-    }
-    
-    // 4. Hoàn tất
-    clearInterval(interval);
-    setProgress(100);
-    
-    // Tắt thanh loading sau 200ms
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 200);
-  }, 800);
-};
+            // Giả lập tiến trình chạy
+            const interval = setInterval(() => {
+                setProgress((prev) => {
+                    if (prev >= 90) return 90;
+                    return prev + Math.floor(Math.random() * 10) + 5;
+                });
+            }, 80); // Tốc độ nhanh hơn chút cho mượt
+
+            // Nạp dữ liệu thật sau 600ms
+            setTimeout(() => {
+                onChange({ ...config, text: content });
+                
+                // Kết thúc hiệu ứng
+                clearInterval(interval);
+                setProgress(100);
+                setTimeout(() => setIsLoading(false), 200);
+            }, 600);
+        };
         return (
           // MAIN CONTAINER: Đã mở rộng chiều rộng (md:w-96)
           <div className="w-full md:w-96 bg-white shadow-xl p-6 flex flex-col gap-6 h-screen overflow-y-auto sticky top-0 border-r border-gray-200">
@@ -2856,7 +2849,7 @@ const handleLoadLevel = (level) => {
       </div>
       
       <p className="text-[10px] text-gray-400 mt-3 text-center italic">
-        Đang xử lý hàng trăm chữ Kanji, vui lòng đợi...
+        Đang xử lý hàng trăm chữ, vui lòng đợi...
       </p>
     </div>
   </div>
@@ -2935,27 +2928,42 @@ const handleLoadLevel = (level) => {
                             <div>
                               <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Bảng chữ cái</p>
                               <div className="grid grid-cols-2 gap-2">
-                                <button onClick={() => { onChange({...config, text: Object.keys(ALPHABETS.hiragana).join('')}); setIsMenuOpen(false); }} className="py-2.5 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition">あ Hiragana</button>
-                                <button onClick={() => { onChange({...config, text: Object.keys(ALPHABETS.katakana).join('')}); setIsMenuOpen(false); }} className="py-2.5 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition">ア Katakana</button>
-                              </div>
+  <button 
+    onClick={() => handleSmartLoad(Object.keys(ALPHABETS.hiragana).join(''))} 
+    className="py-2.5 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition"
+  >
+    あ Hiragana
+  </button>
+  <button 
+    onClick={() => handleSmartLoad(Object.keys(ALPHABETS.katakana).join(''))} 
+    className="py-2.5 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition"
+  >
+    ア Katakana
+  </button>
+</div>
                             </div>
                             <div>
                               <div className="py-2">
-                                  <p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
-                                  <button onClick={() => { onChange({...config, text: RADICAL_LIST}); setIsMenuOpen(false); }} className="w-full py-2.5 text-xs font-bold border border-gray-200 bg-white text-gray-600 rounded hover:bg-black hover:text-white transition">Bộ thủ cơ bản</button>
-                              </div>
+    <p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
+    <button 
+      onClick={() => handleSmartLoad(RADICAL_LIST)} 
+      className="w-full py-2.5 text-xs font-bold border border-gray-200 bg-white text-gray-600 rounded hover:bg-black hover:text-white transition"
+    >
+      Bộ thủ cơ bản
+    </button>
+</div>
                               <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Cấp độ Kanji</p>
                               <div className="grid grid-cols-5 gap-1.5">
-                        {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-                           <button 
-                              key={level} 
-                            onClick={() => handleLoadLevel(level)} // <--- SỬ DỤNG HÀM MỚI TẠI ĐÂY
-                                className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-md hover:bg-black hover:text-white transition"
-                                   >
-                                    {level}
-                                     </button>
-                                     ))}
-                              </div>
+  {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+    <button 
+      key={level} 
+      onClick={() => handleSmartLoad(KANJI_LEVELS[level])} // Truyền thẳng dữ liệu vào
+      className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-md hover:bg-black hover:text-white transition"
+    >
+      {level}
+    </button>
+  ))}
+</div>
                             </div>
                           </div>
                         )}
