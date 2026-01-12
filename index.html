@@ -2806,108 +2806,109 @@ const ALPHABETS = {
 </div>
               
 
-                 {/* NÚT GỘP PHẦN CÀI ĐẶT */}
-<div className="flex flex-col border-t pt-4 mb-4">
-  <button 
-    onClick={() => setIsConfigOpen(!isConfigOpen)}
-    className="w-full py-3 px-4 bg-white border border-gray-200 rounded-xl flex items-center justify-center gap-2 shadow-sm hover:bg-gray-50 transition-all active:scale-[0.98]"
-  >
-    <span className="font-bold text-gray-700 uppercase text-[11px] tracking-wider">Tùy chỉnh</span>
-  </button>
+                {/* --- KHU VỰC CHỨC NĂNG (GOM NHÓM) --- */}
+<div className="flex flex-col gap-3 border-t pt-4 mt-4 w-full">
 
-  {/* Nội dung xổ xuống đẩy ô Nhập dữ liệu xuống */}
-  {isConfigOpen && (
-    <div className="mt-2 w-full bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
-      
-      {/* 1. Số chữ mẫu */}
-      <div className="space-y-2">
-        <div className="flex justify-between items-center">
-          <label className="text-sm font-medium text-gray-700">Số chữ mẫu</label>
-          <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{config.traceCount} Chữ</span>
-        </div>
-        <input type="range" min="0" max="12" step="1" className="w-full accent-indigo-600"
-               value={config.traceCount} onChange={(e) => handleChange('traceCount', parseInt(e.target.value))} />
-      </div>
-
-      {/* 2. Độ đậm */}
-      <div className="space-y-2">
-        <div className="flex justify-between items-center">
-          <label className="text-sm font-medium text-gray-700">Độ đậm</label>
-          <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{Math.round(config.traceOpacity * 100)}%</span>
-        </div>
-        <input type="range" min="0.05" max="0.5" step="0.05" className="w-full accent-indigo-600"
-               value={config.traceOpacity} onChange={(e) => handleChange('traceOpacity', parseFloat(e.target.value))} />
-      </div>
-
-      {/* 3. Cỡ chữ (Không có gạch ngang ở giữa) */}
-      <div className="space-y-2">
-        <div className="flex justify-between items-center">
-          <label className="text-sm font-medium text-gray-700">Cỡ chữ</label>
-          <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{config.fontSize} pt</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="text-[10px] text-gray-400 font-sans">30</span> 
-          <input type="range" min="30" max="40" step="1" className="flex-1 accent-indigo-600"
-                 value={config.fontSize} onChange={(e) => handleChange('fontSize', parseInt(e.target.value))} />
-          <span className="text-[10px] text-gray-400 font-sans">40</span>
-        </div>
-      </div>
-    </div>
-  )}
-</div>
-              
-            </div>
-
-            <button
-              onClick={onPrint}
-              className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all active:scale-95"
-            >
-              <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
-              IN / LƯU PDF
-            </button>
-            {/* Dòng chữ chú thích nhỏ ông muốn thêm */}
-<p className="-mt-5 text-[15px] text-gray-400 text-center italic">
-  Nên lưu bằng máy tính
-</p>
-            {/* Nút Donate nhỏ gọn dưới nút in */}
-<div className="-mt-5 flex flex-col items-center">
-    {/* NÚT MỜI CAFE CẢI TIẾN - ẤN ĐỂ ĐÓNG/MỞ NỘI DUNG PHÍA DƯỚI */}
-<div className="mt-4 flex flex-col items-center w-full">
+  {/* 1. NÚT TÙY CHỈNH */}
+  <div className="w-full">
     <button 
-        onClick={() => setIsCafeModalOpen(!isCafeModalOpen)} // Đảo trạng thái true/false khi ấn
-        className="flex items-center gap-2 px-4 py-2 bg-orange-50 hover:bg-orange-100 text-orange-600 border border-orange-200 rounded-full text-[12px] font-bold transition-all shadow-sm active:scale-95 no-print"
+      onClick={() => setIsConfigOpen(!isConfigOpen)}
+      className="w-full py-3 px-4 bg-white border border-gray-200 rounded-xl flex items-center justify-center gap-2 shadow-sm hover:bg-gray-50 transition-all active:scale-[0.98]"
     >
-        <span className="text-sm">☕</span>
-        <span>Mời mình ly cafe</span>
-      <span className={`transition-transform duration-300 ${isCafeModalOpen ? 'rotate-180' : ''}`}>⬇️</span>
+      <span className="font-bold text-gray-700 uppercase text-[11px] tracking-wider">Tùy chỉnh</span>
+      <span className={`transition-transform duration-300 ${isConfigOpen ? 'rotate-180' : 'rotate-0'}`}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </span>
     </button>
 
-    {/* Ô TEXT HIỆN RA NGAY PHÍA DƯỚI NÚT */}
-    {isCafeModalOpen && (
-        <div className="mt-3 w-full bg-orange-50/50 border border-orange-100 rounded-xl p-4 shadow-2xl animate-in fade-in zoom-in-95 duration-200">
-            <div className="text-center space-y-3">
-                <p className="text-xs text-orange-800 font-medium leading-relaxed">
-                    Sự ủng hộ của bạn giúp mình duy trì và phát triển thêm nhiều tính năng mới. Cảm ơn rất nhiều!
-                </p>
-                
-                {/* Ảnh mã QR */}
-                <div className="bg-white p-2 rounded-lg inline-block shadow-sm">
-                    <img 
-                        src="https://i.ibb.co/JWGwcTL1/3381513652021492183.jpg" 
-                        alt="QR Cafe" 
-                        className="w-40 h-auto rounded"
-                    />
-                </div>
-                
-                <p className="text-[9px] text-orange-400 uppercase font-bold tracking-tighter">
-                    MB BANK 
-                    99931082002
-                </p>
-            </div>
+    {/* Nội dung Tùy chỉnh xổ xuống */}
+    {isConfigOpen && (
+      <div className="mt-2 w-full bg-white border border-gray-200 rounded-2xl shadow-xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+        
+        {/* Số chữ mẫu */}
+        <div className="space-y-2">
+          <div className="flex justify-between items-center">
+            <label className="text-sm font-medium text-gray-700">Số chữ mẫu</label>
+            <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{config.traceCount} Chữ</span>
+          </div>
+          <input type="range" min="0" max="12" step="1" className="w-full accent-indigo-600"
+                 value={config.traceCount} onChange={(e) => handleChange('traceCount', parseInt(e.target.value))} />
         </div>
+
+        {/* Độ đậm */}
+        <div className="space-y-2">
+          <div className="flex justify-between items-center">
+            <label className="text-sm font-medium text-gray-700">Độ đậm</label>
+            <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{Math.round(config.traceOpacity * 100)}%</span>
+          </div>
+          <input type="range" min="0.05" max="0.5" step="0.025" className="w-full accent-indigo-600"
+                 value={config.traceOpacity} onChange={(e) => handleChange('traceOpacity', parseFloat(e.target.value))} />
+        </div>
+
+        {/* Cỡ chữ */}
+        <div className="space-y-2">
+          <div className="flex justify-between items-center">
+            <label className="text-sm font-medium text-gray-700">Cỡ chữ</label>
+            <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{config.fontSize} pt</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-[10px] text-gray-400 font-sans">30</span> 
+            <input type="range" min="30" max="40" step="1" className="flex-1 accent-indigo-600"
+                   value={config.fontSize} onChange={(e) => handleChange('fontSize', parseInt(e.target.value))} />
+            <span className="text-[10px] text-gray-400 font-sans">40</span>
+          </div>
+        </div>
+      </div>
     )}
+  </div>
+
+  {/* 2. NÚT IN VÀ GHI CHÚ */}
+  <div className="w-full flex flex-col gap-1">
+    <button
+      onClick={onPrint}
+      className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all active:scale-95"
+    >
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+      IN / LƯU PDF
+    </button>
+    <p className="text-[10px] text-gray-400 text-center italic">
+      Nên lưu bằng máy tính
+    </p>
+  </div>
+
+  {/* 3. NÚT CAFE (Mã QR hiện lên trên nút bấm) */}
+  <div className="flex flex-col items-center w-full relative">
+    {isCafeModalOpen && (
+      <div className="mb-2 w-full bg-white border border-orange-100 rounded-2xl p-4 shadow-2xl animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="text-center space-y-3">
+          <p className="text-xs text-orange-800 font-medium">Sự ủng hộ của bạn giúp mình duy trì và phát triển thêm nhiều tính năng mới. Cảm ơn rất nhiều!</p>
+          <div className="bg-gray-50 p-2 rounded-lg inline-block shadow-inner">
+            <img 
+              src="https://i.ibb.co/JWGwcTL1/3381513652021492183.jpg" 
+              alt="QR Cafe" 
+              className="w-32 h-auto rounded"
+            />
+          </div>
+          <p className="text-[9px] text-orange-400 uppercase font-bold">MB BANK - 99931082002</p>
+        </div>
+      </div>
+    )}
+
+    <button 
+      onClick={() => setIsCafeModalOpen(!isCafeModalOpen)} 
+      className="flex items-center gap-2 px-4 py-2 bg-orange-50 hover:bg-orange-100 text-orange-600 border border-orange-200 rounded-full text-[12px] font-bold transition-all shadow-sm active:scale-95 no-print"
+    >
+      <span className="text-sm">☕</span>
+      <span>Mời mình ly cafe</span>
+      <span className={`transition-transform duration-300 ${isCafeModalOpen ? 'rotate-180' : ''}`}>
+        {isCafeModalOpen ? '▼' : '▲'} 
+      </span>
+    </button>
+  </div>
+
 </div>
-    
 </div>
           </div>
           
