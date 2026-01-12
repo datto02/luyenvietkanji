@@ -3042,23 +3042,26 @@ const ALPHABETS = {
           </div>
         );
       };
-      // 6. App
+      // 6. App (Phiên bản đã thêm Popup Donate sau khi in)
       const App = () => {
-      const [isCafeModalOpen, setIsCafeModalOpen] = useState(false);
-      const [isConfigOpen, setIsConfigOpen] = React.useState(false);
-      const [isMenuOpen, setIsMenuOpen] = useState(false);
+        const [isCafeModalOpen, setIsCafeModalOpen] = useState(false);
+        const [isConfigOpen, setIsConfigOpen] = React.useState(false);
+        const [isMenuOpen, setIsMenuOpen] = useState(false);
+        
+        // --- STATE MỚI: QUẢN LÝ POPUP SAU KHI IN ---
+        const [showPostPrintDonate, setShowPostPrintDonate] = useState(false);
+
         const [config, setConfig] = useState({
           text: '',
           fontSize: 37,
           traceCount: 9,
-          // Updated Default Values (Hardcoded as requested)
-          verticalOffset: -3, // Fixed at -3px
-          traceOpacity: 0.15, // New default for opacity
+          verticalOffset: -3,
+          traceOpacity: 0.15,
           guideScale: 1.02,
           guideX: 0,
           guideY: 0.5,
-          gridOpacity: 0.8, // đậm nhạt khung
-          gridType: 'cross', // CHANGED FROM rice TO cross
+          gridOpacity: 0.8,
+          gridType: 'cross',
           fontFamily: "'Klee One', cursive",
         });
 
@@ -3075,7 +3078,20 @@ const ALPHABETS = {
           return chunks;
         }, [config.text]);
 
+        // --- HÀM IN ẤN CHUẨN (SỬA LỖI HIỆN POPUP QUÁ SỚM) ---
         const handlePrint = () => {
+          // 1. Định nghĩa hàm sẽ chạy SAU KHI in xong (hoặc sau khi hủy)
+          const handleAfterPrint = () => {
+            setShowPostPrintDonate(true); // Lúc này mới hiện popup
+            
+            // Dọn dẹp: Gỡ sự kiện này ra để không bị lặp lại lần sau
+            window.removeEventListener("afterprint", handleAfterPrint);
+          };
+
+          // 2. Lắng nghe sự kiện "đóng cửa sổ in"
+          window.addEventListener("afterprint", handleAfterPrint);
+
+          // 3. Gọi lệnh in
           window.print();
         };
 
@@ -3083,16 +3099,16 @@ const ALPHABETS = {
           <div className="min-h-screen flex flex-col md:flex-row print-layout-reset">
             <div className="no-print z-50">
               <Sidebar 
-  config={config} 
-  onChange={setConfig} 
-  onPrint={handlePrint}
-  isMenuOpen={isMenuOpen}      
-  setIsMenuOpen={setIsMenuOpen}
-  isConfigOpen={isConfigOpen}
-setIsConfigOpen={setIsConfigOpen}
-isCafeModalOpen={isCafeModalOpen}      
-setIsCafeModalOpen={setIsCafeModalOpen} 
-/>
+                config={config} 
+                onChange={setConfig} 
+                onPrint={handlePrint} // Truyền hàm in mới vào đây
+                isMenuOpen={isMenuOpen}       
+                setIsMenuOpen={setIsMenuOpen}
+                isConfigOpen={isConfigOpen}
+                setIsConfigOpen={setIsConfigOpen}
+                isCafeModalOpen={isCafeModalOpen}       
+                setIsCafeModalOpen={setIsCafeModalOpen} 
+              />
             </div>
 
             <div className="flex-1 bg-gray-100 p-0 md:p-8 overflow-auto flex flex-col items-center min-h-screen print-layout-reset">
@@ -3111,10 +3127,53 @@ setIsCafeModalOpen={setIsCafeModalOpen}
                 </div>
               )}
             </div>
+
+            {/* --- POPUP DONATE SAU KHI IN --- */}
+            {showPostPrintDonate && (
+              <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-300 no-print">
+                <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden relative animate-in zoom-in-95 duration-300 border border-orange-100">
+                  
+                  {/* Nút Đóng (X) */}
+                  <button 
+                    onClick={() => setShowPostPrintDonate(false)}
+                    className="absolute top-3 right-3 p-1.5 bg-gray-100 hover:bg-red-100 hover:text-red-500 rounded-full transition-colors z-10"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  </button>
+
+                  {/* Nội dung Popup */}
+                  <div className="p-6 flex flex-col items-center text-center">
+                    <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 text-3xl shadow-sm">
+                      ☕
+                    </div>
+                    
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">Bạn thấy công cụ hữu ích không?</h3>
+                    <p className="text-sm text-gray-500 mb-6 leading-relaxed">
+                      Hi vọng bạn đã tạo được file tập viết ưng ý! <br/>
+                      Nếu có thể, hãy mời mình một ly cafe để mình có thêm động lực duy trì web miễn phí và phát triển thêm tính năng mới nhé.
+                    </p>
+
+                    <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-3 rounded-xl shadow-inner border border-orange-200 mb-4">
+                      <img src="https://i.ibb.co/JWGwcTL1/3381513652021492183.jpg" alt="QR Donate" className="w-40 h-auto rounded-lg mix-blend-multiply" />
+                    </div>
+                    
+                    <p className="text-[11px] font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full mb-4">
+                      MB BANK: 99931082002
+                    </p>
+
+                    <button 
+                      onClick={() => setShowPostPrintDonate(false)}
+                      className="w-full py-2.5 bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold rounded-xl transition-all shadow-lg active:scale-95"
+                    >
+                      Lần sau nhé!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         );
       };
-
       const root = ReactDOM.createRoot(document.getElementById('root'));
       root.render(<App />);
     </script>
