@@ -2693,7 +2693,7 @@ const ALPHABETS = {
         );
       };
 
-// 5. Sidebar (Phiên bản: Sửa lỗi rớt dòng nút Chọn Nhanh)
+// 5. Sidebar (Phiên bản: Enter tự về 50)
       const Sidebar = ({ config, onChange, onPrint, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen }) => {
         
         // --- STATE CHO LOADING ---
@@ -2748,7 +2748,7 @@ const ALPHABETS = {
             }, 600);
         };
 
-        // --- HÀM LẤY RANDOM (LOGIC MỚI) ---
+        // --- HÀM LẤY RANDOM ---
         const handleRandomLoad = (level) => {
             const fullList = KANJI_LEVELS[level];
             if (!fullList) return;
@@ -2758,7 +2758,7 @@ const ALPHABETS = {
                 return; 
             }
 
-            // 2. Giới hạn tối đa 50
+            // 2. Giới hạn tối đa 50 (Logic xử lý khi bấm nút)
             let count = randomCount;
             if (count > 50) count = 50;
 
@@ -2799,6 +2799,22 @@ const ALPHABETS = {
               setSearchTerm(''); 
             } else {
               alert(`Không tìm thấy chữ nào có âm Hán Việt chính xác là: "${searchTerm}"`);
+            }
+        };
+
+        // --- HÀM XỬ LÝ KHI BẤM ENTER Ở Ô NHẬP SỐ ---
+        const handleRandomInputEnter = (e) => {
+            if (e.key === 'Enter') {
+                if (randomCount > 50) {
+                    setRandomCount(50);
+                }
+            }
+        };
+
+        // --- HÀM XỬ LÝ KHI CLICK RA NGOÀI Ô NHẬP SỐ ---
+        const handleRandomInputBlur = () => {
+             if (randomCount > 50) {
+                setRandomCount(50);
             }
         };
 
@@ -2939,6 +2955,8 @@ const ALPHABETS = {
                                                 if (val === '') setRandomCount('');
                                                 else setRandomCount(parseInt(val));
                                             }}
+                                            onKeyDown={handleRandomInputEnter} // Sự kiện bấm Enter
+                                            onBlur={handleRandomInputBlur}     // Sự kiện click ra ngoài
                                             className="w-14 h-7 text-xs text-center font-bold bg-orange-50 border border-orange-200 text-orange-700 rounded focus:border-orange-500 outline-none"
                                         />
                                         <span className="text-[10px] font-bold text-gray-500">chữ</span>
@@ -3135,7 +3153,7 @@ const ALPHABETS = {
                     
                     <h3 className="text-xl font-bold text-gray-800 mb-2">BẠN TẠO ĐƯỢC FILE CHƯA?</h3>
                     <p className="text-sm text-gray-500 mb-6 leading-relaxed">
-                      Nếu bạn thấy web hữu ích <br/>
+                      Nếu bạn thấy trang web hưu ích <br/>
                       hãy mời mình một ly cafe nhé!
                     </p>
 
