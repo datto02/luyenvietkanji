@@ -2618,41 +2618,16 @@ const ALPHABETS = {
                 )}
 
 {!isReference && showTrace && (
-  <>
-    {/* LỚP 1: Chữ TRẮNG (Nền - Dùng để che dòng kẻ) */}
-    <span className="kanji-trace"
-      style={{
-        position: 'absolute', // Bắt buộc để chồng lên nhau
-        fontSize: `${config.fontSize}pt`,
-        transform: `translateY(${config.verticalOffset}px)`,
-        color: 'white',       // Màu trắng tuyệt đối
-        opacity: 1,           // Luôn hiển thị 100% để che dòng kẻ
-        fontFamily: config.fontFamily,
-        zIndex: 5,            // Cao hơn dòng kẻ (Grid)
-        textShadow: 'none',
-        webkitTextStroke: '0' // Không viền
-      }}
-    >
-      {char}
-    </span>
-
-    {/* LỚP 2: Chữ IN MỜ (Hiển thị - Dùng để tô) */}
-    <span className="kanji-trace"
-      style={{
-        position: 'absolute', // Chồng khít lên lớp 1
-        fontSize: `${config.fontSize}pt`,
-        transform: `translateY(${config.verticalOffset}px)`,
-        color: 'black',       // Màu đen
-        opacity: config.traceOpacity, // Chỉ lớp này nhận độ mờ
-        fontFamily: config.fontFamily,
-        zIndex: 10,           // Cao nhất
-        textShadow: 'none',
-        webkitTextStroke: '0'
-      }}
-    >
-      {char}
-    </span>
-  </>
+  <span className="kanji-trace"
+    style={{
+      fontSize: `${config.fontSize}pt`,
+      transform: `translateY(${config.verticalOffset}px)`,
+      color: `rgba(0, 0, 0, ${config.traceOpacity})`,
+      fontFamily: config.fontFamily
+    }}
+  >
+    {char}
+  </span>
 )}
               </>
             )}
