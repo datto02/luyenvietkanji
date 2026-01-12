@@ -2589,14 +2589,14 @@ const ALPHABETS = {
                {gridType !== 'blank' && (
                 <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
                   {/* Cross Lines */}
-                  <line x1="50" y1="0" x2="50" y2="100" stroke="#9ca3af" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
-                  <line x1="0" y1="50" x2="100" y2="50" stroke="#9ca3af" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                  <line x1="50" y1="0" x2="50" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                  <line x1="0" y1="50" x2="100" y2="50" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
                   
                   {/* Diagonal Lines (Rice) */}
                   {gridType === 'rice' && (
                     <>
-                      <line x1="0" y1="0" x2="100" y2="100" stroke="#9ca3af" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
-                      <line x1="100" y1="0" x2="0" y2="100" stroke="#9ca3af" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                      <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                      <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
                     </>
                   )}
                 </svg>
