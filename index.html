@@ -2817,7 +2817,7 @@ const ALPHABETS = {
         {/* Số chữ mẫu */}
         <div className="space-y-2">
           <div className="flex justify-between items-center">
-            <label className="text-sm font-medium text-gray-700">Số chữ mẫu</label>
+            <label className="text-sm font-medium text-gray-700">Số lượng chữ mẫu</label>
             <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{config.traceCount} Chữ</span>
           </div>
           <input type="range" min="0" max="12" step="1" className="w-full accent-indigo-600"
@@ -2827,7 +2827,7 @@ const ALPHABETS = {
         {/* Độ đậm */}
         <div className="space-y-2">
           <div className="flex justify-between items-center">
-            <label className="text-sm font-medium text-gray-700">Độ đậm</label>
+            <label className="text-sm font-medium text-gray-700">Độ đậm chữ mẫu</label>
             <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">{Math.round(config.traceOpacity * 100)}%</span>
           </div>
           <input type="range" min="0.05" max="0.5" step="0.05" className="w-full accent-indigo-600"
@@ -2856,7 +2856,7 @@ const ALPHABETS = {
         {/* 2.5 Độ đậm khung (Grid Opacity) */}
         <div className="space-y-2">
           <div className="flex justify-between items-center">
-            <label className="text-sm font-medium text-gray-700">Đậm nhạt khung</label>
+            <label className="text-sm font-medium text-gray-700">Độ đậm khung</label>
             <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">
               {Math.round(config.gridOpacity * 100)}%
             </span>
@@ -2935,7 +2935,7 @@ const ALPHABETS = {
           guideScale: 1.02,
           guideX: 0,
           guideY: 0.5,
-          gridOpacity: 0.4, // đậm nhạt khung
+          gridOpacity: 0.5, // đậm nhạt khung
           gridType: 'cross' // CHANGED FROM rice TO cross
         });
 
