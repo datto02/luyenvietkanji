@@ -2562,13 +2562,15 @@ const ALPHABETS = {
 );
       };
 
-      // 2. Grid Box
+      // 2. Grid Box (Đã cập nhật chỉnh độ đậm nhạt khung)
       const GridBox = ({ char, type, config, index, svgData, failed }) => {
         const isReference = type === 'reference';
         const showTrace = index < config.traceCount;
-        const { gridType } = config;
+        const { gridType, gridOpacity } = config; // Lấy thêm gridOpacity
 
-        // Apply dynamic CSS variables for manual controls
+        // Màu khung (đen với độ trong suốt tùy chỉnh)
+        const gridColor = `rgba(0, 0, 0, ${gridOpacity})`;
+
         const refStyle = isReference ? {
           '--guide-scale': config.guideScale,
           '--guide-x': `${config.guideX}px`,
@@ -2576,70 +2578,52 @@ const ALPHABETS = {
         } : {};
 
         return (
-          // Main Container: 16mm square, One-Sided Border (Right/Bottom)
-          <div className="relative w-[16mm] h-[16mm] border-r border-b border-gray-400 box-border flex justify-center items-center overflow-hidden print:border-gray-500 bg-transparent">
+          // Main Container: Dùng style để chỉnh màu viền động theo opacity
+          <div 
+            className="relative w-[16mm] h-[16mm] border-r border-b box-border flex justify-center items-center overflow-hidden bg-transparent"
+            style={{ borderColor: gridColor }} // <--- Áp dụng màu viền tại đây
+          >
             
             {/* Grid Lines */}
             <div className="absolute inset-0 pointer-events-none z-0">
                {gridType !== 'blank' && (
                 <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  {/* Cross Lines (Standard for Cross & Rice) */}
-                  <line x1="50" y1="0" x2="50" y2="100" stroke="#999999" strokeWidth="1" strokeDasharray="4 4" />
-                  <line x1="0" y1="50" x2="100" y2="50" stroke="#999999" strokeWidth="1" strokeDasharray="4 4" />
+                  {/* Cross Lines */}
+                  <line x1="50" y1="0" x2="50" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                  <line x1="0" y1="50" x2="100" y2="50" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
                   
-                  {/* Diagonal Lines (Only for Rice) */}
+                  {/* Diagonal Lines (Rice) */}
                   {gridType === 'rice' && (
                     <>
-                      <line x1="0" y1="0" x2="100" y2="100" stroke="#999999" strokeWidth="1" strokeDasharray="4 4" />
-                      <line x1="100" y1="0" x2="0" y2="100" stroke="#999999" strokeWidth="1" strokeDasharray="4 4" />
+                      <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                      <line x1="100" y1="0" x2="0" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
                     </>
                   )}
                 </svg>
                )}
             </div>
 
-            {/* Content */}
+            {/* Content (Giữ nguyên như cũ) */}
             {char && (
               <>
-                {/* CASE 1: REFERENCE BOX (Index 0) - THE GUIDE BOX */}
                 {isReference && (
-                  // Wrapper: Flex Center + Padding 1px to avoid border overlap issues
-                  <div 
-                    className="relative z-20 w-full h-full flex items-center justify-center p-[1px]"
-                  >
-                     {!failed && svgData ? (
-                        // Render Inline SVG with new wrapper class for strict scaling
-                        <div 
-                          className="ref-wrapper"
-                          style={refStyle}
-                          dangerouslySetInnerHTML={{ __html: svgData }} 
-                        />
-                     ) : (
-                        // Fallback Text
-                        <span
-                          className="kanji-trace !text-black flex justify-center items-center h-full w-full"
-                          style={{
-                            fontSize: `${config.fontSize}pt`,
-                            color: 'black',
-                            transform: `translateY(${config.verticalOffset}px)`,
-                            textShadow: 'none',
-                            webkitTextStroke: '0'
-                          }}
-                        >
+                  <div className="relative z-20 w-full h-full flex items-center justify-center p-[1px]">
+                      {!failed && svgData ? (
+                        <div className="ref-wrapper" style={refStyle} dangerouslySetInnerHTML={{ __html: svgData }} />
+                      ) : (
+                        <span className="kanji-trace !text-black flex justify-center items-center h-full w-full"
+                          style={{ fontSize: `${config.fontSize}pt`, color: 'black', transform: `translateY(${config.verticalOffset}px)`, textShadow: 'none', webkitTextStroke: '0' }}>
                           {char}
                         </span>
-                     )}
+                      )}
                   </div>
                 )}
 
-                {/* CASE 2: TRACE BOXES (Index 1-11) */}
                 {!isReference && showTrace && (
-                  <span
-                    className="kanji-trace"
+                  <span className="kanji-trace"
                     style={{
                       fontSize: `${config.fontSize}pt`,
                       transform: `translateY(${config.verticalOffset}px)`,
-                      // Apply dynamic opacity using rgba
                       color: `rgba(0, 0, 0, ${config.traceOpacity})`
                     }}
                   >
@@ -2652,19 +2636,25 @@ const ALPHABETS = {
         );
       };
 
-      // 3. WorkbookRow
+     // 3. WorkbookRow (Đã sửa: Viền Trái và Trên giờ sẽ mờ theo thanh trượt)
       const WorkbookRow = ({ char, config }) => {
         const { loading, paths, fullSvg, failed } = useKanjiSvg(char);
         const boxes = Array.from({ length: 12 }, (_, i) => i);
 
+        // Lấy màu viền động từ config
+        const gridBorderColor = `rgba(0, 0, 0, ${config.gridOpacity})`;
+
         return (
           <div className="flex flex-col w-full px-[8mm]">
-            {/* Section 1: Header (Decomposition) */}
+            {/* Header */}
             <HeaderSection char={char} paths={paths} loading={loading} failed={failed} />
             
-            {/* Section 2: Grid Strip */}
-            {/* Flex container ensures all grid boxes align horizontally */}
-            <div className="flex border-l border-t border-gray-400 print:border-gray-500 w-fit">
+            {/* Grid Strip Container */}
+            {/* Thay class border-gray-400 bằng style động */}
+            <div 
+              className="flex border-l border-t w-fit"
+              style={{ borderColor: gridBorderColor }} 
+            >
               {boxes.map((i) => (
                 <GridBox
                   key={i}
@@ -2857,6 +2847,27 @@ const ALPHABETS = {
             <span className="text-[10px] text-gray-400 font-sans">40</span>
           </div>
         </div>
+        {/* 2. Độ đậm chữ (Trace Opacity) - GIỮ NGUYÊN CÁI CŨ */}
+        <div className="space-y-2">
+           {/* ... code cũ của phần Độ đậm chữ ... */}
+        </div>
+
+        {/* --- THÊM CÁI NÀY VÀO DƯỚI --- */}
+        {/* 2.5 Độ đậm khung (Grid Opacity) */}
+        <div className="space-y-2">
+          <div className="flex justify-between items-center">
+            <label className="text-sm font-medium text-gray-700">Đậm nhạt khung</label>
+            <span className="text-xs text-gray-500 bg-white px-2 py-0.5 rounded border border-gray-200">
+              {Math.round(config.gridOpacity * 100)}%
+            </span>
+          </div>
+          <input 
+            type="range" min="0.1" max="1" step="0.1" 
+            className="w-full accent-indigo-600"
+            value={config.gridOpacity} 
+            onChange={(e) => handleChange('gridOpacity', parseFloat(e.target.value))} 
+          />
+        </div>
       </div>
     )}
   </div>
@@ -2924,6 +2935,7 @@ const ALPHABETS = {
           guideScale: 1.02,
           guideX: 0,
           guideY: 0.5,
+          gridOpacity: 0.4, // đậm nhạt khung
           gridType: 'cross' // CHANGED FROM rice TO cross
         });
 
