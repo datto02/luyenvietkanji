@@ -2794,11 +2794,8 @@ const ALPHABETS = {
   </div>
 
   {/* Ô nhập liệu đã được khôi phục */}
-  <textarea
-    className="w-full h-25 p-3 border border-gray-300 rounded-lg resize-none 
-             font-['Klee_One'] text-lg
-             bg-white text-gray-900 
-             dark:bg-gray-800 dark:text-white"
+   <textarea
+    className="w-full h-26 p-3 border border-gray-300 rounded-lg resize-none font-['Klee_One'] text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner"
     placeholder="漢字, ひらがな, カタカナ"
     value={config.text}
     onChange={(e) => handleChange('text', e.target.value)}
