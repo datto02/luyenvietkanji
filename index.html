@@ -2562,13 +2562,13 @@ const ALPHABETS = {
 );
       };
 
-     // 2. Grid Box (Đã sửa: Kỹ thuật 2 lớp để che đường kẻ mà KHÔNG dùng viền)
+     // 2. Grid Box (Đã cập nhật chỉnh độ đậm nhạt khung)
       const GridBox = ({ char, type, config, index, svgData, failed }) => {
         const isReference = type === 'reference';
         const showTrace = index < config.traceCount;
-        const { gridType, gridOpacity } = config; 
+        const { gridType, gridOpacity } = config; // Lấy thêm gridOpacity
 
-        // Màu khung
+        // Màu khung (đen với độ trong suốt tùy chỉnh)
         const gridColor = `rgba(0, 0, 0, ${gridOpacity})`;
 
         const refStyle = isReference ? {
@@ -2578,17 +2578,21 @@ const ALPHABETS = {
         } : {};
 
         return (
+          // Main Container: Dùng style để chỉnh màu viền động theo opacity
           <div 
             className="relative w-[16mm] h-[16mm] border-r border-b box-border flex justify-center items-center overflow-hidden bg-transparent"
-            style={{ borderColor: gridColor }}
+            style={{ borderColor: gridColor }} // <--- Áp dụng màu viền tại đây
           >
             
-            {/* Grid Lines (Nằm dưới cùng: z-0) */}
+            {/* Grid Lines */}
             <div className="absolute inset-0 pointer-events-none z-0">
                {gridType !== 'blank' && (
                 <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  {/* Cross Lines */}
                   <line x1="50" y1="0" x2="50" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
                   <line x1="0" y1="50" x2="100" y2="50" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
+                  
+                  {/* Diagonal Lines (Rice) */}
                   {gridType === 'rice' && (
                     <>
                       <line x1="0" y1="0" x2="100" y2="100" stroke="black" strokeOpacity={gridOpacity} strokeWidth="0.5" strokeDasharray="4 4" />
@@ -2599,7 +2603,7 @@ const ALPHABETS = {
                )}
             </div>
 
-            {/* Content */}
+            {/* Content (Giữ nguyên như cũ) */}
             {char && (
               <>
                 {isReference && (
@@ -2608,40 +2612,23 @@ const ALPHABETS = {
                         <div className="ref-wrapper" style={refStyle} dangerouslySetInnerHTML={{ __html: svgData }} />
                       ) : (
                         <span className="kanji-trace !text-black flex justify-center items-center h-full w-full"
-                          style={{ fontSize: `${config.fontSize}pt`, color: 'black', transform: `translateY(${config.verticalOffset}px)`, textShadow: 'none' }}>
+                          style={{ fontSize: `${config.fontSize}pt`, color: 'black', transform: `translateY(${config.verticalOffset}px)`, textShadow: 'none', webkitTextStroke: '0' }}>
                           {char}
                         </span>
                       )}
                   </div>
                 )}
 
-                {/* PHẦN SỬA ĐỔI: In 2 lớp chồng lên nhau */}
                 {!isReference && showTrace && (
-                  <>
-                    {/* Lớp 1: Chữ màu TRẮNG tuyệt đối (Để che dòng kẻ) */}
-                    <span className="kanji-trace absolute inset-0 flex items-center justify-center"
-                      style={{
-                        fontSize: `${config.fontSize}pt`,
-                        transform: `translateY(${config.verticalOffset}px)`,
-                        color: 'white', 
-                        zIndex: 5 // Nằm trên dòng kẻ
-                      }}
-                    >
-                      {char}
-                    </span>
-
-                    {/* Lớp 2: Chữ màu XÁM (Để hiển thị) */}
-                    <span className="kanji-trace absolute inset-0 flex items-center justify-center"
-                      style={{
-                        fontSize: `${config.fontSize}pt`,
-                        transform: `translateY(${config.verticalOffset}px)`,
-                        color: `rgba(0, 0, 0, ${config.traceOpacity})`,
-                        zIndex: 6 // Nằm trên lớp trắng
-                      }}
-                    >
-                      {char}
-                    </span>
-                  </>
+                  <span className="kanji-trace"
+                    style={{
+                      fontSize: `${config.fontSize}pt`,
+                      transform: `translateY(${config.verticalOffset}px)`,
+                      color: `rgba(0, 0, 0, ${config.traceOpacity})`
+                    }}
+                  >
+                    {char}
+                  </span>
                 )}
               </>
             )}
