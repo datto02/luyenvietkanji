@@ -2999,7 +2999,7 @@ const ALPHABETS = {
                     {/* CỤM NÚT BỘ LỌC VÀ XÓA */}
                     <div className="flex items-center gap-3 relative">
                         
-                        {/* 1. NÚT MỞ BỘ LỌC (Giao diện tinh tế hơn) */}
+                        {/* 1. NÚT MỞ BỘ LỌC */}
                         <div className="relative" ref={filterRef}>
                             <button 
                                 onClick={() => setIsFilterMenuOpen(!isFilterMenuOpen)}
@@ -3056,7 +3056,7 @@ const ALPHABETS = {
                     </div>
                   </div>
                    <textarea 
-                    className={`w-full h-23 p-3 border border-gray-300 rounded-lg resize-none text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner ${(isWarningMode && !localText) ? 'font-sans' : "font-['Klee_One']"}`}
+                    className={`w-full h-26 p-3 border border-gray-300 rounded-lg resize-none text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner ${(isWarningMode && !localText) ? 'font-sans' : "font-['Klee_One']"}`}
                     placeholder={getDynamicPlaceholder()} 
                     value={localText} 
                     onChange={handleInputText} 
