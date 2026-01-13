@@ -2718,7 +2718,8 @@ const ALPHABETS = {
         const [filterOptions, setFilterOptions] = useState({
             hiragana: true,
             katakana: true,
-            kanji: true 
+            kanji: true,
+            removeDuplicates: false 
         });
 
         // --- HÀM TẠO PLACEHOLDER ---
@@ -2775,21 +2776,32 @@ const ALPHABETS = {
             if (options.kanji)    ranges += "\\u4E00-\\u9FAF\\u3400-\\u4DBF\\u2E80-\\u2FDF\\uF900-\\uFAFF"; 
             return ranges;
         };
+        // --- HÀM TRỢ GIÚP: XÓA TRÙNG LẶP ---
+          const getUniqueChars = (str) => {
+              return Array.from(new Set(str)).join('');
+              };
 
         // --- 3. XỬ LÝ CHECKBOX ---
         const handleFilterChange = (key) => {
             const newOptions = { ...filterOptions, [key]: !filterOptions[key] };
             setFilterOptions(newOptions);
+            
+            let newText = localText;
 
-            if (filterOptions[key] === true) { 
+            // Xử lý các ô Hiragana/Katakana/Kanji (như cũ)
+            if (['hiragana', 'katakana', 'kanji'].includes(key) && filterOptions[key] === true) {
                 const allowedString = getAllowedRegexString(newOptions, true); 
                 const regex = new RegExp(`[^${allowedString}]`, 'g');
-                
-                const cleanedLocal = localText.replace(regex, '');
-                
-                setLocalText(cleanedLocal);
-                handleChange('text', cleanedLocal.replace(/[a-zA-Z]/g, ''));
+                newText = newText.replace(regex, '');
             }
+
+            // Xử lý ô Xóa trùng lặp (MỚI)
+            if (newOptions.removeDuplicates) {
+                newText = getUniqueChars(newText);
+            }
+            
+            setLocalText(newText);
+            handleChange('text', newText.replace(/[a-zA-Z]/g, ''));
         };
 
         // --- 4. NÚT XÓA LATINH + DỒN DÒNG ---
@@ -2806,19 +2818,25 @@ const ALPHABETS = {
         };
 
         // --- 5. XỬ LÝ NHẬP LIỆU (ĐÃ FIX LỖI IME) ---
+      // --- 5. XỬ LÝ NHẬP LIỆU (REAL-TIME FILTER) ---
         const handleInputText = (e) => {
             const rawInput = e.target.value;
 
-            // QUAN TRỌNG: Nếu đang gõ bộ gõ (IME), cập nhật thô, KHÔNG LỌC
+            // Nếu đang lơ lửng gõ bộ gõ (IME) thì cứ để hiện
             if (isComposing.current) {
                 setLocalText(rawInput);
                 return;
             }
             
-            // Nếu gõ thường: Chặn số/icon ngay
+            // 1. Lọc ký tự rác (số, icon...)
             const allowedString = getAllowedRegexString(filterOptions, true);
             const blockRegex = new RegExp(`[^${allowedString}]`, 'g');
-            const validForInput = rawInput.replace(blockRegex, '');
+            let validForInput = rawInput.replace(blockRegex, '');
+
+            // 2. LOGIC QUAN TRỌNG: Lọc trùng ngay lập tức
+            if (filterOptions.removeDuplicates) {
+                validForInput = getUniqueChars(validForInput);
+            }
 
             setLocalText(validForInput);
             handleChange('text', validForInput.replace(/[a-zA-Z]/g, ''));
@@ -2831,12 +2849,18 @@ const ALPHABETS = {
         const handleCompositionEnd = (e) => {
             isComposing.current = false;
             
-            // Khi chốt chữ (Enter), lọc lại toàn bộ nội dung để loại bỏ rác nếu có
-            // Lấy giá trị từ e.target.value để đảm bảo mới nhất
-            const rawInput = e.target.value; 
+            // Lấy toàn bộ nội dung trong ô nhập lúc này
+            const rawInput = e.target.value;
+            
+            // 1. Lọc rác
             const allowedString = getAllowedRegexString(filterOptions, true);
             const blockRegex = new RegExp(`[^${allowedString}]`, 'g');
-            const validForInput = rawInput.replace(blockRegex, '');
+            let validForInput = rawInput.replace(blockRegex, '');
+
+            // 2. LOGIC QUAN TRỌNG: Lọc trùng ngay khi chốt chữ
+            if (filterOptions.removeDuplicates) {
+                validForInput = getUniqueChars(validForInput);
+            }
 
             setLocalText(validForInput);
             handleChange('text', validForInput.replace(/[a-zA-Z]/g, ''));
@@ -2849,6 +2873,11 @@ const ALPHABETS = {
             cleaned = cleaned.replace(/[ \t]+/g, ' '); 
             cleaned = cleaned.replace(/(\n\s*){2,}/g, '\n'); 
             cleaned = cleaned.trim();
+
+            // Thêm đoạn này:
+            if (filterOptions.removeDuplicates) {
+                cleaned = getUniqueChars(cleaned);
+            }
 
             if (cleaned !== localText) {
                 setLocalText(cleaned);
@@ -3035,6 +3064,14 @@ const ALPHABETS = {
                                         <label className="flex items-center gap-2 text-xs text-gray-700 cursor-pointer hover:text-indigo-600 select-none">
                                             <input type="checkbox" checked={filterOptions.katakana} onChange={() => handleFilterChange('katakana')} className="accent-indigo-600 w-3.5 h-3.5 rounded-sm"/>
                                             Katakana
+                                        </label>
+                                        {/* ĐƯỜNG KẺ MỜ NGĂN CÁCH (MỚI) */}
+                                        <hr className="border-gray-100 my-1"/>
+
+                                        {/* TÙY CHỌN: XÓA TRÙNG LẶP (MỚI) */}
+                                        <label className="flex items-center gap-2 text-xs text-gray-700 cursor-pointer hover:text-indigo-600 select-none">
+                                            <input type="checkbox" checked={filterOptions.removeDuplicates} onChange={() => handleFilterChange('removeDuplicates')} className="accent-indigo-600 w-3.5 h-3.5 rounded-sm"/>
+                                            Xóa chữ trùng lặp
                                         </label>
                                         
                                         <hr className="border-gray-100"/>
