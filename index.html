@@ -2693,27 +2693,69 @@ const ALPHABETS = {
         );
       };
 
-// 5. Sidebar (Phiên bản: Enter tự về 50)
+// 5. Sidebar (Phiên bản: Final)
       const Sidebar = ({ config, onChange, onPrint, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen }) => {
         
-        // --- STATE CHO LOADING ---
+        // --- STATE QUẢN LÝ ---
         const [isLoading, setIsLoading] = useState(false);
         const [progress, setProgress] = useState(0);
-
-        // --- STATE CHO TÌM KIẾM ---
         const [searchTerm, setSearchTerm] = useState('');
-
-        // --- STATE CHO MENU MỚI (TIỆN ÍCH) ---
-        const [isUtilsOpen, setIsUtilsOpen] = useState(false);
         
-        // --- STATE CHO RANDOM ---
+        // Menu Popup & Ref
+        const [isUtilsOpen, setIsUtilsOpen] = useState(false);
+        const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
+        const filterRef = useRef(null);
+        
+        // Biến kiểm soát bộ gõ IME (Quan trọng)
+        const isComposing = useRef(false);
+
         const [randomCount, setRandomCount] = useState(10); 
+
+        // State hiển thị nội bộ
+        const [localText, setLocalText] = useState(config.text);
+
+        // Tùy chọn bộ lọc
+        const [filterOptions, setFilterOptions] = useState({
+            hiragana: true,
+            katakana: true,
+            kanji: true 
+        });
+
+        // --- HÀM TẠO PLACEHOLDER ---
+        const getDynamicPlaceholder = () => {
+            const labels = [];
+            if (filterOptions.kanji) labels.push("漢字");       
+            if (filterOptions.hiragana) labels.push("ひらがな"); 
+            if (filterOptions.katakana) labels.push("カタカナ"); 
+            
+            if (labels.length === 0) return "Vui lòng chọn ít nhất 1 loại chữ...";
+            return labels.join(", ");
+        };
+
+        // --- 1. CLICK RA NGOÀI ĐỂ ĐÓNG MENU ---
+        useEffect(() => {
+            function handleClickOutside(event) {
+                if (filterRef.current && !filterRef.current.contains(event.target)) {
+                    setIsFilterMenuOpen(false);
+                }
+            }
+            document.addEventListener("mousedown", handleClickOutside);
+            return () => document.removeEventListener("mousedown", handleClickOutside);
+        }, [filterRef]);
+
+        // --- 2. ĐỒNG BỘ DỮ LIỆU TỪ NGOÀI ---
+        useEffect(() => {
+            const currentClean = localText ? localText.replace(/[a-zA-Z]/g, '') : '';
+            if (currentClean !== config.text) {
+                setLocalText(config.text);
+            }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        }, [config.text]);
 
         const handleChange = (key, value) => {
           onChange({ ...config, [key]: value });
         };
 
-        // --- HÀM TRỢ GIÚP: Xáo trộn chuỗi ---
         const shuffleString = (str) => {
             const arr = [...str];
             for (let i = arr.length - 1; i > 0; i--) {
@@ -2723,111 +2765,171 @@ const ALPHABETS = {
             return arr.join('');
         };
 
-        // --- HÀM NẠP DỮ LIỆU THÔNG MINH ---
-        const handleSmartLoad = (content) => {
+        // --- HÀM TRỢ GIÚP: REGEX ---
+        const getAllowedRegexString = (options, allowLatin = false) => {
+            let ranges = "\\s"; 
+            if (allowLatin) ranges += "a-zA-Z"; // Latinh luôn được phép ở input
+
+            if (options.hiragana) ranges += "\\u3040-\\u309F";
+            if (options.katakana) ranges += "\\u30A0-\\u30FF";
+            if (options.kanji)    ranges += "\\u4E00-\\u9FAF\\u3400-\\u4DBF\\u2E80-\\u2FDF\\uF900-\\uFAFF"; 
+            return ranges;
+        };
+
+        // --- 3. XỬ LÝ CHECKBOX ---
+        const handleFilterChange = (key) => {
+            const newOptions = { ...filterOptions, [key]: !filterOptions[key] };
+            setFilterOptions(newOptions);
+
+            if (filterOptions[key] === true) { 
+                const allowedString = getAllowedRegexString(newOptions, true); 
+                const regex = new RegExp(`[^${allowedString}]`, 'g');
+                
+                const cleanedLocal = localText.replace(regex, '');
+                
+                setLocalText(cleanedLocal);
+                handleChange('text', cleanedLocal.replace(/[a-zA-Z]/g, ''));
+            }
+        };
+
+        // --- 4. NÚT XÓA LATINH + DỒN DÒNG ---
+        const handleRemoveLatinManual = () => {
+            if (!localText) return;
+            let cleaned = localText;
+            cleaned = cleaned.replace(/[a-zA-Z]/g, '');
+            cleaned = cleaned.replace(/[\n\r]+/g, '');
+            cleaned = cleaned.replace(/[ \t]{2,}/g, ' ');
+            cleaned = cleaned.trim();
+
+            setLocalText(cleaned);
+            handleChange('text', cleaned); 
+        };
+
+        // --- 5. XỬ LÝ NHẬP LIỆU (ĐÃ FIX LỖI IME) ---
+        const handleInputText = (e) => {
+            const rawInput = e.target.value;
+
+            // QUAN TRỌNG: Nếu đang gõ bộ gõ (IME), cập nhật thô, KHÔNG LỌC
+            if (isComposing.current) {
+                setLocalText(rawInput);
+                return;
+            }
+            
+            // Nếu gõ thường: Chặn số/icon ngay
+            const allowedString = getAllowedRegexString(filterOptions, true);
+            const blockRegex = new RegExp(`[^${allowedString}]`, 'g');
+            const validForInput = rawInput.replace(blockRegex, '');
+
+            setLocalText(validForInput);
+            handleChange('text', validForInput.replace(/[a-zA-Z]/g, ''));
+        };
+
+        const handleCompositionStart = () => {
+            isComposing.current = true;
+        };
+
+        const handleCompositionEnd = (e) => {
+            isComposing.current = false;
+            
+            // Khi chốt chữ (Enter), lọc lại toàn bộ nội dung để loại bỏ rác nếu có
+            // Lấy giá trị từ e.target.value để đảm bảo mới nhất
+            const rawInput = e.target.value; 
+            const allowedString = getAllowedRegexString(filterOptions, true);
+            const blockRegex = new RegExp(`[^${allowedString}]`, 'g');
+            const validForInput = rawInput.replace(blockRegex, '');
+
+            setLocalText(validForInput);
+            handleChange('text', validForInput.replace(/[a-zA-Z]/g, ''));
+        };
+
+        // --- 6. XỬ LÝ RỜI TAY ---
+        const handleBlurText = () => {
+            if (!localText) return;
+            let cleaned = localText; 
+            cleaned = cleaned.replace(/[ \t]+/g, ' '); 
+            cleaned = cleaned.replace(/(\n\s*){2,}/g, '\n'); 
+            cleaned = cleaned.trim();
+
+            if (cleaned !== localText) {
+                setLocalText(cleaned);
+                handleChange('text', cleaned.replace(/[a-zA-Z]/g, ''));
+            }
+        };
+
+        // --- CÁC HÀM TIỆN ÍCH KHÁC ---
+        const handleSmartLoad = (content, type = null) => {
             if (!content) return;
-            setIsLoading(true);
-            // Đóng tất cả menu
-            setIsMenuOpen(false);
-            setIsUtilsOpen(false);
-            setIsConfigOpen(false);
-            setProgress(0);
+            setIsLoading(true); setIsMenuOpen(false); setIsUtilsOpen(false); setIsConfigOpen(false); setProgress(0);
+            
+            if (type) setFilterOptions(prev => ({ ...prev, [type]: true }));
+            else if (type === 'all') setFilterOptions(prev => ({ ...prev, kanji: true }));
 
             const interval = setInterval(() => {
-                setProgress((prev) => {
-                    if (prev >= 90) return 90;
-                    return prev + Math.floor(Math.random() * 10) + 5;
-                });
+                setProgress((prev) => { if (prev >= 90) return 90; return prev + Math.floor(Math.random() * 10) + 5; });
             }, 80);
-
             setTimeout(() => {
+                setLocalText(content);
                 onChange({ ...config, text: content });
-                clearInterval(interval);
-                setProgress(100);
-                setTimeout(() => setIsLoading(false), 200);
+                clearInterval(interval); setProgress(100); setTimeout(() => setIsLoading(false), 200);
             }, 600);
         };
 
-        // --- HÀM LẤY RANDOM ---
         const handleRandomLoad = (level) => {
             const fullList = KANJI_LEVELS[level];
-            if (!fullList) return;
-
-            // 1. Kiểm tra điều kiện đầu vào
-            if (randomCount === '' || randomCount <= 0) {
-                return; 
-            }
-
-            // 2. Giới hạn tối đa 50 (Logic xử lý khi bấm nút)
-            let count = randomCount;
-            if (count > 50) count = 50;
-
-            // 3. Thực hiện lấy random
+            if (!fullList || randomCount === '' || randomCount <= 0) return;
+            setFilterOptions(prev => ({ ...prev, kanji: true })); 
+            let count = randomCount > 50 ? 50 : randomCount;
             const shuffled = shuffleString(fullList);
-            const selected = shuffled.slice(0, count);
-            handleSmartLoad(selected);
+            handleSmartLoad(shuffled.slice(0, count));
         };
 
-        // --- HÀM XÁO TRỘN ---
         const handleShuffleCurrent = () => {
-            if (!config.text) {
-                alert("Chưa có nội dung để xáo trộn!");
-                return;
-            }
-            const shuffled = shuffleString(config.text);
-            handleSmartLoad(shuffled);
+            if (!config.text) { alert("Chưa có nội dung!"); return; }
+            handleSmartLoad(shuffleString(config.text));
         };
 
-        // --- HÀM TÌM KIẾM ---
         const handleSearch = () => {
             if (!searchTerm.trim()) return;
             const query = searchTerm.toLowerCase().trim();
             let results = "";
-
+            let foundKanji = false;
             Object.entries(KANJI_DB).forEach(([char, info]) => {
               if (!info.sound) return;
               const dbSounds = info.sound.toLowerCase().split('/');
-              const isExactMatch = dbSounds.some(s => s.trim() === query);
-              if (isExactMatch) results += char;
+              if (dbSounds.some(s => s.trim() === query)) { results += char; foundKanji = true; }
             });
+            if(foundKanji) setFilterOptions(prev => ({ ...prev, kanji: true }));
 
-            Object.entries(ALPHABETS.hiragana).forEach(([char, info]) => { if (info.sound === query) results += char; });
-            Object.entries(ALPHABETS.katakana).forEach(([char, info]) => { if (info.sound === query) results += char; });
+            let foundHira = false;
+            Object.entries(ALPHABETS.hiragana).forEach(([char, info]) => { 
+                if (info.sound === query) { results += char; foundHira = true; } 
+            });
+            if(foundHira) setFilterOptions(prev => ({ ...prev, hiragana: true }));
 
-            if (results.length > 0) {
-              onChange({ ...config, text: config.text + results });
-              setSearchTerm(''); 
-            } else {
-              alert(`Không tìm thấy chữ nào có âm Hán Việt chính xác là: "${searchTerm}"`);
-            }
-        };
+            let foundKata = false;
+            Object.entries(ALPHABETS.katakana).forEach(([char, info]) => { 
+                if (info.sound === query) { results += char; foundKata = true; } 
+            });
+            if(foundKata) setFilterOptions(prev => ({ ...prev, katakana: true }));
 
-        // --- HÀM XỬ LÝ KHI BẤM ENTER Ở Ô NHẬP SỐ ---
-        const handleRandomInputEnter = (e) => {
-            if (e.key === 'Enter') {
-                if (randomCount > 50) {
-                    setRandomCount(50);
-                }
-            }
-        };
-
-        // --- HÀM XỬ LÝ KHI CLICK RA NGOÀI Ô NHẬP SỐ ---
-        const handleRandomInputBlur = () => {
-             if (randomCount > 50) {
-                setRandomCount(50);
-            }
+            if (results.length > 0) { 
+                const newText = config.text + results;
+                setLocalText(newText);
+                onChange({ ...config, text: newText }); 
+                setSearchTerm(''); 
+            } else { alert(`Không tìm thấy chữ nào: "${searchTerm}"`); }
         };
 
         const toggleMenu = (menuName) => {
             setIsCafeModalOpen(false); 
-            if (menuName === 'quick') {
-                setIsMenuOpen(!isMenuOpen); setIsUtilsOpen(false); setIsConfigOpen(false);
-            } else if (menuName === 'utils') {
-                setIsUtilsOpen(!isUtilsOpen); setIsMenuOpen(false); setIsConfigOpen(false);
-            } else if (menuName === 'config') {
-                setIsConfigOpen(!isConfigOpen); setIsMenuOpen(false); setIsUtilsOpen(false);
-            }
+            setIsFilterMenuOpen(false); 
+            if (menuName === 'quick') { setIsMenuOpen(!isMenuOpen); setIsUtilsOpen(false); setIsConfigOpen(false); }
+            else if (menuName === 'utils') { setIsUtilsOpen(!isUtilsOpen); setIsMenuOpen(false); setIsConfigOpen(false); }
+            else if (menuName === 'config') { setIsConfigOpen(!isConfigOpen); setIsMenuOpen(false); setIsUtilsOpen(false); }
         };
+
+        // Check warning để đổi font placeholder
+        const isWarningMode = !filterOptions.hiragana && !filterOptions.katakana && !filterOptions.kanji;
 
         return (
           <div className="w-full md:w-96 bg-white shadow-xl p-6 flex flex-col gap-6 h-screen overflow-y-auto sticky top-0 border-r border-gray-200">
@@ -2840,7 +2942,7 @@ const ALPHABETS = {
               </h1>
               <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-[11px] leading-tight">
                 <div className="relative inline-block">
-                  <button onClick={() => { setIsCafeModalOpen(!isCafeModalOpen); setIsMenuOpen(false); setIsUtilsOpen(false); setIsConfigOpen(false); }} className="text-orange-500 hover:text-orange-700 flex items-center gap-0.5 font-bold transition-all active:scale-95">
+                  <button onClick={() => { setIsCafeModalOpen(!isCafeModalOpen); setIsMenuOpen(false); setIsUtilsOpen(false); setIsConfigOpen(false); setIsFilterMenuOpen(false); }} className="text-orange-500 hover:text-orange-700 flex items-center gap-0.5 font-bold transition-all active:scale-95">
                     <span className="text-[15px]">☕</span> Mời mình cafe
                   </button>
                   {isCafeModalOpen && (
@@ -2874,18 +2976,82 @@ const ALPHABETS = {
                   <p className="text-[10px] text-gray-400 italic pl-1">* Tự động liệt kê những chữ trùng âm Hán Việt.</p>
                 </div>
 
-                {/* NHẬP LIỆU THỦ CÔNG */}
+                {/* KHUNG NHẬP LIỆU */}
                 <div className="space-y-2 pt-2">
-                  <div className="flex justify-between items-center mb-1">
-                    <label className="text-sm font-medium text-gray-700 font-sans">Nhập dữ liệu thủ công</label>
-                    <button onClick={() => handleChange('text', '')} className="flex items-center gap-1 text-[10px] font-bold text-red-500 hover:text-red-700 transition-colors uppercase tracking-tighter">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> Xóa tất cả
-                    </button>
+                  {/* --- TIÊU ĐỀ & CÁC NÚT (ĐÃ CHỈNH SỬA GIAO DIỆN) --- */}
+                  <div className="flex items-center justify-between mb-2">
+                    <label className="text-sm font-medium text-gray-700 font-sans">Nhập dữ liệu</label>
+                    
+                    {/* CỤM NÚT BỘ LỌC VÀ XÓA */}
+                    <div className="flex items-center gap-3 relative">
+                        
+                        {/* 1. NÚT MỞ BỘ LỌC (Giao diện tinh tế hơn) */}
+                        <div className="relative" ref={filterRef}>
+                            <button 
+                                onClick={() => setIsFilterMenuOpen(!isFilterMenuOpen)}
+                                className={`flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded transition-colors ${isFilterMenuOpen ? 'bg-indigo-100 text-indigo-700' : 'text-gray-600 hover:bg-gray-50 hover:text-indigo-700'}`}
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                                Bộ lọc
+                            </button>
+
+                            {/* POPUP MENU BỘ LỌC */}
+                            {isFilterMenuOpen && (
+                                <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-200">
+                                    <div className="flex items-center justify-between mb-2 pb-2 border-b border-gray-100">
+                                        <span className="text-[10px] font-bold text-gray-500 uppercase">Giữ lại:</span>
+                                        <div className="group relative cursor-help">
+                                            <div className="text-gray-400 hover:text-indigo-500 border border-gray-300 rounded-full w-3.5 h-3.5 flex items-center justify-center text-[9px] font-serif font-bold bg-gray-50">i</div>
+                                            {/* Tooltip chữ i */}
+                                            <div className="absolute right-0 bottom-full mb-2 w-48 p-2 bg-gray-900 text-white text-[9px] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg z-[60]">
+                                                Bỏ tích ô nào, chữ loại đó sẽ bị xóa ngay lập tức khỏi ô nhập liệu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-2.5">
+                                        <label className="flex items-center gap-2 text-xs text-gray-700 cursor-pointer hover:text-indigo-600 select-none">
+                                            <input type="checkbox" checked={filterOptions.kanji} onChange={() => handleFilterChange('kanji')} className="accent-indigo-600 w-3.5 h-3.5 rounded-sm"/>
+                                            Kanji & Bộ thủ
+                                        </label>
+                                        <label className="flex items-center gap-2 text-xs text-gray-700 cursor-pointer hover:text-indigo-600 select-none">
+                                            <input type="checkbox" checked={filterOptions.hiragana} onChange={() => handleFilterChange('hiragana')} className="accent-indigo-600 w-3.5 h-3.5 rounded-sm"/>
+                                            Hiragana
+                                        </label>
+                                        <label className="flex items-center gap-2 text-xs text-gray-700 cursor-pointer hover:text-indigo-600 select-none">
+                                            <input type="checkbox" checked={filterOptions.katakana} onChange={() => handleFilterChange('katakana')} className="accent-indigo-600 w-3.5 h-3.5 rounded-sm"/>
+                                            Katakana
+                                        </label>
+                                        
+                                        <hr className="border-gray-100"/>
+                                        
+                                        {/* NÚT XÓA LATINH + DỒN DÒNG */}
+                                        <button onClick={handleRemoveLatinManual} className="w-full py-2 text-xs font-bold text-red-500 bg-red-50 hover:bg-red-100 rounded-lg flex items-center justify-center gap-1 transition">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                                            Xóa chữ Latinh
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* 2. NÚT XÓA TẤT CẢ */}
+                        <button onClick={() => { setLocalText(''); handleChange('text', ''); }} className="flex items-center gap-1 text-[10px] font-bold text-red-500 hover:text-red-700 transition-colors uppercase tracking-tighter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg> XÓA TẤT CẢ
+                        </button>
+                    </div>
                   </div>
-                   <textarea className="w-full h-23 p-3 border border-gray-300 rounded-lg resize-none font-['Klee_One'] text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner" placeholder="漢字, ひらがな, カタカナ" value={config.text} onChange={(e) => handleChange('text', e.target.value)} />
+                   <textarea 
+                    className={`w-full h-23 p-3 border border-gray-300 rounded-lg resize-none text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner ${(isWarningMode && !localText) ? 'font-sans' : "font-['Klee_One']"}`}
+                    placeholder={getDynamicPlaceholder()} 
+                    value={localText} 
+                    onChange={handleInputText} 
+                    onCompositionStart={handleCompositionStart}
+                    onCompositionEnd={handleCompositionEnd}
+                    onBlur={handleBlurText}    
+                   />
                 </div>
                 
-                {/* --- 5. KHU VỰC 3 NÚT CHỨC NĂNG --- */}
+                {/* --- FOOTER CHỨC NĂNG --- */}
                 <div className="flex flex-col gap-3 w-full">
                   
                   {/* HÀNG 3 NÚT */}
@@ -2896,25 +3062,24 @@ const ALPHABETS = {
                         <button onClick={() => toggleMenu('quick')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isMenuOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
                           <span className="font-bold text-xs whitespace-nowrap">Chọn nhanh</span>
                         </button>
-                        
                         {isMenuOpen && (
                           <div className="absolute bottom-full left-0 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-4 animate-in fade-in zoom-in-95 duration-200">
                             <div>
                               <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Bảng chữ cái</p>
                               <div className="grid grid-cols-2 gap-2">
-                                <button onClick={() => handleSmartLoad(Object.keys(ALPHABETS.hiragana).join(''))} className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition">あ Hiragana</button>
-                                <button onClick={() => handleSmartLoad(Object.keys(ALPHABETS.katakana).join(''))} className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition">ア Katakana</button>
+                                <button onClick={() => handleSmartLoad(Object.keys(ALPHABETS.hiragana).join(''), 'hiragana')} className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition">あ Hiragana</button>
+                                <button onClick={() => handleSmartLoad(Object.keys(ALPHABETS.katakana).join(''), 'katakana')} className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition">ア Katakana</button>
                               </div>
                             </div>
                             <div>
                                 <p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
-                                <button onClick={() => handleSmartLoad(RADICAL_LIST)} className="w-full py-2 text-xs font-bold border border-gray-200 bg-white text-gray-600 rounded hover:bg-black hover:text-white transition">Bộ thủ cơ bản</button>
+                                <button onClick={() => handleSmartLoad(RADICAL_LIST, 'kanji')} className="w-full py-2 text-xs font-bold border border-gray-200 bg-white text-gray-600 rounded hover:bg-black hover:text-white transition">Bộ thủ cơ bản</button>
                             </div>
                             <div>
                               <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Lấy tất cả Kanji</p>
                               <div className="grid grid-cols-5 gap-1.5">
                                 {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-                                  <button key={level} onClick={() => handleSmartLoad(KANJI_LEVELS[level])} className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-md hover:bg-black hover:text-white transition">{level}</button>
+                                  <button key={level} onClick={() => handleSmartLoad(KANJI_LEVELS[level], 'kanji')} className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-md hover:bg-black hover:text-white transition">{level}</button>
                                 ))}
                               </div>
                             </div>
@@ -2930,6 +3095,7 @@ const ALPHABETS = {
                         
                         {isUtilsOpen && (
                           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+                            
                             {/* Xáo trộn */}
                             <div>
                                 <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Công cụ</p>
@@ -2955,8 +3121,8 @@ const ALPHABETS = {
                                                 if (val === '') setRandomCount('');
                                                 else setRandomCount(parseInt(val));
                                             }}
-                                            onKeyDown={handleRandomInputEnter} // Sự kiện bấm Enter
-                                            onBlur={handleRandomInputBlur}     // Sự kiện click ra ngoài
+                                            onKeyDown={(e) => { if(e.key==='Enter' && randomCount>50) setRandomCount(50) }}
+                                            onBlur={() => { if(randomCount>50) setRandomCount(50) }}
                                             className="w-14 h-7 text-xs text-center font-bold bg-orange-50 border border-orange-200 text-orange-700 rounded focus:border-orange-500 outline-none"
                                         />
                                         <span className="text-[10px] font-bold text-gray-500">chữ</span>
@@ -2964,9 +3130,9 @@ const ALPHABETS = {
                                 </div>
                                 <div className="grid grid-cols-5 gap-1.5">
                                     {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-                                    <button key={`rand-${level}`} onClick={() => handleRandomLoad(level)} className="py-2 text-[10px] font-bold bg-orange-50 text-orange-600 border border-orange-100 rounded-md hover:bg-orange-500 hover:text-white transition">
-                                        {level}
-                                    </button>
+                                       <button key={level} onClick={() => handleRandomLoad(level)} className="py-2 text-[11px] font-bold bg-orange-50 text-orange-700 border border-orange-200 rounded-md hover:bg-orange-600 hover:text-white transition">
+                                       {level}
+                                       </button>
                                     ))}
                                 </div>
                             </div>
