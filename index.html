@@ -3077,11 +3077,22 @@ const ALPHABETS = {
                                         {/* ĐƯỜNG KẺ MỜ NGĂN CÁCH (MỚI) */}
                                         <hr className="border-gray-100 my-1"/>
 
-                                        {/* TÙY CHỌN: XÓA TRÙNG LẶP (MỚI) */}
-                                        <label className="flex items-center gap-2 text-xs text-gray-700 cursor-pointer hover:text-indigo-600 select-none">
-                                            <input type="checkbox" checked={filterOptions.removeDuplicates} onChange={() => handleFilterChange('removeDuplicates')} className="accent-indigo-600 w-3.5 h-3.5 rounded-sm"/>
-                                            Xóa chữ trùng lặp
-                                        </label>
+    {/* TÙY CHỌN: XÓA TRÙNG LẶP (ĐỔI MÀU ĐỘNG) */}
+<label className={`flex items-center gap-2 text-xs cursor-pointer select-none transition-colors ${
+    filterOptions.removeDuplicates 
+        ? 'text-red-500 hover:text-red-600'  // Khi ĐANG TÍCH: Màu đỏ đậm
+        : 'text-gray-700 hover:text-indigo-600'        // Khi KHÔNG TÍCH: Màu xám bình thường
+}`}>
+    <input 
+        type="checkbox" 
+        checked={filterOptions.removeDuplicates} 
+        onChange={() => handleFilterChange('removeDuplicates')} 
+        className={`w-3.5 h-3.5 rounded-sm ${
+            filterOptions.removeDuplicates ? 'accent-red-500' : 'accent-indigo-500'
+        }`}
+    />
+    Xóa chữ trùng lặp
+</label>
                                         
                                         <hr className="border-gray-100"/>
                                         
