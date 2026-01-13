@@ -2804,13 +2804,22 @@ const ALPHABETS = {
             handleChange('text', newText.replace(/[a-zA-Z]/g, ''));
         };
 
-        // --- 4. NÚT XÓA LATINH + DỒN DÒNG ---
+// --- 4. NÚT XÓA LATINH + DỒN DÒNG (PHIÊN BẢN XÓA SẠCH SÀNH SANH) ---
         const handleRemoveLatinManual = () => {
             if (!localText) return;
             let cleaned = localText;
+            
+            // 1. Xóa chữ cái Latinh
             cleaned = cleaned.replace(/[a-zA-Z]/g, '');
+            
+            // 2. Xóa hết dấu xuống dòng (Enter) -> Thay bằng rỗng ''
             cleaned = cleaned.replace(/[\n\r]+/g, '');
-            cleaned = cleaned.replace(/[ \t]{2,}/g, ' ');
+            
+            // 3. Xóa hết các loại dấu cách (thường, tab, Nhật) -> Thay bằng rỗng ''
+            // Regex này bao gồm: dấu cách thường ( ), dấu cách Nhật (　), và tab (\t)
+            cleaned = cleaned.replace(/[ 　\t]+/g, ''); 
+            
+            // Cắt khoảng trắng thừa 2 đầu (nếu còn sót)
             cleaned = cleaned.trim();
 
             setLocalText(cleaned);
