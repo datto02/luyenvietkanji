@@ -2843,13 +2843,12 @@ const getJLPTLevel = (char) => {
     return null;
 };
 
-// --- BẢNG MÀU CHO TỪNG CẤP ĐỘ ---
 const levelColors = {
-    N5: 'bg-green-100 text-green-700 border-green-200',
-    N4: 'bg-blue-100 text-blue-700 border-blue-200',
-    N3: 'bg-orange-100 text-orange-700 border-orange-200',
-    N2: 'bg-purple-100 text-purple-700 border-purple-200',
-    N1: 'bg-red-100 text-red-700 border-red-200'
+    N5: 'bg-green-100 text-green-700 border-green-200 hover:bg-green-600 hover:text-white hover:border-green-600',
+    N4: 'bg-blue-100 text-blue-700 border-blue-200 hover:bg-blue-600 hover:text-white hover:border-blue-600',
+    N3: 'bg-orange-100 text-orange-700 border-orange-200 hover:bg-orange-600 hover:text-white hover:border-orange-600',
+    N2: 'bg-purple-100 text-purple-700 border-purple-200 hover:bg-purple-600 hover:text-white hover:border-purple-600',
+    N1: 'bg-red-100 text-red-700 border-red-200 hover:bg-red-600 hover:text-white hover:border-red-600'
 };
 
         
@@ -3426,9 +3425,15 @@ useEffect(() => {
                             <div>
                               <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Lấy tất cả Kanji</p>
                               <div className="grid grid-cols-5 gap-1.5">
-                                {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-                                  <button key={level} onClick={() => handleSmartLoad(KANJI_LEVELS[level], 'kanji')} className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-md hover:bg-black hover:text-white transition">{level}</button>
-                                ))}
+                               {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+  <button 
+    key={level} 
+    onClick={() => handleSmartLoad(KANJI_LEVELS[level], 'kanji')} 
+    className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 ${levelColors[level]}`}
+  >
+    {level}
+  </button>
+))}
                               </div>
                             </div>
                           </div>
@@ -3471,17 +3476,21 @@ useEffect(() => {
                                             }}
                                             onKeyDown={(e) => { if(e.key==='Enter' && randomCount>50) setRandomCount(50) }}
                                             onBlur={() => { if(randomCount>50) setRandomCount(50) }}
-                                            className="w-14 h-7 text-xs text-center font-bold bg-orange-50 border border-orange-200 text-orange-700 rounded focus:border-orange-500 outline-none"
+                                            className="w-14 h-7 text-xs text-center font-bold bg-white border border-gray-300 text-gray-700 rounded focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors"
                                         />
                                         <span className="text-[10px] font-bold text-gray-500">chữ</span>
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-5 gap-1.5">
-                                    {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-                                       <button key={level} onClick={() => handleRandomLoad(level)} className="py-2 text-[11px] font-bold bg-orange-50 text-orange-700 border border-orange-200 rounded-md hover:bg-orange-600 hover:text-white transition">
-                                       {level}
-                                       </button>
-                                    ))}
+                                   {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+  <button 
+    key={level} 
+    onClick={() => handleRandomLoad(level)} 
+    className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 ${levelColors[level]}`}
+  >
+    {level}
+  </button>
+))}
                                 </div>
                             </div>
                             {/* Phần Quizlet nằm ở cuối cùng */}
