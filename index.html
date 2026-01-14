@@ -2837,6 +2837,8 @@ const ALPHABETS = {
         const [isUtilsOpen, setIsUtilsOpen] = useState(false);
         const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
         const filterRef = useRef(null);
+        const quickMenuRef = useRef(null); // THÊM: Ref cho menu Chọn nhanh
+        const utilsMenuRef = useRef(null); // THÊM: Ref cho menu Tiện ích
         
         // Biến kiểm soát bộ gõ IME (Quan trọng)
         const isComposing = useRef(false);
@@ -2866,15 +2868,30 @@ const ALPHABETS = {
         };
 
         // --- 1. CLICK RA NGOÀI ĐỂ ĐÓNG MENU ---
-        useEffect(() => {
-            function handleClickOutside(event) {
-                if (filterRef.current && !filterRef.current.contains(event.target)) {
-                    setIsFilterMenuOpen(false);
-                }
-            }
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => document.removeEventListener("mousedown", handleClickOutside);
-        }, [filterRef]);
+       // --- XỬ LÝ CLICK RA NGOÀI ĐỂ ĐÓNG MENU ---
+useEffect(() => {
+    function handleClickOutside(event) {
+        // 1. Xử lý Bộ lọc (Filter)
+        if (filterRef.current && !filterRef.current.contains(event.target)) {
+            setIsFilterMenuOpen(false);
+        }
+
+        // 2. Xử lý "Chọn nhanh" (Quick Select) - Tự đóng khi click ra ngoài
+        if (isMenuOpen && quickMenuRef.current && !quickMenuRef.current.contains(event.target)) {
+            setIsMenuOpen(false);
+        }
+
+        // 3. Xử lý "Tiện ích" (Utils) - Tự đóng khi click ra ngoài
+        if (isUtilsOpen && utilsMenuRef.current && !utilsMenuRef.current.contains(event.target)) {
+            setIsUtilsOpen(false);
+        }
+
+        // LƯU Ý: Không thêm logic cho "Tùy chỉnh" (isConfigOpen) để giữ nguyên theo ý bạn
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+}, [isMenuOpen, isUtilsOpen, isFilterMenuOpen]); // Thêm dependencies để cập nhật trạng thái mới nhất
 
         // --- 2. ĐỒNG BỘ DỮ LIỆU TỪ NGOÀI ---
         useEffect(() => {
@@ -3326,7 +3343,7 @@ const ALPHABETS = {
                   <div className="flex flex-row gap-4 w-full h-12">
                       
                       {/* 1. CHỌN NHANH */}
-                      <div className="relative flex-1"> 
+                      <div className="relative flex-1" ref={quickMenuRef}> 
                         <button onClick={() => toggleMenu('quick')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isMenuOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
                           <span className="font-bold text-xs whitespace-nowrap">Chọn nhanh</span>
                         </button>
@@ -3356,7 +3373,7 @@ const ALPHABETS = {
                       </div>
 
                       {/* 2. TIỆN ÍCH */}
-                      <div className="relative flex-1"> 
+                      <div className="relative flex-1" ref={utilsMenuRef}> 
                         <button onClick={() => toggleMenu('utils')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isUtilsOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
                           <span className="font-bold text-xs whitespace-nowrap">Tiện ích</span>
                         </button>
