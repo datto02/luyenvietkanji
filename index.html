@@ -3143,20 +3143,30 @@ useEffect(() => {
     setActiveIndex(0); // Reset về vị trí đầu tiên
 };
 
-        // Hàm khi chọn một chữ từ danh sách gợi ý
-        const selectResult = (item) => {
-            const newText = config.text + item.char;
-            setLocalText(newText);
-            handleChange('text', newText);
-            setSearchTerm('');
-            setSearchResults([]);
-            setActiveIndex(0);
-            
-            // Tự động bật bộ lọc tương ứng
-            if (item.type === 'kanji') setFilterOptions(p => ({...p, kanji: true}));
-            else if (item.char.match(/[\u3040-\u309F]/)) setFilterOptions(p => ({...p, hiragana: true}));
-            else setFilterOptions(p => ({...p, katakana: true}));
-        };
+       // --- HÀM CHỌN CHỮ TỪ GỢI Ý (ĐÃ FIX LỖI TRÙNG LẶP) ---
+const selectResult = (item) => {
+    // 1. Tạo chuỗi mới bằng cách cộng chữ vừa chọn vào cuối
+    let newText = config.text + item.char;
+
+    // 2. KIỂM TRA: Nếu đang bật tính năng "Xóa trùng lặp" thì lọc chuỗi ngay
+    if (filterOptions.removeDuplicates) {
+        newText = getUniqueChars(newText);
+    }
+
+    // 3. Cập nhật vào giao diện và dữ liệu hệ thống
+    setLocalText(newText);
+    handleChange('text', newText);
+    
+    // 4. Reset ô tìm kiếm
+    setSearchTerm('');
+    setSearchResults([]);
+    setActiveIndex(0);
+    
+    // 5. Tự động bật bộ lọc tương ứng 
+    if (item.type === 'kanji') setFilterOptions(p => ({...p, kanji: true}));
+    else if (item.char.match(/[\u3040-\u309F]/)) setFilterOptions(p => ({...p, hiragana: true}));
+    else setFilterOptions(p => ({...p, katakana: true}));
+};
         
         const toggleMenu = (menuName) => {
             setIsCafeModalOpen(false); 
