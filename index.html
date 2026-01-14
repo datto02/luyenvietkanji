@@ -2839,6 +2839,7 @@ const ALPHABETS = {
         const filterRef = useRef(null);
         const quickMenuRef = useRef(null); // THÊM: Ref cho menu Chọn nhanh
         const utilsMenuRef = useRef(null); // THÊM: Ref cho menu Tiện ích
+        const cafeModalRef = useRef(null);
         
         // Biến kiểm soát bộ gõ IME (Quan trọng)
         const isComposing = useRef(false);
@@ -2885,13 +2886,16 @@ useEffect(() => {
         if (isUtilsOpen && utilsMenuRef.current && !utilsMenuRef.current.contains(event.target)) {
             setIsUtilsOpen(false);
         }
+        if (isCafeModalOpen && cafeModalRef.current && !cafeModalRef.current.contains(event.target)) {
+            setIsCafeModalOpen(false);
+        }
 
         // LƯU Ý: Không thêm logic cho "Tùy chỉnh" (isConfigOpen) để giữ nguyên theo ý bạn
     }
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-}, [isMenuOpen, isUtilsOpen, isFilterMenuOpen]); // Thêm dependencies để cập nhật trạng thái mới nhất
+}, [isMenuOpen, isUtilsOpen, isFilterMenuOpen, isCafeModalOpen]); // Thêm dependencies để cập nhật trạng thái mới nhất
 
         // --- 2. ĐỒNG BỘ DỮ LIỆU TỪ NGOÀI ---
         useEffect(() => {
@@ -3158,7 +3162,7 @@ useEffect(() => {
                 TẠO FILE LUYỆN VIẾT KANJI
               </h1>
               <div className="flex items-center flex-wrap gap-x-2 gap-y-1 text-[11px] leading-tight">
-                <div className="relative inline-block">
+                <div className="relative inline-block" ref={cafeModalRef}>
                   <button onClick={() => { setIsCafeModalOpen(!isCafeModalOpen); setIsMenuOpen(false); setIsUtilsOpen(false); setIsConfigOpen(false); setIsFilterMenuOpen(false); }} className="text-indigo-500 hover:text-orange-700 flex items-center gap-0.5 font-bold transition-all active:scale-95">
                     <span className="text-[15px]">☕</span> Mời ly cafe
                   </button>
