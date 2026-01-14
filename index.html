@@ -2840,7 +2840,7 @@ const ALPHABETS = {
         const quickMenuRef = useRef(null); // THÊM: Ref cho menu Chọn nhanh
         const utilsMenuRef = useRef(null); // THÊM: Ref cho menu Tiện ích
         const cafeModalRef = useRef(null);
-        
+        const searchInputRef = useRef(null); // Tạo "địa chỉ" cho ô nhập liệu
         // Biến kiểm soát bộ gõ IME (Quan trọng)
         const isComposing = useRef(false);
 
@@ -3198,6 +3198,7 @@ useEffect(() => {
     
     {/* Ô Input */}
     <input 
+        ref={searchInputRef}
         type="text" 
         value={searchTerm} 
         // 1. CHỈNH SỬA PADDING: Đổi pr-3 thành pr-10 để chữ không đè lên nút X
@@ -3226,6 +3227,7 @@ useEffect(() => {
             onClick={() => {
                 setSearchTerm('');    // Xóa chữ
                 setSearchResults([]); // Đóng danh sách gợi ý
+                searchInputRef.current.focus();
             }}
             className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-indigo-600 transition-colors"
             title="Xóa tìm kiếm"
