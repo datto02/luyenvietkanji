@@ -2917,6 +2917,7 @@ const levelColors = {
         const utilsMenuRef = useRef(null); // THÊM: Ref cho menu Tiện ích
         const cafeModalRef = useRef(null);
         const searchInputRef = useRef(null); // Tạo "địa chỉ" cho ô nhập liệu
+        const configMenuRef = useRef(null);
         // Biến kiểm soát bộ gõ IME (Quan trọng)
         const isComposing = useRef(false);
 
@@ -2965,13 +2966,16 @@ useEffect(() => {
         if (isCafeModalOpen && cafeModalRef.current && !cafeModalRef.current.contains(event.target)) {
             setIsCafeModalOpen(false);
         }
+        // 5. MỚI: Xử lý "Tùy chỉnh" - Tự đóng khi click ra ngoài
+        if (isConfigOpen && configMenuRef.current && !configMenuRef.current.contains(event.target)) {
+            setIsConfigOpen(false);
+        }
 
-        // LƯU Ý: Không thêm logic cho "Tùy chỉnh" (isConfigOpen) để giữ nguyên theo ý bạn
     }
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-}, [isMenuOpen, isUtilsOpen, isFilterMenuOpen, isCafeModalOpen]); // Thêm dependencies để cập nhật trạng thái mới nhất
+}, [isMenuOpen, isUtilsOpen, isFilterMenuOpen, isCafeModalOpen, isConfigOpen]); // Thêm dependencies để cập nhật trạng thái mới nhất
 
         // --- 2. ĐỒNG BỘ DỮ LIỆU TỪ NGOÀI ---
         useEffect(() => {
@@ -3590,7 +3594,7 @@ const selectResult = (item) => {
                       </div>
 
                       {/* 3. TÙY CHỈNH */}
-                      <div className="relative flex-1"> 
+                      <div className="relative flex-1" ref={configMenuRef}> 
                         <button onClick={() => toggleMenu('config')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isConfigOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
                           <span className="font-bold text-xs whitespace-nowrap">Tùy chỉnh</span>
                         </button>
