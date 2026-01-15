@@ -2874,6 +2874,19 @@ const useKanjiReadings = (char, active) => {
         const [activeIndex, setActiveIndex] = useState(0); 
         const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
         const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
+// --- CHẶN CUỘN TRANG KHI MỞ MODAL ---
+useEffect(() => {
+    // Nếu khung In hoặc khung Tài liệu đang mở
+    if (isPrintModalOpen || isDocsModalOpen) {
+        document.body.style.overflow = 'hidden'; // Khóa cuộn
+    } else {
+        document.body.style.overflow = 'unset';  // Mở lại cuộn bình thường
+    }
+    // Dọn dẹp khi tắt
+    return () => { document.body.style.overflow = 'unset'; };
+}, [isPrintModalOpen, isDocsModalOpen]);
+
+
         useEffect(() => {
     if (scrollRef.current) {
         const activeItem = scrollRef.current.childNodes[activeIndex];
@@ -3918,6 +3931,15 @@ const selectResult = (item) => {
         
         // --- STATE MỚI: QUẢN LÝ POPUP SAU KHI IN ---
         const [showPostPrintDonate, setShowPostPrintDonate] = useState(false);
+// --- (MỚI THÊM) CHẶN CUỘN TRANG KHI HIỆN POPUP SAU KHI IN ---
+useEffect(() => {
+    if (showPostPrintDonate) {
+        document.body.style.overflow = 'hidden'; // Khóa cuộn
+    } else {
+        document.body.style.overflow = 'unset';  // Mở lại cuộn
+    }
+    return () => { document.body.style.overflow = 'unset'; };
+}, [showPostPrintDonate]);
 
         const [config, setConfig] = useState({
           text: '',
