@@ -2894,6 +2894,22 @@ const useKanjiReadings = (char, active) => {
         const [activeIndex, setActiveIndex] = useState(0); 
         const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
         const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
+
+        // --- CHẶN TUYỆT ĐỐI CTRL + P (KHÔNG CÓ GÌ XẢY RA) ---
+      useEffect(() => {
+        const handleKeyDown = (e) => {
+          // Kiểm tra Ctrl + P (Win) hoặc Command + P (Mac)
+          if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
+            e.preventDefault(); // Chặn trình duyệt mở bảng in
+            e.stopPropagation(); // Chặn sự kiện lan truyền
+            return false; // Kết thúc ngay lập tức, không làm gì cả
+          }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+      }, []);
+        
 // --- CHẶN CUỘN TRANG KHI MỞ MODAL ---
 useEffect(() => {
     // Nếu khung In hoặc khung Tài liệu đang mở
