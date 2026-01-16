@@ -2687,7 +2687,7 @@ const useKanjiReadings = (char, active) => {
       {/* 1. ÂM HÁN VIỆT + NGHĨA (Luôn hiện nếu có dữ liệu) */}
       {info && (
         <div className="flex-shrink-0 mr-4 flex items-baseline gap-2 mb-[3px]">
-          <span className="font-bold text-sm leading-none text-black whitespace-nowrap">
+          <span className="font-bold text-sm leading-none text-black whitespace-nowrap uppercase">
             {info.sound}
           </span>
           {info.meaning && info.meaning.trim() !== "" && (
@@ -2844,8 +2844,22 @@ const useKanjiReadings = (char, active) => {
 
       // 4. Page Layout
       const Page = ({ chars, config }) => {
+      const isSample = !config.text || config.text.trim().length === 0;
         return (
           <div className="a4-page mx-auto relative flex flex-col pt-[15mm] pl-[3mm] bg-white">
+          {(!config.text || config.text.trim().length === 0) && (
+    <div className="w-full max-w-[210mm] mb-5 text-left pl-[8mm]">
+        <div className="flex items-end gap-3">
+            {/* Logic: Chỉ hiện khi nội dung TRỐNG. Nếu có chữ thì ẩn luôn */}
+            {(!config.text || config.text.trim().length === 0) && (
+                <>
+                   <span className="text-2xl font-black text-gray-800 uppercase leading-none">BẢN MẪU</span>
+                   <span className="text-sm text-gray-500 font-medium pb-1">(hãy nhập dữ liệu để tạo file luyện viết)</span>
+                </>
+            )}
+        </div>
+    </div>
+)}
             <div className="flex flex-col gap-[4mm]">
               {chars.map((char, index) => (
                 <WorkbookRow
@@ -3680,9 +3694,16 @@ const selectResult = (item) => {
 {/* --- PHẦN CUỐI CỦA SIDEBAR (CẬP NHẬT THÊM NÚT TÀI LIỆU) --- */}
       <div className="w-full mt-auto pt-4 flex flex-col gap-4"> 
         
-        {/* 1. NÚT IN (GIỮ NGUYÊN) */}
+        {/* 1. NÚT IN (ĐÃ SỬA: CHẶN KHI RỖNG) */}
         <button 
-          onClick={() => setIsPrintModalOpen(true)} 
+          onClick={() => {
+            // --- LOGIC KIỂM TRA MỚI ---
+            if (!config.text || config.text.trim().length === 0) {
+                alert("Vui lòng nhập nội dung để tạo file"); 
+                return; // Dừng lại, không mở modal in
+            }
+            setIsPrintModalOpen(true); 
+          }} 
           className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-lg shadow-indigo-200 flex items-center justify-center gap-2 transition-all active:scale-95 group"
         >
           <svg className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg> 
@@ -4038,18 +4059,25 @@ useEffect(() => {
 
 
 
-        const pages = useMemo(() => {
-          const chars = Array.from(config.text).filter(c => c.trim().length > 0);
-          const chunks = [];
-          const ROWS_PER_PAGE = 10;
-          
-          for (let i = 0; i < chars.length; i += ROWS_PER_PAGE) {
-            chunks.push(chars.slice(i, i + ROWS_PER_PAGE));
-          }
+        // --- BƯỚC 1: LOGIC TỰ ĐIỀN CHỮ MẪU ---
+  const pages = useMemo(() => {
+    // Kiểm tra: Nếu có nội dung thì dùng nội dung đó.
+    // Nếu KHÔNG có nội dung (trống) thì dùng chữ mẫu "日本漢字"
+    const contentToShow = (config.text && config.text.trim().length > 0) 
+                          ? config.text 
+                          : "日本漢字"; 
 
-          if (chunks.length === 0) return [[]];
-          return chunks;
-        }, [config.text]);
+    const chars = Array.from(contentToShow).filter(c => c.trim().length > 0);
+    const chunks = [];
+    const ROWS_PER_PAGE = 10; // Số chữ trên 1 trang
+    
+    for (let i = 0; i < chars.length; i += ROWS_PER_PAGE) {
+      chunks.push(chars.slice(i, i + ROWS_PER_PAGE));
+    }
+
+    if (chunks.length === 0) return [[]];
+    return chunks;
+  }, [config.text]);
 
         // --- HÀM IN ẤN CHUẨN (SỬA LỖI HIỆN POPUP QUÁ SỚM) ---
         const handlePrint = () => {
@@ -4099,12 +4127,7 @@ useEffect(() => {
                 />
               ))}
 
-              {config.text.length === 0 && (
-                <div className="no-print absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-gray-400 text-center pointer-events-none">
-                  <p className="text-xl font-bold"> BẢN XEM TRƯỚC</p>
-                  <p>Nhập dữ liệu để tạo trang tập viết.</p>
-                </div>
-              )}
+              
             </div>
 
             {/* --- POPUP DONATE SAU KHI IN --- */}
