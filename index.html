@@ -31,9 +31,8 @@
       /* --- TRACING STYLE --- */
       .kanji-trace {
         font-family: 'Klee One', 'KanjiStrokeOrders', 'UD_Digi_Kyokasho', 'Noto_Serif_JP', serif;
-        /* Color is now handled inline for opacity control, but we keep a fallback */
         color: #bfbfbf; 
-        -webkit-text-stroke: 0px white; /* Subtle masking for grid lines */
+        -webkit-text-stroke: 0px white; 
         paint-order: stroke fill;
         position: relative;
         z-index: 10;
@@ -65,8 +64,6 @@
         overflow: hidden;
       }
       
-      /* Target the injected SVG specifically */
-      /* MANUAL CONTROL UPDATE: Use CSS Variables for transform */
       .ref-wrapper svg {
         width: 100% !important;
         height: 100% !important;
@@ -76,7 +73,7 @@
       }
       
       .ref-wrapper text {
-        font-size: 8px; /* Stroke numbers */
+        font-size: 8px;
         fill: #999;
         font-family: sans-serif;
       }
@@ -162,23 +159,23 @@
         border-radius: 10px;
       }
       .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #bfdbfe; /* Màu xanh nhạt (Blue-200) */
+        background-color: #bfdbfe; 
         border-radius: 10px;
       }
       .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background-color: #60a5fa; /* Đậm hơn khi di chuột */
+        background-color: #60a5fa;
       }
-      /* Hỗ trợ Firefox cho thanh đẹp */
+      /* Hỗ trợ Firefox */
       .custom-scrollbar {
         scrollbar-width: thin;
         scrollbar-color: #bfdbfe #ffffff;
       }
-      /* --- 3. CLASS THANH TRƯỢT TRONG SUỐT (Fix lỗi che góc bo) --- */
+      /* --- 3. CLASS THANH TRƯỢT TRONG SUỐT --- */
       .input-scrollbar::-webkit-scrollbar {
-        width: 14px; /* Tăng độ rộng vùng bấm */
+        width: 14px; 
       }
       
-      /* QUAN TRỌNG: Nền trong suốt và có margin để tránh góc bo */
+      /* Nền trong suốt và có margin để tránh góc bo */
       .input-scrollbar::-webkit-scrollbar-track {
         background: transparent; 
         margin-top: 8px;    
@@ -187,14 +184,14 @@
 
       /* Cục lăn: Bo tròn và nằm lơ lửng ở giữa */
       .input-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #cbd5e1; /* Màu xám nhạt (Slate-300) */
-        border-radius: 20px;       /* Bo tròn cục lăn */
-        border: 5px solid transparent; /* Viền trong suốt dày để ép cục lăn nhỏ lại */
-        background-clip: content-box;  /* Chỉ tô màu bên trong, chừa viền ra */
+        background-color: #cbd5e1; 
+        border-radius: 20px;       
+        border: 5px solid transparent; 
+        background-clip: content-box;  
       }
 
       .input-scrollbar::-webkit-scrollbar-thumb:hover {
-        background-color: #94a3b8; /* Đậm hơn khi di chuột */
+        background-color: #94a3b8; 
       }
     </style>
 <script type="importmap">
@@ -419,9 +416,9 @@ const isJLPT = dbData.KANJI_LEVELS.N5.includes(char) ||
       const GridBox = ({ char, type, config, index, svgData, failed }) => {
         const isReference = type === 'reference';
         const showTrace = index < config.traceCount;
-        const { gridType, gridOpacity } = config; // Lấy thêm gridOpacity
+        const { gridType, gridOpacity } = config; 
 
-        // Màu khung (đen với độ trong suốt tùy chỉnh)
+   
         const gridColor = `rgba(0, 0, 0, ${gridOpacity})`;
 
         const refStyle = isReference ? {
@@ -483,14 +480,13 @@ const isJLPT = dbData.KANJI_LEVELS.N5.includes(char) ||
       };
 
      // 3. WorkbookRow 
-     const WorkbookRow = ({ char, config, dbData }) => { // Thêm config vào đây
+     const WorkbookRow = ({ char, config, dbData }) => {
   const { loading, paths, fullSvg, failed } = useKanjiSvg(char);
   const boxes = Array.from({ length: 12 }, (_, i) => i);
   const gridBorderColor = `rgba(0, 0, 0, ${config.gridOpacity})`;
 
   return (
     <div className="flex flex-col w-full px-[8mm]">
-      {/* TRUYỀN config VÀO ĐÂY ĐỂ HeaderSection KHÔNG BỊ LỖI */}
       <HeaderSection 
         char={char} 
         paths={paths} 
@@ -843,7 +839,6 @@ useEffect(() => {
             cleaned = cleaned.replace(/(\n\s*){2,}/g, '\n'); 
             cleaned = cleaned.trim();
 
-            // Thêm đoạn này:
             if (filterOptions.removeDuplicates) {
                 cleaned = getUniqueChars(cleaned);
             }
@@ -996,7 +991,6 @@ const selectResult = (item) => {
         ref={searchInputRef}
         type="text" 
         value={searchTerm} 
-        // 1. CHỈNH SỬA PADDING: Đổi pr-3 thành pr-10 để chữ không đè lên nút X
         className="w-full pl-10 pr-10 py-2.5 border border-indigo-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-indigo-50 text-indigo-900 placeholder-indigo-400 font-bold font-sans" 
         placeholder="Tìm Kanji theo âm Hán Việt" 
         onChange={(e) => handleSearchRealtime(e.target.value)} 
@@ -1807,7 +1801,7 @@ const selectResult = (item) => {
         ))}
       </div>
 
-      {/* Popup Donate (Giữ nguyên code cũ của bạn ở đây) */}
+      {/* Popup Donate  */}
       {showPostPrintDonate && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-300 no-print">
           <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden relative animate-in zoom-in-95 duration-300 border border-orange-100">
