@@ -173,7 +173,29 @@
         scrollbar-width: thin;
         scrollbar-color: #bfdbfe #ffffff;
       }
+      /* --- 3. CLASS THANH TRƯỢT TRONG SUỐT (Fix lỗi che góc bo) --- */
+      .input-scrollbar::-webkit-scrollbar {
+        width: 14px; /* Tăng độ rộng vùng bấm */
+      }
       
+      /* QUAN TRỌNG: Nền trong suốt và có margin để tránh góc bo */
+      .input-scrollbar::-webkit-scrollbar-track {
+        background: transparent; 
+        margin-top: 8px;    
+        margin-bottom: 8px; 
+      }
+
+      /* Cục lăn: Bo tròn và nằm lơ lửng ở giữa */
+      .input-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1; /* Màu xám nhạt (Slate-300) */
+        border-radius: 20px;       /* Bo tròn cục lăn */
+        border: 5px solid transparent; /* Viền trong suốt dày để ép cục lăn nhỏ lại */
+        background-clip: content-box;  /* Chỉ tô màu bên trong, chừa viền ra */
+      }
+
+      .input-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8; /* Đậm hơn khi di chuột */
+      }
     </style>
 <script type="importmap">
 {
@@ -3498,7 +3520,7 @@ const selectResult = (item) => {
                     </div>
                   </div>
                    <textarea 
-                    className={`w-full h-[104px] p-3 border border-gray-300 rounded-lg resize-none text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner ${(isWarningMode && !localText) ? 'font-sans' : "font-['Klee_One']"}`}
+                    className={`w-full h-[104px] p-3 pr-1 border border-gray-300 rounded-lg resize-none text-lg bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-inner input-scrollbar ${(isWarningMode && !localText) ? 'font-sans' : "font-['Klee_One']"}`}
                     placeholder={getDynamicPlaceholder()} 
                     value={localText} 
                     onChange={handleInputText} 
