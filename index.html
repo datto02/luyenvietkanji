@@ -2846,7 +2846,7 @@ const useKanjiReadings = (char, active) => {
       const Page = ({ chars, config }) => {
       const isSample = !config.text || config.text.trim().length === 0;
         return (
-          <div className="no-print a4-page mx-auto relative flex flex-col pt-[15mm] pl-[3mm] bg-white">
+          <div className="a4-page mx-auto relative flex flex-col pt-[15mm] pl-[3mm] bg-white">
           {(!config.text || config.text.trim().length === 0) && (
     <div className="w-full max-w-[210mm] mb-5 text-left pl-[8mm]">
         <div className="flex items-end gap-3">
