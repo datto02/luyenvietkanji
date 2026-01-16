@@ -2894,6 +2894,32 @@ const useKanjiReadings = (char, active) => {
         const [activeIndex, setActiveIndex] = useState(0); 
         const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
         const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
+
+        /* --- (MỚI THÊM) BẮT SỰ KIỆN CTRL + P ĐỂ HIỆN CẢNH BÁO --- */
+useEffect(() => {
+    const handleKeyDown = (e) => {
+        // Kiểm tra nếu nhấn Ctrl + P (Windows) hoặc Command + P (Mac)
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
+            e.preventDefault(); // 1. CHẶN trình duyệt mở hộp thoại in mặc định ngay lập tức
+
+            // 2. Kiểm tra nội dung trống (Logic giống nút bấm)
+            if (!config.text || config.text.trim().length === 0) {
+                alert("Vui lòng nhập nội dung để tạo file trước khi in!");
+                return;
+            }
+
+            // 3. Nếu có nội dung -> Mở bảng thông báo (Modal) thay vì in ngay
+            setIsPrintModalOpen(true);
+        }
+    };
+
+    // Lắng nghe sự kiện bàn phím
+    window.addEventListener('keydown', handleKeyDown);
+    
+    // Dọn dẹp khi thoát
+    return () => window.removeEventListener('keydown', handleKeyDown);
+}, [config.text]); // Theo dõi config.text để biết có dữ liệu hay chưa
+        
 // --- CHẶN CUỘN TRANG KHI MỞ MODAL ---
 useEffect(() => {
     // Nếu khung In hoặc khung Tài liệu đang mở
