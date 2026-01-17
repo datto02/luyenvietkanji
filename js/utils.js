@@ -5,11 +5,11 @@ const removeAccents = (str) => {
 
 const getHex = (char) => char.codePointAt(0).toString(16).toLowerCase().padStart(5, '0');
 
-// Hàm fetch data từ GitHub
+// Hàm fetch data (ĐÃ SỬA ĐƯỜNG DẪN VỀ GỐC)
 const fetchDataFromGithub = async () => {
   try {
-    // Lưu ý: Sau này bạn đẩy code lên repo của bạn thì sửa link này thành repo của bạn
-    const response = await fetch('https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/kanji_db.json');
+    // Lưu ý: Dùng dấu chấm ./ để chỉ thư mục hiện tại
+    const response = await fetch('./kanji_db.json');
     if (!response.ok) throw new Error('Không thể tải dữ liệu');
     return await response.json();
   } catch (error) {
@@ -41,7 +41,7 @@ const fetchKanjiData = async (char) => {
 
 // Hook: useKanjiSvg
 const useKanjiSvg = (char) => {
-    const { useState, useEffect, useRef } = React; // Lấy từ React toàn cục
+    const { useState, useEffect, useRef } = React;
     const [state, setState] = useState({ loading: true, paths: [], fullSvg: null, failed: false });
     const mounted = useRef(true);
 
@@ -92,7 +92,7 @@ const useKanjiReadings = (char, active) => {
     return readings;
 };
 
-// --- QUAN TRỌNG: GÁN VÀO WINDOW ĐỂ FILE KHÁC DÙNG ĐƯỢC ---
+// Gán vào window
 window.removeAccents = removeAccents;
 window.fetchDataFromGithub = fetchDataFromGithub;
 window.useKanjiSvg = useKanjiSvg;
