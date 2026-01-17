@@ -830,7 +830,104 @@ useEffect(() => {
             setLocalText(validForInput);
             handleChange('text', validForInput.replace(/[a-zA-Z]/g, ''));
         };
+// --- HÀM MỚI: Tải dữ liệu từ URL GitHub (Lazy Loading) ---
+        const handleLoadFromGithub = async (url) => {
+            setProgress(0);
+            setIsLoading(true);     // Bật màn hình chờ
+            setIsMenuOpen(false);   // Đóng menu chọn nhanh
+            
+            try {
+                // 1. Gọi link tải dữ liệu
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`Lỗi tải dữ liệu từ ${url}`);
+                }
 
+                // 2. Đọc dữ liệu dạng TEXT (vì file của bạn là chuỗi ký tự)
+                const rawText = await response.text();
+                
+                // 3. Làm sạch: Xóa dấu ngoặc kép, xuống dòng, khoảng trắng thừa (đề phòng)
+                const cleanText = rawText.replace(/["\n\r\s]/g, '');
+
+                if (!cleanText) {
+                     alert("File dữ liệu rỗng!");
+                     setIsLoading(false);
+                     return;
+                }
+
+                // 4. Nạp vào web
+                setFilterOptions(prev => ({ ...prev, kanji: true })); // Bật bộ lọc Kanji
+                
+                // Hiệu ứng thanh loading giả lập
+                setProgress(30);
+                setTimeout(() => setProgress(100), 300);
+
+                setTimeout(() => {
+                    setLocalText(cleanText);              // Hiển thị lên ô nhập liệu
+                    onChange({ ...config, text: cleanText }); // Cập nhật ra trang giấy
+                    setIsLoading(false);                  // Tắt màn hình chờ
+                }, 500);
+
+            } catch (error) {
+                console.error("Lỗi:", error);
+                alert("Không tải được dữ liệu. Vui lòng kiểm tra lại đường truyền hoặc link GitHub.");
+                setIsLoading(false);
+            }
+        };
+        // --- HÀM MỚI: Lấy ngẫu nhiên Kanji từ GitHub ---
+        const handleRandomLoadFromGithub = async (level) => {
+            // 1. Kiểm tra số lượng
+            if (randomCount === '' || randomCount <= 0) {
+                alert("Vui lòng nhập số lượng chữ cần lấy!");
+                return;
+            }
+            setProgress(0);
+
+            // 2. Tạo link file: kanjin5.json...
+            const fileName = `kanji${level.toLowerCase()}.json`; 
+            const url = `https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/${fileName}`;
+
+            setIsLoading(true);
+            setIsUtilsOpen(false); // Đóng menu Tiện ích
+            
+            try {
+                // 3. Tải file về
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Lỗi tải file");
+                
+                const rawText = await response.text();
+                const cleanText = rawText.replace(/["\n\r\s]/g, '');
+
+                if (!cleanText) {
+                     alert("File dữ liệu rỗng!");
+                     setIsLoading(false);
+                     return;
+                }
+
+                // 4. Xáo trộn và cắt lấy số lượng cần thiết
+                const shuffled = shuffleString(cleanText); // Hàm shuffleString có sẵn trong code cũ rồi
+                let count = randomCount > 50 ? 50 : randomCount;
+                const selectedChars = shuffled.slice(0, count);
+
+                // 5. Hiển thị
+                setFilterOptions(prev => ({ ...prev, kanji: true }));
+                
+                setProgress(30);
+                setTimeout(() => setProgress(100), 300);
+
+                setTimeout(() => {
+                    setLocalText(selectedChars);
+                    onChange({ ...config, text: selectedChars });
+                    setIsLoading(false);
+                }, 500);
+
+            } catch (error) {
+                console.error(error);
+                alert(`Không tải được dữ liệu ${level}. Kiểm tra lại mạng hoặc link GitHub.`);
+                setIsLoading(false);
+            }
+        };
         // --- 6. XỬ LÝ RỜI TAY ---
         const handleBlurText = () => {
             if (!localText) return;
@@ -867,14 +964,6 @@ useEffect(() => {
             }, 600);
         };
 
-        const handleRandomLoad = (level) => {
-            const fullList = dbData.KANJI_LEVELS[level];
-            if (!fullList || randomCount === '' || randomCount <= 0) return;
-            setFilterOptions(prev => ({ ...prev, kanji: true })); 
-            let count = randomCount > 50 ? 50 : randomCount;
-            const shuffled = shuffleString(fullList);
-            handleSmartLoad(shuffled.slice(0, count));
-        };
 
         const handleShuffleCurrent = () => {
             if (!config.text) { alert("Chưa có nội dung!"); return; }
@@ -1201,20 +1290,25 @@ const selectResult = (item) => {
     <div>
     <p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
     <button 
-        onClick={() => handleSmartLoad(dbData.RADICAL_LIST, 'kanji')} 
-        className="w-full py-2 text-xs font-black border bg-gray-100 text-gray-500 border-gray-200 uppercase transition-all duration-200 hover:bg-gray-500 hover:text-white hover:border-gray-500 rounded"
-    >
-        Bộ thủ cơ bản
-    </button>
+    onClick={() => handleLoadFromGithub('https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/bothu.json')} 
+    className="w-full py-2 text-xs font-black border bg-gray-100 text-gray-500 border-gray-200 uppercase transition-all duration-200 hover:bg-gray-500 hover:text-white hover:border-gray-500 rounded"
+>
+    Bộ thủ cơ bản
+</button>
 </div>
                             <div>
                               <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Lấy tất cả Kanji</p>
                               <div className="grid grid-cols-5 gap-1.5">
-                               {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+ {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
   <button 
     key={level} 
-    onClick={() => handleSmartLoad(dbData.KANJI_LEVELS[level], 'kanji')} 
-    className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 ${levelColors[level]}`}
+    onClick={() => {
+        // Tạo link: kanjin5.json, kanjin4.json...
+        const fileName = `kanji${level.toLowerCase()}.json`; 
+        const url = `https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/${fileName}`;
+        handleLoadFromGithub(url);
+    }} 
+    className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 active:scale-95 ${levelColors[level]}`}
   >
     {level}
   </button>
@@ -1270,7 +1364,7 @@ const selectResult = (item) => {
                                    {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
   <button 
     key={level} 
-    onClick={() => handleRandomLoad(level)} 
+    onClick={() => handleRandomLoadFromGithub(level)} 
     className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 ${levelColors[level]}`}
   >
     {level}
