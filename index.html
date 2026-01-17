@@ -724,24 +724,38 @@ const GridBox = ({ char, type, config, index, svgData, failed, onClick }) => {
         );
     };
 
-      // 4. Page Layout
+      // 4. Page Layout (Đã cập nhật giao diện Bản Mẫu)
       const Page = ({ chars, config, dbData }) => {
-      const isSample = !config.text || config.text.trim().length === 0;
+        // Kiểm tra xem có phải đang ở chế độ bản mẫu (không có text) hay không
+        const isSample = !config.text || config.text.trim().length === 0;
+
         return (
           <div className="a4-page mx-auto relative flex flex-col pt-[15mm] pl-[3mm] bg-white">
-          {(!config.text || config.text.trim().length === 0) && (
-    <div className="w-full max-w-[210mm] mb-5 text-left pl-[8mm]">
-        <div className="flex items-end gap-3">
-            {/* Logic: Chỉ hiện khi nội dung TRỐNG. Nếu có chữ thì ẩn luôn */}
-            {(!config.text || config.text.trim().length === 0) && (
-                <>
-                   <span className="text-2xl font-black text-gray-600 uppercase leading-none">BẢN MẪU</span>
-                   <span className="text-sm text-gray-500 font-medium pb-1">(hãy nhập dữ liệu để tạo file luyện viết)</span>
-                </>
+            
+            {/* --- PHẦN TIÊU ĐỀ BẢN MẪU (CHỈ HIỆN KHI TRỐNG) --- */}
+            {isSample && (
+                <div className="w-full max-w-[210mm] mb-6 text-left pl-[8mm]">
+                    <h2 className="text-xl font-black text-gray-600 uppercase mb-3 font-sans tracking-wide">
+                        HƯỚNG DẪN
+                    </h2>
+                    <div className="text-sm text-gray-500 font-medium space-y-1.5 font-sans">
+                        <p className="flex items-center gap-2">
+                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">1</span>
+                            Nhập dữ liệu để tạo file luyện viết.
+                        </p>
+                        <p className="flex items-center gap-2">
+                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">2</span>
+                            Ấn vào chữ mẫu đầu tiên để xem họa hoạt cách viết.
+                        </p>
+                        <p className="flex items-center gap-2">
+                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">3</span>
+                            Có thể xem âm On/Kun trong phần "tùy chỉnh".
+                        </p>
+                    </div>
+                </div>
             )}
-        </div>
-    </div>
-)}
+
+            {/* DANH SÁCH CÁC DÒNG */}
             <div className="flex flex-col gap-[4mm]">
               {chars.map((char, index) => (
                 <WorkbookRow
@@ -754,17 +768,17 @@ const GridBox = ({ char, type, config, index, svgData, failed, onClick }) => {
             </div>
 
             {/* Branding Footer */}
-            <div className="absolute bottom-[5mm] left-[12.5mm] text-gray-400 text-xs font-sans">
-            {/* Dòng 1 */}
-  <div className="text-[10px]">
-    © Bản quyền thuộc <span className="font-bold text-gray-500">Phá Đảo Tiếng Nhật</span> 
-    <span> (<span className="font-bold italic text-gray-500">tiktok @phadaotiengnhat</span>)</span>
-  </div>
-  
-  {/* Dòng 2 */}
-  <div className="text-[10px] mt-0.5">
-    Tài liệu miễn phí - Nghiêm cấm mọi hành vi mua bán thương mại
-  </div>
+            <div className="absolute bottom-[5mm] left-[12.5mm] text-gray-600 text-xs font-sans">
+                {/* Dòng 1 */}
+                <div className="text-[10px]">
+                    © Bản quyền thuộc <span className="font-bold text-gray-700">Phá Đảo Tiếng Nhật</span> 
+                    <span> (<span className="font-bold italic text-gray-700">phadaotiengnhat.com</span>)</span>
+                </div>
+                
+                {/* Dòng 2 */}
+                <div className="text-[10px] mt-0.5">
+                    Tài liệu miễn phí - Nghiêm cấm mọi hành vi mua bán thương mại
+                </div>
             </div>
           </div>
         );
@@ -2057,7 +2071,7 @@ const selectResult = (item) => {
 
   // 3. Logic phân trang (giữ nguyên)
   const pages = useMemo(() => {
-      const contentToShow = (config.text && config.text.trim().length > 0) ? config.text : "日本漢字"; 
+      const contentToShow = (config.text && config.text.trim().length > 0) ? config.text : "日本語"; 
       const chars = Array.from(contentToShow).filter(c => c.trim().length > 0);
       const chunks = [];
       const ROWS_PER_PAGE = 10;
