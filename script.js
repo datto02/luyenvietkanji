@@ -6,7 +6,7 @@ return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").
     // --- FETCH DATA FROM GITHUB ---
 const fetchDataFromGithub = async () => {
 try {
-const response = await fetch('https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/kanji_db.json');
+const response = await fetch('./data/kanji_db.json');
 if (!response.ok) throw new Error('Không thể tải dữ liệu');
 return await response.json();
 } catch (error) {
@@ -847,7 +847,7 @@ try {
 
         // 2. Tạo link file: kanjin5.json...
         const fileName = `kanji${level.toLowerCase()}.json`; 
-        const url = `https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/${fileName}`;
+        const url = `./data/${fileName}`;
 
         setIsLoading(true);
         setIsUtilsOpen(false); // Đóng menu Tiện ích
@@ -1245,14 +1245,14 @@ LÀM SẠCH
                             <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Bảng chữ cái</p>
 <div className="grid grid-cols-2 gap-2">
 <button 
-onClick={() => handleLoadFromGithub('https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/hiragana.json', 'hiragana')} 
+onClick={() => handleLoadFromGithub('./data/hiragana.json', 'hiragana')} 
 className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition"
 >
 あ Hiragana
 </button>
 
 <button 
-onClick={() => handleLoadFromGithub('https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/katakana.json', 'katakana')} 
+onClick={() => handleLoadFromGithub('./data/katakana.json', 'katakana')} 
 className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition"
 >
 ア Katakana
@@ -1262,7 +1262,7 @@ className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 
 <div>
 <p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
 <button 
-onClick={() => handleLoadFromGithub('https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/bothu.json')} 
+onClick={() => handleLoadFromGithub('./data/bothu.json')} 
 className="w-full py-2 text-xs font-black border bg-gray-100 text-gray-500 border-gray-200 uppercase transition-all duration-200 hover:bg-gray-500 hover:text-white hover:border-gray-500 rounded"
 >
 Bộ thủ cơ bản
@@ -1277,7 +1277,7 @@ key={level}
 onClick={() => {
     // Tạo link: kanjin5.json, kanjin4.json...
     const fileName = `kanji${level.toLowerCase()}.json`; 
-    const url = `https://raw.githubusercontent.com/datto02/luyenvietkanji/refs/heads/main/${fileName}`;
+    const url = `./data/${fileName}`;
     handleLoadFromGithub(url);
 }} 
 className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 active:scale-95 ${levelColors[level]}`}
