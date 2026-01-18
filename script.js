@@ -155,10 +155,10 @@ const useKanjiReadings = (char, active, dbData) => {
 
 // --- COMPONENT POPUP HOẠT HỌA (Đã chỉnh con trỏ chuột) ---
 const KanjiAnimationModal = ({ char, paths, fullSvg, dbData, isOpen, onClose }) => {
-const initialDelay = 0.5;
 const [key, setKey] = useState(0); 
 const [strokeNumbers, setStrokeNumbers] = useState([]); 
 const [speedConfig, setSpeedConfig] = useState({ duration: 3, delay: 0.6 });
+const initialDelay = 0.5;
 const [activeSpeed, setActiveSpeed] = useState('normal'); 
 
 // Logic khóa cuộn
