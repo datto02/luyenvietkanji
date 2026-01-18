@@ -158,7 +158,7 @@ const KanjiAnimationModal = ({ char, paths, fullSvg, dbData, isOpen, onClose }) 
 const [key, setKey] = useState(0); 
 const [strokeNumbers, setStrokeNumbers] = useState([]); 
 const [speedConfig, setSpeedConfig] = useState({ duration: 3, delay: 0.6 });
-const initialDelay = 0.8;
+const initialDelay = 0.4;
 const [activeSpeed, setActiveSpeed] = useState('normal'); 
 
 // Logic khóa cuộn
