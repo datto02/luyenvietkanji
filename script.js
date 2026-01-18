@@ -263,7 +263,7 @@ return (
                             className="stroke-anim-path"
                             style={{ 
                                 animationDuration: `${speedConfig.duration}s`, 
-                                animationDelay: `${index * speedConfig.delay}s` 
+                                animationDelay: `${initialDelay + (index * speedConfig.delay)}s` 
                             }} 
                         />
                     ))}
