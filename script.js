@@ -359,12 +359,13 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
                         <div 
                             key={currentIndex}
                             className={`relative transition-all duration-200 ease-out ${
-                                exitDirection === 'left' ? '-translate-x-10 -rotate-6 opacity-0' : 
-                                exitDirection === 'right' ? 'translate-x-10 rotate-6 opacity-0' : ''
+                              exitDirection === 'left' ? '-translate-x-16 -rotate-3' : 
+                              exitDirection === 'right' ? 'translate-x-16 rotate-3' : ''
                             }`}
                             style={{ 
                                 transform: !exitDirection && dragX !== 0 ? `translateX(${dragX}px) rotate(${dragX * 0.05}deg)` : '',
-                                transition: isDragging ? 'none' : 'all 0.2s ease-out'
+                               
+                                transition: isDragging ? 'none' : 'all 0.25s ease-out'
                             }}
                         >
                             <div 
