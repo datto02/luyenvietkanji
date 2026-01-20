@@ -171,6 +171,31 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
     // --- STATE & HÀM TRỘN ---
     const [isShuffleOn, setIsShuffleOn] = React.useState(false);
 
+    // --- [MỚI] 1. CHẾ TẠO NGÒI NỔ (Hàm bắn pháo hoa) ---
+    const triggerConfetti = React.useCallback(() => {
+        if (typeof confetti === 'undefined') return;
+        const count = 200;
+        const defaults = { origin: { y: 0.6 }, zIndex: 1500 };
+
+        function fire(particleRatio, opts) {
+            confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) });
+        }
+
+        fire(0.25, { spread: 26, startVelocity: 55 });
+        fire(0.2, { spread: 60 });
+        fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+        fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+        fire(0.1, { spread: 120, startVelocity: 45 });
+    }, []);
+
+    // --- [MỚI] 2. KÍCH HOẠT TỰ ĐỘNG KHI HOÀN THÀNH ---
+    React.useEffect(() => {
+        if (isFinished && isOpen) {
+            triggerConfetti();
+        }
+    }, [isFinished, triggerConfetti]);
+
+
     // Hàm trộn mảng (Fisher-Yates)
     const shuffleArray = React.useCallback((array) => {
         const newArr = [...array];
@@ -509,7 +534,16 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
                     </>
                 ) : (
                     <div className="bg-white rounded-[2rem] p-8 w-full max-w-[280px] text-center shadow-2xl border-4 border-indigo-50 animate-in zoom-in-95">
-                        <div className="text-5xl mb-4 animate-bounce">🎉</div>
+                        
+                        {/* --- [MỚI] ĐẶT NGÒI NỔ VÀO ĐÂY (Thêm onClick và cursor-pointer) --- */}
+                        <div 
+                            className="text-5xl mb-4 animate-bounce cursor-pointer hover:scale-125 transition-transform" 
+                            onClick={triggerConfetti}
+                            title="Bấm để bắn pháo hoa!"
+                        >
+                            🎉
+                        </div>
+                        
                         <h3 className="text-lg font-black text-gray-800 mb-1 uppercase">Hoàn thành</h3>
                         <p className="text-gray-400 mb-6 text-[11px] font-medium italic">Bạn đã học được {knownCount}/{queue.length} chữ.</p>
                         <div className="space-y-2">
