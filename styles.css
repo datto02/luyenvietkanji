@@ -2,16 +2,16 @@
       
 /* --- TRACING STYLE --- */
 .kanji-trace {
-font-family: 'Klee One', 'KanjiStrokeOrders', 'UD_Digi_Kyokasho', 'Noto_Serif_JP', serif;
+font-family: 'UD Digi Kyokasho N-R', 'UD Digi Kyokasho', 'UD デジタル 教科書体 N-R', 'UD デジタル 教科書体', 'Klee One', cursive;
 color: #bfbfbf; 
 -webkit-text-stroke: 0px white; 
 paint-order: stroke fill;
 position: relative;
 z-index: 10;
-line-height: 0;
+line-height: 0; 
 user-select: none;
 }
-
+ 
 /* --- DECOMPOSITION SVG STYLE --- */
 .decomp-svg {
 width: 100%;
@@ -209,4 +209,26 @@ transition: stroke 0.2s ease;
 .reference-box:hover .kanji-trace {
 color: #4f46e5 !important; 
 transition: color 0.2s ease;
+}
+/* Hiệu ứng mượt cho Flashcard */
+.exit-left {
+    transform: translateX(-150%) rotate(-15deg);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.exit-right {
+    transform: translateX(150%) rotate(15deg);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+/* Đảm bảo backface-visibility hoạt động tốt trên mobile */
+[transform-style="preserve-3d"] {
+    perspective: 1000px;
+}
+
+/* Hiệu ứng hover cho thumb tiến độ */
+.progress-thumb-animate {
+    transition: left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
