@@ -242,7 +242,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
                     return prevIndex;
                 }
             });
-        }, 150); 
+        }, 150);
     }, [currentIndex, queue, exitDirection, isFinished]);
 
     // --- XỬ LÝ PHÍM TẮT ---
@@ -357,15 +357,13 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
                 {!isFinished ? (
                     <>
                         <div 
-                            key={currentIndex}
-                            className={`relative transition-all duration-200 ease-out ${
-                              exitDirection === 'left' ? '-translate-x-16 -rotate-3' : 
-                              exitDirection === 'right' ? 'translate-x-16 rotate-3' : ''
+                            className={`relative transition-all duration-300 ease-in-out ${
+                             exitDirection === 'left' ? '-translate-x-16 -rotate-3' : 
+exitDirection === 'right' ? 'translate-x-16 rotate-3' : ''
                             }`}
                             style={{ 
-                                transform: !exitDirection && dragX !== 0 ? `translateX(${dragX}px) rotate(${dragX * 0.05}deg)` : '',
-                               
-                                transition: isDragging ? 'none' : 'all 0.25s ease-out'
+                               transform: !exitDirection && dragX !== 0 ? `translateX(${dragX}px) rotate(${dragX * 0.02}deg)` : '',
+                              transition: isDragging ? 'none' : 'all 0.25s ease-out'
                             }}
                         >
                             <div 
@@ -852,7 +850,7 @@ return (
                     </p>
                     <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">4</span>
-                        Tạo nhanh FLASHCARD trong 5 giây ở phần "tiện ích".
+                        Tạo nhanh FLASHCARD trong 5 giây trong phần "tiện ích".
                     </p>
                 </div>
             </div>
