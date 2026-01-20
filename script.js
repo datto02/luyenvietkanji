@@ -1845,7 +1845,7 @@ className={`py-2 text-[11px] font-black border rounded-md transition-all duratio
 {/* NÚT ĐẶT LẠI MẶC ĐỊNH - Đã thu gọn */}
 <div className="pt-0"> {/* Giảm padding top từ pt-1 về pt-0 */}
 <button 
-    onClick={() => onChange({ ...config, fontSize: 35, traceCount: 9, traceOpacity: 0.15, gridOpacity: 0.8, showOnKun: false })} 
+    onClick={() => onChange({ ...config, fontSize: 33, traceCount: 9, traceOpacity: 0.15, gridOpacity: 0.8, showOnKun: false })} 
     className="w-full py-1.5 text-[10px] font-bold text-red-500 bg-red-50 hover:bg-red-500 hover:text-white rounded-lg flex items-center justify-center gap-1 transition-all active:scale-95"
 >
     {/* Giảm size icon từ 12 xuống 10 */}
@@ -2207,7 +2207,7 @@ const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
 
 // State cấu hình mặc định
 const [config, setConfig] = useState({ 
-    text: '', fontSize: 35, traceCount: 9, verticalOffset: -3, 
+    text: '', fontSize: 33, traceCount: 9, verticalOffset: -3, 
     traceOpacity: 0.15, guideScale: 1.02, guideX: 0, guideY: 0.5, 
     gridOpacity: 0.8, gridType: 'cross', 
     fontFamily: "'UD Digi Kyokasho N-R', 'UD Digi Kyokasho', 'UD デジタル 教科書体 N-R', 'UD デジタル 教科書体', 'Klee One', cursive",
