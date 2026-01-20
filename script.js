@@ -1719,7 +1719,7 @@ className={`py-2 text-[11px] font-black border rounded-md transition-all duratio
         <span className="bg-white p-0.5 rounded flex items-center justify-center group-hover:rotate-12 transition-transform">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4255ff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </span>
-        <span className="text-xs font-black tracking-wide uppercase">Flashcard</span>
+        <span className="text-xs font-black tracking-wide uppercase">Tạo Flashcard</span>
     </button>
 </div>
                         </div>
