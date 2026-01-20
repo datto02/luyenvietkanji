@@ -277,7 +277,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
     }, [isOpen, isFinished, toggleFlip, handleNext, onClose]);
 
     const handleBack = (e) => {
-        if (e) { e.preventDefault(); e.stopPropagation(); }
+        if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); }
         if (currentIndex > 0 && history.length > 0) {
             const lastIsKnown = history[history.length - 1];
             if (lastIsKnown === true) {
@@ -295,7 +295,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
     };
 
     const handleShuffle = (e) => {
-        if (e) { e.preventDefault(); e.stopPropagation(); }
+        if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); }
         const passedPart = queue.slice(0, currentIndex);
         const poolToShuffle = queue.slice(currentIndex);
         if (poolToShuffle.length <= 1) return;
