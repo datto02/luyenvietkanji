@@ -369,8 +369,8 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
     const handleDragEnd = () => {
         if (!isDragging) return;
         setIsDragging(false);
-        if (dragX > 100) handleNext(true);
-        else if (dragX < -100) handleNext(false);
+        if (dragX > 70) handleNext(true);
+        else if (dragX < -70) handleNext(false);
         else setDragX(0);
     };
 
