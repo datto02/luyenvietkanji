@@ -3,6 +3,56 @@ return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").
 };
     const { useState, useEffect, useMemo, useRef } = React;
 
+const calculateSRS = (currentData, quality) => {
+  let { level = 0, easeFactor = 2.5, nextReview } = currentData || {};
+  const now = Date.now();
+  if (nextReview && nextReview > now) {
+      if (quality === 1) return currentData;
+  }
+
+  if (quality === 0) {
+    easeFactor = Math.max(1.3, easeFactor - 0.2);
+    
+    return {
+      level: 0,           // Reset khoảng cách về 0
+      easeFactor: easeFactor, // Lưu hệ số mới (đã bị trừ)
+      nextReview: 0,      // 0 nghĩa là "Chưa xong", lát nữa hỏi lại ngay
+      isDone: false
+    };
+
+  } else {
+    // === BẤM NÚT "ĐÃ BIẾT" (XANH) ===
+
+    let newInterval;
+
+    // Tình huống A: Chữ này đang bị phạt (nextReview = 0) hoặc mới tinh (level = 0)
+    // -> Đặt lịch cứng là 1 ngày, KHÔNG nhân hệ số.
+    if (!nextReview || nextReview === 0 || level === 0) {
+        newInterval = 1; 
+    } 
+    // Tình huống B: Chữ này đang ôn tập định kỳ (Đã thuộc từ các hôm trước)
+    else {
+        // CÔNG THỨC ANKI: Ngày mới = Ngày cũ * Hệ số IQ
+        newInterval = Math.ceil(level * easeFactor);
+        
+        // THƯỞNG: Tăng IQ lên một chút (tối đa 2.5)
+        easeFactor = Math.min(2.5, easeFactor + 0.1); 
+    }
+
+    // --- XỬ LÝ 5 GIỜ SÁNG ---
+    const nextDate = new Date();
+    nextDate.setDate(nextDate.getDate() + newInterval);
+    nextDate.setHours(5, 0, 0, 0);
+
+    return {
+      level: newInterval, // Lưu khoảng cách ngày mới làm level
+      easeFactor: easeFactor,
+      nextReview: nextDate.getTime(),
+      isDone: false // Không bao giờ "Done" hẳn, chỉ đẩy ngày ra xa vô tận
+    };
+  }
+};
+
  // --- FETCH DATA FROM GITHUB --- 
 const fetchDataFromGithub = async () => {
   try { 
@@ -152,7 +202,225 @@ const useKanjiReadings = (char, active, dbData) => {
 
   return readings;
 };
-const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
+// --- BƯỚC 2: COMPONENT BẢNG DANH SÁCH ÔN TẬP (CẬP NHẬT NỘI DUNG HƯỚNG DẪN MỚI) ---
+const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
+    const [isConfirmOpen, setIsConfirmOpen] = React.useState(false);
+    const [isHelpOpen, setIsHelpOpen] = React.useState(false);
+
+    // Logic khóa cuộn nền
+    React.useEffect(() => {
+        if (isOpen) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = 'unset';
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [isOpen]);
+
+    // Reset trạng thái khi đóng
+    React.useEffect(() => {
+        if (!isOpen) {
+            setIsConfirmOpen(false);
+            setIsHelpOpen(false);
+        }
+    }, [isOpen]);
+
+    // Logic gom nhóm dữ liệu
+    const groupedData = React.useMemo(() => {
+        const groups = { today: [] }; 
+        const now = Date.now();
+        Object.entries(srsData || {}).forEach(([char, data]) => {
+            if ((!data.nextReview && data.nextReview !== 0) || (data.isDone === true)) return;
+            if (data.nextReview === 0 || data.nextReview <= now) {
+                groups.today.push(char);
+            } else {
+                const dateObj = new Date(data.nextReview);
+                const dateKey = `${dateObj.getDate().toString().padStart(2, '0')}/${(dateObj.getMonth() + 1).toString().padStart(2, '0')}`;
+                if (!groups[dateKey]) groups[dateKey] = [];
+                groups[dateKey].push(char);
+            }
+        });
+        return groups;
+    }, [srsData, isOpen]);
+
+    if (!isOpen) return null;
+
+    const futureDates = Object.keys(groupedData).filter(k => k !== 'today').sort((a, b) => {
+        const [d1, m1] = a.split('/').map(Number);
+        const [d2, m2] = b.split('/').map(Number);
+        return m1 === m2 ? d1 - d2 : m1 - m2;
+    });
+
+    return (
+        <div className="fixed inset-0 z-[400] flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-200 cursor-pointer" onClick={onClose}>
+            <div className={`bg-white rounded-2xl shadow-2xl w-full flex flex-col max-h-[80vh] animate-in zoom-in-95 duration-200 overflow-hidden relative transition-all cursor-default ${isConfirmOpen ? 'max-w-[300px]' : 'max-w-md'}`} onClick={e => e.stopPropagation()}>
+                
+                {isHelpOpen ? (
+                    // === GIAO DIỆN HƯỚNG DẪN (SRS GUIDE) - NỘI DUNG MỚI ===
+                    // ĐÃ SỬA: Thay div bao ngoài bằng Fragment <> để flex-1 hoạt động đúng với parent
+                    <>
+                         <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-indigo-50">
+                            <h3 className="text-base font-black text-indigo-700 uppercase flex items-center gap-2">
+                                🎓 HƯỚNG DẪN
+                            </h3>
+                            <button onClick={() => setIsHelpOpen(false)} className="text-indigo-400 hover:text-indigo-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+                        </div>
+                        
+                        <div className="p-6 overflow-y-auto custom-scrollbar text-sm text-gray-600 space-y-6 flex-1">
+                            
+                            {/* 1. Phương pháp học */}
+                            <div>
+                                <h4 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
+                                    <span className="text-lg">🧠</span> 1. PHƯƠNG PHÁP HỌC
+                                </h4>
+                                <p className="text-sm leading-relaxed text-justify">
+                                    Hệ thống sử dụng thuật toán <b>Lặp lại ngắt quãng</b> (Spaced Repetition) tích hợp vào <b>FLASHCARD</b>. Thay vì học nhồi nhét, hệ thống sẽ tính toán <b>"thời điểm lãng quên"</b> của não bộ để nhắc bạn ôn lại <b>đúng lúc bạn sắp quên</b>.
+                                </p>
+                            </div>
+
+                            {/* 2. Cơ chế hoạt động */}
+                            <div>
+                                <h4 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
+                                    <span className="text-lg">⚙️</span> 2. CƠ CHẾ HOẠT ĐỘNG
+                                </h4>
+                                <div className="bg-indigo-50 p-3 rounded-xl border border-indigo-100 text-sm text-indigo-900 leading-relaxed">
+                                    <p className="mb-2">
+                                        Hệ thống tự động tính toán <b>mức độ ghi nhớ</b> của bạn đối với từng Kanji (dựa trên quá trình và kết quả học Flashcard). Từ đó đưa ra <b>lịch trình ôn tập phù hợp</b> riêng cho từng chữ.
+                                    </p>
+                                    <p className="flex gap-1 items-start mt-2 font-medium">
+                                        <span>🔔</span>
+                                        <span><b>Nhắc nhở:</b> Thông báo sẽ tự động xuất hiện trên giao diện web khi đến hạn ôn tập.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            {/* 3. Lưu ý dữ liệu */}
+                            <div className="bg-yellow-50 p-3 rounded-xl border border-yellow-100 text-sm">
+                                <h4 className="font-bold text-yellow-700 mb-1 flex items-center gap-1">
+                                    ⚠️ 3. LƯU Ý QUAN TRỌNG VỀ DỮ LIỆU
+                                </h4>
+                                <ul className="list-disc list-inside space-y-1.5 text-gray-600">
+                                    <li><b>Lưu trữ:</b> Dữ liệu học tập được lưu trực tiếp trên <b>Trình duyệt</b> của thiết bị bạn đang dùng.</li>
+                                    <li><b>Dung lượng:</b> Cực kỳ nhẹ! Toàn bộ 2136 Kanji chỉ chiếm khoảng 300KB (nhẹ hơn 1 bức ảnh mờ), hoàn toàn không gây nặng máy.</li>
+                                    <li><b>Cảnh báo:</b> Dữ liệu sẽ mất nếu bạn <b>Xóa Cookie/Dữ liệu duyệt web</b> hoặc dùng <b>Tab ẩn danh</b>. Hãy dùng trình duyệt thường để học nhé!</li>
+                                </ul>
+                            </div>
+
+                            <button onClick={() => setIsHelpOpen(false)} className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-lg transition-all active:scale-95 text-xs uppercase">
+                                quay lại danh sách ôn tập
+                            </button>
+                        </div>
+                    </>
+
+                ) : !isConfirmOpen ? (
+                    // === GIAO DIỆN 1: DANH SÁCH (Mặc định) ===
+                    <>
+                        <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+                            <div className="flex items-baseline gap-3">
+                                <h3 className="text-lg font-bold text-gray-800 uppercase flex items-center gap-2">📅 LỊCH TRÌNH ÔN TẬP</h3>
+                                <button onClick={() => setIsHelpOpen(true)} className="text-[14px] font-bold text-blue-500 hover:text-blue-700 underline decoration-blue-300 hover:decoration-blue-700 underline-offset-2 transition-all">
+                                    xem hướng dẫn
+                                </button>
+                            </div>
+                            <button onClick={onClose} className="text-gray-400 hover:text-red-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </button>
+                        </div>
+
+                        <div className="p-4 overflow-y-auto custom-scrollbar flex-1">
+                            <div className="space-y-4">
+                                <div className="bg-orange-50 rounded-xl p-3 border border-orange-100">
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-sm font-black text-orange-600 uppercase">Cần ôn ngay</span>
+                                        <span className="bg-orange-200 text-orange-700 text-[14px] font-bold px-1.5 rounded">{groupedData.today.length} chữ</span>
+                                    </div>
+                                    {groupedData.today.length > 0 ? (
+                                        <div className="flex flex-wrap gap-1">
+                                            {groupedData.today.map((char, i) => (
+                                                <span key={i} className="inline-block bg-white text-gray-800 border border-orange-200 rounded px-1.5 py-0.5 text-lg font-['Klee_One'] min-w-[32px] text-center shadow-sm">{char}</span>
+                                            ))}
+                                        </div>
+                                    ) : (<p className="text-[15px] text-gray-400 italic">Không có Kanji tồn đọng. Giỏi lắm! 🎉</p>)}
+                                </div>
+
+                                {futureDates.length > 0 && (
+                                    <div className="space-y-3">
+                                         <div className="flex items-center gap-2 mt-2">
+                                            <span className="h-[1px] flex-1 bg-gray-100"></span>
+                                            <span className="text-sm font-bold text-gray-400 uppercase">Sắp tới</span>
+                                            <span className="h-[1px] flex-1 bg-gray-100"></span>
+                                        </div>
+                                        {futureDates.map(date => (
+                                            <div key={date} className="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                                                <div className="flex items-center justify-between mb-2">
+                                                    <span className="text-xs font-bold text-gray-600 flex items-center gap-1">
+                                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                                        Ngày {date}
+                                                    </span>
+                                                    <span className="bg-gray-200 text-gray-600 text-[10px] font-bold px-1.5 rounded">{groupedData[date].length} chữ</span>
+                                                </div>
+                                                <div className="flex flex-wrap gap-1">
+                                                    {groupedData[date].map((char, i) => (
+                                                        <span key={i} className="inline-block bg-white text-gray-500 border border-gray-200 rounded px-1.5 py-0.5 text-base font-['Klee_One'] min-w-[28px] text-center opacity-70">{char}</span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="mt-8 pt-6 border-t border-dashed border-gray-200 text-center pb-2">
+                                <button 
+                                    onClick={() => {
+                                        if (!srsData || Object.keys(srsData).length === 0) {
+                                            alert("Danh sách trống");
+                                            return;
+                                        }
+                                        setIsConfirmOpen(true);
+                                    }}
+                                    className="text-red-700 hover:text-red-600 hover:bg-red-50 px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 mx-auto"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+                                    XÓA TOÀN BỘ TIẾN ĐỘ
+                                </button>
+                            </div>
+                        </div>
+                    </>
+                ) : (
+                    // === GIAO DIỆN 2: CẢNH BÁO XÓA ===
+                    <div 
+                        className="p-7 text-center animate-in fade-in zoom-in-95 duration-200 flex flex-col items-center justify-center min-h-[300px] cursor-pointer"
+                        onClick={(e) => {
+                            e.stopPropagation(); 
+                            setIsConfirmOpen(false); 
+                        }}
+                    >
+                        <div 
+                            className="w-full h-full flex flex-col items-center justify-center cursor-default" 
+                            onClick={(e) => e.stopPropagation()} 
+                        >
+                            <div className="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mb-5 animate-bounce">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            </div>
+                            <h3 className="text-xl font-black text-gray-800 mb-2 uppercase">Cảnh báo</h3>
+                            <p className="text-sm text-gray-500 mb-8 leading-relaxed max-w-[260px]">
+                                Lịch sử học tập sẽ bị xóa vĩnh viễn.<br/>
+                                <span className="text-red-500 font-bold">Không thể khôi phục lại!</span>
+                            </p>
+                            
+                            <div className="flex flex-col gap-3 w-full max-w-[260px]">
+                                <button onClick={() => setIsConfirmOpen(false)} className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-black rounded-xl shadow-lg shadow-indigo-200 transition-all active:scale-95 uppercase text-xs tracking-wider">KHÔNG XÓA NỮA</button>
+                                <button onClick={() => { onResetSRS(); setIsConfirmOpen(false); onClose(); }} className="w-full py-3 text-red-600 hover:text-red-700 bg-red-50 hover:bg-red-100 font-bold rounded-xl transition-all text-xs">Vẫn xóa dữ liệu</button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
+// --- BƯỚC 4: FLASHCARD MODAL (ĐÃ GẮN SỰ KIỆN LƯU DỮ LIỆU) ---
+const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, onSrsRestore }) => { 
     const [originalQueue, setOriginalQueue] = React.useState([]);
     const [queue, setQueue] = React.useState([]);
     const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -167,314 +435,169 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
     const [startX, setStartX] = React.useState(0); 
     const [isDragging, setIsDragging] = React.useState(false);
     const [btnFeedback, setBtnFeedback] = React.useState(null);
-
-    // --- STATE & HÀM TRỘN ---
     const [isShuffleOn, setIsShuffleOn] = React.useState(false);
 
-    // --- [MỚI] 1. CHẾ TẠO NGÒI NỔ (Hàm bắn pháo hoa) ---
-    const triggerConfetti = React.useCallback(() => {
-        if (typeof confetti === 'undefined') return;
-        const count = 200;
-        const defaults = { origin: { y: 0.6 }, zIndex: 1500 };
+    // --- (Giữ nguyên các hàm bổ trợ: triggerConfetti, shuffleArray, startNewSession...) ---
+    // Bạn có thể copy lại các hàm này từ code cũ nếu muốn ngắn gọn, hoặc dùng đoạn dưới đây:
+    const triggerConfetti = React.useCallback(() => { if (typeof confetti === 'undefined') return; const count = 200; const defaults = { origin: { y: 0.6 }, zIndex: 1500 }; function fire(particleRatio, opts) { confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) }); } fire(0.25, { spread: 26, startVelocity: 55 }); fire(0.2, { spread: 60 }); fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 }); fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 }); fire(0.1, { spread: 120, startVelocity: 45 }); }, []);
+    React.useEffect(() => { if (isFinished && isOpen) { triggerConfetti(); } }, [isFinished, triggerConfetti]);
+    const shuffleArray = React.useCallback((array) => { const newArr = [...array]; for (let i = newArr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArr[i], newArr[j]] = [newArr[j], newArr[i]]; } return newArr; }, []);
+    const startNewSession = React.useCallback((chars) => { setQueue(chars); setCurrentIndex(0); setIsFlipped(false); setUnknownIndices([]); setKnownCount(0); setHistory([]); setIsFinished(false); setExitDirection(null); setDragX(0); setBtnFeedback(null); }, []);
+    
+    // --- Các useEffect cơ bản ---
+    React.useEffect(() => { if (isOpen && text) { const chars = Array.from(text).filter(c => c.trim()); setOriginalQueue(chars); const queueToLoad = isShuffleOn ? shuffleArray(chars) : chars; startNewSession(queueToLoad); setShowHint(true); } }, [isOpen, text, startNewSession]); 
+    React.useEffect(() => { if (isOpen) { const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; document.body.style.paddingRight = `${scrollBarWidth}px`; document.body.style.touchAction = 'none'; } else { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; document.body.style.paddingRight = ''; document.body.style.touchAction = ''; } return () => { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; document.body.style.paddingRight = ''; document.body.style.touchAction = ''; }; }, [isOpen]);
+    
+    // --- Các hàm xử lý UI ---
+    const toggleFlip = React.useCallback(() => { setIsFlipped(prev => !prev); if (currentIndex === 0) setShowHint(false); }, [currentIndex]);
+    const handleNext = React.useCallback((isKnown) => { 
+        if (exitDirection || isFinished || queue.length === 0) return; 
+        
+        // 1. Lấy chữ hiện tại
+        const currentChar = queue[currentIndex];
 
-        function fire(particleRatio, opts) {
-            confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) });
-        }
+        // 2. CHỤP LẠI DỮ LIỆU CŨ (SNAPSHOT) TRƯỚC KHI BỊ THAY ĐỔI
+        // Nếu chưa có dữ liệu thì lưu object rỗng
+        const snapshot = (srsData && srsData[currentChar]) ? { ...srsData[currentChar] } : {};
 
-        fire(0.25, { spread: 26, startVelocity: 55 });
-        fire(0.2, { spread: 60 });
-        fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
-        fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
-        fire(0.1, { spread: 120, startVelocity: 45 });
-    }, []);
+        setIsFlipped(false); 
 
-    // --- [MỚI] 2. KÍCH HOẠT TỰ ĐỘNG KHI HOÀN THÀNH ---
-    React.useEffect(() => {
-        if (isFinished && isOpen) {
-            triggerConfetti();
-        }
-    }, [isFinished, triggerConfetti]);
+        // Logic đếm số lượng (Giữ nguyên)
+        if (isKnown) { 
+            setKnownCount(prev => prev + 1); 
+        } else { 
+            setUnknownIndices(prev => [...prev, currentIndex]); 
+        } 
 
+        // 3. LƯU VÀO HISTORY (Lưu cả trạng thái đúng/sai VÀ bản chụp dữ liệu cũ)
+        setHistory(prev => [...prev, { isKnown, char: currentChar, snapshot }]); 
 
-    // Hàm trộn mảng (Fisher-Yates)
-    const shuffleArray = React.useCallback((array) => {
-        const newArr = [...array];
-        for (let i = newArr.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-        }
-        return newArr;
-    }, []);
+        // Gọi hàm cập nhật dữ liệu mới (Giữ nguyên)
+        setBtnFeedback(isKnown ? 'right' : 'left'); 
+        setExitDirection(isKnown ? 'right' : 'left'); 
+        
+        setTimeout(() => { 
+            setCurrentIndex((prevIndex) => { 
+                if (prevIndex < queue.length - 1) { 
+                    setExitDirection(null); 
+                    setDragX(0); 
+                    setBtnFeedback(null); 
+                    return prevIndex + 1; 
+                } else { 
+                    setIsFinished(true); 
+                    return prevIndex; 
+                } 
+            }); 
+        }, 150); 
+    }, [currentIndex, queue, exitDirection, isFinished, srsData]);
+    const handleBack = (e) => { 
+        if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); } 
+        
+        if (currentIndex > 0 && history.length > 0) { 
+            // 1. Lấy phần tử lịch sử cuối cùng (Bây giờ nó là object chứa snapshot)
+            const lastItem = history[history.length - 1]; 
+            
+            // 2. Tính toán lại UI (Dựa vào lastItem.isKnown thay vì lastIsKnown)
+            if (lastItem.isKnown === true) { 
+                setKnownCount(prev => Math.max(0, prev - 1)); 
+            } else { 
+                setUnknownIndices(prev => prev.slice(0, -1)); 
+            } 
 
-    // --- KHỞI TẠO SESSION ---
-    const startNewSession = React.useCallback((chars) => {
-        setQueue(chars);
-        setCurrentIndex(0);
-        setIsFlipped(false);
-        setUnknownIndices([]);
-        setKnownCount(0);
-        setHistory([]);
-        setIsFinished(false);
-        setExitDirection(null);
-        setDragX(0);
-        setBtnFeedback(null);
-    }, []);
+            // 3. KHÔI PHỤC DỮ LIỆU SRS VỀ TRẠNG THÁI CŨ
+            // Nếu lúc nãy có lưu snapshot, giờ ta đè nó lại vào hệ thống
+            if (onSrsRestore && lastItem.char) {
+                onSrsRestore(lastItem.char, lastItem.snapshot);
+            }
 
-    // Khởi tạo khi mở Modal
-    React.useEffect(() => {
-        if (isOpen && text) {
-            const chars = Array.from(text).filter(c => c.trim());
-            setOriginalQueue(chars);
-            // Nếu đang bật shuffle thì trộn ngay đầu vào
-            const queueToLoad = isShuffleOn ? shuffleArray(chars) : chars;
-            startNewSession(queueToLoad);
-            setShowHint(true);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isOpen, text, startNewSession]); 
+            // 4. Cập nhật lại các state UI khác (Giữ nguyên)
+            setHistory(prev => prev.slice(0, -1)); 
+            setCurrentIndex(prev => prev - 1); 
+            setIsFlipped(false); 
+            setExitDirection(null); 
+            setDragX(0); 
+            setBtnFeedback(null); 
+        } 
+    };
+    const handleToggleShuffle = (e) => { if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); } const nextState = !isShuffleOn; setIsShuffleOn(nextState); setBtnFeedback('shuffle'); setTimeout(() => setBtnFeedback(null), 400); const passedPart = queue.slice(0, currentIndex); const remainingPart = queue.slice(currentIndex); if (remainingPart.length === 0) return; let newRemainingPart; if (nextState) { newRemainingPart = shuffleArray(remainingPart); } else { const counts = {}; remainingPart.forEach(c => { counts[c] = (counts[c] || 0) + 1; }); newRemainingPart = []; for (const char of originalQueue) { if (counts[char] > 0) { newRemainingPart.push(char); counts[char]--; } } } setQueue([...passedPart, ...newRemainingPart]); setIsFlipped(false); };
+    
+    // --- Các hàm Drag ---
+    const handleDragStart = (e) => { if (exitDirection || isFinished) return; setIsDragging(true); const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX; setStartX(clientX); };
+    const handleDragMove = (e) => { if (!isDragging || exitDirection) return; const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX; setDragX(clientX - startX); };
+    const dynamicBorder = () => { if (dragX > 70 || btnFeedback === 'right') return '#22c55e'; if (dragX < -70 || btnFeedback === 'left') return '#ef4444'; return 'white'; };
 
-    // --- KHÓA CUỘN NỀN ---
-    React.useEffect(() => {
-        if (isOpen) {
-            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-            document.documentElement.style.overflow = 'hidden';
-            document.body.style.overflow = 'hidden';
-            document.body.style.paddingRight = `${scrollBarWidth}px`;
-            document.body.style.touchAction = 'none'; 
-        } else {
-            document.documentElement.style.overflow = '';
-            document.body.style.overflow = '';
-            document.body.style.paddingRight = '';
-            document.body.style.touchAction = '';
-        }
-        return () => {
-            document.documentElement.style.overflow = '';
-            document.body.style.overflow = '';
-            document.body.style.paddingRight = '';
-            document.body.style.touchAction = '';
-        };
-    }, [isOpen]);
-
-    // --- CÁC HÀM XỬ LÝ LOGIC ---
-    const toggleFlip = React.useCallback(() => {
-        setIsFlipped(prev => !prev);
-        if (currentIndex === 0) setShowHint(false);
-    }, [currentIndex]);
-
-    const handleNext = React.useCallback((isKnown) => {
-        if (exitDirection || isFinished || queue.length === 0) return;
-        setIsFlipped(false);
-        if (isKnown) {
-            setKnownCount(prev => prev + 1);
-        } else {
-            setUnknownIndices(prev => [...prev, currentIndex]);
-        }
-        setHistory(prev => [...prev, isKnown]);
-        setBtnFeedback(isKnown ? 'right' : 'left');
-        setExitDirection(isKnown ? 'right' : 'left');
-        setTimeout(() => {
-            setCurrentIndex((prevIndex) => {
-                if (prevIndex < queue.length - 1) {
-                    setExitDirection(null);
-                    setDragX(0);
-                    setBtnFeedback(null);
-                    return prevIndex + 1;
-                } else {
-                    setIsFinished(true);
-                    return prevIndex;
-                }
-            });
-        }, 150);
-    }, [currentIndex, queue, exitDirection, isFinished]);
-
-    // --- XỬ LÝ PHÍM TẮT ---
+    // --- SỬA LOGIC: PHÍM TẮT ---
     React.useEffect(() => {
         const handleKeyDown = (e) => {
             if (!isOpen || isFinished) return;
             if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
             switch (e.key) {
-                case ' ': 
-                case 'ArrowUp':
-                case 'ArrowDown':
-                    e.preventDefault();
-                    toggleFlip();
-                    break;
+                case ' ': case 'ArrowUp': case 'ArrowDown':
+                    e.preventDefault(); toggleFlip(); break;
                 case 'ArrowLeft':
                     e.preventDefault();
+                    // [LOGIC MỚI] Gọi hàm lưu dữ liệu: 0 = Đang học
+                    if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 0);
                     handleNext(false); 
                     break;
                 case 'ArrowRight':
                     e.preventDefault();
+                    // [LOGIC MỚI] Gọi hàm lưu dữ liệu: 1 = Đã biết
+                    if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 1);
                     handleNext(true); 
                     break;
-                case 'Escape':
-                    onClose();
-                    break;
-                default:
-                    break;
+                case 'Escape': onClose(); break;
+                default: break;
             }
         };
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [isOpen, isFinished, toggleFlip, handleNext, onClose]);
+    }, [isOpen, isFinished, toggleFlip, handleNext, onClose, onSrsUpdate, queue, currentIndex]);
 
-    const handleBack = (e) => {
-        if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); }
-        if (currentIndex > 0 && history.length > 0) {
-            const lastIsKnown = history[history.length - 1];
-            if (lastIsKnown === true) {
-                setKnownCount(prev => Math.max(0, prev - 1));
-            } else {
-                setUnknownIndices(prev => prev.slice(0, -1));
-            }
-            setHistory(prev => prev.slice(0, -1));
-            setCurrentIndex(prev => prev - 1);
-            setIsFlipped(false);
-            setExitDirection(null);
-            setDragX(0);
-            setBtnFeedback(null);
-        }
-    };
-
-    // [QUAN TRỌNG] HÀM XỬ LÝ NÚT TRỘN (BẬT/TẮT)
-    const handleToggleShuffle = (e) => {
-        if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); }
-
-        const nextState = !isShuffleOn;
-        setIsShuffleOn(nextState);
-        setBtnFeedback('shuffle');
-        setTimeout(() => setBtnFeedback(null), 400);
-
-        // Chia mảng hiện tại thành 2 phần: Đã qua (passed) và Còn lại (remaining - bao gồm cả thẻ hiện tại)
-        const passedPart = queue.slice(0, currentIndex);
-        const remainingPart = queue.slice(currentIndex);
-
-        if (remainingPart.length === 0) return;
-
-        let newRemainingPart;
-
-        if (nextState) {
-            // TRƯỜNG HỢP BẬT: Trộn ngay lập tức phần còn lại
-            newRemainingPart = shuffleArray(remainingPart);
-        } else {
-            // TRƯỜNG HỢP TẮT: Khôi phục thứ tự gốc của phần còn lại
-            // Logic: Duyệt qua originalQueue, nhặt ra những phần tử có mặt trong remainingPart
-            // Sử dụng bộ đếm (counts) để xử lý trường hợp có các ký tự trùng nhau
-            const counts = {};
-            remainingPart.forEach(c => { counts[c] = (counts[c] || 0) + 1; });
-            
-            newRemainingPart = [];
-            for (const char of originalQueue) {
-                if (counts[char] > 0) {
-                    newRemainingPart.push(char);
-                    counts[char]--;
-                }
-            }
-        }
-
-        // Cập nhật queue mới: Giữ nguyên phần đã qua + Phần còn lại đã xử lý
-        setQueue([...passedPart, ...newRemainingPart]);
-        // Reset lật thẻ vì nội dung thẻ hiện tại có thể đã thay đổi
-        setIsFlipped(false);
-    };
-
-    const handleDragStart = (e) => {
-        if (exitDirection || isFinished) return;
-        setIsDragging(true);
-        const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
-        setStartX(clientX);
-    };
-
-    const handleDragMove = (e) => {
-        if (!isDragging || exitDirection) return;
-        const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
-        setDragX(clientX - startX);
-    };
-
+    // --- SỬA LOGIC: VUỐT (DRAG) ---
     const handleDragEnd = () => {
         if (!isDragging) return;
         setIsDragging(false);
-        if (dragX > 70) handleNext(true);
-        else if (dragX < -70) handleNext(false);
+        if (dragX > 70) {
+             // [LOGIC MỚI] Kéo phải = Đã biết (1)
+             if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 1);
+             handleNext(true);
+        }
+        else if (dragX < -70) {
+             // [LOGIC MỚI] Kéo trái = Đang học (0)
+             if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 0);
+             handleNext(false);
+        }
         else setDragX(0);
     };
 
-    const dynamicBorder = () => {
-        if (dragX > 70 || btnFeedback === 'right') return '#22c55e';
-        if (dragX < -70 || btnFeedback === 'left') return '#ef4444';
-        return 'white'; 
-    };
-
     if (!isOpen || queue.length === 0) return null;
-
     const currentChar = queue[currentIndex] || ''; 
-    if (!currentChar && !isFinished && isOpen) {
-        setIsFinished(true);
-    }
+    if (!currentChar && !isFinished && isOpen) { setIsFinished(true); }
     const info = dbData?.KANJI_DB?.[currentChar] || dbData?.ALPHABETS?.hiragana?.[currentChar] || dbData?.ALPHABETS?.katakana?.[currentChar] || {};
-
     const progressRatio = currentIndex / (queue.length - 1 || 1);
 
     return (
-        <div 
-            className="fixed inset-0 z-[300] flex items-center justify-center bg-gray-900/95 backdrop-blur-xl animate-in fade-in duration-200 select-none touch-none"
-            style={{ touchAction: 'none' }}
-            onClick={(e) => e.stopPropagation()} 
-        >
+        <div className="fixed inset-0 z-[300] flex items-center justify-center bg-gray-900/95 backdrop-blur-xl animate-in fade-in duration-200 select-none touch-none" style={{ touchAction: 'none' }} onClick={(e) => e.stopPropagation()}>
             <div className="w-full max-w-sm flex flex-col items-center">
                 {!isFinished ? (
                     <>
-                        <div 
-                            className={`relative transition-all duration-300 ease-in-out ${
-                             exitDirection === 'left' ? '-translate-x-16 -rotate-3' : 
-                             exitDirection === 'right' ? 'translate-x-16 rotate-3' : ''
-                            }`}
-                            style={{ 
-                               transform: !exitDirection && dragX !== 0 ? `translateX(${dragX}px) rotate(${dragX * 0.02}deg)` : '',
-                              transition: isDragging ? 'none' : 'all 0.25s ease-out'
-                            }}
-                        >
-                            <div 
-                                onClick={() => { if (Math.abs(dragX) < 5) toggleFlip(); }}
-                                onMouseDown={handleDragStart}
-                                onMouseMove={handleDragMove}
-                                onMouseUp={handleDragEnd}
-                                onMouseLeave={handleDragEnd}
-                                onTouchStart={handleDragStart}
-                                onTouchMove={handleDragMove}
-                                onTouchEnd={handleDragEnd}
-                                className={`relative w-64 h-80 cursor-pointer transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
-                            >
-                                <div 
-                                    className="absolute inset-0 bg-white rounded-[2rem] shadow-2xl flex items-center justify-center border-4 [backface-visibility:hidden] overflow-hidden"
-                                    style={{ borderColor: dynamicBorder() }}
-                                >
+                        {/* --- PHẦN CARD (GIỮ NGUYÊN) --- */}
+                        <div className={`relative transition-all duration-300 ease-in-out ${exitDirection === 'left' ? '-translate-x-16 -rotate-3' : exitDirection === 'right' ? 'translate-x-16 rotate-3' : ''}`} style={{ transform: !exitDirection && dragX !== 0 ? `translateX(${dragX}px) rotate(${dragX * 0.02}deg)` : '', transition: isDragging ? 'none' : 'all 0.25s ease-out' }}>
+                            <div onClick={() => { if (Math.abs(dragX) < 5) toggleFlip(); }} onMouseDown={handleDragStart} onMouseMove={handleDragMove} onMouseUp={handleDragEnd} onMouseLeave={handleDragEnd} onTouchStart={handleDragStart} onTouchMove={handleDragMove} onTouchEnd={handleDragEnd} className={`relative w-64 h-80 cursor-pointer transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
+                                <div className="absolute inset-0 bg-white rounded-[2rem] shadow-2xl flex items-center justify-center border-4 [backface-visibility:hidden] overflow-hidden" style={{ borderColor: dynamicBorder() }}>
                                     <span className="text-8xl font-['Klee_One'] text-gray-800 transform -translate-y-5">{currentChar}</span>
-                                    {currentIndex === 0 && showHint && (
-                                        <p className="absolute bottom-14 text-indigo-400 text-[7px] font-black uppercase tracking-[0.4em] animate-pulse">Chạm để lật</p>
-                                    )}
+                                    {currentIndex === 0 && showHint && (<p className="absolute bottom-14 text-indigo-400 text-[7px] font-black uppercase tracking-[0.4em] animate-pulse">Chạm để lật</p>)}
                                     <div className={`absolute bottom-5 left-0 right-0 px-6 items-center z-50 ${isFlipped ? 'hidden sm:flex' : 'flex'} justify-between`}>
-                                        <button 
-                                            onClick={handleBack} 
-                                            className={`p-2.5 bg-black/5 hover:bg-black/10 active:scale-90 rounded-full transition-all flex items-center justify-center ${currentIndex === 0 ? 'opacity-10 cursor-not-allowed' : 'text-gray-400 hover:text-gray-700'}`}
-                                            disabled={currentIndex === 0}
-                                        >
+                                        <button onClick={handleBack} className={`p-2.5 bg-black/5 hover:bg-black/10 active:scale-90 rounded-full transition-all flex items-center justify-center ${currentIndex === 0 ? 'opacity-10 cursor-not-allowed' : 'text-gray-400 hover:text-gray-700'}`} disabled={currentIndex === 0}>
                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="pointer-events-none"><path d="M9 14 4 9l5-5"/><path d="M4 9h12a5 5 0 0 1 0 10H7"/></svg>
                                         </button>
-                                        
-                                        {/* Nút Toggle Trộn thẻ */}
-                                        <button 
-                                            onClick={handleToggleShuffle} 
-                                            className={`p-2.5 bg-black/5 hover:bg-black/10 active:scale-90 rounded-full transition-all flex items-center justify-center ${isShuffleOn ? 'bg-indigo-100 text-indigo-600' : 'text-gray-400 hover:text-gray-700'}`}
-                                        >
+                                        <button onClick={handleToggleShuffle} className={`p-2.5 bg-black/5 hover:bg-black/10 active:scale-90 rounded-full transition-all flex items-center justify-center ${isShuffleOn ? 'bg-indigo-100 text-indigo-600' : 'text-gray-400 hover:text-gray-700'}`}>
                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className={`pointer-events-none ${btnFeedback === 'shuffle' ? 'animate-[spin_0.4s_linear_infinite]' : ''}`}><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></svg>
                                         </button>
                                     </div>
                                 </div>
-                                <div 
-                                    className="absolute inset-0 bg-indigo-600 rounded-[2rem] shadow-2xl flex flex-col items-center justify-center p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)] border-4 overflow-hidden text-center"
-                                    style={{ borderColor: dynamicBorder() }}
-                                >
+                                <div className="absolute inset-0 bg-indigo-600 rounded-[2rem] shadow-2xl flex flex-col items-center justify-center p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)] border-4 overflow-hidden text-center" style={{ borderColor: dynamicBorder() }}>
                                     <div className="flex-1 flex flex-col items-center justify-center w-full transform -translate-y-3">
                                         <h3 className="text-3xl font-black mb-2 uppercase tracking-tighter leading-tight">{info.sound || '---'}</h3>
                                         <p className="text-base opacity-90 font-medium italic leading-snug px-2">{info.meaning || ''}</p>
@@ -482,91 +605,49 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* THANH TIẾN TRÌNH */}
+                        
+                        {/* --- THANH TIẾN TRÌNH (GIỮ NGUYÊN) --- */}
                         <div className="w-64 mt-8 mb-6 relative h-6 flex items-center">
-                            {/* Thanh nền (Màu xám mờ) */}
-                            <div className="w-full h-1 bg-white/10 rounded-full relative overflow-hidden">
-                                {/* [MỚI] Thanh đã đi qua (Tô màu xanh) */}
-                                <div 
-                                    className="absolute top-0 left-0 h-full bg-sky-400 transition-all duration-300 ease-out"
-                                    style={{ width: `${progressRatio * 100}%` }}
-                                />
-                            </div>
-
-                            {/* [HỘP SỐ] Tổng số thẻ (Bên phải) */}
-                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full h-1 pointer-events-none">
-                                <div className="absolute right-0 top-1/2 -translate-y-1/2 h-7 w-9 rounded-md flex items-center justify-center bg-white shadow-sm z-0">
-                                    <span className="text-[10px] font-black text-black leading-none">{queue.length}</span>
-                                </div>
-                            </div>
-
-                            {/* [HỘP SỐ] Thẻ hiện tại (Cục trượt màu xanh) */}
-                            <div className="absolute top-1/2 -translate-y-1/2 w-full h-1 pointer-events-none">
-                                <div 
-                                    className="absolute top-1/2 -translate-y-1/2 h-7 w-9 bg-sky-400 rounded-md flex items-center justify-center shadow-[0_0_15px_rgba(56,189,248,0.8)] transition-all duration-300 ease-out z-10"
-                                    style={{ 
-                                        left: `calc(${progressRatio * 100}% - ${progressRatio * 36}px)` 
-                                    }}
-                                >
-                                    <span className="text-[10px] font-black text-white leading-none">{currentIndex + 1}</span>
-                                </div>
-                            </div>
+                            <div className="w-full h-1 bg-white/10 rounded-full relative overflow-hidden"><div className="absolute top-0 left-0 h-full bg-sky-400 transition-all duration-300 ease-out" style={{ width: `${progressRatio * 100}%` }} /></div>
+                            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full h-1 pointer-events-none"><div className="absolute right-0 top-1/2 -translate-y-1/2 h-7 w-9 rounded-md flex items-center justify-center bg-white shadow-sm z-0"><span className="text-[10px] font-black text-black leading-none">{queue.length}</span></div></div>
+                            <div className="absolute top-1/2 -translate-y-1/2 w-full h-1 pointer-events-none"><div className="absolute top-1/2 -translate-y-1/2 h-7 w-9 bg-sky-400 rounded-md flex items-center justify-center shadow-[0_0_15px_rgba(56,189,248,0.8)] transition-all duration-300 ease-out z-10" style={{ left: `calc(${progressRatio * 100}% - ${progressRatio * 36}px)` }}><span className="text-[10px] font-black text-white leading-none">{currentIndex + 1}</span></div></div>
                         </div>
 
-                        {/* NÚT ĐIỀU HƯỚNG */}
+                        {/* --- SỬA: NÚT ĐIỀU HƯỚNG (GẮN SỰ KIỆN LƯU) --- */}
                         <div className="flex gap-3 w-full px-8">
-                            <button onClick={() => handleNext(false)} className="flex-1 py-3 bg-red-500/10 hover:bg-red-500/20 hover:text-red-600 active:bg-red-500 text-red-500 active:text-white border border-red-500/20 rounded-xl font-black text-[10px] transition-all flex items-center justify-center gap-2 uppercase">
+                            <button 
+                                onClick={() => {
+                                    // [LOGIC MỚI] Nút Đỏ = 0
+                                    if(onSrsUpdate) onSrsUpdate(currentChar, 0); 
+                                    handleNext(false);
+                                }} 
+                                className="flex-1 py-3 bg-red-500/10 hover:bg-red-500/20 hover:text-red-600 active:bg-red-500 text-red-500 active:text-white border border-red-500/20 rounded-xl font-black text-[10px] transition-all flex items-center justify-center gap-2 uppercase"
+                            >
                                 ĐANG HỌC <span className="bg-red-600 text-white min-w-[28px] h-6 px-2 rounded-md flex items-center justify-center text-[10px] font-bold shadow-sm">{unknownIndices.length}</span>
                             </button>
-                            <button onClick={() => handleNext(true)} className="flex-1 py-3 bg-green-500/10 hover:bg-green-500/20 hover:text-green-600 active:bg-green-500 text-green-500 active:text-white border border-green-500/20 rounded-xl font-black text-[10px] transition-all flex items-center justify-center gap-2 uppercase">
+                            <button 
+                                onClick={() => {
+                                    // [LOGIC MỚI] Nút Xanh = 1
+                                    if(onSrsUpdate) onSrsUpdate(currentChar, 1); 
+                                    handleNext(true);
+                                }} 
+                                className="flex-1 py-3 bg-green-500/10 hover:bg-green-500/20 hover:text-green-600 active:bg-green-500 text-green-500 active:text-white border border-green-500/20 rounded-xl font-black text-[10px] transition-all flex items-center justify-center gap-2 uppercase"
+                            >
                                 ĐÃ BIẾT <span className="bg-green-600 text-white min-w-[28px] h-6 px-2 rounded-md flex items-center justify-center text-[10px] font-bold shadow-sm">{knownCount}</span>
                             </button>
                         </div>
 
-                        {/* NÚT ĐÓNG */}
-                        <button 
-                            onClick={onClose} 
-                            className="mt-8 text-white/40 hover:text-red-500 transition-all text-[13px] sm:text-[11px] font-black uppercase tracking-[0.2em] py-2 px-4 active:scale-95"
-                        >
-                            Đóng thẻ
-                        </button>
+                        <button onClick={onClose} className="mt-8 text-white/40 hover:text-red-500 transition-all text-[13px] sm:text-[11px] font-black uppercase tracking-[0.2em] py-2 px-4 active:scale-95">Đóng thẻ</button>
                     </>
                 ) : (
                     <div className="bg-white rounded-[2rem] p-8 w-full max-w-[280px] text-center shadow-2xl border-4 border-indigo-50 animate-in zoom-in-95">
-                        
-                        {/* --- [MỚI] ĐẶT NGÒI NỔ VÀO ĐÂY (Thêm onClick và cursor-pointer) --- */}
-                        <div 
-                            className="text-5xl mb-4 animate-bounce cursor-pointer hover:scale-125 transition-transform" 
-                            onClick={triggerConfetti}
-                            title="Bấm để bắn pháo hoa!"
-                        >
-                            🎉
-                        </div>
-                        
+                        <div className="text-5xl mb-4 animate-bounce cursor-pointer hover:scale-125 transition-transform" onClick={triggerConfetti} title="Bấm để bắn pháo hoa!">🎉</div>
                         <h3 className="text-lg font-black text-gray-800 mb-1 uppercase">Hoàn thành</h3>
                         <p className="text-gray-400 mb-6 text-[11px] font-medium italic">Bạn đã học được {knownCount}/{queue.length} chữ.</p>
                         <div className="space-y-2">
-                            {unknownIndices.length > 0 && (
-                                <button 
-                                    onClick={() => startNewSession(isShuffleOn ? shuffleArray(unknownIndices.map(idx => queue[idx])) : unknownIndices.map(idx => queue[idx]))} 
-                                    className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-black text-[11px] shadow-lg active:scale-95 transition-colors"
-                                >
-                                    ÔN LẠI {unknownIndices.length} THẺ ĐANG HỌC
-                                </button>
-                            )}
-                            <button 
-                                onClick={() => startNewSession(isShuffleOn ? shuffleArray(originalQueue) : originalQueue)} 
-                                className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95"
-                            >
-                                HỌC LẠI TỪ ĐẦU
-                            </button>
-                            <button 
-                                onClick={onClose} 
-                                className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95"
-                            >
-                                THOÁT
-                            </button>
+                            {unknownIndices.length > 0 && (<button onClick={() => startNewSession(isShuffleOn ? shuffleArray(unknownIndices.map(idx => queue[idx])) : unknownIndices.map(idx => queue[idx]))} className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-black text-[11px] shadow-lg active:scale-95 transition-colors">ÔN LẠI {unknownIndices.length} THẺ ĐANG HỌC</button>)}
+                            <button onClick={() => startNewSession(isShuffleOn ? shuffleArray(originalQueue) : originalQueue)} className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95">HỌC LẠI TỪ ĐẦU</button>
+                            <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
                         </div>
                     </div>
                 )}
@@ -574,6 +655,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData }) => {
         </div>
     );
 };
+
 // --- COMPONENT POPUP HOẠT HỌA (Đã chỉnh con trỏ chuột) ---
 const KanjiAnimationModal = ({ char, paths, fullSvg, dbData, isOpen, onClose }) => {
 const [key, setKey] = useState(0); 
@@ -934,21 +1016,21 @@ return (
                     HƯỚNG DẪN
                 </h2>
                 <div className="text-sm text-gray-500 font-medium space-y-1.5 font-sans">
-                    <p className="flex items-center gap-2">
+                   <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">1</span>
-                        Nhập dữ liệu để tạo file luyện viết.
+                        <span><span className="font-bold">Nhập dữ liệu</span> để tạo file luyện viết.</span>
                     </p>
                     <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">2</span>
-                        Ấn vào chữ mẫu đầu tiên để xem họa hoạt cách viết.
+                        <span>Ấn vào <span className="font-bold">chữ mẫu đầu tiên</span> để xem họa hoạt cách viết.</span>
                     </p>
                     <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">3</span>
-                        Có thể xem âm On/Kun trong phần "tùy chỉnh".
+                        <span>Tạo nhanh <span className="font-bold">Flashcard</span> trong phần "tiện ích".</span>
                     </p>
                     <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">4</span>
-                        Tạo nhanh FLASHCARD trong 5 giây ở phần "tiện ích".
+                        <span>Chế độ <span className="font-bold">Lịch trình ôn tập</span> (lặp lại ngắt quãng) được tích hợp vào Flashcard.</span>
                     </p>
                 </div>
             </div>
@@ -984,13 +1066,33 @@ return (
     };
 
 // 5. Sidebar (Phiên bản: Final)
-    const Sidebar = ({ config, onChange, onPrint, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen, showMobilePreview, setShowMobilePreview, dbData, setIsFlashcardOpen }) => {
-    const scrollRef = useRef(null);
+    const Sidebar = ({ config, onChange, onPrint, srsData, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen, showMobilePreview, setShowMobilePreview, dbData, setIsFlashcardOpen, onOpenReviewList }) => {
+   // --- BƯỚC 2: TÌM TRONG COMPONENT SIDEBAR -> SỬA BIẾN dueChars ---
+
+// 1. Logic bộ lọc mới
+const dueChars = useMemo(() => {
+    const now = Date.now();
+    return Object.keys(srsData || {}).filter(char => {
+        const data = srsData[char];
+        // Điều kiện: Chưa hoàn thành VÀ (Là chữ đang học HOẶC Đã đến giờ ôn)
+        return !data.isDone && data.nextReview !== null && (data.nextReview === 0 || data.nextReview <= now);
+    });
+}, [srsData]);
+
+// 2. Hàm Load bài mới (Load xong mở ngay)
+const handleLoadDueCards = () => {
+    if (dueChars.length === 0) return;
+    const dueText = dueChars.join('');
+    onChange({ ...config, text: dueText }); 
+    setTimeout(() => { setIsFlashcardOpen(true); }, 50); 
+};
+        
+        const scrollRef = useRef(null);
     const [searchResults, setSearchResults] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0); 
     const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
     const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
-
+    
     // --- CHẶN TUYỆT ĐỐI CTRL + P (KHÔNG CÓ GÌ XẢY RA) ---
     useEffect(() => {
     const handleKeyDown = (e) => {
@@ -1307,7 +1409,8 @@ try {
         const url = `./data/${fileName}`;
 
         setIsLoading(true);
-        setIsUtilsOpen(false); // Đóng menu Tiện ích
+         // Đóng menu Tiện ích
+        setIsMenuOpen(false)
         
         try {
             // 3. Tải file về
@@ -1685,145 +1788,205 @@ LÀM SẠCH
                 />
             </div>
             
-            {/* --- FOOTER CHỨC NĂNG --- */}
+           {dueChars.length > 0 && (
+    <div className="mb-6 animate-in slide-in-from-top duration-500">
+        <div className="bg-orange-50 border-2 border-orange-200 rounded-2xl p-4 shadow-sm">
+            <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center animate-bounce shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m12 8 4 4-4 4"/><path d="M8 12h7"/><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10z"/></svg>
+                </div>
+                <div>
+                    <p className="text-[10px] font-black text-orange-400 uppercase tracking-widest">Hệ thống nhắc nhở</p>
+                    <p className="text-sm font-black text-orange-700">CẦN ÔN {dueChars.length} CHỮ!</p>
+                </div>
+            </div>
+            
+            {/* NÚT CHIA ĐÔI */}
+            <div className="flex gap-2">
+                <button onClick={handleLoadDueCards} className="flex-1 py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-[10px] font-black rounded-xl transition-all shadow-md shadow-orange-200 active:scale-95 uppercase">
+                    Ôn ngay
+                </button>
+                <button onClick={onOpenReviewList} className="flex-1 py-2.5 bg-orange-100 hover:bg-orange-200 text-orange-600 text-[10px] font-black rounded-xl transition-all border border-orange-200 active:scale-95 uppercase">
+                    danh sách
+                </button>
+            </div>
+        </div>
+    </div>
+)}
             <div className="flex flex-col gap-3 w-full">
                 
                 {/* HÀNG 3 NÚT */}
                 <div className="flex flex-row gap-4 w-full h-12">
                     
-                    {/* 1. CHỌN NHANH */}
-                    <div className="relative flex-1" ref={quickMenuRef}> 
+                    {/* 1. MENU CHỌN NHANH (Quick Select) */}
+<div className="relative flex-1" ref={quickMenuRef}> 
                     <button onClick={() => toggleMenu('quick')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isMenuOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
                         <span className="font-bold text-xs whitespace-nowrap">Chọn nhanh</span>
                     </button>
                     {isMenuOpen && (
                         <div className="absolute bottom-full left-0 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-4 animate-in fade-in zoom-in-95 duration-200">
-                        <div>
-                            <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Bảng chữ cái</p>
-<div className="grid grid-cols-2 gap-2">
-<button 
-onClick={() => handleLoadFromGithub('./data/hiragana.json', 'hiragana')} 
-className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition"
->
-あ Hiragana
-</button>
+                            
+                         {/* --- PHẦN GỘP: BẢNG CHỮ CÁI & BỘ THỦ --- */}
+                            <div>
+                                <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Bảng chữ cái & Bộ thủ</p>
+                                <div className="grid grid-cols-3 gap-1.5">
+                                    {/* Nút 1: Hiragana */}
+                                    <button 
+                                        onClick={() => handleLoadFromGithub('./data/hiragana.json', 'hiragana')} 
+                                        className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition truncate"
+                                        title="Hiragana"
+                                    >
+                                        あ Hira
+                                    </button>
 
-<button 
-onClick={() => handleLoadFromGithub('./data/katakana.json', 'katakana')} 
-className="py-2 text-xs font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition"
->
-ア Katakana
-</button>
-</div>
-                        </div>
-<div>
-<p className="text-[10px] font-bold text-gray-400 uppercase mb-2">Bộ thủ</p>
-<button 
-onClick={() => handleLoadFromGithub('./data/bothu.json')} 
-className="w-full py-2 text-xs font-black border bg-gray-100 text-gray-500 border-gray-200 uppercase transition-all duration-200 hover:bg-gray-500 hover:text-white hover:border-gray-500 rounded"
->
-Bộ thủ cơ bản
-</button>
-</div>
-                        <div>
-                            <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Lấy tất cả Kanji</p>
-                            <div className="grid grid-cols-5 gap-1.5">
-{['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-<button 
-key={level} 
-onClick={() => {
-    // Tạo link: kanjin5.json, kanjin4.json...
-    const fileName = `kanji${level.toLowerCase()}.json`; 
-    const url = `./data/${fileName}`;
-    handleLoadFromGithub(url);
-}} 
-className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 active:scale-95 ${levelColors[level]}`}
->
-{level}
-</button>
-))}
+                                    {/* Nút 2: Katakana */}
+                                    <button 
+                                        onClick={() => handleLoadFromGithub('./data/katakana.json', 'katakana')} 
+                                        className="py-2 text-[11px] font-bold bg-white text-gray-600 border border-gray-200 rounded-lg hover:bg-black hover:text-white transition truncate"
+                                        title="Katakana"
+                                    >
+                                        ア Kata
+                                    </button>
+
+                                    {/* Nút 3: Bộ thủ */}
+                                    <button 
+                                        onClick={() => handleLoadFromGithub('./data/bothu.json')} 
+                                        className="py-2 text-[11px] font-bold bg-gray-100 text-gray-600 border border-gray-200 rounded-lg hover:bg-gray-600 hover:text-white transition truncate"
+                                        title="Bộ thủ cơ bản"
+                                    >
+                                        Bộ thủ
+                                    </button>
+                                </div>
+                            </div>
+
+                           
+                            {/* Lấy tất cả Kanji */}
+                            <div>
+                                <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Lấy tất cả Kanji</p>
+                                <div className="grid grid-cols-5 gap-1.5">
+                                    {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+                                        <button 
+                                            key={level} 
+                                            onClick={() => { 
+                                                const fileName = `kanji${level.toLowerCase()}.json`; 
+                                                const url = `./data/${fileName}`; 
+                                                handleLoadFromGithub(url); 
+                                            }} 
+                                            className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 active:scale-95 ${levelColors[level]}`}
+                                        >
+                                            {level}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Lấy ngẫu nhiên (Đã chuyển xuống đây) */}
+                            <div>
+                                <div className="flex justify-start items-center gap-2 mb-2 mt-1">
+                                    <p className="text-[10px] font-bold text-gray-400 uppercase">Lấy ngẫu nhiên</p>
+                                    {/* Input số lượng */}
+                                    <div className="flex items-center gap-1.5">
+                                        <input 
+                                            type="number" 
+                                            min="0" 
+                                            max="50" 
+                                            value={randomCount} 
+                                            onChange={(e) => { 
+                                                const val = e.target.value; 
+                                                if (val === '') setRandomCount(''); 
+                                                else setRandomCount(parseInt(val)); 
+                                            }} 
+                                            onKeyDown={(e) => { if (e.key === 'Enter' && randomCount > 50) setRandomCount(50) }} 
+                                            onBlur={() => { if (randomCount > 50) setRandomCount(50) }} 
+                                            className="w-10 h-6 text-[14px] text-center font-bold bg-gray-50 border border-gray-200 text-gray-700 rounded focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" 
+                                        />
+                                        <span className="text-[9px] font-bold text-gray-400 uppercase">chữ</span>
+                                    </div>
+                                </div>
+                                <div className="grid grid-cols-5 gap-1.5">
+                                    {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
+                                        <button 
+                                            key={`rand-${level}`} 
+                                            onClick={() => handleRandomLoadFromGithub(level)} 
+                                            className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 active:scale-95 ${levelColors[level]}`}
+                                        >
+                                            {level}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                        </div>
                     )}
-                    </div>
+                </div>
 
-                    {/* 2. TIỆN ÍCH */}
-                    <div className="relative flex-1" ref={utilsMenuRef}> 
+                   {/* 2. MENU TIỆN ÍCH (Utilities) */}
+<div className="relative flex-1" ref={utilsMenuRef}> 
                     <button onClick={() => toggleMenu('utils')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isUtilsOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
                         <span className="font-bold text-xs whitespace-nowrap">Tiện ích</span>
                     </button>
-                    
                     {isUtilsOpen && (
                         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
-                        
-                        {/* Xáo trộn */}
-                        <div>
-                            <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Công cụ</p>
-                            <button onClick={handleShuffleCurrent} className="w-full py-2.5 text-xs font-bold bg-indigo-50 text-indigo-600 border border-indigo-100 rounded-lg hover:bg-indigo-600 hover:text-white transition flex items-center justify-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-                                Xáo trộn danh sách hiện tại
-                            </button>
-                        </div>
+                            
+                            {/* Công cụ Xáo trộn */}
+                            <div>
+                                <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Công cụ</p>
+                                <button onClick={handleShuffleCurrent} className="w-full py-2.5 text-xs font-bold bg-indigo-50 text-indigo-600 border border-indigo-100 rounded-lg hover:bg-indigo-600 hover:text-white transition flex items-center justify-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                    Xáo trộn danh sách hiện tại
+                                </button>
+                            </div>
 
-                        {/* Lấy ngẫu nhiên */}
-                        <div>
-                            <div className="flex justify-between items-center mb-2">
-                                <p className="text-[10px] font-bold text-gray-400 uppercase">Lấy ngẫu nhiên</p>
-                                {/* CỤM INPUT MÀU CAM */}
-                                <div className="flex items-center gap-1.5">
-                                    <input 
-                                        type="number" 
-                                        min="0" 
-                                        max="50"
-                                        value={randomCount}
-                                        onChange={(e) => {
-                                            const val = e.target.value;
-                                            if (val === '') setRandomCount('');
-                                            else setRandomCount(parseInt(val));
-                                        }}
-                                        onKeyDown={(e) => { if(e.key==='Enter' && randomCount>50) setRandomCount(50) }}
-                                        onBlur={() => { if(randomCount>50) setRandomCount(50) }}
-                                        className="w-14 h-7 text-[16px] text-center font-bold bg-white border border-gray-300 text-gray-700 rounded focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none transition-colors"
-                                    />
-                                    <span className="text-[10px] font-bold text-gray-500">chữ</span>
+                            {/* Tạo Flashcard */}
+                            <div className="pt-0">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tight">ÔN TẬP</p>
+                                    <span className="flex-1 border-b border-gray-50"></span>
                                 </div>
+                                <button 
+                                    onClick={() => {
+                                        if (!config.text) return alert("Vui lòng nhập chữ vào ô để học flashcard!");
+                                        setIsFlashcardOpen(true);
+                                        setIsUtilsOpen(false);
+                                    }}
+                                    className="w-full py-3 bg-[#4255ff] hover:bg-[#3243cc] text-white rounded-xl flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 group"
+                                >
+                                    <span className="bg-white p-0.5 rounded flex items-center justify-center group-hover:rotate-12 transition-transform">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4255ff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                    </span>
+                                    <span className="text-xs font-black tracking-wide uppercase">Flashcard</span>
+                                </button>
                             </div>
-                            <div className="grid grid-cols-5 gap-1.5">
-                                {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
-<button 
-key={level} 
-onClick={() => handleRandomLoadFromGithub(level)} 
-className={`py-2 text-[11px] font-black border rounded-md transition-all duration-200 ${levelColors[level]}`}
->
-{level}
-</button>
-))}
+
+                            {/* Danh sách ôn tập (Màu Cam) */}
+                            <div className="pt-0 mt-1">
+                                <button 
+                                    onClick={() => {
+                                        onOpenReviewList();    
+                                        setIsUtilsOpen(false); 
+                                    }}
+                                    className="w-full py-2.5 bg-orange-50 border border-orange-200 text-orange-600 hover:text-orange-700 hover:border-orange-300 hover:bg-orange-100 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 group shadow-sm"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" 
+                                         className="text-orange-500 group-hover:text-orange-600 transition-colors"
+                                    >
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        <path d="M8 14h.01"></path>
+                                        <path d="M12 14h.01"></path>
+                                        <path d="M16 14h.01"></path>
+                                        <path d="M8 18h.01"></path>
+                                        <path d="M12 18h.01"></path>
+                                        <path d="M16 18h.01"></path>
+                                    </svg>
+                                    <span className="text-xs font-bold uppercase tracking-wide">LỊCH TRÌNH ÔN TẬP</span>
+                                </button>
                             </div>
-                        </div>
-<div className="pt-4 border-t border-gray-100">
-    <div className="flex items-center gap-2 mb-2">
-        <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tight">ÔN TẬP</p>
-        <span className="flex-1 border-b border-gray-50"></span>
-    </div>
-    <button 
-        onClick={() => {
-            if (!config.text) return alert("Vui lòng nhập chữ vào ô để học flashcard!");
-            setIsFlashcardOpen(true);
-            setIsUtilsOpen(false);
-        }}
-        className="w-full py-3 bg-[#4255ff] hover:bg-[#3243cc] text-white rounded-xl flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 group"
-    >
-        <span className="bg-white p-0.5 rounded flex items-center justify-center group-hover:rotate-12 transition-transform">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4255ff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-        </span>
-        <span className="text-xs font-black tracking-wide uppercase">Tạo Flashcard</span>
-    </button>
-</div>
+
                         </div>
                     )}
-                    </div>
-
+ </div>
                     {/* 3. TÙY CHỈNH */}
                     <div className="relative flex-1" ref={configMenuRef}> 
                     <button onClick={() => toggleMenu('config')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isConfigOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
@@ -2245,6 +2408,8 @@ TÀI LIỆU HỌC TẬP
         </div>
     );
     };
+
+    
     const App = () => {
 // --- Các state cũ giữ nguyên ---
 const [isCafeModalOpen, setIsCafeModalOpen] = useState(false);
@@ -2252,7 +2417,25 @@ const [showMobilePreview, setShowMobilePreview] = useState(false);
 const [isConfigOpen, setIsConfigOpen] = React.useState(false);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
+        const [isReviewListOpen, setIsReviewListOpen] = useState(false);
+        const [srsData, setSrsData] = useState(() => {
+    // Tự động lấy dữ liệu cũ từ máy người dùng khi mở web
+    const saved = localStorage.getItem('phadao_srs_data');
+            
+    return saved ? JSON.parse(saved) : {};
+});
 
+// Hàm để lưu kết quả học tập
+const updateSRSProgress = (char, quality) => {
+    const newProgress = calculateSRS(srsData[char], quality);
+    const newData = { ...srsData, [char]: newProgress };
+    setSrsData(newData);
+    localStorage.setItem('phadao_srs_data', JSON.stringify(newData));
+};
+const handleResetAllSRS = () => {
+    setSrsData({}); // Xóa sạch state
+    localStorage.removeItem('phadao_srs_data'); // Xóa sạch trong bộ nhớ máy
+};
 // State cấu hình mặc định
 const [config, setConfig] = useState({ 
     text: '', fontSize: 33, traceCount: 9, verticalOffset: -3, 
@@ -2332,6 +2515,9 @@ return (
         setIsFlashcardOpen={setIsFlashcardOpen}
         
         dbData={dbData} // <--- QUAN TRỌNG: Truyền dữ liệu xuống Sidebar
+            srsData={srsData}
+         onOpenReviewList={() => setIsReviewListOpen(true)}
+      
     />
     </div>
 
@@ -2372,8 +2558,23 @@ return (
     onClose={() => setIsFlashcardOpen(false)} 
     text={config.text} 
     dbData={dbData} 
+    onSrsUpdate={updateSRSProgress}
+    srsData={srsData} 
+    onSrsRestore={(char, oldData) => {
+        // Hàm này sẽ đè dữ liệu cũ (snapshot) lên dữ liệu hiện tại
+        const newData = { ...srsData, [char]: oldData };
+        setSrsData(newData);
+        localStorage.setItem('phadao_srs_data', JSON.stringify(newData));
+    }}
 />
-    </div>
+       {/* 3. RENDER MODAL MỚI */}
+            <ReviewListModal 
+                isOpen={isReviewListOpen}
+                onClose={() => setIsReviewListOpen(false)}
+                srsData={srsData}
+                onResetSRS={handleResetAllSRS}
+            />
+        </div>
 );
 };
     const root = ReactDOM.createRoot(document.getElementById('root'));
