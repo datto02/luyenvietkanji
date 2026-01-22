@@ -206,7 +206,49 @@ const useKanjiReadings = (char, active, dbData) => {
 const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
     const [isConfirmOpen, setIsConfirmOpen] = React.useState(false);
     const [isHelpOpen, setIsHelpOpen] = React.useState(false);
+// --- 1. Hàm Xuất dữ liệu (Backup) ---
+    const handleExport = () => {
+        const data = localStorage.getItem('phadao_srs_data');
+        if (!data || data === '{}') {
+            alert("Chưa có dữ liệu để sao lưu!");
+            return;
+        }
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const date = new Date();
+        const dateStr = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+        const fileName = `backup_tiengnhat_${dateStr}.json`;
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
 
+    // --- 2. Hàm Nhập dữ liệu (Restore) ---
+    const handleImport = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                const json = event.target.result;
+                JSON.parse(json); // Check lỗi JSON
+                if (confirm("⚠️ CẢNH BÁO:\nDữ liệu hiện tại sẽ bị thay thế hoàn toàn bởi bản sao lưu này.\nBạn có chắc chắn muốn khôi phục không?")) {
+                    localStorage.setItem('phadao_srs_data', json);
+                    alert("Khôi phục thành công! Trang web sẽ tải lại.");
+                    window.location.reload();
+                }
+            } catch (err) {
+                alert("File lỗi! Vui lòng chọn đúng file .json");
+            }
+        };
+        reader.readAsText(file);
+        e.target.value = '';
+    };
     // Logic khóa cuộn nền
     React.useEffect(() => {
         if (isOpen) document.body.style.overflow = 'hidden';
@@ -304,7 +346,44 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                                     <li><b>Cảnh báo:</b> Dữ liệu sẽ mất nếu bạn <b>Xóa lịch sử duyệt web</b> hoặc dùng <b>Tab ẩn danh</b>. Hãy dùng trình duyệt thường để học nhé!</li>
                                 </ul>
                             </div>
+                                
+{/* --- MỤC 4: SAO LƯU & KHÔI PHỤC (MỚI) --- */}
+<div className="bg-emerald-50 p-3 rounded-xl border border-emerald-100 text-sm">
+    <h4 className="font-bold text-emerald-800 mb-2 flex items-center gap-2">
+        <span className="text-lg">💾</span> 4. SAO LƯU & KHÔI PHỤC
+    </h4>
+    
+    <div className="text-emerald-900 leading-relaxed mb-3 text-justify">
+        <p className="mb-1">
+            <b>Tại sao cần sao lưu?</b> Để chuyển dữ liệu học tập sang máy khác (điện thoại/máy tính), hoặc phòng trường hợp lỡ tay xóa mất lịch sử duyệt web.
+        </p>
+    </div>
 
+    {/* Cụm nút bấm */}
+    <div className="grid grid-cols-2 gap-3">
+        {/* NÚT TẢI VỀ */}
+        <button 
+            onClick={handleExport}
+            className="flex flex-col items-center justify-center gap-1 py-2 bg-white border border-emerald-200 text-emerald-700 font-bold rounded-lg shadow-sm hover:bg-emerald-600 hover:text-white transition-all active:scale-95"
+        >
+            <div className="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>TẢI FILE VỀ</span>
+            </div>
+            <span className="text-[9px] font-normal opacity-80">(Lưu file .json)</span>
+        </button>
+
+        {/* NÚT TẢI LÊN */}
+        <label className="flex flex-col items-center justify-center gap-1 py-2 bg-emerald-600 border border-emerald-600 text-white font-bold rounded-lg shadow-sm hover:bg-emerald-700 transition-all active:scale-95 cursor-pointer">
+            <div className="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <span>KHÔI PHỤC</span>
+            </div>
+            <span className="text-[9px] font-normal opacity-80">(Chọn file đã lưu)</span>
+            <input type="file" accept=".json" className="hidden" onChange={handleImport} />
+        </label>
+    </div>
+</div>
                             <button onClick={() => setIsHelpOpen(false)} className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-lg transition-all active:scale-95 text-xs uppercase">
                                 quay lại lịch trình ôn tập
                             </button>
@@ -1003,6 +1082,53 @@ return (
 
     // 4. Page Layout (Đã cập nhật giao diện Bản Mẫu)
     const Page = ({ chars, config, dbData }) => {
+// 1. Hàm Xuất dữ liệu (Tải file về máy)
+    const handlePageExport = () => {
+        const data = localStorage.getItem('phadao_srs_data');
+        if (!data || data === '{}') {
+            alert("Bạn chưa có dữ liệu học tập nào để sao lưu!");
+            return;
+        }
+        // Tạo file JSON và kích hoạt tải về
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const date = new Date();
+        const dateStr = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+        const fileName = `backup_tiengnhat_${dateStr}.json`;
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
+
+    // 2. Hàm Nhập dữ liệu (Tải file lên)
+    const handlePageImport = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            try {
+                const json = event.target.result;
+                JSON.parse(json); // Kiểm tra xem file có lỗi không
+                
+                // Hỏi xác nhận lần cuối
+                if (confirm("⚠️ CẢNH BÁO:\nDữ liệu hiện tại trên máy này sẽ bị thay thế hoàn toàn bởi file bạn vừa chọn.\nBạn có chắc chắn muốn khôi phục không?")) {
+                    localStorage.setItem('phadao_srs_data', json);
+                    alert("Khôi phục thành công! Trang web sẽ tải lại.");
+                    window.location.reload();
+                }
+            } catch (err) {
+                alert("File lỗi! Vui lòng chọn đúng file .json đã sao lưu trước đó.");
+            }
+        };
+        reader.readAsText(file);
+        e.target.value = ''; // Reset để chọn lại file cũ vẫn nhận
+    };
+        
     // Kiểm tra xem có phải đang ở chế độ bản mẫu (không có text) hay không
     const isSample = !config.text || config.text.trim().length === 0;
 
