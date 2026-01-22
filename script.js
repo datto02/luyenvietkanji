@@ -278,20 +278,20 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                             </div>
 
                             {/* 2. Cơ chế hoạt động */}
-                            <div>
-                                <h4 className="font-bold text-gray-800 mb-1 flex items-center gap-2">
-                                    <span className="text-lg">⚙️</span> 2. CƠ CHẾ HOẠT ĐỘNG
-                                </h4>
-                                <div className="bg-indigo-50 p-3 rounded-xl border border-indigo-100 text-sm text-indigo-900 leading-relaxed">
-                                    <p className="mb-2">
-                                        Hệ thống tự động tính toán <b>mức độ ghi nhớ</b> của bạn đối với từng Kanji (dựa trên quá trình và kết quả học Flashcard). Từ đó đưa ra <b>lịch trình ôn tập phù hợp</b> riêng cho từng chữ.
-                                    </p>
-                                    <p className="flex gap-1 items-start mt-2 font-medium">
-                                        <span>🔔</span>
-                                        <span><b>Nhắc nhở:</b> Thông báo sẽ tự động xuất hiện trên giao diện web khi đến hạn ôn tập.</span>
-                                    </p>
-                                </div>
-                            </div>
+                            <div className="bg-indigo-50 p-3 rounded-xl border border-indigo-100 text-sm">
+    <h4 className="font-bold text-indigo-700 mb-1 flex items-center gap-2">
+        <span className="text-lg">⚙️</span> 2. CƠ CHẾ HOẠT ĐỘNG
+    </h4>
+    <div className="text-indigo-900 leading-relaxed">
+        <p className="mb-2">
+            Hệ thống tự động tính toán <b>mức độ ghi nhớ</b> của bạn đối với từng Kanji (dựa trên quá trình và kết quả học Flashcard). Từ đó đưa ra <b>lịch trình ôn tập phù hợp</b> riêng cho từng chữ.
+        </p>
+        <p className="flex gap-1 items-start mt-2 font-medium">
+            <span>🔔</span>
+            <span><b>Nhắc nhở:</b> Thông báo sẽ tự động xuất hiện trên giao diện web khi đến hạn ôn tập.</span>
+        </p>
+    </div>
+</div>
                             
                             {/* 3. Lưu ý dữ liệu */}
                             <div className="bg-yellow-50 p-3 rounded-xl border border-yellow-100 text-sm">
@@ -306,7 +306,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                             </div>
 
                             <button onClick={() => setIsHelpOpen(false)} className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-lg transition-all active:scale-95 text-xs uppercase">
-                                quay lại danh sách ôn tập
+                                quay lại lịch trình ôn tập
                             </button>
                         </div>
                     </>
