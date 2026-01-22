@@ -1708,7 +1708,7 @@ return (
                             className={`flex items-center gap-1 text-[10px] font-bold px-2 py-1 rounded transition-colors ${isFilterMenuOpen ? 'bg-indigo-100 text-indigo-700' : 'text-gray-600 hover:bg-gray-50 hover:text-indigo-700'}`}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-                            Bộ lọc
+                            BỘ LỌC
                         </button>
 
                         {/* POPUP MENU BỘ LỌC */}
@@ -1821,7 +1821,7 @@ LÀM SẠCH
                     {/* 1. MENU CHỌN NHANH (Quick Select) */}
                  <div className="relative flex-1" ref={quickMenuRef}> 
                     <button onClick={() => toggleMenu('quick')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isMenuOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-ms whitespace-nowrap">Chọn nhanh</span>
+                        <span className="font-bold text-xs whitespace-nowrap">Chọn nhanh</span>
                     </button>
                     {isMenuOpen && (
                         <div className="absolute bottom-full left-0 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-4 animate-in fade-in zoom-in-95 duration-200">
@@ -1922,7 +1922,7 @@ LÀM SẠCH
                    {/* 2. MENU TIỆN ÍCH (Utilities) */}
 <div className="relative flex-1" ref={utilsMenuRef}> 
                     <button onClick={() => toggleMenu('utils')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isUtilsOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-ms whitespace-nowrap">Tiện ích</span>
+                        <span className="font-bold text-xs whitespace-nowrap">Tiện ích</span>
                     </button>
                     {isUtilsOpen && (
                         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
@@ -1990,7 +1990,7 @@ LÀM SẠCH
                     {/* 3. TÙY CHỈNH */}
                     <div className="relative flex-1" ref={configMenuRef}> 
                     <button onClick={() => toggleMenu('config')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isConfigOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-ms whitespace-nowrap">Tùy chỉnh</span>
+                        <span className="font-bold text-xs whitespace-nowrap">Tùy chỉnh</span>
                     </button>
                     
 {isConfigOpen && (
