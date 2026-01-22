@@ -339,7 +339,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                                                 <span key={i} className="inline-block bg-white text-gray-800 border border-orange-200 rounded px-1.5 py-0.5 text-lg font-['Klee_One'] min-w-[32px] text-center shadow-sm">{char}</span>
                                             ))}
                                         </div>
-                                    ) : (<p className="text-[12px] text-gray-400 italic">Không có Kanji tồn đọng. Giỏi lắm! 🎉</p>)}
+                                    ) : (<p className="text-[12px] text-gray-400 italic">Không có Kanji cần ôn. Giỏi quá! 🎉</p>)}
                                 </div>
 
                                 {futureDates.length > 0 && (
