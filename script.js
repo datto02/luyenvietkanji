@@ -316,7 +316,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                     <>
                         <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
                             <div className="flex items-baseline gap-3">
-                                <h3 className="text-lg font-bold text-gray-800 uppercase flex items-center gap-2">📅 LỊCH TRÌNH ÔN TẬP</h3>
+                                <h3 className="text-sm font-bold text-gray-800 uppercase flex items-center gap-2">📅 LỊCH TRÌNH ÔN TẬP</h3>
                                 <button onClick={() => setIsHelpOpen(true)} className="text-[14px] font-bold text-blue-500 hover:text-blue-700 underline decoration-blue-300 hover:decoration-blue-700 underline-offset-2 transition-all">
                                     xem hướng dẫn
                                 </button>
