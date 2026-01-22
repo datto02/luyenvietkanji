@@ -288,7 +288,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         </p>
         <p className="flex gap-1 items-start mt-2 font-medium">
             <span>🔔</span>
-            <span><b>Nhắc nhở:</b> Thông báo sẽ tự động xuất hiện trên giao diện web khi đến hạn ôn tập.</span>
+            <span><b>Nhắc nhở:</b> Thông báo sẽ tự động xuất hiện trên giao diện web khi đến hạn ôn tập (vào lúc 5 giờ sáng).</span>
         </p>
     </div>
 </div>
