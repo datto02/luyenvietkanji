@@ -331,7 +331,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                                 <div className="bg-orange-50 rounded-xl p-3 border border-orange-100">
                                     <div className="flex items-center justify-between mb-2">
                                         <span className="text-sm font-black text-orange-600 uppercase">Cần ôn ngay</span>
-                                        <span className="bg-orange-200 text-orange-700 text-[14px] font-bold px-1.5 rounded">{groupedData.today.length} chữ</span>
+                                        <span className="bg-orange-200 text-orange-700 text-sm font-bold px-1.5 rounded">{groupedData.today.length} chữ</span>
                                     </div>
                                     {groupedData.today.length > 0 ? (
                                         <div className="flex flex-wrap gap-1">
@@ -339,7 +339,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                                                 <span key={i} className="inline-block bg-white text-gray-800 border border-orange-200 rounded px-1.5 py-0.5 text-lg font-['Klee_One'] min-w-[32px] text-center shadow-sm">{char}</span>
                                             ))}
                                         </div>
-                                    ) : (<p className="text-[15px] text-gray-400 italic">Không có Kanji tồn đọng. Giỏi lắm! 🎉</p>)}
+                                    ) : (<p className="text-[12px] text-gray-400 italic">Không có Kanji tồn đọng. Giỏi lắm! 🎉</p>)}
                                 </div>
 
                                 {futureDates.length > 0 && (
