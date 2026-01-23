@@ -14,9 +14,9 @@ const calculateSRS = (currentData, quality) => {
     easeFactor = Math.max(1.3, easeFactor - 0.2);
     
     return {
-      level: 0,           // Reset khoảng cách về 0
-      easeFactor: easeFactor, // Lưu hệ số mới (đã bị trừ)
-      nextReview: 0,      // 0 nghĩa là "Chưa xong", lát nữa hỏi lại ngay
+      level: 0,           
+      easeFactor: easeFactor, 
+      nextReview: 0,     
       isDone: false
     };
 
@@ -25,17 +25,15 @@ const calculateSRS = (currentData, quality) => {
 
     let newInterval;
 
-    // Tình huống A: Chữ này đang bị phạt (nextReview = 0) hoặc mới tinh (level = 0)
-    // -> Đặt lịch cứng là 1 ngày, KHÔNG nhân hệ số.
+  
     if (!nextReview || nextReview === 0 || level === 0) {
         newInterval = 1; 
     } 
-    // Tình huống B: Chữ này đang ôn tập định kỳ (Đã thuộc từ các hôm trước)
+  
     else {
-        // CÔNG THỨC ANKI: Ngày mới = Ngày cũ * Hệ số IQ
+
         newInterval = Math.ceil(level * easeFactor);
-        
-        // THƯỞNG: Tăng IQ lên một chút (tối đa 2.5)
+
         easeFactor = Math.min(2.5, easeFactor + 0.1); 
     }
 
@@ -45,10 +43,10 @@ const calculateSRS = (currentData, quality) => {
     nextDate.setHours(5, 0, 0, 0);
 
     return {
-      level: newInterval, // Lưu khoảng cách ngày mới làm level
+      level: newInterval, 
       easeFactor: easeFactor,
       nextReview: nextDate.getTime(),
-      isDone: false // Không bao giờ "Done" hẳn, chỉ đẩy ngày ra xa vô tận
+      isDone: false 
     };
   }
 };
@@ -56,7 +54,7 @@ const calculateSRS = (currentData, quality) => {
  // --- FETCH DATA FROM GITHUB --- 
 const fetchDataFromGithub = async () => {
   try { 
-    // Tải song song cả 2 file database
+  
     const [dbResponse, onkunResponse] = await Promise.all([
       fetch('./data/kanji_db.json'),
       fetch('./data/onkun.json')
@@ -71,7 +69,7 @@ const fetchDataFromGithub = async () => {
     if (onkunResponse.ok) onkunDb = await onkunResponse.json();
     else console.warn("Không tải được onkun.json (sẽ dùng API online)");
 
-    // Trả về object chứa cả 2
+
     return { ...kanjiDb, ONKUN_DB: onkunDb }; 
   } catch (error) {
     console.error("Lỗi tải dữ liệu hệ thống:", error);
@@ -89,9 +87,9 @@ const fetchDataFromGithub = async () => {
    const fetchKanjiData = async (char) => {
     const hex = getHex(char);
     
-    // ƯU TIÊN LINK LOCAL/GITHUB TRƯỚC
+  
     const sources = [
-      `./data/svg/${hex}.svg`,  // <--- Thêm dòng này lên đầu
+      `./data/svg/${hex}.svg`,  
       `https://cdn.jsdelivr.net/gh/KanjiVG/kanjivg@master/kanji/${hex}.svg`,
       `https://cdn.jsdelivr.net/gh/KanjiVG/kanjivg@master/kanji/${hex}-Kaisho.svg`,
       `https://cdn.jsdelivr.net/gh/parsimonhi/animCJK@master/svgsKana/${hex}.svg`,
@@ -103,7 +101,7 @@ const fetchDataFromGithub = async () => {
         const res = await fetch(url);
         if (res.ok) {
           const text = await res.text();
-          // Kiểm tra sơ bộ xem có phải SVG hợp lệ không
+          
           if (text.includes('<svg')) {
              return { success: true, svg: text, source: url };
           }
@@ -174,18 +172,18 @@ const useKanjiReadings = (char, active, dbData) => {
   useEffect(() => {
     if (!char || !active) return;
 
-    // CÁCH 1: Lấy từ dữ liệu nội bộ (data/onkun.json)
+    
     if (dbData?.ONKUN_DB && dbData.ONKUN_DB[char]) {
       const info = dbData.ONKUN_DB[char];
       setReadings({
-        // Dữ liệu của bạn là mảng, cần join lại thành chuỗi
+        
         on: info.readings_on?.join(', ') || '---', 
         kun: info.readings_kun?.join(', ') || '---'
       });
-      return; // Đã có dữ liệu thì dừng, không gọi API nữa
+      return; 
     }
 
-    // CÁCH 2: Fallback sang API Online (như cũ)
+ 
     fetch(`https://kanjiapi.dev/v1/kanji/${char}`)
       .then(res => res.json())
       .then(data => {
@@ -198,15 +196,15 @@ const useKanjiReadings = (char, active, dbData) => {
       })
       .catch(() => setReadings({ on: '---', kun: '---' }));
       
-  }, [char, active, dbData]); // Thêm dbData vào dependency
+  }, [char, active, dbData]); 
 
   return readings;
 };
-// --- BƯỚC 2: COMPONENT BẢNG DANH SÁCH ÔN TẬP (CẬP NHẬT NỘI DUNG HƯỚNG DẪN MỚI) ---
+
 const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
     const [isConfirmOpen, setIsConfirmOpen] = React.useState(false);
     const [isHelpOpen, setIsHelpOpen] = React.useState(false);
-// --- 1. Hàm Xuất dữ liệu (Backup) ---
+
     const handleExport = () => {
         const data = localStorage.getItem('phadao_srs_data');
         if (!data || data === '{}') {
@@ -228,7 +226,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         URL.revokeObjectURL(url);
     };
 
-    // --- 2. Hàm Nhập dữ liệu (Restore) ---
+
     const handleImport = (e) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -236,7 +234,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         reader.onload = (event) => {
             try {
                 const json = event.target.result;
-                JSON.parse(json); // Check lỗi JSON
+                JSON.parse(json); 
                 if (confirm("⚠️ CẢNH BÁO:\nDữ liệu hiện tại sẽ bị thay thế hoàn toàn bởi bản sao lưu này.\nBạn có chắc chắn muốn khôi phục không?")) {
                     localStorage.setItem('phadao_srs_data', json);
                     alert("Khôi phục thành công! Trang web sẽ tải lại.");
@@ -249,14 +247,14 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         reader.readAsText(file);
         e.target.value = '';
     };
-    // Logic khóa cuộn nền
+    
     React.useEffect(() => {
         if (isOpen) document.body.style.overflow = 'hidden';
         else document.body.style.overflow = 'unset';
         return () => { document.body.style.overflow = 'unset'; };
     }, [isOpen]);
 
-    // Reset trạng thái khi đóng
+    
     React.useEffect(() => {
         if (!isOpen) {
             setIsConfirmOpen(false);
@@ -264,7 +262,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         }
     }, [isOpen]);
 
-    // Logic gom nhóm dữ liệu
+   
     const groupedData = React.useMemo(() => {
         const groups = { today: [] }; 
         const now = Date.now();
@@ -296,7 +294,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                 
                 {isHelpOpen ? (
                     // === GIAO DIỆN HƯỚNG DẪN (SRS GUIDE) - NỘI DUNG MỚI ===
-                    // ĐÃ SỬA: Thay div bao ngoài bằng Fragment <> để flex-1 hoạt động đúng với parent
+                    
                     <>
                          <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-indigo-50">
                             <h3 className="text-base font-black text-indigo-700 uppercase flex items-center gap-2">
@@ -516,8 +514,6 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
     const [btnFeedback, setBtnFeedback] = React.useState(null);
     const [isShuffleOn, setIsShuffleOn] = React.useState(false);
 
-    // --- (Giữ nguyên các hàm bổ trợ: triggerConfetti, shuffleArray, startNewSession...) ---
-    // Bạn có thể copy lại các hàm này từ code cũ nếu muốn ngắn gọn, hoặc dùng đoạn dưới đây:
     const triggerConfetti = React.useCallback(() => { if (typeof confetti === 'undefined') return; const count = 200; const defaults = { origin: { y: 0.6 }, zIndex: 1500 }; function fire(particleRatio, opts) { confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) }); } fire(0.25, { spread: 26, startVelocity: 55 }); fire(0.2, { spread: 60 }); fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 }); fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 }); fire(0.1, { spread: 120, startVelocity: 45 }); }, []);
     React.useEffect(() => { if (isFinished && isOpen) { triggerConfetti(); } }, [isFinished, triggerConfetti]);
     const shuffleArray = React.useCallback((array) => { const newArr = [...array]; for (let i = newArr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArr[i], newArr[j]] = [newArr[j], newArr[i]]; } return newArr; }, []);
@@ -584,7 +580,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
             } 
 
             // 3. KHÔI PHỤC DỮ LIỆU SRS VỀ TRẠNG THÁI CŨ
-            // Nếu lúc nãy có lưu snapshot, giờ ta đè nó lại vào hệ thống
+            
             if (onSrsRestore && lastItem.char) {
                 onSrsRestore(lastItem.char, lastItem.snapshot);
             }
@@ -783,12 +779,12 @@ else if (dbData?.ALPHABETS?.katakana?.[char]) info = dbData.ALPHABETS.katakana[c
 
 return (
     <div 
-        // THÊM: cursor-pointer (để hiện bàn tay khi ở vùng tối)
+        
         className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in duration-200 cursor-pointer"
         onClick={onClose} 
     >
         <div 
-            // THÊM: cursor-default (để chuột trở lại bình thường khi vào trong khung)
+            
             className="bg-white rounded-2xl shadow-2xl p-5 w-[90%] max-w-sm flex flex-col items-center relative animate-in zoom-in-95 duration-200 cursor-default"
             onClick={(e) => e.stopPropagation()} 
         >
@@ -891,7 +887,7 @@ const readings = useKanjiReadings(char, config.showOnKun, dbData);
 if (loading) return <div className="h-[22px] w-full animate-pulse bg-gray-100 rounded mb-1"></div>;
 if (failed) return <div className="h-[22px] w-full mb-1"></div>;
 
-// Thêm tiền tố dbData. vào trước các biến
+
 const info = dbData.KANJI_DB[char] || dbData.ALPHABETS.hiragana[char] || dbData.ALPHABETS.katakana[char];
 
 const isJLPT = dbData.KANJI_LEVELS.N5.includes(char) || 
@@ -978,8 +974,7 @@ const refStyle = isReference ? {
 
 return (
     <div 
-    // THÊM: class 'reference-box' (quan trọng để đổi màu chữ)
-    // SỬA: hover:bg-indigo-50 (nền xanh nhạt)
+    
     className={`relative w-[16mm] h-[16mm] border-r border-b box-border flex justify-center items-center overflow-hidden bg-transparent ${isReference ? 'reference-box cursor-pointer hover:bg-indigo-50 transition-colors duration-200' : ''}`}
     style={{ borderColor: gridColor }}
     onClick={isReference ? onClick : undefined} 
@@ -1193,7 +1188,7 @@ return (
 
 // 5. Sidebar (Phiên bản: Final)
     const Sidebar = ({ config, onChange, onPrint, srsData, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen, showMobilePreview, setShowMobilePreview, dbData, setIsFlashcardOpen, onOpenReviewList }) => {
-   // --- BƯỚC 2: TÌM TRONG COMPONENT SIDEBAR -> SỬA BIẾN dueChars ---
+   
 
 // 1. Logic bộ lọc mới
 const dueChars = useMemo(() => {
