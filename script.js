@@ -14,33 +14,41 @@ const calculateSRS = (currentData, quality) => {
     easeFactor = Math.max(1.3, easeFactor - 0.2);
     
     return {
-      level: 0,          
-      easeFactor: easeFactor, 
-      nextReview: 0,      
+      level: 0,           // Reset khoảng cách về 0
+      easeFactor: easeFactor, // Lưu hệ số mới (đã bị trừ)
+      nextReview: 0,      // 0 nghĩa là "Chưa xong", lát nữa hỏi lại ngay
       isDone: false
     };
 
   } else {
-    
+    // === BẤM NÚT "ĐÃ BIẾT" (XANH) ===
 
     let newInterval;
 
+    // Tình huống A: Chữ này đang bị phạt (nextReview = 0) hoặc mới tinh (level = 0)
+    // -> Đặt lịch cứng là 1 ngày, KHÔNG nhân hệ số.
     if (!nextReview || nextReview === 0 || level === 0) {
         newInterval = 1; 
     } 
+    // Tình huống B: Chữ này đang ôn tập định kỳ (Đã thuộc từ các hôm trước)
     else {
+        // CÔNG THỨC ANKI: Ngày mới = Ngày cũ * Hệ số IQ
         newInterval = Math.ceil(level * easeFactor);
+        
+        // THƯỞNG: Tăng IQ lên một chút (tối đa 2.5)
         easeFactor = Math.min(2.5, easeFactor + 0.1); 
     }
+
+    // --- XỬ LÝ 5 GIỜ SÁNG ---
     const nextDate = new Date();
     nextDate.setDate(nextDate.getDate() + newInterval);
     nextDate.setHours(5, 0, 0, 0);
 
     return {
-      level: newInterval, 
+      level: newInterval, // Lưu khoảng cách ngày mới làm level
       easeFactor: easeFactor,
       nextReview: nextDate.getTime(),
-      isDone: false 
+      isDone: false // Không bao giờ "Done" hẳn, chỉ đẩy ngày ra xa vô tận
     };
   }
 };
@@ -48,6 +56,7 @@ const calculateSRS = (currentData, quality) => {
  // --- FETCH DATA FROM GITHUB --- 
 const fetchDataFromGithub = async () => {
   try { 
+    // Tải song song cả 2 file database
     const [dbResponse, onkunResponse] = await Promise.all([
       fetch('./data/kanji_db.json'),
       fetch('./data/onkun.json')
@@ -62,6 +71,7 @@ const fetchDataFromGithub = async () => {
     if (onkunResponse.ok) onkunDb = await onkunResponse.json();
     else console.warn("Không tải được onkun.json (sẽ dùng API online)");
 
+    // Trả về object chứa cả 2
     return { ...kanjiDb, ONKUN_DB: onkunDb }; 
   } catch (error) {
     console.error("Lỗi tải dữ liệu hệ thống:", error);
@@ -79,8 +89,9 @@ const fetchDataFromGithub = async () => {
    const fetchKanjiData = async (char) => {
     const hex = getHex(char);
     
+    // ƯU TIÊN LINK LOCAL/GITHUB TRƯỚC
     const sources = [
-      `./data/svg/${hex}.svg`,
+      `./data/svg/${hex}.svg`,  // <--- Thêm dòng này lên đầu
       `https://cdn.jsdelivr.net/gh/KanjiVG/kanjivg@master/kanji/${hex}.svg`,
       `https://cdn.jsdelivr.net/gh/KanjiVG/kanjivg@master/kanji/${hex}-Kaisho.svg`,
       `https://cdn.jsdelivr.net/gh/parsimonhi/animCJK@master/svgsKana/${hex}.svg`,
@@ -92,6 +103,7 @@ const fetchDataFromGithub = async () => {
         const res = await fetch(url);
         if (res.ok) {
           const text = await res.text();
+          // Kiểm tra sơ bộ xem có phải SVG hợp lệ không
           if (text.includes('<svg')) {
              return { success: true, svg: text, source: url };
           }
@@ -162,16 +174,18 @@ const useKanjiReadings = (char, active, dbData) => {
   useEffect(() => {
     if (!char || !active) return;
 
+    // CÁCH 1: Lấy từ dữ liệu nội bộ (data/onkun.json)
     if (dbData?.ONKUN_DB && dbData.ONKUN_DB[char]) {
       const info = dbData.ONKUN_DB[char];
       setReadings({
+        // Dữ liệu của bạn là mảng, cần join lại thành chuỗi
         on: info.readings_on?.join(', ') || '---', 
         kun: info.readings_kun?.join(', ') || '---'
       });
-      return; 
+      return; // Đã có dữ liệu thì dừng, không gọi API nữa
     }
 
-
+    // CÁCH 2: Fallback sang API Online (như cũ)
     fetch(`https://kanjiapi.dev/v1/kanji/${char}`)
       .then(res => res.json())
       .then(data => {
@@ -184,15 +198,15 @@ const useKanjiReadings = (char, active, dbData) => {
       })
       .catch(() => setReadings({ on: '---', kun: '---' }));
       
-  }, [char, active, dbData]); 
+  }, [char, active, dbData]); // Thêm dbData vào dependency
 
   return readings;
 };
-
+// --- BƯỚC 2: COMPONENT BẢNG DANH SÁCH ÔN TẬP (CẬP NHẬT NỘI DUNG HƯỚNG DẪN MỚI) ---
 const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
     const [isConfirmOpen, setIsConfirmOpen] = React.useState(false);
     const [isHelpOpen, setIsHelpOpen] = React.useState(false);
-
+// --- 1. Hàm Xuất dữ liệu (Backup) ---
     const handleExport = () => {
         const data = localStorage.getItem('phadao_srs_data');
         if (!data || data === '{}') {
@@ -214,7 +228,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         URL.revokeObjectURL(url);
     };
 
-
+    // --- 2. Hàm Nhập dữ liệu (Restore) ---
     const handleImport = (e) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -222,7 +236,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         reader.onload = (event) => {
             try {
                 const json = event.target.result;
-                JSON.parse(json); 
+                JSON.parse(json); // Check lỗi JSON
                 if (confirm("⚠️ CẢNH BÁO:\nDữ liệu hiện tại sẽ bị thay thế hoàn toàn bởi bản sao lưu này.\nBạn có chắc chắn muốn khôi phục không?")) {
                     localStorage.setItem('phadao_srs_data', json);
                     alert("Khôi phục thành công! Trang web sẽ tải lại.");
@@ -235,14 +249,14 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         reader.readAsText(file);
         e.target.value = '';
     };
-
+    // Logic khóa cuộn nền
     React.useEffect(() => {
         if (isOpen) document.body.style.overflow = 'hidden';
         else document.body.style.overflow = 'unset';
         return () => { document.body.style.overflow = 'unset'; };
     }, [isOpen]);
 
-
+    // Reset trạng thái khi đóng
     React.useEffect(() => {
         if (!isOpen) {
             setIsConfirmOpen(false);
@@ -250,7 +264,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         }
     }, [isOpen]);
 
-
+    // Logic gom nhóm dữ liệu
     const groupedData = React.useMemo(() => {
         const groups = { today: [] }; 
         const now = Date.now();
@@ -281,7 +295,8 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
             <div className={`bg-white rounded-2xl shadow-2xl w-full flex flex-col max-h-[80vh] animate-in zoom-in-95 duration-200 overflow-hidden relative transition-all cursor-default ${isConfirmOpen ? 'max-w-[300px]' : 'max-w-md'}`} onClick={e => e.stopPropagation()}>
                 
                 {isHelpOpen ? (
-                    
+                    // === GIAO DIỆN HƯỚNG DẪN (SRS GUIDE) - NỘI DUNG MỚI ===
+                    // ĐÃ SỬA: Thay div bao ngoài bằng Fragment <> để flex-1 hoạt động đúng với parent
                     <>
                          <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-indigo-50">
                             <h3 className="text-base font-black text-indigo-700 uppercase flex items-center gap-2">
@@ -332,7 +347,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                                 </ul>
                             </div>
                                 
-{/* --- MỤC 4: SAO LƯU & KHÔI PHỤC  --- */}
+{/* --- MỤC 4: SAO LƯU & KHÔI PHỤC (MỚI) --- */}
 <div className="bg-emerald-50 p-3 rounded-xl border border-emerald-100 text-sm">
     <h4 className="font-bold text-emerald-800 mb-2 flex items-center gap-2">
         <span className="text-lg">💾</span> 4. SAO LƯU & KHÔI PHỤC
@@ -501,6 +516,8 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
     const [btnFeedback, setBtnFeedback] = React.useState(null);
     const [isShuffleOn, setIsShuffleOn] = React.useState(false);
 
+    // --- (Giữ nguyên các hàm bổ trợ: triggerConfetti, shuffleArray, startNewSession...) ---
+    // Bạn có thể copy lại các hàm này từ code cũ nếu muốn ngắn gọn, hoặc dùng đoạn dưới đây:
     const triggerConfetti = React.useCallback(() => { if (typeof confetti === 'undefined') return; const count = 200; const defaults = { origin: { y: 0.6 }, zIndex: 1500 }; function fire(particleRatio, opts) { confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) }); } fire(0.25, { spread: 26, startVelocity: 55 }); fire(0.2, { spread: 60 }); fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 }); fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 }); fire(0.1, { spread: 120, startVelocity: 45 }); }, []);
     React.useEffect(() => { if (isFinished && isOpen) { triggerConfetti(); } }, [isFinished, triggerConfetti]);
     const shuffleArray = React.useCallback((array) => { const newArr = [...array]; for (let i = newArr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArr[i], newArr[j]] = [newArr[j], newArr[i]]; } return newArr; }, []);
@@ -514,21 +531,27 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
     const toggleFlip = React.useCallback(() => { setIsFlipped(prev => !prev); if (currentIndex === 0) setShowHint(false); }, [currentIndex]);
     const handleNext = React.useCallback((isKnown) => { 
         if (exitDirection || isFinished || queue.length === 0) return; 
-
+        
+        // 1. Lấy chữ hiện tại
         const currentChar = queue[currentIndex];
+
+        // 2. CHỤP LẠI DỮ LIỆU CŨ (SNAPSHOT) TRƯỚC KHI BỊ THAY ĐỔI
+        // Nếu chưa có dữ liệu thì lưu object rỗng
         const snapshot = (srsData && srsData[currentChar]) ? { ...srsData[currentChar] } : {};
 
         setIsFlipped(false); 
 
+        // Logic đếm số lượng (Giữ nguyên)
         if (isKnown) { 
             setKnownCount(prev => prev + 1); 
         } else { 
             setUnknownIndices(prev => [...prev, currentIndex]); 
         } 
 
- 
+        // 3. LƯU VÀO HISTORY (Lưu cả trạng thái đúng/sai VÀ bản chụp dữ liệu cũ)
         setHistory(prev => [...prev, { isKnown, char: currentChar, snapshot }]); 
 
+        // Gọi hàm cập nhật dữ liệu mới (Giữ nguyên)
         setBtnFeedback(isKnown ? 'right' : 'left'); 
         setExitDirection(isKnown ? 'right' : 'left'); 
         
@@ -550,21 +573,23 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
         if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); } 
         
         if (currentIndex > 0 && history.length > 0) { 
-         
+            // 1. Lấy phần tử lịch sử cuối cùng (Bây giờ nó là object chứa snapshot)
             const lastItem = history[history.length - 1]; 
             
+            // 2. Tính toán lại UI (Dựa vào lastItem.isKnown thay vì lastIsKnown)
             if (lastItem.isKnown === true) { 
                 setKnownCount(prev => Math.max(0, prev - 1)); 
             } else { 
                 setUnknownIndices(prev => prev.slice(0, -1)); 
             } 
 
-           
+            // 3. KHÔI PHỤC DỮ LIỆU SRS VỀ TRẠNG THÁI CŨ
+            // Nếu lúc nãy có lưu snapshot, giờ ta đè nó lại vào hệ thống
             if (onSrsRestore && lastItem.char) {
                 onSrsRestore(lastItem.char, lastItem.snapshot);
             }
 
-           
+            // 4. Cập nhật lại các state UI khác (Giữ nguyên)
             setHistory(prev => prev.slice(0, -1)); 
             setCurrentIndex(prev => prev - 1); 
             setIsFlipped(false); 
@@ -590,13 +615,13 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                     e.preventDefault(); toggleFlip(); break;
                 case 'ArrowLeft':
                     e.preventDefault();
-                   
+                    // [LOGIC MỚI] Gọi hàm lưu dữ liệu: 0 = Đang học
                     if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 0);
                     handleNext(false); 
                     break;
                 case 'ArrowRight':
                     e.preventDefault();
-                  
+                    // [LOGIC MỚI] Gọi hàm lưu dữ liệu: 1 = Đã biết
                     if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 1);
                     handleNext(true); 
                     break;
@@ -613,12 +638,12 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
         if (!isDragging) return;
         setIsDragging(false);
         if (dragX > 70) {
-           
+             // [LOGIC MỚI] Kéo phải = Đã biết (1)
              if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 1);
              handleNext(true);
         }
         else if (dragX < -70) {
-          
+             // [LOGIC MỚI] Kéo trái = Đang học (0)
              if(onSrsUpdate) onSrsUpdate(queue[currentIndex], 0);
              handleNext(false);
         }
@@ -636,7 +661,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
             <div className="w-full max-w-sm flex flex-col items-center">
                 {!isFinished ? (
                     <>
-                        {/* --- PHẦN CARD --- */}
+                        {/* --- PHẦN CARD (GIỮ NGUYÊN) --- */}
                         <div className={`relative transition-all duration-300 ease-in-out ${exitDirection === 'left' ? '-translate-x-16 -rotate-3' : exitDirection === 'right' ? 'translate-x-16 rotate-3' : ''}`} style={{ transform: !exitDirection && dragX !== 0 ? `translateX(${dragX}px) rotate(${dragX * 0.02}deg)` : '', transition: isDragging ? 'none' : 'all 0.25s ease-out' }}>
                             <div onClick={() => { if (Math.abs(dragX) < 5) toggleFlip(); }} onMouseDown={handleDragStart} onMouseMove={handleDragMove} onMouseUp={handleDragEnd} onMouseLeave={handleDragEnd} onTouchStart={handleDragStart} onTouchMove={handleDragMove} onTouchEnd={handleDragEnd} className={`relative w-64 h-80 cursor-pointer transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}>
                                 <div className="absolute inset-0 bg-white rounded-[2rem] shadow-2xl flex items-center justify-center border-4 [backface-visibility:hidden] overflow-hidden" style={{ borderColor: dynamicBorder() }}>
@@ -660,7 +685,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                             </div>
                         </div>
                         
-                        {/* --- THANH TIẾN TRÌNH  --- */}
+                        {/* --- THANH TIẾN TRÌNH (GIỮ NGUYÊN) --- */}
                         <div className="w-64 mt-8 mb-6 relative h-6 flex items-center">
                             <div className="w-full h-1 bg-white/10 rounded-full relative overflow-hidden"><div className="absolute top-0 left-0 h-full bg-sky-400 transition-all duration-300 ease-out" style={{ width: `${progressRatio * 100}%` }} /></div>
                             <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full h-1 pointer-events-none"><div className="absolute right-0 top-1/2 -translate-y-1/2 h-7 w-9 rounded-md flex items-center justify-center bg-white shadow-sm z-0"><span className="text-[10px] font-black text-black leading-none">{queue.length}</span></div></div>
@@ -671,7 +696,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                         <div className="flex gap-3 w-full px-8">
                             <button 
                                 onClick={() => {
-                              
+                                    // [LOGIC MỚI] Nút Đỏ = 0
                                     if(onSrsUpdate) onSrsUpdate(currentChar, 0); 
                                     handleNext(false);
                                 }} 
@@ -681,7 +706,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                             </button>
                             <button 
                                 onClick={() => {
-                                
+                                    // [LOGIC MỚI] Nút Xanh = 1
                                     if(onSrsUpdate) onSrsUpdate(currentChar, 1); 
                                     handleNext(true);
                                 }} 
@@ -710,7 +735,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
     );
 };
 
-// --- COMPONENT POPUP HOẠT HỌA  ---
+// --- COMPONENT POPUP HOẠT HỌA (Đã chỉnh con trỏ chuột) ---
 const KanjiAnimationModal = ({ char, paths, fullSvg, dbData, isOpen, onClose }) => {
 const [key, setKey] = useState(0); 
 const [strokeNumbers, setStrokeNumbers] = useState([]); 
@@ -718,14 +743,14 @@ const [speedConfig, setSpeedConfig] = useState({ duration: 3, delay: 0.6 });
 const initialDelay = 0.4;
 const [activeSpeed, setActiveSpeed] = useState('normal'); 
 
-
+// Logic khóa cuộn
 useEffect(() => {
     if (isOpen) document.body.style.overflow = 'hidden';
     else document.body.style.overflow = 'unset';
     return () => { document.body.style.overflow = 'unset'; };
 }, [isOpen]);
 
-
+// Logic lấy số thứ tự
 useEffect(() => {
     if (fullSvg) {
         const parser = new DOMParser();
@@ -750,6 +775,7 @@ const handleReplay = (mode) => {
 
 if (!isOpen) return null;
 
+// Logic lấy dữ liệu thông minh
 let info = {};
 if (dbData?.KANJI_DB?.[char]) info = dbData.KANJI_DB[char];
 else if (dbData?.ALPHABETS?.hiragana?.[char]) info = dbData.ALPHABETS.hiragana[char];
@@ -757,12 +783,12 @@ else if (dbData?.ALPHABETS?.katakana?.[char]) info = dbData.ALPHABETS.katakana[c
 
 return (
     <div 
-       
+        // THÊM: cursor-pointer (để hiện bàn tay khi ở vùng tối)
         className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in duration-200 cursor-pointer"
         onClick={onClose} 
     >
         <div 
-           
+            // THÊM: cursor-default (để chuột trở lại bình thường khi vào trong khung)
             className="bg-white rounded-2xl shadow-2xl p-5 w-[90%] max-w-sm flex flex-col items-center relative animate-in zoom-in-95 duration-200 cursor-default"
             onClick={(e) => e.stopPropagation()} 
         >
@@ -865,7 +891,7 @@ const readings = useKanjiReadings(char, config.showOnKun, dbData);
 if (loading) return <div className="h-[22px] w-full animate-pulse bg-gray-100 rounded mb-1"></div>;
 if (failed) return <div className="h-[22px] w-full mb-1"></div>;
 
-
+// Thêm tiền tố dbData. vào trước các biến
 const info = dbData.KANJI_DB[char] || dbData.ALPHABETS.hiragana[char] || dbData.ALPHABETS.katakana[char];
 
 const isJLPT = dbData.KANJI_LEVELS.N5.includes(char) || 
@@ -879,7 +905,7 @@ return (
     className="flex flex-row items-end px-1 mb-1 h-[22px] overflow-hidden border-b border-transparent"
     style={{ width: '184mm', minWidth: '184mm', maxWidth: '184mm' }}
 >
-    {/* 1. ÂM HÁN VIỆT + NGHĨA  */}
+    {/* 1. ÂM HÁN VIỆT + NGHĨA (Luôn hiện nếu có dữ liệu) */}
     {info && (
     <div className="flex-shrink-0 mr-4 flex items-baseline gap-2 mb-[3px]">
         <span className="font-bold text-sm leading-none text-black whitespace-nowrap uppercase">
@@ -896,7 +922,8 @@ return (
     {/* 2. PHẦN LOGIC THAY ĐỔI THEO NÚT GẠT */}
     <div className="flex-1 min-w-0 h-[22px]"> 
     {(() => {
-       
+        // TRƯỜNG HỢP 1: Nếu nút gạt đang TẮT (Mặc định)
+        // Hiện thứ tự nét vẽ cho TẤT CẢ các chữ (Kanji, Kana...)
         if (!config.showOnKun) {
         return (
             <div className="h-full flex items-center flex-wrap gap-1">
@@ -913,7 +940,8 @@ return (
         );
         }
 
-       
+        // TRƯỜNG HỢP 2: Nếu nút gạt đang BẬT
+        // A. Nếu là Kanji thuộc N1-N5: Hiện âm On/Kun
         if (isJLPT) {
         return (
             <div className="h-full flex items-end pb-[3px] text-[12px] text-black italic w-full leading-none whitespace-nowrap">
@@ -927,14 +955,14 @@ return (
         );
         }
 
-      
+        // B. Nếu KHÔNG phải Kanji N1-N5 (Hiragana, Katakana, chữ khác): Ẩn hoàn toàn nét vẽ
         return null;
     })()}
     </div>
 </div>
 );
 };
-// 2. GridBox 
+// 2. GridBox (Đã thêm class reference-box và chỉnh Hover xanh nhạt)
 const GridBox = ({ char, type, config, index, svgData, failed, onClick }) => {
 const isReference = type === 'reference';
 const showTrace = index < config.traceCount;
@@ -950,7 +978,8 @@ const refStyle = isReference ? {
 
 return (
     <div 
-  
+    // THÊM: class 'reference-box' (quan trọng để đổi màu chữ)
+    // SỬA: hover:bg-indigo-50 (nền xanh nhạt)
     className={`relative w-[16mm] h-[16mm] border-r border-b box-border flex justify-center items-center overflow-hidden bg-transparent ${isReference ? 'reference-box cursor-pointer hover:bg-indigo-50 transition-colors duration-200' : ''}`}
     style={{ borderColor: gridColor }}
     onClick={isReference ? onClick : undefined} 
@@ -1004,7 +1033,7 @@ return (
 );
 };
 
-// 3. WorkbookRow 
+// 3. WorkbookRow (Cập nhật truyền props cho Modal mới)
     const WorkbookRow = ({ char, config, dbData }) => {
     const { loading, paths, fullSvg, failed } = useKanjiSvg(char);
     const boxes = Array.from({ length: 12 }, (_, i) => i);
@@ -1042,8 +1071,8 @@ return (
             <KanjiAnimationModal 
                 char={char}
                 paths={paths}
-                fullSvg={fullSvg}  
-                dbData={dbData}    
+                fullSvg={fullSvg}  // <-- Truyền chuỗi SVG gốc để lấy số
+                dbData={dbData}    // <-- Truyền data để lấy Âm/Nghĩa
                 isOpen={isAnimOpen}
                 onClose={() => setIsAnimOpen(false)}
             />
@@ -1051,16 +1080,16 @@ return (
     );
 };
 
-    // 4. Page Layout 
+    // 4. Page Layout (Đã cập nhật giao diện Bản Mẫu)
     const Page = ({ chars, config, dbData }) => {
-
+// 1. Hàm Xuất dữ liệu (Tải file về máy)
     const handlePageExport = () => {
         const data = localStorage.getItem('phadao_srs_data');
         if (!data || data === '{}') {
             alert("Bạn chưa có dữ liệu học tập nào để sao lưu!");
             return;
         }
-
+        // Tạo file JSON và kích hoạt tải về
         const blob = new Blob([data], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const date = new Date();
@@ -1076,7 +1105,7 @@ return (
         URL.revokeObjectURL(url);
     };
 
-
+    // 2. Hàm Nhập dữ liệu (Tải file lên)
     const handlePageImport = (e) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -1084,9 +1113,9 @@ return (
         reader.onload = (event) => {
             try {
                 const json = event.target.result;
-                JSON.parse(json); 
+                JSON.parse(json); // Kiểm tra xem file có lỗi không
                 
-          
+                // Hỏi xác nhận lần cuối
                 if (confirm("⚠️ CẢNH BÁO:\nDữ liệu hiện tại trên máy này sẽ bị thay thế hoàn toàn bởi file bạn vừa chọn.\nBạn có chắc chắn muốn khôi phục không?")) {
                     localStorage.setItem('phadao_srs_data', json);
                     alert("Khôi phục thành công! Trang web sẽ tải lại.");
@@ -1097,10 +1126,10 @@ return (
             }
         };
         reader.readAsText(file);
-        e.target.value = ''; 
+        e.target.value = ''; // Reset để chọn lại file cũ vẫn nhận
     };
         
-
+    // Kiểm tra xem có phải đang ở chế độ bản mẫu (không có text) hay không
     const isSample = !config.text || config.text.trim().length === 0;
 
     return (
@@ -1162,20 +1191,21 @@ return (
     );
     };
 
-// 5. Sidebar 
+// 5. Sidebar (Phiên bản: Final)
     const Sidebar = ({ config, onChange, onPrint, srsData, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen, showMobilePreview, setShowMobilePreview, dbData, setIsFlashcardOpen, onOpenReviewList }) => {
- 
+   // --- BƯỚC 2: TÌM TRONG COMPONENT SIDEBAR -> SỬA BIẾN dueChars ---
 
+// 1. Logic bộ lọc mới
 const dueChars = useMemo(() => {
     const now = Date.now();
     return Object.keys(srsData || {}).filter(char => {
         const data = srsData[char];
- 
+        // Điều kiện: Chưa hoàn thành VÀ (Là chữ đang học HOẶC Đã đến giờ ôn)
         return !data.isDone && data.nextReview !== null && (data.nextReview === 0 || data.nextReview <= now);
     });
 }, [srsData]);
 
-
+// 2. Hàm Load bài mới (Load xong mở ngay)
 const handleLoadDueCards = () => {
     if (dueChars.length === 0) return;
     const dueText = dueChars.join('');
@@ -1189,14 +1219,14 @@ const handleLoadDueCards = () => {
     const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
     const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
     
-   
+    // --- CHẶN TUYỆT ĐỐI CTRL + P (KHÔNG CÓ GÌ XẢY RA) ---
     useEffect(() => {
     const handleKeyDown = (e) => {
-    
+        // Kiểm tra Ctrl + P (Win) hoặc Command + P (Mac)
         if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
-        e.preventDefault(); 
-        e.stopPropagation(); 
-        return false; 
+        e.preventDefault(); // Chặn trình duyệt mở bảng in
+        e.stopPropagation(); // Chặn sự kiện lan truyền
+        return false; // Kết thúc ngay lập tức, không làm gì cả
         }
     };
 
@@ -1204,14 +1234,15 @@ const handleLoadDueCards = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
     
-
+// --- CHẶN CUỘN TRANG KHI MỞ MODAL ---
 useEffect(() => {
-
+// Nếu khung In hoặc khung Tài liệu đang mở
 if (isPrintModalOpen || isDocsModalOpen) {
-    document.body.style.overflow = 'hidden'; 
+    document.body.style.overflow = 'hidden'; // Khóa cuộn
 } else {
-    document.body.style.overflow = 'unset'; 
-
+    document.body.style.overflow = 'unset';  // Mở lại cuộn bình thường
+}
+// Dọn dẹp khi tắt
 return () => { document.body.style.overflow = 'unset'; };
 }, [isPrintModalOpen, isDocsModalOpen]);
 
@@ -1220,14 +1251,14 @@ return () => { document.body.style.overflow = 'unset'; };
 if (scrollRef.current) {
     const activeItem = scrollRef.current.childNodes[activeIndex];
     if (activeItem) {
-       
+        // Tự động cuộn đến mục đang chọn (block: 'nearest' để mượt hơn)
         activeItem.scrollIntoView({
             behavior: 'smooth',
             block: 'nearest'
         });
     }
 }
-}, [activeIndex]); 
+}, [activeIndex]); // Chạy lại mỗi khi activeIndex thay đổi
 
     // --- STATE QUẢN LÝ ---
     const [isLoading, setIsLoading] = useState(false);
@@ -1257,20 +1288,20 @@ N1: 'bg-red-100 text-red-700 border-red-200 hover:bg-red-600 hover:text-white ho
     const [isUtilsOpen, setIsUtilsOpen] = useState(false);
     const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
     const filterRef = useRef(null);
-    const quickMenuRef = useRef(null); 
-    const utilsMenuRef = useRef(null); 
+    const quickMenuRef = useRef(null); // THÊM: Ref cho menu Chọn nhanh
+    const utilsMenuRef = useRef(null); // THÊM: Ref cho menu Tiện ích
     const cafeModalRef = useRef(null);
-    const searchInputRef = useRef(null); 
+    const searchInputRef = useRef(null); // Tạo "địa chỉ" cho ô nhập liệu
     const configMenuRef = useRef(null);
-    
+    // Biến kiểm soát bộ gõ IME (Quan trọng)
     const isComposing = useRef(false);
 
     const [randomCount, setRandomCount] = useState(10); 
 
-    
+    // State hiển thị nội bộ
     const [localText, setLocalText] = useState(config.text);
 
-    
+    // Tùy chọn bộ lọc
     const [filterOptions, setFilterOptions] = useState({
         hiragana: true,
         katakana: true,
@@ -1289,27 +1320,28 @@ N1: 'bg-red-100 text-red-700 border-red-200 hover:bg-red-600 hover:text-white ho
         return labels.join(", ");
     };
 
-
+    // --- 1. CLICK RA NGOÀI ĐỂ ĐÓNG MENU ---
+    // --- XỬ LÝ CLICK RA NGOÀI ĐỂ ĐÓNG MENU ---
 useEffect(() => {
 function handleClickOutside(event) {
-   
+    // 1. Xử lý Bộ lọc (Filter)
     if (filterRef.current && !filterRef.current.contains(event.target)) {
         setIsFilterMenuOpen(false);
     }
 
-  
+    // 2. Xử lý "Chọn nhanh" (Quick Select) - Tự đóng khi click ra ngoài
     if (isMenuOpen && quickMenuRef.current && !quickMenuRef.current.contains(event.target)) {
         setIsMenuOpen(false);
     }
 
-  
+    // 3. Xử lý "Tiện ích" (Utils) - Tự đóng khi click ra ngoài
     if (isUtilsOpen && utilsMenuRef.current && !utilsMenuRef.current.contains(event.target)) {
         setIsUtilsOpen(false);
     }
     if (isCafeModalOpen && cafeModalRef.current && !cafeModalRef.current.contains(event.target)) {
         setIsCafeModalOpen(false);
     }
- 
+    // 5. MỚI: Xử lý "Tùy chỉnh" - Tự đóng khi click ra ngoài
     if (isConfigOpen && configMenuRef.current && !configMenuRef.current.contains(event.target)) {
         setIsConfigOpen(false);
     }
@@ -1345,7 +1377,7 @@ return () => document.removeEventListener("mousedown", handleClickOutside);
     // --- HÀM TRỢ GIÚP: REGEX ---
     const getAllowedRegexString = (options, allowLatin = false) => {
         let ranges = "\\s"; 
-        if (allowLatin) ranges += "a-zA-Z"; 
+        if (allowLatin) ranges += "a-zA-Z"; // Latinh luôn được phép ở input
 
         if (options.hiragana) ranges += "\\u3040-\\u309F";
         if (options.katakana) ranges += "\\u30A0-\\u30FF";
@@ -1364,13 +1396,14 @@ return () => document.removeEventListener("mousedown", handleClickOutside);
         
         let newText = localText;
 
-       
+        // Xử lý các ô Hiragana/Katakana/Kanji (như cũ)
         if (['hiragana', 'katakana', 'kanji'].includes(key) && filterOptions[key] === true) {
             const allowedString = getAllowedRegexString(newOptions, true); 
             const regex = new RegExp(`[^${allowedString}]`, 'g');
             newText = newText.replace(regex, '');
         }
 
+        // Xử lý ô Xóa trùng lặp (MỚI)
         if (newOptions.removeDuplicates) {
             newText = getUniqueChars(newText);
         }
@@ -1379,41 +1412,45 @@ return () => document.removeEventListener("mousedown", handleClickOutside);
         handleChange('text', newText.replace(/[a-zA-Z]/g, ''));
     };
 
-// --- 4. NÚT XÓA LATINH + DỒN DÒNG ---
+// --- 4. NÚT XÓA LATINH + DỒN DÒNG (PHIÊN BẢN XÓA SẠCH SÀNH SANH) ---
     const handleRemoveLatinManual = () => {
         if (!localText) return;
         let cleaned = localText;
         
-        
+        // 1. Xóa chữ cái Latinh
         cleaned = cleaned.replace(/[a-zA-Z]/g, '');
-       
+        
+        // 2. Xóa hết dấu xuống dòng (Enter) -> Thay bằng rỗng ''
         cleaned = cleaned.replace(/[\n\r]+/g, '');
         
-   
+        // 3. Xóa hết các loại dấu cách (thường, tab, Nhật) -> Thay bằng rỗng ''
+        // Regex này bao gồm: dấu cách thường ( ), dấu cách Nhật (　), và tab (\t)
         cleaned = cleaned.replace(/[ 　\t]+/g, ''); 
-     
+        
+        // Cắt khoảng trắng thừa 2 đầu (nếu còn sót)
         cleaned = cleaned.trim();
 
         setLocalText(cleaned);
         handleChange('text', cleaned); 
     };
 
-
-
+    // --- 5. XỬ LÝ NHẬP LIỆU (ĐÃ FIX LỖI IME) ---
+    // --- 5. XỬ LÝ NHẬP LIỆU (REAL-TIME FILTER) ---
     const handleInputText = (e) => {
         const rawInput = e.target.value;
 
-        
+        // Nếu đang lơ lửng gõ bộ gõ (IME) thì cứ để hiện
         if (isComposing.current) {
             setLocalText(rawInput);
             return;
         }
         
+        // 1. Lọc ký tự rác (số, icon...)
         const allowedString = getAllowedRegexString(filterOptions, true);
         const blockRegex = new RegExp(`[^${allowedString}]`, 'g');
         let validForInput = rawInput.replace(blockRegex, '');
 
-  
+        // 2. LOGIC QUAN TRỌNG: Lọc trùng ngay lập tức
         if (filterOptions.removeDuplicates) {
             validForInput = getUniqueChars(validForInput);
         }
@@ -1429,15 +1466,15 @@ return () => document.removeEventListener("mousedown", handleClickOutside);
     const handleCompositionEnd = (e) => {
         isComposing.current = false;
         
-   
+        // Lấy toàn bộ nội dung trong ô nhập lúc này
         const rawInput = e.target.value;
         
-      
+        // 1. Lọc rác
         const allowedString = getAllowedRegexString(filterOptions, true);
         const blockRegex = new RegExp(`[^${allowedString}]`, 'g');
         let validForInput = rawInput.replace(blockRegex, '');
 
-      
+        // 2. LOGIC QUAN TRỌNG: Lọc trùng ngay khi chốt chữ
         if (filterOptions.removeDuplicates) {
             validForInput = getUniqueChars(validForInput);
         }
@@ -1445,6 +1482,7 @@ return () => document.removeEventListener("mousedown", handleClickOutside);
         setLocalText(validForInput);
         handleChange('text', validForInput.replace(/[a-zA-Z]/g, ''));
     };
+// Thêm tham số type (mặc định là 'kanji')
 const handleLoadFromGithub = async (url, type = 'kanji') => {
 setProgress(0);
 setIsLoading(true);      
@@ -1483,24 +1521,25 @@ try {
     setIsLoading(false);
 }
 };
-
+    // --- HÀM MỚI: Lấy ngẫu nhiên Kanji từ GitHub ---
     const handleRandomLoadFromGithub = async (level) => {
-    
+        // 1. Kiểm tra số lượng
         if (randomCount === '' || randomCount <= 0) {
             alert("Vui lòng nhập số lượng chữ cần lấy!");
             return;
         }
         setProgress(0);
 
+        // 2. Tạo link file: kanjin5.json...
         const fileName = `kanji${level.toLowerCase()}.json`; 
         const url = `./data/${fileName}`;
 
         setIsLoading(true);
-      
+         // Đóng menu Tiện ích
         setIsMenuOpen(false)
         
         try {
-          
+            // 3. Tải file về
             const response = await fetch(url);
             if (!response.ok) throw new Error("Lỗi tải file");
             
@@ -1513,12 +1552,12 @@ try {
                     return;
             }
 
-         
-            const shuffled = shuffleString(cleanText);
+            // 4. Xáo trộn và cắt lấy số lượng cần thiết
+            const shuffled = shuffleString(cleanText); // Hàm shuffleString có sẵn trong code cũ rồi
             let count = randomCount > 50 ? 50 : randomCount;
             const selectedChars = shuffled.slice(0, count);
 
-        
+            // 5. Hiển thị
             setFilterOptions(prev => ({ ...prev, kanji: true }));
             
             setProgress(30);
@@ -1536,7 +1575,7 @@ try {
             setIsLoading(false);
         }
     };
-   
+    // --- 6. XỬ LÝ RỜI TAY ---
     const handleBlurText = () => {
         if (!localText) return;
         let cleaned = localText; 
@@ -1578,7 +1617,7 @@ try {
         handleSmartLoad(shuffleString(config.text));
     };
 
-  
+    // Hàm xử lý tìm kiếm thời gian thực
 const handleSearchRealtime = (val) => {
 setSearchTerm(val);
 const query = val.toLowerCase().trim();
@@ -1596,13 +1635,13 @@ const processData = (source, type) => {
             const sound = info.sound.toLowerCase();
             const soundNoAccent = removeAccents(sound);
 
-          
+            // Tính toán trọng số ưu tiên (Càng thấp càng đứng đầu)
             let priority = 99;
 
-            if (sound === query) priority = 1; 
-            else if (soundNoAccent === queryNoAccent) priority = 2; 
-            else if (sound.includes(query)) priority = 3; 
-            else if (soundNoAccent.includes(queryNoAccent)) priority = 4; 
+            if (sound === query) priority = 1; // 1. Khớp chính xác (An -> AN)
+            else if (soundNoAccent === queryNoAccent) priority = 2; // 2. Khớp chính xác không dấu (An -> ÁN)
+            else if (sound.includes(query)) priority = 3; // 3. Chứa vần chính xác (An -> SAN)
+            else if (soundNoAccent.includes(queryNoAccent)) priority = 4; // 4. Chứa vần không dấu (An -> HÁN)
 
             if (priority < 99) {
                 matches.push({ char, ...info, type, priority, sound });
@@ -1613,34 +1652,36 @@ const processData = (source, type) => {
 
 processData(dbData.KANJI_DB, 'kanji');
 
-
+// Sắp xếp theo trọng số, nếu cùng trọng số thì xếp theo Alphabet
 matches.sort((a, b) => {
     if (a.priority !== b.priority) return a.priority - b.priority;
     return a.sound.localeCompare(b.sound);
 });
 
 setSearchResults(matches.slice(0, 20));
-setActiveIndex(0); 
+setActiveIndex(0); // Reset về vị trí đầu tiên
 };
 
-  
+    // --- HÀM CHỌN CHỮ TỪ GỢI Ý (ĐÃ FIX LỖI TRÙNG LẶP) ---
 const selectResult = (item) => {
-
+// 1. Tạo chuỗi mới bằng cách cộng chữ vừa chọn vào cuối
 let newText = config.text + item.char;
 
+// 2. KIỂM TRA: Nếu đang bật tính năng "Xóa trùng lặp" thì lọc chuỗi ngay
 if (filterOptions.removeDuplicates) {
     newText = getUniqueChars(newText);
 }
 
-
+// 3. Cập nhật vào giao diện và dữ liệu hệ thống
 setLocalText(newText);
 handleChange('text', newText);
 
-
+// 4. Reset ô tìm kiếm
 setSearchTerm('');
 setSearchResults([]);
 setActiveIndex(0);
 
+// 5. Tự động bật bộ lọc tương ứng 
 if (item.type === 'kanji') setFilterOptions(p => ({...p, kanji: true}));
 else if (item.char.match(/[\u3040-\u309F]/)) setFilterOptions(p => ({...p, hiragana: true}));
 else setFilterOptions(p => ({...p, katakana: true}));
@@ -1654,7 +1695,7 @@ else setFilterOptions(p => ({...p, katakana: true}));
         else if (menuName === 'config') { setIsConfigOpen(!isConfigOpen); setIsMenuOpen(false); setIsUtilsOpen(false); }
     };
 
-  
+    // Check warning để đổi font placeholder
     const isWarningMode = !filterOptions.hiragana && !filterOptions.katakana && !filterOptions.kanji;
 
     return (
@@ -1709,8 +1750,8 @@ else setFilterOptions(p => ({...p, katakana: true}));
 {searchTerm && (
     <button 
         onClick={() => {
-            setSearchTerm('');   
-            setSearchResults([]); 
+            setSearchTerm('');    // Xóa chữ
+            setSearchResults([]); // Đóng danh sách gợi ý
             searchInputRef.current.focus();
         }}
         className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-indigo-600 transition-colors"
@@ -1728,7 +1769,8 @@ else setFilterOptions(p => ({...p, katakana: true}));
     ref={scrollRef}
     className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-xl shadow-2xl z-[70] max-h-60 overflow-y-auto custom-scrollbar animate-in fade-in zoom-in-95 duration-200">
 {searchResults.map((item, idx) => {
-const level = getJLPTLevel(item.char); 
+const level = getJLPTLevel(item.char); // Kiểm tra cấp độ N1-N5
+
 return (
     <div 
         key={idx} 
@@ -1757,12 +1799,12 @@ return (
         {/* NHÃN MÁC (Badge) */}
         <div className="ml-auto">
             {level ? (
-              
+                /* Nếu thuộc danh sách Kanji N1-N5 */
                 <div className={`px-1.5 py-0.5 rounded text-[9px] font-black border transition-all duration-200 ${levelColors[level]}`}>
                     {level}
                 </div>
             ) : (
-              
+                /* Nếu KHÔNG thuộc N1-N5 -> Mặc định hiện mác BỘ THỦ */
                 <div className="px-1.5 py-0.5 rounded text-[9px] font-black border bg-gray-100 text-gray-500 border-gray-200 uppercase transition-all duration-200 hover:bg-gray-500 hover:text-white hover:border-gray-500 cursor-default">
                     Bộ thủ
                 </div>
@@ -1828,8 +1870,8 @@ return (
 {/* TÙY CHỌN: XÓA TRÙNG LẶP (ĐỔI MÀU ĐỘNG) */}
 <label className={`flex items-center gap-2 text-xs cursor-pointer select-none transition-colors ${
 filterOptions.removeDuplicates 
-    ? 'text-red-500 hover:text-red-600'  
-    : 'text-gray-700 hover:text-indigo-600'        
+    ? 'text-red-500 hover:text-red-600'  // Khi ĐANG TÍCH: Màu đỏ đậm
+    : 'text-gray-700 hover:text-indigo-600'        // Khi KHÔNG TÍCH: Màu xám bình thường
 }`}>
 <input 
     type="checkbox" 
@@ -1905,7 +1947,7 @@ LÀM SẠCH
                     {/* 1. MENU CHỌN NHANH (Quick Select) */}
                  <div className="relative flex-1" ref={quickMenuRef}> 
                     <button onClick={() => toggleMenu('quick')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isMenuOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-xs whitespace-nowrap">CHỌN NHANH</span>
+                        <span className="font-bold text-xs whitespace-nowrap">Chọn nhanh</span>
                     </button>
                     {isMenuOpen && (
                         <div className="absolute bottom-full left-0 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-4 animate-in fade-in zoom-in-95 duration-200">
@@ -1964,7 +2006,7 @@ LÀM SẠCH
                                 </div>
                             </div>
 
-                            {/* Lấy ngẫu nhiên  */}
+                            {/* Lấy ngẫu nhiên (Đã chuyển xuống đây) */}
                             <div>
                                 <div className="flex justify-start items-center gap-2 mb-2 mt-1">
                                     <p className="text-[10px] font-bold text-gray-400 uppercase">Lấy ngẫu nhiên</p>
@@ -2006,7 +2048,7 @@ LÀM SẠCH
                    {/* 2. MENU TIỆN ÍCH (Utilities) */}
 <div className="relative flex-1" ref={utilsMenuRef}> 
                     <button onClick={() => toggleMenu('utils')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isUtilsOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-xs whitespace-nowrap">TIỆN ÍCH</span>
+                        <span className="font-bold text-xs whitespace-nowrap">Tiện ích</span>
                     </button>
                     {isUtilsOpen && (
                         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
@@ -2074,7 +2116,7 @@ LÀM SẠCH
                     {/* 3. TÙY CHỈNH */}
                     <div className="relative flex-1" ref={configMenuRef}> 
                     <button onClick={() => toggleMenu('config')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isConfigOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-xs whitespace-nowrap">TÙY CHỈNH</span>
+                        <span className="font-bold text-xs whitespace-nowrap">Tùy chỉnh</span>
                     </button>
                     
 {isConfigOpen && (
@@ -2126,8 +2168,8 @@ LÀM SẠCH
             <input 
                 type="checkbox" 
                 className="peer opacity-0 w-0 h-0" 
-                checked={config.showOnKun} 
-                onChange={() => handleChange('showOnKun', !config.showOnKun)} 
+                checked={config.showOnKun} // Chỉ phụ thuộc vào config
+                onChange={() => handleChange('showOnKun', !config.showOnKun)} // Luôn cho phép bấm
             />
             {/* Màu sắc luôn sáng rõ để người dùng biết là bấm được */}
             <span className="absolute inset-0 rounded-full transition-all duration-300 bg-gray-200 peer-checked:bg-indigo-600"></span>
@@ -2163,7 +2205,7 @@ LÀM SẠCH
         // --- LOGIC KIỂM TRA MỚI ---
         if (!config.text || config.text.trim().length === 0) {
             alert("Vui lòng nhập nội dung để tạo file"); 
-            return;
+            return; // Dừng lại, không mở modal in
         }
         setIsPrintModalOpen(true); 
         }} 
@@ -2175,7 +2217,7 @@ LÀM SẠCH
 
 {/* --- 2. NÚT XEM TRƯỚC / XEM BẢN MẪU (MÀU: XANH KHI XEM, ĐỎ KHI ĐÓNG) --- */}
 {(() => {
-
+// Biến kiểm tra xem có nội dung hay không
 const isEmpty = !config.text || config.text.trim().length === 0;
 
 return (
@@ -2185,7 +2227,7 @@ return (
                 setShowMobilePreview(false);
             } else {
                 setShowMobilePreview(true);
-                
+                // Cuộn xuống vùng xem trước
                 setTimeout(() => {
                     const previewElement = document.getElementById('preview-area');
                     if(previewElement) previewElement.scrollIntoView({ behavior: 'smooth' });
@@ -2194,18 +2236,18 @@ return (
         }}
         className={`md:hidden w-full py-3 font-bold rounded-xl border shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-all mt-3 ${
             showMobilePreview 
-                ? 'bg-red-50 text-red-700 border-red-200'      
-                : 'bg-green-50 text-green-700 border-green-200' 
+                ? 'bg-red-50 text-red-700 border-red-200'      // KHI ĐANG MỞ -> MÀU ĐỎ
+                : 'bg-green-50 text-green-700 border-green-200' // KHI ĐANG ĐÓNG -> MÀU XANH
         }`}
     >
         {showMobilePreview ? (
             // === TRẠNG THÁI: ĐANG MỞ (NÚT ĐỂ ĐÓNG LẠI) ===
             <>
                 {isEmpty ? (
-                   
+                    // Đóng bản mẫu: Giữ nguyên icon X
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                 ) : (
-                   
+                    // Đóng bản in: Dùng icon CON MẮT MỞ (Eye)
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
                 )}
 
@@ -2447,8 +2489,8 @@ TÀI LIỆU HỌC TẬP
     {/* 3. NÚT IN THẬT SỰ (NẰM TRONG KHUNG) */}
     <button 
         onClick={() => {
-        setIsPrintModalOpen(false); 
-        onPrint(); 
+        setIsPrintModalOpen(false); // Đóng khung này
+        onPrint(); // Gọi lệnh in của hệ thống
         }}
         className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white text-lg font-bold rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2"
     >
@@ -2495,7 +2537,7 @@ TÀI LIỆU HỌC TẬP
 
     
     const App = () => {
-
+// --- Các state cũ giữ nguyên ---
 const [isCafeModalOpen, setIsCafeModalOpen] = useState(false);
 const [showMobilePreview, setShowMobilePreview] = useState(false);
 const [isConfigOpen, setIsConfigOpen] = React.useState(false);
@@ -2503,7 +2545,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
         const [isReviewListOpen, setIsReviewListOpen] = useState(false);
         const [srsData, setSrsData] = useState(() => {
-
+    // Tự động lấy dữ liệu cũ từ máy người dùng khi mở web
     const saved = localStorage.getItem('phadao_srs_data');
             
     return saved ? JSON.parse(saved) : {};
@@ -2517,8 +2559,8 @@ const updateSRSProgress = (char, quality) => {
     localStorage.setItem('phadao_srs_data', JSON.stringify(newData));
 };
 const handleResetAllSRS = () => {
-    setSrsData({}); 
-    localStorage.removeItem('phadao_srs_data');
+    setSrsData({}); // Xóa sạch state
+    localStorage.removeItem('phadao_srs_data'); // Xóa sạch trong bộ nhớ máy
 };
 // State cấu hình mặc định
 const [config, setConfig] = useState({ 
@@ -2539,13 +2581,13 @@ const [isDbLoaded, setIsDbLoaded] = useState(false);
 useEffect(() => {
     fetchDataFromGithub().then(data => {
         if (data) {
-            setDbData(data);     
-            setIsDbLoaded(true); 
+            setDbData(data);      // Lưu dữ liệu vào state
+            setIsDbLoaded(true); // Báo hiệu đã tải xong
         }
     });
 }, []);
 
-// 2. Logic xử lý cuộn trang khi hiện popup
+// 2. Logic xử lý cuộn trang khi hiện popup (giữ nguyên)
 useEffect(() => {
     if (showPostPrintDonate) document.body.style.overflow = 'hidden';
     else document.body.style.overflow = 'unset';
@@ -2598,7 +2640,7 @@ return (
         showMobilePreview={showMobilePreview} setShowMobilePreview={setShowMobilePreview}
         setIsFlashcardOpen={setIsFlashcardOpen}
         
-        dbData={dbData} 
+        dbData={dbData} // <--- QUAN TRỌNG: Truyền dữ liệu xuống Sidebar
             srsData={srsData}
          onOpenReviewList={() => setIsReviewListOpen(true)}
       
@@ -2612,7 +2654,7 @@ return (
         chars={pageChars} 
         config={config} 
         
-        dbData={dbData} 
+        dbData={dbData} // <--- QUAN TRỌNG: Truyền dữ liệu xuống page 
         /> 
     ))}
     </div>
@@ -2645,7 +2687,7 @@ return (
     onSrsUpdate={updateSRSProgress}
     srsData={srsData} 
     onSrsRestore={(char, oldData) => {
-
+        // Hàm này sẽ đè dữ liệu cũ (snapshot) lên dữ liệu hiện tại
         const newData = { ...srsData, [char]: oldData };
         setSrsData(newData);
         localStorage.setItem('phadao_srs_data', JSON.stringify(newData));
