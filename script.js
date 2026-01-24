@@ -1531,7 +1531,7 @@ try {
 
         setIsLoading(true);
          // Đóng menu Tiện ích
-        setIsMenuOpen(false)
+        setIsMenuOpen(false);
         
         try {
             // 3. Tải file về
