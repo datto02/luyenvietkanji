@@ -571,7 +571,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                     return prevIndex; 
                 } 
             }); 
-        }, 200); 
+        }, 180); 
     }, [currentIndex, queue, exitDirection, isFinished, srsData]);
     const handleBack = (e) => { 
         if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); } 
