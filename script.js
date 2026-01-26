@@ -294,7 +294,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
         const [d1, m1] = a.split('/').map(Number);
         const [d2, m2] = b.split('/').map(Number);
         return m1 === m2 ? d1 - d2 : m1 - m2;
-    });
+    }).slice(0, 5);
 
     return (
         <div className="fixed inset-0 z-[400] flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-200 cursor-pointer" onClick={onClose}>
