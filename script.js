@@ -1936,7 +1936,7 @@ Xóa chữ trùng lặp
 {/* NÚT LÀM SẠCH  */}
 <button 
 onClick={handleRemoveLatinManual} 
-className="w-full py-2 text-xs font-bold text-green-600 bg-green-50 hover:bg-green-100 rounded-lg flex items-center justify-center gap-1 transition">
+className="w-full py-2 text-xs font-bold text-green-600 bg-green-50 md:hover:bg-green-100 active:bg-green-100 rounded-lg flex items-center justify-center gap-1 transition active:scale-95">
 LÀM SẠCH
 </button>
                                 </div>
