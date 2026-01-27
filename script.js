@@ -3132,7 +3132,7 @@ TÀI LIỆU HỌC TẬP
                 href="https://drive.google.com/drive/folders/1J8psBuUeV8VBUC90gxw5tTNPy050FDha?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="ml-1 font-bold text-green-700 hover:text-green-400 transition-colors"
+                className="ml-1 font-bold text-green-700 hover:text-green-500 transition-colors"
               >
                 tại đây
               </a>
