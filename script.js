@@ -1370,108 +1370,95 @@ const LearnGameModal = ({ isOpen, onClose, text, dbData, onSwitchToFlashcard }) 
         }
     }, [isOpen, text, dbData]);
     
-   // 2. SINH DỮ LIỆU QUIZ (ĐÃ SỬA: HỖ TRỢ ĐA DẠNG LOẠI CHỮ)
-    const currentQuizData = useMemo(() => {
-        const currentItem = queue[currentIndex];
-        if (!currentItem || !['quiz_sound', 'quiz_reverse'].includes(currentItem.type)) return null;
-        
-        const targetChar = currentItem.char;
-        const targetInfo = getCharInfo(targetChar); // Dùng hàm mới
-        if (!targetInfo) return null;
+const currentQuizData = useMemo(() => {
+    const currentItem = queue[currentIndex];
+    if (!currentItem || !['quiz_sound', 'quiz_reverse'].includes(currentItem.type)) return null;
 
-        // --- LOGIC TẠO POOL (ĐÁP ÁN NHIỄU) THEO LOẠI CHỮ ---
-        let pool = [];
+    const targetChar = currentItem.char;
+    const targetInfo = getCharInfo(targetChar);
+    if (!targetInfo) return null;
 
+    // 1. Lấy danh sách toàn bộ chữ người dùng đã nhập vào (đã lọc trùng và hợp lệ)
+    const userChars = Array.from(new Set(text.split('').filter(c => getCharInfo(c))));
+
+    // 2. Xác định "Bể bơi" (Pool) để lấy đáp án nhiễu
+    let distractorPool = [];
+
+    // ƯU TIÊN 1: Nếu người dùng nhập >= 4 chữ, lấy từ danh sách của người dùng
+    if (userChars.length >= 4) {
+        distractorPool = userChars.filter(c => c !== targetChar);
+    } 
+    // ƯU TIÊN 2: Nếu ít hơn 4 chữ, lấy từ nguồn dữ liệu CÙNG LOẠI
+    else {
         if (targetInfo.type === 'hiragana') {
-            pool = Object.keys(dbData.ALPHABETS.hiragana);
-        } 
-        else if (targetInfo.type === 'katakana') {
-            pool = Object.keys(dbData.ALPHABETS.katakana);
-        } 
-       else {
-            // --- LOGIC KANJI ---
-            pool = Object.keys(dbData.KANJI_DB); // Mặc định lấy toàn bộ
-            let isLevelFound = false; // 1. Tạo biến cờ hiệu
-
+            distractorPool = Object.keys(dbData.ALPHABETS.hiragana);
+        } else if (targetInfo.type === 'katakana') {
+            distractorPool = Object.keys(dbData.ALPHABETS.katakana);
+        } else {
+            // Chế độ Kanji/Bộ thủ: Thử tìm trong JLPT trước
+            let foundInLevel = false;
             if (dbData.KANJI_LEVELS) {
-                for (const [level, chars] of Object.entries(dbData.KANJI_LEVELS)) {
+                for (const [lvl, chars] of Object.entries(dbData.KANJI_LEVELS)) {
                     if (chars.includes(targetChar)) {
-                        const levelPool = chars.filter(c => dbData.KANJI_DB[c]);
-                        if (levelPool.length >= 4) {
-                             pool = levelPool;
-                             isLevelFound = true; // 2. Đánh dấu là đã tìm thấy trong N5-N1
-                        }
+                        distractorPool = chars;
+                        foundInLevel = true;
                         break;
                     }
                 }
             }
-
-            // 3. --- ĐOẠN CODE MỚI CẦN THÊM CHO BỘ THỦ ---
-            // Nếu không thuộc N1-N5 (tức là Bộ thủ), lấy pool từ chính danh sách đang học (biến text)
-            if (!isLevelFound) {
-                 const inputChars = Array.from(new Set(text.split(''))).filter(c => dbData.KANJI_DB[c]);
-                 // Chỉ lấy từ file bộ thủ nếu danh sách đủ dài (>= 4 chữ) để tạo đáp án nhiễu
-                 if (inputChars.length >= 4) {
-                     pool = inputChars;
-                 }
-            }
+            // Nếu không thấy trong JLPT (là Bộ thủ), lấy pool là toàn bộ Kanji/Bộ thủ
+            if (!foundInLevel) distractorPool = Object.keys(dbData.KANJI_DB);
         }
+    }
 
-        // Chọn 3 đáp án nhiễu
-        const distractors = [];
-        let attempts = 0;
-        while (distractors.length < 3 && attempts < 100) {
-            const r = pool[Math.floor(Math.random() * pool.length)];
-            if (r !== targetChar && !distractors.includes(r)) distractors.push(r);
-            attempts++;
+    // 3. Chọn ra 3 đáp án nhiễu (Dọn dẹp lại logic chọn và backup cùng loại)
+    const distractors = [];
+    const filteredPool = distractorPool.filter(c => c !== targetChar);
+    const shuffledPool = shuffleArray(filteredPool);
+
+    for (let i = 0; i < 3; i++) {
+        if (shuffledPool[i]) {
+            distractors.push(shuffledPool[i]);
+        } else {
+            // Backup cùng loại nếu pool chính không đủ 3 chữ
+            let backupSource = [];
+            if (targetInfo.type === 'hiragana') backupSource = Object.keys(dbData.ALPHABETS.hiragana);
+            else if (targetInfo.type === 'katakana') backupSource = Object.keys(dbData.ALPHABETS.katakana);
+            else backupSource = Object.keys(dbData.KANJI_DB);
+
+            const backupChar = backupSource.find(c => c !== targetChar && !distractors.includes(c));
+            if (backupChar) distractors.push(backupChar);
         }
-        
-        // Logic hiển thị câu hỏi
-        let questionDisplay = {}; 
-        let options = [];          
+    }
 
-        // Dạng 2: Âm -> Chữ (Nghe âm chọn mặt chữ)
-        if (currentItem.type === 'quiz_reverse') {
-            questionDisplay = {
-                main: targetInfo.sound, // Romaji hoặc Âm Hán Việt
-                // --- SỬA: Chỉ hiện nghĩa nếu là Kanji ---
-                sub: targetInfo.type === 'kanji' ? targetInfo.meaning : null, 
-                isKanji: false 
-            };
-            options = [
-                { label: targetChar, correct: true, isKanji: true },
-                ...distractors.map(d => ({ label: d, correct: false, isKanji: true }))
-            ];
-        } 
-        // Dạng 1: Chữ -> Âm (Nhìn mặt chữ chọn âm)
-        else {
-            questionDisplay = {
-                main: targetChar,
-                // --- SỬA: Chỉ hiện nghĩa nếu là Kanji ---
-                sub: targetInfo.type === 'kanji' ? targetInfo.meaning : null, 
-                isKanji: true
-            };
-            
-            // Hàm lấy nhãn (label) an toàn
-            const getLabel = (charKey) => {
-                const info = getCharInfo(charKey);
-                return info ? info.sound : '---';
-            };
+    // 4. Tạo Options dựa trên loại bài tập
+    let options = [];
+    if (currentItem.type === 'quiz_reverse') {
+        // BÀI TRẮC NGHIỆM SỐ 2: CHỌN MẶT CHỮ
+        options = [
+            { label: targetChar, correct: true, isKanji: true },
+            ...distractors.map(d => ({ label: d, correct: false, isKanji: true }))
+        ];
+    } else {
+        // BÀI TRẮC NGHIỆM SỐ 1: CHỌN ÂM ĐỌC
+        const getLabel = (c) => getCharInfo(c)?.sound || '---';
+        options = [
+            { label: targetInfo.sound, correct: true, isKanji: false },
+            ...distractors.map(d => ({ label: getLabel(d), correct: false, isKanji: false }))
+        ];
+    }
 
-            options = [
-                { label: targetInfo.sound, correct: true, isKanji: false },
-                ...distractors.map(d => ({ label: getLabel(d), correct: false, isKanji: false }))
-            ];
-        }
+    // 5. Trộn đáp án và cấu hình hiển thị
+    options = shuffleArray(options);
+    const questionDisplay = {
+        main: currentItem.type === 'quiz_reverse' ? targetInfo.sound : targetChar,
+        sub: targetInfo.type === 'kanji' ? targetInfo.meaning : null,
+        isKanji: currentItem.type !== 'quiz_reverse'
+    };
 
-        // Trộn vị trí đáp án
-        for (let i = options.length - 1; i > 0; i--) { 
-            const j = Math.floor(Math.random() * (i + 1)); 
-            [options[i], options[j]] = [options[j], options[i]]; 
-        }
-
-        return { targetChar, targetInfo, options, questionDisplay, quizType: currentItem.type };
-    }, [queue, currentIndex, dbData, text]);
+    return { targetChar, targetInfo, options, questionDisplay, quizType: currentItem.type };
+}, [queue, currentIndex, dbData, text]);
+    
     
   // 3. SINH DỮ LIỆU MATCH
     useEffect(() => {
