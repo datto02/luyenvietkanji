@@ -9,7 +9,7 @@ const calculateSRS = (currentData, quality) => {
   if (nextReview && nextReview > now) {
       if (quality === 1) return currentData;
   }
-
+ 
   if (quality === 0) {
     easeFactor = Math.max(1.3, easeFactor - 0.2);
     
@@ -51,40 +51,56 @@ const calculateSRS = (currentData, quality) => {
   }
 };
 
- // --- FETCH DATA FROM GITHUB --- 
+// --- FETCH DATA FROM GITHUB (ĐÃ SỬA: TẢI THÊM N5-N1) --- 
 const fetchDataFromGithub = async () => {
   try { 
-  
+    // 1. Tải các file cơ sở dữ liệu chính
     const [dbResponse, onkunResponse, vocabResponse] = await Promise.all([
       fetch('./data/kanji_db.json'),
       fetch('./data/onkun.json'),
       fetch('./data/vocab.json')  
     ]);
 
+    // 2. Tải thêm 5 file danh sách cấp độ (N5 -> N1) để dùng cho Game & Sidebar
+    const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
+    const levelPromises = levels.map(l => fetch(`./data/kanji${l}.json`));
+    const levelResponses = await Promise.all(levelPromises);
+
     let kanjiDb = null;
     let onkunDb = null;
     let vocabDb = null;
+    let kanjiLevels = {}; // Object chứa danh sách theo cấp độ
 
+    // Xử lý DB chính
     if (dbResponse.ok) kanjiDb = await dbResponse.json();
     else console.warn("Không tải được kanji_db.json");
 
     if (onkunResponse.ok) onkunDb = await onkunResponse.json();
-    else console.warn("Không tải được onkun.json (sẽ dùng API online)");
+    else console.warn("Không tải được onkun.json");
 
-    if (vocabResponse.ok) {
-        vocabDb = await vocabResponse.json();
-    } else {
-        console.warn("Chưa có file vocab.json, chế độ từ vựng sẽ trống.");
-        vocabDb = {};
+    if (vocabResponse.ok) vocabDb = await vocabResponse.json();
+    else vocabDb = {};
+
+    // Xử lý 5 file cấp độ
+    for (let i = 0; i < levels.length; i++) {
+        const lvlKey = levels[i].toUpperCase(); // N5, N4...
+        if (levelResponses[i].ok) {
+            const text = await levelResponses[i].text();
+            // Làm sạch dữ liệu (xóa xuống dòng, dấu câu...) để thành mảng ký tự
+            kanjiLevels[lvlKey] = Array.from(new Set(text.replace(/["\n\r\s,\[\]]/g, '').split('')));
+        } else {
+            console.warn(`Không tải được file kanji${levels[i]}.json`);
+            kanjiLevels[lvlKey] = [];
+        }
     }
 
-    return { ...kanjiDb, ONKUN_DB: onkunDb, VOCAB_DB: vocabDb }; 
+    // Trả về dữ liệu gộp, thêm KANJI_LEVELS vào
+    return { ...kanjiDb, ONKUN_DB: onkunDb, VOCAB_DB: vocabDb, KANJI_LEVELS: kanjiLevels }; 
   } catch (error) {
     console.error("Lỗi tải dữ liệu hệ thống:", error);
     return null;
   }
 };
-
     // --- UTILS & DATA FETCHING ---
 
     const getHex = (char) => char.codePointAt(0).toString(16).toLowerCase().padStart(5, '0');
@@ -571,7 +587,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                     return prevIndex; 
                 } 
             }); 
-        }, 170); 
+        }, 175); 
     }, [currentIndex, queue, exitDirection, isFinished, srsData]);
     const handleBack = (e) => { 
         if (e) { e.preventDefault(); e.stopPropagation(); e.currentTarget.blur(); } 
@@ -1199,7 +1215,7 @@ return (
                     </p>
                     <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">3</span>
-                        <span>Tạo nhanh <span className="font-bold">Flashcard</span> trong phần "tiện ích".</span>
+                        <span>Chế độ <span className="font-bold">HỌC, FLASHCARD</span> trong phần "tiện ích".</span>
                     </p>
                     <p className="flex items-center gap-2">
                         <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">4</span>
@@ -1237,9 +1253,543 @@ return (
         </div>
     );
     };
+const LearnGameModal = ({ isOpen, onClose, text, dbData, onSwitchToFlashcard }) => {
+    const getCharInfo = (c) => {
+        if (!dbData) return null;
+        // 1. Tìm trong Hiragana
+        if (dbData.ALPHABETS?.hiragana?.[c]) return { ...dbData.ALPHABETS.hiragana[c], type: 'hiragana' };
+        // 2. Tìm trong Katakana
+        if (dbData.ALPHABETS?.katakana?.[c]) return { ...dbData.ALPHABETS.katakana[c], type: 'katakana' };
+        // 3. Tìm trong Kanji (Bao gồm cả bộ thủ nằm trong DB này)
+        if (dbData.KANJI_DB?.[c]) return { ...dbData.KANJI_DB[c], type: 'kanji' };
+        return null;
+    };
 
+    const [queue, setQueue] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [gameState, setGameState] = useState('loading'); 
+
+    const [selectedIdx, setSelectedIdx] = React.useState(null);
+    const [isChecking, setIsChecking] = React.useState(false);
+
+    // State Tiến độ
+    const [totalKanji, setTotalKanji] = useState(0);       
+    const [finishedCount, setFinishedCount] = useState(0); 
+
+    // State xử lý lỗi & phạt
+    const [wrongItem, setWrongItem] = useState(null); 
+    const [penaltyInput, setPenaltyInput] = useState(''); 
+    const [penaltyFeedback, setPenaltyFeedback] = useState(null); 
+    
+    // State ghép thẻ
+    const [matchCards, setMatchCards] = useState([]);
+    const [selectedCardId, setSelectedCardId] = useState(null);
+    const [matchedIds, setMatchedIds] = useState([]);
+    const [wrongPairIds, setWrongPairIds] = useState([]);
+
+    // Khóa cuộn trang
+    useEffect(() => {
+        if (isOpen) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = 'unset';
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [isOpen]);
+
+    // RESET TRẠNG THÁI KHI ĐÓNG MODAL (Fix lỗi bắn pháo hoa khi vào lại)
+    useEffect(() => {
+        if (!isOpen) {
+            setGameState('loading');
+            setQueue([]);
+            setFinishedCount(0);
+            setWrongItem(null);
+            setSelectedIdx(null); // Reset trạng thái chọn
+            setIsChecking(false); // Reset trạng thái kiểm tra
+        }
+    }, [isOpen]);
+
+    // Hàm trộn mảng
+    const shuffleArray = (array) => {
+        const newArr = [...array];
+        for (let i = newArr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+        }
+        return newArr;
+    };
+
+    // --- HÀM TÍNH TOÁN CỠ CHỮ TỰ ĐỘNG ---
+    const getDynamicFontSize = (text, type = 'normal') => {
+        const len = text ? text.length : 0;
+        if (type === 'title') {
+             if (len > 12) return 'text-3xl';
+             if (len > 8) return 'text-4xl';
+             if (len > 4) return 'text-5xl';
+             return 'text-6xl';
+        }
+        if (type === 'button') {
+            if (len > 15) return 'text-[9px]';
+            if (len > 10) return 'text-[10px]';
+            if (len > 6) return 'text-[11px]';
+            return 'text-sm';
+        }
+        return '';
+    };
+
+   // 1. KHỞI TẠO DỮ LIỆU
+    useEffect(() => {
+        if (isOpen && text && dbData) {
+            setGameState('loading');
+            
+            // --- SỬA: Lọc chữ dùng hàm getCharInfo để lấy cả Kana/Kanji ---
+            let validChars = Array.from(new Set(text.split('').filter(c => getCharInfo(c))));
+            validChars = shuffleArray(validChars); 
+
+            if (validChars.length === 0) { alert("Chưa có dữ liệu để học!"); onClose(); return; }
+
+            setTotalKanji(validChars.length);
+            
+            let newQueue = [];
+            const CHUNK_SIZE = 6; 
+
+            for (let i = 0; i < validChars.length; i += CHUNK_SIZE) {
+                const chunk = validChars.slice(i, i + CHUNK_SIZE);
+                chunk.forEach(char => newQueue.push({ type: 'quiz_sound', char }));
+                if (chunk.length >= 2) newQueue.push({ type: 'match', chars: chunk });
+                chunk.forEach(char => newQueue.push({ type: 'quiz_reverse', char })); 
+            }
+
+            setQueue(newQueue); 
+            setCurrentIndex(0); 
+            
+            setTimeout(() => {
+                if (newQueue.length > 0) setGameState(newQueue[0].type);
+            }, 50);
+
+            setPenaltyInput(''); 
+            setMatchedIds([]);
+            setWrongPairIds([]);
+        }
+    }, [isOpen, text, dbData]);
+    
+   // 2. SINH DỮ LIỆU QUIZ (ĐÃ SỬA: HỖ TRỢ ĐA DẠNG LOẠI CHỮ)
+    const currentQuizData = useMemo(() => {
+        const currentItem = queue[currentIndex];
+        if (!currentItem || !['quiz_sound', 'quiz_reverse'].includes(currentItem.type)) return null;
+        
+        const targetChar = currentItem.char;
+        const targetInfo = getCharInfo(targetChar); // Dùng hàm mới
+        if (!targetInfo) return null;
+
+        // --- LOGIC TẠO POOL (ĐÁP ÁN NHIỄU) THEO LOẠI CHỮ ---
+        let pool = [];
+
+        if (targetInfo.type === 'hiragana') {
+            pool = Object.keys(dbData.ALPHABETS.hiragana);
+        } 
+        else if (targetInfo.type === 'katakana') {
+            pool = Object.keys(dbData.ALPHABETS.katakana);
+        } 
+       else {
+            // --- LOGIC KANJI ---
+            pool = Object.keys(dbData.KANJI_DB); // Mặc định lấy toàn bộ
+            let isLevelFound = false; // 1. Tạo biến cờ hiệu
+
+            if (dbData.KANJI_LEVELS) {
+                for (const [level, chars] of Object.entries(dbData.KANJI_LEVELS)) {
+                    if (chars.includes(targetChar)) {
+                        const levelPool = chars.filter(c => dbData.KANJI_DB[c]);
+                        if (levelPool.length >= 4) {
+                             pool = levelPool;
+                             isLevelFound = true; // 2. Đánh dấu là đã tìm thấy trong N5-N1
+                        }
+                        break;
+                    }
+                }
+            }
+
+            // 3. --- ĐOẠN CODE MỚI CẦN THÊM CHO BỘ THỦ ---
+            // Nếu không thuộc N1-N5 (tức là Bộ thủ), lấy pool từ chính danh sách đang học (biến text)
+            if (!isLevelFound) {
+                 const inputChars = Array.from(new Set(text.split(''))).filter(c => dbData.KANJI_DB[c]);
+                 // Chỉ lấy từ file bộ thủ nếu danh sách đủ dài (>= 4 chữ) để tạo đáp án nhiễu
+                 if (inputChars.length >= 4) {
+                     pool = inputChars;
+                 }
+            }
+        }
+
+        // Chọn 3 đáp án nhiễu
+        const distractors = [];
+        let attempts = 0;
+        while (distractors.length < 3 && attempts < 100) {
+            const r = pool[Math.floor(Math.random() * pool.length)];
+            if (r !== targetChar && !distractors.includes(r)) distractors.push(r);
+            attempts++;
+        }
+        
+        // Logic hiển thị câu hỏi
+        let questionDisplay = {}; 
+        let options = [];          
+
+        // Dạng 2: Âm -> Chữ (Nghe âm chọn mặt chữ)
+        if (currentItem.type === 'quiz_reverse') {
+            questionDisplay = {
+                main: targetInfo.sound, // Romaji hoặc Âm Hán Việt
+                // --- SỬA: Chỉ hiện nghĩa nếu là Kanji ---
+                sub: targetInfo.type === 'kanji' ? targetInfo.meaning : null, 
+                isKanji: false 
+            };
+            options = [
+                { label: targetChar, correct: true, isKanji: true },
+                ...distractors.map(d => ({ label: d, correct: false, isKanji: true }))
+            ];
+        } 
+        // Dạng 1: Chữ -> Âm (Nhìn mặt chữ chọn âm)
+        else {
+            questionDisplay = {
+                main: targetChar,
+                // --- SỬA: Chỉ hiện nghĩa nếu là Kanji ---
+                sub: targetInfo.type === 'kanji' ? targetInfo.meaning : null, 
+                isKanji: true
+            };
+            
+            // Hàm lấy nhãn (label) an toàn
+            const getLabel = (charKey) => {
+                const info = getCharInfo(charKey);
+                return info ? info.sound : '---';
+            };
+
+            options = [
+                { label: targetInfo.sound, correct: true, isKanji: false },
+                ...distractors.map(d => ({ label: getLabel(d), correct: false, isKanji: false }))
+            ];
+        }
+
+        // Trộn vị trí đáp án
+        for (let i = options.length - 1; i > 0; i--) { 
+            const j = Math.floor(Math.random() * (i + 1)); 
+            [options[i], options[j]] = [options[j], options[i]]; 
+        }
+
+        return { targetChar, targetInfo, options, questionDisplay, quizType: currentItem.type };
+    }, [queue, currentIndex, dbData, text]);
+    
+  // 3. SINH DỮ LIỆU MATCH
+    useEffect(() => {
+        if (queue[currentIndex]?.type === 'match') {
+            const chars = queue[currentIndex].chars;
+            let cards = [];
+            chars.forEach((c, idx) => {
+                const info = getCharInfo(c); // SỬA: Dùng hàm getCharInfo
+                if (info) {
+                    cards.push({ id: `k-${idx}`, content: c, type: 'kanji', matchId: idx });
+                    cards.push({ id: `m-${idx}`, content: info.sound, type: 'meaning', matchId: idx });
+                }
+            });
+            cards.sort(() => Math.random() - 0.5);
+            setMatchCards(cards); setMatchedIds([]); setSelectedCardId(null); setWrongPairIds([]);
+        }
+    }, [queue, currentIndex, dbData]);
+
+    const handleAnswer = (isCorrect, itemData) => {
+        if (isCorrect) {
+            if (itemData.quizType === 'quiz_reverse') {
+                setFinishedCount(prev => prev + 1);
+            }
+            goNext();
+        } else {
+            setWrongItem(itemData); 
+            setGameState('penalty');
+            const currentQ = queue[currentIndex];
+            const nextQ = [...queue];
+            const insertIndex = Math.min(currentIndex + 5, nextQ.length);
+            nextQ.splice(insertIndex, 0, currentQ);
+            setQueue(nextQ);
+        }
+    };
+
+  const checkPenalty = () => {
+        if (!wrongItem) return;
+        const inputClean = removeAccents(penaltyInput.trim().toLowerCase());
+        // SỬA: Lấy sound từ targetInfo đã có sẵn (đã được xử lý bởi getCharInfo ở trên)
+        const targetClean = removeAccents(wrongItem.targetInfo.sound.toLowerCase());
+
+        if (inputClean === targetClean) {
+            setPenaltyFeedback('correct'); 
+            setTimeout(() => { 
+                setPenaltyFeedback(null); 
+                setPenaltyInput(''); 
+                goNext(); 
+            }, 800);
+        } else { 
+            setPenaltyFeedback('incorrect'); 
+            setTimeout(() => setPenaltyFeedback(null), 500); 
+        }
+    };
+    
+    const handleCardClick = (card) => {
+        if (matchedIds.includes(card.id) || wrongPairIds.length > 0) return;
+        
+        if (selectedCardId === null) {
+            setSelectedCardId(card.id);
+        } else {
+            if (selectedCardId === card.id) { setSelectedCardId(null); return; }
+            
+            const first = matchCards.find(c => c.id === selectedCardId);
+            if (first.matchId === card.matchId) {
+                setMatchedIds(p => [...p, first.id, card.id]); 
+                setSelectedCardId(null);
+                if (matchedIds.length + 2 === matchCards.length) setTimeout(() => goNext(), 500);
+            } else {
+                setWrongPairIds([first.id, card.id]);
+                setTimeout(() => {
+                    setWrongPairIds([]); 
+                    setSelectedCardId(null); 
+                }, 500); 
+            }
+        }
+    };
+
+    const goNext = () => {
+        if (currentIndex < queue.length - 1) { 
+            const next = currentIndex + 1; 
+            setCurrentIndex(next); 
+            setGameState(queue[next].type); 
+        } else { 
+            setGameState('finished'); 
+        }
+    };
+
+    const triggerConfetti = React.useCallback(() => { if (typeof confetti === 'undefined') return; const count = 200; const defaults = { origin: { y: 0.6 }, zIndex: 1500 }; function fire(particleRatio, opts) { confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) }); } fire(0.25, { spread: 26, startVelocity: 55 }); fire(0.2, { spread: 60 }); fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 }); fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 }); fire(0.1, { spread: 120, startVelocity: 45 }); }, []);
+    useEffect(() => { if (gameState === 'finished' && isOpen) { triggerConfetti(); } }, [gameState, isOpen, triggerConfetti]);
+// --- FIX LỖI: THÊM HÀM XỬ LÝ HỌC LẠI TỪ ĐẦU ---
+  const handleRestart = () => {
+    // 1. Dọn dẹp các state cũ (React sẽ gom các lệnh này lại)
+    setFinishedCount(0);
+    setWrongItem(null);
+    setPenaltyInput('');
+    setMatchedIds([]);
+    setWrongPairIds([]);
+    setSelectedIdx(null);
+    setIsChecking(false);
+
+    // 2. Tính toán dữ liệu mới (Chạy cực nhanh, không lo lag)
+    let validChars = Array.from(new Set(text.split('').filter(c => getCharInfo(c))));
+    validChars = shuffleArray(validChars);
+
+    if (validChars.length === 0) return onClose();
+
+    let newQueue = [];
+    const CHUNK_SIZE = 6; 
+    for (let i = 0; i < validChars.length; i += CHUNK_SIZE) {
+        const chunk = validChars.slice(i, i + CHUNK_SIZE);
+        chunk.forEach(char => newQueue.push({ type: 'quiz_sound', char }));
+        if (chunk.length >= 2) newQueue.push({ type: 'match', chars: chunk });
+        chunk.forEach(char => newQueue.push({ type: 'quiz_reverse', char }));
+    }
+
+    // 3. Cập nhật dữ liệu và nhảy thẳng vào Game
+    // Không set 'loading', không setTimeout!
+    setQueue(newQueue);
+    setCurrentIndex(0);
+    setGameState(newQueue[0].type); 
+};
+// --- PHẦN RENDER GIAO DIỆN (GIỮ NGUYÊN UI, CHỈ FIX LỖI LOGIC) ---
+    if (!isOpen) return null;
+    if (gameState === 'loading') return null;
+
+    // Tính phần trăm tiến độ
+const visualPercent = queue.length > 0 ? (currentIndex / queue.length) * 100 : 0;
+
+    return (
+        <div className="fixed inset-0 z-[500] flex flex-col items-center justify-center bg-gray-900/95 backdrop-blur-xl p-4 animate-in fade-in select-none">
+            
+            {/* --- TRƯỜNG HỢP 1: KẾT THÚC (FINISHED SCREEN) --- */}
+            {gameState === 'finished' ? (
+                <div className="bg-white rounded-[2rem] p-8 w-full max-w-[280px] text-center shadow-2xl border-4 border-indigo-50 animate-in zoom-in-95">
+                    <div className="text-5xl mb-4 animate-bounce cursor-pointer hover:scale-125 transition-transform" onClick={triggerConfetti}>🎉</div>
+                    <h3 className="text-lg font-black text-gray-800 mb-1 uppercase">XUẤT SẮC!</h3>
+                    <p className="text-gray-400 mb-6 text-[11px] font-medium italic">Bạn đã hoàn thành bài luyện tập.</p>
+                    <div className="space-y-2">
+                        <button onClick={onSwitchToFlashcard} className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-black text-[11px] shadow-lg active:scale-95 transition-colors">
+                            ÔN FLASHCARD
+                        </button>
+                        <button onClick={handleRestart} className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95">
+                            HỌC LẠI TỪ ĐẦU
+                        </button>
+                        <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">
+                            THOÁT
+                        </button>
+                    </div>
+                </div>
+            ) : (
+                /* --- TRƯỜNG HỢP 2: ĐANG CHƠI GAME --- */
+                <div className="w-full max-w-sm flex flex-col items-center h-full max-h-[80vh]">
+                    
+                    {/* THANH TIẾN ĐỘ */}
+                    <div className="w-full flex items-center gap-3 mb-6 px-2">
+                        <div className="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
+                            <div className="h-full bg-blue-500 transition-all duration-500 ease-out" style={{ width: `${visualPercent}%` }}></div>
+                        </div>
+                        <div className="text-white/40 text-[10px] font-bold min-w-[30px] text-center">
+                            {finishedCount}/{totalKanji}
+                        </div>
+                        <button onClick={onClose} className="text-white/40 md:hover:text-red-500 transition-all font-black text-3xl leading-none p-3 -mr-3 active:scale-110 flex items-center justify-center">
+                            ✕
+                        </button>
+                    </div>
+
+                    {/* NỘI DUNG CHÍNH */}
+                    <div className="flex-1 w-full flex flex-col items-center justify-center relative">
+
+                        {/* --- DẠNG BÀI: QUIZ (Trắc nghiệm) --- */}
+                        {(gameState === 'quiz_sound' || gameState === 'quiz_reverse') && currentQuizData && (
+                            <>
+                                {/* HÌNH ẢNH CÂU HỎI */}
+                                <div className="bg-white rounded-[2rem] w-64 h-64 flex flex-col items-center justify-center shadow-2xl mb-8 relative animate-in zoom-in-95 duration-300">
+                                     
+                                     {/* Text Chính */}
+                                     <div className={`text-center leading-none mb-2 text-gray-800 
+                                        ${currentQuizData.questionDisplay.isKanji 
+                                            ? "text-8xl font-['Klee_One'] -translate-y-4" 
+                                            : getDynamicFontSize(currentQuizData.questionDisplay.main, 'title') + " font-black uppercase tracking-wider px-2 break-words"
+                                        }`}>
+                                        {currentQuizData.questionDisplay.main}
+                                     </div>
+
+                                    {/* Text Phụ (Nghĩa) - FIX LỖI: Chỉ hiện nếu có nghĩa (tránh crash với Hiragana) */}
+                                    {currentQuizData.questionDisplay.sub && (
+                                        <div className="absolute bottom-6 px-4 py-1.5 bg-gray-50 text-gray-500 text-sm font-bold uppercase rounded-full border border-gray-100 max-w-[90%] truncate">
+                                            {currentQuizData.questionDisplay.sub}
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* 4 NÚT ĐÁP ÁN (ĐÃ FIX LỖI MOBILE VÀ THÊM MÀU) */}
+                                <div className="grid grid-cols-2 gap-3 w-full">
+                                    {currentQuizData.options.map((opt, i) => {
+                                        const isSelected = selectedIdx === i;
+                                        
+                                        // Xác định class màu sắc dựa trên trạng thái bấm
+                                        let statusClass = "bg-white/10 border-white/10 text-white"; // Mặc định
+                                        if (isSelected) {
+                                            statusClass = opt.correct 
+                                                ? "bg-green-500 border-green-500 text-white shadow-[0_0_20px_rgba(34,197,94,0.6)]" // Đúng -> Xanh
+                                                : "bg-red-500 border-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.6)]";   // Sai -> Đỏ
+                                        }
+
+                                        return (
+                                            <button 
+                                                key={i} 
+                                                disabled={isChecking}
+                                                onClick={(e) => {
+                                                    // 1. Fix lỗi dính màu trên điện thoại
+                                                    e.currentTarget.blur(); 
+                                                    if (isChecking) return;
+
+                                                    // 2. Hiển thị trạng thái màu
+                                                    setSelectedIdx(i);
+                                                    setIsChecking(true);
+
+                                                    // 3. Đợi một chút để người dùng nhìn thấy màu rồi mới chuyển câu
+                                                    setTimeout(() => {
+                                                        handleAnswer(opt.correct, currentQuizData);
+                                                        setSelectedIdx(null);
+                                                        setIsChecking(false);
+                                                    }, 350);
+                                                }} 
+                                                className={`h-14 w-full px-2 border rounded-xl font-bold flex items-center justify-center text-center shadow-lg backdrop-blur-sm transition-all duration-200 active:scale-95
+                                                    ${statusClass}
+                                                    ${!isChecking ? 'md:hover:bg-white/20' : ''} 
+                                                    ${opt.isKanji 
+                                                        ? "text-3xl font-['Klee_One']" 
+                                                        : getDynamicFontSize(opt.label, 'button') + " font-sans uppercase break-words leading-tight" 
+                                                    }`}
+                                            >
+                                                {opt.label}
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            </>
+                        )}
+
+                        {/* --- DẠNG BÀI: PENALTY (Phạt viết lại) --- */}
+                        {gameState === 'penalty' && wrongItem && (
+                             <div className="bg-white rounded-[2rem] w-full max-w-[300px] p-6 flex flex-col items-center justify-center shadow-2xl animate-in slide-in-from-right duration-300">
+                                <h3 className="text-sm font-black text-gray-400 uppercase mb-2">Viết lại để ghi nhớ</h3>
+                                
+                                {/* Chữ to chính giữa */}
+                                <div className="text-7xl font-['Klee_One'] text-gray-800 mb-2">{wrongItem.targetChar}</div>
+                                
+                                {/* Âm đọc (Màu xanh) */}
+                                <p className="text-blue-600 font-black text-lg uppercase tracking-widest mb-1">{wrongItem.targetInfo.sound}</p>
+                                
+                                {/* FIX LỖI: Chỉ hiện nghĩa nếu là KANJI (Hiragana/Katakana sẽ ẩn dòng này đi để tránh lỗi) */}
+                                {wrongItem.targetInfo.type === 'kanji' && (
+                                    <p className="text-xs text-gray-400 font-medium italic mb-6">({wrongItem.targetInfo.meaning})</p>
+                                )}
+                                {/* Nếu không phải Kanji thì chỉ cần khoảng trống nhỏ cho đẹp */}
+                                {wrongItem.targetInfo.type !== 'kanji' && <div className="mb-6"></div>}
+
+                                <input 
+                                    type="text" 
+                                    autoFocus 
+                                    value={penaltyInput} 
+                                    onChange={(e) => setPenaltyInput(e.target.value)} 
+                                    onKeyDown={(e) => e.key === 'Enter' && checkPenalty()} 
+                                    placeholder="Nhập cách đọc..." 
+                                    className={`w-full p-3 text-center text-base font-bold border-2 rounded-xl outline-none transition-all ${penaltyFeedback === 'incorrect' ? 'border-red-500 bg-red-50' : penaltyFeedback === 'correct' ? 'border-green-500 bg-green-50' : 'border-gray-200 focus:border-blue-500'}`} 
+                                />
+                                <button onClick={checkPenalty} className="w-full mt-3 py-3 bg-gray-900 text-white font-bold rounded-xl active:scale-95 transition-all uppercase text-[10px] tracking-widest">
+                                    KIỂM TRA
+                                </button>
+                            </div>
+                        )}
+
+                        {/* --- DẠNG BÀI: MATCHING (Ghép thẻ) --- */}
+                        {gameState === 'match' && (
+                            <div className="w-full flex flex-col items-center justify-center">
+                                <div className="border-2 border-dashed border-white/20 rounded-2xl p-4 w-full">
+                                    <div className="grid grid-cols-3 gap-2 w-full">
+                                        {matchCards.map((card) => {
+                                            const isMatched = matchedIds.includes(card.id);
+                                            const isSelected = selectedCardId === card.id;
+                                            const isWrong = wrongPairIds.includes(card.id);
+
+                                            return (
+                                                <button 
+                                                    key={card.id} 
+                                                    onClick={() => handleCardClick(card)} 
+                                                    disabled={isMatched} 
+                                                    className={`h-20 rounded-xl font-bold flex items-center justify-center transition-all duration-200 p-1 shadow-lg
+                                                        ${isMatched ? 'opacity-0 scale-50 pointer-events-none' : 
+                                                          isWrong ? 'bg-red-500 text-white animate-shake' : 
+                                                          isSelected ? 'bg-blue-500 text-white scale-105 ring-2 ring-white/50' : 
+                                                          'bg-white text-gray-800 hover:bg-gray-50 active:scale-95'} 
+                                                        
+                                                        ${card.type === 'kanji' 
+                                                            ? "font-['Klee_One'] text-3xl"  
+                                                            : getDynamicFontSize(card.content, 'button') + " font-sans uppercase break-words leading-tight" 
+                                                        }`}
+                                                >
+                                                    {card.content}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                                <p className="mt-4 text-white/50 text-[10px] font-bold uppercase tracking-widest animate-pulse">Chọn cặp tương ứng</p>
+                            </div>
+                        )}
+
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
 // 5. Sidebar (Phiên bản: Final)
-    const Sidebar = ({ config, onChange, onPrint, srsData, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen, showMobilePreview, setShowMobilePreview, dbData, setIsFlashcardOpen, onOpenReviewList }) => {
+   const Sidebar = ({ config, onChange, onPrint, srsData, isMenuOpen, setIsMenuOpen, isConfigOpen, setIsConfigOpen, isCafeModalOpen, setIsCafeModalOpen, showMobilePreview, setShowMobilePreview, dbData, setIsFlashcardOpen, onOpenReviewList, setIsLearnGameOpen }) => {
    
 
 // 1. Logic bộ lọc mới
@@ -2092,74 +2642,89 @@ LÀM SẠCH
                     )}
                 </div>
 
-                   {/* 2. MENU TIỆN ÍCH (Utilities) */}
+
+{/* 2. MENU TIỆN ÍCH (Utilities) */}
 <div className="relative flex-1" ref={utilsMenuRef}> 
-                    <button onClick={() => toggleMenu('utils')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isUtilsOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
-                        <span className="font-bold text-xs whitespace-nowrap">TIỆN ÍCH</span>
+    <button onClick={() => toggleMenu('utils')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isUtilsOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
+        <span className="font-bold text-xs whitespace-nowrap">TIỆN ÍCH</span>
+    </button>
+
+    {isUtilsOpen && (
+        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+            
+            {/* 1. CÔNG CỤ XÁO TRỘN */}
+            <div>
+                <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Công cụ</p>
+                <button onClick={handleShuffleCurrent} className="w-full py-2.5 text-xs font-bold bg-indigo-50 text-indigo-600 border border-indigo-100 rounded-lg hover:bg-indigo-600 hover:text-white transition flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    Xáo trộn danh sách hiện tại
+                </button>
+            </div>
+
+            {/* 2. PHẦN HỌC & ÔN TẬP */}
+            <div className="pt-0">
+                <div className="flex items-center gap-2 mb-3">
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tight">HỌC & ÔN TẬP</p>
+                    <span className="flex-1 border-b border-gray-50"></span>
+                </div>
+
+                <div className="space-y-2">
+                    {/* NÚT HỌC (GAME) - Đưa lên trên */}
+                    <button 
+                        onClick={() => {
+                            if (!config.text) return alert("Vui lòng nhập chữ để học!");
+                            setIsLearnGameOpen(true); 
+                            setIsUtilsOpen(false);
+                        }}
+                        className="w-full py-3 bg-[#4255ff] md:hover:bg-[#3243cc] text-white rounded-xl flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 group"
+                    >
+                        <span className="bg-white p-0.5 rounded flex items-center justify-center group-hover:rotate-12 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4255ff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                <rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4M15 13v.01M18 11v.01"/>
+                            </svg>
+                        </span>
+                        <span className="text-xs font-black tracking-wide uppercase">HỌC</span>
                     </button>
-                    {isUtilsOpen && (
-                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 z-50 w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl p-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
-                            
-                            {/* Công cụ Xáo trộn */}
-                            <div>
-                                <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 text-left">Công cụ</p>
-                                <button onClick={handleShuffleCurrent} className="w-full py-2.5 text-xs font-bold bg-indigo-50 text-indigo-600 border border-indigo-100 rounded-lg hover:bg-indigo-600 hover:text-white transition flex items-center justify-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-                                    Xáo trộn danh sách hiện tại
-                                </button>
-                            </div>
 
-                            {/* Tạo Flashcard */}
-                            <div className="pt-0">
-                                <div className="flex items-center gap-2 mb-2">
-                                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-tight">ÔN TẬP</p>
-                                    <span className="flex-1 border-b border-gray-50"></span>
-                                </div>
-                                <button 
-                                    onClick={() => {
-                                        if (!config.text) return alert("Vui lòng nhập chữ vào ô để học flashcard!");
-                                        setIsFlashcardOpen(true);
-                                        setIsUtilsOpen(false);
-                                    }}
-                                    className="w-full py-3 bg-[#4255ff] hover:bg-[#3243cc] text-white rounded-xl flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 group"
-                                >
-                                    <span className="bg-white p-0.5 rounded flex items-center justify-center group-hover:rotate-12 transition-transform">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4255ff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                                    </span>
-                                    <span className="text-xs font-black tracking-wide uppercase">Flashcard</span>
-                                </button>
-                            </div>
+                    {/* NÚT FLASHCARD - Nằm dưới nút Học */}
+                    <button 
+                        onClick={() => {
+                            if (!config.text) return alert("Vui lòng nhập chữ vào ô để học flashcard!");
+                            setIsFlashcardOpen(true);
+                            setIsUtilsOpen(false);
+                        }}
+                        className="w-full py-3 bg-[#4255ff] md:hover:bg-[#3243cc] text-white rounded-xl flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 group"
+                    >
+                        <span className="bg-white p-0.5 rounded flex items-center justify-center group-hover:rotate-12 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4255ff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </span>
+                        <span className="text-xs font-black tracking-wide uppercase">Flashcard</span>
+                    </button>
+                </div>
+            </div>
 
-                            {/* Danh sách ôn tập (Màu Cam) */}
-                            <div className="pt-0 mt-1">
-                                <button 
-                                    onClick={() => {
-                                        onOpenReviewList();    
-                                        setIsUtilsOpen(false); 
-                                    }}
-                                    className="w-full py-2.5 bg-orange-50 border border-orange-200 text-orange-600 hover:text-orange-700 hover:border-orange-300 hover:bg-orange-100 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 group shadow-sm"
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" 
-                                         className="text-orange-500 group-hover:text-orange-600 transition-colors"
-                                    >
-                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                                        <path d="M8 14h.01"></path>
-                                        <path d="M12 14h.01"></path>
-                                        <path d="M16 14h.01"></path>
-                                        <path d="M8 18h.01"></path>
-                                        <path d="M12 18h.01"></path>
-                                        <path d="M16 18h.01"></path>
-                                    </svg>
-                                    <span className="text-xs font-bold uppercase tracking-wide">LỊCH TRÌNH ÔN TẬP</span>
-                                </button>
-                            </div>
+            {/* 3. DANH SÁCH ÔN TẬP (MÀU CAM) */}
+            <div className="pt-1">
+                <button 
+                    onClick={() => {
+                        onOpenReviewList();    
+                        setIsUtilsOpen(false); 
+                    }}
+                    className="w-full py-2.5 bg-orange-50 border border-orange-200 text-orange-600 hover:text-orange-700 hover:border-orange-300 hover:bg-orange-100 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 group shadow-sm"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-orange-500 group-hover:text-orange-600 transition-colors">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        <path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path>
+                        <path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path>
+                    </svg>
+                    <span className="text-xs font-bold uppercase tracking-wide">LỊCH TRÌNH ÔN TẬP</span>
+                </button>
+            </div>
 
-                        </div>
-                    )}
- </div>
+        </div>
+    )}
+</div>
                     {/* 3. TÙY CHỈNH */}
                     <div className="relative flex-1" ref={configMenuRef}> 
                     <button onClick={() => toggleMenu('config')} className={`w-full h-full px-1 border rounded-xl flex items-center justify-center shadow-sm transition-all active:scale-[0.98] ${isConfigOpen ? 'bg-indigo-50 border-indigo-300 text-indigo-700' : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'}`}>
@@ -2622,6 +3187,7 @@ const [showMobilePreview, setShowMobilePreview] = useState(false);
 const [isConfigOpen, setIsConfigOpen] = React.useState(false);
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
+        const [isLearnGameOpen, setIsLearnGameOpen] = useState(false);
         const [isReviewListOpen, setIsReviewListOpen] = useState(false);
         const [srsData, setSrsData] = useState(() => {
     // Tự động lấy dữ liệu cũ từ máy người dùng khi mở web
@@ -2718,7 +3284,7 @@ return (
         isCafeModalOpen={isCafeModalOpen} setIsCafeModalOpen={setIsCafeModalOpen} 
         showMobilePreview={showMobilePreview} setShowMobilePreview={setShowMobilePreview}
         setIsFlashcardOpen={setIsFlashcardOpen}
-        
+        setIsLearnGameOpen={setIsLearnGameOpen}
         dbData={dbData} // <--- QUAN TRỌNG: Truyền dữ liệu xuống Sidebar
             srsData={srsData}
          onOpenReviewList={() => setIsReviewListOpen(true)}
@@ -2770,6 +3336,16 @@ return (
         const newData = { ...srsData, [char]: oldData };
         setSrsData(newData);
         localStorage.setItem('phadao_srs_data', JSON.stringify(newData));
+    }}
+/>
+<LearnGameModal 
+    isOpen={isLearnGameOpen}
+    onClose={() => setIsLearnGameOpen(false)}
+    text={config.text}
+    dbData={dbData}
+    onSwitchToFlashcard={() => {
+        setIsLearnGameOpen(false); // Đóng Game
+        setIsFlashcardOpen(true);  // Mở Flashcard ngay lập tức
     }}
 />
        {/* 3. RENDER MODAL MỚI */}
