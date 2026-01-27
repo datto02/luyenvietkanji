@@ -3003,7 +3003,7 @@ TÀI LIỆU HỌC TẬP
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                        <p className="text-sm font-bold text-gray-800 truncate group-hover:text-purple-700 pb-1">FILE tập viết tạo sẵn</p>
+                        <p className="text-sm font-bold text-gray-800 truncate group-hover:text-purple-700 pb-1">File tập viết đã tạo sẵn</p>
                         <p className="text-[10px] text-gray-400">Bảng chữ cái, bộ thủ, kanji</p>
                     </div>
                     <svg className="w-4 h-4 text-gray-300 group-hover:text-purple-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
