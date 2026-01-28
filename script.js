@@ -2786,7 +2786,7 @@ LÀM SẠCH
             <label className="text-[11px] font-bold text-gray-600">Độ đậm chữ</label>
             <span className="text-[11px] font-black text-indigo-600 bg-indigo-50 px-1.5 rounded">{Math.round(config.traceOpacity * 100)}%</span>
         </div>
-        <input type="range" min="0.05" max="0.5" step="0.05" className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600" value={config.traceOpacity} onChange={(e) => handleChange('traceOpacity', parseFloat(e.target.value))} />
+        <input type="range" min="0.05" max="0.3" step="0.05" className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600" value={config.traceOpacity} onChange={(e) => handleChange('traceOpacity', parseFloat(e.target.value))} />
     </div>
 
     {/* MỤC 3: CỠ CHỮ */}
