@@ -2136,13 +2136,48 @@ try {
                     return;
             }
 
-            // 4. Xáo trộn và cắt lấy số lượng cần thiết
-            const shuffled = shuffleString(cleanText); // Hàm shuffleString có sẵn trong code cũ rồi
-            let count = randomCount > 50 ? 50 : randomCount;
-            const selectedChars = shuffled.slice(0, count);
+            // 1. Chuyển chuỗi từ file thành mảng các chữ cái
+        const allChars = Array.from(cleanText);
 
-            // 5. Hiển thị
-            setFilterOptions(prev => ({ ...prev, kanji: true }));
+        // 2. Phân loại: Chữ nào chưa học, chữ nào đã từng học (dựa vào srsData)
+        const unstudiedChars = allChars.filter(char => !srsData[char]);
+        const studiedChars = allChars.filter(char => srsData[char]);
+
+        // 3. Giới hạn số lượng lấy (tối đa 50)
+        const count = randomCount > 50 ? 50 : randomCount;
+
+        let selectedPool = "";
+
+        // Logic ưu tiên:
+        if (unstudiedChars.length >= count) {
+            // NẾU CÒN ĐỦ CHỮ MỚI: Chỉ bốc trong đống chưa học
+            selectedPool = shuffleString(unstudiedChars.join('')).slice(0, count);
+        } 
+        else if (unstudiedChars.length > 0) {
+            // NẾU CHỮ MỚI KHÔNG ĐỦ: Lấy hết chữ mới + bù thêm chữ cũ cho đủ số lượng
+            const neededMore = count - unstudiedChars.length;
+            const extraFromStudied = shuffleString(studiedChars.join('')).slice(0, neededMore);
+            selectedPool = unstudiedChars.join('') + extraFromStudied;
+        } 
+        else {
+            // NẾU ĐÃ HỌC HẾT SẠCH: Lấy ngẫu nhiên bất kỳ chữ nào trong file
+            selectedPool = shuffleString(cleanText).slice(0, count);
+        }
+
+        // 4. Xáo trộn lần cuối để vị trí các chữ xuất hiện ngẫu nhiên
+        const finalResult = shuffleString(selectedPool);
+
+        // --- Cập nhật giao diện ---
+        setFilterOptions(prev => ({ ...prev, kanji: true }));
+        setProgress(30);
+        
+        setTimeout(() => setProgress(100), 300);
+
+        setTimeout(() => {
+            setLocalText(finalResult);
+            onChange({ ...config, text: finalResult });
+            setIsLoading(false);
+        }, 500);
             
             setProgress(30);
             setTimeout(() => setProgress(100), 300);
@@ -2612,6 +2647,21 @@ LÀM SẠCH
                                         />
                                         <span className="text-[10px] font-bold text-gray-400 uppercase">chữ</span>
                                     </div>
+                                                  {/* BIỂU TƯỢNG (i) NẰM CUỐI CÙNG */}
+        <div className="group relative cursor-help ml-auto">
+            <div className="text-gray-400 hover:text-indigo-500 border border-gray-300 rounded-full w-3.5 h-3.5 flex items-center justify-center text-[9px] font-serif font-bold bg-gray-50 transition-colors">i</div>
+            
+            {/* TOOLTIP GIẢI THÍCH (Hiện lên khi di chuột vào) */}
+            <div className="absolute right-0 bottom-full mb-2 w-56 p-2.5 bg-gray-900 text-white text-[10px] rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none shadow-2xl z-[70] leading-relaxed border border-white/10">
+                <div className="font-black text-indigo-400 mb-1 uppercase text-[9px] flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Học tập thông minh
+                </div>
+                Hệ thống ưu tiên lấy những chữ bạn <b>chưa học Flashcard bao giờ</b>. Nếu đã hết chữ mới, hệ thống sẽ lấy thêm chữ cũ để đủ số lượng yêu cầu.
+                {/* Mũi tên nhỏ trỏ xuống */}
+                <div className="absolute top-full right-1 -mt-1 w-2 h-2 bg-gray-900 rotate-45 border-r border-b border-white/10"></div>
+            </div>
+        </div>      
                                 </div>
                                 <div className="grid grid-cols-5 gap-1.5">
                                     {['N5', 'N4', 'N3', 'N2', 'N1'].map((level) => (
