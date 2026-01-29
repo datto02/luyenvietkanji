@@ -225,7 +225,7 @@ const useKanjiReadings = (char, active, dbData) => {
   return readings;
 };
 
-const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
+const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS, onLoadChars }) => {
     const [isConfirmOpen, setIsConfirmOpen] = React.useState(false);
     const [isHelpOpen, setIsHelpOpen] = React.useState(false);
 
@@ -431,8 +431,23 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                             <div className="space-y-4">
                                 <div className="bg-orange-50 rounded-xl p-3 border border-orange-100">
                                     <div className="flex items-center justify-between mb-2">
-                                        <span className="text-sm font-black text-orange-600 uppercase">Cần ôn ngay</span>
-                                        <span className="bg-orange-200 text-orange-700 text-sm font-bold px-1.5 rounded">{groupedData.today.length} chữ</span>
+                                       <span className="text-sm font-black text-orange-600 uppercase">Cần ôn ngay</span>
+<div className="flex items-center gap-2">
+    {/* --- NÚT DẤU CỘNG (MỚI) --- */}
+    {groupedData.today.length > 0 && (
+        <button 
+            onClick={(e) => {
+                e.stopPropagation();
+                onLoadChars(groupedData.today.join(''));
+            }}
+            className="w-6 h-6 flex items-center justify-center rounded-full bg-white border border-orange-200 text-orange-500 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-all active:scale-90 shadow-sm"
+            title="Tạo bài luyện cho các chữ này"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+    )}
+    <span className="bg-orange-200 text-orange-700 text-sm font-bold px-1.5 rounded">{groupedData.today.length} chữ</span>
+</div>
                                     </div>
                                     {groupedData.today.length > 0 ? (
                                         <div className="flex flex-wrap gap-1">
@@ -454,10 +469,23 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS }) => {
                                             <div key={date} className="bg-gray-50 rounded-xl p-3 border border-gray-100">
                                                 <div className="flex items-center justify-between mb-2">
                                                     <span className="text-xs font-bold text-gray-600 flex items-center gap-1">
-                                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                                                        Ngày {date}
-                                                    </span>
-                                                    <span className="bg-gray-200 text-gray-600 text-[10px] font-bold px-1.5 rounded">{groupedData[date].length} chữ</span>
+    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+    Ngày {date}
+</span>
+<div className="flex items-center gap-2">
+    {/* --- NÚT DẤU CỘNG (MỚI) --- */}
+    <button 
+        onClick={(e) => {
+            e.stopPropagation();
+            onLoadChars(groupedData[date].join(''));
+        }}
+        className="w-5 h-5 flex items-center justify-center rounded-full bg-white border border-gray-200 text-gray-400 hover:bg-indigo-500 hover:text-white hover:border-indigo-500 transition-all active:scale-90 shadow-sm"
+        title="Tạo bài luyện cho ngày này"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+    </button>
+    <span className="bg-gray-200 text-gray-600 text-[10px] font-bold px-1.5 rounded">{groupedData[date].length} chữ</span>
+</div>
                                                 </div>
                                                 <div className="flex flex-wrap gap-1">
                                                     {groupedData[date].map((char, i) => (
@@ -3414,6 +3442,10 @@ return (
                 onClose={() => setIsReviewListOpen(false)}
                 srsData={srsData}
                 onResetSRS={handleResetAllSRS}
+                onLoadChars={(chars) => {
+        setConfig({ ...config, text: chars }); 
+        setIsReviewListOpen(false);           
+    }}
             />
         </div>
 );
