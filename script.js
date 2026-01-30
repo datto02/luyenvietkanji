@@ -225,10 +225,42 @@ const useKanjiReadings = (char, active, dbData) => {
   return readings;
 };
 
-const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS, onLoadChars }) => {
+const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS, onLoadChars, dbData }) => {
     const [isConfirmOpen, setIsConfirmOpen] = React.useState(false);
     const [isHelpOpen, setIsHelpOpen] = React.useState(false);
+// --- LOGIC MỚI: TÍNH TIẾN ĐỘ THEO CẤP ĐỘ ---
+    const levelProgress = React.useMemo(() => {
+        if (!dbData || !dbData.KANJI_LEVELS) return [];
+        const levels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+        const result = [];
+        
+        levels.forEach(lvl => {
+            const totalChars = dbData.KANJI_LEVELS[lvl] || [];
+            const totalCount = totalChars.length;
+            if (totalCount === 0) return;
 
+            // Đếm số chữ đã có trong srsData (đã học/đang học)
+            const learnedCount = totalChars.filter(char => srsData && srsData[char]).length;
+
+            if (learnedCount > 0) {
+                result.push({ 
+                    level: lvl, 
+                    learned: learnedCount, 
+                    total: totalCount,
+                    percent: Math.round((learnedCount / totalCount) * 100)
+                });
+            }
+        });
+        return result;
+    }, [srsData, dbData]);
+
+    const levelColors = {
+        N5: { bg: 'bg-emerald-50', text: 'text-emerald-700', border: 'border-emerald-200', bar: 'bg-emerald-500' },
+        N4: { bg: 'bg-sky-50', text: 'text-sky-700', border: 'border-sky-200', bar: 'bg-sky-500' },
+        N3: { bg: 'bg-orange-50', text: 'text-orange-700', border: 'border-orange-200', bar: 'bg-orange-500' },
+        N2: { bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200', bar: 'bg-purple-500' },
+        N1: { bg: 'bg-rose-50', text: 'text-rose-700', border: 'border-rose-200', bar: 'bg-rose-500' }
+    };
     const handleExport = () => {
         const data = localStorage.getItem('phadao_srs_data');
         if (!data || data === '{}') {
@@ -429,6 +461,43 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS, onLoadChars }) 
 
                         <div className="p-4 overflow-y-auto custom-scrollbar flex-1">
                             <div className="space-y-4">
+                 {/* --- HIỂN THỊ TIẾN ĐỘ (ĐÃ SỬA CO DÃN) --- */}
+                {levelProgress.length > 0 && (
+                    <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 mb-4">
+                        <h4 className="text-[11px] font-black text-gray-400 uppercase tracking-widest mb-3 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                            Tiến độ học tập
+                        </h4>
+                        
+                        {/* 1. SỬA CONTAINER: Dùng Flexbox để co dãn */}
+                        <div className="flex flex-wrap gap-2">
+                            {levelProgress.map((item) => {
+                                const style = levelColors[item.level] || levelColors.N5;
+                                return (
+                                    <div 
+                                        key={item.level} 
+                                        // 2. SỬA ITEM: Thêm flex-1 và min-w-[40%]
+                                        className={`${style.bg} border ${style.border} rounded-lg p-2.5 flex flex-col justify-center flex-1 min-w-[40%]`}
+                                    >
+                                        <div className="flex justify-between items-end mb-1.5">
+                                            <span className={`text-xs font-black ${style.text}`}>{item.level}</span>
+                                            <span className={`text-[10px] font-bold ${style.text} opacity-80`}>
+                                                {item.learned}/{item.total}
+                                            </span>
+                                        </div>
+                                        {/* Thanh Progress */}
+                                        <div className="w-full h-1.5 bg-white/60 rounded-full overflow-hidden">
+                                            <div 
+                                                className={`h-full rounded-full ${style.bar} transition-all duration-500`} 
+                                                style={{ width: `${item.percent}%` }}
+                                            ></div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
                                 <div className="bg-orange-50 rounded-xl p-3 border border-orange-100">
                                     <div className="flex items-center justify-between mb-2">
                                        <span className="text-sm font-black text-orange-600 uppercase">Cần ôn ngay</span>
@@ -3441,6 +3510,7 @@ return (
                 isOpen={isReviewListOpen}
                 onClose={() => setIsReviewListOpen(false)}
                 srsData={srsData}
+                dbData={dbData}
                 onResetSRS={handleResetAllSRS}
                 onLoadChars={(chars) => {
         setConfig({ ...config, text: chars }); 
