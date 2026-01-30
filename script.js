@@ -2823,7 +2823,7 @@ LÀM SẠCH
             <label className="text-[11px] font-bold text-gray-600">Cỡ chữ</label>
             <span className="text-[11px] font-black text-indigo-600 bg-indigo-50 px-1.5 rounded">{config.fontSize} pt</span>
         </div>
-        <input type="range" min="27" max="40" step="1" className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600" value={config.fontSize} onChange={(e) => handleChange('fontSize', parseInt(e.target.value))} />
+        <input type="range" min="27" max="37" step="1" className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600" value={config.fontSize} onChange={(e) => handleChange('fontSize', parseInt(e.target.value))} />
     </div>
 
     {/* MỤC 4: ĐỘ ĐẬM KHUNG */}
