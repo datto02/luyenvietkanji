@@ -4215,7 +4215,7 @@ TÀI LIỆU HỌC TẬP
                                     <li>
                                         Hoặc có thể tải file tạo sẵn 
                                         <a 
-                                            href="https://drive.google.com/drive/folders/1J8psBuUeV8VBUC90gxw5tTNPy050FDha?usp=sharing" 
+                                            href="https://drive.google.com/drive/folders/1e7J-I6icRWjXla5WGUriUqgFXb7B72cP?usp=sharing" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             // LOGIC ĐẢO NGƯỢC MÀU:
