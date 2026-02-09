@@ -1466,7 +1466,7 @@ const WorkbookRow = ({ char, config, dbData, mode, customVocabData, onEditVocab 
 {/* 3. DÒNG NHẮC NHỞ (Nằm ngoài ngoặc và hiện khi thiếu Cách đọc + Nghĩa) */}
 {(!displayReading && !finalMeaning) && (
     <span className="text-gray-400 text-[10px] italic ml-1 print:hidden">
-        thêm cách đọc, ý nghĩa
+        ấn vào đây để thêm cách đọc, ý nghĩa
     </span>
 )}
                         
@@ -3651,9 +3651,9 @@ onKeyDown={(e) => {
                                                 {mimiN3 && `TẢI MIMI N3 - PHẦN ${mimiN3}`}
                                                 {mimiN2 && `TẢI MIMI N2 - PHẦN ${mimiN2}`}
                                                 {mimiN1 && `TẢI MIMI N1 - PHẦN ${mimiN1}`}
-                                                {tangoN3 && `TẢI TANGO N3 - BÀI ${tangoN3}`}
-                                                {tangoN2 && `TẢI TANGO N2 - BÀI ${tangoN2}`}
-                                                {tangoN1 && `TẢI TANGO N1 - BÀI ${tangoN1}`}
+                                                {tangoN3 && `TẢI TANGO N3 - PHẦN ${tangoN3}`}
+                                                {tangoN2 && `TẢI TANGO N2 - PHẦN ${tangoN2}`}
+                                                {tangoN1 && `TẢI TANGO N1 - PHẦN ${tangoN1}`}
                                             </span>
                                         </>
                                     )}
@@ -4085,7 +4085,7 @@ TÀI LIỆU HỌC TẬP
                     </div>
                     <div className="flex-1 min-w-0">
                         <p className="text-sm font-bold text-gray-800 truncate group-hover:text-purple-700 pb-1">File tập viết đã tạo sẵn</p>
-                        <p className="text-[10px] text-gray-400">Bảng chữ cái, bộ thủ, kanji</p>
+                        <p className="text-[10px] text-gray-400">Kanji, từ vựng</p>
                     </div>
                     <svg className="w-4 h-4 text-gray-300 group-hover:text-purple-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
