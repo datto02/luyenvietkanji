@@ -3793,7 +3793,7 @@ onKeyDown={(e) => {
                                 </div>
                                 {/* Đổi màu thanh trượt (accent) */}
                                 <input 
-                                    type="range" min="0.05" max="0.3" step="0.03" 
+                                    type="range" min="0.03" max="0.3" step="0.03" 
                                     className={`w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer ${mode === 'vocab' ? 'accent-emerald-600' : 'accent-indigo-600'}`} 
                                     value={config.traceOpacity} 
                                     onChange={(e) => handleChange('traceOpacity', parseFloat(e.target.value))} 
