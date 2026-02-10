@@ -4139,7 +4139,7 @@ TÀI LIỆU HỌC TẬP
                 </a>
 
                 {/* nhóm học tập */}
-                <a href="https://zalo.me/g/ujgais332" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
+                <a href="https://zalo.me/g/jeflei549" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
                     {/* Đã đổi: bg-blue -> bg-orange */}
                     <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         {/* Đã đổi: Icon File -> Icon Nhóm người */}
