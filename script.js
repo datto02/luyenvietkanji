@@ -4289,6 +4289,14 @@ TÀI LIỆU HỌC TẬP
             const newMode = mode === 'kanji' ? 'vocab' : 'kanji';
             setPracticeMode(newMode);
             
+            if (newMode === 'vocab') {
+                setFilterOptions({
+                    hiragana: true,
+                    katakana: true,
+                    kanji: true,
+                    removeDuplicates: false
+                });
+            }
           
             onChange(prev => ({ 
                 ...prev, 
