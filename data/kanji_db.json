@@ -2355,6 +2355,8 @@
 "咳": { "sound": "KHÁI", "meaning": "ho" },
 "呑": { "sound": "THÔN", "meaning": "nuốt" },
 "諺": { "sound": "NGẠN", "meaning": "tục ngữ" },
-"綺": { "sound": "KHỈ", "meaning": "đẹp" }
+"綺": { "sound": "KHỈ", "meaning": "đẹp" },
+"甥": { "sound": "SANH", "meaning": "cháu trai" },
+"姪": { "sound": "ĐIỆT", "meaning": "cháu gái" }, 
   }
 }
