@@ -8905,5 +8905,11 @@
   "鬱": [
     { "word": "憂鬱", "reading": "ゆう*うつ*", "meaning": "U sầu/Buồn rầu" },
     { "word": "鬱病", "reading": "*うつ*びょう", "meaning": "Bệnh trầm cảm" }
+  ],
+  "甥": [
+    { "word": "甥", "reading": "*おい*", "meaning": "Cháu trai" }
+  ],
+  "姪": [
+    { "word": "姪", "reading": "*めい*", "meaning": "Cháu gái" }
   ]
 }
