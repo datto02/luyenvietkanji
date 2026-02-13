@@ -4538,8 +4538,15 @@ const handlePrint = () => {
 };
 
 // --- MÀN HÌNH CHỜ (LOADING) ---
-
-if (!isDbLoaded) return null;
+// Nếu dữ liệu chưa tải xong, hiện màn hình xoay vòng tròn
+if (!isDbLoaded) {
+    return (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+            <div className="w-16 h-16 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin mb-4"></div>
+            <p className="text-gray-500 font-bold animate-pulse">Đang tải dữ liệu Kanji...</p>
+        </div>
+    );
+}
 
 // --- GIAO DIỆN CHÍNH (Khi đã có dữ liệu) ---
 return (
