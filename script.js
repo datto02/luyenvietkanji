@@ -4240,7 +4240,7 @@ TÀI LIỆU HỌC TẬP
                                         
                                         {/* Đã sửa: text-justify -> text-left VÀ thêm màu đỏ cho Cặp lá yêu thương */}
                                         <p className="mb-3 text-left">
-                                            Hiện tại, tính năng in ấn trên website đang được sử dụng để gây quỹ ủng hộ. Khi bạn chuyển khoản ủng hộ <b className="text-red-600 text-[15px]">90.000 VNĐ</b> tới <b className="text-red-600">Cặp lá yêu thương</b>, mình xin gửi tặng bạn 3 lần in (không giới hạn số trang).
+                                            Hiện tại, tính năng in ấn trên website đang được sử dụng để gây quỹ ủng hộ. Khi bạn chuyển khoản ủng hộ <b className="text-red-600 text-[15px]">99.000 VNĐ</b> tới <b className="text-red-600">Cặp lá yêu thương</b>, mình xin gửi tặng bạn 3 lần in (không giới hạn số trang).
                                         </p>
                                         
                                         <p className="mb-3 text-left font-bold text-green-700">
@@ -4300,8 +4300,24 @@ TÀI LIỆU HỌC TẬP
                                                 </button>
                                             </div>
                                            
-                                           <p className="text-[11px] font-black mt-2 text-gray-700">Nội dung: Ung ho CLYT</p>
-                              <p className="text-[11px] font-black mt-2 text-gray-700">Tên TK: CAP LA YEU THUONG</p>
+                                          <p className="text-[11px] font-black mt-2 text-gray-700">Tên tài khoản: CAP LA YEU THUONG</p>
+
+{/* KHUNG NỘI DUNG CHUYỂN KHOẢN CÓ NÚT COPY */}
+<div className="flex items-center gap-1.5 mt-1.5">
+    <p className="text-[11px] font-black text-gray-700">
+        Nội dung chuyển khoản: <span className="text-blue-600">Ung ho CLYT</span>
+    </p>
+    <button 
+        onClick={() => {
+            navigator.clipboard.writeText("Ung ho CLYT");
+            alert("Đã sao chép nội dung: Ung ho CLYT");
+        }}
+        className="p-1 bg-white border border-gray-200 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 text-gray-500 rounded transition-all shadow-sm"
+        title="Sao chép nội dung"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+    </button>
+</div>
                                             
                                             {/* ẢNH QR CODE (Dán link ảnh của bạn vào src="") */}
                                             <div className="mt-3 p-1.5 border-2 border-dashed border-gray-300 rounded-xl bg-white w-32 h-32 flex items-center justify-center relative overflow-hidden">
@@ -4320,7 +4336,7 @@ TÀI LIỆU HỌC TẬP
                                        <ul className="space-y-3 text-[14px] text-left text-gray-800">
                                             <li className="flex items-start gap-1.5">
                                                 <span className="font-bold text-black">1.</span> 
-                                                <span>Chuyển khoản số tiền <b className="text-red-500">90.000đ</b>.</span>
+                                                <span>Chuyển khoản số tiền <b className="text-red-500">99.000đ</b>.</span>
                                             </li>
                                             <li className="flex items-start gap-1.5">
                                                 <span className="font-bold text-black">2.</span> 
