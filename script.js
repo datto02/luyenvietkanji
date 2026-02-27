@@ -1611,7 +1611,7 @@ const WorkbookRow = ({ char, config, dbData, mode, customVocabData, onEditVocab 
             
             {/* Dòng 2 */}
             <div className="text-[10px] mt-0.5">
-                Tài liệu chỉ sử dụng cho mục đích cá nhân. Nghiêm cấm chia sẻ công khai.
+                Tài liệu miễn phí - Nghiêm cấm mọi hành vi mua bán thương mại
             </div>
         </div>
         </div>
@@ -2250,51 +2250,7 @@ const handleLoadDueCards = () => {
     const [activeIndex, setActiveIndex] = useState(0); 
     const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
     const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
-      // KHAI BÁO STATE
-    const [printPassword, setPrintPassword] = useState('');
-    const [isVerifyingPrint, setIsVerifyingPrint] = useState(false);
-    const [printStep, setPrintStep] = useState(1); // 1: Giới thiệu, 2: Xin mã, 3: Nhắc nhở in
-
-    // HÀM 1: KIỂM TRA MÃ (Thành công thì chuyển sang Bước 3)
-    const handleVerifyAndPrint = async () => {
-        if (!printPassword.trim()) {
-            alert("Vui lòng nhập mã để xác nhận!");
-            return;
-        }
-        setIsVerifyingPrint(true);
-        try {
-            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxGKIhzVjUPGwxt_Iqq2DmoZNL1ju-ywQClfmmEikx4mmH5BdwoKJK_th5CHerQvOESOQ/exec"; 
-            
-            const response = await fetch(`${SCRIPT_URL}?pass=${encodeURIComponent(printPassword.trim())}`);
-            const data = await response.json();
-
-            if (data.success) {
-                // CHỈ CHUYỂN SANG BƯỚC 3 (Không gọi in ở đây)
-                setPrintStep(3);
-            } else {
-                alert(data.message); 
-            }
-        } catch (error) {
-            console.error("Lỗi:", error);
-            alert("Lỗi kết nối. Vui lòng thử lại!");
-        } finally {
-            setIsVerifyingPrint(false);
-        }
-    };
-
-    // HÀM 2: GỌI LỆNH IN CUỐI CÙNG (Chạy khi bấm nút ở Bước 3)
-    const handleFinalPrint = () => {
-        // 1. Đóng Popup và dọn dẹp state
-        setIsPrintModalOpen(false); 
-        setPrintStep(1);            
-        setPrintPassword('');       
-        
-        // 2. Đợi 300ms (0.3 giây) để Popup biến mất hoàn toàn rồi mới bật bảng In. 
-        // (Nếu không có đoạn này, bảng In hiện lên sẽ chụp luôn cả cái Popup dính vào giấy)
-        setTimeout(() => {
-            onPrint(); 
-        }, 300);
-    };
+    
     // --- CHẶN TUYỆT ĐỐI CTRL + P (KHÔNG CÓ GÌ XẢY RA) ---
     useEffect(() => {
     const handleKeyDown = (e) => {
@@ -3953,23 +3909,14 @@ onKeyDown={(e) => {
 {/* --- PHẦN CUỐI CỦA SIDEBAR (CẬP NHẬT THÊM NÚT TÀI LIỆU) --- */}
     <div className="w-full mt-auto pt-4 flex flex-col gap-4"> 
     
-   {/* 1. NÚT IN (ĐÃ SỬA: ĐỔI MÀU THEO CHẾ ĐỘ) */}
+  {/* 1. NÚT IN (ĐÃ KHÓA) */}
     <button 
-        onClick={() => {
-        if (!config.text || config.text.trim().length === 0) {
-            alert("Vui lòng nhập nội dung để tạo file"); 
-            return; 
-        }
-        setIsPrintModalOpen(true); 
-        }} 
-        className={`w-full py-3.5 text-white font-bold rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all active:scale-95 group ${
-            mode === 'vocab' 
-            ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-200' 
-            : 'bg-indigo-600 hover:bg-indigo-700 shadow-indigo-200'
-        }`}
+        disabled={true} // Vô hiệu hóa chức năng click
+        className="w-full py-3.5 text-white text-lg font-bold rounded-xl shadow-none flex items-center justify-center gap-2 transition-all bg-gray-400 cursor-not-allowed opacity-70"
+        title="Tính năng đang tạm khóa"
     >
-        <svg className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg> 
-        IN / LƯU PDF
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg> 
+        IN / LƯU PDF (Đang khóa)
     </button>
 
 {/* --- 2. NÚT XEM TRƯỚC / XEM BẢN MẪU (MÀU: XANH KHI XEM, ĐỎ KHI ĐÓNG) --- */}
@@ -4123,8 +4070,6 @@ TÀI LIỆU HỌC TẬP
             {/* Danh sách tài liệu (Cuộn được nếu dài) */}
             <div className="p-4 space-y-3 overflow-y-auto custom-scrollbar">
 
-    
-
                 {/* 2139 kanji */}
                 <a href="https://drive.google.com/file/d/1Q3bbd3Aao7R71wemjESHddbvmXWYe542/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
                     <div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -4208,235 +4153,87 @@ TÀI LIỆU HỌC TẬP
     </div>
     )}
 
-{/* --- MODAL (POPUP) NHẬP MÃ & IN FILE --- */}
+{/* --- MODAL (POPUP) XÁC NHẬN IN --- */}
             {isPrintModalOpen && (
                 <div className="fixed inset-0 z-[200] flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden relative animate-in zoom-in-95 duration-200 border border-gray-200 max-h-[90vh] flex flex-col">
+                    {/* Hộp nội dung chính */}
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden relative animate-in zoom-in-95 duration-200 border border-gray-200">
                         
-                        {/* NÚT TẮT X (Sẽ reset lại bước 1 và xóa mật khẩu) */}
+                        {/* 1. NÚT ĐÓNG (X) MÀU ĐỎ Ở GÓC PHẢI */}
                         <button 
-                            onClick={() => {
-                                setIsPrintModalOpen(false);
-                                setPrintStep(1);
-                                setPrintPassword('');
-                            }}
+                            onClick={() => setIsPrintModalOpen(false)}
                             className="absolute top-3 right-3 p-2 bg-gray-100 hover:bg-red-50 text-gray-500 hover:text-red-600 rounded-full transition-colors z-10 group"
+                            title="Đóng"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:rotate-90 transition-transform"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
 
-                        <div className="p-6 flex flex-col items-center text-center overflow-y-auto custom-scrollbar">
+                        {/* 2. NỘI DUNG CẢNH BÁO */}
+                        <div className="p-6 flex flex-col items-center text-center">
+                        
+                            {/* Icon trang trí (Giữ màu vàng cảnh báo) */}
+                            <div className="w-14 h-14 bg-yellow-50 text-yellow-500 rounded-full flex items-center justify-center mb-4 border border-yellow-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            </div>
+
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">LƯU Ý QUAN TRỌNG</h3>
                             
-                           {/* ========================================= */}
-                            {/* BƯỚC 1: THÔNG BÁO CHIẾN DỊCH QUYÊN GÓP */}
-                            {/* ========================================= */}
-                            {printStep === 1 && (
-                                <>
-                                    <h3 className="text-[17px] font-black text-green-700 mb-4 uppercase tracking-wide flex items-center gap-2 mt-2 justify-center w-full">
-                                        Sự tử tế làm nên điều kỳ diệu! ✨
-                                    </h3>
-                                    
-                                   <div className="border border-green-100 bg-green-50/50 rounded-xl p-5 mb-3 text-sm leading-relaxed text-left w-full text-gray-800 shadow-sm">
-                                        
-                                        {/* Đã sửa: text-justify -> text-left VÀ thêm màu đỏ cho Cặp lá yêu thương */}
-                                        <p className="mb-3 text-left">
-                                            Hiện tại, tính năng in ấn trên website đang được sử dụng để gây quỹ ủng hộ. Khi bạn chuyển khoản ủng hộ <b className="text-red-600 text-[15px]">99.000 VNĐ</b> tới <b className="text-red-600">Cặp lá yêu thương</b>, mình xin gửi tặng bạn 3 lần in (không giới hạn số trang).
-                                        </p>
-                                        
-                                        <p className="mb-3 text-left font-bold text-green-700">
-                                            ❤️ Mỗi trang giấy in ra, một tấm lòng được gửi đi!
-                                        </p>
-                                        
-                                        <div className="border-t border-green-200 pt-3 mt-1">
-                                            <p className="font-medium text-left italic text-gray-600 text-[13px]">
-                                                Cặp lá yêu thương ra đời cùng sứ mệnh “Trao cơ hội đi học – Cho cơ hội đổi đời”, là cầu nối giữa những trái tim nhân ái với các em nhỏ có hoàn cảnh khó khăn.
-                                            </p>
-                                        </div>
-                                    </div>
+                            {/* KHUNG LƯU Ý (ĐỔI MÀU THEO CHẾ ĐỘ) */}
+                            <div className={`border rounded-xl p-4 mb-6 text-sm leading-relaxed text-left w-full ${
+                                mode === 'vocab' 
+                                ? 'bg-emerald-50 border-emerald-100 text-emerald-800' 
+                                : 'bg-blue-50 border-blue-100 text-blue-800'
+                            }`}>
+                                <p className="font-bold mb-2 flex items-center gap-1">
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Để bản in đẹp nhất:
+                                </p>
+                                <ul className="list-disc list-inside space-y-1.5 ml-1">
+                                    <li>Nên dùng <b>Máy tính (PC/Laptop)</b>.</li>
+                                    <li>Trình duyệt khuyên dùng: <b>Google Chrome</b>.</li>
+                                    <li>Không nên dùng <b>iphone</b>.</li>
+                                    <li>
+                                        Hoặc có thể tải file tạo sẵn 
+                                        <a 
+                                            href="https://drive.google.com/drive/folders/1e7J-I6icRWjXla5WGUriUqgFXb7B72cP?usp=sharing" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            // LOGIC ĐẢO NGƯỢC MÀU:
+                                            // - Nếu là Vocab (Theme Xanh lá) -> Link màu Xanh dương (Blue)
+                                            // - Nếu là Kanji (Theme Xanh dương) -> Link màu Xanh lá (Emerald)
+                                            className={`ml-1 font-bold underline transition-colors ${
+                                                mode === 'vocab' 
+                                                ? 'text-blue-700 hover:text-blue-500' 
+                                                : 'text-emerald-700 hover:text-emerald-500'
+                                            }`}
+                                        >
+                                            ở đây
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                    {/* Link xem chi tiết */}
-                                    <a 
-                                        href="https://www.facebook.com/vtv24caplayeuthuong" 
-                                        target="_blank" 
-                                        rel="noopener noreferrer" 
-                                        className="mb-6 text-[13px] font-bold text-blue-600 hover:text-blue-800 hover:underline italic transition-colors block"
-                                    >
-                                        &gt;&gt; Xem chi tiết về chương trình &lt;&lt;
-                                    </a>
-
-                                    <button 
-                                        onClick={() => setPrintStep(2)}
-                                        className="w-full py-3.5 bg-green-600 hover:bg-green-700 text-white text-[13px] font-black tracking-widest rounded-xl shadow-lg shadow-green-200 transition-all active:scale-95 uppercase"
-                                    >
-                                        TIẾP TỤC
-                                    </button>
-                                </>
-                            )}
-
-                            {/* ========================================= */}
-                            {/* BƯỚC 2: HƯỚNG DẪN LẤY MÃ & NHẬP MÃ */}
-                            {/* ========================================= */}
-                            {printStep === 2 && (
-                                <>
-         <p className="font-bold mb-3 text-center text-green-700 uppercase text-[11px] tracking-widest bg-green-100 py-1 rounded-md">Thông tin chuyển khoản</p>
-                                    
-                                    <div className="border border-gray-200 bg-gray-50 rounded-xl p-4 mb-5 text-sm leading-relaxed text-left w-full text-gray-800 shadow-inner">
-                            
-                                        
-                                        {/* KHUNG STK VÀ QR CODE */}
-                                        <div className="bg-white p-3 rounded-xl border border-gray-200 mb-4 flex flex-col items-center shadow-sm">
-                                            <p className="text-[11px] font-bold text-gray-500 mb-1 uppercase text-center">Ngân hàng Chính sách xã hội (VBSP)</p>
-                                            <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100">
-                                                <span className="text-xl font-black tracking-wider text-blue-600">1001242424</span>
-                                                <button 
-                                                    onClick={() => {
-                                                        navigator.clipboard.writeText("1001242424");
-                                                        alert("Đã sao chép số tài khoản: 1001242424");
-                                                    }}
-                                                    className="p-1.5 bg-white border border-gray-200 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 text-gray-600 rounded-md transition-all shadow-sm"
-                                                    title="Sao chép"
-                                                >
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                                                </button>
-                                            </div>
-                                           
-                                          <p className="text-[11px] font-black mt-2 text-gray-700">Tên tài khoản: CAP LA YEU THUONG</p>
-
-{/* KHUNG NỘI DUNG CHUYỂN KHOẢN CÓ NÚT COPY */}
-<div className="flex items-center gap-1.5 mt-1.5">
-    <p className="text-[11px] font-black text-gray-700">
-        Nội dung chuyển khoản: <span className="text-blue-600">Ung ho CLYT</span>
-    </p>
-    <button 
-        onClick={() => {
-            navigator.clipboard.writeText("Ung ho CLYT");
-            alert("Đã sao chép nội dung: Ung ho CLYT");
-        }}
-        className="p-1 bg-white border border-gray-200 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 text-gray-500 rounded transition-all shadow-sm"
-        title="Sao chép nội dung"
-    >
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-    </button>
-</div>
-                                            
-                                            {/* ẢNH QR CODE (Dán link ảnh của bạn vào src="") */}
-                                            <div className="mt-3 p-1.5 border-2 border-dashed border-gray-300 rounded-xl bg-white w-32 h-32 flex items-center justify-center relative overflow-hidden">
-                                                <img 
-                                                    src="https://i.ibb.co/2YvpG0gN/51690c45d48f5ad1039e.jpg" 
-                                                    alt="QR Code Cặp lá yêu thương" 
-                                                    className="w-full h-full object-contain absolute inset-0" 
-                                                    // Nếu chưa có link ảnh, thẻ này sẽ bị ẩn do lỗi tải ảnh. Hãy xóa dòng onError dưới đây khi đã có link chuẩn.
-                                                    onError={(e) => {e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block';}}
-                                                />
-                                                {/* Chữ thay thế nếu chưa có ảnh */}
-                                                <span className="text-[10px] text-gray-400 font-bold hidden text-center">Chưa chèn<br/>ảnh QR</span>
-                                            </div>
-                                        </div>
-
-                                       <ul className="space-y-3 text-[14px] text-left text-gray-800">
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">1.</span> 
-                                                <span>Chuyển khoản số tiền <b className="text-red-500">99.000đ</b>.</span>
-                                            </li>
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">2.</span> 
-                                                <span>Chụp ảnh màn hình giao dịch thành công.</span>
-                                            </li>
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">3.</span> 
-                                                <span>Gửi ảnh cho mình qua <a href="https://zalo.me/0877748756" target="_blank" rel="noopener noreferrer" className="font-bold text-blue-600 hover:underline">Zalo</a> hoặc <a href="https://www.facebook.com/thedat02" target="_blank" rel="noopener noreferrer" className="font-bold text-blue-600 hover:underline">Facebook</a>.</span>
-                                            </li>
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">4.</span> 
-                                                <span>Nhận mã và nhập vào ô bên dưới.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    {/* Ô nhập mật khẩu */}
-                                    <input 
-                                        type="text"
-                                        placeholder="Nhập mã in vào đây..."
-                                        value={printPassword}
-                                        onChange={(e) => setPrintPassword(e.target.value)}
-                                        onKeyDown={(e) => e.key === 'Enter' && handleVerifyAndPrint()}
-                                        disabled={isVerifyingPrint}
-                                        className="w-full p-3.5 mb-3 text-center font-bold text-lg border-2 border-gray-200 rounded-xl focus:outline-none focus:border-green-500 transition-colors uppercase placeholder-gray-400"
-                                    />
-
-                                    {/* Nút bấm kiểm tra */}
-                                    <button 
-                                        onClick={handleVerifyAndPrint}
-                                        disabled={isVerifyingPrint}
-                                        className={`w-full py-3.5 text-white text-[13px] font-black tracking-widest rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 uppercase ${
-                                            isVerifyingPrint ? 'bg-gray-400 cursor-not-allowed' : 'bg-gray-900 hover:bg-black shadow-gray-300'
-                                        }`}
-                                    >
-                                        {isVerifyingPrint ? (
-                                            <>
-                                                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                                ĐANG KIỂM TRA...
-                                            </>
-                                        ) : (
-                                            <>
-                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-                                                XÁC NHẬN MÃ
-                                            </>
-                                        )}
-                                    </button>
-                                    
-                                    {/* Nút Quay lại */}
-                                    <button 
-                                        onClick={() => setPrintStep(1)}
-                                        className="mt-4 text-xs font-bold text-gray-400 hover:text-gray-600 underline transition-colors"
-                                    >
-                                        Quay lại phần Giới thiệu
-                                    </button>
-                                </>
-                            )}
-
-                            {/* ========================================= */}
-                            {/* BƯỚC 3: MÃ ĐÚNG -> HIỆN LƯU Ý TRƯỚC KHI IN */}
-                            {/* ========================================= */}
-                            {printStep === 3 && (
-                                <>
-                                    <div className="w-14 h-14 bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-4 border border-green-100 mt-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                    </div>
-
-                                    <h3 className="text-xl font-bold text-gray-800 mb-2 uppercase">MÃ HỢP LỆ!</h3>
-                                    
-                                    <div className={`border rounded-xl p-4 mb-6 text-sm leading-relaxed text-left w-full shadow-inner ${
-                                        mode === 'vocab' ? 'bg-emerald-50 border-emerald-100 text-emerald-800' : 'bg-blue-50 border-blue-100 text-blue-800'
-                                    }`}>
-                                        <p className="font-bold mb-2 flex items-center gap-1">
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                            Lưu ý để bản in đẹp nhất:
-                                        </p>
-                                        <ul className="list-disc list-inside space-y-1.5 ml-1">
-                                            <li>Nên in bằng <b>Máy tính (PC/Laptop)</b>.</li>
-                                            <li>Trình duyệt khuyên dùng: <b>Google Chrome</b>.</li>
-                                            <li>Tuyệt đối không dùng <b>iPhone</b> để in.</li>
-                                        </ul>
-                                    </div>
-
-                                    {/* Nút bấm in cuối cùng */}
-                                    <button 
-                                        onClick={handleFinalPrint}
-                                        className={`w-full py-3.5 text-white text-[13px] font-black tracking-widest rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 uppercase ${
-                                            mode === 'vocab' ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-200' : 'bg-indigo-600 hover:bg-indigo-700 shadow-indigo-200'
-                                        }`}
-                                    >
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
-                                        TIẾN HÀNH IN NGAY
-                                    </button>
-                                </>
-                            )}
+                            {/* 3. NÚT IN THẬT SỰ (ĐỔI MÀU THEO CHẾ ĐỘ) */}
+                            <button 
+                                onClick={() => {
+                                    setIsPrintModalOpen(false); 
+                                    onPrint(); 
+                                }}
+                                className={`w-full py-3.5 text-white text-lg font-bold rounded-xl shadow-lg transition-all active:scale-95 flex items-center justify-center gap-2 ${
+                                    mode === 'vocab'
+                                    ? 'bg-emerald-600 hover:bg-emerald-700'
+                                    : 'bg-indigo-600 hover:bg-indigo-700'
+                                }`}
+                            >
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                                TIẾN HÀNH IN/LƯU NGAY
+                            </button>
 
                         </div>
                     </div>
                 </div>
             )}
+
             </div>
         </div>
         
@@ -4615,7 +4412,17 @@ const EditVocabModal = ({ isOpen, onClose, data, onSave, dbData }) => {
 };
     
     const App = () => {
-// --- Các state cũ giữ nguyên ---
+//thongbao
+const [showStartupNotice, setShowStartupNotice] = useState(true);
+        useEffect(() => {
+        if (showStartupNotice) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [showStartupNotice]);
+      //hetthông báo  
 const [isCafeModalOpen, setIsCafeModalOpen] = useState(false);
 const [showMobilePreview, setShowMobilePreview] = useState(false);
 const [isConfigOpen, setIsConfigOpen] = React.useState(false);
@@ -4624,20 +4431,6 @@ const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
         const [isLearnGameOpen, setIsLearnGameOpen] = useState(false);
         const [isReviewListOpen, setIsReviewListOpen] = useState(false);
          const [practiceMode, setPracticeMode] = useState('kanji');
-
-        // --- CHẶN CHUỘT PHẢI TOÀN TRANG ---
-    useEffect(() => {
-        const preventContextMenu = (e) => {
-            e.preventDefault(); // Ngăn menu chuột phải hiện lên
-        };
-        
-        document.addEventListener('contextmenu', preventContextMenu);
-        
-        return () => {
-            document.removeEventListener('contextmenu', preventContextMenu);
-        };
-    }, []);
-        
         const [srsData, setSrsData] = useState(() => {
            
     // Tự động lấy dữ liệu cũ từ máy người dùng khi mở web
@@ -4739,6 +4532,8 @@ const pages = useMemo(() => {
 
 // 4. Logic in ấn (giữ nguyên)
 const handlePrint = () => {
+    const handleAfterPrint = () => { setShowPostPrintDonate(true); window.removeEventListener("afterprint", handleAfterPrint); };
+    window.addEventListener("afterprint", handleAfterPrint);
     window.print();
 };
 
@@ -4756,6 +4551,33 @@ if (!isDbLoaded) {
 // --- GIAO DIỆN CHÍNH (Khi đã có dữ liệu) ---
 return (
     <div className="min-h-screen flex flex-col md:flex-row print-layout-reset">
+    {/* --- BẮT ĐẦU: POPUP THÔNG BÁO KHI VÀO WEB --- */}
+            {showStartupNotice && (
+                <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-300">
+                    <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center border-2 border-red-100 animate-in zoom-in-95 duration-300">
+                        
+                        {/* Icon cảnh báo */}
+                        <div className="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+
+                        <h3 className="text-xl font-black text-gray-800 mb-2 uppercase">THÔNG BÁO</h3>
+                        
+                        <p className="text-gray-600 mb-6 font-medium leading-relaxed text-sm">
+                            Tính năng IN đang tạm khóa do bảo trì hệ thống. <br/>
+                            Bạn vẫn có thể sử dụng chế độ HỌC và FLASHCARD bình thường!
+                        </p>
+
+                        <button 
+                            onClick={() => setShowStartupNotice(false)}
+                            className="w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-lg shadow-red-200 active:scale-95 transition-all uppercase text-xs tracking-widest"
+                        >
+                            Đã hiểu
+                        </button>
+                    </div>
+                </div>
+            )}
+            {/* --- KẾT THÚC POPUP --- */}
     <div className="no-print z-50">
     <Sidebar 
         config={config} onChange={setConfig} onPrint={handlePrint} 
@@ -4789,7 +4611,26 @@ return (
     ))}
     </div>
 
-   
+    {/* Popup Donate  */}
+    {showPostPrintDonate && (
+    <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-300 no-print">
+        <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden relative animate-in zoom-in-95 duration-300 border border-orange-100">
+        <button onClick={() => setShowPostPrintDonate(false)} className="absolute top-3 right-3 p-1.5 bg-gray-100 hover:bg-red-100 hover:text-red-500 rounded-full transition-colors z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div className="p-6 flex flex-col items-center text-center">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">BẠN TẠO ĐƯỢC FILE CHƯA?</h3>
+            <p className="text-sm text-gray-500 mb-6 leading-relaxed">Nếu bạn thấy trang web hữu ích <br/> hãy mời mình một ly cafe nhé!</p>
+            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-3 rounded-xl shadow-inner border border-orange-200 mb-4">
+            <img src="https://i.ibb.co/JWGwcTL1/3381513652021492183.jpg" alt="QR Donate" className="w-40 h-auto rounded-lg mix-blend-multiply" />
+            </div>
+            <p className="text-[11px] font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full mb-4">MB BANK: 99931082002</p>
+            <button onClick={() => setShowPostPrintDonate(false)} className="w-full py-2.5 bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold rounded-xl transition-all shadow-lg active:scale-95">Lần sau nhé!</button>
+        </div>
+        </div>
+    </div>
+    )}
+        
 <FlashcardModal 
     isOpen={isFlashcardOpen} 
     onClose={() => setIsFlashcardOpen(false)} 
