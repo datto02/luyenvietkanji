@@ -4283,59 +4283,63 @@ TÀI LIỆU HỌC TẬP
                                     <div className="border border-gray-200 bg-gray-50 rounded-xl p-4 mb-5 text-sm leading-relaxed text-left w-full text-gray-800 shadow-inner">
                             
                                         
-                                        {/* KHUNG STK VÀ QR CODE */}
-                                        <div className="bg-white p-3 rounded-xl border border-gray-200 mb-4 flex flex-col items-center shadow-sm">
-                                            <p className="text-[11px] font-bold text-gray-500 mb-1 uppercase text-center">Ngân hàng Chính sách xã hội (VBSP)</p>
-                                            <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100">
+                                       {/* KHUNG STK VÀ QR CODE */}
+                                        <div className="bg-white p-4 rounded-xl border border-gray-200 mb-4 flex flex-col items-center shadow-sm">
+                                            
+                                            {/* Tên ngân hàng */}
+                                            <p className="text-[11px] font-bold text-gray-500 mb-1.5 uppercase text-center">
+                                                Ngân hàng Chính sách xã hội (VBSP)
+                                            </p>
+                                            
+                                            {/* Hàng Số Tài Khoản */}
+                                            <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100 mb-2">
                                                 <span className="text-xl font-black tracking-wider text-blue-600">1001242424</span>
                                                 <button 
                                                     onClick={() => {
                                                         navigator.clipboard.writeText("1001242424");
                                                         alert("Đã sao chép số tài khoản: 1001242424");
                                                     }}
-                                                    className="p-1.5 bg-white border border-gray-200 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 text-gray-600 rounded-md transition-all shadow-sm"
-                                                    title="Sao chép"
+                                                    className="p-1.5 bg-white border border-gray-200 hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 text-gray-500 rounded-md transition-all shadow-sm"
+                                                    title="Sao chép số tài khoản"
                                                 >
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                                                 </button>
                                             </div>
-                                           
-                                           <p className="text-[11px] font-black mt-2 text-gray-700">Nội dung: Ung ho CLYT</p>
-                              <p className="text-[11px] font-black mt-2 text-gray-700">Tên TK: CAP LA YEU THUONG</p>
+
+                                            {/* Hàng Tên Tài Khoản */}
+                                            <p className="text-[12px] font-black text-gray-700 mb-3 text-center">
+                                                Tên tài khoản: CAP LA YEU THUONG
+                                            </p>
+
+                                            {/* Hàng Nội dung chuyển khoản (CÓ NÚT COPY) */}
+                                            <div className="w-full bg-blue-50/50 border border-blue-100 rounded-lg p-2 flex items-center justify-between mt-1 mb-2">
+                                                <div className="flex flex-col text-left">
+                                                    <span className="text-[9px] font-bold text-gray-400 uppercase leading-none mb-1">Nội dung chuyển khoản</span>
+                                                    <span className="text-[13px] font-black text-gray-800 leading-none">Ung ho CLYT</span>
+                                                </div>
+                                                <button 
+                                                    onClick={() => {
+                                                        navigator.clipboard.writeText("Ung ho CLYT");
+                                                        alert("Đã sao chép nội dung: Ung ho CLYT");
+                                                    }}
+                                                    className="p-1.5 bg-white border border-blue-200 hover:bg-blue-600 hover:text-white text-blue-600 rounded-md transition-all shadow-sm flex-shrink-0"
+                                                    title="Sao chép nội dung"
+                                                >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                                </button>
+                                            </div>
                                             
-                                            {/* ẢNH QR CODE (Dán link ảnh của bạn vào src="") */}
-                                            <div className="mt-3 p-1.5 border-2 border-dashed border-gray-300 rounded-xl bg-white w-32 h-32 flex items-center justify-center relative overflow-hidden">
+                                            {/* ẢNH QR CODE */}
+                                            <div className="mt-2 p-1.5 border-2 border-dashed border-gray-300 rounded-xl bg-white w-32 h-32 flex items-center justify-center relative overflow-hidden">
                                                 <img 
                                                     src="https://i.ibb.co/2YvpG0gN/51690c45d48f5ad1039e.jpg" 
                                                     alt="QR Code Cặp lá yêu thương" 
                                                     className="w-full h-full object-contain absolute inset-0" 
-                                                    // Nếu chưa có link ảnh, thẻ này sẽ bị ẩn do lỗi tải ảnh. Hãy xóa dòng onError dưới đây khi đã có link chuẩn.
                                                     onError={(e) => {e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block';}}
                                                 />
-                                                {/* Chữ thay thế nếu chưa có ảnh */}
                                                 <span className="text-[10px] text-gray-400 font-bold hidden text-center">Chưa chèn<br/>ảnh QR</span>
                                             </div>
                                         </div>
-
-                                       <ul className="space-y-3 text-[14px] text-left text-gray-800">
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">1.</span> 
-                                                <span>Chuyển khoản số tiền <b className="text-red-500">90.000đ</b>.</span>
-                                            </li>
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">2.</span> 
-                                                <span>Chụp ảnh màn hình giao dịch thành công.</span>
-                                            </li>
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">3.</span> 
-                                                <span>Gửi ảnh cho mình qua <a href="https://zalo.me/0877748756" target="_blank" rel="noopener noreferrer" className="font-bold text-blue-600 hover:underline">Zalo</a> hoặc <a href="https://www.facebook.com/thedat02" target="_blank" rel="noopener noreferrer" className="font-bold text-blue-600 hover:underline">Facebook</a>.</span>
-                                            </li>
-                                            <li className="flex items-start gap-1.5">
-                                                <span className="font-bold text-black">4.</span> 
-                                                <span>Nhận mã và nhập vào ô bên dưới.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
 
                                     {/* Ô nhập mật khẩu */}
                                     <input 
