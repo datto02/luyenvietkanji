@@ -4240,7 +4240,7 @@ TÀI LIỆU HỌC TẬP
                                         
                                         {/* Đã sửa: text-justify -> text-left VÀ thêm màu đỏ cho Cặp lá yêu thương */}
                                         <p className="mb-3 text-left">
-                                            Hiện tại, tính năng in ấn trên website đang được sử dụng để gây quỹ ủng hộ. Khi bạn chuyển khoản ủng hộ <b className="text-red-600 text-[15px]">100.000 VNĐ</b> tới <b className="text-red-600">Cặp lá yêu thương</b>, mình xin gửi tặng bạn 3 lần in (không giới hạn số trang).
+                                            Hiện tại, tính năng in ấn trên website đang được sử dụng để gây quỹ ủng hộ. Khi bạn chuyển khoản ủng hộ <b className="text-red-600 text-[15px]">90.000 VNĐ</b> tới <b className="text-red-600">Cặp lá yêu thương</b>, mình xin gửi tặng bạn 3 lần in (không giới hạn số trang).
                                         </p>
                                         
                                         <p className="mb-3 text-left font-bold text-green-700">
@@ -4318,7 +4318,7 @@ TÀI LIỆU HỌC TẬP
                                        <ul className="space-y-3 text-[14px] text-left text-gray-800">
                                             <li className="flex items-start gap-1.5">
                                                 <span className="font-bold text-black">1.</span> 
-                                                <span>Chuyển khoản số tiền <b className="text-red-500">100.000đ</b>.</span>
+                                                <span>Chuyển khoản số tiền <b className="text-red-500">90.000đ</b>.</span>
                                             </li>
                                             <li className="flex items-start gap-1.5">
                                                 <span className="font-bold text-black">2.</span> 
