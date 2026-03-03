@@ -4435,6 +4435,19 @@ const [showStartupNotice, setShowStartupNotice] = useState(true);
         return () => { document.body.style.overflow = 'unset'; };
     }, [showStartupNotice]);
       //hetthông báo  
+        useEffect(() => {
+        const preventRightClick = (e) => {
+            e.preventDefault(); // Ngăn menu chuột phải hiện lên
+        };
+
+        // Gắn sự kiện lên toàn bộ trang web
+        document.addEventListener("contextmenu", preventRightClick);
+
+        // Dọn dẹp sự kiện khi tắt web
+        return () => {
+            document.removeEventListener("contextmenu", preventRightClick);
+        };
+    }, []);
 const [isCafeModalOpen, setIsCafeModalOpen] = useState(false);
 const [showMobilePreview, setShowMobilePreview] = useState(false);
 const [isConfigOpen, setIsConfigOpen] = React.useState(false);
