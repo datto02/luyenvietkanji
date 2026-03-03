@@ -1528,7 +1528,8 @@ const WorkbookRow = ({ char, config, dbData, mode, customVocabData, onEditVocab 
     };
         
     // Kiểm tra xem có phải đang ở chế độ bản mẫu (không có text) hay không
-    const isSample = !config.text || config.text.trim().length === 0;
+    //const isSample = !config.text || config.text.trim().length === 0;
+      const isSample = true;
 
     return (
         <div className="a4-page mx-auto relative flex flex-col pt-[15mm] pl-[3mm] bg-white">
@@ -1552,10 +1553,7 @@ const WorkbookRow = ({ char, config, dbData, mode, customVocabData, onEditVocab 
                             <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">2</span>
                             <span>Từ vựng phân cách nhau bằng dấu <span className="font-bold">xuống dòng</span> hoặc <span className="font-bold">chấm phẩy ;</span></span>
                         </p>
-                         <p className="flex items-center gap-2">
-                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">4</span>
-                            <span>Ấn vào <span className="font-bold">từ vựng</span> ở trang xem trước để chỉnh sửa.</span>
-                        </p>
+                     
                         <p className="flex items-center gap-2">
                             <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">3</span>
                             <span>Chế độ <span className="font-bold">HỌC, FLASHCARD</span> trong phần "tiện ích".</span>
@@ -1569,16 +1567,13 @@ const WorkbookRow = ({ char, config, dbData, mode, customVocabData, onEditVocab 
                             <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">1</span>
                             <span><span className="font-bold">Nhập Kanji</span> để tạo file luyện viết.</span>
                         </p>
+             
                         <p className="flex items-center gap-2">
                             <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">2</span>
-                            <span>Ấn vào <span className="font-bold">chữ mẫu đầu tiên</span> để xem họa hoạt cách viết.</span>
-                        </p>
-                        <p className="flex items-center gap-2">
-                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">3</span>
                             <span>Chế độ <span className="font-bold">HỌC, FLASHCARD</span> trong phần "tiện ích".</span>
                         </p>
                         <p className="flex items-center gap-2">
-                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">4</span>
+                            <span className="bg-gray-100 text-gray-600 w-5 h-5 flex items-center justify-center rounded-full text-[10px] font-bold">3</span>
                             <span>Chế độ <span className="font-bold">ÔN TẬP THÔNG MINH</span> (lặp lại ngắt quãng) được tích hợp vào Flashcard.</span>
                         </p>
                     </div>
@@ -1586,21 +1581,22 @@ const WorkbookRow = ({ char, config, dbData, mode, customVocabData, onEditVocab 
             </div>
         )}
 
-        {/* DANH SÁCH CÁC DÒNG */}
-        <div className="flex flex-col gap-[4mm]">
+       {/* DANH SÁCH CÁC DÒNG (ĐÃ TẠM ẨN) */}
+        {/* <div className="flex flex-col gap-[4mm]">
             {chars.map((char, index) => (
             <WorkbookRow
                 key={`${index}-${char}`}
                 char={char}
                 config={config}
                 dbData={dbData}
-                    mode={mode}
-                        customVocabData={customVocabData}
-                        onEditVocab={onEditVocab}
+                mode={mode}
+                customVocabData={customVocabData}
+                onEditVocab={onEditVocab}
             />
             ))}
         </div>
-
+        */}
+      
         {/* Branding Footer */}
         <div className="absolute bottom-[5mm] left-[12.5mm] text-black text-xs font-sans">
             {/* Dòng 1 */}
