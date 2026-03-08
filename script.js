@@ -336,7 +336,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS, onLoadChars, db
                                     PHƯƠNG PHÁP HỌC
                                 </h4>
                                 <p className="text-sm leading-relaxed text-justify text-gray-500 border-l-2 border-gray-200 pl-3 ml-2">
-                                    Hệ thống sử dụng thuật toán <strong className="text-gray-900">Lặp lại ngắt quãng</strong> (Spaced Repetition) tích hợp vào <b>FLASHCARD</b>. Thay vì học nhồi nhét, hệ thống sẽ tính toán <strong className="text-gray-900">"thời điểm lãng quên"</strong> của não bộ để nhắc bạn ôn lại đúng lúc bạn sắp quên.
+                                    Hệ thống sử dụng thuật toán <strong className="text-gray-900">Lặp lại ngắt quãng</strong> (Spaced Repetition) tích hợp vào <b>FLASHCARD KANJI</b>. Thay vì học nhồi nhét, hệ thống sẽ tính toán <strong className="text-gray-900">"thời điểm lãng quên"</strong> của não bộ để nhắc bạn ôn lại đúng lúc bạn sắp quên.
                                 </p>
                             </div>
 
