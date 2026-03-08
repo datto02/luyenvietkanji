@@ -428,7 +428,7 @@ const ReviewListModal = ({ isOpen, onClose, srsData, onResetSRS, onLoadChars, db
                             {/* TIẾN ĐỘ HỌC TẬP */}
                             {levelProgress.length > 0 && (
                                 <div>
-                                    <h4 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3">Tiến độ JLPT</h4>
+                                    <h4 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3">Tiến độ KANJI</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {levelProgress.map((item) => {
                                             const style = levelColors[item.level] || levelColors.N5;
