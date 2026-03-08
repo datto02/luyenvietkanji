@@ -3784,19 +3784,24 @@ const App = () => {
 />
             {/* 3. RENDER MODAL DANH SÁCH LỊCH TRÌNH */} 
             <ReviewListModal 
-                isOpen={isReviewListOpen}
-                onClose={() => setIsReviewListOpen(false)}
-                srsData={srsData}
-                dbData={dbData}
-                onResetSRS={handleResetAllSRS}
-                onLoadChars={(chars) => {
-                    setConfig({ ...config, text: chars }); 
-                    setIsReviewListOpen(false);
-                    // Tự động mở flashcard ngay lập tức
-                    setTimeout(() => setIsFlashcardOpen(true), 100);
-                }}
-            />
-
+    isOpen={isReviewListOpen}
+    onClose={() => setIsReviewListOpen(false)}
+    srsData={srsData}
+    dbData={dbData}
+    onResetSRS={handleResetAllSRS}
+    onLoadChars={(chars) => {
+        // === FIX LỖI: Tự động lưu cache và chuyển sang chế độ Kanji ===
+        if (practiceMode === 'vocab') {
+            setTextCache(prev => ({ ...prev, vocab: config.text }));
+        }
+        setPracticeMode('kanji'); // Ép sang chế độ Kanji
+        setConfig({ text: chars }); // Đưa danh sách chữ cần ôn vào
+        
+        setIsReviewListOpen(false);
+        // Tự động mở flashcard ngay lập tức
+        setTimeout(() => setIsFlashcardOpen(true), 100);
+    }}
+/>
         </div>
     );
 };
