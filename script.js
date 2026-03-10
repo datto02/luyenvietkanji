@@ -2367,10 +2367,10 @@ React.useEffect(() => {
     }, [isDocsModalOpen]);
     const notifications = [
         { 
-            id: 1, 
-            title: 'Giao diện web mới', 
-            date: '08/03/2026', 
-            content: 'Mình đang nâng cấp trang web, sắp tới còn rất nhiều tính năng mới. Các bạn đón chờ nhé!'
+            id: 2, 
+            title: 'Tính năng mới sắp ra mắt', 
+            date: '11/03/2026', 
+            content: 'Tính năng luyện tập chia động từ sẽ ra mắt trong tuần này, các bạn đón chờ nhé'
         }
     ];
 
