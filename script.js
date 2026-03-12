@@ -2730,7 +2730,7 @@ React.useEffect(() => {
                                 {isNotifOpen && <NotificationDropdown />}
                             </div>
                             <div className="h-4 w-px bg-zinc-200 mx-2"></div>
-                            <a href="https://zalo.me/g/jeflei549" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-zinc-900 text-white rounded-full text-sm font-bold hover:bg-zinc-800 shadow-sm">Tham gia Nhóm</a>
+                            <a href="https://zalo.me/g/pe2rgziiyugzdwok74bd" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-zinc-900 text-white rounded-full text-sm font-bold hover:bg-zinc-800 shadow-sm">Tham gia Nhóm</a>
                         </div>
                         
                         {/* NÚT MOBILE: ĐÃ THAY 3 GẠCH BẰNG CHUÔNG */}
@@ -2970,7 +2970,7 @@ TÀI LIỆU HỌC TẬP
                 </a>
 
                 {/* nhóm học tập */}
-                <a href="https://zalo.me/g/jeflei549" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
+                <a href="https://zalo.me/g/pe2rgziiyugzdwok74bd" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
                     {/* Đã đổi: bg-blue -> bg-orange */}
                     <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         {/* Đã đổi: Icon File -> Icon Nhóm người */}
