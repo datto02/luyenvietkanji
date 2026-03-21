@@ -5217,7 +5217,7 @@ const renderGuideOverlay = () => (
                         <div className="flex gap-4 p-5 bg-indigo-50 rounded-2xl border border-indigo-200 shadow-sm relative overflow-hidden">
                             <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white font-black flex items-center justify-center shrink-0">5</div>
                             <div>
-                                <h4 className="font-black text-indigo-900 mb-1 uppercase text-sm tracking-wide">Nhập vai thực chiến)</h4>
+                                <h4 className="font-black text-indigo-900 mb-1 uppercase text-sm tracking-wide">Nhập vai thực chiến</h4>
                                 <p className="text-sm text-indigo-800 font-medium leading-relaxed mb-3">Dùng công cụ của web để tự giao tiếp như nói chuyện với người thật:</p>
                                 <ul className="space-y-2 text-xs font-bold text-indigo-700">
                                     <li className="flex items-center gap-2"><span className="px-2 py-1 bg-white rounded shadow-sm border border-indigo-100">Tập vai A/B</span> Tự động tắt tiếng nhân vật bạn chọn để bạn tự đọc.</li>
