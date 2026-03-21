@@ -5165,7 +5165,7 @@ const renderGuideOverlay = () => (
                     <ul className="space-y-3 text-sm text-zinc-600 font-medium">
                         <li className="flex items-start gap-2">
                             <div className="mt-1 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></div>
-                            <span><strong className="text-zinc-900">Ngữ điệu chuẩn xác:</strong> Giúp bạn nắm bắt được sự lên xuống giọng (intonation) và cách ngắt nghỉ tự nhiên của người Nhật.</span>
+                            <span><strong className="text-zinc-900">Ngữ điệu chuẩn xác:</strong> Giúp bạn nắm bắt được sự lên xuống giọng và cách ngắt nghỉ tự nhiên của người Nhật.</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <div className="mt-1 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></div>
