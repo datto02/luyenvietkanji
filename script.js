@@ -5330,11 +5330,17 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
         if (isAudioLoading) return; // Chống spam click khi đang tải
         setIsAudioLoading(true);
 
-        soundRef.current = new Howl({
+        const howlInstance = new Howl({
             src: [lesson.audioPath],
             html5: false, 
             preload: true,
             onload: function() {
+                // FIX LỖI DÍNH ÂM THANH: Kiểm tra nếu user đã chuyển bài hoặc đóng popup
+                if (soundRef.current !== howlInstance) {
+                    howlInstance.unload(); // Hủy bỏ hoàn toàn rác audio
+                    return; // Chặn lập tức, không cho chạy tiếp lệnh play
+                }
+
                 setDuration(this.duration());
                 setIsAudioLoading(false); // Tải xong tắt hiệu ứng
                 
@@ -5351,16 +5357,20 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
                 triggerAudioWarning();
             },
             onloaderror: function() {
+                if (soundRef.current !== howlInstance) return;
                 setIsAudioLoading(false);
                 alert("Lỗi tải âm thanh!");
             },
             onend: function() {
+                if (soundRef.current !== howlInstance) return;
                 setIsPlaying(false);
                 if (timerRef.current) cancelAnimationFrame(timerRef.current);
             }
         });
-    };
 
+        // Gán instance vừa tạo vào biến toàn cục để theo dõi
+        soundRef.current = howlInstance;
+    };
     // --- 1. CHỈ DỌN DẸP KHI CHUYỂN BÀI MỚI ---
     React.useEffect(() => {
         if (soundRef.current) {
