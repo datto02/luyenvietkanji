@@ -2625,10 +2625,10 @@ React.useEffect(() => {
     }, [isDocsModalOpen]);
     const notifications = [
         { 
-            id: 3, 
-            title: '🔥 TÍNH NĂNG MỚI', 
-            date: '12/03/2026', 
-            content: 'Luyện chia động từ cực gắt! Trải nghiệm ngay 3 chế độ: Tự Luận, Trắc Nghiệm và Phản Xạ siêu tốc. Vào ngay mục "CHIA ĐỘNG TỪ" ở trang chủ để test trình độ nhé!'
+            id: 4, 
+            title: '🔥 LUYỆN KAIWA', 
+            date: '21/03/2026', 
+            content: 'Ra mắt tính năng Luyện Kaiwa cực cháy! Nâng trình giao tiếp với chế độ Shadowing, luyện tập đóng vai, và nghe audio siêu mượt. Vào ngay mục "LUYỆN KAIWA" ở trang chủ để nói tiếng Nhật tự nhiên như người bản xứ nhé!'
         }
     ];
 
@@ -2817,6 +2817,17 @@ React.useEffect(() => {
                             <h3 className="text-xl font-bold mb-1 text-zinc-900">CHIA ĐỘNG TỪ</h3>
                             <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Từ vựng & ngữ pháp</p>
                         </div>
+    {/* 7. LUYỆN KAIWA */}
+<div onClick={() => onOpenSetup('kaiwa')} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+    <div className="absolute top-4 right-4 bg-indigo-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
+        MỚI
+    </div>
+    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-zinc-900">LUYỆN KAIWA</h3>
+    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Shadowing & Phản xạ</p>
+</div>
 
                         {/* 5. LỊCH TRÌNH HỌC */}
                         <div onClick={onOpenReviewList} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
@@ -2831,15 +2842,14 @@ React.useEffect(() => {
                         </div>
 {/* 6. TÀI LIỆU HỌC (Thêm mới vào đây) */}
 <div onClick={() => setIsDocsModalOpen(true)} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-    <div className="absolute top-4 right-4 bg-blue-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md shadow-blue-500/20 animate-pulse">
-     MIỄN PHÍ
-  </div>
+    
     <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
     </div>
     <h3 className="text-xl font-bold mb-1 text-zinc-900">TÀI LIỆU HỌC</h3>
     <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">TỪ N5 ĐẾN N1</p>
 </div>
+
 
                         {/* 7. LUYỆN JLPT */}
                         <div className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm opacity-50 cursor-not-allowed relative overflow-hidden">
@@ -4997,6 +5007,773 @@ const VerbReflexGameModal = ({ isOpen, onClose, verbsData, selectedForms }) => {
         </div>
     );
 };
+// ==========================================
+// COMPONENT: KAIWA MODAL (GIAO TIẾP SHADOWING)
+// ==========================================
+const KaiwaModal = ({ isOpen, onClose }) => {
+    // --- BẢN ĐỒ CẤU HÌNH NHÓM BÀI THỦ CÔNG ---
+    // Đã phân chia chuẩn xác theo dữ liệu JSON của bạn
+    const MANUAL_PARTS_CONFIG = {
+        '42baisotrungcap': [
+            { title: "Phần 1", desc: "Gồm 10 bài", lessonCount: 10 },
+            { title: "Phần 2", desc: "Gồm 9 bài", lessonCount: 9 },
+            { title: "Phần 3", desc: "Gồm 8 bài", lessonCount: 8 },
+            { title: "Phần 4", desc: "Gồm 8 bài", lessonCount: 8 },
+            { title: "Phần 5", desc: "Gồm 7 bài", lessonCount: 7 }
+        ]
+    };
+
+    const [view, setView] = React.useState('categories'); 
+    
+    const [allLessons, setAllLessons] = React.useState([]); 
+    const [parts, setParts] = React.useState([]); 
+    const [selectedPartIdx, setSelectedPartIdx] = React.useState(0); 
+    
+    const [currentLessonIdx, setCurrentLessonIdx] = React.useState(0); 
+    const [isLoading, setIsLoading] = React.useState(false);
+    const [progress, setProgress] = React.useState(0);
+    const [courseCache, setCourseCache] = React.useState({});
+
+    React.useEffect(() => {
+        if (isOpen) document.body.style.overflow = 'hidden';
+        else {
+            document.body.style.overflow = 'unset';
+            setView('categories'); 
+        }
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [isOpen]);
+
+    if (!isOpen) return null;
+
+    const loadCategory = async (level) => {
+    // 1. KIỂM TRA BỘ NHỚ TẠM (CACHE)
+    // Nếu giáo trình này đã được tải trước đó, lấy ra dùng luôn và bỏ qua loading
+    if (courseCache[level]) {
+        setAllLessons(courseCache[level].data);
+        setParts(courseCache[level].parts);
+        setView('parts');
+        return; 
+    }
+
+    // 2. NẾU CHƯA CÓ TRONG BỘ NHỚ TẠM -> BẮT ĐẦU TẢI VÀ HIỆN LOADING
+    setIsLoading(true);
+    setProgress(20);
+    try {
+        const response = await fetch(`./data/sachkaiwa/sachkaiwa${level}.json`);
+        if (!response.ok) throw new Error("Chưa có data");
+        const data = await response.json();
+        
+        const config = MANUAL_PARTS_CONFIG[level];
+        const chunkedParts = [];
+
+        if (config) {
+            let currentIndex = 0;
+            config.forEach((partConfig) => {
+                const lessonsInPart = data.slice(currentIndex, currentIndex + partConfig.lessonCount);
+                if (lessonsInPart.length > 0) {
+                    chunkedParts.push({
+                        title: partConfig.title,
+                        desc: partConfig.desc,
+                        lessons: lessonsInPart,
+                        startIndex: currentIndex 
+                    });
+                }
+                currentIndex += partConfig.lessonCount;
+            });
+
+            if (currentIndex < data.length) {
+                chunkedParts.push({
+                    title: "Phần bổ sung",
+                    desc: `Các bài còn lại`,
+                    lessons: data.slice(currentIndex),
+                    startIndex: currentIndex
+                });
+            }
+        } else {
+            const CHUNK_SIZE = 10;
+            for (let i = 0; i < data.length; i += CHUNK_SIZE) {
+                chunkedParts.push({
+                    title: `Phần ${Math.floor(i / CHUNK_SIZE) + 1}`,
+                    desc: `Từ bài ${i + 1} đến bài ${Math.min(i + CHUNK_SIZE, data.length)}`,
+                    lessons: data.slice(i, i + CHUNK_SIZE),
+                    startIndex: i
+                });
+            }
+        }
+        
+        // 3. LƯU DỮ LIỆU VỪA TẢI VÀO BỘ NHỚ TẠM (CACHE) ĐỂ LẦN SAU DÙNG
+        setCourseCache(prev => ({
+            ...prev,
+            [level]: {
+                data: data,
+                parts: chunkedParts
+            }
+        }));
+
+        setAllLessons(data);
+        setParts(chunkedParts);
+
+        // Đẩy thanh loading lên 100% và chuyển giao diện
+        setProgress(100);
+        setTimeout(() => {
+            setView('parts'); 
+            setIsLoading(false);
+        }, 400);
+
+    } catch (error) {
+        alert(`Đang cập nhật bộ dữ liệu ${level.toUpperCase()}!`);
+        setIsLoading(false);
+    }
+};
+    const renderCategories = () => (
+        <div className="p-6 h-full flex flex-col overflow-y-auto custom-scrollbar">
+            <div className="flex justify-between items-center mb-6">
+                <h2 className="text-xl font-black text-zinc-900 uppercase tracking-tight">Chọn bộ giáo trình</h2>
+                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+            </div>
+            
+            {/* DANH SÁCH GIÁO TRÌNH HIỆN CÓ */}
+            <div className="flex flex-col gap-4">
+                {[
+                    { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Đoạn hội thoại hàng ngày' }
+                ].map((item) => (
+                    <button 
+                        key={item.id}
+                        onClick={() => loadCategory(item.id)}
+                        className="w-full p-6 bg-white border border-zinc-200 rounded-2xl hover:border-zinc-900 hover:shadow-md transition-all flex flex-col items-start active:scale-95 group relative overflow-hidden"
+                    >
+                        <div className="flex justify-between items-center w-full gap-4">
+                            <span className="text-2xl font-black text-zinc-900 uppercase text-left leading-tight">{item.title}</span>
+                            <svg className="w-6 h-6 shrink-0 text-zinc-400 group-hover:text-zinc-900 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="m9 18 6-6-6-6"/></svg>
+                        </div>
+                        <span className="text-sm font-bold text-zinc-500 mt-2 text-left">{item.desc}</span>
+                    </button>
+                ))}
+            </div>
+
+            {/* ĐƯỜNG PHÂN CÁCH SẮP RA MẮT */}
+            <div className="flex items-center gap-4 my-8">
+                <div className="h-px bg-zinc-200 flex-1"></div>
+                <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest bg-zinc-50 px-3 py-1.5 rounded-full border border-zinc-200">
+                    Sắp ra mắt
+                </span>
+                <div className="h-px bg-zinc-200 flex-1"></div>
+            </div>
+
+            {/* DANH SÁCH GIÁO TRÌNH GIẢ (LÀM MỜ, KHÔNG BẤM ĐƯỢC) */}
+            <div className="flex flex-col gap-4 pb-6">
+                {[
+                   
+                    { id: 'dummy1', title: '200 ĐOẠN KAIWA N5-N4', desc: 'Phản xạ nhanh, dùng liền' },
+                    { id: 'dummy2', title: '210 ĐOẠN HỘI THOẠI N3-N2', desc: 'Luyện nói ngắn gọn mỗi ngày' },
+                    { id: 'dummy3', title: '125 CÂU NÂNG CAO N2-N1', desc: 'Hiểu và nói tự nhiên hơn' },
+                    { id: 'dummy4', title: '180 CÂU BIỂU ĐẠT CẢM XÚC', desc: 'Nói tự nhiên, truyền đạt cảm xúc' }
+                ].map((item) => (
+                    <button 
+                        key={item.id}
+                        disabled
+                        className="w-full p-6 bg-zinc-50/50 border border-zinc-100 rounded-2xl flex flex-col items-start cursor-not-allowed opacity-60 relative overflow-hidden"
+                    >
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-xl font-black text-zinc-400 uppercase text-left leading-tight">{item.title}</span>
+                        </div>
+                        <span className="text-sm font-bold text-zinc-400 mt-2 text-left">{item.desc}</span>
+                    </button>
+                ))}
+            </div>
+</div>
+    );
+
+  const renderParts = () => (
+        <div className="flex flex-col h-full bg-zinc-50 overflow-hidden">
+            <div className="p-4 bg-white border-b border-zinc-200 flex items-center justify-between sticky top-0 z-10 shadow-sm">
+                <div className="flex items-center gap-3">
+                    <button onClick={() => setView('categories')} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-600 transition-colors">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <h2 className="text-sm font-black text-zinc-900 uppercase">Chọn phần học</h2>
+                </div>
+                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+            </div>
+            <div className="p-4 space-y-3 overflow-y-auto custom-scrollbar flex-1">
+                {parts.map((part, idx) => (
+                    <button 
+                        key={idx}
+                        onClick={() => { setSelectedPartIdx(idx); setView('list'); }}
+                        // Đã thêm md:hover
+                        className="w-full p-5 bg-white border border-zinc-200 rounded-xl text-left md:hover:border-indigo-400 md:hover:shadow-md transition-all active:scale-[0.98] flex items-center justify-between group"
+                    >
+                        <div className="flex flex-col">
+                            {/* Đã thêm md:group-hover */}
+                            <span className="text-lg font-black text-zinc-800 font-sans md:group-hover:text-indigo-600 transition-colors uppercase tracking-wide">{part.title}</span>
+                            <span className="text-xs font-bold text-zinc-400 mt-1">{part.desc}</span>
+                        </div>
+                        {/* Đã thêm md:group-hover */}
+                        <div className="w-8 h-8 rounded-full bg-zinc-50 flex items-center justify-center md:group-hover:bg-indigo-50 transition-colors">
+                            <svg className="w-4 h-4 text-zinc-400 md:group-hover:text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </div>
+                    </button>
+                ))}
+            </div>
+        </div>
+    );
+
+    const renderList = () => {
+        const currentPart = parts[selectedPartIdx];
+        if (!currentPart) return null;
+
+        return (
+            <div className="flex flex-col h-full bg-zinc-50 overflow-hidden">
+                <div className="p-4 bg-white border-b border-zinc-200 flex items-center justify-between sticky top-0 z-10 shadow-sm">
+                    <div className="flex items-center gap-3">
+                        <button onClick={() => setView('parts')} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-600 transition-colors">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <h2 className="text-sm font-black text-zinc-900 uppercase">{currentPart.title}</h2>
+                    </div>
+                    <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+                </div>
+                <div className="p-4 space-y-2 overflow-y-auto custom-scrollbar flex-1">
+                    {currentPart.lessons.map((lesson, idx) => {
+                        const globalIdx = currentPart.startIndex + idx; 
+                        return (
+                            <button 
+                                key={lesson.id || globalIdx}
+                                onClick={() => { setCurrentLessonIdx(globalIdx); setView('detail'); }}
+                                // Đã thêm md:hover
+                                className="w-full p-4 bg-white border border-zinc-200 rounded-xl text-left md:hover:border-indigo-400 md:hover:shadow-md transition-all active:scale-[0.98] flex items-center justify-between group"
+                            >
+                                {/* Đã thêm md:group-hover */}
+                                <span className="text-base sm:text-lg font-bold text-zinc-800 font-sans md:group-hover:text-indigo-600 transition-colors">{lesson.title}</span>
+                                <span className="text-xs font-bold text-zinc-300">#{idx + 1}</span>
+                            </button>
+                        );
+                    })}
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className="fixed inset-0 z-[500] flex justify-center items-center bg-zinc-900/90 backdrop-blur-md p-0 sm:p-4 animate-in fade-in duration-200">
+            <div className="bg-white w-full h-full sm:h-[90vh] max-w-2xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden animate-in zoom-in-95 duration-300">
+                {/* --- GIAO DIỆN LOADING MỚI --- */}
+            {isLoading && (
+                <div className="absolute inset-0 z-[600] flex flex-col items-center justify-center bg-white/90 backdrop-blur-md">
+                    <div className="text-center">
+                        <span className="text-xs font-bold text-gray-900 uppercase tracking-widest animate-pulse mb-4 block">
+                            Đang tải dữ liệu... {progress}%
+                        </span>
+                        <div className="w-48 bg-gray-200 rounded-full h-1.5 overflow-hidden mx-auto">
+                            <div className="bg-gray-900 h-full transition-all duration-300 ease-out" style={{ width: `${progress}%` }}></div>
+                        </div>
+                    </div>
+                </div>
+            )}
+                {view === 'categories' && renderCategories()}
+                {view === 'parts' && renderParts()}
+                {view === 'list' && renderList()}
+                
+                {view === 'detail' && (
+                    <KaiwaPracticeView 
+                        lesson={allLessons[currentLessonIdx]} 
+                        total={allLessons.length}
+                        currentIndex={currentLessonIdx}
+                        onBack={() => setView('list')} 
+                        onClose={onClose} 
+                        onNext={() => setCurrentLessonIdx(prev => Math.min(prev + 1, allLessons.length - 1))}
+                        onPrev={() => setCurrentLessonIdx(prev => Math.max(prev - 1, 0))}
+                    />
+                )}
+            </div>
+        </div>
+    );
+};
+
+let hasWarnedAudioGlobal = false;
+// ==========================================
+// COMPONENT: KAIWA PRACTICE VIEW (SỬ DỤNG HOWLER.JS SIÊU MƯỢT)
+// ==========================================
+const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNext, onPrev }) => {
+    const [isPlaying, setIsPlaying] = React.useState(false);
+    const [isAudioLoading, setIsAudioLoading] = React.useState(false);
+    const [showTranslation, setShowTranslation] = React.useState(false);
+    const [roleplayMode, setRoleplayMode] = React.useState('all'); 
+    const [currentTime, setCurrentTime] = React.useState(0);
+    const [duration, setDuration] = React.useState(0);
+    const [playbackRate, setPlaybackRate] = React.useState(1);
+    const [isDragging, setIsDragging] = React.useState(false);
+    const [showFurigana, setShowFurigana] = React.useState(false);
+    const [isAutoScroll, setIsAutoScroll] = React.useState(true); 
+    const [activeIndex, setActiveIndex] = React.useState(-1);  
+    const [showAudioWarning, setShowAudioWarning] = React.useState(false);
+    const [hideText, setHideText] = React.useState(false);
+    const triggerAudioWarning = () => {
+        if (!hasWarnedAudioGlobal) {
+            setShowAudioWarning(true);
+            hasWarnedAudioGlobal = true; // Đánh dấu là đã hiện
+        }
+    };
+    const closeAudioWarning = (e) => {
+        if (e) e.stopPropagation();
+        setShowAudioWarning(false);
+    };
+    
+    const lineRefs = React.useRef([]);
+    const soundRef = React.useRef(null); 
+    const timerRef = React.useRef(null); 
+    const scrollRef = React.useRef(null);
+    const stopAtTimeRef = React.useRef(null);
+
+    // --- HÀM TẢI VÀ PHÁT AUDIO THỦ CÔNG (LAZY LOAD) ---
+    const initAndPlayAudio = (startTime = 0) => {
+        if (isAudioLoading) return; // Chống spam click khi đang tải
+        setIsAudioLoading(true);
+
+        soundRef.current = new Howl({
+            src: [lesson.audioPath],
+            html5: false, 
+            preload: true,
+            onload: function() {
+                setDuration(this.duration());
+                setIsAudioLoading(false); // Tải xong tắt hiệu ứng
+                
+                this.rate(playbackRate); // Áp dụng tốc độ phát
+
+                // Tua đến đúng chỗ nếu bấm vào câu thoại
+                if (startTime > 0) {
+                    this.seek(startTime);
+                    setCurrentTime(startTime);
+                }
+                
+                this.play();
+                setIsPlaying(true);
+                triggerAudioWarning();
+            },
+            onloaderror: function() {
+                setIsAudioLoading(false);
+                alert("Lỗi tải âm thanh!");
+            },
+            onend: function() {
+                setIsPlaying(false);
+                if (timerRef.current) cancelAnimationFrame(timerRef.current);
+            }
+        });
+    };
+
+    // --- 1. CHỈ DỌN DẸP KHI CHUYỂN BÀI MỚI ---
+    React.useEffect(() => {
+        if (soundRef.current) {
+            soundRef.current.unload();
+            soundRef.current = null; // Đưa về null để báo là chưa tải file
+        }
+        setIsPlaying(false);
+        setCurrentTime(0);
+        setActiveIndex(-1);
+        setIsAudioLoading(false);
+
+        if (scrollRef.current) scrollRef.current.scrollTop = 0;
+
+        return () => {
+            if (soundRef.current) {
+                soundRef.current.unload();
+                soundRef.current = null;
+            }
+            if (timerRef.current) cancelAnimationFrame(timerRef.current);
+        };
+    }, [lesson]);
+
+    // --- 2. CẬP NHẬT TỐC ĐỘ PHÁT ---
+    React.useEffect(() => {
+        if (soundRef.current) { 
+            soundRef.current.rate(playbackRate); 
+        }
+    }, [playbackRate]);
+
+    // --- 3. VÒNG LẶP 60FPS: TRACKING THỜI GIAN & TẮT ÂM THANH CHUẨN XÁC ---
+    React.useEffect(() => {
+        const convs = lesson.conversations || [{ dialogues: lesson.dialogues }];
+        const flatLines = [];
+        convs.forEach(conv => {
+            conv.dialogues.forEach(line => {
+                if (line.startTime !== undefined && line.endTime !== undefined) {
+                    flatLines.push(line);
+                }
+            });
+        });
+
+        const step = () => {
+            if (soundRef.current && isPlaying && !isDragging) {
+                const seekTime = soundRef.current.seek();
+                
+                // Đề phòng Howler trả về mảng khi đang loading
+                if (typeof seekTime === 'number') {
+                    setCurrentTime(seekTime);
+
+                    if (stopAtTimeRef.current !== null && seekTime >= stopAtTimeRef.current) {
+                        soundRef.current.pause();
+                        setIsPlaying(false);
+                        stopAtTimeRef.current = null; // Xóa mốc thời gian
+                        return; // Dừng vòng lặp hiện tại
+                    } 
+                    
+                    let foundIndex = -1;
+                    let currentSpeaker = null;
+
+                    // Quét để tìm câu đang nói và xử lý chặn họng
+                    for (let i = 0; i < flatLines.length; i++) {
+                        const line = flatLines[i];
+                        
+                        // Tìm UI đang sáng
+                        if (seekTime >= line.startTime && seekTime <= line.endTime) {
+                            foundIndex = i;
+                        }
+
+                        // Tìm nhân vật để Mute (Trừ hao cực nhẹ 0.05s vì Howler ngắt tức thì)
+                        const lookaheadTime = seekTime + 0.05;
+                        const isMutedCharacter = (roleplayMode === 'hideA' && line.speaker === 'A') || 
+                                                 (roleplayMode === 'hideB' && line.speaker === 'B');
+                        
+                        if (isMutedCharacter && lookaheadTime >= line.startTime && seekTime <= line.endTime) {
+                            currentSpeaker = line.speaker;
+                        }
+                    }
+
+                    // Tự động cuộn UI
+                    if (foundIndex !== activeIndex) {
+                        setActiveIndex(foundIndex);
+                        if (foundIndex !== -1 && isAutoScroll && lineRefs.current[foundIndex]) {
+                            lineRefs.current[foundIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }
+
+                    // Tắt tiếng triệt để từ Core Audio
+                    if (currentSpeaker) {
+                        soundRef.current.volume(0);
+                    } else {
+                        soundRef.current.volume(1);
+                    }
+                }
+            } else if (soundRef.current && !isPlaying) {
+                // Nhả âm lượng khi ấn Pause
+                soundRef.current.volume(1);
+            }
+            
+            timerRef.current = requestAnimationFrame(step);
+        };
+
+        if (isPlaying) {
+            timerRef.current = requestAnimationFrame(step);
+        }
+
+        return () => {
+            if (timerRef.current) cancelAnimationFrame(timerRef.current);
+        };
+    }, [isPlaying, roleplayMode, isAutoScroll, activeIndex, isDragging, lesson]);
+
+    // --- CÁC HÀM TIỆN ÍCH CHO TRÌNH PHÁT ---
+    const toggleAudio = () => {
+        if (isAudioLoading) return;
+        
+        // CHƯA TẢI FILE -> Gọi hàm tải và tự động phát
+        if (!soundRef.current) {
+            initAndPlayAudio(0);
+            return;
+        }
+
+        // ĐÃ TẢI FILE -> Phát/Dừng bình thường
+        if (isPlaying) {
+            soundRef.current.pause();
+            setIsPlaying(false);
+        } else {
+            stopAtTimeRef.current = null; 
+            soundRef.current.play();
+            setIsPlaying(true);
+            triggerAudioWarning();
+        }
+    };
+    
+    const formatTime = (time) => {
+        if (isNaN(time)) return "0:00";
+        const m = Math.floor(time / 60);
+        const s = Math.floor(time % 60);
+        return `${m}:${s < 10 ? '0' : ''}${s}`;
+    };
+
+    const handleSeek = (e) => {
+        const time = Number(e.target.value);
+        setCurrentTime(time);
+        if (soundRef.current) { 
+            soundRef.current.seek(time); 
+        }
+    };
+
+    const cyclePlaybackRate = () => {
+        const rates = [0.5, 0.75, 1, 1.25, 1.5];
+        const nextIdx = (rates.indexOf(playbackRate) + 1) % rates.length;
+        setPlaybackRate(rates[nextIdx]);
+    };
+
+    const renderFurigana = (text, isShow) => {
+        if (!text) return null;
+        const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+        return parts.map((part, index) => {
+            const match = part.match(/\[([^\]]+)\]\(([^)]+)\)/);
+            if (match) {
+                return (
+                    <ruby key={index} className="leading-loose">
+                        {match[1]}
+                        {isShow && <rt className="text-[11px] sm:text-xs text-indigo-500 font-bold select-none">{match[2]}</rt>}
+                    </ruby>
+                );
+            }
+            return <span key={index}>{part}</span>;
+        });
+    };
+
+    let globalLineIndex = 0;
+
+    // --- GIAO DIỆN ---
+    return (
+        <div className="flex flex-col h-full bg-white overflow-hidden relative">
+            <div className="px-4 py-3 bg-white border-b border-zinc-100 flex items-center justify-between sticky top-0 z-10 shadow-sm relative">
+                <button onClick={onBack} className="flex items-center gap-1.5 text-xs font-bold text-zinc-500 hover:text-zinc-900 px-2 py-1.5 rounded-lg hover:bg-zinc-100 transition-colors relative z-10">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    QUAY LẠI
+                </button>
+                <span className="absolute left-1/2 -translate-x-1/2 text-[10px] font-black text-zinc-400 tracking-widest bg-zinc-50 px-3 py-1 rounded-full border border-zinc-200">
+                    {currentIndex + 1} / {total}
+                </span>
+                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all relative z-10">✕</button>
+            </div>
+
+            <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 sm:p-6 pb-8 custom-scrollbar">
+                <div className="mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-2 leading-tight font-sans">{lesson.title}</h2>
+                    <p className="text-sm sm:text-base font-medium text-zinc-500 italic">{lesson.translation}</p>
+                </div>
+
+                {lesson.explanation && (
+                    <div className="bg-zinc-50 border-l-4 border-zinc-800 p-3 sm:p-4 rounded-r-xl mb-6">
+                        <p className="text-sm text-zinc-700 leading-relaxed font-medium">
+                            <span className="text-[10px] font-black text-zinc-900 uppercase tracking-widest block mb-1">💡 Giải thích</span>
+                            
+                            {/* DÙNG JAVASCRIPT CHUYỂN ĐỔI TRỰC TIẾP THÀNH THẺ <br/> */}
+                            {String(lesson.explanation)
+                                .replace(/\\n/g, '\n') 
+                                .split('\n')
+                                .map((line, index) => (
+                                    <React.Fragment key={index}>
+                                        {line}
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                                
+                        </p>
+                    </div>
+                )}
+
+                <div className="flex flex-wrap gap-3 justify-between items-center mb-6 pb-4 border-b border-zinc-100">
+                    <div className="flex bg-zinc-100 p-1 rounded-xl">
+                        <button onClick={() => setRoleplayMode('all')} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs font-bold transition-all ${roleplayMode === 'all' ? 'bg-white shadow-sm text-zinc-900' : 'text-zinc-500 hover:text-zinc-700'}`}>Nghe hết</button>
+                        <button onClick={() => setRoleplayMode('hideA')} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs font-bold transition-all ${roleplayMode === 'hideA' ? 'bg-zinc-900 text-white shadow-md' : 'text-zinc-500 hover:text-zinc-700'}`}>Tập vai A</button>
+                        <button onClick={() => setRoleplayMode('hideB')} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs font-bold transition-all ${roleplayMode === 'hideB' ? 'bg-zinc-900 text-white shadow-md' : 'text-zinc-500 hover:text-zinc-700'}`}>Tập vai B</button>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2">
+                        {/* THÊM MỚI: Nút Ẩn lời thoại (Chỉ hiện khi chọn Tập vai A hoặc B) */}
+                        {roleplayMode !== 'all' && (
+                            <label className="flex items-center gap-2 cursor-pointer bg-indigo-50 px-3 py-1.5 sm:py-2 rounded-lg border border-indigo-200 hover:bg-indigo-100 transition-colors animate-in zoom-in-95 duration-200">
+                                <span className="text-[10px] sm:text-xs font-bold text-indigo-700 uppercase">Ẩn lời thoại</span>
+                                <input type="checkbox" checked={hideText} onChange={() => setHideText(!hideText)} className="accent-indigo-600 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-sm"/>
+                            </label>
+                        )}
+                        
+                        <label className="flex items-center gap-2 cursor-pointer bg-zinc-50 px-3 py-1.5 sm:py-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 transition-colors">
+                            <span className="text-[10px] sm:text-xs font-bold text-zinc-600 uppercase">Tự cuộn</span>
+                            
+                            <input type="checkbox" checked={isAutoScroll} onChange={() => setIsAutoScroll(!isAutoScroll)} className="accent-zinc-900 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-sm"/>
+                        </label>
+                        <label className="flex items-center gap-2 cursor-pointer bg-zinc-50 px-3 py-1.5 sm:py-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 transition-colors">
+                            <span className="text-[10px] sm:text-xs font-bold text-zinc-600 uppercase">Furigana</span>
+                            <input type="checkbox" checked={showFurigana} onChange={() => setShowFurigana(!showFurigana)} className="accent-zinc-900 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-sm"/>
+                        </label>
+                        <label className="flex items-center gap-2 cursor-pointer bg-zinc-50 px-3 py-1.5 sm:py-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 transition-colors">
+                            <span className="text-[10px] sm:text-xs font-bold text-zinc-600 uppercase">Dịch</span>
+                            <input type="checkbox" checked={showTranslation} onChange={() => setShowTranslation(!showTranslation)} className="accent-zinc-900 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-sm"/>
+                        </label>
+                    </div>
+                </div>
+
+                <div className="space-y-8"> 
+                    {(lesson.conversations || [{ dialogues: lesson.dialogues }]).map((conv, convIdx, arr) => (
+                        <div key={convIdx} className="space-y-4 relative">
+                            {arr.length > 1 && (
+                                <div className="flex items-center gap-4 mb-6 mt-2">
+                                    <div className="h-px bg-zinc-200 flex-1"></div>
+                                    <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest bg-white px-3 py-1 rounded-full border border-zinc-200 shadow-sm">
+                                        {conv.context ? conv.context : `Đoạn hội thoại ${convIdx + 1}`}
+                                    </span>
+                                    <div className="h-px bg-zinc-200 flex-1"></div>
+                                </div>
+                            )}
+
+                            {conv.dialogues.map((line, idx) => {
+                                const currentFlatIndex = globalLineIndex++; 
+                                const isActive = activeIndex === currentFlatIndex; 
+                                
+                                // THAY ĐỔI: Chỉ ẩn khi đang chọn vai ĐỒNG THỜI bật tính năng ẩn chữ
+                                const isMutedRole = (roleplayMode === 'hideA' && line.speaker === 'A') || 
+                                                    (roleplayMode === 'hideB' && line.speaker === 'B');
+                                const isHidden = isMutedRole && hideText; 
+                                
+                                const isA = line.speaker === 'A';
+                                
+                                let boxClass = isA 
+                                    ? 'bg-zinc-50 border-zinc-200 text-zinc-900 rounded-2xl rounded-tl-sm' 
+                                    : 'bg-zinc-50 border-zinc-900 text-zinc-900 rounded-2xl rounded-tr-sm border-2 shadow-md';
+
+                                if (isActive) {
+                                    boxClass = isA 
+                                        ? 'bg-green-50 border-[2px] border-green-500 rounded-2xl rounded-tl-sm shadow-[0_0_15px_rgba(34,197,94,0.2)]' 
+                                        : 'bg-green-50 border-[2px] border-green-500 text-zinc-900 rounded-2xl rounded-tr-sm shadow-[0_0_15px_rgba(34,197,94,0.2)]';
+                                }
+
+                                return (
+                                    <div 
+                                        key={`${convIdx}-${idx}`} 
+                                        ref={(el) => (lineRefs.current[currentFlatIndex] = el)}
+                                        className={`flex flex-col w-full ${isA ? 'items-start' : 'items-end'} transition-all duration-300`}
+                                    >
+                                        <span className={`text-[9px] font-black uppercase tracking-widest mb-1 px-1 transition-colors ${isActive ? 'text-green-600' : 'text-zinc-400'}`}>
+                                            Người {line.speaker}
+                                        </span>
+                                        <div 
+                                           onClick={(e) => {
+                                                if (line.startTime === undefined) return;
+                                                
+                                                // CHƯA TẢI FILE -> Đặt mốc thời gian dừng rồi gọi hàm tải
+                                                if (!soundRef.current) {
+                                                    stopAtTimeRef.current = line.endTime;
+                                                    initAndPlayAudio(line.startTime);
+                                                    return;
+                                                }
+
+                                                // ĐÃ TẢI FILE -> Seek và phát như cũ
+                                                soundRef.current.seek(line.startTime);
+                                                setCurrentTime(line.startTime);
+                                                
+                                                if (isPlaying && stopAtTimeRef.current === null) {
+                                                    stopAtTimeRef.current = null;
+                                                } else {
+                                                    stopAtTimeRef.current = line.endTime;
+                                                    if (!isPlaying) {
+                                                        soundRef.current.play();
+                                                        setIsPlaying(true);
+                                                        triggerAudioWarning();
+                                                    }
+                                                }
+                                            }}
+                                            title="Bấm để nghe câu này"
+                                            className={`max-w-[80%] md:max-w-[65%] p-3 sm:p-4 shadow-sm border transition-all duration-300 cursor-pointer hover:shadow-md active:scale-[0.98] ${boxClass}`}
+                                        >
+                                            <p className={`text-base sm:text-lg font-bold leading-relaxed font-sans transition-all duration-300 ${isHidden ? 'filter blur-[4px] opacity-40 select-none' : ''}`}>
+                                                {isHidden ? "（あなたが話す番です）" : renderFurigana(line.ja, showFurigana)}
+                                            </p>
+                                            {showTranslation && (
+                                                <p className={`text-sm sm:text-base mt-2 font-medium border-t pt-2 transition-colors ${isActive ? 'text-green-700 border-green-200' : 'text-zinc-500 border-zinc-200'}`}>
+                                                    {line.vi}
+                                                </p>
+                                            )}
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* THANH PLAYER AUDIO Ở DƯỚI */}
+            <div className="w-full shrink-0 bg-white border-t border-zinc-200 px-4 py-3 flex flex-col gap-2 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-20">
+                <div className="flex items-center gap-3 w-full">
+                    <span className="text-[10px] font-bold text-zinc-400 w-8 text-right">{formatTime(currentTime)}</span>
+                    <input
+                        type="range" min={0} max={duration || 100} value={currentTime}
+                        onMouseDown={() => setIsDragging(true)} onMouseUp={() => setIsDragging(false)}
+                        onTouchStart={() => setIsDragging(true)} onTouchEnd={() => setIsDragging(false)}
+                        onChange={handleSeek}
+                        className="flex-1 h-1.5 accent-zinc-900 bg-zinc-200 rounded-full appearance-none cursor-pointer"
+                    />
+                    <span className="text-[10px] font-bold text-zinc-400 w-8">{formatTime(duration)}</span>
+                </div>
+                <div className="flex items-center justify-between w-full">
+                    <button onClick={cyclePlaybackRate} className="w-12 py-1.5 text-[10px] font-black text-zinc-600 bg-zinc-100 rounded-md hover:bg-zinc-200 transition-colors active:scale-95 text-center">
+                        {playbackRate}x
+                    </button>
+                    <div className="flex items-center gap-1 sm:gap-3">
+                        <button onClick={onPrev} disabled={currentIndex === 0} className={`p-2 rounded-full transition-all active:scale-90 ${currentIndex === 0 ? 'text-zinc-200' : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100'}`}>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button onClick={() => { if(soundRef.current) { const cur = soundRef.current.seek(); soundRef.current.seek(Math.max(0, cur - 3)); setCurrentTime(Math.max(0, cur - 3)); } }} className="p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100 rounded-full transition-all active:scale-90" title="Lùi 3 giây">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                        </button>
+                        <button 
+                            onClick={toggleAudio} 
+                            disabled={isAudioLoading} 
+                            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all shadow-md mx-1 ${isAudioLoading ? 'bg-zinc-400 cursor-not-allowed' : 'bg-zinc-900 text-white hover:bg-black active:scale-90'}`}
+                        >
+                            {isAudioLoading ? (
+                                // THÊM MỚI: Hiệu ứng 3 dấu chấm nảy gợn sóng
+                                <div className="flex space-x-1 justify-center items-center">
+                                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+                                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></div>
+                                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
+                                </div>
+                            ) : isPlaying ? (
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14"></rect><rect x="14" y="5" width="4" height="14"></rect></svg>
+                            ) : (
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="ml-1"><polygon points="6 4 19 12 6 20 6 4"></polygon></svg>
+                            )}
+                        </button>
+                        <button onClick={() => { if(soundRef.current) { const cur = soundRef.current.seek(); soundRef.current.seek(Math.min(duration, cur + 3)); setCurrentTime(Math.min(duration, cur + 3)); } }} className="p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100 rounded-full transition-all active:scale-90" title="Tiến 3 giây">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                        </button>
+                        <button onClick={onNext} disabled={currentIndex === total - 1} className={`p-2 rounded-full transition-all active:scale-90 ${currentIndex === total - 1 ? 'text-zinc-200' : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100'}`}>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                    <div className="w-12"></div>
+                </div>
+            </div>
+                                {/* KHUNG THÔNG BÁO ÂM THANH */}
+           {showAudioWarning && (
+                <div className="absolute bottom-[90px] left-1/2 -translate-x-1/2 w-[90%] max-w-[340px] bg-gray-900/95 backdrop-blur-md text-white p-4 rounded-2xl shadow-2xl z-50 animate-in slide-in-from-bottom-5 fade-in duration-300 border border-gray-700">
+                    <div className="flex flex-col">
+                        
+                        {/* Tiêu đề: Căn giữa (thêm text-center) */}
+                        <span className="text-center text-[11px] font-black text-amber-400 uppercase tracking-widest mb-1">
+                            Lưu ý âm thanh
+                        </span>
+                        
+                        {/* Nội dung: Căn lề trái (thêm text-left) */}
+                        <span className="text-left text-[13px] leading-relaxed font-medium text-gray-200 mt-2 mb-4">
+                            Nếu không nghe thấy tiếng, hãy đảm bảo máy đã tắt <b className="text-white">Chế độ Im lặng</b> và thử <b className="text-white">tăng âm lượng</b> lên nhé!
+                        </span>
+                        
+                        {/* Nút bấm */}
+                        <button onClick={closeAudioWarning} className="w-full py-2.5 bg-white text-gray-900 text-[11px] font-black uppercase tracking-widest rounded-xl active:scale-95 transition-all shadow-sm">
+                            Đã hiểu
+                        </button>
+
+                    </div>
+                    {/* Tam giác nhỏ trỏ xuống dưới */}
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-gray-900/95"></div>
+                </div>
+            )}
+        </div>
+    )
+}
 const App = () => {
     // --- STATE QUẢN LÝ ỨNG DỤNG ---
     const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
@@ -5011,6 +5788,7 @@ const App = () => {
     const [verbPracticeData, setVerbPracticeData] = useState([]);
     const [verbTargetForm, setVerbTargetForm] = useState(null);
     const [globalVerbReadings, setGlobalVerbReadings] = useState({});
+    const [isKaiwaOpen, setIsKaiwaOpen] = useState(false);
     // STATE MỚI CHO TÍNH NĂNG TRẮC NGHIỆM ĐỘNG TỪ
 const [verbPracticeMode, setVerbPracticeMode] = useState('essay'); // 'essay' (tự luận) hoặc 'quiz' (trắc nghiệm)
 const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu các thể đã chọn (ít nhất 4)
@@ -5125,6 +5903,8 @@ const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu c
                 if (verbPracticeMode === 'quiz') setIsVerbQuizOpen(true);
                 else if (verbPracticeMode === 'reflex') setIsVerbReflexOpen(true);
                 else setIsVerbEssayOpen(true);
+            } else if (target === 'kaiwa') {    // <--- THÊM MỚI Ở ĐÂY
+                setIsKaiwaOpen(true);           // <--- THÊM MỚI Ở ĐÂY
             }
         }
     };
@@ -5141,15 +5921,21 @@ const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu c
     return (
         <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-gray-200">
             
- {/* 1. TRANG CHỦ TỐI GIẢN (CHỈ CÓ NÚT) */}
+{/* 1. TRANG CHỦ TỐI GIẢN (CHỈ CÓ NÚT) */}
 <LandingPage 
     srsData={srsData}
     onOpenReviewList={() => setIsReviewListOpen(true)}
     onOpenSetup={(target) => {
-        setSetupConfig({ isOpen: true, targetAction: target });
-        // Tự động chuyển sang chế độ Từ vựng nếu là Chia động từ
-        if (target === 'conjugate') {
-            handleModeSwitch('vocab'); 
+        // FIX Ở ĐÂY: Nếu là kaiwa thì mở luôn bảng Kaiwa, chặn không cho mở bảng nhập Text
+        if (target === 'kaiwa') {
+            setIsKaiwaOpen(true);
+        } else {
+            // Các tính năng khác vẫn mở bảng Setup bình thường
+            setSetupConfig({ isOpen: true, targetAction: target });
+            // Tự động chuyển sang chế độ Từ vựng nếu là Chia động từ
+            if (target === 'conjugate') {
+                handleModeSwitch('vocab'); 
+            }
         }
     }}
 />
@@ -5280,6 +6066,10 @@ const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu c
                 verbsData={verbPracticeData}
                 selectedForms={verbSelectedForms}
             />
+                    <KaiwaModal 
+        isOpen={isKaiwaOpen} 
+        onClose={() => setIsKaiwaOpen(false)} 
+    />
             {/* 3. RENDER MODAL DANH SÁCH LỊCH TRÌNH */} 
             <ReviewListModal 
     isOpen={isReviewListOpen}
