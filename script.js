@@ -5675,6 +5675,27 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
         });
     };
 
+    const renderMarkedText = (text, isShowFuri) => {
+        if (!text) return null;
+        
+        // Tách câu thành các mảng dựa trên dấu _ _
+        const parts = text.split(/(_[^_]+_)/g);
+        
+        return parts.map((part, index) => {
+            // Nếu đoạn text được bọc bởi _ _
+            if (part.startsWith('_') && part.endsWith('_')) {
+                const innerText = part.slice(1, -1);
+                return (
+                    // Đổi màu chữ ở đây (text-teal-600 là xanh mòng két rất dịu mắt)
+                    <span key={index} className="text-teal-600">
+                        {renderFurigana(innerText, isShowFuri)}
+                    </span>
+                );
+            }
+            // Những phần chữ thường thì render bình thường
+            return <React.Fragment key={index}>{renderFurigana(part, isShowFuri)}</React.Fragment>;
+        });
+    };
     let globalLineIndex = 0;
 
     // --- GIAO DIỆN ---
@@ -5825,8 +5846,8 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
             className={`max-w-[80%] md:max-w-[65%] p-3 sm:p-4 shadow-sm border transition-all duration-300 cursor-pointer hover:shadow-md active:scale-[0.98] ${boxClass}`}
         >
                                             <p className={`text-base sm:text-lg font-bold leading-relaxed font-sans transition-all duration-300 ${isHidden ? 'filter blur-[4px] opacity-40 select-none' : ''}`}>
-                                                {isHidden ? "（あなたが話す番です）" : renderFurigana(line.ja, showFurigana)}
-                                            </p>
+    {isHidden ? "（あなたが話す番です）" : renderMarkedText(line.ja, showFurigana)}
+</p>
                                             {showTranslation && (
                                                 <p className={`text-sm sm:text-base mt-2 font-medium border-t pt-2 transition-colors ${isActive ? 'text-green-700 border-green-200' : 'text-zinc-500 border-zinc-200'}`}>
                                                     {line.vi}
