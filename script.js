@@ -8,7 +8,7 @@ const calculateSRS = (currentData, quality) => {
   const now = Date.now();
   if (nextReview && nextReview > now) {
       if (quality === 1) return currentData;
-  } 
+  }
  
   if (quality === 0) {
     easeFactor = Math.max(1.3, easeFactor - 0.2);
@@ -810,7 +810,7 @@ const EssayGameModal = ({ isOpen, onClose, text, dbData, mode, onSwitchMode }) =
         setWrongDetected(false);
         setCorrectAnswer('');
 
-       let items = [];
+        let items = [];
         if (mode === 'vocab') {
             // FIX LỖI: Bắt buộc từ vựng phải có CẢ cách đọc và ý nghĩa mới được đưa vào game
             items = text.split(/[\n;]+/).map(w => w.trim()).filter(w => {
@@ -831,7 +831,7 @@ const EssayGameModal = ({ isOpen, onClose, text, dbData, mode, onSwitchMode }) =
         const shuffled = items.sort(() => Math.random() - 0.5);
         setQueue(shuffled);
         setInitialTotal(shuffled.length);
-    };
+    }; 
 
    
 
@@ -1101,6 +1101,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
             setShowHint(true); 
         } 
     }, [isOpen, text, startNewSession, mode, dbData]);
+
     React.useEffect(() => { if (isOpen) { const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden'; document.body.style.paddingRight = `${scrollBarWidth}px`; document.body.style.touchAction = 'none'; } else { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; document.body.style.paddingRight = ''; document.body.style.touchAction = ''; } return () => { document.documentElement.style.overflow = ''; document.body.style.overflow = ''; document.body.style.paddingRight = ''; document.body.style.touchAction = ''; }; }, [isOpen]);
     
     const toggleFlip = React.useCallback(() => { setIsFlipped(prev => !prev); if (currentIndex === 0) setShowHint(false); }, [currentIndex]);
@@ -5046,6 +5047,11 @@ const KaiwaModal = ({ isOpen, onClose }) => {
             { title: "Phần 3", desc: "Gồm 8 bài", lessonCount: 8 },
             { title: "Phần 4", desc: "Gồm 8 bài", lessonCount: 8 },
             { title: "Phần 5", desc: "Gồm 7 bài", lessonCount: 7 }
+        ],
+        'nameraka': [
+            { title: "BIẾN ÂM", desc: "Gồm 6 bài", lessonCount: 6 },
+            { title: "HÌNH THÁI HỘI THOẠI", desc: "Gồm 6 bài", lessonCount: 6 },
+            { title: "MỤC ĐÍCH HỘI THOẠI", desc: "Gồm 11 bài", lessonCount: 11 }
         ]
     };
 
@@ -5273,7 +5279,9 @@ const renderGuideOverlay = () => (
                 {/* DANH SÁCH GIÁO TRÌNH HIỆN CÓ */}
                 <div className="flex flex-col gap-4">
                     {[
-                        { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Đoạn hội thoại hàng ngày' }
+                        { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Hội thoại hàng ngày' },
+                        { id: 'nameraka', title: 'GIAO TIẾP TRÔI CHẢY N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
+                       
                     ].map((item) => (
                         <button 
                             key={item.id}
@@ -5700,7 +5708,7 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
             return <span key={index}>{part}</span>;
         });
     };
-
+// THÊM HOẶC THAY THẾ HÀM CŨ BẰNG HÀM NÀY
     const renderMarkedText = (text, isShowFuri) => {
         if (!text) return null;
         
@@ -5712,8 +5720,8 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
             if (part.startsWith('_') && part.endsWith('_')) {
                 const innerText = part.slice(1, -1);
                 return (
-                    // Đổi màu chữ ở đây (text-teal-600 là xanh mòng két rất dịu mắt)
-                    <span key={index} className="text-teal-600">
+                    // Đổi màu chữ ở đây
+                    <span key={index} className="text-orange-800">
                         {renderFurigana(innerText, isShowFuri)}
                     </span>
                 );
@@ -5871,7 +5879,7 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
             title="Bấm để nghe câu này"
             className={`max-w-[80%] md:max-w-[65%] p-3 sm:p-4 shadow-sm border transition-all duration-300 cursor-pointer hover:shadow-md active:scale-[0.98] ${boxClass}`}
         >
-                                            <p className={`text-base sm:text-lg font-bold leading-relaxed font-sans transition-all duration-300 ${isHidden ? 'filter blur-[4px] opacity-40 select-none' : ''}`}>
+                                          <p className={`text-base sm:text-lg font-bold leading-relaxed font-sans transition-all duration-300 ${isHidden ? 'filter blur-[4px] opacity-40 select-none' : ''}`}>
     {isHidden ? "（あなたが話す番です）" : renderMarkedText(line.ja, showFurigana)}
 </p>
                                             {showTranslation && (
