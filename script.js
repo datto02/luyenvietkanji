@@ -5491,6 +5491,7 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
     const timerRef = React.useRef(null); 
     const scrollRef = React.useRef(null);
     const stopAtTimeRef = React.useRef(null);
+    const isMutedRef = React.useRef(false);
 
     // --- HÀM TẢI VÀ PHÁT AUDIO THỦ CÔNG (LAZY LOAD) ---
     const initAndPlayAudio = (startTime = 0) => {
@@ -5499,7 +5500,7 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
 
         const howlInstance = new Howl({
             src: [lesson.audioPath],
-            html5: false, 
+            html5: true, 
             preload: true,
             onload: function() {
                 // FIX LỖI DÍNH ÂM THANH: Kiểm tra nếu user đã chuyển bài hoặc đóng popup
@@ -5624,16 +5625,19 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
                         }
                     }
 
-                    // Tắt tiếng triệt để từ Core Audio
-                    if (currentSpeaker) {
-                        soundRef.current.volume(0);
-                    } else {
-                        soundRef.current.volume(1);
+                    // Tắt tiếng triệt để (Đã tối ưu cho HTML5 Audio)
+                    const shouldMute = !!currentSpeaker; // Ép kiểu về true/false
+                    if (shouldMute !== isMutedRef.current) {
+                        soundRef.current.mute(shouldMute); // Dùng mute() thay vì volume()
+                        isMutedRef.current = shouldMute;
                     }
                 }
             } else if (soundRef.current && !isPlaying) {
                 // Nhả âm lượng khi ấn Pause
-                soundRef.current.volume(1);
+                if (isMutedRef.current) {
+                    soundRef.current.mute(false);
+                    isMutedRef.current = false;
+                }
             }
             
             timerRef.current = requestAnimationFrame(step);
