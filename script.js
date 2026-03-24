@@ -5280,7 +5280,7 @@ const renderGuideOverlay = () => (
                 <div className="flex flex-col gap-4">
                     {[
                         { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Hội thoại hàng ngày' },
-                        { id: 'nameraka', title: 'GIAO TIẾP TRÔI CHẢY N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
+                        { id: 'nameraka', title: '23 BÀI KAIWA N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
                        
                     ].map((item) => (
                         <button 
