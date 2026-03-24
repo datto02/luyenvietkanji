@@ -5046,6 +5046,12 @@ const KaiwaModal = ({ isOpen, onClose }) => {
             { title: "Phần 3", desc: "Gồm 8 bài", lessonCount: 8 },
             { title: "Phần 4", desc: "Gồm 8 bài", lessonCount: 8 },
             { title: "Phần 5", desc: "Gồm 7 bài", lessonCount: 7 }
+        ],
+        ,
+        'nameraka': [
+            { title: "BIẾN ÂM", desc: "Gồm 6 bài", lessonCount: 6 },
+            { title: "HÌNH THÁI HỘI THOẠI", desc: "Gồm 6 bài", lessonCount: 6 },
+            { title: "MỤC ĐÍCH HỘI THOẠI", desc: "Gồm 11 bài", lessonCount: 11 }
         ]
     };
 
@@ -5273,7 +5279,8 @@ const renderGuideOverlay = () => (
                 {/* DANH SÁCH GIÁO TRÌNH HIỆN CÓ */}
                 <div className="flex flex-col gap-4">
                     {[
-                        { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Đoạn hội thoại hàng ngày' }
+                        { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Đoạn hội thoại hàng ngày' },
+                        { id: 'nameraka', title: 'GIAO TIẾP TRÔI CHẢY N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
                     ].map((item) => (
                         <button 
                             key={item.id}
