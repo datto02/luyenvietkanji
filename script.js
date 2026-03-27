@@ -6346,13 +6346,13 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full text-left">
                             <div className="bg-zinc-100 p-3 rounded-xl border border-zinc-200 min-w-0 w-full">
-                                <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">Âm ÔN (On'yomi)</span>
+                                <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">ÂM ON</span>
                                 <span className="text-sm font-bold text-zinc-900 block truncate w-full pb-0.5" title={onkun.readings_on?.join('、 ')}>
                                     {onkun.readings_on && onkun.readings_on.length > 0 ? onkun.readings_on.join('、 ') : '---'}
                                 </span>
                             </div>
                             <div className="bg-zinc-100 p-3 rounded-xl border border-zinc-200 min-w-0 w-full">
-                                <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">Âm KUN (Kun'yomi)</span>
+                                <span className="text-[10px] font-black text-zinc-400 uppercase tracking-widest block mb-1">ÂM KUN</span>
                                 <span className="text-sm font-bold text-zinc-900 block truncate w-full pb-0.5" title={onkun.readings_kun?.join('、 ')}>
                                     {onkun.readings_kun && onkun.readings_kun.length > 0 ? onkun.readings_kun.join('、 ') : '---'}
                                 </span>
