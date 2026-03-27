@@ -6182,6 +6182,7 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
                         dbData={dbData} 
                         onSelectResult={(item) => {
                             if(document.activeElement) document.activeElement.blur();
+                            setSelectedRadical(null);
                             setSelectedKanji(item.char);
                             setVisitedKanjis(prev => new Set(prev).add(item.char)); // Đánh dấu đã xem Kanji
                             setReplayKey(prev => prev + 1);
@@ -6405,6 +6406,7 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
                                     e.currentTarget.blur();
                                     if (view === 'detail') {
                                         setView(selectedRadical ? 'kanji_list' : 'radicals');
+                                        setSelectedRadical(null);
                                     } else {
                                         setView('radicals');
                                     }
