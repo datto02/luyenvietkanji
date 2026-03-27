@@ -6175,18 +6175,15 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
         const radicalList = Object.entries(radicals);
 
         return (
-            <div className="p-4 sm:p-6 bg-white border-b border-zinc-200 shrink-0">
+            <div className="flex flex-col h-full bg-zinc-50 overflow-hidden w-full">
+                <div className="p-4 sm:p-6 bg-white border-b border-zinc-200 shrink-0">
                     <SearchBar 
                         mode="kanji" 
                         dbData={dbData} 
                         onSelectResult={(item) => {
                             if(document.activeElement) document.activeElement.blur();
                             setSelectedKanji(item.char);
-                            
-                            // FIX: Ép xóa bộ nhớ bộ thủ khi bấm vào kết quả tìm kiếm
-                            setSelectedRadical(null); 
-
-                            setVisitedKanjis(prev => new Set(prev).add(item.char)); 
+                            setVisitedKanjis(prev => new Set(prev).add(item.char)); // Đánh dấu đã xem Kanji
                             setReplayKey(prev => prev + 1);
                             setView('detail');
                         }} 
@@ -6406,22 +6403,17 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
                                 style={{ WebkitTapHighlightColor: 'transparent' }}
                                 onClick={(e) => {
                                     e.currentTarget.blur();
-                                    setTimeout(() => {
-                                        if (view === 'detail') {
-                                            setView(selectedRadical ? 'kanji_list' : 'radicals');
-                                        } else {
-                                            setView('radicals');
-                                            // FIX: Xóa bộ thủ đang nhớ khi quay về trang chủ
-                                            setSelectedRadical(null); 
-                                        }
-                                    }, 50);
+                                    if (view === 'detail') {
+                                        setView(selectedRadical ? 'kanji_list' : 'radicals');
+                                    } else {
+                                        setView('radicals');
+                                    }
                                 }}
                                 className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-600 transition-colors outline-none"
                             >
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                             </button>
                         )}
-                            
                         <h2 className="text-base sm:text-lg font-black text-zinc-900 uppercase tracking-tight">
                             TRA CỨU KANJI
                         </h2>
