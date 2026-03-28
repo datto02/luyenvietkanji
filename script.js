@@ -5305,7 +5305,7 @@ const renderGuideOverlay = () => (
                     {[
                         { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Hội thoại hàng ngày' },
                         { id: 'nameraka', title: '23 BÀI KAIWA N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
-                       
+                      
                     ].map((item) => (
                         <button 
                             key={item.id}
@@ -6083,7 +6083,7 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
         </div>
     )
 }
-const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
+const KanjiDictionaryModal = ({ isOpen, onClose, dbData, config, setConfig, setPracticeMode }) => {
     const [view, setView] = useState('radicals'); // 'radicals' | 'kanji_list' | 'detail'
     const [selectedRadical, setSelectedRadical] = useState(null);
     const [selectedKanji, setSelectedKanji] = useState(null);
@@ -6168,7 +6168,19 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
     }, [fullSvg]);
 
     if (!isOpen) return null;
+// --- HÀM THÊM KANJI VÀO Ô ÔN TẬP ---
+    const handleAddKanji = () => {
+        if (!selectedKanji) return;
 
+        // Tự động chuyển màn hình chính sang chế độ Kanji
+        if (setPracticeMode) setPracticeMode('kanji');
+
+        const currentText = config?.text || '';
+        // Nếu chữ chưa có trong danh sách thì mới ghép thêm vào
+        if (!currentText.includes(selectedKanji)) {
+            setConfig({ ...config, text: currentText + selectedKanji });
+        }
+    };
     // --- MÀN 1: TÌM KIẾM & DANH SÁCH BỘ THỦ ---
     const renderRadicals = () => {
         const radicals = dbData?.BOTHU_DB || {}; 
@@ -6360,10 +6372,35 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
                             </div>
                         </div>
                         
-                        <div className="mt-4 flex gap-2 w-full justify-center md:justify-start">
-                            {onkun.jlpt_new && <span className="px-2 py-1 bg-zinc-900 text-white text-[10px] font-black rounded uppercase flex-shrink-0">JLPT N{onkun.jlpt_new}</span>}
-                            {onkun.strokes && <span className="px-2 py-1 border border-zinc-300 text-zinc-600 text-[10px] font-black rounded uppercase flex-shrink-0">{onkun.strokes} Nét</span>}
-                        </div>
+                        <div className="mt-4 flex gap-2 w-full justify-center md:justify-start items-center">
+    {onkun.jlpt_new && <span className="px-2 py-1 bg-zinc-900 text-white text-[10px] font-black rounded uppercase flex-shrink-0">JLPT N{onkun.jlpt_new}</span>}
+    {onkun.strokes && <span className="px-2 py-1 border border-zinc-300 text-zinc-600 text-[10px] font-black rounded uppercase flex-shrink-0">{onkun.strokes} Nét</span>}
+
+    {/* NÚT THÊM KANJI VÀO DANH SÁCH HỌC */}
+    {selectedKanji && (
+        <button
+            onClick={handleAddKanji}
+            className={`flex items-center justify-center px-2.5 py-1 text-[10px] font-black rounded uppercase flex-shrink-0 transition-all active:scale-95 ml-1 ${
+                config?.text?.includes(selectedKanji)
+                    ? 'bg-green-500 text-white border border-green-500 shadow-sm'
+                    : 'bg-indigo-50 text-indigo-600 border border-indigo-200 hover:bg-indigo-100'
+            }`}
+            title="Thêm vào danh sách ôn tập"
+        >
+            {config?.text?.includes(selectedKanji) ? (
+                <span className="flex items-center gap-1">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Đã thêm
+                </span>
+            ) : (
+                <span className="flex items-center gap-1">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    Thêm ôn tập
+                </span>
+            )}
+        </button>
+    )}
+</div>
                     </div>
                 </div>
 
@@ -6780,10 +6817,13 @@ React.useEffect(() => {
         isOpen={isKaiwaOpen} 
         onClose={() => setIsKaiwaOpen(false)} 
     />
-            <KanjiDictionaryModal 
+    <KanjiDictionaryModal 
     isOpen={isDictionaryOpen}
     onClose={() => setIsDictionaryOpen(false)}
     dbData={dbData}
+    config={config}
+    setConfig={setConfig}
+    setPracticeMode={handleModeSwitch}
 />
             {/* 3. RENDER MODAL DANH SÁCH LỊCH TRÌNH */} 
             <ReviewListModal 
