@@ -6208,12 +6208,13 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
                                 <button 
                                     key={rad}
                                     style={{ WebkitTapHighlightColor: 'transparent' }}
-                                    onClick={(e) => {
-                                        e.currentTarget.blur();
-                                        setSelectedRadical({ radical: rad, ...info });
-                                        setVisitedRadicals(prev => new Set(prev).add(rad)); // Đánh dấu đã xem Bộ thủ
-                                        setTimeout(() => { setView('kanji_list'); }, 50);
-                                    }}
+    onClick={(e) => {
+    e.currentTarget.blur();
+    scrollPositions.current.kanji_list = 0; 
+    setSelectedRadical({ radical: rad, ...info });
+    setVisitedRadicals(prev => new Set(prev).add(rad)); 
+    setTimeout(() => { setView('kanji_list'); }, 50);
+}}
                                     className={`border rounded-2xl p-4 flex flex-col items-center justify-center transition-all hover:-translate-y-1 active:scale-95 group outline-none ${
                                         isVisited ? 'bg-purple-50 border-purple-200 md:hover:border-purple-500' : 'bg-white border-zinc-200 md:hover:border-zinc-900 md:hover:shadow-md'
                                     }`}
