@@ -6400,7 +6400,7 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData }) => {
 
     return (
         <div className="fixed inset-0 z-[600] flex justify-center items-center bg-zinc-900/90 backdrop-blur-sm p-0 sm:p-4 animate-in fade-in duration-200">
-            <div className="bg-white w-full h-full sm:max-w-4xl sm:h-[90vh] md:h-[80vh] sm:rounded-3xl shadow-2xl overflow-hidden flex flex-col animate-in zoom-in-95 sm:border border-zinc-200">
+            <div className="bg-white w-full h-full sm:max-w-4xl sm:h-[90vh] md:h-[90vh] sm:rounded-3xl shadow-2xl overflow-hidden flex flex-col animate-in zoom-in-95 sm:border border-zinc-200">
                 
                 {/* HEADER */}
                 <div className="px-4 sm:px-6 py-4 border-b border-zinc-100 bg-white flex justify-between items-center shrink-0 shadow-sm z-10 w-full">
