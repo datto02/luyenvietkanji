@@ -2697,12 +2697,12 @@ React.useEffect(() => {
         return () => { document.body.style.overflow = 'unset'; };
     }, [isDocsModalOpen]);
     const notifications = [
-        { 
-            id: 5, 
-            title: '🔍 HỆ THỐNG KANJI THEO BỘ THỦ', 
-            date: '27/03/2026', 
-            content: 'Giờ đây bạn có thể dễ dàng tra cứu Kanji sắp xếp theo bộ thủ hoặc nhập trực tiếp âm Hán Việt. Bấm ngay vào "TRA CỨU KANJI" ở trang chủ để khám phá nhé!'
-        }
+    { 
+    id: 6, 
+    title: '🎧 NGHE CHÉP CHÍNH TẢ', 
+    date: '30/03/2026', 
+    content: 'Tính năng Luyện nghe chép chính tả đã ra mắt bản thử nghiệm! Giờ đây bạn có thể rèn luyện phản xạ nghe và gõ lại từ vựng hoặc câu ví dụ theo các giáo trình. Bấm ngay vào nút "LUYỆN NGHE" ở trang chủ để trải nghiệm nhé!'
+    }
         
     ];
 
