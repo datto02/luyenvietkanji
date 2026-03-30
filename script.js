@@ -7375,10 +7375,14 @@ const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu c
     const [editingVocab, setEditingVocab] = useState(null);
 
 React.useEffect(() => {
-        // 1. Chặn chuột phải (Context Menu)
-        const handleContextMenu = (e) => {
-            e.preventDefault();
-        };
+        // 1. Chặn chuột phải (Context Menu) nhưng thả cửa cho ô nhập liệu
+const handleContextMenu = (e) => {
+    // Nếu người dùng đang bấm vào input hoặc textarea, cho phép hiện menu mặc định (Copy/Paste)
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return; 
+    }
+    e.preventDefault();
+};
 
         // 2. Chặn các tổ hợp phím tắt
         const handleKeyDown = (e) => {
