@@ -4,7 +4,7 @@
     "title": "PHẦN 1 - TỰ GIỚI THIỆU",
     "audioPath": "./data/audio/nghechinhta/tangon5p1.mp3",
     "vocabularies": [
-      {
+      { 
         "id": "v1",
         "word": "私",
         "reading": "わたし",
