@@ -5421,7 +5421,7 @@ const renderGuideOverlay = () => (
                     {[
                         { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Hội thoại hàng ngày' },
                         { id: 'nameraka', title: '23 BÀI KAIWA N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
-                        
+                         
                     ].map((item) => (
                         <button 
                             key={item.id}
@@ -6866,6 +6866,7 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
     const currentIndexRef = React.useRef(currentIndex);
     const queueRef = React.useRef(queue);
     const modeRef = React.useRef(mode);
+    const isComposing = React.useRef(false);
 
     React.useEffect(() => {
         currentIndexRef.current = currentIndex;
@@ -7002,15 +7003,29 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
         setPlaybackRate(rates[nextIdx]);
     };
 
-    // --- 3. XỬ LÝ NHẬP LIỆU & ĐIỀU HƯỚNG THỦ CÔNG ---
-    const handleInputChange = (e) => {
-        // Lấy từ vựng hiện tại trong hàng đợi
+   // THÊM ĐOẠN CODE MỚI NÀY VÀO:
+    const processInput = (val) => {
         const currentItem = queue[currentIndex];
-        
-        // Ưu tiên lấy mặt chữ (word) hoặc cách đọc (reading) để làm mốc chuyển Katakana
         const targetKana = currentItem?.word || currentItem?.reading || '';
-        
-        setUserInput(convertToKana(e.target.value, targetKana)); 
+        setUserInput(convertToKana(val, targetKana));
+    };
+
+    const handleInputChange = (e) => {
+        const val = e.target.value;
+        if (isComposing.current) {
+            setUserInput(val); // Nếu đang gõ dở (gom chữ), giữ nguyên raw value để bộ gõ tự xử lý
+        } else {
+            processInput(val); // Gõ xong rồi mới ép kiểu Katakana/Hiragana
+        }
+    };
+
+    const handleCompositionStart = () => { 
+        isComposing.current = true; 
+    };
+
+    const handleCompositionEnd = (e) => { 
+        isComposing.current = false; 
+        processInput(e.target.value); // Ép kiểu ngay khi vừa xác nhận chữ xong
     };
 
     const handleManualNext = () => {
@@ -7280,11 +7295,16 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
                     {/* VÙNG NHẬP LIỆU (Cố định ở dưới cùng) */}
                     <div className="w-full max-w-md mx-auto shrink-0 space-y-2 mt-4">
                         <input 
-                            type="text" autoFocus value={userInput} onChange={handleInputChange}
-                            onKeyDown={(e) => e.key === 'Enter' && checkAnswer()}
-                            placeholder={status === 'retyping' ? "Nhập lại từ vựng" : "Nhập từ vựng"}
-                            className={`w-full p-3.5 sm:p-4 text-center text-lg sm:text-xl font-bold border-2 rounded-2xl outline-none transition-all shadow-sm ${status === 'correct' ? 'border-green-500 bg-green-50 text-green-700 shadow-[0_0_15px_rgba(34,197,94,0.2)]' : status === 'wrong' || status === 'retyping' ? 'border-red-500 bg-red-50 text-red-700 shadow-[0_0_15px_rgba(239,68,68,0.2)]' : 'border-zinc-200 focus:border-indigo-500 bg-zinc-50'}`}
-                        />
+    type="text" 
+    autoFocus 
+    value={userInput} 
+    onChange={handleInputChange}
+    onCompositionStart={handleCompositionStart} // Thêm dòng này
+    onCompositionEnd={handleCompositionEnd}     // Thêm dòng này
+    onKeyDown={(e) => e.key === 'Enter' && checkAnswer()}
+    placeholder={status === 'retyping' ? "Nhập lại từ vựng" : "Nhập từ vựng"}
+    className={`w-full p-3.5 sm:p-4 text-center text-lg sm:text-xl font-bold border-2 rounded-2xl outline-none transition-all shadow-sm ${status === 'correct' ? 'border-green-500 bg-green-50 text-green-700 shadow-[0_0_15px_rgba(34,197,94,0.2)]' : status === 'wrong' || status === 'retyping' ? 'border-red-500 bg-red-50 text-red-700 shadow-[0_0_15px_rgba(239,68,68,0.2)]' : 'border-zinc-200 focus:border-indigo-500 bg-zinc-50'}`}
+/>
                         
                         <div className="flex justify-between items-center px-2">
                             <button onClick={handleShowAnswer} disabled={showHint || status === 'retyping'} className={`text-[10px] sm:text-[11px] font-bold uppercase tracking-widest transition-colors flex items-center gap-1.5 outline-none ${showHint || status === 'retyping' ? 'text-zinc-300 cursor-not-allowed' : 'text-zinc-500 hover:text-indigo-600 active:scale-95'}`}>
