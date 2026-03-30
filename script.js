@@ -7375,14 +7375,19 @@ const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu c
     const [editingVocab, setEditingVocab] = useState(null);
 
 React.useEffect(() => {
-        // 1. Chặn chuột phải (Context Menu) nhưng thả cửa cho ô nhập liệu
-const handleContextMenu = (e) => {
-    // Nếu người dùng đang bấm vào input hoặc textarea, cho phép hiện menu mặc định (Copy/Paste)
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-        return; 
-    }
-    e.preventDefault();
-};
+       // 1. Chặn chuột phải thông minh (Phân biệt Mobile và PC)
+        const handleContextMenu = (e) => {
+            // Nhận diện thiết bị cảm ứng (Điện thoại, Máy tính bảng)
+            const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+
+            // Nếu LÀ ĐIỆN THOẠI và đang bấm vào ô nhập liệu -> Thả cửa cho hiện Copy/Paste
+            if (isTouchDevice && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+                return; 
+            }
+
+            // Các trường hợp còn lại (Bao gồm dùng chuột phải trên Máy tính) -> Chặn sạch!
+            e.preventDefault();
+        };
 
         // 2. Chặn các tổ hợp phím tắt
         const handleKeyDown = (e) => {
