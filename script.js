@@ -2755,10 +2755,10 @@ React.useEffect(() => {
     }, [isDocsModalOpen]);
     const notifications = [
         { 
-            id: 5, 
-            title: '🔍 HỆ THỐNG KANJI THEO BỘ THỦ', 
-            date: '27/03/2026', 
-            content: 'Giờ đây bạn có thể dễ dàng tra cứu Kanji sắp xếp theo bộ thủ hoặc nhập trực tiếp âm Hán Việt. Bấm ngay vào "TRA CỨU KANJI" ở trang chủ để khám phá nhé!'
+            id: 6, 
+            title: '🎧 LUYỆN NGHE CHÍNH TẢ', 
+            date: '01/04/2026', 
+            content: 'Tính năng Luyện nghe chép chính tả đã chính thức ra mắt! Bấm ngay vào "LUYỆN NGHE" ở trang chủ để trải nghiệm nhé!'
         }
         
     ];
