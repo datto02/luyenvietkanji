@@ -11477,20 +11477,6 @@
     "wordEndTime": 340.83
   },
   {
-    "id": 796,
-    "word": "何メートル",
-    "reading": "なんメートル",
-    "meaning": "bao nhiêu (mấy) mét",
-    "sentence": "何メートルぐらいあるきますか。",
-    "sentenceVi": "Bạn đi bộ khoảng bao nhiêu mét?",
-    "blankWord": "",
-    "blankReading": "",
-    "wordStartTime": 342.9,
-    "wordEndTime": 343.99,
-    "sentenceStartTime": 345.37,
-    "sentenceEndTime": 347.81
-  },
-  {
     "id": 797,
     "word": "メートル",
     "reading": "メートル",
