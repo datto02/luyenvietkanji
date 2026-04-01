@@ -6419,15 +6419,19 @@ const KanjiDictionaryModal = ({ isOpen, onClose, dbData, config, setConfig, setP
 
     if (!isOpen) return null;
 
-    const handleAddKanji = () => {
+   const handleAddKanji = () => {
         if (!selectedKanji) return;
         if (setPracticeMode) setPracticeMode('kanji');
         const currentText = config?.text || '';
-        if (!currentText.includes(selectedKanji)) {
+        
+        if (currentText.includes(selectedKanji)) {
+           
+            setConfig({ ...config, text: currentText.replace(selectedKanji, '') });
+        } else {
+           
             setConfig({ ...config, text: currentText + selectedKanji });
         }
     };
-
     // --- HÀM XỬ LÝ KHI NGƯỜI DÙNG SEARCH KANJI BẰNG TAY TỪ SEARCH BAR ---
     const handleKanjiSearch = (kanjiStr) => {
         if(document.activeElement) document.activeElement.blur();
