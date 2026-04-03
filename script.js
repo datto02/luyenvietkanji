@@ -7724,12 +7724,17 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
                                     <div className="text-lg sm:text-xl font-bold text-zinc-800 text-center w-full leading-relaxed px-2">
                                        {renderMaskedSentence(currentItem.sentence, currentItem.word, (mode === 'sentence' && currentItem.blankReading) ? currentItem.blankReading : currentItem.reading, currentItem.blankWord)}
                                     </div>
-                                ) : (
-                                    <div className="text-center flex flex-col items-center justify-center bg-indigo-50 border border-indigo-100 px-6 py-2.5 rounded-2xl">
-                                        <span className="text-2xl sm:text-3xl font-black text-indigo-700 mb-0.5">{currentItem.word}</span>
-                                        <span className="text-[11px] sm:text-xs font-bold text-indigo-500 tracking-widest">{currentItem.reading}</span>
-                                    </div>
-                                )}
+                               ) : (
+   
+    <div className="text-center flex flex-col items-center justify-center bg-indigo-50 border border-indigo-100 px-4 py-1.5 rounded-xl">
+        
+      
+        <span className="text-xl sm:text-2xl font-black text-indigo-700 mb-0.5">{currentItem.word}</span>
+        
+      
+        <span className="text-[11px] sm:text-xs font-bold text-indigo-500 tracking-widest">{currentItem.reading}</span>
+    </div>
+)}
                             </div>
                         )}
 
