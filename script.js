@@ -7965,7 +7965,7 @@ else if (isShowingText || showVi) {
         
         {/* CHỈ HIỆN CÁCH ĐỌC NẾU NÓ KHÁC VỚI MẶT CHỮ */}
         {currentItem.word !== currentItem.reading && (
-            <span className="text-[10px] sm:text-[11px] font-bold text-indigo-500 tracking-widest">
+            <span className="text-sm sm:text-base font-bold text-indigo-500 tracking-widest">
                 {currentItem.reading}
             </span>
         )}
