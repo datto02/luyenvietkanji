@@ -9362,20 +9362,6 @@
     "sentenceEndTime": 329.27
   },
   {
-    "id": 683,
-    "word": "ATM",
-    "reading": "エーティーエム",
-    "meaning": "máy rút tiền tự động",
-    "sentence": "こちらに[ATM](えーてぃーえむ)があります。",
-    "sentenceVi": "Ở đây có máy rút tiền tự động.",
-    "blankWord": "",
-    "blankReading": "",
-    "wordStartTime": 330.61,
-    "wordEndTime": 331.69,
-    "sentenceStartTime": 332.68,
-    "sentenceEndTime": 335.06
-  },
-  {
     "id": 684,
     "word": "下ろす",
     "reading": "おろす",
