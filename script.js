@@ -5544,7 +5544,7 @@ const renderGuideOverlay = () => (
                     {[
                         { id: '42baisotrungcap', title: '42 BÀI KAIWA N5-N3', desc: 'Hội thoại hàng ngày' },
                         { id: 'nameraka', title: '23 BÀI KAIWA N3', desc: 'Hội thoại tiếng Nhật tự nhiên' }
-                        
+                       
                     ].map((item) => (
                         <button 
                             key={item.id}
@@ -5973,7 +5973,7 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
                 return (
                     <ruby key={index} className="leading-loose">
                         {match[1]}
-                        {isShow && <rt className="text-[11px] sm:text-xs text-indigo-500 font-bold select-none">{match[2]}</rt>}
+                        {isShow && <rt className="text-[11px] sm:text-xs text-indigo-500 font-bold select-none"><span className="sm:inline-block sm:-translate-y-0.5">{match[2]}</span></rt>}
                     </ruby>
                 );
             }
@@ -7288,7 +7288,7 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
                 return (
                     <ruby key={index} className="leading-loose mx-0.5">
                         {match[1]}
-                        {isShow && <rt className="text-[11px] sm:text-xs text-indigo-500 font-bold select-none">{match[2]}</rt>}
+                        {isShow && <rt className="text-[11px] sm:text-xs text-indigo-500 font-bold select-none"><span className="sm:inline-block sm:-translate-y-0.5">{match[2]}</span></rt>}
                     </ruby>
                 );
             }
@@ -7768,13 +7768,13 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
                   2. Bỏ text-indigo-600 ở thẻ wrapper để set màu riêng lẻ ở bên trong
                 */}
                 <span className={`px-1.5 mx-1 rounded-md transition-all duration-300 inline-block align-baseline min-w-[50px] leading-none pt-1 pb-0.5 ${isRevealed ? 'bg-green-100 shadow-[0_0_10px_rgba(34,197,94,0.2)]' : 'text-transparent bg-zinc-200'}`}>
-                    {isRevealed ? (
+                   {isRevealed ? (
                         <span className="font-bold animate-in fade-in duration-300 whitespace-nowrap inline-block leading-none">
                             {/* Dùng thẻ ruby để đặt Furigana lên trên Kanji */}
                             <ruby>
                                 <span className="text-zinc-900">{wordToMask}</span>
                                 {wordToMask !== readingText && (
-                                    <rt className="text-[11px] sm:text-xs text-indigo-600 font-bold select-none">{readingText}</rt>
+                                    <rt className="text-[11px] sm:text-xs text-indigo-600 font-bold select-none"><span className="sm:inline-block sm:-translate-y-0.5">{readingText}</span></rt>
                                 )}
                             </ruby>
                         </span>
@@ -7783,13 +7783,12 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
                             <ruby>
                                 <span>{wordToMask}</span>
                                 {wordToMask !== readingText && (
-                                    <rt className="text-[11px] sm:text-xs font-bold select-none">{readingText}</rt>
+                                    <rt className="text-[11px] sm:text-xs font-bold select-none"><span className="sm:inline-block sm:-translate-y-0.5">{readingText}</span></rt>
                                 )}
                             </ruby>
                         </span>
                     )}
-                </span>
-
+             </span>
                 {renderFurigana(afterRaw, true)}
             </span>
         );
