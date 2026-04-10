@@ -1439,7 +1439,7 @@ const FlashcardModal = ({ isOpen, onClose, text, dbData, onSrsUpdate, srsData, o
                         <div className="space-y-2">
                             {unknownIndices.length > 0 && (<button onClick={() => startNewSession(isShuffleOn ? shuffleArray(unknownIndices.map(idx => queue[idx])) : unknownIndices.map(idx => queue[idx]))} className="w-full py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-black text-[11px] shadow-lg active:scale-95 transition-colors">ÔN LẠI {unknownIndices.length} THẺ ĐANG HỌC</button>)}
                             <button onClick={() => startNewSession(isShuffleOn ? shuffleArray(originalQueue) : originalQueue)} className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95">HỌC LẠI TỪ ĐẦU</button>
-                            <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
+                            <button onClick={() => { onClose(); setTimeout(() => window.dispatchEvent(new CustomEvent('triggerAd')), 500); }} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
                         </div>
                     </div>
                 )}
@@ -2039,7 +2039,7 @@ const LearnGameModal = ({ isOpen, onClose, text, dbData, onSwitchToFlashcard, mo
                         <button onClick={handleRestart} className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95">
                             HỌC LẠI TỪ ĐẦU
                         </button>
-                        <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">
+                        <button onClick={() => { onClose(); setTimeout(() => window.dispatchEvent(new CustomEvent('triggerAd')), 500); }} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">
                             THOÁT
                         </button>
                     </div>
@@ -2673,10 +2673,9 @@ const KanjiOfTheDay = () => {
     );
 };
 
-// --- COMPONENT: MODAL MỜI CAFE (BẢN TỐI GIẢN - CÓ NÚT "LẦN SAU NHÉ") ---
-const DonateModal = ({ isOpen, onClose }) => {
-    const [copied, setCopied] = React.useState(false);
 
+ // --- COMPONENT: POPUP QUẢNG CÁO KHÓA HỌC (TỐI ƯU PC & MOBILE) ---
+const CourseModal = ({ isOpen, onClose }) => {
     React.useEffect(() => {
         if (isOpen) document.body.style.overflow = 'hidden';
         else document.body.style.overflow = 'unset';
@@ -2685,61 +2684,96 @@ const DonateModal = ({ isOpen, onClose }) => {
 
     if (!isOpen) return null;
 
-    const handleCopy = () => {
-        navigator.clipboard.writeText("99931082002");
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-    };
-
     return (
-        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/40 backdrop-blur-sm p-4 animate-in fade-in duration-200" onClick={onClose}>
-            <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-[280px] overflow-hidden animate-in zoom-in-95 duration-200 border border-zinc-100 p-6 flex flex-col items-center" onClick={e => e.stopPropagation()}>
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+            
+            {/* WRAPPER CHÍNH: Thay đổi max-w-sm thành md:max-w-4xl và flex-col thành md:flex-row */}
+            <div className="bg-white rounded-3xl shadow-2xl w-full max-w-sm md:max-w-4xl overflow-hidden animate-in zoom-in-95 duration-300 border border-gray-200 relative flex flex-col md:flex-row" onClick={e => e.stopPropagation()}>
                 
-                <p className="text-sm font-bold text-zinc-800 mb-5 text-center leading-snug">
-                    Mời mình một ly cafe để tiếp tục duy trì dự án nhé!
-                </p>
-
-                {/* QR Code */}
-                <div className="w-44 h-44 bg-white border border-zinc-200 rounded-xl p-1 mb-4 shadow-sm">
-              
-                    <img src="https://i.ibb.co/JWGwcTL1/3381513652021492183.jpg" alt="QR Code" className="w-full h-full object-contain rounded-lg" />
-                </div>
-
-         
-                <div 
-                    onClick={handleCopy}
-                    className="w-full bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 rounded-xl p-3 mb-4 flex items-center justify-between cursor-pointer transition-all active:scale-95 group"
-                    title="Bấm để copy số tài khoản"
-                >
-                    <div className="flex flex-col items-start">
-                        <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-0.5">MB Bank</span>
-                        <span className="text-sm font-black text-zinc-900 tracking-wider">99931082002</span>
-                    </div>
-                    <div className="text-zinc-400 group-hover:text-zinc-900 transition-colors">
-                        {copied ? (
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-green-500 animate-in zoom-in"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        ) : (
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                        )}
-                    </div>
-                </div>
-
-      
-                <button 
-                    onClick={onClose} 
-                    className="w-full py-3.5 bg-gray-900 hover:bg-black text-white text-xs font-black rounded-xl shadow-lg transition-transform active:scale-95 uppercase tracking-widest mt-1"
-                >
-                    Lần sau nhé
+                {/* Nút Đóng (X) */}
+                <button onClick={onClose} className="absolute top-3 right-3 md:top-4 md:right-4 w-8 h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-black/40 md:bg-gray-100 md:hover:bg-gray-200 text-white md:text-gray-500 md:hover:text-gray-900 backdrop-blur-md transition-all z-20 outline-none">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
 
+               {/* NỬA TRÁI: Phần Ảnh Bìa */}
+<div className="w-full md:w-1/2 h-40 md:h-auto bg-indigo-50 relative overflow-hidden shrink-0">
+    {/* 1. Ảnh dành riêng cho ĐIỆN THOẠI */}
+    <img 
+        src="https://cdn.jsdelivr.net/gh/datto02/luyenvietkanji@main/anhdt.jpg" 
+        alt="Khóa học tiếng Nhật" 
+        className="w-full h-full object-cover md:hidden"
+        onError={(e) => { e.target.src = 'https://placehold.co/600x400/e0e7ff/4f46e5?text=DORA+MOBILE' }} 
+    />
+
+    {/* 2. Ảnh dành riêng cho MÁY TÍNH */}
+    <img 
+        src="https://cdn.jsdelivr.net/gh/datto02/luyenvietkanji@main/anhmt.png" 
+        alt="Khóa học tiếng Nhật" 
+        className="hidden md:block w-full h-full object-cover object-center"
+        onError={(e) => { e.target.src = 'https://placehold.co/600x800/e0e7ff/4f46e5?text=DORA+PC' }} 
+    />
+</div>
+
+                {/* NỬA PHẢI: Phần Nội Dung Quảng Cáo */}
+                <div className="p-6 md:p-10 flex flex-col justify-center text-center md:text-left md:w-1/2 bg-white relative z-10">
+                    
+                    <h3 className="text-2xl md:text-4xl font-black text-gray-900 mb-3 md:mb-5 leading-tight">
+                        Phá đảo tiếng Nhật<br className="hidden md:block"/><span className="text-indigo-600"> cùng DORA</span>
+                    </h3>
+                    
+                    <p className="text-sm md:text-base text-gray-600 mb-5 md:mb-8 leading-relaxed font-medium">
+                        Bạn đang loay hoay tự học? Đừng lo! Nhận ngay lộ trình học và được ép kỷ luật hằng ngày bởi các Sensei tận tâm.
+                    </p>
+
+                    {/* HIGHLIGHT CAM KẾT (Ôm sát nội dung hơn bằng w-fit và mx-auto trên mobile) */}
+                    <div className="bg-red-50 border border-red-100 rounded-2xl p-3 md:p-4 mb-6 md:mb-8 shadow-sm transform hover:scale-[1.02] transition-transform">
+                        <p className="text-sm md:text-base font-black text-red-600 uppercase flex items-center justify-center md:justify-start gap-2">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Cam kết đỗ JLPT chỉ 1 lần thi
+                        </p>
+                        <p className="text-[13px] md:text-sm font-bold text-red-500 mt-1">
+                            Không đỗ học lại MIỄN PHÍ 0Đ!
+                        </p>
+                    </div>
+
+                    {/* LIÊN HỆ TƯ VẤN (Facebook & Zalo) */}
+                    <div className="flex flex-col gap-2.5">
+                        <span className="text-[10px] md:text-xs font-black text-indigo-500 uppercase tracking-widest mb-2 md:mb-3 animate-pulse">
+                        NHẬN TƯ VẤN MIỄN PHÍ QUA:
+                    </span>
+                        <div className="flex gap-3 flex-row">
+                            {/* Nút Facebook */}
+                            <a 
+                                href="https://www.messenger.com/t/874210086055767/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="flex-1 py-3.5 md:py-4 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-lg shadow-blue-200 transition-all active:scale-95 flex items-center justify-center gap-2 uppercase tracking-wider text-[11px] md:text-xs"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                Facebook
+                            </a>
+                            
+                            {/* Nút Zalo */}
+                            <a 
+                                href="https://zalo.me/0332660529" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="flex-1 py-3.5 md:py-4 bg-sky-500 hover:bg-sky-600 text-white font-black rounded-xl shadow-lg shadow-sky-200 transition-all active:scale-95 flex items-center justify-center gap-2 uppercase tracking-wider text-[11px] md:text-xs"
+                            >
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                Zalo
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     );
 };
-            
 // --- COMPONENT: TRANG CHỦ CHUYÊN NGHIỆP ---
-const LandingPage = ({ srsData, onOpenReviewList, onOpenSetup, onOpenDictionary, dbData, onOpenDictation }) => {
-    const [isDonateModalOpen, setIsDonateModalOpen] = useState(false);
+const LandingPage = ({ srsData, onOpenReviewList, onOpenSetup, onOpenDictionary, dbData, onOpenDictation, onOpenCourse }) => {
+  
     const featuresRef = useRef(null);
     const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
     const [isNotifOpen, setIsNotifOpen] = useState(false);
@@ -2920,6 +2954,25 @@ React.useEffect(() => {
                             <h3 className="text-xl font-bold mb-1 text-zinc-900">TRA CỨU KANJI</h3>
                             <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">XẾP THEO BỘ THỦ</p>
                         </div>
+                                  
+ {/* 7. LUYỆN KAIWA */}
+<div onClick={() => onOpenSetup('kaiwa')} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+   
+    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-zinc-900">LUYỆN KAIWA</h3>
+    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Shadowing & Phản xạ</p>
+</div>
+                                 {/* 8. LUYỆN NGHE CHÍNH TẢ */}
+<div onClick={() => onOpenDictation()} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+  
+    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-zinc-900">LUYỆN NGHE</h3>
+    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Chép chính tả & Đục lỗ</p>
+</div>
                         {/* 1. CHẾ ĐỘ HỌC */}
                         <div onClick={() => onOpenSetup('game')} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1">
                             <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
@@ -2928,6 +2981,17 @@ React.useEffect(() => {
                             <h3 className="text-xl font-bold mb-1">CHẾ ĐỘ HỌC</h3>
                             <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Kanji & từ vựng</p>
                         </div>
+                                  {/* KHÓA HỌC (THÊM VÀO ĐÂY) */}
+<div onClick={onOpenCourse} className="group bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+    <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
+        HOT
+    </div>
+    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-indigo-900">KHÓA HỌC</h3>
+    <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">JLPT tích hợp KAIWA</p>
+</div>
 
                         {/* 2. FLASHCARD */}
                         <div onClick={() => onOpenSetup('flashcard')} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1">
@@ -2956,28 +3020,7 @@ React.useEffect(() => {
                             <h3 className="text-xl font-bold mb-1 text-zinc-900">CHIA ĐỘNG TỪ</h3>
                             <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Từ vựng & ngữ pháp</p>
                         </div>
-    {/* 7. LUYỆN KAIWA */}
-<div onClick={() => onOpenSetup('kaiwa')} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-    <div className="absolute top-4 right-4 bg-indigo-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
-        MỚI
-    </div>
-    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
-    </div>
-    <h3 className="text-xl font-bold mb-1 text-zinc-900">LUYỆN KAIWA</h3>
-    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Shadowing & Phản xạ</p>
-</div>
-                                 {/* 8. LUYỆN NGHE CHÍNH TẢ */}
-<div onClick={() => onOpenDictation()} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-    <div className="absolute top-4 right-4 bg-green-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
-        MỚI
-    </div>
-    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
-    </div>
-    <h3 className="text-xl font-bold mb-1 text-zinc-900">LUYỆN NGHE</h3>
-    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Chép chính tả & Đục lỗ</p>
-</div>
+   
 
                         {/* 5. LỊCH TRÌNH HỌC */}
                         <div onClick={onOpenReviewList} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
@@ -2990,6 +3033,9 @@ React.useEffect(() => {
                             <h3 className="text-xl font-bold mb-1">LỊCH TRÌNH HỌC</h3>
                             <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Kanji</p>
                         </div>
+
+                                   
+                                     
 {/* 6. TÀI LIỆU HỌC (Thêm mới vào đây) */}
 <div onClick={() => setIsDocsModalOpen(true)} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
     
@@ -3032,14 +3078,8 @@ React.useEffect(() => {
                             <span className="font-bold tracking-tight text-zinc-900">Tiktok</span>
                         </a>
                         
-                        {/* Vách ngăn mờ (Chỉ hiện trên PC) */}
-                        <div className="h-4 w-px bg-zinc-200 hidden md:block"></div>
-                        
-                        {/* 2. Nút Mời Cafe (Mới thêm) */}
-                        <button onClick={() => setIsDonateModalOpen(true)} className="flex items-center gap-2 group text-zinc-600 hover:text-zinc-900 transition-colors active:scale-95">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-rotate-12 transition-transform"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
-                            <span className="font-bold tracking-tight text-sm">Mời cafe</span>
-                        </button>
+                       
+                      
                         
                         {/* Nút Mobile (Sẽ bị ẩn trên giao diện lớn) */}
                      
@@ -3049,11 +3089,7 @@ React.useEffect(() => {
                 </div>
             </footer>
 
-            {/* Gọi DonateModal ở ngay dưới Footer */}
-            <DonateModal 
-                isOpen={isDonateModalOpen} 
-                onClose={() => setIsDonateModalOpen(false)} 
-            />
+          
                     
             {/* MODAL TÀI LIỆU (Giữ nguyên) */}
              {isDocsModalOpen && (
@@ -4807,7 +4843,7 @@ const VerbEssayGameModal = ({ isOpen, onClose, verbsData, targetForm }) => {
                     <p className="text-gray-400 mb-6 text-[11px] font-medium italic">Bạn đã hoàn thành bài thi tự luận.</p>
                     <div className="space-y-2">
                         <button onClick={() => initLesson()} className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95">HỌC LẠI TỪ ĐẦU</button>
-                        <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
+                        <button onClick={() => { onClose(); setTimeout(() => window.dispatchEvent(new CustomEvent('triggerAd')), 500); }} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
                     </div>
                 </div>
             )}
@@ -5037,7 +5073,7 @@ const VerbQuizGameModal = ({ isOpen, onClose, verbsData, selectedForms }) => {
                     <p className="text-gray-400 mb-6 text-[11px] font-medium italic">Bạn đã hoàn thành bài thi trắc nghiệm.</p>
                     <div className="space-y-2">
                         <button onClick={() => initLesson()} className="w-full py-3.5 bg-blue-50 border-2 border-blue-100 text-blue-500 hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 rounded-xl font-black text-[11px] transition-all active:scale-95">HỌC LẠI TỪ ĐẦU</button>
-                        <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
+                        <button onClick={() => { onClose(); setTimeout(() => window.dispatchEvent(new CustomEvent('triggerAd')), 500); }} className="w-full py-3.5 bg-white border-2 border-gray-200 text-gray-400 hover:text-red-600 hover:border-red-600 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
                     </div>
                 </div>
             )}
@@ -5290,7 +5326,7 @@ const VerbReflexGameModal = ({ isOpen, onClose, verbsData, selectedForms }) => {
 
                     <div className="space-y-3">
                         <button onClick={() => initLesson()} className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-black text-xs uppercase tracking-widest shadow-lg active:scale-95 transition-all">CHƠI LẠI TỪ ĐẦU</button>
-                        <button onClick={onClose} className="w-full py-3.5 bg-white border-2 border-zinc-200 text-zinc-400 hover:text-red-600 hover:border-red-600 font-black text-xs uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
+                        <button onClick={() => { onClose(); setTimeout(() => window.dispatchEvent(new CustomEvent('triggerAd')), 500); }} className="w-full py-3.5 bg-white border-2 border-zinc-200 text-zinc-400 hover:text-red-600 hover:border-red-600 font-black text-xs uppercase tracking-widest rounded-xl transition-all active:scale-95">THOÁT</button>
                     </div>
                 </div>
             )}
@@ -5302,6 +5338,24 @@ const VerbReflexGameModal = ({ isOpen, onClose, verbsData, selectedForms }) => {
 // ==========================================
 const KaiwaModal = ({ isOpen, onClose }) => {
     // --- BẢN ĐỒ CẤU HÌNH NHÓM BÀI THỦ CÔNG ---
+    const playTimeRef = React.useRef(0); // Bộ đếm số giây đã nghe
+    const shouldShowAdRef = React.useRef(false); // Cờ báo hiệu đủ 5 phút
+    const handleTick = React.useCallback(() => {
+        playTimeRef.current += 1; // Mỗi giây cộng thêm 1
+        if (playTimeRef.current >= 300 && !shouldShowAdRef.current) { // 300 giây = 5 phút
+            shouldShowAdRef.current = true; // Cắm cờ đòi quà!
+        }
+    }, []);
+
+    const handleClose = () => {
+        onClose(); // Đóng giao diện Kaiwa
+        if (shouldShowAdRef.current) {
+            // Bắn sự kiện ép buộc hiện pop up
+            setTimeout(() => window.dispatchEvent(new CustomEvent('forceTriggerAd')), 500);
+            shouldShowAdRef.current = false; // Reset cờ
+            playTimeRef.current = 0; // Reset bộ đếm giờ cho lần học sau
+        }
+    };
     // Đã phân chia chuẩn xác theo dữ liệu JSON của bạn
     const MANUAL_PARTS_CONFIG = {
         '42baisotrungcap': [
@@ -5339,6 +5393,7 @@ const KaiwaModal = ({ isOpen, onClose }) => {
     const [progress, setProgress] = React.useState(0);
     const [courseCache, setCourseCache] = React.useState({});
     const [isGuideOpen, setIsGuideOpen] = React.useState(false);
+    
 
     React.useEffect(() => {
         if (isOpen) document.body.style.overflow = 'hidden';
@@ -5543,7 +5598,7 @@ const renderGuideOverlay = () => (
             {/* HEADER CỐ ĐỊNH KHÔNG BỊ TRÔI */}
             <div className="flex justify-between items-center px-6 py-5 border-b border-zinc-100 bg-white z-10 shadow-sm shrink-0">
                 <h2 className="text-xl font-black text-zinc-900 uppercase tracking-tight">Chọn bộ giáo trình</h2>
-                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+               <button onClick={handleClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
             </div>
             
             {/* NỘI DUNG CUỘN ĐƯỢC BÊN DƯỚI */}
@@ -5632,7 +5687,7 @@ const renderGuideOverlay = () => (
                     </button>
                     <h2 className="text-sm font-black text-zinc-900 uppercase">Chọn phần học</h2>
                 </div>
-                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+                <button onClick={handleClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all outline-none">✕</button>
             </div>
             <div className="p-4 space-y-3 overflow-y-auto custom-scrollbar flex-1">
                 {parts.map((part, idx) => (
@@ -5670,7 +5725,7 @@ const renderGuideOverlay = () => (
                         </button>
                         <h2 className="text-sm font-black text-zinc-900 uppercase">{currentPart.title}</h2>
                     </div>
-                    <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+                    <button onClick={handleClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
                 </div>
                 <div className="p-4 space-y-2 overflow-y-auto custom-scrollbar flex-1">
                     {currentPart.lessons.map((lesson, idx) => {
@@ -5719,9 +5774,10 @@ const renderGuideOverlay = () => (
                         total={allLessons.length}
                         currentIndex={currentLessonIdx}
                         onBack={() => setView('list')} 
-                        onClose={onClose} 
+                        onClose={handleClose} 
                         onNext={() => setCurrentLessonIdx(prev => Math.min(prev + 1, allLessons.length - 1))}
                         onPrev={() => setCurrentLessonIdx(prev => Math.max(prev - 1, 0))}
+                        onTick={handleTick} 
                     />
                 )}
             </div>
@@ -5733,7 +5789,7 @@ let hasWarnedAudioGlobal = false;
 // ==========================================
 // COMPONENT: KAIWA PRACTICE VIEW (SỬ DỤNG HOWLER.JS SIÊU MƯỢT)
 // ==========================================
-const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNext, onPrev }) => {
+const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNext, onPrev, onTick }) => {
     const [isPlaying, setIsPlaying] = React.useState(false);
     const [isAudioLoading, setIsAudioLoading] = React.useState(false);
     const [showTranslation, setShowTranslation] = React.useState(false);
@@ -5765,6 +5821,18 @@ const KaiwaPracticeView = ({ lesson, total, currentIndex, onBack, onClose, onNex
     const scrollRef = React.useRef(null);
     const stopAtTimeRef = React.useRef(null);
     const isMutedRef = React.useRef(false);
+    // ================= BỘ ĐẾM GIỜ LÀM NHIỆM VỤ =================
+    React.useEffect(() => {
+        let interval;
+        if (isPlaying) {
+            // Nếu đang phát nhạc, cứ đúng 1 giây (1000ms) lại gõ cửa cha 1 lần
+            interval = setInterval(() => {
+                if (onTick) onTick();
+            }, 1000);
+        }
+        return () => clearInterval(interval); // Dừng đếm khi tắt nhạc
+    }, [isPlaying, onTick]);
+    // ===========================================================
 
     // --- HÀM TẢI VÀ PHÁT AUDIO THỦ CÔNG (LAZY LOAD) ---
     // --- HÀM TẢI VÀ PHÁT AUDIO THỦ CÔNG (LAZY LOAD) ---
@@ -7051,6 +7119,15 @@ const DictationModal = ({ isOpen, onClose }) => {
     const [view, setView] = React.useState('books'); // 'books' | 'parts' | 'practice'
     const [isLoading, setIsLoading] = React.useState(false);
     const [progress, setProgress] = React.useState(0);
+    const hasFinishedRef = React.useRef(false);
+   const handleClose = () => {
+    onClose(); // Đóng modal trước
+    if (hasFinishedRef.current) {
+        // Nếu cờ trong két sắt báo 'true' -> Gọi quảng cáo
+        setTimeout(() => window.dispatchEvent(new CustomEvent('triggerAd')), 500);
+        hasFinishedRef.current = false; // Bắn xong thì reset cờ về false
+    }
+};
     
     // Data states
     const [bookCache, setBookCache] = React.useState({});
@@ -7077,6 +7154,7 @@ const DictationModal = ({ isOpen, onClose }) => {
             // Reset state khi đóng
             setView('books');
             setPartsList([]);
+            hasFinishedRef.current = false;
         }
     }, [isOpen]);
 
@@ -7122,7 +7200,7 @@ const DictationModal = ({ isOpen, onClose }) => {
             {/* HEADER */}
             <div className="flex justify-between items-center px-6 py-5 border-b border-zinc-100 bg-white z-10 shadow-sm shrink-0">
                 <h2 className="text-xl font-black text-zinc-900 uppercase tracking-tight">Luyện Nghe Chính Tả</h2>
-                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
+                <button onClick={handleClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all">✕</button>
             </div>
             
             {/* NỘI DUNG */}
@@ -7153,7 +7231,7 @@ const DictationModal = ({ isOpen, onClose }) => {
                         </div>
                        <span className="text-xs sm:text-sm font-bold text-zinc-500 mt-1.5 text-left">TỪ ĐƠN</span>
                     </button>
-<button 
+ <button 
                         onClick={() => handleLoadBook('minna2', 'MINNA NO NIHONGO N4')}
                         className="w-full p-5 sm:p-6 bg-white border border-zinc-200 rounded-2xl hover:border-indigo-400 hover:shadow-md transition-all flex flex-col items-start active:scale-95 group relative overflow-hidden"
                     >
@@ -7164,6 +7242,7 @@ const DictationModal = ({ isOpen, onClose }) => {
                         </div>
                        <span className="text-xs sm:text-sm font-bold text-zinc-500 mt-1.5 text-left">TỪ ĐƠN</span>
                     </button>
+
 
                     {/* Sách chờ cập nhật */}
                     <button disabled className="w-full p-5 sm:p-6 bg-zinc-50/50 border border-zinc-100 rounded-2xl flex flex-col items-start cursor-not-allowed opacity-60 relative overflow-hidden">
@@ -7180,6 +7259,12 @@ const DictationModal = ({ isOpen, onClose }) => {
                         <span className="text-xs sm:text-sm font-bold text-zinc-400 mt-1.5 text-left">Sắp ra mắt...</span>
                     </button>
 
+                         <button disabled className="w-full p-5 sm:p-6 bg-zinc-50/50 border border-zinc-100 rounded-2xl flex flex-col items-start cursor-not-allowed opacity-60 relative overflow-hidden">
+                     <div className="flex justify-between items-center w-full">
+                            <span className="text-lg sm:text-xl font-black text-zinc-400 uppercase text-left leading-tight">MINNA NO NIHONGO N4</span>
+                        </div>
+                        <span className="text-xs sm:text-sm font-bold text-zinc-400 mt-1.5 text-left">Sắp ra mắt...</span>
+                    </button>
 
                         
                 </div>
@@ -7197,7 +7282,7 @@ const DictationModal = ({ isOpen, onClose }) => {
                     </button>
                     <h2 className="text-sm font-black text-zinc-900 uppercase">{selectedBookTitle}</h2>
                 </div>
-                <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all outline-none">✕</button>
+                <button onClick={handleClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all outline-none">✕</button>
             </div>
             
             <div className="p-4 space-y-3 overflow-y-auto custom-scrollbar flex-1">
@@ -7243,7 +7328,11 @@ const DictationModal = ({ isOpen, onClose }) => {
                     <DictationPracticeView 
                         lessonData={partsList[currentPartIndex]} 
                         onBack={() => setView('parts')}
-                        onClose={onClose}
+                        onClose={handleClose} // Đổi từ onClose thành handleClose
+                        onLessonComplete={() => {
+                            // Cắm cờ vào két sắt khi học xong
+                            hasFinishedRef.current = true;
+                        }}
                     />
                 )}
             </div>
@@ -7254,7 +7343,7 @@ const DictationModal = ({ isOpen, onClose }) => {
 // ==========================================
 // 2. COMPONENT LUYỆN TẬP CHÍNH (DICTATION GAME)
 // ==========================================
-const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
+const DictationPracticeView = ({ lessonData, onBack, onClose, onLessonComplete }) => {
     // State bài học
     const [queue, setQueue] = React.useState([]); 
     const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -7287,6 +7376,7 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
     const modeRef = React.useRef(mode);
     const isComposing = React.useRef(false);
    const inputRef = React.useRef(null);
+   
     // ================= BỘ CÔNG CỤ XỬ LÝ FURIGANA =================
     // Hàm bóc tách chỉ lấy Kanji: [卵](たまご) -> 卵
     const extractBase = (str) => str ? str.replace(/\[(.*?)\]\([^)]+\)/g, '$1') : '';
@@ -7715,6 +7805,8 @@ const DictationPracticeView = ({ lessonData, onBack, onClose }) => {
             setWrongDetected(false); 
         } else {
             setFinished(true);
+            // GỌI TRỰC TIẾP Ở ĐÂY ĐỂ BÁO CÁO LÊN CHA
+            if (onLessonComplete) onLessonComplete(); 
         }
     };
 
@@ -8035,7 +8127,8 @@ else if (isShowingText || showVi) {
                         <button onClick={() => initLesson(true)} className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-black text-[11px] tracking-widest uppercase shadow-lg shadow-indigo-200 active:scale-95 transition-all outline-none">
                             HỌC LẠI TỪ ĐẦU
                         </button>
-                        <button onClick={onBack} className="w-full py-4 bg-white border-2 border-zinc-200 text-zinc-500 hover:text-zinc-800 hover:border-zinc-800 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95 outline-none">
+                        
+                       <button onClick={onBack} className="w-full py-4 bg-white border-2 border-zinc-200 text-zinc-500 hover:text-zinc-800 hover:border-zinc-800 font-black text-[11px] uppercase tracking-widest rounded-xl transition-all active:scale-95 outline-none">
                             VỀ DANH SÁCH BÀI
                         </button>
                     </div>
@@ -8060,6 +8153,7 @@ const App = () => {
     const [globalVerbReadings, setGlobalVerbReadings] = useState({});
     const [isKaiwaOpen, setIsKaiwaOpen] = useState(false);
     const [isDictionaryOpen, setIsDictionaryOpen] = useState(false);
+    const [isCourseModalOpen, setIsCourseModalOpen] = useState(false);
   // THÊM MỚI Ở ĐÂY: State cho Nghe chính tả
     const [isDictationMenuOpen, setIsDictationMenuOpen] = useState(false);
     const [isDictationGameOpen, setIsDictationGameOpen] = useState(false);
@@ -8067,6 +8161,41 @@ const App = () => {
     const [dictationAudioPath, setDictationAudioPath] = useState('');
     const [dictationMode, setDictationMode] = useState('word');
     
+
+
+// === CỖ MÁY CHẶN NGỘP (QUẢN LÝ HIỆN QUẢNG CÁO) ===
+React.useEffect(() => {
+    const handleTriggerAd = () => {
+        try {
+            const now = Date.now();
+            const lastShown = parseInt(localStorage.getItem('phadao_last_ad_time') || '0', 10);
+            const ONE_HOUR = 60 * 60 * 1000; // 1 tiếng
+
+            if (now - lastShown > ONE_HOUR) {
+                setIsCourseModalOpen(true);
+                localStorage.setItem('phadao_last_ad_time', now.toString());
+            }
+        } catch (error) {
+            console.error("Lỗi chặn quảng cáo:", error);
+        }
+    };
+
+    // THÊM HÀM NÀY: Bỏ qua luật 1 tiếng, ép buộc hiện pop up
+    const handleForceTriggerAd = () => {
+        setIsCourseModalOpen(true);
+        localStorage.setItem('phadao_last_ad_time', Date.now().toString());
+    };
+
+    window.addEventListener('triggerAd', handleTriggerAd);
+    window.addEventListener('checkDictationAd', handleTriggerAd);
+    window.addEventListener('forceTriggerAd', handleForceTriggerAd); // Lắng nghe sự kiện ép buộc
+
+    return () => {
+        window.removeEventListener('triggerAd', handleTriggerAd);
+        window.removeEventListener('checkDictationAd', handleTriggerAd);
+        window.removeEventListener('forceTriggerAd', handleForceTriggerAd); // Xóa lắng nghe
+    };
+}, []);
     // STATE MỚI CHO TÍNH NĂNG TRẮC NGHIỆM ĐỘNG TỪ
 const [verbPracticeMode, setVerbPracticeMode] = useState('essay'); // 'essay' (tự luận) hoặc 'quiz' (trắc nghiệm)
 const [verbSelectedForms, setVerbSelectedForms] = useState([]); // Mảng lưu các thể đã chọn (ít nhất 4)
@@ -8245,6 +8374,12 @@ React.useEffect(() => {
 
     return (
         <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-gray-200">
+
+{/* THÊM ĐOẠN NÀY ĐỂ ÉP LOAD ẢNH VÀO BỘ NHỚ TRÌNH DUYỆT */}
+            <div style={{ display: 'none' }}>
+                <img src="https://cdn.jsdelivr.net/gh/datto02/luyenvietkanji@main/anhmt.png" alt="preload pc" />
+                <img src="https://cdn.jsdelivr.net/gh/datto02/luyenvietkanji@main/anhdt.jpg" alt="preload mobile" />
+            </div>
             
 {/* 1. TRANG CHỦ TỐI GIẢN (CHỈ CÓ NÚT) */}
 <LandingPage 
@@ -8252,6 +8387,7 @@ React.useEffect(() => {
     onOpenReviewList={() => setIsReviewListOpen(true)}
     onOpenDictionary={() => setIsDictionaryOpen(true)}
     onOpenDictation={() => setIsDictationMenuOpen(true)}
+    onOpenCourse={() => setIsCourseModalOpen(true)}
     onOpenSetup={(target) => {
     
         if (target === 'kaiwa') {
@@ -8266,7 +8402,11 @@ React.useEffect(() => {
         }
     }}
 />
-
+{/* GỌI POPUP KHÓA HỌC */}
+<CourseModal 
+    isOpen={isCourseModalOpen} 
+    onClose={() => setIsCourseModalOpen(false)} 
+/>
             {/* 2. MODAL NHẬP LIỆU & THIẾT LẬP BÀI HỌC CHUNG */}
             <StudySetupModal 
                 isOpen={setupConfig.isOpen}
