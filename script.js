@@ -8223,7 +8223,7 @@ const JLPTPrepModal = ({ isOpen, onClose }) => {
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-black text-zinc-900 mb-4 text-center leading-tight uppercase">
-                        Lò luyện thi JLPT <br/> <span className="text-blue-600">Thực chiến DORA</span>
+                        Lò luyện thi JLPT <br/> <span className="text-blue-600">MIỄN PHÍ CÙNG DORA</span>
                     </h2>
 
                     <div className="bg-zinc-50 border border-zinc-100 rounded-2xl p-5 mb-8 text-center">
