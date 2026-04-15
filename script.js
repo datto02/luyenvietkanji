@@ -2789,11 +2789,11 @@ React.useEffect(() => {
     }, [isDocsModalOpen]);
     const notifications = [
         { 
-            id: 6, 
-            title: '🎧 LUYỆN NGHE CHÍNH TẢ', 
-            date: '01/04/2026', 
-            content: 'Tính năng Luyện nghe chép chính tả đã chính thức ra mắt! Bấm ngay vào "LUYỆN NGHE" ở trang chủ để trải nghiệm nhé!'
-        }
+        id: 7, 
+        title: '🔥 KHAI MỞ LÒ LUYỆN JLPT MIỄN PHÍ', 
+        date: '15/04/2026', 
+        content: 'Lò luyện đề JLPT cùng DORA đã chính thức mở cửa! Dành riêng cho anh em hệ "bận rộn" nhưng quyết tâm thi là đỗ. Học đúng trọng tâm, ngày 10 phút là đủ. Lớp có kỷ luật thép: Làm tốt có thưởng, lười là nghe chửi! Bấm ngay vào "ÔN LUYỆN JLPT" ở trang chủ để chọn cấp độ và giữ chỗ nhé.'
+    }
         
     ];
 
