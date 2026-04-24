@@ -3117,7 +3117,7 @@ TÀI LIỆU HỌC TẬP
             <div className="p-4 space-y-3 overflow-y-auto custom-scrollbar">
 
                   {/* nhóm học tập */}
-                <a href="https://zalo.me/g/rky9oqbibm4retvqmidh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
+                <a href="https://zalo.me/g/l5mku9ie9jjk9ozgqaym" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
                     {/* Đã đổi: bg-blue -> bg-orange */}
                     <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         {/* Đã đổi: Icon File -> Icon Nhóm người */}
@@ -8243,7 +8243,7 @@ const JLPTPrepModal = ({ isOpen, onClose }) => {
                     {/* 3 Nút Cấp Độ Hàng Ngang (Đổi sang hover màu xanh dương) */}
                     <div className="grid grid-cols-3 gap-3 w-full">
                         {[
-                            { id: 'N5', link: 'https://zalo.me/g/rky9oqbibm4retvqmidh' },
+                            { id: 'N5', link: 'https://zalo.me/g/l5mku9ie9jjk9ozgqaym' },
                             { id: 'N4', link: 'https://zalo.me/g/gmorq9fx2ctiia0nnekt' },
                             { id: 'N3', link: 'https://zalo.me/g/exn2luuvzoh4mws4bn5n' }
                         ].map((lvl) => (
