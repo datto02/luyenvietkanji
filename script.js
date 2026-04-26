@@ -3136,7 +3136,7 @@ TÀI LIỆU HỌC TẬP
                 </a>
 
                                           {/* nhóm học tập */}
-                <a href="https://zalo.me/g/gmorq9fx2ctiia0nnekt" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
+                <a href="https://zalo.me/g/rtfwntm2upzulpdhgixu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 hover:border-purple-200 hover:bg-purple-50 transition-all group">
                     {/* Đã đổi: bg-blue -> bg-orange */}
                     <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
                         {/* Đã đổi: Icon File -> Icon Nhóm người */}
@@ -8244,7 +8244,7 @@ const JLPTPrepModal = ({ isOpen, onClose }) => {
                     <div className="grid grid-cols-3 gap-3 w-full">
                         {[
                             { id: 'N5', link: 'https://zalo.me/g/l5mku9ie9jjk9ozgqaym' },
-                            { id: 'N4', link: 'https://zalo.me/g/gmorq9fx2ctiia0nnekt' },
+                            { id: 'N4', link: 'https://zalo.me/g/rtfwntm2upzulpdhgixu' },
                             { id: 'N3', link: 'https://zalo.me/g/exn2luuvzoh4mws4bn5n' }
                         ].map((lvl) => (
                             <a 
