@@ -8241,11 +8241,12 @@ const JLPTPrepModal = ({ isOpen, onClose }) => {
                     </div>
 
                     {/* 3 Nút Cấp Độ Hàng Ngang (Đổi sang hover màu xanh dương) */}
-                    <div className="grid grid-cols-3 gap-3 w-full">
+                    <div className="grid grid-cols-4 gap-3 w-full">
                         {[
-                            { id: 'N5', link: 'https://zalo.me/g/l5mku9ie9jjk9ozgqaym' },
-                            { id: 'N4', link: 'https://zalo.me/g/rtfwntm2upzulpdhgixu' },
-                            { id: 'N3', link: 'https://zalo.me/g/exn2luuvzoh4mws4bn5n' }
+                            { id: 'N5', link: 'https://zalo.me/g/rky9oqbibm4retvqmidh' },
+                            { id: 'N4', link: 'https://zalo.me/g/gmorq9fx2ctiia0nnekt' },
+                            { id: 'N3', link: 'https://zalo.me/g/exn2luuvzoh4mws4bn5n' },
+                            { id: 'N2', link: 'https://zalo.me/g/tvcmippfetkbqlu5awbd' }
                         ].map((lvl) => (
                             <a 
                                 key={lvl.id}
