@@ -8190,7 +8190,7 @@ const JLPTPrepModal = ({ isOpen, onClose }) => {
                         {[
                             { id: 'N5', link: 'https://zalo.me/g/l5mku9ie9jjk9ozgqaym' },
                             { id: 'N4', link: 'https://zalo.me/g/rtfwntm2upzulpdhgixu' },
-                            { id: 'N3', link: 'https://zalo.me/g/exn2luuvzoh4mws4bn5n' },
+                            { id: 'N3', link: 'https://zalo.me/g/2rvkkieaiitbgfighpqg' },
                             { id: 'N2', link: 'https://zalo.me/g/tvcmippfetkbqlu5awbd' }
                         ].map((lvl) => (
                             <a 
