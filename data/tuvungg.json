@@ -34019,7 +34019,7 @@
     "reading": "くうこう",
     "meaning": "sân bay"
   },
-  "曇": {
+  "雲": {
     "reading": "くも",
     "meaning": "mây"
   },
@@ -34987,7 +34987,7 @@
     "reading": "くんれん",
     "meaning": "huấn luyện"
   },
-  "軽営": {
+  "経営": {
     "reading": "けいえい",
     "meaning": "kinh doanh"
   },
@@ -35635,7 +35635,7 @@
     "reading": "むーどいっしょく",
     "meaning": "một bầu không khí"
   },
-  "涼暗い": {
+  "薄暗い": {
     "reading": "うすぐらい",
     "meaning": "hơi tối, âm u"
   },
@@ -35929,7 +35929,11 @@
   },
   "尽く": {
     "reading": "つく",
-    "meaning": "hết sạch; phục vụ tận tâm"
+    "meaning": "hết sạch, cạn kiệt"
+  },
+   "尽くす": {
+    "reading": "つくす",
+    "meaning": "cống hiến, phục vụ tận tâm"
   },
   "欠ける": {
     "reading": "かける",
@@ -36140,7 +36144,7 @@
     "meaning": "rậm rạp, dày (tóc/lông)"
   },
   "叶える": {
-    "reading": "",
+    "reading": "かなえる",
     "meaning": "thực hiện (ước mơ)"
   },
   "映す": {
@@ -37447,8 +37451,8 @@
     "reading": "",
     "meaning": "thư giãn"
   },
-  "腹を立つ": {
-    "reading": "はらをたつ",
+  "腹が立つ": {
+    "reading": "はらがたつ",
     "meaning": "tức giận"
   },
   "引用": {
@@ -38300,7 +38304,7 @@
     "meaning": "hơn nữa"
   },
   "倣う": {
-    "reading": "なめう",
+    "reading": "ならう",
     "meaning": "phỏng theo,bắt chước theo,làm theo"
   },
   "配達": {
@@ -38454,10 +38458,6 @@
   "服装": {
     "reading": "ふくそう",
     "meaning": "trang phục"
-  },
-  "大比": {
-    "reading": "たいひ",
-    "meaning": "so sánh lớn (ít dùng)"
   },
   "冗談": {
     "reading": "じょうだん",
@@ -39112,7 +39112,7 @@
     "meaning": "cảm ơn"
   },
   "気に入る": {
-    "reading": "",
+    "reading": "きにいる",
     "meaning": "thích"
   },
   "きっかけ": {
