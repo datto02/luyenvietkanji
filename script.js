@@ -2773,35 +2773,52 @@ const CourseModal = ({ isOpen, onClose }) => {
 };
 const getDaysToJLPT = () => {
     const now = new Date();
-    const currentYear = now.getFullYear();
+    // Đưa về mốc 0h 0p 0s của ngày hôm nay để tính toán chính xác số ngày
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
     const getFirstSunday = (year, month) => {
         let date = new Date(year, month, 1);
-        while (date.getDay() !== 0) { // 0 là Chủ Nhật
+        while (date.getDay() !== 0) {
             date.setDate(date.getDate() + 1);
         }
         return date;
     };
 
+    let currentYear = now.getFullYear();
     let julyExam = getFirstSunday(currentYear, 6); // Tháng 7
     let decExam = getFirstSunday(currentYear, 11); // Tháng 12
+    
     let targetDate;
 
-    if (now <= julyExam) {
+    // Xác định kỳ thi gần nhất
+    if (today <= julyExam) {
         targetDate = julyExam;
-    } else if (now <= decExam) {
+    } else if (today <= decExam) {
         targetDate = decExam;
     } else {
         targetDate = getFirstSunday(currentYear + 1, 6);
     }
 
-    const diffTime = targetDate - now;
-    return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffTime = targetDate - today;
+    return Math.round(diffTime / (1000 * 60 * 60 * 24));
 };
+
 // --- COMPONENT: TRANG CHỦ CHUYÊN NGHIỆP ---
 const LandingPage = ({ srsData, onOpenReviewList, onOpenSetup, onOpenDictionary, dbData, onOpenDictation, onOpenCourse, onOpenJLPT }) => {
-    const daysLeft = getDaysToJLPT();
-    const isUrgent = daysLeft <= 30;
+
+    const [daysLeft, setDaysLeft] = useState(getDaysToJLPT());
+
+useEffect(() => {
+    const timer = setInterval(() => {
+        setDaysLeft(getDaysToJLPT());
+    }, 60000); // 1 phút kiểm tra lại 1 lần, cực nhẹ máy
+    return () => clearInterval(timer);
+}, []);
+
+// Phân loại trạng thái để đổ màu
+const isExamDay = daysLeft === 0;
+const isUrgent = daysLeft > 0 && daysLeft <= 30;
+    
     const featuresRef = useRef(null);
     const [isDocsModalOpen, setIsDocsModalOpen] = useState(false);
     const [isNotifOpen, setIsNotifOpen] = useState(false);
@@ -2943,28 +2960,33 @@ React.useEffect(() => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
                     <div className="animate-in slide-in-from-left-8 duration-700">
                         {/* Ẩn trên mobile bằng hidden md:inline-block */}
-                       <div className={`md:inline-block px-4 py-1.5 mb-5 border rounded-full shadow-sm transition-all duration-700 ${
-    isUrgent 
-    ? 'bg-red-50 border-red-100 animate-pulse' 
-    : 'bg-[#EEF3FF] border-[#D0DFFF]'
+                     <div className={`md:inline-block px-4 py-1.5 mb-5 border rounded-full shadow-sm transition-all duration-700 ${
+    isExamDay 
+        ? 'bg-emerald-50 border-emerald-100 shadow-emerald-100' 
+        : isUrgent 
+            ? 'bg-red-50 border-red-100 animate-pulse' 
+            : 'bg-[#EEF3FF] border-[#D0DFFF]'
 }`}>
     <span className={`text-[11px] font-black tracking-widest uppercase flex items-center gap-2 ${
-        isUrgent ? 'text-red-600' : 'text-[#23376D]'
+        isExamDay 
+            ? 'text-emerald-600' 
+            : isUrgent 
+                ? 'text-red-600' 
+                : 'text-[#23376D]'
     }`}>
-        {/* Icon đồng hồ */}
-        <svg 
-            width="14" 
-            height="14" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="3" 
-            className={isUrgent ? 'text-red-500' : 'text-[#4A69BD]'}
-        >
-            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-        </svg>
+        {/* Icon thay đổi theo trạng thái */}
+        {isExamDay ? (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        ) : (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className={isUrgent ? 'text-red-500' : 'text-[#4A69BD]'}>
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+        )}
         
-        CÒN {daysLeft} NGÀY ĐẾN KỲ THI JLPT
+        {/* Nội dung chữ */}
+        {isExamDay ? "CHÚC CÁC BẠN THI TỐT" : `CÒN ${daysLeft} NGÀY ĐẾN KỲ THI JLPT`}
     </span>
 </div>
                         <h1 className="text-3xl md:text-[4rem] font-bold tracking-tight leading-[1.05] mb-6 text-zinc-900">
