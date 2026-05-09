@@ -2959,15 +2959,15 @@ React.useEffect(() => {
             <section className="pt-28 pb-16 px-6 lg:px-8 max-w-7xl mx-auto min-h-[90vh] flex items-center">
                 <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
                     <div className="animate-in slide-in-from-left-8 duration-700">
-                        {/* Ẩn trên mobile bằng hidden md:inline-block */}
-                     <div className={`md:inline-block px-4 py-1.5 mb-5 border rounded-full shadow-sm transition-all duration-700 ${
+                    
+<div className={`mx-auto md:mx-0 w-fit md:inline-block px-4 py-1.5 mb-5 border rounded-full shadow-sm transition-all duration-700 ${
     isExamDay 
         ? 'bg-emerald-50 border-emerald-100 shadow-emerald-100' 
         : isUrgent 
             ? 'bg-red-50 border-red-100 animate-pulse' 
             : 'bg-[#EEF3FF] border-[#D0DFFF]'
 }`}>
-    <span className={`text-[11px] font-black tracking-widest uppercase flex items-center gap-2 ${
+    <span className={`text-[11px] font-black tracking-widest uppercase flex items-center justify-center gap-2 ${
         isExamDay 
             ? 'text-emerald-600' 
             : isUrgent 
