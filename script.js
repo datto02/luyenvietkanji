@@ -2744,7 +2744,7 @@ const CourseModal = ({ isOpen, onClose }) => {
                         <div className="flex gap-3 flex-row">
                             {/* Nút Facebook */}
                             <a 
-                                href="https://www.messenger.com/t/874210086055767/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0" 
+                                href="m.me/874210086055767" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className="flex-1 py-3.5 md:py-4 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl shadow-lg shadow-blue-200 transition-all active:scale-95 flex items-center justify-center gap-2 uppercase tracking-wider text-[11px] md:text-xs"
