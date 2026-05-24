@@ -3020,12 +3020,12 @@ React.useEffect(() => {
         onClick={onOpenExamPrep}
         className="group bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border-2 border-indigo-200 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden"
     >
-        <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">HOT</div>
+        <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">SỰ KIỆN HOT</div>
         <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
         <h3 className="text-xl font-bold mb-1 text-zinc-900 group-hover:text-indigo-700 transition-colors">THI THỬ JLPT</h3>
-        <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">Đăng ký dự thi ngay</p>
+        <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
     </div> 
   {/* KHÓA HỌC (THÊM VÀO ĐÂY) */}
 <div onClick={onOpenCourse} className="group bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
@@ -8312,7 +8312,7 @@ const ExamPrepModal = ({ isOpen, onClose }) => {
 
                 <div className="p-8 sm:p-10 flex flex-col items-center pb-12">
                     <div className="bg-blue-600 text-white text-[11px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] mb-6 shadow-lg animate-pulse">
-                        SỰ KIỆN NỔI BẬT
+                        MIỄN PHÍ 100%
                     </div>
 
                     <h2 className="text-2xl sm:text-3xl font-black text-zinc-900 mb-6 text-center leading-tight uppercase">
