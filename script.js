@@ -3016,21 +3016,19 @@ React.useEffect(() => {
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg">Phương pháp học Flashcard, lặp lại ngắt quãng, và nhiều thứ khác...</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
-               <div 
-       onClick={() => { 
-
-window.open('https://doranihongo.com', '_blank');
-
-}}
-        className="group bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border-2 border-indigo-200 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden"
-    >
-        <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">SỰ KIỆN HOT</div>
-        <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-        </div>
-        <h3 className="text-xl font-bold mb-1 text-zinc-900 group-hover:text-indigo-700 transition-colors">THI THỬ JLPT</h3>
-        <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
-    </div> 
+             <a 
+    href="https://doranihongo.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="block group bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border-2 border-indigo-200 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden"
+>
+    <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">SỰ KIỆN HOT</div>
+    <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-zinc-900 group-hover:text-indigo-700 transition-colors">THI THỬ JLPT</h3>
+    <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
+</a>
   {/* KHÓA HỌC (THÊM VÀO ĐÂY) */}
 <div onClick={onOpenCourse} className="group bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
     <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
