@@ -3029,29 +3029,8 @@ React.useEffect(() => {
     <h3 className="text-xl font-bold mb-1 text-zinc-900 group-hover:text-indigo-700 transition-colors">THI THỬ JLPT</h3>
     <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
 </a>
-  {/* KHÓA HỌC (THÊM VÀO ĐÂY) */}
-<div onClick={onOpenCourse} className="group bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-    <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
-        HOT
-    </div>
-    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300 shadow-sm">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
-    </div>
-    <h3 className="text-xl font-bold mb-1 text-indigo-900">KHÓA HỌC</h3>
-    <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">JLPT tích hợp KAIWA</p>
-</div>
-                    {/* 7. LUYỆN JLPT - ĐÃ MỞ KHÓA */}
-<div onClick={onOpenJLPT} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-    <div className="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
-        MIỄN PHÍ
-    </div>
-    {/* Đã sửa group-hover:bg-emerald-500 thành group-hover:bg-zinc-900 ở dòng dưới */}
-    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>
-    </div>
-    <h3 className="text-xl font-bold mb-1 text-zinc-900">ÔN LUYỆN JLPT</h3>
-    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Dành cho người bận</p>
-</div>
+ 
+                   
             
 {/* 8. TỪ ĐIỂN BỘ THỦ */}
                         <div onClick={onOpenDictionary} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
@@ -3144,7 +3123,30 @@ React.useEffect(() => {
     <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">TỪ N5 ĐẾN N1</p>
 </div>
 
+     {/* 7. LUYỆN JLPT - ĐÃ MỞ KHÓA */}
+<div onClick={onOpenJLPT} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+    <div className="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+        MIỄN PHÍ
+    </div>
+    {/* Đã sửa group-hover:bg-emerald-500 thành group-hover:bg-zinc-900 ở dòng dưới */}
+    <div className="w-12 h-12 bg-zinc-50 rounded-xl flex items-center justify-center mb-6 text-zinc-900 group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-zinc-900">ÔN LUYỆN JLPT</h3>
+    <p className="text-sm font-medium text-zinc-400 mb-4 uppercase tracking-wide">Dành cho người bận</p>
+</div>
 
+         {/* KHÓA HỌC (THÊM VÀO ĐÂY) */}
+<div onClick={onOpenCourse} className="group bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-2xl border border-indigo-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+    <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
+        HOT
+    </div>
+    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+    </div>
+    <h3 className="text-xl font-bold mb-1 text-indigo-900">KHÓA HỌC</h3>
+    <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">JLPT tích hợp KAIWA</p>
+</div>
                    
 
                     </div>
