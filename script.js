@@ -3016,6 +3016,17 @@ React.useEffect(() => {
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg">Phương pháp học Flashcard, lặp lại ngắt quãng, và nhiều thứ khác...</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
+               <div 
+        onClick={() => setIsExamPrepOpen(true)} 
+        className="group bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border-2 border-indigo-200 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden"
+    >
+        <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">HOT</div>
+        <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 className="text-xl font-bold mb-1 text-zinc-900 group-hover:text-indigo-700 transition-colors">THI THỬ JLPT</h3>
+        <p className="text-sm font-medium text-indigo-600/80 mb-4 uppercase tracking-wide">Đăng ký dự thi ngay</p>
+    </div>
                        {/* 8. TỪ ĐIỂN BỘ THỦ */}
                         <div onClick={onOpenDictionary} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
                            
@@ -8281,6 +8292,53 @@ const JLPTPrepModal = ({ isOpen, onClose }) => {
         </div>
     );
 };
+const ExamPrepModal = ({ isOpen, onClose }) => {
+    React.useEffect(() => {
+        if (isOpen) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = 'unset';
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [isOpen]);
+    if (!isOpen) return null;
+
+    return (
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200">
+            <div className="bg-white rounded-[2.5rem] shadow-2xl w-full max-w-xl overflow-hidden animate-in zoom-in-95 duration-300 border border-gray-200 relative" onClick={e => e.stopPropagation()}>
+                
+                <button onClick={onClose} className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all z-20">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+
+                <div className="p-8 sm:p-10 flex flex-col items-center pb-12">
+                    <div className="bg-blue-600 text-white text-[11px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] mb-6 shadow-lg animate-pulse">
+                        SỰ KIỆN NỔI BẬT
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl font-black text-zinc-900 mb-6 text-center leading-tight uppercase">
+                        ĐẠI HỘI<br/> <span className="text-indigo-600">THI THỬ JLPT</span>
+                    </h2>
+
+                    <div className="bg-zinc-50 border border-zinc-100 rounded-2xl p-5 mb-8 text-left w-full">
+                        <ul className="text-zinc-700 text-sm sm:text-base font-bold space-y-3">
+                            <li>• Giám thị coi thi như thi thật</li>
+                            <li>• Livestream chữa đề & Bí kíp thi JLPT</li>
+                            <li>• Quà tặng 8 Triệu</li>
+                            <li>• Giống thi thật 99% bám sát xu hướng ra đề</li>
+                        </ul>
+                    </div>
+
+                    <a 
+                        href="https://doranihongo.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-black rounded-2xl shadow-xl transition-all active:scale-95 uppercase tracking-widest text-center"
+                    >
+                        ĐĂNG KÝ NGAY
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+};
 const App = () => {
     // --- STATE QUẢN LÝ ỨNG DỤNG ---
     const [isFlashcardOpen, setIsFlashcardOpen] = useState(false);
@@ -8298,7 +8356,8 @@ const App = () => {
     const [isKaiwaOpen, setIsKaiwaOpen] = useState(false);
     const [isDictionaryOpen, setIsDictionaryOpen] = useState(false);
     const [isCourseModalOpen, setIsCourseModalOpen] = useState(false);
-    const [isJLPTPrepOpen, setIsJLPTPrepOpen] = useState(true);
+    const [isJLPTPrepOpen, setIsJLPTPrepOpen] = useState(false);
+    const [isExamPrepOpen, setIsExamPrepOpen] = useState(true);
   // THÊM MỚI Ở ĐÂY: State cho Nghe chính tả
     const [isDictationMenuOpen, setIsDictationMenuOpen] = useState(false);
     const [isDictationGameOpen, setIsDictationGameOpen] = useState(false);
@@ -8547,6 +8606,7 @@ React.useEffect(() => {
         }
     }}
 onOpenJLPT={() => setIsJLPTPrepOpen(true)}
+onOpenExamPrep={() => setIsExamPrepOpen(true)}
 />
 {/* GỌI POPUP KHÓA HỌC */}
 <CourseModal 
@@ -8622,6 +8682,10 @@ onOpenJLPT={() => setIsJLPTPrepOpen(true)}
                 onSave={handleSaveVocab}
                 dbData={dbData}
             />
+                    <ExamPrepModal 
+    isOpen={isExamPrepOpen} 
+    onClose={() => setIsExamPrepOpen(false)} 
+/>
     <EssayGameModal 
     isOpen={isEssayOpen}
     onClose={() => setIsEssayOpen(false)}
