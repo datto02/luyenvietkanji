@@ -2804,7 +2804,7 @@ const getDaysToJLPT = () => {
 };
 
 // --- COMPONENT: TRANG CHỦ CHUYÊN NGHIỆP ---
-const LandingPage = ({ srsData, onOpenReviewList, onOpenSetup, onOpenDictionary, dbData, onOpenDictation, onOpenCourse, onOpenJLPT }) => {
+const LandingPage = ({ srsData, onOpenReviewList, onOpenSetup, onOpenDictionary, dbData, onOpenDictation, onOpenCourse, onOpenJLPT, onOpenExamPrep }) => {
 
     const [daysLeft, setDaysLeft] = useState(getDaysToJLPT());
 
