@@ -8229,50 +8229,73 @@ else if (isShowingText || showVi) {
     );
 };
 const JLPTMockTestModal = ({ isOpen, onClose }) => {
-    if (!isOpen) return null;
-    return (
-        <div className="fixed inset-0 z-[2000] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fade-in duration-200" onClick={onClose}>
-            <div className="bg-white rounded-[2rem] shadow-2xl w-full max-w-[360px] overflow-hidden animate-in zoom-in-95 duration-300 relative" onClick={e => e.stopPropagation()}>
-                <button onClick={onClose} className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all z-20">✕</button>
-                
-                <div className="p-6 sm:p-8 flex flex-col items-center text-center">
-                    <div className="bg-orange-500 text-white text-[9px] font-black px-3 py-1 rounded-full uppercase tracking-widest mb-4 animate-pulse">HOT • MIỄN PHÍ</div>
-                    
-                    <h2 className="text-2xl font-black text-zinc-900 mb-6 uppercase tracking-tight">
-                        THI THỬ JLPT
-                    </h2>
+    React.useEffect(() => {
+        if (isOpen) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = 'unset';
+        return () => { document.body.style.overflow = 'unset'; };
+    }, [isOpen]);
 
-                    {/* Danh sách 4 dòng gọn gàng */}
-                    <div className="w-full space-y-2 mb-8 text-left">
-                        <div className="flex items-center gap-3 text-xs font-bold text-zinc-700 py-1.5 border-b border-zinc-100">
-                            <span>🎯</span> <span>GIỐNG THI THẬT 99%</span>
+    if (!isOpen) return null;
+
+    return (
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 animate-in fade-in duration-200" onClick={onClose}>
+            {/* Thu nhỏ max-w xuống max-w-xl để vừa vặn hàng ngang, bo góc 3xl tinh tế hơn */}
+            <div className="bg-white rounded-3xl shadow-xl w-full max-w-xl overflow-hidden animate-in zoom-in-95 duration-300 border border-slate-100 relative" onClick={e => e.stopPropagation()}>
+                
+                {/* Nút đóng nhẹ nhàng, gọn gàng hơn */}
+                <button onClick={onClose} className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-slate-100 hover:text-slate-600 transition-all z-20">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+
+                {/* Giảm bớt padding thừa (p-6 sm:p-8) giúp popup gọn gàng */}
+                <div className="p-6 sm:p-8 flex flex-col items-center">
+                    {/* Nhãn trạng thái - Đổi từ bounce sang đổ màu gradient hiện đại, ít rối mắt hơn */}
+                    <div className="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 shadow-sm">
+                        HOT • MIỄN PHÍ 100%
+                    </div>
+
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-1.5 text-center leading-tight uppercase tracking-tight">
+                        Đại hội <span className="text-blue-600">Thi thử JLPT</span>
+                    </h2>
+                    <p className="text-slate-400 text-xs font-medium tracking-wide mb-6 text-center">Trải nghiệm áp lực phòng thi thật</p>
+
+                    {/* 4 câu đặc điểm được xếp thành 1 hàng (grid-cols-4) và giảm padding bên trong */}
+                    <div className="w-full grid grid-cols-4 gap-2 mb-6">
+                        <div className="bg-slate-50 border border-slate-100 p-2.5 py-3 rounded-xl flex flex-col items-center text-center justify-center min-h-[80px]">
+                            <span className="text-xl mb-1">🎯</span>
+                            <span className="text-[10px] font-bold text-slate-700 leading-tight">GIỐNG THI THẬT 99%</span>
                         </div>
-                        <div className="flex items-center gap-3 text-xs font-bold text-zinc-700 py-1.5 border-b border-zinc-100">
-                            <span>👩‍🏫</span> <span>GIÁM THỊ COI THI NGHIÊM NGẶT</span>
+                        <div className="bg-slate-50 border border-slate-100 p-2.5 py-3 rounded-xl flex flex-col items-center text-center justify-center min-h-[80px]">
+                            <span className="text-xl mb-1">👩‍🏫</span>
+                            <span className="text-[10px] font-bold text-slate-700 leading-tight">GIÁM THỊ COI THI</span>
                         </div>
-                        <div className="flex items-center gap-3 text-xs font-bold text-zinc-700 py-1.5 border-b border-zinc-100">
-                            <span>🎬</span> <span>LIVESTREAM CHỮA ĐỀ CHI TIẾT</span>
+                        <div className="bg-slate-50 border border-slate-100 p-2.5 py-3 rounded-xl flex flex-col items-center text-center justify-center min-h-[80px]">
+                            <span className="text-xl mb-1">🎬</span>
+                            <span className="text-[10px] font-bold text-slate-700 leading-tight">LIVESTREAM CHỮA ĐỀ</span>
                         </div>
-                        <div className="flex items-center gap-3 text-xs font-bold text-orange-700 py-1.5">
-                            <span>🎁</span> <span>QUÀ TẶNG TRỊ GIÁ 8 TRIỆU</span>
+                        <div className="bg-slate-50 border border-slate-100 p-2.5 py-3 rounded-xl flex flex-col items-center text-center justify-center min-h-[80px]">
+                            <span className="text-xl mb-1">🎁</span>
+                            <span className="text-[10px] font-bold text-slate-700 leading-tight">QUÀ TẶNG 8 TRIỆU</span>
                         </div>
                     </div>
 
-                    {/* Nút Đăng ký lớn */}
+                    {/* Nút đăng ký to hơn (text-lg, py-4), màu xanh dương (bg-blue-600) kèm shadow mượt hơn */}
                     <a 
                         href="https://doranihongo.com" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-black rounded-2xl shadow-lg shadow-indigo-200 transition-all active:scale-[0.98] text-center uppercase tracking-widest text-sm"
+                        className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all hover:shadow-xl active:scale-[0.98] text-center uppercase tracking-wider flex items-center justify-center gap-2"
                     >
                         ĐĂNG KÝ NGAY
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                     </a>
+                    
+                    <p className="mt-4 text-[10px] text-slate-400 font-medium italic">* Số lượng có hạn, đăng ký sớm để giữ chỗ</p>
                 </div>
             </div>
         </div>
     );
 };
-
 const JLPTPrepModal = ({ isOpen, onClose }) => {
     React.useEffect(() => {
         if (isOpen) {
