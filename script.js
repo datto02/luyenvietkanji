@@ -3016,18 +3016,6 @@ React.useEffect(() => {
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg">Phương pháp học Flashcard, lặp lại ngắt quãng, và nhiều thứ khác...</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
-
-                {/* 1. NÚT THI THỬ JLPT (THÊM MỚI) */}
-    <div onClick={onOpenMockTest} className="group bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-        <div className="absolute top-4 right-4 bg-orange-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">
-            HOT
-        </div>
-        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300 shadow-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3 className="text-xl font-bold mb-1 text-zinc-900">THI THỬ JLPT</h3>
-        <p className="text-sm font-medium text-orange-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
-    </div>
                        {/* 8. TỪ ĐIỂN BỘ THỦ */}
                         <div onClick={onOpenDictionary} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
                            
@@ -8230,62 +8218,6 @@ else if (isShowingText || showVi) {
         </div>
     );
 };
-const JLPTMockTestModal = ({ isOpen, onClose }) => {
-    if (!isOpen) return null;
-    return (
-        <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fade-in duration-200" onClick={onClose}>
-            <div className="bg-white rounded-[2.5rem] shadow-2xl w-full max-w-lg overflow-hidden animate-in zoom-in-95 duration-300 border border-gray-200 relative" onClick={e => e.stopPropagation()}>
-                <button onClick={onClose} className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-zinc-100 text-zinc-500 hover:bg-red-50 hover:text-red-500 transition-all z-20">✕</button>
-                
-                <div className="p-8 sm:p-10 flex flex-col items-center">
-                    <div className="bg-orange-500 text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-[0.2em] mb-4 shadow-lg animate-pulse">
-                        HOT
-                    </div>
-                    
-                    <h2 className="text-3xl font-black text-zinc-900 mb-6 text-center leading-tight uppercase">
-                        Đại hội <br/> <span className="text-indigo-600">Thi thử JLPT</span>
-                    </h2>
-
-                    <div className="w-full space-y-4 mb-8">
-                        {/* Key Highlight nổi bật */}
-                        <div className="bg-zinc-900 text-white p-5 rounded-2xl text-center shadow-lg">
-                            <p className="text-lg font-black tracking-wide uppercase italic text-orange-400">Giống thi thật đến 99%</p>
-                        </div>
-
-                        {/* Danh sách tính năng tập trung vào trải nghiệm thi */}
-                        <div className="grid grid-cols-1 gap-3">
-                            <div className="flex items-center gap-3 p-3 bg-zinc-50 rounded-xl font-bold text-zinc-800">
-                                <span className="text-xl">👩‍🏫</span>
-                                <div>Giám thị coi thi nghiêm ngặt, áp lực như thi thật</div>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 bg-zinc-50 rounded-xl font-bold text-zinc-800">
-                                <span className="text-xl">📊</span>
-                                <div>Đề thi bám sát xu hướng ra đề mới nhất</div>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 bg-zinc-50 rounded-xl font-bold text-zinc-800">
-                                <span className="text-xl">💡</span>
-                                <div>Livestream chữa đề & bí kíp "vượt vũ môn"</div>
-                            </div>
-                            <div className="flex items-center gap-3 p-3 bg-orange-50 rounded-xl font-bold text-orange-800 border border-orange-100">
-                                <span className="text-xl">🎁</span>
-                                <div>Cơ hội nhận quà tặng lên tới 8 Triệu đồng</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a 
-                        href="https://doranihongo.com" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-black rounded-2xl shadow-lg shadow-indigo-200 transition-all active:scale-95 text-center uppercase tracking-widest"
-                    >
-                        ĐĂNG KÝ NGAY
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
-};
 const JLPTPrepModal = ({ isOpen, onClose }) => {
     React.useEffect(() => {
         if (isOpen) {
@@ -8373,8 +8305,7 @@ const App = () => {
     const [dictationData, setDictationData] = useState([]);
     const [dictationAudioPath, setDictationAudioPath] = useState('');
     const [dictationMode, setDictationMode] = useState('word');
-
-    const [isMockTestOpen, setIsMockTestOpen] = useState(true);
+    
 
 
 // === CỖ MÁY CHẶN NGỘP (QUẢN LÝ HIỆN QUẢNG CÁO) ===
@@ -8616,11 +8547,6 @@ React.useEffect(() => {
         }
     }}
 onOpenJLPT={() => setIsJLPTPrepOpen(true)}
-
-/>
-<JLPTMockTestModal 
-    isOpen={isMockTestOpen} 
-    onClose={() => setIsMockTestOpen(false)} 
 />
 {/* GỌI POPUP KHÓA HỌC */}
 <CourseModal 
