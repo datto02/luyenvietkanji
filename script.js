@@ -3017,7 +3017,11 @@ React.useEffect(() => {
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
                <div 
-        onClick={onOpenExamPrep}
+       onClick={() => { 
+
+window.open('https://doranihongo.com', '_blank');
+
+}}
         className="group bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border-2 border-indigo-200 shadow-lg hover:shadow-xl transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden"
     >
         <div className="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">SỰ KIỆN HOT</div>
