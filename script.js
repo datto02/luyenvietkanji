@@ -3016,15 +3016,15 @@ React.useEffect(() => {
                         <p className="text-zinc-500 max-w-2xl mx-auto text-lg">Phương pháp học Flashcard, lặp lại ngắt quãng, và nhiều thứ khác...</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
-                {/* Thêm nút này vào danh sách tính năng */}
-<div onClick={() => setIsMockTestOpen(true)} className="group bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
-    <div className="absolute top-4 right-4 bg-orange-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">HOT</div>
-    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300 shadow-sm">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+               {/* 1. THÊM NÚT THI THỬ JLPT MỚI */}
+    <div onClick={onOpenMockTest} className="group bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
+        <div className="absolute top-4 right-4 bg-orange-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">HOT</div>
+        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 className="text-xl font-bold mb-1 text-zinc-900">THI THỬ JLPT</h3>
+        <p className="text-sm font-medium text-orange-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
     </div>
-    <h3 className="text-xl font-bold mb-1 text-zinc-900">THI THỬ JLPT</h3>
-    <p className="text-sm font-medium text-orange-600/80 mb-4 uppercase tracking-wide">Giống thi thật 99%</p>
-</div>
 
                        {/* 8. TỪ ĐIỂN BỘ THỦ */}
                         <div onClick={onOpenDictionary} className="group bg-white p-8 rounded-2xl border border-zinc-100 shadow-sm hover:shadow-md transition-all cursor-pointer hover:-translate-y-1 relative overflow-hidden">
@@ -8625,6 +8625,7 @@ React.useEffect(() => {
         }
     }}
 onOpenJLPT={() => setIsJLPTPrepOpen(true)}
+onOpenMockTest={() => setIsMockTestOpen(true)}
 />
 {/* GỌI POPUP KHÓA HỌC */}
 <CourseModal 
