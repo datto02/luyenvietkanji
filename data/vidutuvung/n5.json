@@ -1,0 +1,30 @@
+{
+  "図書館": {
+    "ja": "図書館で本を借ります。",
+    "vi": "Tôi mượn sách ở thư viện."
+  },
+  "買い物": {
+    "ja": "スーパーへ買い物に行きます。",
+    "vi": "Tôi đi mua sắm ở siêu thị."
+  },
+  "学生": {
+    "ja": "私は日本語学校の学生です。",
+    "vi": "Tôi là học sinh trường tiếng Nhật."
+  },
+  "学校": {
+    "ja": "毎日歩いて学校へ行きます。",
+    "vi": "Mỗi ngày tôi đi bộ đến trường."
+  },
+  "先生": {
+    "ja": "先生に分かりませんと伝えます。",
+    "vi": "Tôi nói với thầy giáo là tôi không hiểu."
+  },
+  "本": {
+    "ja": "この本はとても面白いです。",
+    "vi": "Quyển sách này rất thú vị."
+  },
+  "辞書": {
+    "ja": "分からない言葉は辞書で引きます。",
+    "vi": "Tôi tra từ điển những từ không hiểu."
+  }
+}
