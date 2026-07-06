@@ -9520,7 +9520,7 @@
     "meaning": "rất, cũng được, vừa đủ"
   },
   "大分": {
-    "reading": "だいぶ - だいぶん",
+    "reading": "だいぶ",
     "meaning": "nhiều, khá"
   },
   "すっかり": {
@@ -10797,7 +10797,7 @@
   },
   "景気": {
     "reading": "けいき",
-    "meaning": " tình hình kinh tế"
+    "meaning": "tình hình kinh tế"
   },
   "募金": {
     "reading": "ぼきん",
@@ -11377,7 +11377,11 @@
   },
   "ずるい": {
     "reading": "ずるい",
-    "meaning": "gian xảo"
+    "meaning": "gian xảo, khôn lỏi"
+  },
+   "狡い": {
+    "reading": "ずるい",
+    "meaning": "gian xảo, khôn lỏi"
   },
   "憎らしい": {
     "reading": "にくらしい",
@@ -31591,6 +31595,10 @@
     "reading": "こい",
     "meaning": "Cá chép"
   },
+  "こい": {
+    "reading": "こい",
+    "meaning": "Cá chép"
+  },
   "狼": {
     "reading": "おおかみ",
     "meaning": "Con sói"
@@ -31615,7 +31623,15 @@
     "reading": "うそ",
     "meaning": "Lời nói dối"
   },
+  "うそ": {
+    "reading": "うそ",
+    "meaning": "Lời nói dối"
+  },
   "噂": {
+    "reading": "うわさ",
+    "meaning": "tin đồn"
+  },
+  "うわさ": {
     "reading": "うわさ",
     "meaning": "tin đồn"
   },
@@ -33051,7 +33067,7 @@
     "reading": "ふきそく",
     "meaning": "không quy tắc"
   },
-  "頷く": {
+  "うなずく": {
     "reading": "うなずく",
     "meaning": "gật đầu"
   },
@@ -37659,7 +37675,7 @@
     "reading": "まえがみ",
     "meaning": "tóc mái"
   },
-  "薔薇": {
+  "バラ": {
     "reading": "ばら",
     "meaning": "hoa hồng"
   },
@@ -37687,7 +37703,7 @@
     "reading": "そうてい",
     "meaning": "giả định, dự tính"
   },
-  "我が儘": {
+  "我がまま": {
     "reading": "わがまま",
     "meaning": "ích kỷ, bướng bỉnh"
   },
@@ -37735,7 +37751,7 @@
     "reading": "うらやむ",
     "meaning": "ghen tị"
   },
-  "山葵": {
+  "わさび": {
     "reading": "わさび",
     "meaning": "mù tạt (wasabi)"
   },
@@ -37830,10 +37846,6 @@
   "喧嘩": {
     "reading": "けんか",
     "meaning": "cãi vã, đánh nhau"
-  },
-  "狡い": {
-    "reading": "ずるい",
-    "meaning": "gian xảo, khôn lỏi"
   },
   "出国": {
     "reading": "しゅっこく",
@@ -38059,7 +38071,7 @@
     "reading": "および",
     "meaning": "và, cũng như"
   },
-  "船よい": {
+  "船酔い": {
     "reading": "ふなよい",
     "meaning": "say sóng"
   },
@@ -38315,7 +38327,7 @@
     "reading": "おうえんか",
     "meaning": "bài hát cổ vũ"
   },
-  "お仕舞": {
+  "お仕舞い": {
     "reading": "おしまい",
     "meaning": "sự kết thúc"
   },
