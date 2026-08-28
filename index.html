@@ -30,6 +30,22 @@
     <link rel="manifest" href="./icon/site.webmanifest">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Trên máy tính: giữ nguyên 100% hiệu ứng hover:... như cũ.
+      // Trên điện thoại/tablet: TẮT hẳn hiệu ứng hover:... (đổi màu khi "di chuột vào") - vì
+      // thiết bị chạm không có chuột thật, trình duyệt giả lập :hover khi chạm tay rồi không
+      // có gì trigger mouseleave để gỡ nó ra, khiến nút bị dính sáng sau khi thả tay. Định
+      // nghĩa lại variant "hover" của Tailwind để chỉ áp dụng trong @media (hover: hover) -
+      // đúng nghĩa "có con trỏ hover thật" (chuột), không áp dụng trên thiết bị chạm. Bấm 1
+      // lần trên điện thoại vẫn hoạt động bình thường (onClick không phụ thuộc hover:...).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+          },
+        ],
+      };
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +57,7 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-    <script type="module" crossorigin src="/assets/index-Dujm-DIg.js"></script>
+    <script type="module" crossorigin src="/assets/index-DIcac8o2.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Cs8vsJKp.css">
   </head>
   <body>
