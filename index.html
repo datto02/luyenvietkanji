@@ -30,6 +30,21 @@
     <link rel="manifest" href="./icon/site.webmanifest">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Fix lỗi "dính sáng" hover trên di động: mặc định các class hover:... của Tailwind
+      // dùng thẳng pseudo-class :hover, nên khi chạm tay (không có chuột thật để trigger
+      // mouseleave khi rời đi) trạng thái hover bị kẹt lại y như đang rê chuột trên máy tính.
+      // Định nghĩa lại variant "hover" để chỉ áp dụng trên thiết bị có con trỏ hover thật sự
+      // (chuột) qua media feature (hover: hover) - trên điện thoại/máy tính bảng (hover: none)
+      // thì toàn bộ class hover:... sẽ không kích hoạt nữa, tránh hẳn việc bị dính.
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+          },
+        ],
+      };
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
