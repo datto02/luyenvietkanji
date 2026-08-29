@@ -38,13 +38,41 @@
       // nghĩa lại variant "hover" của Tailwind để chỉ áp dụng trong @media (hover: hover) -
       // đúng nghĩa "có con trỏ hover thật" (chuột), không áp dụng trên thiết bị chạm. Bấm 1
       // lần trên điện thoại vẫn hoạt động bình thường (onClick không phụ thuộc hover:...).
+      //
+      // group-hover:/peer-hover: là 2 variant RIÊNG của Tailwind (không tự kế thừa từ addVariant
+      // 'hover' ở trên) - dùng rất nhiều để đổi màu icon/chữ con khi hover vào thẻ cha (card).
+      // Nếu không gate luôn 2 cái này thì icon/chữ bên trong card vẫn bị dính màu trên di động
+      // dù nút cha đã hết dính. Selector giữ nguyên định nghĩa gốc của Tailwind, chỉ bọc thêm
+      // @media (hover: hover).
       tailwind.config = {
         plugins: [
           function ({ addVariant }) {
             addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
           },
         ],
       };
+    </script>
+    <style>
+      /* Tắt hẳn ô sáng mặc định (tap highlight) mà trình duyệt di động tự vẽ khi chạm vào bất
+         kỳ phần tử nào - đây là phần khiến nút trông như bị "dính màu" dù CSS :hover đã được
+         gate ở trên. Áp dụng toàn trang, không cần thêm style riêng cho từng nút. Máy tính
+         không bị ảnh hưởng vì thuộc tính này chỉ có tác dụng khi chạm tay. */
+      * { -webkit-tap-highlight-color: transparent; }
+    </style>
+    <script>
+      // Lưới an toàn cuối cùng, áp dụng cho TOÀN TRANG (không cần sửa từng component):
+      // sau khi ngón tay rời khỏi màn hình, tự động bỏ focus phần tử vừa chạm. Một số trình
+      // duyệt di động vẫn giữ :active/:focus (viền, nền tô) trên nút/link sau khi thả tay dù
+      // :hover đã được gate ở trên, khiến nút trông như bị "dính màu". Chỉ chạy trên thiết bị
+      // chạm thật (matchMedia (hover: none)) nên không đụng gì đến máy tính.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (el && el !== document.body && typeof el.blur === 'function') el.blur();
+        }, { passive: true });
+      }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
     
@@ -57,7 +85,7 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-    <script type="module" crossorigin src="/assets/index-BuoVkuil.js"></script>
+    <script type="module" crossorigin src="/assets/index-DelODi9a.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Cs8vsJKp.css">
   </head>
   <body>
