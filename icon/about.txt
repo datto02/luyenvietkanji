@@ -1,6 +1,5 @@
-This favicon was generated using the following graphics from Twitter Twemoji:
-
-- Graphics Title: 26e9.svg
-- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
-- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/26e9.svg
-- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Bộ icon này được tạo lại từ logo "dora-logo.png" của dự án webrtc
+(C:\Users\Admin\Desktop\webrtc\public\images\dora-logo.png), dùng làm icon
+tab trình duyệt, icon hiển thị khi tìm kiếm trên Google, và icon khi lưu
+trang về màn hình chính điện thoại (favicon*, apple-touch-icon,
+android-chrome-*, favicon.svg).
