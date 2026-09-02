@@ -1,0 +1,1 @@
+import{c as t,j as r,r as e}from"./supabaseClient-9tPJHV2u.js";import{K as o}from"./KanjiPrintPreviewPage-CfYA8JUn.js";import"./accessFlags-DiGeYfkc.js";import"./useAuthUser-CwLjsp1K.js";import"./useBodyScrollLock-Clp9rCcd.js";import"./arrow-left-4UP1wsse.js";t.createRoot(document.getElementById("root")).render(r.jsx(e.StrictMode,{children:r.jsx(o,{mode:"practice"})}));
