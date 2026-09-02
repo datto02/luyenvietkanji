@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản trị | Phá Đảo Tiếng Nhật</title>
+    <!-- Trang quản trị nội bộ (chỉ admin) - không có nội dung để tìm kiếm, không lên Google. -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- File PHẲNG ở gốc (admin.html, không phải admin/index.html) - để gõ "/admin" (không cần
+         dấu / cuối) cũng vào được: GitHub Pages tự phục vụ file "<tên>.html" khi request đúng
+         "/<tên>" không đuôi. Dev server local cũng làm y hệt qua middleware trong vite.config.ts. -->
+    <link rel="canonical" href="https://phadaotiengnhat.com/admin" />
+    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="./icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="module" crossorigin src="/assets/admin-BmsBMRwC.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-9tPJHV2u.js">
+    <link rel="modulepreload" crossorigin href="/assets/useAuthUser-CwLjsp1K.js">
+    <link rel="modulepreload" crossorigin href="/assets/useIsAdmin-BT2-uYzQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-4UP1wsse.js">
+    <link rel="stylesheet" crossorigin href="/assets/supabaseClient-eAD8Yeyg.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>

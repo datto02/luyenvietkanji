@@ -1,0 +1,1 @@
+import{c as t,j as r,r as o}from"./supabaseClient-9tPJHV2u.js";import{K as e}from"./KanjiPrintPreviewPage-DW7_TU0P.js";import"./kanjiInputCache-DKgny_--.js";import"./useAuthUser-CwLjsp1K.js";import"./useBodyScrollLock-Clp9rCcd.js";import"./arrow-left-4UP1wsse.js";t.createRoot(document.getElementById("root")).render(r.jsx(o.StrictMode,{children:r.jsx(e,{mode:"vocab"})}));
