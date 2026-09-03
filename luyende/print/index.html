@@ -12,20 +12,21 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quản trị | Phá Đảo Tiếng Nhật</title>
-    <!-- Trang quản trị nội bộ (chỉ admin) - không có nội dung để tìm kiếm, không lên Google. -->
-    <meta name="robots" content="noindex, nofollow">
-    <!-- File PHẲNG ở gốc (admin.html, không phải admin/index.html) - để gõ "/admin" (không cần
-         dấu / cuối) cũng vào được: GitHub Pages tự phục vụ file "<tên>.html" khi request đúng
-         "/<tên>" không đuôi. Dev server local cũng làm y hệt qua middleware trong vite.config.ts. -->
-    <link rel="canonical" href="https://phadaotiengnhat.com/admin" />
-    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-    <link rel="icon" type="image/svg+xml" href="./icon/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
-    <link rel="manifest" href="./icon/site.webmanifest">
+    <title>Xem trước đề thi | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Xem trước và lưu file PDF đề thi Luyện đề JLPT.">
+    <meta name="robots" content="noindex">
+
+    <!-- Thư mục lồng (dist/luyende/print/index.html), giống hệt quy ước "/luyende" - cần dấu "/"
+         cuối, GitHub Pages tự 301 redirect khi thiếu (dev server giả lập qua middleware trong
+         vite.config.ts). Mã đề (cấp độ + id_link) nằm ở hash phía sau, vd
+         "#n5/13SF0Y" - xem LuyenDePrintPage.jsx. -->
+    <link rel="icon" type="image/x-icon" href="../../icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="../../icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../icon/apple-touch-icon.png">
+    <link rel="manifest" href="../../icon/site.webmanifest">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -58,14 +59,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module" crossorigin src="/assets/admin-aKPK_zEK.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/print-wv1vTh3X.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-NihTSZ-_.js">
-    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BZu_YtKX.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-x0jF7PNH.js">
-    <link rel="modulepreload" crossorigin href="/assets/useAuthUser-BV94pC_7.js">
-    <link rel="modulepreload" crossorigin href="/assets/useIsAdmin-nV6Qxnk4.js">
+    <link rel="modulepreload" crossorigin href="/assets/kanji-print-B8hFzAQb.js">
     <link rel="modulepreload" crossorigin href="/assets/arrow-left-C2gaPnfj.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CiHtTcBT.css">
+    <link rel="stylesheet" crossorigin href="/assets/kanji-print-DPYoXqK0.css">
   </head>
   <body>
      <div id="root"></div>
