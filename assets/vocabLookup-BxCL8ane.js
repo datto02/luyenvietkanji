@@ -1,0 +1,6 @@
+import{c as u}from"./createLucideIcon-x0jF7PNH.js";import{r}from"./index-NihTSZ-_.js";import{s as l}from"./supabaseClient-BZu_YtKX.js";import{u as d}from"./fetchData-CqIYHDvX.js";/**
+ * @license lucide-react v0.546.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const I=[["path",{d:"m21 21-4.34-4.34",key:"14j7rj"}],["circle",{cx:"11",cy:"11",r:"8",key:"4ej97u"}]],S=u("search",I);function B(){const n=d(),[s,t]=r.useState(void 0);return r.useEffect(()=>{if(n===void 0){t(void 0);return}if(!l||!n){t(!1);return}let e=!0;return l.from("profiles").select("vaitro").eq("id",n.id).single().then(({data:i})=>{e&&t((i==null?void 0:i.vaitro)==="admin")}),()=>{e=!1}},[n]),s}const _=(n,s,t,e)=>{const i=(t==null?void 0:t[n])||{},p=n.split("").map(h=>{var m;return((m=e==null?void 0:e[h])==null?void 0:m.sound)||""}).filter(Boolean).join(" "),c={},a=((s==null?void 0:s.hanviet)||"").trim()||p,o=((s==null?void 0:s.reading)||"").trim()||i.reading||"",f=((s==null?void 0:s.meaning)||"").trim()||i.meaning||"";return a&&(c.hanviet=a),o&&(c.reading=o),f&&(c.meaning=f),c},g=(n,s)=>!!(s!=null&&s[n]);export{S,_ as r,B as u,g as w};

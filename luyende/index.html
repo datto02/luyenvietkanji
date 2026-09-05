@@ -66,15 +66,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 
-    <script type="module" crossorigin src="/assets/luyende-BJh0OqI8.js"></script>
+    <!-- Y hệt index.html gốc - cần cho triggerConfetti() trong FlashcardModal.jsx (bắn pháo hoa
+    lúc "Hoàn thành" 1 lượt Flashcard) - THIẾU thì confetti() không tồn tại (typeof === 'undefined'),
+    hàm tự lặng lẽ bỏ qua (xem guard đầu triggerConfetti), Luyện đề trước giờ không có -> Flashcard
+    "Ôn flashcard" ở Luyện đề học xong không bắn pháo hoa, khác hẳn Flashcard Từ vựng/Kanji chính. -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script type="module" crossorigin src="/assets/luyende-1ZY1bbZ_.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-NihTSZ-_.js">
     <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-C0j3Co3j.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-x0jF7PNH.js">
-    <link rel="modulepreload" crossorigin href="/assets/user-BdjYr4Zk.js">
-    <link rel="modulepreload" crossorigin href="/assets/arrow-left-C2gaPnfj.js">
+    <link rel="modulepreload" crossorigin href="/assets/FlashcardModal-C6HSXeqF.js">
     <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BZu_YtKX.js">
-    <link rel="modulepreload" crossorigin href="/assets/useAuthUser-BV94pC_7.js">
-    <link rel="modulepreload" crossorigin href="/assets/useIsAdmin-nV6Qxnk4.js">
+    <link rel="modulepreload" crossorigin href="/assets/fetchData-CqIYHDvX.js">
+    <link rel="modulepreload" crossorigin href="/assets/vocabLookup-BxCL8ane.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-C2gaPnfj.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CiHtTcBT.css">
   </head>
   <body>
