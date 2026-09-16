@@ -1,4 +1,4 @@
-import{r as u,j as e,R as Is,c as Ms}from"./index-CWQ3WYi5.js";import{u as Ps}from"./useBodyScrollLock-C8yXpUnh.js";import{c as _e}from"./createLucideIcon-CtquLijx.js";import{C as Tn,U as zs,L as Hs,b as $s,F as Us,a as Fs,c as Ws}from"./CourseShowcase-BFOJxDIl.js";import{f as jn,L as Bs}from"./fetchData-BdxuL-ft.js";import{r as Gs,T as Vs,S as Ys}from"./vocabLookup-C6MPxhfz.js";import{A as an}from"./arrow-left-BFkE2Qk6.js";import{s as ae}from"./supabaseClient-BZu_YtKX.js";import{u as Ks}from"./useIsAdmin-BIeu1-0t.js";/**
+import{r as u,j as e,R as Is,c as Ms}from"./index-CWQ3WYi5.js";import{u as Ps}from"./useBodyScrollLock-C8yXpUnh.js";import{c as _e}from"./createLucideIcon-CtquLijx.js";import{C as Tn,U as zs,L as Hs,b as $s,F as Us,a as Fs,c as Ws}from"./CourseShowcase-Br0jYvP7.js";import{f as jn,L as Bs}from"./fetchData-BdxuL-ft.js";import{r as Gs,T as Vs,S as Ys}from"./vocabLookup-C6MPxhfz.js";import{A as an}from"./arrow-left-BFkE2Qk6.js";import{s as ae}from"./supabaseClient-BZu_YtKX.js";import{u as Ks}from"./useIsAdmin-BIeu1-0t.js";/**
  * @license lucide-react v0.546.0 - ISC
  *
  * This source code is licensed under the ISC license.
