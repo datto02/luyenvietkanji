@@ -76,7 +76,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 
-    <script type="module" crossorigin src="/assets/tuvung-BjsiwC4v.js"></script>
+    <!-- Pháo hoa mừng học xong (Flashcard/Trắc nghiệm/Tự luận/Luyện viết) - FlashcardModal.jsx
+         v.v. gọi thẳng biến toàn cục `confetti` (không import qua npm), nên trang nào mở được
+         các popup học đó đều PHẢI có script này, y hệt index.html gốc - thiếu là mất pháo hoa
+         (gọi `confetti` lúc đó là undefined, code tự bỏ qua trong im lặng, không báo lỗi gì). -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script type="module" crossorigin src="/assets/tuvung-JLGAf87W.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-CWQ3WYi5.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-CtquLijx.js">
     <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BZu_YtKX.js">
@@ -85,7 +91,7 @@
     <link rel="modulepreload" crossorigin href="/assets/accessFlags-BI8p1wnK.js">
     <link rel="modulepreload" crossorigin href="/assets/CourseShowcase-DBoIvvYd.js">
     <link rel="modulepreload" crossorigin href="/assets/LoginForm-CBh7oos8.js">
-    <link rel="modulepreload" crossorigin href="/assets/App-DZwDXjAa.js">
+    <link rel="modulepreload" crossorigin href="/assets/App-YyDwBajQ.js">
     <link rel="stylesheet" crossorigin href="/assets/index-3cnAUvWW.css">
   </head>
   <body>
