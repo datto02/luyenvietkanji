@@ -12,22 +12,15 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tạo file | Phá Đảo Tiếng Nhật</title>
-    <meta name="description" content="Tạo file PDF Kanji chi tiết, file luyện viết chữ Hán (ô ly) và file từ vựng đi kèm. Tải về in ra học, khỏi cần mua sách ngoài tiệm.">
-    <meta name="keywords" content="tạo file kanji, file luyện viết, file luyện viết kanji, file pdf kanji, file từ vựng đi kèm, in tài liệu học kanji">
-    <meta property="og:title" content="Tạo File PDF Kanji, File Luyện Viết, File Từ Vựng - Miễn Phí">
-    <meta property="og:description" content="Dán Kanji là có ngay file PDF chi tiết, file luyện viết chữ Hán và file từ vựng đi kèm để in ra học ngay.">
+    <title>Luyện Kaiwa | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Luyện nói tiếng Nhật bằng phương pháp Shadowing: nghe hội thoại thật, nhập vai từng nhân vật, luyện phản xạ giao tiếp JLPT N5-N1.">
+    <meta property="og:title" content="Luyện Kaiwa - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="Luyện nói tiếng Nhật bằng phương pháp Shadowing: nghe hội thoại thật, nhập vai từng nhân vật, luyện phản xạ giao tiếp JLPT N5-N1.">
     <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
-    <meta property="og:url" content="https://phadaotiengnhat.com/taofile/">
+    <meta property="og:url" content="https://phadaotiengnhat.com/kaiwa/">
     <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
 
-    <!-- Y HỆT kanji/index.html: trang này nằm trong THƯ MỤC (taofile/index.html -> /taofile/),
-         để nhất quán với /kanji/, /tuvung/, /luyende/ - xem giải thích đầy đủ trong
-         kanji/index.html. 3 trang con /taofile/filekanji/, /taofile/fileluyenviet/,
-         /taofile/filetuvung/ đi kèm (xem thư mục con cùng cấp) - KHÔNG liên quan tới 3 trang
-         xem trước/in filekanji.html, fileluyenviet.html, filetuvung.html ở gốc dù trùng tên
-         slug, xem TaoFilePage.jsx. -->
-    <link rel="canonical" href="https://phadaotiengnhat.com/taofile/" />
+    <link rel="canonical" href="https://phadaotiengnhat.com/kaiwa/" />
     <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
     <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
@@ -45,7 +38,6 @@
             addVariant('hover', '@media (hover: hover) { &:hover }');
             addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
             addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
-            addVariant('desktop', '@media (min-width: 1024px) and (hover: hover) and (pointer: fine)');
           },
         ],
       };
@@ -53,13 +45,21 @@
     <style>
       * { -webkit-tap-highlight-color: transparent; }
 
-      /* Dải CHẾ ĐỘ trên điện thoại (KanjiNav) cuộn ngang được nhưng KHÔNG hiện thanh cuộn -
-         thanh cuộn ngang lộ ra giữa thanh công cụ trông rất lệch. */
+      /* Class TỰ VIẾT (không phải utility có sẵn của Tailwind) - KaiwaPage.jsx đặt class này lên
+         khung ngoài cùng (y hệt KanjiPage.jsx/VocabPage.jsx) để giấu thanh cuộn riêng của khung đó.
+         THIẾU định nghĩa này thì class "no-scrollbar" trong JSX không có tác dụng gì (Tailwind CDN
+         không biết "no-scrollbar" là gì) - ĐÂY LÀ NGUYÊN NHÂN THẬT của việc trang /kaiwa/ cuộn/hiện
+         thanh trượt khác hẳn /kanji/ trên điện thoại dù cùng 1 component KanjiNav. */
       .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
       .no-scrollbar::-webkit-scrollbar { display: none; }
 
-      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - y hệt kanji/index.html (xem giải thích đầy đủ ở đó).
-         CHỈ ẩn thanh trượt, KHÔNG khoá cuộn. */
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - Y HỆT kanji/index.html/tuvung/index.html/taofile/index.html
+         (style này chỉ nằm trong kaiwa/index.html nên không ảnh hưởng trang chủ hay trang nào khác).
+         Trang /kaiwa/ (KaiwaPage.jsx) tuy đã dùng min-h-dvh, nhưng KaiwaModal mở full màn hình
+         trên điện thoại vẫn có thể dư ra vài chục px do cách trình duyệt tính viewport lúc thanh
+         địa chỉ ẩn/hiện, kéo theo thanh trượt/khoảng trắng thừa che mất phần cuối màn hình - CHỈ
+         ẩn thanh trượt, KHÔNG khoá cuộn (không overflow:hidden) để không làm chết cuộn bên trong
+         các popup con (y hệt lý do đã giải thích ở kanji/index.html). */
       html, body { scrollbar-width: none; -ms-overflow-style: none; }
       html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
     </style>
@@ -76,23 +76,21 @@
       }
     </script>
 
+    <!-- BẮT BUỘC - KaiwaPracticeView.jsx dùng thẳng biến toàn cục `Howl` (không import qua npm)
+         để phát audio hội thoại. Thiếu script này thì `Howl` undefined, bấm play không có tác
+         dụng gì (lỗi âm thầm, không báo gì cho người dùng) - y hệt cách index.html gốc đã nạp. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 
-    <script type="module" crossorigin src="/assets/taofile-BxJW35bh.js"></script>
+    <script type="module" crossorigin src="/assets/kaiwa-CB-Uu798.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-CWQ3WYi5.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-CtquLijx.js">
-    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BZu_YtKX.js">
-    <link rel="modulepreload" crossorigin href="/assets/fetchData-DJAJd5Pg.js">
-    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-C8yXpUnh.js">
-    <link rel="modulepreload" crossorigin href="/assets/x-Do-DNkbO.js">
-    <link rel="modulepreload" crossorigin href="/assets/kana-iCLcBn7u.js">
     <link rel="modulepreload" crossorigin href="/assets/KanjiNav-4i1GUZmI.js">
-    <link rel="modulepreload" crossorigin href="/assets/CourseShowcase-Db0WfQOY.js">
-    <link rel="modulepreload" crossorigin href="/assets/LoginForm-CBh7oos8.js">
-    <link rel="modulepreload" crossorigin href="/assets/kanjiInputCache-DfpjvSQz.js">
-    <link rel="modulepreload" crossorigin href="/assets/App-3GZH1HMo.js">
+    <link rel="modulepreload" crossorigin href="/assets/x-Do-DNkbO.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-C8yXpUnh.js">
     <link rel="stylesheet" crossorigin href="/assets/index-3cnAUvWW.css">
   </head>
   <body>
