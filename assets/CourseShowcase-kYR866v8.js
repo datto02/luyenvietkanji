@@ -1,4 +1,4 @@
-import{c as se}from"./createLucideIcon-CtquLijx.js";import{r as T,R as D,j as d}from"./index-CWQ3WYi5.js";import{u as Oo}from"./useBodyScrollLock-C8yXpUnh.js";import{d as Wo,G as _i,H as In}from"./KanjiNav-BsJTc8vT.js";/**
+import{c as se}from"./createLucideIcon-CtquLijx.js";import{r as T,R as D,j as d}from"./index-CWQ3WYi5.js";import{u as Oo}from"./useBodyScrollLock-C8yXpUnh.js";import{d as Wo,G as _i,H as In}from"./KanjiNav-uPcSNMBJ.js";/**
  * @license lucide-react v0.546.0 - ISC
  *
  * This source code is licensed under the ISC license.
