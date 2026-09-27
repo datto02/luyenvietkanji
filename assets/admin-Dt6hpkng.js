@@ -1,4 +1,4 @@
-import{r as d,j as e,c as Jt}from"./index-Bu3ekw6K.js";import{s as D}from"./supabaseClient-BZu_YtKX.js";import{u as Mt}from"./useIsAdmin-Cov5L-Wy.js";import{L as je,f as et}from"./fetchData-CwzP_8fz.js";import{S as Lt,T as ie,w as Ft,r as Et}from"./vocabLookup-ecoRVbhk.js";import{A as Vt}from"./arrow-left-Cuab5ZEt.js";import{P as we,C as ze}from"./plus-D_0rzzno.js";import{c as X}from"./createLucideIcon-BQSlgLcC.js";/**
+import{r as d,j as e,c as Jt}from"./index-Bu3ekw6K.js";import{s as D}from"./supabaseClient-BZu_YtKX.js";import{u as Mt}from"./useIsAdmin-CJtX-vnK.js";import{L as je,f as et}from"./fetchData-BwKbWpqT.js";import{S as Lt,w as Ft,r as Et}from"./vocabLookup-CHhJEHn5.js";import{A as Vt}from"./arrow-left-Cuab5ZEt.js";import{P as we,C as ze}from"./plus-D_0rzzno.js";import{c as X}from"./createLucideIcon-BQSlgLcC.js";import{T as ie}from"./triangle-alert-1o1DsQAg.js";import"./useAuthUser-DB-dhAUS.js";/**
  * @license lucide-react v0.546.0 - ISC
  *
  * This source code is licensed under the ISC license.
