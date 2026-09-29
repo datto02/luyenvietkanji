@@ -1,4 +1,4 @@
-import{r as d,j as e,c as Mt}from"./index-Bu3ekw6K.js";import{s as S}from"./supabaseClient-BZu_YtKX.js";import{u as Ft}from"./useIsAdmin-CJtX-vnK.js";import{L as je,f as tt}from"./fetchData-BwKbWpqT.js";import{S as Et,T as re,w as Vt,r as Wt}from"./vocabLookup-TB0icsAo.js";import{A as Gt}from"./arrow-left-Cuab5ZEt.js";import{P as we,C as ze}from"./plus-D_0rzzno.js";import{c as le}from"./createLucideIcon-BQSlgLcC.js";import{T as oe}from"./triangle-alert-1o1DsQAg.js";import"./useAuthUser-DB-dhAUS.js";/**
+import{r as d,j as e,c as Mt}from"./index-Bu3ekw6K.js";import{s as S}from"./supabaseClient-BZu_YtKX.js";import{u as Ft}from"./useIsAdmin-DHkCWm4b.js";import{L as je,f as tt}from"./fetchData-BwKbWpqT.js";import{S as Et,T as re,w as Vt,r as Wt}from"./vocabLookup-TB0icsAo.js";import{A as Gt}from"./arrow-left-Cuab5ZEt.js";import{P as we,C as ze}from"./plus-D_0rzzno.js";import{c as le}from"./createLucideIcon-BQSlgLcC.js";import{T as oe}from"./triangle-alert-1o1DsQAg.js";import"./useAuthUser-DPgc16sp.js";/**
  * @license lucide-react v0.546.0 - ISC
  *
  * This source code is licensed under the ISC license.
