@@ -1,78 +1,366 @@
 [
-  "売れる",
+  {
+    "word": "売れる",
+    "reading": "うれる",
+    "meaning": "bán chạy",
+    "example": "この ゲームは よく **[売](う)れて** います。",
+    "exampleVi": "Trò chơi này bán rất chạy."
+  },
   {
     "word": "おどる",
     "reading": "おどる",
-    "meaning": "múa, nhảy"
+    "meaning": "múa, nhảy",
+    "example": "[音楽](おんがく)を [聞](き)きながら **おどります**。",
+    "exampleVi": "Tôi vừa nghe nhạc vừa nhảy."
   },
-  "かむ",
-  "選ぶ",
+  {
+    "word": "かむ",
+    "reading": "かむ",
+    "meaning": "nhai, cắn",
+    "example": "[食](た)べ[物](もの)は よく **かんで** [食](た)べて ください。",
+    "exampleVi": "Xin hãy nhai kỹ đồ ăn khi ăn."
+  },
+  {
+    "word": "選ぶ",
+    "reading": "えらぶ",
+    "meaning": "lựa, chọn lựa",
+    "example": "[好](す)きな [色](いろ)を **[選](えら)んで** ください。",
+    "exampleVi": "Xin hãy chọn màu mà bạn thích."
+  },
   {
     "word": "通う",
     "reading": "かよう",
-    "meaning": "đi lại (thường xuyên)"
+    "meaning": "đi lại (thường xuyên)",
+    "example": "[毎日](まいにち) [学校](がっこう)に **[通](かよ)って** います。",
+    "exampleVi": "Ngày nào tôi cũng đi học ở trường."
   },
-  "メモする",
-  "メモ",
-  "まじめ",
-  "熱心",
+  {
+    "word": "メモする",
+    "reading": "メモする",
+    "meaning": "ghi lại, memo",
+    "example": "[大切](たいせつ)な ことは **メモします**。",
+    "exampleVi": "Điều quan trọng thì tôi ghi chú lại."
+  },
+  {
+    "word": "メモ",
+    "reading": "メモ",
+    "meaning": "ghi chú, ghi chép",
+    "example": "これは [先生](せんせい)の **メモ**です。",
+    "exampleVi": "Đây là ghi chú của giáo viên."
+  },
+  {
+    "word": "まじめ",
+    "reading": "まじめ",
+    "meaning": "nghiêm túc, ngoan",
+    "example": "[田中](たなか)さんは **まじめ**な [学生](がくせい)です。",
+    "exampleVi": "Anh Tanaka là một học sinh nghiêm túc."
+  },
+  {
+    "word": "熱心",
+    "reading": "ねっしん",
+    "meaning": "nhiệt tình, say mê",
+    "example": "[弟](おとうと)は [勉強](べんきょう)に **[熱心](ねっしん)**です。",
+    "exampleVi": "Em trai tôi học hành rất nhiệt tình."
+  },
   {
     "word": "えらい",
     "reading": "えらい",
-    "meaning": "vĩ đại, đáng kính"
+    "meaning": "vĩ đại, đáng kính",
+    "example": "[先生](せんせい)は **えらい** [人](ひと)です。",
+    "exampleVi": "Thầy giáo là một người đáng kính."
   },
-  "丁度いい",
-  "景色",
-  "美容院",
-  "台所",
-  "経験",
-  "力",
-  "人気",
-  "形",
-  "色",
-  "味",
-  "ガム",
-  "品物",
-  "値段",
-  "給料",
-  "ボーナス",
-  "ゲーム",
-  "番組",
-  "ドラマ",
-  "歌手",
-  "小説",
-  "小説家",
-  "機",
-  "息子",
-  "息子さん",
+  {
+    "word": "丁度いい",
+    "reading": "ちょうどいい",
+    "meaning": "vừa vặn",
+    "example": "この くつは **ちょうどいい**です。",
+    "exampleVi": "Đôi giày này vừa vặn."
+  },
+  {
+    "word": "景色",
+    "reading": "けしき",
+    "meaning": "cảnh sắc, phong cảnh",
+    "example": "この [町](まち)は **[景色](けしき)**が きれいです。",
+    "exampleVi": "Cảnh sắc của thành phố này đẹp."
+  },
+  {
+    "word": "美容院",
+    "reading": "びよういん",
+    "meaning": "thẩm mĩ viện",
+    "example": "**[美容院](びよういん)**で かみを [切](き)って もらいます。",
+    "exampleVi": "Tôi cắt tóc ở tiệm làm tóc."
+  },
+  {
+    "word": "台所",
+    "reading": "だいどころ",
+    "meaning": "nhà bếp",
+    "example": "[母](はは)は **[台所](だいどころ)**で [料理](りょうり)を して います。",
+    "exampleVi": "Mẹ tôi đang nấu ăn trong bếp."
+  },
+  {
+    "word": "経験",
+    "reading": "けいけん",
+    "meaning": "kinh nghiệm",
+    "example": "[私](わたし)は [外国](がいこく)で [働](はたら)いた **[経験](けいけん)**が あります。",
+    "exampleVi": "Tôi có kinh nghiệm làm việc ở nước ngoài."
+  },
+  {
+    "word": "力",
+    "reading": "ちから",
+    "meaning": "sức mạnh",
+    "example": "この [子供](こども)は **[力](ちから)**が [強](つよ)いです。",
+    "exampleVi": "Đứa trẻ này rất khỏe."
+  },
+  {
+    "word": "人気",
+    "reading": "にんき",
+    "meaning": "được yêu thích, phổ biến",
+    "example": "この ゲームは **[人気](にんき)**が あります。",
+    "exampleVi": "Trò chơi này được ưa chuộng."
+  },
+  {
+    "word": "形",
+    "reading": "かたち",
+    "meaning": "hình dạng",
+    "example": "この [車](くるま)は **[形](かたち)**が いいです。",
+    "exampleVi": "Chiếc xe này có hình dáng đẹp."
+  },
+  {
+    "word": "色",
+    "reading": "いろ",
+    "meaning": "màu sắc",
+    "example": "どんな **[色](いろ)**が [好](す)きですか。",
+    "exampleVi": "Bạn thích màu nào?"
+  },
+  {
+    "word": "味",
+    "reading": "あじ",
+    "meaning": "vị",
+    "example": "この [料理](りょうり)は **[味](あじ)**が いいです。",
+    "exampleVi": "Món ăn này có vị ngon."
+  },
+  {
+    "word": "ガム",
+    "reading": "ガム",
+    "meaning": "kẹo cao su",
+    "example": "**ガム**を [一](ひと)つ ください。",
+    "exampleVi": "Cho tôi một viên kẹo cao su."
+  },
+  {
+    "word": "品物",
+    "reading": "しなもの",
+    "meaning": "hàng hóa",
+    "example": "この [店](みせ)は **[品物](しなもの)**が [多](おお)いです。",
+    "exampleVi": "Cửa hàng này có nhiều hàng hóa."
+  },
+  {
+    "word": "値段",
+    "reading": "ねだん",
+    "meaning": "giá cả",
+    "example": "この [店](みせ)は **[値段](ねだん)**が [安](やす)いです。",
+    "exampleVi": "Giá cả ở cửa hàng này rẻ."
+  },
+  {
+    "word": "給料",
+    "reading": "きゅうりょう",
+    "meaning": "tiền lương",
+    "example": "**[給料](きゅうりょう)**は [毎月](まいつき) 25[日](にち)です。",
+    "exampleVi": "Lương được trả vào ngày 25 hàng tháng."
+  },
+  {
+    "word": "ボーナス",
+    "reading": "ボーナス",
+    "meaning": "thưởng",
+    "example": "**ボーナス**で [新](あたら)しい カメラを [買](か)いました。",
+    "exampleVi": "Tôi đã mua máy ảnh mới bằng tiền thưởng."
+  },
+  {
+    "word": "ゲーム",
+    "reading": "ゲーム",
+    "meaning": "trò chơi, game",
+    "example": "[子供](こども)は **ゲーム**が [好](す)きです。",
+    "exampleVi": "Trẻ con thích trò chơi điện tử."
+  },
+  {
+    "word": "番組",
+    "reading": "ばんぐみ",
+    "meaning": "chương trình TV, kênh",
+    "example": "この **[番組](ばんぐみ)**は [面白](おもしろ)いです。",
+    "exampleVi": "Chương trình này thú vị."
+  },
+  {
+    "word": "ドラマ",
+    "reading": "ドラマ",
+    "meaning": "phim truyền hình",
+    "example": "[毎晩](まいばん) **ドラマ**を [見](み)ます。",
+    "exampleVi": "Tối nào tôi cũng xem phim truyền hình."
+  },
+  {
+    "word": "歌手",
+    "reading": "かしゅ",
+    "meaning": "ca sĩ",
+    "example": "あの **[歌手](かしゅ)**は [有名](ゆうめい)です。",
+    "exampleVi": "Ca sĩ kia nổi tiếng."
+  },
+  {
+    "word": "小説",
+    "reading": "しょうせつ",
+    "meaning": "tiểu thuyết",
+    "example": "[私](わたし)は **[小説](しょうせつ)**が [好](す)きです。",
+    "exampleVi": "Tôi thích tiểu thuyết."
+  },
+  {
+    "word": "小説家",
+    "reading": "しょうせつか",
+    "meaning": "nhà văn, tiểu thuyết gia",
+    "example": "[将来](しょうらい)、**[小説家](しょうせつか)**に なりたいです。",
+    "exampleVi": "Trong tương lai tôi muốn trở thành nhà văn."
+  },
+  {
+    "word": "機",
+    "reading": "き",
+    "meaning": "máy ~ (hậu tố)",
+    "example": "[飛行](ひこう)**[機](き)**は [早](はや)いです。",
+    "exampleVi": "Máy bay nhanh."
+  },
+  {
+    "word": "息子",
+    "reading": "むすこ",
+    "meaning": "con trai mình",
+    "example": "**[息子](むすこ)**は [学生](がくせい)です。",
+    "exampleVi": "Con trai tôi là học sinh."
+  },
+  {
+    "word": "息子さん",
+    "reading": "むすこさん",
+    "meaning": "con trai người khác",
+    "example": "**[息子さん](むすこさん)**は [何](なに)を して いますか。",
+    "exampleVi": "Con trai anh/chị đang làm gì vậy?"
+  },
   {
     "word": "むすめ",
     "reading": "むすめ",
-    "meaning": "con gái mình"
+    "meaning": "con gái mình",
+    "example": "**むすめ**は ピアノを ひきます。",
+    "exampleVi": "Con gái tôi chơi đàn piano."
   },
   {
     "word": "むすめさん",
     "reading": "むすめさん",
-    "meaning": "con gái người khác"
+    "meaning": "con gái người khác",
+    "example": "**むすめさん**は [元気](げんき)ですか。",
+    "exampleVi": "Con gái anh/chị có khỏe không?"
   },
-  "自分",
-  "将来",
-  "しばらく",
-  "たいてい",
-  "それに",
-  "それで",
-  "実は",
-  "会話",
-  "お知らせ",
-  "参加する",
-  "日にち",
-  "土",
-  "体育館",
-  "無料",
+  {
+    "word": "自分",
+    "reading": "じぶん",
+    "meaning": "bản thân, mình",
+    "example": "**[自分](じぶん)**の [部屋](へや)で [勉強](べんきょう)します。",
+    "exampleVi": "Tôi học trong phòng của mình."
+  },
+  {
+    "word": "将来",
+    "reading": "しょうらい",
+    "meaning": "tương lai",
+    "example": "**[将来](しょうらい)**は [医者](いしゃ)に なりたいです。",
+    "exampleVi": "Trong tương lai tôi muốn trở thành bác sĩ."
+  },
+  {
+    "word": "しばらく",
+    "reading": "しばらく",
+    "meaning": "chốc lát, đã lâu không gặp",
+    "example": "**しばらく** [休](やす)んで ください。",
+    "exampleVi": "Xin hãy nghỉ một lúc."
+  },
+  {
+    "word": "たいてい",
+    "reading": "たいてい",
+    "meaning": "thường thường",
+    "example": "**たいてい** [七時](しちじ)に [起](お)きます。",
+    "exampleVi": "Thường thì tôi dậy lúc 7 giờ."
+  },
+  {
+    "word": "それに",
+    "reading": "それに",
+    "meaning": "hơn nữa",
+    "example": "この [店](みせ)は [安](やす)いです。**それに**、[美味](おい)しいです。",
+    "exampleVi": "Cửa hàng này rẻ. Hơn nữa, lại còn ngon."
+  },
+  {
+    "word": "それで",
+    "reading": "それで",
+    "meaning": "vì thế/vậy thì",
+    "example": "[雨](あめ)でした。**それで**、[出](で)かけませんでした。",
+    "exampleVi": "Trời mưa. Vì vậy tôi đã không ra ngoài."
+  },
+  {
+    "word": "実は",
+    "reading": "じつは",
+    "meaning": "thực ra thì",
+    "example": "**[実](じつ)は**、けっこんする んです。",
+    "exampleVi": "Thật ra là tôi sắp kết hôn đấy."
+  },
+  {
+    "word": "会話",
+    "reading": "かいわ",
+    "meaning": "hội thoại",
+    "example": "[日本語](にほんご)の **[会話](かいわ)**を [練習](れんしゅう)します。",
+    "exampleVi": "Tôi luyện hội thoại tiếng Nhật."
+  },
+  {
+    "word": "お知らせ",
+    "reading": "おしらせ",
+    "meaning": "thông báo",
+    "example": "[学校](がっこう)からの **[お知らせ](おしらせ)**です。",
+    "exampleVi": "Đây là thông báo từ nhà trường."
+  },
+  {
+    "word": "参加する",
+    "reading": "さんかする",
+    "meaning": "tham gia",
+    "example": "[来週](らいしゅう)の パーティーに **[参加](さんか)します**。",
+    "exampleVi": "Tôi sẽ tham gia bữa tiệc tuần sau."
+  },
+  {
+    "word": "日にち",
+    "reading": "ひにち",
+    "meaning": "ngày tháng",
+    "example": "**[日](ひ)にち**を [教](おし)えて ください。",
+    "exampleVi": "Xin hãy cho tôi biết ngày tháng."
+  },
+  {
+    "word": "土",
+    "reading": "ど/つち",
+    "meaning": "thứ 7 /đất đai (tsuchi)",
+    "example": "[庭](にわ)の **[土](つち)**は [黒](くろ)いです。",
+    "exampleVi": "Đất trong vườn màu đen."
+  },
+  {
+    "word": "体育館",
+    "reading": "たいいくかん",
+    "meaning": "nhà thi đấu thể thao",
+    "example": "**[体育館](たいいくかん)**で [運動会](うんどうかい)が あります。",
+    "exampleVi": "Hội thi thể thao diễn ra ở nhà thi đấu."
+  },
+  {
+    "word": "無料",
+    "reading": "むりょう",
+    "meaning": "miễn phí",
+    "example": "この イベントは **[無料](むりょう)**です。",
+    "exampleVi": "Sự kiện này miễn phí."
+  },
   {
     "word": "さそう",
     "reading": "さそう",
-    "meaning": "mời, rủ"
+    "meaning": "mời, rủ",
+    "example": "[友達](ともだち)を パーティーに **さそいます**。",
+    "exampleVi": "Tôi mời bạn đến bữa tiệc."
   },
-  "イベント"
+  {
+    "word": "イベント",
+    "reading": "イベント",
+    "meaning": "sự kiện",
+    "example": "[日曜日](にちようび)に **イベント**が あります。",
+    "exampleVi": "Chủ nhật có một sự kiện."
+  }
 ]

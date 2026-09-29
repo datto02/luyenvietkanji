@@ -2,511 +2,715 @@
  {
   "word": "私",
   "reading": "わたし",
-  "meaning": "tôi (ngôi thứ nhất số ít)"
+  "meaning": "tôi (ngôi thứ nhất số ít)",
+  "example": "**[私](わたし)**は アンです。",
+  "exampleVi": "Tôi (tên) là An."
  },
  {
   "word": "です",
   "reading": "です",
-  "meaning": "là ~"
+  "meaning": "là ~",
+  "example": "[私](わたし)は スミス**です**。",
+  "exampleVi": "Tôi là Smith."
  },
  {
   "word": "さん",
   "reading": "さん",
-  "meaning": "ông / bà / anh / chị ~"
+  "meaning": "ông / bà / anh / chị ~",
+  "example": "トム**さん**ですか。",
+  "exampleVi": "Anh Tom phải không?"
  },
  {
   "word": "ちゃん",
   "reading": "ちゃん",
-  "meaning": "bé ~"
+  "meaning": "bé ~",
+  "example": "かのじょは ララ**ちゃん**です。",
+  "exampleVi": "Cô bé là bé Lala."
  },
  {
   "word": "貴方",
   "reading": "あなた",
-  "meaning": "ông / bà / anh / chị / bạn (ngôi thứ hai số ít)"
+  "meaning": "ông / bà / anh / chị / bạn (ngôi thứ hai số ít)",
+  "example": "**[貴方](あなた)**は トムさんですか。",
+  "exampleVi": "Anh là anh Tom phải không?"
  },
  {
   "word": "かれ",
   "reading": "かれ",
-  "meaning": "anh ấy (ngôi thứ ba số ít), bạn trai"
+  "meaning": "anh ấy (ngôi thứ ba số ít), bạn trai",
+  "example": "**かれ**は トムさんです。",
+  "exampleVi": "Anh ấy là anh Tom."
  },
  {
   "word": "かのじょ",
   "reading": "かのじょ",
-  "meaning": "cô ấy, chị ấy (ngôi thứ ba số ít), bạn gái"
+  "meaning": "cô ấy, chị ấy (ngôi thứ ba số ít), bạn gái",
+  "example": "**かのじょ**は ヒエンさんです。",
+  "exampleVi": "Chị ấy là chị Hiền."
  },
  {
   "word": "お名前",
   "reading": "おなまえ",
-  "meaning": "tên (của bạn)"
+  "meaning": "tên (của bạn)",
+  "example": "**お[名前](なまえ)**は?",
+  "exampleVi": "Tên bạn là gì?"
  },
  {
   "word": "はい",
   "reading": "はい",
-  "meaning": "vâng, dạ"
+  "meaning": "vâng, dạ",
+  "example": "**はい**、[学生](がくせい)です。",
+  "exampleVi": "Vâng, tôi là học sinh."
  },
  {
   "word": "ええ",
   "reading": "ええ",
-  "meaning": "vâng, dạ"
+  "meaning": "vâng, dạ",
+  "example": "**ええ**、そうです。",
+  "exampleVi": "Vâng, đúng vậy."
  },
  {
   "word": "いいえ",
   "reading": "いいえ",
-  "meaning": "không"
+  "meaning": "không",
+  "example": "**いいえ**、[私](わたし)は [先生](せんせい)じゃありません。",
+  "exampleVi": "Không, tôi không phải là giáo viên."
  },
  {
   "word": "そうです",
   "reading": "そうです",
-  "meaning": "đúng vậy"
+  "meaning": "đúng vậy",
+  "example": "はい、**そうです**。",
+  "exampleVi": "Vâng, đúng vậy."
  },
  {
   "word": "ちがいます",
   "reading": "ちがいます",
-  "meaning": "không phải"
+  "meaning": "không phải",
+  "example": "いいえ、**ちがいます**。",
+  "exampleVi": "Không, không phải."
  },
  {
   "word": "おはよう",
   "reading": "おはよう",
-  "meaning": "Chào. (buổi sáng)"
+  "meaning": "Chào. (buổi sáng)",
+  "example": "**おはよう**。[今日](きょう)は [天気](てんき)が いいですね。",
+  "exampleVi": "Chào buổi sáng. Hôm nay trời đẹp nhỉ."
  },
  {
   "word": "おはようございます",
   "reading": "おはようございます",
-  "meaning": "Xin chào. (buổi sáng)"
+  "meaning": "Xin chào. (buổi sáng)",
+  "example": "**おはようございます**、[先生](せんせい)。",
+  "exampleVi": "Chào buổi sáng, thầy/cô ạ."
  },
  {
   "word": "こんにちは",
   "reading": "こんにちは",
-  "meaning": "Xin chào. (buổi trưa)"
+  "meaning": "Xin chào. (buổi trưa)",
+  "example": "**こんにちは**、[田中](たなか)さん。",
+  "exampleVi": "Xin chào, anh/chị Tanaka."
  },
  {
   "word": "こんばんは",
   "reading": "こんばんは",
-  "meaning": "Xin chào. (buổi tối)"
+  "meaning": "Xin chào. (buổi tối)",
+  "example": "**こんばんは**。いい [天気](てんき)ですね。",
+  "exampleVi": "Chào buổi tối. Trời đẹp nhỉ."
  },
  {
   "word": "さようなら",
   "reading": "さようなら",
-  "meaning": "Tạm biệt."
+  "meaning": "Tạm biệt.",
+  "example": "[先生](せんせい)、**さようなら**。",
+  "exampleVi": "Chào thầy/cô ạ (tạm biệt)."
  },
  {
   "word": "じゃまた",
   "reading": "じゃまた",
-  "meaning": "Vậy nhé, gặp lại sau."
+  "meaning": "Vậy nhé, gặp lại sau.",
+  "example": "**じゃまた**、[明日](あした)。",
+  "exampleVi": "Vậy nhé, mai gặp lại."
  },
  {
   "word": "おやすみなさい",
   "reading": "おやすみなさい",
-  "meaning": "Chúc ngủ ngon."
+  "meaning": "Chúc ngủ ngon.",
+  "example": "**おやすみなさい**。また [明日](あした)。",
+  "exampleVi": "Chúc ngủ ngon. Hẹn mai gặp lại."
  },
  {
   "word": "ありがとう",
   "reading": "ありがとう",
-  "meaning": "Cám ơn."
+  "meaning": "Cám ơn.",
+  "example": "A：これ、どうぞ。　B：**ありがとう**。",
+  "exampleVi": "A: Cái này, xin mời.  B: Cảm ơn."
  },
  {
   "word": "どういたしまして",
   "reading": "どういたしまして",
-  "meaning": "Không có chi."
+  "meaning": "Không có chi.",
+  "example": "A：ありがとうございます。　B：**どういたしまして**。",
+  "exampleVi": "A: Cảm ơn bạn.  B: Không có chi."
  },
  {
   "word": "ありがとうございます",
   "reading": "ありがとうございます",
-  "meaning": "Xin cám ơn."
+  "meaning": "Xin cám ơn.",
+  "example": "A：これ、どうぞ。　B：**ありがとうございます**。",
+  "exampleVi": "A: Cái này, xin mời.  B: Xin cảm ơn."
  },
  {
   "word": "どうぞ",
   "reading": "どうぞ",
-  "meaning": "Xin mời."
+  "meaning": "Xin mời.",
+  "example": "A：お[茶](ちゃ)を **どうぞ**。　B：ありがとうございます。",
+  "exampleVi": "A: Mời bạn uống trà.  B: Xin cảm ơn."
  },
  {
   "word": "どうも",
   "reading": "どうも",
-  "meaning": "Cám ơn."
+  "meaning": "Cám ơn.",
+  "example": "A：これ、どうぞ。　B：**どうも**。",
+  "exampleVi": "A: Cái này, xin mời.  B: Cảm ơn."
  },
  {
   "word": "初めまして",
   "reading": "はじめまして",
-  "meaning": "Xin chào. (dùng khi lần đầu tiên gặp mặt)"
+  "meaning": "Xin chào. (dùng khi lần đầu tiên gặp mặt)",
+  "example": "**はじめまして**。[私](わたし)は アンです。",
+  "exampleVi": "Xin chào (lần đầu gặp). Tôi là An."
  },
  {
   "word": "どうぞよろしく",
   "reading": "どうぞよろしく",
-  "meaning": "Xin vui lòng giúp đỡ."
+  "meaning": "Xin vui lòng giúp đỡ.",
+  "example": "ベトナムから [来](き)ました。**どうぞよろしく**。",
+  "exampleVi": "Tôi đến từ Việt Nam. Xin được giúp đỡ."
  },
  {
   "word": "こちらこそ",
   "reading": "こちらこそ",
-  "meaning": "Tôi mới phải nhờ. / Tôi mới phải cám ơn./ Tôi mới phải xin lỗi."
+  "meaning": "Tôi mới phải nhờ. / Tôi mới phải cám ơn./ Tôi mới phải xin lỗi.",
+  "example": "A：どうぞよろしく。　B：**こちらこそ**。",
+  "exampleVi": "A: Xin được giúp đỡ.  B: Tôi mới là người nhờ bạn giúp."
  },
  {
   "word": "家族",
   "reading": "かぞく",
-  "meaning": "gia đình"
+  "meaning": "gia đình",
+  "example": "**[家族](かぞく)**は [七](しち) [人](にん)です。",
+  "exampleVi": "Gia đình (tôi) có 7 người."
  },
  {
   "word": "両親",
   "reading": "りょうしん",
-  "meaning": "cha mẹ, song thân"
+  "meaning": "cha mẹ, song thân",
+  "example": "**[両親](りょうしん)**は [日本](にほん)に います。",
+  "exampleVi": "Bố mẹ tôi ở Nhật Bản."
  },
  {
   "word": "父",
   "reading": "ちち",
-  "meaning": "cha (tôi), người cha"
+  "meaning": "cha (tôi), người cha",
+  "example": "**[父](ちち)**は [先生](せんせい)です。",
+  "exampleVi": "Bố tôi là giáo viên."
  },
  {
   "word": "母",
   "reading": "はは",
-  "meaning": "mẹ (tôi), người mẹ"
+  "meaning": "mẹ (tôi), người mẹ",
+  "example": "**[母](はは)**は [家](いえ)に います。",
+  "exampleVi": "Mẹ tôi ở nhà."
  },
  {
   "word": "姉",
   "reading": "あね",
-  "meaning": "chị (tôi), người chị"
+  "meaning": "chị (tôi), người chị",
+  "example": "**[姉](あね)**は [大学生](だいがくせい)です。",
+  "exampleVi": "Chị gái tôi là sinh viên đại học."
  },
  {
   "word": "兄",
   "reading": "あに",
-  "meaning": "anh (tôi), người anh"
+  "meaning": "anh (tôi), người anh",
+  "example": "**[兄](あに)**は [車](くるま)が [好](す)きです。",
+  "exampleVi": "Anh trai tôi thích xe hơi."
  },
  {
   "word": "弟",
   "reading": "おとうと",
-  "meaning": "em trai (tôi), người em trai"
+  "meaning": "em trai (tôi), người em trai",
+  "example": "**[弟](おとうと)**は [学生](がくせい)です。",
+  "exampleVi": "Em trai tôi là học sinh."
  },
  {
   "word": "妹",
   "reading": "いもうと",
-  "meaning": "em gái (tôi), người em gái"
+  "meaning": "em gái (tôi), người em gái",
+  "example": "**[妹](いもうと)**は [犬](いぬ)が [好](す)きです。",
+  "exampleVi": "Em gái tôi thích chó."
  },
  {
   "word": "兄弟",
   "reading": "きょうだい",
-  "meaning": "anh chị em"
+  "meaning": "anh chị em",
+  "example": "**[兄弟](きょうだい)**は [二人](ふたり)です。",
+  "exampleVi": "Tôi có hai anh chị em."
  },
  {
   "word": "犬",
   "reading": "いぬ",
-  "meaning": "con chó"
+  "meaning": "con chó",
+  "example": "[私](わたし)の [家](うち)に **[犬](いぬ)**が います。",
+  "exampleVi": "Nhà tôi có con chó."
  },
  {
   "word": "ねこ",
   "reading": "ねこ",
-  "meaning": "con mèo"
+  "meaning": "con mèo",
+  "example": "あの **ねこ**は [白](しろ)いです。",
+  "exampleVi": "Con mèo kia màu trắng."
  },
  {
   "word": "いる",
   "reading": "いる",
-  "meaning": "có, ở"
+  "meaning": "có, ở",
+  "example": "あそこに [子供](こども)が **います**。",
+  "exampleVi": "Ở đằng kia có đứa trẻ."
  },
  {
   "word": "家",
   "reading": "うち",
-  "meaning": "nhà"
+  "meaning": "nhà",
+  "example": "**[家](うち)**にねこがいます。",
+  "exampleVi": "Nhà tôi có con mèo."
  },
  {
   "word": "お祖父さん",
   "reading": "おじいさん",
-  "meaning": "ông (nội, ngoại), ông cụ"
+  "meaning": "ông (nội, ngoại), ông cụ",
+  "example": "**おじいさん**は [元気](げんき)です。",
+  "exampleVi": "Ông khỏe mạnh."
  },
  {
   "word": "お祖母さん",
   "reading": "おばあさん",
-  "meaning": "bà (nội, ngoại), bà cụ"
+  "meaning": "bà (nội, ngoại), bà cụ",
+  "example": "**おばあさん**は [家](うち)に います。",
+  "exampleVi": "Bà đang ở nhà."
  },
  {
   "word": "ご両親",
   "reading": "ごりょうしん",
-  "meaning": "cha mẹ (của người khác)"
+  "meaning": "cha mẹ (của người khác)",
+  "example": "**ご[両親](りょうしん)**は お[元気](げんき)ですか。",
+  "exampleVi": "Bố mẹ bạn có khỏe không?"
  },
  {
   "word": "お父さん",
   "reading": "おとうさん",
-  "meaning": "bố, người cha (của người khác)"
+  "meaning": "bố, người cha (của người khác)",
+  "example": "**お[父](とう)さん**は [先生](せんせい)ですか。",
+  "exampleVi": "Bố bạn là giáo viên phải không?"
  },
  {
   "word": "お母さん",
   "reading": "おかあさん",
-  "meaning": "mẹ, người mẹ (của người khác)"
+  "meaning": "mẹ, người mẹ (của người khác)",
+  "example": "**お[母](かあ)さん**は [家](うち)に いますか。",
+  "exampleVi": "Mẹ bạn có ở nhà không?"
  },
  {
   "word": "お姉さん",
   "reading": "おねえさん",
-  "meaning": "chị gái (của người khác)"
+  "meaning": "chị gái (của người khác)",
+  "example": "**お[姉](ねえ)さん**は [学生](がくせい)ですか。",
+  "exampleVi": "Chị gái bạn là sinh viên phải không?"
  },
  {
   "word": "お兄さん",
   "reading": "おにいさん",
-  "meaning": "anh trai (của người khác)"
+  "meaning": "anh trai (của người khác)",
+  "example": "**お[兄](にい)さん**は [車](くるま)が [好](す)きですか。",
+  "exampleVi": "Anh trai bạn có thích xe hơi không?"
  },
  {
   "word": "弟さん",
   "reading": "おとうとさん",
-  "meaning": "em trai (của người khác)"
+  "meaning": "em trai (của người khác)",
+  "example": "**[弟](おとうと)さん**は お[元気](げんき)ですか。",
+  "exampleVi": "Em trai bạn có khỏe không?"
  },
  {
   "word": "妹さん",
   "reading": "いもうとさん",
-  "meaning": "em gái (của người khác)"
+  "meaning": "em gái (của người khác)",
+  "example": "**[妹](いもうと)さん**は [犬](いぬ)が [好](す)きですか。",
+  "exampleVi": "Em gái bạn có thích chó không?"
  },
  {
   "word": "一人",
   "reading": "ひとり",
-  "meaning": "một người"
+  "meaning": "một người",
+  "example": "[私](わたし)は **[一人](ひとり)**で [来](き)ました。",
+  "exampleVi": "Tôi đã đến một mình."
  },
  {
   "word": "二人",
   "reading": "ふたり",
-  "meaning": "hai người"
+  "meaning": "hai người",
+  "example": "**[二人](ふたり)**で [行](い)きます。",
+  "exampleVi": "Hai người cùng đi."
  },
  {
   "word": "三人",
   "reading": "さんにん",
-  "meaning": "ba người"
+  "meaning": "ba người",
+  "example": "[家族](かぞく)は **[三人](さんにん)**です。",
+  "exampleVi": "Gia đình tôi có ba người."
  },
  {
   "word": "四人",
   "reading": "よにん",
-  "meaning": "bốn người"
+  "meaning": "bốn người",
+  "example": "[家族](かぞく)は **[四人](よにん)**です。",
+  "exampleVi": "Gia đình tôi có bốn người."
  },
  {
   "word": "五人",
   "reading": "ごにん",
-  "meaning": "năm người"
+  "meaning": "năm người",
+  "example": "**[五人](ごにん)**で [食](た)べます。",
+  "exampleVi": "Năm người cùng ăn."
  },
  {
   "word": "六人",
   "reading": "ろくにん",
-  "meaning": "sáu người"
+  "meaning": "sáu người",
+  "example": "**[六人](ろくにん)**で [行](い)きます。",
+  "exampleVi": "Sáu người cùng đi."
  },
  {
   "word": "七人",
   "reading": "ななにん",
-  "meaning": "bảy người"
+  "meaning": "bảy người",
+  "example": "**[七人](ななにん)**の [家族](かぞく)です。",
+  "exampleVi": "Đó là gia đình bảy người."
  },
  {
   "word": "八人",
   "reading": "はちにん",
-  "meaning": "tám người"
+  "meaning": "tám người",
+  "example": "**[八人](はちにん)**で [来](き)ました。",
+  "exampleVi": "Chúng tôi đã đến tám người."
  },
  {
   "word": "九人",
   "reading": "きゅうにん",
-  "meaning": "chín người"
+  "meaning": "chín người",
+  "example": "[学生](がくせい)が **[九人](きゅうにん)** います。",
+  "exampleVi": "Có chín học sinh."
  },
  {
   "word": "十人",
   "reading": "じゅうにん",
-  "meaning": "mười người"
+  "meaning": "mười người",
+  "example": "[友達](ともだち)が **[十人](じゅうにん)** [来](き)ました。",
+  "exampleVi": "Mười người bạn đã đến."
  },
  {
   "word": "何人",
   "reading": "なんにん",
-  "meaning": "mấy người, bao nhiêu người"
+  "meaning": "mấy người, bao nhiêu người",
+  "example": "**[何人](なんにん)**ですか。",
+  "exampleVi": "Bao nhiêu người?"
  },
  {
   "word": "大人",
   "reading": "おとな",
-  "meaning": "người lớn"
+  "meaning": "người lớn",
+  "example": "**[大人](おとな)**は [三人](さんにん)です。",
+  "exampleVi": "Người lớn có ba người."
  },
  {
   "word": "子供",
   "reading": "こども",
-  "meaning": "trẻ em, trẻ con, con cái"
+  "meaning": "trẻ em, trẻ con, con cái",
+  "example": "**[子供](こども)**は [二人](ふたり) います。",
+  "exampleVi": "Tôi có hai đứa con."
  },
  {
   "word": "男の人",
   "reading": "おとこのひと",
-  "meaning": "người đàn ông"
+  "meaning": "người đàn ông",
+  "example": "あの **[男](おとこ)の[人](ひと)**は [先生](せんせい)です。",
+  "exampleVi": "Người đàn ông kia là giáo viên."
  },
  {
   "word": "女の人",
   "reading": "おんなのひと",
-  "meaning": "người phụ nữ"
+  "meaning": "người phụ nữ",
+  "example": "あの **[女](おんな)の[人](ひと)**は [母](はは)です。",
+  "exampleVi": "Người phụ nữ kia là mẹ tôi."
  },
  {
   "word": "男の子",
   "reading": "おとこのこ",
-  "meaning": "cậu bé, đứa bé trai"
+  "meaning": "cậu bé, đứa bé trai",
+  "example": "あの **[男](おとこ)の[子](こ)**は [弟](おとうと)です。",
+  "exampleVi": "Cậu bé kia là em trai tôi."
  },
  {
   "word": "女の子",
   "reading": "おんなのこ",
-  "meaning": "cô bé, đứa bé gái"
+  "meaning": "cô bé, đứa bé gái",
+  "example": "あの **[女](おんな)の[子](こ)**は [妹](いもうと)です。",
+  "exampleVi": "Cô bé kia là em gái tôi."
  },
  {
   "word": "国",
   "reading": "くに",
-  "meaning": "đất nước, nước"
+  "meaning": "đất nước, nước",
+  "example": "[私](わたし)の**[国](くに)**はマレーシアです。",
+  "exampleVi": "Nước của tôi là Malaysia."
  },
  {
   "word": "ある",
   "reading": "ある",
-  "meaning": "có, ở"
+  "meaning": "có, ở",
+  "example": "テーブルの [上](うえ)に [本](ほん)が **あります**。",
+  "exampleVi": "Trên bàn có quyển sách."
  },
  {
   "word": "どちら",
   "reading": "どちら",
-  "meaning": "ở đâu, hướng nào"
+  "meaning": "ở đâu, hướng nào",
+  "example": "お[国](くに)は **どちら**ですか。",
+  "exampleVi": "Nước của bạn ở đâu?"
  },
  {
   "word": "から来ました",
   "reading": "からきました",
-  "meaning": "đến từ ~"
+  "meaning": "đến từ ~",
+  "example": "[私](わたし)は アメリカ**から[来](き)ました**。",
+  "exampleVi": "Tôi đến từ Mỹ."
  },
  {
   "word": "人",
   "reading": "じん",
-  "meaning": "người ~"
+  "meaning": "người ~",
+  "example": "[私](わたし)は イギリス**[人](じん)**です。",
+  "exampleVi": "Tôi là người Anh."
  },
  {
   "word": "地図",
   "reading": "ちず",
-  "meaning": "bản đồ"
+  "meaning": "bản đồ",
+  "example": "[日本](にほん)の **[地図](ちず)**は ありますか。",
+  "exampleVi": "Bạn có bản đồ Nhật Bản không?"
  },
  {
   "word": "世界",
   "reading": "せかい",
-  "meaning": "thế giới"
+  "meaning": "thế giới",
+  "example": "**[世界](せかい)**の [地図](ちず)は ありますか。",
+  "exampleVi": "Bạn có bản đồ thế giới không?"
  },
  {
   "word": "日本",
   "reading": "にほん",
-  "meaning": "Nhật Bản"
+  "meaning": "Nhật Bản",
+  "example": "[私](わたし)は **[日本](にほん)**へ [来](き)ました。",
+  "exampleVi": "Tôi đã đến Nhật Bản."
  },
  {
   "word": "インド",
   "reading": "インド",
-  "meaning": "Ấn Độ"
+  "meaning": "Ấn Độ",
+  "example": "[私](わたし)は **インド**から [来](き)ました。",
+  "exampleVi": "Tôi đến từ Ấn Độ."
  },
  {
   "word": "インドネシア",
   "reading": "インドネシア",
-  "meaning": "Indonesia"
+  "meaning": "Indonesia",
+  "example": "[友達](ともだち)は **インドネシア**の [人](ひと)です。",
+  "exampleVi": "Bạn của tôi là người Indonesia."
  },
  {
   "word": "かんこく",
   "reading": "かんこく",
-  "meaning": "Hàn Quốc"
+  "meaning": "Hàn Quốc",
+  "example": "**かんこく**の [友達](ともだち)が います。",
+  "exampleVi": "Tôi có người bạn ở Hàn Quốc."
  },
  {
   "word": "タイ",
   "reading": "タイ",
-  "meaning": "Thái Lan"
+  "meaning": "Thái Lan",
+  "example": "**タイ**に [友達](ともだち)が います。",
+  "exampleVi": "Tôi có bạn ở Thái Lan."
  },
  {
   "word": "たいわん",
   "reading": "たいわん",
-  "meaning": "Đài Loan"
+  "meaning": "Đài Loan",
+  "example": "**たいわん**の [友達](ともだち)が [来](き)ました。",
+  "exampleVi": "Người bạn ở Đài Loan đã đến."
  },
  {
   "word": "中国",
   "reading": "ちゅうごく",
-  "meaning": "Trung Quốc"
+  "meaning": "Trung Quốc",
+  "example": "**[中国](ちゅうごく)**の [人](ひと)です。",
+  "exampleVi": "Tôi là người Trung Quốc."
  },
  {
   "word": "ネパール",
   "reading": "ネパール",
-  "meaning": "Nepal"
+  "meaning": "Nepal",
+  "example": "**ネパール**の [友達](ともだち)が います。",
+  "exampleVi": "Tôi có người bạn ở Nepal."
  },
  {
   "word": "フィリピン",
   "reading": "フィリピン",
-  "meaning": "Philippines"
+  "meaning": "Philippines",
+  "example": "**フィリピン**の [友達](ともだち)は お[元気](げんき)です。",
+  "exampleVi": "Bạn tôi ở Philippines vẫn khỏe."
  },
  {
   "word": "ベトナム",
   "reading": "ベトナム",
-  "meaning": "Việt Nam"
+  "meaning": "Việt Nam",
+  "example": "[私](わたし)は **ベトナム**[人](じん)です。",
+  "exampleVi": "Tôi là người Việt Nam."
  },
  {
   "word": "マレーシア",
   "reading": "マレーシア",
-  "meaning": "Malaysia"
+  "meaning": "Malaysia",
+  "example": "**マレーシア**に [兄](あに)が います。",
+  "exampleVi": "Anh trai tôi ở Malaysia."
  },
  {
   "word": "ミャンマー",
   "reading": "ミャンマー",
-  "meaning": "Myanmar"
+  "meaning": "Myanmar",
+  "example": "**ミャンマー**の [人](ひと)と [話](はな)します。",
+  "exampleVi": "Tôi nói chuyện với người Myanmar."
  },
  {
   "word": "トルコ",
   "reading": "トルコ",
-  "meaning": "Thổ Nhĩ Kỳ"
+  "meaning": "Thổ Nhĩ Kỳ",
+  "example": "**トルコ**へ [行](い)きます。",
+  "exampleVi": "Tôi sẽ đi Thổ Nhĩ Kỳ."
  },
  {
   "word": "オーストラリア",
   "reading": "オーストラリア",
-  "meaning": "Úc"
+  "meaning": "Úc",
+  "example": "**オーストラリア**に [行](い)きたいです。",
+  "exampleVi": "Tôi muốn đến Úc."
  },
  {
   "word": "ニュージーランド",
   "reading": "ニュージーランド",
-  "meaning": "New Zealand"
+  "meaning": "New Zealand",
+  "example": "**ニュージーランド**に [友達](ともだち)が います。",
+  "exampleVi": "Tôi có bạn ở New Zealand."
  },
  {
   "word": "アメリカ",
   "reading": "アメリカ",
-  "meaning": "Mỹ"
+  "meaning": "Mỹ",
+  "example": "**アメリカ**の [友達](ともだち)が [来](き)ました。",
+  "exampleVi": "Người bạn ở Mỹ đã đến."
  },
  {
   "word": "カナダ",
   "reading": "カナダ",
-  "meaning": "Canada"
+  "meaning": "Canada",
+  "example": "**カナダ**は [大](おお)きい [国](くに)です。",
+  "exampleVi": "Canada là một nước lớn."
  },
  {
   "word": "メキシコ",
   "reading": "メキシコ",
-  "meaning": "Mexico"
+  "meaning": "Mexico",
+  "example": "**メキシコ**の [人](ひと)と [話](はな)しました。",
+  "exampleVi": "Tôi đã nói chuyện với người Mexico."
  },
  {
   "word": "ブラジル",
   "reading": "ブラジル",
-  "meaning": "Brazil"
+  "meaning": "Brazil",
+  "example": "**ブラジル**の [友達](ともだち)が います。",
+  "exampleVi": "Tôi có bạn ở Brazil."
  },
  {
   "word": "ロシア",
   "reading": "ロシア",
-  "meaning": "Nga"
+  "meaning": "Nga",
+  "example": "**ロシア**へ [行](い)きます。",
+  "exampleVi": "Tôi sẽ đi Nga."
  },
  {
   "word": "イギリス",
   "reading": "イギリス",
-  "meaning": "Anh"
+  "meaning": "Anh",
+  "example": "**イギリス**の [学生](がくせい)が [来](き)ました。",
+  "exampleVi": "Sinh viên người Anh đã đến."
  },
  {
   "word": "フランス",
   "reading": "フランス",
-  "meaning": "Pháp"
+  "meaning": "Pháp",
+  "example": "**フランス**の [友達](ともだち)は [先生](せんせい)です。",
+  "exampleVi": "Bạn tôi ở Pháp là giáo viên."
  },
  {
   "word": "ドイツ",
   "reading": "ドイツ",
-  "meaning": "Đức"
+  "meaning": "Đức",
+  "example": "**ドイツ**の [友達](ともだち)が [来](き)ます。",
+  "exampleVi": "Bạn tôi ở Đức sẽ đến."
  },
  {
   "word": "スイス",
   "reading": "スイス",
-  "meaning": "Thụy Sỹ"
+  "meaning": "Thụy Sỹ",
+  "example": "**スイス**に [行](い)きたいです。",
+  "exampleVi": "Tôi muốn đến Thụy Sĩ."
  },
  {
   "word": "イタリア",
   "reading": "イタリア",
-  "meaning": "Ý"
+  "meaning": "Ý",
+  "example": "**イタリア**の [友達](ともだち)が います。",
+  "exampleVi": "Tôi có bạn ở Ý."
  },
  {
   "word": "スペイン",
   "reading": "スペイン",
-  "meaning": "Tây Ban Nha"
+  "meaning": "Tây Ban Nha",
+  "example": "**スペイン**へ [行](い)きます。",
+  "exampleVi": "Tôi sẽ đi Tây Ban Nha."
  },
  {
   "word": "エジプト",
   "reading": "エジプト",
-  "meaning": "Ai Cập"
+  "meaning": "Ai Cập",
+  "example": "**エジプト**の [人](ひと)です。",
+  "exampleVi": "Tôi là người Ai Cập."
  },
  {
   "word": "ケニア",
   "reading": "ケニア",
-  "meaning": "Kenya"
+  "meaning": "Kenya",
+  "example": "**ケニア**に [友達](ともだち)が います。",
+  "exampleVi": "Tôi có bạn ở Kenya."
  }
 ]

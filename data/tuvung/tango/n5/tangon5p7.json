@@ -2,781 +2,1093 @@
  {
   "word": "買い物",
   "reading": "かいもの",
-  "meaning": "mua sắm"
+  "meaning": "mua sắm",
+  "example": "スーパーで**[買](か)い[物](もの)**をします。",
+  "exampleVi": "Tôi mua sắm ở siêu thị."
  },
  {
   "word": "をください",
   "reading": "をください",
-  "meaning": "cho tôi ~"
+  "meaning": "cho tôi ~",
+  "example": "これ**をください**。",
+  "exampleVi": "Cho tôi cái này."
  },
  {
   "word": "と",
   "reading": "と",
-  "meaning": "và ~"
+  "meaning": "và ~",
+  "example": "[牛乳](ぎゅうにゅう)**と**パンを[買](か)いました。",
+  "exampleVi": "Tôi đã mua sữa và bánh mì."
  },
  {
   "word": "や",
   "reading": "や",
-  "meaning": "~ và ~ "
+  "meaning": "~ và ~ ",
+  "example": "ジュース**や**アイスクリームを[買](か)います。",
+  "exampleVi": "Tôi mua nước trái cây và kem."
  },
  {
   "word": "いくら",
   "reading": "いくら",
-  "meaning": "bao nhiêu tiền?"
+  "meaning": "bao nhiêu tiền?",
+  "example": "このパソコンは**いくら**ですか。",
+  "exampleVi": "Cái máy tính này bao nhiêu tiền?"
  },
  {
   "word": "円",
   "reading": "えん",
-  "meaning": "yên"
+  "meaning": "yên",
+  "example": "[九万](きゅうまん)**[円](えん)**です。",
+  "exampleVi": "90.000 yên."
  },
  {
   "word": "高い",
   "reading": "たかい",
-  "meaning": "đắt, mắc"
+  "meaning": "đắt, mắc",
+  "example": "このカメラは**[高](たか)い**ですね。",
+  "exampleVi": "Máy ảnh này đắt nhỉ."
  },
  {
   "word": "安い",
   "reading": "やすい",
-  "meaning": "rẻ"
+  "meaning": "rẻ",
+  "example": "**[安](やす)い**カメラが[買](か)いたいです。",
+  "exampleVi": "Tôi muốn mua máy ảnh rẻ."
  },
  {
   "word": "百",
   "reading": "ひゃく",
-  "meaning": "trăm"
+  "meaning": "trăm",
+  "example": "[十](じゅう)、[五十](ごじゅう)、**[百](ひゃく)**。",
+  "exampleVi": "Mười, năm mươi, một trăm."
  },
  {
   "word": "一円",
   "reading": "いちえん",
-  "meaning": "một yên"
+  "meaning": "một yên",
+  "example": "**[一円](いちえん)**も ありません。",
+  "exampleVi": "Tôi không có một yên nào."
  },
  {
   "word": "十円",
   "reading": "じゅうえん",
-  "meaning": "mười yên"
+  "meaning": "mười yên",
+  "example": "この あめは **[十円](じゅうえん)**です。",
+  "exampleVi": "Cái kẹo này giá 10 yên."
  },
  {
   "word": "百円",
   "reading": "ひゃくえん",
-  "meaning": "một trăm yên"
+  "meaning": "một trăm yên",
+  "example": "この ジュースは **[百円](ひゃくえん)**です。",
+  "exampleVi": "Chai nước trái cây này giá 100 yên."
  },
  {
   "word": "千",
   "reading": "せん",
-  "meaning": "ngàn"
+  "meaning": "ngàn",
+  "example": "**[千](せん)**、[二千](にせん)、[三千](さんぜん)。",
+  "exampleVi": "Một nghìn, hai nghìn, ba nghìn."
  },
  {
   "word": "千円",
   "reading": "せんえん",
-  "meaning": "một ngàn yên"
+  "meaning": "một ngàn yên",
+  "example": "この [本](ほん)は **[千円](せんえん)**です。",
+  "exampleVi": "Quyển sách này giá 1.000 yên."
  },
  {
   "word": "万",
   "reading": "まん",
-  "meaning": "mười ngàn"
+  "meaning": "mười ngàn",
+  "example": "[一](いち)**[万](まん)**、[二](に)**[万](まん)**、[三](さん)**[万](まん)**。",
+  "exampleVi": "Một vạn, hai vạn, ba vạn."
  },
  {
   "word": "一万円",
   "reading": "いちまんえん",
-  "meaning": "mười ngàn yên"
+  "meaning": "mười ngàn yên",
+  "example": "この カメラは **[一万円](いちまんえん)**です。",
+  "exampleVi": "Chiếc máy ảnh này giá 10.000 yên."
  },
  {
   "word": "億",
   "reading": "おく",
-  "meaning": "trăm triệu"
+  "meaning": "trăm triệu",
+  "example": "[一](いち)**[億](おく)**、[二](に)**[億](おく)**。",
+  "exampleVi": "Một trăm triệu, hai trăm triệu."
  },
  {
   "word": "一億円",
   "reading": "いちおくえん",
-  "meaning": "một trăm triệu yên"
+  "meaning": "một trăm triệu yên",
+  "example": "**[一億円](いちおくえん)**は たくさんの お[金](かね)です。",
+  "exampleVi": "100 triệu yên là rất nhiều tiền."
  },
  {
   "word": "ちょっと",
   "reading": "ちょっと",
-  "meaning": "một chút"
+  "meaning": "một chút",
+  "example": "これは**ちょっと**[高](たか)いですね。",
+  "exampleVi": "Cái này hơi đắt một chút."
  },
  {
   "word": "では",
   "reading": "では",
-  "meaning": "vậy thì"
+  "meaning": "vậy thì",
+  "example": "**では**、こちらはいかがですか。",
+  "exampleVi": "Vậy, cái này thì sao?"
  },
  {
   "word": "じゃ",
   "reading": "じゃ",
-  "meaning": "vậy thì"
+  "meaning": "vậy thì",
+  "example": "**じゃ**、それをください。",
+  "exampleVi": "Vậy, cho tôi cái đó."
  },
  {
   "word": "お金",
   "reading": "おかね",
-  "meaning": "tiền"
+  "meaning": "tiền",
+  "example": "[日本](にほん)の**お[金](かね)**は[円](えん)です。",
+  "exampleVi": "Tiền của Nhật là yên."
  },
  {
   "word": "はらう",
   "reading": "はらう",
-  "meaning": "trả (tiền), thanh toán"
+  "meaning": "trả (tiền), thanh toán",
+  "example": "お[金](かね)を**はらいます**。",
+  "exampleVi": "Tôi trả tiền."
  },
  {
   "word": "おつり",
   "reading": "おつり",
-  "meaning": "tiền thối"
+  "meaning": "tiền thối",
+  "example": "**おつり**は850[円](えん)です。",
+  "exampleVi": "Tiền thối là 850 yên."
  },
  {
   "word": "細かいお金",
   "reading": "こまかいおかね",
-  "meaning": "tiền lẻ"
+  "meaning": "tiền lẻ",
+  "example": "**[細](こま)かいお[金](かね)**がありません。",
+  "exampleVi": "Tôi không có tiền lẻ."
  },
  {
   "word": "足りる",
   "reading": "たりる",
-  "meaning": "đủ"
+  "meaning": "đủ",
+  "example": "お[金](かね)が**[足](た)りません**。",
+  "exampleVi": "Tôi không đủ tiền."
  },
  {
   "word": "生活",
   "reading": "せいかつ",
-  "meaning": "cuộc sống, sinh hoạt"
+  "meaning": "cuộc sống, sinh hoạt",
+  "example": "[東京](とうきょう)の**[生活](せいかつ)**は[楽](たの)しいです。",
+  "exampleVi": "Cuộc sống ở Tokyo thì vui."
  },
  {
   "word": "物価",
   "reading": "ぶっか",
-  "meaning": "vật giá"
+  "meaning": "vật giá",
+  "example": "[東京](とうきょう)は**[物価](ぶっか)**が[高](たか)いです。",
+  "exampleVi": "Vật giá ở Tokyo thì đắt đỏ."
  },
  {
   "word": "いくつ",
   "reading": "いくつ",
-  "meaning": "bao nhiêu cái"
+  "meaning": "bao nhiêu cái",
+  "example": "りんごを**いくつ**[買](か)いましたか。",
+  "exampleVi": "Bạn đã mua bao nhiêu trái táo?"
  },
  {
   "word": "全部で",
   "reading": "ぜんぶで",
-  "meaning": "tất cả, tổng cộng"
+  "meaning": "tất cả, tổng cộng",
+  "example": "**[全部](ぜんぶ)で**500[円](えん)です。",
+  "exampleVi": "Tổng cộng là 500 yên."
  },
  {
   "word": "一つ",
   "reading": "ひとつ",
-  "meaning": "một cái"
+  "meaning": "một cái",
+  "example": "りんごを **[一](ひと)つ** ください。",
+  "exampleVi": "Cho tôi một quả táo."
  },
  {
   "word": "二つ",
   "reading": "ふたつ",
-  "meaning": "hai cái"
+  "meaning": "hai cái",
+  "example": "みかんを **[二](ふた)つ** ください。",
+  "exampleVi": "Cho tôi hai quả quýt."
  },
  {
   "word": "三つ",
   "reading": "みっつ",
-  "meaning": "ba cái"
+  "meaning": "ba cái",
+  "example": "ケーキを **[三](みっ)つ** ください。",
+  "exampleVi": "Cho tôi ba cái bánh ngọt."
  },
  {
   "word": "四つ",
   "reading": "よっつ",
-  "meaning": "bốn cái"
+  "meaning": "bốn cái",
+  "example": "パンを **[四](よっ)つ** ください。",
+  "exampleVi": "Cho tôi bốn cái bánh mì."
  },
  {
   "word": "五つ",
   "reading": "いつつ",
-  "meaning": "năm cái"
+  "meaning": "năm cái",
+  "example": "たまごを **[五](いつ)つ** ください。",
+  "exampleVi": "Cho tôi năm quả trứng."
  },
  {
   "word": "六つ",
   "reading": "むっつ",
-  "meaning": "sáu cái"
+  "meaning": "sáu cái",
+  "example": "りんごを **[六](むっ)つ** [買](か)いました。",
+  "exampleVi": "Tôi đã mua sáu quả táo."
  },
  {
   "word": "七つ",
   "reading": "ななつ",
-  "meaning": "bảy cái"
+  "meaning": "bảy cái",
+  "example": "みかんを **[七](なな)つ** [買](か)いました。",
+  "exampleVi": "Tôi đã mua bảy quả quýt."
  },
  {
   "word": "八つ",
   "reading": "やっつ",
-  "meaning": "tám cái"
+  "meaning": "tám cái",
+  "example": "ケーキを **[八](やっ)つ** [作](つく)りました。",
+  "exampleVi": "Tôi đã làm tám cái bánh ngọt."
  },
  {
   "word": "九つ",
   "reading": "ここのつ",
-  "meaning": "chín cái"
+  "meaning": "chín cái",
+  "example": "たまごが **[九](ここの)つ** あります。",
+  "exampleVi": "Có chín quả trứng."
  },
  {
   "word": "十",
   "reading": "とお",
-  "meaning": "mười cái"
+  "meaning": "mười cái",
+  "example": "みかんが **[十](とお)** あります。",
+  "exampleVi": "Có mười quả quýt."
  },
  {
   "word": "店",
   "reading": "みせ",
-  "meaning": "cửa hàng, cửa tiệm"
+  "meaning": "cửa hàng, cửa tiệm",
+  "example": "いろいろな**[店](みせ)**があります。",
+  "exampleVi": "Có nhiều cửa hàng."
  },
  {
   "word": "屋",
   "reading": "や",
-  "meaning": "tiệm ~"
+  "meaning": "tiệm ~",
+  "example": "パン**[屋](や)**でパンを[買](か)います。",
+  "exampleVi": "Tôi mua bánh mì ở tiệm bánh mì."
  },
  {
   "word": "デパート",
   "reading": "デパート",
-  "meaning": "cửa hàng bách hóa, trung tâm thương mại"
+  "meaning": "cửa hàng bách hóa, trung tâm thương mại",
+  "example": "[日曜日](にちようび)に**デパート**で[買](か)い[物](もの)しました。",
+  "exampleVi": "Chủ nhật, tôi đã đi mua sắm ở trung tâm thương mại."
  },
  {
   "word": "コンビニ",
   "reading": "コンビニ",
-  "meaning": "cửa hàng tiện lợi"
+  "meaning": "cửa hàng tiện lợi",
+  "example": "**コンビニ**でお[弁当](べんとう)を[買](か)います。",
+  "exampleVi": "Tôi mua cơm hộp ở cửa hàng tiện lợi."
  },
  {
   "word": "売る",
   "reading": "うる",
-  "meaning": "bán"
+  "meaning": "bán",
+  "example": "コンビニでおにぎりを**[売](う)っています**。",
+  "exampleVi": "Cửa hàng tiện lợi bán cơm nắm."
  },
  {
   "word": "売り場",
   "reading": "うりば",
-  "meaning": "quầy bán hàng"
+  "meaning": "quầy bán hàng",
+  "example": "[野菜](やさい)の**[売](う)り[場](ば)**はどこですか。",
+  "exampleVi": "Quầy bán rau ở đâu ạ?"
  },
  {
   "word": "コーナー",
   "reading": "コーナー",
-  "meaning": "góc, khu"
+  "meaning": "góc, khu",
+  "example": "ニョクマムはしょうゆの**コーナー**にあります。",
+  "exampleVi": "Nước mắm ở khu nước tương."
  },
  {
   "word": "たな",
   "reading": "たな",
-  "meaning": "kệ (hàng)"
+  "meaning": "kệ (hàng)",
+  "example": "[飲](の)み[物](もの)はその**たな**です。",
+  "exampleVi": "Thức uống ở kệ đó."
  },
  {
   "word": "コピー",
   "reading": "コピー",
-  "meaning": "phô-tô, in sao"
+  "meaning": "phô-tô, in sao",
+  "example": "コンビニで**コピー**します。",
+  "exampleVi": "Tôi phô-tô ở cửa hàng tiện lợi."
  },
  {
   "word": "チケット",
   "reading": "チケット",
-  "meaning": "vé"
+  "meaning": "vé",
+  "example": "コンサートの**チケット**を[買](か)います。",
+  "exampleVi": "Tôi mua vé ca nhạc."
  },
  {
   "word": "カタログ",
   "reading": "カタログ",
-  "meaning": "tập giới thiệu, catalogue"
+  "meaning": "tập giới thiệu, catalogue",
+  "example": "パソコンの**カタログ**を[見](み)ます。",
+  "exampleVi": "Tôi xem tập giới thiệu về máy tính."
  },
  {
   "word": "雑誌",
   "reading": "ざっし",
-  "meaning": "tạp chí"
+  "meaning": "tạp chí",
+  "example": "きっさてんで**[雑誌](ざっし)**を[読](よ)みました。",
+  "exampleVi": "Tôi đã đọc tạp chí ở quán nước."
  },
  {
   "word": "新聞",
   "reading": "しんぶん",
-  "meaning": "báo"
+  "meaning": "báo",
+  "example": "コンビニで**[新聞](しんぶん)**を[買](か)います。",
+  "exampleVi": "Tôi mua báo ở cửa hàng tiện lợi."
  },
  {
   "word": "欲しい",
   "reading": "ほしい",
-  "meaning": "muốn có"
+  "meaning": "muốn có",
+  "example": "[小](ちい)さいパソコンが**[欲](ほ)しい**です。",
+  "exampleVi": "Tôi muốn có cái máy tính nhỏ."
  },
  {
   "word": "できる",
   "reading": "できる",
-  "meaning": "có thể"
+  "meaning": "có thể",
+  "example": "コンビニでチケットの[予約](よやく)が**できます**。",
+  "exampleVi": "Có thể đặt vé ở cửa hàng tiện lợi."
  },
  {
   "word": "できる",
   "reading": "できる",
-  "meaning": "có thể"
+  "meaning": "có thể",
+  "example": "ダンスが**できます**。",
+  "exampleVi": "Tôi có thể múa."
  },
  {
   "word": "でございます",
   "reading": "でございます",
-  "meaning": "là ~ (kính ngữ)"
+  "meaning": "là ~ (kính ngữ)",
+  "example": "3,500[円](えん)**でございます**。",
+  "exampleVi": "3.500 yên ạ."
  },
  {
   "word": "お探しですか",
   "reading": "おさがしですか",
-  "meaning": "Tìm ~ ạ ? (kính ngữ)"
+  "meaning": "Tìm ~ ạ ? (kính ngữ)",
+  "example": "どんなカメラを**お[探](さが)しですか**。",
+  "exampleVi": "Anh / Chị tìm máy ảnh như thế nào ạ?"
  },
  {
   "word": "見せる",
   "reading": "みせる",
-  "meaning": "cho xem"
+  "meaning": "cho xem",
+  "example": "あのカメラを**[見](み)せてください**。",
+  "exampleVi": "Cho tôi xem máy ảnh kia."
  },
  {
   "word": "かしこまりました",
   "reading": "かしこまりました",
-  "meaning": "Tôi đã hiểu rồi ạ."
+  "meaning": "Tôi đã hiểu rồi ạ.",
+  "example": "A：これを ください。　B：**かしこまりました**。",
+  "exampleVi": "A: Cho tôi cái này.  B: Vâng, tôi hiểu rồi ạ."
  },
  {
   "word": "少々お待ちください",
   "reading": "しょうしょうおまちください",
-  "meaning": "Vui lòng chờ cho một chút."
+  "meaning": "Vui lòng chờ cho một chút.",
+  "example": "**[少々](しょうしょう)お[待](ま)ちください**。",
+  "exampleVi": "Xin vui lòng chờ một chút."
  },
  {
   "word": "方",
   "reading": "かた",
-  "meaning": "cách ~"
+  "meaning": "cách ~",
+  "example": "ATMの[使](つか)い**[方](かた)**がわかりません。",
+  "exampleVi": "Tôi không biết cách sử dụng ATM."
  },
  {
   "word": "お引き出しですか",
   "reading": "おひきだしですか",
-  "meaning": "Quý khách rút (tiền) ạ?"
+  "meaning": "Quý khách rút (tiền) ạ?",
+  "example": "**お[引](ひ)き[出](だ)しですか**。",
+  "exampleVi": "Quý khách rút tiền ạ?"
  },
  {
   "word": "現金",
   "reading": "げんきん",
-  "meaning": "tiền mặt"
+  "meaning": "tiền mặt",
+  "example": "**[現金](げんきん)**がありません。",
+  "exampleVi": "Tôi không có tiền mặt."
  },
  {
   "word": "下ろす",
   "reading": "おろす",
-  "meaning": "rút (tiền)"
+  "meaning": "rút (tiền)",
+  "example": "ATMでお[金](かね)を**[下](お)ろします**。",
+  "exampleVi": "Tôi rút tiền bằng máy rút tiền tự động."
  },
  {
   "word": "まず",
   "reading": "まず",
-  "meaning": "trước tiên"
+  "meaning": "trước tiên",
+  "example": "**まず**キャッシュカードを[入](い)れてください。",
+  "exampleVi": "Trước tiên, hãy đưa thẻ ngân hàng vào."
  },
  {
   "word": "キャッシュカード",
   "reading": "キャッシュカード",
-  "meaning": "thẻ ngân hàng"
+  "meaning": "thẻ ngân hàng",
+  "example": "**キャッシュカード**を [忘](わす)れました。",
+  "exampleVi": "Tôi đã quên thẻ ngân hàng."
  },
  {
   "word": "次に",
   "reading": "つぎに",
-  "meaning": "tiếp theo"
+  "meaning": "tiếp theo",
+  "example": "**[次](つぎ)に**[暗証番号](あんしょうばんごう)をおしてください。",
+  "exampleVi": "Tiếp theo, hãy bấm số bảo mật."
  },
  {
   "word": "暗証番号",
   "reading": "あんしょうばんごう",
-  "meaning": "số (mật khẩu, bảo mật)"
+  "meaning": "số (mật khẩu, bảo mật)",
+  "example": "**[暗証番号](あんしょうばんごう)**を [忘](わす)れました。",
+  "exampleVi": "Tôi đã quên mật khẩu."
  },
  {
   "word": "おす",
   "reading": "おす",
-  "meaning": "bấm, nhấn"
+  "meaning": "bấm, nhấn",
+  "example": "ボタンを **おしてください**。",
+  "exampleVi": "Hãy bấm nút."
  },
  {
   "word": "それから",
   "reading": "それから",
-  "meaning": "sau đó"
+  "meaning": "sau đó",
+  "example": "**それから**[金額](きんがく)をおしてください。",
+  "exampleVi": "Sau đó, hãy bấm số tiền."
  },
  {
   "word": "金額",
   "reading": "きんがく",
-  "meaning": "số tiền"
+  "meaning": "số tiền",
+  "example": "**[金額](きんがく)**を [確認](かくにん)します。",
+  "exampleVi": "Tôi kiểm tra số tiền."
  },
  {
   "word": "確認",
   "reading": "かくにん",
-  "meaning": "xác nhận, kiểm tra"
+  "meaning": "xác nhận, kiểm tra",
+  "example": "**[確認](かくにん)**ボタンをおしてください。",
+  "exampleVi": "Hãy bấm nút xác nhận."
  },
  {
   "word": "ボタン",
   "reading": "ボタン",
-  "meaning": "nút"
+  "meaning": "nút",
+  "example": "この **ボタン**を おします。",
+  "exampleVi": "Tôi bấm nút này."
  },
  {
   "word": "出る",
   "reading": "でる",
-  "meaning": "xuất hiện, ra"
+  "meaning": "xuất hiện, ra",
+  "example": "ここからお[金](かね)が**[出](で)ます**。",
+  "exampleVi": "Tiền sẽ xuất hiện từ đây."
  },
  {
   "word": "かえる",
   "reading": "かえる",
-  "meaning": "đổi"
+  "meaning": "đổi",
+  "example": "[円](えん)をドルに**かえます**。",
+  "exampleVi": "Tôi đổi tiền yên sang đô la."
  },
  {
   "word": "郵便局",
   "reading": "ゆうびんきょく",
-  "meaning": "bưu điện"
+  "meaning": "bưu điện",
+  "example": "[明日](あした)、**[郵便局](ゆうびんきょく)**へ[行](い)きます。",
+  "exampleVi": "Ngày mai, tôi sẽ đi bưu điện."
  },
  {
   "word": "ポスト",
   "reading": "ポスト",
-  "meaning": "thùng thư"
+  "meaning": "thùng thư",
+  "example": "はがきを**ポスト**に[入](い)れます。",
+  "exampleVi": "Tôi cho bưu thiếp vào thùng thư."
  },
  {
   "word": "手紙",
   "reading": "てがみ",
-  "meaning": "thư"
+  "meaning": "thư",
+  "example": "**[手紙](てがみ)**を[書](か)きます。",
+  "exampleVi": "Tôi viết thư."
  },
  {
   "word": "はがき",
   "reading": "はがき",
-  "meaning": "thiệp, bưu thiếp"
+  "meaning": "thiệp, bưu thiếp",
+  "example": "**はがき**をさんまいお[願](ねが)いします。",
+  "exampleVi": "Cho tôi 3 tấm bưu thiếp."
  },
  {
   "word": "年賀状",
   "reading": "ねんがじょう",
-  "meaning": "thiệp chúc năm mới"
+  "meaning": "thiệp chúc năm mới",
+  "example": "[先生](せんせい)に**[年賀状](ねんがじょう)**を[出](だ)します。",
+  "exampleVi": "Tôi gửi thiệp chúc năm mới cho thầy cô."
  },
  {
   "word": "出す",
   "reading": "だす",
-  "meaning": "gửi (thư)"
+  "meaning": "gửi (thư)",
+  "example": "[航空便](こうくうびん)で[手紙](てがみ)を**[出](だ)します**。",
+  "exampleVi": "Tôi gửi thư bằng đường hàng không."
  },
  {
   "word": "メール",
   "reading": "メール",
-  "meaning": "e-mail"
+  "meaning": "e-mail",
+  "example": "**メール**を[送](おく)ります。",
+  "exampleVi": "Tôi gửi e-mail."
  },
  {
   "word": "送る",
   "reading": "おくる",
-  "meaning": "gửi"
+  "meaning": "gửi",
+  "example": "[家族](かぞく)に[荷物](にもつ)を**[送](おく)ります**。",
+  "exampleVi": "Tôi gửi đồ (hành lý) cho gia đình."
  },
  {
   "word": "切手",
   "reading": "きって",
-  "meaning": "tem"
+  "meaning": "tem",
+  "example": "**[切手](きって)**を[買](か)います。",
+  "exampleVi": "Tôi mua tem."
  },
  {
   "word": "集める",
   "reading": "あつめる",
-  "meaning": "sưu tầm"
+  "meaning": "sưu tầm",
+  "example": "[切手](きって)を**[集](あつ)めています**。",
+  "exampleVi": "Tôi sưu tầm tem."
  },
  {
   "word": "ふうとう",
   "reading": "ふうとう",
-  "meaning": "bì thư"
+  "meaning": "bì thư",
+  "example": "**ふうとう**に[手紙](てがみ)を[入](い)れます。",
+  "exampleVi": "Tôi cho thư vào bì thư."
  },
  {
   "word": "外国",
   "reading": "がいこく",
-  "meaning": "nước ngoài"
+  "meaning": "nước ngoài",
+  "example": "**[外国](がいこく)**に[手紙](てがみ)を[出](だ)します。",
+  "exampleVi": "Tôi gửi thư đi nước ngoài."
  },
  {
   "word": "エアメール",
   "reading": "エアメール",
-  "meaning": "đường hàng không"
+  "meaning": "đường hàng không",
+  "example": "イギリスまで**エアメール**でお[願](ねが)いします。",
+  "exampleVi": "Vui lòng gửi bằng đường hàng không đến Anh."
  },
  {
   "word": "航空便",
   "reading": "こうくうびん",
-  "meaning": "đường hàng không"
+  "meaning": "đường hàng không",
+  "example": "**[航空便](こうくうびん)**で[送](おく)ります。",
+  "exampleVi": "Tôi gửi bằng đường hàng không."
  },
  {
   "word": "船便",
   "reading": "ふなびん",
-  "meaning": "đường biển"
+  "meaning": "đường biển",
+  "example": "**[船便](ふなびん)**で[送](おく)ります。",
+  "exampleVi": "Tôi gửi bằng đường biển."
  },
  {
   "word": "荷物",
   "reading": "にもつ",
-  "meaning": "hành lý, kiện hàng, gói đồ"
+  "meaning": "hành lý, kiện hàng, gói đồ",
+  "example": "[郵便局](ゆうびんきょく)で**[荷物](にもつ)**を[送](おく)ります。",
+  "exampleVi": "Tôi gửi hành lý ở bưu điện."
  },
  {
   "word": "重い",
   "reading": "おもい",
-  "meaning": "nặng"
+  "meaning": "nặng",
+  "example": "この[荷物](にもつ)は**[重](おも)い**ですね。",
+  "exampleVi": "Hành lý này nặng nhỉ."
  },
  {
   "word": "軽い",
   "reading": "かるい",
-  "meaning": "nhẹ"
+  "meaning": "nhẹ",
+  "example": "この[荷物](にもつ)は**[軽](かる)い**ですね。",
+  "exampleVi": "Hành lý này nhẹ nhỉ."
  },
  {
   "word": "あげる",
   "reading": "あげる",
-  "meaning": "tặng, cho"
+  "meaning": "tặng, cho",
+  "example": "[友達](ともだち)にプレゼントを**あげます**。",
+  "exampleVi": "Tôi tặng quà cho bạn."
  },
  {
   "word": "もらう",
   "reading": "もらう",
-  "meaning": "nhận"
+  "meaning": "nhận",
+  "example": "[父](ちち)に[辞書](じしょ)を**もらいました**。",
+  "exampleVi": "Tôi nhận quyển tự điển từ bố. (Bố cho tôi quyển tự điển)"
  },
  {
   "word": "くれる",
   "reading": "くれる",
-  "meaning": "(được) cho, tặng"
+  "meaning": "(được) cho, tặng",
+  "example": "[友達](ともだち)がお[土産](みやげ)を**くれました**。",
+  "exampleVi": "Bạn tôi tặng tôi món quà."
  },
  {
   "word": "プレゼント",
   "reading": "プレゼント",
-  "meaning": "quà tặng"
+  "meaning": "quà tặng",
+  "example": "[弟](おとうと)に**プレゼント**をあげました。",
+  "exampleVi": "Tôi đã tặng quà cho em trai."
  },
  {
   "word": "物",
   "reading": "もの",
-  "meaning": "vật, đồ"
+  "meaning": "vật, đồ",
+  "example": "いろいろな**[物](もの)**をもらいました。",
+  "exampleVi": "Tôi đã nhận được nhiều thứ."
  },
  {
   "word": "パーティー",
   "reading": "パーティー",
-  "meaning": "tiệc"
+  "meaning": "tiệc",
+  "example": "[友達](ともだち)と**パーティー**をします。",
+  "exampleVi": "Tôi làm tiệc với bạn bè."
  },
  {
   "word": "始める",
   "reading": "はじめる",
-  "meaning": "bắt đầu"
+  "meaning": "bắt đầu",
+  "example": "[6時](ろくじ)にパーティーを**[始](はじ)めます**。",
+  "exampleVi": "Chúng tôi bắt đầu tiệc lúc 6 giờ."
  },
  {
   "word": "だれ",
   "reading": "だれ",
-  "meaning": "ai"
+  "meaning": "ai",
+  "example": "あの[人](ひと)は**だれ**ですか。",
+  "exampleVi": "Người đó là ai?"
  },
  {
   "word": "どなた",
   "reading": "どなた",
-  "meaning": "ai (kính ngữ)"
+  "meaning": "ai (kính ngữ)",
+  "example": "あの[方](かた)は**どなた**ですか。",
+  "exampleVi": "Vị đó là ai vậy?"
  },
  {
   "word": "あの方",
   "reading": "あのかた",
-  "meaning": "người đó (kính ngữ)"
+  "meaning": "người đó (kính ngữ)",
+  "example": "**あの[方](かた)**は[大学](だいがく)のスミス[先生](せんせい)です。",
+  "exampleVi": "Vị đó là thầy Smith của trường đại học."
  },
  {
   "word": "クリスマス",
   "reading": "クリスマス",
-  "meaning": "Giáng sinh"
+  "meaning": "Giáng sinh",
+  "example": "**クリスマス**にパーティーをします。",
+  "exampleVi": "Sẽ làm tiệc vào Giáng sinh."
  },
  {
   "word": "誕生日",
   "reading": "たんじょうび",
-  "meaning": "sinh nhật"
+  "meaning": "sinh nhật",
+  "example": "**[誕生日](たんじょうび)**はいつですか。",
+  "exampleVi": "Sinh nhật (của bạn) khi nào?"
  },
  {
   "word": "生まれる",
   "reading": "うまれる",
-  "meaning": "chào đời, được sinh ra"
+  "meaning": "chào đời, được sinh ra",
+  "example": "[友達](ともだち)に[子供](こども)が**[生](う)まれました**。",
+  "exampleVi": "Bạn tôi đã có / sinh con."
  },
  {
   "word": "おめでとうございます",
   "reading": "おめでとうございます",
-  "meaning": "(Xin) chúc mừng"
+  "meaning": "(Xin) chúc mừng",
+  "example": "お[誕生日](たんじょうび)**おめでとうございます**。",
+  "exampleVi": "Chúc mừng sinh nhật."
  },
  {
   "word": "わあ",
   "reading": "わあ",
-  "meaning": "ôi"
+  "meaning": "ôi",
+  "example": "**わあ**、ありがとうございます。",
+  "exampleVi": "Ôi, cảm ơn bạn."
  },
  {
   "word": "なんさい",
   "reading": "なんさい",
-  "meaning": "bao nhiêu (mấy) tuổi"
+  "meaning": "bao nhiêu (mấy) tuổi",
+  "example": "ホアンさんは**なんさい**ですか。",
+  "exampleVi": "Hoàng bao nhiêu tuổi?"
  },
  {
   "word": "おいくつ",
   "reading": "おいくつ",
-  "meaning": "bao nhiêu (mấy) tuổi (kính ngữ)"
+  "meaning": "bao nhiêu (mấy) tuổi (kính ngữ)",
+  "example": "[弟](おとうと)さんは**おいくつ**ですか。",
+  "exampleVi": "Em trai bạn bao nhiêu tuổi?"
  },
  {
   "word": "いっさい",
   "reading": "いっさい",
-  "meaning": "một tuổi"
+  "meaning": "một tuổi",
+  "example": "[弟](おとうと)は **いっさい**です。",
+  "exampleVi": "Em trai tôi một tuổi."
  },
  {
   "word": "にさい",
   "reading": "にさい",
-  "meaning": "hai tuổi"
+  "meaning": "hai tuổi",
+  "example": "[妹](いもうと)は **にさい**です。",
+  "exampleVi": "Em gái tôi hai tuổi."
  },
  {
   "word": "さんさい",
   "reading": "さんさい",
-  "meaning": "ba tuổi"
+  "meaning": "ba tuổi",
+  "example": "あの [子](こ)は **さんさい**です。",
+  "exampleVi": "Đứa bé kia ba tuổi."
  },
  {
   "word": "よんさい",
   "reading": "よんさい",
-  "meaning": "bốn tuổi"
+  "meaning": "bốn tuổi",
+  "example": "[私](わたし)の [犬](いぬ)は **よんさい**です。",
+  "exampleVi": "Con chó của tôi bốn tuổi."
  },
  {
   "word": "ごさい",
   "reading": "ごさい",
-  "meaning": "năm tuổi"
+  "meaning": "năm tuổi",
+  "example": "[子供](こども)は **ごさい**です。",
+  "exampleVi": "Con tôi năm tuổi."
  },
  {
   "word": "ろくさい",
   "reading": "ろくさい",
-  "meaning": "sáu tuổi"
+  "meaning": "sáu tuổi",
+  "example": "[弟](おとうと)は **ろくさい**です。",
+  "exampleVi": "Em trai tôi sáu tuổi."
  },
  {
   "word": "ななさい",
   "reading": "ななさい",
-  "meaning": "bảy tuổi"
+  "meaning": "bảy tuổi",
+  "example": "[妹](いもうと)は **ななさい**です。",
+  "exampleVi": "Em gái tôi bảy tuổi."
  },
  {
   "word": "はっさい",
   "reading": "はっさい",
-  "meaning": "tám tuổi"
+  "meaning": "tám tuổi",
+  "example": "あの [男](おとこ)の[子](こ)は **はっさい**です。",
+  "exampleVi": "Cậu bé kia tám tuổi."
  },
  {
   "word": "きゅうさい",
   "reading": "きゅうさい",
-  "meaning": "chín tuổi"
+  "meaning": "chín tuổi",
+  "example": "[私](わたし)の ねこは **きゅうさい**です。",
+  "exampleVi": "Con mèo của tôi chín tuổi."
  },
  {
   "word": "じゅっさい",
   "reading": "じゅっさい",
-  "meaning": "mười tuổi"
+  "meaning": "mười tuổi",
+  "example": "[弟](おとうと)は **じゅっさい**です。",
+  "exampleVi": "Em trai tôi mười tuổi."
  },
  {
   "word": "はたち",
   "reading": "はたち",
-  "meaning": "hai mươi tuổi"
+  "meaning": "hai mươi tuổi",
+  "example": "[姉](あね)は **はたち**です。",
+  "exampleVi": "Chị gái tôi hai mươi tuổi."
  },
  {
   "word": "なんさい",
   "reading": "なんさい",
-  "meaning": "bao nhiêu tuổi / mấy tuổi"
+  "meaning": "bao nhiêu tuổi / mấy tuổi",
+  "example": "あの [人](ひと)は **なんさい**ですか。",
+  "exampleVi": "Người kia bao nhiêu tuổi?"
  },
  {
   "word": "何日",
   "reading": "なんにち",
-  "meaning": "ngày mấy"
+  "meaning": "ngày mấy",
+  "example": "[今日](きょう)は**[何日](なんにち)**ですか。",
+  "exampleVi": "Hôm nay ngày mấy?"
  },
  {
   "word": "一日",
   "reading": "ついたち",
-  "meaning": "ngày 1"
+  "meaning": "ngày 1",
+  "example": "[今日](きょう)は **[一日](ついたち)**です。",
+  "exampleVi": "Hôm nay là mùng 1."
  },
  {
   "word": "二日",
   "reading": "ふつか",
-  "meaning": "ngày 2"
+  "meaning": "ngày 2",
+  "example": "[明日](あした)は **[二日](ふつか)**です。",
+  "exampleVi": "Ngày mai là mùng 2."
  },
  {
   "word": "三日",
   "reading": "みっか",
-  "meaning": "ngày 3"
+  "meaning": "ngày 3",
+  "example": "[今日](きょう)は **[三日](みっか)**です。",
+  "exampleVi": "Hôm nay là ngày 3."
  },
  {
   "word": "四日",
   "reading": "よっか",
-  "meaning": "ngày 4"
+  "meaning": "ngày 4",
+  "example": "**[四日](よっか)**に [友達](ともだち)が [来](き)ます。",
+  "exampleVi": "Ngày 4 bạn tôi sẽ đến."
  },
  {
   "word": "五日",
   "reading": "いつか",
-  "meaning": "ngày 5"
+  "meaning": "ngày 5",
+  "example": "**[五日](いつか)**は [休](やす)みです。",
+  "exampleVi": "Ngày 5 là ngày nghỉ."
  },
  {
   "word": "六日",
   "reading": "むいか",
-  "meaning": "ngày 6"
+  "meaning": "ngày 6",
+  "example": "**[六日](むいか)**に [会議](かいぎ)が あります。",
+  "exampleVi": "Ngày 6 có cuộc họp."
  },
  {
   "word": "七日",
   "reading": "なのか",
-  "meaning": "ngày 7"
+  "meaning": "ngày 7",
+  "example": "[明日](あした)は **[七日](なのか)**です。",
+  "exampleVi": "Ngày mai là ngày 7."
  },
  {
   "word": "八日",
   "reading": "ようか",
-  "meaning": "ngày 8"
+  "meaning": "ngày 8",
+  "example": "**[八日](ようか)**に [学校](がっこう)へ [行](い)きます。",
+  "exampleVi": "Ngày 8 tôi đến trường."
  },
  {
   "word": "九日",
   "reading": "ここのか",
-  "meaning": "ngày 9"
+  "meaning": "ngày 9",
+  "example": "**[九日](ここのか)**は [私](わたし)の [誕生日](たんじょうび)です。",
+  "exampleVi": "Ngày 9 là sinh nhật của tôi."
  },
  {
   "word": "十日",
   "reading": "とおか",
-  "meaning": "ngày 10"
+  "meaning": "ngày 10",
+  "example": "**[十日](とおか)**に [国](くに)へ [帰](かえ)ります。",
+  "exampleVi": "Ngày 10 tôi về nước."
  },
  {
   "word": "十一日",
   "reading": "じゅういちにち",
-  "meaning": "ngày 11"
+  "meaning": "ngày 11",
+  "example": "**[十一日](じゅういちにち)**は [日曜日](にちようび)です。",
+  "exampleVi": "Ngày 11 là Chủ nhật."
  },
  {
   "word": "十二日",
   "reading": "じゅうににち",
-  "meaning": "ngày 12"
+  "meaning": "ngày 12",
+  "example": "**[十二日](じゅうににち)**に [銀行](ぎんこう)へ [行](い)きます。",
+  "exampleVi": "Ngày 12 tôi đi ngân hàng."
  },
  {
   "word": "十三日",
   "reading": "じゅうさんにち",
-  "meaning": "ngày 13"
+  "meaning": "ngày 13",
+  "example": "**[十三日](じゅうさんにち)**は [休](やす)みです。",
+  "exampleVi": "Ngày 13 là ngày nghỉ."
  },
  {
   "word": "十四日",
   "reading": "じゅうよっか",
-  "meaning": "ngày 14"
+  "meaning": "ngày 14",
+  "example": "**[十四日](じゅうよっか)**に [友達](ともだち)と [会](あ)います。",
+  "exampleVi": "Ngày 14 tôi gặp bạn."
  },
  {
   "word": "十五日",
   "reading": "じゅうごにち",
-  "meaning": "ngày 15"
+  "meaning": "ngày 15",
+  "example": "**[十五日](じゅうごにち)**に [会議](かいぎ)が あります。",
+  "exampleVi": "Ngày 15 có cuộc họp."
  },
  {
   "word": "十六日",
   "reading": "じゅうろくにち",
-  "meaning": "ngày 16"
+  "meaning": "ngày 16",
+  "example": "**[十六日](じゅうろくにち)**は [土曜日](どようび)です。",
+  "exampleVi": "Ngày 16 là thứ Bảy."
  },
  {
   "word": "十七日",
   "reading": "じゅうしちにち",
-  "meaning": "ngày 17"
+  "meaning": "ngày 17",
+  "example": "**[十七日](じゅうしちにち)**に [旅行](りょこう)します。",
+  "exampleVi": "Ngày 17 tôi đi du lịch."
  },
  {
   "word": "十八日",
   "reading": "じゅうはちにち",
-  "meaning": "ngày 18"
+  "meaning": "ngày 18",
+  "example": "**[十八日](じゅうはちにち)**は [私](わたし)の [誕生日](たんじょうび)です。",
+  "exampleVi": "Ngày 18 là sinh nhật của tôi."
  },
  {
   "word": "十九日",
   "reading": "じゅうくにち",
-  "meaning": "ngày 19"
+  "meaning": "ngày 19",
+  "example": "**[十九日](じゅうくにち)**に [映画](えいが)を [見](み)ます。",
+  "exampleVi": "Ngày 19 tôi xem phim."
  },
  {
   "word": "二十日",
   "reading": "はつか",
-  "meaning": "ngày 20"
+  "meaning": "ngày 20",
+  "example": "**[二十日](はつか)**に [国](くに)へ [帰](かえ)ります。",
+  "exampleVi": "Ngày 20 tôi về nước."
  },
  {
   "word": "二十一日",
   "reading": "にじゅういちにち",
-  "meaning": "ngày 21"
+  "meaning": "ngày 21",
+  "example": "**[二十一日](にじゅういちにち)**に テストが あります。",
+  "exampleVi": "Ngày 21 có bài kiểm tra."
  },
  {
   "word": "二十二日",
   "reading": "にじゅうににち",
-  "meaning": "ngày 22"
+  "meaning": "ngày 22",
+  "example": "**[二十二日](にじゅうににち)**は [日曜日](にちようび)です。",
+  "exampleVi": "Ngày 22 là Chủ nhật."
  },
  {
   "word": "二十三日",
   "reading": "にじゅうさんにち",
-  "meaning": "ngày 23"
+  "meaning": "ngày 23",
+  "example": "**[二十三日](にじゅうさんにち)**に [友達](ともだち)が [来](き)ます。",
+  "exampleVi": "Ngày 23 bạn tôi sẽ đến."
  },
  {
   "word": "二十四日",
   "reading": "にじゅうよっか",
-  "meaning": "ngày 24"
+  "meaning": "ngày 24",
+  "example": "**[二十四日](にじゅうよっか)**に [手紙](てがみ)を [出](だ)します。",
+  "exampleVi": "Ngày 24 tôi gửi thư."
  },
  {
   "word": "二十五日",
   "reading": "にじゅうごにち",
-  "meaning": "ngày 25"
+  "meaning": "ngày 25",
+  "example": "クリスマスは [十二月](じゅうにがつ) **[二十五日](にじゅうごにち)**です。",
+  "exampleVi": "Giáng sinh là ngày 25 tháng 12."
  },
  {
   "word": "二十六日",
   "reading": "にじゅうろくにち",
-  "meaning": "ngày 26"
+  "meaning": "ngày 26",
+  "example": "**[二十六日](にじゅうろくにち)**は [休](やす)みです。",
+  "exampleVi": "Ngày 26 là ngày nghỉ."
  },
  {
   "word": "二十七日",
   "reading": "にじゅうしちにち",
-  "meaning": "ngày 27"
+  "meaning": "ngày 27",
+  "example": "**[二十七日](にじゅうしちにち)**に [旅行](りょこう)から [帰](かえ)ります。",
+  "exampleVi": "Ngày 27 tôi đi du lịch về."
  },
  {
   "word": "二十八日",
   "reading": "にじゅうはちにち",
-  "meaning": "ngày 28"
+  "meaning": "ngày 28",
+  "example": "**[二十八日](にじゅうはちにち)**に [会議](かいぎ)が あります。",
+  "exampleVi": "Ngày 28 có cuộc họp."
  },
  {
   "word": "二十九日",
   "reading": "にじゅうくにち",
-  "meaning": "ngày 29"
+  "meaning": "ngày 29",
+  "example": "**[二十九日](にじゅうくにち)**に [映画](えいが)を [見](み)ました。",
+  "exampleVi": "Ngày 29 tôi đã xem phim."
  },
  {
   "word": "三十日",
   "reading": "さんじゅうにち",
-  "meaning": "ngày 30"
+  "meaning": "ngày 30",
+  "example": "**[三十日](さんじゅうにち)**は [月曜日](げつようび)です。",
+  "exampleVi": "Ngày 30 là thứ Hai."
  },
  {
   "word": "三十一日",
   "reading": "さんじゅういちにち",
-  "meaning": "ngày 31"
+  "meaning": "ngày 31",
+  "example": "**[三十一日](さんじゅういちにち)**に [国](くに)へ [帰](かえ)ります。",
+  "exampleVi": "Ngày 31 tôi về nước."
  },
  {
   "word": "何日",
   "reading": "なんにち",
-  "meaning": "ngày mấy"
+  "meaning": "ngày mấy",
+  "example": "[誕生日](たんじょうび)は **[何日](なんにち)**ですか。",
+  "exampleVi": "Sinh nhật bạn là ngày mấy?"
  }
 ]

@@ -2,596 +2,834 @@
  {
   "word": "しゅみ",
   "reading": "しゅみ",
-  "meaning": "sở thích"
+  "meaning": "sở thích",
+  "example": "**しゅみ**はカラオケです。",
+  "exampleVi": "Sở thích (của tôi) là karaoke."
  },
  {
   "word": "日",
   "reading": "ひ",
-  "meaning": "ngày"
+  "meaning": "ngày",
+  "example": "[休](やす)みの**[日](ひ)**に[本](ほん)を[読](よ)みます。",
+  "exampleVi": "Tôi đọc sách vào ngày nghỉ."
  },
  {
   "word": "楽しい",
   "reading": "たのしい",
-  "meaning": "vui"
+  "meaning": "vui",
+  "example": "テニスは**[楽](たの)しい**です。",
+  "exampleVi": "Quần vợt thì vui."
  },
  {
   "word": "好きな",
   "reading": "すきな",
-  "meaning": "thích ~"
+  "meaning": "thích ~",
+  "example": "スポーツが**[好](す)き**です。",
+  "exampleVi": "Tôi thích thể thao."
  },
  {
   "word": "きらいな",
   "reading": "きらいな",
-  "meaning": "ghét"
+  "meaning": "ghét",
+  "example": "まんがが**きらい**です。",
+  "exampleVi": "Tôi ghét truyện tranh."
  },
  {
   "word": "あまり",
   "reading": "あまり",
-  "meaning": "không ~ lắm"
+  "meaning": "không ~ lắm",
+  "example": "スポーツは**あまり**[好](す)きじゃありません。",
+  "exampleVi": "Tôi không thích thể thao lắm."
  },
  {
   "word": "どちら",
   "reading": "どちら",
-  "meaning": "cái nào, đằng nào"
+  "meaning": "cái nào, đằng nào",
+  "example": "サッカーと[野球](やきゅう)と**どちら**が[好](す)きですか。",
+  "exampleVi": "Bóng đá và bóng chày, bạn thích môn nào?"
  },
  {
   "word": "どちらも",
   "reading": "どちらも",
-  "meaning": "cái nào cũng, đằng nào cũng"
+  "meaning": "cái nào cũng, đằng nào cũng",
+  "example": "**どちらも**[好](す)きです。",
+  "exampleVi": "Cái nào cũng thích."
  },
  {
   "word": "どっち",
   "reading": "どっち",
-  "meaning": "cái nào, đằng nào (cách nói thân mật)"
+  "meaning": "cái nào, đằng nào (cách nói thân mật)",
+  "example": "サッカーと[野球](やきゅう)と**どっち**が[好](す)き？",
+  "exampleVi": "Bóng đá và bóng chày, bạn thích môn nào?"
  },
  {
   "word": "上手な",
   "reading": "じょうずな",
-  "meaning": "giỏi"
+  "meaning": "giỏi",
+  "example": "スミスさんは[絵](え)が**[上手](じょうず)**です。",
+  "exampleVi": "Anh Smith vẽ đẹp."
  },
  {
   "word": "下手な",
   "reading": "へたな",
-  "meaning": "dở"
+  "meaning": "dở",
+  "example": "[私](わたし)は[歌](うた)が**[下手](へた)**です。",
+  "exampleVi": "Tôi hát dở."
  },
  {
   "word": "まだまだです",
   "reading": "まだまだです",
-  "meaning": "chưa giỏi, vẫn còn kém "
+  "meaning": "chưa giỏi, vẫn còn kém ",
+  "example": "いいえ、**まだまだです**。",
+  "exampleVi": "Không, tôi chưa giỏi đâu. (Vẫn còn kém lắm.)"
  },
  {
   "word": "習う",
   "reading": "ならう",
-  "meaning": "học (luyện tập)"
+  "meaning": "học (luyện tập)",
+  "example": "[生](い)け[花](ばな)を**[習](なら)いました**。",
+  "exampleVi": "Tôi đã học cắm hoa."
  },
  {
   "word": "いけばな",
   "reading": "いけばな",
-  "meaning": "cắm hoa"
+  "meaning": "cắm hoa",
+  "example": "**いけばな**を [習](なら)いたいです。",
+  "exampleVi": "Tôi muốn học cắm hoa."
  },
  {
   "word": "茶道",
   "reading": "さどう",
-  "meaning": "trà đạo"
+  "meaning": "trà đạo",
+  "example": "**[茶道](さどう)**を [習](なら)っています。",
+  "exampleVi": "Tôi đang học trà đạo."
  },
  {
   "word": "簡単な",
   "reading": "かんたんな",
-  "meaning": "đơn giản"
+  "meaning": "đơn giản",
+  "example": "**[簡単](かんたん)な**[絵](え)をかきます。",
+  "exampleVi": "Tôi vẽ bức tranh đơn giản."
  },
  {
   "word": "易しい",
   "reading": "やさしい",
-  "meaning": "dễ"
+  "meaning": "dễ",
+  "example": "[茶道](さどう)は**[易](やさ)しい**ですか。",
+  "exampleVi": "Trà đạo có dễ không?"
  },
  {
   "word": "難しい",
   "reading": "むずかしい",
-  "meaning": "khó"
+  "meaning": "khó",
+  "example": "[茶道](さどう)は**[難](むずか)しい**です。",
+  "exampleVi": "Trà đạo thì khó."
  },
  {
   "word": "写真",
   "reading": "しゃしん",
-  "meaning": "ảnh, hình"
+  "meaning": "ảnh, hình",
+  "example": "これは[家族](かぞく)の**[写真](しゃしん)**です。",
+  "exampleVi": "Đây là ảnh chụp gia đình."
  },
  {
   "word": "とる",
   "reading": "とる",
-  "meaning": "chụp"
+  "meaning": "chụp",
+  "example": "スマホで[写真](しゃしん)を**とります**。",
+  "exampleVi": "Tôi chụp ảnh bằng điện thoại thông minh."
  },
  {
   "word": "カメラ",
   "reading": "カメラ",
-  "meaning": "máy ảnh"
+  "meaning": "máy ảnh",
+  "example": "これは[父](ちち)の**カメラ**です。",
+  "exampleVi": "Đây là máy ảnh của bố tôi."
  },
  {
   "word": "絵",
   "reading": "え",
-  "meaning": "tranh"
+  "meaning": "tranh",
+  "example": "[素敵](すてき)な**[絵](え)**ですね。",
+  "exampleVi": "Bức tranh đẹp nhỉ."
  },
  {
   "word": "かく",
   "reading": "かく",
-  "meaning": "vẽ"
+  "meaning": "vẽ",
+  "example": "パンダの[絵](え)を**かきました**。",
+  "exampleVi": "Tôi đã vẽ tranh gấu trúc."
  },
  {
   "word": "美術館",
   "reading": "びじゅつかん",
-  "meaning": "bảo tàng mỹ thuật"
+  "meaning": "bảo tàng mỹ thuật",
+  "example": "**[美術館](びじゅつかん)**で[絵](え)を[見](み)ます。",
+  "exampleVi": "Tôi xem tranh ở bảo tàng mỹ thuật."
  },
  {
   "word": "音楽",
   "reading": "おんがく",
-  "meaning": "âm nhạc"
+  "meaning": "âm nhạc",
+  "example": "[日本](にほん)の**[音楽](おんがく)**が[好](す)きです。",
+  "exampleVi": "Tôi thích nhạc (của) Nhật."
  },
  {
   "word": "カラオケ",
   "reading": "カラオケ",
-  "meaning": "karaoke"
+  "meaning": "karaoke",
+  "example": "**カラオケ**が[好](す)きです。",
+  "exampleVi": "Tôi thích karaoke."
  },
  {
   "word": "いっしょに",
   "reading": "いっしょに",
-  "meaning": "cùng nhau"
+  "meaning": "cùng nhau",
+  "example": "**いっしょに**カラオケに[行](い)きませんか。",
+  "exampleVi": "Cùng đi hát karaoke không?"
  },
  {
   "word": "みんなで",
   "reading": "みんなで",
-  "meaning": "tất cả mọi người"
+  "meaning": "tất cả mọi người",
+  "example": "クラスの**みんなで**カラオケに[行](い)きました。",
+  "exampleVi": "Tất cả mọi người trong lớp đã đi karaoke."
  },
  {
   "word": "歌",
   "reading": "うた",
-  "meaning": "bài hát"
+  "meaning": "bài hát",
+  "example": "[山田](やまだ)さんは**[歌](うた)**が[上手](じょうず)です。",
+  "exampleVi": "Anh Yamada hát hay."
  },
  {
   "word": "歌う",
   "reading": "うたう",
-  "meaning": "hát"
+  "meaning": "hát",
+  "example": "みんなで[日本](にほん)の[歌](うた)を**[歌](うた)います**。",
+  "exampleVi": "Mọi người hát bài hát của Nhật."
  },
  {
   "word": "コンサート",
   "reading": "コンサート",
-  "meaning": "hòa nhạc, buổi trình diễn âm nhạc"
+  "meaning": "hòa nhạc, buổi trình diễn âm nhạc",
+  "example": "**コンサート**に[行](い)きました。",
+  "exampleVi": "Tôi đã đi xem ca nhạc."
  },
  {
   "word": "クラシック",
   "reading": "クラシック",
-  "meaning": "nhạc cổ điển"
+  "meaning": "nhạc cổ điển",
+  "example": "**クラシック**とジャズとどちらが[好](す)きですか。",
+  "exampleVi": "Nhạc cổ điển và nhạc jazz, bạn thích nhạc nào?"
  },
  {
   "word": "ジャズ",
   "reading": "ジャズ",
-  "meaning": "nhạc jazz"
+  "meaning": "nhạc jazz",
+  "example": "**ジャズ**を [聞](き)きます。",
+  "exampleVi": "Tôi nghe nhạc jazz."
  },
  {
   "word": "ポップス",
   "reading": "ポップス",
-  "meaning": "nhạc pop"
+  "meaning": "nhạc pop",
+  "example": "**ポップス**が[好](す)きです。",
+  "exampleVi": "Tôi thích nhạc pop."
  },
  {
   "word": "ロック",
   "reading": "ロック",
-  "meaning": "nhạc rốc"
+  "meaning": "nhạc rốc",
+  "example": "**ロック**はあまり[聞](き)きません。",
+  "exampleVi": "Tôi không nghe nhạc rốc nhiều lắm."
  },
  {
   "word": "ピアノ",
   "reading": "ピアノ",
-  "meaning": "đàn piano"
+  "meaning": "đàn piano",
+  "example": "**ピアノ**をひきます。",
+  "exampleVi": "Tôi đánh đàn piano."
  },
  {
   "word": "ギター",
   "reading": "ギター",
-  "meaning": "đàn guitar"
+  "meaning": "đàn guitar",
+  "example": "これは[兄](あに)の**ギター**です。",
+  "exampleVi": "Đây là cây đàn guitar của anh tôi."
  },
  {
   "word": "ひく",
   "reading": "ひく",
-  "meaning": "đánh đàn, chơi đàn"
+  "meaning": "đánh đàn, chơi đàn",
+  "example": "ピアノを**ひいて**もいいですか。",
+  "exampleVi": "Tôi đánh đàn piano được không?"
  },
  {
   "word": "映画",
   "reading": "えいが",
-  "meaning": "phim (điện ảnh)"
+  "meaning": "phim (điện ảnh)",
+  "example": "フランスの**[映画](えいが)**を[見](み)ました。",
+  "exampleVi": "Tôi đã xem phim của Pháp."
  },
  {
   "word": "映画館",
   "reading": "えいがかん",
-  "meaning": "rạp chiếu phim"
+  "meaning": "rạp chiếu phim",
+  "example": "**[映画館](えいがかん)**で[映画](えいが)を[見](み)ます。",
+  "exampleVi": "Tôi xem phim ở rạp chiếu phim."
  },
  {
   "word": "始まる",
   "reading": "はじまる",
-  "meaning": "bắt đầu"
+  "meaning": "bắt đầu",
+  "example": "[映画](えいが)は[十時](じゅうじ)に**[始](はじ)まります**。",
+  "exampleVi": "Phim bắt đầu từ lúc 10 giờ."
  },
  {
   "word": "終わる",
   "reading": "おわる",
-  "meaning": "kết thúc"
+  "meaning": "kết thúc",
+  "example": "コンサートは[七時](しちじ)に**[終](お)わります**。",
+  "exampleVi": "Buổi hòa nhạc kết thúc lúc 7 giờ."
  },
  {
   "word": "まんが",
   "reading": "まんが",
-  "meaning": "truyện tranh"
+  "meaning": "truyện tranh",
+  "example": "**まんが**はあまり[好](す)きじゃありません。",
+  "exampleVi": "Tôi không thích truyện tranh lắm."
  },
  {
   "word": "アニメ",
   "reading": "アニメ",
-  "meaning": "phim hoạt hình"
+  "meaning": "phim hoạt hình",
+  "example": "[日本](にほん)の**アニメ**が[好](す)きです。",
+  "exampleVi": "Tôi thích phim hoạt hình của Nhật."
  },
  {
   "word": "ゲーム",
   "reading": "ゲーム",
-  "meaning": "game"
+  "meaning": "game",
+  "example": "[日本](にほん)の**ゲーム**は[面白](おもしろ)いです。",
+  "exampleVi": "Game của Nhật thì thú vị."
  },
  {
   "word": "ソフト",
   "reading": "ソフト",
-  "meaning": "phần mềm"
+  "meaning": "phần mềm",
+  "example": "ゲームの**ソフト**を[買](か)いました。",
+  "exampleVi": "Tôi đã mua phần mềm chơi game."
  },
  {
   "word": "面白い",
   "reading": "おもしろい",
-  "meaning": "thú vị"
+  "meaning": "thú vị",
+  "example": "[昨日](きのう)、**[面白](おもしろ)い**アニメを[見](み)ました。",
+  "exampleVi": "Hôm qua, tôi đã xem bộ phim hoạt hình thú vị."
  },
  {
   "word": "ジョギング",
   "reading": "ジョギング",
-  "meaning": "chạy bộ"
+  "meaning": "chạy bộ",
+  "example": "[毎日](まいにち)、**ジョギング**をしています。",
+  "exampleVi": "Hàng ngày, tôi chạy bộ."
  },
  {
   "word": "スキー",
   "reading": "スキー",
-  "meaning": "trượt tuyết"
+  "meaning": "trượt tuyết",
+  "example": "[北海道](ほっかいどう)で**スキー**をします。",
+  "exampleVi": "Tôi sẽ trượt tuyết ở Hokkaido."
  },
  {
   "word": "ダンス",
   "reading": "ダンス",
-  "meaning": "khiêu vũ, nhảy, múa"
+  "meaning": "khiêu vũ, nhảy, múa",
+  "example": "マリアさんは**ダンス**が[上手](じょうず)です。",
+  "exampleVi": "Chị Maria múa giỏi."
  },
  {
   "word": "泳ぐ",
   "reading": "およぐ",
-  "meaning": "bơi"
+  "meaning": "bơi",
+  "example": "[沖縄](おきなわ)の[海](うみ)で**[泳](およ)ぎました**。",
+  "exampleVi": "Tôi đã bơi ở biển Okinawa."
  },
  {
   "word": "海",
   "reading": "うみ",
-  "meaning": "biển"
+  "meaning": "biển",
+  "example": "**[海](うみ)**より[山](やま)のほうが[好](す)きです。",
+  "exampleVi": "Tôi thích núi hơn biển."
  },
  {
   "word": "プール",
   "reading": "プール",
-  "meaning": "hồ bơi"
+  "meaning": "hồ bơi",
+  "example": "[昨日](きのう)、**プール**で[泳](およ)ぎました。",
+  "exampleVi": "Hôm qua, tôi đã bơi ở hồ bơi."
  },
  {
   "word": "川",
   "reading": "かわ",
-  "meaning": "sông"
+  "meaning": "sông",
+  "example": "この**[川](かわ)**で[泳](およ)がないでください。",
+  "exampleVi": "Đừng bơi ở con sông này."
  },
  {
   "word": "つり",
   "reading": "つり",
-  "meaning": "câu (cá)"
+  "meaning": "câu (cá)",
+  "example": "[川](かわ)で**つり**をします。",
+  "exampleVi": "Tôi câu cá ở sông."
  },
  {
   "word": "登る",
   "reading": "のぼる",
-  "meaning": "leo (núi)"
+  "meaning": "leo (núi)",
+  "example": "[七月](しちがつ)に[富士山](ふじさん)に**[登](のぼ)ります**。",
+  "exampleVi": "Tôi sẽ leo núi Phú Sỹ vào tháng 7."
  },
  {
   "word": "山",
   "reading": "やま",
-  "meaning": "núi"
+  "meaning": "núi",
+  "example": "[富士山](ふじさん)はきれいな**[山](やま)**です。",
+  "exampleVi": "Núi Phú Sỹ là ngọn núi đẹp."
  },
  {
   "word": "試合",
   "reading": "しあい",
-  "meaning": "trận đấu"
+  "meaning": "trận đấu",
+  "example": "サッカーの**[試合](しあい)**があります。",
+  "exampleVi": "Có trận đấu bóng đá."
  },
  {
   "word": "勝つ",
   "reading": "かつ",
-  "meaning": "thắng"
+  "meaning": "thắng",
+  "example": "ブラジルが**[勝](か)ちました**。",
+  "exampleVi": "Brazil đã thắng."
  },
  {
   "word": "負ける",
   "reading": "まける",
-  "meaning": "thua"
+  "meaning": "thua",
+  "example": "[山田](やまだ)さんはホアンさんに**[負](ま)けました**。",
+  "exampleVi": "Anh Yamada đã thua anh Hoàng."
  },
  {
   "word": "さあ",
   "reading": "さあ",
-  "meaning": "chà…"
+  "meaning": "chà…",
+  "example": "**さあ**……。わかりません。",
+  "exampleVi": "Chà…. Tôi không biết."
  },
  {
   "word": "強い",
   "reading": "つよい",
-  "meaning": "mạnh"
+  "meaning": "mạnh",
+  "example": "あの チームは **[強](つよ)い**です。",
+  "exampleVi": "Đội đó mạnh."
  },
  {
   "word": "弱い",
   "reading": "よわい",
-  "meaning": "yếu"
+  "meaning": "yếu",
+  "example": "[私](わたし)の チームは **[弱](よわ)い**です。",
+  "exampleVi": "Đội của tôi yếu."
  },
  {
   "word": "サッカー",
   "reading": "サッカー",
-  "meaning": "bóng đá"
+  "meaning": "bóng đá",
+  "example": "**サッカー**が [好](す)きです。",
+  "exampleVi": "Tôi thích bóng đá."
  },
  {
   "word": "野球",
   "reading": "やきゅう",
-  "meaning": "bóng chày"
+  "meaning": "bóng chày",
+  "example": "[兄](あに)は **[野球](やきゅう)**が [上手](じょうず)です。",
+  "exampleVi": "Anh trai tôi giỏi bóng chày."
  },
  {
   "word": "すもう",
   "reading": "すもう",
-  "meaning": "sumo"
+  "meaning": "sumo",
+  "example": "**すもう**を [見](み)ました。",
+  "exampleVi": "Tôi đã xem sumo."
  },
  {
   "word": "じゅうどう",
   "reading": "じゅうどう",
-  "meaning": "judo"
+  "meaning": "judo",
+  "example": "**じゅうどう**を [習](なら)っています。",
+  "exampleVi": "Tôi đang học judo."
  },
  {
   "word": "テニス",
   "reading": "テニス",
-  "meaning": "quần vợt"
+  "meaning": "quần vợt",
+  "example": "**テニス**を [練習](れんしゅう)します。",
+  "exampleVi": "Tôi luyện tập quần vợt."
  },
  {
   "word": "ゴルフ",
   "reading": "ゴルフ",
-  "meaning": "môn đánh gôn"
+  "meaning": "môn đánh gôn",
+  "example": "[父](ちち)は **ゴルフ**が [好](す)きです。",
+  "exampleVi": "Bố tôi thích đánh gôn."
  },
  {
   "word": "天気",
   "reading": "てんき",
-  "meaning": "thời tiết"
+  "meaning": "thời tiết",
+  "example": "[今日](きょう)の**[天気](てんき)**はどうですか。",
+  "exampleVi": "Thời tiết hôm nay thế nào?"
  },
  {
   "word": "いい",
   "reading": "いい",
-  "meaning": "đẹp, tốt"
+  "meaning": "đẹp, tốt",
+  "example": "[天気](てんき)が**いい**です。",
+  "exampleVi": "Thời tiết đẹp."
  },
  {
   "word": "いい",
   "reading": "いい",
-  "meaning": "đẹp, tốt"
+  "meaning": "đẹp, tốt",
+  "example": "あの[人](ひと)は**いい**[人](ひと)です。",
+  "exampleVi": "Người đó là người tốt."
  },
  {
   "word": "悪い",
   "reading": "わるい",
-  "meaning": "xấu"
+  "meaning": "xấu",
+  "example": "[天気](てんき)が**[悪](わる)い**です。",
+  "exampleVi": "Thời tiết xấu."
  },
  {
   "word": "悪い",
   "reading": "わるい",
-  "meaning": "xấu"
+  "meaning": "xấu",
+  "example": "あの[人](ひと)は**[悪](わる)い**[人](ひと)です。",
+  "exampleVi": "Người đó là người xấu."
  },
  {
   "word": "いい天気ですね",
   "reading": "いいてんきですね",
-  "meaning": "Trời (thời tiết) đẹp nhỉ."
+  "meaning": "Trời (thời tiết) đẹp nhỉ.",
+  "example": "おはようございます。**いいお[天気](てんき)ですね**。",
+  "exampleVi": "Xin chào. Trời đẹp nhỉ."
  },
  {
   "word": "雨",
   "reading": "あめ",
-  "meaning": "mưa"
+  "meaning": "mưa",
+  "example": "[今日](きょう)は**[雨](あめ)**です。",
+  "exampleVi": "Hôm nay (trời) mưa."
  },
  {
   "word": "雪",
   "reading": "ゆき",
-  "meaning": "tuyết"
+  "meaning": "tuyết",
+  "example": "[昨日](きのう)は**[雪](ゆき)**でした。",
+  "exampleVi": "Hôm qua (trời) tuyết."
  },
  {
   "word": "降る",
   "reading": "ふる",
-  "meaning": "rơi"
+  "meaning": "rơi",
+  "example": "[今日](きょう)、[雨](あめ)が**[降](ふ)ります**。",
+  "exampleVi": "Hôm nay trời mưa."
  },
  {
   "word": "暑い",
   "reading": "あつい",
-  "meaning": "nóng"
+  "meaning": "nóng",
+  "example": "[今日](きょう)は **[暑](あつ)い**です。",
+  "exampleVi": "Hôm nay nóng."
  },
  {
   "word": "すずしい",
   "reading": "すずしい",
-  "meaning": "mát"
+  "meaning": "mát",
+  "example": "[朝](あさ)は **すずしい**です。",
+  "exampleVi": "Buổi sáng mát mẻ."
  },
  {
   "word": "寒い",
   "reading": "さむい",
-  "meaning": "lạnh"
+  "meaning": "lạnh",
+  "example": "[今日](きょう)は **[寒](さむ)い**ですね。",
+  "exampleVi": "Hôm nay lạnh nhỉ."
  },
  {
   "word": "暖かい",
   "reading": "あたたかい",
-  "meaning": "ấm"
+  "meaning": "ấm",
+  "example": "[春](はる)は **[暖](あたた)かい**です。",
+  "exampleVi": "Mùa xuân thì ấm áp."
  },
  {
   "word": "多い",
   "reading": "おおい",
-  "meaning": "nhiều"
+  "meaning": "nhiều",
+  "example": "[六月](ろくがつ)は[雨](あめ)が**[多](おお)い**です。",
+  "exampleVi": "Tháng 6 mưa nhiều."
  },
  {
   "word": "少ない",
   "reading": "すくない",
-  "meaning": "ít"
+  "meaning": "ít",
+  "example": "[一月](いちがつ)は[雨](あめ)が**[少](すく)ない**です。",
+  "exampleVi": "Tháng 1 mưa ít."
  },
  {
   "word": "思う",
   "reading": "おもう",
-  "meaning": "nghĩ"
+  "meaning": "nghĩ",
+  "example": "[明日](あした)は[暑](あつ)いと**[思](おも)います**。",
+  "exampleVi": "Tôi nghĩ ngày mai (trời) nóng."
  },
  {
   "word": "たぶん",
   "reading": "たぶん",
-  "meaning": "có lẽ"
+  "meaning": "có lẽ",
+  "example": "[明日](あした)は**たぶん**[雨](あめ)だと[思](おも)います。",
+  "exampleVi": "Tôi nghĩ có lẽ ngày mai mưa."
  },
  {
   "word": "きっと",
   "reading": "きっと",
-  "meaning": "chắc, chắc chắn"
+  "meaning": "chắc, chắc chắn",
+  "example": "**きっと**[雪](ゆき)が[降](ふ)るでしょう。",
+  "exampleVi": "Chắc tuyết sẽ rơi."
  },
  {
   "word": "かさ",
   "reading": "かさ",
-  "meaning": "dù, ô"
+  "meaning": "dù, ô",
+  "example": "[私](わたし)の**かさ**がありません。",
+  "exampleVi": "Không có cây dù của tôi."
  },
  {
   "word": "持って来る",
   "reading": "もってくる",
-  "meaning": "đem (mang) đến"
+  "meaning": "đem (mang) đến",
+  "example": "[学校](がっこう)へかさを**[持](も)って[来](き)ました**。",
+  "exampleVi": "Tôi đã mang dù đến trường."
  },
  {
   "word": "持って行く",
   "reading": "もっていく",
-  "meaning": "đem (mang) đi"
+  "meaning": "đem (mang) đi",
+  "example": "[会社](かいしゃ)へかさを**[持](も)って[行](い)きます**。",
+  "exampleVi": "Tôi đem dù đi làm."
  },
  {
   "word": "番組",
   "reading": "ばんぐみ",
-  "meaning": "chương trình"
+  "meaning": "chương trình",
+  "example": "[毎日](まいにち)、[天気](てんき)の**[番組](ばんぐみ)**を[見](み)ます。",
+  "exampleVi": "Hàng ngày, tôi xem chương trình thời tiết."
  },
  {
   "word": "いつ",
   "reading": "いつ",
-  "meaning": "khi nào?"
+  "meaning": "khi nào?",
+  "example": "**いつ**、[国](くに)へ[帰](かえ)りますか。",
+  "exampleVi": "Khi nào bạn sẽ về nước?"
  },
  {
   "word": "去年",
   "reading": "きょねん",
-  "meaning": "năm ngoái"
+  "meaning": "năm ngoái",
+  "example": "**[去年](きょねん)**、[日本](にほん)へ[来](き)ました。",
+  "exampleVi": "Năm ngoái, tôi đã đến Nhật."
  },
  {
   "word": "今年",
   "reading": "ことし",
-  "meaning": "năm nay"
+  "meaning": "năm nay",
+  "example": "**[今年](ことし)**、イギリスへ[留学](りゅうがく)します。",
+  "exampleVi": "Năm nay, tôi sẽ du học Anh."
  },
  {
   "word": "来年",
   "reading": "らいねん",
-  "meaning": "sang năm"
+  "meaning": "sang năm",
+  "example": "**[来年](らいねん)**、[国](くに)へ[帰](かえ)ります。",
+  "exampleVi": "Sang năm, tôi sẽ về nước."
  },
  {
   "word": "季節",
   "reading": "きせつ",
-  "meaning": "mùa"
+  "meaning": "mùa",
+  "example": "[日本](にほん)の**[季節](きせつ)**は4つあります。",
+  "exampleVi": "Nhật Bản có 4 mùa."
  },
  {
   "word": "一番",
   "reading": "いちばん",
-  "meaning": "nhất"
+  "meaning": "nhất",
+  "example": "[夏](なつ)が**[一番](いちばん)**[好](す)きです。",
+  "exampleVi": "Tôi thích mùa hè nhất."
  },
  {
   "word": "なる",
   "reading": "なる",
-  "meaning": "trở nên, trở thành"
+  "meaning": "trở nên, trở thành",
+  "example": "[冬](ふゆ)に**なりました**。",
+  "exampleVi": "Đã vào mùa đông."
  },
  {
   "word": "なる",
   "reading": "なる",
-  "meaning": "trở nên, trở thành"
+  "meaning": "trở nên, trở thành",
+  "example": "いつか[社長](しゃちょう)に**なりたい**です。",
+  "exampleVi": "Một lúc nào đó, tôi muốn trở thành giám đốc."
  },
  {
   "word": "春",
   "reading": "はる",
-  "meaning": "mùa xuân"
+  "meaning": "mùa xuân",
+  "example": "**[春](はる)**に [桜](さくら)を [見](み)ます。",
+  "exampleVi": "Mùa xuân tôi ngắm hoa anh đào."
  },
  {
   "word": "夏",
   "reading": "なつ",
-  "meaning": "mùa hè"
+  "meaning": "mùa hè",
+  "example": "**[夏](なつ)**に [海](うみ)で [泳](およ)ぎます。",
+  "exampleVi": "Mùa hè tôi bơi ở biển."
  },
  {
   "word": "秋",
   "reading": "あき",
-  "meaning": "mùa thu"
+  "meaning": "mùa thu",
+  "example": "**[秋](あき)**は すずしいです。",
+  "exampleVi": "Mùa thu thì mát mẻ."
  },
  {
   "word": "冬",
   "reading": "ふゆ",
-  "meaning": "mùa đông"
+  "meaning": "mùa đông",
+  "example": "**[冬](ふゆ)**は [雪](ゆき)が [降](ふ)ります。",
+  "exampleVi": "Mùa đông tuyết rơi."
  },
  {
   "word": "花",
   "reading": "はな",
-  "meaning": "hoa"
+  "meaning": "hoa",
+  "example": "[母](はは)は**[花](はな)**が[好](す)きです。",
+  "exampleVi": "Mẹ tôi thích hoa."
  },
  {
   "word": "月",
   "reading": "つき",
-  "meaning": "mặt trăng"
+  "meaning": "mặt trăng",
+  "example": "**[月](つき)**がきれいです。",
+  "exampleVi": "Mặt trăng đẹp."
  },
  {
   "word": "お花見",
   "reading": "おはなみ",
-  "meaning": "ngắm hoa"
+  "meaning": "ngắm hoa",
+  "example": "[日本人](にほんじん)は**[花見](はなみ)**が[好](す)きです。",
+  "exampleVi": "Người Nhật thích ngắm hoa."
  },
  {
   "word": "桜",
   "reading": "さくら",
-  "meaning": "hoa anh đào"
+  "meaning": "hoa anh đào",
+  "example": "**[桜](さくら)**はきれいな[花](はな)です。",
+  "exampleVi": "Hoa anh đào là loài hoa đẹp."
  },
  {
   "word": "花火",
   "reading": "はなび",
-  "meaning": "pháo hoa"
+  "meaning": "pháo hoa",
+  "example": "[夏](なつ)に**[花火](はなび)**を[見](み)ました。",
+  "exampleVi": "Tôi đã xem pháo hoa vào mùa hè."
  },
  {
   "word": "紅葉",
   "reading": "もみじ",
-  "meaning": "lá đỏ"
+  "meaning": "lá đỏ",
+  "example": "[山](やま)で**[紅葉](もみじ)**を[見](み)ました。",
+  "exampleVi": "Tôi đã xem lá đỏ trên núi."
  },
  {
   "word": "初めて",
   "reading": "はじめて",
-  "meaning": "lần đầu tiên"
+  "meaning": "lần đầu tiên",
+  "example": "**[初](はじ)めて**[桜](さくら)を[見](み)ました。",
+  "exampleVi": "Lần đầu tiên tôi thấy hoa anh đào."
  },
  {
   "word": "一度",
   "reading": "いちど",
-  "meaning": "một lần"
+  "meaning": "một lần",
+  "example": "**[一度](いちど)**、[花見](はなみ)をしたことがあります。",
+  "exampleVi": "Tôi từng ngắm hoa một lần."
  },
  {
   "word": "何回も",
   "reading": "なんかいも",
-  "meaning": "nhiều lần"
+  "meaning": "nhiều lần",
+  "example": "**[何回](なんかい)も**[北海道](ほっかいどう)へ[行](い)きました。",
+  "exampleVi": "Tôi đã từng đi Hokkaido nhiều lần."
  },
  {
   "word": "一度も",
   "reading": "いちども",
-  "meaning": "một lần cũng"
+  "meaning": "một lần cũng",
+  "example": "**[一度](いちど)も**[京都](きょうと)へ[行](い)ったことがありません。",
+  "exampleVi": "Tôi chưa từng đi Kyoto lần nào."
  },
  {
   "word": "公園",
   "reading": "こうえん",
-  "meaning": "công viên"
+  "meaning": "công viên",
+  "example": "**[公園](こうえん)**で[花見](はなみ)をします。",
+  "exampleVi": "Tôi ngắm hoa ở công viên."
  },
  {
   "word": "散歩",
   "reading": "さんぽ",
-  "meaning": "đi dạo"
+  "meaning": "đi dạo",
+  "example": "[犬](いぬ)と[公園](こうえん)を**[散歩](さんぽ)**します。",
+  "exampleVi": "Tôi dạo công viên cùng con chó."
  },
  {
   "word": "とても",
   "reading": "とても",
-  "meaning": "rất"
+  "meaning": "rất",
+  "example": "[桜](さくら)が**とても**きれいですね。",
+  "exampleVi": "Hoa anh đào rất đẹp."
  },
  {
   "word": "本当に",
   "reading": "ほんとうに",
-  "meaning": "thật sự là"
+  "meaning": "thật sự là",
+  "example": "**[本当](ほんとう)に**そうですね。",
+  "exampleVi": "Thật sự đúng vậy nhỉ."
  },
  {
   "word": "ぜひ",
   "reading": "ぜひ",
-  "meaning": "nhất định"
+  "meaning": "nhất định",
+  "example": "**ぜひ**[私](わたし)の[家](うち)に[来](き)てください。",
+  "exampleVi": "Nhất định hãy đến nhà tôi."
  },
  {
   "word": "もちろん",
   "reading": "もちろん",
-  "meaning": "đương nhiên"
+  "meaning": "đương nhiên",
+  "example": "はい、**もちろん**です。",
+  "exampleVi": "Vâng, đương nhiên rồi."
  }
 ]

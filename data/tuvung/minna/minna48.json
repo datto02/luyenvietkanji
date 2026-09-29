@@ -1,20 +1,100 @@
 [
-  "おろす",
-  "届ける",
-  "録音する",
+  {
+    "word": "おろす",
+    "reading": "おろす",
+    "meaning": "lấy xuống",
+    "example": "トラックから [荷物](にもつ)を **おろします**。",
+    "exampleVi": "Tôi dỡ hành lý xuống khỏi xe tải."
+  },
+  {
+    "word": "届ける",
+    "reading": "とどける",
+    "meaning": "giao đến, gửi đến",
+    "example": "[荷物](にもつ)を [家](うち)まで **[届](とど)けます**。",
+    "exampleVi": "Tôi giao hành lý tận nhà."
+  },
+  {
+    "word": "録音する",
+    "reading": "ろくおんする",
+    "meaning": "ghi âm",
+    "example": "[先生](せんせい)の [話](はなし)を **[録音](ろくおん)します**。",
+    "exampleVi": "Tôi ghi âm bài nói của thầy."
+  },
   {
     "word": "じゅく",
     "reading": "じゅく",
-    "meaning": "lớp học thêm, lò luyện thi"
+    "meaning": "lớp học thêm, lò luyện thi",
+    "example": "[弟](おとうと)は **じゅく**に [通](かよ)って います。",
+    "exampleVi": "Em trai tôi đang đi học thêm ở lò luyện thi."
   },
-  "生徒",
-  "ファイル",
-  "営業",
-  "それまでに",
-  "楽しむ",
-  "親",
-  "小学生",
-  "パーセント",
-  "その次",
-  "習字"
+  {
+    "word": "生徒",
+    "reading": "せいと",
+    "meaning": "học sinh",
+    "example": "**[生徒](せいと)**が [教室](きょうしつ)に います。",
+    "exampleVi": "Học sinh đang ở trong lớp."
+  },
+  {
+    "word": "ファイル",
+    "reading": "ファイル",
+    "meaning": "file tài liệu, kẹp tài liệu",
+    "example": "[書類](しょるい)を **ファイル**に [入](い)れます。",
+    "exampleVi": "Tôi cho hồ sơ vào kẹp tài liệu."
+  },
+  {
+    "word": "営業",
+    "reading": "えいぎょう",
+    "meaning": "kinh doanh",
+    "example": "**[営業](えいぎょう)**は 9[時](じ)からです。",
+    "exampleVi": "Giờ kinh doanh bắt đầu từ 9 giờ."
+  },
+  {
+    "word": "それまでに",
+    "reading": "それまでに",
+    "meaning": "cho đến lúc đó",
+    "example": "**それまでに** [書類](しょるい)を [出](だ)して ください。",
+    "exampleVi": "Xin hãy nộp hồ sơ trước lúc đó."
+  },
+  {
+    "word": "楽しむ",
+    "reading": "たのしむ",
+    "meaning": "vui vẻ, thưởng thức",
+    "example": "[毎日](まいにち) [生活](せいかつ)を **[楽](たの)しんで** います。",
+    "exampleVi": "Ngày nào tôi cũng tận hưởng cuộc sống."
+  },
+  {
+    "word": "親",
+    "reading": "おや",
+    "meaning": "bố mẹ",
+    "example": "**[親](おや)**に [手紙](てがみ)を [書](か)きます。",
+    "exampleVi": "Tôi viết thư cho bố mẹ."
+  },
+  {
+    "word": "小学生",
+    "reading": "しょうがくせい",
+    "meaning": "học sinh tiểu học",
+    "example": "**[小学生](しょうがくせい)**は [毎日](まいにち) [学校](がっこう)へ [行](い)きます。",
+    "exampleVi": "Học sinh tiểu học ngày nào cũng đến trường."
+  },
+  {
+    "word": "パーセント",
+    "reading": "パーセント",
+    "meaning": "phần trăm",
+    "example": "[学生](がくせい)の 50**パーセント**が [女性](じょせい)です。",
+    "exampleVi": "50% học sinh là nữ."
+  },
+  {
+    "word": "その次",
+    "reading": "そのつぎ",
+    "meaning": "tiếp theo đó",
+    "example": "**その[次](つぎ)**は [田中](たなか)さんです。",
+    "exampleVi": "Người kế tiếp sau đó là anh Tanaka."
+  },
+  {
+    "word": "習字",
+    "reading": "しゅうじ",
+    "meaning": "học viết chữ bằng bút lông",
+    "example": "[子供](こども)を **[習字](しゅうじ)**に [通](かよ)わせて います。",
+    "exampleVi": "Tôi cho con đi học thư pháp."
+  }
 ]

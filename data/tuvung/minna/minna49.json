@@ -1,48 +1,184 @@
 [
-  "利用する",
-  "勤める",
-  "過ごす",
-  "いらっしゃる",
+  {
+    "word": "利用する",
+    "reading": "りようする",
+    "meaning": "sử dụng",
+    "example": "この [電話](でんわ)を ご**[利用](りよう)**ください。",
+    "exampleVi": "Xin hãy sử dụng chiếc điện thoại này."
+  },
+  {
+    "word": "勤める",
+    "reading": "つとめる",
+    "meaning": "làm việc",
+    "example": "[会社](かいしゃ)に **[勤](つと)めて** います。",
+    "exampleVi": "Tôi đang làm việc ở công ty."
+  },
+  {
+    "word": "過ごす",
+    "reading": "すごす",
+    "meaning": "trải qua, dành thời gian",
+    "example": "[休](やす)みを [家族](かぞく)と **[過](す)ごします**。",
+    "exampleVi": "Tôi trải qua kỳ nghỉ cùng gia đình."
+  },
+  {
+    "word": "いらっしゃる",
+    "reading": "いらっしゃる",
+    "meaning": "có, đi, đến (kính ngữ)",
+    "example": "[先生](せんせい)は [明日](あした) **いらっしゃいます**。",
+    "exampleVi": "Ngày mai thầy sẽ đến (kính ngữ)."
+  },
   {
     "word": "めしあがる",
     "reading": "めしあがる",
-    "meaning": "ăn, uống (kính ngữ)"
+    "meaning": "ăn, uống (kính ngữ)",
+    "example": "[何](なに)を **めしあがります**か。",
+    "exampleVi": "Ngài dùng món gì ạ?"
   },
-  "おっしゃる",
-  "なさる",
-  "ご覧になる",
-  "ご存知",
+  {
+    "word": "おっしゃる",
+    "reading": "おっしゃる",
+    "meaning": "nói (kính ngữ)",
+    "example": "[先生](せんせい)が そう **おっしゃいました**。",
+    "exampleVi": "Thầy đã nói như vậy (kính ngữ)."
+  },
+  {
+    "word": "なさる",
+    "reading": "なさる",
+    "meaning": "làm (kính ngữ)",
+    "example": "[何](なに)を **なさいます**か。",
+    "exampleVi": "Ngài định làm gì ạ?"
+  },
+  {
+    "word": "ご覧になる",
+    "reading": "ごらんになる",
+    "meaning": "xem (kính ngữ)",
+    "example": "この [写真](しゃしん)を **ご[覧](らん)になりました**か。",
+    "exampleVi": "Ngài đã xem bức ảnh này chưa ạ?"
+  },
+  {
+    "word": "ご存知",
+    "reading": "ごぞんじ",
+    "meaning": "biết (kính ngữ)",
+    "example": "この [人](ひと)を **ご[存知](ぞんじ)**ですか。",
+    "exampleVi": "Ngài có biết người này không ạ?"
+  },
   {
     "word": "あいさつ",
     "reading": "あいさつ",
-    "meaning": "chào hỏi"
+    "meaning": "chào hỏi",
+    "example": "[社長](しゃちょう)が **あいさつ**を しました。",
+    "exampleVi": "Giám đốc đã phát biểu chào mừng."
   },
-  "旅館",
-  "バス停",
+  {
+    "word": "旅館",
+    "reading": "りょかん",
+    "meaning": "nhà khách kiểu Nhật",
+    "example": "**[旅館](りょかん)**に とまりました。",
+    "exampleVi": "Tôi đã trọ ở nhà nghỉ kiểu Nhật."
+  },
+  {
+    "word": "バス停",
+    "reading": "バスてい",
+    "meaning": "bến xe bus",
+    "example": "**バス[停](てい)**は [駅](えき)の [前](まえ)です。",
+    "exampleVi": "Bến xe buýt ở trước nhà ga."
+  },
   {
     "word": "おくさま",
     "reading": "おくさま",
-    "meaning": "vợ (kính ngữ)"
+    "meaning": "vợ (kính ngữ)",
+    "example": "[田中](たなか)さんの **おくさま**は [先生](せんせい)です。",
+    "exampleVi": "Phu nhân của anh Tanaka là giáo viên."
   },
-  "様",
+  {
+    "word": "様",
+    "reading": "さま",
+    "meaning": "ngài (kính ngữ)",
+    "example": "[田中](たなか)**[様](さま)**から お[電話](でんわ)が ありました。",
+    "exampleVi": "Có điện thoại từ ngài Tanaka."
+  },
   {
     "word": "たまに",
     "reading": "たまに",
-    "meaning": "thi thoảng"
+    "meaning": "thi thoảng",
+    "example": "**たまに** [映画](えいが)を [見](み)ます。",
+    "exampleVi": "Thỉnh thoảng tôi xem phim."
   },
-  "どなたでも",
+  {
+    "word": "どなたでも",
+    "reading": "どなたでも",
+    "meaning": "vị nào cũng (kính ngữ)",
+    "example": "**どなたでも** ご[利用](りよう)ください。",
+    "exampleVi": "Bất cứ ai cũng có thể sử dụng."
+  },
   {
     "word": "しつれいいたす",
     "reading": "しつれいいたす",
-    "meaning": "xin phép (khiêm nhường ngữ)"
+    "meaning": "xin phép (khiêm nhường ngữ)",
+    "example": "**しつれいいたします**。",
+    "exampleVi": "Xin phép thất lễ."
   },
-  "経歴",
-  "医学部",
-  "目指す",
-  "進む",
-  "開発する",
-  "マウス",
-  "受賞する",
-  "講演会",
-  "ノーベル賞"
+  {
+    "word": "経歴",
+    "reading": "けいれき",
+    "meaning": "lí lịch",
+    "example": "[先生](せんせい)の **[経歴](けいれき)**を [読](よ)みました。",
+    "exampleVi": "Tôi đã đọc lý lịch của thầy."
+  },
+  {
+    "word": "医学部",
+    "reading": "いがくぶ",
+    "meaning": "khoa y",
+    "example": "[弟](おとうと)は **[医学部](いがくぶ)**の [学生](がくせい)です。",
+    "exampleVi": "Em trai tôi là sinh viên khoa y."
+  },
+  {
+    "word": "目指す",
+    "reading": "めざす",
+    "meaning": "hướng tới",
+    "example": "[医者](いしゃ)を **[目指](めざ)して** [勉強](べんきょう)して います。",
+    "exampleVi": "Tôi đang học để hướng tới trở thành bác sĩ."
+  },
+  {
+    "word": "進む",
+    "reading": "すすむ",
+    "meaning": "tiến lên, tiến bộ",
+    "example": "[道](みち)を まっすぐ **[進](すす)んで** ください。",
+    "exampleVi": "Xin hãy đi thẳng theo con đường này."
+  },
+  {
+    "word": "開発する",
+    "reading": "かいはつする",
+    "meaning": "phát triển",
+    "example": "[新](あたら)しい [車](くるま)を **[開発](かいはつ)します**。",
+    "exampleVi": "Tôi phát triển chiếc xe hơi mới."
+  },
+  {
+    "word": "マウス",
+    "reading": "マウス",
+    "meaning": "chuột (máy tính)",
+    "example": "**マウス**で [字](じ)を [選](えら)びます。",
+    "exampleVi": "Tôi chọn chữ bằng chuột."
+  },
+  {
+    "word": "受賞する",
+    "reading": "じゅしょうする",
+    "meaning": "nhận giải thưởng",
+    "example": "[先生](せんせい)は ノーベル[賞](しょう)を **[受賞](じゅしょう)しました**。",
+    "exampleVi": "Thầy đã nhận giải Nobel."
+  },
+  {
+    "word": "講演会",
+    "reading": "こうえんかい",
+    "meaning": "buổi nói chuyện",
+    "example": "[明日](あした)、**[講演会](こうえんかい)**が あります。",
+    "exampleVi": "Ngày mai có buổi nói chuyện."
+  },
+  {
+    "word": "ノーベル賞",
+    "reading": "ノーベルしょう",
+    "meaning": "giải Nobel",
+    "example": "[田中](たなか)さんは **ノーベル[賞](しょう)**を もらいました。",
+    "exampleVi": "Anh Tanaka đã nhận giải Nobel."
+  }
 ]

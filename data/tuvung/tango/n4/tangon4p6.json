@@ -2,621 +2,869 @@
  {
   "word": "かみ",
   "reading": "かみ",
-  "meaning": "tóc"
+  "meaning": "tóc",
+  "example": "[山田](やまだ)さんは **かみ**が [長](なが)いです。",
+  "exampleVi": "Tóc chị Yamada dài."
  },
  {
   "word": "おでこ",
   "reading": "おでこ",
-  "meaning": "trán"
+  "meaning": "trán",
+  "example": "[熱](ねつ)が あるとき、**おでこ**を [冷](ひ)やします。",
+  "exampleVi": "Khi bị sốt thì làm mát trán."
  },
  {
   "word": "あご",
   "reading": "あご",
-  "meaning": "cằm"
+  "meaning": "cằm",
+  "example": "ガムを かむのは **あご**に いいそうです。",
+  "exampleVi": "Nghe nói nhai kẹo cao su tốt cho cằm."
  },
  {
   "word": "ひげ",
   "reading": "ひげ",
-  "meaning": "râu"
+  "meaning": "râu",
+  "example": "[父](ちち)は [若](わか)いとき、**ひげ**が ありました。",
+  "exampleVi": "Khi còn trẻ, cha tôi có râu."
  },
  {
   "word": "くちびる",
   "reading": "くちびる",
-  "meaning": "môi"
+  "meaning": "môi",
+  "example": "かのじょの **くちびる**は とても [可愛](かわい)いです。",
+  "exampleVi": "Môi cô ấy rất dễ thương."
  },
  {
   "word": "首",
   "reading": "くび",
-  "meaning": "cổ"
+  "meaning": "cổ",
+  "example": "[朝](あさ) [起](お)きたら、**[首](くび)**が [痛](いた)かったです。",
+  "exampleVi": "Buổi sáng khi thức dậy thì cổ tôi bị đau."
  },
  {
   "word": "のど",
   "reading": "のど",
-  "meaning": "cổ họng"
+  "meaning": "cổ họng",
+  "example": "**のど**に いい [薬](くすり)は ありますか。",
+  "exampleVi": "Có thuốc tốt cho cổ họng không?"
  },
  {
   "word": "かた",
   "reading": "かた",
-  "meaning": "vai"
+  "meaning": "vai",
+  "example": "**かた**が [痛](いた)いです。",
+  "exampleVi": "Vai tôi bị đau."
  },
  {
   "word": "うで",
   "reading": "うで",
-  "meaning": "cánh tay"
+  "meaning": "cánh tay",
+  "example": "**うで**を [回](まわ)して ください。",
+  "exampleVi": "Hãy xoay cánh tay."
  },
  {
   "word": "ひじ",
   "reading": "ひじ",
-  "meaning": "cùi chỏ, khuỷu tay"
+  "meaning": "cùi chỏ, khuỷu tay",
+  "example": "[右](みぎ)の **ひじ**が [赤](あか)く なっています。",
+  "exampleVi": "Cùi chỏ bên phải trở nên đỏ."
  },
  {
   "word": "背中",
   "reading": "せなか",
-  "meaning": "lưng"
+  "meaning": "lưng",
+  "example": "**[背中](せなか)**を まっすぐに して ください。",
+  "exampleVi": "Hãy thẳng lưng."
  },
  {
   "word": "胃",
   "reading": "い",
-  "meaning": "dạ dày"
+  "meaning": "dạ dày",
+  "example": "ご[飯](はん)を [食](た)べすぎて、**[胃](い)**が [痛](いた)いです。",
+  "exampleVi": "Vì ăn cơm quá nhiều nên tôi đau dạ dày."
  },
  {
   "word": "こし",
   "reading": "こし",
-  "meaning": "thắt lưng"
+  "meaning": "thắt lưng",
+  "example": "**こし**が [痛](いた)くて、[歩](ある)けません。",
+  "exampleVi": "Thắt lưng đau đến không thể đi được."
  },
  {
   "word": "ひざ",
   "reading": "ひざ",
-  "meaning": "đầu gối"
+  "meaning": "đầu gối",
+  "example": "[走](はし)ったら、**ひざ**の [調子](ちょうし)が [悪](わる)く なりました。",
+  "exampleVi": "Sau khi chạy thì tình trạng đầu gối trở nên xấu đi."
  },
  {
   "word": "しり",
   "reading": "しり",
-  "meaning": "mông"
+  "meaning": "mông",
+  "example": "ずっと [座](すわ)って いたので、お**しり**が [痛](いた)いです。",
+  "exampleVi": "Vì ngồi suốt nên bị đau (ê) mông."
  },
  {
   "word": "指",
   "reading": "ゆび",
-  "meaning": "ngón (tay, chân)"
+  "meaning": "ngón (tay, chân)",
+  "example": "バレーボールで **[指](ゆび)**の [骨](ほね)を [折](お)りました。",
+  "exampleVi": "Tôi gãy xương ngón tay vì chơi bóng chuyền."
  },
  {
   "word": "つめ",
   "reading": "つめ",
-  "meaning": "móng"
+  "meaning": "móng",
+  "example": "[毎日](まいにち)、**つめ**を きれいに みがきます。",
+  "exampleVi": "Hàng ngày tôi chải móng cho sạch."
  },
  {
   "word": "骨",
   "reading": "ほね",
-  "meaning": "xương"
+  "meaning": "xương",
+  "example": "カルシウムは **[骨](ほね)**に いいそうです。",
+  "exampleVi": "Nghe nói canxi tốt cho xương."
  },
  {
   "word": "血",
   "reading": "ち",
-  "meaning": "máu"
+  "meaning": "máu",
+  "example": "すべって、[足](あし)から **[血](ち)**が [出](で)ました。",
+  "exampleVi": "Tôi đã bị trượt và chảy máu chân."
  },
  {
   "word": "力",
   "reading": "ちから",
-  "meaning": "lực, sức mạnh"
+  "meaning": "lực, sức mạnh",
+  "example": "[私](わたし)より [妹](いもうと)の ほうが **[力](ちから)**が あります。",
+  "exampleVi": "So với tôi, em gái có sức mạnh hơn."
  },
  {
   "word": "身長",
   "reading": "しんちょう",
-  "meaning": "chiều cao"
+  "meaning": "chiều cao",
+  "example": "[1年](いちねん)で **[身長](しんちょう)**が 10センチも [高](たか)く なりました。",
+  "exampleVi": "Trong một năm chiều cao đã tăng lên những 10 cm."
  },
  {
   "word": "体重",
   "reading": "たいじゅう",
-  "meaning": "cân nặng"
+  "meaning": "cân nặng",
+  "example": "[毎日](まいにち)、**[体重](たいじゅう)**を チェックしています。",
+  "exampleVi": "Tôi kiểm tra cân nặng hàng ngày."
  },
  {
   "word": "女性",
   "reading": "じょせい",
-  "meaning": "nữ giới, phụ nữ"
+  "meaning": "nữ giới, phụ nữ",
+  "example": "[私](わたし)が [行](い)く [病院](びょういん)の [先生](せんせい)は **[女性](じょせい)**です。",
+  "exampleVi": "Bác sỹ bệnh viện tôi đi là phụ nữ."
  },
  {
   "word": "男性",
   "reading": "だんせい",
-  "meaning": "nam giới, đàn ông"
+  "meaning": "nam giới, đàn ông",
+  "example": "**[男性](だんせい)**の トイレは [2階](にかい)に あります。",
+  "exampleVi": "Nhà vệ sinh nam ở tầng 2."
  },
  {
   "word": "健康",
   "reading": "けんこう",
-  "meaning": "sức khỏe (khỏe mạnh)"
+  "meaning": "sức khỏe (khỏe mạnh)",
+  "example": "**[健康](けんこう)**の ために [野菜](やさい)を [食](た)べています。",
+  "exampleVi": "Tôi ăn rau vì sức khỏe."
  },
  {
   "word": "じょうぶな",
   "reading": "じょうぶな",
-  "meaning": "bền, chắc, khỏe"
+  "meaning": "bền, chắc, khỏe",
+  "example": "[運動](うんどう)したら、[体](からだ)が **じょうぶ**に なりました。",
+  "exampleVi": "Tôi tập thể dục thì cơ thể trở nên chắc khỏe lên."
  },
  {
   "word": "ビタミン",
   "reading": "ビタミン",
-  "meaning": "vitamin"
+  "meaning": "vitamin",
+  "example": "この [食事](しょくじ)は **ビタミン**が [足](た)りません。",
+  "exampleVi": "Bữa ăn này không đủ vitamin."
  },
  {
   "word": "太る",
   "reading": "ふとる",
-  "meaning": "mập, béo"
+  "meaning": "mập, béo",
+  "example": "ねる [前](まえ)に [食](た)べたので、**[太](ふと)って** しまいました。",
+  "exampleVi": "Vì tôi ăn trước khi ngủ nên mập lên mất rồi."
  },
  {
   "word": "やせる",
   "reading": "やせる",
-  "meaning": "ốm, gầy"
+  "meaning": "ốm, gầy",
+  "example": "[運動](うんどう)しても、なかなか **やせません**。",
+  "exampleVi": "Dù có tập thể dục tôi mãi vẫn không thể ốm đi được."
  },
  {
   "word": "ダイエット",
   "reading": "ダイエット",
-  "meaning": "việc ăn kiêng"
+  "meaning": "việc ăn kiêng",
+  "example": "[無理](むり)な **ダイエット**は [辞](や)めましょう。",
+  "exampleVi": "Hãy dừng việc ăn kiêng quá độ."
  },
  {
   "word": "辞める",
   "reading": "やめる",
-  "meaning": "ngưng, bỏ"
+  "meaning": "ngưng, bỏ",
+  "example": "[父](ちち)は [先月](せんげつ)から たばこを **[辞](や)めました**。",
+  "exampleVi": "Cha tôi bỏ thuốc lá từ tháng trước."
  },
  {
   "word": "気をつける",
   "reading": "きをつける",
-  "meaning": "cẩn thận, giữ gìn"
+  "meaning": "cẩn thận, giữ gìn",
+  "example": "[健康](けんこう)に **[気](き)をつけましょう**。",
+  "exampleVi": "Hãy giữ gìn sức khỏe."
  },
  {
   "word": "のどがかわく",
   "reading": "のどがかわく",
-  "meaning": "khát, (cổ họng) khô"
+  "meaning": "khát, (cổ họng) khô",
+  "example": "とても **のどがかわきました**。",
+  "exampleVi": "Tôi đã rất khát."
  },
  {
   "word": "お腹がすく",
   "reading": "おなかがすく",
-  "meaning": "đói (bụng)"
+  "meaning": "đói (bụng)",
+  "example": "スポーツを すると、**お[腹](なか)がすきます**。",
+  "exampleVi": "Hễ chơi thể thao thì đói bụng."
  },
  {
   "word": "インフルエンザ",
   "reading": "インフルエンザ",
-  "meaning": "cúm"
+  "meaning": "cúm",
+  "example": "**インフルエンザ**で [5日間](いつかかん) [学校](がっこう)を [休](やす)みました。",
+  "exampleVi": "Tôi đã nghỉ học 5 ngày vì bị cúm."
  },
  {
   "word": "かぜをひく",
   "reading": "かぜをひく",
-  "meaning": "bị cảm"
+  "meaning": "bị cảm",
+  "example": "[子供](こども)の とき、よく **かぜをひきました**。",
+  "exampleVi": "Khi còn nhỏ tôi thường bị cảm."
  },
  {
   "word": "熱",
   "reading": "ねつ",
-  "meaning": "cơn sốt"
+  "meaning": "cơn sốt",
+  "example": "[39度](さんじゅうきゅうど)も **[熱](ねつ)**が [出](で)て、[学校](がっこう)へ [行](い)けません。",
+  "exampleVi": "Tôi sốt đến 39 độ nên không thể đi học."
  },
  {
   "word": "体温計",
   "reading": "たいおんけい",
-  "meaning": "nhiệt kế"
+  "meaning": "nhiệt kế",
+  "example": "**[体温計](たいおんけい)**で [熱](ねつ)を はかります。",
+  "exampleVi": "Đo (nhiệt độ) cơn sốt bằng nhiệt kế."
  },
  {
   "word": "やけど",
   "reading": "やけど",
-  "meaning": "phỏng"
+  "meaning": "phỏng",
+  "example": "やかんの お[湯](ゆ)で **やけど**しました。",
+  "exampleVi": "Tôi bị phỏng do nước sôi trong ấm."
  },
  {
   "word": "けが",
   "reading": "けが",
-  "meaning": "chấn thương"
+  "meaning": "chấn thương",
+  "example": "サッカーで ひざに **けが**を しました。",
+  "exampleVi": "Tôi bị thương ở đầu gối do đá bóng."
  },
  {
   "word": "きず",
   "reading": "きず",
-  "meaning": "vết thương, vết trầy xước"
+  "meaning": "vết thương, vết trầy xước",
+  "example": "この **きず**は すぐ よく なるでしょう。",
+  "exampleVi": "Vết thương này sẽ lành mau thôi."
  },
  {
   "word": "調子",
   "reading": "ちょうし",
-  "meaning": "tình trạng"
+  "meaning": "tình trạng",
+  "example": "[胃](い)の **[調子](ちょうし)**が [悪](わる)かったので、[薬](くすり)を [飲](の)みました。",
+  "exampleVi": "Vì tình trạng dạ dày không tốt nên tôi đã uống thuốc."
  },
  {
   "word": "おかしい",
   "reading": "おかしい",
-  "meaning": "kỳ lạ, buồn cười"
+  "meaning": "kỳ lạ, buồn cười",
+  "example": "お[腹](なか)の [調子](ちょうし)が **おかしい**ので、[学校](がっこう)を [休](やす)みます。",
+  "exampleVi": "Vì bụng khó chịu nên tôi nghỉ học."
  },
  {
   "word": "具合",
   "reading": "ぐあい",
-  "meaning": "cảm giác"
+  "meaning": "cảm giác",
+  "example": "[昨日](きのう)から [体](からだ)の **[具合](ぐあい)**が よく ないです。",
+  "exampleVi": "Từ hôm qua, tình trạng cơ thể tôi không tốt."
  },
  {
   "word": "気持ちが悪い",
   "reading": "きもちがわるい",
-  "meaning": "cảm giác khó chịu"
+  "meaning": "cảm giác khó chịu",
+  "example": "お[酒](さけ)を [飲](の)みすぎて、**[気持](きもち)が[悪](わる)い**です。",
+  "exampleVi": "Tôi uống quá nhiều rượu nên có cảm giác khó chịu."
  },
  {
   "word": "たおれる",
   "reading": "たおれる",
-  "meaning": "đổ sụp, ngã, đổ, ngã bệnh"
+  "meaning": "đổ sụp, ngã, đổ, ngã bệnh",
+  "example": "じしんで [家](いえ)が **たおれました**。",
+  "exampleVi": "Nhà cửa đã đổ sụp vì động đất."
  },
  {
   "word": "みる",
   "reading": "みる",
-  "meaning": "khám (bệnh)"
+  "meaning": "khám (bệnh)",
+  "example": "いつも [近所](きんじょ)の お[医者](いしゃ)さんに **みて** もらいます。",
+  "exampleVi": "Tôi luôn đi bác sỹ ở gần nhà."
  },
  {
   "word": "よこになる",
   "reading": "よこになる",
-  "meaning": "nằm xuống, nằm ra"
+  "meaning": "nằm xuống, nằm ra",
+  "example": "では、そちらに **よこになって** ください。",
+  "exampleVi": "Nào mời anh/ chị nằm ra kia."
  },
  {
   "word": "ぬる",
   "reading": "ぬる",
-  "meaning": "xức, thoa"
+  "meaning": "xức, thoa",
+  "example": "[1日](いちにち)に [3回](さんかい)、きずに [薬](くすり)を **ぬります**。",
+  "exampleVi": "Xức thuốc vào vết thương 1 ngày 3 lần."
  },
  {
   "word": "治す",
   "reading": "なおす",
-  "meaning": "chữa"
+  "meaning": "chữa",
+  "example": "[早](はや)く ねて、かぜを **[治](なお)して** ください。",
+  "exampleVi": "Hãy đi ngủ sớm để trị cảm."
  },
  {
   "word": "治る",
   "reading": "なおる",
-  "meaning": "lành, khỏi bệnh, hết bệnh"
+  "meaning": "lành, khỏi bệnh, hết bệnh",
+  "example": "[薬](くすり)を [飲](の)んだら、かぜが **[治](なお)りました**。",
+  "exampleVi": "Sau khi uống thuốc rồi thì tôi đã hết cảm."
  },
  {
   "word": "入院",
   "reading": "にゅういん",
-  "meaning": "việc nhập viện"
+  "meaning": "việc nhập viện",
+  "example": "[足](あし)の けがで **[入院](にゅういん)**しました。",
+  "exampleVi": "Tôi đã nhập viện vì bị thương ở chân."
  },
  {
   "word": "退院",
   "reading": "たいいん",
-  "meaning": "việc ra viện, xuất viện"
+  "meaning": "việc ra viện, xuất viện",
+  "example": "[病気](びょうき)が [治](なお)ったので、[明日](あした) **[退院](たいいん)**します。",
+  "exampleVi": "Vì đã hết bệnh nên ngày mai tôi sẽ xuất viện."
  },
  {
   "word": "見まい",
   "reading": "みまい",
-  "meaning": "thăm bệnh"
+  "meaning": "thăm bệnh",
+  "example": "[友達](ともだち)の お**[見](み)まい**に [行](い)きました。",
+  "exampleVi": "Tôi đã đi thăm bệnh người bạn."
  },
  {
   "word": "生きる",
   "reading": "いきる",
-  "meaning": "sống"
+  "meaning": "sống",
+  "example": "100さいまで **[生](い)きた**いです。",
+  "exampleVi": "Tôi muốn sống đến 100 tuổi."
  },
  {
   "word": "亡くなる",
   "reading": "なくなる",
-  "meaning": "mất, chết"
+  "meaning": "mất, chết",
+  "example": "となりの [家](いえ)の おばあさんが **[亡](な)くなりました**。",
+  "exampleVi": "Bà cụ nhà bên cạnh đã mất."
  },
  {
   "word": "救急車",
   "reading": "きゅうきゅうしゃ",
-  "meaning": "xe cấp cứu"
+  "meaning": "xe cấp cứu",
+  "example": "[119番](ひゃくじゅうきゅうばん)で **[救急車](きゅうきゅうしゃ)**を よびます。",
+  "exampleVi": "Gọi xe cấp cứu bằng số 119."
  },
  {
   "word": "歯医者",
   "reading": "はいしゃ",
-  "meaning": "nha sỹ"
+  "meaning": "nha sỹ",
+  "example": "[子供](こども)が **[歯医者](はいしゃ)**で [泣](な)いています。",
+  "exampleVi": "Đứa bé khóc ở chỗ nha sỹ."
  },
  {
   "word": "看護師",
   "reading": "かんごし",
-  "meaning": "y tá"
+  "meaning": "y tá",
+  "example": "[姉](あね)は **[看護師](かんごし)**を しています。",
+  "exampleVi": "Chị tôi làm y tá."
  },
  {
   "word": "スーツ",
   "reading": "スーツ",
-  "meaning": "trang phục vét"
+  "meaning": "trang phục vét",
+  "example": "[毎日](まいにち)、**スーツ**を [着](き)て、[会社](かいしゃ)に [行](い)きます。",
+  "exampleVi": "Hàng ngày tôi mặc vét đi đến công ty. (đi làm)"
  },
  {
   "word": "着物",
   "reading": "きもの",
-  "meaning": "kimono"
+  "meaning": "kimono",
+  "example": "[成人式](せいじんしき)には たくさんの [人](ひと)が **[着物](きもの)**を [着](き)ます。",
+  "exampleVi": "Trong lễ thành nhân, có nhiều người mặc kimono."
  },
  {
   "word": "くつした",
   "reading": "くつした",
-  "meaning": "vớ"
+  "meaning": "vớ",
+  "example": "[冬](ふゆ)は **くつした**を はいて ねます。",
+  "exampleVi": "Mùa đông tôi mang vớ đi ngủ."
  },
  {
   "word": "下着",
   "reading": "したぎ",
-  "meaning": "đồ lót"
+  "meaning": "đồ lót",
+  "example": "[旅行](りょこう)の バッグに **[下着](したぎ)**を [入](い)れました。",
+  "exampleVi": "Tôi cho đồ lót vào túi du lịch."
  },
  {
   "word": "てぶくろ",
   "reading": "てぶくろ",
-  "meaning": "găng tay"
+  "meaning": "găng tay",
+  "example": "[冬](ふゆ)は **てぶくろ**を して、[出](で)かけます。",
+  "exampleVi": "Mùa đông tôi đeo găng tay đi ra ngoài."
  },
  {
   "word": "指輪",
   "reading": "ゆびわ",
-  "meaning": "nhẫn"
+  "meaning": "nhẫn",
+  "example": "これは [母](はは)から もらった **[指輪](ゆびわ)**です。",
+  "exampleVi": "Đây là chiếc nhẫn mẹ tôi cho tôi."
  },
  {
   "word": "サンダル",
   "reading": "サンダル",
-  "meaning": "giày xăng-đan"
+  "meaning": "giày xăng-đan",
+  "example": "[歩](ある)きやすい **サンダル**を [探](さが)しています。",
+  "exampleVi": "Tôi đang tìm đôi giày xăng-đan dễ mang."
  },
  {
   "word": "リュック",
   "reading": "リュック",
-  "meaning": "ba lô"
+  "meaning": "ba lô",
+  "example": "この **リュック**には [教科書](きょうかしょ)が たくさん [入](はい)っています。",
+  "exampleVi": "Trong ba lô này có nhiều sách giáo khoa."
  },
  {
   "word": "アクセサリー",
   "reading": "アクセサリー",
-  "meaning": "đồ trang sức"
+  "meaning": "đồ trang sức",
+  "example": "[仕事](しごと)の ときは **アクセサリー**を しません。",
+  "exampleVi": "Khi làm việc không đeo đồ trang sức."
  },
  {
   "word": "ポケット",
   "reading": "ポケット",
-  "meaning": "túi, ngăn"
+  "meaning": "túi, ngăn",
+  "example": "この バッグは **ポケット**が [多](おお)いです。",
+  "exampleVi": "Giỏ xách này có nhiều ngăn."
  },
  {
   "word": "ひも",
   "reading": "ひも",
-  "meaning": "dây"
+  "meaning": "dây",
+  "example": "この くつの **ひも**は きれいです。",
+  "exampleVi": "Dây đôi giày này đẹp."
  },
  {
   "word": "かみがた",
   "reading": "かみがた",
-  "meaning": "kiểu tóc"
+  "meaning": "kiểu tóc",
+  "example": "どんな **かみがた**が [好](す)きですか。",
+  "exampleVi": "Bạn thích kiểu tóc như thế nào?"
  },
  {
   "word": "美容院",
   "reading": "びよういん",
-  "meaning": "tiệm cắt (uốn) tóc"
+  "meaning": "tiệm cắt (uốn) tóc",
+  "example": "あの **[美容院](びよういん)**は とても [高](たか)いです。",
+  "exampleVi": "Tiệm cắt tóc đó rất mắc."
  },
  {
   "word": "カット",
   "reading": "カット",
-  "meaning": "việc cắt (thường chỉ việc cắt tóc)"
+  "meaning": "việc cắt (thường chỉ việc cắt tóc)",
+  "example": "いつも あの [美容院](びよういん)で **カット**して います。",
+  "exampleVi": "Tôi luôn cắt tóc ở tiệm cắt tóc đó."
  },
  {
   "word": "鏡",
   "reading": "かがみ",
-  "meaning": "gương"
+  "meaning": "gương",
+  "example": "[出](で)かける [前](まえ)に **[鏡](かがみ)**で チェックします。",
+  "exampleVi": "Trước khi ra ngoài, kiểm tra qua gương soi."
  },
  {
   "word": "かっこいい",
   "reading": "かっこいい",
-  "meaning": "phong độ, đẹp, ngầu"
+  "meaning": "phong độ, đẹp, ngầu",
+  "example": "**かっこいい** ヘアスタイルに したいです。",
+  "exampleVi": "Tôi muốn kiểu tóc đẹp."
  },
  {
   "word": "可愛い",
   "reading": "かわいい",
-  "meaning": "dễ thương"
+  "meaning": "dễ thương",
+  "example": "[妹](いもうと)は **[可愛](かわい)い** [服](ふく)が [大好](だいす)きです。",
+  "exampleVi": "Em gái tôi rất thích trang phục dễ thương."
  },
  {
   "word": "ちょうどいい",
   "reading": "ちょうどいい",
-  "meaning": "vừa vặn, vừa phải, vừa đẹp"
+  "meaning": "vừa vặn, vừa phải, vừa đẹp",
+  "example": "この バッグは **ちょうどいい** サイズです。",
+  "exampleVi": "Túi xách này có kích cỡ vừa phải."
  },
  {
   "word": "様子",
   "reading": "ようす",
-  "meaning": "tình hình, trạng thái"
+  "meaning": "tình hình, trạng thái",
+  "example": "[暗](くら)くて、[外](そと)の **[様子](ようす)**が よく [分](わ)かりません。",
+  "exampleVi": "Tối quá nên tôi không rõ tình hình bên ngoài."
  },
  {
   "word": "形",
   "reading": "かたち",
-  "meaning": "hình thức, hình dạng"
+  "meaning": "hình thức, hình dạng",
+  "example": "この クッキーは [星](ほし)の **[形](かたち)**です。",
+  "exampleVi": "Bánh qui này hình ngôi sao."
  },
  {
   "word": "倍",
   "reading": "ばい",
-  "meaning": "gấp (hai)"
+  "meaning": "gấp (hai)",
+  "example": "これは あの ケーキの 2**[倍](ばい)**の [値段](ねだん)です。",
+  "exampleVi": "Cái này có giá gấp đôi cái bánh kem kia."
  },
  {
   "word": "以上",
   "reading": "いじょう",
-  "meaning": "trở lên"
+  "meaning": "trở lên",
+  "example": "[夏](なつ)は [30度](さんじゅうど)**[以上](いじょう)**の [日](ひ)が [何日](なんにち)も あります。",
+  "exampleVi": "Mùa hè có nhiều ngày 30°C trở lên."
  },
  {
   "word": "以下",
   "reading": "いか",
-  "meaning": "trở xuống, dưới~"
+  "meaning": "trở xuống, dưới~",
+  "example": "[漢字](かんじ)の テストは いつも [50点](ごじゅってん)**[以下](いか)**です。",
+  "exampleVi": "Bài kiểm tra Kanji lúc nào cũng dưới 50 điểm."
  },
  {
   "word": "以内",
   "reading": "いない",
-  "meaning": "trong vòng"
+  "meaning": "trong vòng",
+  "example": "[2万円](にまんえん)**[以内](いない)**の [時計](とけい)を [買](か)いたいです。",
+  "exampleVi": "Tôi muốn mua đồng hồ trong vòng 20.000 yên."
  },
  {
   "word": "以外",
   "reading": "いがい",
-  "meaning": "ngoài (~) ra, ngoại trừ"
+  "meaning": "ngoài (~) ra, ngoại trừ",
+  "example": "[来週](らいしゅう)の [旅行](りょこう)は [兄](あに)**[以外](いがい)** みんな [行](い)けます。",
+  "exampleVi": "Chuyến du lịch tuần sau mọi người đều có thể đi ngoại trừ anh tôi."
  },
  {
   "word": "両方",
   "reading": "りょうほう",
-  "meaning": "cả hai"
+  "meaning": "cả hai",
+  "example": "この [赤](あか)と [青](あお)の シャツを **[両方](りょうほう)** [買](か)いました。",
+  "exampleVi": "Tôi đã mua cả hai cái áo màu đỏ và màu xanh này."
  },
  {
   "word": "ひま",
   "reading": "ひま",
-  "meaning": "giờ rảnh (rảnh rỗi)"
+  "meaning": "giờ rảnh (rảnh rỗi)",
+  "example": "いそがしくて、[遊](あそ)ぶ **ひま**が ありません。",
+  "exampleVi": "Tôi bận rộn nên không có thời gian rảnh để chơi."
  },
  {
   "word": "ふつう",
   "reading": "ふつう",
-  "meaning": "sự bình thường (bình thường)"
+  "meaning": "sự bình thường (bình thường)",
+  "example": "**ふつう**の [毎日](まいにち)が [楽](たの)しいです。",
+  "exampleVi": "Tôi thấy vui với mỗi ngày bình thường."
  },
  {
   "word": "自由",
   "reading": "じゆう",
-  "meaning": "sự tự do (tự do)"
+  "meaning": "sự tự do (tự do)",
+  "example": "[大人](おとな)に なったら、**[自由](じゆう)**が ほしいです。",
+  "exampleVi": "Nếu thành người lớn, tôi muốn có tự do."
  },
  {
   "word": "ていねいな",
   "reading": "ていねいな",
-  "meaning": "cẩn thận, lịch sự"
+  "meaning": "cẩn thận, lịch sự",
+  "example": "[先生](せんせい)から **ていねいな** メールを いただきました。",
+  "exampleVi": "Tôi đã nhận e-mail lịch sự từ giáo viên."
  },
  {
   "word": "大きな",
   "reading": "おおきな",
-  "meaning": "to lớn"
+  "meaning": "to lớn",
+  "example": "[家](いえ)の [前](まえ)に **[大](おお)きな** [木](き)が あります。",
+  "exampleVi": "Trước nhà có một cái cây to."
  },
  {
   "word": "小さな",
   "reading": "ちいさな",
-  "meaning": "nhỏ"
+  "meaning": "nhỏ",
+  "example": "[庭](にわ)に **[小](ちい)さな** [花](はな)が さいています。",
+  "exampleVi": "Trong vườn những bông hoa nhỏ nở."
  },
  {
   "word": "変な",
   "reading": "へんな",
-  "meaning": "kỳ lạ, kỳ quặc"
+  "meaning": "kỳ lạ, kỳ quặc",
+  "example": "[妹](いもうと)は **[変](へん)な** ファッションが [好](す)きです。",
+  "exampleVi": "Em gái tôi thích thời trang kỳ quặc."
  },
  {
   "word": "十分な",
   "reading": "じゅうぶんな",
-  "meaning": "đầy đủ, tốt"
+  "meaning": "đầy đủ, tốt",
+  "example": "これが できましたら、N4の [勉強](べんきょう)は **[十分](じゅうぶん)**です。",
+  "exampleVi": "Nếu làm được bài này thì việc học N4 khá đầy đủ."
  },
  {
   "word": "美しい",
   "reading": "うつくしい",
-  "meaning": "đẹp"
+  "meaning": "đẹp",
+  "example": "こんなに **[美](うつく)しい** [景色](けしき)を [見](み)た ことが ありません。",
+  "exampleVi": "Tôi chưa từng thấy phong cảnh đẹp như thế này."
  },
  {
   "word": "きたない",
   "reading": "きたない",
-  "meaning": "dơ, bẩn"
+  "meaning": "dơ, bẩn",
+  "example": "[兄](あに)の [部屋](へや)は とても **きたない**です。",
+  "exampleVi": "Phòng của anh tôi rất bẩn."
  },
  {
   "word": "うまい",
   "reading": "うまい",
-  "meaning": "giỏi"
+  "meaning": "giỏi",
+  "example": "かれは サッカーも [野球](やきゅう)も とても **うまい**です。",
+  "exampleVi": "Anh ấy rất giỏi đá bóng lẫn bóng chày."
  },
  {
   "word": "やわらかい",
   "reading": "やわらかい",
-  "meaning": "mềm, mềm mại"
+  "meaning": "mềm, mềm mại",
+  "example": "[新](あたら)しい ソファーは とても **やわらかい**です。",
+  "exampleVi": "Bộ sofa mới rất mềm mại."
  },
  {
   "word": "かたい",
   "reading": "かたい",
-  "meaning": "cứng"
+  "meaning": "cứng",
+  "example": "この パンは **かたい**ですが、[美味](おい)しいです。",
+  "exampleVi": "Bánh mì này cứng nhưng ngon."
  },
  {
   "word": "くわしい",
   "reading": "くわしい",
-  "meaning": "chi tiết, cụ thể"
+  "meaning": "chi tiết, cụ thể",
+  "example": "この [辞書](じしょ)の [説明](せつめい)は **くわしい**です。",
+  "exampleVi": "Phần giải thích của cuốn tự điển này chi tiết."
  },
  {
   "word": "細かい",
   "reading": "こまかい",
-  "meaning": "nhỏ, chi tiết, chi li"
+  "meaning": "nhỏ, chi tiết, chi li",
+  "example": "[玉](たま)ねぎを **[細](こま)かく** [切](き)って ください。",
+  "exampleVi": "Hãy cắt hành tây thật nhỏ."
  },
  {
   "word": "こわい",
   "reading": "こわい",
-  "meaning": "sợ"
+  "meaning": "sợ",
+  "example": "この [道](みち)は [夜](よる)に なると、[暗](くら)くて **こわい**です。",
+  "exampleVi": "Con đường này khi về đêm thì tối nên tôi sợ."
  },
  {
   "word": "すごい",
   "reading": "すごい",
-  "meaning": "tuyệt, giỏi, lớn"
+  "meaning": "tuyệt, giỏi, lớn",
+  "example": "[昨日](きのう)の [夜](よる)は **すごい** [雨](あめ)でした。",
+  "exampleVi": "Tối hôm qua mưa rất lớn."
  },
  {
   "word": "素晴らしい",
   "reading": "すばらしい",
-  "meaning": "tuyệt vời"
+  "meaning": "tuyệt vời",
+  "example": "[留学](りゅうがく)で **[素晴](すば)らしい** [経験](けいけん)が できました。",
+  "exampleVi": "Tôi có được kinh nghiệm tuyệt vời nhờ du học."
  },
  {
   "word": "正しい",
   "reading": "ただしい",
-  "meaning": "đúng, chính xác"
+  "meaning": "đúng, chính xác",
+  "example": "この [答](こた)えが **[正](ただ)しい**かどうか [分](わ)かりません。",
+  "exampleVi": "Tôi không biết câu trả lời này có chính xác hay không."
  },
  {
   "word": "ひどい",
   "reading": "ひどい",
-  "meaning": "ghê, tồi tệ"
+  "meaning": "ghê, tồi tệ",
+  "example": "[昨日](きのう)の テストは **ひどい** [点](てん)でした。",
+  "exampleVi": "Bài kiểm tra hôm qua có điểm rất tệ."
  },
  {
   "word": "太い",
   "reading": "ふとい",
-  "meaning": "mập, to"
+  "meaning": "mập, to",
+  "example": "この [大根](だいこん)は とても **[太](ふと)い**です。",
+  "exampleVi": "Củ cải trắng này rất to."
  },
  {
   "word": "細い",
   "reading": "ほそい",
-  "meaning": "ốm, nhỏ, thon"
+  "meaning": "ốm, nhỏ, thon",
+  "example": "かのじょは [足](あし)が とても **[細](ほそ)い**です。",
+  "exampleVi": "Chân cô ấy rất thon."
  },
  {
   "word": "厚い",
   "reading": "あつい",
-  "meaning": "dày"
+  "meaning": "dày",
+  "example": "[寒](さむ)いので、**[厚](あつ)い** コートが ほしいです。",
+  "exampleVi": "Vì trời lạnh nên tôi muốn có chiếc áo choàng dày."
  },
  {
   "word": "浅い",
   "reading": "あさい",
-  "meaning": "nông, cạn"
+  "meaning": "nông, cạn",
+  "example": "この [川](かわ)は **[浅](あさ)い**ので、[子供](こども)も [遊](あそ)べます。",
+  "exampleVi": "Con sông này rất cạn nên trẻ con cũng có thể chơi đùa."
  },
  {
   "word": "深い",
   "reading": "ふかい",
-  "meaning": "sâu"
+  "meaning": "sâu",
+  "example": "この プールの [真](ま)ん[中](なか)は とても **[深](ふか)い**です。",
+  "exampleVi": "Chính giữa hồ bơi này rất sâu."
  },
  {
   "word": "ねむい",
   "reading": "ねむい",
-  "meaning": "buồn ngủ"
+  "meaning": "buồn ngủ",
+  "example": "お[腹](なか)が いっぱいで、ちょっと **ねむい**です。",
+  "exampleVi": "Tôi no quá nên hơi buồn ngủ."
  },
  {
   "word": "めずらしい",
   "reading": "めずらしい",
-  "meaning": "quý hiếm"
+  "meaning": "quý hiếm",
+  "example": "こんなに [大](おお)きな ダイヤは **めずらしい**です。",
+  "exampleVi": "Kim cương to như thế này thì thật quý hiếm."
  },
  {
   "word": "増える",
   "reading": "ふえる",
-  "meaning": "tăng"
+  "meaning": "tăng",
+  "example": "この [店](みせ)は [外国人](がいこくじん)の お[客](きゃく)さんが とても **[増](ふ)えています**。",
+  "exampleVi": "Tiệm này khách nước ngoài tăng nhiều."
  },
  {
   "word": "増やす",
   "reading": "ふやす",
-  "meaning": "làm tăng"
+  "meaning": "làm tăng",
+  "example": "アルバイトを して、[貯金](ちょきん)を **[増](ふ)やした**いです。",
+  "exampleVi": "Tôi muốn làm thêm để tăng tiền tiết kiệm."
  },
  {
   "word": "減る",
   "reading": "へる",
-  "meaning": "giảm"
+  "meaning": "giảm",
+  "example": "[日本](にほん)では [人口](じんこう)が **[減](へ)っています**。",
+  "exampleVi": "Ở Nhật dân số đang giảm đi."
  },
  {
   "word": "減らす",
   "reading": "へらす",
-  "meaning": "làm giảm"
+  "meaning": "làm giảm",
+  "example": "[運動](うんどう)を して、[体重](たいじゅう)を **[減](へ)らしました**。",
+  "exampleVi": "Tôi đã giảm cân nhờ tập thể dục."
  },
  {
   "word": "ちがう",
   "reading": "ちがう",
-  "meaning": "khác"
+  "meaning": "khác",
+  "example": "[姉](あね)と [私](わたし)は [大学](だいがく)が **ちがいます**。",
+  "exampleVi": "Chị tôi và tôi (học) khác trường đại học."
  },
  {
   "word": "変える",
   "reading": "かえる",
-  "meaning": "thay đổi (cái gì đó)"
+  "meaning": "thay đổi (cái gì đó)",
+  "example": "[春](はる)に なったら、かみがたを **[変](か)えます**。",
+  "exampleVi": "Mùa xuân đến thì tôi đổi kiểu tóc."
  },
  {
   "word": "変わる",
   "reading": "かわる",
-  "meaning": "(cái gì đó) thay đổi"
+  "meaning": "(cái gì đó) thay đổi",
+  "example": "かみを [切](き)ったら、[気分](きぶん)が **[変](か)わりました**。",
+  "exampleVi": "Tâm trạng đã thay đổi sau khi cắt tóc."
  },
  {
   "word": "見える",
   "reading": "みえる",
-  "meaning": "thấy được"
+  "meaning": "thấy được",
+  "example": "[窓](まど)から [富士山](ふじさん)が きれいに **[見](み)えます**。",
+  "exampleVi": "Từ cửa sổ có thể nhìn thấy núi Phú Sỹ tuyệt đẹp."
  },
  {
   "word": "聞こえる",
   "reading": "きこえる",
-  "meaning": "nghe được"
+  "meaning": "nghe được",
+  "example": "[近所](きんじょ)から [子供](こども)の [声](こえ)が **[聞](き)こえます**。",
+  "exampleVi": "Có thể nghe được tiếng trẻ con từ hàng xóm."
  },
  {
   "word": "空く",
   "reading": "あく",
-  "meaning": "trống"
+  "meaning": "trống",
+  "example": "この ホテルは [人気](にんき)があって、[部屋](へや)が **[空](あ)いていません**。",
+  "exampleVi": "Khách sạn này được ưa chuộng nên không có phòng trống."
  },
  {
   "word": "外れる",
   "reading": "はずれる",
-  "meaning": "(cái gì đó) sút, rời, trật ra"
+  "meaning": "(cái gì đó) sút, rời, trật ra",
+  "example": "シャツの ボタンが **[外](はず)れています**。",
+  "exampleVi": "Nút áo bị sút."
  },
  {
   "word": "切れる",
   "reading": "きれる",
-  "meaning": "đứt, hết"
+  "meaning": "đứt, hết",
+  "example": "[弟](おとうと)の くつの ひもが **[切](き)れました**。",
+  "exampleVi": "Dây giày em trai tôi đã đứt rồi."
  }
 ]

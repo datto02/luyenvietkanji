@@ -1,84 +1,324 @@
 [
-  "包む",
+  {
+    "word": "包む",
+    "reading": "つつむ",
+    "meaning": "bọc, gói",
+    "example": "ふろしきで [箱](はこ)を **[包](つつ)みます**。",
+    "exampleVi": "Tôi gói chiếc hộp bằng khăn furoshiki."
+  },
   {
     "word": "わかす",
     "reading": "わかす",
-    "meaning": "đun sôi"
+    "meaning": "đun sôi",
+    "example": "やかんで [水](みず)を **わかします**。",
+    "exampleVi": "Tôi đun nước bằng ấm."
   },
-  "混ぜる",
-  "計算する",
-  "弁護士",
-  "音楽家",
-  "二人",
-  "教育",
-  "文化",
-  "社会",
-  "法律",
-  "戦争",
-  "平和",
-  "目的",
-  "論文",
-  "ミキサー",
+  {
+    "word": "混ぜる",
+    "reading": "まぜる",
+    "meaning": "trộn, khuấy",
+    "example": "ミキサーで [卵](たまご)を **[混](ま)ぜます**。",
+    "exampleVi": "Tôi trộn trứng bằng máy trộn."
+  },
+  {
+    "word": "計算する",
+    "reading": "けいさんする",
+    "meaning": "tính toán",
+    "example": "そろばんで **[計算](けいさん)します**。",
+    "exampleVi": "Tôi tính toán bằng bàn tính."
+  },
+  {
+    "word": "弁護士",
+    "reading": "べんごし",
+    "meaning": "luật sư",
+    "example": "**[弁護士](べんごし)**に [相談](そうだん)します。",
+    "exampleVi": "Tôi bàn bạc với luật sư."
+  },
+  {
+    "word": "音楽家",
+    "reading": "おんがくか",
+    "meaning": "nhạc sĩ",
+    "example": "[将来](しょうらい)、**[音楽家](おんがくか)**に なりたいです。",
+    "exampleVi": "Trong tương lai tôi muốn trở thành nhạc sĩ."
+  },
+  {
+    "word": "二人",
+    "reading": "ふたり",
+    "meaning": "hai người, cặp, đôi",
+    "example": "**[二人](ふたり)**で [買](か)い[物](もの)に [行](い)きます。",
+    "exampleVi": "Hai người chúng tôi đi mua sắm."
+  },
+  {
+    "word": "教育",
+    "reading": "きょういく",
+    "meaning": "giáo dục",
+    "example": "**[教育](きょういく)**は [大切](たいせつ)です。",
+    "exampleVi": "Giáo dục là quan trọng."
+  },
+  {
+    "word": "文化",
+    "reading": "ぶんか",
+    "meaning": "văn hóa",
+    "example": "[日本](にほん)の **[文化](ぶんか)**を [勉強](べんきょう)します。",
+    "exampleVi": "Tôi học văn hóa Nhật Bản."
+  },
+  {
+    "word": "社会",
+    "reading": "しゃかい",
+    "meaning": "xã hội, cộng đồng",
+    "example": "**[社会](しゃかい)**の ために [働](はたら)きます。",
+    "exampleVi": "Tôi làm việc vì xã hội."
+  },
+  {
+    "word": "法律",
+    "reading": "ほうりつ",
+    "meaning": "pháp luật",
+    "example": "**[法律](ほうりつ)**を [守](まも)らなければ なりません。",
+    "exampleVi": "Phải tuân thủ pháp luật."
+  },
+  {
+    "word": "戦争",
+    "reading": "せんそう",
+    "meaning": "chiến tranh",
+    "example": "**[戦争](せんそう)**は いやです。",
+    "exampleVi": "Tôi ghét chiến tranh."
+  },
+  {
+    "word": "平和",
+    "reading": "へいわ",
+    "meaning": "hòa bình",
+    "example": "**[平和](へいわ)**の ために [働](はたら)きます。",
+    "exampleVi": "Tôi làm việc vì hòa bình."
+  },
+  {
+    "word": "目的",
+    "reading": "もくてき",
+    "meaning": "mục đích",
+    "example": "[旅行](りょこう)の **[目的](もくてき)**は [何](なん)ですか。",
+    "exampleVi": "Mục đích của chuyến du lịch là gì?"
+  },
+  {
+    "word": "論文",
+    "reading": "ろんぶん",
+    "meaning": "luận văn",
+    "example": "**[論文](ろんぶん)**を [書](か)くために、[本](ほん)を [読](よ)みます。",
+    "exampleVi": "Tôi đọc sách để viết luận văn."
+  },
+  {
+    "word": "ミキサー",
+    "reading": "ミキサー",
+    "meaning": "máy trộn, máy xay",
+    "example": "**ミキサー**は ジュースを [作](つく)るのに [使](つか)います。",
+    "exampleVi": "Máy xay dùng để làm nước ép."
+  },
   {
     "word": "せんぬき",
     "reading": "せんぬき",
-    "meaning": "cái mở nắp chai"
+    "meaning": "cái mở nắp chai",
+    "example": "**せんぬき**で びんを [開](あ)けます。",
+    "exampleVi": "Tôi mở chai bằng cái mở nắp chai."
   },
   {
     "word": "かんきり",
     "reading": "かんきり",
-    "meaning": "cái mở đồ hộp"
+    "meaning": "cái mở đồ hộp",
+    "example": "**かんきり**で かんづめを [開](あ)けます。",
+    "exampleVi": "Tôi mở đồ hộp bằng cái mở đồ hộp."
   },
   {
     "word": "かんづめ",
     "reading": "かんづめ",
-    "meaning": "đồ hộp"
+    "meaning": "đồ hộp",
+    "example": "**かんづめ**を [食](た)べます。",
+    "exampleVi": "Tôi ăn đồ hộp."
   },
-  "体温計",
-  "材料",
-  "国連",
-  "ローン",
-  "カップラーメン",
-  "食品",
-  "調査",
+  {
+    "word": "体温計",
+    "reading": "たいおんけい",
+    "meaning": "nhiệt kế",
+    "example": "**[体温計](たいおんけい)**で [熱](ねつ)を はかります。",
+    "exampleVi": "Tôi đo sốt bằng nhiệt kế."
+  },
+  {
+    "word": "材料",
+    "reading": "ざいりょう",
+    "meaning": "nguyên liệu, vật liệu",
+    "example": "[料理](りょうり)の **[材料](ざいりょう)**を [買](か)います。",
+    "exampleVi": "Tôi mua nguyên liệu nấu ăn."
+  },
+  {
+    "word": "国連",
+    "reading": "こくれん",
+    "meaning": "Liên hợp Quốc",
+    "example": "**[国連](こくれん)**で [働](はたら)いて います。",
+    "exampleVi": "Tôi làm việc ở Liên Hợp Quốc."
+  },
+  {
+    "word": "ローン",
+    "reading": "ローン",
+    "meaning": "khoản vay ngân hàng",
+    "example": "[家](いえ)の **ローン**を はらって います。",
+    "exampleVi": "Tôi đang trả khoản vay mua nhà."
+  },
+  {
+    "word": "カップラーメン",
+    "reading": "カップラーメン",
+    "meaning": "mì ly ăn liền",
+    "example": "**カップラーメン**を [食](た)べます。",
+    "exampleVi": "Tôi ăn mì ly."
+  },
+  {
+    "word": "食品",
+    "reading": "しょくひん",
+    "meaning": "thực phẩm",
+    "example": "**[食品](しょくひん)**の [売](う)り[場](ば)は [地下](ちか)です。",
+    "exampleVi": "Quầy thực phẩm ở tầng hầm."
+  },
+  {
+    "word": "調査",
+    "reading": "ちょうさ",
+    "meaning": "điều tra, khảo sát",
+    "example": "[町](まち)の **[調査](ちょうさ)**を します。",
+    "exampleVi": "Tôi khảo sát thành phố."
+  },
   {
     "word": "やかん",
     "reading": "やかん",
-    "meaning": "ấm đun nước"
+    "meaning": "ấm đun nước",
+    "example": "**やかん**は [台所](だいどころ)に あります。",
+    "exampleVi": "Ấm đun nước ở trong bếp."
   },
   {
     "word": "のしぶくろ",
     "reading": "のしぶくろ",
-    "meaning": "phong bì dùng để bỏ tiền mừng"
+    "meaning": "phong bì dùng để bỏ tiền mừng",
+    "example": "**のしぶくろ**に お[金](かね)を [入](い)れます。",
+    "exampleVi": "Tôi cho tiền vào phong bì mừng."
   },
   {
     "word": "ふろしき",
     "reading": "ふろしき",
-    "meaning": "khăn vuông để gói đồ kiểu Nhật"
+    "meaning": "khăn vuông để gói đồ kiểu Nhật",
+    "example": "**ふろしき**は [便利](べんり)です。",
+    "exampleVi": "Khăn furoshiki tiện lợi."
   },
   {
     "word": "そろばん",
     "reading": "そろばん",
-    "meaning": "bàn tính"
+    "meaning": "bàn tính",
+    "example": "**そろばん**を [習](なら)って います。",
+    "exampleVi": "Tôi đang học bàn tính."
   },
-  "なぜ",
-  "ベートーベン",
-  "並ぶ",
+  {
+    "word": "なぜ",
+    "reading": "なぜ",
+    "meaning": "tại sao",
+    "example": "**なぜ** [勉強](べんきょう)して いますか。",
+    "exampleVi": "Tại sao bạn đang học?"
+  },
+  {
+    "word": "ベートーベン",
+    "reading": "ベートーベン",
+    "meaning": "Beethoven",
+    "example": "**ベートーベン**は [有名](ゆうめい)な [音楽家](おんがくか)です。",
+    "exampleVi": "Beethoven là một nhạc sĩ nổi tiếng."
+  },
+  {
+    "word": "並ぶ",
+    "reading": "ならぶ",
+    "meaning": "xếp hàng",
+    "example": "[駅](えき)の [前](まえ)に **[並](なら)んで** ください。",
+    "exampleVi": "Xin hãy xếp hàng trước nhà ga."
+  },
   {
     "word": "じょうぶ",
     "reading": "じょうぶ",
-    "meaning": "khỏe, bền chắc"
+    "meaning": "khỏe, bền chắc",
+    "example": "この かばんは **じょうぶ**です。",
+    "exampleVi": "Chiếc cặp này bền chắc."
   },
-  "アパート",
-  "自然",
-  "政治",
-  "楽しみ",
-  "出る",
-  "半分",
-  "世界初",
-  "によって",
-  "広める",
-  "市場調査",
-  "割る",
-  "注ぐ"
+  {
+    "word": "アパート",
+    "reading": "アパート",
+    "meaning": "căn hộ",
+    "example": "**アパート**に [住](す)んで います。",
+    "exampleVi": "Tôi sống trong căn hộ."
+  },
+  {
+    "word": "自然",
+    "reading": "しぜん",
+    "meaning": "tự nhiên",
+    "example": "**[自然](しぜん)**を [守](まも)るために [働](はたら)きます。",
+    "exampleVi": "Tôi làm việc để bảo vệ thiên nhiên."
+  },
+  {
+    "word": "政治",
+    "reading": "せいじ",
+    "meaning": "chính trị",
+    "example": "**[政治](せいじ)**に [興味](きょうみ)が あります。",
+    "exampleVi": "Tôi có hứng thú với chính trị."
+  },
+  {
+    "word": "楽しみ",
+    "reading": "たのしみ",
+    "meaning": "niềm vui",
+    "example": "[旅行](りょこう)が **[楽](たの)しみ**です。",
+    "exampleVi": "Tôi mong chờ chuyến du lịch."
+  },
+  {
+    "word": "出る",
+    "reading": "でる",
+    "meaning": "Ra, tham dự, khởi hành (xe)",
+    "example": "[会議](かいぎ)に **[出](で)る**ために、[早](はや)く [起](お)きました。",
+    "exampleVi": "Tôi dậy sớm để tham dự cuộc họp."
+  },
+  {
+    "word": "半分",
+    "reading": "はんぶん",
+    "meaning": "một nửa",
+    "example": "**[半分](はんぶん)**ずつ [食](た)べましょう。",
+    "exampleVi": "Chúng ta hãy ăn mỗi người một nửa nhé."
+  },
+  {
+    "word": "世界初",
+    "reading": "せかいはつ",
+    "meaning": "đầu tiên trên Thế Giới",
+    "example": "これは **[世界初](せかいはつ)**の ロボットです。",
+    "exampleVi": "Đây là robot đầu tiên trên thế giới."
+  },
+  {
+    "word": "によって",
+    "reading": "によって",
+    "meaning": "bởi vì, tùy theo",
+    "example": "[人](ひと)**によって** [意見](いけん)が ちがいます。",
+    "exampleVi": "Tùy người mà ý kiến khác nhau."
+  },
+  {
+    "word": "広める",
+    "reading": "ひろめる",
+    "meaning": "mở rộng",
+    "example": "[日本](にほん)の [文化](ぶんか)を **[広](ひろ)めたい**です。",
+    "exampleVi": "Tôi muốn lan tỏa văn hóa Nhật Bản."
+  },
+  {
+    "word": "市場調査",
+    "reading": "しじょうちょうさ",
+    "meaning": "điều tra thị trường",
+    "example": "**[市場調査](しじょうちょうさ)**を します。",
+    "exampleVi": "Tôi làm điều tra thị trường."
+  },
+  {
+    "word": "割る",
+    "reading": "わる",
+    "meaning": "làm vỡ, chia",
+    "example": "コップを **[割](わ)って** しまいました。",
+    "exampleVi": "Tôi lỡ làm vỡ cái cốc."
+  },
+  {
+    "word": "注ぐ",
+    "reading": "そそぐ",
+    "meaning": "đổ vào, rót",
+    "example": "コップに [水](みず)を **[注](そそ)ぎます**。",
+    "exampleVi": "Tôi rót nước vào cốc."
+  }
 ]

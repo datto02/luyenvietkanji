@@ -1,25 +1,163 @@
 [
-  "増える",
-  "減る",
-  "上がる",
-  "下がる",
-  "切れる",
-  "取れる",
-  "落ちる",
-  "無くなる",
-  "変",
-  "幸せ",
-  "上手い",
-  "まずい",
-  "今にも",
-  "つまらない",
-  "ガソリン",
-  "ばら",
-  "ドライブ",
-  "パンフレット",
-  "楽",
-  "理由",
-  "謝る",
-  "知り合う",
-  "火"
+  {
+    "word": "増える",
+    "reading": "ふえる",
+    "meaning": "tăng lên, gia tăng",
+    "example": "[外国](がいこく)の [人](ひと)が **[増](ふ)えました**。",
+    "exampleVi": "Số người nước ngoài đã tăng lên."
+  },
+  {
+    "word": "減る",
+    "reading": "へる",
+    "meaning": "giảm",
+    "example": "[雨](あめ)の [日](ひ)が **[減](へ)りました**。",
+    "exampleVi": "Số ngày mưa đã giảm."
+  },
+  {
+    "word": "上がる",
+    "reading": "あがる",
+    "meaning": "tăng [giá cả]",
+    "example": "ガソリンの [値段](ねだん)が **[上](あ)がりました**。",
+    "exampleVi": "Giá xăng đã tăng."
+  },
+  {
+    "word": "下がる",
+    "reading": "さがる",
+    "meaning": "hạ xuống, giảm",
+    "example": "[値段](ねだん)が **[下](さ)がりました**。",
+    "exampleVi": "Giá cả đã giảm."
+  },
+  {
+    "word": "切れる",
+    "reading": "きれる",
+    "meaning": "đứt/hết hạn",
+    "example": "ひもが **[切](き)れそう**です。",
+    "exampleVi": "Sợi dây có vẻ sắp đứt."
+  },
+  {
+    "word": "取れる",
+    "reading": "とれる",
+    "meaning": "tuột [cúc áo]",
+    "example": "ボタンが **[取](と)れそう**です。",
+    "exampleVi": "Cái cúc có vẻ sắp tuột."
+  },
+  {
+    "word": "落ちる",
+    "reading": "おちる",
+    "meaning": "rơi [hành lý]",
+    "example": "その [箱](はこ)は **[落](お)ちそう**です。",
+    "exampleVi": "Cái hộp đó có vẻ sắp rơi."
+  },
+  {
+    "word": "無くなる",
+    "reading": "なくなる",
+    "meaning": "bị mất, hết",
+    "example": "[お金](おかね)が **[無](な)くなりました**。",
+    "exampleVi": "Tiền đã hết."
+  },
+  {
+    "word": "変",
+    "reading": "へん",
+    "meaning": "lạ, kỳ lạ, dị",
+    "example": "この [音](おと)は **[変](へん)**です。",
+    "exampleVi": "Âm thanh này lạ."
+  },
+  {
+    "word": "幸せ",
+    "reading": "しあわせ",
+    "meaning": "hạnh phúc",
+    "example": "[家族](かぞく)と いっしょで **[幸](しあわ)せ**です。",
+    "exampleVi": "Ở cùng gia đình tôi thấy hạnh phúc."
+  },
+  {
+    "word": "上手い",
+    "reading": "うまい",
+    "meaning": "ngon, khéo, giỏi",
+    "example": "あの [人](ひと)は [歌](うた)が **[上手](うま)い**です。",
+    "exampleVi": "Người kia hát hay."
+  },
+  {
+    "word": "まずい",
+    "reading": "まずい",
+    "meaning": "dở, không ngon",
+    "example": "この [料理](りょうり)は **まずい**です。",
+    "exampleVi": "Món ăn này dở."
+  },
+  {
+    "word": "今にも",
+    "reading": "いまにも",
+    "meaning": "sắp sửa",
+    "example": "**[今](いま)にも** [雨](あめ)が ふりそうです。",
+    "exampleVi": "Trời có vẻ sắp mưa đến nơi."
+  },
+  {
+    "word": "つまらない",
+    "reading": "つまらない",
+    "meaning": "chán, không hay",
+    "example": "この [映画](えいが)は **つまらない**です。",
+    "exampleVi": "Bộ phim này chán."
+  },
+  {
+    "word": "ガソリン",
+    "reading": "ガソリン",
+    "meaning": "xăng",
+    "example": "**ガソリン**が [高](たか)く なりました。",
+    "exampleVi": "Xăng đã đắt lên."
+  },
+  {
+    "word": "ばら",
+    "reading": "ばら",
+    "meaning": "hoa hồng",
+    "example": "**ばら**の [花](はな)を [買](か)いました。",
+    "exampleVi": "Tôi đã mua hoa hồng."
+  },
+  {
+    "word": "ドライブ",
+    "reading": "ドライブ",
+    "meaning": "lái xe ô tô (theo sở thích)",
+    "example": "[日曜日](にちようび)に **ドライブ**に [行](い)きます。",
+    "exampleVi": "Chủ nhật tôi đi lái xe hóng gió."
+  },
+  {
+    "word": "パンフレット",
+    "reading": "パンフレット",
+    "meaning": "ấn phẩm quảng cáo",
+    "example": "**パンフレット**を [見](み)て ください。",
+    "exampleVi": "Xin hãy xem tờ rơi quảng cáo."
+  },
+  {
+    "word": "楽",
+    "reading": "らく",
+    "meaning": "dễ dàng, thoải mái",
+    "example": "この [仕事](しごと)は **[楽](らく)**です。",
+    "exampleVi": "Công việc này nhàn."
+  },
+  {
+    "word": "理由",
+    "reading": "りゆう",
+    "meaning": "lý do",
+    "example": "**[理由](りゆう)**を [教](おし)えて ください。",
+    "exampleVi": "Xin hãy cho tôi biết lý do."
+  },
+  {
+    "word": "謝る",
+    "reading": "あやまる",
+    "meaning": "xin lỗi",
+    "example": "[友達](ともだち)に **[謝](あやま)りました**。",
+    "exampleVi": "Tôi đã xin lỗi bạn."
+  },
+  {
+    "word": "知り合う",
+    "reading": "しりあう",
+    "meaning": "quen biết",
+    "example": "[日本](にほん)で [田中](たなか)さんと **[知](し)り[合](あ)いました**。",
+    "exampleVi": "Tôi đã quen anh Tanaka ở Nhật."
+  },
+  {
+    "word": "火",
+    "reading": "ひ",
+    "meaning": "lửa",
+    "example": "**[火](ひ)**を つけて ください。",
+    "exampleVi": "Xin hãy châm lửa."
+  }
 ]

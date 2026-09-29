@@ -2,646 +2,904 @@
  {
   "word": "小学校",
   "reading": "しょうがっこう",
-  "meaning": "trường tiểu học (cấp I)"
+  "meaning": "trường tiểu học (cấp I)",
+  "example": "[日本](にほん)の **[小学校](しょうがっこう)**は [1年生](いちねんせい)から [6年生](ろくねんせい)までです。",
+  "exampleVi": "Trường tiểu học của Nhật có từ lớp 1 đến lớp 6."
  },
  {
   "word": "中学校",
   "reading": "ちゅうがっこう",
-  "meaning": "trường trung học cơ sở (cấp II)"
+  "meaning": "trường trung học cơ sở (cấp II)",
+  "example": "[山下](やました)さんは **[中学校](ちゅうがっこう)**で フランス[語](ご)を [勉強](べんきょう)しました。",
+  "exampleVi": "Anh/ chị Yamashita đã học tiếng Pháp ở trường cấp II."
  },
  {
   "word": "高校",
   "reading": "こうこう",
-  "meaning": "trường trung học phổ thông (cấp III)"
+  "meaning": "trường trung học phổ thông (cấp III)",
+  "example": "[今](いま)でも **[高校](こうこう)**の [友達](ともだち)と [会](あ)います。",
+  "exampleVi": "Đến bây giờ tôi vẫn gặp bạn thời trung học."
  },
  {
   "word": "ようちえん",
   "reading": "ようちえん",
-  "meaning": "mẫu giáo"
+  "meaning": "mẫu giáo",
+  "example": "**ようちえん**から [子供達](こどもたち)の [声](こえ)が [聞](き)こえます。",
+  "exampleVi": "Có thể nghe được tiếng trẻ em từ trường mẫu giáo."
  },
  {
   "word": "専門学校",
   "reading": "せんもんがっこう",
-  "meaning": "trường dạy nghề"
+  "meaning": "trường dạy nghề",
+  "example": "[音楽](おんがく)の **[専門学校](せんもんがっこう)**に [入学](にゅうがく)します。",
+  "exampleVi": "Tôi sẽ vào học trường dạy nghề âm nhạc."
  },
  {
   "word": "入学",
   "reading": "にゅうがく",
-  "meaning": "sự nhập học, vào trường"
+  "meaning": "sự nhập học, vào trường",
+  "example": "[妹](いもうと)が [中学校](ちゅうがっこう)に **[入学](にゅうがく)**します。",
+  "exampleVi": "Em gái tôi sẽ vào trường cấp II."
  },
  {
   "word": "卒業",
   "reading": "そつぎょう",
-  "meaning": "sự tốt nghiệp"
+  "meaning": "sự tốt nghiệp",
+  "example": "[父](ちち)は [30年前](さんじゅうねんまえ)、この[高校](こうこう)を **[卒業](そつぎょう)**しました。",
+  "exampleVi": "Cha tôi đã tốt nghiệp trường trung học này 30 năm trước."
  },
  {
   "word": "教育",
   "reading": "きょういく",
-  "meaning": "việc giáo dục, nền giáo dục"
+  "meaning": "việc giáo dục, nền giáo dục",
+  "example": "[子供](こども)の **[教育](きょういく)**は とても [大切](たいせつ)です。",
+  "exampleVi": "Việc giáo dục trẻ em rất quan trọng."
  },
  {
   "word": "生徒",
   "reading": "せいと",
-  "meaning": "học sinh"
+  "meaning": "học sinh",
+  "example": "この [学校](がっこう)の **[生徒](せいと)**は [何人](なんにん)ですか。",
+  "exampleVi": "Học sinh trường này có bao nhiêu người?"
  },
  {
   "word": "授業",
   "reading": "じゅぎょう",
-  "meaning": "giờ học, tiết học"
+  "meaning": "giờ học, tiết học",
+  "example": "[今日](きょう)は [4時](よじ)まで **[授業](じゅぎょう)**があります。",
+  "exampleVi": "Hôm nay có giờ học đến 4 giờ."
  },
  {
   "word": "始まる",
   "reading": "はじまる",
-  "meaning": "được bắt đầu, (~) bắt đầu"
+  "meaning": "được bắt đầu, (~) bắt đầu",
+  "example": "[4月](しがつ)に [学校](がっこう)が **[始](はじ)まります**。",
+  "exampleVi": "Trường học bắt đầu vào tháng Tư."
  },
  {
   "word": "始める",
   "reading": "はじめる",
-  "meaning": "bắt đầu (~)"
+  "meaning": "bắt đầu (~)",
+  "example": "[今日](きょう)の [勉強](べんきょう)を **[始](はじ)めましょう**。",
+  "exampleVi": "Chúng ta bắt đầu bài học hôm nay nào."
  },
  {
   "word": "質問",
   "reading": "しつもん",
-  "meaning": "câu hỏi"
+  "meaning": "câu hỏi",
+  "example": "**[質問](しつもん)**を よく [読](よ)んで ください。",
+  "exampleVi": "Hãy đọc kỹ câu hỏi."
  },
  {
   "word": "答える",
   "reading": "こたえる",
-  "meaning": "trả lời"
+  "meaning": "trả lời",
+  "example": "[先生](せんせい)の [質問](しつもん)に **[答](こた)えます**。",
+  "exampleVi": "Tôi trả lời câu hỏi của giáo viên."
  },
  {
   "word": "数学",
   "reading": "すうがく",
-  "meaning": "toán học"
+  "meaning": "toán học",
+  "example": "[英語](えいご)は [好](す)きですが、**[数学](すうがく)**は きらいです。",
+  "exampleVi": "Tôi thích tiếng Anh nhưng ghét toán."
  },
  {
   "word": "歴史",
   "reading": "れきし",
-  "meaning": "lịch sử"
+  "meaning": "lịch sử",
+  "example": "[世界](せかい)の **[歴史](れきし)**を もっと [勉強](べんきょう)したいです。",
+  "exampleVi": "Tôi muốn học lịch sử thế giới nhiều hơn nữa."
  },
  {
   "word": "地理",
   "reading": "ちり",
-  "meaning": "địa lý"
+  "meaning": "địa lý",
+  "example": "[子供](こども)の ころから **[地理](ちり)**が [大好](だいす)きでした。",
+  "exampleVi": "Từ nhỏ, tôi đã thích môn địa lý."
  },
  {
   "word": "テキスト",
   "reading": "テキスト",
-  "meaning": "sách học, sách giáo khoa"
+  "meaning": "sách học, sách giáo khoa",
+  "example": "この **テキスト**は [明日](あした) [使](つか)います。",
+  "exampleVi": "Ngày mai sẽ sử dụng sách này."
  },
  {
   "word": "開く",
   "reading": "ひらく",
-  "meaning": "mở, lật"
+  "meaning": "mở, lật",
+  "example": "[教科書](きょうかしょ)の 60ページを **[開](ひら)いて** ください。",
+  "exampleVi": "Hãy mở sách giáo khoa trang 60."
  },
  {
   "word": "プリント",
   "reading": "プリント",
-  "meaning": "bài giảng (giáo viên soạn sẵn phát cho sinh viên)"
+  "meaning": "bài giảng (giáo viên soạn sẵn phát cho sinh viên)",
+  "example": "これは [今日](きょう)の [授業](じゅぎょう)の **プリント**です。",
+  "exampleVi": "Đây là tờ bài giảng của giờ học hôm nay."
  },
  {
   "word": "表",
   "reading": "おもて",
-  "meaning": "mặt trước"
+  "meaning": "mặt trước",
+  "example": "プリントの **[表](おもて)**を [見](み)て ください。",
+  "exampleVi": "Hãy xem mặt trước của tờ bài giảng."
  },
  {
   "word": "テスト",
   "reading": "テスト",
-  "meaning": "bài kiểm tra"
+  "meaning": "bài kiểm tra",
+  "example": "[今日](きょう)の **テスト**は とても [難](むずか)しかったです。",
+  "exampleVi": "Bài kiểm tra hôm nay (đã) rất khó."
  },
  {
   "word": "通う",
   "reading": "かよう",
-  "meaning": "đi (học), chỉ hành động lui tới thường xuyên"
+  "meaning": "đi (học), chỉ hành động lui tới thường xuyên",
+  "example": "[毎日](まいにち)、バスで [学校](がっこう)に **[通](かよ)っています**。",
+  "exampleVi": "Hàng ngày, tôi đi học bằng xe buýt."
  },
  {
   "word": "成績",
   "reading": "せいせき",
-  "meaning": "thành tích học tập"
+  "meaning": "thành tích học tập",
+  "example": "**[成績](せいせき)**が [悪](わる)くて、[母](はは)に しかられました。",
+  "exampleVi": "Thành tích học tập của tôi tệ nên bị mẹ mắng."
  },
  {
   "word": "点",
   "reading": "てん",
-  "meaning": "điểm"
+  "meaning": "điểm",
+  "example": "[昨日](きのう)の テストの **[点](てん)**は よくなかったです。",
+  "exampleVi": "Điểm bài kiểm tra hôm qua không tốt."
  },
  {
   "word": "丸",
   "reading": "まる",
-  "meaning": "khoanh tròn (maru: ý là đúng, đạt)"
+  "meaning": "khoanh tròn (maru: ý là đúng, đạt)",
+  "example": "テストで **[丸](まる)**を たくさん もらいました。",
+  "exampleVi": "Tôi được nhiều khoanh tròn (maru) trong bài kiểm tra."
  },
  {
   "word": "作文",
   "reading": "さくぶん",
-  "meaning": "bài văn"
+  "meaning": "bài văn",
+  "example": "[自分](じぶん)の [国](くに)について **[作文](さくぶん)**を [書](か)きましょう。",
+  "exampleVi": "Hãy viết bài văn về đất nước của mình."
  },
  {
   "word": "易しい",
   "reading": "やさしい",
-  "meaning": "dễ, đơn giản"
+  "meaning": "dễ, đơn giản",
+  "example": "[昨日](きのう)の テストは とても **[易](やさ)しかったです**。",
+  "exampleVi": "Bài kiểm tra hôm qua rất dễ."
  },
  {
   "word": "簡単な",
   "reading": "かんたんな",
-  "meaning": "đơn giản"
+  "meaning": "đơn giản",
+  "example": "この テストは とても **[簡単](かんたん)**です。",
+  "exampleVi": "Bài kiểm tra này rất đơn giản."
  },
  {
   "word": "まちがえる",
   "reading": "まちがえる",
-  "meaning": "sai, nhầm"
+  "meaning": "sai, nhầm",
+  "example": "[易](やさ)しい [問題](もんだい)を **まちがえて** しまいました。",
+  "exampleVi": "Tôi đã làm sai câu hỏi dễ."
  },
  {
   "word": "熱心な",
   "reading": "ねっしんな",
-  "meaning": "nhiệt tình"
+  "meaning": "nhiệt tình",
+  "example": "[田中先生](たなかせんせい)は とても **[熱心](ねっしん)**です。",
+  "exampleVi": "Thầy/ cô Tanaka rất nhiệt tình."
  },
  {
   "word": "優しい",
   "reading": "やさしい",
-  "meaning": "hiền, tử tế"
+  "meaning": "hiền, tử tế",
+  "example": "[山田先生](やまだせんせい)は とても **[優](やさ)しい**です。",
+  "exampleVi": "Thầy/ cô Yamada rất hiền."
  },
  {
   "word": "厳しい",
   "reading": "きびしい",
-  "meaning": "nghiêm khắc"
+  "meaning": "nghiêm khắc",
+  "example": "[木村先生](きむらせんせい)は ときどき **[厳](きび)しい**です。",
+  "exampleVi": "Thầy/ cô Kimura đôi khi nghiêm khắc."
  },
  {
   "word": "真面目な",
   "reading": "まじめな",
-  "meaning": "nghiêm túc, chăm chỉ"
+  "meaning": "nghiêm túc, chăm chỉ",
+  "example": "かれは とても **[真面目](まじめ)な** [学生](がくせい)です。",
+  "exampleVi": "Anh ấy là một sinh viên rất chăm chỉ."
  },
  {
   "word": "えらい",
   "reading": "えらい",
-  "meaning": "cao quý, ưu tú"
+  "meaning": "cao quý, ưu tú",
+  "example": "ある[国](くに)の **えらい** [人](ひと)が [日本](にほん)へ [来](き)ます。",
+  "exampleVi": "Một nhân vật quan trọng của một nước nọ sẽ đến Nhật."
  },
  {
   "word": "設備",
   "reading": "せつび",
-  "meaning": "thiết bị"
+  "meaning": "thiết bị",
+  "example": "この [学校](がっこう)の **[設備](せつび)**は [新](あたら)しいです。",
+  "exampleVi": "Thiết bị của trường này mới."
  },
  {
   "word": "ベル",
   "reading": "ベル",
-  "meaning": "chuông"
+  "meaning": "chuông",
+  "example": "[12時半](じゅうにじはん)に **ベル**が [鳴](な)ります。",
+  "exampleVi": "12 giờ rưỡi chuông sẽ reo."
  },
  {
   "word": "大学生",
   "reading": "だいがくせい",
-  "meaning": "sinh viên"
+  "meaning": "sinh viên",
+  "example": "[早](はや)く **[大学生](だいがくせい)**に なりたいです。",
+  "exampleVi": "Tôi muốn mau trở thành sinh viên đại học."
  },
  {
   "word": "受ける",
   "reading": "うける",
-  "meaning": "dự (thi)"
+  "meaning": "dự (thi)",
+  "example": "[日本](にほん)の [大学](だいがく)を **[受](う)けた**いです。",
+  "exampleVi": "Tôi muốn dự thi vào trường đại học của Nhật."
  },
  {
   "word": "受かる",
   "reading": "うかる",
-  "meaning": "đậu (kỳ thi)"
+  "meaning": "đậu (kỳ thi)",
+  "example": "[行](い)きたかった [大学](だいがく)に **[受](う)かりました**。",
+  "exampleVi": "Tôi đã đậu vào đại học mà tôi muốn."
  },
  {
   "word": "留学",
   "reading": "りゅうがく",
-  "meaning": "việc du học"
+  "meaning": "việc du học",
+  "example": "デザインの [勉強](べんきょう)のために **[留学](りゅうがく)**しました。",
+  "exampleVi": "Tôi đã du học để học thiết kế."
  },
  {
   "word": "目的",
   "reading": "もくてき",
-  "meaning": "mục đích"
+  "meaning": "mục đích",
+  "example": "[留学](りゅうがく)する **[目的](もくてき)**は [何](なん)ですか。",
+  "exampleVi": "Mục đích du học của bạn là gì?"
  },
  {
   "word": "夢",
   "reading": "ゆめ",
-  "meaning": "ước mơ, giấc mơ"
+  "meaning": "ước mơ, giấc mơ",
+  "example": "[私](わたし)の **[夢](ゆめ)**は [世界旅行](せかいりょこう)です。",
+  "exampleVi": "Ước mơ của tôi là du lịch thế giới."
  },
  {
   "word": "学部",
   "reading": "がくぶ",
-  "meaning": "ngành, khoa"
+  "meaning": "ngành, khoa",
+  "example": "どの **[学部](がくぶ)**に [行](い)くか まだ [分](わ)かりません。",
+  "exampleVi": "Tôi chưa biết mình sẽ đi ngành nào."
  },
  {
   "word": "専門",
   "reading": "せんもん",
-  "meaning": "chuyên môn"
+  "meaning": "chuyên môn",
+  "example": "[私](わたし)の **[専門](せんもん)**は [教育学](きょういくがく)です。",
+  "exampleVi": "Chuyên môn của tôi là Giáo dục học."
  },
  {
   "word": "科学",
   "reading": "かがく",
-  "meaning": "khoa học"
+  "meaning": "khoa học",
+  "example": "[子供](こども)のときから **[科学](かがく)**が [好](す)きでした。",
+  "exampleVi": "Tôi thích khoa học từ khi còn nhỏ."
  },
  {
   "word": "医学",
   "reading": "いがく",
-  "meaning": "y học"
+  "meaning": "y học",
+  "example": "[医者](いしゃ)に なるために **[医学部](いがくぶ)**に [入](はい)りました。",
+  "exampleVi": "Tôi đã vào ngành Y để trở thành bác sĩ."
  },
  {
   "word": "文学",
   "reading": "ぶんがく",
-  "meaning": "văn học"
+  "meaning": "văn học",
+  "example": "フランスの **[文学](ぶんがく)**を [勉強](べんきょう)しています。",
+  "exampleVi": "Tôi học văn học Pháp."
  },
  {
   "word": "法律",
   "reading": "ほうりつ",
-  "meaning": "luật pháp"
+  "meaning": "luật pháp",
+  "example": "[大学](だいがく)で **[法律](ほうりつ)**を [勉強](べんきょう)しています。",
+  "exampleVi": "Ở đại học tôi học luật."
  },
  {
   "word": "講義",
   "reading": "こうぎ",
-  "meaning": "giờ học, tiết học"
+  "meaning": "giờ học, tiết học",
+  "example": "[山下先生](やましたせんせい)の **[講義](こうぎ)**は [分](わ)かりやすいです。",
+  "exampleVi": "Giờ học của thầy/cô Yamashita dễ hiểu."
  },
  {
   "word": "出席",
   "reading": "しゅっせき",
-  "meaning": "sự tham dự, có mặt"
+  "meaning": "sự tham dự, có mặt",
+  "example": "[毎日](まいにち)、[大学](だいがく)の [授業](じゅぎょう)に **[出席](しゅっせき)**しています。",
+  "exampleVi": "Tôi có mặt trong các giờ học ở trường đại học hàng ngày."
  },
  {
   "word": "欠席",
   "reading": "けっせき",
-  "meaning": "sự vắng mặt, nghỉ học"
+  "meaning": "sự vắng mặt, nghỉ học",
+  "example": "かぜで [授業](じゅぎょう)を **[欠席](けっせき)**しました。",
+  "exampleVi": "Tôi đã vắng mặt (nghỉ học) vì bị cảm."
  },
  {
   "word": "レポート",
   "reading": "レポート",
-  "meaning": "bài báo cáo"
+  "meaning": "bài báo cáo",
+  "example": "[英語](えいご)で **レポート**を [書](か)かなければなりません。",
+  "exampleVi": "Phải viết báo cáo bằng tiếng Anh."
  },
  {
   "word": "論文",
   "reading": "ろんぶん",
-  "meaning": "luận văn"
+  "meaning": "luận văn",
+  "example": "[来週](らいしゅう)までに **[論文](ろんぶん)**を [出](だ)して ください。",
+  "exampleVi": "Hãy nộp bài luận văn cho đến tuần sau."
  },
  {
   "word": "しめきり",
   "reading": "しめきり",
-  "meaning": "hạn chót"
+  "meaning": "hạn chót",
+  "example": "レポートの **しめきり**は [明日](あした)です。",
+  "exampleVi": "Hạn chót (nộp) bài báo cáo là ngày mai."
  },
  {
   "word": "研究",
   "reading": "けんきゅう",
-  "meaning": "sự nghiên cứu"
+  "meaning": "sự nghiên cứu",
+  "example": "[大学院](だいがくいん)で [数学](すうがく)を **[研究](けんきゅう)**したいです。",
+  "exampleVi": "Tôi muốn nghiên cứu toán học ở bậc cao học."
  },
  {
   "word": "実験",
   "reading": "じっけん",
-  "meaning": "thí nghiệm"
+  "meaning": "thí nghiệm",
+  "example": "**[実験](じっけん)**は [大変](たいへん)ですが、[面白](おもしろ)いです。",
+  "exampleVi": "Thí nghiệm (thì) vất vả nhưng thú vị."
  },
  {
   "word": "まとめる",
   "reading": "まとめる",
-  "meaning": "tóm tắt (~)"
+  "meaning": "tóm tắt (~)",
+  "example": "[週末](しゅうまつ)までに [研究](けんきゅう)を **まとめます**。",
+  "exampleVi": "Tôi tóm tắt bài nghiên cứu cho đến cuối tuần."
  },
  {
   "word": "ボランティア",
   "reading": "ボランティア",
-  "meaning": "công việc tình nguyện"
+  "meaning": "công việc tình nguyện",
+  "example": "[休](やす)みの [日](ひ)に **ボランティア**を しています。",
+  "exampleVi": "Ngày nghỉ tôi làm công việc tình nguyện."
  },
  {
   "word": "複雑な",
   "reading": "ふくざつな",
-  "meaning": "phức tạp"
+  "meaning": "phức tạp",
+  "example": "この [文](ぶん)は **[複雑](ふくざつ)**で よく [分](わ)かりません。",
+  "exampleVi": "Câu văn này phức tạp nên tôi không hiểu lắm."
  },
  {
   "word": "必要",
   "reading": "ひつよう",
-  "meaning": "sự cần thiết (cần thiết)"
+  "meaning": "sự cần thiết (cần thiết)",
+  "example": "[学校](がっこう)では [学生](がくせい)カードを [作](つく)る **[必要](ひつよう)**が あります。",
+  "exampleVi": "Cần làm thẻ sinh viên ở trường."
  },
  {
   "word": "考える",
   "reading": "かんがえる",
-  "meaning": "suy nghĩ, nghĩ"
+  "meaning": "suy nghĩ, nghĩ",
+  "example": "[難](むずか)しくても、よく **[考](かんが)えれば** [分](わ)かります。",
+  "exampleVi": "Dù khó mà nếu suy nghĩ kỹ thì sẽ hiểu."
  },
  {
   "word": "辞典",
   "reading": "じてん",
-  "meaning": "tự điển"
+  "meaning": "tự điển",
+  "example": "カタカナことばの **[辞典](じてん)**を [買](か)いたいです。",
+  "exampleVi": "Tôi muốn mua tự điển từ Katakana."
  },
  {
   "word": "調べる",
   "reading": "しらべる",
-  "meaning": "tra, tìm"
+  "meaning": "tra, tìm",
+  "example": "[分](わ)からない [言葉](ことば)は [自分](じぶん)で **[調](しら)べて** ください。",
+  "exampleVi": "Hãy tự mình tra từ không biết."
  },
  {
   "word": "確かめる",
   "reading": "たしかめる",
-  "meaning": "kiểm tra, xác nhận"
+  "meaning": "kiểm tra, xác nhận",
+  "example": "レポートを [書](か)いたら、**[確](たし)かめて** ください。",
+  "exampleVi": "Nếu viết báo cáo xong rồi, hãy kiểm tra lại."
  },
  {
   "word": "予習",
   "reading": "よしゅう",
-  "meaning": "việc học trước, sự chuẩn bị bài"
+  "meaning": "việc học trước, sự chuẩn bị bài",
+  "example": "[毎日](まいにち)、[漢字](かんじ)を **[予習](よしゅう)**して きて ください。",
+  "exampleVi": "Hàng ngày hãy học trước chữ Kanji."
  },
  {
   "word": "復習",
   "reading": "ふくしゅう",
-  "meaning": "việc ôn tập"
+  "meaning": "việc ôn tập",
+  "example": "**[復習](ふくしゅう)**しないと、ことばが [覚](おぼ)えられません。",
+  "exampleVi": "Hễ không ôn tập là tôi không thể nào nhớ từ."
  },
  {
   "word": "思い出す",
   "reading": "おもいだす",
-  "meaning": "nhớ ra"
+  "meaning": "nhớ ra",
+  "example": "[昨日](きのう) [復習](ふくしゅう)したのに、[漢字](かんじ)が **[思](おも)い[出](だ)せません**。",
+  "exampleVi": "Hôm qua tôi đã ôn tập vậy mà không thể nhớ ra chữ Kanji."
  },
  {
   "word": "じゅく",
   "reading": "じゅく",
-  "meaning": "lớp học thêm, lớp luyện thi"
+  "meaning": "lớp học thêm, lớp luyện thi",
+  "example": "[学校](がっこう)が [終](お)わったら、**じゅく**に [行](い)きます。",
+  "exampleVi": "Sau khi giờ học kết thúc, tôi sẽ đi học thêm."
  },
  {
   "word": "やる",
   "reading": "やる",
-  "meaning": "làm"
+  "meaning": "làm",
+  "example": "[家](いえ)に [帰](かえ)ったら、すぐ [宿題](しゅくだい)を **やります**。",
+  "exampleVi": "Sau khi về nhà, tôi làm bài tập ngay."
  },
  {
   "word": "がんばる",
   "reading": "がんばる",
-  "meaning": "cố gắng"
+  "meaning": "cố gắng",
+  "example": "[勉強](べんきょう)も スポーツも **がんばって** います。",
+  "exampleVi": "Tôi cố gắng cả việc học lẫn thể thao."
  },
  {
   "word": "字",
   "reading": "じ",
-  "meaning": "chữ, chữ viết"
+  "meaning": "chữ, chữ viết",
+  "example": "リーさんは **[字](じ)**が とても きれいです。",
+  "exampleVi": "Chữ (anh/chị) Ly rất đẹp."
  },
  {
   "word": "ふりがな",
   "reading": "ふりがな",
-  "meaning": "phiên âm"
+  "meaning": "phiên âm",
+  "example": "**ふり[仮名](がな)**が ないと、[漢字](かんじ)が [読](よ)めません。",
+  "exampleVi": "Nếu không có phiên âm, tôi không thể đọc được chữ Kanji."
  },
  {
   "word": "メモ",
   "reading": "メモ",
-  "meaning": "việc ghi chép"
+  "meaning": "việc ghi chép",
+  "example": "[大切](たいせつ)な ことを **メモ**して おきます。",
+  "exampleVi": "Tôi ghi chép lại các việc quan trọng."
  },
  {
   "word": "文法",
   "reading": "ぶんぽう",
-  "meaning": "văn phạm, ngữ pháp"
+  "meaning": "văn phạm, ngữ pháp",
+  "example": "N4の **[文法](ぶんぽう)**を [覚](おぼ)えましょう。",
+  "exampleVi": "Hãy ghi nhớ văn phạm N4."
  },
  {
   "word": "説明",
   "reading": "せつめい",
-  "meaning": "việc giải thích"
+  "meaning": "việc giải thích",
+  "example": "この [文法](ぶんぽう)の **[説明](せつめい)**は よく [分](わ)かりません。",
+  "exampleVi": "Tôi không hiểu rõ lắm phần giải thích văn phạm này."
  },
  {
   "word": "発音",
   "reading": "はつおん",
-  "meaning": "việc phát âm"
+  "meaning": "việc phát âm",
+  "example": "マリアさんの **[発音](はつおん)**は とても きれいです。",
+  "exampleVi": "Phát âm của chị Maria rất hay."
  },
  {
   "word": "会話",
   "reading": "かいわ",
-  "meaning": "cuộc nói chuyện, đoạn hội thoại"
+  "meaning": "cuộc nói chuyện, đoạn hội thoại",
+  "example": "[日本語](にほんご)だけで **[会話](かいわ)**しましょう。",
+  "exampleVi": "Hãy nói chuyện chỉ bằng tiếng Nhật."
  },
  {
   "word": "足す",
   "reading": "たす",
-  "meaning": "thêm vào, cộng"
+  "meaning": "thêm vào, cộng",
+  "example": "25に 47を **[足](た)す**と、72に なります。",
+  "exampleVi": "25 cộng thêm 47 bằng 72."
  },
  {
   "word": "役に立つ",
   "reading": "やくにたつ",
-  "meaning": "có ích"
+  "meaning": "có ích",
+  "example": "この [本](ほん)は とても **[役](やく)に[立](た)ちます**。",
+  "exampleVi": "Quyển sách này rất có ích."
  },
  {
   "word": "勉強中",
   "reading": "べんきょうちゅう",
-  "meaning": "đang học"
+  "meaning": "đang học",
+  "example": "[今](いま)、テストの ための **[勉強中](べんきょうちゅう)**です。",
+  "exampleVi": "Bây giờ tôi đang học bài kiểm tra."
  },
  {
   "word": "勤める",
   "reading": "つとめる",
-  "meaning": "làm việc"
+  "meaning": "làm việc",
+  "example": "[私](わたし)は ITの [会社](かいしゃ)に **[勤](つと)めています**。",
+  "exampleVi": "Tôi đang làm việc tại một công ty IT."
  },
  {
   "word": "給料",
   "reading": "きゅうりょう",
-  "meaning": "lương"
+  "meaning": "lương",
+  "example": "[今日](きょう)、[始](はじ)めての **[給料](きゅうりょう)**を もらいました。",
+  "exampleVi": "Hôm nay tôi lãnh lương lần đầu tiên."
  },
  {
   "word": "ボーナス",
   "reading": "ボーナス",
-  "meaning": "tiền thưởng"
+  "meaning": "tiền thưởng",
+  "example": "[夏](なつ)と [冬](ふゆ)に **ボーナス**が あります。",
+  "exampleVi": "Có tiền thưởng vào mùa hè và mùa đông."
  },
  {
   "word": "貯金",
   "reading": "ちょきん",
-  "meaning": "việc tiết kiệm"
+  "meaning": "việc tiết kiệm",
+  "example": "[旅行](りょこう)の ために **[貯金](ちょきん)**します。",
+  "exampleVi": "Tôi tiết kiệm tiền để đi du lịch."
  },
  {
   "word": "受付",
   "reading": "うけつけ",
-  "meaning": "tiếp tân, quầy tiếp tân"
+  "meaning": "tiếp tân, quầy tiếp tân",
+  "example": "**[受付](うけつけ)**は [3階](さんがい)に あります。",
+  "exampleVi": "Tiếp tân ở tầng 3."
  },
  {
   "word": "めいし",
   "reading": "めいし",
-  "meaning": "danh thiếp"
+  "meaning": "danh thiếp",
+  "example": "**めいし**の [名前](なまえ)が まちがっていました。",
+  "exampleVi": "Tên trên danh thiếp bị sai."
  },
  {
   "word": "営業",
   "reading": "えいぎょう",
-  "meaning": "việc kinh doanh"
+  "meaning": "việc kinh doanh",
+  "example": "**[営業](えいぎょう)**の [仕事](しごと)は [楽](たの)しいです。",
+  "exampleVi": "Công việc kinh doanh thì vui."
  },
  {
   "word": "あいさつ",
   "reading": "あいさつ",
-  "meaning": "lời chào hỏi"
+  "meaning": "lời chào hỏi",
+  "example": "いつも [元気](げんき)に **あいさつ**しています。",
+  "exampleVi": "Lúc nào cũng chào hỏi vui vẻ."
  },
  {
   "word": "会議",
   "reading": "かいぎ",
-  "meaning": "cuộc họp, buổi họp"
+  "meaning": "cuộc họp, buổi họp",
+  "example": "[今日](きょう)の **[会議](かいぎ)**は [午後](ごご) [3時](さんじ)から です。",
+  "exampleVi": "Cuộc họp hôm nay (bắt đầu) từ 3 giờ chiều."
  },
  {
   "word": "ミーティング",
   "reading": "ミーティング",
-  "meaning": "cuộc họp, gặp gỡ, bàn bạc"
+  "meaning": "cuộc họp, gặp gỡ, bàn bạc",
+  "example": "[昼](ひる)ごはんを [食](た)べながら **ミーティング**を しましょう。",
+  "exampleVi": "Hãy vừa ăn trưa vừa họp nào."
  },
  {
   "word": "意見",
   "reading": "いけん",
-  "meaning": "ý kiến"
+  "meaning": "ý kiến",
+  "example": "[人](ひと)の **[意見](いけん)**を よく [聞](き)きましょう。",
+  "exampleVi": "Hãy lắng nghe ý kiến người khác."
  },
  {
   "word": "スケジュール",
   "reading": "スケジュール",
-  "meaning": "thời khóa biểu, lịch trình"
+  "meaning": "thời khóa biểu, lịch trình",
+  "example": "[社長](しゃちょう)の **スケジュール**を [知](し)っていますか。",
+  "exampleVi": "Bạn có biết lịch trình của giám đốc không?"
  },
  {
   "word": "出張",
   "reading": "しゅっちょう",
-  "meaning": "chuyến công tác"
+  "meaning": "chuyến công tác",
+  "example": "[父](ちち)は よく アメリカへ **[出張](しゅっちょう)**しています。",
+  "exampleVi": "Cha tôi thường đi Mỹ công tác."
  },
  {
   "word": "もどる",
   "reading": "もどる",
-  "meaning": "quay lại"
+  "meaning": "quay lại",
+  "example": "[田中](たなか)さんが **もどる**のは [何時](なんじ)ですか。",
+  "exampleVi": "Anh/chị Tanaka sẽ quay lại lúc mấy giờ?"
  },
  {
   "word": "もどす",
   "reading": "もどす",
-  "meaning": "trả lại"
+  "meaning": "trả lại",
+  "example": "[新聞](しんぶん)を [読](よ)んだら、ここに **もどして** ください。",
+  "exampleVi": "Sau khi đọc báo thì vui lòng trả lại vào chỗ này."
  },
  {
   "word": "本社",
   "reading": "ほんしゃ",
-  "meaning": "trụ sở chính"
+  "meaning": "trụ sở chính",
+  "example": "[春](はる)から [東京](とうきょう)の **[本社](ほんしゃ)**に [行](い)きます。",
+  "exampleVi": "Từ mùa xuân tôi sẽ đi làm ở trụ sở chính của công ty."
  },
  {
   "word": "社長",
   "reading": "しゃちょう",
-  "meaning": "giám đốc"
+  "meaning": "giám đốc",
+  "example": "[私](わたし)の [会社](かいしゃ)の **[社長](しゃちょう)**は [若](わか)いです。",
+  "exampleVi": "Giám đốc công ty tôi thì trẻ."
  },
  {
   "word": "ルール",
   "reading": "ルール",
-  "meaning": "luật lệ, qui định"
+  "meaning": "luật lệ, qui định",
+  "example": "[会社](かいしゃ)の **ルール**を よく [読](よ)んで ください。",
+  "exampleVi": "Vui lòng đọc kỹ qui định của công ty."
  },
  {
   "word": "規則",
   "reading": "きそく",
-  "meaning": "quy tắc"
+  "meaning": "quy tắc",
+  "example": "この [会社](かいしゃ)の **[規則](きそく)**を [知](し)っていますか。",
+  "exampleVi": "Bạn có biết qui tắc của công ty này không?"
  },
  {
   "word": "決まる",
   "reading": "きまる",
-  "meaning": "được quyết định"
+  "meaning": "được quyết định",
+  "example": "[新](あたら)しい アルバイトが **[決](き)まりました**。",
+  "exampleVi": "Tôi đã có công việc làm thêm mới."
  },
  {
   "word": "決める",
   "reading": "きめる",
-  "meaning": "quyết định"
+  "meaning": "quyết định",
+  "example": "[会議](かいぎ)の [時間](じかん)を **[決](き)めましょう**。",
+  "exampleVi": "Hãy quyết định thời gian họp."
  },
  {
   "word": "許可",
   "reading": "きょか",
-  "meaning": "sự cho phép"
+  "meaning": "sự cho phép",
+  "example": "[休](やす)むときは **[許可](きょか)**を もらってください。",
+  "exampleVi": "Khi nghỉ, hãy xin phép."
  },
  {
   "word": "ちこく",
   "reading": "ちこく",
-  "meaning": "sự trễ giờ"
+  "meaning": "sự trễ giờ",
+  "example": "[1分](いっぷん)でも **ちこく**しては いけません。",
+  "exampleVi": "Không được đi trễ dù chỉ 1 phút."
  },
  {
   "word": "技術",
   "reading": "ぎじゅつ",
-  "meaning": "kỹ thuật"
+  "meaning": "kỹ thuật",
+  "example": "この [会社](かいしゃ)には どんな **[技術](ぎじゅつ)**が ありますか。",
+  "exampleVi": "Công ty này có kỹ thuật như thế nào?"
  },
  {
   "word": "パソコン",
   "reading": "パソコン",
-  "meaning": "máy vi tính"
+  "meaning": "máy vi tính",
+  "example": "**パソコン**を [見](み)ていると、[目](め)が つかれます。",
+  "exampleVi": "Hễ nhìn vào máy vi tính, mắt sẽ mỏi."
  },
  {
   "word": "ソフト",
   "reading": "ソフト",
-  "meaning": "phần mềm"
+  "meaning": "phần mềm",
+  "example": "パソコンの **ソフト**を [作](つく)る [仕事](しごと)が したいです。",
+  "exampleVi": "Tôi muốn làm công việc tạo ra phần mềm máy vi tính."
  },
  {
   "word": "書類",
   "reading": "しょるい",
-  "meaning": "hồ sơ"
+  "meaning": "hồ sơ",
+  "example": "[明日](あす)までに この **[書類](しょるい)**を [出](だ)して ください。",
+  "exampleVi": "Cho đến ngày mai, hãy nộp hồ sơ này."
  },
  {
   "word": "ファイル",
   "reading": "ファイル",
-  "meaning": "bìa hồ sơ"
+  "meaning": "bìa hồ sơ",
+  "example": "[資料](しりょう)を **ファイル**に [入](い)れます。",
+  "exampleVi": "Tôi cất tài liệu vào bìa hồ sơ."
  },
  {
   "word": "入力",
   "reading": "にゅうりょく",
-  "meaning": "việc đánh máy, nhập (dữ liệu)"
+  "meaning": "việc đánh máy, nhập (dữ liệu)",
+  "example": "ここに [英語](えいご)で **[入力](にゅうりょく)**して ください。",
+  "exampleVi": "Vui lòng nhập tiếng Anh vào đây."
  },
  {
   "word": "ほんやく",
   "reading": "ほんやく",
-  "meaning": "công việc dịch thuật, biên dịch"
+  "meaning": "công việc dịch thuật, biên dịch",
+  "example": "[中国語](ちゅうごくご)を [日本語](にほんご)に **ほんやく**します。",
+  "exampleVi": "Tôi sẽ dịch từ tiếng Trung Quốc sang tiếng Nhật."
  },
  {
   "word": "通訳",
   "reading": "つうやく",
-  "meaning": "công việc phiên dịch, thông dịch"
+  "meaning": "công việc phiên dịch, thông dịch",
+  "example": "[小学生](しょうがくせい)の ころから **[通訳](つうやく)**に なりたかったです。",
+  "exampleVi": "Từ thời tiểu học, tôi đã muốn trở thành thông dịch."
  },
  {
   "word": "方法",
   "reading": "ほうほう",
-  "meaning": "phương pháp"
+  "meaning": "phương pháp",
+  "example": "[日本語](にほんご)が [上手](じょうず)に なる **[方法](ほうほう)**を [教](おし)えて ください。",
+  "exampleVi": "Vui lòng chỉ cho tôi phương pháp để giỏi tiếng Nhật."
  },
  {
   "word": "仕方",
   "reading": "しかた",
-  "meaning": "phương pháp, cách làm"
+  "meaning": "phương pháp, cách làm",
+  "example": "[仕事](しごと)の **[仕方](しかた)**を すぐに [覚](おぼ)えました。",
+  "exampleVi": "Tôi đã nhớ cách làm việc ngay."
  },
  {
   "word": "慣れる",
   "reading": "なれる",
-  "meaning": "quen"
+  "meaning": "quen",
+  "example": "[最近](さいきん)、[仕事](しごと)に **[慣](な)れました**。",
+  "exampleVi": "Gần đây tôi đã quen với công việc."
  },
  {
   "word": "上手く行く",
   "reading": "うまくいく",
-  "meaning": "suôn sẻ, tiến hành (thuận lợi)"
+  "meaning": "suôn sẻ, tiến hành (thuận lợi)",
+  "example": "[明日](あした)の スピーチは **[上手](うま)く[行](い)く**でしょう。",
+  "exampleVi": "Hẳn là bài hùng biện ngày mai sẽ tốt thôi."
  },
  {
   "word": "成功",
   "reading": "せいこう",
-  "meaning": "sự thành công"
+  "meaning": "sự thành công",
+  "example": "[田中](たなか)さんは [仕事](しごと)で **[成功](せいこう)**しました。",
+  "exampleVi": "Anh/chị Tanaka đã thành công trong công việc."
  },
  {
   "word": "たのむ",
   "reading": "たのむ",
-  "meaning": "nhờ, yêu cầu"
+  "meaning": "nhờ, yêu cầu",
+  "example": "[店長](てんちょう)に [仕事](しごと)を **たのまれました**。",
+  "exampleVi": "Tôi được cửa hàng trưởng nhờ công việc."
  },
  {
   "word": "手伝う",
   "reading": "てつだう",
-  "meaning": "giúp đỡ"
+  "meaning": "giúp đỡ",
+  "example": "フランス[語](ご)の [通訳](つうやく)を **[手伝](てつだ)って** ください。",
+  "exampleVi": "Vui lòng giúp tôi thông dịch tiếng Pháp."
  },
  {
   "word": "残業",
   "reading": "ざんぎょう",
-  "meaning": "việc làm ngoài giờ"
+  "meaning": "việc làm ngoài giờ",
+  "example": "いそがしいときは **[残業](ざんぎょう)**します。",
+  "exampleVi": "Khi bận rộn thì tôi làm ngoài giờ."
  },
  {
   "word": "無理",
   "reading": "むり",
-  "meaning": "việc khó khăn (không thể)"
+  "meaning": "việc khó khăn (không thể)",
+  "example": "そんな **[無理](むり)**を [言](い)わないで ください。",
+  "exampleVi": "Xin đừng nói những điều quá sức như thế."
  },
  {
   "word": "急ぐ",
   "reading": "いそぐ",
-  "meaning": "gấp rút, vội vàng"
+  "meaning": "gấp rút, vội vàng",
+  "example": "[時間](じかん)が ないので、**[急](いそ)いで** ください。",
+  "exampleVi": "Vì không có thời gian nên hãy gấp rút lên."
  },
  {
   "word": "昼休み",
   "reading": "ひるやすみ",
-  "meaning": "giờ nghỉ trưa"
+  "meaning": "giờ nghỉ trưa",
+  "example": "**[昼休](ひるやす)み**は [12時](じゅうにじ)から [1時間](いちじかん)です。",
+  "exampleVi": "Nghỉ trưa 1 tiếng đồng hồ, từ 12 giờ."
  },
  {
   "word": "きゅうけい",
   "reading": "きゅうけい",
-  "meaning": "việc nghỉ giải lao, giờ nghỉ giải lao"
+  "meaning": "việc nghỉ giải lao, giờ nghỉ giải lao",
+  "example": "[3時](さんじ)ですから、ちょっと **きゅうけい**しましょう。",
+  "exampleVi": "3 giờ rồi nên hãy nghỉ giải lao một chút nào."
  },
  {
   "word": "忘年会",
   "reading": "ぼうねんかい",
-  "meaning": "tiệc tất niên"
+  "meaning": "tiệc tất niên",
+  "example": "[来週](らいしゅう)、**[忘年会](ぼうねんかい)**を しませんか。",
+  "exampleVi": "Tuần sau làm tiệc tất niên không?"
  },
  {
   "word": "公務員",
   "reading": "こうむいん",
-  "meaning": "công chức, nhân viên nhà nước"
+  "meaning": "công chức, nhân viên nhà nước",
+  "example": "[父](ちち)も [母](はは)も **[公務員](こうむいん)**です。",
+  "exampleVi": "Cả cha và mẹ tôi đều là nhân viên nhà nước."
  },
  {
   "word": "弁護士",
   "reading": "べんごし",
-  "meaning": "luật sư"
+  "meaning": "luật sư",
+  "example": "**[弁護士](べんごし)**に なるのは [難](むずか)しいです。",
+  "exampleVi": "Trở thành luật sư thì khó khăn."
  },
  {
   "word": "工場",
   "reading": "こうじょう",
-  "meaning": "nhà máy, xưởng"
+  "meaning": "nhà máy, xưởng",
+  "example": "パンの **[工場](こうじょう)**で アルバイトしていました。",
+  "exampleVi": "Tôi đã làm thêm tại xưởng bánh mì."
  },
  {
   "word": "事務所",
   "reading": "じむしょ",
-  "meaning": "văn phòng"
+  "meaning": "văn phòng",
+  "example": "**[事務所](じむしょ)**で [昼](ひる)ごはんを [食](た)べて います。",
+  "exampleVi": "Tôi ăn cơm trưa tại văn phòng."
  }
 ]

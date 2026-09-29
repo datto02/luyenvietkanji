@@ -2,536 +2,750 @@
  {
   "word": "駅",
   "reading": "えき",
-  "meaning": "nhà ga, ga"
+  "meaning": "nhà ga, ga",
+  "example": "[東京](とうきょう)**[駅](えき)**は [大](おお)きいです。",
+  "exampleVi": "Ga Tokyo lớn."
  },
  {
   "word": "大阪駅",
   "reading": "おおさかえき",
-  "meaning": "ga Osaka"
+  "meaning": "ga Osaka",
+  "example": "**[大阪駅](おおさかえき)**で [友達](ともだち)に [会](あ)います。",
+  "exampleVi": "Tôi gặp bạn ở ga Osaka."
  },
  {
   "word": "広島駅",
   "reading": "ひろしまえき",
-  "meaning": "ga Hiroshima"
+  "meaning": "ga Hiroshima",
+  "example": "**[広島駅](ひろしまえき)**から [電車](でんしゃ)に [乗](の)ります。",
+  "exampleVi": "Tôi lên tàu điện từ ga Hiroshima."
  },
  {
   "word": "電車",
   "reading": "でんしゃ",
-  "meaning": "tàu điện"
+  "meaning": "tàu điện",
+  "example": "[駅](えき)で**[電車](でんしゃ)**に[乗](の)ります。",
+  "exampleVi": "Tôi lên tàu điện ở nhà ga."
  },
  {
   "word": "乗る",
   "reading": "のる",
-  "meaning": "lên, đi (tàu, xe)"
+  "meaning": "lên, đi (tàu, xe)",
+  "example": "[急行](きゅうこう)に**[乗](の)ります**。",
+  "exampleVi": "Tôi đi chuyến tàu nhanh."
  },
  {
   "word": "降りる",
   "reading": "おりる",
-  "meaning": "xuống (tàu, xe)"
+  "meaning": "xuống (tàu, xe)",
+  "example": "しぶやで[電車](でんしゃ)を**[降](お)ります**。",
+  "exampleVi": "Tôi xuống tàu điện ở Shibuya."
  },
  {
   "word": "きっぷ",
   "reading": "きっぷ",
-  "meaning": "vé"
+  "meaning": "vé",
+  "example": "[駅](えき)で**きっぷ**を[買](か)います。",
+  "exampleVi": "Tôi mua vé ở nhà ga."
  },
  {
   "word": "次の",
   "reading": "つぎの",
-  "meaning": "~ tiếp theo"
+  "meaning": "~ tiếp theo",
+  "example": "**[次](つぎ)の**[駅](えき)は[新宿](しんじゅく)です。",
+  "exampleVi": "Ga tiếp theo là Shinjuku."
  },
  {
   "word": "のりかえる",
   "reading": "のりかえる",
-  "meaning": "đổi tàu (chuyến), quá cảnh"
+  "meaning": "đổi tàu (chuyến), quá cảnh",
+  "example": "[東京駅](とうきょうえき)で**[乗](の)りかえます**。",
+  "exampleVi": "Tôi đổi tàu ở ga Tokyo."
  },
  {
   "word": "各駅",
   "reading": "かくえき",
-  "meaning": "các ga"
+  "meaning": "các ga",
+  "example": "この [電車](でんしゃ)は **[各駅](かくえき)**に [止](と)まります。",
+  "exampleVi": "Chuyến tàu này dừng ở tất cả các ga."
  },
  {
   "word": "急行",
   "reading": "きゅうこう",
-  "meaning": "tàu nhanh"
+  "meaning": "tàu nhanh",
+  "example": "この [電車](でんしゃ)は **[急行](きゅうこう)**です。",
+  "exampleVi": "Chuyến tàu này là tàu nhanh."
  },
  {
   "word": "特急",
   "reading": "とっきゅう",
-  "meaning": "tàu tốc hành"
+  "meaning": "tàu tốc hành",
+  "example": "**[特急](とっきゅう)**に [乗](の)ります。",
+  "exampleVi": "Tôi đi tàu tốc hành."
  },
  {
   "word": "新幹線",
   "reading": "しんかんせん",
-  "meaning": "tàu cao tốc shinkansen"
+  "meaning": "tàu cao tốc shinkansen",
+  "example": "**[新幹線](しんかんせん)**で[京都](きょうと)へ[行](い)きます。",
+  "exampleVi": "Tôi đi Kyoto bằng tàu cao tốc shinkansen."
  },
  {
   "word": "地下鉄",
   "reading": "ちかてつ",
-  "meaning": "tàu điện ngầm"
+  "meaning": "tàu điện ngầm",
+  "example": "[京都駅](きょうとえき)で**[地下鉄](ちかてつ)**に[乗](の)ります。",
+  "exampleVi": "Tôi đi tàu điện ngầm ở ga Kyoto."
  },
  {
   "word": "番線",
   "reading": "ばんせん",
-  "meaning": "sân ga số ~"
+  "meaning": "sân ga số ~",
+  "example": "8**[番線](ばんせん)**で[急行](きゅうこう)に[乗](の)ります。",
+  "exampleVi": "Tôi lên tàu nhanh ở tuyến số 8."
  },
  {
   "word": "何番線",
   "reading": "なんばんせん",
-  "meaning": "sân ga số mấy"
+  "meaning": "sân ga số mấy",
+  "example": "[新幹線](しんかんせん)は**[何番線](なんばんせん)**ですか。",
+  "exampleVi": "Tàu cao tốc shinkansen ở tuyến số mấy ạ?"
  },
  {
   "word": "自動車",
   "reading": "じどうしゃ",
-  "meaning": "xe hơi"
+  "meaning": "xe hơi",
+  "example": "トヨタは**[自動車](じどうしゃ)**の[会社](かいしゃ)です。",
+  "exampleVi": "Toyota là công ty xe hơi."
  },
  {
   "word": "車",
   "reading": "くるま",
-  "meaning": "xe cộ oto"
+  "meaning": "xe cộ oto",
+  "example": "これは**[車](くるま)**の[雑誌](ざっし)です。",
+  "exampleVi": "Đây là tạp chí xe."
  },
  {
   "word": "運転",
   "reading": "うんてん",
-  "meaning": "lái (xe)"
+  "meaning": "lái (xe)",
+  "example": "[車](くるま)を**[運転](うんてん)**します。",
+  "exampleVi": "Tôi lái xe."
  },
  {
   "word": "送る",
   "reading": "おくる",
-  "meaning": "tiễn, đưa"
+  "meaning": "tiễn, đưa",
+  "example": "[車](くるま)で[駅](えき)まで**[送](おく)りましょうか**。",
+  "exampleVi": "Tôi đưa bạn đến nhà ga bằng xe nhé."
  },
  {
   "word": "ちゅうしゃじょう",
   "reading": "ちゅうしゃじょう",
-  "meaning": "bãi đậu (đỗ) xe"
+  "meaning": "bãi đậu (đỗ) xe",
+  "example": "**ちゅうしゃじょう**はありません。",
+  "exampleVi": "Không có bãi đậu xe."
  },
  {
   "word": "止める",
   "reading": "とめる",
-  "meaning": "đậu (xe), đỗ (xe), dừng"
+  "meaning": "đậu (xe), đỗ (xe), dừng",
+  "example": "ちゅうしゃじょうに[車](くるま)を**[止](と)めます**。",
+  "exampleVi": "Tôi đậu xe ở bãi đậu xe."
  },
  {
   "word": "止める",
   "reading": "とめる",
-  "meaning": "đậu (xe), đỗ (xe), dừng"
+  "meaning": "đậu (xe), đỗ (xe), dừng",
+  "example": "ここで**[止](と)めてください**。",
+  "exampleVi": "Hãy dừng ở đây."
  },
  {
   "word": "自転車",
   "reading": "じてんしゃ",
-  "meaning": "xe đạp"
+  "meaning": "xe đạp",
+  "example": "**[自転車](じてんしゃ)**で[駅](えき)まで[行](い)きます。",
+  "exampleVi": "Tôi đi đến nhà ga bằng xe đạp."
  },
  {
   "word": "バイク",
   "reading": "バイク",
-  "meaning": "xe gắn máy, xe mô-tô"
+  "meaning": "xe gắn máy, xe mô-tô",
+  "example": "**バイク**で[会社](かいしゃ)へ[来](き)ました。",
+  "exampleVi": "Tôi đã đến công ty bằng xe gắn máy."
  },
  {
   "word": "バス",
   "reading": "バス",
-  "meaning": "xe buýt"
+  "meaning": "xe buýt",
+  "example": "**バス**で[名古屋](なごや)に[行](い)きました。",
+  "exampleVi": "Tôi đã đi Nagoya bằng xe buýt."
  },
  {
   "word": "タクシー",
   "reading": "タクシー",
-  "meaning": "xe taxi"
+  "meaning": "xe taxi",
+  "example": "**タクシー**に[乗](の)りましょう。",
+  "exampleVi": "Hãy đi taxi nào."
  },
  {
   "word": "飛行機",
   "reading": "ひこうき",
-  "meaning": "máy bay"
+  "meaning": "máy bay",
+  "example": "**[飛行機](ひこうき)**で[三時間](さんじかん)ぐらいです。",
+  "exampleVi": "Đi bằng máy bay (mất) khoảng 3 tiếng."
  },
  {
   "word": "船",
   "reading": "ふね",
-  "meaning": "tàu, thuyền"
+  "meaning": "tàu, thuyền",
+  "example": "よこはまで**[船](ふね)**に[乗](の)ります。",
+  "exampleVi": "Tôi đi tàu đến Yokohama."
  },
  {
   "word": "乗り場",
   "reading": "のりば",
-  "meaning": "trạm"
+  "meaning": "trạm",
+  "example": "バス**[乗](の)り[場](ば)**はどこですか。",
+  "exampleVi": "Trạm xe buýt ở đâu ạ?"
  },
  {
   "word": "空港",
   "reading": "くうこう",
-  "meaning": "sân bay"
+  "meaning": "sân bay",
+  "example": "**[空港](くうこう)**は[成田](なりた)にあります。",
+  "exampleVi": "Sân bay ở Narita."
  },
  {
   "word": "時刻表",
   "reading": "じこくひょう",
-  "meaning": "bảng giờ (tàu, xe) chạy"
+  "meaning": "bảng giờ (tàu, xe) chạy",
+  "example": "[駅](えき)に**[時刻表](じこくひょう)**があります。",
+  "exampleVi": "Ở nhà ga có bảng giờ tàu chạy."
  },
  {
   "word": "時間",
   "reading": "じかん",
-  "meaning": "thời gian"
+  "meaning": "thời gian",
+  "example": "**[時間](じかん)**があります。",
+  "exampleVi": "Có thời gian."
  },
  {
   "word": "時間",
   "reading": "じかん",
-  "meaning": "thời gian"
+  "meaning": "thời gian",
+  "example": "**[時間](じかん)**がありません。",
+  "exampleVi": "Không có thời gian."
  },
  {
   "word": "急ぐ",
   "reading": "いそぐ",
-  "meaning": "gấp rút, vội vã"
+  "meaning": "gấp rút, vội vã",
+  "example": "**[急](いそ)ぎましょう**。",
+  "exampleVi": "Hãy gấp rút lên."
  },
  {
   "word": "どのくらい",
   "reading": "どのくらい",
-  "meaning": "khoảng bao lâu"
+  "meaning": "khoảng bao lâu",
+  "example": "[大学](だいがく)まで**どのくらい**かかりますか。",
+  "exampleVi": "Đến trường đại học mất khoảng bao lâu?"
  },
  {
   "word": "かかる",
   "reading": "かかる",
-  "meaning": "mất, tốn (thời gian, tiền bạc)"
+  "meaning": "mất, tốn (thời gian, tiền bạc)",
+  "example": "[自転車](じてんしゃ)で[10分](じゅっふん)ぐらい**かかります**。",
+  "exampleVi": "Đi bằng xe đạp mất khoảng 10 phút."
  },
  {
   "word": "近い",
   "reading": "ちかい",
-  "meaning": "gần"
+  "meaning": "gần",
+  "example": "[大学](だいがく)は[駅](えき)から**[近](ちか)い**です。",
+  "exampleVi": "Trường đại học gần nhà ga."
  },
  {
   "word": "遠い",
   "reading": "とおい",
-  "meaning": "xa"
+  "meaning": "xa",
+  "example": "[図書館](としょかん)は[家](うち)から**[遠](とお)い**です。",
+  "exampleVi": "Thư viện xa nhà tôi."
  },
  {
   "word": "ずっと",
   "reading": "ずっと",
-  "meaning": "suốt, hẳn"
+  "meaning": "suốt, hẳn",
+  "example": "[特急](とっきゅう)のほうが[急行](きゅうこう)より**ずっと**[速](はや)いです。",
+  "exampleVi": "Tàu tốc hành nhanh hơn hẳn tàu chạy nhanh."
  },
  {
   "word": "いつも",
   "reading": "いつも",
-  "meaning": "luôn luôn"
+  "meaning": "luôn luôn",
+  "example": "**いつも**[飛行機](ひこうき)で[大阪](おおさか)へ[行](い)きます。",
+  "exampleVi": "Tôi luôn đi Osaka bằng máy bay."
  },
  {
   "word": "たいてい",
   "reading": "たいてい",
-  "meaning": "thường thì"
+  "meaning": "thường thì",
+  "example": "**たいてい**バスで[帰](かえ)ります。",
+  "exampleVi": "Thường thì tôi về bằng xe buýt."
  },
  {
   "word": "よく",
   "reading": "よく",
-  "meaning": "thường, hay"
+  "meaning": "thường, hay",
+  "example": "**よく**[公園](こうえん)を[散歩](さんぽ)します。",
+  "exampleVi": "Tôi hay đi dạo công viên."
  },
  {
   "word": "時々",
   "reading": "ときどき",
-  "meaning": "thỉnh thoảng, đôi khi"
+  "meaning": "thỉnh thoảng, đôi khi",
+  "example": "**[時々](ときどき)**タクシーに[乗](の)ります。",
+  "exampleVi": "Thỉnh thoảng tôi đi taxi."
  },
  {
   "word": "だけ",
   "reading": "だけ",
-  "meaning": "chỉ"
+  "meaning": "chỉ",
+  "example": "1[回](かい)**だけ**[飛行機](ひこうき)に[乗](の)ったことがあります。",
+  "exampleVi": "Tôi chỉ từng đi máy bay 1 lần."
  },
  {
   "word": "どうやって",
   "reading": "どうやって",
-  "meaning": "bằng cách nào, làm thế nào"
+  "meaning": "bằng cách nào, làm thế nào",
+  "example": "[空港](くうこう)まで**どうやって**[行](い)きますか。",
+  "exampleVi": "Làm thế nào để đi đến sân bay?"
  },
  {
   "word": "歩く",
   "reading": "あるく",
-  "meaning": "đi bộ"
+  "meaning": "đi bộ",
+  "example": "**[歩](ある)いて**スーパーに[行](い)きます。",
+  "exampleVi": "Tôi đi bộ đến siêu thị."
  },
  {
   "word": "道",
   "reading": "みち",
-  "meaning": "đường, con đường"
+  "meaning": "đường, con đường",
+  "example": "この**[道](みち)**を[知](し)っています。",
+  "exampleVi": "Tôi biết con đường này."
  },
  {
   "word": "まっすぐ",
   "reading": "まっすぐ",
-  "meaning": "thẳng"
+  "meaning": "thẳng",
+  "example": "この[道](みち)を**まっすぐ**[行](い)ってください。",
+  "exampleVi": "Hãy đi thẳng đường này."
  },
  {
   "word": "曲がる",
   "reading": "まがる",
-  "meaning": "quẹo, rẽ"
+  "meaning": "quẹo, rẽ",
+  "example": "[信号](しんごう)を[左](ひだり)に**[曲](ま)がります**。",
+  "exampleVi": "Quẹo trái chỗ đèn giao thông."
  },
  {
   "word": "わたる",
   "reading": "わたる",
-  "meaning": "băng qua"
+  "meaning": "băng qua",
+  "example": "この[橋](はし)を**わたります**。",
+  "exampleVi": "Băng qua cây cầu này."
  },
  {
   "word": "説明",
   "reading": "せつめい",
-  "meaning": "giải thích"
+  "meaning": "giải thích",
+  "example": "[行](い)き[方](かた)を**[説明](せつめい)**してください。",
+  "exampleVi": "Hãy giải thích cách đi giùm tôi."
  },
  {
   "word": "角",
   "reading": "かど",
-  "meaning": "góc"
+  "meaning": "góc",
+  "example": "その **[角](かど)**を [右](みぎ)に [曲](ま)がります。",
+  "exampleVi": "Rẽ phải ở góc đó."
  },
  {
   "word": "交差点",
   "reading": "こうさてん",
-  "meaning": "giao lộ"
+  "meaning": "giao lộ",
+  "example": "**[交差点](こうさてん)**を [左](ひだり)に [曲](ま)がります。",
+  "exampleVi": "Rẽ trái ở giao lộ."
  },
  {
   "word": "信号",
   "reading": "しんごう",
-  "meaning": "đèn giao thông"
+  "meaning": "đèn giao thông",
+  "example": "**[信号](しんごう)**は [赤](あか)いです。",
+  "exampleVi": "Đèn giao thông màu đỏ."
  },
  {
   "word": "左",
   "reading": "ひだり",
-  "meaning": "trái"
+  "meaning": "trái",
+  "example": "**[左](ひだり)**に [銀行](ぎんこう)が あります。",
+  "exampleVi": "Bên trái có ngân hàng."
  },
  {
   "word": "右",
   "reading": "みぎ",
-  "meaning": "phải"
+  "meaning": "phải",
+  "example": "**[右](みぎ)**に [郵便局](ゆうびんきょく)が あります。",
+  "exampleVi": "Bên phải có bưu điện."
  },
  {
   "word": "橋",
   "reading": "はし",
-  "meaning": "cầu"
+  "meaning": "cầu",
+  "example": "この **[橋](はし)**は [長](なが)いです。",
+  "exampleVi": "Cây cầu này dài."
  },
  {
   "word": "東",
   "reading": "ひがし",
-  "meaning": "đông"
+  "meaning": "đông",
+  "example": "[東京](とうきょう)は [日本](にほん)の **[東](ひがし)**に あります。",
+  "exampleVi": "Tokyo nằm ở phía đông Nhật Bản."
  },
  {
   "word": "西",
   "reading": "にし",
-  "meaning": "tây"
+  "meaning": "tây",
+  "example": "[大阪](おおさか)は [東京](とうきょう)の **[西](にし)**に あります。",
+  "exampleVi": "Osaka nằm ở phía tây Tokyo."
  },
  {
   "word": "南",
   "reading": "みなみ",
-  "meaning": "nam"
+  "meaning": "nam",
+  "example": "[沖縄](おきなわ)は [日本](にほん)の **[南](みなみ)**に あります。",
+  "exampleVi": "Okinawa nằm ở phía nam Nhật Bản."
  },
  {
   "word": "北",
   "reading": "きた",
-  "meaning": "bắc"
+  "meaning": "bắc",
+  "example": "[北海道](ほっかいどう)は [日本](にほん)の **[北](きた)**に あります。",
+  "exampleVi": "Hokkaido nằm ở phía bắc Nhật Bản."
  },
  {
   "word": "いくつ目",
   "reading": "いくつめ",
-  "meaning": "cái thứ mấy?"
+  "meaning": "cái thứ mấy?",
+  "example": "[銀行](ぎんこう)へ[行](い)きたいです。**いくつ[目](め)**の[交差点](こうさてん)ですか。",
+  "exampleVi": "Tôi muốn đi đến ngân hàng. Ở giao lộ thứ mấy ạ?"
  },
  {
   "word": "1つ目",
   "reading": "ひとつめ",
-  "meaning": "cái thứ nhất"
+  "meaning": "cái thứ nhất",
+  "example": "**[一](ひと)つ[目](め)**の [信号](しんごう)を [右](みぎ)に [曲](ま)がります。",
+  "exampleVi": "Rẽ phải ở đèn giao thông thứ nhất."
  },
  {
   "word": "2つ目",
   "reading": "ふたつめ",
-  "meaning": "cái thứ hai"
+  "meaning": "cái thứ hai",
+  "example": "**[二](ふた)つ[目](め)**の [交差点](こうさてん)を [左](ひだり)に [曲](ま)がります。",
+  "exampleVi": "Rẽ trái ở giao lộ thứ hai."
  },
  {
   "word": "3つ目",
   "reading": "みっつめ",
-  "meaning": "cái thứ ba"
+  "meaning": "cái thứ ba",
+  "example": "**[三](みっ)つ[目](め)**の [角](かど)を [右](みぎ)に [曲](ま)がります。",
+  "exampleVi": "Rẽ phải ở góc thứ ba."
  },
  {
   "word": "メートル",
   "reading": "メートル",
-  "meaning": "~ mét"
+  "meaning": "~ mét",
+  "example": "500**メートル**ぐらい[歩](ある)きます。",
+  "exampleVi": "Tôi đi bộ khoảng 500 mét."
  },
  {
   "word": "となり",
   "reading": "となり",
-  "meaning": "bên cạnh"
+  "meaning": "bên cạnh",
+  "example": "[銀行](ぎんこう)の **となり**に [郵便局](ゆうびんきょく)が あります。",
+  "exampleVi": "Bên cạnh ngân hàng có bưu điện."
  },
  {
   "word": "間",
   "reading": "あいだ",
-  "meaning": "giữa"
+  "meaning": "giữa",
+  "example": "[銀行](ぎんこう)と [駅](えき)の **[間](あいだ)**に コンビニが あります。",
+  "exampleVi": "Giữa ngân hàng và nhà ga có cửa hàng tiện lợi."
  },
  {
   "word": "近く",
   "reading": "ちかく",
-  "meaning": "gần"
+  "meaning": "gần",
+  "example": "**[近](ちか)く**に スーパーが あります。",
+  "exampleVi": "Ở gần đây có siêu thị."
  },
  {
   "word": "上",
   "reading": "うえ",
-  "meaning": "trên"
+  "meaning": "trên",
+  "example": "かばんの **[上](うえ)**に かさが あります。",
+  "exampleVi": "Trên cặp có cái ô."
  },
  {
   "word": "下",
   "reading": "した",
-  "meaning": "dưới"
+  "meaning": "dưới",
+  "example": "いすの **[下](した)**に ねこが います。",
+  "exampleVi": "Dưới ghế có con mèo."
  },
  {
   "word": "前",
   "reading": "まえ",
-  "meaning": "trước"
+  "meaning": "trước",
+  "example": "[駅](えき)の **[前](まえ)**に [銀行](ぎんこう)が あります。",
+  "exampleVi": "Trước nhà ga có ngân hàng."
  },
  {
   "word": "後ろ",
   "reading": "うしろ",
-  "meaning": "sau"
+  "meaning": "sau",
+  "example": "[学校](がっこう)の **[後](うし)ろ**に [公園](こうえん)が あります。",
+  "exampleVi": "Phía sau trường có công viên."
  },
  {
   "word": "中",
   "reading": "なか",
-  "meaning": "trong"
+  "meaning": "trong",
+  "example": "[部屋](へや)の **[中](なか)**に [犬](いぬ)が います。",
+  "exampleVi": "Trong phòng có con chó."
  },
  {
   "word": "外",
   "reading": "そと",
-  "meaning": "ngoài"
+  "meaning": "ngoài",
+  "example": "[部屋](へや)の **[外](そと)**に ねこが います。",
+  "exampleVi": "Ngoài phòng có con mèo."
  },
  {
   "word": "あそこ",
   "reading": "あそこ",
-  "meaning": "đằng đó"
+  "meaning": "đằng đó",
+  "example": "**あそこ**に [銀行](ぎんこう)が あります。",
+  "exampleVi": "Ở đằng kia có ngân hàng."
  },
  {
   "word": "ここ",
   "reading": "ここ",
-  "meaning": "nơi này, chỗ này"
+  "meaning": "nơi này, chỗ này",
+  "example": "**ここ**は [図書館](としょかん)です。",
+  "exampleVi": "Đây là thư viện."
  },
  {
   "word": "そこ",
   "reading": "そこ",
-  "meaning": "nơi đó, chỗ đó"
+  "meaning": "nơi đó, chỗ đó",
+  "example": "**そこ**に [名前](なまえ)を [書](か)いて ください。",
+  "exampleVi": "Hãy viết tên vào chỗ đó."
  },
  {
   "word": "どこ",
   "reading": "どこ",
-  "meaning": "ở đâu"
+  "meaning": "ở đâu",
+  "example": "[銀行](ぎんこう)は**どこ**ですか。",
+  "exampleVi": "Ngân hàng ở đâu ạ?"
  },
  {
   "word": "出かける",
   "reading": "でかける",
-  "meaning": "ra ngoài"
+  "meaning": "ra ngoài",
+  "example": "[日曜日](にちようび)によく**[出](で)かけます**。",
+  "exampleVi": "Chủ nhật tôi thường đi ra ngoài."
  },
  {
   "word": "出る",
   "reading": "でる",
-  "meaning": "ra, rời khỏi, tốt nghiệp"
+  "meaning": "ra, rời khỏi, tốt nghiệp",
+  "example": "[八時](はちじ)に[家](うち)を**[出](で)ます**。",
+  "exampleVi": "Tôi rời khỏi nhà lúc 8 giờ."
  },
  {
   "word": "出る",
   "reading": "でる",
-  "meaning": "ra, rời khỏi, tốt nghiệp"
+  "meaning": "ra, rời khỏi, tốt nghiệp",
+  "example": "[去年](きょねん)、[高校](こうこう)を**[出](で)ました**。",
+  "exampleVi": "Năm ngoái, tôi đã tốt nghiệp trường cấp III."
  },
  {
   "word": "着く",
   "reading": "つく",
-  "meaning": "đến nơi"
+  "meaning": "đến nơi",
+  "example": "[10時](じゅうじ)に[会社](かいしゃ)に**[着](つ)きます**。",
+  "exampleVi": "Tôi đến công ty lúc 10 giờ."
  },
  {
   "word": "会う",
   "reading": "あう",
-  "meaning": "gặp"
+  "meaning": "gặp",
+  "example": "[駅](えき)で[友達](ともだち)に**[会](あ)います**。",
+  "exampleVi": "Tôi gặp bạn tôi ở nhà ga."
  },
  {
   "word": "待つ",
   "reading": "まつ",
-  "meaning": "chờ, đợi"
+  "meaning": "chờ, đợi",
+  "example": "[一時間](いちじかん)[友達](ともだち)を**[待](ま)ちました**。",
+  "exampleVi": "Tôi đã chờ bạn tôi 1 tiếng đồng hồ."
  },
  {
   "word": "デート",
   "reading": "デート",
-  "meaning": "hẹn hò"
+  "meaning": "hẹn hò",
+  "example": "[明日](あした)、かのじょと**デート**します。",
+  "exampleVi": "Ngày mai, tôi hẹn hò với bạn gái."
  },
  {
   "word": "約束",
   "reading": "やくそく",
-  "meaning": "hứa, hẹn"
+  "meaning": "hứa, hẹn",
+  "example": "[友達](ともだち)と**[約束](やくそく)**があります。",
+  "exampleVi": "Tôi có hẹn với bạn."
  },
  {
   "word": "用事",
   "reading": "ようじ",
-  "meaning": "việc riêng"
+  "meaning": "việc riêng",
+  "example": "[今日](きょう)は**[用事](ようじ)**があります。",
+  "exampleVi": "Hôm nay tôi có việc riêng."
  },
  {
   "word": "都合がいい",
   "reading": "つごうがいい",
-  "meaning": "thuận tiện, có giờ rảnh"
+  "meaning": "thuận tiện, có giờ rảnh",
+  "example": "[今日](きょう)は**[都合](つごう)がいい**です。",
+  "exampleVi": "Hôm nay tôi tiện (giờ)."
  },
  {
   "word": "都合が悪い",
   "reading": "つごうがわるい",
-  "meaning": "không tiện, không có giờ rảnh"
+  "meaning": "không tiện, không có giờ rảnh",
+  "example": "[明日](あした)は**[都合](つごう)が[悪](わる)い**です。",
+  "exampleVi": "Ngày mai tôi không có giờ rảnh."
  },
  {
   "word": "だめです",
   "reading": "だめです",
-  "meaning": "không được"
+  "meaning": "không được",
+  "example": "[今日](きょう)は**だめです**か。",
+  "exampleVi": "Hôm nay không được à?"
  },
  {
   "word": "変える",
   "reading": "かえる",
-  "meaning": "thay đổi"
+  "meaning": "thay đổi",
+  "example": "[約束](やくそく)の[時間](じかん)を**[変](か)えます**。",
+  "exampleVi": "Thay đổi giờ hẹn."
  },
  {
   "word": "お出かけですか",
   "reading": "おでかけですか",
-  "meaning": "Anh / chị ra ngoài à?"
+  "meaning": "Anh / chị ra ngoài à?",
+  "example": "**お[出](で)かけですか**。",
+  "exampleVi": "Anh/chị ra ngoài à?"
  },
  {
   "word": "ちょっと",
   "reading": "ちょっと",
-  "meaning": "một chút"
+  "meaning": "một chút",
+  "example": "はい、**ちょっと**[新宿](しんじゅく)まで。",
+  "exampleVi": "Vâng, đến Shinjuku một chút."
  },
  {
   "word": "よかったら",
   "reading": "よかったら",
-  "meaning": "nếu được thì ~"
+  "meaning": "nếu được thì ~",
+  "example": "**よかったら**いっしょに[広島](ひろしま)へ[行](い)きませんか。",
+  "exampleVi": "Nếu được, cùng tôi đi Hiroshima không?"
  },
  {
   "word": "すみません",
   "reading": "すみません",
-  "meaning": "xin lỗi, làm ơn"
+  "meaning": "xin lỗi, làm ơn",
+  "example": "**すみません**。[今日](きょう)は[用事](ようじ)があります。",
+  "exampleVi": "Xin lỗi. Hôm nay tôi có việc riêng."
  },
  {
   "word": "すみません",
   "reading": "すみません",
-  "meaning": "xin lỗi, làm ơn"
+  "meaning": "xin lỗi, làm ơn",
+  "example": "**すみません**。[銀座](ぎんざ)までいくらですか。",
+  "exampleVi": "Làm ơn cho hỏi, đến Ginza mất bao nhiêu tiền ạ?"
  },
  {
   "word": "ませんか",
   "reading": "ませんか",
-  "meaning": "~ được chứ?"
+  "meaning": "~ được chứ?",
+  "example": "お[茶](ちゃ)でも[飲](の)み**ませんか**。",
+  "exampleVi": "Bạn uống trà chứ?"
  },
  {
   "word": "ちょっと",
   "reading": "ちょっと",
-  "meaning": "~ hơi …."
+  "meaning": "~ hơi ….",
+  "example": "すみません。[今日](きょう)は**ちょっと**……。",
+  "exampleVi": "Xin lỗi. Hôm nay tôi hơi…"
  },
  {
   "word": "残念ですが",
   "reading": "ざんねんですが",
-  "meaning": "tiếc là"
+  "meaning": "tiếc là",
+  "example": "**[残念](ざんねん)ですが**、[明日](あした)はちょっと……。",
+  "exampleVi": "Tiếc là ngày mai tôi hơi…"
  },
  {
   "word": "また今度お願いします",
   "reading": "またこんどおねがいします",
-  "meaning": "Lần tới xin vui lòng"
+  "meaning": "Lần tới xin vui lòng",
+  "example": "**また[今度](こんど)お[願](ねが)いします**。",
+  "exampleVi": "Lần tới xin hãy rủ tôi nhé."
  },
  {
   "word": "チャンス",
   "reading": "チャンス",
-  "meaning": "cơ hội, dịp"
+  "meaning": "cơ hội, dịp",
+  "example": "**チャンス**があったら、[北海道](ほっかいどう)へ[行](い)きたいです。",
+  "exampleVi": "Nếu có dịp, tôi muốn đi Hokkaido."
  },
  {
   "word": "行ってきます",
   "reading": "いってきます",
-  "meaning": "Tôi đi đây. (câu chào trước khi đi, rời khỏi đâu đó)"
+  "meaning": "Tôi đi đây. (câu chào trước khi đi, rời khỏi đâu đó)",
+  "example": "A：**[行](い)ってきます**。　B：[行](い)ってらっしゃい。",
+  "exampleVi": "A: Tôi đi đây.  B: Bạn đi nhé."
  },
  {
   "word": "行ってらっしゃい",
   "reading": "いってらっしゃい",
-  "meaning": "Bạn đi nhé. (câu chào tiễn ai đó đi đâu)"
+  "meaning": "Bạn đi nhé. (câu chào tiễn ai đó đi đâu)",
+  "example": "A：[行](い)ってきます。　B：**[行](い)ってらっしゃい**。",
+  "exampleVi": "A: Tôi đi đây.  B: Bạn đi nhé."
  },
  {
   "word": "ただいま",
   "reading": "ただいま",
-  "meaning": "Tôi về rồi đây. (câu chào khi đâu đó về đến nơi)"
+  "meaning": "Tôi về rồi đây. (câu chào khi đâu đó về đến nơi)",
+  "example": "A：**ただいま**。　B：おかえりなさい。",
+  "exampleVi": "A: Tôi về rồi đây.  B: Bạn về rồi à."
  },
  {
   "word": "おかえりなさい",
   "reading": "おかえりなさい",
-  "meaning": "Bạn về rồi à. (câu chào đón ai đó đi đâu về)"
+  "meaning": "Bạn về rồi à. (câu chào đón ai đó đi đâu về)",
+  "example": "A：ただいま。　B：**おかえりなさい**。",
+  "exampleVi": "A: Tôi về rồi đây.  B: Bạn về rồi à."
  }
 ]
