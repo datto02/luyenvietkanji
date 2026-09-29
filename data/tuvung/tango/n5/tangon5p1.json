@@ -1,0 +1,512 @@
+[
+ {
+  "word": "私",
+  "reading": "わたし",
+  "meaning": "tôi (ngôi thứ nhất số ít)"
+ },
+ {
+  "word": "です",
+  "reading": "です",
+  "meaning": "là ~"
+ },
+ {
+  "word": "さん",
+  "reading": "さん",
+  "meaning": "ông / bà / anh / chị ~"
+ },
+ {
+  "word": "ちゃん",
+  "reading": "ちゃん",
+  "meaning": "bé ~"
+ },
+ {
+  "word": "貴方",
+  "reading": "あなた",
+  "meaning": "ông / bà / anh / chị / bạn (ngôi thứ hai số ít)"
+ },
+ {
+  "word": "彼",
+  "reading": "かれ",
+  "meaning": "anh ấy (ngôi thứ ba số ít), bạn trai"
+ },
+ {
+  "word": "彼女",
+  "reading": "かのじょ",
+  "meaning": "cố ấy, chị ấy (ngôi thứ ba số ít), bạn gái"
+ },
+ {
+  "word": "お名前",
+  "reading": "おなまえ",
+  "meaning": "tên (của bạn)"
+ },
+ {
+  "word": "はい",
+  "reading": "はい",
+  "meaning": "vâng, dạ"
+ },
+ {
+  "word": "ええ",
+  "reading": "ええ",
+  "meaning": "vâng, dạ"
+ },
+ {
+  "word": "いいえ",
+  "reading": "いいえ",
+  "meaning": "không"
+ },
+ {
+  "word": "そうです",
+  "reading": "そうです",
+  "meaning": "đúng vậy"
+ },
+ {
+  "word": "違います",
+  "reading": "ちがいます",
+  "meaning": "không phải"
+ },
+ {
+  "word": "おはよう",
+  "reading": "おはよう",
+  "meaning": "Chào. (buổi sáng)"
+ },
+ {
+  "word": "おはようございます",
+  "reading": "おはようございます",
+  "meaning": "Xin chào. (buổi sáng)"
+ },
+ {
+  "word": "こんにちは",
+  "reading": "こんにちは",
+  "meaning": "Xin chào. (buổi trưa)"
+ },
+ {
+  "word": "こんばんは",
+  "reading": "こんばんは",
+  "meaning": "Xin chào. (buổi tối)"
+ },
+ {
+  "word": "さようなら",
+  "reading": "さようなら",
+  "meaning": "Tạm biệt."
+ },
+ {
+  "word": "じゃまた",
+  "reading": "じゃまた",
+  "meaning": "Vậy nhé, gặp lại sau."
+ },
+ {
+  "word": "おやすみなさい",
+  "reading": "おやすみなさい",
+  "meaning": "Chúc ngủ ngon."
+ },
+ {
+  "word": "ありがとう",
+  "reading": "ありがとう",
+  "meaning": "Cám ơn."
+ },
+ {
+  "word": "どういたしまして",
+  "reading": "どういたしまして",
+  "meaning": "Không có chi."
+ },
+ {
+  "word": "ありがとうございます",
+  "reading": "ありがとうございます",
+  "meaning": "Xin cám ơn."
+ },
+ {
+  "word": "どうぞ",
+  "reading": "どうぞ",
+  "meaning": "Xin mời."
+ },
+ {
+  "word": "どうも",
+  "reading": "どうも",
+  "meaning": "Cám ơn."
+ },
+ {
+  "word": "初めまして",
+  "reading": "はじめまして",
+  "meaning": "Xin chào. (dùng khi lần đầu tiên gặp mặt)"
+ },
+ {
+  "word": "どうぞよろしく",
+  "reading": "どうぞよろしく",
+  "meaning": "Xin vui lòng giúp đỡ."
+ },
+ {
+  "word": "こちらこそ",
+  "reading": "こちらこそ",
+  "meaning": "Tôi mới phải nhờ. / Tôi mới phải cám ơn./ Tôi mới phải xin lỗi."
+ },
+ {
+  "word": "家族",
+  "reading": "かぞく",
+  "meaning": "gia đình"
+ },
+ {
+  "word": "両親",
+  "reading": "りょうしん",
+  "meaning": "cha mẹ, song thân"
+ },
+ {
+  "word": "父",
+  "reading": "ちち",
+  "meaning": "cha (tôi), người cha"
+ },
+ {
+  "word": "母",
+  "reading": "はは",
+  "meaning": "mẹ (tôi), người mẹ"
+ },
+ {
+  "word": "姉",
+  "reading": "あね",
+  "meaning": "chị (tôi), người chị"
+ },
+ {
+  "word": "兄",
+  "reading": "あに",
+  "meaning": "anh (tôi), người anh"
+ },
+ {
+  "word": "弟",
+  "reading": "おとうと",
+  "meaning": "em trai (tôi), người em trai"
+ },
+ {
+  "word": "妹",
+  "reading": "いもうと",
+  "meaning": "em gái (tôi), người em gái"
+ },
+ {
+  "word": "兄弟",
+  "reading": "きょうだい",
+  "meaning": "anh chị em"
+ },
+ {
+  "word": "犬",
+  "reading": "いぬ",
+  "meaning": "con chó"
+ },
+ {
+  "word": "猫",
+  "reading": "ねこ",
+  "meaning": "con mèo"
+ },
+ {
+  "word": "いる",
+  "reading": "いる",
+  "meaning": "có, ở"
+ },
+ {
+  "word": "家",
+  "reading": "うち",
+  "meaning": "nhà"
+ },
+ {
+  "word": "お祖父さん",
+  "reading": "おじいさん",
+  "meaning": "ông (nội, ngoại), ông cụ"
+ },
+ {
+  "word": "お祖母さん",
+  "reading": "おばあさん",
+  "meaning": "bà (nội, ngoại), bà cụ"
+ },
+ {
+  "word": "ご両親",
+  "reading": "ごりょうしん",
+  "meaning": "cha mẹ (của người khác)"
+ },
+ {
+  "word": "お父さん",
+  "reading": "おとうさん",
+  "meaning": "bố, người cha (của người khác)"
+ },
+ {
+  "word": "お母さん",
+  "reading": "おかあさん",
+  "meaning": "mẹ, người mẹ (của người khác)"
+ },
+ {
+  "word": "お姉さん",
+  "reading": "おねえさん",
+  "meaning": "chị gái (của người khác)"
+ },
+ {
+  "word": "お兄さん",
+  "reading": "おにいさん",
+  "meaning": "anh trai (của người khác)"
+ },
+ {
+  "word": "弟さん",
+  "reading": "おとうとさん",
+  "meaning": "em trai (của người khác)"
+ },
+ {
+  "word": "妹さん",
+  "reading": "いもうとさん",
+  "meaning": "em gái (của người khác)"
+ },
+ {
+  "word": "一人",
+  "reading": "ひとり",
+  "meaning": "một người"
+ },
+ {
+  "word": "二人",
+  "reading": "ふたり",
+  "meaning": "hai người"
+ },
+ {
+  "word": "三人",
+  "reading": "さんにん",
+  "meaning": "ba người"
+ },
+ {
+  "word": "四人",
+  "reading": "よにん",
+  "meaning": "bốn người"
+ },
+ {
+  "word": "五人",
+  "reading": "ごにん",
+  "meaning": "năm người"
+ },
+ {
+  "word": "六人",
+  "reading": "ろくにん",
+  "meaning": "sáu người"
+ },
+ {
+  "word": "七人",
+  "reading": "ななにん",
+  "meaning": "bảy người"
+ },
+ {
+  "word": "八人",
+  "reading": "はちにん",
+  "meaning": "tám người"
+ },
+ {
+  "word": "九人",
+  "reading": "きゅうにん",
+  "meaning": "chín người"
+ },
+ {
+  "word": "十人",
+  "reading": "じゅうにん",
+  "meaning": "mười người"
+ },
+ {
+  "word": "何人",
+  "reading": "なんにん",
+  "meaning": "mấy người, bao nhiêu người"
+ },
+ {
+  "word": "大人",
+  "reading": "おとな",
+  "meaning": "người lớn"
+ },
+ {
+  "word": "子供",
+  "reading": "こども",
+  "meaning": "trẻ em, trẻ con, con cái"
+ },
+ {
+  "word": "男の人",
+  "reading": "おとこのひと",
+  "meaning": "người đàn ông"
+ },
+ {
+  "word": "女の人",
+  "reading": "おんなのひと",
+  "meaning": "người phụ nữ"
+ },
+ {
+  "word": "男の子",
+  "reading": "おとこのこ",
+  "meaning": "cậu bé, đứa bé trai"
+ },
+ {
+  "word": "女の子",
+  "reading": "おんなのこ",
+  "meaning": "cô bé, đứa bé gái"
+ },
+ {
+  "word": "国",
+  "reading": "くに",
+  "meaning": "đất nước, nước"
+ },
+ {
+  "word": "ある",
+  "reading": "ある",
+  "meaning": "có, ở"
+ },
+ {
+  "word": "どちら",
+  "reading": "どちら",
+  "meaning": "ở đâu, hướng nào"
+ },
+ {
+  "word": "から来ました",
+  "reading": "からきました",
+  "meaning": "đến từ ~"
+ },
+ {
+  "word": "人",
+  "reading": "じん",
+  "meaning": "người ~"
+ },
+ {
+  "word": "地図",
+  "reading": "ちず",
+  "meaning": "bản đồ"
+ },
+ {
+  "word": "世界",
+  "reading": "せかい",
+  "meaning": "thế giới"
+ },
+ {
+  "word": "日本",
+  "reading": "にほん",
+  "meaning": "Nhật Bản"
+ },
+ {
+  "word": "インド",
+  "reading": "インド",
+  "meaning": "Ấn Độ"
+ },
+ {
+  "word": "インドネシア",
+  "reading": "インドネシア",
+  "meaning": "Indonesia"
+ },
+ {
+  "word": "韓国",
+  "reading": "かんこく",
+  "meaning": "Hàn Quốc"
+ },
+ {
+  "word": "タイ",
+  "reading": "タイ",
+  "meaning": "Thái Lan"
+ },
+ {
+  "word": "台湾",
+  "reading": "たいわん",
+  "meaning": "Đài Loan"
+ },
+ {
+  "word": "中国",
+  "reading": "ちゅうごく",
+  "meaning": "Trung Quốc"
+ },
+ {
+  "word": "ネパール",
+  "reading": "ネパール",
+  "meaning": "Nepal"
+ },
+ {
+  "word": "フィリピン",
+  "reading": "フィリピン",
+  "meaning": "Phillippine"
+ },
+ {
+  "word": "ベトナム",
+  "reading": "ベトナム",
+  "meaning": "Việt Nam"
+ },
+ {
+  "word": "マレーシア",
+  "reading": "マレーシア",
+  "meaning": "Malaysia"
+ },
+ {
+  "word": "ミャンマー",
+  "reading": "ミャンマー",
+  "meaning": "Myanmar"
+ },
+ {
+  "word": "トルコ",
+  "reading": "トルコ",
+  "meaning": "Thổ Nhĩ Kỳ"
+ },
+ {
+  "word": "オーストラリア",
+  "reading": "オーストラリア",
+  "meaning": "Úc"
+ },
+ {
+  "word": "ニュージーランド",
+  "reading": "ニュージーランド",
+  "meaning": "New Zealand"
+ },
+ {
+  "word": "アメリカ",
+  "reading": "アメリカ",
+  "meaning": "Mỹ"
+ },
+ {
+  "word": "カナダ",
+  "reading": "カナダ",
+  "meaning": "Canada"
+ },
+ {
+  "word": "メキシコ",
+  "reading": "メキシコ",
+  "meaning": "Mexico"
+ },
+ {
+  "word": "ブラジル",
+  "reading": "ブラジル",
+  "meaning": "Brazil"
+ },
+ {
+  "word": "ロシア",
+  "reading": "ロシア",
+  "meaning": "Nga"
+ },
+ {
+  "word": "イギリス",
+  "reading": "イギリス",
+  "meaning": "Anh"
+ },
+ {
+  "word": "フランス",
+  "reading": "フランス",
+  "meaning": "Pháp"
+ },
+ {
+  "word": "ドイツ",
+  "reading": "ドイツ",
+  "meaning": "Đức"
+ },
+ {
+  "word": "スイス",
+  "reading": "スイス",
+  "meaning": "Thụy Sỹ"
+ },
+ {
+  "word": "イタリア",
+  "reading": "イタリア",
+  "meaning": "Ý"
+ },
+ {
+  "word": "スペイン",
+  "reading": "スペイン",
+  "meaning": "Tây Ban Nha"
+ },
+ {
+  "word": "エジプト",
+  "reading": "エジプト",
+  "meaning": "Ai Cập"
+ },
+ {
+  "word": "ケニア",
+  "reading": "ケニア",
+  "meaning": "Kenya"
+ }
+]

@@ -1,0 +1,567 @@
+[
+ {
+  "word": "新聞社",
+  "reading": "しんぶんしゃ",
+  "meaning": "tòa soạn báo"
+ },
+ {
+  "word": "テレビきょく",
+  "reading": "てれびきょく",
+  "meaning": "đài truyền hình"
+ },
+ {
+  "word": "番組",
+  "reading": "ばんぐみ",
+  "meaning": "chương trình"
+ },
+ {
+  "word": "ネットニュース",
+  "reading": "ネットニュース",
+  "meaning": "tin tức trên mạng"
+ },
+ {
+  "word": "情報",
+  "reading": "じょうほう",
+  "meaning": "thông tin"
+ },
+ {
+  "word": "データ",
+  "reading": "データ",
+  "meaning": "dữ liệu"
+ },
+ {
+  "word": "キーワード",
+  "reading": "キーワード",
+  "meaning": "từ khóa"
+ },
+ {
+  "word": "放送",
+  "reading": "ほうそう",
+  "meaning": "việc chiếu, phát sóng"
+ },
+ {
+  "word": "伝える",
+  "reading": "つたえる",
+  "meaning": "truyền đạt"
+ },
+ {
+  "word": "火事",
+  "reading": "かじ",
+  "meaning": "hỏa hoạn"
+ },
+ {
+  "word": "事故が起こる",
+  "reading": "じこがおこる",
+  "meaning": "xảy ra"
+ },
+ {
+  "word": "発見",
+  "reading": "はっけん",
+  "meaning": "việc phát hiện, tìm thấy"
+ },
+ {
+  "word": "見つかる",
+  "reading": "みつかる",
+  "meaning": "được tìm ra, tìm thấy"
+ },
+ {
+  "word": "見つける",
+  "reading": "みつける",
+  "meaning": "tìm thấy"
+ },
+ {
+  "word": "発表",
+  "reading": "はっぴょう",
+  "meaning": "bài phát biểu, việc công bố"
+ },
+ {
+  "word": "スピーチ",
+  "reading": "スピーチ",
+  "meaning": "diễn văn"
+ },
+ {
+  "word": "続く",
+  "reading": "つづく",
+  "meaning": "tiếp tục, kéo dài"
+ },
+ {
+  "word": "続ける",
+  "reading": "つづける",
+  "meaning": "tiếp tục"
+ },
+ {
+  "word": "約束",
+  "reading": "やくそく",
+  "meaning": "lời hứa"
+ },
+ {
+  "word": "約束を守る",
+  "reading": "やくそくをまもる",
+  "meaning": "giữ (lời hứa)"
+ },
+ {
+  "word": "約束を破る",
+  "reading": "やくそくをやぶる",
+  "meaning": "thất (hứa)"
+ },
+ {
+  "word": "間に合う",
+  "reading": "まにあう",
+  "meaning": "kịp giờ, đúng giờ"
+ },
+ {
+  "word": "遅れる",
+  "reading": "おくれる",
+  "meaning": "trễ giờ"
+ },
+ {
+  "word": "キャンセル",
+  "reading": "キャンセル",
+  "meaning": "việc hủy bỏ"
+ },
+ {
+  "word": "訳",
+  "reading": "わけ",
+  "meaning": "lý do"
+ },
+ {
+  "word": "誘う",
+  "reading": "さそう",
+  "meaning": "mời"
+ },
+ {
+  "word": "連絡",
+  "reading": "れんらく",
+  "meaning": "việc liên lạc"
+ },
+ {
+  "word": "電話がある",
+  "reading": "でんわがある",
+  "meaning": "có (điện thoại)"
+ },
+ {
+  "word": "食事",
+  "reading": "しょくじ",
+  "meaning": "bữa ăn"
+ },
+ {
+  "word": "参加",
+  "reading": "さんか",
+  "meaning": "sự tham gia"
+ },
+ {
+  "word": "都合",
+  "reading": "つごう",
+  "meaning": "giờ giấc thuận tiện, sự thuận tiện"
+ },
+ {
+  "word": "予定",
+  "reading": "よてい",
+  "meaning": "dự định"
+ },
+ {
+  "word": "相手",
+  "reading": "あいて",
+  "meaning": "đối phương, người kia"
+ },
+ {
+  "word": "機会",
+  "reading": "きかい",
+  "meaning": "cơ hội, dịp"
+ },
+ {
+  "word": "嬉しい",
+  "reading": "うれしい",
+  "meaning": "vui mừng"
+ },
+ {
+  "word": "笑う",
+  "reading": "わらう",
+  "meaning": "cười"
+ },
+ {
+  "word": "幸せな",
+  "reading": "しあわせな",
+  "meaning": "niềm hạnh phúc (hạnh phúc)"
+ },
+ {
+  "word": "楽な",
+  "reading": "らくな",
+  "meaning": "khỏe, dễ dàng, thoải mái"
+ },
+ {
+  "word": "安心",
+  "reading": "あんしん",
+  "meaning": "sự yên tâm (yên tâm)"
+ },
+ {
+  "word": "信じる",
+  "reading": "しんじる",
+  "meaning": "tin, tin tưởng"
+ },
+ {
+  "word": "祈る",
+  "reading": "いのる",
+  "meaning": "cầu nguyện, cầu chúc"
+ },
+ {
+  "word": "悲しい",
+  "reading": "かなしい",
+  "meaning": "buồn bã"
+ },
+ {
+  "word": "寂しい",
+  "reading": "さびしい",
+  "meaning": "buồn, cô đơn"
+ },
+ {
+  "word": "泣く",
+  "reading": "なく",
+  "meaning": "khóc"
+ },
+ {
+  "word": "涙",
+  "reading": "なみだ",
+  "meaning": "nước mắt"
+ },
+ {
+  "word": "心配な",
+  "reading": "しんぱいな",
+  "meaning": "sự lo lắng (lo lắng)"
+ },
+ {
+  "word": "つまらない",
+  "reading": "つまらない",
+  "meaning": "chán, tẻ nhạt"
+ },
+ {
+  "word": "がっかり",
+  "reading": "がっかり",
+  "meaning": "sự thất vọng"
+ },
+ {
+  "word": "諦める",
+  "reading": "あきらめる",
+  "meaning": "từ bỏ, bỏ cuộc"
+ },
+ {
+  "word": "緊張",
+  "reading": "きんちょう",
+  "meaning": "sự căng thẳng, hồi hộp"
+ },
+ {
+  "word": "はずかしい",
+  "reading": "はずかしい",
+  "meaning": "mắc cỡ, xấu hổ"
+ },
+ {
+  "word": "びっくり",
+  "reading": "びっくり",
+  "meaning": "sự ngạc nhiên, bất ngờ, giật mình"
+ },
+ {
+  "word": "驚く",
+  "reading": "おどろく",
+  "meaning": "giật mình, ngạc nhiên"
+ },
+ {
+  "word": "怒る",
+  "reading": "おこる",
+  "meaning": "tức giận, giận dữ"
+ },
+ {
+  "word": "気分",
+  "reading": "きぶん",
+  "meaning": "tâm trạng, cảm giác"
+ },
+ {
+  "word": "気分が悪い",
+  "reading": "きぶんがわるい",
+  "meaning": "tâm trạng xấu, cảm giác khó chịu"
+ },
+ {
+  "word": "心",
+  "reading": "こころ",
+  "meaning": "trái tim, tinh thần, tâm hồn"
+ },
+ {
+  "word": "ストレス",
+  "reading": "ストレス",
+  "meaning": "căng thẳng"
+ },
+ {
+  "word": "ホームシック",
+  "reading": "ホームシック",
+  "meaning": "nhớ nhà"
+ },
+ {
+  "word": "かならず",
+  "reading": "かならず",
+  "meaning": "nhất định"
+ },
+ {
+  "word": "きっと",
+  "reading": "きっと",
+  "meaning": "chắc chắn"
+ },
+ {
+  "word": "しっかり",
+  "reading": "しっかり",
+  "meaning": "chắc, chắc chắn"
+ },
+ {
+  "word": "きちんと",
+  "reading": "きちんと",
+  "meaning": "đàng hoàng"
+ },
+ {
+  "word": "ちゃんと",
+  "reading": "ちゃんと",
+  "meaning": "đàng hoàng"
+ },
+ {
+  "word": "絶対",
+  "reading": "ぜったい",
+  "meaning": "nhất định"
+ },
+ {
+  "word": "ぜひ",
+  "reading": "ぜひ",
+  "meaning": "nhất định (làm gì đó)"
+ },
+ {
+  "word": "できるだけ",
+  "reading": "できるだけ",
+  "meaning": "trong khả năng có thể"
+ },
+ {
+  "word": "はっきり",
+  "reading": "はっきり",
+  "meaning": "rõ ràng"
+ },
+ {
+  "word": "ずいぶん",
+  "reading": "ずいぶん",
+  "meaning": "nhiều"
+ },
+ {
+  "word": "かなり",
+  "reading": "かなり",
+  "meaning": "khá là"
+ },
+ {
+  "word": "だいぶ",
+  "reading": "だいぶ",
+  "meaning": "nhiều"
+ },
+ {
+  "word": "もっと",
+  "reading": "もっと",
+  "meaning": "hơn nữa"
+ },
+ {
+  "word": "だいたい",
+  "reading": "だいたい",
+  "meaning": "đại khái, gần như, hầu như"
+ },
+ {
+  "word": "たいてい",
+  "reading": "たいてい",
+  "meaning": "gần như, hầu như"
+ },
+ {
+  "word": "たまに",
+  "reading": "たまに",
+  "meaning": "đôi khi"
+ },
+ {
+  "word": "ぜんぜん",
+  "reading": "ぜんぜん",
+  "meaning": "hoàn toàn (không)"
+ },
+ {
+  "word": "けっして",
+  "reading": "けっして",
+  "meaning": "nhất định (không)"
+ },
+ {
+  "word": "ちっとも",
+  "reading": "ちっとも",
+  "meaning": "một chút cũng (không)"
+ },
+ {
+  "word": "まだ",
+  "reading": "まだ",
+  "meaning": "vẫn còn, vẫn chưa"
+ },
+ {
+  "word": "ほとんど",
+  "reading": "ほとんど",
+  "meaning": "hầu như, hầu hết"
+ },
+ {
+  "word": "なかなか",
+  "reading": "なかなか",
+  "meaning": "mãi vẫn (không)"
+ },
+ {
+  "word": "急に",
+  "reading": "きゅうに",
+  "meaning": "đột ngột, thình lình, bất ngờ"
+ },
+ {
+  "word": "しばらく",
+  "reading": "しばらく",
+  "meaning": "một lúc, một chút"
+ },
+ {
+  "word": "ずっと",
+  "reading": "ずっと",
+  "meaning": "suốt, luôn, hẳn"
+ },
+ {
+  "word": "そのまま",
+  "reading": "そのまま",
+  "meaning": "cứ như thế"
+ },
+ {
+  "word": "そろそろ",
+  "reading": "そろそろ",
+  "meaning": "sắp sửa, chuẩn bị (chỉ thời gian)"
+ },
+ {
+  "word": "とうとう",
+  "reading": "とうとう",
+  "meaning": "cuối cùng"
+ },
+ {
+  "word": "やっと",
+  "reading": "やっと",
+  "meaning": "cuối cùng (đạt được)"
+ },
+ {
+  "word": "たしか",
+  "reading": "たしか",
+  "meaning": "đúng là"
+ },
+ {
+  "word": "どうも",
+  "reading": "どうも",
+  "meaning": "có vẻ, xem ra, hình như"
+ },
+ {
+  "word": "たとえば",
+  "reading": "たとえば",
+  "meaning": "ví dụ"
+ },
+ {
+  "word": "直接",
+  "reading": "ちょくせつ",
+  "meaning": "trực tiếp"
+ },
+ {
+  "word": "特に",
+  "reading": "とくに",
+  "meaning": "đặc biệt"
+ },
+ {
+  "word": "どんどん",
+  "reading": "どんどん",
+  "meaning": "dần dần, đều"
+ },
+ {
+  "word": "なるほど",
+  "reading": "なるほど",
+  "meaning": "thì ra là vậy"
+ },
+ {
+  "word": "はじめて",
+  "reading": "はじめて",
+  "meaning": "lần đầu tiên"
+ },
+ {
+  "word": "はじめに",
+  "reading": "はじめに",
+  "meaning": "đầu tiên, trước tiên"
+ },
+ {
+  "word": "もし",
+  "reading": "もし",
+  "meaning": "nếu"
+ },
+ {
+  "word": "もちろん",
+  "reading": "もちろん",
+  "meaning": "đương nhiên"
+ },
+ {
+  "word": "やはり",
+  "reading": "やはり",
+  "meaning": "như dự đoán, đúng là"
+ },
+ {
+  "word": "実は",
+  "reading": "じつは",
+  "meaning": "thật ra"
+ },
+ {
+  "word": "いかが",
+  "reading": "いかが",
+  "meaning": "thế nào, thì sao (cách hỏi lịch sự)"
+ },
+ {
+  "word": "一生懸命",
+  "reading": "いっしょうけんめい",
+  "meaning": "sự cố gắng hết sức mình, sự nỗ lực (cố gắng hết mình, nỗ lực)"
+ },
+ {
+  "word": "おおぜい",
+  "reading": "おおぜい",
+  "meaning": "sự đông đảo"
+ },
+ {
+  "word": "だから",
+  "reading": "だから",
+  "meaning": "vì vậy"
+ },
+ {
+  "word": "それで",
+  "reading": "それで",
+  "meaning": "vì vậy"
+ },
+ {
+  "word": "または",
+  "reading": "または",
+  "meaning": "hoặc là, hay"
+ },
+ {
+  "word": "それに",
+  "reading": "それに",
+  "meaning": "ngoài ra, đã vậy"
+ },
+ {
+  "word": "そのうえ",
+  "reading": "そのうえ",
+  "meaning": "ngoài ra, còn nữa, lại còn"
+ },
+ {
+  "word": "すると",
+  "reading": "すると",
+  "meaning": "thế là, thế rồi"
+ },
+ {
+  "word": "けれども",
+  "reading": "けれども",
+  "meaning": "nhưng, tuy nhiên"
+ },
+ {
+  "word": "それなら",
+  "reading": "それなら",
+  "meaning": "nếu vậy, vậy thì"
+ },
+ {
+  "word": "ところで",
+  "reading": "ところで",
+  "meaning": "nhưng này, à này, mà này"
+ }
+]

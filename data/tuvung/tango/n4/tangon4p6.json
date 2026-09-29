@@ -1,0 +1,622 @@
+[
+ {
+  "word": "髪",
+  "reading": "かみ",
+  "meaning": "tóc"
+ },
+ {
+  "word": "おでこ",
+  "reading": "おでこ",
+  "meaning": "trán"
+ },
+ {
+  "word": "あご",
+  "reading": "あご",
+  "meaning": "cằm"
+ },
+ {
+  "word": "ひげ",
+  "reading": "ひげ",
+  "meaning": "râu"
+ },
+ {
+  "word": "唇",
+  "reading": "くちびる",
+  "meaning": "môi"
+ },
+ {
+  "word": "首",
+  "reading": "くび",
+  "meaning": "cổ"
+ },
+ {
+  "word": "喉",
+  "reading": "のど",
+  "meaning": "cổ họng"
+ },
+ {
+  "word": "肩",
+  "reading": "かた",
+  "meaning": "vai"
+ },
+ {
+  "word": "腕",
+  "reading": "うで",
+  "meaning": "cánh tay"
+ },
+ {
+  "word": "ひじ",
+  "reading": "ひじ",
+  "meaning": "cùi chỏ, khuỷu tay"
+ },
+ {
+  "word": "背中",
+  "reading": "せなか",
+  "meaning": "lưng"
+ },
+ {
+  "word": "胃",
+  "reading": "い",
+  "meaning": "dạ dày"
+ },
+ {
+  "word": "腰",
+  "reading": "こし",
+  "meaning": "thắt lưng"
+ },
+ {
+  "word": "膝",
+  "reading": "ひざ",
+  "meaning": "đầu gối"
+ },
+ {
+  "word": "尻",
+  "reading": "しり",
+  "meaning": "mông"
+ },
+ {
+  "word": "指",
+  "reading": "ゆび",
+  "meaning": "ngón (tay, chân)"
+ },
+ {
+  "word": "爪",
+  "reading": "つめ",
+  "meaning": "móng"
+ },
+ {
+  "word": "骨",
+  "reading": "ほね",
+  "meaning": "xương"
+ },
+ {
+  "word": "血",
+  "reading": "ち",
+  "meaning": "máu"
+ },
+ {
+  "word": "力",
+  "reading": "ちから",
+  "meaning": "lực, sức mạnh"
+ },
+ {
+  "word": "身長",
+  "reading": "しんちょう",
+  "meaning": "chiều cao"
+ },
+ {
+  "word": "体重",
+  "reading": "たいじゅう",
+  "meaning": "cân nặng"
+ },
+ {
+  "word": "女性",
+  "reading": "じょせい",
+  "meaning": "nữ giới, phụ nữ"
+ },
+ {
+  "word": "男性",
+  "reading": "だんせい",
+  "meaning": "nam giới, đàn ông"
+ },
+ {
+  "word": "健康",
+  "reading": "けんこう",
+  "meaning": "sức khỏe (khỏe mạnh)"
+ },
+ {
+  "word": "丈夫な",
+  "reading": "じょうぶな",
+  "meaning": "bền, chắc, khỏe"
+ },
+ {
+  "word": "ビタミン",
+  "reading": "ビタミン",
+  "meaning": "vitamin"
+ },
+ {
+  "word": "太る",
+  "reading": "ふとる",
+  "meaning": "mập, béo"
+ },
+ {
+  "word": "痩せる",
+  "reading": "やせる",
+  "meaning": "ốm, gầy"
+ },
+ {
+  "word": "ダイエット",
+  "reading": "ダイエット",
+  "meaning": "việc ăn kiêng"
+ },
+ {
+  "word": "辞める",
+  "reading": "やめる",
+  "meaning": "ngưng, bỏ"
+ },
+ {
+  "word": "気をつける",
+  "reading": "きをつける",
+  "meaning": "cẩn thận, giữ gìn"
+ },
+ {
+  "word": "喉が渇く",
+  "reading": "のどがかわく",
+  "meaning": "khát, (cổ họng) khô"
+ },
+ {
+  "word": "お腹がすく",
+  "reading": "おなかがすく",
+  "meaning": "đói (bụng)"
+ },
+ {
+  "word": "インフルエンザ",
+  "reading": "インフルエンザ",
+  "meaning": "cúm"
+ },
+ {
+  "word": "かぜをひく",
+  "reading": "かぜをひく",
+  "meaning": "biị cảm"
+ },
+ {
+  "word": "熱",
+  "reading": "ねつ",
+  "meaning": "cơn sốt"
+ },
+ {
+  "word": "体温計",
+  "reading": "たいおんけい",
+  "meaning": "nhiệt kế"
+ },
+ {
+  "word": "やけど",
+  "reading": "やけど",
+  "meaning": "phỏng"
+ },
+ {
+  "word": "けが",
+  "reading": "けが",
+  "meaning": "chấn thương"
+ },
+ {
+  "word": "きず",
+  "reading": "きず",
+  "meaning": "vết thương, vết trầy xước"
+ },
+ {
+  "word": "調子",
+  "reading": "ちょうし",
+  "meaning": "tình trạng"
+ },
+ {
+  "word": "おかしい",
+  "reading": "おかしい",
+  "meaning": "kỳ lạ, buồn cười"
+ },
+ {
+  "word": "具合",
+  "reading": "ぐあい",
+  "meaning": "cảm giác"
+ },
+ {
+  "word": "気持ちが悪い",
+  "reading": "きもちがわるい",
+  "meaning": "cảm giác khó chịu"
+ },
+ {
+  "word": "倒れる",
+  "reading": "たおれる",
+  "meaning": "đổ sụp, ngã, đổ, ngã bệnh"
+ },
+ {
+  "word": "診る",
+  "reading": "みる",
+  "meaning": "khám (bệnh)"
+ },
+ {
+  "word": "よこになる",
+  "reading": "よこになる",
+  "meaning": "nằm xuống, nằm ra"
+ },
+ {
+  "word": "塗る",
+  "reading": "ぬる",
+  "meaning": "xức, thoa"
+ },
+ {
+  "word": "治す",
+  "reading": "なおす",
+  "meaning": "chữa"
+ },
+ {
+  "word": "治る",
+  "reading": "なおる",
+  "meaning": "lành, khỏi bệnh, hết bệnh"
+ },
+ {
+  "word": "入院",
+  "reading": "にゅういん",
+  "meaning": "việc nhập viện"
+ },
+ {
+  "word": "退院",
+  "reading": "たいいん",
+  "meaning": "việc ra viện, xuất viện"
+ },
+ {
+  "word": "見まい",
+  "reading": "みまい",
+  "meaning": "thăm bệnh"
+ },
+ {
+  "word": "生きる",
+  "reading": "いきる",
+  "meaning": "sống"
+ },
+ {
+  "word": "亡くなる",
+  "reading": "なくなる",
+  "meaning": "mất, chết"
+ },
+ {
+  "word": "救急車",
+  "reading": "きゅうきゅうしゃ",
+  "meaning": "xe cấp cứu"
+ },
+ {
+  "word": "歯医者",
+  "reading": "はいしゃ",
+  "meaning": "nha sỹ"
+ },
+ {
+  "word": "看護師",
+  "reading": "かんごし",
+  "meaning": "y tá"
+ },
+ {
+  "word": "スーツ",
+  "reading": "スーツ",
+  "meaning": "trang phục vét"
+ },
+ {
+  "word": "着物",
+  "reading": "きもの",
+  "meaning": "kimono"
+ },
+ {
+  "word": "靴下",
+  "reading": "くつした",
+  "meaning": "vớ"
+ },
+ {
+  "word": "下着",
+  "reading": "したぎ",
+  "meaning": "đồ lót"
+ },
+ {
+  "word": "手袋",
+  "reading": "てぶくろ",
+  "meaning": "găng tay"
+ },
+ {
+  "word": "指輪",
+  "reading": "ゆびわ",
+  "meaning": "nhẫn"
+ },
+ {
+  "word": "サンダル",
+  "reading": "サンダル",
+  "meaning": "giày xăng-đan"
+ },
+ {
+  "word": "リュック",
+  "reading": "リュック",
+  "meaning": "ba lô"
+ },
+ {
+  "word": "アクセサリー",
+  "reading": "アクセサリー",
+  "meaning": "đồ trang sức"
+ },
+ {
+  "word": "ポケット",
+  "reading": "ポケット",
+  "meaning": "túi, ngăn"
+ },
+ {
+  "word": "ひも",
+  "reading": "ひも",
+  "meaning": "dây"
+ },
+ {
+  "word": "髪型",
+  "reading": "かみがた",
+  "meaning": "kiểu tóc"
+ },
+ {
+  "word": "美容院",
+  "reading": "びよういん",
+  "meaning": "tiệm cắt (uốn) tóc"
+ },
+ {
+  "word": "カット",
+  "reading": "カット",
+  "meaning": "việc cắt (thường chỉ việc cắt tóc)"
+ },
+ {
+  "word": "鏡",
+  "reading": "かがみ",
+  "meaning": "gương"
+ },
+ {
+  "word": "かっこいい",
+  "reading": "かっこいい",
+  "meaning": "phong độ, đẹp, ngầu"
+ },
+ {
+  "word": "可愛い",
+  "reading": "かわいい",
+  "meaning": "dễ thương"
+ },
+ {
+  "word": "ちょうどいい",
+  "reading": "ちょうどいい",
+  "meaning": "vừa vặn, vừa phải, vừa đẹp"
+ },
+ {
+  "word": "様子",
+  "reading": "ようす",
+  "meaning": "tình hình, trạng thái"
+ },
+ {
+  "word": "形",
+  "reading": "かたち",
+  "meaning": "hình thức, hình dạng"
+ },
+ {
+  "word": "倍",
+  "reading": "ばい",
+  "meaning": "gấp (hai)"
+ },
+ {
+  "word": "以上",
+  "reading": "いじょう",
+  "meaning": "trở lên"
+ },
+ {
+  "word": "以下",
+  "reading": "いか",
+  "meaning": "trở xuống, dưới~"
+ },
+ {
+  "word": "以内",
+  "reading": "いない",
+  "meaning": "trong vòng"
+ },
+ {
+  "word": "以外",
+  "reading": "いがい",
+  "meaning": "ngoài (~) ra, ngoại trừ"
+ },
+ {
+  "word": "両方",
+  "reading": "りょうほう",
+  "meaning": "cả hai"
+ },
+ {
+  "word": "暇",
+  "reading": "ひま",
+  "meaning": "giờ rảnh (rảnh rỗi)"
+ },
+ {
+  "word": "普通",
+  "reading": "ふつう",
+  "meaning": "sự bình thường (bình thường)"
+ },
+ {
+  "word": "自由",
+  "reading": "じゆう",
+  "meaning": "sự tự do (tự do)"
+ },
+ {
+  "word": "丁寧な",
+  "reading": "ていねいな",
+  "meaning": "cẩn thận, lịch sự"
+ },
+ {
+  "word": "大きな",
+  "reading": "おおきな",
+  "meaning": "to lớn"
+ },
+ {
+  "word": "小さな",
+  "reading": "ちいさな",
+  "meaning": "nhỏ"
+ },
+ {
+  "word": "変な",
+  "reading": "へんな",
+  "meaning": "kỳ lạ, kỳ quặc"
+ },
+ {
+  "word": "十分な",
+  "reading": "じゅうぶんな",
+  "meaning": "đầy đủ, tốt"
+ },
+ {
+  "word": "美しい",
+  "reading": "うつくしい",
+  "meaning": "đẹp"
+ },
+ {
+  "word": "汚い",
+  "reading": "きたない",
+  "meaning": "dơ, bẩn"
+ },
+ {
+  "word": "うまい",
+  "reading": "うまい",
+  "meaning": "giỏi"
+ },
+ {
+  "word": "柔らかい",
+  "reading": "やわらかい",
+  "meaning": "mềm, mềm mại"
+ },
+ {
+  "word": "硬い",
+  "reading": "かたい",
+  "meaning": "cứng"
+ },
+ {
+  "word": "詳しい",
+  "reading": "くわしい",
+  "meaning": "chi tiết, cụ thể"
+ },
+ {
+  "word": "細かい",
+  "reading": "こまかい",
+  "meaning": "nhỏ, chi tiết, chi li"
+ },
+ {
+  "word": "怖い",
+  "reading": "こわい",
+  "meaning": "sợ"
+ },
+ {
+  "word": "すごい",
+  "reading": "すごい",
+  "meaning": "tuyệt, giỏi, lớn"
+ },
+ {
+  "word": "素晴らしい",
+  "reading": "すばらしい",
+  "meaning": "tuyệt vời"
+ },
+ {
+  "word": "正しい",
+  "reading": "ただしい",
+  "meaning": "đúng, chính xác"
+ },
+ {
+  "word": "ひどい",
+  "reading": "ひどい",
+  "meaning": "ghê, tồi tệ"
+ },
+ {
+  "word": "太い",
+  "reading": "ふとい",
+  "meaning": "mập, to"
+ },
+ {
+  "word": "細い",
+  "reading": "ほそい",
+  "meaning": "ốm, nhỏ, thon"
+ },
+ {
+  "word": "厚い",
+  "reading": "あつい",
+  "meaning": "dày"
+ },
+ {
+  "word": "浅い",
+  "reading": "あさい",
+  "meaning": "nông, cạn"
+ },
+ {
+  "word": "深い",
+  "reading": "ふかい",
+  "meaning": "sâu"
+ },
+ {
+  "word": "眠い",
+  "reading": "ねむい",
+  "meaning": "buồn ngủ"
+ },
+ {
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "meaning": "quý hiếm"
+ },
+ {
+  "word": "増える",
+  "reading": "ふえる",
+  "meaning": "tăng"
+ },
+ {
+  "word": "増やす",
+  "reading": "ふやす",
+  "meaning": "làm tăng"
+ },
+ {
+  "word": "減る",
+  "reading": "へる",
+  "meaning": "giảm"
+ },
+ {
+  "word": "減らす",
+  "reading": "へらす",
+  "meaning": "làm giảm"
+ },
+ {
+  "word": "違う",
+  "reading": "ちがう",
+  "meaning": "khác"
+ },
+ {
+  "word": "変える",
+  "reading": "かえる",
+  "meaning": "thay đổi (cái gì đó)"
+ },
+ {
+  "word": "変わる",
+  "reading": "かわる",
+  "meaning": "(cái gì đó) thay đổi"
+ },
+ {
+  "word": "見える",
+  "reading": "みえる",
+  "meaning": "thấy được"
+ },
+ {
+  "word": "聞こえる",
+  "reading": "きこえる",
+  "meaning": "nghe được"
+ },
+ {
+  "word": "空く",
+  "reading": "あく",
+  "meaning": "trống"
+ },
+ {
+  "word": "外れる",
+  "reading": "はずれる",
+  "meaning": "(cái gì đó) sút, rời, trật ra"
+ },
+ {
+  "word": "切れる",
+  "reading": "きれる",
+  "meaning": "đứt, hết"
+ }
+]

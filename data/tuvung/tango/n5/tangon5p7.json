@@ -1,0 +1,782 @@
+[
+ {
+  "word": "買い物",
+  "reading": "かいもの",
+  "meaning": "mua sắm"
+ },
+ {
+  "word": "をください",
+  "reading": "をください",
+  "meaning": "cho tôi ~"
+ },
+ {
+  "word": "と",
+  "reading": "と",
+  "meaning": "và ~"
+ },
+ {
+  "word": "や",
+  "reading": "や",
+  "meaning": "~ và ~ "
+ },
+ {
+  "word": "いくら",
+  "reading": "いくら",
+  "meaning": "bao nhiêu tiền?"
+ },
+ {
+  "word": "円",
+  "reading": "えん",
+  "meaning": "yên"
+ },
+ {
+  "word": "高い",
+  "reading": "たかい",
+  "meaning": "đắt, mắc"
+ },
+ {
+  "word": "安い",
+  "reading": "やすい",
+  "meaning": "rẻ"
+ },
+ {
+  "word": "百",
+  "reading": "ひゃく",
+  "meaning": "trăm"
+ },
+ {
+  "word": "一円",
+  "reading": "いちえん",
+  "meaning": "một yên"
+ },
+ {
+  "word": "十円",
+  "reading": "じゅうえん",
+  "meaning": "mười yên"
+ },
+ {
+  "word": "百円",
+  "reading": "ひゃくえん",
+  "meaning": "một trăm yên"
+ },
+ {
+  "word": "千",
+  "reading": "せん",
+  "meaning": "ngàn"
+ },
+ {
+  "word": "千円",
+  "reading": "せんえん",
+  "meaning": "một ngàn yên"
+ },
+ {
+  "word": "万",
+  "reading": "まん",
+  "meaning": "mười ngàn"
+ },
+ {
+  "word": "一万円",
+  "reading": "いちまんえん",
+  "meaning": "mười ngàn yên"
+ },
+ {
+  "word": "億",
+  "reading": "おく",
+  "meaning": "trăm triệu"
+ },
+ {
+  "word": "一億円",
+  "reading": "いちおくえん",
+  "meaning": "một trăm triệu yên"
+ },
+ {
+  "word": "ちょっと",
+  "reading": "ちょっと",
+  "meaning": "một chút"
+ },
+ {
+  "word": "では",
+  "reading": "では",
+  "meaning": "vậy thì"
+ },
+ {
+  "word": "じゃ",
+  "reading": "じゃ",
+  "meaning": "vậy thì"
+ },
+ {
+  "word": "お金",
+  "reading": "おかね",
+  "meaning": "tiền"
+ },
+ {
+  "word": "払う",
+  "reading": "はらう",
+  "meaning": "trả (tiền), thanh toán"
+ },
+ {
+  "word": "おつり",
+  "reading": "おつり",
+  "meaning": "tiền thối"
+ },
+ {
+  "word": "細かいお金",
+  "reading": "こまかいおかね",
+  "meaning": "tiền lẻ"
+ },
+ {
+  "word": "足りる",
+  "reading": "たりる",
+  "meaning": "đủ"
+ },
+ {
+  "word": "生活",
+  "reading": "せいかつ",
+  "meaning": "cuộc sống, sinh hoạt"
+ },
+ {
+  "word": "物価",
+  "reading": "ぶっか",
+  "meaning": "vật giá"
+ },
+ {
+  "word": "いくつ",
+  "reading": "いくつ",
+  "meaning": "bao nhiêu cái"
+ },
+ {
+  "word": "全部で",
+  "reading": "ぜんぶで",
+  "meaning": "tất cả, tổng cộng"
+ },
+ {
+  "word": "一つ",
+  "reading": "ひとつ",
+  "meaning": "một cái"
+ },
+ {
+  "word": "二つ",
+  "reading": "ふたつ",
+  "meaning": "hai cái"
+ },
+ {
+  "word": "三つ",
+  "reading": "みっつ",
+  "meaning": "ba cái"
+ },
+ {
+  "word": "四つ",
+  "reading": "よっつ",
+  "meaning": "bốn cái"
+ },
+ {
+  "word": "五つ",
+  "reading": "いつつ",
+  "meaning": "năm cái"
+ },
+ {
+  "word": "六つ",
+  "reading": "むっつ",
+  "meaning": "sáu cái"
+ },
+ {
+  "word": "七つ",
+  "reading": "ななつ",
+  "meaning": "bảy cái"
+ },
+ {
+  "word": "八つ",
+  "reading": "やっつ",
+  "meaning": "tám cái"
+ },
+ {
+  "word": "九つ",
+  "reading": "ここのつ",
+  "meaning": "chín cái"
+ },
+ {
+  "word": "十",
+  "reading": "とお",
+  "meaning": "mười cái"
+ },
+ {
+  "word": "店",
+  "reading": "みせ",
+  "meaning": "cửa hàng, cửa tiệm"
+ },
+ {
+  "word": "屋",
+  "reading": "や",
+  "meaning": "tiệm ~"
+ },
+ {
+  "word": "デパート",
+  "reading": "デパート",
+  "meaning": "cửa hàng bách hóa, trung tâm thương mại"
+ },
+ {
+  "word": "コンビニ",
+  "reading": "コンビニ",
+  "meaning": "cửa hàng tiện lợi"
+ },
+ {
+  "word": "売る",
+  "reading": "うる",
+  "meaning": "bán"
+ },
+ {
+  "word": "売り場",
+  "reading": "うりば",
+  "meaning": "quầy bán hàng"
+ },
+ {
+  "word": "コーナー",
+  "reading": "コーナー",
+  "meaning": "góc, khu"
+ },
+ {
+  "word": "棚",
+  "reading": "たな",
+  "meaning": "kệ (hàng)"
+ },
+ {
+  "word": "コピー",
+  "reading": "コピー",
+  "meaning": "phô-tô, in sao"
+ },
+ {
+  "word": "チケット",
+  "reading": "チケット",
+  "meaning": "vé"
+ },
+ {
+  "word": "カタログ",
+  "reading": "カタログ",
+  "meaning": "tập giới thiệu, catalogue"
+ },
+ {
+  "word": "雑誌",
+  "reading": "ざっし",
+  "meaning": "tạp chí"
+ },
+ {
+  "word": "新聞",
+  "reading": "しんぶん",
+  "meaning": "báo"
+ },
+ {
+  "word": "欲しい",
+  "reading": "ほしい",
+  "meaning": "muốn có"
+ },
+ {
+  "word": "できる",
+  "reading": "できる",
+  "meaning": "có thể"
+ },
+ {
+  "word": "できる",
+  "reading": "できる",
+  "meaning": "có thể"
+ },
+ {
+  "word": "でございます",
+  "reading": "でございます",
+  "meaning": "là ~ (kính ngữ)"
+ },
+ {
+  "word": "お探しですか",
+  "reading": "おさがしですか",
+  "meaning": "Tìm ~ ạ ? (kính ngữ)"
+ },
+ {
+  "word": "見せる",
+  "reading": "みせる",
+  "meaning": "cho xem"
+ },
+ {
+  "word": "かしこまりました",
+  "reading": "かしこまりました",
+  "meaning": "Tôi đã hiểu rồi ạ."
+ },
+ {
+  "word": "少々お待ちください",
+  "reading": "しょうしょうおまちください",
+  "meaning": "Vui lòng chờ cho một chút."
+ },
+ {
+  "word": "方",
+  "reading": "かた",
+  "meaning": "cách ~"
+ },
+ {
+  "word": "お引き出しですか",
+  "reading": "おひきだしですか",
+  "meaning": "Quý khách rút (tiền) ạ?"
+ },
+ {
+  "word": "現金",
+  "reading": "げんきん",
+  "meaning": "tiền mặt"
+ },
+ {
+  "word": "下ろす",
+  "reading": "おろす",
+  "meaning": "rút (tiền)"
+ },
+ {
+  "word": "まず",
+  "reading": "まず",
+  "meaning": "trước tiên"
+ },
+ {
+  "word": "キャッシュカード",
+  "reading": "キャッシュカード",
+  "meaning": "thẻ ngân hàng"
+ },
+ {
+  "word": "次に",
+  "reading": "つぎに",
+  "meaning": "tiếp theo"
+ },
+ {
+  "word": "暗証番号",
+  "reading": "あんしょうばんごう",
+  "meaning": "số (mật khẩu, bảo mật)"
+ },
+ {
+  "word": "押す",
+  "reading": "おす",
+  "meaning": "bấm, nhấn"
+ },
+ {
+  "word": "それから",
+  "reading": "それから",
+  "meaning": "sau đó"
+ },
+ {
+  "word": "金額",
+  "reading": "きんがく",
+  "meaning": "số tiền"
+ },
+ {
+  "word": "確認",
+  "reading": "かくにん",
+  "meaning": "xác nhận, kiểm tra"
+ },
+ {
+  "word": "ボタン",
+  "reading": "ボタン",
+  "meaning": "nút"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "meaning": "xuất hiện, ra"
+ },
+ {
+  "word": "換える",
+  "reading": "かえる",
+  "meaning": "đổi"
+ },
+ {
+  "word": "郵便局",
+  "reading": "ゆうびんきょく",
+  "meaning": "bưu điện"
+ },
+ {
+  "word": "ポスト",
+  "reading": "ポスト",
+  "meaning": "thùng thư"
+ },
+ {
+  "word": "手紙",
+  "reading": "てがみ",
+  "meaning": "thư"
+ },
+ {
+  "word": "はがき",
+  "reading": "はがき",
+  "meaning": "thiệp, bưu thiếp"
+ },
+ {
+  "word": "年賀状",
+  "reading": "ねんがじょう",
+  "meaning": "thiệp chúc năm mới"
+ },
+ {
+  "word": "出す",
+  "reading": "だす",
+  "meaning": "gửi (thư)"
+ },
+ {
+  "word": "メール",
+  "reading": "メール",
+  "meaning": "e-mail"
+ },
+ {
+  "word": "送る",
+  "reading": "おくる",
+  "meaning": "gửi"
+ },
+ {
+  "word": "切手",
+  "reading": "きって",
+  "meaning": "tem"
+ },
+ {
+  "word": "集める",
+  "reading": "あつめる",
+  "meaning": "sưu tầm"
+ },
+ {
+  "word": "封筒",
+  "reading": "ふうとう",
+  "meaning": "bì thư"
+ },
+ {
+  "word": "外国",
+  "reading": "がいこく",
+  "meaning": "nước ngoài"
+ },
+ {
+  "word": "エアメール",
+  "reading": "エアメール",
+  "meaning": "đường hàng không"
+ },
+ {
+  "word": "航空便",
+  "reading": "こうくうびん",
+  "meaning": "đường hàng không"
+ },
+ {
+  "word": "船便",
+  "reading": "ふなびん",
+  "meaning": "đường biển"
+ },
+ {
+  "word": "荷物",
+  "reading": "にもつ",
+  "meaning": "hành lý, kiện hàng, gói đồ"
+ },
+ {
+  "word": "重い",
+  "reading": "おもい",
+  "meaning": "nặng"
+ },
+ {
+  "word": "軽い",
+  "reading": "かるい",
+  "meaning": "nhẹ"
+ },
+ {
+  "word": "あげる",
+  "reading": "あげる",
+  "meaning": "tặng, cho"
+ },
+ {
+  "word": "もらう",
+  "reading": "もらう",
+  "meaning": "nhận"
+ },
+ {
+  "word": "くれる",
+  "reading": "くれる",
+  "meaning": "(được) cho, tặng"
+ },
+ {
+  "word": "プレゼント",
+  "reading": "プレゼント",
+  "meaning": "quà tặng"
+ },
+ {
+  "word": "物",
+  "reading": "もの",
+  "meaning": "vật, đồ"
+ },
+ {
+  "word": "パーティー",
+  "reading": "パーティー",
+  "meaning": "tiệc"
+ },
+ {
+  "word": "始める",
+  "reading": "はじめる",
+  "meaning": "bắt đầu"
+ },
+ {
+  "word": "だれ",
+  "reading": "だれ",
+  "meaning": "ai"
+ },
+ {
+  "word": "どなた",
+  "reading": "どなた",
+  "meaning": "ai (kính ngữ)"
+ },
+ {
+  "word": "あの方",
+  "reading": "あのかた",
+  "meaning": "người đó (kính ngữ)"
+ },
+ {
+  "word": "クリスマス",
+  "reading": "クリスマス",
+  "meaning": "Giáng sinh"
+ },
+ {
+  "word": "誕生日",
+  "reading": "たんじょうび",
+  "meaning": "sinh nhật"
+ },
+ {
+  "word": "生まれる",
+  "reading": "うまれる",
+  "meaning": "chào đời, được sinh ra"
+ },
+ {
+  "word": "おめでとうございます",
+  "reading": "おめでとうございます",
+  "meaning": "(Xin) chúc mừng"
+ },
+ {
+  "word": "わあ",
+  "reading": "わあ",
+  "meaning": "ôi"
+ },
+ {
+  "word": "何歳",
+  "reading": "なんさい",
+  "meaning": "bao nhiêu (mấy) tuổi"
+ },
+ {
+  "word": "おいくつ",
+  "reading": "おいくつ",
+  "meaning": "bao nhiêu (mấy) tuổi (kính ngữ)"
+ },
+ {
+  "word": "一歳",
+  "reading": "いっさい",
+  "meaning": "một tuổi"
+ },
+ {
+  "word": "二歳",
+  "reading": "にさい",
+  "meaning": "hai tuổi"
+ },
+ {
+  "word": "三歳",
+  "reading": "さんさい",
+  "meaning": "ba tuổi"
+ },
+ {
+  "word": "四歳",
+  "reading": "よんさい",
+  "meaning": "bốn tuổi"
+ },
+ {
+  "word": "五歳",
+  "reading": "ごさい",
+  "meaning": "năm tuổi"
+ },
+ {
+  "word": "六歳",
+  "reading": "ろくさい",
+  "meaning": "sáu tuổi"
+ },
+ {
+  "word": "七歳",
+  "reading": "ななさい",
+  "meaning": "bảy tuổi"
+ },
+ {
+  "word": "八歳",
+  "reading": "はっさい",
+  "meaning": "tám tuổi"
+ },
+ {
+  "word": "九歳",
+  "reading": "きゅうさい",
+  "meaning": "chín tuổi"
+ },
+ {
+  "word": "十歳",
+  "reading": "じゅっさい",
+  "meaning": "mười tuổi"
+ },
+ {
+  "word": "二十歳",
+  "reading": "はたち",
+  "meaning": "hai mươi tuổi"
+ },
+ {
+  "word": "何歳",
+  "reading": "なんさい",
+  "meaning": "bao nhiêu tuổi / mấy tuổi"
+ },
+ {
+  "word": "何日",
+  "reading": "なんにち",
+  "meaning": "ngày mấy"
+ },
+ {
+  "word": "一日",
+  "reading": "ついたち",
+  "meaning": "ngày 1"
+ },
+ {
+  "word": "二日",
+  "reading": "ふつか",
+  "meaning": "ngày 2"
+ },
+ {
+  "word": "三日",
+  "reading": "みっか",
+  "meaning": "ngày 3"
+ },
+ {
+  "word": "四日",
+  "reading": "よっか",
+  "meaning": "ngày 4"
+ },
+ {
+  "word": "五日",
+  "reading": "いつか",
+  "meaning": "ngày 5"
+ },
+ {
+  "word": "六日",
+  "reading": "むいか",
+  "meaning": "ngày 6"
+ },
+ {
+  "word": "七日",
+  "reading": "なのか",
+  "meaning": "ngày 7"
+ },
+ {
+  "word": "八日",
+  "reading": "ようか",
+  "meaning": "ngày 8"
+ },
+ {
+  "word": "九日",
+  "reading": "ここのか",
+  "meaning": "ngày 9"
+ },
+ {
+  "word": "十日",
+  "reading": "とおか",
+  "meaning": "ngày 10"
+ },
+ {
+  "word": "十一日",
+  "reading": "じゅういちにち",
+  "meaning": "ngày 11"
+ },
+ {
+  "word": "十二日",
+  "reading": "じゅうににち",
+  "meaning": "ngày 12"
+ },
+ {
+  "word": "十三日",
+  "reading": "じゅうさんにち",
+  "meaning": "ngày 13"
+ },
+ {
+  "word": "十四日",
+  "reading": "じゅうよっか",
+  "meaning": "ngày 14"
+ },
+ {
+  "word": "十五日",
+  "reading": "じゅうごにち",
+  "meaning": "ngày 15"
+ },
+ {
+  "word": "十六日",
+  "reading": "じゅうろくにち",
+  "meaning": "ngày 16"
+ },
+ {
+  "word": "十七日",
+  "reading": "じゅうしちにち",
+  "meaning": "ngày 17"
+ },
+ {
+  "word": "十八日",
+  "reading": "じゅうはちにち",
+  "meaning": "ngày 18"
+ },
+ {
+  "word": "十九日",
+  "reading": "じゅうくにち",
+  "meaning": "ngày 19"
+ },
+ {
+  "word": "二十日",
+  "reading": "はつか",
+  "meaning": "ngày 20"
+ },
+ {
+  "word": "二十一日",
+  "reading": "にじゅういちにち",
+  "meaning": "ngày 21"
+ },
+ {
+  "word": "二十二日",
+  "reading": "にじゅうににち",
+  "meaning": "ngày 22"
+ },
+ {
+  "word": "二十三日",
+  "reading": "にじゅうさんにち",
+  "meaning": "ngày 23"
+ },
+ {
+  "word": "二十四日",
+  "reading": "にじゅうよっか",
+  "meaning": "ngày 24"
+ },
+ {
+  "word": "二十五日",
+  "reading": "にじゅうごにち",
+  "meaning": "ngày 25"
+ },
+ {
+  "word": "二十六日",
+  "reading": "にじゅうろくにち",
+  "meaning": "ngày 26"
+ },
+ {
+  "word": "二十七日",
+  "reading": "にじゅうしちにち",
+  "meaning": "ngày 27"
+ },
+ {
+  "word": "二十八日",
+  "reading": "にじゅうはちにち",
+  "meaning": "ngày 28"
+ },
+ {
+  "word": "二十九日",
+  "reading": "にじゅうくにち",
+  "meaning": "ngày 29"
+ },
+ {
+  "word": "三十日",
+  "reading": "さんじゅうにち",
+  "meaning": "ngày 30"
+ },
+ {
+  "word": "三十一日",
+  "reading": "さんじゅういちにち",
+  "meaning": "ngày 31"
+ },
+ {
+  "word": "何日",
+  "reading": "なんにち",
+  "meaning": "ngày mấy"
+ }
+]

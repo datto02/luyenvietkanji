@@ -1,0 +1,567 @@
+[
+ {
+  "word": "友達",
+  "reading": "ともだち",
+  "meaning": "bạn bè"
+ },
+ {
+  "word": "どんな",
+  "reading": "どんな",
+  "meaning": "như thế nào"
+ },
+ {
+  "word": "人",
+  "reading": "ひと",
+  "meaning": "người"
+ },
+ {
+  "word": "親切な",
+  "reading": "しんせつな",
+  "meaning": "tử tế"
+ },
+ {
+  "word": "皆",
+  "reading": "みんな",
+  "meaning": "mọi người"
+ },
+ {
+  "word": "元気な",
+  "reading": "げんきな",
+  "meaning": "khỏe mạnh"
+ },
+ {
+  "word": "綺麗な",
+  "reading": "きれいな",
+  "meaning": "đẹp, sạch"
+ },
+ {
+  "word": "綺麗な",
+  "reading": "きれいな",
+  "meaning": "đẹp, sạch"
+ },
+ {
+  "word": "ハンサムな",
+  "reading": "ハンサムな",
+  "meaning": "đẹp trai"
+ },
+ {
+  "word": "可愛い",
+  "reading": "かわいい",
+  "meaning": "dễ thương"
+ },
+ {
+  "word": "格好いい",
+  "reading": "かっこいい",
+  "meaning": "đẹp trai, phong độ"
+ },
+ {
+  "word": "頭がいい",
+  "reading": "あたまがいい",
+  "meaning": "thông minh"
+ },
+ {
+  "word": "やさしい",
+  "reading": "やさしい",
+  "meaning": "tử tế, hiền lành"
+ },
+ {
+  "word": "ユーモア",
+  "reading": "ユーモア",
+  "meaning": "hài hước, hóm hỉnh"
+ },
+ {
+  "word": "背",
+  "reading": "せ",
+  "meaning": "chiều cao, lưng"
+ },
+ {
+  "word": "高い",
+  "reading": "たかい",
+  "meaning": "cao"
+ },
+ {
+  "word": "低い",
+  "reading": "ひくい",
+  "meaning": "thấp"
+ },
+ {
+  "word": "目",
+  "reading": "め",
+  "meaning": "mắt"
+ },
+ {
+  "word": "大きい",
+  "reading": "おおきい",
+  "meaning": "to, lớn"
+ },
+ {
+  "word": "小さい",
+  "reading": "ちいさい",
+  "meaning": "nhỏ"
+ },
+ {
+  "word": "髪",
+  "reading": "かみ",
+  "meaning": "tóc"
+ },
+ {
+  "word": "長い",
+  "reading": "ながい",
+  "meaning": "dài"
+ },
+ {
+  "word": "短い",
+  "reading": "みじかい",
+  "meaning": "ngắn"
+ },
+ {
+  "word": "服",
+  "reading": "ふく",
+  "meaning": "áo quần"
+ },
+ {
+  "word": "サイズ",
+  "reading": "サイズ",
+  "meaning": "kích cỡ"
+ },
+ {
+  "word": "素敵な",
+  "reading": "すてきな",
+  "meaning": "đẹp, tuyệt"
+ },
+ {
+  "word": "デザイン",
+  "reading": "デザイン",
+  "meaning": "thiết kế, mẫu mã"
+ },
+ {
+  "word": "着る",
+  "reading": "きる",
+  "meaning": "mặc"
+ },
+ {
+  "word": "脱ぐ",
+  "reading": "ぬぐ",
+  "meaning": "cởi"
+ },
+ {
+  "word": "脱ぐ",
+  "reading": "ぬぐ",
+  "meaning": "cởi"
+ },
+ {
+  "word": "赤い",
+  "reading": "あかい",
+  "meaning": "đỏ"
+ },
+ {
+  "word": "青い",
+  "reading": "あおい",
+  "meaning": "xanh (da trời)"
+ },
+ {
+  "word": "白い",
+  "reading": "しろい",
+  "meaning": "trắng"
+ },
+ {
+  "word": "黒い",
+  "reading": "くろい",
+  "meaning": "đen"
+ },
+ {
+  "word": "黄色い",
+  "reading": "きいろい",
+  "meaning": "vàng"
+ },
+ {
+  "word": "色々な",
+  "reading": "いろいろな",
+  "meaning": "nhiều loại, đủ thứ"
+ },
+ {
+  "word": "シャツ",
+  "reading": "シャツ",
+  "meaning": "áo thun, áo sơ-mi, áo"
+ },
+ {
+  "word": "セーター",
+  "reading": "セーター",
+  "meaning": "áo len"
+ },
+ {
+  "word": "コート",
+  "reading": "コート",
+  "meaning": "áo khoác, áo choàng"
+ },
+ {
+  "word": "スーツ",
+  "reading": "スーツ",
+  "meaning": "đồ vét"
+ },
+ {
+  "word": "上着",
+  "reading": "うわぎ",
+  "meaning": "áo khoác"
+ },
+ {
+  "word": "下着",
+  "reading": "したぎ",
+  "meaning": "đồ lót"
+ },
+ {
+  "word": "着物",
+  "reading": "きもの",
+  "meaning": "kimono, đồ mặc"
+ },
+ {
+  "word": "履く",
+  "reading": "はく",
+  "meaning": "mặc (váy, quần)"
+ },
+ {
+  "word": "ズボン",
+  "reading": "ズボン",
+  "meaning": "quần, quần dài"
+ },
+ {
+  "word": "ジーンズ",
+  "reading": "ジーンズ",
+  "meaning": "quần jeans"
+ },
+ {
+  "word": "パンツ",
+  "reading": "パンツ",
+  "meaning": "quần tây"
+ },
+ {
+  "word": "スカート",
+  "reading": "スカート",
+  "meaning": "váy"
+ },
+ {
+  "word": "靴",
+  "reading": "くつ",
+  "meaning": "giày"
+ },
+ {
+  "word": "靴下",
+  "reading": "くつした",
+  "meaning": "vớ, tất"
+ },
+ {
+  "word": "被る",
+  "reading": "かぶる",
+  "meaning": "đội"
+ },
+ {
+  "word": "帽子",
+  "reading": "ぼうし",
+  "meaning": "nón, mũ"
+ },
+ {
+  "word": "眼鏡を掛ける",
+  "reading": "めがねをかける",
+  "meaning": "đeo (mắt kính)"
+ },
+ {
+  "word": "眼鏡",
+  "reading": "めがね",
+  "meaning": "mắt kính"
+ },
+ {
+  "word": "サングラス",
+  "reading": "サングラス",
+  "meaning": "kính mát"
+ },
+ {
+  "word": "指輪をする",
+  "reading": "ゆびわをする",
+  "meaning": "đeo (nhẫn)"
+ },
+ {
+  "word": "ネクタイ",
+  "reading": "ネクタイ",
+  "meaning": "cà vạt"
+ },
+ {
+  "word": "指輪",
+  "reading": "ゆびわ",
+  "meaning": "chiếc nhẫn"
+ },
+ {
+  "word": "時計",
+  "reading": "とけい",
+  "meaning": "đồng hồ"
+ },
+ {
+  "word": "持つ",
+  "reading": "もつ",
+  "meaning": "có, cầm, giữ, xách"
+ },
+ {
+  "word": "鞄",
+  "reading": "かばん",
+  "meaning": "cặp, túi xách"
+ },
+ {
+  "word": "財布",
+  "reading": "さいふ",
+  "meaning": "ví, bóp"
+ },
+ {
+  "word": "遊ぶ",
+  "reading": "あそぶ",
+  "meaning": "chơi đùa, chơi"
+ },
+ {
+  "word": "遊ぶ",
+  "reading": "あそぶ",
+  "meaning": "chơi đùa, chơi"
+ },
+ {
+  "word": "案内",
+  "reading": "あんない",
+  "meaning": "hướng dẫn, giới thiệu"
+ },
+ {
+  "word": "迎える",
+  "reading": "むかえる",
+  "meaning": "đón"
+ },
+ {
+  "word": "連れて行く",
+  "reading": "つれていく",
+  "meaning": "dẫn đi"
+ },
+ {
+  "word": "連れて来る",
+  "reading": "つれてくる",
+  "meaning": "dẫn đến"
+ },
+ {
+  "word": "動物",
+  "reading": "どうぶつ",
+  "meaning": "động vật, con vật"
+ },
+ {
+  "word": "動物園",
+  "reading": "どうぶつえん",
+  "meaning": "sở thú"
+ },
+ {
+  "word": "パンダ",
+  "reading": "パンダ",
+  "meaning": "gấu trúc"
+ },
+ {
+  "word": "象",
+  "reading": "ぞう",
+  "meaning": "con voi"
+ },
+ {
+  "word": "馬",
+  "reading": "うま",
+  "meaning": "con ngựa"
+ },
+ {
+  "word": "お祭り",
+  "reading": "おまつり",
+  "meaning": "lễ hội"
+ },
+ {
+  "word": "お寺",
+  "reading": "おてら",
+  "meaning": "chùa"
+ },
+ {
+  "word": "神社",
+  "reading": "じんじゃ",
+  "meaning": "đền thờ Thần đạo"
+ },
+ {
+  "word": "旅行",
+  "reading": "りょこう",
+  "meaning": "(chuyến) du lịch"
+ },
+ {
+  "word": "準備",
+  "reading": "じゅんび",
+  "meaning": "chuẩn bị"
+ },
+ {
+  "word": "予約",
+  "reading": "よやく",
+  "meaning": "đặt trước"
+ },
+ {
+  "word": "ホテル",
+  "reading": "ホテル",
+  "meaning": "khách sạn"
+ },
+ {
+  "word": "泊まる",
+  "reading": "とまる",
+  "meaning": "nghỉ trọ"
+ },
+ {
+  "word": "ロビー",
+  "reading": "ロビー",
+  "meaning": "sảnh"
+ },
+ {
+  "word": "お土産",
+  "reading": "おみやげ",
+  "meaning": "quà"
+ },
+ {
+  "word": "サービス",
+  "reading": "サービス",
+  "meaning": "dịch vụ"
+ },
+ {
+  "word": "ホームステイ",
+  "reading": "ホームステイ",
+  "meaning": "homestay"
+ },
+ {
+  "word": "町",
+  "reading": "まち",
+  "meaning": "phố"
+ },
+ {
+  "word": "県",
+  "reading": "けん",
+  "meaning": "tỉnh"
+ },
+ {
+  "word": "東京",
+  "reading": "とうきょう",
+  "meaning": "Tokyo"
+ },
+ {
+  "word": "成田",
+  "reading": "なりた",
+  "meaning": "Narita"
+ },
+ {
+  "word": "上野",
+  "reading": "うえの",
+  "meaning": "Ueno"
+ },
+ {
+  "word": "浅草",
+  "reading": "あさくさ",
+  "meaning": "Asakusa"
+ },
+ {
+  "word": "新宿",
+  "reading": "しんじゅく",
+  "meaning": "Shinjuku"
+ },
+ {
+  "word": "秋葉原",
+  "reading": "あきはばら",
+  "meaning": "Akihabara"
+ },
+ {
+  "word": "渋谷",
+  "reading": "しぶや",
+  "meaning": "Shibuya"
+ },
+ {
+  "word": "銀座",
+  "reading": "ぎんざ",
+  "meaning": "Ginza"
+ },
+ {
+  "word": "羽田",
+  "reading": "はねだ",
+  "meaning": "Haneda"
+ },
+ {
+  "word": "横浜",
+  "reading": "よこはま",
+  "meaning": "Yokohama"
+ },
+ {
+  "word": "鎌倉",
+  "reading": "かまくら",
+  "meaning": "Kamakura"
+ },
+ {
+  "word": "北海道",
+  "reading": "ほっかいどう",
+  "meaning": "Hokkaido"
+ },
+ {
+  "word": "札幌",
+  "reading": "さっぽろ",
+  "meaning": "Sapporo"
+ },
+ {
+  "word": "仙台",
+  "reading": "せんだい",
+  "meaning": "Sendai"
+ },
+ {
+  "word": "日光",
+  "reading": "にっこう",
+  "meaning": "Nikko"
+ },
+ {
+  "word": "富士山",
+  "reading": "ふじさん",
+  "meaning": "núi Phú Sĩ"
+ },
+ {
+  "word": "金沢",
+  "reading": "かなざわ",
+  "meaning": "Kanazawa"
+ },
+ {
+  "word": "名古屋",
+  "reading": "なごや",
+  "meaning": "Nagoya"
+ },
+ {
+  "word": "京都",
+  "reading": "きょうと",
+  "meaning": "Kyoto"
+ },
+ {
+  "word": "奈良",
+  "reading": "なら",
+  "meaning": "Nara"
+ },
+ {
+  "word": "大阪",
+  "reading": "おおさか",
+  "meaning": "Osaka"
+ },
+ {
+  "word": "神戸",
+  "reading": "こうべ",
+  "meaning": "Kobe"
+ },
+ {
+  "word": "広島",
+  "reading": "ひろしま",
+  "meaning": "Hiroshima"
+ },
+ {
+  "word": "福岡",
+  "reading": "ふくおか",
+  "meaning": "Fukuoka"
+ },
+ {
+  "word": "長崎",
+  "reading": "ながさき",
+  "meaning": "Nagasaki"
+ },
+ {
+  "word": "沖縄",
+  "reading": "おきなわ",
+  "meaning": "Okinawa"
+ }
+]

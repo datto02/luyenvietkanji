@@ -1,0 +1,707 @@
+[
+ {
+  "word": "たった今",
+  "reading": "たったいま",
+  "meaning": "vừa mới, mới tức thì"
+ },
+ {
+  "word": "今にも",
+  "reading": "いまにも",
+  "meaning": "ngay bây giờ"
+ },
+ {
+  "word": "もうすぐ",
+  "reading": "もうすぐ",
+  "meaning": "sắp"
+ },
+ {
+  "word": "さっき",
+  "reading": "さっき",
+  "meaning": "lúc nãy"
+ },
+ {
+  "word": "この頃",
+  "reading": "このごろ",
+  "meaning": "gần đây, dạo này"
+ },
+ {
+  "word": "最近",
+  "reading": "さいきん",
+  "meaning": "gần đây"
+ },
+ {
+  "word": "この間",
+  "reading": "このあいだ",
+  "meaning": "gần đây, cách đây không lâu"
+ },
+ {
+  "word": "今度",
+  "reading": "こんど",
+  "meaning": "lần này, lần tới"
+ },
+ {
+  "word": "いつでも",
+  "reading": "いつでも",
+  "meaning": "khi nào cũng, bất kỳ lúc nào"
+ },
+ {
+  "word": "いつか",
+  "reading": "いつか",
+  "meaning": "một lúc nào đó, một ngày nào đó"
+ },
+ {
+  "word": "将来",
+  "reading": "しょうらい",
+  "meaning": "tương lai"
+ },
+ {
+  "word": "昔",
+  "reading": "むかし",
+  "meaning": "ngày xưa"
+ },
+ {
+  "word": "ある日",
+  "reading": "あるひ",
+  "meaning": "một ngày nọ"
+ },
+ {
+  "word": "昼間",
+  "reading": "ひるま",
+  "meaning": "ban ngày"
+ },
+ {
+  "word": "夕方",
+  "reading": "ゆうがた",
+  "meaning": "chiều tối"
+ },
+ {
+  "word": "夜中",
+  "reading": "よなか",
+  "meaning": "đêm, khuya"
+ },
+ {
+  "word": "明日",
+  "reading": "あす",
+  "meaning": "ngày mai"
+ },
+ {
+  "word": "一昨日",
+  "reading": "おととい",
+  "meaning": "hôm kia, ngày kia"
+ },
+ {
+  "word": "昨夜",
+  "reading": "ゆうべ",
+  "meaning": "tối hôm qua"
+ },
+ {
+  "word": "今夜",
+  "reading": "こんや",
+  "meaning": "tối nay"
+ },
+ {
+  "word": "今週",
+  "reading": "こんしゅう",
+  "meaning": "tuần này"
+ },
+ {
+  "word": "今月",
+  "reading": "こんげつ",
+  "meaning": "tháng này"
+ },
+ {
+  "word": "再来週",
+  "reading": "さらいしゅう",
+  "meaning": "tuần tới nữa (2 tuần sau)"
+ },
+ {
+  "word": "再来月",
+  "reading": "さらいげつ",
+  "meaning": "tháng tới nữa (2 tháng sau)"
+ },
+ {
+  "word": "再来年",
+  "reading": "さらいねん",
+  "meaning": "năm tới nữa (2 năm sau)"
+ },
+ {
+  "word": "一昨年",
+  "reading": "おととし",
+  "meaning": "năm kia"
+ },
+ {
+  "word": "毎週",
+  "reading": "まいしゅう",
+  "meaning": "mỗi tuần, hàng tuần"
+ },
+ {
+  "word": "毎月",
+  "reading": "まいつき",
+  "meaning": "mỗi tháng, hàng tháng"
+ },
+ {
+  "word": "毎年",
+  "reading": "まいとし",
+  "meaning": "mỗi năm, hàng năm"
+ },
+ {
+  "word": "平日",
+  "reading": "へいじつ",
+  "meaning": "ngày thường (chỉ thứ Hai~ thứ Sáu)"
+ },
+ {
+  "word": "最初",
+  "reading": "さいしょ",
+  "meaning": "trước tiên, lúc đầu"
+ },
+ {
+  "word": "最中",
+  "reading": "さいちゅう",
+  "meaning": "giữa chừng, trong lúc"
+ },
+ {
+  "word": "最後",
+  "reading": "さいご",
+  "meaning": "cuối cùng"
+ },
+ {
+  "word": "先に",
+  "reading": "さきに",
+  "meaning": "(làm gì đó) trước"
+ },
+ {
+  "word": "夫",
+  "reading": "おっと",
+  "meaning": "người chồng, chồng tôi"
+ },
+ {
+  "word": "妻",
+  "reading": "つま",
+  "meaning": "người vợ, vợ tôi"
+ },
+ {
+  "word": "両親",
+  "reading": "りょうしん",
+  "meaning": "cha mẹ"
+ },
+ {
+  "word": "息子",
+  "reading": "むすこ",
+  "meaning": "con trai"
+ },
+ {
+  "word": "娘",
+  "reading": "むすめ",
+  "meaning": "con gái"
+ },
+ {
+  "word": "お子さん",
+  "reading": "おこさん",
+  "meaning": "con (kính ngữ)"
+ },
+ {
+  "word": "祖父",
+  "reading": "そふ",
+  "meaning": "ông tôi"
+ },
+ {
+  "word": "祖母",
+  "reading": "そぼ",
+  "meaning": "bà tôi"
+ },
+ {
+  "word": "孫",
+  "reading": "まご",
+  "meaning": "cháu"
+ },
+ {
+  "word": "叔父",
+  "reading": "おじ",
+  "meaning": "bác tôi, chú tôi, cậu tôi"
+ },
+ {
+  "word": "叔母",
+  "reading": "おば",
+  "meaning": "bác tôi, cô tôi, dì tôi"
+ },
+ {
+  "word": "親戚",
+  "reading": "しんせき",
+  "meaning": "bà con, họ hàng"
+ },
+ {
+  "word": "ペット",
+  "reading": "ペット",
+  "meaning": "thú cưng, vật nuôi"
+ },
+ {
+  "word": "似る",
+  "reading": "にる",
+  "meaning": "giống nhau, tương tự nhau"
+ },
+ {
+  "word": "叱る",
+  "reading": "しかる",
+  "meaning": "la, mắng, rầy"
+ },
+ {
+  "word": "褒める",
+  "reading": "ほめる",
+  "meaning": "khen, khen ngợi"
+ },
+ {
+  "word": "飼う",
+  "reading": "かう",
+  "meaning": "nuôi (thú)"
+ },
+ {
+  "word": "アパート",
+  "reading": "アパート",
+  "meaning": "phòng trọ, căn hộ chung cư"
+ },
+ {
+  "word": "マンション",
+  "reading": "マンション",
+  "meaning": "chung cư cao tầng, căn hộ chung cư"
+ },
+ {
+  "word": "家賃",
+  "reading": "やちん",
+  "meaning": "tiền nhà"
+ },
+ {
+  "word": "管理人",
+  "reading": "かんりにん",
+  "meaning": "người quản lý"
+ },
+ {
+  "word": "住所",
+  "reading": "じゅうしょ",
+  "meaning": "địa chỉ"
+ },
+ {
+  "word": "建てる",
+  "reading": "たてる",
+  "meaning": "xây, xây dựng"
+ },
+ {
+  "word": "建つ",
+  "reading": "たつ",
+  "meaning": "được xây, được dựng lên"
+ },
+ {
+  "word": "立てる",
+  "reading": "たてる",
+  "meaning": "dựng, để đứng"
+ },
+ {
+  "word": "立つ",
+  "reading": "たつ",
+  "meaning": "đứng"
+ },
+ {
+  "word": "引っ越し",
+  "reading": "ひっこし",
+  "meaning": "việc dọn nhà, chuyển chỗ ở"
+ },
+ {
+  "word": "移す",
+  "reading": "うつす",
+  "meaning": "chuyển sang"
+ },
+ {
+  "word": "移る",
+  "reading": "うつる",
+  "meaning": "được chuyển sang"
+ },
+ {
+  "word": "自宅",
+  "reading": "じたく",
+  "meaning": "nhà riêng"
+ },
+ {
+  "word": "お宅",
+  "reading": "おたく",
+  "meaning": "nhà riêng (kính ngữ)"
+ },
+ {
+  "word": "訪問",
+  "reading": "ほうもん",
+  "meaning": "sự thăm viếng, chuyến viếng thăm"
+ },
+ {
+  "word": "招待",
+  "reading": "しょうたい",
+  "meaning": "lời mời, sự chiêu đãi"
+ },
+ {
+  "word": "近所",
+  "reading": "きんじょ",
+  "meaning": "hàng xóm, láng giềng, gần nhà"
+ },
+ {
+  "word": "周り",
+  "reading": "まわり",
+  "meaning": "chung quanh"
+ },
+ {
+  "word": "玄関",
+  "reading": "げんかん",
+  "meaning": "lối vào nhà"
+ },
+ {
+  "word": "入り口",
+  "reading": "いりぐち",
+  "meaning": "cửa vào"
+ },
+ {
+  "word": "鍵を掛ける",
+  "reading": "かぎをかける",
+  "meaning": "khóa (cửa)"
+ },
+ {
+  "word": "鍵が掛かる",
+  "reading": "かぎがかかる",
+  "meaning": "(cửa) khóa"
+ },
+ {
+  "word": "壁",
+  "reading": "かべ",
+  "meaning": "tường"
+ },
+ {
+  "word": "廊下",
+  "reading": "ろうか",
+  "meaning": "hành lang"
+ },
+ {
+  "word": "台所",
+  "reading": "だいどころ",
+  "meaning": "nhà bếp, phòng bếp"
+ },
+ {
+  "word": "水道",
+  "reading": "すいどう",
+  "meaning": "nước máy, hệ thống nước máy"
+ },
+ {
+  "word": "ガス",
+  "reading": "ガス",
+  "meaning": "ga"
+ },
+ {
+  "word": "和室",
+  "reading": "わしつ",
+  "meaning": "phòng kiểu Nhật"
+ },
+ {
+  "word": "畳",
+  "reading": "たたみ",
+  "meaning": "chiếu"
+ },
+ {
+  "word": "押し入れ",
+  "reading": "おしいれ",
+  "meaning": "tủ âm tường"
+ },
+ {
+  "word": "布団",
+  "reading": "ふとん",
+  "meaning": "nệm, chăn đắp"
+ },
+ {
+  "word": "ガラス",
+  "reading": "ガラス",
+  "meaning": "kính"
+ },
+ {
+  "word": "カーテン",
+  "reading": "カーテン",
+  "meaning": "màn cửa"
+ },
+ {
+  "word": "隅",
+  "reading": "すみ",
+  "meaning": "góc"
+ },
+ {
+  "word": "家具",
+  "reading": "かぐ",
+  "meaning": "gia dụng"
+ },
+ {
+  "word": "組み立てる",
+  "reading": "くみたてる",
+  "meaning": "lắp ráp"
+ },
+ {
+  "word": "引き出し",
+  "reading": "ひきだし",
+  "meaning": "ngăn kéo"
+ },
+ {
+  "word": "片付ける",
+  "reading": "かたづける",
+  "meaning": "dọn dẹp"
+ },
+ {
+  "word": "片付く",
+  "reading": "かたづく",
+  "meaning": "được dọn dẹp, ngăn nắp"
+ },
+ {
+  "word": "整理",
+  "reading": "せいり",
+  "meaning": "sự sắp xếp"
+ },
+ {
+  "word": "動かす",
+  "reading": "うごかす",
+  "meaning": "dịch chuyển, di chuyển"
+ },
+ {
+  "word": "動く",
+  "reading": "うごく",
+  "meaning": "chuyển động, hoạt động"
+ },
+ {
+  "word": "花瓶",
+  "reading": "かびん",
+  "meaning": "bình hoa"
+ },
+ {
+  "word": "カレンダー",
+  "reading": "カレンダー",
+  "meaning": "lịch"
+ },
+ {
+  "word": "ポスター",
+  "reading": "ポスター",
+  "meaning": "áp phích"
+ },
+ {
+  "word": "飾る",
+  "reading": "かざる",
+  "meaning": "trang hoàng, trang trí"
+ },
+ {
+  "word": "貼る",
+  "reading": "はる",
+  "meaning": "dán"
+ },
+ {
+  "word": "絵を掛ける",
+  "reading": "えをかける",
+  "meaning": "treo (tranh)"
+ },
+ {
+  "word": "カレンダーが掛かる",
+  "reading": "カレンダーがかかる",
+  "meaning": "(lịch) được treo, có treo"
+ },
+ {
+  "word": "椅子に掛ける",
+  "reading": "いすにかける",
+  "meaning": "ngồi (xuống ghế)"
+ },
+ {
+  "word": "暖房",
+  "reading": "だんぼう",
+  "meaning": "máy sưởi"
+ },
+ {
+  "word": "上げる",
+  "reading": "あげる",
+  "meaning": "nâng lên, tăng lên"
+ },
+ {
+  "word": "電源",
+  "reading": "でんげん",
+  "meaning": "ổ cắm điện"
+ },
+ {
+  "word": "電気を点ける",
+  "reading": "でんきをつける",
+  "meaning": "bật (đèn), mở (đèn)"
+ },
+ {
+  "word": "テレビが点く",
+  "reading": "テレビがつく",
+  "meaning": "(tivi) mở, bật"
+ },
+ {
+  "word": "消す",
+  "reading": "けす",
+  "meaning": "tắt (cái gì đó)"
+ },
+ {
+  "word": "消える",
+  "reading": "きえる",
+  "meaning": "(cái gì đó) tắt"
+ },
+ {
+  "word": "起きる",
+  "reading": "おきる",
+  "meaning": "thức dậy"
+ },
+ {
+  "word": "起こす",
+  "reading": "おこす",
+  "meaning": "đánh thức"
+ },
+ {
+  "word": "早起き",
+  "reading": "はやおき",
+  "meaning": "việc dậy sớm"
+ },
+ {
+  "word": "寝坊",
+  "reading": "ねぼう",
+  "meaning": "việc ngủ nướng, ngủ dậy trễ"
+ },
+ {
+  "word": "磨く",
+  "reading": "みがく",
+  "meaning": "đánh, chải"
+ },
+ {
+  "word": "ケータイ",
+  "reading": "ケータイ",
+  "meaning": "điện thoại di động"
+ },
+ {
+  "word": "鳴る",
+  "reading": "なる",
+  "meaning": "reo, kêu, reng"
+ },
+ {
+  "word": "ごみ",
+  "reading": "ごみ",
+  "meaning": "rác"
+ },
+ {
+  "word": "瓶",
+  "reading": "びん",
+  "meaning": "bình, chai (thủy tinh)"
+ },
+ {
+  "word": "カン",
+  "reading": "カン",
+  "meaning": "vỏ lon, vỏ đồ hộp"
+ },
+ {
+  "word": "ペットボトル",
+  "reading": "ペットボトル",
+  "meaning": "chai nhựa"
+ },
+ {
+  "word": "リサイクル",
+  "reading": "リサイクル",
+  "meaning": "tái sử dụng, tái chế"
+ },
+ {
+  "word": "出す",
+  "reading": "だす",
+  "meaning": "đổ (rác)"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "meaning": "ra khỏi, rời đi, xuất phát, xuất hiện"
+ },
+ {
+  "word": "燃える",
+  "reading": "もえる",
+  "meaning": "đốt được"
+ },
+ {
+  "word": "石鹸",
+  "reading": "せっけん",
+  "meaning": "xà bông, xà phòng"
+ },
+ {
+  "word": "シャンプー",
+  "reading": "シャンプー",
+  "meaning": "dầu gội đầu"
+ },
+ {
+  "word": "洗濯機",
+  "reading": "せんたくき",
+  "meaning": "máy giặt"
+ },
+ {
+  "word": "洗濯物",
+  "reading": "せんたくもの",
+  "meaning": "đồ giặt"
+ },
+ {
+  "word": "クリーニング",
+  "reading": "クリーニング",
+  "meaning": "tiệm giặt ủi"
+ },
+ {
+  "word": "タオル",
+  "reading": "タオル",
+  "meaning": "khăn"
+ },
+ {
+  "word": "乾かす",
+  "reading": "かわかす",
+  "meaning": "phơi, hong, làm cho khô"
+ },
+ {
+  "word": "餌",
+  "reading": "えさ",
+  "meaning": "mồi, thức ăn cho vật nuôi"
+ },
+ {
+  "word": "世話",
+  "reading": "せわ",
+  "meaning": "chăm sóc"
+ },
+ {
+  "word": "留守",
+  "reading": "るす",
+  "meaning": "sự vắng nhà"
+ },
+ {
+  "word": "宅配便",
+  "reading": "たくはいびん",
+  "meaning": "bưu phẩm, chuyển phát"
+ },
+ {
+  "word": "届く",
+  "reading": "とどく",
+  "meaning": "được gửi đến, đến nơi"
+ },
+ {
+  "word": "届ける",
+  "reading": "とどける",
+  "meaning": "đem đến, phát (hàng hóa)"
+ },
+ {
+  "word": "日記",
+  "reading": "にっき",
+  "meaning": "nhật ký"
+ },
+ {
+  "word": "眠る",
+  "reading": "ねむる",
+  "meaning": "ngủ"
+ },
+ {
+  "word": "生活",
+  "reading": "せいかつ",
+  "meaning": "sinh hoạt, cuộc sống"
+ },
+ {
+  "word": "暮らす",
+  "reading": "くらす",
+  "meaning": "sống, sinh sống"
+ },
+ {
+  "word": "習慣",
+  "reading": "しゅうかん",
+  "meaning": "thói quen"
+ }
+]

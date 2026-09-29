@@ -1,0 +1,572 @@
+[
+ {
+  "word": "家",
+  "reading": "いえ",
+  "meaning": "nhà"
+ },
+ {
+  "word": "部屋",
+  "reading": "へや",
+  "meaning": "phòng"
+ },
+ {
+  "word": "窓",
+  "reading": "まど",
+  "meaning": "cửa sổ"
+ },
+ {
+  "word": "ドア",
+  "reading": "ドア",
+  "meaning": "cửa"
+ },
+ {
+  "word": "開ける",
+  "reading": "あける",
+  "meaning": "mở"
+ },
+ {
+  "word": "閉める",
+  "reading": "しめる",
+  "meaning": "đóng"
+ },
+ {
+  "word": "鍵",
+  "reading": "かぎ",
+  "meaning": "chìa khóa"
+ },
+ {
+  "word": "ベッド",
+  "reading": "ベッド",
+  "meaning": "giường"
+ },
+ {
+  "word": "ダイニングキッチン",
+  "reading": "ダイニングキッチン",
+  "meaning": "phòng ăn và bếp"
+ },
+ {
+  "word": "和室",
+  "reading": "わしつ",
+  "meaning": "phòng kiểu Nhật"
+ },
+ {
+  "word": "トイレ",
+  "reading": "トイレ",
+  "meaning": "nhà vệ sinh"
+ },
+ {
+  "word": "布団",
+  "reading": "ふとん",
+  "meaning": "mền, chăn"
+ },
+ {
+  "word": "テーブル",
+  "reading": "テーブル",
+  "meaning": "bàn (ăn)"
+ },
+ {
+  "word": "机",
+  "reading": "つくえ",
+  "meaning": "bàn (học, làm việc)"
+ },
+ {
+  "word": "椅子",
+  "reading": "いす",
+  "meaning": "ghế"
+ },
+ {
+  "word": "座る",
+  "reading": "すわる",
+  "meaning": "ngồi"
+ },
+ {
+  "word": "立つ",
+  "reading": "たつ",
+  "meaning": "đứng"
+ },
+ {
+  "word": "洗濯",
+  "reading": "せんたく",
+  "meaning": "giặt giũ"
+ },
+ {
+  "word": "掃除",
+  "reading": "そうじ",
+  "meaning": "quét dọn"
+ },
+ {
+  "word": "ごみ",
+  "reading": "ごみ",
+  "meaning": "rác"
+ },
+ {
+  "word": "捨てる",
+  "reading": "すてる",
+  "meaning": "vứt"
+ },
+ {
+  "word": "置く",
+  "reading": "おく",
+  "meaning": "đặt, để"
+ },
+ {
+  "word": "住む",
+  "reading": "すむ",
+  "meaning": "sống"
+ },
+ {
+  "word": "住所",
+  "reading": "じゅうしょ",
+  "meaning": "địa chỉ"
+ },
+ {
+  "word": "冷蔵庫",
+  "reading": "れいぞうこ",
+  "meaning": "tủ lạnh"
+ },
+ {
+  "word": "洗濯機",
+  "reading": "せんたくき",
+  "meaning": "máy giặt"
+ },
+ {
+  "word": "掃除機",
+  "reading": "そうじき",
+  "meaning": "máy hút bụi"
+ },
+ {
+  "word": "建物",
+  "reading": "たてもの",
+  "meaning": "tòa nhà "
+ },
+ {
+  "word": "アパート",
+  "reading": "アパート",
+  "meaning": "chung cư"
+ },
+ {
+  "word": "寮",
+  "reading": "りょう",
+  "meaning": "ký túc xá"
+ },
+ {
+  "word": "ビル",
+  "reading": "ビル",
+  "meaning": "tòa nhà"
+ },
+ {
+  "word": "階段",
+  "reading": "かいだん",
+  "meaning": "cầu thang"
+ },
+ {
+  "word": "エスカレーター",
+  "reading": "エスカレーター",
+  "meaning": "thang cuốn"
+ },
+ {
+  "word": "エレベーター",
+  "reading": "エレベーター",
+  "meaning": "thang máy"
+ },
+ {
+  "word": "何階",
+  "reading": "なんがい",
+  "meaning": "tầng mấy"
+ },
+ {
+  "word": "1階",
+  "reading": "いっかい",
+  "meaning": "tầng 1, tầng trệt"
+ },
+ {
+  "word": "2階",
+  "reading": "にかい",
+  "meaning": "tầng 2"
+ },
+ {
+  "word": "3階",
+  "reading": "さんがい",
+  "meaning": "tầng 3"
+ },
+ {
+  "word": "4階",
+  "reading": "よんかい",
+  "meaning": "tầng 4"
+ },
+ {
+  "word": "5階",
+  "reading": "ごかい",
+  "meaning": "tầng 5"
+ },
+ {
+  "word": "6階",
+  "reading": "ろっかい",
+  "meaning": "tầng 6"
+ },
+ {
+  "word": "7階",
+  "reading": "ななかい",
+  "meaning": "tầng 7"
+ },
+ {
+  "word": "8階",
+  "reading": "はっかい",
+  "meaning": "tầng 8"
+ },
+ {
+  "word": "9階",
+  "reading": "きゅうかい",
+  "meaning": "tầng 9"
+ },
+ {
+  "word": "10階",
+  "reading": "じゅっかい",
+  "meaning": "tầng 10"
+ },
+ {
+  "word": "地下",
+  "reading": "ちか",
+  "meaning": "tầng hầm"
+ },
+ {
+  "word": "引っ越し",
+  "reading": "ひっこし",
+  "meaning": "chuyển nhà, chuyển chỗ ở"
+ },
+ {
+  "word": "転勤する",
+  "reading": "てんきんする",
+  "meaning": "chuyển sỡ làm"
+ },
+ {
+  "word": "家賃",
+  "reading": "やちん",
+  "meaning": "tiền nhà"
+ },
+ {
+  "word": "所",
+  "reading": "ところ",
+  "meaning": "nơi, chỗ"
+ },
+ {
+  "word": "田舎",
+  "reading": "いなか",
+  "meaning": "quê, vùng quê"
+ },
+ {
+  "word": "静かな",
+  "reading": "しずかな",
+  "meaning": "yên tĩnh"
+ },
+ {
+  "word": "にぎやかな",
+  "reading": "にぎやかな",
+  "meaning": "nhộn nhịp"
+ },
+ {
+  "word": "便利な",
+  "reading": "べんりな",
+  "meaning": "tiện lợi"
+ },
+ {
+  "word": "不便な",
+  "reading": "ふべんな",
+  "meaning": "bất tiện"
+ },
+ {
+  "word": "交通",
+  "reading": "こうつう",
+  "meaning": "giao thông"
+ },
+ {
+  "word": "庭",
+  "reading": "にわ",
+  "meaning": "vườn"
+ },
+ {
+  "word": "木",
+  "reading": "き",
+  "meaning": "cây"
+ },
+ {
+  "word": "緑",
+  "reading": "みどり",
+  "meaning": "màu xanh, cây xanh"
+ },
+ {
+  "word": "若い",
+  "reading": "わかい",
+  "meaning": "trẻ"
+ },
+ {
+  "word": "年を取る",
+  "reading": "としをとる",
+  "meaning": "già"
+ },
+ {
+  "word": "市役所",
+  "reading": "しやくしょ",
+  "meaning": "văn phòng ủy ban thành phố"
+ },
+ {
+  "word": "広い",
+  "reading": "ひろい",
+  "meaning": "rộng"
+ },
+ {
+  "word": "狭い",
+  "reading": "せまい",
+  "meaning": "chật, hẹp"
+ },
+ {
+  "word": "新しい",
+  "reading": "あたらしい",
+  "meaning": "mới"
+ },
+ {
+  "word": "古い",
+  "reading": "ふるい",
+  "meaning": "cũ, cổ"
+ },
+ {
+  "word": "いらっしゃい",
+  "reading": "いらっしゃい",
+  "meaning": "Xin mời."
+ },
+ {
+  "word": "どうぞおあがりください",
+  "reading": "どうぞおあがりください",
+  "meaning": "Xin mời vào."
+ },
+ {
+  "word": "失礼します",
+  "reading": "しつれいします",
+  "meaning": "Xin phép thất lễ."
+ },
+ {
+  "word": "そろそろ失礼します",
+  "reading": "そろそろしつれいします",
+  "meaning": "Em (Tôi) xin phép về đây."
+ },
+ {
+  "word": "またいらっしゃってください",
+  "reading": "またいらっしゃってください",
+  "meaning": "Lại đến chơi nữa nhé."
+ },
+ {
+  "word": "夫",
+  "reading": "おっと",
+  "meaning": "chồng (tôi), người chồng"
+ },
+ {
+  "word": "妻",
+  "reading": "つま",
+  "meaning": "vợ (tôi), người vợ"
+ },
+ {
+  "word": "ご主人",
+  "reading": "ごしゅじん",
+  "meaning": "chồng (kính ngữ)"
+ },
+ {
+  "word": "奥さん",
+  "reading": "おくさん",
+  "meaning": "vợ (kính ngữ)"
+ },
+ {
+  "word": "紹介",
+  "reading": "しょうかい",
+  "meaning": "giới thiệu"
+ },
+ {
+  "word": "これからお世話になります",
+  "reading": "これからおせわになります",
+  "meaning": "Từ nay xin được giúp đỡ."
+ },
+ {
+  "word": "いらっしゃいます",
+  "reading": "いらっしゃいます",
+  "meaning": "ở (kính ngữ)"
+ },
+ {
+  "word": "独身",
+  "reading": "どくしん",
+  "meaning": "độc thân"
+ },
+ {
+  "word": "結婚",
+  "reading": "けっこん",
+  "meaning": "kết hôn"
+ },
+ {
+  "word": "僕",
+  "reading": "ぼく",
+  "meaning": "tôi"
+ },
+ {
+  "word": "ありがとうございました",
+  "reading": "ありがとうございました",
+  "meaning": "Xin cám ơn."
+ },
+ {
+  "word": "いろいろ",
+  "reading": "いろいろ",
+  "meaning": "nhiều"
+ },
+ {
+  "word": "お世話になりました",
+  "reading": "おせわになりました",
+  "meaning": "Đã được anh / chị giúp đỡ nhiều."
+ },
+ {
+  "word": "気をつけて",
+  "reading": "きをつけて",
+  "meaning": "cẩn thận"
+ },
+ {
+  "word": "危ない",
+  "reading": "あぶない",
+  "meaning": "nguy hiểm"
+ },
+ {
+  "word": "週末",
+  "reading": "しゅうまつ",
+  "meaning": "cuối tuần"
+ },
+ {
+  "word": "初め",
+  "reading": "はじめ",
+  "meaning": "thời gian đầu, khoảng đầu"
+ },
+ {
+  "word": "終わり",
+  "reading": "おわり",
+  "meaning": "kết thúc, khoảng cuối"
+ },
+ {
+  "word": "一昨日",
+  "reading": "おととい",
+  "meaning": "hôm kia"
+ },
+ {
+  "word": "明後日",
+  "reading": "あさって",
+  "meaning": "ngày mốt"
+ },
+ {
+  "word": "先週",
+  "reading": "せんしゅう",
+  "meaning": "tuần trước"
+ },
+ {
+  "word": "今週",
+  "reading": "こんしゅう",
+  "meaning": "tuần này"
+ },
+ {
+  "word": "来週",
+  "reading": "らいしゅう",
+  "meaning": "tuần tới"
+ },
+ {
+  "word": "先月",
+  "reading": "せんげつ",
+  "meaning": "tháng trước"
+ },
+ {
+  "word": "今月",
+  "reading": "こんげつ",
+  "meaning": "tháng này"
+ },
+ {
+  "word": "来月",
+  "reading": "らいげつ",
+  "meaning": "tháng tới"
+ },
+ {
+  "word": "電気",
+  "reading": "でんき",
+  "meaning": "đèn, điện"
+ },
+ {
+  "word": "つける",
+  "reading": "つける",
+  "meaning": "bật, mở"
+ },
+ {
+  "word": "消す",
+  "reading": "けす",
+  "meaning": "tắt, đóng"
+ },
+ {
+  "word": "明るい",
+  "reading": "あかるい",
+  "meaning": "sáng, sáng sủa, tươi sáng"
+ },
+ {
+  "word": "暗い",
+  "reading": "くらい",
+  "meaning": "tối tăm"
+ },
+ {
+  "word": "エアコン",
+  "reading": "エアコン",
+  "meaning": "máy điều hòa"
+ },
+ {
+  "word": "ビデオ",
+  "reading": "ビデオ",
+  "meaning": "video"
+ },
+ {
+  "word": "スイッチ",
+  "reading": "スイッチ",
+  "meaning": "công tắc, nút bấm"
+ },
+ {
+  "word": "回す",
+  "reading": "まわす",
+  "meaning": "quay"
+ },
+ {
+  "word": "引く",
+  "reading": "ひく",
+  "meaning": "kéo"
+ },
+ {
+  "word": "動く",
+  "reading": "うごく",
+  "meaning": "chuyển động"
+ },
+ {
+  "word": "音",
+  "reading": "おと",
+  "meaning": "âm thanh, tiếng động"
+ },
+ {
+  "word": "故障",
+  "reading": "こしょう",
+  "meaning": "hư, hỏng"
+ },
+ {
+  "word": "修理",
+  "reading": "しゅうり",
+  "meaning": "sửa chữa"
+ },
+ {
+  "word": "呼ぶ",
+  "reading": "よぶ",
+  "meaning": "gọi"
+ },
+ {
+  "word": "直す",
+  "reading": "なおす",
+  "meaning": "sửa, sửa chữa, chỉnh sửa"
+ },
+ {
+  "word": "製品",
+  "reading": "せいひん",
+  "meaning": "sản phẩm"
+ }
+]

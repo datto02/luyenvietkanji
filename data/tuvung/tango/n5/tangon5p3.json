@@ -1,0 +1,647 @@
+[
+ {
+  "word": "会社",
+  "reading": "かいしゃ",
+  "meaning": "công ty"
+ },
+ {
+  "word": "銀行",
+  "reading": "ぎんこう",
+  "meaning": "ngân hàng"
+ },
+ {
+  "word": "働く",
+  "reading": "はたらく",
+  "meaning": "làm việc, lao động"
+ },
+ {
+  "word": "休む",
+  "reading": "やすむ",
+  "meaning": "nghỉ, nghỉ ngơi"
+ },
+ {
+  "word": "休み",
+  "reading": "やすみ",
+  "meaning": "ngày nghỉ"
+ },
+ {
+  "word": "昼休み",
+  "reading": "ひるやすみ",
+  "meaning": "nghỉ trưa"
+ },
+ {
+  "word": "暇な",
+  "reading": "ひまな",
+  "meaning": "rảnh rỗi"
+ },
+ {
+  "word": "忙しい",
+  "reading": "いそがしい",
+  "meaning": "bận rộn"
+ },
+ {
+  "word": "残業",
+  "reading": "ざんぎょう",
+  "meaning": "làm tăng ca, tăng giờ"
+ },
+ {
+  "word": "出張",
+  "reading": "しゅっちょう",
+  "meaning": "công tác"
+ },
+ {
+  "word": "事務所",
+  "reading": "じむしょ",
+  "meaning": "văn phòng"
+ },
+ {
+  "word": "工場",
+  "reading": "こうじょう",
+  "meaning": "nhà máy"
+ },
+ {
+  "word": "受付",
+  "reading": "うけつけ",
+  "meaning": "tiếp tân, lễ tân"
+ },
+ {
+  "word": "会議",
+  "reading": "かいぎ",
+  "meaning": "họp, hội nghị"
+ },
+ {
+  "word": "会議室",
+  "reading": "かいぎしつ",
+  "meaning": "phòng họp"
+ },
+ {
+  "word": "電話",
+  "reading": "でんわ",
+  "meaning": "điện thoại"
+ },
+ {
+  "word": "電話を掛ける",
+  "reading": "でんわをかける",
+  "meaning": "gọi (điện thoại)"
+ },
+ {
+  "word": "もしもし",
+  "reading": "もしもし",
+  "meaning": "alô"
+ },
+ {
+  "word": "電話番号",
+  "reading": "でんわばんごう",
+  "meaning": "số điện thoại"
+ },
+ {
+  "word": "知る",
+  "reading": "しる",
+  "meaning": "biết"
+ },
+ {
+  "word": "何番",
+  "reading": "なんばん",
+  "meaning": "số mấy?"
+ },
+ {
+  "word": "教える",
+  "reading": "おしえる",
+  "meaning": "chỉ, dạy, cho biết"
+ },
+ {
+  "word": "手伝う",
+  "reading": "てつだう",
+  "meaning": "giúp đỡ"
+ },
+ {
+  "word": "作る",
+  "reading": "つくる",
+  "meaning": "làm, tạo ra, sản xuất"
+ },
+ {
+  "word": "役に立つ",
+  "reading": "やくにたつ",
+  "meaning": "có ích"
+ },
+ {
+  "word": "仕事",
+  "reading": "しごと",
+  "meaning": "công việc"
+ },
+ {
+  "word": "会社員",
+  "reading": "かいしゃいん",
+  "meaning": "nhân viên công ty"
+ },
+ {
+  "word": "銀行員",
+  "reading": "ぎんこういん",
+  "meaning": "nhân viên ngân hàng"
+ },
+ {
+  "word": "医者",
+  "reading": "いしゃ",
+  "meaning": "bác sỹ"
+ },
+ {
+  "word": "看護師",
+  "reading": "かんごし",
+  "meaning": "y tá"
+ },
+ {
+  "word": "介護士",
+  "reading": "かいごし",
+  "meaning": "điều dưỡng viên"
+ },
+ {
+  "word": "警察官",
+  "reading": "けいさつかん",
+  "meaning": "cảnh sát"
+ },
+ {
+  "word": "駅員",
+  "reading": "えきいん",
+  "meaning": "nhân viên nhà ga"
+ },
+ {
+  "word": "運転手",
+  "reading": "うんてんしゅ",
+  "meaning": "tài xế"
+ },
+ {
+  "word": "社長",
+  "reading": "しゃちょう",
+  "meaning": "giám đốc"
+ },
+ {
+  "word": "部長",
+  "reading": "ぶちょう",
+  "meaning": "trưởng phòng"
+ },
+ {
+  "word": "課長",
+  "reading": "かちょう",
+  "meaning": "trưởng ban"
+ },
+ {
+  "word": "社員",
+  "reading": "しゃいん",
+  "meaning": "nhân viên"
+ },
+ {
+  "word": "これ",
+  "reading": "これ",
+  "meaning": "cái này, đây"
+ },
+ {
+  "word": "それ",
+  "reading": "それ",
+  "meaning": "cái đó, đó"
+ },
+ {
+  "word": "あれ",
+  "reading": "あれ",
+  "meaning": "cái kia, kia"
+ },
+ {
+  "word": "どれ",
+  "reading": "どれ",
+  "meaning": "cái nào"
+ },
+ {
+  "word": "この",
+  "reading": "この",
+  "meaning": "~ này"
+ },
+ {
+  "word": "その",
+  "reading": "その",
+  "meaning": "~ đó"
+ },
+ {
+  "word": "あの",
+  "reading": "あの",
+  "meaning": "~ kia"
+ },
+ {
+  "word": "どの",
+  "reading": "どの",
+  "meaning": "~ nào?"
+ },
+ {
+  "word": "何",
+  "reading": "なん",
+  "meaning": "cái gì?"
+ },
+ {
+  "word": "名刺",
+  "reading": "めいし",
+  "meaning": "danh thiếp"
+ },
+ {
+  "word": "ケータイ",
+  "reading": "ケータイ",
+  "meaning": "điện thoại di động (cầm tay)"
+ },
+ {
+  "word": "スマホ",
+  "reading": "スマホ",
+  "meaning": "điện thoại thông minh (nói tắt)"
+ },
+ {
+  "word": "電池",
+  "reading": "でんち",
+  "meaning": "pin"
+ },
+ {
+  "word": "ノート",
+  "reading": "ノート",
+  "meaning": "quyển vở, quyển tập"
+ },
+ {
+  "word": "紙",
+  "reading": "かみ",
+  "meaning": "tờ giấy, giấy"
+ },
+ {
+  "word": "手帳",
+  "reading": "てちょう",
+  "meaning": "sổ tay"
+ },
+ {
+  "word": "ボールペン",
+  "reading": "ボールペン",
+  "meaning": "bút bi"
+ },
+ {
+  "word": "シャープペンシル",
+  "reading": "シャープペンシル",
+  "meaning": "bút chì bấm"
+ },
+ {
+  "word": "鉛筆",
+  "reading": "えんぴつ",
+  "meaning": "bút chì"
+ },
+ {
+  "word": "消しゴム",
+  "reading": "けしゴム",
+  "meaning": "cục gôm, tẩy"
+ },
+ {
+  "word": "パンチ",
+  "reading": "パンチ",
+  "meaning": "đồ bấm lỗ"
+ },
+ {
+  "word": "ホッチキス",
+  "reading": "ホッチキス",
+  "meaning": "đồ bấm"
+ },
+ {
+  "word": "セロテープ",
+  "reading": "セロテープ",
+  "meaning": "băng keo trong"
+ },
+ {
+  "word": "はさみ",
+  "reading": "はさみ",
+  "meaning": "cái kéo, cây kéo"
+ },
+ {
+  "word": "箱",
+  "reading": "はこ",
+  "meaning": "cái hộp"
+ },
+ {
+  "word": "コンピューター",
+  "reading": "コンピューター",
+  "meaning": "máy tính"
+ },
+ {
+  "word": "パソコン",
+  "reading": "パソコン",
+  "meaning": "máy tính (cá nhân)"
+ },
+ {
+  "word": "インターネット",
+  "reading": "インターネット",
+  "meaning": "internet"
+ },
+ {
+  "word": "資料",
+  "reading": "しりょう",
+  "meaning": "tài liệu"
+ },
+ {
+  "word": "切る",
+  "reading": "きる",
+  "meaning": "cắt"
+ },
+ {
+  "word": "使う",
+  "reading": "つかう",
+  "meaning": "dùng, sử dụng"
+ },
+ {
+  "word": "何個",
+  "reading": "なんこ",
+  "meaning": "mấy (cái, cục, trái, chiếc v.v.)"
+ },
+ {
+  "word": "1個",
+  "reading": "いっこ",
+  "meaning": "1 cái"
+ },
+ {
+  "word": "2個",
+  "reading": "にこ",
+  "meaning": "2 cái"
+ },
+ {
+  "word": "3個",
+  "reading": "さんこ",
+  "meaning": "3 cái"
+ },
+ {
+  "word": "4個",
+  "reading": "よんこ",
+  "meaning": "4 cái"
+ },
+ {
+  "word": "5個",
+  "reading": "ごこ",
+  "meaning": "5 cái"
+ },
+ {
+  "word": "6個",
+  "reading": "ろっこ",
+  "meaning": "6 cái"
+ },
+ {
+  "word": "7個",
+  "reading": "ななこ",
+  "meaning": "7 cái"
+ },
+ {
+  "word": "8個",
+  "reading": "はっこ",
+  "meaning": "8 cái"
+ },
+ {
+  "word": "9個",
+  "reading": "きゅうこ",
+  "meaning": "9 cái"
+ },
+ {
+  "word": "10個",
+  "reading": "じゅっこ",
+  "meaning": "10 cái"
+ },
+ {
+  "word": "何台",
+  "reading": "なんだい",
+  "meaning": "mấy cái (đếm máy móc, xe cộ v.v.)"
+ },
+ {
+  "word": "1台",
+  "reading": "いちだい",
+  "meaning": "1 cái (máy móc, xe cộ)"
+ },
+ {
+  "word": "2台",
+  "reading": "にだい",
+  "meaning": "2 cái"
+ },
+ {
+  "word": "3台",
+  "reading": "さんだい",
+  "meaning": "3 cái"
+ },
+ {
+  "word": "4台",
+  "reading": "よんだい",
+  "meaning": "4 cái"
+ },
+ {
+  "word": "5台",
+  "reading": "ごだい",
+  "meaning": "5 cái"
+ },
+ {
+  "word": "6台",
+  "reading": "ろくだい",
+  "meaning": "6 cái"
+ },
+ {
+  "word": "7台",
+  "reading": "ななだい",
+  "meaning": "7 cái"
+ },
+ {
+  "word": "8台",
+  "reading": "はちだい",
+  "meaning": "8 cái"
+ },
+ {
+  "word": "9台",
+  "reading": "きゅうだい",
+  "meaning": "9 cái"
+ },
+ {
+  "word": "10台",
+  "reading": "じゅうだい",
+  "meaning": "10 cái"
+ },
+ {
+  "word": "何時",
+  "reading": "なんじ",
+  "meaning": "mấy giờ"
+ },
+ {
+  "word": "何分",
+  "reading": "なんぷん",
+  "meaning": "mấy phút"
+ },
+ {
+  "word": "1時",
+  "reading": "いちじ",
+  "meaning": "1 giờ"
+ },
+ {
+  "word": "2時",
+  "reading": "にじ",
+  "meaning": "2 giờ"
+ },
+ {
+  "word": "3時",
+  "reading": "さんじ",
+  "meaning": "3 giờ"
+ },
+ {
+  "word": "4時",
+  "reading": "よじ",
+  "meaning": "4 giờ"
+ },
+ {
+  "word": "5時",
+  "reading": "ごじ",
+  "meaning": "5 giờ"
+ },
+ {
+  "word": "6時",
+  "reading": "ろくじ",
+  "meaning": "6 giờ"
+ },
+ {
+  "word": "7時",
+  "reading": "しちじ",
+  "meaning": "7 giờ"
+ },
+ {
+  "word": "8時",
+  "reading": "はちじ",
+  "meaning": "8 giờ"
+ },
+ {
+  "word": "1分",
+  "reading": "いっぷん",
+  "meaning": "1 phút"
+ },
+ {
+  "word": "2分",
+  "reading": "にふん",
+  "meaning": "2 phút"
+ },
+ {
+  "word": "3分",
+  "reading": "さんぷん",
+  "meaning": "3 phút"
+ },
+ {
+  "word": "4分",
+  "reading": "よんぷん",
+  "meaning": "4 phút"
+ },
+ {
+  "word": "5分",
+  "reading": "ごふん",
+  "meaning": "5 phút"
+ },
+ {
+  "word": "6分",
+  "reading": "ろっぷん",
+  "meaning": "6 phút"
+ },
+ {
+  "word": "7分",
+  "reading": "ななふん",
+  "meaning": "7 phút"
+ },
+ {
+  "word": "8分",
+  "reading": "はっぷん",
+  "meaning": "8 phút"
+ },
+ {
+  "word": "9分",
+  "reading": "きゅうふん",
+  "meaning": "9 phút"
+ },
+ {
+  "word": "10分",
+  "reading": "じゅっぷん",
+  "meaning": "10 phút"
+ },
+ {
+  "word": "11分",
+  "reading": "じゅういっぷん",
+  "meaning": "11 phút"
+ },
+ {
+  "word": "12分",
+  "reading": "じゅうにふん",
+  "meaning": "12 phút"
+ },
+ {
+  "word": "15分",
+  "reading": "じゅうごふん",
+  "meaning": "15 phút"
+ },
+ {
+  "word": "20分",
+  "reading": "にじゅっぷん",
+  "meaning": "20 phút"
+ },
+ {
+  "word": "30分",
+  "reading": "さんじゅっぷん",
+  "meaning": "30 phút"
+ },
+ {
+  "word": "40分",
+  "reading": "よんじゅっぷん",
+  "meaning": "40 phút"
+ },
+ {
+  "word": "45分",
+  "reading": "よんじゅうごふん",
+  "meaning": "45 phút"
+ },
+ {
+  "word": "50分",
+  "reading": "ごじゅっぷん",
+  "meaning": "50 phút"
+ },
+ {
+  "word": "半",
+  "reading": "はん",
+  "meaning": "nửa, rưỡi"
+ },
+ {
+  "word": "ごろ",
+  "reading": "ごろ",
+  "meaning": "khoảng ~ (chỉ thời điểm)"
+ },
+ {
+  "word": "午前",
+  "reading": "ごぜん",
+  "meaning": "buổi sáng (tính đến 12 giờ trưa)"
+ },
+ {
+  "word": "午後",
+  "reading": "ごご",
+  "meaning": "buổi chiều tối (tính từ 12 giờ trưa)"
+ },
+ {
+  "word": "今",
+  "reading": "いま",
+  "meaning": "bây giờ"
+ },
+ {
+  "word": "ぐらい",
+  "reading": "ぐらい",
+  "meaning": "khoảng ~ (chỉ khoảng thời gian)"
+ },
+ {
+  "word": "時間",
+  "reading": "じかん",
+  "meaning": "~ tiếng (đồng hồ)"
+ },
+ {
+  "word": "何時間",
+  "reading": "なんじかん",
+  "meaning": "bao nhiêu (mấy) tiếng (đồng hồ)"
+ },
+ {
+  "word": "から",
+  "reading": "から",
+  "meaning": "từ ~"
+ },
+ {
+  "word": "まで",
+  "reading": "まで",
+  "meaning": "đến ~"
+ }
+]

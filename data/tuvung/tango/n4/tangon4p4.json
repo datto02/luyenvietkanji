@@ -1,0 +1,542 @@
+[
+ {
+  "word": "天気予報",
+  "reading": "てんきよほう",
+  "meaning": "dự báo thời tiết"
+ },
+ {
+  "word": "青空",
+  "reading": "あおぞら",
+  "meaning": "bầu trời xanh"
+ },
+ {
+  "word": "晴れる",
+  "reading": "はれる",
+  "meaning": "(trời) nắng"
+ },
+ {
+  "word": "曇り",
+  "reading": "くもり",
+  "meaning": "thời tiết âm u, trời âm u"
+ },
+ {
+  "word": "風",
+  "reading": "かぜ",
+  "meaning": "gió"
+ },
+ {
+  "word": "吹く",
+  "reading": "ふく",
+  "meaning": "thổi"
+ },
+ {
+  "word": "止む",
+  "reading": "やむ",
+  "meaning": "tạnh, ngưng"
+ },
+ {
+  "word": "台風",
+  "reading": "たいふう",
+  "meaning": "bão"
+ },
+ {
+  "word": "雷",
+  "reading": "かみなり",
+  "meaning": "sấm"
+ },
+ {
+  "word": "レインコート",
+  "reading": "レインコート",
+  "meaning": "áo mưa"
+ },
+ {
+  "word": "さす",
+  "reading": "さす",
+  "meaning": "che (dù)"
+ },
+ {
+  "word": "濡れる",
+  "reading": "ぬれる",
+  "meaning": "bị ướt"
+ },
+ {
+  "word": "波",
+  "reading": "なみ",
+  "meaning": "sóng"
+ },
+ {
+  "word": "気温",
+  "reading": "きおん",
+  "meaning": "nhiệt độ (thời tiết)"
+ },
+ {
+  "word": "冷える",
+  "reading": "ひえる",
+  "meaning": "bị lạnh"
+ },
+ {
+  "word": "比べる",
+  "reading": "くらべる",
+  "meaning": "so sánh"
+ },
+ {
+  "word": "地震",
+  "reading": "じしん",
+  "meaning": "động đất"
+ },
+ {
+  "word": "津波",
+  "reading": "つなみ",
+  "meaning": "sóng thần"
+ },
+ {
+  "word": "太陽",
+  "reading": "たいよう",
+  "meaning": "mặt trời"
+ },
+ {
+  "word": "空",
+  "reading": "そら",
+  "meaning": "bầu trời"
+ },
+ {
+  "word": "月",
+  "reading": "つき",
+  "meaning": "mặt trăng"
+ },
+ {
+  "word": "星",
+  "reading": "ほし",
+  "meaning": "ngôi sao"
+ },
+ {
+  "word": "光る",
+  "reading": "ひかる",
+  "meaning": "chiếu sáng"
+ },
+ {
+  "word": "宇宙",
+  "reading": "うちゅう",
+  "meaning": "vũ trụ"
+ },
+ {
+  "word": "空気",
+  "reading": "くうき",
+  "meaning": "không khí"
+ },
+ {
+  "word": "島",
+  "reading": "しま",
+  "meaning": "đảo"
+ },
+ {
+  "word": "海岸",
+  "reading": "かいがん",
+  "meaning": "bờ biển"
+ },
+ {
+  "word": "林",
+  "reading": "はやし",
+  "meaning": "rừng"
+ },
+ {
+  "word": "湖",
+  "reading": "みずうみ",
+  "meaning": "hồ"
+ },
+ {
+  "word": "池",
+  "reading": "いけ",
+  "meaning": "ao"
+ },
+ {
+  "word": "虫",
+  "reading": "むし",
+  "meaning": "sâu, côn trùng"
+ },
+ {
+  "word": "鳥",
+  "reading": "とり",
+  "meaning": "chim"
+ },
+ {
+  "word": "季節",
+  "reading": "きせつ",
+  "meaning": "mùa"
+ },
+ {
+  "word": "紅葉",
+  "reading": "こうよう",
+  "meaning": "lá đỏ"
+ },
+ {
+  "word": "花見",
+  "reading": "はなみ",
+  "meaning": "ngắm hoa"
+ },
+ {
+  "word": "咲く",
+  "reading": "さく",
+  "meaning": "nở"
+ },
+ {
+  "word": "葉",
+  "reading": "は",
+  "meaning": "lá"
+ },
+ {
+  "word": "枝",
+  "reading": "えだ",
+  "meaning": "cành cây"
+ },
+ {
+  "word": "折れる",
+  "reading": "おれる",
+  "meaning": "bị gãy"
+ },
+ {
+  "word": "折る",
+  "reading": "おる",
+  "meaning": "bẻ gãy"
+ },
+ {
+  "word": "植える",
+  "reading": "うえる",
+  "meaning": "trồng"
+ },
+ {
+  "word": "新幹線",
+  "reading": "しんかんせん",
+  "meaning": "tàu shinkansen"
+ },
+ {
+  "word": "急行",
+  "reading": "きゅうこう",
+  "meaning": "tàu tốc hành"
+ },
+ {
+  "word": "やこうバス",
+  "reading": "やこうばす",
+  "meaning": "xe buýt đêm"
+ },
+ {
+  "word": "自動車",
+  "reading": "じどうしゃ",
+  "meaning": "xe hơi, xe 4 bánh các loại"
+ },
+ {
+  "word": "オートバイ",
+  "reading": "オートバイ",
+  "meaning": "xe máy, xe mô-tô"
+ },
+ {
+  "word": "船",
+  "reading": "ふね",
+  "meaning": "tàu, thuyền"
+ },
+ {
+  "word": "交通",
+  "reading": "こうつう",
+  "meaning": "giao thông"
+ },
+ {
+  "word": "降りる",
+  "reading": "おりる",
+  "meaning": "xuống (xe, tàu)"
+ },
+ {
+  "word": "乗りかえる",
+  "reading": "のりかえる",
+  "meaning": "đổi (xe, tàu)"
+ },
+ {
+  "word": "ラッシュ",
+  "reading": "ラッシュ",
+  "meaning": "giờ cao điểm"
+ },
+ {
+  "word": "込む",
+  "reading": "こむ",
+  "meaning": "đông"
+ },
+ {
+  "word": "空く",
+  "reading": "すく",
+  "meaning": "trống, vắng"
+ },
+ {
+  "word": "通る",
+  "reading": "とおる",
+  "meaning": "chạy qua, thông qua, ngang qua"
+ },
+ {
+  "word": "過ぎる",
+  "reading": "すぎる",
+  "meaning": "chạy qua, quá"
+ },
+ {
+  "word": "開く",
+  "reading": "あく",
+  "meaning": "(cửa) mở"
+ },
+ {
+  "word": "開ける",
+  "reading": "あける",
+  "meaning": "mở (cửa)"
+ },
+ {
+  "word": "閉まる",
+  "reading": "しまる",
+  "meaning": "(cửa) đóng"
+ },
+ {
+  "word": "閉める",
+  "reading": "しめる",
+  "meaning": "đóng (cửa)"
+ },
+ {
+  "word": "運転手",
+  "reading": "うんてんしゅ",
+  "meaning": "tài xế"
+ },
+ {
+  "word": "お客さん",
+  "reading": "おきゃくさん",
+  "meaning": "hành khách, khách hàng, người khách"
+ },
+ {
+  "word": "席",
+  "reading": "せき",
+  "meaning": "ghế, chỗ ngồi"
+ },
+ {
+  "word": "大人",
+  "reading": "おとな",
+  "meaning": "người lớn"
+ },
+ {
+  "word": "お年より",
+  "reading": "おとしより",
+  "meaning": "người lớn tuổi, người già"
+ },
+ {
+  "word": "進む",
+  "reading": "すすむ",
+  "meaning": "tiến lên"
+ },
+ {
+  "word": "向かう",
+  "reading": "むかう",
+  "meaning": "hướng đến, đi đến"
+ },
+ {
+  "word": "止める",
+  "reading": "とめる",
+  "meaning": "đậu, dừng (xe)"
+ },
+ {
+  "word": "止まる",
+  "reading": "とまる",
+  "meaning": "(xe) dừng, đậu"
+ },
+ {
+  "word": "運ぶ",
+  "reading": "はこぶ",
+  "meaning": "chuyên chở, vận chuyển, khiêng vác"
+ },
+ {
+  "word": "操作",
+  "reading": "そうさ",
+  "meaning": "việc điều khiển"
+ },
+ {
+  "word": "回す",
+  "reading": "まわす",
+  "meaning": "vặn, xoay"
+ },
+ {
+  "word": "事故",
+  "reading": "じこ",
+  "meaning": "tai nạn"
+ },
+ {
+  "word": "事故に遭う",
+  "reading": "じこにあう",
+  "meaning": "gặp (tai nạn)"
+ },
+ {
+  "word": "ぶつかる",
+  "reading": "ぶつかる",
+  "meaning": "đụng, tông"
+ },
+ {
+  "word": "滑る",
+  "reading": "すべる",
+  "meaning": "trượt"
+ },
+ {
+  "word": "安全",
+  "reading": "あんぜん",
+  "meaning": "sự an toàn (an toàn)"
+ },
+ {
+  "word": "危険",
+  "reading": "きけん",
+  "meaning": "sự nguy hiểm (nguy hiểm)"
+ },
+ {
+  "word": "注意",
+  "reading": "ちゅうい",
+  "meaning": "sự chú ý, lưu ý, nhắc nhở"
+ },
+ {
+  "word": "赤ちゃん",
+  "reading": "あかちゃん",
+  "meaning": "em bé"
+ },
+ {
+  "word": "故障",
+  "reading": "こしょう",
+  "meaning": "sự hư hỏng"
+ },
+ {
+  "word": "途中",
+  "reading": "とちゅう",
+  "meaning": "giữa chừng, đang (trên đường, làm gì đó)"
+ },
+ {
+  "word": "行き",
+  "reading": "いき",
+  "meaning": "lượt đi, vòng đi, chuyến đi"
+ },
+ {
+  "word": "帰り",
+  "reading": "かえり",
+  "meaning": "lượt về, vòng về, chuyến về"
+ },
+ {
+  "word": "ガソリン",
+  "reading": "ガソリン",
+  "meaning": "xăng"
+ },
+ {
+  "word": "エンジン",
+  "reading": "エンジン",
+  "meaning": "động cơ"
+ },
+ {
+  "word": "信号",
+  "reading": "しんごう",
+  "meaning": "đèn giao thông"
+ },
+ {
+  "word": "矢印",
+  "reading": "やじるし",
+  "meaning": "dấu mũi tên"
+ },
+ {
+  "word": "キロ",
+  "reading": "キロ",
+  "meaning": "km, kg"
+ },
+ {
+  "word": "人口",
+  "reading": "じんこう",
+  "meaning": "dân số"
+ },
+ {
+  "word": "億",
+  "reading": "おく",
+  "meaning": "trăm triệu"
+ },
+ {
+  "word": "経済",
+  "reading": "けいざい",
+  "meaning": "kinh tế"
+ },
+ {
+  "word": "貿易",
+  "reading": "ぼうえき",
+  "meaning": "mậu dịch"
+ },
+ {
+  "word": "輸出",
+  "reading": "ゆしゅつ",
+  "meaning": "việc xuất khẩu"
+ },
+ {
+  "word": "輸入",
+  "reading": "ゆにゅう",
+  "meaning": "việc nhập khẩu"
+ },
+ {
+  "word": "原料",
+  "reading": "げんりょう",
+  "meaning": "nguyên liệu"
+ },
+ {
+  "word": "石油",
+  "reading": "せきゆ",
+  "meaning": "dầu"
+ },
+ {
+  "word": "物価",
+  "reading": "ぶっか",
+  "meaning": "vật giá"
+ },
+ {
+  "word": "政治",
+  "reading": "せいじ",
+  "meaning": "chính trị"
+ },
+ {
+  "word": "首相",
+  "reading": "しゅしょう",
+  "meaning": "thủ tướng"
+ },
+ {
+  "word": "大統領",
+  "reading": "だいとうりょう",
+  "meaning": "tổng thống"
+ },
+ {
+  "word": "平和",
+  "reading": "へいわ",
+  "meaning": "nền hòa bình (hòa bình)"
+ },
+ {
+  "word": "戦争",
+  "reading": "せんそう",
+  "meaning": "chiến tranh"
+ },
+ {
+  "word": "文化",
+  "reading": "ぶんか",
+  "meaning": "văn hóa"
+ },
+ {
+  "word": "世界遺産",
+  "reading": "せかいいさん",
+  "meaning": "di sản thế giới"
+ },
+ {
+  "word": "世紀",
+  "reading": "せいき",
+  "meaning": "thế kỷ"
+ },
+ {
+  "word": "時代",
+  "reading": "じだい",
+  "meaning": "thời đại"
+ },
+ {
+  "word": "国際",
+  "reading": "こくさい",
+  "meaning": "quốc tế"
+ },
+ {
+  "word": "世界中",
+  "reading": "せかいじゅう",
+  "meaning": "khắp thế giới, toàn thế giới"
+ }
+]

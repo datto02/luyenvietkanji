@@ -1,0 +1,647 @@
+[
+ {
+  "word": "メールアドレス",
+  "reading": "メールアドレス",
+  "meaning": "địa chỉ e-mail"
+ },
+ {
+  "word": "返事",
+  "reading": "へんじ",
+  "meaning": "thư trả lời, sự hồi âm"
+ },
+ {
+  "word": "知り合う",
+  "reading": "しりあう",
+  "meaning": "quen biết"
+ },
+ {
+  "word": "紹介",
+  "reading": "しょうかい",
+  "meaning": "sự giới thiệu"
+ },
+ {
+  "word": "合う",
+  "reading": "あう",
+  "meaning": "hợp (nhau), phù hợp"
+ },
+ {
+  "word": "相談",
+  "reading": "そうだん",
+  "meaning": "sự bàn bạc, trao đổi, tư vấn"
+ },
+ {
+  "word": "賛成",
+  "reading": "さんせい",
+  "meaning": "sự đồng ý"
+ },
+ {
+  "word": "反対",
+  "reading": "はんたい",
+  "meaning": "sự phản đối"
+ },
+ {
+  "word": "訪ねる",
+  "reading": "たずねる",
+  "meaning": "thăm viếng"
+ },
+ {
+  "word": "案内",
+  "reading": "あんない",
+  "meaning": "sự hướng dẫn"
+ },
+ {
+  "word": "あげる",
+  "reading": "あげる",
+  "meaning": "cho, tặng (ai đó cái gì)"
+ },
+ {
+  "word": "くれる",
+  "reading": "くれる",
+  "meaning": "(ai đó) cho, tặng"
+ },
+ {
+  "word": "もらう",
+  "reading": "もらう",
+  "meaning": "nhận"
+ },
+ {
+  "word": "贈る",
+  "reading": "おくる",
+  "meaning": "tặng, gửi tặng, trao gửi"
+ },
+ {
+  "word": "贈り物",
+  "reading": "おくりもの",
+  "meaning": "quà tặng"
+ },
+ {
+  "word": "祝い",
+  "reading": "いわい",
+  "meaning": "lời chúc mừng, sự chúc mừng"
+ },
+ {
+  "word": "渡す",
+  "reading": "わたす",
+  "meaning": "trao, đưa"
+ },
+ {
+  "word": "喜ぶ",
+  "reading": "よろこぶ",
+  "meaning": "vui mừng"
+ },
+ {
+  "word": "おかげ",
+  "reading": "おかげ",
+  "meaning": "nhờ (ơn, công lao)"
+ },
+ {
+  "word": "感謝",
+  "reading": "かんしゃ",
+  "meaning": "sự cảm tạ, sự biết ơn"
+ },
+ {
+  "word": "お礼",
+  "reading": "おれい",
+  "meaning": "lời cảm ơn"
+ },
+ {
+  "word": "謝る",
+  "reading": "あやまる",
+  "meaning": "xin lỗi"
+ },
+ {
+  "word": "遠慮",
+  "reading": "えんりょ",
+  "meaning": "sự e ngại"
+ },
+ {
+  "word": "気づく",
+  "reading": "きづく",
+  "meaning": "để ý, nhận ra"
+ },
+ {
+  "word": "親友",
+  "reading": "しんゆう",
+  "meaning": "bạn thân"
+ },
+ {
+  "word": "先輩",
+  "reading": "せんぱい",
+  "meaning": "đàn anh/ đàn chị"
+ },
+ {
+  "word": "彼ら",
+  "reading": "かれら",
+  "meaning": "họ"
+ },
+ {
+  "word": "みんな",
+  "reading": "みんな",
+  "meaning": "mọi người"
+ },
+ {
+  "word": "人気",
+  "reading": "にんき",
+  "meaning": "được ưa thích, được hâm mộ"
+ },
+ {
+  "word": "デート",
+  "reading": "デート",
+  "meaning": "cuộc hẹn hò"
+ },
+ {
+  "word": "付き合う",
+  "reading": "つきあう",
+  "meaning": "hẹn hò, cặp bồ, cùng với"
+ },
+ {
+  "word": "連れて行く",
+  "reading": "つれていく",
+  "meaning": "dẫn đi"
+ },
+ {
+  "word": "連れて来る",
+  "reading": "つれてくる",
+  "meaning": "dẫn đến"
+ },
+ {
+  "word": "見合い",
+  "reading": "みあい",
+  "meaning": "việc gặp mặt qua mai mối"
+ },
+ {
+  "word": "婚約",
+  "reading": "こんやく",
+  "meaning": "việc đính hôn"
+ },
+ {
+  "word": "結婚",
+  "reading": "けっこん",
+  "meaning": "việc kết hôn"
+ },
+ {
+  "word": "知らせる",
+  "reading": "しらせる",
+  "meaning": "thông báo, cho biết"
+ },
+ {
+  "word": "合図",
+  "reading": "あいず",
+  "meaning": "dấu hiệu, sự ra hiệu"
+ },
+ {
+  "word": "けんか",
+  "reading": "けんか",
+  "meaning": "việc cãi nhau"
+ },
+ {
+  "word": "嘘",
+  "reading": "うそ",
+  "meaning": "lời nói dối"
+ },
+ {
+  "word": "別れる",
+  "reading": "わかれる",
+  "meaning": "chia tay"
+ },
+ {
+  "word": "邪魔",
+  "reading": "じゃま",
+  "meaning": "sự cản trở (phiền phức)"
+ },
+ {
+  "word": "彼",
+  "reading": "かれ",
+  "meaning": "anh ấy, người yêu (nam)"
+ },
+ {
+  "word": "彼女",
+  "reading": "かのじょ",
+  "meaning": "cô ấy, người yêu (nữ)"
+ },
+ {
+  "word": "君",
+  "reading": "きみ",
+  "meaning": "em (người con trai gọi người con gái, người lớn gọi người nhỏ)"
+ },
+ {
+  "word": "僕",
+  "reading": "ぼく",
+  "meaning": "tôi (dành cho nam nói)"
+ },
+ {
+  "word": "独身",
+  "reading": "どくしん",
+  "meaning": "độc thân"
+ },
+ {
+  "word": "関係",
+  "reading": "かんけい",
+  "meaning": "mối quan hệ"
+ },
+ {
+  "word": "大事な",
+  "reading": "だいじな",
+  "meaning": "quan trọng"
+ },
+ {
+  "word": "特別な",
+  "reading": "とくべつな",
+  "meaning": "đặc biệt"
+ },
+ {
+  "word": "困る",
+  "reading": "こまる",
+  "meaning": "gặp khó khăn, lúng túng"
+ },
+ {
+  "word": "忘れ物",
+  "reading": "わすれもの",
+  "meaning": "đồ bỏ quên"
+ },
+ {
+  "word": "無くなる",
+  "reading": "なくなる",
+  "meaning": "mất"
+ },
+ {
+  "word": "無くす",
+  "reading": "なくす",
+  "meaning": "làm mất"
+ },
+ {
+  "word": "落とす",
+  "reading": "おとす",
+  "meaning": "đánh rơi, làm rớt"
+ },
+ {
+  "word": "落ちる",
+  "reading": "おちる",
+  "meaning": "rơi, rớt"
+ },
+ {
+  "word": "壊れる",
+  "reading": "こわれる",
+  "meaning": "hư, hỏng"
+ },
+ {
+  "word": "直す",
+  "reading": "なおす",
+  "meaning": "sửa"
+ },
+ {
+  "word": "破れる",
+  "reading": "やぶれる",
+  "meaning": "rách"
+ },
+ {
+  "word": "破る",
+  "reading": "やぶる",
+  "meaning": "làm rách, xé rách"
+ },
+ {
+  "word": "汚す",
+  "reading": "よごす",
+  "meaning": "làm bẩn"
+ },
+ {
+  "word": "汚れる",
+  "reading": "よごれる",
+  "meaning": "bị bẩn"
+ },
+ {
+  "word": "割る",
+  "reading": "わる",
+  "meaning": "làm bể"
+ },
+ {
+  "word": "割れる",
+  "reading": "われる",
+  "meaning": "bể, vỡ"
+ },
+ {
+  "word": "音",
+  "reading": "おと",
+  "meaning": "tiếng động, âm thanh"
+ },
+ {
+  "word": "騒ぐ",
+  "reading": "さわぐ",
+  "meaning": "làm ồn"
+ },
+ {
+  "word": "うるさい",
+  "reading": "うるさい",
+  "meaning": "ồn ào"
+ },
+ {
+  "word": "泥棒",
+  "reading": "どろぼう",
+  "meaning": "tên trộm"
+ },
+ {
+  "word": "盗む",
+  "reading": "ぬすむ",
+  "meaning": "trộm, cắp"
+ },
+ {
+  "word": "捕まえる",
+  "reading": "つかまえる",
+  "meaning": "bắt được"
+ },
+ {
+  "word": "虐める",
+  "reading": "いじめる",
+  "meaning": "chơi xấu, quấy nhiễu, chọc phá"
+ },
+ {
+  "word": "触る",
+  "reading": "さわる",
+  "meaning": "sờ, rờ, đụng vào"
+ },
+ {
+  "word": "踏む",
+  "reading": "ふむ",
+  "meaning": "dẫm, giẫm"
+ },
+ {
+  "word": "理由",
+  "reading": "りゆう",
+  "meaning": "lý do"
+ },
+ {
+  "word": "原因",
+  "reading": "げんいん",
+  "meaning": "nguyên nhân"
+ },
+ {
+  "word": "110番",
+  "reading": "ひゃくとおばん",
+  "meaning": "số 110 (số gọi cảnh sát tại Nhật)"
+ },
+ {
+  "word": "非常口",
+  "reading": "ひじょうぐち",
+  "meaning": "cửa thoát hiểm"
+ },
+ {
+  "word": "逃げる",
+  "reading": "にげる",
+  "meaning": "trốn"
+ },
+ {
+  "word": "嫌な",
+  "reading": "いやな",
+  "meaning": "khó chịu"
+ },
+ {
+  "word": "だめな",
+  "reading": "だめな",
+  "meaning": "không được"
+ },
+ {
+  "word": "いけない",
+  "reading": "いけない",
+  "meaning": "thôi rồi, hỏng rồi"
+ },
+ {
+  "word": "釣り",
+  "reading": "つり",
+  "meaning": "việc câu (cá)"
+ },
+ {
+  "word": "山登り",
+  "reading": "やまのぼり",
+  "meaning": "việc leo núi"
+ },
+ {
+  "word": "キャンプ",
+  "reading": "キャンプ",
+  "meaning": "việc cắm trại"
+ },
+ {
+  "word": "漫画",
+  "reading": "まんが",
+  "meaning": "truyện tranh"
+ },
+ {
+  "word": "アニメ",
+  "reading": "アニメ",
+  "meaning": "hoạt hình"
+ },
+ {
+  "word": "イラスト",
+  "reading": "イラスト",
+  "meaning": "vẽ minh họa"
+ },
+ {
+  "word": "ゲーム",
+  "reading": "ゲーム",
+  "meaning": "game"
+ },
+ {
+  "word": "茶道",
+  "reading": "さどう",
+  "meaning": "trà đạo"
+ },
+ {
+  "word": "歌舞伎",
+  "reading": "かぶき",
+  "meaning": "kabuki (ca vũ kỹ)"
+ },
+ {
+  "word": "踊り",
+  "reading": "おどり",
+  "meaning": "điệu múa, điệu nhảy"
+ },
+ {
+  "word": "ドラマ",
+  "reading": "ドラマ",
+  "meaning": "phim truyền hình"
+ },
+ {
+  "word": "俳優",
+  "reading": "はいゆう",
+  "meaning": "nam diễn viên"
+ },
+ {
+  "word": "曲",
+  "reading": "きょく",
+  "meaning": "bài hát, ca khúc"
+ },
+ {
+  "word": "クラシック",
+  "reading": "クラシック",
+  "meaning": "nhạc cổ điển"
+ },
+ {
+  "word": "コンサート",
+  "reading": "コンサート",
+  "meaning": "hòa nhạc"
+ },
+ {
+  "word": "小説",
+  "reading": "しょうせつ",
+  "meaning": "tiểu thuyết"
+ },
+ {
+  "word": "料理教室",
+  "reading": "りょうりきょうしつ",
+  "meaning": "lớp dạy nấu ăn"
+ },
+ {
+  "word": "コンテスト",
+  "reading": "コンテスト",
+  "meaning": "cuộc thi"
+ },
+ {
+  "word": "楽しむ",
+  "reading": "たのしむ",
+  "meaning": "vui thích, tận hưởng"
+ },
+ {
+  "word": "楽しみ",
+  "reading": "たのしみ",
+  "meaning": "niềm vui, thú vui (vui)"
+ },
+ {
+  "word": "興味",
+  "reading": "きょうみ",
+  "meaning": "(có ý) thích, quan tâm"
+ },
+ {
+  "word": "録画",
+  "reading": "ろくが",
+  "meaning": "việc thu hình"
+ },
+ {
+  "word": "集める",
+  "reading": "あつめる",
+  "meaning": "sưu tầm, tập hợp"
+ },
+ {
+  "word": "運動",
+  "reading": "うんどう",
+  "meaning": "sự vận động, thể dục thể thao"
+ },
+ {
+  "word": "走る",
+  "reading": "はしる",
+  "meaning": "chạy"
+ },
+ {
+  "word": "歩く",
+  "reading": "あるく",
+  "meaning": "đi bộ"
+ },
+ {
+  "word": "ジョギング",
+  "reading": "ジョギング",
+  "meaning": "môn chạy bộ"
+ },
+ {
+  "word": "伸ばす",
+  "reading": "のばす",
+  "meaning": "duỗi"
+ },
+ {
+  "word": "試合",
+  "reading": "しあい",
+  "meaning": "trận đấu"
+ },
+ {
+  "word": "大会",
+  "reading": "たいかい",
+  "meaning": "giải đấu, đại hội"
+ },
+ {
+  "word": "ワールドカップ",
+  "reading": "ワールドカップ",
+  "meaning": "giải vô địch thế giới"
+ },
+ {
+  "word": "行う",
+  "reading": "おこなう",
+  "meaning": "tổ chức"
+ },
+ {
+  "word": "中止",
+  "reading": "ちゅうし",
+  "meaning": "việc hủy bỏ"
+ },
+ {
+  "word": "選手",
+  "reading": "せんしゅ",
+  "meaning": "vận động viên"
+ },
+ {
+  "word": "チーム",
+  "reading": "チーム",
+  "meaning": "đội"
+ },
+ {
+  "word": "勝つ",
+  "reading": "かつ",
+  "meaning": "thắng"
+ },
+ {
+  "word": "優勝",
+  "reading": "ゆうしょう",
+  "meaning": "sự vô địch, chức vô địch"
+ },
+ {
+  "word": "負ける",
+  "reading": "まける",
+  "meaning": "thua"
+ },
+ {
+  "word": "応援",
+  "reading": "おうえん",
+  "meaning": "sự ủng hộ"
+ },
+ {
+  "word": "コース",
+  "reading": "コース",
+  "meaning": "lộ trình, khóa"
+ },
+ {
+  "word": "会場",
+  "reading": "かいじょう",
+  "meaning": "hội trường, nơi thi đấu, nơi tổ chức"
+ },
+ {
+  "word": "スタート",
+  "reading": "スタート",
+  "meaning": "điểm xuất phát, sự xuất phát"
+ },
+ {
+  "word": "失敗",
+  "reading": "しっぱい",
+  "meaning": "sự thất bại"
+ },
+ {
+  "word": "柔道",
+  "reading": "じゅうどう",
+  "meaning": "Judo (nhu đạo)"
+ },
+ {
+  "word": "水泳",
+  "reading": "すいえい",
+  "meaning": "bơi lội"
+ },
+ {
+  "word": "野球",
+  "reading": "やきゅう",
+  "meaning": "bóng chày"
+ },
+ {
+  "word": "投げる",
+  "reading": "なげる",
+  "meaning": "ném"
+ },
+ {
+  "word": "スポーツクラブ",
+  "reading": "スポーツクラブ",
+  "meaning": "câu lạc bộ thể thao"
+ }
+]

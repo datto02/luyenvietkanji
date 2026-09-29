@@ -1,0 +1,597 @@
+[
+ {
+  "word": "趣味",
+  "reading": "しゅみ",
+  "meaning": "sở thích"
+ },
+ {
+  "word": "日",
+  "reading": "ひ",
+  "meaning": "ngày"
+ },
+ {
+  "word": "楽しい",
+  "reading": "たのしい",
+  "meaning": "vui"
+ },
+ {
+  "word": "好きな",
+  "reading": "すきな",
+  "meaning": "thích ~, ~ tốt, ~ được"
+ },
+ {
+  "word": "嫌いな",
+  "reading": "きらいな",
+  "meaning": "ghét"
+ },
+ {
+  "word": "あまり",
+  "reading": "あまり",
+  "meaning": "không ~ lắm"
+ },
+ {
+  "word": "どちら",
+  "reading": "どちら",
+  "meaning": "cái nào, đằng nào"
+ },
+ {
+  "word": "どちらも",
+  "reading": "どちらも",
+  "meaning": "cái nào cũng, đằng nào cũng"
+ },
+ {
+  "word": "どっち",
+  "reading": "どっち",
+  "meaning": "cái nào, đằng nào (cách nói thân mật)"
+ },
+ {
+  "word": "上手な",
+  "reading": "じょうずな",
+  "meaning": "giỏi"
+ },
+ {
+  "word": "下手な",
+  "reading": "へたな",
+  "meaning": "dở"
+ },
+ {
+  "word": "まだまだです",
+  "reading": "まだまだです",
+  "meaning": "chưa giỏi, vẫn còn kém "
+ },
+ {
+  "word": "習う",
+  "reading": "ならう",
+  "meaning": "học (luyện tập)"
+ },
+ {
+  "word": "いけばな",
+  "reading": "いけばな",
+  "meaning": "cắm hoa"
+ },
+ {
+  "word": "茶道",
+  "reading": "さどう",
+  "meaning": "trà đạo"
+ },
+ {
+  "word": "簡単な",
+  "reading": "かんたんな",
+  "meaning": "đơn giản"
+ },
+ {
+  "word": "易しい",
+  "reading": "やさしい",
+  "meaning": "dễ"
+ },
+ {
+  "word": "難しい",
+  "reading": "むずかしい",
+  "meaning": "khó"
+ },
+ {
+  "word": "写真",
+  "reading": "しゃしん",
+  "meaning": "ảnh, hình"
+ },
+ {
+  "word": "撮る",
+  "reading": "とる",
+  "meaning": "chụp"
+ },
+ {
+  "word": "カメラ",
+  "reading": "カメラ",
+  "meaning": "máy ảnh"
+ },
+ {
+  "word": "絵",
+  "reading": "え",
+  "meaning": "tranh"
+ },
+ {
+  "word": "描く",
+  "reading": "かく",
+  "meaning": "vẽ"
+ },
+ {
+  "word": "美術館",
+  "reading": "びじゅつかん",
+  "meaning": "bảo tàng mỹ thuật"
+ },
+ {
+  "word": "音楽",
+  "reading": "おんがく",
+  "meaning": "âm nhạc"
+ },
+ {
+  "word": "カラオケ",
+  "reading": "カラオケ",
+  "meaning": "karaoke"
+ },
+ {
+  "word": "一緒に",
+  "reading": "いっしょに",
+  "meaning": "cùng nhau"
+ },
+ {
+  "word": "みんなで",
+  "reading": "みんなで",
+  "meaning": "tất cả mọi người"
+ },
+ {
+  "word": "歌",
+  "reading": "うた",
+  "meaning": "bài hát"
+ },
+ {
+  "word": "歌う",
+  "reading": "うたう",
+  "meaning": "hát"
+ },
+ {
+  "word": "コンサート",
+  "reading": "コンサート",
+  "meaning": "hòa nhạc, buổi trình diễn âm nhạc"
+ },
+ {
+  "word": "クラシック",
+  "reading": "クラシック",
+  "meaning": "nhạc cổ điển"
+ },
+ {
+  "word": "ジャズ",
+  "reading": "ジャズ",
+  "meaning": "nhạc jazz"
+ },
+ {
+  "word": "ポップス",
+  "reading": "ポップス",
+  "meaning": "nhạc pop"
+ },
+ {
+  "word": "ロック",
+  "reading": "ロック",
+  "meaning": "nhạc rốc"
+ },
+ {
+  "word": "ピアノ",
+  "reading": "ピアノ",
+  "meaning": "đàn piano"
+ },
+ {
+  "word": "ギター",
+  "reading": "ギター",
+  "meaning": "đàn guitar"
+ },
+ {
+  "word": "弾く",
+  "reading": "ひく",
+  "meaning": "đánh đàn, chơi đàn"
+ },
+ {
+  "word": "映画",
+  "reading": "えいが",
+  "meaning": "phim (điện ảnh)"
+ },
+ {
+  "word": "映画館",
+  "reading": "えいがかん",
+  "meaning": "rạp chiếu phim"
+ },
+ {
+  "word": "始まる",
+  "reading": "はじまる",
+  "meaning": "bắt đầu"
+ },
+ {
+  "word": "終わる",
+  "reading": "おわる",
+  "meaning": "kết thúc"
+ },
+ {
+  "word": "漫画",
+  "reading": "まんが",
+  "meaning": "truyện tranh"
+ },
+ {
+  "word": "アニメ",
+  "reading": "アニメ",
+  "meaning": "phim hoạt hình"
+ },
+ {
+  "word": "ゲーム",
+  "reading": "ゲーム",
+  "meaning": "game"
+ },
+ {
+  "word": "ソフト",
+  "reading": "ソフト",
+  "meaning": "phần mềm"
+ },
+ {
+  "word": "面白い",
+  "reading": "おもしろい",
+  "meaning": "thú vị"
+ },
+ {
+  "word": "ジョギング",
+  "reading": "ジョギング",
+  "meaning": "chạy bộ"
+ },
+ {
+  "word": "スキー",
+  "reading": "スキー",
+  "meaning": "trượt tuyết"
+ },
+ {
+  "word": "ダンス",
+  "reading": "ダンス",
+  "meaning": "khiêu vũ, nhảy, múa"
+ },
+ {
+  "word": "泳ぐ",
+  "reading": "およぐ",
+  "meaning": "bơi"
+ },
+ {
+  "word": "海",
+  "reading": "うみ",
+  "meaning": "biển"
+ },
+ {
+  "word": "プール",
+  "reading": "プール",
+  "meaning": "hồ bơi"
+ },
+ {
+  "word": "川",
+  "reading": "かわ",
+  "meaning": "sông"
+ },
+ {
+  "word": "釣り",
+  "reading": "つり",
+  "meaning": "câu (cá)"
+ },
+ {
+  "word": "登る",
+  "reading": "のぼる",
+  "meaning": "leo (núi)"
+ },
+ {
+  "word": "山",
+  "reading": "やま",
+  "meaning": "núi"
+ },
+ {
+  "word": "試合",
+  "reading": "しあい",
+  "meaning": "trận đấu"
+ },
+ {
+  "word": "勝つ",
+  "reading": "かつ",
+  "meaning": "thắng"
+ },
+ {
+  "word": "負ける",
+  "reading": "まける",
+  "meaning": "thua"
+ },
+ {
+  "word": "さあ",
+  "reading": "さあ",
+  "meaning": "chà…"
+ },
+ {
+  "word": "強い",
+  "reading": "つよい",
+  "meaning": "mạnh"
+ },
+ {
+  "word": "弱い",
+  "reading": "よわい",
+  "meaning": "yếu"
+ },
+ {
+  "word": "サッカー",
+  "reading": "サッカー",
+  "meaning": "bóng đá"
+ },
+ {
+  "word": "野球",
+  "reading": "やきゅう",
+  "meaning": "bóng chày"
+ },
+ {
+  "word": "相撲",
+  "reading": "すもう",
+  "meaning": "sumo"
+ },
+ {
+  "word": "柔道",
+  "reading": "じゅうどう",
+  "meaning": "judo"
+ },
+ {
+  "word": "テニス",
+  "reading": "テニス",
+  "meaning": "quần vợt"
+ },
+ {
+  "word": "ゴルフ",
+  "reading": "ゴルフ",
+  "meaning": "môn đánh gôn"
+ },
+ {
+  "word": "天気",
+  "reading": "てんき",
+  "meaning": "thời tiết"
+ },
+ {
+  "word": "いい",
+  "reading": "いい",
+  "meaning": "đẹp, tốt"
+ },
+ {
+  "word": "いい",
+  "reading": "いい",
+  "meaning": "đẹp, tốt"
+ },
+ {
+  "word": "悪い",
+  "reading": "わるい",
+  "meaning": "xấu"
+ },
+ {
+  "word": "悪い",
+  "reading": "わるい",
+  "meaning": "xấu"
+ },
+ {
+  "word": "いい天気ですね",
+  "reading": "いいてんきですね",
+  "meaning": "Trời (thời tiết) đẹp nhỉ."
+ },
+ {
+  "word": "雨",
+  "reading": "あめ",
+  "meaning": "mưa"
+ },
+ {
+  "word": "雪",
+  "reading": "ゆき",
+  "meaning": "tuyết"
+ },
+ {
+  "word": "降る",
+  "reading": "ふる",
+  "meaning": "rơi"
+ },
+ {
+  "word": "暑い",
+  "reading": "あつい",
+  "meaning": "nóng"
+ },
+ {
+  "word": "涼しい",
+  "reading": "すずしい",
+  "meaning": "mát"
+ },
+ {
+  "word": "寒い",
+  "reading": "さむい",
+  "meaning": "lạnh"
+ },
+ {
+  "word": "暖かい",
+  "reading": "あたたかい",
+  "meaning": "ấm"
+ },
+ {
+  "word": "多い",
+  "reading": "おおい",
+  "meaning": "nhiều"
+ },
+ {
+  "word": "少ない",
+  "reading": "すくない",
+  "meaning": "ít"
+ },
+ {
+  "word": "思う",
+  "reading": "おもう",
+  "meaning": "nghĩ"
+ },
+ {
+  "word": "たぶん",
+  "reading": "たぶん",
+  "meaning": "có lẽ"
+ },
+ {
+  "word": "きっと",
+  "reading": "きっと",
+  "meaning": "chắc, chắc chắn"
+ },
+ {
+  "word": "傘",
+  "reading": "かさ",
+  "meaning": "dù, ô"
+ },
+ {
+  "word": "持って来る",
+  "reading": "もってくる",
+  "meaning": "đem (mang) đến"
+ },
+ {
+  "word": "持って行く",
+  "reading": "もっていく",
+  "meaning": "đem (mang) đi"
+ },
+ {
+  "word": "番組",
+  "reading": "ばんぐみ",
+  "meaning": "chương trình"
+ },
+ {
+  "word": "いつ",
+  "reading": "いつ",
+  "meaning": "khi nào?"
+ },
+ {
+  "word": "去年",
+  "reading": "きょねん",
+  "meaning": "năm ngoái"
+ },
+ {
+  "word": "今年",
+  "reading": "ことし",
+  "meaning": "năm nay"
+ },
+ {
+  "word": "来年",
+  "reading": "らいねん",
+  "meaning": "sang năm"
+ },
+ {
+  "word": "季節",
+  "reading": "きせつ",
+  "meaning": "mùa"
+ },
+ {
+  "word": "一番",
+  "reading": "いちばん",
+  "meaning": "nhất"
+ },
+ {
+  "word": "なる",
+  "reading": "なる",
+  "meaning": "trở nên, trở thành"
+ },
+ {
+  "word": "なる",
+  "reading": "なる",
+  "meaning": "trở nên, trở thành"
+ },
+ {
+  "word": "春",
+  "reading": "はる",
+  "meaning": "mùa xuân"
+ },
+ {
+  "word": "夏",
+  "reading": "なつ",
+  "meaning": "mùa hè"
+ },
+ {
+  "word": "秋",
+  "reading": "あき",
+  "meaning": "mùa thu"
+ },
+ {
+  "word": "冬",
+  "reading": "ふゆ",
+  "meaning": "mùa đông"
+ },
+ {
+  "word": "花",
+  "reading": "はな",
+  "meaning": "hoa"
+ },
+ {
+  "word": "月",
+  "reading": "つき",
+  "meaning": "mặt trăng"
+ },
+ {
+  "word": "お花見",
+  "reading": "おはなみ",
+  "meaning": "ngắm hoa"
+ },
+ {
+  "word": "桜",
+  "reading": "さくら",
+  "meaning": "hoa anh đào"
+ },
+ {
+  "word": "花火",
+  "reading": "はなび",
+  "meaning": "pháo hoa"
+ },
+ {
+  "word": "紅葉",
+  "reading": "もみじ",
+  "meaning": "lá đỏ"
+ },
+ {
+  "word": "初めて",
+  "reading": "はじめて",
+  "meaning": "lần đầu tiên"
+ },
+ {
+  "word": "一度",
+  "reading": "いちど",
+  "meaning": "một lần"
+ },
+ {
+  "word": "何回も",
+  "reading": "なんかいも",
+  "meaning": "nhiều lần"
+ },
+ {
+  "word": "一度も",
+  "reading": "いちども",
+  "meaning": "một lần cũng"
+ },
+ {
+  "word": "公園",
+  "reading": "こうえん",
+  "meaning": "công viên"
+ },
+ {
+  "word": "散歩",
+  "reading": "さんぽ",
+  "meaning": "đi dạo"
+ },
+ {
+  "word": "とても",
+  "reading": "とても",
+  "meaning": "rất"
+ },
+ {
+  "word": "本当に",
+  "reading": "ほんとうに",
+  "meaning": "thật sự là"
+ },
+ {
+  "word": "ぜひ",
+  "reading": "ぜひ",
+  "meaning": "nhất định"
+ },
+ {
+  "word": "もちろん",
+  "reading": "もちろん",
+  "meaning": "đương nhiên"
+ }
+]

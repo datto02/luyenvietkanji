@@ -1,0 +1,537 @@
+[
+ {
+  "word": "駅",
+  "reading": "えき",
+  "meaning": "nhà ga, ga"
+ },
+ {
+  "word": "大阪駅",
+  "reading": "おおさかえき",
+  "meaning": "nhà ga, ga"
+ },
+ {
+  "word": "広島駅",
+  "reading": "ひろしまえき",
+  "meaning": "nhà ga, ga"
+ },
+ {
+  "word": "電車",
+  "reading": "でんしゃ",
+  "meaning": "tàu điện"
+ },
+ {
+  "word": "乗る",
+  "reading": "のる",
+  "meaning": "lên, đi (tàu, xe)"
+ },
+ {
+  "word": "降りる",
+  "reading": "おりる",
+  "meaning": "xuống (tàu, xe)"
+ },
+ {
+  "word": "切符",
+  "reading": "きっぷ",
+  "meaning": "vé"
+ },
+ {
+  "word": "次の",
+  "reading": "つぎの",
+  "meaning": "~ tiếp theo"
+ },
+ {
+  "word": "乗り換える",
+  "reading": "のりかえる",
+  "meaning": "đổi tàu (chuyến), quá cảnh"
+ },
+ {
+  "word": "各駅",
+  "reading": "かくえき",
+  "meaning": "các ga"
+ },
+ {
+  "word": "急行",
+  "reading": "きゅうこう",
+  "meaning": "tàu nhanh"
+ },
+ {
+  "word": "特急",
+  "reading": "とっきゅう",
+  "meaning": "tàu tốc hành"
+ },
+ {
+  "word": "新幹線",
+  "reading": "しんかんせん",
+  "meaning": "tàu cao tốc shinkansen"
+ },
+ {
+  "word": "地下鉄",
+  "reading": "ちかてつ",
+  "meaning": "tàu điện ngầm"
+ },
+ {
+  "word": "番線",
+  "reading": "ばんせん",
+  "meaning": "tuyến số ~"
+ },
+ {
+  "word": "何番線",
+  "reading": "なんばんせん",
+  "meaning": "tuyến số mấy"
+ },
+ {
+  "word": "自動車",
+  "reading": "じどうしゃ",
+  "meaning": "xe hơi"
+ },
+ {
+  "word": "車",
+  "reading": "くるま",
+  "meaning": "xe cộ oto"
+ },
+ {
+  "word": "運転",
+  "reading": "うんてん",
+  "meaning": "lái (xe)"
+ },
+ {
+  "word": "送る",
+  "reading": "おくる",
+  "meaning": "tiễn, đưa"
+ },
+ {
+  "word": "駐車場",
+  "reading": "ちゅうしゃじょう",
+  "meaning": "bãi đậu (đỗ) xe"
+ },
+ {
+  "word": "止める",
+  "reading": "とめる",
+  "meaning": "đậu (xe), đỗ (xe), dừng"
+ },
+ {
+  "word": "止める",
+  "reading": "とめる",
+  "meaning": "đậu (xe), đỗ (xe), dừng"
+ },
+ {
+  "word": "自転車",
+  "reading": "じてんしゃ",
+  "meaning": "xe đạp"
+ },
+ {
+  "word": "バイク",
+  "reading": "バイク",
+  "meaning": "xe gắn máy, xe mô-tô"
+ },
+ {
+  "word": "バス",
+  "reading": "バス",
+  "meaning": "xe buýt"
+ },
+ {
+  "word": "タクシー",
+  "reading": "タクシー",
+  "meaning": "xe taxi"
+ },
+ {
+  "word": "飛行機",
+  "reading": "ひこうき",
+  "meaning": "máy bay"
+ },
+ {
+  "word": "船",
+  "reading": "ふね",
+  "meaning": "tàu, thuyền"
+ },
+ {
+  "word": "乗り場",
+  "reading": "のりば",
+  "meaning": "trạm"
+ },
+ {
+  "word": "空港",
+  "reading": "くうこう",
+  "meaning": "sân bay"
+ },
+ {
+  "word": "時刻表",
+  "reading": "じこくひょう",
+  "meaning": "bảng giờ (tàu, xe) chạy"
+ },
+ {
+  "word": "時間",
+  "reading": "じかん",
+  "meaning": "thời gian"
+ },
+ {
+  "word": "時間",
+  "reading": "じかん",
+  "meaning": "thời gian"
+ },
+ {
+  "word": "急ぐ",
+  "reading": "いそぐ",
+  "meaning": "gấp rút, vội vã"
+ },
+ {
+  "word": "どのくらい",
+  "reading": "どのくらい",
+  "meaning": "khoảng bao lâu"
+ },
+ {
+  "word": "かかる",
+  "reading": "かかる",
+  "meaning": "mất, tốn (thời gian, tiền bạc)"
+ },
+ {
+  "word": "近い",
+  "reading": "ちかい",
+  "meaning": "gần"
+ },
+ {
+  "word": "遠い",
+  "reading": "とおい",
+  "meaning": "xa"
+ },
+ {
+  "word": "ずっと",
+  "reading": "ずっと",
+  "meaning": "suốt, hẳn"
+ },
+ {
+  "word": "いつも",
+  "reading": "いつも",
+  "meaning": "luôn luôn"
+ },
+ {
+  "word": "たいてい",
+  "reading": "たいてい",
+  "meaning": "thường thì"
+ },
+ {
+  "word": "よく",
+  "reading": "よく",
+  "meaning": "thường, hay"
+ },
+ {
+  "word": "時々",
+  "reading": "ときどき",
+  "meaning": "thỉnh thoảng, đôi khi"
+ },
+ {
+  "word": "だけ",
+  "reading": "だけ",
+  "meaning": "chỉ"
+ },
+ {
+  "word": "どうやって",
+  "reading": "どうやって",
+  "meaning": "bằng cách nào, làm thế nào"
+ },
+ {
+  "word": "歩く",
+  "reading": "あるく",
+  "meaning": "đi bộ"
+ },
+ {
+  "word": "道",
+  "reading": "みち",
+  "meaning": "đường, con đường"
+ },
+ {
+  "word": "まっすぐ",
+  "reading": "まっすぐ",
+  "meaning": "thẳng"
+ },
+ {
+  "word": "曲がる",
+  "reading": "まがる",
+  "meaning": "quẹo, rẽ"
+ },
+ {
+  "word": "渡る",
+  "reading": "わたる",
+  "meaning": "băng qua"
+ },
+ {
+  "word": "説明",
+  "reading": "せつめい",
+  "meaning": "giải thích"
+ },
+ {
+  "word": "角",
+  "reading": "かど",
+  "meaning": "góc"
+ },
+ {
+  "word": "交差点",
+  "reading": "こうさてん",
+  "meaning": "giao lộ"
+ },
+ {
+  "word": "信号",
+  "reading": "しんごう",
+  "meaning": "đèn giao thông"
+ },
+ {
+  "word": "左",
+  "reading": "ひだり",
+  "meaning": "trái"
+ },
+ {
+  "word": "右",
+  "reading": "みぎ",
+  "meaning": "phải"
+ },
+ {
+  "word": "橋",
+  "reading": "はし",
+  "meaning": "cầu"
+ },
+ {
+  "word": "東",
+  "reading": "ひがし",
+  "meaning": "đông"
+ },
+ {
+  "word": "西",
+  "reading": "にし",
+  "meaning": "tây"
+ },
+ {
+  "word": "南",
+  "reading": "みなみ",
+  "meaning": "nam"
+ },
+ {
+  "word": "北",
+  "reading": "きた",
+  "meaning": "bắc"
+ },
+ {
+  "word": "いくつ目",
+  "reading": "いくつめ",
+  "meaning": "cái thứ mấy?"
+ },
+ {
+  "word": "1つ目",
+  "reading": "ひとつめ",
+  "meaning": "cái thứ nhất"
+ },
+ {
+  "word": "2つ目",
+  "reading": "ふたつめ",
+  "meaning": "cái thứ hai"
+ },
+ {
+  "word": "3つ目",
+  "reading": "みっつめ",
+  "meaning": "cái thứ ba"
+ },
+ {
+  "word": "メートル",
+  "reading": "メートル",
+  "meaning": "~ mét"
+ },
+ {
+  "word": "隣",
+  "reading": "となり",
+  "meaning": "bên cạnh"
+ },
+ {
+  "word": "間",
+  "reading": "あいだ",
+  "meaning": "giữa"
+ },
+ {
+  "word": "近く",
+  "reading": "ちかく",
+  "meaning": "gần"
+ },
+ {
+  "word": "上",
+  "reading": "うえ",
+  "meaning": "trên"
+ },
+ {
+  "word": "下",
+  "reading": "した",
+  "meaning": "dưới"
+ },
+ {
+  "word": "前",
+  "reading": "まえ",
+  "meaning": "trước"
+ },
+ {
+  "word": "後ろ",
+  "reading": "うしろ",
+  "meaning": "sau"
+ },
+ {
+  "word": "中",
+  "reading": "なか",
+  "meaning": "trong"
+ },
+ {
+  "word": "外",
+  "reading": "そと",
+  "meaning": "ngoài"
+ },
+ {
+  "word": "あそこ",
+  "reading": "あそこ",
+  "meaning": "đằng đó"
+ },
+ {
+  "word": "ここ",
+  "reading": "ここ",
+  "meaning": "nơi này, chỗ này"
+ },
+ {
+  "word": "そこ",
+  "reading": "そこ",
+  "meaning": "nơi đó, chỗ đó"
+ },
+ {
+  "word": "どこ",
+  "reading": "どこ",
+  "meaning": "ở đâu"
+ },
+ {
+  "word": "出かける",
+  "reading": "でかける",
+  "meaning": "ra ngoài"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "meaning": "ra, rời khỏi, tốt nghiệp"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "meaning": "ra, rời khỏi, tốt nghiệp"
+ },
+ {
+  "word": "着く",
+  "reading": "つく",
+  "meaning": "đến nơi"
+ },
+ {
+  "word": "会う",
+  "reading": "あう",
+  "meaning": "gặp"
+ },
+ {
+  "word": "待つ",
+  "reading": "まつ",
+  "meaning": "chờ, đợi"
+ },
+ {
+  "word": "デート",
+  "reading": "デート",
+  "meaning": "hẹn hò"
+ },
+ {
+  "word": "約束",
+  "reading": "やくそく",
+  "meaning": "hứa, hẹn"
+ },
+ {
+  "word": "用事",
+  "reading": "ようじ",
+  "meaning": "việc riêng"
+ },
+ {
+  "word": "都合がいい",
+  "reading": "つごうがいい",
+  "meaning": "thuận tiện, có giờ rảnh"
+ },
+ {
+  "word": "都合が悪い",
+  "reading": "つごうがわるい",
+  "meaning": "không tiện, không có giờ rảnh"
+ },
+ {
+  "word": "だめです",
+  "reading": "だめです",
+  "meaning": "không được"
+ },
+ {
+  "word": "変える",
+  "reading": "かえる",
+  "meaning": "thay đổi"
+ },
+ {
+  "word": "お出かけですか",
+  "reading": "おでかけですか",
+  "meaning": "Anh / chị ra ngoài à?"
+ },
+ {
+  "word": "ちょっと",
+  "reading": "ちょっと",
+  "meaning": "một chút"
+ },
+ {
+  "word": "よかったら",
+  "reading": "よかったら",
+  "meaning": "nếu được thì ~"
+ },
+ {
+  "word": "すみません",
+  "reading": "すみません",
+  "meaning": "xin lỗi, làm ơn"
+ },
+ {
+  "word": "すみません",
+  "reading": "すみません",
+  "meaning": "xin lỗi, làm ơn"
+ },
+ {
+  "word": "ませんか",
+  "reading": "ませんか",
+  "meaning": "~ được chứ?"
+ },
+ {
+  "word": "ちょっと",
+  "reading": "ちょっと",
+  "meaning": "~ hơi …."
+ },
+ {
+  "word": "残念ですが",
+  "reading": "ざんねんですが",
+  "meaning": "tiếc là"
+ },
+ {
+  "word": "また今度お願いします",
+  "reading": "またこんどおねがいします",
+  "meaning": "Lần tới xin vui lòng"
+ },
+ {
+  "word": "チャンス",
+  "reading": "チャンス",
+  "meaning": "cơ hội, dịp"
+ },
+ {
+  "word": "行ってきます",
+  "reading": "いってきます",
+  "meaning": "Tôi đi đây. (câu chào trước khi đi, rời khỏi đâu đó)"
+ },
+ {
+  "word": "行ってらっしゃい",
+  "reading": "いってらっしゃい",
+  "meaning": "Bạn đi nhé. (câu chào tiễn ai đó đi đâu)"
+ },
+ {
+  "word": "ただいま",
+  "reading": "ただいま",
+  "meaning": "Tôi về rồi đây. (câu chào khi đâu đó về đến nơi)"
+ },
+ {
+  "word": "おかえりなさい",
+  "reading": "おかえりなさい",
+  "meaning": "Bạn về rồi à. (câu chào đón ai đó đi đâu về)"
+ }
+]

@@ -1,0 +1,527 @@
+[
+ {
+  "word": "先生",
+  "reading": "せんせい",
+  "meaning": "thầy, cô, giáo viên"
+ },
+ {
+  "word": "学生",
+  "reading": "がくせい",
+  "meaning": "học sinh, sinh viên"
+ },
+ {
+  "word": "留学生",
+  "reading": "りゅうがくせい",
+  "meaning": "du học sinh"
+ },
+ {
+  "word": "学校",
+  "reading": "がっこう",
+  "meaning": "trường học"
+ },
+ {
+  "word": "勉強",
+  "reading": "べんきょう",
+  "meaning": "học, học tập"
+ },
+ {
+  "word": "日本語学校",
+  "reading": "にほんごがっこう",
+  "meaning": "trường dạy tiếng Nhật, trường Nhật ngữ"
+ },
+ {
+  "word": "小学校",
+  "reading": "しょうがっこう",
+  "meaning": "trường tiểu học"
+ },
+ {
+  "word": "中学校",
+  "reading": "ちゅうがっこう",
+  "meaning": "trường cấp 2, trường trung học cơ sở"
+ },
+ {
+  "word": "高校",
+  "reading": "こうこう",
+  "meaning": "trường cấp 3, trường phổ thông trung học"
+ },
+ {
+  "word": "大学",
+  "reading": "だいがく",
+  "meaning": "đại học"
+ },
+ {
+  "word": "教室",
+  "reading": "きょうしつ",
+  "meaning": "phòng học, lớp học"
+ },
+ {
+  "word": "クラス",
+  "reading": "クラス",
+  "meaning": "lớp"
+ },
+ {
+  "word": "行く",
+  "reading": "いく",
+  "meaning": "đi"
+ },
+ {
+  "word": "来る",
+  "reading": "くる",
+  "meaning": "đến"
+ },
+ {
+  "word": "帰る",
+  "reading": "かえる",
+  "meaning": "về"
+ },
+ {
+  "word": "ゼロ",
+  "reading": "ゼロ",
+  "meaning": "số 0, không"
+ },
+ {
+  "word": "一",
+  "reading": "いち",
+  "meaning": "một"
+ },
+ {
+  "word": "二",
+  "reading": "に",
+  "meaning": "hai"
+ },
+ {
+  "word": "三",
+  "reading": "さん",
+  "meaning": "ba"
+ },
+ {
+  "word": "四",
+  "reading": "よん",
+  "meaning": "bốn"
+ },
+ {
+  "word": "五",
+  "reading": "ご",
+  "meaning": "năm"
+ },
+ {
+  "word": "六",
+  "reading": "ろく",
+  "meaning": "sáu"
+ },
+ {
+  "word": "七",
+  "reading": "なな",
+  "meaning": "bảy"
+ },
+ {
+  "word": "八",
+  "reading": "はち",
+  "meaning": "tám"
+ },
+ {
+  "word": "九",
+  "reading": "きゅう",
+  "meaning": "chín"
+ },
+ {
+  "word": "十",
+  "reading": "じゅう",
+  "meaning": "mười"
+ },
+ {
+  "word": "十一",
+  "reading": "じゅういち",
+  "meaning": "mười một"
+ },
+ {
+  "word": "十二",
+  "reading": "じゅうに",
+  "meaning": "mười hai"
+ },
+ {
+  "word": "月",
+  "reading": "がつ",
+  "meaning": "〜 tháng"
+ },
+ {
+  "word": "一月",
+  "reading": "いちがつ",
+  "meaning": "tháng Một, tháng Giêng"
+ },
+ {
+  "word": "二月",
+  "reading": "にがつ",
+  "meaning": "tháng Hai"
+ },
+ {
+  "word": "三月",
+  "reading": "さんがつ",
+  "meaning": "tháng Ba"
+ },
+ {
+  "word": "四月",
+  "reading": "しがつ",
+  "meaning": "tháng Tư"
+ },
+ {
+  "word": "五月",
+  "reading": "ごがつ",
+  "meaning": "tháng Năm"
+ },
+ {
+  "word": "六月",
+  "reading": "ろくがつ",
+  "meaning": "tháng Sáu"
+ },
+ {
+  "word": "七月",
+  "reading": "しちがつ",
+  "meaning": "tháng Bảy"
+ },
+ {
+  "word": "八月",
+  "reading": "はちがつ",
+  "meaning": "tháng Tám"
+ },
+ {
+  "word": "九月",
+  "reading": "くがつ",
+  "meaning": "tháng Chín"
+ },
+ {
+  "word": "十月",
+  "reading": "じゅうがつ",
+  "meaning": "tháng Mười"
+ },
+ {
+  "word": "十一月",
+  "reading": "じゅういちがつ",
+  "meaning": "tháng Mười một"
+ },
+ {
+  "word": "十二月",
+  "reading": "じゅうにがつ",
+  "meaning": "tháng Mười hai, tháng Chạp"
+ },
+ {
+  "word": "何月",
+  "reading": "なんがつ",
+  "meaning": "tháng mấy?"
+ },
+ {
+  "word": "曜日",
+  "reading": "ようび",
+  "meaning": "thứ"
+ },
+ {
+  "word": "日曜日",
+  "reading": "にちようび",
+  "meaning": "Chủ nhật"
+ },
+ {
+  "word": "月曜日",
+  "reading": "げつようび",
+  "meaning": "thứ Hai"
+ },
+ {
+  "word": "火曜日",
+  "reading": "かようび",
+  "meaning": "thứ Ba"
+ },
+ {
+  "word": "水曜日",
+  "reading": "すいようび",
+  "meaning": "thứ Tư"
+ },
+ {
+  "word": "木曜日",
+  "reading": "もくようび",
+  "meaning": "thứ Năm"
+ },
+ {
+  "word": "金曜日",
+  "reading": "きんようび",
+  "meaning": "thứ Sáu"
+ },
+ {
+  "word": "土曜日",
+  "reading": "どようび",
+  "meaning": "thứ Bảy"
+ },
+ {
+  "word": "何曜日",
+  "reading": "なんようび",
+  "meaning": "thứ mấy?"
+ },
+ {
+  "word": "今日",
+  "reading": "きょう",
+  "meaning": "hôm nay"
+ },
+ {
+  "word": "明日",
+  "reading": "あした",
+  "meaning": "ngày mai"
+ },
+ {
+  "word": "昨日",
+  "reading": "きのう",
+  "meaning": "hôm qua"
+ },
+ {
+  "word": "毎日",
+  "reading": "まいにち",
+  "meaning": "hàng ngày, mỗi ngày"
+ },
+ {
+  "word": "週間",
+  "reading": "しゅうかん",
+  "meaning": "〜 tuần"
+ },
+ {
+  "word": "か月",
+  "reading": "かげつ",
+  "meaning": "〜 tháng"
+ },
+ {
+  "word": "年",
+  "reading": "ねん",
+  "meaning": "〜 năm"
+ },
+ {
+  "word": "回",
+  "reading": "かい",
+  "meaning": "〜 lần"
+ },
+ {
+  "word": "何回",
+  "reading": "なんかい",
+  "meaning": "mấy lần"
+ },
+ {
+  "word": "アルバイト",
+  "reading": "アルバイト",
+  "meaning": "việc làm thêm"
+ },
+ {
+  "word": "する",
+  "reading": "する",
+  "meaning": "làm"
+ },
+ {
+  "word": "言葉",
+  "reading": "ことば",
+  "meaning": "từ ngữ, tiếng"
+ },
+ {
+  "word": "字",
+  "reading": "じ",
+  "meaning": "chữ"
+ },
+ {
+  "word": "日本語",
+  "reading": "にほんご",
+  "meaning": "tiếng Nhật"
+ },
+ {
+  "word": "語",
+  "reading": "ご",
+  "meaning": "tiếng ~"
+ },
+ {
+  "word": "話す",
+  "reading": "はなす",
+  "meaning": "nói, nói chuyện"
+ },
+ {
+  "word": "ゆっくり",
+  "reading": "ゆっくり",
+  "meaning": "chậm, chậm rãi"
+ },
+ {
+  "word": "言う",
+  "reading": "いう",
+  "meaning": "nói"
+ },
+ {
+  "word": "もう一度",
+  "reading": "もういちど",
+  "meaning": "một lần nữa"
+ },
+ {
+  "word": "お願いします",
+  "reading": "おねがいします",
+  "meaning": "Xin vui lòng"
+ },
+ {
+  "word": "分かる",
+  "reading": "わかる",
+  "meaning": "hiểu, biết"
+ },
+ {
+  "word": "少し",
+  "reading": "すこし",
+  "meaning": "một chút"
+ },
+ {
+  "word": "もう少し",
+  "reading": "もうすこし",
+  "meaning": "một chút nữa"
+ },
+ {
+  "word": "よく",
+  "reading": "よく",
+  "meaning": "rõ, giỏi, tốt"
+ },
+ {
+  "word": "大体",
+  "reading": "だいたい",
+  "meaning": "đại khái"
+ },
+ {
+  "word": "全然",
+  "reading": "ぜんぜん",
+  "meaning": "hoàn toàn"
+ },
+ {
+  "word": "平仮名",
+  "reading": "ひらがな",
+  "meaning": "(chữ) Hiragana"
+ },
+ {
+  "word": "片仮名",
+  "reading": "かたかな",
+  "meaning": "(chữ) Katakana"
+ },
+ {
+  "word": "漢字",
+  "reading": "かんじ",
+  "meaning": "chữ Hán"
+ },
+ {
+  "word": "ローマ字",
+  "reading": "ローマじ",
+  "meaning": "chữ Latinh"
+ },
+ {
+  "word": "読む",
+  "reading": "よむ",
+  "meaning": "đọc"
+ },
+ {
+  "word": "本",
+  "reading": "ほん",
+  "meaning": "sách, quyển sách"
+ },
+ {
+  "word": "書く",
+  "reading": "かく",
+  "meaning": "viết"
+ },
+ {
+  "word": "聞く",
+  "reading": "きく",
+  "meaning": "nghe"
+ },
+ {
+  "word": "調べる",
+  "reading": "しらべる",
+  "meaning": "tra, tìm hiểu"
+ },
+ {
+  "word": "買う",
+  "reading": "かう",
+  "meaning": "mua"
+ },
+ {
+  "word": "辞書",
+  "reading": "じしょ",
+  "meaning": "từ điển"
+ },
+ {
+  "word": "電子辞書",
+  "reading": "でんしじしょ",
+  "meaning": "từ điển điện tử"
+ },
+ {
+  "word": "意味",
+  "reading": "いみ",
+  "meaning": "ý nghĩa"
+ },
+ {
+  "word": "頑張る",
+  "reading": "がんばる",
+  "meaning": "cố gắng"
+ },
+ {
+  "word": "宿題",
+  "reading": "しゅくだい",
+  "meaning": "bài tập về nhà"
+ },
+ {
+  "word": "日記",
+  "reading": "にっき",
+  "meaning": "nhật ký"
+ },
+ {
+  "word": "レポート",
+  "reading": "レポート",
+  "meaning": "bài báo cáo"
+ },
+ {
+  "word": "図書館",
+  "reading": "としょかん",
+  "meaning": "thư viện"
+ },
+ {
+  "word": "本屋",
+  "reading": "ほんや",
+  "meaning": "tiệm sách"
+ },
+ {
+  "word": "練習",
+  "reading": "れんしゅう",
+  "meaning": "luyện tập"
+ },
+ {
+  "word": "スピーチ",
+  "reading": "スピーチ",
+  "meaning": "hùng biện, diễn thuyết"
+ },
+ {
+  "word": "覚える",
+  "reading": "おぼえる",
+  "meaning": "nhớ, ghi nhớ"
+ },
+ {
+  "word": "忘れる",
+  "reading": "わすれる",
+  "meaning": "quên"
+ },
+ {
+  "word": "問題",
+  "reading": "もんだい",
+  "meaning": "câu hỏi, vấn đề"
+ },
+ {
+  "word": "例",
+  "reading": "れい",
+  "meaning": "ví dụ"
+ },
+ {
+  "word": "答え",
+  "reading": "こたえ",
+  "meaning": "câu trả lời"
+ },
+ {
+  "word": "質問",
+  "reading": "しつもん",
+  "meaning": "câu hỏi"
+ },
+ {
+  "word": "見学",
+  "reading": "けんがく",
+  "meaning": "tham quan"
+ }
+]

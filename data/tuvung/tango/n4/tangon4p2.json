@@ -1,0 +1,647 @@
+[
+ {
+  "word": "小学校",
+  "reading": "しょうがっこう",
+  "meaning": "trường tiểu học (cấp I)"
+ },
+ {
+  "word": "中学校",
+  "reading": "ちゅうがっこう",
+  "meaning": "trường trung học cơ sở (cấp II)"
+ },
+ {
+  "word": "高校",
+  "reading": "こうこう",
+  "meaning": "trường trung học phổ thông (cấp III)"
+ },
+ {
+  "word": "幼稚園",
+  "reading": "ようちえん",
+  "meaning": "mẫu giáo"
+ },
+ {
+  "word": "専門学校",
+  "reading": "せんもんがっこう",
+  "meaning": "trường dạy nghề"
+ },
+ {
+  "word": "入学",
+  "reading": "にゅうがく",
+  "meaning": "sự nhập học, vào trường"
+ },
+ {
+  "word": "卒業",
+  "reading": "そつぎょう",
+  "meaning": "sự tốt nghiệp"
+ },
+ {
+  "word": "教育",
+  "reading": "きょういく",
+  "meaning": "việc giáo dục, nền giáo dục"
+ },
+ {
+  "word": "生徒",
+  "reading": "せいと",
+  "meaning": "học sinh"
+ },
+ {
+  "word": "授業",
+  "reading": "じゅぎょう",
+  "meaning": "giờ học, tiết học"
+ },
+ {
+  "word": "始まる",
+  "reading": "はじまる",
+  "meaning": "được bắt đầu, (~) bắt đầu"
+ },
+ {
+  "word": "始める",
+  "reading": "はじめる",
+  "meaning": "bắt đầu (~)"
+ },
+ {
+  "word": "質問",
+  "reading": "しつもん",
+  "meaning": "câu hỏi"
+ },
+ {
+  "word": "答える",
+  "reading": "こたえる",
+  "meaning": "trả lời"
+ },
+ {
+  "word": "数学",
+  "reading": "すうがく",
+  "meaning": "toán học"
+ },
+ {
+  "word": "歴史",
+  "reading": "れきし",
+  "meaning": "lịch sử"
+ },
+ {
+  "word": "地理",
+  "reading": "ちり",
+  "meaning": "địa lý"
+ },
+ {
+  "word": "テキスト",
+  "reading": "テキスト",
+  "meaning": "sách học, sách giáo khoa"
+ },
+ {
+  "word": "開く",
+  "reading": "ひらく",
+  "meaning": "mở, lật"
+ },
+ {
+  "word": "プリント",
+  "reading": "プリント",
+  "meaning": "bài giảng (giáo viên soạn sẵn phát cho sinh viên)"
+ },
+ {
+  "word": "表",
+  "reading": "おもて",
+  "meaning": "mặt trước"
+ },
+ {
+  "word": "テスト",
+  "reading": "テスト",
+  "meaning": "bài kiểm tra"
+ },
+ {
+  "word": "通う",
+  "reading": "かよう",
+  "meaning": "đi (học), chỉ hành động lui tới thường xuyên"
+ },
+ {
+  "word": "成績",
+  "reading": "せいせき",
+  "meaning": "thành tích học tập"
+ },
+ {
+  "word": "点",
+  "reading": "てん",
+  "meaning": "điểm"
+ },
+ {
+  "word": "丸",
+  "reading": "まる",
+  "meaning": "khoanh tròn (maru: ý là đúng, đạt)"
+ },
+ {
+  "word": "作文",
+  "reading": "さくぶん",
+  "meaning": "bài văn"
+ },
+ {
+  "word": "易しい",
+  "reading": "やさしい",
+  "meaning": "dễ, đơn giản"
+ },
+ {
+  "word": "簡単な",
+  "reading": "かんたんな",
+  "meaning": "đơn giản"
+ },
+ {
+  "word": "間違える",
+  "reading": "まちがえる",
+  "meaning": "sai, nhầm"
+ },
+ {
+  "word": "熱心な",
+  "reading": "ねっしんな",
+  "meaning": "nhiệt tình"
+ },
+ {
+  "word": "優しい",
+  "reading": "やさしい",
+  "meaning": "hiền, tử tế"
+ },
+ {
+  "word": "厳しい",
+  "reading": "きびしい",
+  "meaning": "nghiêm khắc"
+ },
+ {
+  "word": "真面目な",
+  "reading": "まじめな",
+  "meaning": "nghiêm túc, chăm chỉ"
+ },
+ {
+  "word": "偉い",
+  "reading": "えらい",
+  "meaning": "cao quý, ưu tú"
+ },
+ {
+  "word": "設備",
+  "reading": "せつび",
+  "meaning": "thiết bị"
+ },
+ {
+  "word": "ベル",
+  "reading": "ベル",
+  "meaning": "chuông"
+ },
+ {
+  "word": "大学生",
+  "reading": "だいがくせい",
+  "meaning": "sinh viên"
+ },
+ {
+  "word": "受ける",
+  "reading": "うける",
+  "meaning": "dự (thi)"
+ },
+ {
+  "word": "受かる",
+  "reading": "うかる",
+  "meaning": "đậu (kỳ thi)"
+ },
+ {
+  "word": "留学",
+  "reading": "りゅうがく",
+  "meaning": "việc du học"
+ },
+ {
+  "word": "目的",
+  "reading": "もくてき",
+  "meaning": "mục đích"
+ },
+ {
+  "word": "夢",
+  "reading": "ゆめ",
+  "meaning": "ước mơ, giấc mơ"
+ },
+ {
+  "word": "学部",
+  "reading": "がくぶ",
+  "meaning": "ngành, khoa"
+ },
+ {
+  "word": "専門",
+  "reading": "せんもん",
+  "meaning": "chuyên môn"
+ },
+ {
+  "word": "科学",
+  "reading": "かがく",
+  "meaning": "khoa học"
+ },
+ {
+  "word": "医学",
+  "reading": "いがく",
+  "meaning": "y học"
+ },
+ {
+  "word": "文学",
+  "reading": "ぶんがく",
+  "meaning": "văn học"
+ },
+ {
+  "word": "法律",
+  "reading": "ほうりつ",
+  "meaning": "luật pháp"
+ },
+ {
+  "word": "講義",
+  "reading": "こうぎ",
+  "meaning": "giờ học, tiết học"
+ },
+ {
+  "word": "出席",
+  "reading": "しゅっせき",
+  "meaning": "sự tham dự, có mặt"
+ },
+ {
+  "word": "欠席",
+  "reading": "けっせき",
+  "meaning": "sự vắng mặt, nghỉ học"
+ },
+ {
+  "word": "レポート",
+  "reading": "レポート",
+  "meaning": "bài báo cáo"
+ },
+ {
+  "word": "論文",
+  "reading": "ろんぶん",
+  "meaning": "luận văn"
+ },
+ {
+  "word": "締切",
+  "reading": "しめきり",
+  "meaning": "hạn chót"
+ },
+ {
+  "word": "研究",
+  "reading": "けんきゅう",
+  "meaning": "sự nghiên cứu"
+ },
+ {
+  "word": "実験",
+  "reading": "じっけん",
+  "meaning": "thí nghiệm"
+ },
+ {
+  "word": "まとめる",
+  "reading": "まとめる",
+  "meaning": "tóm tắt (~)"
+ },
+ {
+  "word": "ボランティア",
+  "reading": "ボランティア",
+  "meaning": "công việc tình nguyện"
+ },
+ {
+  "word": "複雑な",
+  "reading": "ふくざつな",
+  "meaning": "phức tạp"
+ },
+ {
+  "word": "必要",
+  "reading": "ひつよう",
+  "meaning": "sự cần thiết (cần thiết)"
+ },
+ {
+  "word": "考える",
+  "reading": "かんがえる",
+  "meaning": "suy nghĩ, nghĩ"
+ },
+ {
+  "word": "辞典",
+  "reading": "じてん",
+  "meaning": "tự điển"
+ },
+ {
+  "word": "調べる",
+  "reading": "しらべる",
+  "meaning": "tra, tìm"
+ },
+ {
+  "word": "確かめる",
+  "reading": "たしかめる",
+  "meaning": "kiểm tra, xác nhận"
+ },
+ {
+  "word": "予習",
+  "reading": "よしゅう",
+  "meaning": "việc học trước, sự chuẩn bị bài"
+ },
+ {
+  "word": "復習",
+  "reading": "ふくしゅう",
+  "meaning": "việc ôn tập"
+ },
+ {
+  "word": "思い出す",
+  "reading": "おもいだす",
+  "meaning": "nhớ ra"
+ },
+ {
+  "word": "塾",
+  "reading": "じゅく",
+  "meaning": "lớp học thêm, lớp luyện thi"
+ },
+ {
+  "word": "やる",
+  "reading": "やる",
+  "meaning": "làm"
+ },
+ {
+  "word": "頑張る",
+  "reading": "がんばる",
+  "meaning": "cố gắng"
+ },
+ {
+  "word": "字",
+  "reading": "じ",
+  "meaning": "chữ, chữ viết"
+ },
+ {
+  "word": "振り仮名",
+  "reading": "ふりがな",
+  "meaning": "phiên âm"
+ },
+ {
+  "word": "メモ",
+  "reading": "メモ",
+  "meaning": "việc ghi chép"
+ },
+ {
+  "word": "文法",
+  "reading": "ぶんぽう",
+  "meaning": "văn phạm, ngữ pháp"
+ },
+ {
+  "word": "説明",
+  "reading": "せつめい",
+  "meaning": "việc giải thích"
+ },
+ {
+  "word": "発音",
+  "reading": "はつおん",
+  "meaning": "việc phát âm"
+ },
+ {
+  "word": "会話",
+  "reading": "かいわ",
+  "meaning": "cuộc nói chuyện, đoạn hội thoại"
+ },
+ {
+  "word": "足す",
+  "reading": "たす",
+  "meaning": "thêm vào, cộng"
+ },
+ {
+  "word": "役に立つ",
+  "reading": "やくにたつ",
+  "meaning": "có ích"
+ },
+ {
+  "word": "勉強中",
+  "reading": "べんきょうちゅう",
+  "meaning": "đang học"
+ },
+ {
+  "word": "勤める",
+  "reading": "つとめる",
+  "meaning": "làm việc"
+ },
+ {
+  "word": "給料",
+  "reading": "きゅうりょう",
+  "meaning": "lương"
+ },
+ {
+  "word": "ボーナス",
+  "reading": "ボーナス",
+  "meaning": "tiền thưởng"
+ },
+ {
+  "word": "貯金",
+  "reading": "ちょきん",
+  "meaning": "việc tiết kiệm"
+ },
+ {
+  "word": "受付",
+  "reading": "うけつけ",
+  "meaning": "tiếp tân, quầy tiếp tân"
+ },
+ {
+  "word": "名刺",
+  "reading": "めいし",
+  "meaning": "danh thiếp"
+ },
+ {
+  "word": "営業",
+  "reading": "えいぎょう",
+  "meaning": "việc kinh doanh"
+ },
+ {
+  "word": "挨拶",
+  "reading": "あいさつ",
+  "meaning": "lời chào hỏi"
+ },
+ {
+  "word": "会議",
+  "reading": "かいぎ",
+  "meaning": "cuộc họp, buổi họp"
+ },
+ {
+  "word": "ミーティング",
+  "reading": "ミーティング",
+  "meaning": "cuộc họp, gặp gỡ, bàn bạc"
+ },
+ {
+  "word": "意見",
+  "reading": "いけん",
+  "meaning": "ý kiến"
+ },
+ {
+  "word": "スケジュール",
+  "reading": "スケジュール",
+  "meaning": "thời khóa biểu, lịch trình"
+ },
+ {
+  "word": "出張",
+  "reading": "しゅっちょう",
+  "meaning": "chuyến công tác"
+ },
+ {
+  "word": "戻る",
+  "reading": "もどる",
+  "meaning": "quay lại"
+ },
+ {
+  "word": "戻す",
+  "reading": "もどす",
+  "meaning": "trả lại"
+ },
+ {
+  "word": "本社",
+  "reading": "ほんしゃ",
+  "meaning": "trụ sở chính"
+ },
+ {
+  "word": "社長",
+  "reading": "しゃちょう",
+  "meaning": "giám đốc"
+ },
+ {
+  "word": "ルール",
+  "reading": "ルール",
+  "meaning": "luật lệ, qui định"
+ },
+ {
+  "word": "規則",
+  "reading": "きそく",
+  "meaning": "quy tắc"
+ },
+ {
+  "word": "決まる",
+  "reading": "きまる",
+  "meaning": "được quyết định"
+ },
+ {
+  "word": "決める",
+  "reading": "きめる",
+  "meaning": "quyết định"
+ },
+ {
+  "word": "許可",
+  "reading": "きょか",
+  "meaning": "sự cho phép"
+ },
+ {
+  "word": "遅刻",
+  "reading": "ちこく",
+  "meaning": "sự trễ giờ"
+ },
+ {
+  "word": "技術",
+  "reading": "ぎじゅつ",
+  "meaning": "kỹ thuật"
+ },
+ {
+  "word": "パソコン",
+  "reading": "パソコン",
+  "meaning": "máy vi tính"
+ },
+ {
+  "word": "ソフト",
+  "reading": "ソフト",
+  "meaning": "phần mềm"
+ },
+ {
+  "word": "書類",
+  "reading": "しょるい",
+  "meaning": "hồ sơ"
+ },
+ {
+  "word": "ファイル",
+  "reading": "ファイル",
+  "meaning": "bìa hồ sơ"
+ },
+ {
+  "word": "入力",
+  "reading": "にゅうりょく",
+  "meaning": "việc đánh máy, nhập (dữ liệu)"
+ },
+ {
+  "word": "翻訳",
+  "reading": "ほんやく",
+  "meaning": "công việc dịch thuật, biên dịch"
+ },
+ {
+  "word": "通訳",
+  "reading": "つうやく",
+  "meaning": "công việc phiên dịch, thông dịch"
+ },
+ {
+  "word": "方法",
+  "reading": "ほうほう",
+  "meaning": "phương pháp"
+ },
+ {
+  "word": "仕方",
+  "reading": "しかた",
+  "meaning": "phương pháp, cách làm"
+ },
+ {
+  "word": "慣れる",
+  "reading": "なれる",
+  "meaning": "quen"
+ },
+ {
+  "word": "上手く行く",
+  "reading": "うまくいく",
+  "meaning": "suôn sẻ, tiến hành (thuận lợi)"
+ },
+ {
+  "word": "成功",
+  "reading": "せいこう",
+  "meaning": "sự thành công"
+ },
+ {
+  "word": "頼む",
+  "reading": "たのむ",
+  "meaning": "nhờ, yêu cầu"
+ },
+ {
+  "word": "手伝う",
+  "reading": "てつだう",
+  "meaning": "giúp đỡ"
+ },
+ {
+  "word": "残業",
+  "reading": "ざんぎょう",
+  "meaning": "việc làm ngoài giờ"
+ },
+ {
+  "word": "無理",
+  "reading": "むり",
+  "meaning": "việc khó khăn (không thể)"
+ },
+ {
+  "word": "急ぐ",
+  "reading": "いそぐ",
+  "meaning": "gấp rút, vội vàng"
+ },
+ {
+  "word": "昼休み",
+  "reading": "ひるやすみ",
+  "meaning": "giờ nghỉ trưa"
+ },
+ {
+  "word": "休憩",
+  "reading": "きゅうけい",
+  "meaning": "việc nghỉ giải lao, giờ nghỉ giải lao"
+ },
+ {
+  "word": "忘年会",
+  "reading": "ぼうねんかい",
+  "meaning": "tiệc tất niên"
+ },
+ {
+  "word": "公務員",
+  "reading": "こうむいん",
+  "meaning": "công chức, nhân viên nhà nước"
+ },
+ {
+  "word": "弁護士",
+  "reading": "べんごし",
+  "meaning": "luật sư"
+ },
+ {
+  "word": "工場",
+  "reading": "こうじょう",
+  "meaning": "nhà máy, xưởng"
+ },
+ {
+  "word": "事務所",
+  "reading": "じむしょ",
+  "meaning": "văn phòng"
+ }
+]

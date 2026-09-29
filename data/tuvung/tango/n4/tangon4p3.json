@@ -1,0 +1,702 @@
+[
+ {
+  "word": "ガイドブック",
+  "reading": "ガイドブック",
+  "meaning": "sách hướng dẫn"
+ },
+ {
+  "word": "時刻表",
+  "reading": "じこくひょう",
+  "meaning": "bảng giờ (tàu, xe)"
+ },
+ {
+  "word": "計画",
+  "reading": "けいかく",
+  "meaning": "kế hoạch"
+ },
+ {
+  "word": "遠く",
+  "reading": "とおく",
+  "meaning": "nơi xa"
+ },
+ {
+  "word": "海外",
+  "reading": "かいがい",
+  "meaning": "hải ngoại, nước ngoài"
+ },
+ {
+  "word": "国内",
+  "reading": "こくない",
+  "meaning": "quốc nội, trong nước"
+ },
+ {
+  "word": "景色",
+  "reading": "けしき",
+  "meaning": "phong cảnh, cảnh sắc"
+ },
+ {
+  "word": "お祭り",
+  "reading": "おまつり",
+  "meaning": "lễ hội"
+ },
+ {
+  "word": "花火",
+  "reading": "はなび",
+  "meaning": "pháo hoa"
+ },
+ {
+  "word": "連休",
+  "reading": "れんきゅう",
+  "meaning": "kỳ nghỉ dài ngày, kỳ nghỉ liên tục"
+ },
+ {
+  "word": "お正月",
+  "reading": "おしょうがつ",
+  "meaning": "Tết (ở đây là Tết dương lịch)"
+ },
+ {
+  "word": "旅行社",
+  "reading": "りょこうしゃ",
+  "meaning": "công ty du lịch"
+ },
+ {
+  "word": "申し込む",
+  "reading": "もうしこむ",
+  "meaning": "đăng ký"
+ },
+ {
+  "word": "シングル",
+  "reading": "シングル",
+  "meaning": "phòng đơn (giường đơn)"
+ },
+ {
+  "word": "予約",
+  "reading": "よやく",
+  "meaning": "việc đặt trước"
+ },
+ {
+  "word": "したく",
+  "reading": "したく",
+  "meaning": "sự chuẩn bị"
+ },
+ {
+  "word": "空港",
+  "reading": "くうこう",
+  "meaning": "sân bay"
+ },
+ {
+  "word": "両替",
+  "reading": "りょうがえ",
+  "meaning": "việc đổi tiền"
+ },
+ {
+  "word": "出発",
+  "reading": "しゅっぱつ",
+  "meaning": "việc xuất phát, khởi hành"
+ },
+ {
+  "word": "到着",
+  "reading": "とうちゃく",
+  "meaning": "việc đến nơi"
+ },
+ {
+  "word": "帰国",
+  "reading": "きこく",
+  "meaning": "việc về nước"
+ },
+ {
+  "word": "旅館",
+  "reading": "りょかん",
+  "meaning": "lữ quán (khách sạn kiểu Nhật)"
+ },
+ {
+  "word": "フロント",
+  "reading": "フロント",
+  "meaning": "quầy lễ tân"
+ },
+ {
+  "word": "泊まる",
+  "reading": "とまる",
+  "meaning": "trọ"
+ },
+ {
+  "word": "過ごす",
+  "reading": "すごす",
+  "meaning": "trải qua"
+ },
+ {
+  "word": "経験",
+  "reading": "けいけん",
+  "meaning": "kinh nghiệm"
+ },
+ {
+  "word": "見物",
+  "reading": "けんぶつ",
+  "meaning": "việc tham quan"
+ },
+ {
+  "word": "葉書",
+  "reading": "はがき",
+  "meaning": "bưu thiếp"
+ },
+ {
+  "word": "和食",
+  "reading": "わしょく",
+  "meaning": "món Nhật"
+ },
+ {
+  "word": "洋食",
+  "reading": "ようしょく",
+  "meaning": "bữa ăn kiểu Tây, món Tây"
+ },
+ {
+  "word": "ステーキ",
+  "reading": "ステーキ",
+  "meaning": "thịt bít-tết"
+ },
+ {
+  "word": "ハンバーグ",
+  "reading": "ハンバーグ",
+  "meaning": "thịt nướng ham-bơ-gơ"
+ },
+ {
+  "word": "サラダ",
+  "reading": "サラダ",
+  "meaning": "rau trộn"
+ },
+ {
+  "word": "ケーキ",
+  "reading": "ケーキ",
+  "meaning": "bánh kem"
+ },
+ {
+  "word": "メニュー",
+  "reading": "メニュー",
+  "meaning": "thực đơn"
+ },
+ {
+  "word": "食べ放題",
+  "reading": "たべほうだい",
+  "meaning": "ăn búp-phê (ăn bao nhiêu tùy thích)"
+ },
+ {
+  "word": "注文",
+  "reading": "ちゅうもん",
+  "meaning": "việc gọi món, đặt hàng"
+ },
+ {
+  "word": "ごちそうする",
+  "reading": "ごちそうする",
+  "meaning": "sự chiêu đãi, bữa ăn ngon (thịnh soạn)"
+ },
+ {
+  "word": "アルコール",
+  "reading": "アルコール",
+  "meaning": "nước uống có cồn, rượu"
+ },
+ {
+  "word": "乾杯",
+  "reading": "かんぱい",
+  "meaning": "cụng ly (chúc mừng)"
+ },
+ {
+  "word": "酔う",
+  "reading": "よう",
+  "meaning": "say (rượu, xe, tàu)"
+ },
+ {
+  "word": "醤油",
+  "reading": "しょうゆ",
+  "meaning": "nước tương"
+ },
+ {
+  "word": "ソース",
+  "reading": "ソース",
+  "meaning": "nước sốt"
+ },
+ {
+  "word": "醤油をつける",
+  "reading": "しょうゆをつける",
+  "meaning": "chấm (nước tương)"
+ },
+ {
+  "word": "味",
+  "reading": "あじ",
+  "meaning": "vị"
+ },
+ {
+  "word": "味が薄い",
+  "reading": "あじがうすい",
+  "meaning": "(vị) nhạt, lạt"
+ },
+ {
+  "word": "味が濃い",
+  "reading": "あじがこい",
+  "meaning": "(vị) đậm"
+ },
+ {
+  "word": "苦い",
+  "reading": "にがい",
+  "meaning": "đắng"
+ },
+ {
+  "word": "匂い",
+  "reading": "におい",
+  "meaning": "mùi"
+ },
+ {
+  "word": "かむ",
+  "reading": "かむ",
+  "meaning": "nhai, cắn"
+ },
+ {
+  "word": "量",
+  "reading": "りょう",
+  "meaning": "lượng"
+ },
+ {
+  "word": "残す",
+  "reading": "のこす",
+  "meaning": "chừa lại, để lại"
+ },
+ {
+  "word": "残る",
+  "reading": "のこる",
+  "meaning": "thừa, còn lại"
+ },
+ {
+  "word": "チャレンジ",
+  "reading": "チャレンジ",
+  "meaning": "sự thử thách"
+ },
+ {
+  "word": "材料",
+  "reading": "ざいりょう",
+  "meaning": "nguyên liệu"
+ },
+ {
+  "word": "半分",
+  "reading": "はんぶん",
+  "meaning": "một nửa, nửa phần"
+ },
+ {
+  "word": "はかる",
+  "reading": "はかる",
+  "meaning": "đo, cân, đong"
+ },
+ {
+  "word": "まぜる",
+  "reading": "まぜる",
+  "meaning": "trộn"
+ },
+ {
+  "word": "道具",
+  "reading": "どうぐ",
+  "meaning": "vật dụng"
+ },
+ {
+  "word": "鍋",
+  "reading": "なべ",
+  "meaning": "cái nồi"
+ },
+ {
+  "word": "ふた",
+  "reading": "ふた",
+  "meaning": "cái nắp"
+ },
+ {
+  "word": "皿",
+  "reading": "さら",
+  "meaning": "cái dĩa (đĩa)"
+ },
+ {
+  "word": "ちゃわん",
+  "reading": "ちゃわん",
+  "meaning": "cái chén (bát)"
+ },
+ {
+  "word": "用意",
+  "reading": "ようい",
+  "meaning": "sự chuẩn bị"
+ },
+ {
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "meaning": "xếp hàng"
+ },
+ {
+  "word": "並べる",
+  "reading": "ならべる",
+  "meaning": "sắp xếp, bày biện"
+ },
+ {
+  "word": "火",
+  "reading": "ひ",
+  "meaning": "lửa"
+ },
+ {
+  "word": "焼く",
+  "reading": "やく",
+  "meaning": "nướng, chiên"
+ },
+ {
+  "word": "焼ける",
+  "reading": "やける",
+  "meaning": "được nướng/ chiên chín"
+ },
+ {
+  "word": "やかん",
+  "reading": "やかん",
+  "meaning": "cái ấm"
+ },
+ {
+  "word": "沸かす",
+  "reading": "わかす",
+  "meaning": "đun sôi"
+ },
+ {
+  "word": "温める",
+  "reading": "あたためる",
+  "meaning": "làm ấm, hâm nóng"
+ },
+ {
+  "word": "冷やす",
+  "reading": "ひやす",
+  "meaning": "ướp lạnh, làm lạnh, làm mát"
+ },
+ {
+  "word": "入れる",
+  "reading": "いれる",
+  "meaning": "cho (trà) vào, châm (trà)"
+ },
+ {
+  "word": "腐る",
+  "reading": "くさる",
+  "meaning": "thối, hôi, hư"
+ },
+ {
+  "word": " 捨てる",
+  "reading": "すてる",
+  "meaning": "vứt bỏ"
+ },
+ {
+  "word": "米",
+  "reading": "こめ",
+  "meaning": "gạo, cơm"
+ },
+ {
+  "word": "お弁当",
+  "reading": "おべんとう",
+  "meaning": "cơm hộp"
+ },
+ {
+  "word": "おかず",
+  "reading": "おかず",
+  "meaning": "thức ăn, đồ ăn"
+ },
+ {
+  "word": "インスタントしょくひん",
+  "reading": "いんすたんと しょくひん",
+  "meaning": "thực phẩm ăn liền"
+ },
+ {
+  "word": "かんづめ",
+  "reading": "かんづめ",
+  "meaning": "đồ hộp"
+ },
+ {
+  "word": "家事",
+  "reading": "かじ",
+  "meaning": "việc nhà"
+ },
+ {
+  "word": "値段",
+  "reading": "ねだん",
+  "meaning": "giá cả"
+ },
+ {
+  "word": "上がる",
+  "reading": "あがる",
+  "meaning": "tăng"
+ },
+ {
+  "word": "バーゲン",
+  "reading": "バーゲン",
+  "meaning": "đợt giảm giá, sự giảm giá"
+ },
+ {
+  "word": "割引",
+  "reading": "わりびき",
+  "meaning": "sự giảm giá, bớt, bán rẻ"
+ },
+ {
+  "word": "無料",
+  "reading": "むりょう",
+  "meaning": "miễn phí"
+ },
+ {
+  "word": "有料",
+  "reading": "ゆうりょう",
+  "meaning": "tốn tiền, tốn phí"
+ },
+ {
+  "word": "さいふ",
+  "reading": "さいふ",
+  "meaning": "ví, bóp"
+ },
+ {
+  "word": "レジ",
+  "reading": "レジ",
+  "meaning": "quầy tính tiền, quầy thâu ngân"
+ },
+ {
+  "word": "計算",
+  "reading": "けいさん",
+  "meaning": "sự tính toán"
+ },
+ {
+  "word": "店員",
+  "reading": "てんいん",
+  "meaning": "nhân viên"
+ },
+ {
+  "word": "数える",
+  "reading": "かぞえる",
+  "meaning": "đếm"
+ },
+ {
+  "word": "払う",
+  "reading": "はらう",
+  "meaning": "trả tiền"
+ },
+ {
+  "word": "サイン",
+  "reading": "サイン",
+  "meaning": "chữ ký, việc ký tên"
+ },
+ {
+  "word": "足りる",
+  "reading": "たりる",
+  "meaning": "đủ"
+ },
+ {
+  "word": "おつり",
+  "reading": "おつり",
+  "meaning": "tiền thối"
+ },
+ {
+  "word": "レシート",
+  "reading": "レシート",
+  "meaning": "biên lai"
+ },
+ {
+  "word": "りょうしゅう書",
+  "reading": "りょうしゅうしょ",
+  "meaning": "hóa đơn"
+ },
+ {
+  "word": "袋",
+  "reading": "ふくろ",
+  "meaning": "bao, túi"
+ },
+ {
+  "word": "取りかえる",
+  "reading": "とりかえる",
+  "meaning": "đổi"
+ },
+ {
+  "word": "探す",
+  "reading": "さがす",
+  "meaning": "tìm"
+ },
+ {
+  "word": "選ぶ",
+  "reading": "えらぶ",
+  "meaning": "chọn"
+ },
+ {
+  "word": "包む",
+  "reading": "つつむ",
+  "meaning": "gói"
+ },
+ {
+  "word": "お金を下ろす",
+  "reading": "おかねをおろす",
+  "meaning": "rút (tiền)"
+ },
+ {
+  "word": "売れる",
+  "reading": "うれる",
+  "meaning": "bán chạy"
+ },
+ {
+  "word": "食料品",
+  "reading": "しょくりょうひん",
+  "meaning": "thực phẩm"
+ },
+ {
+  "word": "おもちゃ",
+  "reading": "おもちゃ",
+  "meaning": "đồ chơi"
+ },
+ {
+  "word": "パンフレット",
+  "reading": "パンフレット",
+  "meaning": "tờ bướm quảng cáo"
+ },
+ {
+  "word": "日本製",
+  "reading": "にほんせい",
+  "meaning": "hàng (sản xuất tại) Nhật"
+ },
+ {
+  "word": "本物",
+  "reading": "ほんもの",
+  "meaning": "đồ thật, hàng thật"
+ },
+ {
+  "word": "場所",
+  "reading": "ばしょ",
+  "meaning": "nơi, chỗ"
+ },
+ {
+  "word": "駅前",
+  "reading": "えきまえ",
+  "meaning": "trước nhà ga"
+ },
+ {
+  "word": "交番",
+  "reading": "こうばん",
+  "meaning": "đồn (bốt) cảnh sát"
+ },
+ {
+  "word": "市役所",
+  "reading": "しやくしょ",
+  "meaning": "ủy ban thành phố"
+ },
+ {
+  "word": "バスてい",
+  "reading": "ばすてい",
+  "meaning": "trạm xe buýt"
+ },
+ {
+  "word": "広場",
+  "reading": "ひろば",
+  "meaning": "quảng trường"
+ },
+ {
+  "word": "城",
+  "reading": "しろ",
+  "meaning": "thành, lâu đài"
+ },
+ {
+  "word": "神社",
+  "reading": "じんじゃ",
+  "meaning": "đền thờ Thần đạo"
+ },
+ {
+  "word": "教会",
+  "reading": "きょうかい",
+  "meaning": "nhà thờ"
+ },
+ {
+  "word": "港",
+  "reading": "みなと",
+  "meaning": "cảng"
+ },
+ {
+  "word": "動物園",
+  "reading": "どうぶつえん",
+  "meaning": "sở thú"
+ },
+ {
+  "word": "美術館",
+  "reading": "びじゅつかん",
+  "meaning": "bảo tàng mỹ thuật"
+ },
+ {
+  "word": "遊園地",
+  "reading": "ゆうえんち",
+  "meaning": "khu vui chơi giải trí"
+ },
+ {
+  "word": "温泉",
+  "reading": "おんせん",
+  "meaning": "suối nước nóng"
+ },
+ {
+  "word": "駐車場",
+  "reading": "ちゅうしゃじょう",
+  "meaning": "bãi đậu xe"
+ },
+ {
+  "word": "屋上",
+  "reading": "おくじょう",
+  "meaning": "sân thượng"
+ },
+ {
+  "word": "地下",
+  "reading": "ちか",
+  "meaning": "tầng hầm"
+ },
+ {
+  "word": "田舎",
+  "reading": "いなか",
+  "meaning": "vùng quê"
+ },
+ {
+  "word": "郊外",
+  "reading": "こうがい",
+  "meaning": "ngoại ô"
+ },
+ {
+  "word": "方言",
+  "reading": "ほうげん",
+  "meaning": "tiếng địa phương, phương ngữ"
+ },
+ {
+  "word": "禁煙",
+  "reading": "きんえん",
+  "meaning": "cấm hút thuốc"
+ },
+ {
+  "word": "立入禁止",
+  "reading": "たちいりきんし",
+  "meaning": "cấm vào"
+ },
+ {
+  "word": "通り",
+  "reading": "とおり",
+  "meaning": "con đường, đường đi"
+ },
+ {
+  "word": "右側",
+  "reading": "みぎがわ",
+  "meaning": "bên phải"
+ },
+ {
+  "word": "間",
+  "reading": "あいだ",
+  "meaning": "khoảng giữa, giữa"
+ },
+ {
+  "word": "真ん中",
+  "reading": "まんなか",
+  "meaning": "chính giữa"
+ },
+ {
+  "word": "向こう",
+  "reading": "むこう",
+  "meaning": "bên kia"
+ },
+ {
+  "word": "尋ねる",
+  "reading": "たずねる",
+  "meaning": "hỏi thăm"
+ },
+ {
+  "word": "寄る",
+  "reading": "よる",
+  "meaning": "ghé"
+ }
+]
