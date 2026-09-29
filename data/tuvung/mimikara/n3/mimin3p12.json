@@ -1,37 +1,179 @@
 [
-  "ぐっすり",
-  "きちんと",
-  "しっかり",
-  "はっきり",
-  "じっと",
-  "そっと",
-  "別々に",
-  "それぞれ",
-  "互いに",
-  "直接",
-  "本当に",
-  "必ず",
-  "絶対",
-  "特に",
-  "ただ",
-  "少なくとも",
-  "決して",
-  "少しも",
-  "ちっとも",
-  "全く",
-  "とても",
-  "どんなに",
-  "どうしても",
-  "まるで",
-  "一体",
-  "別に",
-  "たった",
-  "ほんの",
-  "それで",
-  "そこで",
-  "そのうえ",
-  "また",
-  "または",
-  "それとも",
-  "つまり"
+ {
+  "word": "ぐっすり",
+  "example": "[昨日](きのう)は **ぐっすり** ねむれました。",
+  "exampleVi": "Hôm qua tôi đã ngủ rất say."
+ },
+ {
+  "word": "きちんと",
+  "example": "[書類](しょるい)は **きちんと** [整理](せいり)して ください。",
+  "exampleVi": "Hãy sắp xếp giấy tờ cho gọn gàng."
+ },
+ {
+  "word": "しっかり",
+  "example": "[子供](こども)の [手](て)を **しっかり** にぎって [歩](ある)きました。",
+  "exampleVi": "Tôi nắm chặt tay đứa trẻ khi đi bộ."
+ },
+ {
+  "word": "はっきり",
+  "example": "[大](おお)きな [声](こえ)で **はっきり** [話](はな)して ください。",
+  "exampleVi": "Hãy nói to và rõ ràng."
+ },
+ {
+  "word": "じっと",
+  "example": "かれは **じっと** [窓](まど)の [外](そと)を [見](み)て いました。",
+  "exampleVi": "Anh ấy chăm chú nhìn ra ngoài cửa sổ."
+ },
+ {
+  "word": "そっと",
+  "example": "[赤](あか)ちゃんが ねて いるので、**そっと** ドアを [閉](し)めました。",
+  "exampleVi": "Vì em bé đang ngủ nên tôi khẽ đóng cửa."
+ },
+ {
+  "word": "別々に",
+  "reading": "べつべつに",
+  "meaning": "riêng lẻ, riêng biệt",
+  "example": "お[会計](かいけい)は **[別々](べつべつ)に** お[願](ねが)いします。",
+  "exampleVi": "Xin tính tiền riêng cho từng người."
+ },
+ {
+  "word": "それぞれ",
+  "example": "みんな **それぞれ** ちがう [意見](いけん)を [持](も)って います。",
+  "exampleVi": "Mỗi người đều có ý kiến khác nhau."
+ },
+ {
+  "word": "互いに",
+  "example": "[二人](ふたり)は **たがいに** [助](たす)け[合](あ)って います。",
+  "exampleVi": "Hai người giúp đỡ lẫn nhau."
+ },
+ {
+  "word": "直接",
+  "example": "この [問題](もんだい)は [本人](ほんにん)に **[直接](ちょくせつ)** [聞](き)いて ください。",
+  "exampleVi": "Vấn đề này hãy hỏi trực tiếp bản thân họ."
+ },
+ {
+  "word": "本当に",
+  "example": "**[本当](ほんとう)に** [助](たす)かりました。",
+  "exampleVi": "Thật sự tôi đã được giúp đỡ rất nhiều."
+ },
+ {
+  "word": "必ず",
+  "example": "[明日](あした)は **[必](かなら)ず** [来](き)て ください。",
+  "exampleVi": "Ngày mai nhất định hãy đến."
+ },
+ {
+  "word": "絶対",
+  "example": "**[絶対](ぜったい)**に だれにも [言](い)わないで ください。",
+  "exampleVi": "Tuyệt đối đừng nói với ai."
+ },
+ {
+  "word": "特に",
+  "example": "**[特](とく)に** [今日](きょう)は [暑](あつ)いです。",
+  "exampleVi": "Đặc biệt hôm nay trời nóng."
+ },
+ {
+  "word": "ただ",
+  "example": "[料理](りょうり)は おいしいです。**ただ**、[値段](ねだん)が [少](すこ)し [高](たか)いです。",
+  "exampleVi": "Món ăn thì ngon. Có điều giá hơi đắt."
+ },
+ {
+  "word": "少なくとも",
+  "example": "**[少](すく)なくとも** [三時間](さんじかん)は [勉強](べんきょう)しないと [間](ま)に[合](あ)いません。",
+  "exampleVi": "Ít nhất phải học ba tiếng, nếu không sẽ không kịp."
+ },
+ {
+  "word": "決して",
+  "example": "[約束](やくそく)は **[決](けっ)して** [忘](わす)れません。",
+  "exampleVi": "Tôi tuyệt đối không quên lời hứa."
+ },
+ {
+  "word": "少しも",
+  "example": "この [映画](えいが)は **[少](すこ)しも** [面白](おもしろ)くありませんでした。",
+  "exampleVi": "Bộ phim này chẳng thú vị chút nào."
+ },
+ {
+  "word": "ちっとも",
+  "example": "[勉強](べんきょう)しても、**ちっとも** [上手](じょうず)に なりません。",
+  "exampleVi": "Dù học nhưng chẳng giỏi lên chút nào."
+ },
+ {
+  "word": "全く",
+  "example": "かれの [話](はなし)は **[全](まった)く** [分](わ)かりませんでした。",
+  "exampleVi": "Tôi hoàn toàn không hiểu câu chuyện của anh ấy."
+ },
+ {
+  "word": "とても",
+  "example": "この [問題](もんだい)は **とても** [一人](ひとり)では [解](と)けません。",
+  "exampleVi": "Bài này một mình tôi tuyệt đối không giải nổi."
+ },
+ {
+  "word": "どんなに",
+  "example": "**どんなに** がんばっても、[間](ま)に[合](あ)いません。",
+  "exampleVi": "Dù cố gắng thế nào cũng không kịp."
+ },
+ {
+  "word": "どうしても",
+  "example": "**どうしても** かれの [名前](なまえ)が [思](おも)い[出](だ)せません。",
+  "exampleVi": "Dù thế nào tôi cũng không nhớ ra tên anh ấy."
+ },
+ {
+  "word": "まるで",
+  "example": "この [部屋](へや)は **まるで** [春](はる)のように [暖](あたた)かいです。",
+  "exampleVi": "Căn phòng này ấm áp như thể đang mùa xuân."
+ },
+ {
+  "word": "一体",
+  "example": "**[一体](いったい)**、[何](なに)が [起](お)こったのですか。",
+  "exampleVi": "Rốt cuộc đã xảy ra chuyện gì vậy?"
+ },
+ {
+  "word": "別に",
+  "example": "A：[何](なに)か ありましたか。　B：**[別](べつ)に**。",
+  "exampleVi": "A: Có chuyện gì à?  B: Không có gì đâu."
+ },
+ {
+  "word": "たった",
+  "example": "**たった** [五分](ごふん)で [宿題](しゅくだい)が [終](お)わりました。",
+  "exampleVi": "Chỉ mới năm phút mà bài tập đã xong."
+ },
+ {
+  "word": "ほんの",
+  "example": "**ほんの** [少](すこ)しだけ [食](た)べました。",
+  "exampleVi": "Tôi chỉ ăn có một chút xíu."
+ },
+ {
+  "word": "それで",
+  "example": "[雨](あめ)が [降](ふ)りました。**それで**、[試合](しあい)は [中止](ちゅうし)に なりました。",
+  "exampleVi": "Trời đã mưa. Vì thế trận đấu bị hủy."
+ },
+ {
+  "word": "そこで",
+  "example": "[道](みち)が [分](わ)かりませんでした。**そこで**、[交番](こうばん)で [聞](き)きました。",
+  "exampleVi": "Tôi không biết đường. Vì vậy tôi đã hỏi ở đồn cảnh sát."
+ },
+ {
+  "word": "そのうえ",
+  "example": "かれは [優](やさ)しくて、**そのうえ** [頭](あたま)も いいです。",
+  "exampleVi": "Anh ấy hiền lành, hơn nữa còn thông minh."
+ },
+ {
+  "word": "また",
+  "example": "[雨](あめ)が [降](ふ)って きました。**また**、[風](かぜ)も [強](つよ)く なって きました。",
+  "exampleVi": "Trời bắt đầu mưa. Hơn nữa gió cũng mạnh lên."
+ },
+ {
+  "word": "または",
+  "example": "[申](もう)しこみは [電話](でんわ)**または** メールで お[願](ねが)いします。",
+  "exampleVi": "Xin đăng ký bằng điện thoại hoặc thư điện tử."
+ },
+ {
+  "word": "それとも",
+  "example": "コーヒーに しますか、**それとも** [紅茶](こうちゃ)に しますか。",
+  "exampleVi": "Bạn dùng cà phê hay là hồng trà?"
+ },
+ {
+  "word": "つまり",
+  "example": "A：[来週](らいしゅう)は [全員](ぜんいん) [休](やす)みです。　B：**つまり**、[会議](かいぎ)は ないのですね。",
+  "exampleVi": "A: Tuần sau mọi người đều nghỉ.  B: Tóm lại là không có cuộc họp nhỉ."
+ }
 ]
