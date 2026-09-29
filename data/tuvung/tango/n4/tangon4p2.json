@@ -15,7 +15,7 @@
   "meaning": "trường trung học phổ thông (cấp III)"
  },
  {
-  "word": "幼稚園",
+  "word": "ようちえん",
   "reading": "ようちえん",
   "meaning": "mẫu giáo"
  },
@@ -145,7 +145,7 @@
   "meaning": "đơn giản"
  },
  {
-  "word": "間違える",
+  "word": "まちがえる",
   "reading": "まちがえる",
   "meaning": "sai, nhầm"
  },
@@ -170,7 +170,7 @@
   "meaning": "nghiêm túc, chăm chỉ"
  },
  {
-  "word": "偉い",
+  "word": "えらい",
   "reading": "えらい",
   "meaning": "cao quý, ưu tú"
  },
@@ -270,7 +270,7 @@
   "meaning": "luận văn"
  },
  {
-  "word": "締切",
+  "word": "しめきり",
   "reading": "しめきり",
   "meaning": "hạn chót"
  },
@@ -340,7 +340,7 @@
   "meaning": "nhớ ra"
  },
  {
-  "word": "塾",
+  "word": "じゅく",
   "reading": "じゅく",
   "meaning": "lớp học thêm, lớp luyện thi"
  },
@@ -350,7 +350,7 @@
   "meaning": "làm"
  },
  {
-  "word": "頑張る",
+  "word": "がんばる",
   "reading": "がんばる",
   "meaning": "cố gắng"
  },
@@ -360,7 +360,7 @@
   "meaning": "chữ, chữ viết"
  },
  {
-  "word": "振り仮名",
+  "word": "ふりがな",
   "reading": "ふりがな",
   "meaning": "phiên âm"
  },
@@ -430,7 +430,7 @@
   "meaning": "tiếp tân, quầy tiếp tân"
  },
  {
-  "word": "名刺",
+  "word": "めいし",
   "reading": "めいし",
   "meaning": "danh thiếp"
  },
@@ -440,7 +440,7 @@
   "meaning": "việc kinh doanh"
  },
  {
-  "word": "挨拶",
+  "word": "あいさつ",
   "reading": "あいさつ",
   "meaning": "lời chào hỏi"
  },
@@ -470,12 +470,12 @@
   "meaning": "chuyến công tác"
  },
  {
-  "word": "戻る",
+  "word": "もどる",
   "reading": "もどる",
   "meaning": "quay lại"
  },
  {
-  "word": "戻す",
+  "word": "もどす",
   "reading": "もどす",
   "meaning": "trả lại"
  },
@@ -515,7 +515,7 @@
   "meaning": "sự cho phép"
  },
  {
-  "word": "遅刻",
+  "word": "ちこく",
   "reading": "ちこく",
   "meaning": "sự trễ giờ"
  },
@@ -550,7 +550,7 @@
   "meaning": "việc đánh máy, nhập (dữ liệu)"
  },
  {
-  "word": "翻訳",
+  "word": "ほんやく",
   "reading": "ほんやく",
   "meaning": "công việc dịch thuật, biên dịch"
  },
@@ -585,7 +585,7 @@
   "meaning": "sự thành công"
  },
  {
-  "word": "頼む",
+  "word": "たのむ",
   "reading": "たのむ",
   "meaning": "nhờ, yêu cầu"
  },
@@ -615,7 +615,7 @@
   "meaning": "giờ nghỉ trưa"
  },
  {
-  "word": "休憩",
+  "word": "きゅうけい",
   "reading": "きゅうけい",
   "meaning": "việc nghỉ giải lao, giờ nghỉ giải lao"
  },

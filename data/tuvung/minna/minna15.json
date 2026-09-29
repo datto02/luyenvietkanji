@@ -1,22 +1,142 @@
 [
-  "置きます",
-  "作ります",
-  "売ります",
-  "知ります",
-  "住みます",
-  "研究します",
-  "資料",
-  "カタログ",
-  "時刻表",
-  "服",
-  "製品",
-  "ソフト",
-  "電子辞書",
-  "経済",
-  "市役所",
-  "高校",
-  "歯医者",
-  "独身",
-  "皆さん",
-  "思い出します"
+  {
+    "word": "置きます",
+    "reading": "おきます",
+    "meaning": "đặt, để",
+    "example": "ここに かばんを **[置](お)きます**。",
+    "exampleVi": "Tôi đặt cặp ở đây."
+  },
+  {
+    "word": "作ります",
+    "reading": "つくります",
+    "meaning": "làm, chế tạo",
+    "example": "[私](わたし)は [毎日](まいにち) [晩](ばん)ご[飯](はん)を **[作](つく)ります**。",
+    "exampleVi": "Ngày nào tôi cũng nấu bữa tối."
+  },
+  {
+    "word": "売ります",
+    "reading": "うります",
+    "meaning": "bán",
+    "example": "この [店](みせ)は [服](ふく)を **[売](う)ります**。",
+    "exampleVi": "Cửa hàng này bán quần áo."
+  },
+  {
+    "word": "知ります",
+    "reading": "しります",
+    "meaning": "biết",
+    "example": "[田中](たなか)さんの [住所](じゅうしょ)を **[知](し)りません**。",
+    "exampleVi": "Tôi không biết địa chỉ của anh Tanaka."
+  },
+  {
+    "word": "住みます",
+    "reading": "すみます",
+    "meaning": "sống, cư trú",
+    "example": "[私](わたし)は [学校](がっこう)の [近](ちか)くに **[住](す)みます**。",
+    "exampleVi": "Tôi sống gần trường."
+  },
+  {
+    "word": "研究します",
+    "reading": "けんきゅうします",
+    "meaning": "nghiên cứu",
+    "example": "[大学](だいがく)で [経済](けいざい)を **[研究](けんきゅう)します**。",
+    "exampleVi": "Tôi nghiên cứu kinh tế ở trường đại học."
+  },
+  {
+    "word": "資料",
+    "reading": "しりょう",
+    "meaning": "tài liệu",
+    "example": "この **[資料](しりょう)**を コピーしてもいいですか。",
+    "exampleVi": "Tôi photo tài liệu này được không?"
+  },
+  {
+    "word": "カタログ",
+    "reading": "カタログ",
+    "meaning": "catalog",
+    "example": "**カタログ**を [見](み)てもいいですか。",
+    "exampleVi": "Tôi xem catalog được không?"
+  },
+  {
+    "word": "時刻表",
+    "reading": "じこくひょう",
+    "meaning": "bảng giờ tàu",
+    "example": "[駅](えき)に **[時刻表](じこくひょう)**が あります。",
+    "exampleVi": "Ở nhà ga có bảng giờ tàu."
+  },
+  {
+    "word": "服",
+    "reading": "ふく",
+    "meaning": "quần áo",
+    "example": "この [店](みせ)の **[服](ふく)**は [安](やす)いです。",
+    "exampleVi": "Quần áo của cửa hàng này rẻ."
+  },
+  {
+    "word": "製品",
+    "reading": "せいひん",
+    "meaning": "sản phẩm",
+    "example": "この **[製品](せいひん)**は [有名](ゆうめい)です。",
+    "exampleVi": "Sản phẩm này nổi tiếng."
+  },
+  {
+    "word": "ソフト",
+    "reading": "ソフト",
+    "meaning": "phần mềm",
+    "example": "この **ソフト**を [使](つか)ってもいいですか。",
+    "exampleVi": "Tôi dùng phần mềm này được không?"
+  },
+  {
+    "word": "電子辞書",
+    "reading": "でんしじしょ",
+    "meaning": "từ điển điện tử",
+    "example": "**[電子辞書](でんしじしょ)**を [持](も)っています。",
+    "exampleVi": "Tôi có một cuốn từ điển điện tử."
+  },
+  {
+    "word": "経済",
+    "reading": "けいざい",
+    "meaning": "kinh tế",
+    "example": "**[経済](けいざい)**は [難](むずか)しいです。",
+    "exampleVi": "Kinh tế khó."
+  },
+  {
+    "word": "市役所",
+    "reading": "しやくしょ",
+    "meaning": "tòa thị chính",
+    "example": "**[市役所](しやくしょ)**で [働](はたら)いています。",
+    "exampleVi": "Tôi làm việc ở tòa thị chính."
+  },
+  {
+    "word": "高校",
+    "reading": "こうこう",
+    "meaning": "trường cấp 3",
+    "example": "**[高校](こうこう)**は [駅](えき)の [近](ちか)くに あります。",
+    "exampleVi": "Trường cấp ba ở gần nhà ga."
+  },
+  {
+    "word": "歯医者",
+    "reading": "はいしゃ",
+    "meaning": "nha sĩ",
+    "example": "**[歯医者](はいしゃ)**で [働](はたら)いています。",
+    "exampleVi": "Tôi làm việc ở phòng khám nha khoa."
+  },
+  {
+    "word": "独身",
+    "reading": "どくしん",
+    "meaning": "độc thân",
+    "example": "[田中](たなか)さんは **[独身](どくしん)**です。",
+    "exampleVi": "Anh Tanaka còn độc thân."
+  },
+  {
+    "word": "みなさん",
+    "reading": "みなさん",
+    "meaning": "Mọi người",
+    "example": "**みなさん**、こんにちは。",
+    "exampleVi": "Chào mọi người."
+  },
+  {
+    "word": "思い出します",
+    "reading": "おもいだします",
+    "meaning": "nhớ lại",
+    "example": "[国](くに)の [家族](かぞく)を **[思](おも)い[出](だ)します**。",
+    "exampleVi": "Tôi nhớ đến gia đình ở quê nhà."
+  }
 ]

@@ -6,7 +6,7 @@
  },
  {
   "word": "テレビきょく",
-  "reading": "てれびきょく",
+  "reading": "テレビきょく",
   "meaning": "đài truyền hình"
  },
  {
@@ -102,7 +102,7 @@
  {
   "word": "約束を破る",
   "reading": "やくそくをやぶる",
-  "meaning": "thất (hứa)"
+  "meaning": "thất hứa, làm sai lời hứa"
  },
  {
   "word": "間に合う",
@@ -110,7 +110,7 @@
   "meaning": "kịp giờ, đúng giờ"
  },
  {
-  "word": "遅れる",
+  "word": "おくれる",
   "reading": "おくれる",
   "meaning": "trễ giờ"
  },
@@ -125,19 +125,19 @@
   "meaning": "lý do"
  },
  {
-  "word": "誘う",
+  "word": "さそう",
   "reading": "さそう",
   "meaning": "mời"
  },
  {
-  "word": "連絡",
+  "word": "れんらく",
   "reading": "れんらく",
   "meaning": "việc liên lạc"
  },
  {
   "word": "電話がある",
   "reading": "でんわがある",
-  "meaning": "có (điện thoại)"
+  "meaning": "có điện thoại (gọi đến)"
  },
  {
   "word": "食事",
@@ -170,7 +170,7 @@
   "meaning": "cơ hội, dịp"
  },
  {
-  "word": "嬉しい",
+  "word": "うれしい",
   "reading": "うれしい",
   "meaning": "vui mừng"
  },
@@ -200,7 +200,7 @@
   "meaning": "tin, tin tưởng"
  },
  {
-  "word": "祈る",
+  "word": "いのる",
   "reading": "いのる",
   "meaning": "cầu nguyện, cầu chúc"
  },
@@ -210,7 +210,7 @@
   "meaning": "buồn bã"
  },
  {
-  "word": "寂しい",
+  "word": "さびしい",
   "reading": "さびしい",
   "meaning": "buồn, cô đơn"
  },
@@ -220,7 +220,7 @@
   "meaning": "khóc"
  },
  {
-  "word": "涙",
+  "word": "なみだ",
   "reading": "なみだ",
   "meaning": "nước mắt"
  },
@@ -240,12 +240,12 @@
   "meaning": "sự thất vọng"
  },
  {
-  "word": "諦める",
+  "word": "あきらめる",
   "reading": "あきらめる",
   "meaning": "từ bỏ, bỏ cuộc"
  },
  {
-  "word": "緊張",
+  "word": "きんちょう",
   "reading": "きんちょう",
   "meaning": "sự căng thẳng, hồi hộp"
  },
@@ -260,12 +260,12 @@
   "meaning": "sự ngạc nhiên, bất ngờ, giật mình"
  },
  {
-  "word": "驚く",
+  "word": "おどろく",
   "reading": "おどろく",
   "meaning": "giật mình, ngạc nhiên"
  },
  {
-  "word": "怒る",
+  "word": "おこる",
   "reading": "おこる",
   "meaning": "tức giận, giận dữ"
  },
@@ -510,7 +510,7 @@
   "meaning": "thế nào, thì sao (cách hỏi lịch sự)"
  },
  {
-  "word": "一生懸命",
+  "word": "いっしょうけんめい",
   "reading": "いっしょうけんめい",
   "meaning": "sự cố gắng hết sức mình, sự nỗ lực (cố gắng hết mình, nỗ lực)"
  },

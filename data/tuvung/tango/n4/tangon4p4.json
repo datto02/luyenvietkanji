@@ -15,7 +15,7 @@
   "meaning": "(trời) nắng"
  },
  {
-  "word": "曇り",
+  "word": "くもり",
   "reading": "くもり",
   "meaning": "thời tiết âm u, trời âm u"
  },
@@ -25,7 +25,7 @@
   "meaning": "gió"
  },
  {
-  "word": "吹く",
+  "word": "ふく",
   "reading": "ふく",
   "meaning": "thổi"
  },
@@ -40,7 +40,7 @@
   "meaning": "bão"
  },
  {
-  "word": "雷",
+  "word": "かみなり",
   "reading": "かみなり",
   "meaning": "sấm"
  },
@@ -55,7 +55,7 @@
   "meaning": "che (dù)"
  },
  {
-  "word": "濡れる",
+  "word": "ぬれる",
   "reading": "ぬれる",
   "meaning": "bị ướt"
  },
@@ -80,12 +80,12 @@
   "meaning": "so sánh"
  },
  {
-  "word": "地震",
+  "word": "じしん",
   "reading": "じしん",
   "meaning": "động đất"
  },
  {
-  "word": "津波",
+  "word": "つなみ",
   "reading": "つなみ",
   "meaning": "sóng thần"
  },
@@ -175,7 +175,7 @@
   "meaning": "ngắm hoa"
  },
  {
-  "word": "咲く",
+  "word": "さく",
   "reading": "さく",
   "meaning": "nở"
  },
@@ -216,7 +216,7 @@
  },
  {
   "word": "やこうバス",
-  "reading": "やこうばす",
+  "reading": "やこうバス",
   "meaning": "xe buýt đêm"
  },
  {
@@ -255,7 +255,7 @@
   "meaning": "giờ cao điểm"
  },
  {
-  "word": "込む",
+  "word": "こむ",
   "reading": "こむ",
   "meaning": "đông"
  },
@@ -360,7 +360,7 @@
   "meaning": "tai nạn"
  },
  {
-  "word": "事故に遭う",
+  "word": "じこにあう",
   "reading": "じこにあう",
   "meaning": "gặp (tai nạn)"
  },
@@ -370,7 +370,7 @@
   "meaning": "đụng, tông"
  },
  {
-  "word": "滑る",
+  "word": "すべる",
   "reading": "すべる",
   "meaning": "trượt"
  },
@@ -400,7 +400,7 @@
   "meaning": "sự hư hỏng"
  },
  {
-  "word": "途中",
+  "word": "とちゅう",
   "reading": "とちゅう",
   "meaning": "giữa chừng, đang (trên đường, làm gì đó)"
  },

@@ -15,7 +15,7 @@
   "meaning": "quen biết"
  },
  {
-  "word": "紹介",
+  "word": "しょうかい",
   "reading": "しょうかい",
   "meaning": "sự giới thiệu"
  },
@@ -65,12 +65,12 @@
   "meaning": "nhận"
  },
  {
-  "word": "贈る",
+  "word": "おくる",
   "reading": "おくる",
   "meaning": "tặng, gửi tặng, trao gửi"
  },
  {
-  "word": "贈り物",
+  "word": "おくりもの",
   "reading": "おくりもの",
   "meaning": "quà tặng"
  },
@@ -80,7 +80,7 @@
   "meaning": "lời chúc mừng, sự chúc mừng"
  },
  {
-  "word": "渡す",
+  "word": "わたす",
   "reading": "わたす",
   "meaning": "trao, đưa"
  },
@@ -110,7 +110,7 @@
   "meaning": "xin lỗi"
  },
  {
-  "word": "遠慮",
+  "word": "えんりょ",
   "reading": "えんりょ",
   "meaning": "sự e ngại"
  },
@@ -125,12 +125,12 @@
   "meaning": "bạn thân"
  },
  {
-  "word": "先輩",
+  "word": "せんぱい",
   "reading": "せんぱい",
   "meaning": "đàn anh/ đàn chị"
  },
  {
-  "word": "彼ら",
+  "word": "かれら",
   "reading": "かれら",
   "meaning": "họ"
  },
@@ -170,12 +170,12 @@
   "meaning": "việc gặp mặt qua mai mối"
  },
  {
-  "word": "婚約",
+  "word": "こんやく",
   "reading": "こんやく",
   "meaning": "việc đính hôn"
  },
  {
-  "word": "結婚",
+  "word": "けっこん",
   "reading": "けっこん",
   "meaning": "việc kết hôn"
  },
@@ -195,7 +195,7 @@
   "meaning": "việc cãi nhau"
  },
  {
-  "word": "嘘",
+  "word": "うそ",
   "reading": "うそ",
   "meaning": "lời nói dối"
  },
@@ -205,17 +205,17 @@
   "meaning": "chia tay"
  },
  {
-  "word": "邪魔",
+  "word": "じゃま",
   "reading": "じゃま",
   "meaning": "sự cản trở (phiền phức)"
  },
  {
-  "word": "彼",
+  "word": "かれ",
   "reading": "かれ",
   "meaning": "anh ấy, người yêu (nam)"
  },
  {
-  "word": "彼女",
+  "word": "かのじょ",
   "reading": "かのじょ",
   "meaning": "cô ấy, người yêu (nữ)"
  },
@@ -225,7 +225,7 @@
   "meaning": "em (người con trai gọi người con gái, người lớn gọi người nhỏ)"
  },
  {
-  "word": "僕",
+  "word": "ぼく",
   "reading": "ぼく",
   "meaning": "tôi (dành cho nam nói)"
  },
@@ -280,7 +280,7 @@
   "meaning": "rơi, rớt"
  },
  {
-  "word": "壊れる",
+  "word": "こわれる",
   "reading": "こわれる",
   "meaning": "hư, hỏng"
  },
@@ -300,12 +300,12 @@
   "meaning": "làm rách, xé rách"
  },
  {
-  "word": "汚す",
+  "word": "よごす",
   "reading": "よごす",
   "meaning": "làm bẩn"
  },
  {
-  "word": "汚れる",
+  "word": "よごれる",
   "reading": "よごれる",
   "meaning": "bị bẩn"
  },
@@ -325,7 +325,7 @@
   "meaning": "tiếng động, âm thanh"
  },
  {
-  "word": "騒ぐ",
+  "word": "さわぐ",
   "reading": "さわぐ",
   "meaning": "làm ồn"
  },
@@ -335,32 +335,32 @@
   "meaning": "ồn ào"
  },
  {
-  "word": "泥棒",
+  "word": "どろぼう",
   "reading": "どろぼう",
   "meaning": "tên trộm"
  },
  {
-  "word": "盗む",
+  "word": "ぬすむ",
   "reading": "ぬすむ",
   "meaning": "trộm, cắp"
  },
  {
-  "word": "捕まえる",
+  "word": "つかまえる",
   "reading": "つかまえる",
   "meaning": "bắt được"
  },
  {
-  "word": "虐める",
+  "word": "いじめる",
   "reading": "いじめる",
   "meaning": "chơi xấu, quấy nhiễu, chọc phá"
  },
  {
-  "word": "触る",
+  "word": "さわる",
   "reading": "さわる",
   "meaning": "sờ, rờ, đụng vào"
  },
  {
-  "word": "踏む",
+  "word": "ふむ",
   "reading": "ふむ",
   "meaning": "dẫm, giẫm"
  },
@@ -385,12 +385,12 @@
   "meaning": "cửa thoát hiểm"
  },
  {
-  "word": "逃げる",
+  "word": "にげる",
   "reading": "にげる",
   "meaning": "trốn"
  },
  {
-  "word": "嫌な",
+  "word": "いやな",
   "reading": "いやな",
   "meaning": "khó chịu"
  },
@@ -405,7 +405,7 @@
   "meaning": "thôi rồi, hỏng rồi"
  },
  {
-  "word": "釣り",
+  "word": "つり",
   "reading": "つり",
   "meaning": "việc câu (cá)"
  },
@@ -420,7 +420,7 @@
   "meaning": "việc cắm trại"
  },
  {
-  "word": "漫画",
+  "word": "まんが",
   "reading": "まんが",
   "meaning": "truyện tranh"
  },
@@ -445,12 +445,12 @@
   "meaning": "trà đạo"
  },
  {
-  "word": "歌舞伎",
+  "word": "かぶき",
   "reading": "かぶき",
   "meaning": "kabuki (ca vũ kỹ)"
  },
  {
-  "word": "踊り",
+  "word": "おどり",
   "reading": "おどり",
   "meaning": "điệu múa, điệu nhảy"
  },
@@ -540,7 +540,7 @@
   "meaning": "môn chạy bộ"
  },
  {
-  "word": "伸ばす",
+  "word": "のばす",
   "reading": "のばす",
   "meaning": "duỗi"
  },
@@ -595,7 +595,7 @@
   "meaning": "thua"
  },
  {
-  "word": "応援",
+  "word": "おうえん",
   "reading": "おうえん",
   "meaning": "sự ủng hộ"
  },
@@ -620,7 +620,7 @@
   "meaning": "sự thất bại"
  },
  {
-  "word": "柔道",
+  "word": "じゅうどう",
   "reading": "じゅうどう",
   "meaning": "Judo (nhu đạo)"
  },

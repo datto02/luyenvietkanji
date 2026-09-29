@@ -1,25 +1,163 @@
 [
-  "登ります",
-  "泊まります",
-  "掃除します",
-  "洗濯します",
-  "なります",
-  "眠い",
-  "強い",
-  "弱い",
-  "練習",
-  "ゴルフ",
-  "相撲",
-  "お茶",
-  "日",
-  "調子",
-  "一度",
-  "一度も",
-  "だんだん",
-  "もうすぐ",
-  "でも",
-  "かんぱい",
-  "ダイエット",
-  "無理",
-  "体にいい"
+  {
+    "word": "登ります",
+    "reading": "のぼります",
+    "meaning": "leo [núi]",
+    "example": "[山](やま)に **[登](のぼ)りたい**です。",
+    "exampleVi": "Tôi muốn leo núi."
+  },
+  {
+    "word": "とまります",
+    "reading": "とまります",
+    "meaning": "trọ, ở lại",
+    "example": "ホテルに **とまりました**。",
+    "exampleVi": "Tôi đã trọ ở khách sạn."
+  },
+  {
+    "word": "そうじします",
+    "reading": "そうじします",
+    "meaning": "dọn vệ sinh",
+    "example": "[日曜日](にちようび)に [部屋](へや)を **そうじします**。",
+    "exampleVi": "Chủ nhật tôi dọn dẹp phòng."
+  },
+  {
+    "word": "せんたくします",
+    "reading": "せんたくします",
+    "meaning": "giặt giũ",
+    "example": "[土曜日](どようび)に **せんたくします**。",
+    "exampleVi": "Thứ bảy tôi giặt đồ."
+  },
+  {
+    "word": "なります",
+    "reading": "なります",
+    "meaning": "trở thành, trở nên",
+    "example": "[冬](ふゆ)に **なりました**。",
+    "exampleVi": "Đã sang mùa đông rồi."
+  },
+  {
+    "word": "ねむい",
+    "reading": "ねむい",
+    "meaning": "buồn ngủ",
+    "example": "[今日](きょう)は **ねむい**です。",
+    "exampleVi": "Hôm nay tôi buồn ngủ."
+  },
+  {
+    "word": "強い",
+    "reading": "つよい",
+    "meaning": "mạnh",
+    "example": "ミラーさんは **[強](つよ)い**です。",
+    "exampleVi": "Anh Miller mạnh."
+  },
+  {
+    "word": "弱い",
+    "reading": "よわい",
+    "meaning": "yếu",
+    "example": "[私](わたし)は [体](からだ)が **[弱](よわ)い**です。",
+    "exampleVi": "Cơ thể tôi yếu."
+  },
+  {
+    "word": "練習",
+    "reading": "れんしゅう",
+    "meaning": "luyện tập",
+    "example": "[毎日](まいにち) **[練習](れんしゅう)**します。",
+    "exampleVi": "Ngày nào tôi cũng luyện tập."
+  },
+  {
+    "word": "ゴルフ",
+    "reading": "ゴルフ",
+    "meaning": "gôn (golf)",
+    "example": "**ゴルフ**を した ことが あります。",
+    "exampleVi": "Tôi đã từng chơi golf."
+  },
+  {
+    "word": "すもう",
+    "reading": "すもう",
+    "meaning": "vật Sumo",
+    "example": "**すもう**を [見](み)た ことが ありますか。",
+    "exampleVi": "Bạn đã từng xem sumo chưa?"
+  },
+  {
+    "word": "お茶",
+    "reading": "おちゃ",
+    "meaning": "trà",
+    "example": "**[お茶](おちゃ)**を [飲](の)んだり、[新聞](しんぶん)を [読](よ)んだり します。",
+    "exampleVi": "Tôi lúc thì uống trà, lúc thì đọc báo."
+  },
+  {
+    "word": "日",
+    "reading": "ひ",
+    "meaning": "ngày",
+    "example": "[休](やす)みの **[日](ひ)**は [公園](こうえん)を [散歩](さんぽ)します。",
+    "exampleVi": "Vào ngày nghỉ tôi đi dạo trong công viên."
+  },
+  {
+    "word": "調子",
+    "reading": "ちょうし",
+    "meaning": "tình trạng, âm điệu",
+    "example": "[今日](きょう)は **[調子](ちょうし)**が いいです。",
+    "exampleVi": "Hôm nay tôi thấy trong người khỏe."
+  },
+  {
+    "word": "一度",
+    "reading": "いちど",
+    "meaning": "một lần",
+    "example": "[富士山](ふじさん)に **[一度](いちど)** [登](のぼ)った ことが あります。",
+    "exampleVi": "Tôi đã từng leo núi Phú Sĩ một lần."
+  },
+  {
+    "word": "一度も",
+    "reading": "いちども",
+    "meaning": "chưa lần nào",
+    "example": "[外国](がいこく)へ **[一度](いちど)も** [行](い)った ことが ありません。",
+    "exampleVi": "Tôi chưa từng đi nước ngoài lần nào."
+  },
+  {
+    "word": "だんだん",
+    "reading": "だんだん",
+    "meaning": "dần dần",
+    "example": "**だんだん** [暖](あたた)かく なります。",
+    "exampleVi": "Trời dần dần ấm lên."
+  },
+  {
+    "word": "もうすぐ",
+    "reading": "もうすぐ",
+    "meaning": "sắp, sắp tới",
+    "example": "**もうすぐ** [春](はる)に なります。",
+    "exampleVi": "Sắp đến mùa xuân rồi."
+  },
+  {
+    "word": "でも",
+    "reading": "でも",
+    "meaning": "nhưng",
+    "example": "[日本語](にほんご)は [難](むずか)しいです。**でも**、[面白](おもしろ)いです。",
+    "exampleVi": "Tiếng Nhật khó. Nhưng mà thú vị."
+  },
+  {
+    "word": "かんぱい",
+    "reading": "かんぱい",
+    "meaning": "Cạn chén!",
+    "example": "みなさん、**かんぱい**！",
+    "exampleVi": "Mọi người, cạn ly nào!"
+  },
+  {
+    "word": "ダイエット",
+    "reading": "ダイエット",
+    "meaning": "việc ăn kiêng",
+    "example": "[明日](あした)から **ダイエット**を します。",
+    "exampleVi": "Từ ngày mai tôi sẽ ăn kiêng."
+  },
+  {
+    "word": "無理",
+    "reading": "むり",
+    "meaning": "quá sức, vô lý",
+    "example": "それは **[無理](むり)**です。",
+    "exampleVi": "Việc đó là quá sức (không thể)."
+  },
+  {
+    "word": "体にいい",
+    "reading": "からだにいい",
+    "meaning": "tốt cho sức khỏe",
+    "example": "[野菜](やさい)は **[体](からだ)にいい**です。",
+    "exampleVi": "Rau tốt cho sức khỏe."
+  }
 ]

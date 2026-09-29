@@ -1,54 +1,366 @@
 [
-  "起きます",
-  "寝ます",
-  "働きます",
-  "休みます",
-  "勉強します",
-  "終わります",
-  "デパート",
-  "銀行",
-  "郵便局",
-  "図書館",
-  "美術館",
-  "今",
-  "時",
-  "分",
-  "半",
-  "何時",
-  "何分",
-  "午前",
-  "午後",
-  "朝",
-  "昼",
-  "晩",
-  "夜",
-  "一昨日",
-  "昨日",
-  "今日",
-  "明日",
-  "明後日",
-  "今朝",
-  "今晩",
-  "休み",
-  "昼休み",
-  "試験",
-  "会議",
-  "映画",
-  "毎朝",
-  "毎晩",
-  "毎日",
-  "月曜日",
-  "火曜日",
-  "水曜日",
-  "木曜日",
-  "金曜日",
-  "土曜日",
-  "日曜日",
-  "何曜日",
-  "番号",
-  "何番",
-  "ニューヨーク",
-  "ペキン",
-  "ロサンゼルス",
-  "ロンドン"
+  {
+    "word": "起きます",
+    "reading": "おきます",
+    "meaning": "Thức dậy",
+    "example": "[私](わたし)は 7[時](じ)に **[起](お)きます**。",
+    "exampleVi": "Tôi dậy lúc 7 giờ."
+  },
+  {
+    "word": "ねます",
+    "reading": "ねます",
+    "meaning": "Ngủ",
+    "example": "[私](わたし)は 12[時](じ)に **ねます**。",
+    "exampleVi": "Tôi đi ngủ lúc 12 giờ."
+  },
+  {
+    "word": "働きます",
+    "reading": "はたらきます",
+    "meaning": "Làm việc",
+    "example": "ミラーさんは [月曜日](げつようび)から [金曜日](きんようび)まで **[働](はたら)きます**。",
+    "exampleVi": "Anh Miller làm việc từ thứ hai đến thứ sáu."
+  },
+  {
+    "word": "休みます",
+    "reading": "やすみます",
+    "meaning": "Nghỉ",
+    "example": "[日曜日](にちようび)は **[休](やす)みます**。",
+    "exampleVi": "Chủ nhật tôi nghỉ."
+  },
+  {
+    "word": "勉強します",
+    "reading": "べんきょうします",
+    "meaning": "Học",
+    "example": "[毎晩](まいばん) 8[時](じ)から 9[時](じ)まで **[勉強](べんきょう)します**。",
+    "exampleVi": "Tối nào tôi cũng học từ 8 giờ đến 9 giờ."
+  },
+  {
+    "word": "終わります",
+    "reading": "おわります",
+    "meaning": "Xong, kết thúc",
+    "example": "[会議](かいぎ)は 5[時](じ)に **[終](お)わります**。",
+    "exampleVi": "Cuộc họp kết thúc lúc 5 giờ."
+  },
+  {
+    "word": "デパート",
+    "reading": "デパート",
+    "meaning": "cửa hàng bách hóa",
+    "example": "**デパート**は 10[時](じ)から 8[時](じ)までです。",
+    "exampleVi": "Cửa hàng bách hóa mở cửa từ 10 giờ đến 8 giờ."
+  },
+  {
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "meaning": "Ngân hàng",
+    "example": "**[銀行](ぎんこう)**は 9[時](じ)から 3[時](じ)までです。",
+    "exampleVi": "Ngân hàng mở cửa từ 9 giờ đến 3 giờ."
+  },
+  {
+    "word": "郵便局",
+    "reading": "ゆうびんきょく",
+    "meaning": "Bưu điện",
+    "example": "**[郵便局](ゆうびんきょく)**は 9[時](じ)から 5[時](じ)までです。",
+    "exampleVi": "Bưu điện mở cửa từ 9 giờ đến 5 giờ."
+  },
+  {
+    "word": "図書館",
+    "reading": "としょかん",
+    "meaning": "Thư viện",
+    "example": "**[図書館](としょかん)**は [月曜日](げつようび)は [休](やす)みです。",
+    "exampleVi": "Thư viện nghỉ vào thứ hai."
+  },
+  {
+    "word": "美術館",
+    "reading": "びじゅつかん",
+    "meaning": "Bảo tàng mỹ thuật",
+    "example": "**[美術館](びじゅつかん)**は [何時](なんじ)から [何時](なんじ)までですか。",
+    "exampleVi": "Bảo tàng mỹ thuật mở cửa từ mấy giờ đến mấy giờ vậy?"
+  },
+  {
+    "word": "今",
+    "reading": "いま",
+    "meaning": "Bây giờ",
+    "example": "**[今](いま)** 3[時](じ)です。",
+    "exampleVi": "Bây giờ là 3 giờ."
+  },
+  {
+    "word": "時",
+    "reading": "じ",
+    "meaning": "giờ",
+    "example": "[会議](かいぎ)は 2**[時](じ)**からです。",
+    "exampleVi": "Cuộc họp bắt đầu từ 2 giờ."
+  },
+  {
+    "word": "分",
+    "reading": "ふん",
+    "meaning": "phút",
+    "example": "[今](いま) 9[時](じ) 15**[分](ふん)**です。",
+    "exampleVi": "Bây giờ là 9 giờ 15 phút."
+  },
+  {
+    "word": "半",
+    "reading": "はん",
+    "meaning": "Nửa, rưỡi",
+    "example": "[今](いま) 7[時](じ)**[半](はん)**です。",
+    "exampleVi": "Bây giờ là 7 giờ rưỡi."
+  },
+  {
+    "word": "何時",
+    "reading": "なんじ",
+    "meaning": "Mấy giờ?",
+    "example": "[今](いま) **[何時](なんじ)**ですか。",
+    "exampleVi": "Bây giờ là mấy giờ?"
+  },
+  {
+    "word": "何分",
+    "reading": "なんぷん",
+    "meaning": "Mấy phút?",
+    "example": "[昼休み](ひるやすみ)は **[何分](なんぷん)**ですか。",
+    "exampleVi": "Giờ nghỉ trưa là bao nhiêu phút vậy?"
+  },
+  {
+    "word": "午前",
+    "reading": "ごぜん",
+    "meaning": "Buổi sáng",
+    "example": "**[午前](ごぜん)** 9[時](じ)から [働](はたら)きます。",
+    "exampleVi": "Tôi làm việc từ 9 giờ sáng."
+  },
+  {
+    "word": "午後",
+    "reading": "ごご",
+    "meaning": "buổi chiều",
+    "example": "[銀行](ぎんこう)は **[午後](ごご)** 3[時](じ)までです。",
+    "exampleVi": "Ngân hàng mở cửa đến 3 giờ chiều."
+  },
+  {
+    "word": "朝",
+    "reading": "あさ",
+    "meaning": "Sáng",
+    "example": "**[朝](あさ)** 6[時](じ)に [起](お)きます。",
+    "exampleVi": "Buổi sáng tôi dậy lúc 6 giờ."
+  },
+  {
+    "word": "昼",
+    "reading": "ひる",
+    "meaning": "Trưa",
+    "example": "**[昼](ひる)**は 12[時](じ)から 1[時](じ)まで [休](やす)みます。",
+    "exampleVi": "Buổi trưa tôi nghỉ từ 12 giờ đến 1 giờ."
+  },
+  {
+    "word": "晩",
+    "reading": "ばん",
+    "meaning": "Tối",
+    "example": "**[晩](ばん)**は 10[時](じ)に ねます。",
+    "exampleVi": "Buổi tối tôi đi ngủ lúc 10 giờ."
+  },
+  {
+    "word": "夜",
+    "reading": "よる",
+    "meaning": "buổi tối, đêm",
+    "example": "**[夜](よる)** 12[時](じ)まで [勉強](べんきょう)します。",
+    "exampleVi": "Buổi tối tôi học đến 12 giờ."
+  },
+  {
+    "word": "一昨日",
+    "reading": "おととい",
+    "meaning": "Hôm kia",
+    "example": "**[一昨日](おととい)**は [休](やす)みでした。",
+    "exampleVi": "Hôm kia tôi được nghỉ."
+  },
+  {
+    "word": "昨日",
+    "reading": "きのう",
+    "meaning": "Hôm qua",
+    "example": "**[昨日](きのう)** [勉強](べんきょう)しました。",
+    "exampleVi": "Hôm qua tôi đã học bài."
+  },
+  {
+    "word": "今日",
+    "reading": "きょう",
+    "meaning": "Hôm nay",
+    "example": "**[今日](きょう)**は [月曜日](げつようび)です。",
+    "exampleVi": "Hôm nay là thứ hai."
+  },
+  {
+    "word": "明日",
+    "reading": "あした",
+    "meaning": "Ngày mai",
+    "example": "**[明日](あした)**は [休](やす)みです。",
+    "exampleVi": "Ngày mai là ngày nghỉ."
+  },
+  {
+    "word": "明後日",
+    "reading": "あさって",
+    "meaning": "Ngày kia",
+    "example": "**[明後日](あさって)**は [土曜日](どようび)です。",
+    "exampleVi": "Ngày kia là thứ bảy."
+  },
+  {
+    "word": "今朝",
+    "reading": "けさ",
+    "meaning": "Sáng nay",
+    "example": "**[今朝](けさ)** 6[時](じ)に [起](お)きました。",
+    "exampleVi": "Sáng nay tôi đã dậy lúc 6 giờ."
+  },
+  {
+    "word": "今晩",
+    "reading": "こんばん",
+    "meaning": "Tối nay",
+    "example": "**[今晩](こんばん)** 9[時](じ)まで [勉強](べんきょう)します。",
+    "exampleVi": "Tối nay tôi sẽ học đến 9 giờ."
+  },
+  {
+    "word": "休み",
+    "reading": "やすみ",
+    "meaning": "kỳ nghỉ, nghỉ ngơi",
+    "example": "[土曜日](どようび)と [日曜日](にちようび)は **[休](やす)み**です。",
+    "exampleVi": "Thứ bảy và chủ nhật là ngày nghỉ."
+  },
+  {
+    "word": "昼休み",
+    "reading": "ひるやすみ",
+    "meaning": "Nghỉ trưa",
+    "example": "**[昼休み](ひるやすみ)**は 12[時](じ)から 1[時](じ)までです。",
+    "exampleVi": "Giờ nghỉ trưa là từ 12 giờ đến 1 giờ."
+  },
+  {
+    "word": "試験",
+    "reading": "しけん",
+    "meaning": "kỳ thi",
+    "example": "**[試験](しけん)**は [何時](なんじ)からですか。",
+    "exampleVi": "Kỳ thi bắt đầu từ mấy giờ vậy?"
+  },
+  {
+    "word": "会議",
+    "reading": "かいぎ",
+    "meaning": "cuộc họp",
+    "example": "**[会議](かいぎ)**は 2[時](じ)から 4[時](じ)までです。",
+    "exampleVi": "Cuộc họp diễn ra từ 2 giờ đến 4 giờ."
+  },
+  {
+    "word": "映画",
+    "reading": "えいが",
+    "meaning": "phim, điện ảnh",
+    "example": "**[映画](えいが)**は 7[時](じ)から 9[時](じ)までです。",
+    "exampleVi": "Bộ phim chiếu từ 7 giờ đến 9 giờ."
+  },
+  {
+    "word": "毎朝",
+    "reading": "まいあさ",
+    "meaning": "Hàng sáng",
+    "example": "ミラーさんは **[毎朝](まいあさ)** 6[時](じ)に [起](お)きます。",
+    "exampleVi": "Sáng nào anh Miller cũng dậy lúc 6 giờ."
+  },
+  {
+    "word": "毎晩",
+    "reading": "まいばん",
+    "meaning": "Hàng tối",
+    "example": "**[毎晩](まいばん)** 11[時](じ)に ねます。",
+    "exampleVi": "Tối nào tôi cũng đi ngủ lúc 11 giờ."
+  },
+  {
+    "word": "毎日",
+    "reading": "まいにち",
+    "meaning": "Hàng ngày",
+    "example": "**[毎日](まいにち)** 9[時](じ)から 5[時](じ)まで [働](はたら)きます。",
+    "exampleVi": "Ngày nào tôi cũng làm việc từ 9 giờ đến 5 giờ."
+  },
+  {
+    "word": "月曜日",
+    "reading": "げつようび",
+    "meaning": "thứ hai",
+    "example": "[会議](かいぎ)は **[月曜日](げつようび)**です。",
+    "exampleVi": "Cuộc họp vào thứ hai."
+  },
+  {
+    "word": "火曜日",
+    "reading": "かようび",
+    "meaning": "thứ ba",
+    "example": "[試験](しけん)は **[火曜日](かようび)**です。",
+    "exampleVi": "Kỳ thi vào thứ ba."
+  },
+  {
+    "word": "水曜日",
+    "reading": "すいようび",
+    "meaning": "thứ tư",
+    "example": "**[水曜日](すいようび)**は [休](やす)みじゃありません。",
+    "exampleVi": "Thứ tư không phải là ngày nghỉ."
+  },
+  {
+    "word": "木曜日",
+    "reading": "もくようび",
+    "meaning": "thứ năm",
+    "example": "[映画](えいが)は **[木曜日](もくようび)**です。",
+    "exampleVi": "Bộ phim chiếu vào thứ năm."
+  },
+  {
+    "word": "金曜日",
+    "reading": "きんようび",
+    "meaning": "thứ sáu",
+    "example": "**[金曜日](きんようび)**は 5[時](じ)に [終](お)わります。",
+    "exampleVi": "Thứ sáu tôi xong việc lúc 5 giờ."
+  },
+  {
+    "word": "土曜日",
+    "reading": "どようび",
+    "meaning": "thứ bảy",
+    "example": "**[土曜日](どようび)**は [休](やす)みです。",
+    "exampleVi": "Thứ bảy là ngày nghỉ."
+  },
+  {
+    "word": "日曜日",
+    "reading": "にちようび",
+    "meaning": "chủ nhật",
+    "example": "[今日](きょう)は **[日曜日](にちようび)**です。",
+    "exampleVi": "Hôm nay là chủ nhật."
+  },
+  {
+    "word": "何曜日",
+    "reading": "なんようび",
+    "meaning": "thứ mấy",
+    "example": "[今日](きょう)は **[何曜日](なんようび)**ですか。",
+    "exampleVi": "Hôm nay là thứ mấy?"
+  },
+  {
+    "word": "番号",
+    "reading": "ばんごう",
+    "meaning": "Số",
+    "example": "[部屋](へや)の **[番号](ばんごう)**は 205です。",
+    "exampleVi": "Số phòng là 205."
+  },
+  {
+    "word": "何番",
+    "reading": "なんばん",
+    "meaning": "Số mấy",
+    "example": "[部屋](へや)は **[何番](なんばん)**ですか。",
+    "exampleVi": "Phòng số mấy vậy?"
+  },
+  {
+    "word": "ニューヨーク",
+    "reading": "ニューヨーク",
+    "meaning": "New york",
+    "example": "**ニューヨーク**は [今](いま) 8[時](じ)です。",
+    "exampleVi": "Ở New York bây giờ là 8 giờ."
+  },
+  {
+    "word": "ペキン",
+    "reading": "ペキン",
+    "meaning": "Bắc kinh",
+    "example": "**ペキン**は [今](いま) 9[時](じ)です。",
+    "exampleVi": "Ở Bắc Kinh bây giờ là 9 giờ."
+  },
+  {
+    "word": "ロサンゼルス",
+    "reading": "ロサンゼルス",
+    "meaning": "Los angeles",
+    "example": "**ロサンゼルス**は [今](いま) [午後](ごご) 5[時](じ)です。",
+    "exampleVi": "Ở Los Angeles bây giờ là 5 giờ chiều."
+  },
+  {
+    "word": "ロンドン",
+    "reading": "ロンドン",
+    "meaning": "Luân đôn (London)",
+    "example": "**ロンドン**は [今](いま) [何時](なんじ)ですか。",
+    "exampleVi": "Ở London bây giờ là mấy giờ?"
+  }
 ]

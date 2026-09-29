@@ -25,14 +25,14 @@
   "meaning": "ông / bà / anh / chị / bạn (ngôi thứ hai số ít)"
  },
  {
-  "word": "彼",
+  "word": "かれ",
   "reading": "かれ",
   "meaning": "anh ấy (ngôi thứ ba số ít), bạn trai"
  },
  {
-  "word": "彼女",
+  "word": "かのじょ",
   "reading": "かのじょ",
-  "meaning": "cố ấy, chị ấy (ngôi thứ ba số ít), bạn gái"
+  "meaning": "cô ấy, chị ấy (ngôi thứ ba số ít), bạn gái"
  },
  {
   "word": "お名前",
@@ -60,7 +60,7 @@
   "meaning": "đúng vậy"
  },
  {
-  "word": "違います",
+  "word": "ちがいます",
   "reading": "ちがいます",
   "meaning": "không phải"
  },
@@ -190,7 +190,7 @@
   "meaning": "con chó"
  },
  {
-  "word": "猫",
+  "word": "ねこ",
   "reading": "ねこ",
   "meaning": "con mèo"
  },
@@ -385,7 +385,7 @@
   "meaning": "Indonesia"
  },
  {
-  "word": "韓国",
+  "word": "かんこく",
   "reading": "かんこく",
   "meaning": "Hàn Quốc"
  },
@@ -395,7 +395,7 @@
   "meaning": "Thái Lan"
  },
  {
-  "word": "台湾",
+  "word": "たいわん",
   "reading": "たいわん",
   "meaning": "Đài Loan"
  },
@@ -412,7 +412,7 @@
  {
   "word": "フィリピン",
   "reading": "フィリピン",
-  "meaning": "Phillippine"
+  "meaning": "Philippines"
  },
  {
   "word": "ベトナム",

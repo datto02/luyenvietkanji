@@ -1,39 +1,261 @@
 [
-  "これ",
-  "それ",
-  "あれ",
-  "この",
-  "その",
-  "あの",
-  "本",
-  "辞書",
-  "雑誌",
-  "新聞",
-  "ノート",
-  "手帳",
-  "名刺",
-  "カード",
-  "鉛筆",
-  "ボールペン",
-  "シャープペンシル",
-  "鍵",
-  "時計",
-  "傘",
-  "かばん",
-  "テレビ",
-  "ラジオ",
-  "カメラ",
-  "コンピューター",
-  "自動車",
-  "車",
-  "机",
-  "椅子",
-  "チョコレート",
-  "コーヒー",
-  "お土産",
-  "英語",
-  "日本語",
-  "語",
-  "何",
-  "違います"
+  {
+    "word": "これ",
+    "reading": "これ",
+    "meaning": "cái này",
+    "example": "**これ**は [本](ほん)です。",
+    "exampleVi": "Đây là quyển sách."
+  },
+  {
+    "word": "それ",
+    "reading": "それ",
+    "meaning": "cái đó",
+    "example": "**それ**は [辞書](じしょ)ですか。",
+    "exampleVi": "Đó có phải là từ điển không?"
+  },
+  {
+    "word": "あれ",
+    "reading": "あれ",
+    "meaning": "cái kia",
+    "example": "**あれ**は [雑誌](ざっし)ですか。",
+    "exampleVi": "Kia có phải là tạp chí không?"
+  },
+  {
+    "word": "この",
+    "reading": "この",
+    "meaning": "~ này",
+    "example": "**この** [本](ほん)は [私](わたし)のです。",
+    "exampleVi": "Quyển sách này là của tôi."
+  },
+  {
+    "word": "その",
+    "reading": "その",
+    "meaning": "~ đó",
+    "example": "**その** かばんは ミラーさんのです。",
+    "exampleVi": "Cái cặp đó là của anh Miller."
+  },
+  {
+    "word": "あの",
+    "reading": "あの",
+    "meaning": "~ kia",
+    "example": "**あの** [車](くるま)は [先生](せんせい)のです。",
+    "exampleVi": "Chiếc xe kia là của giáo viên."
+  },
+  {
+    "word": "本",
+    "reading": "ほん",
+    "meaning": "sách",
+    "example": "これは [日本語](にほんご)の **[本](ほん)**です。",
+    "exampleVi": "Đây là sách tiếng Nhật."
+  },
+  {
+    "word": "辞書",
+    "reading": "じしょ",
+    "meaning": "từ điển",
+    "example": "それは [英語](えいご)の **[辞書](じしょ)**ですか。",
+    "exampleVi": "Đó có phải là từ điển tiếng Anh không?"
+  },
+  {
+    "word": "雑誌",
+    "reading": "ざっし",
+    "meaning": "tạp chí",
+    "example": "これは [車](くるま)の **[雑誌](ざっし)**です。",
+    "exampleVi": "Đây là tạp chí về xe hơi."
+  },
+  {
+    "word": "新聞",
+    "reading": "しんぶん",
+    "meaning": "báo",
+    "example": "あれは **[新聞](しんぶん)**ですか、[雑誌](ざっし)ですか。",
+    "exampleVi": "Kia là báo hay là tạp chí?"
+  },
+  {
+    "word": "ノート",
+    "reading": "ノート",
+    "meaning": "vở",
+    "example": "これは [私](わたし)の **ノート**です。",
+    "exampleVi": "Đây là vở của tôi."
+  },
+  {
+    "word": "手帳",
+    "reading": "てちょう",
+    "meaning": "sổ tay",
+    "example": "それは [先生](せんせい)の **[手帳](てちょう)**ですか。",
+    "exampleVi": "Đó có phải là sổ tay của giáo viên không?"
+  },
+  {
+    "word": "めいし",
+    "reading": "めいし",
+    "meaning": "danh thiếp",
+    "example": "これは [田中](たなか)さんの **めいし**です。",
+    "exampleVi": "Đây là danh thiếp của anh Tanaka."
+  },
+  {
+    "word": "カード",
+    "reading": "カード",
+    "meaning": "thẻ card",
+    "example": "これは ミラーさんの **カード**です。",
+    "exampleVi": "Đây là thẻ của anh Miller."
+  },
+  {
+    "word": "えんぴつ",
+    "reading": "えんぴつ",
+    "meaning": "bút chì",
+    "example": "あれは [私](わたし)の **えんぴつ**です。",
+    "exampleVi": "Kia là bút chì của tôi."
+  },
+  {
+    "word": "ボールペン",
+    "reading": "ボールペン",
+    "meaning": "bút bi",
+    "example": "あの **ボールペン**は [私](わたし)のです。",
+    "exampleVi": "Cây bút bi kia là của tôi."
+  },
+  {
+    "word": "シャープペンシル",
+    "reading": "シャープペンシル",
+    "meaning": "bút chì kim",
+    "example": "それは **シャープペンシル**ですか、ボールペンですか。",
+    "exampleVi": "Đó là bút chì kim hay bút bi?"
+  },
+  {
+    "word": "かぎ",
+    "reading": "かぎ",
+    "meaning": "Chìa khoá",
+    "example": "これは [私](わたし)の **かぎ**です。",
+    "exampleVi": "Đây là chìa khóa của tôi."
+  },
+  {
+    "word": "時計",
+    "reading": "とけい",
+    "meaning": "đồng hồ",
+    "example": "これは [日本](にほん)の **[時計](とけい)**です。",
+    "exampleVi": "Đây là đồng hồ của Nhật."
+  },
+  {
+    "word": "かさ",
+    "reading": "かさ",
+    "meaning": "ô, dù",
+    "example": "それは [私](わたし)の **かさ**です。",
+    "exampleVi": "Đó là cái ô của tôi."
+  },
+  {
+    "word": "かばん",
+    "reading": "かばん",
+    "meaning": "cặp, túi sách",
+    "example": "この **かばん**は [田中](たなか)さんのです。",
+    "exampleVi": "Cái cặp này là của anh Tanaka."
+  },
+  {
+    "word": "テレビ",
+    "reading": "テレビ",
+    "meaning": "tivi",
+    "example": "あれは **テレビ**ですか。",
+    "exampleVi": "Kia có phải là tivi không?"
+  },
+  {
+    "word": "ラジオ",
+    "reading": "ラジオ",
+    "meaning": "đài radio",
+    "example": "あの **ラジオ**は [先生](せんせい)のです。",
+    "exampleVi": "Cái radio kia là của giáo viên."
+  },
+  {
+    "word": "カメラ",
+    "reading": "カメラ",
+    "meaning": "máy ảnh",
+    "example": "それは ミラーさんの **カメラ**ですか。",
+    "exampleVi": "Đó là máy ảnh của anh Miller phải không?"
+  },
+  {
+    "word": "コンピューター",
+    "reading": "コンピューター",
+    "meaning": "máy vi tính",
+    "example": "これは [日本](にほん)の **コンピューター**です。",
+    "exampleVi": "Đây là máy tính của Nhật."
+  },
+  {
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "meaning": "ô tô, xe hơi",
+    "example": "これは [日本](にほん)の **[自動車](じどうしゃ)**です。",
+    "exampleVi": "Đây là ô tô của Nhật."
+  },
+  {
+    "word": "車",
+    "reading": "くるま",
+    "meaning": "ô tô, xe hơi",
+    "example": "これは [私](わたし)の **[車](くるま)**です。",
+    "exampleVi": "Đây là xe hơi của tôi."
+  },
+  {
+    "word": "机",
+    "reading": "つくえ",
+    "meaning": "bàn",
+    "example": "これは [学生](がくせい)の **[机](つくえ)**です。",
+    "exampleVi": "Đây là bàn của học sinh."
+  },
+  {
+    "word": "いす",
+    "reading": "いす",
+    "meaning": "cái ghế",
+    "example": "それは [先生](せんせい)の **いす**です。",
+    "exampleVi": "Đó là ghế của giáo viên."
+  },
+  {
+    "word": "チョコレート",
+    "reading": "チョコレート",
+    "meaning": "sô cô la",
+    "example": "A：それは [何](なん)ですか。　B：**チョコレート**です。",
+    "exampleVi": "A: Đó là cái gì vậy?  B: Là sô-cô-la."
+  },
+  {
+    "word": "コーヒー",
+    "reading": "コーヒー",
+    "meaning": "cà phê",
+    "example": "これは **コーヒー**です。",
+    "exampleVi": "Đây là cà phê."
+  },
+  {
+    "word": "お土産",
+    "reading": "おみやげ",
+    "meaning": "quà đặc sản, lưu niệm",
+    "example": "これは [日本](にほん)の **[お土産](おみやげ)**です。",
+    "exampleVi": "Đây là quà lưu niệm của Nhật."
+  },
+  {
+    "word": "英語",
+    "reading": "えいご",
+    "meaning": "tiếng Anh",
+    "example": "[私](わたし)は **[英語](えいご)**の [先生](せんせい)です。",
+    "exampleVi": "Tôi là giáo viên tiếng Anh."
+  },
+  {
+    "word": "日本語",
+    "reading": "にほんご",
+    "meaning": "tiếng Nhật",
+    "example": "これは **[日本語](にほんご)**の [雑誌](ざっし)です。",
+    "exampleVi": "Đây là tạp chí tiếng Nhật."
+  },
+  {
+    "word": "語",
+    "reading": "ご",
+    "meaning": "tiếng~ ",
+    "example": "これは ドイツ**[語](ご)**の [本](ほん)です。",
+    "exampleVi": "Đây là sách tiếng Đức."
+  },
+  {
+    "word": "何",
+    "reading": "なん/なに",
+    "meaning": "cái gì",
+    "example": "これは **[何](なん)**ですか。",
+    "exampleVi": "Đây là cái gì?"
+  },
+  {
+    "word": "ちがいます",
+    "reading": "ちがいます",
+    "meaning": "sai, khác",
+    "example": "A：それは [辞書](じしょ)ですか。　B：いいえ、**ちがいます**。[手帳](てちょう)です。",
+    "exampleVi": "A: Đó là từ điển à?  B: Không, không phải. Là sổ tay."
+  }
 ]

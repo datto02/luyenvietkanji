@@ -60,7 +60,7 @@
   "meaning": "công ty du lịch"
  },
  {
-  "word": "申し込む",
+  "word": "もうしこむ",
   "reading": "もうしこむ",
   "meaning": "đăng ký"
  },
@@ -85,7 +85,7 @@
   "meaning": "sân bay"
  },
  {
-  "word": "両替",
+  "word": "りょうがえ",
   "reading": "りょうがえ",
   "meaning": "việc đổi tiền"
  },
@@ -95,7 +95,7 @@
   "meaning": "việc xuất phát, khởi hành"
  },
  {
-  "word": "到着",
+  "word": "とうちゃく",
   "reading": "とうちゃく",
   "meaning": "việc đến nơi"
  },
@@ -115,7 +115,7 @@
   "meaning": "quầy lễ tân"
  },
  {
-  "word": "泊まる",
+  "word": "とまる",
   "reading": "とまる",
   "meaning": "trọ"
  },
@@ -195,17 +195,17 @@
   "meaning": "nước uống có cồn, rượu"
  },
  {
-  "word": "乾杯",
+  "word": "かんぱい",
   "reading": "かんぱい",
   "meaning": "cụng ly (chúc mừng)"
  },
  {
-  "word": "酔う",
+  "word": "よう",
   "reading": "よう",
   "meaning": "say (rượu, xe, tàu)"
  },
  {
-  "word": "醤油",
+  "word": "しょうゆ",
   "reading": "しょうゆ",
   "meaning": "nước tương"
  },
@@ -215,7 +215,7 @@
   "meaning": "nước sốt"
  },
  {
-  "word": "醤油をつける",
+  "word": "しょうゆをつける",
   "reading": "しょうゆをつける",
   "meaning": "chấm (nước tương)"
  },
@@ -225,12 +225,12 @@
   "meaning": "vị"
  },
  {
-  "word": "味が薄い",
+  "word": "あじがうすい",
   "reading": "あじがうすい",
   "meaning": "(vị) nhạt, lạt"
  },
  {
-  "word": "味が濃い",
+  "word": "あじがこい",
   "reading": "あじがこい",
   "meaning": "(vị) đậm"
  },
@@ -240,7 +240,7 @@
   "meaning": "đắng"
  },
  {
-  "word": "匂い",
+  "word": "におい",
   "reading": "におい",
   "meaning": "mùi"
  },
@@ -295,7 +295,7 @@
   "meaning": "vật dụng"
  },
  {
-  "word": "鍋",
+  "word": "なべ",
   "reading": "なべ",
   "meaning": "cái nồi"
  },
@@ -350,7 +350,7 @@
   "meaning": "cái ấm"
  },
  {
-  "word": "沸かす",
+  "word": "わかす",
   "reading": "わかす",
   "meaning": "đun sôi"
  },
@@ -370,19 +370,19 @@
   "meaning": "cho (trà) vào, châm (trà)"
  },
  {
-  "word": "腐る",
+  "word": "くさる",
   "reading": "くさる",
   "meaning": "thối, hôi, hư"
  },
  {
-  "word": " 捨てる",
+  "word": "捨てる",
   "reading": "すてる",
   "meaning": "vứt bỏ"
  },
  {
   "word": "米",
   "reading": "こめ",
-  "meaning": "gạo, cơm"
+  "meaning": "gạo"
  },
  {
   "word": "お弁当",
@@ -396,7 +396,7 @@
  },
  {
   "word": "インスタントしょくひん",
-  "reading": "いんすたんと しょくひん",
+  "reading": "インスタントしょくひん",
   "meaning": "thực phẩm ăn liền"
  },
  {
@@ -465,7 +465,7 @@
   "meaning": "đếm"
  },
  {
-  "word": "払う",
+  "word": "はらう",
   "reading": "はらう",
   "meaning": "trả tiền"
  },
@@ -492,10 +492,10 @@
  {
   "word": "りょうしゅう書",
   "reading": "りょうしゅうしょ",
-  "meaning": "hóa đơn"
+  "meaning": "biên lai, hóa đơn"
  },
  {
-  "word": "袋",
+  "word": "ふくろ",
   "reading": "ふくろ",
   "meaning": "bao, túi"
  },
@@ -576,7 +576,7 @@
  },
  {
   "word": "バスてい",
-  "reading": "ばすてい",
+  "reading": "バスてい",
   "meaning": "trạm xe buýt"
  },
  {
@@ -625,7 +625,7 @@
   "meaning": "suối nước nóng"
  },
  {
-  "word": "駐車場",
+  "word": "ちゅうしゃじょう",
   "reading": "ちゅうしゃじょう",
   "meaning": "bãi đậu xe"
  },
@@ -645,7 +645,7 @@
   "meaning": "vùng quê"
  },
  {
-  "word": "郊外",
+  "word": "こうがい",
   "reading": "こうがい",
   "meaning": "ngoại ô"
  },
@@ -655,7 +655,7 @@
   "meaning": "tiếng địa phương, phương ngữ"
  },
  {
-  "word": "禁煙",
+  "word": "きんえん",
   "reading": "きんえん",
   "meaning": "cấm hút thuốc"
  },
@@ -690,7 +690,7 @@
   "meaning": "bên kia"
  },
  {
-  "word": "尋ねる",
+  "word": "たずねる",
   "reading": "たずねる",
   "meaning": "hỏi thăm"
  },

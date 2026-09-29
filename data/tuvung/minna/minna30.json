@@ -1,10 +1,26 @@
 [
-  "貼る",
-  "掛ける",
-  "飾る",
+  {
+    "word": "はる",
+    "reading": "はる",
+    "meaning": "dán"
+  },
+  {
+    "word": "かける",
+    "reading": "かける",
+    "meaning": "treo, tốn (thời gian)"
+  },
+  {
+    "word": "かざる",
+    "reading": "かざる",
+    "meaning": "trang trí"
+  },
   "並べる",
   "植える",
-  "戻す",
+  {
+    "word": "もどす",
+    "reading": "もどす",
+    "meaning": "trả lại, hoàn lại"
+  },
   "まとめる",
   "しまう",
   "決める",
@@ -22,28 +38,64 @@
   "予定表",
   "ごみ箱",
   "人形",
-  "花瓶",
+  {
+    "word": "かびん",
+    "reading": "かびん",
+    "meaning": "bình hoa, lọ hoa"
+  },
   "鏡",
   "引き出し",
-  "玄関",
-  "廊下",
-  "壁",
+  {
+    "word": "げんかん",
+    "reading": "げんかん",
+    "meaning": "lối vào nhà"
+  },
+  {
+    "word": "ろうか",
+    "reading": "ろうか",
+    "meaning": "hành lang"
+  },
+  {
+    "word": "かべ",
+    "reading": "かべ",
+    "meaning": "tường"
+  },
   "池",
   "元の所",
   "周り",
   "真ん中",
-  "隅",
+  {
+    "word": "すみ",
+    "reading": "すみ",
+    "meaning": "góc"
+  },
   "まだ",
   "リュック",
-  "非常袋",
+  {
+    "word": "ひじょうぶくろ",
+    "reading": "ひじょうぶくろ",
+    "meaning": "túi khẩn cấp"
+  },
   "非常時",
   "生活",
-  "懐中電灯",
+  {
+    "word": "かいちゅうでんとう",
+    "reading": "かいちゅうでんとう",
+    "meaning": "đèn pin"
+  },
   "とか",
   "丸い",
   "夢を見る",
-  "嬉しい",
-  "嫌",
+  {
+    "word": "うれしい",
+    "reading": "うれしい",
+    "meaning": "vui"
+  },
+  {
+    "word": "いや",
+    "reading": "いや",
+    "meaning": "ghét, không thích"
+  },
   "すると",
   "目が覚める"
 ]

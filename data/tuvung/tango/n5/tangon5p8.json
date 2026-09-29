@@ -7,12 +7,12 @@
  {
   "word": "大阪駅",
   "reading": "おおさかえき",
-  "meaning": "nhà ga, ga"
+  "meaning": "ga Osaka"
  },
  {
   "word": "広島駅",
   "reading": "ひろしまえき",
-  "meaning": "nhà ga, ga"
+  "meaning": "ga Hiroshima"
  },
  {
   "word": "電車",
@@ -30,7 +30,7 @@
   "meaning": "xuống (tàu, xe)"
  },
  {
-  "word": "切符",
+  "word": "きっぷ",
   "reading": "きっぷ",
   "meaning": "vé"
  },
@@ -40,7 +40,7 @@
   "meaning": "~ tiếp theo"
  },
  {
-  "word": "乗り換える",
+  "word": "のりかえる",
   "reading": "のりかえる",
   "meaning": "đổi tàu (chuyến), quá cảnh"
  },
@@ -72,12 +72,12 @@
  {
   "word": "番線",
   "reading": "ばんせん",
-  "meaning": "tuyến số ~"
+  "meaning": "sân ga số ~"
  },
  {
   "word": "何番線",
   "reading": "なんばんせん",
-  "meaning": "tuyến số mấy"
+  "meaning": "sân ga số mấy"
  },
  {
   "word": "自動車",
@@ -100,7 +100,7 @@
   "meaning": "tiễn, đưa"
  },
  {
-  "word": "駐車場",
+  "word": "ちゅうしゃじょう",
   "reading": "ちゅうしゃじょう",
   "meaning": "bãi đậu (đỗ) xe"
  },
@@ -250,7 +250,7 @@
   "meaning": "quẹo, rẽ"
  },
  {
-  "word": "渡る",
+  "word": "わたる",
   "reading": "わたる",
   "meaning": "băng qua"
  },
@@ -335,7 +335,7 @@
   "meaning": "~ mét"
  },
  {
-  "word": "隣",
+  "word": "となり",
   "reading": "となり",
   "meaning": "bên cạnh"
  },

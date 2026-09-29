@@ -1,17 +1,53 @@
 [
-  "褒める",
-  "叱る",
-  "誘う",
+  {
+    "word": "ほめる",
+    "reading": "ほめる",
+    "meaning": "khen"
+  },
+  {
+    "word": "しかる",
+    "reading": "しかる",
+    "meaning": "mắng"
+  },
+  {
+    "word": "さそう",
+    "reading": "さそう",
+    "meaning": "mời, rủ"
+  },
   "招待する",
-  "頼む",
-  "盗る",
-  "踏む",
-  "壊す",
-  "汚す",
+  {
+    "word": "たのむ",
+    "reading": "たのむ",
+    "meaning": "nhờ"
+  },
+  {
+    "word": "とる",
+    "reading": "とる",
+    "meaning": "lấy cắp, ăn trộm"
+  },
+  {
+    "word": "ふむ",
+    "reading": "ふむ",
+    "meaning": "giẫm, giẫm lên"
+  },
+  {
+    "word": "こわす",
+    "reading": "こわす",
+    "meaning": "làm hỏng"
+  },
+  {
+    "word": "よごす",
+    "reading": "よごす",
+    "meaning": "làm bẩn"
+  },
   "行う",
   "輸出する",
   "輸入する",
-  "翻訳する",
+  {
+    "word": "ほんやくする",
+    "reading": "ほんやくする",
+    "meaning": "phiên dịch, biên dịch"
+  },
   "発明する",
   "発見する",
   "米",
@@ -19,25 +55,53 @@
   "石油",
   "原料",
   "デート",
-  "泥棒",
+  {
+    "word": "どろぼう",
+    "reading": "どろぼう",
+    "meaning": "kẻ trộm"
+  },
   "警官",
   "世界中",
   "ロシア",
-  "皆様",
+  {
+    "word": "みなさま",
+    "reading": "みなさま",
+    "meaning": "quý vị"
+  },
   "焼ける",
   "世界遺産",
   "金色",
   "本物",
   "キロ",
   "美しい",
-  "豪華",
-  "彫刻",
+  {
+    "word": "ごうか",
+    "reading": "ごうか",
+    "meaning": "tráng lệ, rực rỡ"
+  },
+  {
+    "word": "ちょうこく",
+    "reading": "ちょうこく",
+    "meaning": "điêu khắc"
+  },
   "言い伝え",
-  "眠る",
-  "彫る",
+  {
+    "word": "ねむる",
+    "reading": "ねむる",
+    "meaning": "ngủ"
+  },
+  {
+    "word": "ほる",
+    "reading": "ほる",
+    "meaning": "(điêu) khắc"
+  },
   "仲間",
   "そのあと",
-  "一生懸命",
+  {
+    "word": "いっしょうけんめい",
+    "reading": "いっしょうけんめい",
+    "meaning": "chăm chỉ, gắng hết sức"
+  },
   "ねずみ",
   "何語",
   "オリンピック",

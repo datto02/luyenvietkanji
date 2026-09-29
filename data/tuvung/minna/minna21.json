@@ -1,34 +1,226 @@
 [
-  "思います",
-  "言います",
-  "足ります",
-  "勝ちます",
-  "負けます",
-  "お祭り",
-  "役に立ちます",
-  "むだ",
-  "不便",
-  "同じ",
-  "すごい",
-  "首相",
-  "大統領",
-  "政治",
-  "ニュース",
-  "スピーチ",
-  "試合",
-  "アルバイト",
-  "意見",
-  "お話",
-  "ユーモア",
-  "デザイン",
-  "交通",
-  "ラッシュ",
-  "最近",
-  "たぶん",
-  "きっと",
-  "本当に",
-  "そんなに",
-  "について",
-  "もちろん",
-  "カンガルー"
+  {
+    "word": "思います",
+    "reading": "おもいます",
+    "meaning": "nghĩ",
+    "example": "[日本語](にほんご)は [面白](おもしろ)いと **[思](おも)います**。",
+    "exampleVi": "Tôi nghĩ tiếng Nhật thú vị."
+  },
+  {
+    "word": "言います",
+    "reading": "いいます",
+    "meaning": "nói",
+    "example": "ミラーさんは 「ありがとう」と **[言](い)いました**。",
+    "exampleVi": "Anh Miller đã nói \"cảm ơn\"."
+  },
+  {
+    "word": "足ります",
+    "reading": "たります",
+    "meaning": "đủ",
+    "example": "お[金](かね)が **[足](た)りません**。",
+    "exampleVi": "Không đủ tiền."
+  },
+  {
+    "word": "勝ちます",
+    "reading": "かちます",
+    "meaning": "thắng",
+    "example": "[試合](しあい)に **[勝](か)ちました**。",
+    "exampleVi": "Tôi đã thắng trận đấu."
+  },
+  {
+    "word": "負けます",
+    "reading": "まけます",
+    "meaning": "thua",
+    "example": "[昨日](きのう)の [試合](しあい)に **[負](ま)けました**。",
+    "exampleVi": "Tôi đã thua trận đấu hôm qua."
+  },
+  {
+    "word": "お祭り",
+    "reading": "おまつり",
+    "meaning": "lễ hội",
+    "example": "[日曜日](にちようび)に **[お祭り](おまつり)**が あります。",
+    "exampleVi": "Chủ nhật có lễ hội."
+  },
+  {
+    "word": "役に立ちます",
+    "reading": "やくにたちます",
+    "meaning": "có ích",
+    "example": "この [辞書](じしょ)は **[役](やく)に[立](た)ちます**。",
+    "exampleVi": "Cuốn từ điển này có ích."
+  },
+  {
+    "word": "むだ",
+    "reading": "むだ",
+    "meaning": "vô ích, lãng phí",
+    "example": "それは **むだ**だと [思](おも)います。",
+    "exampleVi": "Tôi nghĩ việc đó là vô ích."
+  },
+  {
+    "word": "不便",
+    "reading": "ふべん",
+    "meaning": "bất tiện",
+    "example": "この [町](まち)は **[不便](ふべん)**です。",
+    "exampleVi": "Thành phố này bất tiện."
+  },
+  {
+    "word": "同じ",
+    "reading": "おなじ",
+    "meaning": "giống",
+    "example": "わたしと ミラーさんは **[同](おな)じ** [会社](かいしゃ)です。",
+    "exampleVi": "Tôi và anh Miller làm cùng một công ty."
+  },
+  {
+    "word": "すごい",
+    "reading": "すごい",
+    "meaning": "kinh khủng, tuyệt vời",
+    "example": "[富士山](ふじさん)は **すごい**です。",
+    "exampleVi": "Núi Phú Sĩ thật tuyệt vời."
+  },
+  {
+    "word": "首相",
+    "reading": "しゅしょう",
+    "meaning": "thủ tướng",
+    "example": "**[首相](しゅしょう)**は [明日](あした) [来](き)ます。",
+    "exampleVi": "Ngày mai thủ tướng sẽ đến."
+  },
+  {
+    "word": "大統領",
+    "reading": "だいとうりょう",
+    "meaning": "tổng thống",
+    "example": "**[大統領](だいとうりょう)**は [今日](きょう) [日本](にほん)へ [来](き)ます。",
+    "exampleVi": "Hôm nay tổng thống đến Nhật."
+  },
+  {
+    "word": "政治",
+    "reading": "せいじ",
+    "meaning": "chính trị",
+    "example": "**[政治](せいじ)**は [難](むずか)しいと [思](おも)います。",
+    "exampleVi": "Tôi nghĩ chính trị khó."
+  },
+  {
+    "word": "ニュース",
+    "reading": "ニュース",
+    "meaning": "tin tức",
+    "example": "[毎晩](まいばん) **ニュース**を [見](み)ます。",
+    "exampleVi": "Tối nào tôi cũng xem tin tức."
+  },
+  {
+    "word": "スピーチ",
+    "reading": "スピーチ",
+    "meaning": "diễn văn, bài phát biểu",
+    "example": "ミラーさんの **スピーチ**は [面白](おもしろ)かったです。",
+    "exampleVi": "Bài phát biểu của anh Miller rất thú vị."
+  },
+  {
+    "word": "試合",
+    "reading": "しあい",
+    "meaning": "trận đấu",
+    "example": "[明日](あした) サッカーの **[試合](しあい)**が あります。",
+    "exampleVi": "Ngày mai có trận đấu bóng đá."
+  },
+  {
+    "word": "アルバイト",
+    "reading": "アルバイト",
+    "meaning": "việc làm thêm",
+    "example": "[土曜日](どようび)に **アルバイト**を します。",
+    "exampleVi": "Thứ bảy tôi làm thêm."
+  },
+  {
+    "word": "意見",
+    "reading": "いけん",
+    "meaning": "ý kiến",
+    "example": "**[意見](いけん)**を [言](い)ってください。",
+    "exampleVi": "Xin hãy nói ý kiến của bạn."
+  },
+  {
+    "word": "お話",
+    "reading": "おはなし",
+    "meaning": "câu chuyện",
+    "example": "[面白](おもしろ)い **[お話](おはなし)**です。",
+    "exampleVi": "Đây là một câu chuyện thú vị."
+  },
+  {
+    "word": "ユーモア",
+    "reading": "ユーモア",
+    "meaning": "hài hước",
+    "example": "ミラーさんは **ユーモア**が あります。",
+    "exampleVi": "Anh Miller có khiếu hài hước."
+  },
+  {
+    "word": "デザイン",
+    "reading": "デザイン",
+    "meaning": "thiết kế",
+    "example": "この [服](ふく)の **デザイン**は いいです。",
+    "exampleVi": "Thiết kế của bộ quần áo này đẹp."
+  },
+  {
+    "word": "交通",
+    "reading": "こうつう",
+    "meaning": "giao thông",
+    "example": "この [町](まち)は **[交通](こうつう)**が [便利](べんり)です。",
+    "exampleVi": "Giao thông ở thành phố này thuận tiện."
+  },
+  {
+    "word": "ラッシュ",
+    "reading": "ラッシュ",
+    "meaning": "cao điểm, giờ cao điểm",
+    "example": "[朝](あさ)は **ラッシュ**です。",
+    "exampleVi": "Buổi sáng là giờ cao điểm."
+  },
+  {
+    "word": "最近",
+    "reading": "さいきん",
+    "meaning": "gần đây",
+    "example": "**[最近](さいきん)**、いそがしいです。",
+    "exampleVi": "Gần đây tôi bận."
+  },
+  {
+    "word": "たぶん",
+    "reading": "たぶん",
+    "meaning": "có lẽ",
+    "example": "**たぶん** [明日](あした)は [雨](あめ)だと [思](おも)います。",
+    "exampleVi": "Có lẽ ngày mai trời sẽ mưa."
+  },
+  {
+    "word": "きっと",
+    "reading": "きっと",
+    "meaning": "chắc chắn là",
+    "example": "**きっと** だいじょうぶです。",
+    "exampleVi": "Chắc chắn sẽ ổn thôi."
+  },
+  {
+    "word": "本当に",
+    "reading": "ほんとうに",
+    "meaning": "thực sự",
+    "example": "**[本当](ほんとう)に** [面白](おもしろ)かったです。",
+    "exampleVi": "Thực sự rất thú vị."
+  },
+  {
+    "word": "そんなに",
+    "reading": "そんなに",
+    "meaning": "như thế đó",
+    "example": "**そんなに** [高](たか)くないです。",
+    "exampleVi": "Không đắt đến thế đâu."
+  },
+  {
+    "word": "について",
+    "reading": "について",
+    "meaning": "về ~",
+    "example": "[日本](にほん)**について** [勉強](べんきょう)します。",
+    "exampleVi": "Tôi học về nước Nhật."
+  },
+  {
+    "word": "もちろん",
+    "reading": "もちろん",
+    "meaning": "tất nhiên",
+    "example": "**もちろん**、[行](い)きます。",
+    "exampleVi": "Tất nhiên là tôi đi."
+  },
+  {
+    "word": "カンガルー",
+    "reading": "カンガルー",
+    "meaning": "con chuột túi",
+    "example": "**カンガルー**は オーストラリアの [動物](どうぶつ)です。",
+    "exampleVi": "Kangaroo là động vật của nước Úc."
+  }
 ]

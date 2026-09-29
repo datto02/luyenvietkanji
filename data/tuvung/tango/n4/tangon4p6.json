@@ -1,6 +1,6 @@
 [
  {
-  "word": "髪",
+  "word": "かみ",
   "reading": "かみ",
   "meaning": "tóc"
  },
@@ -20,7 +20,7 @@
   "meaning": "râu"
  },
  {
-  "word": "唇",
+  "word": "くちびる",
   "reading": "くちびる",
   "meaning": "môi"
  },
@@ -30,17 +30,17 @@
   "meaning": "cổ"
  },
  {
-  "word": "喉",
+  "word": "のど",
   "reading": "のど",
   "meaning": "cổ họng"
  },
  {
-  "word": "肩",
+  "word": "かた",
   "reading": "かた",
   "meaning": "vai"
  },
  {
-  "word": "腕",
+  "word": "うで",
   "reading": "うで",
   "meaning": "cánh tay"
  },
@@ -60,17 +60,17 @@
   "meaning": "dạ dày"
  },
  {
-  "word": "腰",
+  "word": "こし",
   "reading": "こし",
   "meaning": "thắt lưng"
  },
  {
-  "word": "膝",
+  "word": "ひざ",
   "reading": "ひざ",
   "meaning": "đầu gối"
  },
  {
-  "word": "尻",
+  "word": "しり",
   "reading": "しり",
   "meaning": "mông"
  },
@@ -80,7 +80,7 @@
   "meaning": "ngón (tay, chân)"
  },
  {
-  "word": "爪",
+  "word": "つめ",
   "reading": "つめ",
   "meaning": "móng"
  },
@@ -125,7 +125,7 @@
   "meaning": "sức khỏe (khỏe mạnh)"
  },
  {
-  "word": "丈夫な",
+  "word": "じょうぶな",
   "reading": "じょうぶな",
   "meaning": "bền, chắc, khỏe"
  },
@@ -140,7 +140,7 @@
   "meaning": "mập, béo"
  },
  {
-  "word": "痩せる",
+  "word": "やせる",
   "reading": "やせる",
   "meaning": "ốm, gầy"
  },
@@ -160,7 +160,7 @@
   "meaning": "cẩn thận, giữ gìn"
  },
  {
-  "word": "喉が渇く",
+  "word": "のどがかわく",
   "reading": "のどがかわく",
   "meaning": "khát, (cổ họng) khô"
  },
@@ -177,7 +177,7 @@
  {
   "word": "かぜをひく",
   "reading": "かぜをひく",
-  "meaning": "biị cảm"
+  "meaning": "bị cảm"
  },
  {
   "word": "熱",
@@ -225,12 +225,12 @@
   "meaning": "cảm giác khó chịu"
  },
  {
-  "word": "倒れる",
+  "word": "たおれる",
   "reading": "たおれる",
   "meaning": "đổ sụp, ngã, đổ, ngã bệnh"
  },
  {
-  "word": "診る",
+  "word": "みる",
   "reading": "みる",
   "meaning": "khám (bệnh)"
  },
@@ -240,7 +240,7 @@
   "meaning": "nằm xuống, nằm ra"
  },
  {
-  "word": "塗る",
+  "word": "ぬる",
   "reading": "ぬる",
   "meaning": "xức, thoa"
  },
@@ -305,7 +305,7 @@
   "meaning": "kimono"
  },
  {
-  "word": "靴下",
+  "word": "くつした",
   "reading": "くつした",
   "meaning": "vớ"
  },
@@ -315,7 +315,7 @@
   "meaning": "đồ lót"
  },
  {
-  "word": "手袋",
+  "word": "てぶくろ",
   "reading": "てぶくろ",
   "meaning": "găng tay"
  },
@@ -350,7 +350,7 @@
   "meaning": "dây"
  },
  {
-  "word": "髪型",
+  "word": "かみがた",
   "reading": "かみがた",
   "meaning": "kiểu tóc"
  },
@@ -425,12 +425,12 @@
   "meaning": "cả hai"
  },
  {
-  "word": "暇",
+  "word": "ひま",
   "reading": "ひま",
   "meaning": "giờ rảnh (rảnh rỗi)"
  },
  {
-  "word": "普通",
+  "word": "ふつう",
   "reading": "ふつう",
   "meaning": "sự bình thường (bình thường)"
  },
@@ -440,7 +440,7 @@
   "meaning": "sự tự do (tự do)"
  },
  {
-  "word": "丁寧な",
+  "word": "ていねいな",
   "reading": "ていねいな",
   "meaning": "cẩn thận, lịch sự"
  },
@@ -470,7 +470,7 @@
   "meaning": "đẹp"
  },
  {
-  "word": "汚い",
+  "word": "きたない",
   "reading": "きたない",
   "meaning": "dơ, bẩn"
  },
@@ -480,17 +480,17 @@
   "meaning": "giỏi"
  },
  {
-  "word": "柔らかい",
+  "word": "やわらかい",
   "reading": "やわらかい",
   "meaning": "mềm, mềm mại"
  },
  {
-  "word": "硬い",
+  "word": "かたい",
   "reading": "かたい",
   "meaning": "cứng"
  },
  {
-  "word": "詳しい",
+  "word": "くわしい",
   "reading": "くわしい",
   "meaning": "chi tiết, cụ thể"
  },
@@ -500,7 +500,7 @@
   "meaning": "nhỏ, chi tiết, chi li"
  },
  {
-  "word": "怖い",
+  "word": "こわい",
   "reading": "こわい",
   "meaning": "sợ"
  },
@@ -550,12 +550,12 @@
   "meaning": "sâu"
  },
  {
-  "word": "眠い",
+  "word": "ねむい",
   "reading": "ねむい",
   "meaning": "buồn ngủ"
  },
  {
-  "word": "珍しい",
+  "word": "めずらしい",
   "reading": "めずらしい",
   "meaning": "quý hiếm"
  },
@@ -580,7 +580,7 @@
   "meaning": "làm giảm"
  },
  {
-  "word": "違う",
+  "word": "ちがう",
   "reading": "ちがう",
   "meaning": "khác"
  },

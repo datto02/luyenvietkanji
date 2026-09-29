@@ -1,31 +1,205 @@
 [
-  "覚えます",
-  "忘れます",
-  "なくします",
-  "払います",
-  "返します",
-  "出かけます",
-  "脱ぎます",
-  "持って行きます",
-  "持って来ます",
-  "心配します",
-  "残業します",
-  "出張します",
-  "大切",
-  "大丈夫",
-  "危ない",
-  "問題",
-  "答え",
-  "禁煙",
-  "健康保険証",
-  "風邪",
-  "熱",
-  "病気",
-  "薬",
-  "お風呂",
-  "上着",
-  "下着",
-  "痛い",
-  "のど",
-  "お大事に"
+  {
+    "word": "覚えます",
+    "reading": "おぼえます",
+    "meaning": "ghi nhớ",
+    "example": "この [漢字](かんじ)を **[覚](おぼ)え**なければなりません。",
+    "exampleVi": "Tôi phải ghi nhớ chữ Hán (kanji) này."
+  },
+  {
+    "word": "忘れます",
+    "reading": "わすれます",
+    "meaning": "quên",
+    "example": "[宿題](しゅくだい)を **[忘](わす)れないでください**。",
+    "exampleVi": "Xin đừng quên bài tập về nhà."
+  },
+  {
+    "word": "なくします",
+    "reading": "なくします",
+    "meaning": "mất, đánh mất",
+    "example": "[大切](たいせつ)な パスポートを **なくしました**。",
+    "exampleVi": "Tôi đã làm mất hộ chiếu quan trọng."
+  },
+  {
+    "word": "はらいます",
+    "reading": "はらいます",
+    "meaning": "trả tiền",
+    "example": "[私](わたし)が **はらいます**。",
+    "exampleVi": "Để tôi trả tiền."
+  },
+  {
+    "word": "返します",
+    "reading": "かえします",
+    "meaning": "trả lại",
+    "example": "[図書館](としょかん)に [本](ほん)を **[返](かえ)します**。",
+    "exampleVi": "Tôi trả sách cho thư viện."
+  },
+  {
+    "word": "出かけます",
+    "reading": "でかけます",
+    "meaning": "ra ngoài",
+    "example": "[今日](きょう)は **[出](で)かけません**。",
+    "exampleVi": "Hôm nay tôi không ra ngoài."
+  },
+  {
+    "word": "ぬぎます",
+    "reading": "ぬぎます",
+    "meaning": "cởi [quần áo, giày]",
+    "example": "ここで くつを **ぬぎます**。",
+    "exampleVi": "Tôi cởi giày ở đây."
+  },
+  {
+    "word": "持って行きます",
+    "reading": "もっていきます",
+    "meaning": "mang đi",
+    "example": "かさを **[持](も)って[行](い)きます**。",
+    "exampleVi": "Tôi mang ô đi."
+  },
+  {
+    "word": "持って来ます",
+    "reading": "もってきます",
+    "meaning": "mang đến",
+    "example": "[明日](あした)、[辞書](じしょ)を **[持](も)って[来](き)ます**。",
+    "exampleVi": "Ngày mai tôi sẽ mang từ điển đến."
+  },
+  {
+    "word": "心配します",
+    "reading": "しんぱいします",
+    "meaning": "lo lắng",
+    "example": "[家族](かぞく)が **[心配](しんぱい)します**。",
+    "exampleVi": "Gia đình tôi lo lắng."
+  },
+  {
+    "word": "残業します",
+    "reading": "ざんぎょうします",
+    "meaning": "làm thêm giờ",
+    "example": "[今日](きょう)は **[残業](ざんぎょう)します**。",
+    "exampleVi": "Hôm nay tôi làm thêm giờ."
+  },
+  {
+    "word": "出張します",
+    "reading": "しゅっちょうします",
+    "meaning": "đi công tác",
+    "example": "[来週](らいしゅう)、**[出張](しゅっちょう)します**。",
+    "exampleVi": "Tuần sau tôi đi công tác."
+  },
+  {
+    "word": "大切",
+    "reading": "たいせつ",
+    "meaning": "quan trọng",
+    "example": "これは **[大切](たいせつ)**な [手紙](てがみ)です。",
+    "exampleVi": "Đây là lá thư quan trọng."
+  },
+  {
+    "word": "だいじょうぶ",
+    "reading": "だいじょうぶ",
+    "meaning": "không sao, ổn",
+    "example": "A：**だいじょうぶ**ですか。　B：はい、**だいじょうぶ**です。",
+    "exampleVi": "A: Bạn có ổn không?  B: Vâng, tôi ổn."
+  },
+  {
+    "word": "危ない",
+    "reading": "あぶない",
+    "meaning": "nguy hiểm",
+    "example": "ここは **[危](あぶ)ない**です。",
+    "exampleVi": "Ở đây nguy hiểm."
+  },
+  {
+    "word": "問題",
+    "reading": "もんだい",
+    "meaning": "vấn đề, câu hỏi",
+    "example": "**[問題](もんだい)**は ありません。",
+    "exampleVi": "Không có vấn đề gì."
+  },
+  {
+    "word": "答え",
+    "reading": "こたえ",
+    "meaning": "câu trả lời",
+    "example": "**[答](こた)え**を [教](おし)えてください。",
+    "exampleVi": "Xin hãy cho tôi biết đáp án."
+  },
+  {
+    "word": "きんえん",
+    "reading": "きんえん",
+    "meaning": "cấm hút thuốc",
+    "example": "ここは **きんえん**です。",
+    "exampleVi": "Ở đây cấm hút thuốc."
+  },
+  {
+    "word": "健康保険証",
+    "reading": "けんこうほけんしょう",
+    "meaning": "thẻ bảo hiểm y tế",
+    "example": "**[健康保険証](けんこうほけんしょう)**を [持](も)って[来](き)てください。",
+    "exampleVi": "Xin hãy mang thẻ bảo hiểm y tế đến."
+  },
+  {
+    "word": "かぜ",
+    "reading": "かぜ",
+    "meaning": "cảm cúm",
+    "example": "**かぜ**を ひきました。",
+    "exampleVi": "Tôi bị cảm."
+  },
+  {
+    "word": "熱",
+    "reading": "ねつ",
+    "meaning": "sốt",
+    "example": "**[熱](ねつ)**が あります。",
+    "exampleVi": "Tôi bị sốt."
+  },
+  {
+    "word": "病気",
+    "reading": "びょうき",
+    "meaning": "bệnh, ốm",
+    "example": "**[病気](びょうき)**ですから、[会社](かいしゃ)を [休](やす)みます。",
+    "exampleVi": "Vì bị ốm nên tôi nghỉ làm."
+  },
+  {
+    "word": "薬",
+    "reading": "くすり",
+    "meaning": "thuốc",
+    "example": "**[薬](くすり)**を [飲](の)みます。",
+    "exampleVi": "Tôi uống thuốc."
+  },
+  {
+    "word": "おふろ",
+    "reading": "おふろ",
+    "meaning": "bồn tắm",
+    "example": "**おふろ**に [入](はい)ります。",
+    "exampleVi": "Tôi vào bồn tắm."
+  },
+  {
+    "word": "上着",
+    "reading": "うわぎ",
+    "meaning": "áo khoác",
+    "example": "これは [私](わたし)の **[上着](うわぎ)**です。",
+    "exampleVi": "Đây là áo khoác của tôi."
+  },
+  {
+    "word": "下着",
+    "reading": "したぎ",
+    "meaning": "đồ lót",
+    "example": "**[下着](したぎ)**を [買](か)います。",
+    "exampleVi": "Tôi mua đồ lót."
+  },
+  {
+    "word": "痛い",
+    "reading": "いたい",
+    "meaning": "đau",
+    "example": "[頭](あたま)が **[痛](いた)い**です。",
+    "exampleVi": "Tôi đau đầu."
+  },
+  {
+    "word": "のど",
+    "reading": "のど",
+    "meaning": "họng",
+    "example": "**のど**が [痛](いた)いです。",
+    "exampleVi": "Tôi đau họng."
+  },
+  {
+    "word": "お大事に",
+    "reading": "おだいじに",
+    "meaning": "mau khỏe nhé",
+    "example": "A：[熱](ねつ)が あります。　B：**[お大事に](おだいじに)**。",
+    "exampleVi": "A: Tôi bị sốt.  B: Chúc bạn mau khỏe."
+  }
 ]

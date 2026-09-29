@@ -1,51 +1,345 @@
 [
-  "乗ります",
-  "降ります",
-  "乗り換えます",
-  "浴びます",
-  "入れます",
-  "出します",
-  "入ります",
-  "出ます",
-  "辞めます",
-  "押します",
-  "若い",
-  "長い",
-  "短い",
-  "明るい",
-  "暗い",
-  "背",
-  "頭がいい",
-  "体",
-  "頭",
-  "髪",
-  "顔",
-  "目",
-  "耳",
-  "口",
-  "歯",
-  "お腹",
-  "足",
-  "サービス",
-  "ジョギング",
-  "シャワー",
-  "緑",
-  "お寺",
-  "神社",
-  "留学生",
-  "どうやって",
-  "まず",
-  "キャッシュカード",
-  "暗証番号",
-  "次に",
-  "金額",
-  "確認",
-  "ボタン",
-  "アジア",
-  "ベトナム",
-  "フエ",
-  "始めます",
-  "見学します",
-  "電話します",
-  "鼻"
+  {
+    "word": "乗ります",
+    "reading": "のります",
+    "meaning": "lên [xe, tàu]",
+    "example": "[電車](でんしゃ)に **[乗](の)ります**。",
+    "exampleVi": "Tôi lên tàu điện."
+  },
+  {
+    "word": "降ります",
+    "reading": "おります",
+    "meaning": "xuống [xe, tàu]",
+    "example": "[駅](えき)で [電車](でんしゃ)を **[降](お)ります**。",
+    "exampleVi": "Tôi xuống tàu điện ở nhà ga."
+  },
+  {
+    "word": "のりかえます",
+    "reading": "のりかえます",
+    "meaning": "chuyển tàu, đổi xe",
+    "example": "[駅](えき)で [電車](でんしゃ)を **のりかえます**。",
+    "exampleVi": "Tôi đổi tàu ở nhà ga."
+  },
+  {
+    "word": "浴びます",
+    "reading": "あびます",
+    "meaning": "tắm [vòi sen]",
+    "example": "シャワーを **[浴](あ)びます**。",
+    "exampleVi": "Tôi tắm vòi sen."
+  },
+  {
+    "word": "入れます",
+    "reading": "いれます",
+    "meaning": "cho vào, bỏ vào",
+    "example": "[箱](はこ)に [電池](でんち)を **[入](い)れます**。",
+    "exampleVi": "Tôi cho pin vào hộp."
+  },
+  {
+    "word": "出します",
+    "reading": "だします",
+    "meaning": "lấy ra, nộp, rút [tiền]",
+    "example": "[手紙](てがみ)を **[出](だ)します**。",
+    "exampleVi": "Tôi gửi thư."
+  },
+  {
+    "word": "入ります",
+    "reading": "はいります",
+    "meaning": "vào",
+    "example": "[郵便局](ゆうびんきょく)に **[入](はい)ります**。",
+    "exampleVi": "Tôi vào bưu điện."
+  },
+  {
+    "word": "出ます",
+    "reading": "でます",
+    "meaning": "ra",
+    "example": "[毎朝](まいあさ) 8[時](じ)に [家](うち)を **[出](で)ます**。",
+    "exampleVi": "Sáng nào tôi cũng rời nhà lúc 8 giờ."
+  },
+  {
+    "word": "辞めます",
+    "reading": "やめます",
+    "meaning": "bỏ, thôi việc",
+    "example": "[会社](かいしゃ)を **[辞](や)めます**。",
+    "exampleVi": "Tôi thôi việc ở công ty."
+  },
+  {
+    "word": "おします",
+    "reading": "おします",
+    "meaning": "ấn, bấm",
+    "example": "ボタンを **おします**。",
+    "exampleVi": "Tôi ấn nút."
+  },
+  {
+    "word": "若い",
+    "reading": "わかい",
+    "meaning": "trẻ",
+    "example": "[田中](たなか)さんは **[若](わか)い**です。",
+    "exampleVi": "Anh Tanaka trẻ."
+  },
+  {
+    "word": "長い",
+    "reading": "ながい",
+    "meaning": "dài",
+    "example": "[川](かわ)は **[長](なが)い**です。",
+    "exampleVi": "Con sông dài."
+  },
+  {
+    "word": "短い",
+    "reading": "みじかい",
+    "meaning": "ngắn",
+    "example": "この えんぴつは **[短](みじか)い**です。",
+    "exampleVi": "Cây bút chì này ngắn."
+  },
+  {
+    "word": "明るい",
+    "reading": "あかるい",
+    "meaning": "sáng, vui vẻ",
+    "example": "この [部屋](へや)は **[明](あか)るい**です。",
+    "exampleVi": "Căn phòng này sáng."
+  },
+  {
+    "word": "暗い",
+    "reading": "くらい",
+    "meaning": "tối",
+    "example": "[外](そと)は **[暗](くら)い**です。",
+    "exampleVi": "Bên ngoài tối."
+  },
+  {
+    "word": "背",
+    "reading": "せ",
+    "meaning": "lưng, chiều cao",
+    "example": "ミラーさんは **[背](せ)**が [高](たか)いです。",
+    "exampleVi": "Anh Miller cao."
+  },
+  {
+    "word": "頭がいい",
+    "reading": "あたまがいい",
+    "meaning": "thông minh",
+    "example": "[妹](いもうと)は **[頭](あたま)がいい**です。",
+    "exampleVi": "Em gái tôi thông minh."
+  },
+  {
+    "word": "体",
+    "reading": "からだ",
+    "meaning": "cơ thể",
+    "example": "ミラーさんは **[体](からだ)**が [大](おお)きいです。",
+    "exampleVi": "Anh Miller có thân hình to lớn."
+  },
+  {
+    "word": "頭",
+    "reading": "あたま",
+    "meaning": "đầu",
+    "example": "[象](ぞう)は **[頭](あたま)**が [大](おお)きいです。",
+    "exampleVi": "Con voi có cái đầu to."
+  },
+  {
+    "word": "かみ",
+    "reading": "かみ",
+    "meaning": "tóc",
+    "example": "[妹](いもうと)は **かみ**が [長](なが)いです。",
+    "exampleVi": "Em gái tôi tóc dài."
+  },
+  {
+    "word": "顔",
+    "reading": "かお",
+    "meaning": "mặt",
+    "example": "ミラーさんは **[顔](かお)**が [小](ちい)さいです。",
+    "exampleVi": "Anh Miller có khuôn mặt nhỏ."
+  },
+  {
+    "word": "目",
+    "reading": "め",
+    "meaning": "mắt",
+    "example": "[妹](いもうと)は **[目](め)**が [大](おお)きいです。",
+    "exampleVi": "Em gái tôi có đôi mắt to."
+  },
+  {
+    "word": "耳",
+    "reading": "みみ",
+    "meaning": "tai",
+    "example": "[私](わたし)は **[耳](みみ)**が [小](ちい)さいです。",
+    "exampleVi": "Tai tôi nhỏ."
+  },
+  {
+    "word": "口",
+    "reading": "くち",
+    "meaning": "miệng",
+    "example": "[弟](おとうと)は **[口](くち)**が [大](おお)きいです。",
+    "exampleVi": "Em trai tôi có cái miệng to."
+  },
+  {
+    "word": "歯",
+    "reading": "は",
+    "meaning": "răng",
+    "example": "**[歯](は)**が [白](しろ)いです。",
+    "exampleVi": "Răng trắng."
+  },
+  {
+    "word": "お腹",
+    "reading": "おなか",
+    "meaning": "bụng",
+    "example": "[父](ちち)は **[お腹](おなか)**が [大](おお)きいです。",
+    "exampleVi": "Bố tôi bụng to."
+  },
+  {
+    "word": "足",
+    "reading": "あし",
+    "meaning": "chân",
+    "example": "ミラーさんは **[足](あし)**が [長](なが)いです。",
+    "exampleVi": "Anh Miller chân dài."
+  },
+  {
+    "word": "サービス",
+    "reading": "サービス",
+    "meaning": "dịch vụ",
+    "example": "この ホテルは **サービス**が いいです。",
+    "exampleVi": "Khách sạn này dịch vụ tốt."
+  },
+  {
+    "word": "ジョギング",
+    "reading": "ジョギング",
+    "meaning": "việc chạy bộ",
+    "example": "[毎朝](まいあさ) **ジョギング**を します。",
+    "exampleVi": "Sáng nào tôi cũng chạy bộ."
+  },
+  {
+    "word": "シャワー",
+    "reading": "シャワー",
+    "meaning": "vòi hoa sen",
+    "example": "**シャワー**を [浴](あ)びて、[会社](かいしゃ)へ [行](い)きます。",
+    "exampleVi": "Tôi tắm vòi sen rồi đi đến công ty."
+  },
+  {
+    "word": "緑",
+    "reading": "みどり",
+    "meaning": "màu xanh lá, cây xanh",
+    "example": "この [山](やま)は **[緑](みどり)**が [多](おお)いです。",
+    "exampleVi": "Ngọn núi này có nhiều cây xanh."
+  },
+  {
+    "word": "お寺",
+    "reading": "おてら",
+    "meaning": "chùa",
+    "example": "この [町](まち)は **[お寺](おてら)**が [多](おお)いです。",
+    "exampleVi": "Thị trấn này có nhiều chùa."
+  },
+  {
+    "word": "神社",
+    "reading": "じんじゃ",
+    "meaning": "đền thờ",
+    "example": "**[神社](じんじゃ)**は [山](やま)の [上](うえ)に あります。",
+    "exampleVi": "Đền thờ ở trên núi."
+  },
+  {
+    "word": "留学生",
+    "reading": "りゅうがくせい",
+    "meaning": "du học sinh",
+    "example": "[大学](だいがく)に ベトナムの **[留学生](りゅうがくせい)**が います。",
+    "exampleVi": "Ở trường đại học có du học sinh Việt Nam."
+  },
+  {
+    "word": "どうやって",
+    "reading": "どうやって",
+    "meaning": "làm thế nào, bằng cách nào",
+    "example": "[駅](えき)まで **どうやって** [行](い)きますか。",
+    "exampleVi": "Đến nhà ga đi bằng cách nào vậy?"
+  },
+  {
+    "word": "まず",
+    "reading": "まず",
+    "meaning": "trước hết, đầu tiên",
+    "example": "**まず** きっぷを [買](か)います。",
+    "exampleVi": "Trước hết tôi mua vé."
+  },
+  {
+    "word": "キャッシュカード",
+    "reading": "キャッシュカード",
+    "meaning": "thẻ ATM",
+    "example": "**キャッシュカード**を [入](い)れます。",
+    "exampleVi": "Tôi cho thẻ ATM vào."
+  },
+  {
+    "word": "暗証番号",
+    "reading": "あんしょうばんごう",
+    "meaning": "mật khẩu, mã PIN",
+    "example": "**[暗証番号](あんしょうばんごう)**を おします。",
+    "exampleVi": "Tôi bấm mật khẩu."
+  },
+  {
+    "word": "次に",
+    "reading": "つぎに",
+    "meaning": "tiếp theo",
+    "example": "**[次](つぎ)に**、[金額](きんがく)を おします。",
+    "exampleVi": "Tiếp theo, tôi bấm số tiền."
+  },
+  {
+    "word": "金額",
+    "reading": "きんがく",
+    "meaning": "số tiền",
+    "example": "**[金額](きんがく)**を [確認](かくにん)します。",
+    "exampleVi": "Tôi kiểm tra số tiền."
+  },
+  {
+    "word": "確認",
+    "reading": "かくにん",
+    "meaning": "xác nhận, xác minh",
+    "example": "**[確認](かくにん)**ボタンを おします。",
+    "exampleVi": "Tôi bấm nút xác nhận."
+  },
+  {
+    "word": "ボタン",
+    "reading": "ボタン",
+    "meaning": "nút, khuy",
+    "example": "この **ボタン**を おします。",
+    "exampleVi": "Tôi bấm nút này."
+  },
+  {
+    "word": "アジア",
+    "reading": "アジア",
+    "meaning": "Châu Á",
+    "example": "ベトナムは **アジア**に あります。",
+    "exampleVi": "Việt Nam nằm ở châu Á."
+  },
+  {
+    "word": "ベトナム",
+    "reading": "ベトナム",
+    "meaning": "Nước Việt Nam",
+    "example": "**ベトナム**は [暑](あつ)いです。",
+    "exampleVi": "Việt Nam nóng."
+  },
+  {
+    "word": "フエ",
+    "reading": "フエ",
+    "meaning": "Huế",
+    "example": "**フエ**は ベトナムの [町](まち)です。",
+    "exampleVi": "Huế là một thành phố của Việt Nam."
+  },
+  {
+    "word": "始めます",
+    "reading": "はじめます",
+    "meaning": "bắt đầu",
+    "example": "[会議](かいぎ)を **[始](はじ)めます**。",
+    "exampleVi": "Chúng ta bắt đầu cuộc họp."
+  },
+  {
+    "word": "見学します",
+    "reading": "けんがくします",
+    "meaning": "tham quan học tập",
+    "example": "[会社](かいしゃ)を **[見学](けんがく)します**。",
+    "exampleVi": "Tôi tham quan công ty."
+  },
+  {
+    "word": "電話します",
+    "reading": "でんわします",
+    "meaning": "gọi điện thoại",
+    "example": "[友達](ともだち)に **[電話](でんわ)します**。",
+    "exampleVi": "Tôi gọi điện cho bạn."
+  },
+  {
+    "word": "鼻",
+    "reading": "はな",
+    "meaning": "mũi",
+    "example": "[象](ぞう)は **[鼻](はな)**が [長](なが)いです。",
+    "exampleVi": "Con voi có cái mũi dài."
+  }
 ]

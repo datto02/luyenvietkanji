@@ -20,7 +20,7 @@
   "meaning": "lúc nãy"
  },
  {
-  "word": "この頃",
+  "word": "このごろ",
   "reading": "このごろ",
   "meaning": "gần đây, dạo này"
  },
@@ -87,7 +87,7 @@
  {
   "word": "一昨日",
   "reading": "おととい",
-  "meaning": "hôm kia, ngày kia"
+  "meaning": "hôm kia"
  },
  {
   "word": "昨夜",
@@ -190,7 +190,7 @@
   "meaning": "con trai"
  },
  {
-  "word": "娘",
+  "word": "むすめ",
   "reading": "むすめ",
   "meaning": "con gái"
  },
@@ -215,17 +215,17 @@
   "meaning": "cháu"
  },
  {
-  "word": "叔父",
+  "word": "おじ",
   "reading": "おじ",
   "meaning": "bác tôi, chú tôi, cậu tôi"
  },
  {
-  "word": "叔母",
+  "word": "おば",
   "reading": "おば",
   "meaning": "bác tôi, cô tôi, dì tôi"
  },
  {
-  "word": "親戚",
+  "word": "しんせき",
   "reading": "しんせき",
   "meaning": "bà con, họ hàng"
  },
@@ -240,12 +240,12 @@
   "meaning": "giống nhau, tương tự nhau"
  },
  {
-  "word": "叱る",
+  "word": "しかる",
   "reading": "しかる",
   "meaning": "la, mắng, rầy"
  },
  {
-  "word": "褒める",
+  "word": "ほめる",
   "reading": "ほめる",
   "meaning": "khen, khen ngợi"
  },
@@ -300,7 +300,7 @@
   "meaning": "đứng"
  },
  {
-  "word": "引っ越し",
+  "word": "ひっこし",
   "reading": "ひっこし",
   "meaning": "việc dọn nhà, chuyển chỗ ở"
  },
@@ -345,7 +345,7 @@
   "meaning": "chung quanh"
  },
  {
-  "word": "玄関",
+  "word": "げんかん",
   "reading": "げんかん",
   "meaning": "lối vào nhà"
  },
@@ -355,22 +355,22 @@
   "meaning": "cửa vào"
  },
  {
-  "word": "鍵を掛ける",
+  "word": "かぎをかける",
   "reading": "かぎをかける",
   "meaning": "khóa (cửa)"
  },
  {
-  "word": "鍵が掛かる",
+  "word": "かぎがかかる",
   "reading": "かぎがかかる",
   "meaning": "(cửa) khóa"
  },
  {
-  "word": "壁",
+  "word": "かべ",
   "reading": "かべ",
   "meaning": "tường"
  },
  {
-  "word": "廊下",
+  "word": "ろうか",
   "reading": "ろうか",
   "meaning": "hành lang"
  },
@@ -395,12 +395,12 @@
   "meaning": "phòng kiểu Nhật"
  },
  {
-  "word": "畳",
+  "word": "たたみ",
   "reading": "たたみ",
   "meaning": "chiếu"
  },
  {
-  "word": "押し入れ",
+  "word": "おしいれ",
   "reading": "おしいれ",
   "meaning": "tủ âm tường"
  },
@@ -420,7 +420,7 @@
   "meaning": "màn cửa"
  },
  {
-  "word": "隅",
+  "word": "すみ",
   "reading": "すみ",
   "meaning": "góc"
  },
@@ -465,7 +465,7 @@
   "meaning": "chuyển động, hoạt động"
  },
  {
-  "word": "花瓶",
+  "word": "かびん",
   "reading": "かびん",
   "meaning": "bình hoa"
  },
@@ -480,32 +480,32 @@
   "meaning": "áp phích"
  },
  {
-  "word": "飾る",
+  "word": "かざる",
   "reading": "かざる",
   "meaning": "trang hoàng, trang trí"
  },
  {
-  "word": "貼る",
+  "word": "はる",
   "reading": "はる",
   "meaning": "dán"
  },
  {
-  "word": "絵を掛ける",
+  "word": "えをかける",
   "reading": "えをかける",
   "meaning": "treo (tranh)"
  },
  {
-  "word": "カレンダーが掛かる",
+  "word": "カレンダーがかかる",
   "reading": "カレンダーがかかる",
   "meaning": "(lịch) được treo, có treo"
  },
  {
-  "word": "椅子に掛ける",
+  "word": "いすにかける",
   "reading": "いすにかける",
   "meaning": "ngồi (xuống ghế)"
  },
  {
-  "word": "暖房",
+  "word": "だんぼう",
   "reading": "だんぼう",
   "meaning": "máy sưởi"
  },
@@ -517,7 +517,7 @@
  {
   "word": "電源",
   "reading": "でんげん",
-  "meaning": "ổ cắm điện"
+  "meaning": "nguồn điện"
  },
  {
   "word": "電気を点ける",
@@ -555,12 +555,12 @@
   "meaning": "việc dậy sớm"
  },
  {
-  "word": "寝坊",
+  "word": "ねぼう",
   "reading": "ねぼう",
   "meaning": "việc ngủ nướng, ngủ dậy trễ"
  },
  {
-  "word": "磨く",
+  "word": "みがく",
   "reading": "みがく",
   "meaning": "đánh, chải"
  },
@@ -580,7 +580,7 @@
   "meaning": "rác"
  },
  {
-  "word": "瓶",
+  "word": "びん",
   "reading": "びん",
   "meaning": "bình, chai (thủy tinh)"
  },
@@ -615,7 +615,7 @@
   "meaning": "đốt được"
  },
  {
-  "word": "石鹸",
+  "word": "せっけん",
   "reading": "せっけん",
   "meaning": "xà bông, xà phòng"
  },
@@ -625,12 +625,12 @@
   "meaning": "dầu gội đầu"
  },
  {
-  "word": "洗濯機",
+  "word": "せんたくき",
   "reading": "せんたくき",
   "meaning": "máy giặt"
  },
  {
-  "word": "洗濯物",
+  "word": "せんたくもの",
   "reading": "せんたくもの",
   "meaning": "đồ giặt"
  },
@@ -645,12 +645,12 @@
   "meaning": "khăn"
  },
  {
-  "word": "乾かす",
+  "word": "かわかす",
   "reading": "かわかす",
   "meaning": "phơi, hong, làm cho khô"
  },
  {
-  "word": "餌",
+  "word": "えさ",
   "reading": "えさ",
   "meaning": "mồi, thức ăn cho vật nuôi"
  },
@@ -685,7 +685,7 @@
   "meaning": "nhật ký"
  },
  {
-  "word": "眠る",
+  "word": "ねむる",
   "reading": "ねむる",
   "meaning": "ngủ"
  },

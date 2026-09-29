@@ -20,7 +20,7 @@
   "meaning": "tử tế"
  },
  {
-  "word": "皆",
+  "word": "みんな",
   "reading": "みんな",
   "meaning": "mọi người"
  },
@@ -30,12 +30,12 @@
   "meaning": "khỏe mạnh"
  },
  {
-  "word": "綺麗な",
+  "word": "きれいな",
   "reading": "きれいな",
   "meaning": "đẹp, sạch"
  },
  {
-  "word": "綺麗な",
+  "word": "きれいな",
   "reading": "きれいな",
   "meaning": "đẹp, sạch"
  },
@@ -100,7 +100,7 @@
   "meaning": "nhỏ"
  },
  {
-  "word": "髪",
+  "word": "かみ",
   "reading": "かみ",
   "meaning": "tóc"
  },
@@ -140,12 +140,12 @@
   "meaning": "mặc"
  },
  {
-  "word": "脱ぐ",
+  "word": "ぬぐ",
   "reading": "ぬぐ",
   "meaning": "cởi"
  },
  {
-  "word": "脱ぐ",
+  "word": "ぬぐ",
   "reading": "ぬぐ",
   "meaning": "cởi"
  },
@@ -215,7 +215,7 @@
   "meaning": "kimono, đồ mặc"
  },
  {
-  "word": "履く",
+  "word": "はく",
   "reading": "はく",
   "meaning": "mặc (váy, quần)"
  },
@@ -240,27 +240,27 @@
   "meaning": "váy"
  },
  {
-  "word": "靴",
+  "word": "くつ",
   "reading": "くつ",
   "meaning": "giày"
  },
  {
-  "word": "靴下",
+  "word": "くつした",
   "reading": "くつした",
   "meaning": "vớ, tất"
  },
  {
-  "word": "被る",
+  "word": "かぶる",
   "reading": "かぶる",
   "meaning": "đội"
  },
  {
-  "word": "帽子",
+  "word": "ぼうし",
   "reading": "ぼうし",
   "meaning": "nón, mũ"
  },
  {
-  "word": "眼鏡を掛ける",
+  "word": "めがねをかける",
   "reading": "めがねをかける",
   "meaning": "đeo (mắt kính)"
  },
@@ -300,7 +300,7 @@
   "meaning": "có, cầm, giữ, xách"
  },
  {
-  "word": "鞄",
+  "word": "かばん",
   "reading": "かばん",
   "meaning": "cặp, túi xách"
  },
@@ -325,7 +325,7 @@
   "meaning": "hướng dẫn, giới thiệu"
  },
  {
-  "word": "迎える",
+  "word": "むかえる",
   "reading": "むかえる",
   "meaning": "đón"
  },
@@ -400,7 +400,7 @@
   "meaning": "khách sạn"
  },
  {
-  "word": "泊まる",
+  "word": "とまる",
   "reading": "とまる",
   "meaning": "nghỉ trọ"
  },
@@ -465,7 +465,7 @@
   "meaning": "Akihabara"
  },
  {
-  "word": "渋谷",
+  "word": "しぶや",
   "reading": "しぶや",
   "meaning": "Shibuya"
  },
@@ -480,12 +480,12 @@
   "meaning": "Haneda"
  },
  {
-  "word": "横浜",
+  "word": "よこはま",
   "reading": "よこはま",
   "meaning": "Yokohama"
  },
  {
-  "word": "鎌倉",
+  "word": "かまくら",
   "reading": "かまくら",
   "meaning": "Kamakura"
  },
@@ -495,12 +495,12 @@
   "meaning": "Hokkaido"
  },
  {
-  "word": "札幌",
+  "word": "さっぽろ",
   "reading": "さっぽろ",
   "meaning": "Sapporo"
  },
  {
-  "word": "仙台",
+  "word": "せんだい",
   "reading": "せんだい",
   "meaning": "Sendai"
  },
@@ -515,7 +515,7 @@
   "meaning": "núi Phú Sĩ"
  },
  {
-  "word": "金沢",
+  "word": "かなざわ",
   "reading": "かなざわ",
   "meaning": "Kanazawa"
  },

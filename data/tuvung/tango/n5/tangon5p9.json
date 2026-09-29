@@ -30,7 +30,7 @@
   "meaning": "đóng"
  },
  {
-  "word": "鍵",
+  "word": "かぎ",
   "reading": "かぎ",
   "meaning": "chìa khóa"
  },
@@ -70,7 +70,7 @@
   "meaning": "bàn (học, làm việc)"
  },
  {
-  "word": "椅子",
+  "word": "いす",
   "reading": "いす",
   "meaning": "ghế"
  },
@@ -85,12 +85,12 @@
   "meaning": "đứng"
  },
  {
-  "word": "洗濯",
+  "word": "せんたく",
   "reading": "せんたく",
   "meaning": "giặt giũ"
  },
  {
-  "word": "掃除",
+  "word": "そうじ",
   "reading": "そうじ",
   "meaning": "quét dọn"
  },
@@ -125,12 +125,12 @@
   "meaning": "tủ lạnh"
  },
  {
-  "word": "洗濯機",
+  "word": "せんたくき",
   "reading": "せんたくき",
   "meaning": "máy giặt"
  },
  {
-  "word": "掃除機",
+  "word": "そうじき",
   "reading": "そうじき",
   "meaning": "máy hút bụi"
  },
@@ -145,7 +145,7 @@
   "meaning": "chung cư"
  },
  {
-  "word": "寮",
+  "word": "りょう",
   "reading": "りょう",
   "meaning": "ký túc xá"
  },
@@ -230,14 +230,14 @@
   "meaning": "tầng hầm"
  },
  {
-  "word": "引っ越し",
+  "word": "ひっこし",
   "reading": "ひっこし",
   "meaning": "chuyển nhà, chuyển chỗ ở"
  },
  {
   "word": "転勤する",
   "reading": "てんきんする",
-  "meaning": "chuyển sỡ làm"
+  "meaning": "chuyển sở làm"
  },
  {
   "word": "家賃",
@@ -315,7 +315,7 @@
   "meaning": "rộng"
  },
  {
-  "word": "狭い",
+  "word": "せまい",
   "reading": "せまい",
   "meaning": "chật, hẹp"
  },
@@ -370,12 +370,12 @@
   "meaning": "chồng (kính ngữ)"
  },
  {
-  "word": "奥さん",
+  "word": "おくさん",
   "reading": "おくさん",
   "meaning": "vợ (kính ngữ)"
  },
  {
-  "word": "紹介",
+  "word": "しょうかい",
   "reading": "しょうかい",
   "meaning": "giới thiệu"
  },
@@ -395,12 +395,12 @@
   "meaning": "độc thân"
  },
  {
-  "word": "結婚",
+  "word": "けっこん",
   "reading": "けっこん",
   "meaning": "kết hôn"
  },
  {
-  "word": "僕",
+  "word": "ぼく",
   "reading": "ぼく",
   "meaning": "tôi"
  },

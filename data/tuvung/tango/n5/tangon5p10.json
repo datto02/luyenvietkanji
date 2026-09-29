@@ -20,7 +20,7 @@
   "meaning": "sốt"
  },
  {
-  "word": "風邪",
+  "word": "かぜ",
   "reading": "かぜ",
   "meaning": "cảm"
  },
@@ -120,12 +120,12 @@
   "meaning": "tình trạng"
  },
  {
-  "word": "疲れる",
+  "word": "つかれる",
   "reading": "つかれる",
   "meaning": "mệt mỏi"
  },
  {
-  "word": "眠い",
+  "word": "ねむい",
   "reading": "ねむい",
   "meaning": "buồn ngủ"
  },
@@ -160,12 +160,12 @@
   "meaning": "hút"
  },
  {
-  "word": "禁煙",
+  "word": "きんえん",
   "reading": "きんえん",
   "meaning": "cấm hút thuốc"
  },
  {
-  "word": "大丈夫な",
+  "word": "だいじょうぶな",
   "reading": "だいじょうぶな",
   "meaning": "ổn, không sao"
  },
@@ -185,9 +185,9 @@
   "meaning": "nhớ ra, nhớ"
  },
  {
-  "word": "寂しい",
+  "word": "さびしい",
   "reading": "さびしい",
-  "meaning": "buồn ngủ"
+  "meaning": "buồn, cô đơn"
  },
  {
   "word": "久しぶりです",
@@ -245,7 +245,7 @@
   "meaning": "trả lại"
  },
  {
-  "word": "無駄な",
+  "word": "むだな",
   "reading": "むだな",
   "meaning": "hoang phí, phí phạm"
  },
@@ -260,7 +260,7 @@
   "meaning": "thật"
  },
  {
-  "word": "嘘",
+  "word": "うそ",
   "reading": "うそ",
   "meaning": "lời nói dối, nói xạo"
  },
@@ -270,12 +270,12 @@
   "meaning": "việc ~"
  },
  {
-  "word": "お祈り",
+  "word": "おいのり",
   "reading": "おいのり",
   "meaning": "cầu nguyện"
  },
  {
-  "word": "触る",
+  "word": "さわる",
   "reading": "さわる",
   "meaning": "chạm, sờ"
  },

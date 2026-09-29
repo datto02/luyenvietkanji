@@ -1,4 +1,4 @@
-import{r as w,j as p,R as Ho}from"./index-Bu3ekw6K.js";import{C as $o,G as ei,H as ln}from"./KanjiNav-D5KXC48h.js";import{c as cn}from"./createLucideIcon-BQSlgLcC.js";import{C as zo}from"./FlashcardModal-DO1GhmxL.js";/**
+import{r as w,j as p,R as Ho}from"./index-Bu3ekw6K.js";import{C as $o,G as ei,H as ln}from"./KanjiNav-D5KXC48h.js";import{c as cn}from"./createLucideIcon-BQSlgLcC.js";import{C as zo}from"./purify.es-D25y2KV5.js";/**
  * @license lucide-react v0.546.0 - ISC
  *
  * This source code is licensed under the ISC license.

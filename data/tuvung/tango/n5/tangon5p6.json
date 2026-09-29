@@ -1,6 +1,6 @@
 [
  {
-  "word": "趣味",
+  "word": "しゅみ",
   "reading": "しゅみ",
   "meaning": "sở thích"
  },
@@ -17,10 +17,10 @@
  {
   "word": "好きな",
   "reading": "すきな",
-  "meaning": "thích ~, ~ tốt, ~ được"
+  "meaning": "thích ~"
  },
  {
-  "word": "嫌いな",
+  "word": "きらいな",
   "reading": "きらいな",
   "meaning": "ghét"
  },
@@ -95,7 +95,7 @@
   "meaning": "ảnh, hình"
  },
  {
-  "word": "撮る",
+  "word": "とる",
   "reading": "とる",
   "meaning": "chụp"
  },
@@ -110,7 +110,7 @@
   "meaning": "tranh"
  },
  {
-  "word": "描く",
+  "word": "かく",
   "reading": "かく",
   "meaning": "vẽ"
  },
@@ -130,7 +130,7 @@
   "meaning": "karaoke"
  },
  {
-  "word": "一緒に",
+  "word": "いっしょに",
   "reading": "いっしょに",
   "meaning": "cùng nhau"
  },
@@ -185,7 +185,7 @@
   "meaning": "đàn guitar"
  },
  {
-  "word": "弾く",
+  "word": "ひく",
   "reading": "ひく",
   "meaning": "đánh đàn, chơi đàn"
  },
@@ -210,7 +210,7 @@
   "meaning": "kết thúc"
  },
  {
-  "word": "漫画",
+  "word": "まんが",
   "reading": "まんが",
   "meaning": "truyện tranh"
  },
@@ -270,7 +270,7 @@
   "meaning": "sông"
  },
  {
-  "word": "釣り",
+  "word": "つり",
   "reading": "つり",
   "meaning": "câu (cá)"
  },
@@ -325,12 +325,12 @@
   "meaning": "bóng chày"
  },
  {
-  "word": "相撲",
+  "word": "すもう",
   "reading": "すもう",
   "meaning": "sumo"
  },
  {
-  "word": "柔道",
+  "word": "じゅうどう",
   "reading": "じゅうどう",
   "meaning": "judo"
  },
@@ -395,7 +395,7 @@
   "meaning": "nóng"
  },
  {
-  "word": "涼しい",
+  "word": "すずしい",
   "reading": "すずしい",
   "meaning": "mát"
  },
@@ -435,7 +435,7 @@
   "meaning": "chắc, chắc chắn"
  },
  {
-  "word": "傘",
+  "word": "かさ",
   "reading": "かさ",
   "meaning": "dù, ô"
  },

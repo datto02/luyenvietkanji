@@ -1,54 +1,366 @@
 [
-  "行きます",
-  "来ます",
-  "帰ります",
-  "学校",
-  "スーパー",
-  "駅",
-  "飛行機",
-  "船",
-  "電車",
-  "地下鉄",
-  "新幹線",
-  "バス",
-  "タクシー",
-  "自転車",
-  "歩いて",
-  "人",
-  "友達",
-  "彼",
-  "彼女",
-  "家族",
-  "一人で",
-  "先週",
-  "今週",
-  "来週",
-  "週末",
-  "去年",
-  "今年",
-  "来年",
-  "先月",
-  "今月",
-  "来月",
-  "何月",
-  "一日",
-  "二日",
-  "三日",
-  "四日",
-  "五日",
-  "六日",
-  "七日",
-  "八日",
-  "九日",
-  "十日",
-  "十四日",
-  "二十日",
-  "二十四日",
-  "何日",
-  "いつ",
-  "誕生日",
-  "普通",
-  "急行",
-  "特急",
-  "次"
+  {
+    "word": "行きます",
+    "reading": "いきます",
+    "meaning": "đi",
+    "example": "[明日](あした) [銀行](ぎんこう)へ **[行](い)きます**。",
+    "exampleVi": "Ngày mai tôi sẽ đến ngân hàng."
+  },
+  {
+    "word": "来ます",
+    "reading": "きます",
+    "meaning": "đến",
+    "example": "[田中](たなか)さんは [今日](きょう) **[来](き)ます**。",
+    "exampleVi": "Hôm nay anh Tanaka sẽ đến."
+  },
+  {
+    "word": "帰ります",
+    "reading": "かえります",
+    "meaning": "về",
+    "example": "[毎日](まいにち) 6[時](じ)に [家](うち)へ **[帰](かえ)ります**。",
+    "exampleVi": "Ngày nào tôi cũng về nhà lúc 6 giờ."
+  },
+  {
+    "word": "学校",
+    "reading": "がっこう",
+    "meaning": "trường học",
+    "example": "[私](わたし)は [毎日](まいにち) **[学校](がっこう)**へ [行](い)きます。",
+    "exampleVi": "Ngày nào tôi cũng đến trường."
+  },
+  {
+    "word": "スーパー",
+    "reading": "スーパー",
+    "meaning": "siêu thị",
+    "example": "[土曜日](どようび)に **スーパー**へ [行](い)きます。",
+    "exampleVi": "Thứ bảy tôi sẽ đi siêu thị."
+  },
+  {
+    "word": "駅",
+    "reading": "えき",
+    "meaning": "nhà ga",
+    "example": "**[駅](えき)**は あそこです。",
+    "exampleVi": "Nhà ga ở đằng kia."
+  },
+  {
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "meaning": "máy bay",
+    "example": "**[飛行機](ひこうき)**で [国](くに)へ [帰](かえ)ります。",
+    "exampleVi": "Tôi về nước bằng máy bay."
+  },
+  {
+    "word": "船",
+    "reading": "ふね",
+    "meaning": "thuyền, tàu thủy",
+    "example": "**[船](ふね)**で [行](い)きます。",
+    "exampleVi": "Tôi đi bằng tàu thủy."
+  },
+  {
+    "word": "電車",
+    "reading": "でんしゃ",
+    "meaning": "tàu điện",
+    "example": "**[電車](でんしゃ)**で [会社](かいしゃ)へ [行](い)きます。",
+    "exampleVi": "Tôi đến công ty bằng tàu điện."
+  },
+  {
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "meaning": "tàu điện ngầm",
+    "example": "**[地下鉄](ちかてつ)**で [学校](がっこう)へ [来](き)ます。",
+    "exampleVi": "Tôi đến trường bằng tàu điện ngầm."
+  },
+  {
+    "word": "新幹線",
+    "reading": "しんかんせん",
+    "meaning": "tàu Shinkansen",
+    "example": "[来週](らいしゅう)、**[新幹線](しんかんせん)**で [行](い)きます。",
+    "exampleVi": "Tuần sau tôi sẽ đi bằng tàu Shinkansen."
+  },
+  {
+    "word": "バス",
+    "reading": "バス",
+    "meaning": "xe buýt",
+    "example": "**バス**で [駅](えき)へ [行](い)きます。",
+    "exampleVi": "Tôi đi đến nhà ga bằng xe buýt."
+  },
+  {
+    "word": "タクシー",
+    "reading": "タクシー",
+    "meaning": "taxi",
+    "example": "**タクシー**で [家](うち)へ [帰](かえ)ります。",
+    "exampleVi": "Tôi về nhà bằng taxi."
+  },
+  {
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "meaning": "xe đạp",
+    "example": "**[自転車](じてんしゃ)**で [学校](がっこう)へ [来](き)ます。",
+    "exampleVi": "Tôi đến trường bằng xe đạp."
+  },
+  {
+    "word": "歩いて",
+    "reading": "あるいて",
+    "meaning": "đi bộ",
+    "example": "[駅](えき)から **[歩](ある)いて** [帰](かえ)ります。",
+    "exampleVi": "Tôi đi bộ từ nhà ga về."
+  },
+  {
+    "word": "人",
+    "reading": "ひと",
+    "meaning": "con người",
+    "example": "あの **[人](ひと)**は だれですか。",
+    "exampleVi": "Người kia là ai vậy?"
+  },
+  {
+    "word": "友達",
+    "reading": "ともだち",
+    "meaning": "bạn, bạn bè",
+    "example": "**[友達](ともだち)**と [学校](がっこう)へ [行](い)きます。",
+    "exampleVi": "Tôi đến trường cùng bạn."
+  },
+  {
+    "word": "かれ",
+    "reading": "かれ",
+    "meaning": "anh ấy, bạn trai",
+    "example": "**かれ**は [私](わたし)の [友達](ともだち)です。",
+    "exampleVi": "Anh ấy là bạn của tôi."
+  },
+  {
+    "word": "かのじょ",
+    "reading": "かのじょ",
+    "meaning": "cô ấy, bạn gái",
+    "example": "**かのじょ**は [先生](せんせい)です。",
+    "exampleVi": "Cô ấy là giáo viên."
+  },
+  {
+    "word": "家族",
+    "reading": "かぞく",
+    "meaning": "gia đình",
+    "example": "**[家族](かぞく)**と [国](くに)へ [帰](かえ)ります。",
+    "exampleVi": "Tôi về nước cùng gia đình."
+  },
+  {
+    "word": "一人で",
+    "reading": "ひとりで",
+    "meaning": "một mình",
+    "example": "**[一人](ひとり)で** [学校](がっこう)へ [行](い)きます。",
+    "exampleVi": "Tôi đến trường một mình."
+  },
+  {
+    "word": "先週",
+    "reading": "せんしゅう",
+    "meaning": "tuần trước",
+    "example": "**[先週](せんしゅう)**、[友達](ともだち)と スーパーへ [行](い)きました。",
+    "exampleVi": "Tuần trước tôi đã đi siêu thị cùng bạn."
+  },
+  {
+    "word": "今週",
+    "reading": "こんしゅう",
+    "meaning": "tuần này",
+    "example": "**[今週](こんしゅう)**の [土曜日](どようび)に [行](い)きます。",
+    "exampleVi": "Tôi sẽ đi vào thứ bảy tuần này."
+  },
+  {
+    "word": "来週",
+    "reading": "らいしゅう",
+    "meaning": "tuần sau",
+    "example": "**[来週](らいしゅう)**、[国](くに)へ [帰](かえ)ります。",
+    "exampleVi": "Tuần sau tôi sẽ về nước."
+  },
+  {
+    "word": "週末",
+    "reading": "しゅうまつ",
+    "meaning": "cuối tuần",
+    "example": "**[週末](しゅうまつ)**は [休](やす)みです。",
+    "exampleVi": "Cuối tuần là ngày nghỉ."
+  },
+  {
+    "word": "去年",
+    "reading": "きょねん",
+    "meaning": "năm ngoái",
+    "example": "**[去年](きょねん)**、[国](くに)へ [帰](かえ)りました。",
+    "exampleVi": "Năm ngoái tôi đã về nước."
+  },
+  {
+    "word": "今年",
+    "reading": "ことし",
+    "meaning": "năm nay",
+    "example": "**[今年](ことし)**は [国](くに)へ [帰](かえ)りません。",
+    "exampleVi": "Năm nay tôi sẽ không về nước."
+  },
+  {
+    "word": "来年",
+    "reading": "らいねん",
+    "meaning": "sang năm",
+    "example": "**[来年](らいねん)**、[日本](にほん)へ [来](き)ます。",
+    "exampleVi": "Sang năm tôi sẽ đến Nhật."
+  },
+  {
+    "word": "先月",
+    "reading": "せんげつ",
+    "meaning": "tháng trước",
+    "example": "**[先月](せんげつ)**、[家族](かぞく)と [日本](にほん)へ [来](き)ました。",
+    "exampleVi": "Tháng trước tôi đã đến Nhật cùng gia đình."
+  },
+  {
+    "word": "今月",
+    "reading": "こんげつ",
+    "meaning": "tháng này",
+    "example": "**[今月](こんげつ)**、[国](くに)へ [帰](かえ)ります。",
+    "exampleVi": "Tháng này tôi sẽ về nước."
+  },
+  {
+    "word": "来月",
+    "reading": "らいげつ",
+    "meaning": "tháng sau",
+    "example": "**[来月](らいげつ)**の [五日](いつか)に [国](くに)へ [帰](かえ)ります。",
+    "exampleVi": "Ngày mồng 5 tháng sau tôi sẽ về nước."
+  },
+  {
+    "word": "何月",
+    "reading": "なんがつ",
+    "meaning": "tháng mấy",
+    "example": "[誕生日](たんじょうび)は **[何月](なんがつ)**ですか。",
+    "exampleVi": "Sinh nhật của bạn là tháng mấy?"
+  },
+  {
+    "word": "一日",
+    "reading": "ついたち",
+    "meaning": "ngày mồng 1",
+    "example": "[今日](きょう)は [三月](さんがつ)の **[一日](ついたち)**です。",
+    "exampleVi": "Hôm nay là mồng 1 tháng 3."
+  },
+  {
+    "word": "二日",
+    "reading": "ふつか",
+    "meaning": "ngày mồng 2",
+    "example": "[明日](あした)は **[二日](ふつか)**です。",
+    "exampleVi": "Ngày mai là mồng 2."
+  },
+  {
+    "word": "三日",
+    "reading": "みっか",
+    "meaning": "ngày mồng 3",
+    "example": "**[三日](みっか)**に [友達](ともだち)と [学校](がっこう)へ [行](い)きます。",
+    "exampleVi": "Ngày mồng 3 tôi sẽ đến trường cùng bạn."
+  },
+  {
+    "word": "四日",
+    "reading": "よっか",
+    "meaning": "ngày mồng 4",
+    "example": "**[四日](よっか)**は [休](やす)みです。",
+    "exampleVi": "Ngày mồng 4 là ngày nghỉ."
+  },
+  {
+    "word": "五日",
+    "reading": "いつか",
+    "meaning": "ngày mồng 5",
+    "example": "**[五日](いつか)**に [飛行機](ひこうき)で [帰](かえ)ります。",
+    "exampleVi": "Ngày mồng 5 tôi sẽ về bằng máy bay."
+  },
+  {
+    "word": "六日",
+    "reading": "むいか",
+    "meaning": "ngày mồng 6",
+    "example": "[会議](かいぎ)は **[六日](むいか)**です。",
+    "exampleVi": "Cuộc họp vào ngày mồng 6."
+  },
+  {
+    "word": "七日",
+    "reading": "なのか",
+    "meaning": "ngày mồng 7",
+    "example": "[試験](しけん)は **[七日](なのか)**です。",
+    "exampleVi": "Kỳ thi vào ngày mồng 7."
+  },
+  {
+    "word": "八日",
+    "reading": "ようか",
+    "meaning": "ngày mồng 8",
+    "example": "**[八日](ようか)**は [土曜日](どようび)です。",
+    "exampleVi": "Ngày mồng 8 là thứ bảy."
+  },
+  {
+    "word": "九日",
+    "reading": "ここのか",
+    "meaning": "ngày mồng 9",
+    "example": "**[九日](ここのか)**に [船](ふね)で [行](い)きます。",
+    "exampleVi": "Ngày mồng 9 tôi sẽ đi bằng tàu thủy."
+  },
+  {
+    "word": "十日",
+    "reading": "とおか",
+    "meaning": "ngày mồng 10",
+    "example": "**[十日](とおか)**は [私](わたし)の [誕生日](たんじょうび)です。",
+    "exampleVi": "Ngày mồng 10 là sinh nhật của tôi."
+  },
+  {
+    "word": "十四日",
+    "reading": "じゅうよっか",
+    "meaning": "ngày 14",
+    "example": "[会議](かいぎ)は **[十四日](じゅうよっか)**の 3[時](じ)からです。",
+    "exampleVi": "Cuộc họp bắt đầu từ 3 giờ ngày 14."
+  },
+  {
+    "word": "二十日",
+    "reading": "はつか",
+    "meaning": "ngày 20",
+    "example": "**[二十日](はつか)**に [国](くに)へ [帰](かえ)ります。",
+    "exampleVi": "Ngày 20 tôi sẽ về nước."
+  },
+  {
+    "word": "二十四日",
+    "reading": "にじゅうよっか",
+    "meaning": "ngày 24",
+    "example": "**[二十四日](にじゅうよっか)**は [誕生日](たんじょうび)です。",
+    "exampleVi": "Ngày 24 là sinh nhật."
+  },
+  {
+    "word": "何日",
+    "reading": "なんにち",
+    "meaning": "ngày mấy",
+    "example": "[誕生日](たんじょうび)は **[何日](なんにち)**ですか。",
+    "exampleVi": "Sinh nhật của bạn là ngày mấy?"
+  },
+  {
+    "word": "いつ",
+    "reading": "いつ",
+    "meaning": "bao giờ, khi nào",
+    "example": "**いつ** [国](くに)へ [帰](かえ)りますか。",
+    "exampleVi": "Khi nào bạn về nước?"
+  },
+  {
+    "word": "誕生日",
+    "reading": "たんじょうび",
+    "meaning": "sinh nhật",
+    "example": "**[誕生日](たんじょうび)**は いつですか。",
+    "exampleVi": "Sinh nhật của bạn là khi nào?"
+  },
+  {
+    "word": "ふつう",
+    "reading": "ふつう",
+    "meaning": "bình thường",
+    "example": "**ふつう**で [行](い)きます。",
+    "exampleVi": "Tôi đi bằng tàu thường."
+  },
+  {
+    "word": "急行",
+    "reading": "きゅうこう",
+    "meaning": "tàu tốc hành",
+    "example": "**[急行](きゅうこう)**で [行](い)きます。",
+    "exampleVi": "Tôi đi bằng tàu tốc hành."
+  },
+  {
+    "word": "特急",
+    "reading": "とっきゅう",
+    "meaning": "tàu tốc hành đặc biệt",
+    "example": "[次](つぎ)の **[特急](とっきゅう)**は 3[時](じ)です。",
+    "exampleVi": "Chuyến tàu tốc hành đặc biệt tiếp theo là lúc 3 giờ."
+  },
+  {
+    "word": "次",
+    "reading": "つぎ",
+    "meaning": "tiếp theo",
+    "example": "**[次](つぎ)**の [電車](でんしゃ)は 5[時](じ)です。",
+    "exampleVi": "Chuyến tàu điện tiếp theo là lúc 5 giờ."
+  }
 ]

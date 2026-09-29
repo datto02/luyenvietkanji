@@ -5,51 +5,115 @@
   "可愛い",
   "お祝い",
   "お年玉",
-  "見舞い",
+  {
+    "word": "みまい",
+    "reading": "みまい",
+    "meaning": "thăm người ốm"
+  },
   "興味",
   "情報",
   "文法",
   "発音",
-  "猿",
-  "餌",
+  {
+    "word": "さる",
+    "reading": "さる",
+    "meaning": "con khỉ"
+  },
+  {
+    "word": "えさ",
+    "reading": "えさ",
+    "meaning": "thức ăn cho động vật"
+  },
   "おもちゃ",
   "絵本",
   "絵葉書",
   "ドライバー",
   "ハンカチ",
-  "靴下",
-  "手袋",
+  {
+    "word": "くつした",
+    "reading": "くつした",
+    "meaning": "cái tất"
+  },
+  {
+    "word": "てぶくろ",
+    "reading": "てぶくろ",
+    "meaning": "cái găng tay"
+  },
   "祖父",
   "祖母",
   "孫",
   "お孫さん",
-  "叔父",
-  "叔父さん",
-  "叔母",
-  "叔母さん",
+  {
+    "word": "おじ",
+    "reading": "おじ",
+    "meaning": "chú, cậu, bác trai (của mình)"
+  },
+  {
+    "word": "おじさん",
+    "reading": "おじさん",
+    "meaning": "chú, cậu, bác trai (của người khác)"
+  },
+  {
+    "word": "おば",
+    "reading": "おば",
+    "meaning": "cô, dì, bác gái (của mình)"
+  },
+  {
+    "word": "おばさん",
+    "reading": "おばさん",
+    "meaning": "cô, dì, bác gái (của người khác)"
+  },
   "昔話",
   "ある",
   "男",
   "子供達",
-  "虐める",
-  "亀",
+  {
+    "word": "いじめる",
+    "reading": "いじめる",
+    "meaning": "bắt nạt"
+  },
+  {
+    "word": "かめ",
+    "reading": "かめ",
+    "meaning": "con rùa"
+  },
   "助ける",
-  "お姫様",
+  {
+    "word": "おひめさま",
+    "reading": "おひめさま",
+    "meaning": "công chúa"
+  },
   "暮らす",
   "陸",
   "すると",
-  "煙",
+  {
+    "word": "けむり",
+    "reading": "けむり",
+    "meaning": "khói"
+  },
   "真っ白",
   "中身",
   "上げる",
   "下げる",
-  "暖房",
-  "冷房",
+  {
+    "word": "だんぼう",
+    "reading": "だんぼう",
+    "meaning": "điều hòa ấm, hệ thống sưởi"
+  },
+  {
+    "word": "れいぼう",
+    "reading": "れいぼう",
+    "meaning": "thiết bị làm mát, máy điều hòa"
+  },
   "温度",
   "管理人",
   "この間",
   "一言",
   "ずつ",
   "お宅",
-  "幼稚園"
+  {
+    "word": "ようちえん",
+    "reading": "ようちえん",
+    "meaning": "trường mẫu giáo"
+  }
 ]
