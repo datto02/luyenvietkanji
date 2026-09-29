@@ -3,322 +3,322 @@
     "word": "開く",
     "reading": "あく",
     "meaning": "[cửa] mở",
-    "example": "[窓](まど)が **[開](あ)いて** います。",
+    "example": "[窓](まど)が**[開](あ)いて**います。",
     "exampleVi": "Cửa sổ đang mở."
   },
   {
     "word": "閉まる",
     "reading": "しまる",
     "meaning": "[cửa] đóng",
-    "example": "ドアが **[閉](し)まって** います。",
+    "example": "ドアが**[閉](し)まって**います。",
     "exampleVi": "Cửa đang đóng."
   },
   {
     "word": "つく",
     "reading": "つく",
     "meaning": "[điện] sáng",
-    "example": "[部屋](へや)の [電気](でんき)が **ついて** います。",
+    "example": "[部屋](へや)の[電気](でんき)が**ついて**います。",
     "exampleVi": "Đèn trong phòng đang sáng."
   },
   {
     "word": "消える",
     "reading": "きえる",
     "meaning": "[điện] tắt",
-    "example": "[電気](でんき)が **[消](き)えて** います。",
+    "example": "[電気](でんき)が**[消](き)えて**います。",
     "exampleVi": "Đèn đang tắt."
   },
   {
     "word": "こわれる",
     "reading": "こわれる",
-    "meaning": "[ghế] hỏng",
-    "example": "エアコンが **こわれて** います。",
+    "meaning": "hỏng, hư",
+    "example": "エアコンが**こわれて**います。",
     "exampleVi": "Máy điều hòa bị hỏng."
   },
   {
     "word": "割れる",
     "reading": "われる",
     "meaning": "[cốc] vỡ",
-    "example": "コップが **[割](わ)れて** います。",
+    "example": "コップが**[割](わ)れて**います。",
     "exampleVi": "Cái cốc bị vỡ."
   },
   {
     "word": "折れる",
     "reading": "おれる",
     "meaning": "[cây] gãy",
-    "example": "[木](き)の [枝](えだ)が **[折](お)れて** います。",
+    "example": "[木](き)の[枝](えだ)が**[折](お)れて**います。",
     "exampleVi": "Cành cây bị gãy."
   },
   {
     "word": "破れる",
     "reading": "やぶれる",
     "meaning": "[giấy] rách",
-    "example": "[紙](かみ)が **[破](やぶ)れて** います。",
+    "example": "[紙](かみ)が**[破](やぶ)れて**います。",
     "exampleVi": "Tờ giấy bị rách."
   },
   {
     "word": "よごれる",
     "reading": "よごれる",
     "meaning": "[quần áo] bẩn",
-    "example": "[服](ふく)が **よごれて** います。",
+    "example": "[服](ふく)が**よごれて**います。",
     "exampleVi": "Quần áo bị bẩn."
   },
   {
     "word": "付く",
     "reading": "つく",
     "meaning": "dính, gắn [túi]",
-    "example": "[服](ふく)に ごみが **[付](つ)いて** います。",
+    "example": "[服](ふく)にごみが**[付](つ)いて**います。",
     "exampleVi": "Có rác dính trên quần áo."
   },
   {
     "word": "外れる",
     "reading": "はずれる",
     "meaning": "[nút] bung, rời",
-    "example": "ボタンが **[外](はず)れて** います。",
+    "example": "ボタンが**[外](はず)れて**います。",
     "exampleVi": "Cái cúc bị bung ra."
   },
   {
     "word": "止まる",
     "reading": "とまる",
     "meaning": "[xe] đỗ, dừng",
-    "example": "[電車](でんしゃ)が **[止](と)まって** います。",
+    "example": "[電車](でんしゃ)が**[止](と)まって**います。",
     "exampleVi": "Tàu điện đang dừng."
   },
   {
     "word": "まちがえる",
     "reading": "まちがえる",
     "meaning": "sai, mắc lỗi",
-    "example": "[電話](でんわ)の [番号](ばんごう)を **まちがえました**。",
+    "example": "[電話](でんわ)の[番号](ばんごう)を**まちがえました**。",
     "exampleVi": "Tôi đã nhầm số điện thoại."
   },
   {
     "word": "落とす",
     "reading": "おとす",
     "meaning": "thả xuống, đánh rơi",
-    "example": "[財布](さいふ)を **[落](お)として**しまいました。",
+    "example": "[財布](さいふ)を**[落](お)として**しまいました。",
     "exampleVi": "Tôi lỡ đánh rơi ví mất rồi."
   },
   {
     "word": "ふく",
     "reading": "ふく",
     "meaning": "lau, chùi",
-    "example": "[机](つくえ)を **ふきます**。",
+    "example": "[机](つくえ)を**ふきます**。",
     "exampleVi": "Tôi lau bàn."
   },
   {
     "word": "とりかえる",
     "reading": "とりかえる",
     "meaning": "đổi, thay thế",
-    "example": "[古](ふる)い [電池](でんち)を **とりかえます**。",
+    "example": "[古](ふる)い[電池](でんち)を**とりかえます**。",
     "exampleVi": "Tôi thay pin cũ."
   },
   {
     "word": "片付ける",
     "reading": "かたづける",
     "meaning": "dọn dẹp",
-    "example": "[部屋](へや)を **[片付](かたづ)けましょう**。",
+    "example": "[部屋](へや)を**[片付](かたづ)けましょう**。",
     "exampleVi": "Chúng ta dọn phòng nhé."
   },
   {
     "word": "皿",
     "reading": "さら",
     "meaning": "đĩa",
-    "example": "**[皿](さら)**を [洗](あら)います。",
+    "example": "**[皿](さら)**を[洗](あら)います。",
     "exampleVi": "Tôi rửa đĩa."
   },
   {
     "word": "ちゃわん",
     "reading": "ちゃわん",
     "meaning": "chén, bát",
-    "example": "**ちゃわん**に ご[飯](はん)を [入](い)れます。",
+    "example": "**ちゃわん**にご[飯](はん)を[入](い)れます。",
     "exampleVi": "Tôi cho cơm vào bát."
   },
   {
     "word": "コップ",
     "reading": "コップ",
     "meaning": "cốc",
-    "example": "**コップ**に [水](みず)を [入](い)れて ください。",
+    "example": "**コップ**に[水](みず)を[入](い)れてください。",
     "exampleVi": "Xin hãy cho nước vào cốc."
   },
   {
     "word": "ガラス",
     "reading": "ガラス",
     "meaning": "kính",
-    "example": "**ガラス**が [割](わ)れて います。",
+    "example": "**ガラス**が[割](わ)れています。",
     "exampleVi": "Kính bị vỡ."
   },
   {
     "word": "ふくろ",
     "reading": "ふくろ",
     "meaning": "túi",
-    "example": "**ふくろ**に [野菜](やさい)を [入](い)れます。",
+    "example": "**ふくろ**に[野菜](やさい)を[入](い)れます。",
     "exampleVi": "Tôi cho rau vào túi."
   },
   {
     "word": "書類",
     "reading": "しょるい",
     "meaning": "tài liệu, hồ sơ",
-    "example": "**[書類](しょるい)**を [出](だ)して ください。",
+    "example": "**[書類](しょるい)**を[出](だ)してください。",
     "exampleVi": "Xin hãy nộp hồ sơ."
   },
   {
     "word": "枝",
     "reading": "えだ",
     "meaning": "cành cây",
-    "example": "[木](き)の **[枝](えだ)**に [鳥](とり)が います。",
+    "example": "[木](き)の**[枝](えだ)**に[鳥](とり)がいます。",
     "exampleVi": "Trên cành cây có chim."
   },
   {
     "word": "駅員",
     "reading": "えきいん",
     "meaning": "nhân viên nhà ga",
-    "example": "**[駅員](えきいん)**に [聞](き)いて ください。",
+    "example": "**[駅員](えきいん)**に[聞](き)いてください。",
     "exampleVi": "Xin hãy hỏi nhân viên nhà ga."
   },
   {
     "word": "交番",
     "reading": "こうばん",
     "meaning": "đồn cảnh sát",
-    "example": "**[交番](こうばん)**で [道](みち)を [聞](き)きます。",
+    "example": "**[交番](こうばん)**で[道](みち)を[聞](き)きます。",
     "exampleVi": "Tôi hỏi đường ở đồn cảnh sát."
   },
   {
     "word": "スピーチ",
     "reading": "スピーチ",
     "meaning": "diễn văn, bài phát biểu",
-    "example": "[明日](あした)、**スピーチ**を します。",
+    "example": "[明日](あした)、**スピーチ**をします。",
     "exampleVi": "Ngày mai tôi sẽ phát biểu."
   },
   {
     "word": "返事",
     "reading": "へんじ",
     "meaning": "trả lời",
-    "example": "**[返事](へんじ)**を [書](か)きます。",
+    "example": "**[返事](へんじ)**を[書](か)きます。",
     "exampleVi": "Tôi viết thư trả lời."
   },
   {
     "word": "今の電車",
     "reading": "いまのでんしゃ",
     "meaning": "(chuyến) tàu điện vừa chạy",
-    "example": "**[今](いま)の[電車](でんしゃ)**は [急行](きゅうこう)でした。",
+    "example": "**[今](いま)の[電車](でんしゃ)**は[急行](きゅうこう)でした。",
     "exampleVi": "Chuyến tàu vừa nãy là tàu tốc hành."
   },
   {
     "word": "忘れ物",
     "reading": "わすれもの",
     "meaning": "đồ bỏ quên",
-    "example": "**[忘](わす)れ[物](もの)**は ありませんか。",
+    "example": "**[忘](わす)れ[物](もの)**はありませんか。",
     "exampleVi": "Bạn không bỏ quên đồ gì chứ?"
   },
   {
     "word": "このくらい",
     "reading": "このくらい",
     "meaning": "cỡ tầm này, khoảng chừng này",
-    "example": "**このくらい**の [箱](はこ)です。",
+    "example": "**このくらい**の[箱](はこ)です。",
     "exampleVi": "Là cái hộp cỡ này."
   },
   {
     "word": "側",
     "reading": "がわ",
     "meaning": "phía ~",
-    "example": "[右](みぎ)**[側](がわ)**に [銀行](ぎんこう)が あります。",
+    "example": "[右](みぎ)**[側](がわ)**に[銀行](ぎんこう)があります。",
     "exampleVi": "Ở phía bên phải có ngân hàng."
   },
   {
     "word": "ポケット",
     "reading": "ポケット",
     "meaning": "túi",
-    "example": "**ポケット**の [中](なか)に きっぷが あります。",
+    "example": "**ポケット**の[中](なか)にきっぷがあります。",
     "exampleVi": "Trong túi có vé."
   },
   {
     "word": "辺",
     "reading": "へん",
     "meaning": "chỗ ~, vùng ~",
-    "example": "この **[辺](へん)**に [銀行](ぎんこう)が ありますか。",
+    "example": "この**[辺](へん)**に[銀行](ぎんこう)がありますか。",
     "exampleVi": "Quanh đây có ngân hàng không?"
   },
   {
     "word": "あみだな",
     "reading": "あみだな",
     "meaning": "giá để hành lý",
-    "example": "かばんを **あみだな**に [置](お)きました。",
+    "example": "かばんを**あみだな**に[置](お)きました。",
     "exampleVi": "Tôi đã để cặp lên giá để hành lý."
   },
   {
     "word": "確か",
     "reading": "たしか",
     "meaning": "chắc là",
-    "example": "**[確](たし)か**、[田中](たなか)さんの かばんです。",
+    "example": "**[確](たし)か**、[田中](たなか)さんのかばんです。",
     "exampleVi": "Hình như đó là cặp của anh Tanaka."
   },
   {
     "word": "じしん",
     "reading": "じしん",
     "meaning": "động đất",
-    "example": "[昨日](きのう)、**じしん**が ありました。",
+    "example": "[昨日](きのう)、**じしん**がありました。",
     "exampleVi": "Hôm qua đã có động đất."
   },
   {
     "word": "かべ",
     "reading": "かべ",
     "meaning": "tường",
-    "example": "**かべ**に [地図](ちず)が あります。",
+    "example": "**かべ**に[地図](ちず)があります。",
     "exampleVi": "Trên tường có bản đồ."
   },
   {
     "word": "針",
     "reading": "はり",
     "meaning": "kim, cây kim",
-    "example": "[時計](とけい)の **[針](はり)**が [止](と)まって います。",
+    "example": "[時計](とけい)の**[針](はり)**が[止](と)まっています。",
     "exampleVi": "Kim đồng hồ đã dừng."
   },
   {
     "word": "指す",
     "reading": "さす",
     "meaning": "chỉ",
-    "example": "[時計](とけい)の [針](はり)は 3[時](じ)を **[指](さ)して** います。",
+    "example": "[時計](とけい)の[針](はり)は3[時](じ)を**[指](さ)して**います。",
     "exampleVi": "Kim đồng hồ đang chỉ 3 giờ."
   },
   {
     "word": "駅前",
     "reading": "えきまえ",
     "meaning": "trước ga",
-    "example": "**[駅前](えきまえ)**に [銀行](ぎんこう)が あります。",
+    "example": "**[駅前](えきまえ)**に[銀行](ぎんこう)があります。",
     "exampleVi": "Trước ga có ngân hàng."
   },
   {
     "word": "たおれる",
     "reading": "たおれる",
     "meaning": "ngã, đổ",
-    "example": "[木](き)が **たおれました**。",
+    "example": "[木](き)が**たおれました**。",
     "exampleVi": "Cái cây đã đổ."
   },
   {
     "word": "西",
     "reading": "にし",
     "meaning": "phía tây",
-    "example": "**[西](にし)**に [海](うみ)が あります。",
+    "example": "**[西](にし)**に[海](うみ)があります。",
     "exampleVi": "Ở phía tây có biển."
   },
   {
     "word": "の方",
     "reading": "のほう",
     "meaning": "phía ~, hướng ~",
-    "example": "[駅](えき)**の[方](ほう)**から [音](おと)が [聞](き)こえます。",
+    "example": "[駅](えき)**の[方](ほう)**から[音](おと)が[聞](き)こえます。",
     "exampleVi": "Có tiếng vọng từ phía nhà ga."
   },
   {
     "word": "燃える",
     "reading": "もえる",
     "meaning": "cháy",
-    "example": "[紙](かみ)は よく **[燃](も)えます**。",
+    "example": "[紙](かみ)はよく**[燃](も)えます**。",
     "exampleVi": "Giấy cháy rất tốt."
   },
   {
     "word": "レポーター",
     "reading": "レポーター",
     "meaning": "phóng viên",
-    "example": "あの **レポーター**は [有名](ゆうめい)です。",
+    "example": "あの**レポーター**は[有名](ゆうめい)です。",
     "exampleVi": "Phóng viên kia nổi tiếng."
   }
 ]

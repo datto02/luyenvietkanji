@@ -3,168 +3,168 @@
     "word": "出来ます",
     "reading": "できます",
     "meaning": "có thể",
-    "example": "[日本語](にほんご)が **[出来](でき)ます**。",
+    "example": "[日本語](にほんご)が**[出来](でき)ます**。",
     "exampleVi": "Tôi biết (nói được) tiếng Nhật."
   },
   {
     "word": "洗います",
     "reading": "あらいます",
     "meaning": "rửa, giặt",
-    "example": "[手](て)を **[洗](あら)います**。",
+    "example": "[手](て)を**[洗](あら)います**。",
     "exampleVi": "Tôi rửa tay."
   },
   {
     "word": "ひきます",
     "reading": "ひきます",
     "meaning": "chơi [nhạc cụ]",
-    "example": "ピアノを **ひきます**。",
+    "example": "ピアノを**ひきます**。",
     "exampleVi": "Tôi chơi đàn piano."
   },
   {
     "word": "歌います",
     "reading": "うたいます",
     "meaning": "hát",
-    "example": "[歌](うた)を **[歌](うた)います**。",
+    "example": "[歌](うた)を**[歌](うた)います**。",
     "exampleVi": "Tôi hát một bài hát."
   },
   {
     "word": "集めます",
     "reading": "あつめます",
     "meaning": "sưu tầm, thu thập",
-    "example": "[切手](きって)を **[集](あつ)めます**。",
+    "example": "[切手](きって)を**[集](あつ)めます**。",
     "exampleVi": "Tôi sưu tầm tem."
   },
   {
     "word": "捨てます",
     "reading": "すてます",
     "meaning": "vứt, bỏ",
-    "example": "[古](ふる)い [新聞](しんぶん)を **[捨](す)てます**。",
+    "example": "[古](ふる)い[新聞](しんぶん)を**[捨](す)てます**。",
     "exampleVi": "Tôi vứt tờ báo cũ."
   },
   {
     "word": "かえます",
     "reading": "かえます",
     "meaning": "đổi, trao đổi",
-    "example": "[お金](おかね)を **かえます**。",
+    "example": "[お金](おかね)を**かえます**。",
     "exampleVi": "Tôi đổi tiền."
   },
   {
     "word": "運転します",
     "reading": "うんてんします",
     "meaning": "lái xe",
-    "example": "[車](くるま)を **[運転](うんてん)します**。",
+    "example": "[車](くるま)を**[運転](うんてん)します**。",
     "exampleVi": "Tôi lái xe hơi."
   },
   {
     "word": "予約します",
     "reading": "よやくします",
     "meaning": "đặt chỗ, đặt trước",
-    "example": "ホテルを **[予約](よやく)します**。",
+    "example": "ホテルを**[予約](よやく)します**。",
     "exampleVi": "Tôi đặt phòng khách sạn."
   },
   {
     "word": "ピアノ",
     "reading": "ピアノ",
     "meaning": "đàn piano",
-    "example": "**ピアノ**が [好](す)きです。",
+    "example": "**ピアノ**が[好](す)きです。",
     "exampleVi": "Tôi thích đàn piano."
   },
   {
     "word": "メートル",
     "reading": "メートル",
     "meaning": "mét",
-    "example": "あの ビルは 100**メートル**です。",
+    "example": "あのビルは100**メートル**です。",
     "exampleVi": "Tòa nhà kia cao 100 mét."
   },
   {
     "word": "現金",
     "reading": "げんきん",
     "meaning": "tiền mặt",
-    "example": "**[現金](げんきん)**で はらいます。",
+    "example": "**[現金](げんきん)**ではらいます。",
     "exampleVi": "Tôi trả bằng tiền mặt."
   },
   {
     "word": "しゅみ",
     "reading": "しゅみ",
     "meaning": "sở thích",
-    "example": "わたしの **しゅみ**は [音楽](おんがく)を [聞](き)く ことです。",
+    "example": "わたしの**しゅみ**は[音楽](おんがく)を[聞](き)くことです。",
     "exampleVi": "Sở thích của tôi là nghe nhạc."
   },
   {
     "word": "日記",
     "reading": "にっき",
     "meaning": "nhật ký",
-    "example": "[毎日](まいにち) **[日記](にっき)**を [書](か)きます。",
+    "example": "[毎日](まいにち)**[日記](にっき)**を[書](か)きます。",
     "exampleVi": "Ngày nào tôi cũng viết nhật ký."
   },
   {
     "word": "おいのり",
     "reading": "おいのり",
     "meaning": "cầu nguyện",
-    "example": "[毎朝](まいあさ) **おいのり**を します。",
+    "example": "[毎朝](まいあさ)**おいのり**をします。",
     "exampleVi": "Sáng nào tôi cũng cầu nguyện."
   },
   {
     "word": "課長",
     "reading": "かちょう",
-    "meaning": "trưởng nhóm, trưởng khoa",
-    "example": "[田中](たなか)さんは **[課長](かちょう)**です。",
-    "exampleVi": "Anh Tanaka là trưởng phòng (kachō)."
+    "meaning": "trưởng ban, tổ trưởng (kachō)",
+    "example": "[田中](たなか)さんは**[課長](かちょう)**です。",
+    "exampleVi": "Anh Tanaka là trưởng ban (kachō)."
   },
   {
     "word": "部長",
     "reading": "ぶちょう",
     "meaning": "trưởng phòng, trưởng bộ phận",
-    "example": "[山田](やまだ)さんは **[部長](ぶちょう)**です。",
-    "exampleVi": "Ông Yamada là trưởng bộ phận (buchō)."
+    "example": "[山田](やまだ)さんは**[部長](ぶちょう)**です。",
+    "exampleVi": "Ông Yamada là trưởng phòng (buchō)."
   },
   {
     "word": "社長",
     "reading": "しゃちょう",
     "meaning": "giám đốc",
-    "example": "**[社長](しゃちょう)**は [今日](きょう) [出張](しゅっちょう)します。",
+    "example": "**[社長](しゃちょう)**は[今日](きょう)[出張](しゅっちょう)します。",
     "exampleVi": "Hôm nay giám đốc đi công tác."
   },
   {
     "word": "動物",
     "reading": "どうぶつ",
     "meaning": "động vật",
-    "example": "**[動物](どうぶつ)**が [好](す)きです。",
+    "example": "**[動物](どうぶつ)**が[好](す)きです。",
     "exampleVi": "Tôi thích động vật."
   },
   {
     "word": "馬",
     "reading": "うま",
     "meaning": "ngựa",
-    "example": "**[馬](うま)**に [乗](の)る ことが [出来](でき)ます。",
+    "example": "**[馬](うま)**に[乗](の)ることが[出来](でき)ます。",
     "exampleVi": "Tôi có thể cưỡi ngựa."
   },
   {
     "word": "インターネット",
     "reading": "インターネット",
     "meaning": "mạng internet",
-    "example": "**インターネット**で [写真](しゃしん)を [見](み)ます。",
+    "example": "**インターネット**で[写真](しゃしん)を[見](み)ます。",
     "exampleVi": "Tôi xem ảnh trên internet."
   },
   {
     "word": "特に",
     "reading": "とくに",
     "meaning": "đặc biệt, nhất là",
-    "example": "**[特](とく)に** [音楽](おんがく)が [好](す)きです。",
+    "example": "**[特](とく)に**[音楽](おんがく)が[好](す)きです。",
     "exampleVi": "Đặc biệt là tôi thích âm nhạc."
   },
   {
     "word": "なかなか",
     "reading": "なかなか",
     "meaning": "khó mà, mãi mà",
-    "example": "**なかなか** [時間](じかん)が ありません。",
-    "exampleVi": "Mãi mà tôi không có thời gian."
+    "example": "**なかなか**[時間](じかん)がありません。",
+    "exampleVi": "Tôi khó mà có thời gian."
   },
   {
     "word": "ぜひ",
     "reading": "ぜひ",
     "meaning": "bằng mọi giá, nhất định",
-    "example": "**ぜひ** [日本](にほん)へ [来](き)てください。",
+    "example": "**ぜひ**[日本](にほん)へ[来](き)てください。",
     "exampleVi": "Nhất định hãy đến Nhật nhé."
   }
 ]

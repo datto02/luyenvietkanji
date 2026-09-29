@@ -1,102 +1,502 @@
 [
-  "伝わる",
-  "うわさ",
-  "記事",
-  "週刊誌",
-  "政治家",
-  "政府",
-  "市民",
-  "立場",
-  "世の中",
-  "重大",
-  "重要",
-  "大して",
-  "くだらない",
-  "司会者",
-  "生放送",
-  "商品",
-  "発売",
-  "評判",
-  "注目",
-  "ヒット",
-  "やっぱり",
-  "まさか",
-  "やっと",
-  "結局",
-  "怪しい",
-  "恐ろしい",
-  "暴れる",
-  "争う",
-  "犯罪",
-  "発見者",
-  "疑う",
-  "うそつき",
-  "犯人",
-  "いたずら",
-  "叫ぶ",
-  "叩く",
-  "盗む",
-  "うばう",
-  "捜す",
-  "追う",
-  "捕まえる",
-  "捕まる",
-  "逮捕",
-  "気味が悪い",
-  "パトカー",
-  "遭う",
-  "発生",
-  "命",
-  "救う",
-  "騒々しい",
-  "騒ぐ",
-  "現場",
-  "混乱",
-  "パニック",
-  "無事",
-  "防ぐ",
-  "再び",
-  "わざと",
-  "被害者",
-  "お互いに",
-  "疑問",
-  "飛び込む",
-  "おぼれる",
-  "飛び出す",
-  "行方不明",
-  "亡くなる",
-  "偶然",
-  "苦情",
-  "慌しい",
-  "慌てる",
-  "いきなり",
-  "いじめ",
-  "いじめる",
-  "迷子",
-  "場合",
-  "落とす",
-  "無くす",
-  "借金",
-  "ずるい",
-  "倒れる",
-  "転ぶ",
-  "つぶれる",
-  "次々",
-  "停電",
-  "断水",
-  "揺れる",
-  "ぐらぐら",
-  "非常口",
-  "増加",
-  "減少",
-  "超える",
-  "ピーク",
-  "越える",
-  "全体",
-  "かなり",
-  "信用",
-  "失う",
-  "正常",
-  "不景気",
-  "円高"
+ {
+  "word": "伝わる",
+  "example": "そのうわさは[町](まち)じゅうに**[伝](つた)わりました**。",
+  "exampleVi": "Tin đồn đó đã lan khắp thị trấn."
+ },
+ {
+  "word": "うわさ",
+  "example": "[彼](かれ)について、いろいろな**うわさ**があります。",
+  "exampleVi": "Có nhiều tin đồn về anh ấy."
+ },
+ {
+  "word": "記事",
+  "example": "[新聞](しんぶん)で[事故](じこ)の**[記事](きじ)**を[読](よ)みました。",
+  "exampleVi": "Tôi đã đọc bài báo về vụ tai nạn trên báo."
+ },
+ {
+  "word": "週刊誌",
+  "example": "**[週刊誌](しゅうかんし)**に、[有名](ゆうめい)な[俳優](はいゆう)の[記事](きじ)が[出](で)ていました。",
+  "exampleVi": "Trên tạp chí tuần có bài viết về một diễn viên nổi tiếng."
+ },
+ {
+  "word": "政治家",
+  "example": "**[政治家](せいじか)**が[記者](きしゃ)の[質問](しつもん)に[答](こた)えました。",
+  "exampleVi": "Chính trị gia đã trả lời câu hỏi của phóng viên."
+ },
+ {
+  "word": "政府",
+  "example": "**[政府](せいふ)**は[新](あたら)しい[計画](けいかく)を[発表](はっぴょう)しました。",
+  "exampleVi": "Chính phủ đã công bố kế hoạch mới."
+ },
+ {
+  "word": "市民",
+  "example": "[多](おお)くの**[市民](しみん)**がその[計画](けいかく)を[支持](しじ)しています。",
+  "exampleVi": "Nhiều người dân ủng hộ kế hoạch đó."
+ },
+ {
+  "word": "立場",
+  "example": "[相手](あいて)の**[立場](たちば)**になって、[考](かんが)えてみましょう。",
+  "exampleVi": "Hãy thử đặt mình vào lập trường của đối phương mà suy nghĩ."
+ },
+ {
+  "word": "世の中",
+  "example": "**[世](よ)の[中](なか)**には、いろいろな[人](ひと)がいます。",
+  "exampleVi": "Trên đời có nhiều kiểu người khác nhau."
+ },
+ {
+  "word": "重大",
+  "example": "**[重大](じゅうだい)**な[問題](もんだい)が[起](お)きたので、[会議](かいぎ)を[開](ひら)きます。",
+  "exampleVi": "Vì đã xảy ra vấn đề nghiêm trọng nên chúng tôi sẽ họp."
+ },
+ {
+  "word": "重要",
+  "example": "これはとても**[重要](じゅうよう)**な[書類](しょるい)です。",
+  "exampleVi": "Đây là giấy tờ rất quan trọng."
+ },
+ {
+  "word": "大して",
+  "example": "[今日](きょう)の[試験](しけん)は、**[大](たい)して**[難](むずか)しくありませんでした。",
+  "exampleVi": "Bài thi hôm nay không khó lắm."
+ },
+ {
+  "word": "くだらない",
+  "example": "**くだらない**[番組](ばんぐみ)ばかり[見](み)ないで、[勉強](べんきょう)しなさい。",
+  "exampleVi": "Đừng chỉ xem mấy chương trình vô bổ, hãy học đi."
+ },
+ {
+  "word": "司会者",
+  "example": "**[司会者](しかいしゃ)**がみんなに[質問](しつもん)しました。",
+  "exampleVi": "Người dẫn chương trình đã đặt câu hỏi cho mọi người."
+ },
+ {
+  "word": "生放送",
+  "example": "その[番組](ばんぐみ)は**[生放送](なまほうそう)**です。",
+  "exampleVi": "Chương trình đó phát sóng trực tiếp."
+ },
+ {
+  "word": "商品",
+  "example": "この**[商品](しょうひん)**は[若](わか)い[人](ひと)に[人気](にんき)があります。",
+  "exampleVi": "Sản phẩm này được giới trẻ ưa chuộng."
+ },
+ {
+  "word": "発売",
+  "example": "[新](あたら)しい[携帯電話](けいたいでんわ)が[来週](らいしゅう)**[発売](はつばい)**されます。",
+  "exampleVi": "Điện thoại di động mới sẽ được bán ra vào tuần sau."
+ },
+ {
+  "word": "評判",
+  "example": "あの[店](みせ)は[料理](りょうり)がおいしいと**[評判](ひょうばん)**です。",
+  "exampleVi": "Cửa hàng đó nổi tiếng là đồ ăn ngon."
+ },
+ {
+  "word": "注目",
+  "example": "この[映画](えいが)は[今](いま)、**[注目](ちゅうもく)**されています。",
+  "exampleVi": "Bộ phim này hiện đang được chú ý."
+ },
+ {
+  "word": "ヒット",
+  "example": "その[歌](うた)は[世界](せかい)で**ヒット**しました。",
+  "exampleVi": "Bài hát đó đã nổi tiếng khắp thế giới."
+ },
+ {
+  "word": "やっぱり",
+  "example": "**やっぱり**[彼](かれ)は[来](き)ませんでした。",
+  "exampleVi": "Quả nhiên anh ấy đã không đến."
+ },
+ {
+  "word": "まさか",
+  "example": "**まさか**[彼](かれ)が[犯人](はんにん)だとは[思](おも)いませんでした。",
+  "exampleVi": "Tôi không ngờ anh ấy lại là thủ phạm."
+ },
+ {
+  "word": "やっと",
+  "example": "[三時間](さんじかん)[待](ま)って、**やっと**[順番](じゅんばん)が[来](き)ました。",
+  "exampleVi": "Chờ ba tiếng, cuối cùng cũng đến lượt."
+ },
+ {
+  "word": "結局",
+  "example": "[長](なが)い[間](あいだ)[悩](なや)んで、**[結局](けっきょく)**[行](い)かないことにしました。",
+  "exampleVi": "Băn khoăn suốt thời gian dài, rốt cuộc tôi quyết định không đi."
+ },
+ {
+  "word": "怪しい",
+  "example": "[夜](よる)、**[怪](あや)しい**[人](ひと)が[家](いえ)の[前](まえ)にいました。",
+  "exampleVi": "Ban đêm có một người đáng ngờ đứng trước nhà."
+ },
+ {
+  "word": "恐ろしい",
+  "example": "[夜](よる)の[山](やま)は**[恐](おそ)ろしい**です。",
+  "exampleVi": "Núi vào ban đêm thật đáng sợ."
+ },
+ {
+  "word": "暴れる",
+  "example": "[酔](よ)った[客](きゃく)が[店](みせ)で**[暴](あば)れました**。",
+  "exampleVi": "Vị khách say đã làm loạn trong quán."
+ },
+ {
+  "word": "争う",
+  "example": "[二人](ふたり)は[お金](かね)のことで**[争](あらそ)って**います。",
+  "exampleVi": "Hai người đang tranh cãi chuyện tiền bạc."
+ },
+ {
+  "word": "犯罪",
+  "example": "[町](まち)で**[犯罪](はんざい)**が[増](ふ)えています。",
+  "exampleVi": "Tội phạm trong thị trấn đang gia tăng."
+ },
+ {
+  "word": "発見者",
+  "example": "[事故](じこ)の**[発見者](はっけんしゃ)**は[近](ちか)くに[住](す)む[男性](だんせい)でした。",
+  "exampleVi": "Người phát hiện ra vụ tai nạn là một người đàn ông sống gần đó."
+ },
+ {
+  "word": "疑う",
+  "example": "[彼](かれ)の[話](はなし)は[本当](ほんとう)かどうか、**[疑](うたが)って**います。",
+  "exampleVi": "Tôi đang nghi ngờ không biết câu chuyện của anh ấy có thật không."
+ },
+ {
+  "word": "うそつき",
+  "example": "[彼](かれ)は**うそつき**なので、[誰](だれ)も[信](しん)じません。",
+  "exampleVi": "Anh ta là kẻ nói dối nên không ai tin."
+ },
+ {
+  "word": "犯人",
+  "example": "**[犯人](はんにん)**はまだ[見](み)つかっていません。",
+  "exampleVi": "Thủ phạm vẫn chưa được tìm thấy."
+ },
+ {
+  "word": "いたずら",
+  "example": "[子供](こども)が**いたずら**をして、[先生](せんせい)に[叱](しか)られました。",
+  "exampleVi": "Đứa trẻ nghịch ngợm nên bị thầy mắng."
+ },
+ {
+  "word": "叫ぶ",
+  "example": "[彼](かれ)は[大声](おおごえ)で**[叫](さけ)びました**。",
+  "exampleVi": "Anh ấy đã hét lớn."
+ },
+ {
+  "word": "叩く",
+  "example": "[誰](だれ)かがドアを**[叩](たた)いて**います。",
+  "exampleVi": "Ai đó đang gõ cửa."
+ },
+ {
+  "word": "盗む",
+  "example": "[財布](さいふ)を**[盗](ぬす)まれました**。",
+  "exampleVi": "Tôi bị trộm mất ví."
+ },
+ {
+  "word": "うばう",
+  "example": "[泥棒](どろぼう)に[財布](さいふ)を**うばわれました**。",
+  "exampleVi": "Tôi bị kẻ trộm cướp mất ví."
+ },
+ {
+  "word": "捜す",
+  "example": "なくした[鍵](かぎ)を[部屋](へや)じゅう**[捜](さが)しました**。",
+  "exampleVi": "Tôi đã tìm chiếc chìa khóa bị mất khắp phòng."
+ },
+ {
+  "word": "追う",
+  "example": "[警察](けいさつ)は[逃](に)げる[犯人](はんにん)を**[追](お)って**います。",
+  "exampleVi": "Cảnh sát đang truy đuổi thủ phạm đang bỏ chạy."
+ },
+ {
+  "word": "捕まえる",
+  "example": "[警察](けいさつ)は[犯人](はんにん)を**[捕](つか)まえました**。",
+  "exampleVi": "Cảnh sát đã bắt được thủ phạm."
+ },
+ {
+  "word": "捕まる",
+  "example": "[犯人](はんにん)は[警察](けいさつ)に**[捕](つか)まりました**。",
+  "exampleVi": "Thủ phạm đã bị cảnh sát bắt."
+ },
+ {
+  "word": "逮捕",
+  "example": "[犯人](はんにん)は[昨日](きのう)、**[逮捕](たいほ)**されました。",
+  "exampleVi": "Thủ phạm đã bị bắt vào hôm qua."
+ },
+ {
+  "word": "気味が悪い",
+  "example": "[夜](よる)の[暗](くら)い[道](みち)は**[気味](きみ)が[悪](わる)い**です。",
+  "exampleVi": "Con đường tối vào ban đêm thật rợn người."
+ },
+ {
+  "word": "パトカー",
+  "example": "[近](ちか)くで**パトカー**の[音](おと)が[聞](き)こえます。",
+  "exampleVi": "Nghe thấy tiếng xe cảnh sát ở gần đây."
+ },
+ {
+  "word": "遭う",
+  "example": "[旅行中](りょこうちゅう)に、[事故](じこ)に**[遭](あ)いました**。",
+  "exampleVi": "Trong lúc đi du lịch, tôi đã gặp tai nạn."
+ },
+ {
+  "word": "発生",
+  "example": "[昨日](きのう)、[近](ちか)くで[火事](かじ)が**[発生](はっせい)**しました。",
+  "exampleVi": "Hôm qua đã xảy ra hỏa hoạn ở gần đây."
+ },
+ {
+  "word": "命",
+  "example": "[人](ひと)の**[命](いのち)**は[何](なに)より[大切](たいせつ)です。",
+  "exampleVi": "Sinh mạng con người quý hơn bất cứ điều gì."
+ },
+ {
+  "word": "救う",
+  "example": "[医者](いしゃ)は[多](おお)くの[人](ひと)の[命](いのち)を**[救](すく)います**。",
+  "exampleVi": "Bác sĩ cứu sống nhiều người."
+ },
+ {
+  "word": "騒々しい",
+  "example": "[駅](えき)の[前](まえ)は[人](ひと)と[車](くるま)で**[騒々](そうぞう)しい**です。",
+  "exampleVi": "Trước nhà ga ồn ào vì người và xe."
+ },
+ {
+  "word": "騒ぐ",
+  "example": "[夜](よる)、[隣](となり)の[部屋](へや)の[人](ひと)が**[騒](さわ)いで**、[眠](ねむ)れませんでした。",
+  "exampleVi": "Ban đêm người phòng bên làm ồn nên tôi không ngủ được."
+ },
+ {
+  "word": "現場",
+  "example": "[警察](けいさつ)が[事故](じこ)の**[現場](げんば)**に[来](き)ました。",
+  "exampleVi": "Cảnh sát đã đến hiện trường vụ tai nạn."
+ },
+ {
+  "word": "混乱",
+  "example": "[地震](じしん)の[後](あと)、[町](まち)は**[混乱](こんらん)**しました。",
+  "exampleVi": "Sau trận động đất, thị trấn trở nên hỗn loạn."
+ },
+ {
+  "word": "パニック",
+  "example": "[火事](かじ)で、みんなが**パニック**になりました。",
+  "exampleVi": "Vì hỏa hoạn mà mọi người đều hoảng loạn."
+ },
+ {
+  "word": "無事",
+  "example": "[事故](じこ)に[遭](あ)いましたが、**[無事](ぶじ)**でした。",
+  "exampleVi": "Tôi gặp tai nạn nhưng vẫn bình an."
+ },
+ {
+  "word": "防ぐ",
+  "example": "[手](て)を[洗](あら)って、[風邪](かぜ)を**[防](ふせ)ぎましょう**。",
+  "exampleVi": "Hãy rửa tay để phòng cảm."
+ },
+ {
+  "word": "再び",
+  "example": "[彼](かれ)は[数年後](すうねんご)、**[再](ふたた)び**[日本](にほん)を[訪](おとず)れました。",
+  "exampleVi": "Vài năm sau, anh ấy lại đến thăm Nhật Bản lần nữa."
+ },
+ {
+  "word": "わざと",
+  "example": "[彼](かれ)は**わざと**[間違](まちが)えたふりをしました。",
+  "exampleVi": "Anh ấy cố tình giả vờ nhầm lẫn."
+ },
+ {
+  "word": "被害者",
+  "example": "[事故](じこ)の**[被害者](ひがいしゃ)**は[病院](びょういん)に[運](はこ)ばれました。",
+  "exampleVi": "Nạn nhân của vụ tai nạn đã được đưa đến bệnh viện."
+ },
+ {
+  "word": "お互いに",
+  "example": "[二人](ふたり)は**お[互](たが)いに**[助](たす)け[合](あ)って[暮](く)らしています。",
+  "exampleVi": "Hai người sống giúp đỡ lẫn nhau."
+ },
+ {
+  "word": "疑問",
+  "example": "**[疑問](ぎもん)**がある[人](ひと)は、[質問](しつもん)してください。",
+  "exampleVi": "Ai có thắc mắc xin hãy đặt câu hỏi."
+ },
+ {
+  "word": "飛び込む",
+  "example": "[子供](こども)を[助](たす)けるために、[川](かわ)に**[飛](と)び[込](こ)みました**。",
+  "exampleVi": "Để cứu đứa trẻ, anh ấy đã nhảy xuống sông."
+ },
+ {
+  "word": "おぼれる",
+  "example": "[子供](こども)が[川](かわ)で**おぼれて**、[助](たす)けられました。",
+  "exampleVi": "Đứa trẻ bị đuối nước ở sông và đã được cứu."
+ },
+ {
+  "word": "飛び出す",
+  "example": "[子供](こども)が[道](みち)に**[飛](と)び[出](だ)して**、[危](あぶ)なかったです。",
+  "exampleVi": "Đứa trẻ lao ra đường nên rất nguy hiểm."
+ },
+ {
+  "word": "行方不明",
+  "example": "[山](やま)で[道](みち)に[迷](まよ)った[人](ひと)が**[行方不明](ゆくえふめい)**になりました。",
+  "exampleVi": "Một người bị lạc đường trên núi đã mất tích."
+ },
+ {
+  "word": "亡くなる",
+  "example": "[祖父](そふ)は[去年](きょねん)**[亡](な)くなりました**。",
+  "exampleVi": "Ông tôi đã qua đời vào năm ngoái."
+ },
+ {
+  "word": "偶然",
+  "example": "[旅行先](りょこうさき)で**[偶然](ぐうぜん)**、[友達](ともだち)に[会](あ)いました。",
+  "exampleVi": "Tại nơi du lịch, tôi tình cờ gặp bạn."
+ },
+ {
+  "word": "苦情",
+  "example": "[近所](きんじょ)の[人](ひと)から、[音](おと)がうるさいと**[苦情](くじょう)**が[来](き)ました。",
+  "exampleVi": "Hàng xóm khiếu nại là tiếng ồn quá lớn."
+ },
+ {
+  "word": "慌しい",
+  "example": "[年末](ねんまつ)は[仕事](しごと)が[多](おお)くて、**[慌](あわ)ただしい**[毎日](まいにち)です。",
+  "exampleVi": "Cuối năm nhiều việc nên ngày nào cũng bận rộn vội vã."
+ },
+ {
+  "word": "慌てる",
+  "example": "[財布](さいふ)がないと[気](き)づいて、**[慌](あわ)てました**。",
+  "exampleVi": "Nhận ra mình không có ví, tôi đã cuống lên."
+ },
+ {
+  "word": "いきなり",
+  "example": "[知](し)らない[人](ひと)が**いきなり**[話](はな)しかけてきました。",
+  "exampleVi": "Một người lạ bỗng nhiên bắt chuyện với tôi."
+ },
+ {
+  "word": "いじめ",
+  "example": "[学校](がっこう)の**いじめ**が[問題](もんだい)になっています。",
+  "exampleVi": "Nạn bắt nạt ở trường đang trở thành vấn đề."
+ },
+ {
+  "word": "いじめる",
+  "example": "[弱](よわ)い[人](ひと)を**いじめて**はいけません。",
+  "exampleVi": "Không được bắt nạt người yếu."
+ },
+ {
+  "word": "迷子",
+  "example": "デパートで**[迷子](まいご)**のアナウンスが[流](なが)れました。",
+  "exampleVi": "Ở cửa hàng bách hóa vang lên thông báo tìm trẻ lạc."
+ },
+ {
+  "word": "場合",
+  "example": "[雨](あめ)の**[場合](ばあい)**は、[運動会](うんどうかい)は[中止](ちゅうし)です。",
+  "exampleVi": "Trong trường hợp trời mưa thì hội thao sẽ bị hủy."
+ },
+ {
+  "word": "落とす",
+  "example": "[財布](さいふ)を[道](みち)に**[落](お)として**しまいました。",
+  "exampleVi": "Tôi lỡ làm rơi ví trên đường."
+ },
+ {
+  "word": "無くす",
+  "example": "[大切](たいせつ)な[書類](しょるい)を**[無](な)くして**しまいました。",
+  "exampleVi": "Tôi đã làm mất giấy tờ quan trọng."
+ },
+ {
+  "word": "借金",
+  "example": "[家](いえ)を[買](か)うために、[銀行](ぎんこう)から**[借金](しゃっきん)**をしました。",
+  "exampleVi": "Để mua nhà, tôi đã vay nợ ngân hàng."
+ },
+ {
+  "word": "ずるい",
+  "example": "[彼](かれ)は**ずるい**[方法](ほうほう)で[勝](か)とうとしました。",
+  "exampleVi": "Anh ta đã định thắng bằng cách gian xảo."
+ },
+ {
+  "word": "倒れる",
+  "example": "[強](つよ)い[風](かぜ)で、[木](き)が**[倒](たお)れました**。",
+  "exampleVi": "Cây đã đổ vì gió mạnh."
+ },
+ {
+  "word": "転ぶ",
+  "example": "[雪](ゆき)の[道](みち)で**[転](ころ)んで**、[足](あし)をけがしました。",
+  "exampleVi": "Tôi ngã trên đường tuyết và bị thương ở chân."
+ },
+ {
+  "word": "つぶれる",
+  "example": "[不景気](ふけいき)で、[近所](きんじょ)の[店](みせ)が**つぶれました**。",
+  "exampleVi": "Vì suy thoái kinh tế nên cửa hàng gần nhà đã phá sản."
+ },
+ {
+  "word": "次々",
+  "example": "[新](あたら)しい[店](みせ)が**[次々](つぎつぎ)**にできています。",
+  "exampleVi": "Các cửa hàng mới lần lượt mở ra."
+ },
+ {
+  "word": "停電",
+  "example": "[台風](たいふう)で**[停電](ていでん)**になりました。",
+  "exampleVi": "Vì bão nên đã bị mất điện."
+ },
+ {
+  "word": "断水",
+  "example": "[工事](こうじ)のため、[今日](きょう)は**[断水](だんすい)**します。",
+  "exampleVi": "Vì thi công nên hôm nay sẽ cắt nước."
+ },
+ {
+  "word": "揺れる",
+  "example": "[地震](じしん)で、[家](いえ)が[大](おお)きく**[揺](ゆ)れました**。",
+  "exampleVi": "Nhà rung lắc mạnh vì động đất."
+ },
+ {
+  "word": "ぐらぐら",
+  "example": "[地震](じしん)で、[棚](たな)が**ぐらぐら**[揺](ゆ)れました。",
+  "exampleVi": "Vì động đất mà cái kệ rung lắc dữ dội."
+ },
+ {
+  "word": "非常口",
+  "example": "[火事](かじ)のときは、**[非常口](ひじょうぐち)**から[逃](に)げてください。",
+  "exampleVi": "Khi có hỏa hoạn, xin hãy thoát ra bằng cửa thoát hiểm."
+ },
+ {
+  "word": "増加",
+  "example": "[外国](がいこく)から[来](く)る[人](ひと)が**[増加](ぞうか)**しています。",
+  "exampleVi": "Số người đến từ nước ngoài đang tăng lên."
+ },
+ {
+  "word": "減少",
+  "example": "[日本](にほん)では[子供](こども)の[数](かず)が**[減少](げんしょう)**しています。",
+  "exampleVi": "Ở Nhật, số trẻ em đang giảm."
+ },
+ {
+  "word": "超える",
+  "example": "[参加者](さんかしゃ)は[百人](ひゃくにん)を**[超](こ)えました**。",
+  "exampleVi": "Số người tham gia đã vượt quá 100 người."
+ },
+ {
+  "word": "ピーク",
+  "example": "[夏](なつ)の[暑](あつ)さは[今日](きょう)が**ピーク**でした。",
+  "exampleVi": "Cái nóng mùa hè đã lên đỉnh điểm vào hôm nay."
+ },
+ {
+  "word": "越える",
+  "example": "[山](やま)を**[越](こ)えて**、[隣](となり)の[町](まち)に[行](い)きました。",
+  "exampleVi": "Tôi vượt qua ngọn núi để sang thị trấn bên cạnh."
+ },
+ {
+  "word": "全体",
+  "example": "クラス**[全体](ぜんたい)**で[協力](きょうりょく)して、[準備](じゅんび)をしました。",
+  "exampleVi": "Cả lớp cùng hợp sức chuẩn bị."
+ },
+ {
+  "word": "かなり",
+  "example": "[今日](きょう)は**かなり**[寒](さむ)いです。",
+  "exampleVi": "Hôm nay khá lạnh."
+ },
+ {
+  "word": "信用",
+  "example": "[約束](やくそく)を[守](まも)らない[人](ひと)は**[信用](しんよう)**されません。",
+  "exampleVi": "Người không giữ lời hứa thì không được tin tưởng."
+ },
+ {
+  "word": "失う",
+  "example": "[事故](じこ)で、[多](おお)くの[人](ひと)が[命](いのち)を**[失](うしな)いました**。",
+  "exampleVi": "Nhiều người đã mất mạng vì tai nạn."
+ },
+ {
+  "word": "正常",
+  "example": "[機械](きかい)は**[正常](せいじょう)**に[動](うご)いています。",
+  "exampleVi": "Máy móc đang hoạt động bình thường."
+ },
+ {
+  "word": "不景気",
+  "example": "**[不景気](ふけいき)**で、[就職](しゅうしょく)が[難](むずか)しいです。",
+  "exampleVi": "Vì suy thoái kinh tế nên xin việc rất khó."
+ },
+ {
+  "word": "円高",
+  "example": "**[円高](えんだか)**で、[海外](かいがい)[旅行](りょこう)が[安](やす)くなりました。",
+  "exampleVi": "Vì đồng yên tăng giá nên du lịch nước ngoài trở nên rẻ hơn."
+ }
 ]

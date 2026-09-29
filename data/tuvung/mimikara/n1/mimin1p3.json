@@ -1,93 +1,460 @@
 [
-  "頑丈",
-  "柔軟",
-  "平ら",
-  "平行",
-  "手近",
-  "渋い",
-  "香ばしい",
-  "華やか",
-  "盛大",
-  "鮮やか",
-  "滑らか",
-  "平凡",
-  "素朴",
-  "精密",
-  "極端",
-  "猛烈",
-  "厳重",
-  "十分",
-  "大幅",
-  "膨大",
-  "乏しい",
-  "僅か",
-  "かすか",
-  "微妙",
-  "急激",
-  "急速",
-  "強硬",
-  "余計",
-  "不審",
-  "公式",
-  "正当",
-  "正常",
-  "完璧",
-  "簡潔",
-  "明白",
-  "客観的",
-  "えん曲",
-  "不可欠",
-  "有利",
-  "有望",
-  "待ち遠しい",
-  "喜ばしい",
-  "望ましい",
-  "疑わしい",
-  "楽観的",
-  "くすぐったい",
-  "だるい",
-  "憂鬱",
-  "勤勉",
-  "冷静",
-  "賢明",
-  "温和",
-  "穏和",
-  "大らか",
-  "のんき",
-  "大ざっぱ",
-  "大げさ",
-  "前向き",
-  "陽気",
-  "若々しい",
-  "敏感",
-  "勇敢",
-  "無口",
-  "利口",
-  "愚か",
-  "臆病",
-  "幼稚",
-  "未熟",
-  "貧弱",
-  "哀れ",
-  "生意気",
-  "厚かましい",
-  "乱暴",
-  "利己的",
-  "傲慢",
-  "卑怯",
-  "無茶",
-  "めちゃくちゃ",
-  "やかましい",
-  "大胆",
-  "軽快",
-  "窮屈",
-  "忠実",
-  "あやふや",
-  "残酷",
-  "悲惨",
-  "情けない",
-  "根強い",
-  "密接",
-  "寛大",
-  "ふさわしい"
+  {
+    "word": "頑丈",
+    "example": "この[机](つくえ)は**[頑丈](がんじょう)**に[出来](でき)ています。",
+    "exampleVi": "Cái bàn này được làm rất chắc chắn."
+  },
+  {
+    "word": "柔軟",
+    "example": "[彼](かれ)は**[柔軟](じゅうなん)**な[考](かんが)え[方](かた)をしています。",
+    "exampleVi": "Anh ấy có cách nghĩ linh hoạt."
+  },
+  {
+    "word": "平ら",
+    "example": "[道](みち)が**[平](たい)ら**です。",
+    "exampleVi": "Con đường bằng phẳng."
+  },
+  {
+    "word": "平行",
+    "example": "[二](ふた)つの[線](せん)が**[平行](へいこう)**に[走](はし)っています。",
+    "exampleVi": "Hai đường thẳng chạy song song."
+  },
+  {
+    "word": "手近",
+    "example": "**[手近](てぢか)**な[物](もの)で[代用](だいよう)しました。",
+    "exampleVi": "Tôi đã dùng đồ có sẵn gần tay để thay thế."
+  },
+  {
+    "word": "渋い",
+    "meaning": "chát; trầm, giản dị mà có gu",
+    "example": "この[柿](かき)はまだ**[渋](しぶ)い**です。",
+    "exampleVi": "Quả hồng này vẫn còn chát."
+  },
+  {
+    "word": "香ばしい",
+    "meaning": "thơm phức (mùi nướng, rang)",
+    "example": "**[香](こう)ばしい**[匂](にお)いがします。",
+    "exampleVi": "Có mùi thơm phức của đồ nướng."
+  },
+  {
+    "word": "華やか",
+    "example": "[彼女](かのじょ)は**[華](はな)やか**な[服](ふく)を[着](き)ています。",
+    "exampleVi": "Cô ấy đang mặc bộ quần áo lộng lẫy."
+  },
+  {
+    "word": "盛大",
+    "example": "**[盛大](せいだい)**なパーティーが[開](ひら)かれました。",
+    "exampleVi": "Bữa tiệc hoành tráng đã được tổ chức."
+  },
+  {
+    "word": "鮮やか",
+    "example": "[彼](かれ)は**[鮮](あざ)やか**な[手](て)さばきで[料理](りょうり)を[作](つく)りました。",
+    "exampleVi": "Anh ấy nấu ăn bằng động tác điêu luyện nổi bật."
+  },
+  {
+    "word": "滑らか",
+    "example": "このクリームは**[滑](なめ)らか**です。",
+    "exampleVi": "Loại kem này mịn màng."
+  },
+  {
+    "word": "平凡",
+    "example": "**[平凡](へいぼん)**な[毎日](まいにち)を[送](おく)っています。",
+    "exampleVi": "Tôi đang sống những ngày bình thường."
+  },
+  {
+    "word": "素朴",
+    "example": "**[素朴](そぼく)**な[質問](しつもん)ですが、[教](おし)えてください。",
+    "exampleVi": "Đây là câu hỏi đơn giản thôi, xin hãy cho tôi biết."
+  },
+  {
+    "word": "精密",
+    "example": "**[精密](せいみつ)**な[機械](きかい)を[作](つく)っています。",
+    "exampleVi": "Họ đang chế tạo máy móc chính xác."
+  },
+  {
+    "word": "極端",
+    "example": "[彼](かれ)の[考](かんが)えは**[極端](きょくたん)**です。",
+    "exampleVi": "Suy nghĩ của anh ấy khá cực đoan."
+  },
+  {
+    "word": "猛烈",
+    "example": "**[猛烈](もうれつ)**な[暑](あつ)さが[続](つづ)いています。",
+    "exampleVi": "Cái nóng dữ dội vẫn tiếp diễn."
+  },
+  {
+    "word": "厳重",
+    "example": "[空港](くうこう)の[警備](けいび)は**[厳重](げんじゅう)**です。",
+    "exampleVi": "An ninh sân bay rất nghiêm ngặt."
+  },
+  {
+    "word": "十分",
+    "example": "**[十分](じゅうぶん)**な[睡眠](すいみん)を[取](と)りましょう。",
+    "exampleVi": "Hãy ngủ đầy đủ."
+  },
+  {
+    "word": "大幅",
+    "example": "[給料](きゅうりょう)が**[大幅](おおはば)**に[上](あ)がりました。",
+    "exampleVi": "Lương đã tăng đáng kể."
+  },
+  {
+    "word": "膨大",
+    "example": "**[膨大](ぼうだい)**なデータを[処理](しょり)しました。",
+    "exampleVi": "Tôi đã xử lý lượng dữ liệu khổng lồ."
+  },
+  {
+    "word": "乏しい",
+    "example": "[経験](けいけん)が**[乏](とぼ)しい**です。",
+    "exampleVi": "Tôi thiếu kinh nghiệm."
+  },
+  {
+    "word": "僅か",
+    "example": "[残](のこ)りは**[僅](わず)か**です。",
+    "exampleVi": "Số còn lại chỉ có chút ít."
+  },
+  {
+    "word": "かすか",
+    "example": "**かすか**な[音](おと)が[聞](き)こえます。",
+    "exampleVi": "Có thể nghe thấy tiếng động thấp thoáng."
+  },
+  {
+    "word": "微妙",
+    "example": "[二](ふた)つの[色](いろ)は**[微妙](びみょう)**に[違](ちが)います。",
+    "exampleVi": "Hai màu này khác nhau một cách tinh tế."
+  },
+  {
+    "word": "急激",
+    "example": "[気温](きおん)が**[急激](きゅうげき)**に[下](さ)がりました。",
+    "exampleVi": "Nhiệt độ đã giảm đột ngột."
+  },
+  {
+    "word": "急速",
+    "example": "[経済](けいざい)が**[急速](きゅうそく)**に[成長](せいちょう)しています。",
+    "exampleVi": "Kinh tế đang tăng trưởng nhanh chóng."
+  },
+  {
+    "word": "強硬",
+    "example": "[政府](せいふ)は**[強硬](きょうこう)**な[態度](たいど)を[取](と)りました。",
+    "exampleVi": "Chính phủ đã có thái độ cứng rắn."
+  },
+  {
+    "word": "余計",
+    "example": "**[余計](よけい)**なお[世話](せわ)です。",
+    "exampleVi": "Đó là việc bao đồng không cần thiết."
+  },
+  {
+    "word": "不審",
+    "example": "**[不審](ふしん)**な[物](もの)を[見](み)つけました。",
+    "exampleVi": "Tôi đã phát hiện một vật đáng ngờ."
+  },
+  {
+    "word": "公式",
+    "example": "これは**[公式](こうしき)**の[発表](はっぴょう)です。",
+    "exampleVi": "Đây là thông báo chính thức."
+  },
+  {
+    "word": "正当",
+    "example": "**[正当](せいとう)**な[理由](りゆう)があります。",
+    "exampleVi": "Có lý do chính đáng."
+  },
+  {
+    "word": "正常",
+    "example": "[機械](きかい)は**[正常](せいじょう)**に[動](うご)いています。",
+    "exampleVi": "Máy móc đang hoạt động bình thường."
+  },
+  {
+    "word": "完璧",
+    "example": "[彼](かれ)の[発表](はっぴょう)は**[完璧](かんぺき)**でした。",
+    "exampleVi": "Bài thuyết trình của anh ấy hoàn hảo."
+  },
+  {
+    "word": "簡潔",
+    "example": "**[簡潔](かんけつ)**に[説明](せつめい)してください。",
+    "exampleVi": "Xin hãy giải thích ngắn gọn."
+  },
+  {
+    "word": "明白",
+    "example": "[彼](かれ)が[悪](わる)いことは**[明白](めいはく)**です。",
+    "exampleVi": "Việc anh ta có lỗi là rõ ràng."
+  },
+  {
+    "word": "客観的",
+    "example": "**[客観的](きゃっかんてき)**に[判断](はんだん)してください。",
+    "exampleVi": "Xin hãy phán đoán một cách khách quan."
+  },
+  {
+    "word": "えん曲",
+    "meaning": "nói tránh, nói bóng gió, uyển chuyển",
+    "example": "**えん[曲](きょく)**な[言](い)い[方](かた)で[断](ことわ)られました。",
+    "exampleVi": "Tôi đã bị từ chối bằng cách nói vòng vo, ẩn ý."
+  },
+  {
+    "word": "不可欠",
+    "example": "[水](みず)は[生活](せいかつ)に**[不可欠](ふかけつ)**です。",
+    "exampleVi": "Nước là thứ không thể thiếu đối với sinh hoạt."
+  },
+  {
+    "word": "有利",
+    "example": "[英語](えいご)ができると[就職](しゅうしょく)に**[有利](ゆうり)**です。",
+    "exampleVi": "Biết tiếng Anh thì có lợi khi xin việc."
+  },
+  {
+    "word": "有望",
+    "example": "[彼](かれ)は**[有望](ゆうぼう)**な[選手](せんしゅ)です。",
+    "exampleVi": "Anh ấy là cầu thủ có triển vọng."
+  },
+  {
+    "word": "待ち遠しい",
+    "example": "[旅行](りょこう)の[日](ひ)が**[待](ま)ち[遠](どお)しい**です。",
+    "exampleVi": "Tôi mong chờ ngày đi du lịch."
+  },
+  {
+    "word": "喜ばしい",
+    "example": "**[喜](よろこ)ばしい**ニュースです。",
+    "exampleVi": "Đó là tin đáng mừng."
+  },
+  {
+    "word": "望ましい",
+    "example": "[早](はや)めに[提出](ていしゅつ)することが**[望](のぞ)ましい**です。",
+    "exampleVi": "Việc nộp sớm là điều đáng mong muốn."
+  },
+  {
+    "word": "疑わしい",
+    "example": "[彼](かれ)の[話](はなし)は**[疑](うたが)わしい**です。",
+    "exampleVi": "Câu chuyện của anh ta đáng ngờ."
+  },
+  {
+    "word": "楽観的",
+    "example": "[彼](かれ)は**[楽観的](らっかんてき)**な[性格](せいかく)です。",
+    "exampleVi": "Anh ấy có tính lạc quan."
+  },
+  {
+    "word": "くすぐったい",
+    "example": "[背中](せなか)が**くすぐったい**です。",
+    "exampleVi": "Lưng tôi thấy nhột."
+  },
+  {
+    "word": "だるい",
+    "example": "[風邪](かぜ)で[体](からだ)が**だるい**です。",
+    "exampleVi": "Vì cảm nên cơ thể tôi uể oải."
+  },
+  {
+    "word": "憂鬱",
+    "example": "[明日](あした)の[試験](しけん)を[思](おも)うと**[憂鬱](ゆううつ)**です。",
+    "exampleVi": "Nghĩ đến kỳ thi ngày mai tôi thấy u sầu."
+  },
+  {
+    "word": "勤勉",
+    "example": "**[勤勉](きんべん)**な[人](ひと)は[成功](せいこう)します。",
+    "exampleVi": "Người chăm chỉ sẽ thành công."
+  },
+  {
+    "word": "冷静",
+    "example": "**[冷静](れいせい)**に[考](かんが)えましょう。",
+    "exampleVi": "Hãy suy nghĩ bình tĩnh."
+  },
+  {
+    "word": "賢明",
+    "example": "[今](いま)は[売](う)らないのが**[賢明](けんめい)**です。",
+    "exampleVi": "Bây giờ không bán là khôn ngoan."
+  },
+  {
+    "word": "温和",
+    "example": "[彼](かれ)は**[温和](おんわ)**な[性格](せいかく)です。",
+    "exampleVi": "Anh ấy có tính ôn hòa."
+  },
+  {
+    "word": "穏和",
+    "example": "**[穏和](おんわ)**な[気候](きこう)の[国](くに)で[育](そだ)ちました。",
+    "exampleVi": "Tôi lớn lên ở đất nước có khí hậu ôn hòa."
+  },
+  {
+    "word": "大らか",
+    "example": "[彼](かれ)は**[大](おお)らか**な[人](ひと)です。",
+    "exampleVi": "Anh ấy là người rộng lượng."
+  },
+  {
+    "word": "のんき",
+    "example": "[彼](かれ)は**のんき**な[性格](せいかく)です。",
+    "exampleVi": "Anh ấy có tính vô tư, thoải mái."
+  },
+  {
+    "word": "大ざっぱ",
+    "example": "**[大](おお)ざっぱ**に[計算](けいさん)しても[千円](せんえん)はかかります。",
+    "exampleVi": "Tính đại khái thì cũng mất nghìn yên."
+  },
+  {
+    "word": "大げさ",
+    "example": "[彼](かれ)の[話](はなし)は**[大](おお)げさ**です。",
+    "exampleVi": "Câu chuyện của anh ta phóng đại."
+  },
+  {
+    "word": "前向き",
+    "example": "**[前向](まえむ)き**な[気持](きも)ちで[仕事](しごと)をします。",
+    "exampleVi": "Tôi làm việc với tâm thế tích cực."
+  },
+  {
+    "word": "陽気",
+    "example": "[彼](かれ)は**[陽気](ようき)**な[人](ひと)です。",
+    "exampleVi": "Anh ấy là người vui vẻ, hoạt bát."
+  },
+  {
+    "word": "若々しい",
+    "example": "[彼女](かのじょ)は**[若々](わかわか)しい**[声](こえ)をしています。",
+    "exampleVi": "Cô ấy có giọng nói trẻ trung."
+  },
+  {
+    "word": "敏感",
+    "example": "[彼](かれ)は[音](おと)に**[敏感](びんかん)**です。",
+    "exampleVi": "Anh ấy nhạy cảm với âm thanh."
+  },
+  {
+    "word": "勇敢",
+    "example": "**[勇敢](ゆうかん)**な[消防士](しょうぼうし)が[子供](こども)を[助](たす)けました。",
+    "exampleVi": "Người lính cứu hỏa dũng cảm đã cứu đứa trẻ."
+  },
+  {
+    "word": "無口",
+    "example": "[彼女](かのじょ)は**[無口](むくち)**ですが、[優](やさ)しいです。",
+    "exampleVi": "Cô ấy ít nói nhưng hiền."
+  },
+  {
+    "word": "利口",
+    "example": "この[犬](いぬ)は**[利口](りこう)**です。",
+    "exampleVi": "Con chó này thông minh."
+  },
+  {
+    "word": "愚か",
+    "example": "**[愚](おろ)か**なことをしてしまいました。",
+    "exampleVi": "Tôi đã lỡ làm chuyện ngu ngốc."
+  },
+  {
+    "word": "臆病",
+    "example": "[彼](かれ)は**[臆病](おくびょう)**で[犬](いぬ)が[怖](こわ)いです。",
+    "exampleVi": "Anh ấy nhút nhát nên sợ chó."
+  },
+  {
+    "word": "幼稚",
+    "example": "[彼](かれ)の[考](かんが)えは**[幼稚](ようち)**です。",
+    "exampleVi": "Suy nghĩ của anh ta còn ấu trĩ."
+  },
+  {
+    "word": "未熟",
+    "example": "[経験](けいけん)が[浅](あさ)く、[技術](ぎじゅつ)も**[未熟](みじゅく)**です。",
+    "exampleVi": "Kinh nghiệm còn ít, kỹ thuật cũng non nớt."
+  },
+  {
+    "word": "貧弱",
+    "example": "**[貧弱](ひんじゃく)**な[設備](せつび)で[働](はたら)いています。",
+    "exampleVi": "Tôi làm việc với trang thiết bị nghèo nàn."
+  },
+  {
+    "word": "哀れ",
+    "example": "**[哀](あわ)れ**な[犬](いぬ)を[助](たす)けました。",
+    "exampleVi": "Tôi đã giúp con chó đáng thương."
+  },
+  {
+    "word": "生意気",
+    "example": "[子供](こども)のくせに**[生意気](なまいき)**なことを[言](い)います。",
+    "exampleVi": "Chỉ là trẻ con mà ăn nói xấc xược."
+  },
+  {
+    "word": "厚かましい",
+    "example": "**[厚](あつ)かましい**お[願](ねが)いですが、お[金](かね)を[貸](か)してくれませんか。",
+    "exampleVi": "Tôi biết là trơ tráo nhưng bạn cho tôi vay tiền được không?"
+  },
+  {
+    "word": "乱暴",
+    "example": "**[乱暴](らんぼう)**な[運転](うんてん)は[危険](きけん)です。",
+    "exampleVi": "Lái xe thô bạo thì nguy hiểm."
+  },
+  {
+    "word": "利己的",
+    "example": "**[利己的](りこてき)**な[考](かんが)え[方](かた)は[良](よ)くありません。",
+    "exampleVi": "Cách nghĩ ích kỷ không tốt."
+  },
+  {
+    "word": "傲慢",
+    "example": "[彼](かれ)の**[傲慢](ごうまん)**な[態度](たいど)に[腹](はら)が[立](た)ちました。",
+    "exampleVi": "Tôi tức vì thái độ ngạo mạn của anh ta."
+  },
+  {
+    "word": "卑怯",
+    "example": "**[卑怯](ひきょう)**な[手](て)を[使](つか)って[勝](か)ちました。",
+    "exampleVi": "Anh ta thắng bằng thủ đoạn hèn hạ."
+  },
+  {
+    "word": "無茶",
+    "example": "**[無茶](むちゃ)**なダイエットは[体](からだ)に[悪](わる)いです。",
+    "exampleVi": "Ăn kiêng quá mức thì có hại cho cơ thể."
+  },
+  {
+    "word": "めちゃくちゃ",
+    "example": "[部屋](へや)が**めちゃくちゃ**に[散](ち)らかっています。",
+    "exampleVi": "Phòng bừa bộn lộn xộn hết cả."
+  },
+  {
+    "word": "やかましい",
+    "example": "[隣](となり)の[部屋](へや)が**やかましくて**、[眠](ねむ)れません。",
+    "exampleVi": "Phòng bên cạnh ồn ào nên tôi không ngủ được."
+  },
+  {
+    "word": "大胆",
+    "example": "[彼](かれ)は**[大胆](だいたん)**な[計画](けいかく)を[立](た)てました。",
+    "exampleVi": "Anh ấy đã lập kế hoạch táo bạo."
+  },
+  {
+    "word": "軽快",
+    "example": "**[軽快](けいかい)**なリズムに[乗](の)って[踊](おど)りました。",
+    "exampleVi": "Tôi đã nhảy theo nhịp điệu nhẹ nhàng."
+  },
+  {
+    "word": "窮屈",
+    "example": "スーツが**[窮屈](きゅうくつ)**です。",
+    "exampleVi": "Bộ vest này chật."
+  },
+  {
+    "word": "忠実",
+    "example": "[彼](かれ)は**[忠実](ちゅうじつ)**な[部下](ぶか)です。",
+    "exampleVi": "Anh ấy là cấp dưới trung thành."
+  },
+  {
+    "word": "あやふや",
+    "example": "[彼](かれ)の[返事](へんじ)は**あやふや**でした。",
+    "exampleVi": "Câu trả lời của anh ta mơ hồ."
+  },
+  {
+    "word": "残酷",
+    "example": "**[残酷](ざんこく)**な[映画](えいが)は[見](み)たくありません。",
+    "exampleVi": "Tôi không muốn xem phim tàn nhẫn."
+  },
+  {
+    "word": "悲惨",
+    "example": "**[悲惨](ひさん)**な[戦争](せんそう)を[繰](く)り[返](かえ)してはいけません。",
+    "exampleVi": "Không được lặp lại cuộc chiến tranh bi thảm."
+  },
+  {
+    "word": "情けない",
+    "example": "[自分](じぶん)の[失敗](しっぱい)が**[情](なさ)けない**です。",
+    "exampleVi": "Tôi thấy thất bại của bản thân thật đáng xấu hổ."
+  },
+  {
+    "word": "根強い",
+    "example": "**[根強](ねづよ)い**[人気](にんき)があります。",
+    "exampleVi": "Sự yêu thích đó ăn sâu bám rễ."
+  },
+  {
+    "word": "密接",
+    "example": "[二](ふた)つの[事件](じけん)は**[密接](みっせつ)**に[関連](かんれん)しています。",
+    "exampleVi": "Hai vụ việc liên quan mật thiết."
+  },
+  {
+    "word": "寛大",
+    "example": "[先生](せんせい)は[私](わたし)の[失敗](しっぱい)に**[寛大](かんだい)**でした。",
+    "exampleVi": "Thầy đã rộng lượng với lỗi của tôi."
+  },
+  {
+    "word": "ふさわしい",
+    "example": "この[場](ば)に**ふさわしい**[服装](ふくそう)をしてください。",
+    "exampleVi": "Xin hãy ăn mặc phù hợp với hoàn cảnh này."
+  }
 ]

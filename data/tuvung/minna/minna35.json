@@ -3,280 +3,280 @@
     "word": "さく",
     "reading": "さく",
     "meaning": "nở [hoa]",
-    "example": "[春](はる)に なると、[桜](さくら)が **さきます**。",
+    "example": "[春](はる)になると、[桜](さくら)が**さきます**。",
     "exampleVi": "Cứ đến mùa xuân là hoa anh đào nở."
   },
   {
     "word": "変わる",
     "reading": "かわる",
     "meaning": "thay đổi, biến đổi",
-    "example": "[信号](しんごう)が **[変](か)われば**、わたります。",
+    "example": "[信号](しんごう)が**[変](か)われば**、わたります。",
     "exampleVi": "Khi đèn tín hiệu đổi thì tôi băng qua đường."
   },
   {
     "word": "困る",
     "reading": "こまる",
     "meaning": "khó khăn",
-    "example": "[道](みち)が [分](わ)からなくて **[困](こま)りました**。",
+    "example": "[道](みち)が[分](わ)からなくて**[困](こま)りました**。",
     "exampleVi": "Tôi lúng túng vì không biết đường."
   },
   {
     "word": "治る",
     "reading": "なおる",
     "meaning": "khỏi bệnh",
-    "example": "[薬](くすり)を [飲](の)めば、[病気](びょうき)は **[治](なお)ります**。",
+    "example": "[薬](くすり)を[飲](の)めば、[病気](びょうき)は**[治](なお)ります**。",
     "exampleVi": "Nếu uống thuốc thì bệnh sẽ khỏi."
   },
   {
     "word": "直る",
     "reading": "なおる",
     "meaning": "được sửa",
-    "example": "[時計](とけい)は もう **[直](なお)りました**。",
+    "example": "[時計](とけい)はもう**[直](なお)りました**。",
     "exampleVi": "Đồng hồ đã được sửa xong rồi."
   },
   {
     "word": "クリックする",
     "reading": "クリックする",
     "meaning": "click chuột",
-    "example": "ここを **クリックすれば**、[入](はい)れます。",
+    "example": "ここを**クリックすれば**、[入](はい)れます。",
     "exampleVi": "Nhấp vào đây thì vào được."
   },
   {
     "word": "入力する",
     "reading": "にゅうりょくする",
     "meaning": "nhập vào",
-    "example": "[名前](なまえ)を **[入力](にゅうりょく)して** ください。",
+    "example": "[名前](なまえ)を**[入力](にゅうりょく)して**ください。",
     "exampleVi": "Xin hãy nhập tên."
   },
   {
     "word": "正しい",
     "reading": "ただしい",
     "meaning": "đúng",
-    "example": "その [答](こた)えは **[正](ただ)しい**です。",
+    "example": "その[答](こた)えは**[正](ただ)しい**です。",
     "exampleVi": "Đáp án đó đúng."
   },
   {
     "word": "向こう",
     "reading": "むこう",
     "meaning": "đằng ấy, phía đối diện, bên kia",
-    "example": "[川](かわ)の **[向](む)こう**に [山](やま)が あります。",
+    "example": "[川](かわ)の**[向](む)こう**に[山](やま)があります。",
     "exampleVi": "Bên kia sông có núi."
   },
   {
     "word": "島",
     "reading": "しま",
     "meaning": "đảo",
-    "example": "あの **[島](しま)**は [小](ちい)さいです。",
+    "example": "あの**[島](しま)**は[小](ちい)さいです。",
     "exampleVi": "Hòn đảo kia nhỏ."
   },
   {
     "word": "港",
     "reading": "みなと",
     "meaning": "cảng",
-    "example": "**[港](みなと)**に [大](おお)きい [船](ふね)が あります。",
+    "example": "**[港](みなと)**に[大](おお)きい[船](ふね)があります。",
     "exampleVi": "Ở cảng có một chiếc tàu lớn."
   },
   {
     "word": "屋上",
     "reading": "おくじょう",
     "meaning": "tầng thượng, nóc nhà",
-    "example": "**[屋上](おくじょう)**から [町](まち)が [見](み)えます。",
+    "example": "**[屋上](おくじょう)**から[町](まち)が[見](み)えます。",
     "exampleVi": "Từ sân thượng có thể nhìn thấy thành phố."
   },
   {
     "word": "近所",
     "reading": "きんじょ",
     "meaning": "hàng xóm, vùng lân cận",
-    "example": "**[近所](きんじょ)**に スーパーが あります。",
+    "example": "**[近所](きんじょ)**にスーパーがあります。",
     "exampleVi": "Gần nhà có siêu thị."
   },
   {
     "word": "海外",
     "reading": "かいがい",
     "meaning": "nước ngoài",
-    "example": "**[海外](かいがい)**へ [旅行](りょこう)したいです。",
+    "example": "**[海外](かいがい)**へ[旅行](りょこう)したいです。",
     "exampleVi": "Tôi muốn đi du lịch nước ngoài."
   },
   {
     "word": "山登り",
     "reading": "やまのぼり",
     "meaning": "leo núi",
-    "example": "[日曜日](にちようび)に **[山登](やまのぼ)り**を します。",
+    "example": "[日曜日](にちようび)に**[山登](やまのぼ)り**をします。",
     "exampleVi": "Chủ nhật tôi đi leo núi."
   },
   {
     "word": "歴史",
     "reading": "れきし",
     "meaning": "lịch sử",
-    "example": "[日本](にほん)の **[歴史](れきし)**を [勉強](べんきょう)して います。",
+    "example": "[日本](にほん)の**[歴史](れきし)**を[勉強](べんきょう)しています。",
     "exampleVi": "Tôi đang học lịch sử Nhật Bản."
   },
   {
     "word": "機会",
     "reading": "きかい",
     "meaning": "cơ hội",
-    "example": "いい **[機会](きかい)**ですから、[行](い)きましょう。",
+    "example": "いい**[機会](きかい)**ですから、[行](い)きましょう。",
     "exampleVi": "Đây là dịp tốt nên hãy đi thôi."
   },
   {
     "word": "許可",
     "reading": "きょか",
     "meaning": "cho phép",
-    "example": "[先生](せんせい)の **[許可](きょか)**が [必要](ひつよう)です。",
+    "example": "[先生](せんせい)の**[許可](きょか)**が[必要](ひつよう)です。",
     "exampleVi": "Cần có sự cho phép của giáo viên."
   },
   {
     "word": "丸",
     "reading": "まる",
     "meaning": "dấu tròn",
-    "example": "[答](こた)えに **[丸](まる)**を [書](か)いて ください。",
+    "example": "[答](こた)えに**[丸](まる)**を[書](か)いてください。",
     "exampleVi": "Xin hãy khoanh tròn đáp án."
   },
   {
     "word": "ふりがな",
     "reading": "ふりがな",
     "meaning": "Furigana",
-    "example": "[漢字](かんじ)に **ふりがな**を [書](か)きます。",
+    "example": "[漢字](かんじ)に**ふりがな**を[書](か)きます。",
     "exampleVi": "Tôi viết furigana lên chữ Hán."
   },
   {
     "word": "設備",
     "reading": "せつび",
     "meaning": "trang thiết bị",
-    "example": "この ホテルは **[設備](せつび)**が いいです。",
+    "example": "このホテルは**[設備](せつび)**がいいです。",
     "exampleVi": "Khách sạn này có trang thiết bị tốt."
   },
   {
     "word": "レバー",
     "reading": "レバー",
     "meaning": "cần, cần gạt",
-    "example": "**レバー**を [引](ひ)けば、[水](みず)が [出](で)ます。",
+    "example": "**レバー**を[引](ひ)けば、[水](みず)が[出](で)ます。",
     "exampleVi": "Kéo cần gạt thì nước chảy ra."
   },
   {
     "word": "キー",
     "reading": "キー",
     "meaning": "chìa khóa, phím (đàn)",
-    "example": "**キー**を おせば、[字](じ)が [出](で)ます。",
+    "example": "**キー**をおせば、[字](じ)が[出](で)ます。",
     "exampleVi": "Nhấn phím thì chữ hiện ra."
   },
   {
     "word": "カーテン",
     "reading": "カーテン",
     "meaning": "rèm cửa",
-    "example": "**カーテン**を [閉](し)めて ください。",
+    "example": "**カーテン**を[閉](し)めてください。",
     "exampleVi": "Xin hãy kéo rèm lại."
   },
   {
     "word": "ひも",
     "reading": "ひも",
     "meaning": "dây",
-    "example": "この **ひも**は [長](なが)いです。",
+    "example": "この**ひも**は[長](なが)いです。",
     "exampleVi": "Sợi dây này dài."
   },
   {
     "word": "すいはんき",
     "reading": "すいはんき",
     "meaning": "nồi cơm điện",
-    "example": "**すいはんき**で ご[飯](はん)を [作](つく)ります。",
+    "example": "**すいはんき**でご[飯](はん)を[作](つく)ります。",
     "exampleVi": "Tôi nấu cơm bằng nồi cơm điện."
   },
   {
     "word": "葉",
     "reading": "は",
     "meaning": "lá",
-    "example": "[秋](あき)に なると、**[葉](は)**が [赤](あか)く なります。",
+    "example": "[秋](あき)になると、**[葉](は)**が[赤](あか)くなります。",
     "exampleVi": "Khi sang thu thì lá chuyển sang màu đỏ."
   },
   {
     "word": "昔",
     "reading": "むかし",
     "meaning": "ngày xưa",
-    "example": "**[昔](むかし)**は ここに [店](みせ)が ありました。",
+    "example": "**[昔](むかし)**はここに[店](みせ)がありました。",
     "exampleVi": "Ngày xưa ở đây có một cửa hàng."
   },
   {
     "word": "もっと",
     "reading": "もっと",
     "meaning": "hơn nữa, thêm nữa",
-    "example": "**もっと** [安](やす)ければ、[買](か)います。",
+    "example": "**もっと**[安](やす)ければ、[買](か)います。",
     "exampleVi": "Nếu rẻ hơn nữa thì tôi sẽ mua."
   },
   {
     "word": "それなら",
     "reading": "それなら",
     "meaning": "nếu thế thì, nếu vậy thì",
-    "example": "**それなら**、[電車](でんしゃ)で [行](い)きましょう。",
+    "example": "**それなら**、[電車](でんしゃ)で[行](い)きましょう。",
     "exampleVi": "Nếu vậy thì chúng ta đi bằng tàu điện nhé."
   },
   {
     "word": "夜行バス",
     "reading": "やこうバス",
     "meaning": "xe bus đêm",
-    "example": "**[夜行](やこう)バス**で [行](い)きます。",
+    "example": "**[夜行](やこう)バス**で[行](い)きます。",
     "exampleVi": "Tôi đi bằng xe buýt đêm."
   },
   {
     "word": "旅行社",
     "reading": "りょこうしゃ",
     "meaning": "công ty du lịch",
-    "example": "**[旅行社](りょこうしゃ)**で ホテルを [予約](よやく)します。",
+    "example": "**[旅行社](りょこうしゃ)**でホテルを[予約](よやく)します。",
     "exampleVi": "Tôi đặt khách sạn ở công ty du lịch."
   },
   {
     "word": "くわしい",
     "reading": "くわしい",
     "meaning": "cụ thể, chi tiết, tường tận",
-    "example": "あの [人](ひと)は [日本](にほん)の [歴史](れきし)に **くわしい**です。",
+    "example": "あの[人](ひと)は[日本](にほん)の[歴史](れきし)に**くわしい**です。",
     "exampleVi": "Người kia am hiểu lịch sử Nhật Bản."
   },
   {
     "word": "スキー場",
     "reading": "スキーじょう",
     "meaning": "khu trượt tuyết",
-    "example": "[冬](ふゆ)は **スキー[場](じょう)**へ [行](い)きます。",
+    "example": "[冬](ふゆ)は**スキー[場](じょう)**へ[行](い)きます。",
     "exampleVi": "Mùa đông tôi đến khu trượt tuyết."
   },
   {
     "word": "しゅ",
     "reading": "しゅ",
     "meaning": "màu đỏ tươi",
-    "example": "**しゅ**は [赤](あか)い [色](いろ)です。",
+    "example": "**しゅ**は[赤](あか)い[色](いろ)です。",
     "exampleVi": "Shu (đỏ son) là một màu đỏ."
   },
   {
     "word": "交わる",
     "reading": "まじわる",
     "meaning": "giao nhau, kết giao",
-    "example": "[二](ふた)つの [道](みち)が **[交](まじ)わります**。",
+    "example": "[二](ふた)つの[道](みち)が**[交](まじ)わります**。",
     "exampleVi": "Hai con đường giao nhau."
   },
   {
     "word": "ことわざ",
     "reading": "ことわざ",
     "meaning": "thành ngữ",
-    "example": "[日本語](にほんご)の **ことわざ**を [習](なら)いました。",
+    "example": "[日本語](にほんご)の**ことわざ**を[習](なら)いました。",
     "exampleVi": "Tôi đã học thành ngữ tiếng Nhật."
   },
   {
     "word": "関係",
     "reading": "かんけい",
     "meaning": "mối quan hệ",
-    "example": "わたしには **[関係](かんけい)**が ありません。",
+    "example": "わたしには**[関係](かんけい)**がありません。",
     "exampleVi": "Việc đó không liên quan đến tôi."
   },
   {
     "word": "仲良くする",
     "reading": "なかよくする",
     "meaning": "chơi thân với",
-    "example": "[友達](ともだち)と **[仲良](なかよ)くします**。",
+    "example": "[友達](ともだち)と**[仲良](なかよ)くします**。",
     "exampleVi": "Tôi chơi thân với bạn."
   },
   {
     "word": "必要",
     "reading": "ひつよう",
     "meaning": "cần thiết",
-    "example": "パスポートが **[必要](ひつよう)**です。",
+    "example": "パスポートが**[必要](ひつよう)**です。",
     "exampleVi": "Cần có hộ chiếu."
   }
 ]

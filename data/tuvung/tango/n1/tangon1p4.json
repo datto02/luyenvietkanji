@@ -1,102 +1,506 @@
 [
-  "創立",
-  "周年",
-  "重んじる",
-  "掲げる",
-  "禁じる",
-  "見なす",
-  "募る",
-  "共学",
-  "在籍",
-  "総数",
-  "見込み",
-  "課程",
-  "レッスン",
-  "ひとえに",
-  "多数決",
-  "指名",
-  "承認",
-  "漫然と",
-  "率先",
-  "指摘",
-  "名称",
-  "恩師",
-  "勤勉",
-  "疎か",
-  "自主的",
-  "自ら",
-  "自ずから",
-  "気が散る",
-  "ぶうぶう言う",
-  "鈍る",
-  "一心",
-  "がぜん",
-  "暗唱",
-  "参照",
-  "堪能",
-  "すらすら",
-  "後回し",
-  "突き詰める",
-  "要点",
-  "主旨",
-  "つづり",
-  "ドリル",
-  "詩",
-  "ことわざ",
-  "結び付く",
-  "進度",
-  "びり",
-  "文房具",
-  "個別",
-  "出題",
-  "口頭",
-  "記述",
-  "万全",
-  "難易度",
-  "基準",
-  "湧く",
-  "さえる",
-  "度忘れ",
-  "ところどころ",
-  "あべこべ",
-  "見落とす",
-  "持参",
-  "案の定",
-  "不正",
-  "即刻",
-  "失格",
-  "誤り",
-  "内心",
-  "念じる",
-  "歴然と",
-  "落胆",
-  "がっくり",
-  "辛うじて",
-  "志す",
-  "満たす",
-  "枠",
-  "偏差値",
-  "善し悪し",
-  "見極める",
-  "独自",
-  "見当",
-  "貫く",
-  "くぐる",
-  "かなう",
-  "手中",
-  "すんなり",
-  "取得",
-  "申し分がない",
-  "免除",
-  "不備",
-  "貴校",
-  "不利",
-  "いずれ",
-  "仮に",
-  "立ち直る",
-  "首席",
-  "雲をつかむよう",
-  "勧誘",
-  "機種",
-  "端末"
+  {
+    "word": "創立",
+    "example": "この[学校](がっこう)は[百年](ひゃくねん)[前](まえ)に**[創立](そうりつ)**されました。",
+    "exampleVi": "Ngôi trường này được sáng lập cách đây một trăm năm."
+  },
+  {
+    "word": "周年",
+    "example": "[会社](かいしゃ)は[今年](ことし)、[創立](そうりつ)[五十](ごじゅう)**[周年](しゅうねん)**を[迎](むか)えました。",
+    "exampleVi": "Năm nay công ty đã đón kỷ niệm năm mươi năm thành lập."
+  },
+  {
+    "word": "重んじる",
+    "example": "この[学校](がっこう)は[礼儀](れいぎ)を**[重](おも)んじます**。",
+    "exampleVi": "Ngôi trường này coi trọng lễ nghi."
+  },
+  {
+    "word": "掲げる",
+    "example": "[玄関](げんかん)に[国旗](こっき)を**[掲](かか)げました**。",
+    "exampleVi": "Tôi đã treo quốc kỳ ở cửa ra vào."
+  },
+  {
+    "word": "禁じる",
+    "example": "[校内](こうない)での[喫煙](きつえん)は**[禁](きん)じられて**います。",
+    "exampleVi": "Việc hút thuốc trong khuôn viên trường bị cấm."
+  },
+  {
+    "word": "見なす",
+    "example": "[三回](さんかい)[欠席](けっせき)すると、[辞退](じたい)したものと**[見](み)なします**。",
+    "exampleVi": "Nếu vắng mặt ba lần thì sẽ được coi như đã từ chối."
+  },
+  {
+    "word": "募る",
+    "example": "[新](あたら)しい[会員](かいいん)を**[募](つの)って**います。",
+    "exampleVi": "Chúng tôi đang chiêu mộ hội viên mới."
+  },
+  {
+    "word": "共学",
+    "example": "この[高校](こうこう)は**[共学](きょうがく)**です。",
+    "exampleVi": "Trường cấp ba này là trường học chung nam nữ."
+  },
+  {
+    "word": "在籍",
+    "example": "[彼](かれ)はこの[大学](だいがく)に**[在籍](ざいせき)**しています。",
+    "exampleVi": "Anh ấy đang có tên học tại trường đại học này."
+  },
+  {
+    "word": "総数",
+    "example": "[参加者](さんかしゃ)の**[総数](そうすう)**は[五百人](ごひゃくにん)でした。",
+    "exampleVi": "Tổng số người tham gia là năm trăm người."
+  },
+  {
+    "word": "見込み",
+    "example": "[来年](らいねん)、[卒業](そつぎょう)できる**[見込](みこ)み**です。",
+    "exampleVi": "Dự tính sang năm có thể tốt nghiệp."
+  },
+  {
+    "word": "課程",
+    "example": "[彼](かれ)は[大学院](だいがくいん)の[博士](はくし)**[課程](かてい)**に[進](すす)みました。",
+    "exampleVi": "Anh ấy đã học lên chương trình tiến sĩ của cao học."
+  },
+  {
+    "word": "レッスン",
+    "example": "[毎週](まいしゅう)[土曜日](どようび)にピアノの**レッスン**を[受](う)けています。",
+    "exampleVi": "Thứ Bảy hằng tuần tôi học piano."
+  },
+  {
+    "word": "ひとえに",
+    "example": "[成功](せいこう)できたのは、**ひとえに**[皆](みな)さんのおかげです。",
+    "exampleVi": "Tôi thành công được hoàn toàn là nhờ mọi người."
+  },
+  {
+    "word": "多数決",
+    "example": "[意見](いけん)が[分](わ)かれたので、**[多数決](たすうけつ)**で[決](き)めました。",
+    "exampleVi": "Vì ý kiến chia rẽ nên chúng tôi quyết định bằng biểu quyết đa số."
+  },
+  {
+    "word": "指名",
+    "example": "[先生](せんせい)に**[指名](しめい)**されて、[答](こた)えました。",
+    "exampleVi": "Tôi được thầy chỉ định nên đã trả lời."
+  },
+  {
+    "word": "承認",
+    "example": "[部長](ぶちょう)の**[承認](しょうにん)**を[得](え)て、[計画](けいかく)を[進](すす)めます。",
+    "exampleVi": "Sau khi nhận được sự chấp thuận của trưởng phòng, tôi sẽ tiến hành kế hoạch."
+  },
+  {
+    "word": "漫然と",
+    "example": "**[漫然](まんぜん)と**[授業](じゅぎょう)を[聞](き)いていては、[身](み)に[付](つ)きません。",
+    "exampleVi": "Nghe giảng mà vu vơ không mục đích thì sẽ không thấm được."
+  },
+  {
+    "word": "率先",
+    "example": "[彼](かれ)は**[率先](そっせん)**して[掃除](そうじ)をしました。",
+    "exampleVi": "Anh ấy đã tiên phong dọn dẹp."
+  },
+  {
+    "word": "指摘",
+    "example": "[先生](せんせい)に[間違](まちが)いを**[指摘](してき)**されました。",
+    "exampleVi": "Tôi bị thầy chỉ ra chỗ sai."
+  },
+  {
+    "word": "名称",
+    "example": "この[花](はな)の**[名称](めいしょう)**を[知](し)っていますか。",
+    "exampleVi": "Bạn có biết tên gọi của loài hoa này không?"
+  },
+  {
+    "word": "恩師",
+    "example": "[卒業](そつぎょう)して[十年](じゅうねん)たって、**[恩師](おんし)**に[会](あ)いました。",
+    "exampleVi": "Mười năm sau tốt nghiệp, tôi đã gặp lại ân sư."
+  },
+  {
+    "word": "勤勉",
+    "example": "[彼](かれ)は**[勤勉](きんべん)**な[学生](がくせい)です。",
+    "exampleVi": "Anh ấy là sinh viên chăm chỉ."
+  },
+  {
+    "word": "疎か",
+    "example": "[宿題](しゅくだい)を**[疎](おろそ)か**にしてはいけません。",
+    "exampleVi": "Không được lơ là bài tập."
+  },
+  {
+    "word": "自主的",
+    "example": "**[自主的](じしゅてき)**に[勉強](べんきょう)する[習慣](しゅうかん)を[付](つ)けましょう。",
+    "exampleVi": "Hãy tập thói quen tự chủ học tập."
+  },
+  {
+    "word": "自ら",
+    "example": "[彼](かれ)は**[自](みずか)ら**[進](すす)んで[手伝](てつだ)ってくれました。",
+    "exampleVi": "Anh ấy đã tự mình chủ động giúp đỡ tôi."
+  },
+  {
+    "word": "自ずから",
+    "example": "[努力](どりょく)すれば、[結果](けっか)は**[自](おの)ずから**[付](つ)いてきます。",
+    "exampleVi": "Nếu nỗ lực thì kết quả sẽ tự nhiên đến."
+  },
+  {
+    "word": "気が散る",
+    "example": "[周](まわ)りがうるさくて、**[気](き)が[散](ち)ります**。",
+    "exampleVi": "Xung quanh ồn ào nên tôi bị phân tâm."
+  },
+  {
+    "word": "ぶうぶう言う",
+    "example": "[彼](かれ)は[宿題](しゅくだい)が[多](おお)いと**ぶうぶう[言](い)って**います。",
+    "exampleVi": "Anh ấy càu nhàu vì bài tập nhiều."
+  },
+  {
+    "word": "鈍る",
+    "example": "しばらく[練習](れんしゅう)しなかったので、[腕](うで)が**[鈍](にぶ)って**しまいました。",
+    "exampleVi": "Lâu rồi không luyện tập nên tay nghề đã cùn đi."
+  },
+  {
+    "word": "一心",
+    "meaning": "một lòng, hết lòng, chuyên tâm",
+    "example": "[彼](かれ)は**[一心](いっしん)**に[勉強](べんきょう)しています。",
+    "exampleVi": "Anh ấy một lòng chăm chỉ học."
+  },
+  {
+    "word": "がぜん",
+    "meaning": "đột nhiên, bỗng chốc hẳn lên (khí thế)",
+    "example": "[試験](しけん)が[近](ちか)づいて、**がぜん**やる[気](き)が[出](で)てきました。",
+    "exampleVi": "Kỳ thi đến gần, tôi bỗng hăng hái hẳn lên."
+  },
+  {
+    "word": "暗唱",
+    "example": "[詩](し)を[全部](ぜんぶ)**[暗唱](あんしょう)**しました。",
+    "exampleVi": "Tôi đã đọc thuộc lòng toàn bộ bài thơ."
+  },
+  {
+    "word": "参照",
+    "example": "[詳](くわ)しくは[説明書](せつめいしょ)を**[参照](さんしょう)**してください。",
+    "exampleVi": "Chi tiết xin tham khảo bản hướng dẫn."
+  },
+  {
+    "word": "堪能",
+    "example": "[彼](かれ)は[英語](えいご)に**[堪能](たんのう)**です。",
+    "exampleVi": "Anh ấy thành thạo tiếng Anh."
+  },
+  {
+    "word": "すらすら",
+    "example": "[彼](かれ)は[英語](えいご)を**すらすら**[話](はな)します。",
+    "exampleVi": "Anh ấy nói tiếng Anh trôi chảy."
+  },
+  {
+    "word": "後回し",
+    "example": "[難](むずか)しい[問題](もんだい)は**[後回](あとまわ)し**にしました。",
+    "exampleVi": "Tôi để những câu khó lại làm sau."
+  },
+  {
+    "word": "突き詰める",
+    "meaning": "truy đến cùng, xét đến cùng",
+    "example": "[問題](もんだい)を**[突](つ)き[詰](つ)めて**[考](かんが)えました。",
+    "exampleVi": "Tôi đã suy nghĩ về vấn đề đến tận cùng."
+  },
+  {
+    "word": "要点",
+    "example": "[話](はなし)の**[要点](ようてん)**をメモしました。",
+    "exampleVi": "Tôi đã ghi chú những điểm chính của câu chuyện."
+  },
+  {
+    "word": "主旨",
+    "example": "この[文章](ぶんしょう)の**[主旨](しゅし)**は[何](なん)ですか。",
+    "exampleVi": "Chủ ý chính của bài viết này là gì?"
+  },
+  {
+    "word": "つづり",
+    "example": "[英語](えいご)の**つづり**を[間違](まちが)えました。",
+    "exampleVi": "Tôi đã viết sai chính tả tiếng Anh."
+  },
+  {
+    "word": "ドリル",
+    "example": "[毎日](まいにち)[計算](けいさん)の**ドリル**をしています。",
+    "exampleVi": "Mỗi ngày tôi làm bài luyện tập tính toán."
+  },
+  {
+    "word": "詩",
+    "example": "[彼](かれ)は[美](うつく)しい**[詩](し)**を[書](か)きます。",
+    "exampleVi": "Anh ấy viết những bài thơ đẹp."
+  },
+  {
+    "word": "ことわざ",
+    "example": "[日本](にほん)の**ことわざ**を[一つ](ひとつ)[覚](おぼ)えました。",
+    "exampleVi": "Tôi đã học thuộc một câu tục ngữ của Nhật."
+  },
+  {
+    "word": "結び付く",
+    "example": "この[二](ふた)つの[事件](じけん)は**[結](むす)び[付](つ)いて**います。",
+    "exampleVi": "Hai vụ việc này có liên quan với nhau."
+  },
+  {
+    "word": "進度",
+    "example": "[授業](じゅぎょう)の**[進度](しんど)**が[遅](おそ)いです。",
+    "exampleVi": "Tiến độ của giờ học chậm."
+  },
+  {
+    "word": "びり",
+    "example": "マラソンで**びり**になってしまいました。",
+    "exampleVi": "Tôi đã về chót trong cuộc thi marathon."
+  },
+  {
+    "word": "文房具",
+    "example": "[新学期](しんがっき)のために**[文房具](ぶんぼうぐ)**を[買](か)いました。",
+    "exampleVi": "Tôi đã mua văn phòng phẩm cho học kỳ mới."
+  },
+  {
+    "word": "個別",
+    "example": "[生徒](せいと)に**[個別](こべつ)**に[指導](しどう)します。",
+    "exampleVi": "Tôi hướng dẫn riêng từng học sinh."
+  },
+  {
+    "word": "出題",
+    "example": "[試験](しけん)の**[出題](しゅつだい)**[範囲](はんい)は[教科書](きょうかしょ)の[前半](ぜんはん)です。",
+    "exampleVi": "Phạm vi ra đề của kỳ thi là nửa đầu sách giáo khoa."
+  },
+  {
+    "word": "口頭",
+    "example": "[試験](しけん)は[筆記](ひっき)と**[口頭](こうとう)**の[両方](りょうほう)があります。",
+    "exampleVi": "Kỳ thi có cả viết lẫn vấn đáp."
+  },
+  {
+    "word": "記述",
+    "example": "[答](こた)えを[文章](ぶんしょう)で**[記述](きじゅつ)**しなさい。",
+    "exampleVi": "Hãy viết câu trả lời thành văn."
+  },
+  {
+    "word": "万全",
+    "example": "[試験](しけん)に[向](む)けて**[万全](ばんぜん)**の[準備](じゅんび)をしました。",
+    "exampleVi": "Tôi đã chuẩn bị chu đáo cho kỳ thi."
+  },
+  {
+    "word": "難易度",
+    "example": "この[試験](しけん)は**[難易度](なんいど)**が[高](たか)いです。",
+    "exampleVi": "Kỳ thi này có độ khó cao."
+  },
+  {
+    "word": "基準",
+    "example": "[合格](ごうかく)の**[基準](きじゅん)**は[六十点](ろくじってん)です。",
+    "exampleVi": "Tiêu chuẩn đỗ là sáu mươi điểm."
+  },
+  {
+    "word": "湧く",
+    "example": "[勉強](べんきょう)する[意欲](いよく)が**[湧](わ)いて**きました。",
+    "exampleVi": "Ý chí học tập đã trào dâng trong tôi."
+  },
+  {
+    "word": "さえる",
+    "example": "コーヒーを[飲](の)んだので、[目](め)が**さえて**[眠](ねむ)れません。",
+    "exampleVi": "Vì uống cà phê nên mắt tôi tỉnh táo, không ngủ được."
+  },
+  {
+    "word": "度忘れ",
+    "example": "[彼](かれ)の[名前](なまえ)を**[度忘](どわす)れ**してしまいました。",
+    "exampleVi": "Tôi bỗng quên mất tên anh ấy."
+  },
+  {
+    "word": "ところどころ",
+    "example": "[答案](とうあん)の**ところどころ**に[間違](まちが)いがありました。",
+    "exampleVi": "Đây đó trong bài làm có những chỗ sai."
+  },
+  {
+    "word": "あべこべ",
+    "example": "[靴](くつ)を**あべこべ**に[履](は)いてしまいました。",
+    "exampleVi": "Tôi đã đi ngược giày (trái phải đảo lộn)."
+  },
+  {
+    "word": "見落とす",
+    "example": "[問題](もんだい)の[条件](じょうけん)を**[見落](みお)として**しまいました。",
+    "exampleVi": "Tôi đã bỏ sót điều kiện của bài toán."
+  },
+  {
+    "word": "持参",
+    "example": "[昼食](ちゅうしょく)は**[持参](じさん)**してください。",
+    "exampleVi": "Xin hãy mang theo bữa trưa."
+  },
+  {
+    "word": "案の定",
+    "meaning": "quả nhiên, đúng như dự đoán",
+    "example": "**[案](あん)の[定](じょう)**、[彼](かれ)は[遅刻](ちこく)しました。",
+    "exampleVi": "Quả nhiên, anh ta đã đến muộn."
+  },
+  {
+    "word": "不正",
+    "example": "[試験](しけん)で**[不正](ふせい)**をした[学生](がくせい)がいました。",
+    "exampleVi": "Đã có sinh viên gian lận trong kỳ thi."
+  },
+  {
+    "word": "即刻",
+    "example": "**[即刻](そっこく)**、[退場](たいじょう)を[命](めい)じられました。",
+    "exampleVi": "Tôi bị yêu cầu rời đi ngay lập tức."
+  },
+  {
+    "word": "失格",
+    "example": "[規則](きそく)を[破](やぶ)って、**[失格](しっかく)**になりました。",
+    "exampleVi": "Vì vi phạm quy tắc nên bị mất tư cách thi đấu."
+  },
+  {
+    "word": "誤り",
+    "example": "[文](ぶん)の**[誤](あやま)り**を[直](なお)しました。",
+    "exampleVi": "Tôi đã sửa lỗi sai trong câu."
+  },
+  {
+    "word": "内心",
+    "example": "**[内心](ないしん)**では[不安](ふあん)でした。",
+    "exampleVi": "Trong lòng tôi rất lo lắng."
+  },
+  {
+    "word": "念じる",
+    "example": "[合格](ごうかく)できるように[心](こころ)の[中](なか)で**[念](ねん)じました**。",
+    "exampleVi": "Tôi đã cầu nguyện trong lòng cho mình thi đỗ."
+  },
+  {
+    "word": "歴然と",
+    "example": "[二人](ふたり)の[実力](じつりょく)の[差](さ)は**[歴然](れきぜん)と**しています。",
+    "exampleVi": "Sự chênh lệch thực lực của hai người là rõ rệt."
+  },
+  {
+    "word": "落胆",
+    "example": "[不合格](ふごうかく)の[知](し)らせに**[落胆](らくたん)**しました。",
+    "exampleVi": "Tôi thất vọng trước tin trượt."
+  },
+  {
+    "word": "がっくり",
+    "example": "[結果](けっか)を[見](み)て、**がっくり**[肩](かた)を[落](お)としました。",
+    "exampleVi": "Nhìn kết quả, tôi thất vọng rũ vai."
+  },
+  {
+    "word": "辛うじて",
+    "example": "**[辛](かろ)うじて**[合格](ごうかく)しました。",
+    "exampleVi": "Tôi đã đỗ một cách suýt soát."
+  },
+  {
+    "word": "志す",
+    "example": "[子供](こども)の[頃](ころ)から[医者](いしゃ)を**[志](こころざ)して**いました。",
+    "exampleVi": "Từ nhỏ tôi đã có chí trở thành bác sĩ."
+  },
+  {
+    "word": "満たす",
+    "example": "[条件](じょうけん)を**[満](み)たして**いる[人](ひと)だけ[応募](おうぼ)できます。",
+    "exampleVi": "Chỉ những người đáp ứng điều kiện mới có thể ứng tuyển."
+  },
+  {
+    "word": "枠",
+    "example": "[応募](おうぼ)の**[枠](わく)**は[十人](じゅうにん)だけです。",
+    "exampleVi": "Hạn mức ứng tuyển chỉ có mười người."
+  },
+  {
+    "word": "偏差値",
+    "example": "この[大学](だいがく)は**[偏差値](へんさち)**が[高](たか)いです。",
+    "exampleVi": "Trường đại học này có điểm chuẩn (chỉ số lệch) cao."
+  },
+  {
+    "word": "善し悪し",
+    "example": "[服](ふく)の**[善](よ)し[悪](あ)し**は[値段](ねだん)では[決](き)まりません。",
+    "exampleVi": "Chuyện quần áo tốt hay xấu không quyết định bởi giá tiền."
+  },
+  {
+    "word": "見極める",
+    "example": "[本物](ほんもの)かどうかを**[見極](みきわ)めて**ください。",
+    "exampleVi": "Xin hãy nhìn cho rõ đó có phải đồ thật hay không."
+  },
+  {
+    "word": "独自",
+    "example": "この[店](みせ)は**[独自](どくじ)**のサービスを[行](おこな)っています。",
+    "exampleVi": "Cửa hàng này cung cấp dịch vụ độc đáo riêng."
+  },
+  {
+    "word": "見当",
+    "example": "[犯人](はんにん)の**[見当](けんとう)**が[付](つ)きました。",
+    "exampleVi": "Tôi đã đoán ra được thủ phạm."
+  },
+  {
+    "word": "貫く",
+    "example": "[彼](かれ)は[最後](さいご)まで[自分](じぶん)の[意見](いけん)を**[貫](つらぬ)きました**。",
+    "exampleVi": "Anh ấy đã giữ vững ý kiến của mình đến cùng."
+  },
+  {
+    "word": "くぐる",
+    "example": "トンネルを**くぐる**と、[海](うみ)が[見](み)えました。",
+    "exampleVi": "Vừa chui qua đường hầm thì thấy biển."
+  },
+  {
+    "word": "かなう",
+    "example": "[長年](ながねん)の[夢](ゆめ)が**かないました**。",
+    "exampleVi": "Ước mơ bấy lâu đã thành hiện thực."
+  },
+  {
+    "word": "手中",
+    "example": "[勝利](しょうり)は**[手中](しゅちゅう)**にある。",
+    "exampleVi": "Chiến thắng đã nằm trong tay."
+  },
+  {
+    "word": "すんなり",
+    "example": "[交渉](こうしょう)は**すんなり**と[決](き)まりました。",
+    "exampleVi": "Cuộc đàm phán đã được thống nhất trôi chảy."
+  },
+  {
+    "word": "取得",
+    "example": "[運転](うんてん)[免許](めんきょ)を**[取得](しゅとく)**しました。",
+    "exampleVi": "Tôi đã lấy được bằng lái xe."
+  },
+  {
+    "word": "申し分がない",
+    "example": "[彼](かれ)の[成績](せいせき)は**[申](もう)し[分](ぶん)がない**です。",
+    "exampleVi": "Thành tích của anh ấy không có gì để chê."
+  },
+  {
+    "word": "免除",
+    "example": "[成績](せいせき)が[良](よ)いので、[授業料](じゅぎょうりょう)が**[免除](めんじょ)**されました。",
+    "exampleVi": "Vì thành tích tốt nên tôi được miễn học phí."
+  },
+  {
+    "word": "不備",
+    "example": "[書類](しょるい)に**[不備](ふび)**があったので、[受](う)け[付](つ)けられませんでした。",
+    "exampleVi": "Hồ sơ có thiếu sót nên không được tiếp nhận."
+  },
+  {
+    "word": "貴校",
+    "example": "**[貴校](きこう)**に[入学](にゅうがく)したいと[考](かんが)えております。",
+    "exampleVi": "Tôi đang có ý định nhập học vào quý trường."
+  },
+  {
+    "word": "不利",
+    "example": "[経験](けいけん)がないと**[不利](ふり)**です。",
+    "exampleVi": "Không có kinh nghiệm thì sẽ bất lợi."
+  },
+  {
+    "word": "いずれ",
+    "example": "**いずれ**またお[会](あ)いしましょう。",
+    "exampleVi": "Rồi một lúc nào đó chúng ta lại gặp nhau nhé."
+  },
+  {
+    "word": "仮に",
+    "example": "**[仮](かり)に**[百万円](ひゃくまんえん)あったら、[何](なに)を[買](か)いますか。",
+    "exampleVi": "Giả sử có một triệu yên thì bạn sẽ mua gì?"
+  },
+  {
+    "word": "立ち直る",
+    "example": "[彼](かれ)は[失敗](しっぱい)から**[立](た)ち[直](なお)りました**。",
+    "exampleVi": "Anh ấy đã vực dậy sau thất bại."
+  },
+  {
+    "word": "首席",
+    "example": "[彼](かれ)は**[首席](しゅせき)**で[卒業](そつぎょう)しました。",
+    "exampleVi": "Anh ấy đã tốt nghiệp thủ khoa."
+  },
+  {
+    "word": "雲をつかむよう",
+    "example": "**[雲](くも)をつかむよう**な[話](はなし)で、[信](しん)じられません。",
+    "exampleVi": "Câu chuyện mơ hồ viển vông như nắm mây nên tôi không tin được."
+  },
+  {
+    "word": "勧誘",
+    "example": "[駅前](えきまえ)で[新聞](しんぶん)の**[勧誘](かんゆう)**を[受](う)けました。",
+    "exampleVi": "Tôi bị mời chào mua báo trước ga."
+  },
+  {
+    "word": "機種",
+    "example": "[新](あたら)しい**[機種](きしゅ)**の[携帯電話](けいたいでんわ)を[買](か)いました。",
+    "exampleVi": "Tôi đã mua điện thoại di động đời mới."
+  },
+  {
+    "word": "端末",
+    "example": "[会社](かいしゃ)から[支給](しきゅう)された**[端末](たんまつ)**で[仕事](しごと)をしています。",
+    "exampleVi": "Tôi đang làm việc bằng thiết bị đầu cuối do công ty cấp."
+  }
 ]

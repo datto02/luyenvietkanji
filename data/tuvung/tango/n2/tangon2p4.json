@@ -1,101 +1,497 @@
 [
-  "街",
-  "都市",
-  "下町",
-  "土地",
-  "活気",
-  "人通り",
-  "絶える",
-  "坂",
-  "辺り",
-  "付近",
-  "住宅",
-  "地区",
-  "エリア",
-  "中間",
-  "境",
-  "斜め",
-  "抽選",
-  "避難",
-  "訓練",
-  "見回る",
-  "築く",
-  "見当",
-  "落書き",
-  "強化",
-  "自治体",
-  "知事",
-  "応える",
-  "住民",
-  "身分証明書",
-  "生年月日",
-  "署名",
-  "修正",
-  "年金",
-  "施設",
-  "ロッカー",
-  "建築",
-  "リニューアル",
-  "近づける",
-  "福祉",
-  "年度",
-  "交替",
-  "収集",
-  "配布",
-  "処理",
-  "需要",
-  "提供",
-  "用途",
-  "故郷",
-  "地元",
-  "離れる",
-  "つかむ",
-  "帰省",
-  "アクセス",
-  "改善",
-  "行事",
-  "はるか",
-  "誇り",
-  "載る",
-  "宣伝",
-  "作成",
-  "見慣れる",
-  "近郊",
-  "描く",
-  "若者",
-  "Uターン",
-  "行き来",
-  "担う",
-  "行き先",
-  "方面",
-  "行き帰り",
-  "横断",
-  "通行",
-  "歩行者",
-  "絶えず",
-  "手段",
-  "公共",
-  "運賃",
-  "つかまる",
-  "アナウンス",
-  "見合わせる",
-  "乱れる",
-  "再開",
-  "免許",
-  "左右",
-  "直線",
-  "なだらか",
-  "間隔",
-  "スムーズ",
-  "指す",
-  "のろのろ",
-  "ぐるぐる",
-  "パンク",
-  "慎重",
-  "気を抜く",
-  "生産",
-  "供給",
-  "栽培",
-  "農家",
-  "作物"
+  {
+    "word": "街",
+    "example": "この**[街](まち)**は[夜](よる)でも[明](あか)るいです。",
+    "exampleVi": "Khu phố này ban đêm cũng sáng sủa."
+  },
+  {
+    "word": "都市",
+    "example": "[東京](とうきょう)は[世界](せかい)でも[大](おお)きな**[都市](とし)**です。",
+    "exampleVi": "Tokyo là một đô thị lớn của thế giới."
+  },
+  {
+    "word": "下町",
+    "example": "[浅草](あさくさ)は**[下町](したまち)**の[雰囲気](ふんいき)が[残](のこ)っています。",
+    "exampleVi": "Asakusa vẫn còn giữ bầu không khí của khu phố cổ."
+  },
+  {
+    "word": "土地",
+    "example": "この[辺](あた)りは**[土地](とち)**の[値段](ねだん)が[高](たか)いです。",
+    "exampleVi": "Vùng này giá đất cao."
+  },
+  {
+    "word": "活気",
+    "example": "[市場](いちば)は[朝](あさ)から**[活気](かっき)**に[満](み)ちています。",
+    "exampleVi": "Chợ từ sáng đã tràn đầy sinh khí."
+  },
+  {
+    "word": "人通り",
+    "example": "[夜](よる)のこの[道](みち)は**[人通](ひとどお)り**が[少](すく)ないです。",
+    "exampleVi": "Con đường này ban đêm ít người qua lại."
+  },
+  {
+    "word": "絶える",
+    "example": "この[道](みち)は[夜](よる)でも[人通](ひとどお)りが**[絶](た)えません**。",
+    "exampleVi": "Con đường này dù ban đêm người qua lại cũng không ngớt."
+  },
+  {
+    "word": "坂",
+    "example": "[家](いえ)の[前](まえ)は[急](きゅう)な**[坂](さか)**です。",
+    "exampleVi": "Trước nhà tôi là một con dốc gắt."
+  },
+  {
+    "word": "辺り",
+    "example": "この**[辺](あた)り**に[銀行](ぎんこう)はありますか。",
+    "exampleVi": "Quanh đây có ngân hàng không?"
+  },
+  {
+    "word": "付近",
+    "example": "[駅](えき)の**[付近](ふきん)**で[事故](じこ)がありました。",
+    "exampleVi": "Đã xảy ra tai nạn ở vùng lân cận nhà ga."
+  },
+  {
+    "word": "住宅",
+    "example": "この[辺](あた)りは[静](しず)かな**[住宅](じゅうたく)**[街](がい)です。",
+    "exampleVi": "Vùng này là khu nhà ở yên tĩnh."
+  },
+  {
+    "word": "地区",
+    "example": "この**[地区](ちく)**には[学校](がっこう)が[三](みっ)つあります。",
+    "exampleVi": "Khu vực này có ba trường học."
+  },
+  {
+    "word": "エリア",
+    "example": "[新宿](しんじゅく)はホテルが[多](おお)い**エリア**です。",
+    "exampleVi": "Shinjuku là khu vực có nhiều khách sạn."
+  },
+  {
+    "word": "中間",
+    "example": "[東京](とうきょう)と[大阪](おおさか)の**[中間](ちゅうかん)**に[名古屋](なごや)があります。",
+    "exampleVi": "Nagoya nằm ở giữa Tokyo và Osaka."
+  },
+  {
+    "word": "境",
+    "example": "[二](ふた)つの[県](けん)の**[境](さかい)**に[川](かわ)があります。",
+    "exampleVi": "Ở ranh giới giữa hai tỉnh có một con sông."
+  },
+  {
+    "word": "斜め",
+    "example": "[郵便局](ゆうびんきょく)は[銀行](ぎんこう)の**[斜](なな)め**[向](む)かいにあります。",
+    "exampleVi": "Bưu điện nằm chéo đối diện ngân hàng."
+  },
+  {
+    "word": "抽選",
+    "example": "コンサートのチケットは**[抽選](ちゅうせん)**で[決](き)まります。",
+    "exampleVi": "Vé buổi hòa nhạc được quyết định bằng bốc thăm."
+  },
+  {
+    "word": "避難",
+    "example": "[地震](じしん)のとき、[学校](がっこう)に**[避難](ひなん)**しました。",
+    "exampleVi": "Khi có động đất, chúng tôi đã đến trường lánh nạn."
+  },
+  {
+    "word": "訓練",
+    "example": "[年](とし)に[一度](いちど)、[消防](しょうぼう)**[訓練](くんれん)**があります。",
+    "exampleVi": "Mỗi năm một lần có buổi huấn luyện phòng cháy chữa cháy."
+  },
+  {
+    "word": "見回る",
+    "example": "[夜](よる)、[警備員](けいびいん)がビルの[中](なか)を**[見回](みまわ)って**います。",
+    "exampleVi": "Ban đêm, nhân viên bảo vệ đang đi tuần trong tòa nhà."
+  },
+  {
+    "word": "築く",
+    "example": "[友人](ゆうじん)と[良](よ)い[関係](かんけい)を**[築](きず)きました**。",
+    "exampleVi": "Tôi đã xây dựng mối quan hệ tốt với bạn bè."
+  },
+  {
+    "word": "見当",
+    "example": "[彼](かれ)がどこにいるのか、まったく**[見当](けんとう)**がつきません。",
+    "exampleVi": "Tôi hoàn toàn không đoán được anh ấy đang ở đâu."
+  },
+  {
+    "word": "落書き",
+    "example": "[壁](かべ)に**[落書](らくが)き**をしてはいけません。",
+    "exampleVi": "Không được vẽ bậy lên tường."
+  },
+  {
+    "word": "強化",
+    "example": "[警備](けいび)を**[強化](きょうか)**することになりました。",
+    "exampleVi": "Đã quyết định tăng cường an ninh."
+  },
+  {
+    "word": "自治体",
+    "example": "**[自治体](じちたい)**が[新](あたら)しい[施設](しせつ)を[作](つく)りました。",
+    "exampleVi": "Chính quyền địa phương đã xây dựng một cơ sở mới."
+  },
+  {
+    "word": "知事",
+    "example": "[県](けん)の**[知事](ちじ)**が[記者](きしゃ)[会見](かいけん)を[開](ひら)きました。",
+    "exampleVi": "Thống đốc tỉnh đã tổ chức họp báo."
+  },
+  {
+    "word": "応える",
+    "example": "ファンの[期待](きたい)に**[応](こた)えたい**です。",
+    "exampleVi": "Tôi muốn đáp lại sự kỳ vọng của người hâm mộ."
+  },
+  {
+    "word": "住民",
+    "example": "[地域](ちいき)の**[住民](じゅうみん)**が[集](あつ)まって[話](はな)し[合](あ)いました。",
+    "exampleVi": "Cư dân trong khu vực đã tụ họp và thảo luận."
+  },
+  {
+    "word": "身分証明書",
+    "example": "[受付](うけつけ)で**[身分](みぶん)[証明書](しょうめいしょ)**を[見](み)せてください。",
+    "exampleVi": "Xin hãy xuất trình giấy tờ tùy thân ở quầy lễ tân."
+  },
+  {
+    "word": "生年月日",
+    "example": "[用紙](ようし)に[名前](なまえ)と**[生年月日](せいねんがっぴ)**を[書](か)きました。",
+    "exampleVi": "Tôi đã viết họ tên và ngày tháng năm sinh vào phiếu."
+  },
+  {
+    "word": "署名",
+    "example": "[書類](しょるい)の[最後](さいご)に**[署名](しょめい)**をお[願](ねが)いします。",
+    "exampleVi": "Xin hãy ký tên ở cuối tài liệu."
+  },
+  {
+    "word": "修正",
+    "example": "[間違](まちが)いを**[修正](しゅうせい)**して、もう[一度](いちど)[出](だ)してください。",
+    "exampleVi": "Hãy sửa lỗi sai rồi nộp lại một lần nữa."
+  },
+  {
+    "word": "年金",
+    "example": "[祖父](そふ)は**[年金](ねんきん)**で[生活](せいかつ)しています。",
+    "exampleVi": "Ông tôi sống nhờ tiền lương hưu."
+  },
+  {
+    "word": "施設",
+    "example": "この**[施設](しせつ)**は[誰](だれ)でも[無料](むりょう)で[使](つか)えます。",
+    "exampleVi": "Cơ sở này ai cũng được sử dụng miễn phí."
+  },
+  {
+    "word": "ロッカー",
+    "example": "[荷物](にもつ)は[駅](えき)の**ロッカー**に[預](あず)けました。",
+    "exampleVi": "Tôi đã gửi hành lý vào tủ đồ ở nhà ga."
+  },
+  {
+    "word": "建築",
+    "example": "[新](あたら)しい[学校](がっこう)の**[建築](けんちく)**が[始](はじ)まりました。",
+    "exampleVi": "Việc xây dựng ngôi trường mới đã bắt đầu."
+  },
+  {
+    "word": "リニューアル",
+    "example": "[駅前](えきまえ)の[店](みせ)が**リニューアル**しました。",
+    "exampleVi": "Cửa hàng trước nhà ga đã được tân trang lại."
+  },
+  {
+    "word": "近づける",
+    "example": "[顔](かお)を[画面](がめん)に**[近](ちか)づけないで**ください。",
+    "exampleVi": "Xin đừng đưa mặt lại gần màn hình."
+  },
+  {
+    "word": "福祉",
+    "example": "[高齢者](こうれいしゃ)の**[福祉](ふくし)**を[考](かんが)える[必要](ひつよう)があります。",
+    "exampleVi": "Cần phải nghĩ đến phúc lợi của người cao tuổi."
+  },
+  {
+    "word": "年度",
+    "example": "[新](あたら)しい**[年度](ねんど)**は[四月](しがつ)に[始](はじ)まります。",
+    "exampleVi": "Năm tài chính (niên khóa) mới bắt đầu vào tháng Tư."
+  },
+  {
+    "word": "交替",
+    "example": "[八時間](はちじかん)ごとに[係](かかり)が**[交替](こうたい)**します。",
+    "exampleVi": "Cứ mỗi tám tiếng, người phụ trách lại đổi ca."
+  },
+  {
+    "word": "収集",
+    "example": "[古](ふる)い[切手](きって)を**[収集](しゅうしゅう)**しています。",
+    "exampleVi": "Tôi đang sưu tầm tem cũ."
+  },
+  {
+    "word": "配布",
+    "example": "[駅前](えきまえ)でティッシュを**[配布](はいふ)**しています。",
+    "exampleVi": "Người ta đang phát khăn giấy trước nhà ga."
+  },
+  {
+    "word": "処理",
+    "example": "[大量](たいりょう)のデータを**[処理](しょり)**しました。",
+    "exampleVi": "Tôi đã xử lý một lượng lớn dữ liệu."
+  },
+  {
+    "word": "需要",
+    "example": "[夏](なつ)はエアコンの**[需要](じゅよう)**が[高](たか)くなります。",
+    "exampleVi": "Vào mùa hè, nhu cầu về máy lạnh tăng cao."
+  },
+  {
+    "word": "提供",
+    "example": "[会社](かいしゃ)は[社員](しゃいん)に[無料](むりょう)の[昼食](ちゅうしょく)を**[提供](ていきょう)**しています。",
+    "exampleVi": "Công ty cung cấp bữa trưa miễn phí cho nhân viên."
+  },
+  {
+    "word": "用途",
+    "example": "この[道具](どうぐ)はいろいろな**[用途](ようと)**に[使](つか)えます。",
+    "exampleVi": "Dụng cụ này có thể dùng cho nhiều mục đích khác nhau."
+  },
+  {
+    "word": "故郷",
+    "example": "お[正月](しょうがつ)には**[故郷](こきょう)**に[帰](かえ)ります。",
+    "exampleVi": "Vào dịp Tết tôi sẽ về quê."
+  },
+  {
+    "word": "地元",
+    "example": "[彼](かれ)は**[地元](じもと)**の[大学](だいがく)に[進](すす)みました。",
+    "exampleVi": "Anh ấy đã vào đại học ở địa phương."
+  },
+  {
+    "word": "離れる",
+    "example": "[家](いえ)を**[離](はな)れて**、[一人](ひとり)で[暮](く)らしています。",
+    "exampleVi": "Tôi rời khỏi nhà và sống một mình."
+  },
+  {
+    "word": "つかむ",
+    "example": "[彼](かれ)は[私](わたし)の[腕](うで)を**つかみました**。",
+    "exampleVi": "Anh ấy đã nắm lấy cánh tay tôi."
+  },
+  {
+    "word": "帰省",
+    "example": "[夏休](なつやす)みに**[帰省](きせい)**する[人](ひと)で[駅](えき)が[混](こ)んでいます。",
+    "exampleVi": "Nhà ga đông người về quê vào kỳ nghỉ hè."
+  },
+  {
+    "word": "アクセス",
+    "example": "このホテルは[空港](くうこう)からの**アクセス**が[便利](べんり)です。",
+    "exampleVi": "Khách sạn này đi lại từ sân bay rất thuận tiện."
+  },
+  {
+    "word": "改善",
+    "example": "サービスを**[改善](かいぜん)**する[必要](ひつよう)があります。",
+    "exampleVi": "Cần phải cải thiện dịch vụ."
+  },
+  {
+    "word": "行事",
+    "example": "[学校](がっこう)では[毎年](まいとし)、[運動会](うんどうかい)などの**[行事](ぎょうじ)**があります。",
+    "exampleVi": "Ở trường mỗi năm đều có các sự kiện như đại hội thể thao."
+  },
+  {
+    "word": "はるか",
+    "example": "[山](やま)の**はるか**[向](む)こうに[海](うみ)が[見](み)えます。",
+    "exampleVi": "Ở phía xa xăm bên kia dãy núi có thể thấy biển."
+  },
+  {
+    "word": "誇り",
+    "example": "[自分](じぶん)の[仕事](しごと)に**[誇](ほこ)り**を[持](も)っています。",
+    "exampleVi": "Tôi tự hào về công việc của mình."
+  },
+  {
+    "word": "載る",
+    "example": "[私](わたし)の[写真](しゃしん)が[新聞](しんぶん)に**[載](の)りました**。",
+    "exampleVi": "Ảnh của tôi đã được đăng lên báo."
+  },
+  {
+    "word": "宣伝",
+    "example": "[新](あたら)しい[商品](しょうひん)をテレビで**[宣伝](せんでん)**しています。",
+    "exampleVi": "Họ đang quảng cáo sản phẩm mới trên ti vi."
+  },
+  {
+    "word": "作成",
+    "example": "[会議](かいぎ)の[資料](しりょう)を**[作成](さくせい)**しました。",
+    "exampleVi": "Tôi đã soạn xong tài liệu cho cuộc họp."
+  },
+  {
+    "word": "見慣れる",
+    "example": "**[見慣](みな)れた**[景色](けしき)を[見](み)て、ほっとしました。",
+    "exampleVi": "Nhìn phong cảnh quen thuộc, tôi thấy yên lòng."
+  },
+  {
+    "word": "近郊",
+    "example": "[東京](とうきょう)の**[近郊](きんこう)**に[住](す)んでいます。",
+    "exampleVi": "Tôi sống ở vùng ngoại ô Tokyo."
+  },
+  {
+    "word": "描く",
+    "example": "[子供](こども)が[絵](え)を**[描](えが)いて**います。",
+    "exampleVi": "Đứa trẻ đang vẽ tranh."
+  },
+  {
+    "word": "若者",
+    "example": "この[店](みせ)は**[若者](わかもの)**に[人気](にんき)があります。",
+    "exampleVi": "Quán này được giới trẻ ưa chuộng."
+  },
+  {
+    "word": "Uターン",
+    "example": "[都会](とかい)で[働](はたら)いたあと、[地元](じもと)に**Uターン**しました。",
+    "exampleVi": "Sau khi làm việc ở thành phố, tôi đã trở về quê hương."
+  },
+  {
+    "word": "行き来",
+    "example": "[二](ふた)つの[町](まち)の[間](あいだ)は[人](ひと)の**[行](い)き[来](き)**が[多](おお)いです。",
+    "exampleVi": "Giữa hai thị trấn có rất nhiều người đi lại."
+  },
+  {
+    "word": "担う",
+    "example": "[次](つぎ)の[世代](せだい)が[未来](みらい)を**[担](にな)います**。",
+    "exampleVi": "Thế hệ tiếp theo sẽ gánh vác tương lai."
+  },
+  {
+    "word": "行き先",
+    "example": "バスの**[行](い)き[先](さき)**を[確認](かくにん)しました。",
+    "exampleVi": "Tôi đã kiểm tra điểm đến của xe buýt."
+  },
+  {
+    "word": "方面",
+    "example": "この[電車](でんしゃ)は[新宿](しんじゅく)**[方面](ほうめん)**へ[行](い)きます。",
+    "exampleVi": "Chuyến tàu này đi hướng Shinjuku."
+  },
+  {
+    "word": "行き帰り",
+    "example": "[学校](がっこう)の**[行](い)き[帰](かえ)り**に[本屋](ほんや)に[寄](よ)ります。",
+    "exampleVi": "Trên đường đi và về trường, tôi hay ghé hiệu sách."
+  },
+  {
+    "word": "横断",
+    "example": "[赤信号](あかしんごう)で[道](みち)を**[横断](おうだん)**してはいけません。",
+    "exampleVi": "Không được băng qua đường khi đèn đỏ."
+  },
+  {
+    "word": "通行",
+    "example": "この[道](みち)は[工事](こうじ)のため**[通行](つうこう)**できません。",
+    "exampleVi": "Con đường này không thể lưu thông do thi công."
+  },
+  {
+    "word": "歩行者",
+    "example": "**[歩行者](ほこうしゃ)**は[歩道](ほどう)を[歩](ある)いてください。",
+    "exampleVi": "Người đi bộ xin hãy đi trên vỉa hè."
+  },
+  {
+    "word": "絶えず",
+    "example": "[彼](かれ)は**[絶](た)えず**[携帯電話](けいたいでんわ)を[見](み)ています。",
+    "exampleVi": "Anh ấy liên tục nhìn điện thoại di động."
+  },
+  {
+    "word": "手段",
+    "example": "[目的](もくてき)を[達成](たっせい)する**[手段](しゅだん)**を[考](かんが)えました。",
+    "exampleVi": "Tôi đã suy nghĩ cách thức để đạt được mục tiêu."
+  },
+  {
+    "word": "公共",
+    "example": "**[公共](こうきょう)**の[場](ば)では[静](しず)かにしましょう。",
+    "exampleVi": "Ở nơi công cộng hãy giữ yên lặng."
+  },
+  {
+    "word": "運賃",
+    "example": "バスの**[運賃](うんちん)**が[上](あ)がりました。",
+    "exampleVi": "Cước phí xe buýt đã tăng lên."
+  },
+  {
+    "word": "つかまる",
+    "example": "[電車](でんしゃ)が[揺](ゆ)れたので、[手](て)すりに**つかまりました**。",
+    "exampleVi": "Tàu bị rung lắc nên tôi bám vào tay vịn."
+  },
+  {
+    "word": "アナウンス",
+    "example": "[駅](えき)で[電車](でんしゃ)の[遅](おく)れを**アナウンス**しています。",
+    "exampleVi": "Ở nhà ga đang thông báo việc tàu bị chậm."
+  },
+  {
+    "word": "見合わせる",
+    "example": "[大雨](おおあめ)のため、[電車](でんしゃ)の[運転](うんてん)を**[見合](みあ)わせて**います。",
+    "exampleVi": "Do mưa lớn, việc chạy tàu đang tạm hoãn."
+  },
+  {
+    "word": "乱れる",
+    "example": "[雪](ゆき)で[電車](でんしゃ)のダイヤが**[乱](みだ)れました**。",
+    "exampleVi": "Vì tuyết, lịch chạy tàu bị đảo lộn."
+  },
+  {
+    "word": "再開",
+    "example": "[運転](うんてん)が**[再開](さいかい)**されました。",
+    "exampleVi": "Việc chạy tàu đã được mở lại."
+  },
+  {
+    "word": "免許",
+    "example": "[来月](らいげつ)、[車](くるま)の**[免許](めんきょ)**を[取](と)る[予定](よてい)です。",
+    "exampleVi": "Tháng sau tôi dự định lấy bằng lái xe."
+  },
+  {
+    "word": "左右",
+    "example": "[道](みち)を[渡](わた)る[前](まえ)に**[左右](さゆう)**を[確認](かくにん)しましょう。",
+    "exampleVi": "Trước khi qua đường hãy kiểm tra hai bên trái phải."
+  },
+  {
+    "word": "直線",
+    "example": "この[道](みち)は**[直線](ちょくせん)**で、[走](はし)りやすいです。",
+    "exampleVi": "Con đường này thẳng nên dễ chạy."
+  },
+  {
+    "word": "なだらか",
+    "example": "**なだらか**な[坂](さか)を[登](のぼ)って[行](い)きました。",
+    "exampleVi": "Tôi đã đi lên một con dốc thoai thoải."
+  },
+  {
+    "word": "間隔",
+    "example": "[木](き)を[二](に)メートルの**[間隔](かんかく)**で[植](う)えました。",
+    "exampleVi": "Tôi đã trồng cây với khoảng cách hai mét."
+  },
+  {
+    "word": "スムーズ",
+    "example": "[会議](かいぎ)は**スムーズ**に[進](すす)みました。",
+    "exampleVi": "Cuộc họp đã diễn ra suôn sẻ."
+  },
+  {
+    "word": "指す",
+    "example": "[先生](せんせい)は[黒板](こくばん)の[図](ず)を**[指](さ)して**[説明](せつめい)しました。",
+    "exampleVi": "Thầy giáo chỉ vào hình trên bảng đen và giải thích."
+  },
+  {
+    "word": "のろのろ",
+    "example": "[前](まえ)の[車](くるま)が**のろのろ**[走](はし)っています。",
+    "exampleVi": "Chiếc xe phía trước đang chạy chậm rề rề."
+  },
+  {
+    "word": "ぐるぐる",
+    "example": "[道](みち)に[迷](まよ)って、[同](おな)じ[所](ところ)を**ぐるぐる**[回](まわ)ってしまいました。",
+    "exampleVi": "Tôi bị lạc đường nên cứ đi vòng vòng quanh một chỗ."
+  },
+  {
+    "word": "パンク",
+    "example": "[自転車](じてんしゃ)のタイヤが**パンク**しました。",
+    "exampleVi": "Lốp xe đạp bị thủng."
+  },
+  {
+    "word": "慎重",
+    "example": "**[慎重](しんちょう)**に[運転](うんてん)してください。",
+    "exampleVi": "Xin hãy lái xe thận trọng."
+  },
+  {
+    "word": "気を抜く",
+    "example": "[試合](しあい)が[終](お)わるまで**[気](き)を[抜](ぬ)かない**でください。",
+    "exampleVi": "Cho đến khi trận đấu kết thúc, xin đừng lơ là."
+  },
+  {
+    "word": "生産",
+    "example": "この[工場](こうじょう)では[車](くるま)を**[生産](せいさん)**しています。",
+    "exampleVi": "Nhà máy này đang sản xuất ô tô."
+  },
+  {
+    "word": "供給",
+    "example": "[電力](でんりょく)の**[供給](きょうきゅう)**が[追](お)い[付](つ)きません。",
+    "exampleVi": "Nguồn cung cấp điện không theo kịp."
+  },
+  {
+    "word": "栽培",
+    "example": "[北海道](ほっかいどう)ではジャガイモの**[栽培](さいばい)**が[盛](さか)んです。",
+    "exampleVi": "Ở Hokkaido việc trồng khoai tây rất phát triển."
+  },
+  {
+    "word": "農家",
+    "example": "[祖父](そふ)は**[農家](のうか)**で、[米](こめ)を[作](つく)っています。",
+    "exampleVi": "Ông tôi là nhà nông, làm lúa gạo."
+  },
+  {
+    "word": "作物",
+    "example": "[今年](ことし)は[天気](てんき)が[悪](わる)くて、**[作物](さくもつ)**が[育](そだ)ちませんでした。",
+    "exampleVi": "Năm nay thời tiết xấu nên hoa màu không lớn được."
+  }
 ]

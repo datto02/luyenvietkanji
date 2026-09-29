@@ -1,107 +1,511 @@
 [
-  "気候",
-  "シーズン",
-  "四季",
-  "膨らむ",
-  "梅雨",
-  "初夏",
-  "温帯",
-  "属する",
-  "確率",
-  "夕立",
-  "にわか",
-  "覆う",
-  "びしょびしょ",
-  "あいにく",
-  "吹雪",
-  "凍える",
-  "冷え込む",
+  {
+    "word": "気候",
+    "example": "[日本](にほん)の**[気候](きこう)**は[温暖](おんだん)です。",
+    "exampleVi": "Khí hậu Nhật Bản ôn hòa."
+  },
+  {
+    "word": "シーズン",
+    "example": "スキーの**シーズン**が[始](はじ)まりました。",
+    "exampleVi": "Mùa trượt tuyết đã bắt đầu."
+  },
+  {
+    "word": "四季",
+    "example": "[日本](にほん)には**[四季](しき)**があります。",
+    "exampleVi": "Nhật Bản có bốn mùa."
+  },
+  {
+    "word": "膨らむ",
+    "example": "[春](はる)になると、[桜](さくら)のつぼみが**[膨](ふく)らみます**。",
+    "exampleVi": "Khi xuân đến, nụ hoa anh đào phồng lên."
+  },
+  {
+    "word": "梅雨",
+    "example": "**[梅雨](つゆ)**は[六月](ろくがつ)から[七月](しちがつ)まで[続](つづ)きます。",
+    "exampleVi": "Mùa mưa kéo dài từ tháng Sáu đến tháng Bảy."
+  },
+  {
+    "word": "初夏",
+    "example": "**[初夏](しょか)**の[風](かぜ)は[気持](きも)ちがいいです。",
+    "exampleVi": "Gió đầu hè thật dễ chịu."
+  },
+  {
+    "word": "温帯",
+    "example": "[日本](にほん)は**[温帯](おんたい)**に[属](ぞく)しています。",
+    "exampleVi": "Nhật Bản nằm trong vùng ôn đới."
+  },
+  {
+    "word": "属する",
+    "example": "[彼](かれ)は[野球](やきゅう)[部](ぶ)に**[属](ぞく)して**います。",
+    "exampleVi": "Anh ấy thuộc câu lạc bộ bóng chày."
+  },
+  {
+    "word": "確率",
+    "example": "[明日](あした)、[雨](あめ)が[降](ふ)る**[確率](かくりつ)**は[八十](はちじゅう)パーセントです。",
+    "exampleVi": "Xác suất ngày mai có mưa là 80%."
+  },
+  {
+    "word": "夕立",
+    "example": "[帰](かえ)る[途中](とちゅう)で**[夕立](ゆうだち)**に[降](ふ)られました。",
+    "exampleVi": "Trên đường về tôi bị mưa rào chiều tối."
+  },
+  {
+    "word": "にわか",
+    "example": "**にわか**[雨](あめ)に[降](ふ)られて、[服](ふく)が[濡](ぬ)れました。",
+    "exampleVi": "Bị một cơn mưa bất chợt, quần áo tôi ướt hết."
+  },
+  {
+    "word": "覆う",
+    "example": "[雲](くも)が[空](そら)を**[覆](おお)って**います。",
+    "exampleVi": "Mây đang bao phủ bầu trời."
+  },
+  {
+    "word": "びしょびしょ",
+    "example": "[雨](あめ)で[靴](くつ)が**びしょびしょ**になりました。",
+    "exampleVi": "Vì mưa nên giày của tôi ướt sũng."
+  },
+  {
+    "word": "あいにく",
+    "example": "**あいにく**[今日](きょう)は[雨](あめ)です。",
+    "exampleVi": "Thật không may hôm nay trời mưa."
+  },
+  {
+    "word": "吹雪",
+    "example": "[山](やま)は**[吹雪](ふぶき)**で、[何](なに)も[見](み)えませんでした。",
+    "exampleVi": "Trên núi có bão tuyết nên tôi chẳng nhìn thấy gì."
+  },
+  {
+    "word": "凍える",
+    "example": "[寒](さむ)くて、[手](て)が**[凍](こご)えそう**でした。",
+    "exampleVi": "Lạnh đến mức tay tôi như muốn đóng băng."
+  },
+  {
+    "word": "冷え込む",
+    "example": "[今夜](こんや)は**[冷](ひ)え[込](こ)む**でしょう。",
+    "exampleVi": "Đêm nay chắc trời sẽ lạnh buốt."
+  },
   {
     "word": "陽気",
     "reading": "ようき",
-    "meaning": "thời tiết ấm áp"
+    "meaning": "thời tiết ấm áp",
+    "example": "[春](はる)の**[陽気](ようき)**に[誘](さそ)われて、[散歩](さんぽ)に[出](で)ました。",
+    "exampleVi": "Bị thời tiết ấm áp của mùa xuân lôi cuốn, tôi ra ngoài đi dạo."
   },
-  "日和",
-  "日差し",
-  "一層",
-  "一段と",
-  "急速",
-  "ぐんぐん",
-  "いくぶん",
-  "めっきり",
-  "あまりにも",
-  "差",
-  "本来",
-  "接近",
-  "備える",
-  "砂",
-  "あふれる",
-  "降水量",
-  "観測",
-  "大気",
-  "荒れる",
-  "傾く",
-  "またぐ",
-  "応答",
-  "静まる",
-  "もたらす",
-  "及ぼす",
-  "及ぶ",
-  "去る",
-  "ひとまず",
-  "直後",
-  "行動",
-  "万一",
-  "傾向",
-  "達する",
-  "災害",
-  "大地",
-  "広大",
-  "砂漠",
-  "谷",
-  "滝",
-  "岸",
-  "海辺",
-  "透明",
-  "底",
-  "生き物",
-  "生物",
-  "植物",
-  "芽",
-  "人間",
-  "天然",
-  "日光",
-  "昇る",
-  "日陰",
-  "夕焼け",
-  "飛び回る",
-  "鳴く",
-  "しんと",
-  "しいんと",
-  "休息",
-  "ゆっくり",
-  "ごろごろ",
-  "だらだら",
-  "のびのび",
-  "くつろぐ",
-  "こもる",
-  "ぐうぐう",
-  "どっと",
-  "切り替える",
-  "あれこれ",
-  "芝生",
-  "転がる",
-  "うなる",
-  "ボート",
-  "こぐ",
-  "展覧会",
-  "ばったり",
-  "はらはら",
-  "墓",
-  "突っ込む",
-  "見渡す",
-  "眺める",
-  "眺め",
-  "かすか",
-  "負ぶう"
+  {
+    "word": "日和",
+    "example": "[今日](きょう)は[絶好](ぜっこう)の[散歩](さんぽ)**[日和](びより)**です。",
+    "exampleVi": "Hôm nay là một ngày đẹp trời hoàn hảo để đi dạo."
+  },
+  {
+    "word": "日差し",
+    "example": "[夏](なつ)の**[日差](ひざ)し**は[強](つよ)いです。",
+    "exampleVi": "Ánh nắng mùa hè rất gắt."
+  },
+  {
+    "word": "一層",
+    "example": "[夜](よる)になって、[寒](さむ)さが**[一層](いっそう)**[厳](きび)しくなりました。",
+    "exampleVi": "Đến tối, cái lạnh càng trở nên khắc nghiệt hơn."
+  },
+  {
+    "word": "一段と",
+    "example": "[十二月](じゅうにがつ)になって、[寒](さむ)さが**[一段](いちだん)と**[増](ま)しました。",
+    "exampleVi": "Sang tháng Mười hai, cái lạnh tăng lên hẳn."
+  },
+  {
+    "word": "急速",
+    "example": "[科学](かがく)は**[急速](きゅうそく)**に[発展](はってん)しています。",
+    "exampleVi": "Khoa học đang phát triển nhanh chóng."
+  },
+  {
+    "word": "ぐんぐん",
+    "example": "[植物](しょくぶつ)が**ぐんぐん**[伸](の)びています。",
+    "exampleVi": "Cây cối đang lớn vụt lên."
+  },
+  {
+    "word": "いくぶん",
+    "example": "[昨日](きのう)より**いくぶん**[暖](あたた)かくなりました。",
+    "exampleVi": "So với hôm qua thì trời đã ấm hơn đôi chút."
+  },
+  {
+    "word": "めっきり",
+    "example": "[最近](さいきん)、**めっきり**[寒](さむ)くなりました。",
+    "exampleVi": "Gần đây trời đã lạnh đi thấy rõ."
+  },
+  {
+    "word": "あまりにも",
+    "example": "**あまりにも**[暑](あつ)くて、[外](そと)に[出](で)られません。",
+    "exampleVi": "Nóng quá đỗi nên tôi không thể ra ngoài."
+  },
+  {
+    "word": "差",
+    "example": "[朝](あさ)と[夜](よる)の[温度](おんど)の**[差](さ)**が[大](おお)きいです。",
+    "exampleVi": "Chênh lệch nhiệt độ giữa sáng và tối rất lớn."
+  },
+  {
+    "word": "本来",
+    "example": "この[花](はな)は**[本来](ほんらい)**、[春](はる)に[咲](さ)く[花](はな)です。",
+    "exampleVi": "Vốn dĩ loài hoa này là hoa nở vào mùa xuân."
+  },
+  {
+    "word": "接近",
+    "example": "[台風](たいふう)が[日本](にほん)に**[接近](せっきん)**しています。",
+    "exampleVi": "Bão đang tiến gần đến Nhật Bản."
+  },
+  {
+    "word": "備える",
+    "example": "[台風](たいふう)に**[備](そな)えて**、[食料](しょくりょう)を[買](か)いました。",
+    "exampleVi": "Để chuẩn bị cho bão, tôi đã mua thực phẩm."
+  },
+  {
+    "word": "砂",
+    "example": "[靴](くつ)の[中](なか)に**[砂](すな)**が[入](はい)りました。",
+    "exampleVi": "Cát đã lọt vào trong giày."
+  },
+  {
+    "word": "あふれる",
+    "example": "[大雨](おおあめ)で[川](かわ)の[水](みず)が**あふれました**。",
+    "exampleVi": "Do mưa lớn, nước sông đã tràn bờ."
+  },
+  {
+    "word": "降水量",
+    "example": "[今年](ことし)の**[降水量](こうすいりょう)**は[少](すく)ないです。",
+    "exampleVi": "Lượng mưa năm nay ít."
+  },
+  {
+    "word": "観測",
+    "example": "[天文台](てんもんだい)で[星](ほし)を**[観測](かんそく)**しています。",
+    "exampleVi": "Người ta đang quan sát các vì sao ở đài thiên văn."
+  },
+  {
+    "word": "大気",
+    "example": "**[大気](たいき)**の[汚染](おせん)が[問題](もんだい)になっています。",
+    "exampleVi": "Ô nhiễm khí quyển đang trở thành vấn đề."
+  },
+  {
+    "word": "荒れる",
+    "example": "[海](うみ)が**[荒](あ)れて**、[船](ふね)が[出](で)ません。",
+    "exampleVi": "Biển động dữ dội nên tàu không ra khơi."
+  },
+  {
+    "word": "傾く",
+    "example": "[地震](じしん)で[家](いえ)が**[傾](かたむ)きました**。",
+    "exampleVi": "Do động đất, ngôi nhà bị nghiêng."
+  },
+  {
+    "word": "またぐ",
+    "example": "[水](みず)たまりを**またいで**[歩](ある)きました。",
+    "exampleVi": "Tôi bước qua vũng nước để đi."
+  },
+  {
+    "word": "応答",
+    "example": "[何度](なんど)も[呼](よ)びましたが、**[応答](おうとう)**はありませんでした。",
+    "exampleVi": "Tôi gọi nhiều lần nhưng không có phản hồi."
+  },
+  {
+    "word": "静まる",
+    "example": "[風](かぜ)が**[静](しず)まって**、[波](なみ)も[穏](おだ)やかになりました。",
+    "exampleVi": "Gió đã lặng và sóng cũng dịu đi."
+  },
+  {
+    "word": "もたらす",
+    "example": "[大雨](おおあめ)は[大](おお)きな[被害](ひがい)を**もたらしました**。",
+    "exampleVi": "Trận mưa lớn đã gây ra thiệt hại lớn."
+  },
+  {
+    "word": "及ぼす",
+    "meaning": "gây (ảnh hưởng), tác động đến",
+    "example": "[天気](てんき)は[人](ひと)の[気分](きぶん)に[影響](えいきょう)を**[及](およ)ぼします**。",
+    "exampleVi": "Thời tiết ảnh hưởng đến tâm trạng con người."
+  },
+  {
+    "word": "及ぶ",
+    "example": "[会議](かいぎ)は[五時間](ごじかん)に**[及](およ)びました**。",
+    "exampleVi": "Cuộc họp đã kéo dài tới năm tiếng."
+  },
+  {
+    "word": "去る",
+    "example": "**[去](さ)る**[五月](ごがつ)[十日](とおか)に、[地震](じしん)が[起](お)こりました。",
+    "exampleVi": "Vào ngày mười tháng Năm vừa qua, đã xảy ra động đất."
+  },
+  {
+    "word": "ひとまず",
+    "example": "**ひとまず**[安心](あんしん)しました。",
+    "exampleVi": "Trước mắt tôi đã yên tâm."
+  },
+  {
+    "word": "直後",
+    "example": "[地震](じしん)の**[直後](ちょくご)**は、[電話](でんわ)がつながりませんでした。",
+    "exampleVi": "Ngay sau trận động đất, điện thoại không gọi được."
+  },
+  {
+    "word": "行動",
+    "example": "[災害](さいがい)のとき、[落](お)ち[着](つ)いて**[行動](こうどう)**しましょう。",
+    "exampleVi": "Khi có thảm họa, hãy bình tĩnh hành động."
+  },
+  {
+    "word": "万一",
+    "example": "**[万一](まんいち)**の[場合](ばあい)に[備](そな)えて、[保険](ほけん)に[入](はい)りました。",
+    "exampleVi": "Để phòng khi bất trắc, tôi đã mua bảo hiểm."
+  },
+  {
+    "word": "傾向",
+    "example": "[若者](わかもの)の[間](あいだ)で[本](ほん)を[読](よ)まない**[傾向](けいこう)**があります。",
+    "exampleVi": "Trong giới trẻ có xu hướng không đọc sách."
+  },
+  {
+    "word": "達する",
+    "example": "[気温](きおん)が[三十五度](さんじゅうごど)に**[達](たっ)しました**。",
+    "exampleVi": "Nhiệt độ đã đạt tới 35 độ."
+  },
+  {
+    "word": "災害",
+    "example": "[日本](にほん)は[自然](しぜん)**[災害](さいがい)**が[多](おお)い[国](くに)です。",
+    "exampleVi": "Nhật Bản là nước có nhiều thiên tai."
+  },
+  {
+    "word": "大地",
+    "example": "**[大地](だいち)**が[揺](ゆ)れて、[皆](みんな)が[驚](おどろ)きました。",
+    "exampleVi": "Mặt đất rung chuyển, mọi người đều giật mình."
+  },
+  {
+    "word": "広大",
+    "example": "**[広大](こうだい)**な[土地](とち)に、[牧場](ぼくじょう)があります。",
+    "exampleVi": "Trên vùng đất rộng lớn có một trang trại."
+  },
+  {
+    "word": "砂漠",
+    "example": "**[砂漠](さばく)**は[昼](ひる)は[暑](あつ)く、[夜](よる)は[寒](さむ)いです。",
+    "exampleVi": "Sa mạc ban ngày nóng, ban đêm lạnh."
+  },
+  {
+    "word": "谷",
+    "example": "[山](やま)と[山](やま)の[間](あいだ)に、[深](ふか)い**[谷](たに)**があります。",
+    "exampleVi": "Giữa hai ngọn núi có một thung lũng sâu."
+  },
+  {
+    "word": "滝",
+    "example": "[山](やま)の[奥](おく)に[大](おお)きな**[滝](たき)**があります。",
+    "exampleVi": "Sâu trong núi có một thác nước lớn."
+  },
+  {
+    "word": "岸",
+    "example": "[船](ふね)が**[岸](きし)**に[着](つ)きました。",
+    "exampleVi": "Con thuyền đã cập bờ."
+  },
+  {
+    "word": "海辺",
+    "example": "[夏](なつ)、[家族](かぞく)と**[海辺](うみべ)**を[散歩](さんぽ)しました。",
+    "exampleVi": "Mùa hè, tôi đã đi dạo bờ biển cùng gia đình."
+  },
+  {
+    "word": "透明",
+    "example": "この[川](かわ)の[水](みず)は**[透明](とうめい)**で、[魚](さかな)が[見](み)えます。",
+    "exampleVi": "Nước sông này trong suốt nên có thể thấy cá."
+  },
+  {
+    "word": "底",
+    "example": "[海](うみ)の**[底](そこ)**には[何](なに)があるのでしょうか。",
+    "exampleVi": "Dưới đáy biển có gì nhỉ?"
+  },
+  {
+    "word": "生き物",
+    "example": "[森](もり)にはいろいろな**[生](い)き[物](もの)**が[住](す)んでいます。",
+    "exampleVi": "Trong rừng có nhiều loài sinh vật sinh sống."
+  },
+  {
+    "word": "生物",
+    "example": "[海](うみ)の[中](なか)の**[生物](せいぶつ)**を[研究](けんきゅう)しています。",
+    "exampleVi": "Tôi đang nghiên cứu sinh vật dưới biển."
+  },
+  {
+    "word": "植物",
+    "example": "[庭](にわ)にいろいろな**[植物](しょくぶつ)**を[育](そだ)てています。",
+    "exampleVi": "Tôi đang trồng nhiều loại thực vật trong vườn."
+  },
+  {
+    "word": "芽",
+    "example": "[春](はる)になって、[木](き)に**[芽](め)**が[出](で)ました。",
+    "exampleVi": "Xuân đến, cây đã nhú chồi."
+  },
+  {
+    "word": "人間",
+    "example": "**[人間](にんげん)**は[自然](しぜん)の[一部](いちぶ)です。",
+    "exampleVi": "Con người là một phần của thiên nhiên."
+  },
+  {
+    "word": "天然",
+    "example": "この[食品](しょくひん)は**[天然](てんねん)**の[材料](ざいりょう)だけを[使](つか)っています。",
+    "exampleVi": "Thực phẩm này chỉ dùng nguyên liệu thiên nhiên."
+  },
+  {
+    "word": "日光",
+    "example": "[植物](しょくぶつ)には**[日光](にっこう)**が[必要](ひつよう)です。",
+    "exampleVi": "Thực vật cần ánh sáng mặt trời."
+  },
+  {
+    "word": "昇る",
+    "example": "[山](やま)の[上](うえ)から[朝日](あさひ)が**[昇](のぼ)る**のを[見](み)ました。",
+    "exampleVi": "Tôi đã ngắm mặt trời mọc từ trên đỉnh núi."
+  },
+  {
+    "word": "日陰",
+    "example": "[暑](あつ)いので、**[日陰](ひかげ)**で[休](やす)みましょう。",
+    "exampleVi": "Nóng quá nên hãy nghỉ ở chỗ bóng râm."
+  },
+  {
+    "word": "夕焼け",
+    "example": "**[夕焼](ゆうや)け**がとても[綺麗](きれい)でした。",
+    "exampleVi": "Ráng chiều đẹp vô cùng."
+  },
+  {
+    "word": "飛び回る",
+    "example": "[蝶](ちょう)が[花](はな)の[間](あいだ)を**[飛](と)び[回](まわ)って**います。",
+    "exampleVi": "Bươm bướm đang bay lượn giữa các bông hoa."
+  },
+  {
+    "word": "鳴く",
+    "example": "[朝](あさ)、[鳥](とり)が**[鳴](な)いて**います。",
+    "exampleVi": "Buổi sáng, chim đang hót."
+  },
+  {
+    "word": "しんと",
+    "example": "[夜](よる)の[教室](きょうしつ)は**しんと**していました。",
+    "exampleVi": "Lớp học ban đêm im phăng phắc."
+  },
+  {
+    "word": "しいんと",
+    "example": "[先生](せんせい)が[入](はい)ってくると、[教室](きょうしつ)が**しいんと**なりました。",
+    "exampleVi": "Khi thầy bước vào, lớp học lặng ngắt."
+  },
+  {
+    "word": "休息",
+    "example": "[仕事](しごと)の[合間](あいま)に、[少](すこ)し**[休息](きゅうそく)**を[取](と)りました。",
+    "exampleVi": "Giữa giờ làm việc, tôi đã nghỉ ngơi một chút."
+  },
+  {
+    "word": "ゆっくり",
+    "example": "[週末](しゅうまつ)は**ゆっくり**[休](やす)みたいです。",
+    "exampleVi": "Cuối tuần tôi muốn nghỉ ngơi thong thả."
+  },
+  {
+    "word": "ごろごろ",
+    "example": "[日曜日](にちようび)は[家](いえ)で**ごろごろ**していました。",
+    "exampleVi": "Chủ nhật tôi cứ nằm dài lười biếng ở nhà."
+  },
+  {
+    "word": "だらだら",
+    "example": "[休](やす)みの[日](ひ)は**だらだら**と[過](す)ごしてしまいます。",
+    "exampleVi": "Ngày nghỉ tôi thường trôi qua uể oải, lê thê."
+  },
+  {
+    "word": "のびのび",
+    "example": "[田舎](いなか)で**のびのび**と[育](そだ)ちました。",
+    "exampleVi": "Tôi lớn lên thoải mái, tự do ở miền quê."
+  },
+  {
+    "word": "くつろぐ",
+    "example": "[家](いえ)で[音楽](おんがく)を[聞](き)いて**くつろぎました**。",
+    "exampleVi": "Tôi thư giãn ở nhà và nghe nhạc."
+  },
+  {
+    "word": "こもる",
+    "example": "[雨](あめ)の[日](ひ)は[家](いえ)に**こもって**、[本](ほん)を[読](よ)みます。",
+    "exampleVi": "Ngày mưa tôi ở lì trong nhà đọc sách."
+  },
+  {
+    "word": "ぐうぐう",
+    "example": "[子供](こども)はベッドで**ぐうぐう**[寝](ね)ています。",
+    "exampleVi": "Đứa trẻ đang ngủ khò khò trên giường."
+  },
+  {
+    "word": "どっと",
+    "example": "[疲](つか)れが**どっと**[出](で)てきました。",
+    "exampleVi": "Sự mệt mỏi ập đến ào ạt."
+  },
+  {
+    "word": "切り替える",
+    "example": "[気分](きぶん)を**[切](き)り[替](か)えて**、[仕事](しごと)を[始](はじ)めました。",
+    "exampleVi": "Tôi đã chuyển đổi tâm trạng rồi bắt đầu làm việc."
+  },
+  {
+    "word": "あれこれ",
+    "example": "[旅行](りょこう)の[計画](けいかく)を**あれこれ**[考](かんが)えています。",
+    "exampleVi": "Tôi đang nghĩ đi nghĩ lại đủ điều về kế hoạch du lịch."
+  },
+  {
+    "word": "芝生",
+    "example": "[公園](こうえん)の**[芝生](しばふ)**に[座](すわ)って、お[弁当](べんとう)を[食](た)べました。",
+    "exampleVi": "Tôi ngồi trên bãi cỏ công viên ăn cơm hộp."
+  },
+  {
+    "word": "転がる",
+    "example": "ボールが[坂](さか)を**[転](ころ)がって**[行](い)きました。",
+    "exampleVi": "Quả bóng lăn xuống dốc."
+  },
+  {
+    "word": "うなる",
+    "meaning": "gầm gừ, rên rỉ, ầm ì",
+    "example": "[犬](いぬ)が[知](し)らない[人](ひと)に**うなって**います。",
+    "exampleVi": "Con chó đang gầm gừ với người lạ."
+  },
+  {
+    "word": "ボート",
+    "example": "[湖](みずうみ)で**ボート**に[乗](の)りました。",
+    "exampleVi": "Tôi đã đi thuyền trên hồ."
+  },
+  {
+    "word": "こぐ",
+    "example": "[自転車](じてんしゃ)を**こいで**[坂](さか)を[登](のぼ)りました。",
+    "exampleVi": "Tôi đã đạp xe leo lên dốc."
+  },
+  {
+    "word": "展覧会",
+    "example": "[美術館](びじゅつかん)で[絵](え)の**[展覧会](てんらんかい)**が[開](ひら)かれています。",
+    "exampleVi": "Một buổi triển lãm tranh đang được tổ chức ở bảo tàng mỹ thuật."
+  },
+  {
+    "word": "ばったり",
+    "example": "[駅](えき)で[昔](むかし)の[友達](ともだち)に**ばったり**[会](あ)いました。",
+    "exampleVi": "Tôi tình cờ gặp người bạn cũ ở nhà ga."
+  },
+  {
+    "word": "はらはら",
+    "example": "[子供](こども)が[木](き)に[登](のぼ)るのを、**はらはら**しながら[見](み)ていました。",
+    "exampleVi": "Tôi thấp thỏm nhìn đứa trẻ trèo cây."
+  },
+  {
+    "word": "墓",
+    "example": "お[盆](ぼん)に[家族](かぞく)で**[墓](はか)**[参](まい)りに[行](い)きました。",
+    "exampleVi": "Vào lễ Obon, cả nhà tôi đi tảo mộ."
+  },
+  {
+    "word": "突っ込む",
+    "example": "[車](くるま)が[店](みせ)に**[突](つ)っ[込](こ)みました**。",
+    "exampleVi": "Chiếc xe đã lao vào cửa hàng."
+  },
+  {
+    "word": "見渡す",
+    "example": "[山](やま)の[上](うえ)から[町](まち)を**[見渡](みわた)しました**。",
+    "exampleVi": "Từ trên núi, tôi đã phóng tầm mắt nhìn khắp thị trấn."
+  },
+  {
+    "word": "眺める",
+    "example": "[窓](まど)から[海](うみ)を**[眺](なが)めて**います。",
+    "exampleVi": "Tôi đang ngắm biển qua cửa sổ."
+  },
+  {
+    "word": "眺め",
+    "example": "この[部屋](へや)は**[眺](なが)め**がいいです。",
+    "exampleVi": "Căn phòng này có tầm nhìn đẹp."
+  },
+  {
+    "word": "かすか",
+    "example": "[遠](とお)くから**かすか**な[音](おと)が[聞](き)こえました。",
+    "exampleVi": "Từ xa vọng đến một âm thanh mờ nhạt."
+  },
+  {
+    "word": "負ぶう",
+    "example": "[赤](あか)ちゃんを**[負](お)ぶって**[歩](ある)きました。",
+    "exampleVi": "Tôi vừa cõng em bé vừa đi bộ."
+  }
 ]

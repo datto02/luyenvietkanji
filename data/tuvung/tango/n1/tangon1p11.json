@@ -1,159 +1,787 @@
 [
-  "衝突",
-  "搬送",
-  "もがく",
-  "犠牲",
-  "無謀",
-  "ひき逃げ",
-  "立ち去る",
-  "通報",
-  "出動",
-  "証拠",
-  "根拠",
-  "消し去る",
-  "ごまかす",
-  "妨害",
-  "あわや",
-  "別状",
-  "身元",
-  "当人",
-  "痛ましい",
-  "憤る",
-  "見抜く",
-  "究明",
-  "合致",
-  "自首",
-  "手抜き",
-  "再現",
-  "賠償",
-  "再三",
-  "後を絶たない",
-  "脅す",
-  "不審",
-  "手口",
-  "巧妙",
-  "偽造",
-  "もくろむ",
-  "あくどい",
-  "浅ましい",
-  "逃れる",
-  "逃げ出す",
-  "逃す",
-  "あがく",
-  "一連",
-  "根底",
-  "同一",
-  "真実",
-  "真相",
-  "報じる",
-  "騒ぎ立てる",
-  "揺るがす",
-  "引き起こす",
-  "さらわれる",
-  "詐欺",
-  "あげくの果て",
-  "推測",
-  "断定",
-  "突き止める",
-  "指差す",
-  "不当",
-  "ずさん",
-  "手掛かり",
-  "取り調べ",
-  "追い詰める",
-  "行き詰まる",
-  "裁く",
-  "有罪",
-  "もしくは",
-  "刑務所",
-  "治安",
-  "世論",
-  "表向き",
-  "優位",
-  "ハンデ",
-  "格差",
-  "不服",
-  "大々的",
-  "誇大",
-  "デマ",
-  "速報",
-  "行き渡る",
-  "アイデンティティー",
-  "主体",
-  "貢献",
-  "名誉",
-  "及ぶ",
-  "恵む",
-  "有する",
-  "出直す",
-  "カテゴリー",
-  "不穏",
-  "よどむ",
-  "案じる",
-  "同感",
-  "なあなあ",
-  "露呈",
-  "暗示",
-  "朗報",
-  "出現",
-  "特有",
-  "予告",
-  "施行",
-  "且つ",
-  "内閣",
-  "体制",
-  "有力",
-  "声明",
-  "会見",
-  "意向",
-  "弁明",
-  "明かす",
-  "率いる",
-  "結成",
-  "保守的",
-  "極端",
-  "賢明",
-  "思惑",
-  "うやむやな",
-  "可決",
-  "押し切る",
-  "委ねる",
-  "当選",
-  "棄権",
-  "暴露",
-  "欺く",
-  "遺憾",
-  "賄賂",
-  "背く",
-  "過ち",
-  "狙う",
-  "財政",
-  "金融",
-  "緩和",
-  "好転",
-  "陥る",
-  "抑制",
-  "バブル",
-  "見通し",
-  "兆し",
-  "対策",
-  "操る",
-  "ばらまく",
-  "公表",
-  "推移",
-  "上昇",
-  "飛躍的",
-  "遂げる",
-  "運用",
-  "融資",
-  "外貨",
-  "有数",
-  "流通",
-  "頭打ち",
-  "乗っ取る",
-  "明白",
-  "交わす",
-  "有益",
-  "空白",
-  "ひいては"
+  {
+    "word": "衝突",
+    "example": "[車](くるま)と[車](くるま)が**[衝突](しょうとつ)**しました。",
+    "exampleVi": "Hai chiếc xe đã va chạm nhau."
+  },
+  {
+    "word": "搬送",
+    "example": "[怪我](けが)[人](にん)を[病院](びょういん)に**[搬送](はんそう)**しました。",
+    "exampleVi": "Người bị thương đã được chuyển đến bệnh viện."
+  },
+  {
+    "word": "もがく",
+    "example": "[水](みず)の[中](なか)で**もがいて**いました。",
+    "exampleVi": "Người đó vùng vẫy trong nước."
+  },
+  {
+    "word": "犠牲",
+    "example": "[戦争](せんそう)で[多](おお)くの[人](ひと)が**[犠牲](ぎせい)**になりました。",
+    "exampleVi": "Trong chiến tranh nhiều người đã hy sinh."
+  },
+  {
+    "word": "無謀",
+    "example": "[雪山](ゆきやま)に[一人](ひとり)で[登](のぼ)るのは**[無謀](むぼう)**です。",
+    "exampleVi": "Leo núi tuyết một mình thật liều lĩnh."
+  },
+  {
+    "word": "ひき逃げ",
+    "example": "**ひき[逃](に)げ**の[犯人](はんにん)が[捕](つか)まりました。",
+    "exampleVi": "Thủ phạm gây tai nạn bỏ trốn đã bị bắt."
+  },
+  {
+    "word": "立ち去る",
+    "example": "[男](おとこ)は[現場](げんば)から**[立](た)ち[去](さ)りました**。",
+    "exampleVi": "Người đàn ông đã rời khỏi hiện trường."
+  },
+  {
+    "word": "通報",
+    "example": "[事故](じこ)を[見](み)て、[警察](けいさつ)に**[通報](つうほう)**しました。",
+    "exampleVi": "Thấy tai nạn, tôi đã báo cảnh sát."
+  },
+  {
+    "word": "出動",
+    "example": "[消防車](しょうぼうしゃ)が**[出動](しゅつどう)**しました。",
+    "exampleVi": "Xe cứu hỏa đã xuất động."
+  },
+  {
+    "word": "証拠",
+    "example": "**[証拠](しょうこ)**がなくては[逮捕](たいほ)できません。",
+    "exampleVi": "Không có chứng cứ thì không thể bắt giữ."
+  },
+  {
+    "word": "根拠",
+    "example": "[彼](かれ)の[意見](いけん)には**[根拠](こんきょ)**がありません。",
+    "exampleVi": "Ý kiến của anh ta không có căn cứ."
+  },
+  {
+    "word": "消し去る",
+    "example": "[過去](かこ)を**[消](け)し[去](さ)る**ことはできません。",
+    "exampleVi": "Không thể xóa sạch quá khứ."
+  },
+  {
+    "word": "ごまかす",
+    "example": "[年齢](ねんれい)を**ごまかして**、[応募](おうぼ)しました。",
+    "exampleVi": "Tôi đã khai gian tuổi để ứng tuyển."
+  },
+  {
+    "word": "妨害",
+    "example": "[仕事](しごと)を**[妨害](ぼうがい)**されました。",
+    "exampleVi": "Công việc của tôi đã bị cản trở."
+  },
+  {
+    "word": "あわや",
+    "example": "**あわや**[大事故](だいじこ)になるところでした。",
+    "exampleVi": "Suýt chút nữa đã thành một tai nạn lớn."
+  },
+  {
+    "word": "別状",
+    "example": "[命](いのち)に**[別状](べつじょう)**はありません。",
+    "exampleVi": "Không nguy hiểm đến tính mạng."
+  },
+  {
+    "word": "身元",
+    "example": "[亡](な)くなった[人](ひと)の**[身元](みもと)**が[分](わ)かりました。",
+    "exampleVi": "Đã xác định được danh tính của người đã mất."
+  },
+  {
+    "word": "当人",
+    "example": "**[当人](とうにん)**に[直接](ちょくせつ)[聞](き)いてみましょう。",
+    "exampleVi": "Hãy hỏi trực tiếp đương sự xem."
+  },
+  {
+    "word": "痛ましい",
+    "example": "[子供](こども)が[巻](ま)き[込](こ)まれた**[痛](いた)ましい**[事故](じこ)でした。",
+    "exampleVi": "Đó là vụ tai nạn đau lòng liên quan đến trẻ em."
+  },
+  {
+    "word": "憤る",
+    "example": "[不当](ふとう)な[扱](あつか)いに**[憤](いきどお)りました**。",
+    "exampleVi": "Tôi phẫn nộ trước cách đối xử bất công."
+  },
+  {
+    "word": "見抜く",
+    "example": "[彼](かれ)の[嘘](うそ)を**[見抜](みぬ)きました**。",
+    "exampleVi": "Tôi đã nhìn thấu lời nói dối của anh ta."
+  },
+  {
+    "word": "究明",
+    "example": "[事故](じこ)の[原因](げんいん)を**[究明](きゅうめい)**します。",
+    "exampleVi": "Chúng tôi sẽ điều tra làm rõ nguyên nhân tai nạn."
+  },
+  {
+    "word": "合致",
+    "example": "[二人](ふたり)の[証言](しょうげん)が**[合致](がっち)**しました。",
+    "exampleVi": "Lời khai của hai người đã trùng khớp."
+  },
+  {
+    "word": "自首",
+    "example": "[犯人](はんにん)が[警察](けいさつ)に**[自首](じしゅ)**しました。",
+    "exampleVi": "Thủ phạm đã ra đầu thú với cảnh sát."
+  },
+  {
+    "word": "手抜き",
+    "example": "**[手抜](てぬ)き**[工事](こうじ)が[問題](もんだい)になりました。",
+    "exampleVi": "Việc thi công rút ruột đã trở thành vấn đề."
+  },
+  {
+    "word": "再現",
+    "example": "[事故](じこ)の[様子](ようす)を**[再現](さいげん)**しました。",
+    "exampleVi": "Đã tái hiện lại tình hình tai nạn."
+  },
+  {
+    "word": "賠償",
+    "example": "[会社](かいしゃ)に[損害](そんがい)**[賠償](ばいしょう)**を[求](もと)めました。",
+    "exampleVi": "Tôi đã yêu cầu công ty bồi thường thiệt hại."
+  },
+  {
+    "word": "再三",
+    "example": "**[再三](さいさん)**、[注意](ちゅうい)しましたが、[直](なお)りません。",
+    "exampleVi": "Tôi đã nhắc nhở nhiều lần nhưng vẫn không sửa."
+  },
+  {
+    "word": "後を絶たない",
+    "example": "[詐欺](さぎ)の[被害](ひがい)が**[後](あと)を[絶](た)ちません**。",
+    "exampleVi": "Thiệt hại do lừa đảo vẫn liên miên không dứt."
+  },
+  {
+    "word": "脅す",
+    "example": "[男](おとこ)にお[金](かね)を[出](だ)せと**[脅](おど)されました**。",
+    "exampleVi": "Tôi bị một người đàn ông đe dọa bắt đưa tiền."
+  },
+  {
+    "word": "不審",
+    "example": "**[不審](ふしん)**な[人](ひと)を[見](み)かけたら、[知](し)らせてください。",
+    "exampleVi": "Nếu thấy người đáng ngờ, xin hãy báo cho tôi."
+  },
+  {
+    "word": "手口",
+    "example": "[新](あたら)しい**[手口](てぐち)**の[詐欺](さぎ)が[増](ふ)えています。",
+    "exampleVi": "Các vụ lừa đảo với thủ đoạn mới đang tăng lên."
+  },
+  {
+    "word": "巧妙",
+    "example": "**[巧妙](こうみょう)**な[手口](てぐち)で[人](ひと)を[騙](だま)します。",
+    "exampleVi": "Chúng lừa người bằng thủ đoạn tinh vi."
+  },
+  {
+    "word": "偽造",
+    "example": "[書類](しょるい)を**[偽造](ぎぞう)**しました。",
+    "exampleVi": "Hắn đã làm giả giấy tờ."
+  },
+  {
+    "word": "もくろむ",
+    "example": "[彼](かれ)は[会社](かいしゃ)の[乗](の)っ[取](と)りを**もくろんで**います。",
+    "exampleVi": "Hắn đang toan tính chiếm đoạt công ty."
+  },
+  {
+    "word": "あくどい",
+    "example": "**あくどい**[商売](しょうばい)は[長続](ながつづ)きしません。",
+    "exampleVi": "Việc buôn bán gian xảo không kéo dài được lâu."
+  },
+  {
+    "word": "浅ましい",
+    "example": "[人](ひと)のお[金](かね)を[狙](ねら)うなんて**[浅](あさ)ましい**です。",
+    "exampleVi": "Nhắm vào tiền của người khác thật là đê tiện."
+  },
+  {
+    "word": "逃れる",
+    "example": "[責任](せきにん)から**[逃](のが)れる**ことはできません。",
+    "exampleVi": "Không thể trốn tránh trách nhiệm."
+  },
+  {
+    "word": "逃げ出す",
+    "example": "[犯人](はんにん)が[警察](けいさつ)から**[逃](に)げ[出](だ)しました**。",
+    "exampleVi": "Thủ phạm đã chạy trốn khỏi cảnh sát."
+  },
+  {
+    "word": "逃す",
+    "example": "チャンスを**[逃](のが)して**しまいました。",
+    "exampleVi": "Tôi đã bỏ lỡ cơ hội."
+  },
+  {
+    "word": "あがく",
+    "example": "**あがいても**、[結果](けっか)は[変](か)わりません。",
+    "exampleVi": "Dù có vùng vẫy thì kết quả cũng không thay đổi."
+  },
+  {
+    "word": "一連",
+    "example": "**[一連](いちれん)**の[事件](じけん)は[同](おな)じ[犯人](はんにん)の[仕業](しわざ)でした。",
+    "exampleVi": "Chuỗi vụ án đều là việc làm của cùng một thủ phạm."
+  },
+  {
+    "word": "根底",
+    "example": "[考](かんが)えの**[根底](こんてい)**に[愛](あい)があります。",
+    "exampleVi": "Tình yêu nằm ở gốc rễ của suy nghĩ."
+  },
+  {
+    "word": "同一",
+    "example": "[二](ふた)つは**[同一](どういつ)**の[人物](じんぶつ)です。",
+    "exampleVi": "Hai người đó là cùng một nhân vật."
+  },
+  {
+    "word": "真実",
+    "example": "**[真実](しんじつ)**を[話](はな)してください。",
+    "exampleVi": "Xin hãy nói sự thật."
+  },
+  {
+    "word": "真相",
+    "example": "[事件](じけん)の**[真相](しんそう)**は[分](わ)かりません。",
+    "exampleVi": "Chân tướng vụ án vẫn chưa rõ."
+  },
+  {
+    "word": "報じる",
+    "example": "[新聞](しんぶん)が[事件](じけん)を**[報](ほう)じました**。",
+    "exampleVi": "Tờ báo đã đưa tin về vụ án."
+  },
+  {
+    "word": "騒ぎ立てる",
+    "example": "[小](ちい)さなことで**[騒](さわ)ぎ[立](た)てないで**ください。",
+    "exampleVi": "Xin đừng làm ầm ĩ vì chuyện nhỏ."
+  },
+  {
+    "word": "揺るがす",
+    "example": "この[事件](じけん)は[社会](しゃかい)を**[揺](ゆ)るがしました**。",
+    "exampleVi": "Vụ việc này đã làm chấn động xã hội."
+  },
+  {
+    "word": "引き起こす",
+    "example": "[不注意](ふちゅうい)が[事故](じこ)を**[引](ひ)き[起](お)こしました**。",
+    "exampleVi": "Sự bất cẩn đã gây ra tai nạn."
+  },
+  {
+    "word": "さらわれる",
+    "example": "[子供](こども)が[誰](だれ)かに**さらわれました**。",
+    "exampleVi": "Đứa trẻ bị ai đó bắt cóc."
+  },
+  {
+    "word": "詐欺",
+    "example": "[電話](でんわ)**[詐欺](さぎ)**に[気](き)を[付](つ)けましょう。",
+    "exampleVi": "Hãy cảnh giác với lừa đảo qua điện thoại."
+  },
+  {
+    "word": "あげくの果て",
+    "example": "[長](なが)い[議論](ぎろん)の**あげくの[果](は)て**、[何](なに)も[決](き)まりませんでした。",
+    "exampleVi": "Sau một cuộc tranh luận dài, cuối cùng chẳng quyết định được gì."
+  },
+  {
+    "word": "推測",
+    "example": "これはただの**[推測](すいそく)**に[過](す)ぎません。",
+    "exampleVi": "Đây chỉ là phỏng đoán mà thôi."
+  },
+  {
+    "word": "断定",
+    "example": "[証拠](しょうこ)がないので、[犯人](はんにん)と**[断定](だんてい)**できません。",
+    "exampleVi": "Vì không có chứng cứ nên không thể kết luận là thủ phạm."
+  },
+  {
+    "word": "突き止める",
+    "example": "[事故](じこ)の[原因](げんいん)を**[突](つ)き[止](と)めました**。",
+    "exampleVi": "Tôi đã xác định được nguyên nhân tai nạn."
+  },
+  {
+    "word": "指差す",
+    "example": "[子供](こども)が[空](そら)を**[指差](ゆびさ)して**います。",
+    "exampleVi": "Đứa trẻ đang chỉ tay lên trời."
+  },
+  {
+    "word": "不当",
+    "example": "**[不当](ふとう)**な[扱](あつか)いを[受](う)けました。",
+    "exampleVi": "Tôi đã bị đối xử bất công."
+  },
+  {
+    "word": "ずさん",
+    "example": "**ずさん**な[管理](かんり)が[事故](じこ)の[原因](げんいん)でした。",
+    "exampleVi": "Việc quản lý cẩu thả là nguyên nhân của tai nạn."
+  },
+  {
+    "word": "手掛かり",
+    "example": "[事件](じけん)の**[手掛](てが)かり**が[見](み)つかりました。",
+    "exampleVi": "Đã tìm thấy manh mối của vụ án."
+  },
+  {
+    "word": "取り調べ",
+    "example": "[容疑者](ようぎしゃ)は[警察](けいさつ)で**[取](と)り[調](しら)べ**を[受](う)けました。",
+    "exampleVi": "Nghi phạm đã bị thẩm vấn ở đồn cảnh sát."
+  },
+  {
+    "word": "追い詰める",
+    "example": "[警察](けいさつ)は[犯人](はんにん)を**[追](お)い[詰](つ)めました**。",
+    "exampleVi": "Cảnh sát đã dồn thủ phạm vào chân tường."
+  },
+  {
+    "word": "行き詰まる",
+    "example": "[交渉](こうしょう)が**[行](い)き[詰](づ)まって**います。",
+    "exampleVi": "Cuộc đàm phán đang bế tắc."
+  },
+  {
+    "word": "裁く",
+    "example": "[裁判所](さいばんしょ)が[事件](じけん)を**[裁](さば)きました**。",
+    "exampleVi": "Tòa án đã xét xử vụ án."
+  },
+  {
+    "word": "有罪",
+    "example": "[彼](かれ)は**[有罪](ゆうざい)**の[判決](はんけつ)を[受](う)けました。",
+    "exampleVi": "Anh ta đã nhận bản án có tội."
+  },
+  {
+    "word": "もしくは",
+    "example": "[電話](でんわ)、**もしくは**メールで[連絡](れんらく)してください。",
+    "exampleVi": "Xin hãy liên lạc qua điện thoại hoặc email."
+  },
+  {
+    "word": "刑務所",
+    "example": "[彼](かれ)は**[刑務所](けいむしょ)**に[入](はい)りました。",
+    "exampleVi": "Anh ta đã vào nhà tù."
+  },
+  {
+    "word": "治安",
+    "example": "この[町](まち)は**[治安](ちあん)**がいいです。",
+    "exampleVi": "Thị trấn này an ninh tốt."
+  },
+  {
+    "word": "世論",
+    "example": "**[世論](よろん)**は[新](あたら)しい[法律](ほうりつ)に[反対](はんたい)しています。",
+    "exampleVi": "Dư luận đang phản đối đạo luật mới."
+  },
+  {
+    "word": "表向き",
+    "example": "**[表向](おもてむ)き**は[問題](もんだい)がないように[見](み)えます。",
+    "exampleVi": "Bề ngoài thì có vẻ không có vấn đề gì."
+  },
+  {
+    "word": "優位",
+    "example": "[試合](しあい)は[私](わたし)たちの**[優位](ゆうい)**で[進](すす)みました。",
+    "exampleVi": "Trận đấu diễn ra với lợi thế thuộc về chúng tôi."
+  },
+  {
+    "word": "ハンデ",
+    "example": "[強](つよ)い[人](ひと)に**ハンデ**を[付](つ)けて、[試合](しあい)をしました。",
+    "exampleVi": "Chúng tôi chấp thêm cho người mạnh rồi thi đấu."
+  },
+  {
+    "word": "格差",
+    "example": "[都市](とし)と[地方](ちほう)の**[格差](かくさ)**が[広](ひろ)がっています。",
+    "exampleVi": "Khoảng cách giữa thành thị và nông thôn đang rộng ra."
+  },
+  {
+    "word": "不服",
+    "example": "[判決](はんけつ)に**[不服](ふふく)**があり、[控訴](こうそ)しました。",
+    "exampleVi": "Vì không phục bản án nên tôi đã kháng cáo."
+  },
+  {
+    "word": "大々的",
+    "example": "[新](あたら)しい[商品](しょうひん)を**[大々的](だいだいてき)**に[宣伝](せんでん)しました。",
+    "exampleVi": "Họ đã quảng cáo rầm rộ sản phẩm mới."
+  },
+  {
+    "word": "誇大",
+    "example": "**[誇大](こだい)**[広告](こうこく)は[法律](ほうりつ)で[禁](きん)じられています。",
+    "exampleVi": "Quảng cáo phóng đại bị luật pháp cấm."
+  },
+  {
+    "word": "デマ",
+    "example": "ネットで**デマ**が[広](ひろ)まりました。",
+    "exampleVi": "Tin đồn nhảm đã lan rộng trên mạng."
+  },
+  {
+    "word": "速報",
+    "example": "[地震](じしん)の**[速報](そくほう)**が[流](なが)れました。",
+    "exampleVi": "Tin nhanh về động đất đã được phát đi."
+  },
+  {
+    "word": "行き渡る",
+    "example": "[情報](じょうほう)が[全国](ぜんこく)に**[行](い)き[渡](わた)りました**。",
+    "exampleVi": "Thông tin đã lan khắp cả nước."
+  },
+  {
+    "word": "アイデンティティー",
+    "example": "[留学](りゅうがく)して、[自分](じぶん)の**アイデンティティー**について[考](かんが)えました。",
+    "exampleVi": "Đi du học, tôi đã suy nghĩ về bản sắc của mình."
+  },
+  {
+    "word": "主体",
+    "example": "[学生](がくせい)が**[主体](しゅたい)**となって[活動](かつどう)します。",
+    "exampleVi": "Sinh viên sẽ làm chủ thể hoạt động."
+  },
+  {
+    "word": "貢献",
+    "example": "[彼](かれ)は[社会](しゃかい)に**[貢献](こうけん)**しています。",
+    "exampleVi": "Anh ấy đang cống hiến cho xã hội."
+  },
+  {
+    "word": "名誉",
+    "example": "[彼](かれ)の**[名誉](めいよ)**が[傷](きず)つけられました。",
+    "exampleVi": "Danh dự của anh ấy đã bị tổn thương."
+  },
+  {
+    "word": "及ぶ",
+    "example": "[被害](ひがい)は[広](ひろ)い[範囲](はんい)に**[及](およ)びました**。",
+    "exampleVi": "Thiệt hại đã lan ra phạm vi rộng."
+  },
+  {
+    "word": "恵む",
+    "example": "[貧](まず)しい[人](ひと)に[食](た)べ[物](もの)を**[恵](めぐ)みました**。",
+    "exampleVi": "Tôi đã ban đồ ăn cho người nghèo."
+  },
+  {
+    "word": "有する",
+    "example": "[彼](かれ)は[優](すぐ)れた[才能](さいのう)を**[有](ゆう)して**います。",
+    "exampleVi": "Anh ấy sở hữu tài năng xuất chúng."
+  },
+  {
+    "word": "出直す",
+    "example": "[今日](きょう)は[留守](るす)だったので、[明日](あした)また**[出直](でなお)します**。",
+    "exampleVi": "Hôm nay vắng nhà nên mai tôi sẽ quay lại."
+  },
+  {
+    "word": "カテゴリー",
+    "example": "[商品](しょうひん)を**カテゴリー**ごとに[分](わ)けました。",
+    "exampleVi": "Tôi đã phân loại sản phẩm theo từng hạng mục."
+  },
+  {
+    "word": "不穏",
+    "example": "[町](まち)に**[不穏](ふおん)**な[空気](くうき)が[流](なが)れています。",
+    "exampleVi": "Bầu không khí bất ổn đang lan trong thị trấn."
+  },
+  {
+    "word": "よどむ",
+    "example": "[川](かわ)の[水](みず)が**よどんで**います。",
+    "exampleVi": "Nước sông đang đọng lại."
+  },
+  {
+    "word": "案じる",
+    "example": "[母](はは)は[息子](むすこ)の[将来](しょうらい)を**[案](あん)じて**います。",
+    "exampleVi": "Mẹ đang lo lắng cho tương lai của con trai."
+  },
+  {
+    "word": "同感",
+    "example": "[私](わたし)もあなたの[意見](いけん)に**[同感](どうかん)**です。",
+    "exampleVi": "Tôi cũng đồng tình với ý kiến của bạn."
+  },
+  {
+    "word": "なあなあ",
+    "example": "**なあなあ**の[関係](かんけい)は[良](よ)くありません。",
+    "exampleVi": "Mối quan hệ xuề xòa không tốt."
+  },
+  {
+    "word": "露呈",
+    "example": "[問題](もんだい)が**[露呈](ろてい)**しました。",
+    "exampleVi": "Vấn đề đã bị phơi bày."
+  },
+  {
+    "word": "暗示",
+    "example": "[彼](かれ)の[言葉](ことば)は[別](わか)れを**[暗示](あんじ)**していました。",
+    "exampleVi": "Lời nói của anh ấy đã gợi ý về việc chia tay."
+  },
+  {
+    "word": "朗報",
+    "example": "**[朗報](ろうほう)**が[届](とど)きました。",
+    "exampleVi": "Tin vui đã đến."
+  },
+  {
+    "word": "出現",
+    "example": "[新](あたら)しいスターが**[出現](しゅつげん)**しました。",
+    "exampleVi": "Một ngôi sao mới đã xuất hiện."
+  },
+  {
+    "word": "特有",
+    "example": "[日本](にほん)**[特有](とくゆう)**の[文化](ぶんか)です。",
+    "exampleVi": "Đây là nền văn hóa đặc trưng của Nhật Bản."
+  },
+  {
+    "word": "予告",
+    "example": "[映画](えいが)の**[予告](よこく)**を[見](み)ました。",
+    "exampleVi": "Tôi đã xem đoạn giới thiệu của bộ phim."
+  },
+  {
+    "word": "施行",
+    "example": "[新](あたら)しい[法律](ほうりつ)が[来月](らいげつ)から**[施行](しこう)**されます。",
+    "exampleVi": "Đạo luật mới sẽ có hiệu lực từ tháng sau."
+  },
+  {
+    "word": "且つ",
+    "example": "[彼](かれ)は[優](やさ)しく、**[且](か)つ**[賢](かしこ)い[人](ひと)です。",
+    "exampleVi": "Anh ấy hiền lành và đồng thời thông minh."
+  },
+  {
+    "word": "内閣",
+    "example": "**[内閣](ないかく)**が[新](あたら)しい[政策](せいさく)を[発表](はっぴょう)しました。",
+    "exampleVi": "Nội các đã công bố chính sách mới."
+  },
+  {
+    "word": "体制",
+    "example": "[会社](かいしゃ)は[新](あたら)しい**[体制](たいせい)**で[出発](しゅっぱつ)しました。",
+    "exampleVi": "Công ty đã khởi hành với cơ cấu mới."
+  },
+  {
+    "word": "有力",
+    "example": "[彼](かれ)は[次](つぎ)の[市長](しちょう)の**[有力](ゆうりょく)**[候補](こうほ)です。",
+    "exampleVi": "Ông ấy là ứng viên sáng giá cho vị trí thị trưởng tiếp theo."
+  },
+  {
+    "word": "声明",
+    "example": "[首相](しゅしょう)が**[声明](せいめい)**を[発表](はっぴょう)しました。",
+    "exampleVi": "Thủ tướng đã công bố tuyên bố."
+  },
+  {
+    "word": "会見",
+    "example": "[社長](しゃちょう)が[記者](きしゃ)**[会見](かいけん)**を[開](ひら)きました。",
+    "exampleVi": "Giám đốc đã tổ chức họp báo."
+  },
+  {
+    "word": "意向",
+    "example": "[先方](せんぽう)の**[意向](いこう)**を[確認](かくにん)しました。",
+    "exampleVi": "Tôi đã xác nhận ý muốn của phía đối tác."
+  },
+  {
+    "word": "弁明",
+    "example": "[彼](かれ)は[遅刻](ちこく)の[理由](りゆう)を**[弁明](べんめい)**しました。",
+    "exampleVi": "Anh ấy đã biện minh về lý do đến muộn."
+  },
+  {
+    "word": "明かす",
+    "example": "[彼](かれ)は[秘密](ひみつ)を**[明](あ)かしました**。",
+    "exampleVi": "Anh ấy đã tiết lộ bí mật."
+  },
+  {
+    "word": "率いる",
+    "example": "[彼](かれ)はチームを**[率](ひき)いて**います。",
+    "exampleVi": "Anh ấy đang dẫn dắt đội."
+  },
+  {
+    "word": "結成",
+    "example": "[新](あたら)しいバンドを**[結成](けっせい)**しました。",
+    "exampleVi": "Chúng tôi đã thành lập một ban nhạc mới."
+  },
+  {
+    "word": "保守的",
+    "example": "[祖父](そふ)は**[保守的](ほしゅてき)**な[考](かんが)えを[持](も)っています。",
+    "exampleVi": "Ông tôi có suy nghĩ bảo thủ."
+  },
+  {
+    "word": "極端",
+    "example": "**[極端](きょくたん)**な[意見](いけん)は[避](さ)けましょう。",
+    "exampleVi": "Hãy tránh những ý kiến cực đoan."
+  },
+  {
+    "word": "賢明",
+    "example": "[今](いま)は[待](ま)つのが**[賢明](けんめい)**です。",
+    "exampleVi": "Bây giờ chờ đợi là khôn ngoan."
+  },
+  {
+    "word": "思惑",
+    "example": "[彼](かれ)には[彼](かれ)なりの**[思惑](おもわく)**があるようです。",
+    "exampleVi": "Có vẻ anh ta có toan tính riêng của mình."
+  },
+  {
+    "word": "うやむやな",
+    "example": "**うやむやな**[答](こた)えでは[困](こま)ります。",
+    "exampleVi": "Câu trả lời mập mờ thì tôi khó xử."
+  },
+  {
+    "word": "可決",
+    "example": "[法案](ほうあん)が**[可決](かけつ)**されました。",
+    "exampleVi": "Dự luật đã được thông qua."
+  },
+  {
+    "word": "押し切る",
+    "example": "[反対](はんたい)を**[押](お)し[切](き)って**、[計画](けいかく)を[進](すす)めました。",
+    "exampleVi": "Bất chấp phản đối, tôi đã tiến hành kế hoạch."
+  },
+  {
+    "word": "委ねる",
+    "example": "[判断](はんだん)を[専門家](せんもんか)に**[委](ゆだ)ねました**。",
+    "exampleVi": "Tôi đã giao việc phán đoán cho chuyên gia."
+  },
+  {
+    "word": "当選",
+    "example": "[彼](かれ)は[市長](しちょう)[選挙](せんきょ)で**[当選](とうせん)**しました。",
+    "exampleVi": "Ông ấy đã trúng cử trong cuộc bầu cử thị trưởng."
+  },
+  {
+    "word": "棄権",
+    "example": "[今回](こんかい)の[選挙](せんきょ)は**[棄権](きけん)**しました。",
+    "exampleVi": "Cuộc bầu cử lần này tôi đã bỏ phiếu trắng."
+  },
+  {
+    "word": "暴露",
+    "example": "[秘密](ひみつ)が**[暴露](ばくろ)**されました。",
+    "exampleVi": "Bí mật đã bị phơi bày."
+  },
+  {
+    "word": "欺く",
+    "example": "[人](ひと)を**[欺](あざむ)いて**はいけません。",
+    "exampleVi": "Không được lừa dối người khác."
+  },
+  {
+    "word": "遺憾",
+    "example": "[事故](じこ)が[起](お)きたことは**[遺憾](いかん)**です。",
+    "exampleVi": "Việc xảy ra tai nạn thật đáng tiếc."
+  },
+  {
+    "word": "賄賂",
+    "example": "**[賄賂](わいろ)**を[受](う)け[取](と)った[役人](やくにん)が[逮捕](たいほ)されました。",
+    "exampleVi": "Viên chức nhận hối lộ đã bị bắt."
+  },
+  {
+    "word": "背く",
+    "example": "[親](おや)の[期待](きたい)に**[背](そむ)いて**、[家](いえ)を[出](で)ました。",
+    "exampleVi": "Phản lại kỳ vọng của bố mẹ, tôi đã bỏ nhà đi."
+  },
+  {
+    "word": "過ち",
+    "example": "[若](わか)い[頃](ころ)の**[過](あやま)ち**を[反省](はんせい)しています。",
+    "exampleVi": "Tôi đang ăn năn về lỗi lầm thời trẻ."
+  },
+  {
+    "word": "狙う",
+    "example": "[猫](ねこ)が[鳥](とり)を**[狙](ねら)って**います。",
+    "exampleVi": "Con mèo đang nhắm vào con chim."
+  },
+  {
+    "word": "財政",
+    "example": "[国](くに)の**[財政](ざいせい)**は[厳](きび)しいです。",
+    "exampleVi": "Tài chính quốc gia đang khó khăn."
+  },
+  {
+    "word": "金融",
+    "example": "[銀行](ぎんこう)は**[金融](きんゆう)**[機関](きかん)の[一つ](ひとつ)です。",
+    "exampleVi": "Ngân hàng là một trong các tổ chức tài chính."
+  },
+  {
+    "word": "緩和",
+    "example": "[規制](きせい)を**[緩和](かんわ)**しました。",
+    "exampleVi": "Đã nới lỏng quy chế."
+  },
+  {
+    "word": "好転",
+    "example": "[景気](けいき)が**[好転](こうてん)**しました。",
+    "exampleVi": "Kinh tế đã chuyển biến tốt."
+  },
+  {
+    "word": "陥る",
+    "example": "[会社](かいしゃ)は[危機](きき)に**[陥](おちい)りました**。",
+    "exampleVi": "Công ty đã rơi vào khủng hoảng."
+  },
+  {
+    "word": "抑制",
+    "example": "[物価](ぶっか)の[上昇](じょうしょう)を**[抑制](よくせい)**します。",
+    "exampleVi": "Chúng tôi sẽ kiềm chế đà tăng của vật giá."
+  },
+  {
+    "word": "バブル",
+    "example": "**バブル**がはじけて、[景気](けいき)が[悪](わる)くなりました。",
+    "exampleVi": "Bong bóng vỡ nên kinh tế trở nên xấu đi."
+  },
+  {
+    "word": "見通し",
+    "example": "[景気](けいき)の**[見通](みとお)し**は[明](あか)るいです。",
+    "exampleVi": "Triển vọng của nền kinh tế sáng sủa."
+  },
+  {
+    "word": "兆し",
+    "example": "[春](はる)の**[兆](きざ)し**が[見](み)えてきました。",
+    "exampleVi": "Đã thấy dấu hiệu của mùa xuân."
+  },
+  {
+    "word": "対策",
+    "example": "[台風](たいふう)の**[対策](たいさく)**を[立](た)てました。",
+    "exampleVi": "Tôi đã lập biện pháp đối phó với bão."
+  },
+  {
+    "word": "操る",
+    "example": "[彼](かれ)は[機械](きかい)を[自由](じゆう)に**[操](あやつ)ります**。",
+    "exampleVi": "Anh ấy điều khiển máy móc một cách tự do."
+  },
+  {
+    "word": "ばらまく",
+    "example": "[選挙](せんきょ)の[前](まえ)にお[金](かね)を**ばらまく**[政治家](せいじか)がいました。",
+    "exampleVi": "Có chính trị gia rải tiền trước bầu cử."
+  },
+  {
+    "word": "公表",
+    "example": "[調査](ちょうさ)の[結果](けっか)を**[公表](こうひょう)**しました。",
+    "exampleVi": "Đã công bố kết quả điều tra."
+  },
+  {
+    "word": "推移",
+    "example": "[売](う)り[上](あ)げの**[推移](すいい)**をグラフにしました。",
+    "exampleVi": "Tôi đã lập biểu đồ về diễn biến doanh thu."
+  },
+  {
+    "word": "上昇",
+    "example": "[気温](きおん)が**[上昇](じょうしょう)**しています。",
+    "exampleVi": "Nhiệt độ đang tăng lên."
+  },
+  {
+    "word": "飛躍的",
+    "example": "[技術](ぎじゅつ)が**[飛躍的](ひやくてき)**に[進歩](しんぽ)しました。",
+    "exampleVi": "Công nghệ đã tiến bộ nhảy vọt."
+  },
+  {
+    "word": "遂げる",
+    "example": "[彼](かれ)は[目的](もくてき)を**[遂](と)げました**。",
+    "exampleVi": "Anh ấy đã đạt được mục đích."
+  },
+  {
+    "word": "運用",
+    "example": "[資金](しきん)を**[運用](うんよう)**しています。",
+    "exampleVi": "Tôi đang vận dụng nguồn vốn để đầu tư."
+  },
+  {
+    "word": "融資",
+    "example": "[銀行](ぎんこう)から**[融資](ゆうし)**を[受](う)けました。",
+    "exampleVi": "Tôi đã nhận khoản cho vay từ ngân hàng."
+  },
+  {
+    "word": "外貨",
+    "example": "**[外貨](がいか)**[預金](よきん)をしています。",
+    "exampleVi": "Tôi đang gửi tiết kiệm bằng ngoại tệ."
+  },
+  {
+    "word": "有数",
+    "example": "[日本](にほん)は[世界](せかい)**[有数](ゆうすう)**の[経済](けいざい)[大国](たいこく)です。",
+    "exampleVi": "Nhật Bản là cường quốc kinh tế hàng đầu thế giới."
+  },
+  {
+    "word": "流通",
+    "example": "[商品](しょうひん)の**[流通](りゅうつう)**が[遅](おく)れています。",
+    "exampleVi": "Việc lưu thông hàng hóa đang bị chậm."
+  },
+  {
+    "word": "頭打ち",
+    "example": "[売](う)り[上](あ)げが**[頭打](あたまう)ち**になりました。",
+    "exampleVi": "Doanh thu đã chững lại ở đỉnh."
+  },
+  {
+    "word": "乗っ取る",
+    "example": "[会社](かいしゃ)が[他](ほか)の[会社](かいしゃ)に**[乗](の)っ[取](と)られました**。",
+    "exampleVi": "Công ty đã bị công ty khác chiếm đoạt."
+  },
+  {
+    "word": "明白",
+    "example": "[彼](かれ)が[悪](わる)いのは**[明白](めいはく)**です。",
+    "exampleVi": "Rõ ràng là anh ta có lỗi."
+  },
+  {
+    "word": "交わす",
+    "example": "[二人](ふたり)は[挨拶](あいさつ)を**[交](か)わしました**。",
+    "exampleVi": "Hai người đã trao nhau lời chào."
+  },
+  {
+    "word": "有益",
+    "example": "この[本](ほん)はとても**[有益](ゆうえき)**です。",
+    "exampleVi": "Cuốn sách này rất hữu ích."
+  },
+  {
+    "word": "空白",
+    "example": "[予定](よてい)の**[空白](くうはく)**を[埋](う)めました。",
+    "exampleVi": "Tôi đã lấp khoảng trống trong lịch trình."
+  },
+  {
+    "word": "ひいては",
+    "example": "[努力](どりょく)は[自分](じぶん)のため、**ひいては**[家族](かぞく)のためにもなります。",
+    "exampleVi": "Nỗ lực là vì bản thân, và dẫn đến cả vì gia đình."
+  }
 ]

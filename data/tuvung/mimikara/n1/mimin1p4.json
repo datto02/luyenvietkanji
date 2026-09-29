@@ -1,67 +1,328 @@
 [
-  "内心",
-  "やる気",
-  "優越感",
-  "誇り",
-  "決断",
-  "苦心",
-  "嫉妬",
-  "絶望",
-  "痛感",
-  "先入観",
-  "過ち",
-  "欲",
-  "恥",
-  "罰",
-  "念",
-  "本音",
-  "弁解",
-  "沈黙",
-  "没頭",
-  "専念",
-  "充実",
-  "自立",
-  "相性",
-  "共感",
-  "協調",
-  "共同",
-  "激励",
-  "支援",
-  "指摘",
-  "了解",
-  "承諾",
-  "嫌がらせ",
-  "妨害",
-  "説得",
-  "理屈",
-  "論理",
-  "推理",
-  "根拠",
-  "誇張",
-  "暗示",
-  "錯覚",
-  "視野",
-  "空白",
-  "接触",
-  "交渉",
-  "妥協",
-  "更新",
-  "精算",
-  "損害",
-  "利害",
-  "光景",
-  "報道",
-  "破壊",
-  "破棄",
-  "対応",
-  "対処",
-  "取り引き",
-  "独占",
-  "進出",
-  "進化",
-  "一切",
-  "加減",
-  "削減",
-  "余分",
-  "余地"
+  {
+    "word": "内心",
+    "example": "**[内心](ないしん)**では[喜](よろこ)んでいました。",
+    "exampleVi": "Trong lòng tôi đã rất vui."
+  },
+  {
+    "word": "やる気",
+    "example": "[今日](きょう)は**やる[気](き)**が[出](で)ません。",
+    "exampleVi": "Hôm nay tôi không có động lực."
+  },
+  {
+    "word": "優越感",
+    "example": "[彼](かれ)は[友達](ともだち)に**[優越感](ゆうえつかん)**を[持](も)っています。",
+    "exampleVi": "Anh ta có cảm giác hơn người so với bạn bè."
+  },
+  {
+    "word": "誇り",
+    "example": "[彼](かれ)は[国](くに)の**[誇](ほこ)り**です。",
+    "exampleVi": "Anh ấy là niềm tự hào của đất nước."
+  },
+  {
+    "word": "決断",
+    "example": "[彼](かれ)は[大](おお)きな**[決断](けつだん)**をしました。",
+    "exampleVi": "Anh ấy đã đưa ra quyết định lớn."
+  },
+  {
+    "word": "苦心",
+    "meaning": "khổ tâm, nhọc công",
+    "example": "[長年](ながねん)、**[苦心](くしん)**して[研究](けんきゅう)しました。",
+    "exampleVi": "Suốt nhiều năm, tôi đã nhọc công nghiên cứu."
+  },
+  {
+    "word": "嫉妬",
+    "example": "[友人](ゆうじん)の[成功](せいこう)に**[嫉妬](しっと)**しました。",
+    "exampleVi": "Tôi đã ghen tị với thành công của bạn."
+  },
+  {
+    "word": "絶望",
+    "example": "[彼](かれ)は[試験](しけん)に[落](お)ちて**[絶望](ぜつぼう)**しました。",
+    "exampleVi": "Anh ấy trượt kỳ thi nên đã tuyệt vọng."
+  },
+  {
+    "word": "痛感",
+    "example": "[自分](じぶん)の[力](ちから)の[不足](ふそく)を**[痛感](つうかん)**しました。",
+    "exampleVi": "Tôi thấm thía sự thiếu sót năng lực của mình."
+  },
+  {
+    "word": "先入観",
+    "example": "**[先入観](せんにゅうかん)**で[人](ひと)を[判断](はんだん)してはいけません。",
+    "exampleVi": "Không được phán đoán người khác bằng thành kiến."
+  },
+  {
+    "word": "過ち",
+    "example": "[若](わか)い[頃](ころ)の**[過](あやま)ち**を[認](みと)めました。",
+    "exampleVi": "Tôi đã nhận lỗi lầm thời trẻ."
+  },
+  {
+    "word": "欲",
+    "example": "[彼](かれ)は**[欲](よく)**がありません。",
+    "exampleVi": "Anh ấy không có ham muốn."
+  },
+  {
+    "word": "恥",
+    "example": "[知](し)らないことは**[恥](はじ)**ではありません。",
+    "exampleVi": "Không biết điều gì đó không phải là xấu hổ."
+  },
+  {
+    "word": "罰",
+    "example": "[約束](やくそく)を[破](やぶ)ると**[罰](ばつ)**があります。",
+    "exampleVi": "Nếu phá vỡ lời hứa sẽ bị phạt."
+  },
+  {
+    "word": "念",
+    "example": "**[念](ねん)**のため、もう[一度](いちど)[確認](かくにん)します。",
+    "exampleVi": "Để đề phòng, tôi sẽ xác nhận thêm lần nữa."
+  },
+  {
+    "word": "本音",
+    "example": "**[本音](ほんね)**を[話](はな)してください。",
+    "exampleVi": "Xin hãy nói ý thật."
+  },
+  {
+    "word": "弁解",
+    "example": "[彼](かれ)は[遅刻](ちこく)の**[弁解](べんかい)**をしました。",
+    "exampleVi": "Anh ấy bào chữa cho việc đi muộn."
+  },
+  {
+    "word": "沈黙",
+    "example": "[彼](かれ)は**[沈黙](ちんもく)**を[守](まも)りました。",
+    "exampleVi": "Anh ấy giữ im lặng."
+  },
+  {
+    "word": "没頭",
+    "example": "[彼](かれ)は[研究](けんきゅう)に**[没頭](ぼっとう)**しています。",
+    "exampleVi": "Anh ấy đang đắm mình vào nghiên cứu."
+  },
+  {
+    "word": "専念",
+    "example": "[勉強](べんきょう)に**[専念](せんねん)**しました。",
+    "exampleVi": "Tôi đã chuyên tâm vào việc học."
+  },
+  {
+    "word": "充実",
+    "example": "この[図書館](としょかん)は[設備](せつび)が**[充実](じゅうじつ)**しています。",
+    "exampleVi": "Thư viện này có trang thiết bị đầy đủ."
+  },
+  {
+    "word": "自立",
+    "example": "[親](おや)から**[自立](じりつ)**したいです。",
+    "exampleVi": "Tôi muốn tự lập khỏi bố mẹ."
+  },
+  {
+    "word": "相性",
+    "example": "[二人](ふたり)は**[相性](あいしょう)**がいいです。",
+    "exampleVi": "Hai người rất hợp nhau."
+  },
+  {
+    "word": "共感",
+    "example": "[彼](かれ)の[意見](いけん)に**[共感](きょうかん)**しました。",
+    "exampleVi": "Tôi đã đồng cảm với ý kiến của anh ấy."
+  },
+  {
+    "word": "協調",
+    "example": "チームの**[協調](きょうちょう)**が[大切](たいせつ)です。",
+    "exampleVi": "Sự hợp tác của đội là quan trọng."
+  },
+  {
+    "word": "共同",
+    "example": "[三人](さんにん)で**[共同](きょうどう)**で[研究](けんきゅう)しました。",
+    "exampleVi": "Ba người đã cùng nhau nghiên cứu chung."
+  },
+  {
+    "word": "激励",
+    "example": "[試合](しあい)の[前](まえ)に[選手](せんしゅ)を**[激励](げきれい)**しました。",
+    "exampleVi": "Trước trận đấu tôi đã động viên các cầu thủ."
+  },
+  {
+    "word": "支援",
+    "example": "[被災地](ひさいち)を**[支援](しえん)**します。",
+    "exampleVi": "Chúng tôi hỗ trợ vùng bị thiên tai."
+  },
+  {
+    "word": "指摘",
+    "example": "[間違](まちが)いを**[指摘](してき)**されました。",
+    "exampleVi": "Tôi bị chỉ ra chỗ sai."
+  },
+  {
+    "word": "了解",
+    "example": "[計画](けいかく)に**[了解](りょうかい)**しました。",
+    "exampleVi": "Tôi đã đồng ý với kế hoạch."
+  },
+  {
+    "word": "承諾",
+    "example": "[彼](かれ)は[私](わたし)の[頼](たの)みを**[承諾](しょうだく)**しました。",
+    "exampleVi": "Anh ấy đã nhận lời nhờ của tôi."
+  },
+  {
+    "word": "嫌がらせ",
+    "example": "[近所](きんじょ)の[人](ひと)に**[嫌](いや)がらせ**をされました。",
+    "exampleVi": "Tôi bị người hàng xóm quấy nhiễu."
+  },
+  {
+    "word": "妨害",
+    "example": "[工事](こうじ)を**[妨害](ぼうがい)**してはいけません。",
+    "exampleVi": "Không được cản trở công trình."
+  },
+  {
+    "word": "説得",
+    "example": "[彼](かれ)を**[説得](せっとく)**しましたが、[無理](むり)でした。",
+    "exampleVi": "Tôi đã thuyết phục anh ấy nhưng không được."
+  },
+  {
+    "word": "理屈",
+    "example": "[彼](かれ)は**[理屈](りくつ)**ばかり[言](い)います。",
+    "exampleVi": "Anh ấy toàn nói lý lẽ."
+  },
+  {
+    "word": "論理",
+    "example": "[彼](かれ)の[話](はなし)には**[論理](ろんり)**がありません。",
+    "exampleVi": "Câu chuyện của anh ta không có logic."
+  },
+  {
+    "word": "推理",
+    "example": "[名探偵](めいたんてい)が**[推理](すいり)**して[犯人](はんにん)を[当](あ)てました。",
+    "exampleVi": "Thám tử lừng danh đã suy luận và đoán ra thủ phạm."
+  },
+  {
+    "word": "根拠",
+    "example": "[意見](いけん)の**[根拠](こんきょ)**を[教](おし)えてください。",
+    "exampleVi": "Xin cho biết căn cứ của ý kiến đó."
+  },
+  {
+    "word": "誇張",
+    "example": "[広告](こうこく)の[表現](ひょうげん)が**[誇張](こちょう)**されています。",
+    "exampleVi": "Cách diễn đạt của quảng cáo bị khoa trương."
+  },
+  {
+    "word": "暗示",
+    "example": "[彼](かれ)の[言葉](ことば)は[辞](や)めることを**[暗示](あんじ)**しています。",
+    "exampleVi": "Lời anh ấy gợi ý việc nghỉ việc."
+  },
+  {
+    "word": "錯覚",
+    "example": "[夢](ゆめ)かと**[錯覚](さっかく)**しました。",
+    "exampleVi": "Tôi tưởng nhầm là mơ."
+  },
+  {
+    "word": "視野",
+    "example": "[留学](りゅうがく)して、**[視野](しや)**が[広](ひろ)がりました。",
+    "exampleVi": "Đi du học, tầm nhìn của tôi đã mở rộng."
+  },
+  {
+    "word": "空白",
+    "example": "[記憶](きおく)に**[空白](くうはく)**があります。",
+    "exampleVi": "Ký ức của tôi có khoảng trống."
+  },
+  {
+    "word": "接触",
+    "example": "[車](くるま)と[自転車](じてんしゃ)が**[接触](せっしょく)**しました。",
+    "exampleVi": "Xe hơi và xe đạp đã va chạm."
+  },
+  {
+    "word": "交渉",
+    "example": "[会社](かいしゃ)と[給料](きゅうりょう)を**[交渉](こうしょう)**しました。",
+    "exampleVi": "Tôi đã đàm phán lương với công ty."
+  },
+  {
+    "word": "妥協",
+    "example": "お[互](たが)いに**[妥協](だきょう)**して、[決](き)めました。",
+    "exampleVi": "Hai bên đã thỏa hiệp và quyết định."
+  },
+  {
+    "word": "更新",
+    "example": "パスポートを**[更新](こうしん)**しました。",
+    "exampleVi": "Tôi đã gia hạn hộ chiếu."
+  },
+  {
+    "word": "精算",
+    "example": "[出張](しゅっちょう)の[費用](ひよう)を**[精算](せいさん)**しました。",
+    "exampleVi": "Tôi đã thanh toán lại chi phí công tác."
+  },
+  {
+    "word": "損害",
+    "example": "[火事](かじ)で[大](おお)きな**[損害](そんがい)**が[出](で)ました。",
+    "exampleVi": "Vụ hỏa hoạn gây thiệt hại lớn."
+  },
+  {
+    "word": "利害",
+    "example": "[両者](りょうしゃ)の**[利害](りがい)**を[考](かんが)えて[決](き)めましょう。",
+    "exampleVi": "Hãy cân nhắc lợi hại của cả hai bên rồi quyết định."
+  },
+  {
+    "word": "光景",
+    "example": "[美](うつく)しい**[光景](こうけい)**に[驚](おどろ)きました。",
+    "exampleVi": "Tôi ngạc nhiên trước quang cảnh tươi đẹp."
+  },
+  {
+    "word": "報道",
+    "example": "[事件](じけん)が**[報道](ほうどう)**されました。",
+    "exampleVi": "Vụ việc đã được đưa tin."
+  },
+  {
+    "word": "破壊",
+    "example": "[自然](しぜん)を**[破壊](はかい)**してはいけません。",
+    "exampleVi": "Không được phá hoại thiên nhiên."
+  },
+  {
+    "word": "破棄",
+    "example": "[契約](けいやく)を**[破棄](はき)**しました。",
+    "exampleVi": "Đã hủy bỏ hợp đồng."
+  },
+  {
+    "word": "対応",
+    "example": "お[客様](きゃくさま)の[質問](しつもん)に**[対応](たいおう)**しました。",
+    "exampleVi": "Tôi đã ứng đáp câu hỏi của khách."
+  },
+  {
+    "word": "対処",
+    "example": "[緊急](きんきゅう)の[事態](じたい)に**[対処](たいしょ)**しました。",
+    "exampleVi": "Tôi đã đối phó với tình huống khẩn cấp."
+  },
+  {
+    "word": "取り引き",
+    "example": "[銀行](ぎんこう)と**[取](と)り[引](ひ)き**があります。",
+    "exampleVi": "Tôi có giao dịch với ngân hàng."
+  },
+  {
+    "word": "独占",
+    "example": "[一社](いっしゃ)が[市場](しじょう)を**[独占](どくせん)**しています。",
+    "exampleVi": "Một công ty đang độc chiếm thị trường."
+  },
+  {
+    "word": "進出",
+    "example": "[会社](かいしゃ)は[海外](かいがい)に**[進出](しんしゅつ)**しました。",
+    "exampleVi": "Công ty đã tiến ra nước ngoài."
+  },
+  {
+    "word": "進化",
+    "example": "[生物](せいぶつ)は**[進化](しんか)**します。",
+    "exampleVi": "Sinh vật tiến hóa."
+  },
+  {
+    "word": "一切",
+    "example": "[仕事](しごと)の[話](はなし)は**[一切](いっさい)**しません。",
+    "exampleVi": "Tôi hoàn toàn không nói chuyện công việc."
+  },
+  {
+    "word": "加減",
+    "example": "お[湯](ゆ)の**[加減](かげん)**を[見](み)てください。",
+    "exampleVi": "Xin hãy xem độ nóng của nước."
+  },
+  {
+    "word": "削減",
+    "example": "ゴミの[量](りょう)を**[削減](さくげん)**します。",
+    "exampleVi": "Chúng tôi cắt giảm lượng rác."
+  },
+  {
+    "word": "余分",
+    "example": "**[余分](よぶん)**な[荷物](にもつ)は[持](も)って[行](い)きません。",
+    "exampleVi": "Tôi không mang theo hành lý thừa."
+  },
+  {
+    "word": "余地",
+    "example": "この[部屋](へや)にはもう[家具](かぐ)を[置](お)く**[余地](よち)**がありません。",
+    "exampleVi": "Căn phòng này không còn chỗ trống để đặt thêm đồ đạc."
+  }
 ]

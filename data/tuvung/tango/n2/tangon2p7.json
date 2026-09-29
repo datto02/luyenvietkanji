@@ -1,102 +1,502 @@
 [
-  "競技",
-  "競う",
-  "戦う",
-  "勝負",
-  "勝敗",
-  "勝利",
-  "破る",
-  "やっつける",
-  "敗れる",
-  "攻める",
-  "逆転",
-  "開会",
-  "中断",
-  "延長",
-  "勇ましい",
-  "勢い",
-  "さすが",
-  "観客",
-  "敵",
-  "グラウンド",
-  "順位",
-  "トレーナー",
-  "指導",
-  "取り入れる",
-  "ハード",
-  "通用",
-  "技",
-  "今に",
-  "格好",
-  "持ち物",
-  "身につける",
-  "センス",
-  "ダサい",
-  "いまひとつ",
-  "スタイル",
-  "足元",
-  "ウエスト",
-  "見た目",
-  "人目",
-  "色彩",
-  "華やか",
-  "鮮やか",
-  "統一",
-  "フリーサイズ",
-  "ぶかぶか",
-  "生地",
-  "綿",
-  "オーダーメイド",
-  "サングラス",
-  "ボタンが取れる",
-  "浴衣",
-  "イベント",
-  "アイドル",
-  "ステージ",
-  "興奮",
-  "続々",
-  "演劇",
-  "劇場",
-  "役者",
-  "主役",
-  "セリフ",
-  "演技",
-  "オーケストラ",
-  "リズム",
-  "鑑賞",
-  "芸術家",
-  "監督",
-  "あらすじ",
-  "ありふれた",
-  "ばかばかしい",
-  "退屈",
-  "人物",
-  "場面",
-  "展開",
-  "テンポ",
-  "評判",
-  "評価",
-  "感想",
-  "賞",
-  "書物",
-  "絵本",
-  "作品",
-  "著者",
-  "書き手",
-  "ペンネーム",
-  "主人公",
-  "ロマン",
-  "伝記",
-  "人生",
-  "神話",
-  "中世",
-  "文明",
-  "忠実",
-  "奇妙",
-  "背景",
-  "実際",
-  "文句",
-  "果たして",
-  "発想",
-  "由来"
+  {
+    "word": "競技",
+    "example": "オリンピックではいろいろな**[競技](きょうぎ)**が[行](おこな)われます。",
+    "exampleVi": "Tại Olympic có nhiều môn thi đấu được tổ chức."
+  },
+  {
+    "word": "競う",
+    "example": "[選手](せんしゅ)たちが[速](はや)さを**[競](きそ)って**います。",
+    "exampleVi": "Các vận động viên đang tranh đua về tốc độ."
+  },
+  {
+    "word": "戦う",
+    "example": "[二](ふた)つのチームが[優勝](ゆうしょう)をかけて**[戦](たたか)います**。",
+    "exampleVi": "Hai đội sẽ thi đấu để tranh chức vô địch."
+  },
+  {
+    "word": "勝負",
+    "example": "[今日](きょう)の[試合](しあい)は[最後](さいご)まで**[勝負](しょうぶ)**が[分](わ)かりませんでした。",
+    "exampleVi": "Trận hôm nay cho đến phút cuối vẫn chưa biết thắng thua."
+  },
+  {
+    "word": "勝敗",
+    "example": "[試合](しあい)の**[勝敗](しょうはい)**には[運](うん)も[関係](かんけい)します。",
+    "exampleVi": "Thắng bại của trận đấu cũng liên quan đến vận may."
+  },
+  {
+    "word": "勝利",
+    "example": "チームは[決勝](けっしょう)で**[勝利](しょうり)**しました。",
+    "exampleVi": "Đội đã chiến thắng ở trận chung kết."
+  },
+  {
+    "word": "破る",
+    "example": "[彼](かれ)は[世界](せかい)[記録](きろく)を**[破](やぶ)りました**。",
+    "exampleVi": "Anh ấy đã phá kỷ lục thế giới."
+  },
+  {
+    "word": "やっつける",
+    "example": "[強](つよ)い[相手](あいて)を**やっつけて**、[優勝](ゆうしょう)しました。",
+    "exampleVi": "Tôi đã hạ gục đối thủ mạnh và giành chức vô địch."
+  },
+  {
+    "word": "敗れる",
+    "example": "[私](わたし)たちは[決勝](けっしょう)で**[敗](やぶ)れました**。",
+    "exampleVi": "Chúng tôi đã thua ở trận chung kết."
+  },
+  {
+    "word": "攻める",
+    "example": "[相手](あいて)のゴールを[激](はげ)しく**[攻](せ)めました**。",
+    "exampleVi": "Chúng tôi đã tấn công dữ dội vào khung thành đối phương."
+  },
+  {
+    "word": "逆転",
+    "example": "[最後](さいご)の[五分](ごふん)で**[逆転](ぎゃくてん)**しました。",
+    "exampleVi": "Trong năm phút cuối, chúng tôi đã lội ngược dòng."
+  },
+  {
+    "word": "開会",
+    "example": "**[開会](かいかい)**[式](しき)は[八時](はちじ)に[始](はじ)まります。",
+    "exampleVi": "Lễ khai mạc bắt đầu lúc tám giờ."
+  },
+  {
+    "word": "中断",
+    "example": "[雨](あめ)のため、[試合](しあい)が**[中断](ちゅうだん)**されました。",
+    "exampleVi": "Vì mưa nên trận đấu bị gián đoạn."
+  },
+  {
+    "word": "延長",
+    "example": "[試合](しあい)は**[延長](えんちょう)**になりました。",
+    "exampleVi": "Trận đấu phải kéo dài thêm giờ."
+  },
+  {
+    "word": "勇ましい",
+    "example": "[兵士](へいし)たちは**[勇](いさ)ましく**[戦](たたか)いました。",
+    "exampleVi": "Các binh sĩ đã chiến đấu dũng cảm."
+  },
+  {
+    "word": "勢い",
+    "example": "[新](あたら)しいチームは**[勢](いきお)い**があります。",
+    "exampleVi": "Đội mới đang có đà, có khí thế."
+  },
+  {
+    "word": "さすが",
+    "example": "**さすが**プロですね、とても[上手](じょうず)です。",
+    "exampleVi": "Quả đúng là dân chuyên nghiệp, giỏi thật."
+  },
+  {
+    "word": "観客",
+    "example": "**[観客](かんきゃく)**が[大](おお)きな[拍手](はくしゅ)を[送](おく)りました。",
+    "exampleVi": "Khán giả đã dành những tràng pháo tay lớn."
+  },
+  {
+    "word": "敵",
+    "example": "[彼](かれ)は[私](わたし)の**[敵](てき)**ではありません。",
+    "exampleVi": "Anh ấy không phải là kẻ thù của tôi."
+  },
+  {
+    "word": "グラウンド",
+    "example": "[子供](こども)たちが**グラウンド**で[遊](あそ)んでいます。",
+    "exampleVi": "Bọn trẻ đang chơi ở sân vận động."
+  },
+  {
+    "word": "順位",
+    "example": "[今回](こんかい)の[大会](たいかい)で[私](わたし)の**[順位](じゅんい)**は[三位](さんい)でした。",
+    "exampleVi": "Ở giải đấu lần này, thứ hạng của tôi là hạng ba."
+  },
+  {
+    "word": "トレーナー",
+    "example": "[毎日](まいにち)、**トレーナー**と[一緒](いっしょ)に[練習](れんしゅう)しています。",
+    "exampleVi": "Mỗi ngày tôi tập luyện cùng huấn luyện viên."
+  },
+  {
+    "word": "指導",
+    "example": "[先輩](せんぱい)に[丁寧](ていねい)に**[指導](しどう)**してもらいました。",
+    "exampleVi": "Tôi đã được tiền bối hướng dẫn tận tình."
+  },
+  {
+    "word": "取り入れる",
+    "example": "[新](あたら)しい[方法](ほうほう)を[練習](れんしゅう)に**[取](と)り[入](い)れました**。",
+    "exampleVi": "Tôi đã đưa phương pháp mới vào buổi luyện tập."
+  },
+  {
+    "word": "ハード",
+    "example": "[毎日](まいにち)**ハード**な[練習](れんしゅう)が[続](つづ)いています。",
+    "exampleVi": "Ngày nào cũng tiếp diễn những buổi tập vất vả."
+  },
+  {
+    "word": "通用",
+    "example": "[世界](せかい)では[私](わたし)の[力](ちから)はまだ**[通用](つうよう)**しません。",
+    "exampleVi": "Trên thế giới, năng lực của tôi vẫn chưa được chấp nhận (chưa đủ tầm)."
+  },
+  {
+    "word": "技",
+    "example": "[彼](かれ)は[柔道](じゅうどう)の**[技](わざ)**が[上手](じょうず)です。",
+    "exampleVi": "Anh ấy giỏi các kỹ thuật judo."
+  },
+  {
+    "word": "今に",
+    "example": "[彼](かれ)は**[今](いま)に**[有名](ゆうめい)な[選手](せんしゅ)になるでしょう。",
+    "exampleVi": "Chẳng mấy chốc anh ấy sẽ trở thành một vận động viên nổi tiếng."
+  },
+  {
+    "word": "格好",
+    "example": "[変](へん)な**[格好](かっこう)**で[外](そと)に[出](で)たくありません。",
+    "exampleVi": "Tôi không muốn ra ngoài với dáng vẻ kỳ cục."
+  },
+  {
+    "word": "持ち物",
+    "example": "[旅行](りょこう)の**[持](も)ち[物](もの)**を[確認](かくにん)しました。",
+    "exampleVi": "Tôi đã kiểm tra đồ mang theo cho chuyến đi."
+  },
+  {
+    "word": "身につける",
+    "example": "[大切](たいせつ)な[物](もの)は[常](つね)に**[身](み)につけて**いましょう。",
+    "exampleVi": "Đồ quan trọng nên luôn mang theo bên người."
+  },
+  {
+    "word": "センス",
+    "example": "[彼女](かのじょ)は[服](ふく)の**センス**がいいです。",
+    "exampleVi": "Cô ấy có gu ăn mặc tốt."
+  },
+  {
+    "word": "ダサい",
+    "example": "この[服](ふく)は[少](すこ)し**ダサい**と[思](おも)います。",
+    "exampleVi": "Tôi thấy bộ đồ này hơi quê mùa."
+  },
+  {
+    "word": "いまひとつ",
+    "example": "この[映画](えいが)は**いまひとつ**[面白](おもしろ)くなかったです。",
+    "exampleVi": "Bộ phim này không thú vị lắm."
+  },
+  {
+    "word": "スタイル",
+    "example": "[自分](じぶん)の**スタイル**を[大切](たいせつ)にしています。",
+    "exampleVi": "Tôi coi trọng phong cách của riêng mình."
+  },
+  {
+    "word": "足元",
+    "example": "[暗](くら)いので、**[足元](あしもと)**に[気](き)を[付](つ)けてください。",
+    "exampleVi": "Trời tối nên xin hãy chú ý dưới chân."
+  },
+  {
+    "word": "ウエスト",
+    "example": "ズボンの**ウエスト**が[少](すこ)しきつくなりました。",
+    "exampleVi": "Vòng eo quần hơi chật đi."
+  },
+  {
+    "word": "見た目",
+    "example": "[人](ひと)を**[見](み)た[目](め)**だけで[判断](はんだん)してはいけません。",
+    "exampleVi": "Không được phán đoán người khác chỉ qua vẻ bề ngoài."
+  },
+  {
+    "word": "人目",
+    "example": "**[人目](ひとめ)**を[気](き)にして、[小](ちい)さな[声](こえ)で[話](はな)しました。",
+    "exampleVi": "Vì để ý ánh mắt người khác, tôi đã nói nhỏ tiếng."
+  },
+  {
+    "word": "色彩",
+    "example": "この[絵](え)は**[色彩](しきさい)**が[豊](ゆた)かです。",
+    "exampleVi": "Bức tranh này có màu sắc phong phú."
+  },
+  {
+    "word": "華やか",
+    "example": "[彼女](かのじょ)は**[華](はな)やか**なドレスを[着](き)ていました。",
+    "exampleVi": "Cô ấy mặc một chiếc váy lộng lẫy."
+  },
+  {
+    "word": "鮮やか",
+    "example": "[庭](にわ)の[花](はな)が**[鮮](あざ)やか**な[色](いろ)で[咲](さ)いています。",
+    "exampleVi": "Hoa trong vườn nở với màu sắc rực rỡ."
+  },
+  {
+    "word": "統一",
+    "example": "チームの[服](ふく)を[黒](くろ)で**[統一](とういつ)**しました。",
+    "exampleVi": "Chúng tôi đã thống nhất trang phục của đội là màu đen."
+  },
+  {
+    "word": "フリーサイズ",
+    "example": "この[服](ふく)は**フリーサイズ**なので、[誰](だれ)でも[着](き)られます。",
+    "exampleVi": "Bộ đồ này là cỡ tự do nên ai cũng mặc được."
+  },
+  {
+    "word": "ぶかぶか",
+    "example": "[兄](あに)の[靴](くつ)は**ぶかぶか**で、[歩](ある)きにくいです。",
+    "exampleVi": "Giày của anh trai rộng thùng thình nên khó đi."
+  },
+  {
+    "word": "生地",
+    "example": "この[服](ふく)は[柔](やわ)らかい**[生地](きじ)**で[作](つく)られています。",
+    "exampleVi": "Bộ đồ này được làm từ loại vải mềm."
+  },
+  {
+    "word": "綿",
+    "example": "[夏](なつ)は**[綿](めん)**の[服](ふく)が[涼](すず)しいです。",
+    "exampleVi": "Mùa hè quần áo cotton mát mẻ."
+  },
+  {
+    "word": "オーダーメイド",
+    "example": "[結婚式](けっこんしき)のために**オーダーメイド**のスーツを[作](つく)りました。",
+    "exampleVi": "Tôi đã đặt may riêng một bộ vest cho lễ cưới."
+  },
+  {
+    "word": "サングラス",
+    "example": "[日差](ひざ)しが[強](つよ)いので、**サングラス**をかけました。",
+    "exampleVi": "Nắng gắt nên tôi đã đeo kính râm."
+  },
+  {
+    "word": "ボタンが取れる",
+    "example": "シャツの**ボタンが[取](と)れて**しまいました。",
+    "exampleVi": "Cúc áo sơ mi bị tuột mất rồi."
+  },
+  {
+    "word": "浴衣",
+    "example": "[夏祭](なつまつ)りに**[浴衣](ゆかた)**を[着](き)て[行](い)きました。",
+    "exampleVi": "Tôi đã mặc yukata đi lễ hội mùa hè."
+  },
+  {
+    "word": "イベント",
+    "example": "[週末](しゅうまつ)に[駅前](えきまえ)で**イベント**が[開](ひら)かれます。",
+    "exampleVi": "Cuối tuần có sự kiện được tổ chức trước nhà ga."
+  },
+  {
+    "word": "アイドル",
+    "example": "[彼女](かのじょ)は[人気](にんき)の**アイドル**です。",
+    "exampleVi": "Cô ấy là thần tượng nổi tiếng."
+  },
+  {
+    "word": "ステージ",
+    "example": "[歌手](かしゅ)が**ステージ**に[登場](とうじょう)しました。",
+    "exampleVi": "Ca sĩ đã xuất hiện trên sân khấu."
+  },
+  {
+    "word": "興奮",
+    "example": "[試合](しあい)を[見](み)て**[興奮](こうふん)**して、[眠](ねむ)れませんでした。",
+    "exampleVi": "Xem trận đấu xong tôi hưng phấn quá nên không ngủ được."
+  },
+  {
+    "word": "続々",
+    "example": "[会場](かいじょう)に[人](ひと)が**[続々](ぞくぞく)**と[集](あつ)まっています。",
+    "exampleVi": "Người liên tục đổ về hội trường."
+  },
+  {
+    "word": "演劇",
+    "example": "[大学](だいがく)で**[演劇](えんげき)**を[勉強](べんきょう)しています。",
+    "exampleVi": "Tôi đang học kịch nghệ ở đại học."
+  },
+  {
+    "word": "劇場",
+    "example": "[昨日](きのう)、**[劇場](げきじょう)**で[芝居](しばい)を[見](み)ました。",
+    "exampleVi": "Hôm qua tôi đã xem kịch ở nhà hát."
+  },
+  {
+    "word": "役者",
+    "example": "[彼](かれ)は[有名](ゆうめい)な**[役者](やくしゃ)**です。",
+    "exampleVi": "Anh ấy là một diễn viên nổi tiếng."
+  },
+  {
+    "word": "主役",
+    "example": "[彼女](かのじょ)は[映画](えいが)の**[主役](しゅやく)**に[選](えら)ばれました。",
+    "exampleVi": "Cô ấy được chọn vào vai chính của bộ phim."
+  },
+  {
+    "word": "セリフ",
+    "example": "[役者](やくしゃ)が**セリフ**を[覚](おぼ)えています。",
+    "exampleVi": "Diễn viên đang học thuộc lời thoại."
+  },
+  {
+    "word": "演技",
+    "example": "[彼](かれ)の**[演技](えんぎ)**は[素晴](すば)らしかったです。",
+    "exampleVi": "Diễn xuất của anh ấy thật tuyệt vời."
+  },
+  {
+    "word": "オーケストラ",
+    "example": "**オーケストラ**の[演奏](えんそう)を[聞](き)きに[行](い)きました。",
+    "exampleVi": "Tôi đã đi nghe dàn nhạc giao hưởng biểu diễn."
+  },
+  {
+    "word": "リズム",
+    "example": "[音楽](おんがく)の**リズム**に[合](あ)わせて[踊](おど)りました。",
+    "exampleVi": "Tôi đã nhảy theo nhịp điệu của âm nhạc."
+  },
+  {
+    "word": "鑑賞",
+    "example": "[休日](きゅうじつ)は[美術館](びじゅつかん)で[絵](え)の**[鑑賞](かんしょう)**をします。",
+    "exampleVi": "Ngày nghỉ tôi thưởng thức tranh ở bảo tàng mỹ thuật."
+  },
+  {
+    "word": "芸術家",
+    "example": "[彼](かれ)は[世界](せかい)で[有名](ゆうめい)な**[芸術家](げいじゅつか)**です。",
+    "exampleVi": "Ông ấy là một nghệ sĩ nổi tiếng thế giới."
+  },
+  {
+    "word": "監督",
+    "example": "[映画](えいが)の**[監督](かんとく)**に[会](あ)いました。",
+    "exampleVi": "Tôi đã gặp đạo diễn của bộ phim."
+  },
+  {
+    "word": "あらすじ",
+    "example": "[映画](えいが)の**あらすじ**を[友達](ともだち)に[話](はな)しました。",
+    "exampleVi": "Tôi đã kể tóm tắt cốt truyện bộ phim cho bạn."
+  },
+  {
+    "word": "ありふれた",
+    "example": "**ありふれた**[話](はなし)で、[面白](おもしろ)くなかったです。",
+    "exampleVi": "Câu chuyện cũ rích nên không thú vị."
+  },
+  {
+    "word": "ばかばかしい",
+    "example": "**ばかばかしい**[話](はなし)には[付](つ)き[合](あ)えません。",
+    "exampleVi": "Tôi không thể chiều theo những chuyện nhảm nhí."
+  },
+  {
+    "word": "退屈",
+    "example": "[授業](じゅぎょう)が**[退屈](たいくつ)**で、[眠](ねむ)くなりました。",
+    "exampleVi": "Giờ học chán quá nên tôi buồn ngủ."
+  },
+  {
+    "word": "人物",
+    "example": "[小説](しょうせつ)の[登場](とうじょう)**[人物](じんぶつ)**が[多](おお)すぎます。",
+    "exampleVi": "Có quá nhiều nhân vật trong tiểu thuyết."
+  },
+  {
+    "word": "場面",
+    "example": "[映画](えいが)の[最後](さいご)の**[場面](ばめん)**で[泣](な)きました。",
+    "exampleVi": "Tôi đã khóc ở cảnh cuối của bộ phim."
+  },
+  {
+    "word": "展開",
+    "example": "[物語](ものがたり)の**[展開](てんかい)**が[速](はや)いです。",
+    "exampleVi": "Diễn biến câu chuyện rất nhanh."
+  },
+  {
+    "word": "テンポ",
+    "example": "この[曲](きょく)は**テンポ**が[速](はや)いです。",
+    "exampleVi": "Bài hát này có nhịp độ nhanh."
+  },
+  {
+    "word": "評判",
+    "example": "この[店](みせ)は**[評判](ひょうばん)**がいいです。",
+    "exampleVi": "Quán này có tiếng tốt."
+  },
+  {
+    "word": "評価",
+    "example": "[彼](かれ)の[作品](さくひん)は[高](たか)く**[評価](ひょうか)**されています。",
+    "exampleVi": "Tác phẩm của anh ấy được đánh giá cao."
+  },
+  {
+    "word": "感想",
+    "example": "[映画](えいが)を[見](み)た**[感想](かんそう)**を[書](か)きました。",
+    "exampleVi": "Tôi đã viết cảm tưởng sau khi xem phim."
+  },
+  {
+    "word": "賞",
+    "example": "[彼](かれ)は[小説](しょうせつ)で**[賞](しょう)**を[取](と)りました。",
+    "exampleVi": "Anh ấy đã giành giải thưởng nhờ tiểu thuyết."
+  },
+  {
+    "word": "書物",
+    "example": "[図書館](としょかん)には[古](ふる)い**[書物](しょもつ)**がたくさんあります。",
+    "exampleVi": "Thư viện có rất nhiều sách vở cũ."
+  },
+  {
+    "word": "絵本",
+    "example": "[子供](こども)に**[絵本](えほん)**を[読](よ)んであげました。",
+    "exampleVi": "Tôi đã đọc truyện tranh cho con nghe."
+  },
+  {
+    "word": "作品",
+    "example": "[彼](かれ)の**[作品](さくひん)**は[世界](せかい)で[有名](ゆうめい)です。",
+    "exampleVi": "Tác phẩm của ông ấy nổi tiếng thế giới."
+  },
+  {
+    "word": "著者",
+    "example": "この[本](ほん)の**[著者](ちょしゃ)**は[誰](だれ)ですか。",
+    "exampleVi": "Tác giả của cuốn sách này là ai?"
+  },
+  {
+    "word": "書き手",
+    "example": "[文章](ぶんしょう)には**[書](か)き[手](て)**の[性格](せいかく)が[表](あらわ)れます。",
+    "exampleVi": "Tính cách của người viết thể hiện trong văn bản."
+  },
+  {
+    "word": "ペンネーム",
+    "example": "[彼](かれ)は**ペンネーム**で[小説](しょうせつ)を[書](か)いています。",
+    "exampleVi": "Anh ấy viết tiểu thuyết dưới bút danh."
+  },
+  {
+    "word": "主人公",
+    "example": "この[小説](しょうせつ)の**[主人公](しゅじんこう)**は[女性](じょせい)です。",
+    "exampleVi": "Nhân vật chính của tiểu thuyết này là một phụ nữ."
+  },
+  {
+    "word": "ロマン",
+    "example": "[宇宙](うちゅう)には**ロマン**があります。",
+    "exampleVi": "Vũ trụ chứa đựng sự lãng mạn, mơ mộng."
+  },
+  {
+    "word": "伝記",
+    "example": "[偉人](いじん)の**[伝記](でんき)**を[読](よ)みました。",
+    "exampleVi": "Tôi đã đọc tiểu sử của một vĩ nhân."
+  },
+  {
+    "word": "人生",
+    "example": "**[人生](じんせい)**は[一度](いちど)しかありません。",
+    "exampleVi": "Cuộc đời chỉ có một lần."
+  },
+  {
+    "word": "神話",
+    "example": "ギリシャの**[神話](しんわ)**を[読](よ)んでいます。",
+    "exampleVi": "Tôi đang đọc thần thoại Hy Lạp."
+  },
+  {
+    "word": "中世",
+    "example": "**[中世](ちゅうせい)**のヨーロッパに[興味](きょうみ)があります。",
+    "exampleVi": "Tôi có hứng thú với châu Âu thời Trung cổ."
+  },
+  {
+    "word": "文明",
+    "example": "[古代](こだい)の**[文明](ぶんめい)**について[調](しら)べました。",
+    "exampleVi": "Tôi đã tìm hiểu về nền văn minh cổ đại."
+  },
+  {
+    "word": "忠実",
+    "example": "[原作](げんさく)に**[忠実](ちゅうじつ)**な[映画](えいが)です。",
+    "exampleVi": "Đây là bộ phim trung thành với nguyên tác."
+  },
+  {
+    "word": "奇妙",
+    "example": "[昨日](きのう)、**[奇妙](きみょう)**な[夢](ゆめ)を[見](み)ました。",
+    "exampleVi": "Hôm qua tôi đã mơ một giấc mơ kỳ lạ."
+  },
+  {
+    "word": "背景",
+    "example": "この[絵](え)の**[背景](はいけい)**は[海](うみ)です。",
+    "exampleVi": "Phông nền của bức tranh này là biển."
+  },
+  {
+    "word": "実際",
+    "example": "[聞](き)いた[話](はなし)と**[実際](じっさい)**は[違](ちが)いました。",
+    "exampleVi": "Thực tế khác với những gì tôi nghe."
+  },
+  {
+    "word": "文句",
+    "example": "[料理](りょうり)に**[文句](もんく)**を[言](い)ってはいけません。",
+    "exampleVi": "Không được phàn nàn về món ăn."
+  },
+  {
+    "word": "果たして",
+    "example": "**[果](は)たして**[本当](ほんとう)に[成功](せいこう)するでしょうか。",
+    "exampleVi": "Rốt cuộc liệu có thật sự thành công hay không?"
+  },
+  {
+    "word": "発想",
+    "example": "[彼](かれ)の**[発想](はっそう)**はいつも[面白](おもしろ)いです。",
+    "exampleVi": "Ý tưởng của anh ấy lúc nào cũng thú vị."
+  },
+  {
+    "word": "由来",
+    "example": "この[祭](まつ)りの**[由来](ゆらい)**を[調](しら)べました。",
+    "exampleVi": "Tôi đã tìm hiểu nguồn gốc của lễ hội này."
+  }
 ]

@@ -1,73 +1,359 @@
 [
-  "近年",
-  "かつて",
-  "かねて",
-  "目下",
-  "終日",
-  "早急に",
-  "即座に",
-  "すかさず",
-  "不意に",
-  "突如",
-  "近々",
-  "じきに",
-  "もうじき",
-  "ぼつぼつ",
-  "今どき",
-  "今ごろ",
-  "今さら",
-  "今や",
-  "今に",
-  "頻繁に",
-  "始終",
-  "ちょくちょく",
-  "およそ",
-  "極めて",
-  "ごく",
-  "いたって",
-  "人一倍",
-  "一通り",
-  "やや",
-  "幾分",
-  "そこそこ",
-  "若干",
-  "今一つ",
-  "さんざん",
-  "ぐっと",
-  "はるかに",
-  "がっちり",
-  "がっしり",
-  "くっきり",
-  "すんなり",
-  "着々と",
-  "ぐんぐん",
-  "ぐったり",
-  "げっそり",
-  "ひっそり",
-  "ごたごた",
-  "ごちゃごちゃ",
-  "べたべた",
-  "さも",
-  "さぞ",
-  "何とぞ",
-  "何なりと",
-  "どうやら",
-  "よほど",
-  "さほど",
-  "とうてい",
-  "一見",
-  "一向に",
-  "一概に",
-  "ろくに",
-  "何でも",
-  "及び",
-  "並びに",
-  "もしくは",
-  "但し",
-  "なお",
-  "ちなみに",
-  "もっとも",
-  "ゆえに",
-  "よって",
-  "第一"
+  {
+    "word": "近年",
+    "example": "**[近年](きんねん)**、[外国人](がいこくじん)[観光客](かんこうきゃく)が[増](ふ)えています。",
+    "exampleVi": "Những năm gần đây, khách du lịch nước ngoài đang tăng."
+  },
+  {
+    "word": "かつて",
+    "example": "**かつて**ここに[学校](がっこう)がありました。",
+    "exampleVi": "Trước đây ở đây từng có một ngôi trường."
+  },
+  {
+    "word": "かねて",
+    "example": "**かねて**から[計画](けいかく)していた[旅行](りょこう)です。",
+    "exampleVi": "Đây là chuyến du lịch tôi đã lên kế hoạch từ trước."
+  },
+  {
+    "word": "目下",
+    "example": "**[目下](もっか)**、[検討](けんとう)[中](ちゅう)です。",
+    "exampleVi": "Hiện đang trong quá trình xem xét."
+  },
+  {
+    "word": "終日",
+    "example": "[週末](しゅうまつ)は**[終日](しゅうじつ)**[家](いえ)にいました。",
+    "exampleVi": "Cuối tuần tôi ở nhà cả ngày."
+  },
+  {
+    "word": "早急に",
+    "example": "**[早急](さっきゅう)**に[連絡](れんらく)をお[願](ねが)いします。",
+    "exampleVi": "Xin hãy liên lạc gấp giúp tôi."
+  },
+  {
+    "word": "即座に",
+    "example": "[質問](しつもん)に**[即座](そくざ)**に[答](こた)えました。",
+    "exampleVi": "Tôi trả lời ngay lập tức câu hỏi."
+  },
+  {
+    "word": "すかさず",
+    "example": "[彼](かれ)は**すかさず**[反論](はんろん)しました。",
+    "exampleVi": "Anh ấy phản bác ngay không do dự."
+  },
+  {
+    "word": "不意に",
+    "example": "**[不意](ふい)**に[電話](でんわ)が[鳴](な)りました。",
+    "exampleVi": "Đột nhiên điện thoại reo."
+  },
+  {
+    "word": "突如",
+    "example": "**[突如](とつじょ)**、[大](おお)きな[音](おと)がしました。",
+    "exampleVi": "Đột nhiên có tiếng động lớn."
+  },
+  {
+    "word": "近々",
+    "example": "**[近々](ちかぢか)**、[引](ひ)っ[越](こ)す[予定](よてい)です。",
+    "exampleVi": "Sắp tới tôi dự định chuyển nhà."
+  },
+  {
+    "word": "じきに",
+    "example": "**じきに**[雨](あめ)が[止](や)むでしょう。",
+    "exampleVi": "Sớm thôi mưa sẽ tạnh."
+  },
+  {
+    "word": "もうじき",
+    "example": "**もうじき**[春](はる)です。",
+    "exampleVi": "Sắp sang xuân rồi."
+  },
+  {
+    "word": "ぼつぼつ",
+    "example": "**ぼつぼつ**[出](で)かけましょうか。",
+    "exampleVi": "Chúng ta từ từ xuất phát thôi nhé."
+  },
+  {
+    "word": "今どき",
+    "example": "**[今](いま)どき**、こんな[服](ふく)を[着](き)る[人](ひと)はいません。",
+    "exampleVi": "Thời nay không ai mặc quần áo như thế này."
+  },
+  {
+    "word": "今ごろ",
+    "example": "[彼](かれ)は**[今](いま)ごろ**[家](いえ)に[着](つ)いているでしょう。",
+    "exampleVi": "Giờ này chắc anh ấy đã về đến nhà rồi."
+  },
+  {
+    "word": "今さら",
+    "example": "**[今](いま)さら**[謝](あやま)っても[遅](おそ)いです。",
+    "exampleVi": "Đến nước này mà xin lỗi thì đã muộn rồi."
+  },
+  {
+    "word": "今や",
+    "example": "**[今](いま)や**[誰](だれ)でもスマホを[持](も)っています。",
+    "exampleVi": "Bây giờ ai cũng có điện thoại thông minh."
+  },
+  {
+    "word": "今に",
+    "example": "**[今](いま)に**[彼](かれ)は[有名](ゆうめい)になります。",
+    "exampleVi": "Chẳng mấy chốc anh ấy sẽ nổi tiếng."
+  },
+  {
+    "word": "頻繁に",
+    "example": "[最近](さいきん)、**[頻繁](ひんぱん)に**[地震](じしん)があります。",
+    "exampleVi": "Gần đây động đất xảy ra thường xuyên."
+  },
+  {
+    "word": "始終",
+    "example": "[彼](かれ)は**[始終](しじゅう)**[笑](わら)っています。",
+    "exampleVi": "Anh ấy lúc nào cũng cười."
+  },
+  {
+    "word": "ちょくちょく",
+    "example": "[友達](ともだち)が**ちょくちょく**[遊](あそ)びに[来](き)ます。",
+    "exampleVi": "Bạn tôi thường xuyên đến chơi."
+  },
+  {
+    "word": "およそ",
+    "example": "ここから[駅](えき)まで**およそ**[十分](じゅっぷん)です。",
+    "exampleVi": "Từ đây đến ga khoảng mười phút."
+  },
+  {
+    "word": "極めて",
+    "example": "これは**[極](きわ)めて**[重要](じゅうよう)な[問題](もんだい)です。",
+    "exampleVi": "Đây là vấn đề cực kỳ quan trọng."
+  },
+  {
+    "word": "ごく",
+    "example": "**ごく**[簡単](かんたん)な[質問](しつもん)です。",
+    "exampleVi": "Đây chỉ là một câu hỏi rất đơn giản."
+  },
+  {
+    "word": "いたって",
+    "example": "[彼](かれ)は**いたって**[元気](げんき)です。",
+    "exampleVi": "Anh ấy rất khỏe."
+  },
+  {
+    "word": "人一倍",
+    "example": "[彼](かれ)は**[人一倍](ひといちばい)**[努力](どりょく)しています。",
+    "exampleVi": "Anh ấy nỗ lực hơn người bình thường."
+  },
+  {
+    "word": "一通り",
+    "example": "[説明書](せつめいしょ)に**[一通](ひととお)り**[目](め)を[通](とお)しました。",
+    "exampleVi": "Tôi đã xem qua một lượt bản hướng dẫn."
+  },
+  {
+    "word": "やや",
+    "example": "[昨日](きのう)より**やや**[暖](あたた)かいです。",
+    "exampleVi": "Trời ấm hơn hôm qua một chút."
+  },
+  {
+    "word": "幾分",
+    "example": "[熱](ねつ)は**[幾分](いくぶん)**[下](さ)がりました。",
+    "exampleVi": "Sốt đã hạ được phần nào."
+  },
+  {
+    "word": "そこそこ",
+    "example": "[成績](せいせき)は**そこそこ**です。",
+    "exampleVi": "Thành tích của tôi ở mức tạm được."
+  },
+  {
+    "word": "若干",
+    "example": "[値段](ねだん)が**[若干](じゃっかん)**[上](あ)がりました。",
+    "exampleVi": "Giá đã tăng lên một chút."
+  },
+  {
+    "word": "今一つ",
+    "example": "この[映画](えいが)は**[今一](いまひと)つ**[面白](おもしろ)くなかったです。",
+    "exampleVi": "Bộ phim này thiếu chút nữa mới thú vị."
+  },
+  {
+    "word": "さんざん",
+    "example": "[雨](あめ)に[降](ふ)られて**さんざん**でした。",
+    "exampleVi": "Bị mưa ướt, thật là te tua."
+  },
+  {
+    "word": "ぐっと",
+    "example": "[彼](かれ)の[成績](せいせき)が**ぐっと**[上](あ)がりました。",
+    "exampleVi": "Thành tích của anh ấy đã tăng vọt hẳn."
+  },
+  {
+    "word": "はるかに",
+    "example": "[彼](かれ)は[私](わたし)より**はるかに**[上手](じょうず)です。",
+    "exampleVi": "Anh ấy giỏi hơn tôi rất nhiều."
+  },
+  {
+    "word": "がっちり",
+    "example": "[彼](かれ)は**がっちり**した[体](からだ)をしています。",
+    "exampleVi": "Anh ấy có thân hình rắn chắc."
+  },
+  {
+    "word": "がっしり",
+    "example": "**がっしり**した[作](つく)りの[家具](かぐ)です。",
+    "exampleVi": "Đây là đồ nội thất được làm chắc chắn."
+  },
+  {
+    "word": "くっきり",
+    "example": "[山](やま)が**くっきり**[見](み)えます。",
+    "exampleVi": "Có thể thấy ngọn núi rõ nét."
+  },
+  {
+    "word": "すんなり",
+    "example": "[交渉](こうしょう)は**すんなり**[進](すす)みました。",
+    "exampleVi": "Cuộc đàm phán tiến triển trôi chảy."
+  },
+  {
+    "word": "着々と",
+    "example": "[準備](じゅんび)は**[着々](ちゃくちゃく)と**[進](すす)んでいます。",
+    "exampleVi": "Việc chuẩn bị đang tiến hành đều đặn."
+  },
+  {
+    "word": "ぐんぐん",
+    "example": "[子供](こども)は**ぐんぐん**[背](せ)が[伸](の)びます。",
+    "exampleVi": "Đứa trẻ cao vụt lên."
+  },
+  {
+    "word": "ぐったり",
+    "example": "[暑](あつ)さで**ぐったり**しました。",
+    "exampleVi": "Tôi mệt lả vì nóng."
+  },
+  {
+    "word": "げっそり",
+    "example": "[病気](びょうき)で**げっそり**しています。",
+    "exampleVi": "Vì bệnh nên anh ấy gầy rộc."
+  },
+  {
+    "word": "ひっそり",
+    "example": "[町](まち)は**ひっそり**しています。",
+    "exampleVi": "Thị trấn yên tĩnh vắng lặng."
+  },
+  {
+    "word": "ごたごた",
+    "example": "[会社](かいしゃ)で**ごたごた**がありました。",
+    "exampleVi": "Trong công ty đã xảy ra chuyện lộn xộn, lục đục."
+  },
+  {
+    "word": "ごちゃごちゃ",
+    "example": "[机](つくえ)の[上](うえ)が**ごちゃごちゃ**です。",
+    "exampleVi": "Trên bàn lộn xộn."
+  },
+  {
+    "word": "べたべた",
+    "example": "[手](て)が**べたべた**します。",
+    "exampleVi": "Tay tôi dính nhớp."
+  },
+  {
+    "word": "さも",
+    "example": "[彼](かれ)は**さも**[嬉](うれ)しそうに[笑](わら)いました。",
+    "exampleVi": "Anh ta cười như thể rất vui."
+  },
+  {
+    "word": "さぞ",
+    "example": "**さぞ**お[疲](つか)れでしょう。",
+    "exampleVi": "Chắc bạn mệt lắm."
+  },
+  {
+    "word": "何とぞ",
+    "example": "**[何](なに)とぞ**よろしくお[願](ねが)いします。",
+    "exampleVi": "Xin vui lòng giúp đỡ."
+  },
+  {
+    "word": "何なりと",
+    "example": "**[何](なん)なりと**お[申](もう)し[付](つ)けください。",
+    "exampleVi": "Xin cứ dặn dò bất cứ điều gì."
+  },
+  {
+    "word": "どうやら",
+    "example": "**どうやら**[風邪](かぜ)をひいたようです。",
+    "exampleVi": "Có vẻ như tôi bị cảm rồi."
+  },
+  {
+    "word": "よほど",
+    "example": "**よほど**[嬉](うれ)しかったのか、[彼](かれ)は[笑](わら)っていました。",
+    "exampleVi": "Chắc là vui lắm nên anh ấy cứ cười."
+  },
+  {
+    "word": "さほど",
+    "example": "**さほど**[難](むずか)しくありません。",
+    "exampleVi": "Không khó lắm."
+  },
+  {
+    "word": "とうてい",
+    "example": "**とうてい**[信](しん)じられません。",
+    "exampleVi": "Tôi hoàn toàn không tin nổi."
+  },
+  {
+    "word": "一見",
+    "example": "**[一見](いっけん)**、[簡単](かんたん)そうに[見](み)えます。",
+    "exampleVi": "Thoạt nhìn thì có vẻ đơn giản."
+  },
+  {
+    "word": "一向に",
+    "example": "[彼](かれ)は**[一向](いっこう)に**[来](き)ません。",
+    "exampleVi": "Anh ấy mãi vẫn không đến."
+  },
+  {
+    "word": "一概に",
+    "example": "**[一概](いちがい)に**[悪](わる)いとは[言](い)えません。",
+    "exampleVi": "Không thể nói một cách đại khái là xấu."
+  },
+  {
+    "word": "ろくに",
+    "meaning": "(không) ra hồn, (không) đàng hoàng (đi với phủ định)",
+    "example": "**ろくに**[寝](ね)ていません。",
+    "exampleVi": "Tôi ngủ chẳng ra hồn."
+  },
+  {
+    "word": "何でも",
+    "example": "[彼](かれ)は**[何](なん)でも**[知](し)っています。",
+    "exampleVi": "Anh ấy cái gì cũng biết."
+  },
+  {
+    "word": "及び",
+    "example": "[名前](なまえ)**[及](およ)び**[住所](じゅうしょ)を[書](か)いてください。",
+    "exampleVi": "Xin hãy viết họ tên và địa chỉ."
+  },
+  {
+    "word": "並びに",
+    "example": "[氏名](しめい)**[並](なら)びに**[連絡先](れんらくさき)を[記入](きにゅう)してください。",
+    "exampleVi": "Xin điền họ tên cũng như thông tin liên lạc."
+  },
+  {
+    "word": "もしくは",
+    "example": "[鉛筆](えんぴつ)、**もしくは**ペンで[書](か)いてください。",
+    "exampleVi": "Xin hãy viết bằng bút chì hoặc bút mực."
+  },
+  {
+    "word": "但し",
+    "example": "[入場](にゅうじょう)は[無料](むりょう)です。**[但](ただ)し**、[予約](よやく)が[必要](ひつよう)です。",
+    "exampleVi": "Vào cửa miễn phí. Tuy nhiên cần đặt trước."
+  },
+  {
+    "word": "なお",
+    "meaning": "vẫn còn, hơn nữa; ngoài ra",
+    "example": "**なお**、[詳](くわ)しくは[後日](ごじつ)[連絡](れんらく)します。",
+    "exampleVi": "Ngoài ra, chi tiết tôi sẽ liên lạc sau."
+  },
+  {
+    "word": "ちなみに",
+    "example": "**ちなみに**、[私](わたし)の[趣味](しゅみ)は[旅行](りょこう)です。",
+    "exampleVi": "Nhân tiện nói thêm, sở thích của tôi là du lịch."
+  },
+  {
+    "word": "もっとも",
+    "example": "[彼](かれ)は[優秀](ゆうしゅう)です。**もっとも**、[性格](せいかく)は[少](すこ)し[問題](もんだい)があります。",
+    "exampleVi": "Anh ấy xuất sắc. Tuy nhiên tính cách thì hơi có vấn đề."
+  },
+  {
+    "word": "ゆえに",
+    "example": "[彼](かれ)は[努力](どりょく)した。**ゆえに**、[成功](せいこう)した。",
+    "exampleVi": "Anh ấy đã nỗ lực. Vì vậy anh ấy đã thành công."
+  },
+  {
+    "word": "よって",
+    "example": "[以上](いじょう)の[理由](りゆう)に**よって**、[計画](けいかく)を[中止](ちゅうし)します。",
+    "exampleVi": "Với các lý do trên, chúng tôi hủy kế hoạch."
+  },
+  {
+    "word": "第一",
+    "example": "[健康](けんこう)が**[第一](だいいち)**です。",
+    "exampleVi": "Sức khỏe là trên hết."
+  }
 ]

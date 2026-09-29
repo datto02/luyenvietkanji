@@ -3,21 +3,21 @@
   "word": "駅",
   "reading": "えき",
   "meaning": "nhà ga, ga",
-  "example": "[東京](とうきょう)**[駅](えき)**は [大](おお)きいです。",
+  "example": "[東京](とうきょう)**[駅](えき)**は[大](おお)きいです。",
   "exampleVi": "Ga Tokyo lớn."
  },
  {
   "word": "大阪駅",
   "reading": "おおさかえき",
   "meaning": "ga Osaka",
-  "example": "**[大阪駅](おおさかえき)**で [友達](ともだち)に [会](あ)います。",
+  "example": "**[大阪駅](おおさかえき)**で[友達](ともだち)に[会](あ)います。",
   "exampleVi": "Tôi gặp bạn ở ga Osaka."
  },
  {
   "word": "広島駅",
   "reading": "ひろしまえき",
   "meaning": "ga Hiroshima",
-  "example": "**[広島駅](ひろしまえき)**から [電車](でんしゃ)に [乗](の)ります。",
+  "example": "**[広島駅](ひろしまえき)**から[電車](でんしゃ)に[乗](の)ります。",
   "exampleVi": "Tôi lên tàu điện từ ga Hiroshima."
  },
  {
@@ -66,21 +66,21 @@
   "word": "各駅",
   "reading": "かくえき",
   "meaning": "các ga",
-  "example": "この [電車](でんしゃ)は **[各駅](かくえき)**に [止](と)まります。",
+  "example": "この[電車](でんしゃ)は**[各駅](かくえき)**に[止](と)まります。",
   "exampleVi": "Chuyến tàu này dừng ở tất cả các ga."
  },
  {
   "word": "急行",
   "reading": "きゅうこう",
   "meaning": "tàu nhanh",
-  "example": "この [電車](でんしゃ)は **[急行](きゅうこう)**です。",
+  "example": "この[電車](でんしゃ)は**[急行](きゅうこう)**です。",
   "exampleVi": "Chuyến tàu này là tàu nhanh."
  },
  {
   "word": "特急",
   "reading": "とっきゅう",
   "meaning": "tàu tốc hành",
-  "example": "**[特急](とっきゅう)**に [乗](の)ります。",
+  "example": "**[特急](とっきゅう)**に[乗](の)ります。",
   "exampleVi": "Tôi đi tàu tốc hành."
  },
  {
@@ -102,14 +102,14 @@
   "reading": "ばんせん",
   "meaning": "sân ga số ~",
   "example": "8**[番線](ばんせん)**で[急行](きゅうこう)に[乗](の)ります。",
-  "exampleVi": "Tôi lên tàu nhanh ở tuyến số 8."
+  "exampleVi": "Tôi lên tàu nhanh ở sân ga số 8."
  },
  {
   "word": "何番線",
   "reading": "なんばんせん",
   "meaning": "sân ga số mấy",
   "example": "[新幹線](しんかんせん)は**[何番線](なんばんせん)**ですか。",
-  "exampleVi": "Tàu cao tốc shinkansen ở tuyến số mấy ạ?"
+  "exampleVi": "Tàu cao tốc shinkansen ở sân ga số mấy ạ?"
  },
  {
   "word": "自動車",
@@ -121,7 +121,7 @@
  {
   "word": "車",
   "reading": "くるま",
-  "meaning": "xe cộ oto",
+  "meaning": "ô tô, xe hơi",
   "example": "これは**[車](くるま)**の[雑誌](ざっし)です。",
   "exampleVi": "Đây là tạp chí xe."
  },
@@ -205,7 +205,7 @@
  {
   "word": "乗り場",
   "reading": "のりば",
-  "meaning": "trạm",
+  "meaning": "bến (đón xe), chỗ lên xe",
   "example": "バス**[乗](の)り[場](ば)**はどこですか。",
   "exampleVi": "Trạm xe buýt ở đâu ạ?"
  },
@@ -367,70 +367,70 @@
   "word": "角",
   "reading": "かど",
   "meaning": "góc",
-  "example": "その **[角](かど)**を [右](みぎ)に [曲](ま)がります。",
+  "example": "その**[角](かど)**を[右](みぎ)に[曲](ま)がります。",
   "exampleVi": "Rẽ phải ở góc đó."
  },
  {
   "word": "交差点",
   "reading": "こうさてん",
   "meaning": "giao lộ",
-  "example": "**[交差点](こうさてん)**を [左](ひだり)に [曲](ま)がります。",
+  "example": "**[交差点](こうさてん)**を[左](ひだり)に[曲](ま)がります。",
   "exampleVi": "Rẽ trái ở giao lộ."
  },
  {
   "word": "信号",
   "reading": "しんごう",
   "meaning": "đèn giao thông",
-  "example": "**[信号](しんごう)**は [赤](あか)いです。",
+  "example": "**[信号](しんごう)**は[赤](あか)いです。",
   "exampleVi": "Đèn giao thông màu đỏ."
  },
  {
   "word": "左",
   "reading": "ひだり",
   "meaning": "trái",
-  "example": "**[左](ひだり)**に [銀行](ぎんこう)が あります。",
+  "example": "**[左](ひだり)**に[銀行](ぎんこう)があります。",
   "exampleVi": "Bên trái có ngân hàng."
  },
  {
   "word": "右",
   "reading": "みぎ",
   "meaning": "phải",
-  "example": "**[右](みぎ)**に [郵便局](ゆうびんきょく)が あります。",
+  "example": "**[右](みぎ)**に[郵便局](ゆうびんきょく)があります。",
   "exampleVi": "Bên phải có bưu điện."
  },
  {
   "word": "橋",
   "reading": "はし",
   "meaning": "cầu",
-  "example": "この **[橋](はし)**は [長](なが)いです。",
+  "example": "この**[橋](はし)**は[長](なが)いです。",
   "exampleVi": "Cây cầu này dài."
  },
  {
   "word": "東",
   "reading": "ひがし",
   "meaning": "đông",
-  "example": "[東京](とうきょう)は [日本](にほん)の **[東](ひがし)**に あります。",
+  "example": "[東京](とうきょう)は[日本](にほん)の**[東](ひがし)**にあります。",
   "exampleVi": "Tokyo nằm ở phía đông Nhật Bản."
  },
  {
   "word": "西",
   "reading": "にし",
   "meaning": "tây",
-  "example": "[大阪](おおさか)は [東京](とうきょう)の **[西](にし)**に あります。",
+  "example": "[大阪](おおさか)は[東京](とうきょう)の**[西](にし)**にあります。",
   "exampleVi": "Osaka nằm ở phía tây Tokyo."
  },
  {
   "word": "南",
   "reading": "みなみ",
   "meaning": "nam",
-  "example": "[沖縄](おきなわ)は [日本](にほん)の **[南](みなみ)**に あります。",
+  "example": "[沖縄](おきなわ)は[日本](にほん)の**[南](みなみ)**にあります。",
   "exampleVi": "Okinawa nằm ở phía nam Nhật Bản."
  },
  {
   "word": "北",
   "reading": "きた",
   "meaning": "bắc",
-  "example": "[北海道](ほっかいどう)は [日本](にほん)の **[北](きた)**に あります。",
+  "example": "[北海道](ほっかいどう)は[日本](にほん)の**[北](きた)**にあります。",
   "exampleVi": "Hokkaido nằm ở phía bắc Nhật Bản."
  },
  {
@@ -444,21 +444,21 @@
   "word": "1つ目",
   "reading": "ひとつめ",
   "meaning": "cái thứ nhất",
-  "example": "**[一](ひと)つ[目](め)**の [信号](しんごう)を [右](みぎ)に [曲](ま)がります。",
+  "example": "**[一](ひと)つ[目](め)**の[信号](しんごう)を[右](みぎ)に[曲](ま)がります。",
   "exampleVi": "Rẽ phải ở đèn giao thông thứ nhất."
  },
  {
   "word": "2つ目",
   "reading": "ふたつめ",
   "meaning": "cái thứ hai",
-  "example": "**[二](ふた)つ[目](め)**の [交差点](こうさてん)を [左](ひだり)に [曲](ま)がります。",
+  "example": "**[二](ふた)つ[目](め)**の[交差点](こうさてん)を[左](ひだり)に[曲](ま)がります。",
   "exampleVi": "Rẽ trái ở giao lộ thứ hai."
  },
  {
   "word": "3つ目",
   "reading": "みっつめ",
   "meaning": "cái thứ ba",
-  "example": "**[三](みっ)つ[目](め)**の [角](かど)を [右](みぎ)に [曲](ま)がります。",
+  "example": "**[三](みっ)つ[目](め)**の[角](かど)を[右](みぎ)に[曲](ま)がります。",
   "exampleVi": "Rẽ phải ở góc thứ ba."
  },
  {
@@ -472,84 +472,84 @@
   "word": "となり",
   "reading": "となり",
   "meaning": "bên cạnh",
-  "example": "[銀行](ぎんこう)の **となり**に [郵便局](ゆうびんきょく)が あります。",
+  "example": "[銀行](ぎんこう)の**となり**に[郵便局](ゆうびんきょく)があります。",
   "exampleVi": "Bên cạnh ngân hàng có bưu điện."
  },
  {
   "word": "間",
   "reading": "あいだ",
   "meaning": "giữa",
-  "example": "[銀行](ぎんこう)と [駅](えき)の **[間](あいだ)**に コンビニが あります。",
+  "example": "[銀行](ぎんこう)と[駅](えき)の**[間](あいだ)**にコンビニがあります。",
   "exampleVi": "Giữa ngân hàng và nhà ga có cửa hàng tiện lợi."
  },
  {
   "word": "近く",
   "reading": "ちかく",
   "meaning": "gần",
-  "example": "**[近](ちか)く**に スーパーが あります。",
+  "example": "**[近](ちか)く**にスーパーがあります。",
   "exampleVi": "Ở gần đây có siêu thị."
  },
  {
   "word": "上",
   "reading": "うえ",
   "meaning": "trên",
-  "example": "かばんの **[上](うえ)**に かさが あります。",
+  "example": "かばんの**[上](うえ)**にかさがあります。",
   "exampleVi": "Trên cặp có cái ô."
  },
  {
   "word": "下",
   "reading": "した",
   "meaning": "dưới",
-  "example": "いすの **[下](した)**に ねこが います。",
+  "example": "いすの**[下](した)**にねこがいます。",
   "exampleVi": "Dưới ghế có con mèo."
  },
  {
   "word": "前",
   "reading": "まえ",
   "meaning": "trước",
-  "example": "[駅](えき)の **[前](まえ)**に [銀行](ぎんこう)が あります。",
+  "example": "[駅](えき)の**[前](まえ)**に[銀行](ぎんこう)があります。",
   "exampleVi": "Trước nhà ga có ngân hàng."
  },
  {
   "word": "後ろ",
   "reading": "うしろ",
   "meaning": "sau",
-  "example": "[学校](がっこう)の **[後](うし)ろ**に [公園](こうえん)が あります。",
+  "example": "[学校](がっこう)の**[後](うし)ろ**に[公園](こうえん)があります。",
   "exampleVi": "Phía sau trường có công viên."
  },
  {
   "word": "中",
   "reading": "なか",
   "meaning": "trong",
-  "example": "[部屋](へや)の **[中](なか)**に [犬](いぬ)が います。",
+  "example": "[部屋](へや)の**[中](なか)**に[犬](いぬ)がいます。",
   "exampleVi": "Trong phòng có con chó."
  },
  {
   "word": "外",
   "reading": "そと",
   "meaning": "ngoài",
-  "example": "[部屋](へや)の **[外](そと)**に ねこが います。",
+  "example": "[部屋](へや)の**[外](そと)**にねこがいます。",
   "exampleVi": "Ngoài phòng có con mèo."
  },
  {
   "word": "あそこ",
   "reading": "あそこ",
   "meaning": "đằng đó",
-  "example": "**あそこ**に [銀行](ぎんこう)が あります。",
+  "example": "**あそこ**に[銀行](ぎんこう)があります。",
   "exampleVi": "Ở đằng kia có ngân hàng."
  },
  {
   "word": "ここ",
   "reading": "ここ",
   "meaning": "nơi này, chỗ này",
-  "example": "**ここ**は [図書館](としょかん)です。",
+  "example": "**ここ**は[図書館](としょかん)です。",
   "exampleVi": "Đây là thư viện."
  },
  {
   "word": "そこ",
   "reading": "そこ",
   "meaning": "nơi đó, chỗ đó",
-  "example": "**そこ**に [名前](なまえ)を [書](か)いて ください。",
+  "example": "**そこ**に[名前](なまえ)を[書](か)いてください。",
   "exampleVi": "Hãy viết tên vào chỗ đó."
  },
  {
@@ -724,28 +724,28 @@
   "word": "行ってきます",
   "reading": "いってきます",
   "meaning": "Tôi đi đây. (câu chào trước khi đi, rời khỏi đâu đó)",
-  "example": "A：**[行](い)ってきます**。　B：[行](い)ってらっしゃい。",
+  "example": "A：**[行](い)ってきます**。B：[行](い)ってらっしゃい。",
   "exampleVi": "A: Tôi đi đây.  B: Bạn đi nhé."
  },
  {
   "word": "行ってらっしゃい",
   "reading": "いってらっしゃい",
   "meaning": "Bạn đi nhé. (câu chào tiễn ai đó đi đâu)",
-  "example": "A：[行](い)ってきます。　B：**[行](い)ってらっしゃい**。",
+  "example": "A：[行](い)ってきます。B：**[行](い)ってらっしゃい**。",
   "exampleVi": "A: Tôi đi đây.  B: Bạn đi nhé."
  },
  {
   "word": "ただいま",
   "reading": "ただいま",
   "meaning": "Tôi về rồi đây. (câu chào khi đâu đó về đến nơi)",
-  "example": "A：**ただいま**。　B：おかえりなさい。",
+  "example": "A：**ただいま**。B：おかえりなさい。",
   "exampleVi": "A: Tôi về rồi đây.  B: Bạn về rồi à."
  },
  {
   "word": "おかえりなさい",
   "reading": "おかえりなさい",
   "meaning": "Bạn về rồi à. (câu chào đón ai đó đi đâu về)",
-  "example": "A：ただいま。　B：**おかえりなさい**。",
+  "example": "A：ただいま。B：**おかえりなさい**。",
   "exampleVi": "A: Tôi về rồi đây.  B: Bạn về rồi à."
  }
 ]

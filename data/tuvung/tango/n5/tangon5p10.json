@@ -31,7 +31,7 @@
   "word": "かぜ",
   "reading": "かぜ",
   "meaning": "cảm",
-  "example": "**かぜ**を ひきました。",
+  "example": "**かぜ**をひきました。",
   "exampleVi": "Tôi bị cảm."
  },
  {
@@ -52,56 +52,56 @@
   "word": "鼻",
   "reading": "はな",
   "meaning": "mũi",
-  "example": "**[鼻](はな)**が [出](で)ます。",
+  "example": "**[鼻](はな)**が[出](で)ます。",
   "exampleVi": "Tôi bị chảy mũi."
  },
  {
   "word": "耳",
   "reading": "みみ",
   "meaning": "tai",
-  "example": "この [犬](いぬ)は **[耳](みみ)**が [大](おお)きいです。",
+  "example": "この[犬](いぬ)は**[耳](みみ)**が[大](おお)きいです。",
   "exampleVi": "Con chó này tai to."
  },
  {
   "word": "口",
   "reading": "くち",
   "meaning": "miệng",
-  "example": "**[口](くち)**を [開](あ)けて ください。",
+  "example": "**[口](くち)**を[開](あ)けてください。",
   "exampleVi": "Hãy mở miệng ra."
  },
  {
   "word": "のど",
   "reading": "のど",
   "meaning": "cổ họng",
-  "example": "**のど**が かわきました。",
+  "example": "**のど**がかわきました。",
   "exampleVi": "Tôi khát nước."
  },
  {
   "word": "頭",
   "reading": "あたま",
   "meaning": "đầu",
-  "example": "**[頭](あたま)**が [痛](いた)いです。",
+  "example": "**[頭](あたま)**が[痛](いた)いです。",
   "exampleVi": "Tôi đau đầu."
  },
  {
   "word": "お腹",
   "reading": "おなか",
   "meaning": "bụng",
-  "example": "**お[腹](なか)**が [痛](いた)いです。",
+  "example": "**お[腹](なか)**が[痛](いた)いです。",
   "exampleVi": "Tôi đau bụng."
  },
  {
   "word": "手",
   "reading": "て",
   "meaning": "tay",
-  "example": "**[手](て)**を [洗](あら)います。",
+  "example": "**[手](て)**を[洗](あら)います。",
   "exampleVi": "Tôi rửa tay."
  },
  {
   "word": "足",
   "reading": "あし",
   "meaning": "chân",
-  "example": "**[足](あし)**が [長](なが)いですね。",
+  "example": "**[足](あし)**が[長](なが)いですね。",
   "exampleVi": "Chân dài nhỉ."
  },
  {
@@ -121,9 +121,9 @@
  {
   "word": "歯医者さん",
   "reading": "はいしゃさん",
-  "meaning": "nha sỹ",
+  "meaning": "nha sĩ",
   "example": "[昨日](きのう)、**[歯医者](はいしゃ)**へ[行](い)きました。",
-  "exampleVi": "Hôm qua tôi đã đi nha sỹ."
+  "exampleVi": "Hôm qua tôi đã đi nha sĩ."
  },
  {
   "word": "一人で",
@@ -283,7 +283,7 @@
   "word": "おかげさまで",
   "reading": "おかげさまで",
   "meaning": "Nhờ trời",
-  "example": "**おかげさまで** [元気](げんき)です。",
+  "example": "**おかげさまで**[元気](げんき)です。",
   "exampleVi": "Nhờ trời tôi khỏe."
  },
  {
@@ -555,9 +555,9 @@
  {
   "word": "までに",
   "reading": "までに",
-  "meaning": "cho đến ~",
+  "meaning": "trước (hạn chót), muộn nhất là",
   "example": "レポートは[明日](あした)**までに**[書](か)きます。",
-  "exampleVi": "Tôi viết báo cáo đến ngày mai."
+  "exampleVi": "Tôi sẽ viết xong báo cáo trước ngày mai."
  },
  {
   "word": "ですから",
@@ -569,7 +569,7 @@
  {
   "word": "そんなに",
   "reading": "そんなに",
-  "meaning": "như thế",
+  "meaning": "đến thế, đến mức đó",
   "example": "**そんなに**いそがしくないです。",
   "exampleVi": "Không bận lắm đâu."
  },
@@ -591,21 +591,21 @@
   "word": "ロボット",
   "reading": "ロボット",
   "meaning": "người máy",
-  "example": "**ロボット**は [働](はたら)きます。",
+  "example": "**ロボット**は[働](はたら)きます。",
   "exampleVi": "Người máy làm việc."
  },
  {
   "word": "へえ",
   "reading": "へえ",
   "meaning": "hể, ồ",
-  "example": "A：[私](わたし)は [富士山](ふじさん)に [登](のぼ)りました。　B：**へえ**、すごいですね。",
+  "example": "A：[私](わたし)は[富士山](ふじさん)に[登](のぼ)りました。B：**へえ**、すごいですね。",
   "exampleVi": "A: Tôi đã leo núi Phú Sĩ.  B: Ồ, tuyệt quá nhỉ."
  },
  {
   "word": "すごい",
   "reading": "すごい",
   "meaning": "tuyệt, giỏi",
-  "example": "この [絵](え)は **すごい**ですね。",
+  "example": "この[絵](え)は**すごい**ですね。",
   "exampleVi": "Bức tranh này tuyệt quá nhỉ."
  },
  {
@@ -618,7 +618,7 @@
  {
   "word": "なかなか",
   "reading": "なかなか",
-  "meaning": "mãi",
+  "meaning": "mãi mà (không), khó mà",
   "example": "[難](むずか)しいです。**なかなか**[答](こた)えが[分](わ)かりません。",
   "exampleVi": "Khó quá. Mãi không biết câu trả lời."
  },
@@ -668,28 +668,28 @@
   "word": "どうして",
   "reading": "どうして",
   "meaning": "tại sao",
-  "example": "**どうして** [学校](がっこう)を [休](やす)みましたか。",
+  "example": "**どうして**[学校](がっこう)を[休](やす)みましたか。",
   "exampleVi": "Tại sao bạn đã nghỉ học?"
  },
  {
   "word": "から",
   "reading": "から",
   "meaning": "vì ~",
-  "example": "[熱](ねつ)が あります**から**、[休](やす)みます。",
+  "example": "[熱](ねつ)があります**から**、[休](やす)みます。",
   "exampleVi": "Vì tôi bị sốt nên tôi nghỉ."
  },
  {
   "word": "そうですか",
   "reading": "そうですか",
   "meaning": "Vậy à?",
-  "example": "A：[私](わたし)は [医者](いしゃ)です。　B：**そうですか**。",
+  "example": "A：[私](わたし)は[医者](いしゃ)です。B：**そうですか**。",
   "exampleVi": "A: Tôi là bác sĩ.  B: Vậy à?"
  },
  {
   "word": "分かりました",
   "reading": "わかりました",
   "meaning": "Tôi hiểu rồi",
-  "example": "A：ここに [名前](なまえ)を [書](か)いて ください。　B：**[分](わ)かりました**。",
+  "example": "A：ここに[名前](なまえ)を[書](か)いてください。B：**[分](わ)かりました**。",
   "exampleVi": "A: Hãy viết tên vào đây.  B: Tôi hiểu rồi."
  }
 ]

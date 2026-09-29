@@ -1,102 +1,504 @@
 [
-  "見所",
-  "穴場",
-  "本場",
-  "主要",
-  "事前",
-  "かねがね",
-  "網羅",
-  "特典",
-  "前払い",
-  "うかうか",
-  "手っ取り早い",
-  "オプション",
-  "グレード",
-  "同伴",
-  "急きょ",
-  "要する",
-  "称する",
-  "見知らぬ",
-  "着目",
-  "触れ合う",
-  "利点",
-  "緯度",
-  "予備",
-  "身軽",
-  "無茶",
-  "片言",
-  "身振り手振り",
-  "疎通",
-  "先入観",
-  "もてなす",
-  "人情",
-  "目の当たり",
-  "勝る",
-  "異国",
-  "融合",
-  "手違い",
-  "まごつく",
-  "右往左往",
-  "さまよう",
-  "撮影",
-  "とどめる",
-  "鮮明",
-  "オーロラ",
-  "きらびやか",
-  "感無量",
-  "満喫",
-  "こぐ",
-  "潜る",
-  "用心深い",
-  "おちおちない",
-  "いっそ",
-  "永住",
-  "別荘",
-  "懲りる",
-  "国家",
-  "大国",
-  "母国",
-  "領土",
-  "民族",
-  "万人",
-  "成り立つ",
-  "起源",
-  "定める",
-  "断言",
-  "目覚ましい",
-  "前途洋々",
-  "前途多難",
-  "おびただしい",
-  "依然として",
-  "権力",
-  "実験",
-  "強制",
-  "崇拝",
-  "移行",
-  "軍事",
-  "武器",
-  "事態",
-  "仕組み",
-  "革命",
-  "暴動",
-  "動向",
-  "善悪",
-  "一様",
-  "飢える",
-  "親交",
-  "密接",
-  "申し出る",
-  "双方",
-  "交互",
-  "好ましい",
-  "利害",
-  "寛容",
-  "偏見",
-  "侮辱",
-  "かみ合う",
-  "食い違う",
-  "駆け引き",
-  "干渉",
-  "取り合う",
-  "相反する"
+  {
+    "word": "見所",
+    "example": "この[映画](えいが)の**[見所](みどころ)**は[最後](さいご)の[場面](ばめん)です。",
+    "exampleVi": "Điểm đáng xem của bộ phim này là cảnh cuối."
+  },
+  {
+    "word": "穴場",
+    "example": "ここは[観光客](かんこうきゃく)に[知](し)られていない**[穴場](あなば)**です。",
+    "exampleVi": "Đây là chỗ hay mà khách du lịch chưa biết."
+  },
+  {
+    "word": "本場",
+    "example": "**[本場](ほんば)**のイタリア[料理](りょうり)を[食](た)べたいです。",
+    "exampleVi": "Tôi muốn ăn món Ý chính gốc."
+  },
+  {
+    "word": "主要",
+    "example": "[東京](とうきょう)は[日本](にほん)の**[主要](しゅよう)**な[都市](とし)です。",
+    "exampleVi": "Tokyo là đô thị chủ yếu của Nhật Bản."
+  },
+  {
+    "word": "事前",
+    "example": "**[事前](じぜん)**に[予約](よやく)してください。",
+    "exampleVi": "Xin hãy đặt chỗ trước."
+  },
+  {
+    "word": "かねがね",
+    "example": "お[名前](なまえ)は**かねがね**[伺](うかが)っておりました。",
+    "exampleVi": "Tên của anh tôi đã nghe từ lâu rồi."
+  },
+  {
+    "word": "網羅",
+    "example": "[観光地](かんこうち)を**[網羅](もうら)**したガイドブックです。",
+    "exampleVi": "Đây là cuốn hướng dẫn bao quát các điểm du lịch."
+  },
+  {
+    "word": "特典",
+    "example": "[会員](かいいん)になると、いろいろな**[特典](とくてん)**があります。",
+    "exampleVi": "Nếu trở thành hội viên sẽ có nhiều ưu đãi."
+  },
+  {
+    "word": "前払い",
+    "example": "[料金](りょうきん)は**[前払](まえばら)い**です。",
+    "exampleVi": "Phí phải trả trước."
+  },
+  {
+    "word": "うかうか",
+    "reading": "うかうか",
+    "meaning": "lơ đễnh, thờ ơ, chểnh mảng (うかうかしていられない = không thể chần chừ)",
+    "example": "**うかうか**していると、チャンスを[逃](のが)してしまいます。",
+    "exampleVi": "Cứ lơ đễnh là sẽ bỏ lỡ cơ hội."
+  },
+  {
+    "word": "手っ取り早い",
+    "example": "**[手](て)っ[取](と)り[早](ばや)い**[方法](ほうほう)で[解決](かいけつ)しました。",
+    "exampleVi": "Tôi đã giải quyết bằng cách nhanh gọn."
+  },
+  {
+    "word": "オプション",
+    "example": "[車](くるま)の**オプション**でカーナビをつけました。",
+    "exampleVi": "Tôi đã gắn thêm định vị như tùy chọn của xe."
+  },
+  {
+    "word": "グレード",
+    "example": "ホテルの**グレード**を[上](あ)げました。",
+    "exampleVi": "Tôi đã nâng hạng khách sạn."
+  },
+  {
+    "word": "同伴",
+    "example": "[子供](こども)は[保護者](ほごしゃ)の**[同伴](どうはん)**が[必要](ひつよう)です。",
+    "exampleVi": "Trẻ em cần có người bảo hộ đi cùng."
+  },
+  {
+    "word": "急きょ",
+    "example": "**[急](きゅう)きょ**、[出張](しゅっちょう)が[決](き)まりました。",
+    "exampleVi": "Bỗng nhiên tôi được quyết định đi công tác gấp."
+  },
+  {
+    "word": "要する",
+    "example": "この[仕事](しごと)には[三日](みっか)を**[要](よう)します**。",
+    "exampleVi": "Công việc này cần ba ngày."
+  },
+  {
+    "word": "称する",
+    "example": "[彼](かれ)は[自分](じぶん)を[天才](てんさい)と**[称](しょう)して**います。",
+    "exampleVi": "Anh ta tự xưng mình là thiên tài."
+  },
+  {
+    "word": "見知らぬ",
+    "example": "**[見知](みし)らぬ**[土地](とち)で[道](みち)に[迷](まよ)いました。",
+    "exampleVi": "Tôi đã lạc đường ở vùng đất xa lạ."
+  },
+  {
+    "word": "着目",
+    "example": "[新](あたら)しい[技術](ぎじゅつ)に**[着目](ちゃくもく)**しています。",
+    "exampleVi": "Tôi đang chú ý đến công nghệ mới."
+  },
+  {
+    "word": "触れ合う",
+    "example": "[動物](どうぶつ)と**[触](ふ)れ[合](あ)う**[体験](たいけん)ができます。",
+    "exampleVi": "Có thể trải nghiệm tiếp xúc với động vật."
+  },
+  {
+    "word": "利点",
+    "example": "この[方法](ほうほう)の**[利点](りてん)**は[費用](ひよう)が[安](やす)いことです。",
+    "exampleVi": "Ưu điểm của phương pháp này là chi phí rẻ."
+  },
+  {
+    "word": "緯度",
+    "example": "[北](きた)へ[行](い)くほど**[緯度](いど)**が[高](たか)くなります。",
+    "exampleVi": "Càng đi về phía bắc thì vĩ độ càng cao."
+  },
+  {
+    "word": "予備",
+    "example": "[電池](でんち)の**[予備](よび)**を[持](も)って[行](い)きます。",
+    "exampleVi": "Tôi mang theo pin dự phòng."
+  },
+  {
+    "word": "身軽",
+    "example": "[荷物](にもつ)が[少](すく)ないと**[身軽](みがる)**です。",
+    "exampleVi": "Hành lý ít thì nhẹ nhàng."
+  },
+  {
+    "word": "無茶",
+    "example": "[山](やま)に[一人](ひとり)で[登](のぼ)るのは**[無茶](むちゃ)**です。",
+    "exampleVi": "Leo núi một mình thật là liều lĩnh."
+  },
+  {
+    "word": "片言",
+    "example": "[彼](かれ)は**[片言](かたこと)**の[日本語](にほんご)で[話](はな)しました。",
+    "exampleVi": "Anh ấy nói bằng tiếng Nhật bập bẹ."
+  },
+  {
+    "word": "身振り手振り",
+    "example": "**[身振](みぶ)り[手振](てぶ)り**で[気持](きも)ちを[伝](つた)えました。",
+    "exampleVi": "Tôi truyền đạt ý mình bằng ngôn ngữ cơ thể."
+  },
+  {
+    "word": "疎通",
+    "example": "[外国人](がいこくじん)と[意思](いし)の**[疎通](そつう)**が[難](むずか)しいです。",
+    "exampleVi": "Việc hiểu ý nhau với người nước ngoài thật khó."
+  },
+  {
+    "word": "先入観",
+    "example": "**[先入観](せんにゅうかん)**を[持](も)たずに、[人](ひと)と[会](あ)いましょう。",
+    "exampleVi": "Hãy gặp gỡ mọi người mà không mang thành kiến."
+  },
+  {
+    "word": "もてなす",
+    "example": "[遠](とお)くから[来](き)た[客](きゃく)を**もてなしました**。",
+    "exampleVi": "Tôi đã tiếp đãi vị khách đến từ xa."
+  },
+  {
+    "word": "人情",
+    "example": "[下町](したまち)の**[人情](にんじょう)**が[温](あたた)かいです。",
+    "exampleVi": "Tình người ở khu phố cổ rất ấm áp."
+  },
+  {
+    "word": "目の当たり",
+    "example": "[事故](じこ)の[現場](げんば)を**[目](ま)の[当](あ)たり**にしました。",
+    "exampleVi": "Tôi đã tận mắt chứng kiến hiện trường tai nạn."
+  },
+  {
+    "word": "勝る",
+    "example": "[彼](かれ)の[情熱](じょうねつ)に**[勝](まさ)る**[人](ひと)はいません。",
+    "exampleVi": "Không ai hơn được nhiệt huyết của anh ấy."
+  },
+  {
+    "word": "異国",
+    "example": "**[異国](いこく)**の[地](ち)で[新](あたら)しい[生活](せいかつ)を[始](はじ)めました。",
+    "exampleVi": "Tôi bắt đầu cuộc sống mới ở xứ người."
+  },
+  {
+    "word": "融合",
+    "example": "[東洋](とうよう)と[西洋](せいよう)の[文化](ぶんか)が**[融合](ゆうごう)**しています。",
+    "exampleVi": "Văn hóa phương Đông và phương Tây đang dung hợp."
+  },
+  {
+    "word": "手違い",
+    "example": "[予約](よやく)に**[手違](てちが)い**があって、[部屋](へや)がありませんでした。",
+    "exampleVi": "Việc đặt chỗ có nhầm lẫn nên không có phòng."
+  },
+  {
+    "word": "まごつく",
+    "example": "[道](みち)が[分](わ)からなくて**まごつきました**。",
+    "exampleVi": "Không biết đường nên tôi lúng túng."
+  },
+  {
+    "word": "右往左往",
+    "example": "[事故](じこ)で[人](ひと)が**[右往左往](うおうさおう)**していました。",
+    "exampleVi": "Vì tai nạn mà mọi người chạy ngược chạy xuôi."
+  },
+  {
+    "word": "さまよう",
+    "example": "[道](みち)に[迷](まよ)って[町](まち)を**さまよいました**。",
+    "exampleVi": "Lạc đường nên tôi đã lang thang trong thị trấn."
+  },
+  {
+    "word": "撮影",
+    "example": "ここでの[写真](しゃしん)の**[撮影](さつえい)**は[禁止](きんし)です。",
+    "exampleVi": "Cấm chụp ảnh ở đây."
+  },
+  {
+    "word": "とどめる",
+    "example": "[美](うつく)しい[景色](けしき)を[写真](しゃしん)に**とどめました**。",
+    "exampleVi": "Tôi đã lưu giữ phong cảnh đẹp vào ảnh."
+  },
+  {
+    "word": "鮮明",
+    "example": "この[写真](しゃしん)は[色](いろ)が**[鮮明](せんめい)**です。",
+    "exampleVi": "Bức ảnh này màu sắc rõ nét."
+  },
+  {
+    "word": "オーロラ",
+    "example": "[北欧](ほくおう)で**オーロラ**を[見](み)ました。",
+    "exampleVi": "Tôi đã nhìn thấy cực quang ở Bắc Âu."
+  },
+  {
+    "word": "きらびやか",
+    "example": "**きらびやか**な[衣装](いしょう)を[着](き)た[人々](ひとびと)が[踊](おど)っています。",
+    "exampleVi": "Những người mặc trang phục lộng lẫy đang nhảy múa."
+  },
+  {
+    "word": "感無量",
+    "example": "ゴールに[着](つ)いたとき、**[感無量](かんむりょう)**でした。",
+    "exampleVi": "Lúc đến đích, tôi vô cùng xúc động."
+  },
+  {
+    "word": "満喫",
+    "example": "[休暇](きゅうか)を**[満喫](まんきつ)**しました。",
+    "exampleVi": "Tôi đã tận hưởng trọn vẹn kỳ nghỉ."
+  },
+  {
+    "word": "こぐ",
+    "example": "ボートを**こいで**[湖](みずうみ)を[渡](わた)りました。",
+    "exampleVi": "Tôi đã chèo thuyền qua hồ."
+  },
+  {
+    "word": "潜る",
+    "example": "[海](うみ)に**[潜](もぐ)って**、[魚](さかな)を[見](み)ました。",
+    "exampleVi": "Tôi đã lặn xuống biển ngắm cá."
+  },
+  {
+    "word": "用心深い",
+    "example": "[彼](かれ)は**[用心深](ようじんぶか)い**[性格](せいかく)です。",
+    "exampleVi": "Anh ấy có tính cẩn thận."
+  },
+  {
+    "word": "おちおちない",
+    "example": "[心配](しんぱい)で**おちおち**[眠](ねむ)れません。",
+    "exampleVi": "Vì lo lắng nên tôi không thể yên tâm ngủ nổi."
+  },
+  {
+    "word": "いっそ",
+    "example": "こんなに[悩](なや)むなら、**いっそ**[止](や)めてしまおう。",
+    "exampleVi": "Nếu phải phiền não thế này thì thà bỏ quách đi còn hơn."
+  },
+  {
+    "word": "永住",
+    "example": "[日本](にほん)に**[永住](えいじゅう)**することにしました。",
+    "exampleVi": "Tôi đã quyết định định cư vĩnh viễn ở Nhật."
+  },
+  {
+    "word": "別荘",
+    "example": "[夏](なつ)は[山](やま)の**[別荘](べっそう)**で[過](す)ごします。",
+    "exampleVi": "Mùa hè tôi nghỉ ở biệt thự trên núi."
+  },
+  {
+    "word": "懲りる",
+    "example": "[失敗](しっぱい)して、もう**[懲](こ)りました**。",
+    "exampleVi": "Sau thất bại, tôi đã rút ra bài học rồi (chừa hẳn)."
+  },
+  {
+    "word": "国家",
+    "example": "**[国家](こっか)**の[安全](あんぜん)を[守](まも)る[仕事](しごと)です。",
+    "exampleVi": "Đó là công việc bảo vệ an ninh quốc gia."
+  },
+  {
+    "word": "大国",
+    "example": "[日本](にほん)は[経済](けいざい)**[大国](たいこく)**と[言](い)われています。",
+    "exampleVi": "Nhật Bản được cho là cường quốc kinh tế."
+  },
+  {
+    "word": "母国",
+    "example": "[外国](がいこく)に[住](す)んで、**[母国](ぼこく)**の[大切](たいせつ)さが[分](わ)かりました。",
+    "exampleVi": "Sống ở nước ngoài, tôi mới hiểu tầm quan trọng của quê hương."
+  },
+  {
+    "word": "領土",
+    "example": "[国](くに)の**[領土](りょうど)**を[巡](めぐ)って[争](あらそ)いがあります。",
+    "exampleVi": "Có tranh chấp về lãnh thổ quốc gia."
+  },
+  {
+    "word": "民族",
+    "example": "この[国](くに)には[多](おお)くの**[民族](みんぞく)**が[住](す)んでいます。",
+    "exampleVi": "Nước này có nhiều dân tộc sinh sống."
+  },
+  {
+    "word": "万人",
+    "example": "このルールは**[万人](ばんにん)**に[適用](てきよう)されます。",
+    "exampleVi": "Quy tắc này áp dụng cho mọi người."
+  },
+  {
+    "word": "成り立つ",
+    "example": "このチームは[十人](じゅうにん)で**[成](な)り[立](た)って**います。",
+    "exampleVi": "Đội này được cấu thành bởi mười người."
+  },
+  {
+    "word": "起源",
+    "example": "[言葉](ことば)の**[起源](きげん)**を[調](しら)べました。",
+    "exampleVi": "Tôi đã tìm hiểu nguồn gốc của từ."
+  },
+  {
+    "word": "定める",
+    "example": "[規則](きそく)を**[定](さだ)めました**。",
+    "exampleVi": "Đã quy định quy tắc."
+  },
+  {
+    "word": "断言",
+    "example": "[彼](かれ)は[絶対](ぜったい)に[間違](まちが)いないと**[断言](だんげん)**しました。",
+    "exampleVi": "Anh ấy đã khẳng định chắc chắn là không sai."
+  },
+  {
+    "word": "目覚ましい",
+    "example": "[彼](かれ)の[進歩](しんぽ)は**[目覚](めざま)しい**ものがあります。",
+    "exampleVi": "Sự tiến bộ của anh ấy thật đáng nể."
+  },
+  {
+    "word": "前途洋々",
+    "example": "[若者](わかもの)の[未来](みらい)は**[前途洋々](ぜんとようよう)**です。",
+    "exampleVi": "Tương lai của người trẻ thật xán lạn."
+  },
+  {
+    "word": "前途多難",
+    "example": "[新](あたら)しい[事業](じぎょう)は**[前途多難](ぜんとたなん)**です。",
+    "exampleVi": "Sự nghiệp mới này có tiền đồ trắc trở."
+  },
+  {
+    "word": "おびただしい",
+    "example": "**おびただしい**[数](かず)の[人](ひと)が[集](あつ)まりました。",
+    "exampleVi": "Một số lượng người đông đảo đã tụ tập."
+  },
+  {
+    "word": "依然として",
+    "example": "[問題](もんだい)は**[依然](いぜん)として**[解決](かいけつ)していません。",
+    "exampleVi": "Vấn đề vẫn chưa được giải quyết như cũ."
+  },
+  {
+    "word": "権力",
+    "example": "[彼](かれ)は[大](おお)きな**[権力](けんりょく)**を[持](も)っています。",
+    "exampleVi": "Ông ấy nắm quyền lực lớn."
+  },
+  {
+    "word": "実験",
+    "example": "[化学](かがく)の**[実験](じっけん)**をしました。",
+    "exampleVi": "Tôi đã làm thí nghiệm hóa học."
+  },
+  {
+    "word": "強制",
+    "example": "[参加](さんか)を**[強制](きょうせい)**されました。",
+    "exampleVi": "Tôi bị ép buộc phải tham gia."
+  },
+  {
+    "word": "崇拝",
+    "example": "[彼](かれ)は[先生](せんせい)を**[崇拝](すうはい)**しています。",
+    "exampleVi": "Anh ấy sùng bái thầy giáo."
+  },
+  {
+    "word": "移行",
+    "example": "[新](あたら)しいシステムに**[移行](いこう)**しました。",
+    "exampleVi": "Chúng tôi đã chuyển sang hệ thống mới."
+  },
+  {
+    "word": "軍事",
+    "example": "**[軍事](ぐんじ)**[力](りょく)に[頼](たよ)らず、[話](はな)し[合](あ)いで[解決](かいけつ)します。",
+    "exampleVi": "Không dựa vào sức mạnh quân sự, chúng tôi giải quyết bằng thương lượng."
+  },
+  {
+    "word": "武器",
+    "example": "[警察](けいさつ)は[犯人](はんにん)から**[武器](ぶき)**を[取](と)り[上](あ)げました。",
+    "exampleVi": "Cảnh sát đã thu vũ khí của thủ phạm."
+  },
+  {
+    "word": "事態",
+    "example": "**[事態](じたい)**は[深刻](しんこく)です。",
+    "exampleVi": "Tình hình rất nghiêm trọng."
+  },
+  {
+    "word": "仕組み",
+    "example": "[機械](きかい)の**[仕組](しく)み**を[説明](せつめい)します。",
+    "exampleVi": "Tôi sẽ giải thích cơ cấu của máy móc."
+  },
+  {
+    "word": "革命",
+    "example": "[産業](さんぎょう)**[革命](かくめい)**で、[社会](しゃかい)が[大](おお)きく[変](か)わりました。",
+    "exampleVi": "Cách mạng công nghiệp đã làm xã hội thay đổi lớn."
+  },
+  {
+    "word": "暴動",
+    "example": "[町](まち)で**[暴動](ぼうどう)**が[起](お)きました。",
+    "exampleVi": "Bạo động đã nổ ra ở thị trấn."
+  },
+  {
+    "word": "動向",
+    "example": "[市場](しじょう)の**[動向](どうこう)**を[調](しら)べます。",
+    "exampleVi": "Tôi sẽ tìm hiểu xu hướng của thị trường."
+  },
+  {
+    "word": "善悪",
+    "example": "[子供](こども)に**[善悪](ぜんあく)**の[区別](くべつ)を[教](おし)えます。",
+    "exampleVi": "Tôi dạy trẻ phân biệt thiện ác."
+  },
+  {
+    "word": "一様",
+    "example": "[人](ひと)の[考](かんが)えは**[一様](いちよう)**ではありません。",
+    "exampleVi": "Suy nghĩ của mỗi người không giống nhau."
+  },
+  {
+    "word": "飢える",
+    "example": "[世界](せかい)には**[飢](う)えて**いる[人](ひと)が[大勢](おおぜい)います。",
+    "exampleVi": "Trên thế giới có rất nhiều người đang đói."
+  },
+  {
+    "word": "親交",
+    "example": "[彼](かれ)とは[長年](ながねん)、**[親交](しんこう)**があります。",
+    "exampleVi": "Tôi có mối thâm giao với anh ấy nhiều năm."
+  },
+  {
+    "word": "密接",
+    "example": "[二](ふた)つの[問題](もんだい)は**[密接](みっせつ)**に[関係](かんけい)しています。",
+    "exampleVi": "Hai vấn đề này liên quan mật thiết với nhau."
+  },
+  {
+    "word": "申し出る",
+    "example": "[困](こま)ったことがあれば、[遠慮](えんりょ)なく**[申](もう)し[出](で)て**ください。",
+    "exampleVi": "Nếu có gì khó khăn, xin cứ đề đạt đừng ngại."
+  },
+  {
+    "word": "双方",
+    "example": "**[双方](そうほう)**の[意見](いけん)を[聞](き)きました。",
+    "exampleVi": "Tôi đã nghe ý kiến của cả hai bên."
+  },
+  {
+    "word": "交互",
+    "example": "[二人](ふたり)で**[交互](こうご)**に[運転](うんてん)しました。",
+    "exampleVi": "Hai người chúng tôi đã lái xe luân phiên."
+  },
+  {
+    "word": "好ましい",
+    "example": "**[好](この)ましい**[結果](けっか)が[出](で)ました。",
+    "exampleVi": "Đã có kết quả đáng mong đợi."
+  },
+  {
+    "word": "利害",
+    "example": "[二](ふた)つの[国](くに)の**[利害](りがい)**が[対立](たいりつ)しています。",
+    "exampleVi": "Lợi ích của hai nước đang đối lập."
+  },
+  {
+    "word": "寛容",
+    "example": "[彼](かれ)は[人](ひと)の[失敗](しっぱい)に**[寛容](かんよう)**です。",
+    "exampleVi": "Anh ấy khoan dung với lỗi lầm của người khác."
+  },
+  {
+    "word": "偏見",
+    "example": "[人](ひと)を[見](み)た[目](め)で**[偏見](へんけん)**を[持](も)ってはいけません。",
+    "exampleVi": "Không được có thành kiến với người khác chỉ qua vẻ bề ngoài."
+  },
+  {
+    "word": "侮辱",
+    "example": "[人](ひと)を**[侮辱](ぶじょく)**するような[言葉](ことば)は[使](つか)わないでください。",
+    "exampleVi": "Xin đừng dùng những lời lẽ như sỉ nhục người khác."
+  },
+  {
+    "word": "かみ合う",
+    "example": "[二人](ふたり)の[話](はなし)が**かみ[合](あ)いません**。",
+    "exampleVi": "Câu chuyện của hai người không ăn khớp."
+  },
+  {
+    "word": "食い違う",
+    "example": "[二人](ふたり)の[意見](いけん)が**[食](く)い[違](ちが)って**います。",
+    "exampleVi": "Ý kiến của hai người không thống nhất."
+  },
+  {
+    "word": "駆け引き",
+    "example": "[交渉](こうしょう)には**[駆](か)け[引](ひ)き**が[必要](ひつよう)です。",
+    "exampleVi": "Đàm phán cần có sự đấu trí."
+  },
+  {
+    "word": "干渉",
+    "example": "[他国](たこく)の[問題](もんだい)に**[干渉](かんしょう)**してはいけません。",
+    "exampleVi": "Không được can thiệp vào vấn đề của nước khác."
+  },
+  {
+    "word": "取り合う",
+    "example": "[二人](ふたり)は[手](て)を**[取](と)り[合](あ)って**[喜](よろこ)びました。",
+    "exampleVi": "Hai người nắm tay nhau vui mừng."
+  },
+  {
+    "word": "相反する",
+    "example": "[二人](ふたり)の[意見](いけん)は**[相反](あいはん)する**ものでした。",
+    "exampleVi": "Ý kiến của hai người là trái ngược nhau."
+  }
 ]

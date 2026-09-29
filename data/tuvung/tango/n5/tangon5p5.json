@@ -24,7 +24,7 @@
   "word": "毎朝",
   "reading": "まいあさ",
   "meaning": "mỗi sáng",
-  "example": "**[毎朝](まいあさ)**、[新聞](しんぶん)を [読](よ)みます。",
+  "example": "**[毎朝](まいあさ)**、[新聞](しんぶん)を[読](よ)みます。",
   "exampleVi": "Mỗi sáng tôi đọc báo."
  },
  {
@@ -122,7 +122,7 @@
   "word": "顔",
   "reading": "かお",
   "meaning": "mặt",
-  "example": "あの [人](ひと)は **[顔](かお)**が [小](ちい)さいです。",
+  "example": "あの[人](ひと)は**[顔](かお)**が[小](ちい)さいです。",
   "exampleVi": "Người kia mặt nhỏ."
  },
  {
@@ -136,7 +136,7 @@
   "word": "おふろ",
   "reading": "おふろ",
   "meaning": "bồn tắm, tắm",
-  "example": "**おふろ**は [好](す)きです。",
+  "example": "**おふろ**は[好](す)きです。",
   "exampleVi": "Tôi thích tắm bồn."
  },
  {
@@ -150,7 +150,7 @@
   "word": "シャワー",
   "reading": "シャワー",
   "meaning": "vòi sen",
-  "example": "この ホテルに **シャワー**が あります。",
+  "example": "このホテルに**シャワー**があります。",
   "exampleVi": "Khách sạn này có vòi sen."
  },
  {
@@ -164,7 +164,7 @@
   "word": "歯",
   "reading": "は",
   "meaning": "răng",
-  "example": "あの [子](こ)は **[歯](は)**が [白](しろ)いです。",
+  "example": "あの[子](こ)は**[歯](は)**が[白](しろ)いです。",
   "exampleVi": "Đứa bé kia răng trắng."
  },
  {
@@ -212,7 +212,7 @@
  {
   "word": "たくさん",
   "reading": "たくさん",
-  "meaning": "nhiều loại, đủ thứ",
+  "meaning": "nhiều",
   "example": "パンを**たくさん**[食](た)べました。",
   "exampleVi": "Tôi đã ăn nhiều bánh mì."
  },
@@ -227,105 +227,105 @@
   "word": "肉",
   "reading": "にく",
   "meaning": "thịt",
-  "example": "**[肉](にく)**を [食](た)べます。",
+  "example": "**[肉](にく)**を[食](た)べます。",
   "exampleVi": "Tôi ăn thịt."
  },
  {
   "word": "牛肉",
   "reading": "ぎゅうにく",
   "meaning": "thịt bò",
-  "example": "**[牛肉](ぎゅうにく)**は [高](たか)いです。",
+  "example": "**[牛肉](ぎゅうにく)**は[高](たか)いです。",
   "exampleVi": "Thịt bò đắt."
  },
  {
   "word": "ぶたにく",
   "reading": "ぶたにく",
   "meaning": "thịt lợn, thịt heo",
-  "example": "**ぶたにく**を [買](か)いました。",
+  "example": "**ぶたにく**を[買](か)いました。",
   "exampleVi": "Tôi đã mua thịt heo."
  },
  {
   "word": "とりにく",
   "reading": "とりにく",
   "meaning": "thịt gà",
-  "example": "**とりにく**を [食](た)べました。",
+  "example": "**とりにく**を[食](た)べました。",
   "exampleVi": "Tôi đã ăn thịt gà."
  },
  {
   "word": "魚",
   "reading": "さかな",
   "meaning": "cá",
-  "example": "**[魚](さかな)**が [好](す)きです。",
+  "example": "**[魚](さかな)**が[好](す)きです。",
   "exampleVi": "Tôi thích cá."
  },
  {
   "word": "卵",
   "reading": "たまご",
   "meaning": "trứng",
-  "example": "[朝](あさ)、**[卵](たまご)**を [食](た)べます。",
+  "example": "[朝](あさ)、**[卵](たまご)**を[食](た)べます。",
   "exampleVi": "Buổi sáng tôi ăn trứng."
  },
  {
   "word": "野菜",
   "reading": "やさい",
   "meaning": "rau",
-  "example": "**[野菜](やさい)**は [体](からだ)に いいです。",
+  "example": "**[野菜](やさい)**は[体](からだ)にいいです。",
   "exampleVi": "Rau tốt cho cơ thể."
  },
  {
   "word": "果物",
   "reading": "くだもの",
   "meaning": "trái cây",
-  "example": "**[果物](くだもの)**が [好](す)きです。",
+  "example": "**[果物](くだもの)**が[好](す)きです。",
   "exampleVi": "Tôi thích trái cây."
  },
  {
   "word": "バナナ",
   "reading": "バナナ",
   "meaning": "chuối",
-  "example": "**バナナ**を [食](た)べます。",
+  "example": "**バナナ**を[食](た)べます。",
   "exampleVi": "Tôi ăn chuối."
  },
  {
   "word": "りんご",
   "reading": "りんご",
   "meaning": "táo",
-  "example": "**りんご**を [買](か)いました。",
+  "example": "**りんご**を[買](か)いました。",
   "exampleVi": "Tôi đã mua táo."
  },
  {
   "word": "レモン",
   "reading": "レモン",
   "meaning": "chanh",
-  "example": "**レモン**は [黄色](きいろ)いです。",
+  "example": "**レモン**は[黄色](きいろ)いです。",
   "exampleVi": "Chanh có màu vàng."
  },
  {
   "word": "みかん",
   "reading": "みかん",
   "meaning": "quýt",
-  "example": "**みかん**を [食](た)べます。",
+  "example": "**みかん**を[食](た)べます。",
   "exampleVi": "Tôi ăn quýt."
  },
  {
   "word": "パン",
   "reading": "パン",
   "meaning": "bánh mì",
-  "example": "[朝](あさ)、**パン**を [食](た)べます。",
+  "example": "[朝](あさ)、**パン**を[食](た)べます。",
   "exampleVi": "Buổi sáng tôi ăn bánh mì."
  },
  {
   "word": "おかし",
   "reading": "おかし",
   "meaning": "bánh kẹo",
-  "example": "**おかし**を [買](か)いました。",
+  "example": "**おかし**を[買](か)いました。",
   "exampleVi": "Tôi đã mua bánh kẹo."
  },
  {
   "word": "チョコレート",
   "reading": "チョコレート",
   "meaning": "sô-cô-la",
-  "example": "**チョコレート**は あまいです。",
+  "example": "**チョコレート**はあまいです。",
   "exampleVi": "Sô-cô-la thì ngọt."
  },
  {
@@ -402,70 +402,70 @@
   "word": "牛乳",
   "reading": "ぎゅうにゅう",
   "meaning": "sữa tươi",
-  "example": "[毎朝](まいあさ)、**[牛乳](ぎゅうにゅう)**を [飲](の)みます。",
+  "example": "[毎朝](まいあさ)、**[牛乳](ぎゅうにゅう)**を[飲](の)みます。",
   "exampleVi": "Mỗi sáng tôi uống sữa tươi."
  },
  {
   "word": "ジュース",
   "reading": "ジュース",
   "meaning": "nước trái cây",
-  "example": "**ジュース**を [飲](の)みます。",
+  "example": "**ジュース**を[飲](の)みます。",
   "exampleVi": "Tôi uống nước trái cây."
  },
  {
   "word": "コーヒー",
   "reading": "コーヒー",
   "meaning": "cà phê",
-  "example": "**コーヒー**を [飲](の)みますか。",
+  "example": "**コーヒー**を[飲](の)みますか。",
   "exampleVi": "Bạn có uống cà phê không?"
  },
  {
   "word": "紅茶",
   "reading": "こうちゃ",
   "meaning": "hồng trà",
-  "example": "**[紅茶](こうちゃ)**は [好](す)きですか。",
+  "example": "**[紅茶](こうちゃ)**は[好](す)きですか。",
   "exampleVi": "Bạn có thích hồng trà không?"
  },
  {
   "word": "お茶",
   "reading": "おちゃ",
   "meaning": "trà",
-  "example": "**お[茶](ちゃ)**を [飲](の)みませんか。",
+  "example": "**お[茶](ちゃ)**を[飲](の)みませんか。",
   "exampleVi": "Bạn uống trà không?"
  },
  {
   "word": "お酒",
   "reading": "おさけ",
   "meaning": "rượu sake",
-  "example": "**お[酒](さけ)**は [飲](の)みません。",
+  "example": "**お[酒](さけ)**は[飲](の)みません。",
   "exampleVi": "Tôi không uống rượu."
  },
  {
   "word": "ビール",
   "reading": "ビール",
   "meaning": "bia",
-  "example": "**ビール**を [飲](の)みます。",
+  "example": "**ビール**を[飲](の)みます。",
   "exampleVi": "Tôi uống bia."
  },
  {
   "word": "ワイン",
   "reading": "ワイン",
   "meaning": "rượu vang",
-  "example": "**ワイン**を [飲](の)みました。",
+  "example": "**ワイン**を[飲](の)みました。",
   "exampleVi": "Tôi đã uống rượu vang."
  },
  {
   "word": "カップ",
   "reading": "カップ",
   "meaning": "tách, cốc",
-  "example": "**カップ**に コーヒーを [入](い)れます。",
+  "example": "**カップ**にコーヒーを[入](い)れます。",
   "exampleVi": "Tôi rót cà phê vào tách."
  },
  {
   "word": "コップ",
   "reading": "コップ",
   "meaning": "ly, cốc",
-  "example": "**コップ**に [水](みず)を [入](い)れます。",
+  "example": "**コップ**に[水](みず)を[入](い)れます。",
   "exampleVi": "Tôi rót nước vào ly."
  },
  {
@@ -479,112 +479,112 @@
   "word": "ご飯",
   "reading": "ごはん",
   "meaning": "cơm",
-  "example": "**ご[飯](はん)**を [食](た)べます。",
+  "example": "**ご[飯](はん)**を[食](た)べます。",
   "exampleVi": "Tôi ăn cơm."
  },
  {
   "word": "サンドイッチ",
   "reading": "サンドイッチ",
   "meaning": "bánh mì sandwich",
-  "example": "**サンドイッチ**を [食](た)べます。",
+  "example": "**サンドイッチ**を[食](た)べます。",
   "exampleVi": "Tôi ăn bánh mì sandwich."
  },
  {
   "word": "おにぎり",
   "reading": "おにぎり",
   "meaning": "cơm nắm",
-  "example": "**おにぎり**を [買](か)いました。",
+  "example": "**おにぎり**を[買](か)いました。",
   "exampleVi": "Tôi đã mua cơm nắm."
  },
  {
   "word": "お弁当",
   "reading": "おべんとう",
   "meaning": "cơm hộp",
-  "example": "**お[弁当](べんとう)**を [作](つく)りました。",
+  "example": "**お[弁当](べんとう)**を[作](つく)りました。",
   "exampleVi": "Tôi đã làm cơm hộp."
  },
  {
   "word": "ラーメン",
   "reading": "ラーメン",
   "meaning": "mì ramen",
-  "example": "**ラーメン**を [食](た)べに [行](い)きます。",
+  "example": "**ラーメン**を[食](た)べに[行](い)きます。",
   "exampleVi": "Tôi đi ăn mì ramen."
  },
  {
   "word": "パスタ",
   "reading": "パスタ",
   "meaning": "mì Ý",
-  "example": "**パスタ**が [好](す)きです。",
+  "example": "**パスタ**が[好](す)きです。",
   "exampleVi": "Tôi thích mì Ý."
  },
  {
   "word": "うどん",
   "reading": "うどん",
   "meaning": "udon",
-  "example": "**うどん**を [食](た)べます。",
+  "example": "**うどん**を[食](た)べます。",
   "exampleVi": "Tôi ăn udon."
  },
  {
   "word": "そば",
   "reading": "そば",
   "meaning": "mì soba",
-  "example": "**そば**を [食](た)べました。",
+  "example": "**そば**を[食](た)べました。",
   "exampleVi": "Tôi đã ăn mì soba."
  },
  {
   "word": "てんぷら",
   "reading": "てんぷら",
   "meaning": "tempura (món ăn tẩm bột chiên)",
-  "example": "**てんぷら**は [美味](おい)しいです。",
+  "example": "**てんぷら**は[美味](おい)しいです。",
   "exampleVi": "Tempura ngon."
  },
  {
   "word": "すきやき",
   "reading": "すきやき",
   "meaning": "sukiyaki (món lẩu)",
-  "example": "**すきやき**を [食](た)べたいです。",
+  "example": "**すきやき**を[食](た)べたいです。",
   "exampleVi": "Tôi muốn ăn sukiyaki."
  },
  {
   "word": "さしみ",
   "reading": "さしみ",
   "meaning": "sashimi (cá sống)",
-  "example": "**さしみ**を [食](た)べました。",
+  "example": "**さしみ**を[食](た)べました。",
   "exampleVi": "Tôi đã ăn sashimi."
  },
  {
   "word": "カレーライス",
   "reading": "カレーライス",
   "meaning": "cơm cà ri",
-  "example": "**カレーライス**は からいです。",
+  "example": "**カレーライス**はからいです。",
   "exampleVi": "Cơm cà ri thì cay."
  },
  {
   "word": "牛どん",
   "reading": "ぎゅうどん",
   "meaning": "cơm thịt bò",
-  "example": "**[牛](ぎゅう)どん**を [食](た)べます。",
+  "example": "**[牛](ぎゅう)どん**を[食](た)べます。",
   "exampleVi": "Tôi ăn cơm bò."
  },
  {
   "word": "おすし",
   "reading": "おすし",
-  "meaning": "sushi (cơm cuộn)",
-  "example": "**おすし**が [好](す)きです。",
+  "meaning": "sushi (cơm giấm ăn kèm cá, hải sản)",
+  "example": "**おすし**が[好](す)きです。",
   "exampleVi": "Tôi thích sushi."
  },
  {
   "word": "ケーキ",
   "reading": "ケーキ",
   "meaning": "bánh kem",
-  "example": "**ケーキ**は あまいです。",
+  "example": "**ケーキ**はあまいです。",
   "exampleVi": "Bánh kem thì ngọt."
  },
  {
   "word": "アイスクリーム",
   "reading": "アイスクリーム",
   "meaning": "kem",
-  "example": "**アイスクリーム**は [冷](つめ)たいです。",
+  "example": "**アイスクリーム**は[冷](つめ)たいです。",
   "exampleVi": "Kem thì lạnh."
  },
  {
@@ -598,35 +598,35 @@
   "word": "さとう",
   "reading": "さとう",
   "meaning": "đường",
-  "example": "コーヒーに **さとう**を [入](い)れます。",
+  "example": "コーヒーに**さとう**を[入](い)れます。",
   "exampleVi": "Tôi cho đường vào cà phê."
  },
  {
   "word": "しお",
   "reading": "しお",
   "meaning": "muối",
-  "example": "スープに **しお**を [入](い)れます。",
+  "example": "スープに**しお**を[入](い)れます。",
   "exampleVi": "Tôi cho muối vào súp."
  },
  {
   "word": "しょうゆ",
   "reading": "しょうゆ",
   "meaning": "nước tương",
-  "example": "**しょうゆ**は [黒](くろ)いです。",
+  "example": "**しょうゆ**は[黒](くろ)いです。",
   "exampleVi": "Nước tương có màu đen."
  },
  {
   "word": "ニョクマム",
   "reading": "ニョクマム",
   "meaning": "nước mắm",
-  "example": "**ニョクマム**を [使](つか)います。",
+  "example": "**ニョクマム**を[使](つか)います。",
   "exampleVi": "Tôi dùng nước mắm."
  },
  {
   "word": "ナンプラー",
   "reading": "ナンプラー",
   "meaning": "nước mắm (Thái Lan)",
-  "example": "**ナンプラー**は タイの ニョクマムです。",
+  "example": "**ナンプラー**はタイのニョクマムです。",
   "exampleVi": "Nam-pla là nước mắm của Thái Lan."
  },
  {
@@ -710,42 +710,42 @@
   "word": "はし",
   "reading": "はし",
   "meaning": "đũa",
-  "example": "**はし**で [食](た)べます。",
+  "example": "**はし**で[食](た)べます。",
   "exampleVi": "Tôi ăn bằng đũa."
  },
  {
   "word": "スプーン",
   "reading": "スプーン",
   "meaning": "muỗng, thìa",
-  "example": "**スプーン**で スープを [飲](の)みます。",
+  "example": "**スプーン**でスープを[飲](の)みます。",
   "exampleVi": "Tôi uống súp bằng thìa."
  },
  {
   "word": "フォーク",
   "reading": "フォーク",
   "meaning": "nĩa",
-  "example": "**フォーク**で [食](た)べます。",
+  "example": "**フォーク**で[食](た)べます。",
   "exampleVi": "Tôi ăn bằng nĩa."
  },
  {
   "word": "ナイフ",
   "reading": "ナイフ",
   "meaning": "dao",
-  "example": "**ナイフ**で [肉](にく)を [切](き)ります。",
+  "example": "**ナイフ**で[肉](にく)を[切](き)ります。",
   "exampleVi": "Tôi cắt thịt bằng dao."
  },
  {
   "word": "さら",
   "reading": "さら",
   "meaning": "đĩa",
-  "example": "**さら**に [肉](にく)が あります。",
+  "example": "**さら**に[肉](にく)があります。",
   "exampleVi": "Trên đĩa có thịt."
  },
  {
   "word": "ちゃわん",
   "reading": "ちゃわん",
   "meaning": "chén, bát",
-  "example": "**ちゃわん**に ご[飯](はん)を [入](い)れます。",
+  "example": "**ちゃわん**にご[飯](はん)を[入](い)れます。",
   "exampleVi": "Tôi cho cơm vào chén."
  },
  {
@@ -878,14 +878,14 @@
   "word": "いただきます",
   "reading": "いただきます",
   "meaning": "Tôi xin phép ăn./ Mời dùng. (Nói trước khi ăn, uống)",
-  "example": "A：どうぞ。　B：**いただきます**。",
+  "example": "A：どうぞ。B：**いただきます**。",
   "exampleVi": "A: Mời bạn dùng.  B: Tôi xin phép ăn."
  },
  {
   "word": "ごちそうさまでした",
   "reading": "ごちそうさまでした",
   "meaning": "Cám ơn đã cho bữa ăn ngon. (Nói sau khi ăn, uống)",
-  "example": "**ごちそうさまでした**。とても おいしかったです。",
+  "example": "**ごちそうさまでした**。とてもおいしかったです。",
   "exampleVi": "Cảm ơn vì bữa ăn. Rất ngon ạ."
  }
 ]

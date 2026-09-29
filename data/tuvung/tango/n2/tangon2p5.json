@@ -1,102 +1,504 @@
 [
-  "教わる",
-  "願書",
-  "推薦",
-  "狙う",
-  "意志",
-  "開始",
-  "通常",
-  "担任",
-  "受け持つ",
-  "委員",
-  "なじむ",
-  "充実",
-  "高等",
-  "ステップ",
-  "過程",
-  "取り上げる",
-  "欠ける",
-  "優秀",
-  "修了",
-  "ふさわしい",
-  "認識",
-  "語学学校",
-  "学ぶ",
-  "学習",
-  "学力",
-  "教養",
-  "参考書",
-  "書き込む",
-  "書き取る",
-  "記号",
-  "図",
-  "下線",
-  "法則",
-  "志す",
-  "徹夜",
-  "上達",
-  "こつこつ",
-  "地道",
-  "根気",
-  "効率的",
-  "旺盛",
-  "基礎",
-  "基本",
-  "除く",
-  "現状",
-  "おろそか",
-  "可能",
-  "実現",
-  "混同",
-  "複数",
-  "活用",
-  "挑戦",
-  "範囲",
-  "パターン",
-  "あらゆる",
-  "課題",
-  "段落",
-  "箇所",
-  "用紙",
-  "応用",
-  "選択",
-  "当てはまる",
-  "述べる",
-  "言い換える",
-  "考え込む",
-  "限る",
-  "紛らわしい",
-  "さっぱり",
-  "勘",
-  "本番",
-  "迫る",
-  "必死",
-  "一斉に",
-  "終了",
-  "回収",
-  "採点",
-  "確実",
-  "受講",
-  "書き留める",
-  "目標",
-  "心構え",
-  "学問",
-  "分野",
-  "取り組む",
-  "意欲",
-  "思いつく",
-  "発明",
-  "分析",
-  "継続",
-  "ほんの",
-  "受け入れる",
-  "キャンパス",
-  "休講",
-  "講師",
-  "学会",
-  "わずか",
-  "論理的",
-  "論じる",
-  "引用",
-  "訳す"
+  {
+    "word": "教わる",
+    "example": "[先生](せんせい)から[日本語](にほんご)を**[教](おそ)わって**います。",
+    "exampleVi": "Tôi đang được thầy dạy tiếng Nhật."
+  },
+  {
+    "word": "願書",
+    "example": "[大学](だいがく)の**[願書](がんしょ)**を[郵便](ゆうびん)で[送](おく)りました。",
+    "exampleVi": "Tôi đã gửi đơn xin nhập học đại học qua đường bưu điện."
+  },
+  {
+    "word": "推薦",
+    "example": "[先生](せんせい)が[私](わたし)を**[推薦](すいせん)**してくれました。",
+    "exampleVi": "Thầy giáo đã giới thiệu tôi."
+  },
+  {
+    "word": "狙う",
+    "example": "[彼](かれ)は[優勝](ゆうしょう)を**[狙](ねら)って**います。",
+    "exampleVi": "Anh ấy đang nhắm tới chức vô địch."
+  },
+  {
+    "word": "意志",
+    "example": "[私](わたし)は[自分](じぶん)の**[意志](いし)**で[留学](りゅうがく)を[決](き)めました。",
+    "exampleVi": "Tôi đã tự quyết định đi du học theo ý chí của bản thân."
+  },
+  {
+    "word": "開始",
+    "example": "[試験](しけん)は[九時](くじ)に**[開始](かいし)**されます。",
+    "exampleVi": "Kỳ thi sẽ bắt đầu lúc chín giờ."
+  },
+  {
+    "word": "通常",
+    "example": "**[通常](つうじょう)**は[九時](くじ)に[開店](かいてん)します。",
+    "exampleVi": "Thông thường cửa hàng mở cửa lúc chín giờ."
+  },
+  {
+    "word": "担任",
+    "example": "[私](わたし)の**[担任](たんにん)**の[先生](せんせい)は[優](やさ)しいです。",
+    "exampleVi": "Thầy chủ nhiệm của tôi rất hiền."
+  },
+  {
+    "word": "受け持つ",
+    "example": "[山田](やまだ)[先生](せんせい)は[三年生](さんねんせい)を**[受](う)け[持](も)って**います。",
+    "exampleVi": "Thầy Yamada phụ trách học sinh năm thứ ba."
+  },
+  {
+    "word": "委員",
+    "example": "[私](わたし)は[図書](としょ)**[委員](いいん)**をしています。",
+    "exampleVi": "Tôi đang làm ủy viên thư viện."
+  },
+  {
+    "word": "なじむ",
+    "example": "[新](あたら)しい[学校](がっこう)に[早](はや)く**なじめる**といいですね。",
+    "exampleVi": "Mong là bạn sớm quen với ngôi trường mới."
+  },
+  {
+    "word": "充実",
+    "example": "**[充実](じゅうじつ)**した[毎日](まいにち)を[送](おく)っています。",
+    "exampleVi": "Tôi đang sống những ngày trọn vẹn, ý nghĩa."
+  },
+  {
+    "word": "高等",
+    "example": "**[高等](こうとう)**[学校](がっこう)を[卒業](そつぎょう)して、[就職](しゅうしょく)しました。",
+    "exampleVi": "Tôi tốt nghiệp trung học phổ thông rồi đi làm."
+  },
+  {
+    "word": "ステップ",
+    "example": "これは[夢](ゆめ)に[向](む)かう[大](おお)きな**ステップ**です。",
+    "exampleVi": "Đây là một bước tiến lớn hướng tới ước mơ."
+  },
+  {
+    "word": "過程",
+    "example": "[結果](けっか)だけでなく、**[過程](かてい)**も[大切](たいせつ)です。",
+    "exampleVi": "Không chỉ kết quả mà quá trình cũng quan trọng."
+  },
+  {
+    "word": "取り上げる",
+    "example": "[新聞](しんぶん)がその[問題](もんだい)を**[取](と)り[上](あ)げました**。",
+    "exampleVi": "Báo chí đã đề cập đến vấn đề đó."
+  },
+  {
+    "word": "欠ける",
+    "example": "この[茶碗](ちゃわん)は[端](はし)が**[欠](か)けて**います。",
+    "exampleVi": "Cái bát này bị mẻ ở mép."
+  },
+  {
+    "word": "優秀",
+    "example": "[彼](かれ)は**[優秀](ゆうしゅう)**な[成績](せいせき)で[卒業](そつぎょう)しました。",
+    "exampleVi": "Anh ấy đã tốt nghiệp với thành tích xuất sắc."
+  },
+  {
+    "word": "修了",
+    "example": "[三年間](さんねんかん)の[課程](かてい)を**[修了](しゅうりょう)**しました。",
+    "exampleVi": "Tôi đã hoàn thành khóa học ba năm."
+  },
+  {
+    "word": "ふさわしい",
+    "example": "パーティーに**ふさわしい**[服](ふく)を[選](えら)びました。",
+    "exampleVi": "Tôi đã chọn bộ quần áo phù hợp với bữa tiệc."
+  },
+  {
+    "word": "認識",
+    "example": "[彼](かれ)は[問題](もんだい)の[重大](じゅうだい)さを**[認識](にんしき)**していません。",
+    "exampleVi": "Anh ta không nhận thức được mức độ nghiêm trọng của vấn đề."
+  },
+  {
+    "word": "語学学校",
+    "example": "[週末](しゅうまつ)は**[語学](ごがく)[学校](がっこう)**で[英語](えいご)を[勉強](べんきょう)しています。",
+    "exampleVi": "Cuối tuần tôi học tiếng Anh ở trường ngoại ngữ."
+  },
+  {
+    "word": "学ぶ",
+    "example": "[大学](だいがく)で[経済](けいざい)を**[学](まな)んで**います。",
+    "exampleVi": "Tôi đang học kinh tế ở đại học."
+  },
+  {
+    "word": "学習",
+    "example": "[毎日](まいにち)[三十分](さんじゅっぷん)、[漢字](かんじ)の**[学習](がくしゅう)**をしています。",
+    "exampleVi": "Mỗi ngày tôi học chữ Hán ba mươi phút."
+  },
+  {
+    "word": "学力",
+    "example": "[子供](こども)の**[学力](がくりょく)**が[下](さ)がっています。",
+    "exampleVi": "Học lực của trẻ con đang giảm sút."
+  },
+  {
+    "word": "教養",
+    "meaning": "học thức, vốn hiểu biết, sự trau dồi",
+    "example": "[本](ほん)を[読](よ)んで**[教養](きょうよう)**を[身](み)につけたいです。",
+    "exampleVi": "Tôi muốn đọc sách để trau dồi vốn hiểu biết."
+  },
+  {
+    "word": "参考書",
+    "example": "[試験](しけん)のために**[参考書](さんこうしょ)**を[買](か)いました。",
+    "exampleVi": "Tôi đã mua sách tham khảo để chuẩn bị cho kỳ thi."
+  },
+  {
+    "word": "書き込む",
+    "example": "[本](ほん)に[直接](ちょくせつ)メモを**[書](か)き[込](こ)みました**。",
+    "exampleVi": "Tôi đã ghi chú trực tiếp vào sách."
+  },
+  {
+    "word": "書き取る",
+    "example": "[先生](せんせい)の[話](はなし)をノートに**[書](か)き[取](と)りました**。",
+    "exampleVi": "Tôi đã ghi lời thầy nói vào vở."
+  },
+  {
+    "word": "記号",
+    "example": "[地図](ちず)にはいろいろな**[記号](きごう)**が[使](つか)われています。",
+    "exampleVi": "Trên bản đồ có sử dụng nhiều ký hiệu khác nhau."
+  },
+  {
+    "word": "図",
+    "example": "[分](わ)かりやすいよう**[図](ず)**を[使](つか)って[説明](せつめい)しました。",
+    "exampleVi": "Tôi đã dùng hình vẽ để giải thích cho dễ hiểu."
+  },
+  {
+    "word": "下線",
+    "example": "[大事](だいじ)なところに**[下線](かせん)**を[引](ひ)きました。",
+    "exampleVi": "Tôi đã gạch chân những chỗ quan trọng."
+  },
+  {
+    "word": "法則",
+    "example": "[自然](しぜん)の**[法則](ほうそく)**を[学](まな)びました。",
+    "exampleVi": "Tôi đã học các quy luật của tự nhiên."
+  },
+  {
+    "word": "志す",
+    "example": "[彼](かれ)は[医者](いしゃ)を**[志](こころざ)して**[勉強](べんきょう)しています。",
+    "exampleVi": "Anh ấy đang học với chí hướng trở thành bác sĩ."
+  },
+  {
+    "word": "徹夜",
+    "example": "[試験](しけん)の[前](まえ)の[日](ひ)は**[徹夜](てつや)**で[勉強](べんきょう)しました。",
+    "exampleVi": "Hôm trước kỳ thi tôi đã thức trắng đêm học bài."
+  },
+  {
+    "word": "上達",
+    "example": "[毎日](まいにち)[練習](れんしゅう)したので、ピアノが**[上達](じょうたつ)**しました。",
+    "exampleVi": "Vì luyện tập mỗi ngày nên tôi đã tiến bộ về piano."
+  },
+  {
+    "word": "こつこつ",
+    "example": "**こつこつ**[勉強](べんきょう)を[続](つづ)けることが[大切](たいせつ)です。",
+    "exampleVi": "Việc kiên trì học từng chút một là điều quan trọng."
+  },
+  {
+    "word": "地道",
+    "example": "**[地道](じみち)**な[努力](どりょく)が[成功](せいこう)の[鍵](かぎ)です。",
+    "exampleVi": "Nỗ lực bền bỉ, chắc chắn là chìa khóa của thành công."
+  },
+  {
+    "word": "根気",
+    "example": "[語学](ごがく)の[勉強](べんきょう)には**[根気](こんき)**が[必要](ひつよう)です。",
+    "exampleVi": "Học ngoại ngữ cần có sự kiên trì."
+  },
+  {
+    "word": "効率的",
+    "example": "**[効率的](こうりつてき)**な[勉強](べんきょう)[方法](ほうほう)を[探](さが)しています。",
+    "exampleVi": "Tôi đang tìm phương pháp học hiệu quả."
+  },
+  {
+    "word": "旺盛",
+    "example": "[彼](かれ)は**[旺盛](おうせい)**な[好奇心](こうきしん)を[持](も)っています。",
+    "exampleVi": "Anh ấy có trí tò mò mãnh liệt."
+  },
+  {
+    "word": "基礎",
+    "example": "**[基礎](きそ)**からしっかり[学](まな)びたいです。",
+    "exampleVi": "Tôi muốn học kỹ từ nền tảng."
+  },
+  {
+    "word": "基本",
+    "example": "スポーツは**[基本](きほん)**が[大切](たいせつ)です。",
+    "exampleVi": "Trong thể thao, cơ bản là điều quan trọng."
+  },
+  {
+    "word": "除く",
+    "example": "[日曜日](にちようび)を**[除](のぞ)いて**、[毎日](まいにち)[働](はたら)いています。",
+    "exampleVi": "Trừ Chủ nhật ra, ngày nào tôi cũng làm việc."
+  },
+  {
+    "word": "現状",
+    "example": "**[現状](げんじょう)**に[満足](まんぞく)せず、[努力](どりょく)を[続](つづ)けます。",
+    "exampleVi": "Tôi không hài lòng với tình trạng hiện tại và sẽ tiếp tục nỗ lực."
+  },
+  {
+    "word": "おろそか",
+    "example": "[勉強](べんきょう)を**おろそか**にしてはいけません。",
+    "exampleVi": "Không được lơ là việc học."
+  },
+  {
+    "word": "可能",
+    "example": "この[仕事](しごと)は[一人](ひとり)でも**[可能](かのう)**です。",
+    "exampleVi": "Công việc này một mình cũng có thể làm được."
+  },
+  {
+    "word": "実現",
+    "example": "[長年](ながねん)の[夢](ゆめ)がやっと**[実現](じつげん)**しました。",
+    "exampleVi": "Ước mơ bấy lâu cuối cùng cũng đã thành hiện thực."
+  },
+  {
+    "word": "混同",
+    "example": "[二](ふた)つの[言葉](ことば)を**[混同](こんどう)**して[使](つか)ってしまいました。",
+    "exampleVi": "Tôi đã lẫn lộn hai từ khi sử dụng."
+  },
+  {
+    "word": "複数",
+    "example": "[答](こた)えが**[複数](ふくすう)**ある[問題](もんだい)もあります。",
+    "exampleVi": "Cũng có những câu hỏi có nhiều đáp án."
+  },
+  {
+    "word": "活用",
+    "example": "ネットの[情報](じょうほう)を**[活用](かつよう)**して[勉強](べんきょう)しています。",
+    "exampleVi": "Tôi tận dụng thông tin trên mạng để học."
+  },
+  {
+    "word": "挑戦",
+    "example": "[新](あたら)しい[仕事](しごと)に**[挑戦](ちょうせん)**してみたいです。",
+    "exampleVi": "Tôi muốn thử thách bản thân với công việc mới."
+  },
+  {
+    "word": "範囲",
+    "example": "[試験](しけん)の**[範囲](はんい)**は[五課](ごか)までです。",
+    "exampleVi": "Phạm vi kỳ thi là đến bài năm."
+  },
+  {
+    "word": "パターン",
+    "example": "[毎日](まいにち)[同](おな)じ**パターン**の[生活](せいかつ)です。",
+    "exampleVi": "Cuộc sống của tôi ngày nào cũng lặp lại một kiểu."
+  },
+  {
+    "word": "あらゆる",
+    "example": "**あらゆる**[方法](ほうほう)を[試](ため)しました。",
+    "exampleVi": "Tôi đã thử mọi phương pháp."
+  },
+  {
+    "word": "課題",
+    "example": "[夏休](なつやす)みの**[課題](かだい)**がまだ[終](お)わっていません。",
+    "exampleVi": "Bài tập kỳ nghỉ hè của tôi vẫn chưa xong."
+  },
+  {
+    "word": "段落",
+    "example": "[文章](ぶんしょう)を[三](みっ)つの**[段落](だんらく)**に[分](わ)けました。",
+    "exampleVi": "Tôi đã chia bài văn thành ba đoạn."
+  },
+  {
+    "word": "箇所",
+    "example": "[間違](まちが)えた**[箇所](かしょ)**を[直](なお)しました。",
+    "exampleVi": "Tôi đã sửa những chỗ làm sai."
+  },
+  {
+    "word": "用紙",
+    "example": "この**[用紙](ようし)**に[名前](なまえ)を[書](か)いてください。",
+    "exampleVi": "Xin hãy viết tên vào tờ mẫu này."
+  },
+  {
+    "word": "応用",
+    "example": "[基本](きほん)を[覚](おぼ)えたら、**[応用](おうよう)**の[問題](もんだい)を[解](と)きましょう。",
+    "exampleVi": "Khi đã nhớ phần cơ bản, hãy giải các bài tập ứng dụng."
+  },
+  {
+    "word": "選択",
+    "example": "[進路](しんろ)の**[選択](せんたく)**は[難](むずか)しいです。",
+    "exampleVi": "Việc lựa chọn hướng đi tương lai thật khó."
+  },
+  {
+    "word": "当てはまる",
+    "example": "[次](つぎ)の[文](ぶん)に**[当](あ)てはまる**[言葉](ことば)を[選](えら)びなさい。",
+    "exampleVi": "Hãy chọn từ phù hợp với câu sau."
+  },
+  {
+    "word": "述べる",
+    "example": "[自分](じぶん)の[意見](いけん)を[簡単](かんたん)に**[述](の)べました**。",
+    "exampleVi": "Tôi đã trình bày ý kiến của mình một cách ngắn gọn."
+  },
+  {
+    "word": "言い換える",
+    "example": "[難](むずか)しい[言葉](ことば)を[簡単](かんたん)な[言葉](ことば)に**[言](い)い[換](か)えました**。",
+    "exampleVi": "Tôi đã nói lại từ khó bằng từ đơn giản."
+  },
+  {
+    "word": "考え込む",
+    "example": "[彼](かれ)は[長](なが)い[間](あいだ)、**[考](かんが)え[込](こ)んで**いました。",
+    "exampleVi": "Anh ấy đã trầm tư suy nghĩ rất lâu."
+  },
+  {
+    "word": "限る",
+    "example": "[参加](さんか)できるのは[学生](がくせい)に**[限](かぎ)ります**。",
+    "exampleVi": "Người có thể tham gia chỉ giới hạn ở sinh viên."
+  },
+  {
+    "word": "紛らわしい",
+    "example": "この[二](ふた)つの[字](じ)は**[紛](まぎ)らわしくて**、よく[間違](まちが)えます。",
+    "exampleVi": "Hai chữ này dễ nhầm lẫn nên tôi hay viết sai."
+  },
+  {
+    "word": "さっぱり",
+    "example": "[説明](せつめい)を[聞](き)いても、**さっぱり**[分](わ)かりません。",
+    "exampleVi": "Nghe giải thích rồi mà tôi vẫn hoàn toàn không hiểu."
+  },
+  {
+    "word": "勘",
+    "example": "[問題](もんだい)が[分](わ)からなかったので、**[勘](かん)**で[答](こた)えました。",
+    "exampleVi": "Vì không hiểu đề nên tôi đã trả lời theo trực giác."
+  },
+  {
+    "word": "本番",
+    "example": "[発表](はっぴょう)の**[本番](ほんばん)**は[明日](あした)です。",
+    "exampleVi": "Buổi thuyết trình chính thức là vào ngày mai."
+  },
+  {
+    "word": "迫る",
+    "example": "[試験](しけん)の[日](ひ)が**[迫](せま)って**います。",
+    "exampleVi": "Ngày thi đang đến gần."
+  },
+  {
+    "word": "必死",
+    "example": "**[必死](ひっし)**に[勉強](べんきょう)して、[合格](ごうかく)しました。",
+    "exampleVi": "Tôi đã học hết sức mình và đã thi đỗ."
+  },
+  {
+    "word": "一斉に",
+    "example": "[合図](あいず)と[同時](どうじ)に、[全員](ぜんいん)が**[一斉](いっせい)**に[走](はし)り[出](だ)しました。",
+    "exampleVi": "Ngay khi có hiệu lệnh, tất cả mọi người đồng loạt chạy đi."
+  },
+  {
+    "word": "終了",
+    "example": "[試験](しけん)は[三時](さんじ)に**[終了](しゅうりょう)**します。",
+    "exampleVi": "Kỳ thi sẽ kết thúc lúc ba giờ."
+  },
+  {
+    "word": "回収",
+    "example": "[先生](せんせい)が[宿題](しゅくだい)を**[回収](かいしゅう)**しました。",
+    "exampleVi": "Thầy giáo đã thu bài tập về nhà."
+  },
+  {
+    "word": "採点",
+    "example": "テストの**[採点](さいてん)**は[明日](あした)までに[終](お)わらせます。",
+    "exampleVi": "Tôi sẽ chấm xong bài kiểm tra trước ngày mai."
+  },
+  {
+    "word": "確実",
+    "example": "[彼](かれ)の[合格](ごうかく)は**[確実](かくじつ)**だと[思](おも)います。",
+    "exampleVi": "Tôi nghĩ việc anh ấy đỗ là chắc chắn."
+  },
+  {
+    "word": "受講",
+    "example": "[夏](なつ)の[講座](こうざ)を**[受講](じゅこう)**しました。",
+    "exampleVi": "Tôi đã theo học khóa học mùa hè."
+  },
+  {
+    "word": "書き留める",
+    "example": "[大切](たいせつ)なことは、[忘](わす)れないうちに**[書](か)き[留](と)めて**おきましょう。",
+    "exampleVi": "Những điều quan trọng hãy ghi lại trước khi quên."
+  },
+  {
+    "word": "目標",
+    "example": "[今年](ことし)の**[目標](もくひょう)**は[日本語](にほんご)[能力](のうりょく)[試験](しけん)に[合格](ごうかく)することです。",
+    "exampleVi": "Mục tiêu năm nay là thi đỗ kỳ thi năng lực tiếng Nhật."
+  },
+  {
+    "word": "心構え",
+    "example": "[新](あたら)しい[仕事](しごと)を[始](はじ)める**[心構](こころがま)え**ができました。",
+    "exampleVi": "Tôi đã chuẩn bị tinh thần để bắt đầu công việc mới."
+  },
+  {
+    "word": "学問",
+    "example": "[彼](かれ)は[一生](いっしょう)、**[学問](がくもん)**を[続](つづ)けました。",
+    "exampleVi": "Ông ấy đã theo đuổi học vấn suốt cả đời."
+  },
+  {
+    "word": "分野",
+    "example": "[私](わたし)は[医学](いがく)の**[分野](ぶんや)**で[研究](けんきゅう)しています。",
+    "exampleVi": "Tôi nghiên cứu trong lĩnh vực y học."
+  },
+  {
+    "word": "取り組む",
+    "example": "[新](あたら)しい[計画](けいかく)に[真剣](しんけん)に**[取](と)り[組](く)んで**います。",
+    "exampleVi": "Tôi đang nghiêm túc dấn thân vào kế hoạch mới."
+  },
+  {
+    "word": "意欲",
+    "meaning": "ý chí, động lực, hăng hái",
+    "example": "[彼](かれ)は[勉強](べんきょう)に**[意欲](いよく)**がある[学生](がくせい)です。",
+    "exampleVi": "Anh ấy là sinh viên có ý chí hăng hái học tập."
+  },
+  {
+    "word": "思いつく",
+    "example": "いい[考](かんが)えを**[思](おも)いつきました**。",
+    "exampleVi": "Tôi đã nảy ra một ý hay."
+  },
+  {
+    "word": "発明",
+    "example": "[電話](でんわ)を**[発明](はつめい)**したのは[誰](だれ)ですか。",
+    "exampleVi": "Ai là người đã phát minh ra điện thoại?"
+  },
+  {
+    "word": "分析",
+    "example": "[調査](ちょうさ)の[結果](けっか)を**[分析](ぶんせき)**しました。",
+    "exampleVi": "Tôi đã phân tích kết quả điều tra."
+  },
+  {
+    "word": "継続",
+    "example": "[毎日](まいにち)[練習](れんしゅう)を**[継続](けいぞく)**することが[大切](たいせつ)です。",
+    "exampleVi": "Việc tiếp tục luyện tập mỗi ngày là điều quan trọng."
+  },
+  {
+    "word": "ほんの",
+    "example": "**ほんの**[少](すこ)しだけ[休](やす)ませてください。",
+    "exampleVi": "Xin hãy cho tôi nghỉ chỉ một chút thôi."
+  },
+  {
+    "word": "受け入れる",
+    "example": "[彼](かれ)は[私](わたし)の[意見](いけん)を**[受](う)け[入](い)れて**くれました。",
+    "exampleVi": "Anh ấy đã chấp nhận ý kiến của tôi."
+  },
+  {
+    "word": "キャンパス",
+    "example": "この[大学](だいがく)の**キャンパス**はとても[広](ひろ)いです。",
+    "exampleVi": "Khuôn viên của trường đại học này rất rộng."
+  },
+  {
+    "word": "休講",
+    "example": "[先生](せんせい)が[病気](びょうき)で、[今日](きょう)の[授業](じゅぎょう)は**[休講](きゅうこう)**です。",
+    "exampleVi": "Vì thầy bị bệnh nên tiết học hôm nay nghỉ."
+  },
+  {
+    "word": "講師",
+    "example": "[講演会](こうえんかい)に[有名](ゆうめい)な**[講師](こうし)**を[招](まね)きました。",
+    "exampleVi": "Chúng tôi đã mời một giảng viên nổi tiếng đến buổi diễn thuyết."
+  },
+  {
+    "word": "学会",
+    "example": "[来月](らいげつ)、[東京](とうきょう)で**[学会](がっかい)**が[開](ひら)かれます。",
+    "exampleVi": "Tháng sau hội nghị học thuật sẽ được tổ chức ở Tokyo."
+  },
+  {
+    "word": "わずか",
+    "example": "[合格](ごうかく)まで**わずか**[三点](さんてん)[足](た)りませんでした。",
+    "exampleVi": "Tôi chỉ thiếu vỏn vẹn ba điểm nữa là đỗ."
+  },
+  {
+    "word": "論理的",
+    "example": "**[論理的](ろんりてき)**に[考](かんが)える[力](ちから)を[身](み)につけたいです。",
+    "exampleVi": "Tôi muốn rèn năng lực suy nghĩ một cách logic."
+  },
+  {
+    "word": "論じる",
+    "example": "この[問題](もんだい)については、[本](ほん)の[中](なか)で[詳](くわ)しく**[論](ろん)じられて**います。",
+    "exampleVi": "Vấn đề này được bàn luận chi tiết trong cuốn sách."
+  },
+  {
+    "word": "引用",
+    "example": "[本](ほん)から**[引用](いんよう)**するときは、[出典](しゅってん)を[書](か)きます。",
+    "exampleVi": "Khi trích dẫn từ sách, phải ghi rõ nguồn."
+  },
+  {
+    "word": "訳す",
+    "example": "この[文](ぶん)を[英語](えいご)から[日本語](にほんご)に**[訳](やく)して**ください。",
+    "exampleVi": "Hãy dịch câu này từ tiếng Anh sang tiếng Nhật."
+  }
 ]

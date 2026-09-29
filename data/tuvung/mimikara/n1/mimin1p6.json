@@ -1,56 +1,272 @@
 [
-  "パネル",
-  "センサー",
-  "ディスプレイ",
-  "グッズ",
-  "パック",
-  "シングル",
-  "ダブル",
-  "カタログ",
-  "ブランド",
-  "フリーマーケット",
-  "スポンサー",
-  "キャンペーン",
-  "イベント",
-  "フェスティバル",
-  "パレード",
-  "ライブ",
-  "アウトドア",
-  "リゾート",
-  "スリル",
-  "ミステリー",
-  "フィクション",
-  "ヒーロー",
-  "ファン",
-  "デビュー",
-  "プロフィール",
-  "イニシャル",
-  "ポピュラー",
-  "ヘルシー",
-  "レシピ",
-  "スパイス",
-  "ボリューム",
-  "トライ",
-  "チャレンジ",
-  "マイペース",
-  "チームワーク",
-  "プロジェクト",
-  "パートナー",
-  "セミナー",
-  "シンポジウム",
-  "シンポ",
-  "ゼミ",
-  "ゼミナール",
-  "レジュメ",
-  "リスト",
-  "ランク",
-  "インターンシップ",
-  "リストラ",
-  "リストラクション",
-  "フリーター",
-  "セクハラ",
-  "セクシャルハラスメント",
-  "フェア",
-  "ボイコット",
-  "アレルギー"
+  {
+    "word": "パネル",
+    "example": "[壁](かべ)に**パネル**を[飾](かざ)りました。",
+    "exampleVi": "Tôi treo tấm bảng lên tường."
+  },
+  {
+    "word": "センサー",
+    "example": "ドアに**センサー**が[付](つ)いています。",
+    "exampleVi": "Cửa có gắn cảm biến."
+  },
+  {
+    "word": "ディスプレイ",
+    "example": "[店](みせ)の**ディスプレイ**を[変](か)えました。",
+    "exampleVi": "Tôi đã đổi cách trưng bày của cửa hàng."
+  },
+  {
+    "word": "グッズ",
+    "example": "[人気](にんき)のキャラクターの**グッズ**を[買](か)いました。",
+    "exampleVi": "Tôi đã mua đồ lưu niệm của nhân vật được yêu thích."
+  },
+  {
+    "word": "パック",
+    "example": "[卵](たまご)を**パック**で[買](か)いました。",
+    "exampleVi": "Tôi đã mua trứng theo vỉ."
+  },
+  {
+    "word": "シングル",
+    "example": "**シングル**の[部屋](へや)を[予約](よやく)しました。",
+    "exampleVi": "Tôi đã đặt phòng đơn."
+  },
+  {
+    "word": "ダブル",
+    "example": "**ダブル**ベッドの[部屋](へや)に[泊](と)まりました。",
+    "exampleVi": "Tôi đã ở phòng có giường đôi."
+  },
+  {
+    "word": "カタログ",
+    "example": "[新](あたら)しい**カタログ**を[送](おく)ってください。",
+    "exampleVi": "Xin hãy gửi cho tôi catalog mới."
+  },
+  {
+    "word": "ブランド",
+    "example": "[有名](ゆうめい)な**ブランド**の[服](ふく)を[買](か)いました。",
+    "exampleVi": "Tôi đã mua quần áo của thương hiệu nổi tiếng."
+  },
+  {
+    "word": "フリーマーケット",
+    "example": "[公園](こうえん)で**フリーマーケット**が[開](ひら)かれます。",
+    "exampleVi": "Chợ đồ cũ sẽ được tổ chức ở công viên."
+  },
+  {
+    "word": "スポンサー",
+    "example": "[会社](かいしゃ)が[大会](たいかい)の**スポンサー**になりました。",
+    "exampleVi": "Công ty đã trở thành nhà tài trợ của giải đấu."
+  },
+  {
+    "word": "キャンペーン",
+    "example": "[今](いま)、[割引](わりびき)**キャンペーン**をしています。",
+    "exampleVi": "Hiện đang có chiến dịch giảm giá."
+  },
+  {
+    "word": "イベント",
+    "example": "[週末](しゅうまつ)に[町](まち)で**イベント**があります。",
+    "exampleVi": "Cuối tuần có sự kiện ở thị trấn."
+  },
+  {
+    "word": "フェスティバル",
+    "example": "[夏](なつ)に[音楽](おんがく)の**フェスティバル**が[開](ひら)かれます。",
+    "exampleVi": "Vào mùa hè, lễ hội âm nhạc sẽ được tổ chức."
+  },
+  {
+    "word": "パレード",
+    "example": "[町](まち)を**パレード**が[通](とお)りました。",
+    "exampleVi": "Đoàn diễu hành đã đi qua thị trấn."
+  },
+  {
+    "word": "ライブ",
+    "example": "[週末](しゅうまつ)、**ライブ**に[行](い)きます。",
+    "exampleVi": "Cuối tuần tôi sẽ đi xem show trực tiếp."
+  },
+  {
+    "word": "アウトドア",
+    "example": "[私](わたし)の[趣味](しゅみ)は**アウトドア**です。",
+    "exampleVi": "Sở thích của tôi là hoạt động ngoài trời."
+  },
+  {
+    "word": "リゾート",
+    "example": "[夏休](なつやす)みに**リゾート**へ[行](い)きました。",
+    "exampleVi": "Kỳ nghỉ hè tôi đã đi khu nghỉ dưỡng."
+  },
+  {
+    "word": "スリル",
+    "example": "**スリル**のある[映画](えいが)が[好](す)きです。",
+    "exampleVi": "Tôi thích phim có cảm giác mạnh, rùng rợn."
+  },
+  {
+    "word": "ミステリー",
+    "example": "**ミステリー**[小説](しょうせつ)を[読](よ)んでいます。",
+    "exampleVi": "Tôi đang đọc tiểu thuyết bí ẩn."
+  },
+  {
+    "word": "フィクション",
+    "example": "この[物語](ものがたり)は**フィクション**です。",
+    "exampleVi": "Câu chuyện này là hư cấu."
+  },
+  {
+    "word": "ヒーロー",
+    "example": "[彼](かれ)は[町](まち)の**ヒーロー**です。",
+    "exampleVi": "Anh ấy là anh hùng của thị trấn."
+  },
+  {
+    "word": "ファン",
+    "example": "[私](わたし)は[彼](かれ)の**ファン**です。",
+    "exampleVi": "Tôi là người hâm mộ của anh ấy."
+  },
+  {
+    "word": "デビュー",
+    "example": "[彼女](かのじょ)は[十七歳](じゅうななさい)で**デビュー**しました。",
+    "exampleVi": "Cô ấy đã ra mắt lần đầu năm mười bảy tuổi."
+  },
+  {
+    "word": "プロフィール",
+    "example": "ホームページに[自分](じぶん)の**プロフィール**を[載](の)せました。",
+    "exampleVi": "Tôi đã đăng lý lịch của mình lên trang web."
+  },
+  {
+    "word": "イニシャル",
+    "example": "[名前](なまえ)の**イニシャル**を[書](か)きました。",
+    "exampleVi": "Tôi đã viết chữ cái viết tắt của tên."
+  },
+  {
+    "word": "ポピュラー",
+    "example": "**ポピュラー**な[音楽](おんがく)を[聞](き)きます。",
+    "exampleVi": "Tôi nghe nhạc phổ biến."
+  },
+  {
+    "word": "ヘルシー",
+    "example": "**ヘルシー**な[料理](りょうり)を[作](つく)りました。",
+    "exampleVi": "Tôi đã nấu món ăn lành mạnh."
+  },
+  {
+    "word": "レシピ",
+    "example": "[母](はは)の**レシピ**でケーキを[焼](や)きました。",
+    "exampleVi": "Tôi nướng bánh theo công thức của mẹ."
+  },
+  {
+    "word": "スパイス",
+    "example": "**スパイス**を[使](つか)ってカレーを[作](つく)りました。",
+    "exampleVi": "Tôi đã nấu cà ri bằng gia vị."
+  },
+  {
+    "word": "ボリューム",
+    "example": "[音楽](おんがく)の**ボリューム**を[下](さ)げてください。",
+    "exampleVi": "Xin hãy giảm âm lượng nhạc."
+  },
+  {
+    "word": "トライ",
+    "example": "もう[一度](いちど)**トライ**してみます。",
+    "exampleVi": "Tôi sẽ thử lại một lần nữa."
+  },
+  {
+    "word": "チャレンジ",
+    "example": "[新](あたら)しい[仕事](しごと)に**チャレンジ**します。",
+    "exampleVi": "Tôi sẽ thử thách với công việc mới."
+  },
+  {
+    "word": "マイペース",
+    "example": "[彼](かれ)はいつも**マイペース**です。",
+    "exampleVi": "Anh ấy lúc nào cũng theo nhịp độ riêng."
+  },
+  {
+    "word": "チームワーク",
+    "example": "**チームワーク**が[大切](たいせつ)です。",
+    "exampleVi": "Làm việc nhóm là điều quan trọng."
+  },
+  {
+    "word": "プロジェクト",
+    "example": "[大](おお)きな**プロジェクト**のリーダーになりました。",
+    "exampleVi": "Tôi đã trở thành trưởng nhóm của một dự án lớn."
+  },
+  {
+    "word": "パートナー",
+    "example": "[仕事](しごと)の**パートナー**を[探](さが)しています。",
+    "exampleVi": "Tôi đang tìm đối tác công việc."
+  },
+  {
+    "word": "セミナー",
+    "example": "[来週](らいしゅう)、**セミナー**に[参加](さんか)します。",
+    "exampleVi": "Tuần sau tôi sẽ tham dự hội thảo."
+  },
+  {
+    "word": "シンポジウム",
+    "example": "[大学](だいがく)で**シンポジウム**が[開](ひら)かれます。",
+    "exampleVi": "Hội nghị chuyên đề sẽ được tổ chức ở đại học."
+  },
+  {
+    "word": "シンポ",
+    "example": "**シンポ**で[発表](はっぴょう)しました。",
+    "exampleVi": "Tôi đã thuyết trình tại hội nghị chuyên đề."
+  },
+  {
+    "word": "ゼミ",
+    "example": "[私](わたし)は[経済](けいざい)の**ゼミ**に[入](はい)っています。",
+    "exampleVi": "Tôi tham gia lớp chuyên đề kinh tế."
+  },
+  {
+    "word": "ゼミナール",
+    "example": "[毎週](まいしゅう)**ゼミナール**で[発表](はっぴょう)します。",
+    "exampleVi": "Mỗi tuần tôi thuyết trình trong buổi thảo luận chuyên đề."
+  },
+  {
+    "word": "レジュメ",
+    "example": "[発表](はっぴょう)の**レジュメ**を[作](つく)りました。",
+    "exampleVi": "Tôi đã soạn bản tóm tắt cho bài thuyết trình."
+  },
+  {
+    "word": "リスト",
+    "example": "[買](か)い[物](もの)の**リスト**を[作](つく)りました。",
+    "exampleVi": "Tôi đã lập danh sách mua sắm."
+  },
+  {
+    "word": "ランク",
+    "example": "[彼](かれ)の[成績](せいせき)の**ランク**が[上](あ)がりました。",
+    "exampleVi": "Thứ hạng thành tích của anh ấy đã tăng."
+  },
+  {
+    "word": "インターンシップ",
+    "example": "[夏休](なつやす)みに**インターンシップ**に[参加](さんか)しました。",
+    "exampleVi": "Kỳ nghỉ hè tôi đã tham gia thực tập."
+  },
+  {
+    "word": "リストラ",
+    "example": "[会社](かいしゃ)が**リストラ**を[行](おこな)いました。",
+    "exampleVi": "Công ty đã tiến hành cắt giảm biên chế."
+  },
+  {
+    "word": "リストラクション",
+    "example": "**リストラクション**の[結果](けっか)、[多](おお)くの[社員](しゃいん)が[辞](や)めました。",
+    "exampleVi": "Do cắt giảm biên chế, nhiều nhân viên đã nghỉ việc."
+  },
+  {
+    "word": "フリーター",
+    "example": "[彼](かれ)は**フリーター**として[働](はたら)いています。",
+    "exampleVi": "Anh ấy đang làm việc như một người làm tự do (freeter)."
+  },
+  {
+    "word": "セクハラ",
+    "example": "**セクハラ**は[許](ゆる)されません。",
+    "exampleVi": "Quấy rối tình dục không thể được tha thứ."
+  },
+  {
+    "word": "セクシャルハラスメント",
+    "example": "**セクシャルハラスメント**を[防止](ぼうし)する[研修](けんしゅう)があります。",
+    "exampleVi": "Có buổi tập huấn phòng chống quấy rối tình dục."
+  },
+  {
+    "word": "フェア",
+    "example": "デパートで[北海道](ほっかいどう)**フェア**が[開](ひら)かれています。",
+    "exampleVi": "Ở cửa hàng bách hóa đang có hội chợ Hokkaido."
+  },
+  {
+    "word": "ボイコット",
+    "example": "[住民](じゅうみん)は[店](みせ)を**ボイコット**しました。",
+    "exampleVi": "Cư dân đã tẩy chay cửa hàng."
+  },
+  {
+    "word": "アレルギー",
+    "example": "[私](わたし)は[卵](たまご)の**アレルギー**があります。",
+    "exampleVi": "Tôi bị dị ứng trứng."
+  }
 ]

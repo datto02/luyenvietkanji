@@ -1,101 +1,499 @@
 [
-  "測定",
-  "定期的",
-  "血圧",
-  "体力",
-  "心身",
-  "健やか",
-  "偏る",
-  "小柄",
-  "寿命",
-  "一般に",
-  "手首",
-  "かかと",
-  "つま先",
-  "血管",
-  "さらさら",
-  "筋肉",
-  "障害",
-  "乗り越える",
-  "傷跡",
-  "いびき",
-  "体がもつ",
-  "休養",
-  "疲労",
-  "不調",
-  "体調",
-  "やや",
-  "寝心地",
-  "大した",
-  "念のため",
-  "通院",
-  "レントゲン",
-  "さらに",
-  "衰える",
-  "鍛える",
-  "適度",
-  "予防",
-  "補給",
-  "不足",
-  "サプリメント",
-  "取り戻す",
-  "ワクチン",
-  "加入",
-  "医師",
-  "くれぐれも",
-  "具体的",
-  "程度",
-  "ぼうっと",
-  "ふらふら",
-  "意識",
-  "しゃがむ",
-  "視野",
-  "呼吸",
-  "詰まる",
-  "耐える",
-  "便秘",
-  "気味",
-  "寒気",
-  "ねじる",
-  "しっしん",
-  "はれる",
-  "しきりに",
-  "異常",
-  "伴う",
-  "単なる",
-  "伝染",
-  "反応",
-  "病む",
-  "負傷",
-  "重体",
-  "熱中症",
-  "細菌",
-  "つまずく",
-  "医療",
-  "高度",
-  "実績",
-  "負担",
-  "手当て",
-  "適用",
-  "尽くす",
-  "薬品",
-  "作用",
-  "目安",
-  "副作用",
-  "余計",
-  "もむ",
-  "告げる",
-  "覚悟",
-  "看病",
-  "配慮",
-  "遺伝",
-  "克服",
-  "リハビリ",
-  "肌",
-  "手入れ",
-  "ケア",
-  "維持",
-  "機能",
-  "かえって",
-  "刺激"
+  {
+    "word": "測定",
+    "example": "[毎朝](まいあさ)、[血圧](けつあつ)を**[測定](そくてい)**しています。",
+    "exampleVi": "Mỗi sáng tôi đều đo huyết áp."
+  },
+  {
+    "word": "定期的",
+    "example": "**[定期的](ていきてき)**に[健康](けんこう)[診断](しんだん)を[受](う)けています。",
+    "exampleVi": "Tôi kiểm tra sức khỏe định kỳ."
+  },
+  {
+    "word": "血圧",
+    "example": "[父](ちち)は**[血圧](けつあつ)**が[高](たか)いです。",
+    "exampleVi": "Bố tôi bị huyết áp cao."
+  },
+  {
+    "word": "体力",
+    "example": "[年](とし)を[取](と)って、**[体力](たいりょく)**が[落](お)ちました。",
+    "exampleVi": "Già đi nên thể lực của tôi đã giảm."
+  },
+  {
+    "word": "心身",
+    "example": "[運動](うんどう)は**[心身](しんしん)**の[健康](けんこう)に[良](よ)いです。",
+    "exampleVi": "Vận động tốt cho sức khỏe cả tinh thần lẫn thể chất."
+  },
+  {
+    "word": "健やか",
+    "example": "[子供](こども)が**[健](すこ)やか**に[育](そだ)つことを[願](ねが)っています。",
+    "exampleVi": "Tôi mong đứa trẻ lớn lên khỏe mạnh."
+  },
+  {
+    "word": "偏る",
+    "example": "[食事](しょくじ)が**[偏](かたよ)る**と、[体](からだ)に[悪](わる)いです。",
+    "exampleVi": "Nếu chế độ ăn mất cân bằng thì có hại cho cơ thể."
+  },
+  {
+    "word": "小柄",
+    "example": "[彼女](かのじょ)は**[小柄](こがら)**ですが、[力](ちから)が[強](つよ)いです。",
+    "exampleVi": "Cô ấy nhỏ người nhưng rất khỏe."
+  },
+  {
+    "word": "寿命",
+    "example": "[日本人](にほんじん)の**[寿命](じゅみょう)**は[長](なが)いです。",
+    "exampleVi": "Tuổi thọ của người Nhật cao."
+  },
+  {
+    "word": "一般に",
+    "example": "**[一般](いっぱん)に**、[女性](じょせい)のほうが[男性](だんせい)より[長生](ながい)きです。",
+    "exampleVi": "Nói chung, phụ nữ sống lâu hơn nam giới."
+  },
+  {
+    "word": "手首",
+    "example": "**[手首](てくび)**に[時計](とけい)を[着](つ)けています。",
+    "exampleVi": "Tôi đeo đồng hồ ở cổ tay."
+  },
+  {
+    "word": "かかと",
+    "example": "[新](あたら)しい[靴](くつ)で、**かかと**が[痛](いた)くなりました。",
+    "exampleVi": "Đi giày mới nên gót chân tôi bị đau."
+  },
+  {
+    "word": "つま先",
+    "example": "**つま[先](さき)**で[立](た)って、[棚](たな)の[上](うえ)の[本](ほん)を[取](と)りました。",
+    "exampleVi": "Tôi kiễng mũi chân lấy cuốn sách trên kệ."
+  },
+  {
+    "word": "血管",
+    "example": "**[血管](けっかん)**が[細](ほそ)くなると、[病気](びょうき)になりやすいです。",
+    "exampleVi": "Khi mạch máu hẹp lại thì dễ mắc bệnh."
+  },
+  {
+    "word": "さらさら",
+    "meaning": "khô ráo, mượt mà, sột soạt",
+    "example": "[赤](あか)ちゃんの[髪](かみ)は**さらさら**しています。",
+    "exampleVi": "Tóc em bé mượt mà."
+  },
+  {
+    "word": "筋肉",
+    "example": "[毎日](まいにち)[運動](うんどう)して、**[筋肉](きんにく)**を[付](つ)けました。",
+    "exampleVi": "Tôi tập luyện mỗi ngày để có cơ bắp."
+  },
+  {
+    "word": "障害",
+    "example": "[事故](じこ)で[足](あし)に**[障害](しょうがい)**が[残](のこ)りました。",
+    "exampleVi": "Vì tai nạn mà chân tôi còn để lại khuyết tật."
+  },
+  {
+    "word": "乗り越える",
+    "example": "[彼](かれ)は[大](おお)きな[病気](びょうき)を**[乗](の)り[越](こ)えました**。",
+    "exampleVi": "Anh ấy đã vượt qua căn bệnh nặng."
+  },
+  {
+    "word": "傷跡",
+    "example": "[手術](しゅじゅつ)の**[傷跡](きずあと)**が[残](のこ)っています。",
+    "exampleVi": "Vết sẹo phẫu thuật vẫn còn đó."
+  },
+  {
+    "word": "いびき",
+    "example": "[夫](おっと)の**いびき**がうるさくて、[眠](ねむ)れません。",
+    "exampleVi": "Tiếng ngáy của chồng ồn quá nên tôi không ngủ được."
+  },
+  {
+    "word": "体がもつ",
+    "example": "[毎日](まいにち)[三時間](さんじかん)しか[寝](ね)ないと、**[体](からだ)がもちません**。",
+    "exampleVi": "Nếu ngày nào cũng chỉ ngủ ba tiếng thì cơ thể không chịu nổi."
+  },
+  {
+    "word": "休養",
+    "example": "[風邪](かぜ)をひいたので、[家](いえ)で**[休養](きゅうよう)**しました。",
+    "exampleVi": "Vì bị cảm nên tôi đã nghỉ dưỡng ở nhà."
+  },
+  {
+    "word": "疲労",
+    "example": "[長](なが)い[運転](うんてん)で、**[疲労](ひろう)**がたまりました。",
+    "exampleVi": "Lái xe lâu khiến mệt mỏi tích tụ."
+  },
+  {
+    "word": "不調",
+    "example": "[最近](さいきん)、[体](からだ)の**[不調](ふちょう)**を[感](かん)じます。",
+    "exampleVi": "Gần đây tôi cảm thấy cơ thể không được khỏe."
+  },
+  {
+    "word": "体調",
+    "example": "**[体調](たいちょう)**が[悪](わる)いので、[今日](きょう)は[休](やす)みます。",
+    "exampleVi": "Vì sức khỏe không tốt nên hôm nay tôi nghỉ."
+  },
+  {
+    "word": "やや",
+    "example": "[昨日](きのう)より**やや**[熱](ねつ)が[下](さ)がりました。",
+    "exampleVi": "So với hôm qua, sốt đã hạ xuống một chút."
+  },
+  {
+    "word": "寝心地",
+    "example": "このベッドは**[寝心地](ねごこち)**がいいです。",
+    "exampleVi": "Chiếc giường này ngủ rất êm."
+  },
+  {
+    "word": "大した",
+    "meaning": "đáng kể, to tát (thường đi với phủ định)",
+    "example": "**[大](たい)した**[怪我](けが)ではありません。",
+    "exampleVi": "Đó không phải là vết thương nghiêm trọng gì."
+  },
+  {
+    "word": "念のため",
+    "example": "**[念](ねん)のため**、[病院](びょういん)で[検査](けんさ)を[受](う)けました。",
+    "exampleVi": "Để cho chắc, tôi đã đi kiểm tra ở bệnh viện."
+  },
+  {
+    "word": "通院",
+    "example": "[週](しゅう)に[一度](いちど)、[病院](びょういん)に**[通院](つういん)**しています。",
+    "exampleVi": "Mỗi tuần một lần tôi đi khám định kỳ ở bệnh viện."
+  },
+  {
+    "word": "レントゲン",
+    "example": "[肺](はい)の**レントゲン**を[撮](と)りました。",
+    "exampleVi": "Tôi đã chụp X-quang phổi."
+  },
+  {
+    "word": "さらに",
+    "example": "[病状](びょうじょう)が**さらに**[悪](わる)くなりました。",
+    "exampleVi": "Tình trạng bệnh càng trở nên tệ hơn."
+  },
+  {
+    "word": "衰える",
+    "example": "[年](とし)を[取](と)ると、[視力](しりょく)が**[衰](おとろ)えます**。",
+    "exampleVi": "Già đi thì thị lực suy giảm."
+  },
+  {
+    "word": "鍛える",
+    "example": "[毎日](まいにち)、[走](はし)って[体](からだ)を**[鍛](きた)えて**います。",
+    "exampleVi": "Mỗi ngày tôi chạy bộ để rèn luyện cơ thể."
+  },
+  {
+    "word": "適度",
+    "example": "**[適度](てきど)**な[運動](うんどう)は[健康](けんこう)にいいです。",
+    "exampleVi": "Vận động vừa phải tốt cho sức khỏe."
+  },
+  {
+    "word": "予防",
+    "example": "[手](て)を[洗](あら)って、[風邪](かぜ)を**[予防](よぼう)**しましょう。",
+    "exampleVi": "Hãy rửa tay để phòng cảm cúm."
+  },
+  {
+    "word": "補給",
+    "example": "[運動](うんどう)のあとは[水分](すいぶん)を**[補給](ほきゅう)**してください。",
+    "exampleVi": "Sau khi vận động hãy bổ sung nước."
+  },
+  {
+    "word": "不足",
+    "example": "[睡眠](すいみん)が**[不足](ふそく)**しています。",
+    "exampleVi": "Tôi đang thiếu ngủ."
+  },
+  {
+    "word": "サプリメント",
+    "example": "ビタミンの**サプリメント**を[飲](の)んでいます。",
+    "exampleVi": "Tôi đang uống thực phẩm bổ sung vitamin."
+  },
+  {
+    "word": "取り戻す",
+    "example": "[健康](けんこう)を**[取](と)り[戻](もど)す**ために、[運動](うんどう)を[始](はじ)めました。",
+    "exampleVi": "Tôi bắt đầu tập thể dục để lấy lại sức khỏe."
+  },
+  {
+    "word": "ワクチン",
+    "example": "[冬](ふゆ)の[前](まえ)にインフルエンザの**ワクチン**を[打](う)ちました。",
+    "exampleVi": "Trước mùa đông tôi đã tiêm vắc-xin cúm."
+  },
+  {
+    "word": "加入",
+    "example": "[会社](かいしゃ)の[健康](けんこう)[保険](ほけん)に**[加入](かにゅう)**しました。",
+    "exampleVi": "Tôi đã tham gia bảo hiểm y tế của công ty."
+  },
+  {
+    "word": "医師",
+    "example": "**[医師](いし)**の[指示](しじ)に[従](したが)って、[薬](くすり)を[飲](の)みました。",
+    "exampleVi": "Tôi đã uống thuốc theo chỉ dẫn của bác sĩ."
+  },
+  {
+    "word": "くれぐれも",
+    "example": "**くれぐれも**お[体](からだ)に[気](き)を[付](つ)けてください。",
+    "exampleVi": "Xin hãy hết sức giữ gìn sức khỏe."
+  },
+  {
+    "word": "具体的",
+    "example": "**[具体的](ぐたいてき)**な[症状](しょうじょう)を[教](おし)えてください。",
+    "exampleVi": "Xin hãy cho biết triệu chứng cụ thể."
+  },
+  {
+    "word": "程度",
+    "example": "[痛](いた)みの**[程度](ていど)**を[医者](いしゃ)に[伝](つた)えました。",
+    "exampleVi": "Tôi đã nói với bác sĩ mức độ đau."
+  },
+  {
+    "word": "ぼうっと",
+    "example": "[熱](ねつ)があって、[頭](あたま)が**ぼうっと**しています。",
+    "exampleVi": "Tôi bị sốt nên đầu óc lơ mơ."
+  },
+  {
+    "word": "ふらふら",
+    "example": "[貧血](ひんけつ)で、[歩](ある)くと**ふらふら**します。",
+    "exampleVi": "Vì thiếu máu nên đi lại là thấy choáng váng."
+  },
+  {
+    "word": "意識",
+    "example": "[事故](じこ)のあと、[彼](かれ)は**[意識](いしき)**がありませんでした。",
+    "exampleVi": "Sau tai nạn, anh ấy không còn ý thức."
+  },
+  {
+    "word": "しゃがむ",
+    "example": "[靴](くつ)のひもを[結](むす)ぶために**しゃがみました**。",
+    "exampleVi": "Tôi ngồi xổm xuống để buộc dây giày."
+  },
+  {
+    "word": "視野",
+    "example": "[年](とし)を[取](と)ると、**[視野](しや)**が[狭](せま)くなります。",
+    "exampleVi": "Già đi thì tầm nhìn hẹp lại."
+  },
+  {
+    "word": "呼吸",
+    "example": "[深](ふか)く**[呼吸](こきゅう)**して、[心](こころ)を[落](お)ち[着](つ)けました。",
+    "exampleVi": "Tôi hít thở sâu để bình tĩnh lại."
+  },
+  {
+    "word": "詰まる",
+    "example": "[鼻](はな)が**[詰](つ)まって**、[息](いき)が[苦](くる)しいです。",
+    "exampleVi": "Mũi tôi bị nghẹt nên khó thở."
+  },
+  {
+    "word": "耐える",
+    "example": "[痛](いた)みに**[耐](た)えられません**。",
+    "exampleVi": "Tôi không chịu nổi cơn đau."
+  },
+  {
+    "word": "便秘",
+    "example": "[最近](さいきん)、**[便秘](べんぴ)**で[困](こま)っています。",
+    "exampleVi": "Gần đây tôi khổ sở vì táo bón."
+  },
+  {
+    "word": "気味",
+    "example": "[風邪](かぜ)**[気味](ぎみ)**なので、[早](はや)く[寝](ね)ます。",
+    "exampleVi": "Tôi hơi có dấu hiệu bị cảm nên sẽ đi ngủ sớm."
+  },
+  {
+    "word": "寒気",
+    "example": "[熱](ねつ)があるのか、**[寒気](さむけ)**がします。",
+    "exampleVi": "Không biết có bị sốt không mà tôi thấy ớn lạnh."
+  },
+  {
+    "word": "ねじる",
+    "example": "[腰](こし)を**ねじって**、[痛](いた)めてしまいました。",
+    "exampleVi": "Tôi vặn eo và bị đau lưng."
+  },
+  {
+    "word": "しっしん",
+    "example": "[背中](せなか)に**しっしん**ができました。",
+    "exampleVi": "Trên lưng tôi nổi phát ban."
+  },
+  {
+    "word": "はれる",
+    "example": "[転](ころ)んで、[足](あし)が**はれました**。",
+    "exampleVi": "Tôi bị ngã và chân bị sưng."
+  },
+  {
+    "word": "しきりに",
+    "example": "[彼](かれ)は**しきりに**[咳](せき)をしています。",
+    "exampleVi": "Anh ấy cứ ho liên tục."
+  },
+  {
+    "word": "異常",
+    "example": "[検査](けんさ)の[結果](けっか)、**[異常](いじょう)**はありませんでした。",
+    "exampleVi": "Kết quả xét nghiệm không có gì bất thường."
+  },
+  {
+    "word": "伴う",
+    "example": "[手術](しゅじゅつ)には[危険](きけん)が**[伴](ともな)います**。",
+    "exampleVi": "Phẫu thuật có kèm theo rủi ro."
+  },
+  {
+    "word": "単なる",
+    "example": "**[単](たん)なる**[風邪](かぜ)だと[思](おも)っていました。",
+    "exampleVi": "Tôi cứ nghĩ đó chỉ là cảm thông thường."
+  },
+  {
+    "word": "伝染",
+    "example": "インフルエンザは**[伝染](でんせん)**しやすい[病気](びょうき)です。",
+    "exampleVi": "Cúm là bệnh dễ lây nhiễm."
+  },
+  {
+    "word": "反応",
+    "example": "[薬](くすり)に**[反応](はんのう)**して、[体](からだ)が[赤](あか)くなりました。",
+    "exampleVi": "Cơ thể tôi đỏ lên do phản ứng với thuốc."
+  },
+  {
+    "word": "病む",
+    "example": "[長](なが)い[間](あいだ)、[心](こころ)を**[病](や)んで**いました。",
+    "exampleVi": "Tôi đã bị bệnh về tâm lý suốt một thời gian dài."
+  },
+  {
+    "word": "負傷",
+    "example": "[事故](じこ)で、[三人](さんにん)が**[負傷](ふしょう)**しました。",
+    "exampleVi": "Do tai nạn, ba người bị thương."
+  },
+  {
+    "word": "重体",
+    "example": "[事故](じこ)に[遭](あ)った[男性](だんせい)は**[重体](じゅうたい)**です。",
+    "exampleVi": "Người đàn ông gặp tai nạn đang trong tình trạng nguy kịch."
+  },
+  {
+    "word": "熱中症",
+    "example": "[夏](なつ)は**[熱中症](ねっちゅうしょう)**に[注意](ちゅうい)してください。",
+    "exampleVi": "Mùa hè xin hãy chú ý phòng say nắng (sốc nhiệt)."
+  },
+  {
+    "word": "細菌",
+    "example": "[手](て)にはたくさんの**[細菌](さいきん)**が[付](つ)いています。",
+    "exampleVi": "Trên tay có rất nhiều vi khuẩn bám vào."
+  },
+  {
+    "word": "つまずく",
+    "example": "[道](みち)の[石](いし)に**つまずいて**、[転](ころ)びました。",
+    "exampleVi": "Tôi vấp phải hòn đá trên đường rồi ngã."
+  },
+  {
+    "word": "医療",
+    "example": "[日本](にほん)の**[医療](いりょう)**[技術](ぎじゅつ)は[進](すす)んでいます。",
+    "exampleVi": "Kỹ thuật y tế của Nhật Bản rất tiên tiến."
+  },
+  {
+    "word": "高度",
+    "example": "**[高度](こうど)**な[医療](いりょう)[技術](ぎじゅつ)が[必要](ひつよう)です。",
+    "exampleVi": "Cần đến kỹ thuật y tế tiên tiến."
+  },
+  {
+    "word": "実績",
+    "example": "この[病院](びょういん)は[手術](しゅじゅつ)の**[実績](じっせき)**が[多](おお)いです。",
+    "exampleVi": "Bệnh viện này có nhiều thành tích thực tế về phẫu thuật."
+  },
+  {
+    "word": "負担",
+    "example": "[医療費](いりょうひ)の**[負担](ふたん)**が[大](おお)きいです。",
+    "exampleVi": "Gánh nặng chi phí y tế rất lớn."
+  },
+  {
+    "word": "手当て",
+    "example": "[怪我](けが)をした[人](ひと)の**[手当](てあ)て**をしました。",
+    "exampleVi": "Tôi đã sơ cứu cho người bị thương."
+  },
+  {
+    "word": "適用",
+    "example": "この[薬](くすり)には[保険](ほけん)が**[適用](てきよう)**されます。",
+    "exampleVi": "Bảo hiểm được áp dụng cho loại thuốc này."
+  },
+  {
+    "word": "尽くす",
+    "example": "[医者](いしゃ)は[患者](かんじゃ)のために[全力](ぜんりょく)を**[尽](つ)くしました**。",
+    "exampleVi": "Bác sĩ đã dốc hết sức vì bệnh nhân."
+  },
+  {
+    "word": "薬品",
+    "example": "**[薬品](やくひん)**は[子供](こども)の[手](て)の[届](とど)かない[所](ところ)に[置](お)いてください。",
+    "exampleVi": "Xin hãy để dược phẩm ở nơi trẻ em không với tới."
+  },
+  {
+    "word": "作用",
+    "example": "この[薬](くすり)には[眠](ねむ)くなる**[作用](さよう)**があります。",
+    "exampleVi": "Loại thuốc này có tác dụng gây buồn ngủ."
+  },
+  {
+    "word": "目安",
+    "example": "[薬](くすり)は[一日](いちにち)[三回](さんかい)が**[目安](めやす)**です。",
+    "exampleVi": "Thuốc thì mỗi ngày ba lần là mức tham khảo."
+  },
+  {
+    "word": "副作用",
+    "example": "この[薬](くすり)には**[副作用](ふくさよう)**があることがあります。",
+    "exampleVi": "Loại thuốc này đôi khi có tác dụng phụ."
+  },
+  {
+    "word": "余計",
+    "example": "**[余計](よけい)**な[心配](しんぱい)をかけたくありません。",
+    "exampleVi": "Tôi không muốn làm người khác lo lắng thêm không cần thiết."
+  },
+  {
+    "word": "もむ",
+    "example": "[肩](かた)を**もんで**あげましょう。",
+    "exampleVi": "Để tôi xoa bóp vai cho bạn nhé."
+  },
+  {
+    "word": "告げる",
+    "example": "[医者](いしゃ)は[患者](かんじゃ)に[病名](びょうめい)を**[告](つ)げました**。",
+    "exampleVi": "Bác sĩ đã thông báo tên bệnh cho bệnh nhân."
+  },
+  {
+    "word": "覚悟",
+    "example": "[手術](しゅじゅつ)を[受](う)ける**[覚悟](かくご)**を[決](き)めました。",
+    "exampleVi": "Tôi đã quyết tâm chuẩn bị tinh thần chịu phẫu thuật."
+  },
+  {
+    "word": "看病",
+    "example": "[母](はは)が[私](わたし)を[一晩中](ひとばんじゅう)**[看病](かんびょう)**してくれました。",
+    "exampleVi": "Mẹ đã chăm sóc tôi bệnh suốt cả đêm."
+  },
+  {
+    "word": "配慮",
+    "example": "[患者](かんじゃ)の[気持](きも)ちへの**[配慮](はいりょ)**が[大切](たいせつ)です。",
+    "exampleVi": "Sự quan tâm đến cảm xúc của bệnh nhân là điều quan trọng."
+  },
+  {
+    "word": "遺伝",
+    "example": "この[病気](びょうき)は**[遺伝](いでん)**することがあります。",
+    "exampleVi": "Căn bệnh này đôi khi có tính di truyền."
+  },
+  {
+    "word": "克服",
+    "example": "[彼](かれ)は[病気](びょうき)を**[克服](こくふく)**して、[仕事](しごと)に[戻](もど)りました。",
+    "exampleVi": "Anh ấy đã khắc phục bệnh tật và trở lại làm việc."
+  },
+  {
+    "word": "リハビリ",
+    "example": "[足](あし)の**リハビリ**を[続](つづ)けています。",
+    "exampleVi": "Tôi vẫn đang tiếp tục phục hồi chức năng cho chân."
+  },
+  {
+    "word": "肌",
+    "example": "[冬](ふゆ)は[乾燥](かんそう)して、**[肌](はだ)**が[荒](あ)れます。",
+    "exampleVi": "Mùa đông khô hanh nên da bị thô ráp."
+  },
+  {
+    "word": "手入れ",
+    "example": "[毎晩](まいばん)、[肌](はだ)の**[手入](ていれ)**をしています。",
+    "exampleVi": "Mỗi tối tôi đều chăm sóc da."
+  },
+  {
+    "word": "ケア",
+    "example": "[髪](かみ)の**ケア**に[気](き)を[付](つ)けています。",
+    "exampleVi": "Tôi chú ý chăm sóc tóc."
+  },
+  {
+    "word": "維持",
+    "example": "[健康](けんこう)を**[維持](いじ)**するために、[毎日](まいにち)[歩](ある)いています。",
+    "exampleVi": "Để duy trì sức khỏe, tôi đi bộ mỗi ngày."
+  },
+  {
+    "word": "機能",
+    "example": "[年](とし)を[取](と)ると、[体](からだ)の**[機能](きのう)**が[低下](ていか)します。",
+    "exampleVi": "Già đi thì các chức năng cơ thể suy giảm."
+  },
+  {
+    "word": "かえって",
+    "example": "[薬](くすり)を[飲](の)み[過](す)ぎると、**かえって**[体](からだ)に[悪](わる)いです。",
+    "exampleVi": "Uống thuốc quá nhiều thì ngược lại có hại cho cơ thể."
+  },
+  {
+    "word": "刺激",
+    "example": "[強](つよ)い[光](ひかり)は[目](め)を**[刺激](しげき)**します。",
+    "exampleVi": "Ánh sáng mạnh kích thích mắt."
+  }
 ]

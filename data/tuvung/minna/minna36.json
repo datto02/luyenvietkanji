@@ -3,343 +3,343 @@
     "word": "届く",
     "reading": "とどく",
     "meaning": "được gửi đến/ chạm tới",
-    "example": "[荷物](にもつ)が **[届](とど)きました**。",
+    "example": "[荷物](にもつ)が**[届](とど)きました**。",
     "exampleVi": "Hành lý đã được gửi đến."
   },
   {
     "word": "出る",
     "reading": "でる",
     "meaning": "Ra, tham dự, khởi hành (xe)",
-    "example": "[会議](かいぎ)に **[出](で)ます**。",
+    "example": "[会議](かいぎ)に**[出](で)ます**。",
     "exampleVi": "Tôi tham dự cuộc họp."
   },
   {
     "word": "打つ",
     "reading": "うつ",
     "meaning": "đánh, đập, gõ [văn bản]",
-    "example": "コンピューターで [字](じ)を **[打](う)ちます**。",
+    "example": "コンピューターで[字](じ)を**[打](う)ちます**。",
     "exampleVi": "Tôi gõ chữ bằng máy tính."
   },
   {
     "word": "太る",
     "reading": "ふとる",
     "meaning": "béo lên",
-    "example": "[食](た)べ[過](す)ぎると **[太](ふと)ります**。",
+    "example": "[食](た)べ[過](す)ぎると**[太](ふと)ります**。",
     "exampleVi": "Ăn quá nhiều thì sẽ béo lên."
   },
   {
     "word": "やせる",
     "reading": "やせる",
     "meaning": "gầy đi",
-    "example": "[運動](うんどう)すると **やせます**。",
+    "example": "[運動](うんどう)すると**やせます**。",
     "exampleVi": "Tập thể dục thì sẽ gầy đi."
   },
   {
     "word": "過ぎる",
     "reading": "すぎる",
     "meaning": "quá, đi qua",
-    "example": "[食](た)べ**[過](す)ぎない**ように しましょう。",
+    "example": "[食](た)べ**[過](す)ぎない**ようにしましょう。",
     "exampleVi": "Chúng ta đừng ăn quá nhiều nhé."
   },
   {
     "word": "慣れる",
     "reading": "なれる",
     "meaning": "quen với",
-    "example": "[日本](にほん)の [生活](せいかつ)に **[慣](な)れました**。",
+    "example": "[日本](にほん)の[生活](せいかつ)に**[慣](な)れました**。",
     "exampleVi": "Tôi đã quen với cuộc sống ở Nhật."
   },
   {
     "word": "かたい",
     "reading": "かたい",
     "meaning": "cứng",
-    "example": "この パンは **かたい**です。",
+    "example": "このパンは**かたい**です。",
     "exampleVi": "Chiếc bánh mì này cứng."
   },
   {
     "word": "やわらかい",
     "reading": "やわらかい",
     "meaning": "mềm mại",
-    "example": "この いすは **やわらかい**です。",
+    "example": "このいすは**やわらかい**です。",
     "exampleVi": "Chiếc ghế này mềm."
   },
   {
     "word": "電子",
     "reading": "でんし",
     "meaning": "điện tử",
-    "example": "**[電子](でんし)**[辞書](じしょ)を [使](つか)います。",
+    "example": "**[電子](でんし)**[辞書](じしょ)を[使](つか)います。",
     "exampleVi": "Tôi dùng từ điển điện tử."
   },
   {
     "word": "けいたい",
     "reading": "けいたい",
     "meaning": "mang theo, di động",
-    "example": "**けいたい**で メールを [送](おく)ります。",
+    "example": "**けいたい**でメールを[送](おく)ります。",
     "exampleVi": "Tôi gửi email bằng điện thoại di động."
   },
   {
     "word": "工場",
     "reading": "こうじょう",
     "meaning": "nhà máy, xưởng",
-    "example": "**[工場](こうじょう)**で [働](はたら)いて います。",
+    "example": "**[工場](こうじょう)**で[働](はたら)いています。",
     "exampleVi": "Tôi làm việc ở nhà máy."
   },
   {
     "word": "健康",
     "reading": "けんこう",
     "meaning": "sức khỏe",
-    "example": "**[健康](けんこう)**の ために、[毎日](まいにち) [歩](ある)いて います。",
+    "example": "**[健康](けんこう)**のために、[毎日](まいにち)[歩](ある)いています。",
     "exampleVi": "Vì sức khỏe, ngày nào tôi cũng đi bộ."
   },
   {
     "word": "けんどう",
     "reading": "けんどう",
     "meaning": "kiếm đạo",
-    "example": "**けんどう**は [日本](にほん)の スポーツです。",
+    "example": "**けんどう**は[日本](にほん)のスポーツです。",
     "exampleVi": "Kiếm đạo là môn thể thao của Nhật."
   },
   {
     "word": "毎週",
     "reading": "まいしゅう",
     "meaning": "hàng tuần",
-    "example": "**[毎週](まいしゅう)** [日曜日](にちようび)に テニスを します。",
+    "example": "**[毎週](まいしゅう)**[日曜日](にちようび)にテニスをします。",
     "exampleVi": "Chủ nhật hằng tuần tôi chơi tennis."
   },
   {
     "word": "毎月",
     "reading": "まいつき",
     "meaning": "hàng tháng",
-    "example": "**[毎月](まいつき)** [給料](きゅうりょう)を もらいます。",
+    "example": "**[毎月](まいつき)**[給料](きゅうりょう)をもらいます。",
     "exampleVi": "Hằng tháng tôi nhận lương."
   },
   {
     "word": "まいとし",
     "reading": "まいとし",
     "meaning": "hàng năm",
-    "example": "**まいとし** [夏](なつ)に [国](くに)へ [帰](かえ)ります。",
+    "example": "**まいとし**[夏](なつ)に[国](くに)へ[帰](かえ)ります。",
     "exampleVi": "Hằng năm vào mùa hè tôi về nước."
   },
   {
     "word": "やっと",
     "reading": "やっと",
     "meaning": "cuối cùng cũng",
-    "example": "**やっと** [日本語](にほんご)が [話](はな)せるように なりました。",
+    "example": "**やっと**[日本語](にほんご)が[話](はな)せるようになりました。",
     "exampleVi": "Cuối cùng tôi cũng nói được tiếng Nhật."
   },
   {
     "word": "かなり",
     "reading": "かなり",
     "meaning": "khá, tương đối",
-    "example": "**かなり** [上手](じょうず)に なりました。",
+    "example": "**かなり**[上手](じょうず)になりました。",
     "exampleVi": "Tôi đã giỏi lên khá nhiều."
   },
   {
     "word": "必ず",
     "reading": "かならず",
     "meaning": "nhất định, chắc chắn",
-    "example": "**[必](かなら)ず** [電話](でんわ)して ください。",
+    "example": "**[必](かなら)ず**[電話](でんわ)してください。",
     "exampleVi": "Nhất định hãy gọi điện nhé."
   },
   {
     "word": "絶対に",
     "reading": "ぜったいに",
     "meaning": "tuyệt đối",
-    "example": "**[絶対](ぜったい)に** [忘](わす)れないで ください。",
+    "example": "**[絶対](ぜったい)に**[忘](わす)れないでください。",
     "exampleVi": "Tuyệt đối đừng quên."
   },
   {
     "word": "上手に",
     "reading": "じょうずに",
     "meaning": "giỏi, khéo",
-    "example": "**[上手](じょうず)に** [話](はな)せるように なりたいです。",
+    "example": "**[上手](じょうず)に**[話](はな)せるようになりたいです。",
     "exampleVi": "Tôi muốn nói giỏi."
   },
   {
     "word": "出来るだけ",
     "reading": "できるだけ",
-    "meaning": "cố gắng",
-    "example": "**[出来](でき)るだけ** [早](はや)く [来](き)て ください。",
+    "meaning": "càng... càng tốt, trong khả năng",
+    "example": "**[出来](でき)るだけ**[早](はや)く[来](き)てください。",
     "exampleVi": "Xin hãy đến càng sớm càng tốt."
   },
   {
     "word": "このごろ",
     "reading": "このごろ",
     "meaning": "gần đây, dạo này",
-    "example": "**このごろ**、[運動](うんどう)を して いません。",
+    "example": "**このごろ**、[運動](うんどう)をしていません。",
     "exampleVi": "Dạo này tôi không tập thể dục."
   },
   {
     "word": "ずつ",
     "reading": "ずつ",
     "meaning": "từng ~",
-    "example": "[毎日](まいにち) [漢字](かんじ)を [五](いつ)つ**ずつ** [覚](おぼ)えます。",
+    "example": "[毎日](まいにち)[漢字](かんじ)を[五](いつ)つ**ずつ**[覚](おぼ)えます。",
     "exampleVi": "Mỗi ngày tôi học thuộc năm chữ Hán."
   },
   {
     "word": "お客様",
     "reading": "おきゃくさま",
     "meaning": "quý khách, khách hàng",
-    "example": "**[お客様](おきゃくさま)**、こちらへ どうぞ。",
+    "example": "**[お客様](おきゃくさま)**、こちらへどうぞ。",
     "exampleVi": "Thưa quý khách, xin mời đi lối này."
   },
   {
     "word": "特別",
     "reading": "とくべつ",
     "meaning": "đặc biệt",
-    "example": "[今日](きょう)は **[特別](とくべつ)**な [日](ひ)です。",
+    "example": "[今日](きょう)は**[特別](とくべつ)**な[日](ひ)です。",
     "exampleVi": "Hôm nay là một ngày đặc biệt."
   },
   {
     "word": "水泳",
     "reading": "すいえい",
     "meaning": "bơi, môn bơi",
-    "example": "**[水泳](すいえい)**が [好](す)きです。",
+    "example": "**[水泳](すいえい)**が[好](す)きです。",
     "exampleVi": "Tôi thích bơi lội."
   },
   {
     "word": "とか",
     "reading": "とか",
     "meaning": "~ v.v.",
-    "example": "[水泳](すいえい)**とか** テニス**とか**、[運動](うんどう)が [好](す)きです。",
+    "example": "[水泳](すいえい)**とか**テニス**とか**、[運動](うんどう)が[好](す)きです。",
     "exampleVi": "Tôi thích các môn thể thao như bơi lội, tennis."
   },
   {
     "word": "タンゴ",
     "reading": "タンゴ",
     "meaning": "tăng-gô (Tango)",
-    "example": "**タンゴ**の [曲](きょく)を [聞](き)きます。",
+    "example": "**タンゴ**の[曲](きょく)を[聞](き)きます。",
     "exampleVi": "Tôi nghe nhạc tango."
   },
   {
     "word": "チャレンジ",
     "reading": "チャレンジ",
     "meaning": "thử thách, cố gắng",
-    "example": "[新](あたら)しい ことに **チャレンジ**します。",
+    "example": "[新](あたら)しいことに**チャレンジ**します。",
     "exampleVi": "Tôi thử thách với điều mới."
   },
   {
     "word": "気持ち",
     "reading": "きもち",
     "meaning": "tâm trạng",
-    "example": "**[気持](きも)ち**が いい [朝](あさ)です。",
+    "example": "**[気持](きも)ち**がいい[朝](あさ)です。",
     "exampleVi": "Là một buổi sáng dễ chịu."
   },
   {
     "word": "乗り物",
     "reading": "のりもの",
     "meaning": "phương tiện đi lại",
-    "example": "[電車](でんしゃ)や バスは **[乗](の)り[物](もの)**です。",
+    "example": "[電車](でんしゃ)やバスは**[乗](の)り[物](もの)**です。",
     "exampleVi": "Tàu điện và xe buýt là phương tiện đi lại."
   },
   {
     "word": "歴史",
     "reading": "れきし",
     "meaning": "lịch sử",
-    "example": "[乗](の)り[物](もの)の **[歴史](れきし)**は [面白](おもしろ)いです。",
+    "example": "[乗](の)り[物](もの)の**[歴史](れきし)**は[面白](おもしろ)いです。",
     "exampleVi": "Lịch sử của các phương tiện đi lại thú vị."
   },
   {
     "word": "世紀",
     "reading": "せいき",
     "meaning": "thế kỷ",
-    "example": "いまは [二十一](にじゅういち)**[世紀](せいき)**です。",
+    "example": "いまは[二十一](にじゅういち)**[世紀](せいき)**です。",
     "exampleVi": "Bây giờ là thế kỷ 21."
   },
   {
     "word": "遠く",
     "reading": "とおく",
     "meaning": "xa, ở xa",
-    "example": "**[遠](とお)く**の [国](くに)へ [行](い)きたいです。",
+    "example": "**[遠](とお)く**の[国](くに)へ[行](い)きたいです。",
     "exampleVi": "Tôi muốn đi đến một đất nước xa."
   },
   {
     "word": "汽車",
     "reading": "きしゃ",
     "meaning": "tàu chạy bằng hơi nước",
-    "example": "[昔](むかし)、**[汽車](きしゃ)**で [行](い)きました。",
+    "example": "[昔](むかし)、**[汽車](きしゃ)**で[行](い)きました。",
     "exampleVi": "Ngày xưa tôi đã đi bằng tàu hơi nước."
   },
   {
     "word": "汽船",
     "reading": "きせん",
     "meaning": "thuyền hơi nước",
-    "example": "**[汽船](きせん)**は [昔](むかし)の [船](ふね)です。",
+    "example": "**[汽船](きせん)**は[昔](むかし)の[船](ふね)です。",
     "exampleVi": "Thuyền hơi nước là loại thuyền ngày xưa."
   },
   {
     "word": "大勢",
     "reading": "おおぜい",
     "meaning": "nhiều người",
-    "example": "**[大勢](おおぜい)**の [人](ひと)が [来](き)ました。",
+    "example": "**[大勢](おおぜい)**の[人](ひと)が[来](き)ました。",
     "exampleVi": "Rất nhiều người đã đến."
   },
   {
     "word": "運ぶ",
     "reading": "はこぶ",
     "meaning": "chở, vận chuyển",
-    "example": "[荷物](にもつ)を **[運](はこ)びます**。",
+    "example": "[荷物](にもつ)を**[運](はこ)びます**。",
     "exampleVi": "Tôi chuyển hành lý."
   },
   {
     "word": "安全",
     "reading": "あんぜん",
     "meaning": "an toàn",
-    "example": "この [車](くるま)は **[安全](あんぜん)**です。",
+    "example": "この[車](くるま)は**[安全](あんぜん)**です。",
     "exampleVi": "Chiếc xe này an toàn."
   },
   {
     "word": "あう",
     "reading": "あう",
     "meaning": "gặp (tai nạn, sự cố)",
-    "example": "[雨](あめ)に **あいました**。",
+    "example": "[雨](あめ)に**あいました**。",
     "exampleVi": "Tôi bị dính mưa."
   },
   {
     "word": "くさる",
     "reading": "くさる",
     "meaning": "thiu, thối",
-    "example": "[魚](さかな)が **くさりました**。",
+    "example": "[魚](さかな)が**くさりました**。",
     "exampleVi": "Cá đã bị thiu."
   },
   {
     "word": "宇宙",
     "reading": "うちゅう",
     "meaning": "vũ trụ",
-    "example": "**[宇宙](うちゅう)**を [旅行](りょこう)したいです。",
+    "example": "**[宇宙](うちゅう)**を[旅行](りょこう)したいです。",
     "exampleVi": "Tôi muốn du lịch vũ trụ."
   },
   {
     "word": "曲",
     "reading": "きょく",
     "meaning": "bài hát, bản nhạc",
-    "example": "この **[曲](きょく)**は [有名](ゆうめい)です。",
+    "example": "この**[曲](きょく)**は[有名](ゆうめい)です。",
     "exampleVi": "Bài nhạc này nổi tiếng."
   },
   {
     "word": "ちがう",
     "reading": "ちがう",
     "meaning": "khác",
-    "example": "[意見](いけん)が **ちがいます**。",
+    "example": "[意見](いけん)が**ちがいます**。",
     "exampleVi": "Ý kiến khác nhau."
   },
   {
     "word": "めずらしい",
     "reading": "めずらしい",
     "meaning": "hiếm",
-    "example": "これは **めずらしい** [花](はな)です。",
+    "example": "これは**めずらしい**[花](はな)です。",
     "exampleVi": "Đây là một loài hoa hiếm."
   },
   {
     "word": "利用",
     "reading": "りよう",
     "meaning": "sử dụng, tận dụng",
-    "example": "バスを **[利用](りよう)**します。",
+    "example": "バスを**[利用](りよう)**します。",
     "exampleVi": "Tôi sử dụng xe buýt."
   },
   {
     "word": "自由に",
     "reading": "じゆうに",
     "meaning": "tự do, thoải mái",
-    "example": "**[自由](じゆう)に** [座](すわ)って ください。",
+    "example": "**[自由](じゆう)に**[座](すわ)ってください。",
     "exampleVi": "Xin hãy ngồi tự do."
   }
 ]

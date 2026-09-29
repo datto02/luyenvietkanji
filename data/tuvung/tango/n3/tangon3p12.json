@@ -1,106 +1,505 @@
 [
-  "模様",
-  "特徴",
-  "特色",
-  "柄",
-  "花柄",
-  "水玉",
-  "しま",
-  "縦",
-  {
-    "word": "横",
-    "reading": "よこ",
-    "meaning": "chiều ngang"
-  },
-  "斜め",
-  "幅",
-  "ストライプ",
-  "無地",
-  "シンプル",
-  "真っ赤",
-  "ばらばら",
-  "すっきり",
-  "素敵",
-  "印象",
-  "外見",
-  "様子",
-  "表情",
-  "姿",
-  "雰囲気",
-  "幼い",
-  "かっこいい",
-  "言葉づかい",
-  "上品",
-  "下品",
-  "地味",
-  "派手",
-  "スマート",
-  "美人",
-  "ハンサム",
-  "不思議",
-  "普通",
-  "さわやか",
-  "さっぱり",
-  "にっこり",
-  "にこにこ",
-  "にやにや",
-  "いきいき",
-  "ぺらぺら",
-  "表面",
-  "立派",
-  "目立つ",
-  "きらきら",
-  "ぴかぴか",
-  "異なる",
-  "ぼんやり",
-  "大型",
-  "多め",
-  "大きめ",
-  "太め",
-  "完ぺき",
-  "たっぷり",
-  "多少",
-  "それほど",
-  "縮む",
-  "現代",
-  "現実",
-  "理想",
-  "偉大",
-  "当然",
-  "当たり前",
-  "お金持ち",
-  "貧しい",
-  "貧乏",
-  "発展",
-  "進歩",
-  "強力",
-  "パワー",
-  "あふれる",
-  "崩れる",
-  "経つ",
-  "前後",
-  "盛ん",
-  "産業",
-  "工業",
-  "商業",
-  "農業",
-  "語る",
-  "解消",
-  "それぞれ",
-  "片方",
-  "囲む",
-  "代わり",
-  "友好",
-  "期待",
-  "区別",
-  "差別",
-  "限界",
-  "通じる",
-  "ジェスチャー",
-  "首都",
-  "順調",
-  "対象",
-  "通知",
-  "態度",
-  "求める"
+ {
+  "word": "模様",
+  "example": "この[服](ふく)は[花](はな)の**[模様](もよう)**がかわいいです。",
+  "exampleVi": "Bộ quần áo này có họa tiết hoa rất dễ thương."
+ },
+ {
+  "word": "特徴",
+  "example": "この[車](くるま)の**[特徴](とくちょう)**は、[小](ちい)さくて[運転](うんてん)しやすいことです。",
+  "exampleVi": "Đặc điểm của chiếc xe này là nhỏ và dễ lái."
+ },
+ {
+  "word": "特色",
+  "example": "その[町](まち)には、[古](ふる)い[建物](たてもの)という**[特色](とくしょく)**があります。",
+  "exampleVi": "Thị trấn đó có đặc trưng là những tòa nhà cổ."
+ },
+ {
+  "word": "柄",
+  "example": "このシャツの**[柄](がら)**は[面白](おもしろ)いですね。",
+  "exampleVi": "Họa tiết của chiếc áo sơ mi này thú vị nhỉ."
+ },
+ {
+  "word": "花柄",
+  "example": "[彼女](かのじょ)は**[花柄](はながら)**のスカートをはいています。",
+  "exampleVi": "Cô ấy đang mặc váy họa tiết hoa."
+ },
+ {
+  "word": "水玉",
+  "example": "[青](あお)い**[水玉](みずたま)**のネクタイを[買](か)いました。",
+  "exampleVi": "Tôi đã mua cà vạt chấm bi màu xanh."
+ },
+ {
+  "word": "しま",
+  "example": "[白](しろ)と[黒](くろ)の**しま**のシャツを[着](き)ました。",
+  "exampleVi": "Tôi đã mặc áo sơ mi kẻ sọc trắng đen."
+ },
+ {
+  "word": "縦",
+  "example": "[紙](かみ)を**[縦](たて)**に[半分](はんぶん)に[折](お)りました。",
+  "exampleVi": "Tôi gấp tờ giấy làm đôi theo chiều dọc."
+ },
+ {
+  "word": "横",
+  "reading": "よこ",
+  "meaning": "chiều ngang",
+  "example": "[紙](かみ)を**[横](よこ)**に[切](き)りました。",
+  "exampleVi": "Tôi đã cắt tờ giấy theo chiều ngang."
+ },
+ {
+  "word": "斜め",
+  "example": "[黒板](こくばん)の[字](じ)は**[斜](なな)め**から[見](み)ると[見](み)えにくいです。",
+  "exampleVi": "Chữ trên bảng nhìn từ phía chéo thì khó thấy."
+ },
+ {
+  "word": "幅",
+  "example": "この[道](みち)は**[幅](はば)**が[広](ひろ)いです。",
+  "exampleVi": "Con đường này rộng."
+ },
+ {
+  "word": "ストライプ",
+  "example": "[白](しろ)と[青](あお)の**ストライプ**のシャツが[好](す)きです。",
+  "exampleVi": "Tôi thích áo sơ mi kẻ sọc trắng xanh."
+ },
+ {
+  "word": "無地",
+  "example": "**[無地](むじ)**の[服](ふく)はどんなものにも[合](あ)います。",
+  "exampleVi": "Quần áo trơn hợp với mọi thứ."
+ },
+ {
+  "word": "シンプル",
+  "example": "この[部屋](へや)は**シンプル**できれいです。",
+  "exampleVi": "Căn phòng này đơn giản và đẹp."
+ },
+ {
+  "word": "真っ赤",
+  "example": "[彼女](かのじょ)は**[真](ま)っ[赤](か)**なドレスを[着](き)ていました。",
+  "exampleVi": "Cô ấy mặc chiếc váy đỏ rực."
+ },
+ {
+  "word": "ばらばら",
+  "example": "[子供](こども)のおもちゃが[部屋](へや)に**ばらばら**になっています。",
+  "exampleVi": "Đồ chơi của trẻ vương vãi khắp phòng."
+ },
+ {
+  "word": "すっきり",
+  "example": "[部屋](へや)を[片付](かたづ)けたら、**すっきり**しました。",
+  "exampleVi": "Dọn phòng xong thì tôi thấy gọn gàng và dễ chịu."
+ },
+ {
+  "word": "素敵",
+  "example": "その[服](ふく)は**[素敵](すてき)**ですね。",
+  "exampleVi": "Bộ quần áo đó đẹp quá nhỉ."
+ },
+ {
+  "word": "印象",
+  "example": "[彼](かれ)の[第一](だいいち)**[印象](いんしょう)**はとてもよかったです。",
+  "exampleVi": "Ấn tượng đầu tiên của tôi về anh ấy rất tốt."
+ },
+ {
+  "word": "外見",
+  "example": "[人](ひと)を**[外見](がいけん)**だけで[判断](はんだん)してはいけません。",
+  "exampleVi": "Không nên đánh giá người khác chỉ qua vẻ bề ngoài."
+ },
+ {
+  "word": "様子",
+  "example": "[心配](しんぱい)なので、[病気](びょうき)の[祖母](そぼ)の**[様子](ようす)**を[見](み)に[行](い)きました。",
+  "exampleVi": "Vì lo lắng nên tôi đã đến xem tình hình của bà đang bệnh."
+ },
+ {
+  "word": "表情",
+  "example": "[彼](かれ)の**[表情](ひょうじょう)**はとても[暗](くら)かったです。",
+  "exampleVi": "Nét mặt anh ấy rất u ám.",
+  "meaning": "nét mặt, biểu cảm"
+ },
+ {
+  "word": "姿",
+  "example": "[雲](くも)の[間](あいだ)から、[富士山](ふじさん)の**[姿](すがた)**が[見](み)えました。",
+  "exampleVi": "Từ giữa những đám mây hiện ra dáng núi Phú Sĩ."
+ },
+ {
+  "word": "雰囲気",
+  "example": "この[店](みせ)は**[雰囲気](ふんいき)**がよくて、[人気](にんき)があります。",
+  "exampleVi": "Quán này có không khí tốt nên được ưa chuộng."
+ },
+ {
+  "word": "幼い",
+  "example": "**[幼](おさな)い**ころ、[祖母](そぼ)といっしょに[住](す)んでいました。",
+  "exampleVi": "Hồi còn nhỏ tôi sống cùng bà."
+ },
+ {
+  "word": "かっこいい",
+  "example": "[彼](かれ)は[背](せ)が[高](たか)くて、**かっこいい**です。",
+  "exampleVi": "Anh ấy cao ráo và rất phong độ."
+ },
+ {
+  "word": "言葉づかい",
+  "example": "[彼](かれ)は**[言葉](ことば)づかい**が[丁寧](ていねい)です。",
+  "exampleVi": "Anh ấy ăn nói lịch sự."
+ },
+ {
+  "word": "上品",
+  "example": "あの[人](ひと)は[言葉](ことば)づかいが**[上品](じょうひん)**です。",
+  "exampleVi": "Người đó ăn nói rất lịch thiệp."
+ },
+ {
+  "word": "下品",
+  "example": "そんな**[下品](げひん)**な[言葉](ことば)を[使](つか)ってはいけません。",
+  "exampleVi": "Không được dùng những lời lẽ thô tục như vậy."
+ },
+ {
+  "word": "地味",
+  "example": "[彼女](かのじょ)は**[地味](じみ)**な[服](ふく)が[好](す)きです。",
+  "exampleVi": "Cô ấy thích quần áo giản dị."
+ },
+ {
+  "word": "派手",
+  "example": "[彼女](かのじょ)はいつも**[派手](はで)**な[服](ふく)を[着](き)ています。",
+  "exampleVi": "Cô ấy lúc nào cũng mặc quần áo sặc sỡ."
+ },
+ {
+  "word": "スマート",
+  "example": "[彼](かれ)は**スマート**な[体](からだ)をしています。",
+  "exampleVi": "Anh ấy có vóc dáng thon gọn."
+ },
+ {
+  "word": "美人",
+  "example": "あの[女優](じょゆう)は[有名](ゆうめい)な**[美人](びじん)**です。",
+  "exampleVi": "Nữ diễn viên đó là một mỹ nhân nổi tiếng."
+ },
+ {
+  "word": "ハンサム",
+  "example": "[彼](かれ)は**ハンサム**で、[優](やさ)しいです。",
+  "exampleVi": "Anh ấy đẹp trai lại hiền lành."
+ },
+ {
+  "word": "不思議",
+  "example": "[彼](かれ)がここにいないのは**[不思議](ふしぎ)**です。",
+  "exampleVi": "Thật lạ khi anh ấy không có ở đây."
+ },
+ {
+  "word": "普通",
+  "example": "[彼](かれ)は**[普通](ふつう)**の[会社員](かいしゃいん)です。",
+  "exampleVi": "Anh ấy là nhân viên công ty bình thường."
+ },
+ {
+  "word": "さわやか",
+  "example": "[朝](あさ)の**さわやか**な[空気](くうき)を[吸](す)うと、[元気](げんき)になります。",
+  "exampleVi": "Hít thở không khí buổi sáng sảng khoái thì tôi thấy khỏe khoắn hơn."
+ },
+ {
+  "word": "さっぱり",
+  "example": "シャワーを[浴](あ)びて、**さっぱり**しました。",
+  "exampleVi": "Tắm vòi sen xong tôi thấy sảng khoái."
+ },
+ {
+  "word": "にっこり",
+  "example": "[彼女](かのじょ)は**にっこり**[笑](わら)ってあいさつしました。",
+  "exampleVi": "Cô ấy mỉm cười chào hỏi."
+ },
+ {
+  "word": "にこにこ",
+  "example": "[赤](あか)ちゃんが**にこにこ**[笑](わら)っています。",
+  "exampleVi": "Em bé đang cười tươi."
+ },
+ {
+  "word": "にやにや",
+  "example": "[彼](かれ)は[一人](ひとり)で**にやにや**[笑](わら)っています。",
+  "exampleVi": "Anh ấy một mình cứ cười tủm tỉm."
+ },
+ {
+  "word": "いきいき",
+  "example": "[子供](こども)たちは**いきいき**と[遊](あそ)んでいます。",
+  "exampleVi": "Bọn trẻ đang chơi đùa đầy sức sống."
+ },
+ {
+  "word": "ぺらぺら",
+  "example": "[彼](かれ)は[日本語](にほんご)を**ぺらぺら**[話](はな)します。",
+  "exampleVi": "Anh ấy nói tiếng Nhật rất lưu loát."
+ },
+ {
+  "word": "表面",
+  "example": "[月](つき)の**[表面](ひょうめん)**には[穴](あな)がたくさんあります。",
+  "exampleVi": "Trên bề mặt mặt trăng có nhiều hố."
+ },
+ {
+  "word": "立派",
+  "example": "[彼](かれ)は**[立派](りっぱ)**な[先生](せんせい)です。",
+  "exampleVi": "Ông ấy là một người thầy đáng nể."
+ },
+ {
+  "word": "目立つ",
+  "example": "[赤](あか)い[服](ふく)を[着](き)ると、[人](ひと)の[中](なか)でも**[目立](めだ)ちます**。",
+  "exampleVi": "Mặc áo đỏ thì nổi bật cả giữa đám đông."
+ },
+ {
+  "word": "きらきら",
+  "example": "[夜空](よぞら)に[星](ほし)が**きらきら**[光](ひか)っています。",
+  "exampleVi": "Những vì sao lấp lánh trên bầu trời đêm."
+ },
+ {
+  "word": "ぴかぴか",
+  "example": "[靴](くつ)を**ぴかぴか**に[磨](みが)きました。",
+  "exampleVi": "Tôi đã đánh giày sáng bóng."
+ },
+ {
+  "word": "異なる",
+  "example": "[国](くに)によって、[習慣](しゅうかん)が**[異](こと)なります**。",
+  "exampleVi": "Tùy từng nước mà phong tục khác nhau."
+ },
+ {
+  "word": "ぼんやり",
+  "example": "[疲](つか)れて、[電車](でんしゃ)の[中](なか)で**ぼんやり**していました。",
+  "exampleVi": "Mệt nên tôi cứ lơ mơ trên tàu điện."
+ },
+ {
+  "word": "大型",
+  "example": "**[大型](おおがた)**の[台風](たいふう)が[近](ちか)づいています。",
+  "exampleVi": "Một cơn bão cỡ lớn đang đến gần."
+ },
+ {
+  "word": "多め",
+  "example": "[ご飯](はん)を**[多](おお)め**に[お願](ねが)いします。",
+  "exampleVi": "Làm ơn cho tôi cơm nhiều hơn một chút."
+ },
+ {
+  "word": "大きめ",
+  "example": "[少](すこ)し**[大](おお)きめ**の[靴](くつ)を[買](か)いました。",
+  "exampleVi": "Tôi đã mua đôi giày to hơn một chút."
+ },
+ {
+  "word": "太め",
+  "example": "[彼](かれ)は[少](すこ)し**[太](ふと)め**の[体](からだ)です。",
+  "exampleVi": "Anh ấy có thân hình hơi mập."
+ },
+ {
+  "word": "完ぺき",
+  "example": "[彼](かれ)の[答](こた)えは**[完](かん)ぺき**でした。",
+  "exampleVi": "Câu trả lời của anh ấy hoàn hảo."
+ },
+ {
+  "word": "たっぷり",
+  "example": "[朝](あさ)ご[飯](はん)を**たっぷり**[食](た)べて、[出](で)かけました。",
+  "exampleVi": "Tôi ăn thật no bữa sáng rồi ra ngoài."
+ },
+ {
+  "word": "多少",
+  "example": "**[多少](たしょう)**の[雨](あめ)なら、[試合](しあい)は[行](おこな)われます。",
+  "exampleVi": "Nếu chỉ mưa chút ít thì trận đấu vẫn được tổ chức."
+ },
+ {
+  "word": "それほど",
+  "example": "[今日](きょう)は**それほど**[寒](さむ)くありません。",
+  "exampleVi": "Hôm nay không lạnh đến mức đó."
+ },
+ {
+  "word": "縮む",
+  "example": "セーターを[洗](あら)ったら、**[縮](ちぢ)んで**しまいました。",
+  "exampleVi": "Giặt chiếc áo len xong thì nó bị co lại mất rồi."
+ },
+ {
+  "word": "現代",
+  "example": "**[現代](げんだい)**の[生活](せいかつ)は、[昔](むかし)より[便利](べんり)です。",
+  "exampleVi": "Cuộc sống ngày nay tiện lợi hơn ngày xưa."
+ },
+ {
+  "word": "現実",
+  "example": "[夢](ゆめ)を**[現実](げんじつ)**にするために、[努力](どりょく)しています。",
+  "exampleVi": "Tôi đang nỗ lực để biến ước mơ thành hiện thực."
+ },
+ {
+  "word": "理想",
+  "example": "**[理想](りそう)**の[家](いえ)を[建](た)てるには、[お金](かね)がかかります。",
+  "exampleVi": "Muốn xây ngôi nhà lý tưởng thì tốn tiền."
+ },
+ {
+  "word": "偉大",
+  "example": "[彼](かれ)は**[偉大](いだい)**な[科学者](かがくしゃ)として[知](し)られています。",
+  "exampleVi": "Ông ấy được biết đến là một nhà khoa học vĩ đại."
+ },
+ {
+  "word": "当然",
+  "example": "[約束](やくそく)を[守](まも)るのは**[当然](とうぜん)**です。",
+  "exampleVi": "Giữ lời hứa là điều đương nhiên."
+ },
+ {
+  "word": "当たり前",
+  "example": "[電車](でんしゃ)で[席](せき)を[譲](ゆず)るのは**[当](あ)たり[前](まえ)**です。",
+  "exampleVi": "Nhường ghế trên tàu điện là điều hiển nhiên."
+ },
+ {
+  "word": "お金持ち",
+  "example": "[彼](かれ)は**お[金持](かねも)ち**ですが、[全然](ぜんぜん)[自慢](じまん)しません。",
+  "exampleVi": "Anh ấy giàu nhưng không hề khoe khoang."
+ },
+ {
+  "word": "貧しい",
+  "example": "**[貧](まず)しい**[家](いえ)に[生](う)まれても、[努力](どりょく)して[成功](せいこう)した[人](ひと)もいます。",
+  "exampleVi": "Cũng có người sinh ra trong gia đình nghèo nhưng nỗ lực và đã thành công."
+ },
+ {
+  "word": "貧乏",
+  "example": "[彼](かれ)は**[貧乏](びんぼう)**でも、[毎日](まいにち)[楽](たの)しそうです。",
+  "exampleVi": "Dù nghèo, ngày nào anh ấy cũng có vẻ vui."
+ },
+ {
+  "word": "発展",
+  "example": "この[町](まち)は[近](ちか)ごろ、[大](おお)きく**[発展](はってん)**しました。",
+  "exampleVi": "Thị trấn này gần đây đã phát triển mạnh."
+ },
+ {
+  "word": "進歩",
+  "example": "[日本語](にほんご)は[少](すこ)しずつ**[進歩](しんぽ)**しています。",
+  "exampleVi": "Tiếng Nhật của tôi đang tiến bộ từng chút."
+ },
+ {
+  "word": "強力",
+  "example": "[彼](かれ)は**[強力](きょうりょく)**な[味方](みかた)です。",
+  "exampleVi": "Anh ấy là một đồng minh mạnh mẽ."
+ },
+ {
+  "word": "パワー",
+  "example": "[彼](かれ)の[話](はなし)には**パワー**があります。",
+  "exampleVi": "Lời nói của anh ấy có sức mạnh."
+ },
+ {
+  "word": "あふれる",
+  "example": "[彼女](かのじょ)の[目](め)から、[涙](なみだ)が**あふれました**。",
+  "exampleVi": "Nước mắt trào ra từ mắt cô ấy."
+ },
+ {
+  "word": "崩れる",
+  "example": "[大雨](おおあめ)で、[山](やま)の[土](つち)が**[崩](くず)れました**。",
+  "exampleVi": "Vì mưa lớn nên đất trên núi đã sạt lở."
+ },
+ {
+  "word": "経つ",
+  "example": "[卒業](そつぎょう)して[十年](じゅうねん)が**[経](た)ちました**。",
+  "exampleVi": "Đã mười năm trôi qua kể từ khi tốt nghiệp."
+ },
+ {
+  "word": "前後",
+  "example": "[三時](さんじ)**[前後](ぜんご)**に[伺](うかが)います。",
+  "exampleVi": "Tôi sẽ đến vào khoảng 3 giờ."
+ },
+ {
+  "word": "盛ん",
+  "example": "この[町](まち)では、[農業](のうぎょう)が**[盛](さか)ん**です。",
+  "exampleVi": "Ở thị trấn này nông nghiệp rất phát triển."
+ },
+ {
+  "word": "産業",
+  "example": "この[町](まち)の[主](おも)な**[産業](さんぎょう)**は[観光](かんこう)です。",
+  "exampleVi": "Ngành nghề chính của thị trấn này là du lịch."
+ },
+ {
+  "word": "工業",
+  "example": "この[地方](ちほう)は**[工業](こうぎょう)**が[盛](さか)んです。",
+  "exampleVi": "Vùng này công nghiệp phát triển."
+ },
+ {
+  "word": "商業",
+  "example": "[駅](えき)の[近](ちか)くは**[商業](しょうぎょう)**の[中心](ちゅうしん)です。",
+  "exampleVi": "Khu gần nhà ga là trung tâm thương mại."
+ },
+ {
+  "word": "農業",
+  "example": "[父](ちち)は**[農業](のうぎょう)**をしています。",
+  "exampleVi": "Bố tôi làm nông nghiệp."
+ },
+ {
+  "word": "語る",
+  "example": "[祖父](そふ)は[戦争](せんそう)の[話](はなし)を**[語](かた)って**くれました。",
+  "exampleVi": "Ông đã kể cho tôi nghe chuyện thời chiến."
+ },
+ {
+  "word": "解消",
+  "example": "[運動](うんどう)して、ストレスを**[解消](かいしょう)**します。",
+  "exampleVi": "Tôi vận động để giải tỏa căng thẳng."
+ },
+ {
+  "word": "それぞれ",
+  "example": "みんな**それぞれ**の[考](かんが)えがあります。",
+  "exampleVi": "Mỗi người đều có suy nghĩ riêng của mình."
+ },
+ {
+  "word": "片方",
+  "example": "[手袋](てぶくろ)の**[片方](かたほう)**をなくしてしまいました。",
+  "exampleVi": "Tôi lỡ làm mất một chiếc găng tay."
+ },
+ {
+  "word": "囲む",
+  "example": "みんなでテーブルを**[囲](かこ)んで**[食事](しょくじ)をしました。",
+  "exampleVi": "Mọi người quây quanh bàn cùng dùng bữa."
+ },
+ {
+  "word": "代わり",
+  "example": "[病気](びょうき)の[先生](せんせい)の**[代](か)わり**に、[別](べつ)の[先生](せんせい)が[来](き)ました。",
+  "exampleVi": "Thay cho thầy bị bệnh, một thầy khác đã đến."
+ },
+ {
+  "word": "友好",
+  "example": "[二](ふた)つの[国](くに)は**[友好](ゆうこう)**[関係](かんけい)にあります。",
+  "exampleVi": "Hai nước có quan hệ hữu nghị."
+ },
+ {
+  "word": "期待",
+  "example": "[両親](りょうしん)の**[期待](きたい)**に[応](こた)えたいと[思](おも)っています。",
+  "exampleVi": "Tôi muốn đáp lại sự kỳ vọng của bố mẹ."
+ },
+ {
+  "word": "区別",
+  "example": "[双子](ふたご)の[顔](かお)はそっくりで、**[区別](くべつ)**がつきません。",
+  "exampleVi": "Khuôn mặt cặp sinh đôi giống hệt nên không phân biệt được."
+ },
+ {
+  "word": "差別",
+  "example": "[国籍](こくせき)や[性別](せいべつ)で[人](ひと)を**[差別](さべつ)**してはいけません。",
+  "exampleVi": "Không được phân biệt đối xử với người khác vì quốc tịch hay giới tính."
+ },
+ {
+  "word": "限界",
+  "example": "[体力](たいりょく)の**[限界](げんかい)**まで[走](はし)りました。",
+  "exampleVi": "Tôi đã chạy đến giới hạn của thể lực."
+ },
+ {
+  "word": "通じる",
+  "example": "この[道](みち)は[駅](えき)に**[通](つう)じて**います。",
+  "exampleVi": "Con đường này thông tới nhà ga."
+ },
+ {
+  "word": "ジェスチャー",
+  "example": "[言葉](ことば)が[通](つう)じなくても、**ジェスチャー**で[伝](つた)えられます。",
+  "exampleVi": "Dù không hiểu tiếng nhau, vẫn có thể truyền đạt bằng cử chỉ."
+ },
+ {
+  "word": "首都",
+  "example": "[東京](とうきょう)は[日本](にほん)の**[首都](しゅと)**です。",
+  "exampleVi": "Tokyo là thủ đô của Nhật Bản."
+ },
+ {
+  "word": "順調",
+  "example": "[仕事](しごと)は**[順調](じゅんちょう)**に[進](すす)んでいます。",
+  "exampleVi": "Công việc đang tiến triển thuận lợi."
+ },
+ {
+  "word": "対象",
+  "example": "この[講座](こうざ)は、[初心者](しょしんしゃ)が**[対象](たいしょう)**です。",
+  "exampleVi": "Khóa học này dành cho người mới bắt đầu."
+ },
+ {
+  "word": "通知",
+  "example": "[会社](かいしゃ)から[採用](さいよう)の**[通知](つうち)**が[届](とど)きました。",
+  "exampleVi": "Thông báo tuyển dụng đã được gửi đến từ công ty."
+ },
+ {
+  "word": "態度",
+  "example": "[彼](かれ)の**[態度](たいど)**に[腹](はら)が[立](た)ちました。",
+  "exampleVi": "Tôi đã tức giận vì thái độ của anh ấy."
+ },
+ {
+  "word": "求める",
+  "example": "[会社](かいしゃ)は[新](あたら)しい[社員](しゃいん)を**[求](もと)めて**います。",
+  "exampleVi": "Công ty đang tìm kiếm nhân viên mới."
+ }
 ]

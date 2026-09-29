@@ -3,343 +3,343 @@
     "word": "数える",
     "reading": "かぞえる",
     "meaning": "đếm",
-    "example": "[学生](がくせい)が [何人](なんにん) いるか **[数](かぞ)えます**。",
+    "example": "[学生](がくせい)が[何人](なんにん)いるか**[数](かぞ)えます**。",
     "exampleVi": "Tôi đếm xem có bao nhiêu học sinh."
   },
   {
     "word": "はかる",
     "reading": "はかる",
     "meaning": "đo, cân",
-    "example": "[体](からだ)の [大](おお)きさを **はかります**。",
+    "example": "[体](からだ)の[大](おお)きさを**はかります**。",
     "exampleVi": "Tôi đo kích cỡ cơ thể."
   },
   {
     "word": "確かめる",
     "reading": "たしかめる",
     "meaning": "xác nhận, làm cho rõ ràng",
-    "example": "[時間](じかん)を **[確](たし)かめて** ください。",
+    "example": "[時間](じかん)を**[確](たし)かめて**ください。",
     "exampleVi": "Xin hãy xác nhận thời gian."
   },
   {
     "word": "出発する",
     "reading": "しゅっぱつする",
     "meaning": "xuất phát, khởi hành",
-    "example": "[電車](でんしゃ)は 8[時](じ)に **[出発](しゅっぱつ)します**。",
+    "example": "[電車](でんしゃ)は8[時](じ)に**[出発](しゅっぱつ)します**。",
     "exampleVi": "Tàu điện xuất phát lúc 8 giờ."
   },
   {
     "word": "とうちゃくする",
     "reading": "とうちゃくする",
     "meaning": "đến, đến nơi",
-    "example": "[飛行機](ひこうき)は 3[時](じ)に **とうちゃくします**。",
+    "example": "[飛行機](ひこうき)は3[時](じ)に**とうちゃくします**。",
     "exampleVi": "Máy bay sẽ đến nơi lúc 3 giờ."
   },
   {
     "word": "よう",
     "reading": "よう",
     "meaning": "say",
-    "example": "[お酒](おさけ)に **よいました**。",
+    "example": "[お酒](おさけ)に**よいました**。",
     "exampleVi": "Tôi đã say rượu."
   },
   {
     "word": "忘年会",
     "reading": "ぼうねんかい",
     "meaning": "tiệc tất niên",
-    "example": "[十二月](じゅうにがつ)に **[忘年会](ぼうねんかい)**が あります。",
+    "example": "[十二月](じゅうにがつ)に**[忘年会](ぼうねんかい)**があります。",
     "exampleVi": "Tháng 12 có tiệc tất niên."
   },
   {
     "word": "新年会",
     "reading": "しんねんかい",
     "meaning": "tiệc tân niên",
-    "example": "[一月](いちがつ)に **[新年会](しんねんかい)**を します。",
+    "example": "[一月](いちがつ)に**[新年会](しんねんかい)**をします。",
     "exampleVi": "Tháng 1 chúng tôi tổ chức tiệc tân niên."
   },
   {
     "word": "二次会",
     "reading": "にじかい",
     "meaning": "tăng hai",
-    "example": "**[二次会](にじかい)**に [行](い)きますか。",
+    "example": "**[二次会](にじかい)**に[行](い)きますか。",
     "exampleVi": "Bạn có đi đến tăng hai không?"
   },
   {
     "word": "大会",
     "reading": "たいかい",
     "meaning": "đại hội",
-    "example": "[来週](らいしゅう)、**[大会](たいかい)**が あります。",
+    "example": "[来週](らいしゅう)、**[大会](たいかい)**があります。",
     "exampleVi": "Tuần sau có đại hội (giải đấu)."
   },
   {
     "word": "マラソン",
     "reading": "マラソン",
     "meaning": "ma-ra-tông",
-    "example": "[毎朝](まいあさ) **マラソン**の [練習](れんしゅう)を します。",
+    "example": "[毎朝](まいあさ)**マラソン**の[練習](れんしゅう)をします。",
     "exampleVi": "Sáng nào tôi cũng tập luyện marathon."
   },
   {
     "word": "コンテスト",
     "reading": "コンテスト",
     "meaning": "cuộc thi",
-    "example": "[日本語](にほんご)の **コンテスト**に [参加](さんか)します。",
+    "example": "[日本語](にほんご)の**コンテスト**に[参加](さんか)します。",
     "exampleVi": "Tôi sẽ tham gia cuộc thi tiếng Nhật."
   },
   {
     "word": "表",
     "reading": "ひょう",
     "meaning": "bảng",
-    "example": "この **[表](ひょう)**を [見](み)て ください。",
+    "example": "この**[表](ひょう)**を[見](み)てください。",
     "exampleVi": "Xin hãy xem bảng này."
   },
   {
     "word": "裏",
     "reading": "うら",
     "meaning": "phía sau, mặt sau",
-    "example": "[紙](かみ)の **[裏](うら)**に [名前](なまえ)を [書](か)いて ください。",
+    "example": "[紙](かみ)の**[裏](うら)**に[名前](なまえ)を[書](か)いてください。",
     "exampleVi": "Xin hãy viết tên vào mặt sau tờ giấy."
   },
   {
     "word": "まちがい",
     "reading": "まちがい",
     "meaning": "sai sót, nhầm lẫn",
-    "example": "**まちがい**が あるか どうか、[確](たし)かめて ください。",
+    "example": "**まちがい**があるかどうか、[確](たし)かめてください。",
     "exampleVi": "Xin hãy kiểm tra xem có sai sót hay không."
   },
   {
     "word": "傷",
     "reading": "きず",
     "meaning": "vết thương",
-    "example": "[手](て)に **[傷](きず)**が あります。",
+    "example": "[手](て)に**[傷](きず)**があります。",
     "exampleVi": "Có vết thương ở tay."
   },
   {
     "word": "ズボン",
     "reading": "ズボン",
     "meaning": "quần",
-    "example": "[黒](くろ)い **ズボン**を はきます。",
+    "example": "[黒](くろ)い**ズボン**をはきます。",
     "exampleVi": "Tôi mặc quần đen."
   },
   {
     "word": "長さ",
     "reading": "ながさ",
     "meaning": "chiều dài",
-    "example": "この [橋](はし)の **[長](なが)さ**は [百](ひゃく)メートルです。",
+    "example": "この[橋](はし)の**[長](なが)さ**は[百](ひゃく)メートルです。",
     "exampleVi": "Chiều dài của cây cầu này là 100 mét."
   },
   {
     "word": "重さ",
     "reading": "おもさ",
     "meaning": "cân nặng, trọng lượng",
-    "example": "この かばんの **[重](おも)さ**は 5キロです。",
+    "example": "このかばんの**[重](おも)さ**は5キロです。",
     "exampleVi": "Cái cặp này nặng 5 ký."
   },
   {
     "word": "高さ",
     "reading": "たかさ",
     "meaning": "chiều cao",
-    "example": "[富士山](ふじさん)の **[高](たか)さ**は [何](なん)メートルですか。",
+    "example": "[富士山](ふじさん)の**[高](たか)さ**は[何](なん)メートルですか。",
     "exampleVi": "Núi Phú Sĩ cao bao nhiêu mét?"
   },
   {
     "word": "大きさ",
     "reading": "おおきさ",
     "meaning": "kích thước, độ lớn",
-    "example": "[部屋](へや)の **[大](おお)きさ**は どのくらいですか。",
+    "example": "[部屋](へや)の**[大](おお)きさ**はどのくらいですか。",
     "exampleVi": "Căn phòng rộng khoảng bao nhiêu?"
   },
   {
     "word": "便",
     "reading": "べん/びん",
     "meaning": "thuận tiện/chuyến bay, kiện hàng",
-    "example": "この **[便](びん)**は [何時](なんじ)に [着](つ)きますか。",
+    "example": "この**[便](びん)**は[何時](なんじ)に[着](つ)きますか。",
     "exampleVi": "Chuyến bay này mấy giờ đến?"
   },
   {
     "word": "個",
     "reading": "こ",
     "meaning": "cái, cục, viên (đếm vật nhỏ)",
-    "example": "りんごを 3**[個](こ)** [買](か)いました。",
+    "example": "りんごを3**[個](こ)**[買](か)いました。",
     "exampleVi": "Tôi đã mua 3 quả táo."
   },
   {
     "word": "はい",
     "reading": "はい",
     "meaning": "chén, cốc (đếm)",
-    "example": "コーヒーを 2**はい** ください。",
+    "example": "コーヒーを2**はい**ください。",
     "exampleVi": "Cho tôi 2 ly cà phê."
   },
   {
     "word": "センチ",
     "reading": "センチ",
     "meaning": "xăng-ti-mét",
-    "example": "[背](せ)が 170**センチ**です。",
+    "example": "[背](せ)が170**センチ**です。",
     "exampleVi": "Tôi cao 170 cm."
   },
   {
     "word": "ミリ",
     "reading": "ミリ",
     "meaning": "mi-li-mét",
-    "example": "[雨](あめ)が 10**ミリ** ふりました。",
+    "example": "[雨](あめ)が10**ミリ**ふりました。",
     "exampleVi": "Trời đã mưa 10 mm."
   },
   {
     "word": "以上",
     "reading": "いじょう",
     "meaning": "~ trở lên, trên ~",
-    "example": "[百円](ひゃくえん)**[以上](いじょう)**の [物](もの)を [買](か)います。",
+    "example": "[百円](ひゃくえん)**[以上](いじょう)**の[物](もの)を[買](か)います。",
     "exampleVi": "Tôi mua những đồ từ 100 yên trở lên."
   },
   {
     "word": "以下",
     "reading": "いか",
     "meaning": "~ trở xuống, dưới ~",
-    "example": "[五千円](ごせんえん)**[以下](いか)**の [時計](とけい)を [探](さが)して います。",
+    "example": "[五千円](ごせんえん)**[以下](いか)**の[時計](とけい)を[探](さが)しています。",
     "exampleVi": "Tôi đang tìm đồng hồ giá từ 5.000 yên trở xuống."
   },
   {
     "word": "テスト",
     "reading": "テスト",
     "meaning": "bài kiểm tra",
-    "example": "[明日](あした)、**テスト**が あります。",
+    "example": "[明日](あした)、**テスト**があります。",
     "exampleVi": "Ngày mai có bài kiểm tra."
   },
   {
     "word": "成績",
     "reading": "せいせき",
     "meaning": "thành tích",
-    "example": "**[成績](せいせき)**が よかったです。",
+    "example": "**[成績](せいせき)**がよかったです。",
     "exampleVi": "Thành tích của tôi tốt."
   },
   {
     "word": "ところで",
     "reading": "ところで",
     "meaning": "nhân tiện",
-    "example": "**ところで**、[今日](きょう)は [何日](なんにち)ですか。",
+    "example": "**ところで**、[今日](きょう)は[何日](なんにち)ですか。",
     "exampleVi": "Nhân tiện, hôm nay là ngày mấy?"
   },
   {
     "word": "いらっしゃる",
     "reading": "いらっしゃる",
     "meaning": "có, đi, đến (kính ngữ)",
-    "example": "[先生](せんせい)は [研究室](けんきゅうしつ)に **いらっしゃいます**。",
+    "example": "[先生](せんせい)は[研究室](けんきゅうしつ)に**いらっしゃいます**。",
     "exampleVi": "Thầy đang ở phòng nghiên cứu (kính ngữ)."
   },
   {
     "word": "様子",
     "reading": "ようす",
     "meaning": "dáng vẻ, tình trạng",
-    "example": "[子供](こども)の **[様子](ようす)**を [見](み)に [行](い)きます。",
+    "example": "[子供](こども)の**[様子](ようす)**を[見](み)に[行](い)きます。",
     "exampleVi": "Tôi đi xem tình hình của bọn trẻ."
   },
   {
     "word": "事件",
     "reading": "じけん",
     "meaning": "vụ việc",
-    "example": "[昨日](きのう)、[近所](きんじょ)で **[事件](じけん)**が ありました。",
+    "example": "[昨日](きのう)、[近所](きんじょ)で**[事件](じけん)**がありました。",
     "exampleVi": "Hôm qua đã có một vụ việc ở gần nhà."
   },
   {
     "word": "オートバイ",
     "reading": "オートバイ",
     "meaning": "xe máy phân khối lớn",
-    "example": "**オートバイ**で [会社](かいしゃ)へ [行](い)きます。",
+    "example": "**オートバイ**で[会社](かいしゃ)へ[行](い)きます。",
     "exampleVi": "Tôi đi làm bằng xe máy."
   },
   {
     "word": "ばくだん",
     "reading": "ばくだん",
     "meaning": "bom",
-    "example": "**ばくだん**の [事件](じけん)が ありました。",
+    "example": "**ばくだん**の[事件](じけん)がありました。",
     "exampleVi": "Đã có vụ việc liên quan đến bom."
   },
   {
     "word": "積む",
     "reading": "つむ",
     "meaning": "chất lên, tích lũy (kinh nghiệm)",
-    "example": "[荷物](にもつ)を トラックに **[積](つ)みます**。",
+    "example": "[荷物](にもつ)をトラックに**[積](つ)みます**。",
     "exampleVi": "Tôi chất hành lý lên xe tải."
   },
   {
     "word": "運転手",
     "reading": "うんてんしゅ",
     "meaning": "tài xế",
-    "example": "バスの **[運転手](うんてんしゅ)**に [聞](き)きます。",
+    "example": "バスの**[運転手](うんてんしゅ)**に[聞](き)きます。",
     "exampleVi": "Tôi hỏi tài xế xe buýt."
   },
   {
     "word": "はなれる",
     "reading": "はなれる",
     "meaning": "rời xa",
-    "example": "[家](うち)を **はなれて**、[一人](ひとり)で [住](す)んで います。",
+    "example": "[家](うち)を**はなれて**、[一人](ひとり)で[住](す)んでいます。",
     "exampleVi": "Tôi xa nhà và đang sống một mình."
   },
   {
     "word": "急に",
     "reading": "きゅうに",
     "meaning": "gấp, đột nhiên",
-    "example": "**[急](きゅう)に** [寒](さむ)く なりました。",
+    "example": "**[急](きゅう)に**[寒](さむ)くなりました。",
     "exampleVi": "Trời đột nhiên trở lạnh."
   },
   {
     "word": "動かす",
     "reading": "うごかす",
     "meaning": "làm di chuyển, vận hành",
-    "example": "[車](くるま)を **[動](うご)かして** ください。",
+    "example": "[車](くるま)を**[動](うご)かして**ください。",
     "exampleVi": "Xin hãy di chuyển xe."
   },
   {
     "word": "いっしょうけんめい",
     "reading": "いっしょうけんめい",
     "meaning": "chăm chỉ, gắng hết sức",
-    "example": "**いっしょうけんめい** [走](はし)りました。",
+    "example": "**いっしょうけんめい**[走](はし)りました。",
     "exampleVi": "Tôi đã chạy hết sức."
   },
   {
     "word": "犯人",
     "reading": "はんにん",
     "meaning": "thủ phạm, tội phạm",
-    "example": "[警察](けいさつ)は **[犯人](はんにん)**を [探](さが)して います。",
+    "example": "[警察](けいさつ)は**[犯人](はんにん)**を[探](さが)しています。",
     "exampleVi": "Cảnh sát đang tìm thủ phạm."
   },
   {
     "word": "手に入れる",
     "reading": "てにいれる",
     "meaning": "có được, lấy được",
-    "example": "その [本](ほん)を やっと **[手](て)に[入](い)れました**。",
+    "example": "その[本](ほん)をやっと**[手](て)に[入](い)れました**。",
     "exampleVi": "Cuối cùng tôi cũng có được quyển sách đó."
   },
   {
     "word": "今でも",
     "reading": "いまでも",
     "meaning": "ngay cả bây giờ",
-    "example": "**[今](いま)でも** [毎日](まいにち) [走](はし)って います。",
+    "example": "**[今](いま)でも**[毎日](まいにち)[走](はし)っています。",
     "exampleVi": "Đến giờ tôi vẫn chạy mỗi ngày."
   },
   {
     "word": "うまくいく",
     "reading": "うまくいく",
     "meaning": "thuận lợi, trôi chảy",
-    "example": "[仕事](しごと)が **うまくいきました**。",
+    "example": "[仕事](しごと)が**うまくいきました**。",
     "exampleVi": "Công việc đã suôn sẻ."
   },
   {
     "word": "相談",
     "reading": "そうだん",
     "meaning": "thảo luận, bàn bạc",
-    "example": "[先生](せんせい)に **[相談](そうだん)**します。",
+    "example": "[先生](せんせい)に**[相談](そうだん)**します。",
     "exampleVi": "Tôi bàn bạc với giáo viên."
   },
   {
     "word": "天気予報",
     "reading": "てんきよほう",
     "meaning": "dự báo thời tiết",
-    "example": "**[天気予報](てんきよほう)**を [見](み)ます。",
+    "example": "**[天気予報](てんきよほう)**を[見](み)ます。",
     "exampleVi": "Tôi xem dự báo thời tiết."
   },
   {
     "word": "発表会",
     "reading": "はっぴょうかい",
     "meaning": "buổi phát biểu",
-    "example": "[来週](らいしゅう)、**[発表会](はっぴょうかい)**が あります。",
+    "example": "[来週](らいしゅう)、**[発表会](はっぴょうかい)**があります。",
     "exampleVi": "Tuần sau có buổi phát biểu."
   }
 ]

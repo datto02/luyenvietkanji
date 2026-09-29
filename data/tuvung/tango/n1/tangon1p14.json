@@ -1,61 +1,297 @@
 [
-  "顔から火が出る",
-  "顔を立てる",
-  "目が届く",
-  "目が高い",
-  "目が肥える",
-  "目を盗む",
-  "目を引く",
-  "目を丸くする",
-  "目をつぶる",
-  "鼻が高い",
-  "鼻にかける",
-  "鼻につく",
-  "目と鼻の先",
-  "耳につく",
-  "耳に挟む",
-  "耳にたこができる",
-  "耳を澄ます",
-  "耳を貸す",
-  "耳をふさぐ",
-  "口数が少ない",
-  "口を挟む",
-  "頭が切れる",
-  "頭が上がらない",
-  "頭を抱える",
-  "頭を冷やす",
-  "首を突っ込む",
-  "首を長くする",
-  "首を縦に振る",
-  "肩を並べる",
-  "肩を持つ",
-  "のどから手が出る",
-  "手が足りない",
-  "手が回らない",
-  "手を切る",
-  "手に余る",
-  "手に負えない",
-  "手も足も出ない",
-  "手を焼く",
-  "足が早い",
-  "足が出る",
-  "足が棒になる",
-  "足を引っ張る",
-  "息が切れる",
-  "息が詰まる",
-  "息が長い",
-  "息を抜く",
-  "息をつく",
-  "息をのむ",
-  "気が気でない",
-  "気が済む",
-  "馬が合う",
-  "うなぎ登り",
-  "猫に小判",
-  "猫をかぶる",
-  "猫の手も借りたい",
-  "猿も木から落ちる",
-  "犬猿の仲",
-  "一長一短",
-  "一石二鳥"
+  {
+    "word": "顔から火が出る",
+    "example": "[皆](みんな)の[前](まえ)で[転](ころ)んで、**[顔](かお)から[火](ひ)が[出](で)る**ほど[恥](は)ずかしかったです。",
+    "exampleVi": "Ngã trước mặt mọi người, tôi xấu hổ đến đỏ bừng mặt."
+  },
+  {
+    "word": "顔を立てる",
+    "example": "[先輩](せんぱい)の**[顔](かお)を[立](た)てて**、[意見](いけん)は[言](い)いませんでした。",
+    "exampleVi": "Để giữ thể diện cho tiền bối, tôi đã không nêu ý kiến."
+  },
+  {
+    "word": "目が届く",
+    "example": "[子供](こども)たちの[様子](ようす)に**[目](め)が[届](とど)く**ように、[前](まえ)の[席](せき)に[座](すわ)りました。",
+    "exampleVi": "Tôi ngồi ghế đầu để có thể nhìn bao quát tình hình của bọn trẻ."
+  },
+  {
+    "word": "目が高い",
+    "example": "この[絵](え)を[選](えら)ぶとは、**[目](め)が[高](たか)い**ですね。",
+    "exampleVi": "Chọn bức tranh này, bạn thật có con mắt tinh đời."
+  },
+  {
+    "word": "目が肥える",
+    "example": "[美術](びじゅつ)を[見](み)て**[目](め)が[肥](こ)えました**。",
+    "exampleVi": "Nhờ xem nghệ thuật nhiều mà mắt tôi trở nên sành sỏi."
+  },
+  {
+    "word": "目を盗む",
+    "example": "[先生](せんせい)の**[目](め)を[盗](ぬす)んで**、[携帯電話](けいたいでんわ)を[見](み)ました。",
+    "exampleVi": "Lén tránh mắt thầy, tôi đã xem điện thoại."
+  },
+  {
+    "word": "目を引く",
+    "example": "[彼女](かのじょ)の[赤](あか)い[服](ふく)は**[目](め)を[引](ひ)きました**。",
+    "exampleVi": "Bộ đồ đỏ của cô ấy thu hút sự chú ý."
+  },
+  {
+    "word": "目を丸くする",
+    "example": "[彼](かれ)は[値段](ねだん)を[聞](き)いて、**[目](め)を[丸](まる)くしました**。",
+    "exampleVi": "Anh ấy nghe giá mà tròn mắt ngạc nhiên."
+  },
+  {
+    "word": "目をつぶる",
+    "example": "[今回](こんかい)だけは[失敗](しっぱい)に**[目](め)をつぶります**。",
+    "exampleVi": "Riêng lần này tôi sẽ nhắm mắt bỏ qua cho lỗi."
+  },
+  {
+    "word": "鼻が高い",
+    "example": "[息子](むすこ)が[優勝](ゆうしょう)して、[親](おや)として**[鼻](はな)が[高](たか)い**です。",
+    "exampleVi": "Con trai vô địch, làm cha mẹ tôi thấy phổng mũi tự hào."
+  },
+  {
+    "word": "鼻にかける",
+    "example": "[彼](かれ)は[成績](せいせき)を**[鼻](はな)にかけて**います。",
+    "exampleVi": "Anh ta khoe khoang thành tích của mình."
+  },
+  {
+    "word": "鼻につく",
+    "example": "[彼](かれ)の[自慢](じまん)[話](ばなし)は**[鼻](はな)につきます**。",
+    "exampleVi": "Những lời khoe khoang của anh ta thật khó chịu."
+  },
+  {
+    "word": "目と鼻の先",
+    "example": "[駅](えき)は[家](いえ)から**[目](め)と[鼻](はな)の[先](さき)**です。",
+    "exampleVi": "Nhà ga chỉ cách nhà một bước chân."
+  },
+  {
+    "word": "耳につく",
+    "example": "[夜](よる)になると、[時計](とけい)の[音](おと)が**[耳](みみ)につきます**。",
+    "exampleVi": "Đến đêm, tiếng đồng hồ nghe khó chịu bên tai."
+  },
+  {
+    "word": "耳に挟む",
+    "example": "[彼](かれ)が[辞](や)めるという[噂](うわさ)を**[耳](みみ)に[挟](はさ)みました**。",
+    "exampleVi": "Tôi vừa nghe thoáng tin đồn anh ấy nghỉ việc."
+  },
+  {
+    "word": "耳にたこができる",
+    "example": "[母](はは)の[小言](こごと)は、**[耳](みみ)にたこができる**ほど[聞](き)きました。",
+    "exampleVi": "Lời cằn nhằn của mẹ tôi đã nghe mòn cả tai."
+  },
+  {
+    "word": "耳を澄ます",
+    "example": "[鳥](とり)の[声](こえ)に**[耳](みみ)を[澄](す)ましました**。",
+    "exampleVi": "Tôi lắng tai nghe tiếng chim."
+  },
+  {
+    "word": "耳を貸す",
+    "example": "[彼](かれ)は[誰](だれ)の[意見](いけん)にも**[耳](みみ)を[貸](か)しません**。",
+    "exampleVi": "Anh ta không chịu lắng nghe ý kiến của ai."
+  },
+  {
+    "word": "耳をふさぐ",
+    "example": "[大](おお)きな[音](おと)に**[耳](みみ)をふさぎました**。",
+    "exampleVi": "Trước tiếng động lớn, tôi bịt tai lại."
+  },
+  {
+    "word": "口数が少ない",
+    "example": "[父](ちち)は**[口数](くちかず)が[少](すく)ない**[人](ひと)です。",
+    "exampleVi": "Bố tôi là người ít nói."
+  },
+  {
+    "word": "口を挟む",
+    "example": "[人](ひと)の[話](はなし)に**[口](くち)を[挟](はさ)まないで**ください。",
+    "exampleVi": "Xin đừng xen vào chuyện người khác nói."
+  },
+  {
+    "word": "頭が切れる",
+    "example": "[彼](かれ)は**[頭](あたま)が[切](き)れる**[人](ひと)です。",
+    "exampleVi": "Anh ấy là người sắc sảo, thông minh."
+  },
+  {
+    "word": "頭が上がらない",
+    "example": "[妻](つま)には**[頭](あたま)が[上](あ)がりません**。",
+    "exampleVi": "Tôi không ngẩng mặt lên nổi trước vợ."
+  },
+  {
+    "word": "頭を抱える",
+    "example": "[難](むずか)しい[問題](もんだい)に**[頭](あたま)を[抱](かか)えて**います。",
+    "exampleVi": "Tôi đang vò đầu bứt tai trước vấn đề khó."
+  },
+  {
+    "word": "頭を冷やす",
+    "example": "[怒](おこ)らないで、**[頭](あたま)を[冷](ひ)やして**から[話](はな)しましょう。",
+    "exampleVi": "Đừng giận, hãy bình tĩnh lại rồi nói chuyện."
+  },
+  {
+    "word": "首を突っ込む",
+    "example": "[他人](たにん)の[問題](もんだい)に**[首](くび)を[突](つ)っ[込](こ)まない**でください。",
+    "exampleVi": "Xin đừng chĩa mũi vào chuyện của người khác."
+  },
+  {
+    "word": "首を長くする",
+    "example": "[結果](けっか)の[発表](はっぴょう)を**[首](くび)を[長](なが)くして**[待](ま)っています。",
+    "exampleVi": "Tôi đang đợi dài cổ ngày công bố kết quả."
+  },
+  {
+    "word": "首を縦に振る",
+    "example": "[父](ちち)はなかなか**[首](くび)を[縦](たて)に[振](ふ)って**くれません。",
+    "exampleVi": "Bố mãi không chịu gật đầu đồng ý."
+  },
+  {
+    "word": "肩を並べる",
+    "example": "[彼](かれ)はもう[先輩](せんぱい)と**[肩](かた)を[並](なら)べる**[実力](じつりょく)があります。",
+    "exampleVi": "Anh ấy đã có thực lực sánh vai ngang hàng với tiền bối."
+  },
+  {
+    "word": "肩を持つ",
+    "example": "[母](はは)はいつも[妹](いもうと)の**[肩](かた)を[持](も)ちます**。",
+    "exampleVi": "Mẹ lúc nào cũng đứng về phe em gái."
+  },
+  {
+    "word": "のどから手が出る",
+    "example": "その[絵](え)は**のどから[手](て)が[出](で)る**ほど[欲](ほ)しいです。",
+    "exampleVi": "Tôi thèm muốn bức tranh đó đến tột độ."
+  },
+  {
+    "word": "手が足りない",
+    "example": "[忙](いそが)しくて**[手](て)が[足](た)りません**。",
+    "exampleVi": "Bận quá nên thiếu nhân lực."
+  },
+  {
+    "word": "手が回らない",
+    "example": "[仕事](しごと)が[多](おお)くて、[掃除](そうじ)まで**[手](て)が[回](まわ)りません**。",
+    "exampleVi": "Việc nhiều quá nên tôi không xoay xở kịp cả việc dọn dẹp."
+  },
+  {
+    "word": "手を切る",
+    "example": "[悪](わる)い[友達](ともだち)と**[手](て)を[切](き)りました**。",
+    "exampleVi": "Tôi đã cắt đứt quan hệ với những người bạn xấu."
+  },
+  {
+    "word": "手に余る",
+    "example": "この[仕事](しごと)は[私](わたし)の**[手](て)に[余](あま)ります**。",
+    "exampleVi": "Công việc này quá sức của tôi."
+  },
+  {
+    "word": "手に負えない",
+    "example": "あの[子](こ)は**[手](て)に[負](お)えない**いたずらっ[子](こ)です。",
+    "exampleVi": "Đứa bé đó là đứa nghịch ngợm không trị nổi."
+  },
+  {
+    "word": "手も足も出ない",
+    "example": "[相手](あいて)が[強](つよ)すぎて、**[手](て)も[足](あし)も[出](で)ませんでした**。",
+    "exampleVi": "Đối thủ quá mạnh nên tôi chẳng làm gì được."
+  },
+  {
+    "word": "手を焼く",
+    "example": "[子供](こども)のわがままに**[手](て)を[焼](や)いて**います。",
+    "exampleVi": "Tôi đang khốn đốn vì tính bướng bỉnh của con."
+  },
+  {
+    "word": "足が早い",
+    "example": "この[野菜](やさい)は**[足](あし)が[早](はや)い**ので、[早](はや)く[食](た)べましょう。",
+    "exampleVi": "Rau này mau hỏng nên hãy ăn sớm."
+  },
+  {
+    "word": "足が出る",
+    "example": "[旅行](りょこう)の[費用](ひよう)が[予算](よさん)を[超](こ)えて、**[足](あし)が[出](で)ました**。",
+    "exampleVi": "Chi phí chuyến đi vượt ngân sách nên bị lỗ."
+  },
+  {
+    "word": "足が棒になる",
+    "example": "[一日中](いちにちじゅう)[歩](ある)いて、**[足](あし)が[棒](ぼう)になりました**。",
+    "exampleVi": "Đi bộ cả ngày, chân tôi mỏi cứng đờ."
+  },
+  {
+    "word": "足を引っ張る",
+    "example": "[私](わたし)のミスがチームの**[足](あし)を[引](ひ)っ[張](ぱ)りました**。",
+    "exampleVi": "Lỗi của tôi đã kéo chân cả đội."
+  },
+  {
+    "word": "息が切れる",
+    "example": "[階段](かいだん)を[走](はし)って[上](のぼ)って、**[息](いき)が[切](き)れました**。",
+    "exampleVi": "Chạy lên cầu thang, tôi đứt hơi."
+  },
+  {
+    "word": "息が詰まる",
+    "example": "この[部屋](へや)は[狭](せま)くて**[息](いき)が[詰](つ)まります**。",
+    "exampleVi": "Căn phòng này chật đến nghẹt thở."
+  },
+  {
+    "word": "息が長い",
+    "example": "[彼](かれ)は**[息](いき)が[長](なが)い**[活動](かつどう)をしています。",
+    "exampleVi": "Anh ấy đang có hoạt động kéo dài nhiều năm."
+  },
+  {
+    "word": "息を抜く",
+    "example": "[仕事](しごと)の[合間](あいま)に**[息](いき)を[抜](ぬ)きました**。",
+    "exampleVi": "Giữa giờ làm việc, tôi đã nghỉ xả hơi."
+  },
+  {
+    "word": "息をつく",
+    "example": "[仕事](しごと)が[終](お)わって、やっと**[息](いき)をつきました**。",
+    "exampleVi": "Công việc xong, cuối cùng tôi cũng thở phào."
+  },
+  {
+    "word": "息をのむ",
+    "example": "[美](うつく)しい[景色](けしき)に**[息](いき)をのみました**。",
+    "exampleVi": "Tôi nín thở trước phong cảnh đẹp."
+  },
+  {
+    "word": "気が気でない",
+    "example": "[子供](こども)が[帰](かえ)って[来](こ)ないので、**[気](き)が[気](き)でありません**。",
+    "exampleVi": "Con mãi chưa về nên tôi bồn chồn lo sốt vó."
+  },
+  {
+    "word": "気が済む",
+    "example": "[謝](あやま)らないと**[気](き)が[済](す)みません**。",
+    "exampleVi": "Không xin lỗi thì tôi không yên lòng."
+  },
+  {
+    "word": "馬が合う",
+    "example": "[彼](かれ)とは**[馬](うま)が[合](あ)います**。",
+    "exampleVi": "Tôi rất hợp tính với anh ấy."
+  },
+  {
+    "word": "うなぎ登り",
+    "example": "[物価](ぶっか)が**うなぎ[登](のぼ)り**に[上](あ)がっています。",
+    "exampleVi": "Vật giá đang tăng vùn vụt."
+  },
+  {
+    "word": "猫に小判",
+    "example": "[子供](こども)に[高](たか)い[時計](とけい)をあげても**[猫](ねこ)に[小判](こばん)**です。",
+    "exampleVi": "Đưa đồng hồ đắt tiền cho trẻ con thì cũng như đàn gảy tai trâu."
+  },
+  {
+    "word": "猫をかぶる",
+    "example": "[彼女](かのじょ)は[先生](せんせい)の[前](まえ)では**[猫](ねこ)をかぶって**います。",
+    "exampleVi": "Cô ấy giả nai trước mặt thầy giáo."
+  },
+  {
+    "word": "猫の手も借りたい",
+    "example": "[年末](ねんまつ)は**[猫](ねこ)の[手](て)も[借](か)りたい**ほど[忙](いそが)しいです。",
+    "exampleVi": "Cuối năm bận đến mức muốn mượn cả tay mèo."
+  },
+  {
+    "word": "猿も木から落ちる",
+    "example": "**[猿](さる)も[木](き)から[落](お)ちる**といいますから、[気](き)にしないでください。",
+    "exampleVi": "Người ta nói khỉ cũng có lúc rơi khỏi cây, nên bạn đừng bận tâm."
+  },
+  {
+    "word": "犬猿の仲",
+    "example": "[二人](ふたり)は**[犬猿](けんえん)の[仲](なか)**です。",
+    "exampleVi": "Hai người ghét nhau như chó với mèo."
+  },
+  {
+    "word": "一長一短",
+    "example": "どちらの[案](あん)にも**[一長一短](いっちょういったん)**があります。",
+    "exampleVi": "Phương án nào cũng có mặt tốt và mặt xấu."
+  },
+  {
+    "word": "一石二鳥",
+    "example": "[歩](ある)いて[通勤](つうきん)すれば[運動](うんどう)にもなって、**[一石二鳥](いっせきにちょう)**です。",
+    "exampleVi": "Đi bộ đi làm cũng là tập thể dục, một mũi tên trúng hai đích."
+  }
 ]

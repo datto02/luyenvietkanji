@@ -23,7 +23,7 @@
  {
   "word": "や",
   "reading": "や",
-  "meaning": "~ và ~ ",
+  "meaning": "~ và ~",
   "example": "ジュース**や**アイスクリームを[買](か)います。",
   "exampleVi": "Tôi mua nước trái cây và kem."
  },
@@ -66,21 +66,21 @@
   "word": "一円",
   "reading": "いちえん",
   "meaning": "một yên",
-  "example": "**[一円](いちえん)**も ありません。",
+  "example": "**[一円](いちえん)**もありません。",
   "exampleVi": "Tôi không có một yên nào."
  },
  {
   "word": "十円",
   "reading": "じゅうえん",
   "meaning": "mười yên",
-  "example": "この あめは **[十円](じゅうえん)**です。",
+  "example": "このあめは**[十円](じゅうえん)**です。",
   "exampleVi": "Cái kẹo này giá 10 yên."
  },
  {
   "word": "百円",
   "reading": "ひゃくえん",
   "meaning": "một trăm yên",
-  "example": "この ジュースは **[百円](ひゃくえん)**です。",
+  "example": "このジュースは**[百円](ひゃくえん)**です。",
   "exampleVi": "Chai nước trái cây này giá 100 yên."
  },
  {
@@ -94,7 +94,7 @@
   "word": "千円",
   "reading": "せんえん",
   "meaning": "một ngàn yên",
-  "example": "この [本](ほん)は **[千円](せんえん)**です。",
+  "example": "この[本](ほん)は**[千円](せんえん)**です。",
   "exampleVi": "Quyển sách này giá 1.000 yên."
  },
  {
@@ -108,7 +108,7 @@
   "word": "一万円",
   "reading": "いちまんえん",
   "meaning": "mười ngàn yên",
-  "example": "この カメラは **[一万円](いちまんえん)**です。",
+  "example": "このカメラは**[一万円](いちまんえん)**です。",
   "exampleVi": "Chiếc máy ảnh này giá 10.000 yên."
  },
  {
@@ -122,7 +122,7 @@
   "word": "一億円",
   "reading": "いちおくえん",
   "meaning": "một trăm triệu yên",
-  "example": "**[一億円](いちおくえん)**は たくさんの お[金](かね)です。",
+  "example": "**[一億円](いちおくえん)**はたくさんのお[金](かね)です。",
   "exampleVi": "100 triệu yên là rất nhiều tiền."
  },
  {
@@ -213,70 +213,70 @@
   "word": "一つ",
   "reading": "ひとつ",
   "meaning": "một cái",
-  "example": "りんごを **[一](ひと)つ** ください。",
+  "example": "りんごを**[一](ひと)つ**ください。",
   "exampleVi": "Cho tôi một quả táo."
  },
  {
   "word": "二つ",
   "reading": "ふたつ",
   "meaning": "hai cái",
-  "example": "みかんを **[二](ふた)つ** ください。",
+  "example": "みかんを**[二](ふた)つ**ください。",
   "exampleVi": "Cho tôi hai quả quýt."
  },
  {
   "word": "三つ",
   "reading": "みっつ",
   "meaning": "ba cái",
-  "example": "ケーキを **[三](みっ)つ** ください。",
+  "example": "ケーキを**[三](みっ)つ**ください。",
   "exampleVi": "Cho tôi ba cái bánh ngọt."
  },
  {
   "word": "四つ",
   "reading": "よっつ",
   "meaning": "bốn cái",
-  "example": "パンを **[四](よっ)つ** ください。",
+  "example": "パンを**[四](よっ)つ**ください。",
   "exampleVi": "Cho tôi bốn cái bánh mì."
  },
  {
   "word": "五つ",
   "reading": "いつつ",
   "meaning": "năm cái",
-  "example": "たまごを **[五](いつ)つ** ください。",
+  "example": "たまごを**[五](いつ)つ**ください。",
   "exampleVi": "Cho tôi năm quả trứng."
  },
  {
   "word": "六つ",
   "reading": "むっつ",
   "meaning": "sáu cái",
-  "example": "りんごを **[六](むっ)つ** [買](か)いました。",
+  "example": "りんごを**[六](むっ)つ**[買](か)いました。",
   "exampleVi": "Tôi đã mua sáu quả táo."
  },
  {
   "word": "七つ",
   "reading": "ななつ",
   "meaning": "bảy cái",
-  "example": "みかんを **[七](なな)つ** [買](か)いました。",
+  "example": "みかんを**[七](なな)つ**[買](か)いました。",
   "exampleVi": "Tôi đã mua bảy quả quýt."
  },
  {
   "word": "八つ",
   "reading": "やっつ",
   "meaning": "tám cái",
-  "example": "ケーキを **[八](やっ)つ** [作](つく)りました。",
+  "example": "ケーキを**[八](やっ)つ**[作](つく)りました。",
   "exampleVi": "Tôi đã làm tám cái bánh ngọt."
  },
  {
   "word": "九つ",
   "reading": "ここのつ",
   "meaning": "chín cái",
-  "example": "たまごが **[九](ここの)つ** あります。",
+  "example": "たまごが**[九](ここの)つ**あります。",
   "exampleVi": "Có chín quả trứng."
  },
  {
   "word": "十",
   "reading": "とお",
   "meaning": "mười cái",
-  "example": "みかんが **[十](とお)** あります。",
+  "example": "みかんが**[十](とお)**あります。",
   "exampleVi": "Có mười quả quýt."
  },
  {
@@ -416,7 +416,7 @@
   "word": "かしこまりました",
   "reading": "かしこまりました",
   "meaning": "Tôi đã hiểu rồi ạ.",
-  "example": "A：これを ください。　B：**かしこまりました**。",
+  "example": "A：これをください。B：**かしこまりました**。",
   "exampleVi": "A: Cho tôi cái này.  B: Vâng, tôi hiểu rồi ạ."
  },
  {
@@ -465,7 +465,7 @@
   "word": "キャッシュカード",
   "reading": "キャッシュカード",
   "meaning": "thẻ ngân hàng",
-  "example": "**キャッシュカード**を [忘](わす)れました。",
+  "example": "**キャッシュカード**を[忘](わす)れました。",
   "exampleVi": "Tôi đã quên thẻ ngân hàng."
  },
  {
@@ -479,14 +479,14 @@
   "word": "暗証番号",
   "reading": "あんしょうばんごう",
   "meaning": "số (mật khẩu, bảo mật)",
-  "example": "**[暗証番号](あんしょうばんごう)**を [忘](わす)れました。",
+  "example": "**[暗証番号](あんしょうばんごう)**を[忘](わす)れました。",
   "exampleVi": "Tôi đã quên mật khẩu."
  },
  {
   "word": "おす",
   "reading": "おす",
   "meaning": "bấm, nhấn",
-  "example": "ボタンを **おしてください**。",
+  "example": "ボタンを**おしてください**。",
   "exampleVi": "Hãy bấm nút."
  },
  {
@@ -500,7 +500,7 @@
   "word": "金額",
   "reading": "きんがく",
   "meaning": "số tiền",
-  "example": "**[金額](きんがく)**を [確認](かくにん)します。",
+  "example": "**[金額](きんがく)**を[確認](かくにん)します。",
   "exampleVi": "Tôi kiểm tra số tiền."
  },
  {
@@ -514,7 +514,7 @@
   "word": "ボタン",
   "reading": "ボタン",
   "meaning": "nút",
-  "example": "この **ボタン**を おします。",
+  "example": "この**ボタン**をおします。",
   "exampleVi": "Tôi bấm nút này."
  },
  {
@@ -669,7 +669,7 @@
   "reading": "もらう",
   "meaning": "nhận",
   "example": "[父](ちち)に[辞書](じしょ)を**もらいました**。",
-  "exampleVi": "Tôi nhận quyển tự điển từ bố. (Bố cho tôi quyển tự điển)"
+  "exampleVi": "Tôi nhận quyển từ điển từ bố. (Bố cho tôi quyển từ điển)"
  },
  {
   "word": "くれる",
@@ -780,84 +780,84 @@
   "word": "いっさい",
   "reading": "いっさい",
   "meaning": "một tuổi",
-  "example": "[弟](おとうと)は **いっさい**です。",
+  "example": "[弟](おとうと)は**いっさい**です。",
   "exampleVi": "Em trai tôi một tuổi."
  },
  {
   "word": "にさい",
   "reading": "にさい",
   "meaning": "hai tuổi",
-  "example": "[妹](いもうと)は **にさい**です。",
+  "example": "[妹](いもうと)は**にさい**です。",
   "exampleVi": "Em gái tôi hai tuổi."
  },
  {
   "word": "さんさい",
   "reading": "さんさい",
   "meaning": "ba tuổi",
-  "example": "あの [子](こ)は **さんさい**です。",
+  "example": "あの[子](こ)は**さんさい**です。",
   "exampleVi": "Đứa bé kia ba tuổi."
  },
  {
   "word": "よんさい",
   "reading": "よんさい",
   "meaning": "bốn tuổi",
-  "example": "[私](わたし)の [犬](いぬ)は **よんさい**です。",
+  "example": "[私](わたし)の[犬](いぬ)は**よんさい**です。",
   "exampleVi": "Con chó của tôi bốn tuổi."
  },
  {
   "word": "ごさい",
   "reading": "ごさい",
   "meaning": "năm tuổi",
-  "example": "[子供](こども)は **ごさい**です。",
+  "example": "[子供](こども)は**ごさい**です。",
   "exampleVi": "Con tôi năm tuổi."
  },
  {
   "word": "ろくさい",
   "reading": "ろくさい",
   "meaning": "sáu tuổi",
-  "example": "[弟](おとうと)は **ろくさい**です。",
+  "example": "[弟](おとうと)は**ろくさい**です。",
   "exampleVi": "Em trai tôi sáu tuổi."
  },
  {
   "word": "ななさい",
   "reading": "ななさい",
   "meaning": "bảy tuổi",
-  "example": "[妹](いもうと)は **ななさい**です。",
+  "example": "[妹](いもうと)は**ななさい**です。",
   "exampleVi": "Em gái tôi bảy tuổi."
  },
  {
   "word": "はっさい",
   "reading": "はっさい",
   "meaning": "tám tuổi",
-  "example": "あの [男](おとこ)の[子](こ)は **はっさい**です。",
+  "example": "あの[男](おとこ)の[子](こ)は**はっさい**です。",
   "exampleVi": "Cậu bé kia tám tuổi."
  },
  {
   "word": "きゅうさい",
   "reading": "きゅうさい",
   "meaning": "chín tuổi",
-  "example": "[私](わたし)の ねこは **きゅうさい**です。",
+  "example": "[私](わたし)のねこは**きゅうさい**です。",
   "exampleVi": "Con mèo của tôi chín tuổi."
  },
  {
   "word": "じゅっさい",
   "reading": "じゅっさい",
   "meaning": "mười tuổi",
-  "example": "[弟](おとうと)は **じゅっさい**です。",
+  "example": "[弟](おとうと)は**じゅっさい**です。",
   "exampleVi": "Em trai tôi mười tuổi."
  },
  {
   "word": "はたち",
   "reading": "はたち",
   "meaning": "hai mươi tuổi",
-  "example": "[姉](あね)は **はたち**です。",
+  "example": "[姉](あね)は**はたち**です。",
   "exampleVi": "Chị gái tôi hai mươi tuổi."
  },
  {
   "word": "なんさい",
   "reading": "なんさい",
   "meaning": "bao nhiêu tuổi / mấy tuổi",
-  "example": "あの [人](ひと)は **なんさい**ですか。",
+  "example": "あの[人](ひと)は**なんさい**ですか。",
   "exampleVi": "Người kia bao nhiêu tuổi?"
  },
  {
@@ -871,224 +871,224 @@
   "word": "一日",
   "reading": "ついたち",
   "meaning": "ngày 1",
-  "example": "[今日](きょう)は **[一日](ついたち)**です。",
+  "example": "[今日](きょう)は**[一日](ついたち)**です。",
   "exampleVi": "Hôm nay là mùng 1."
  },
  {
   "word": "二日",
   "reading": "ふつか",
   "meaning": "ngày 2",
-  "example": "[明日](あした)は **[二日](ふつか)**です。",
+  "example": "[明日](あした)は**[二日](ふつか)**です。",
   "exampleVi": "Ngày mai là mùng 2."
  },
  {
   "word": "三日",
   "reading": "みっか",
   "meaning": "ngày 3",
-  "example": "[今日](きょう)は **[三日](みっか)**です。",
+  "example": "[今日](きょう)は**[三日](みっか)**です。",
   "exampleVi": "Hôm nay là ngày 3."
  },
  {
   "word": "四日",
   "reading": "よっか",
   "meaning": "ngày 4",
-  "example": "**[四日](よっか)**に [友達](ともだち)が [来](き)ます。",
+  "example": "**[四日](よっか)**に[友達](ともだち)が[来](き)ます。",
   "exampleVi": "Ngày 4 bạn tôi sẽ đến."
  },
  {
   "word": "五日",
   "reading": "いつか",
   "meaning": "ngày 5",
-  "example": "**[五日](いつか)**は [休](やす)みです。",
+  "example": "**[五日](いつか)**は[休](やす)みです。",
   "exampleVi": "Ngày 5 là ngày nghỉ."
  },
  {
   "word": "六日",
   "reading": "むいか",
   "meaning": "ngày 6",
-  "example": "**[六日](むいか)**に [会議](かいぎ)が あります。",
+  "example": "**[六日](むいか)**に[会議](かいぎ)があります。",
   "exampleVi": "Ngày 6 có cuộc họp."
  },
  {
   "word": "七日",
   "reading": "なのか",
   "meaning": "ngày 7",
-  "example": "[明日](あした)は **[七日](なのか)**です。",
+  "example": "[明日](あした)は**[七日](なのか)**です。",
   "exampleVi": "Ngày mai là ngày 7."
  },
  {
   "word": "八日",
   "reading": "ようか",
   "meaning": "ngày 8",
-  "example": "**[八日](ようか)**に [学校](がっこう)へ [行](い)きます。",
+  "example": "**[八日](ようか)**に[学校](がっこう)へ[行](い)きます。",
   "exampleVi": "Ngày 8 tôi đến trường."
  },
  {
   "word": "九日",
   "reading": "ここのか",
   "meaning": "ngày 9",
-  "example": "**[九日](ここのか)**は [私](わたし)の [誕生日](たんじょうび)です。",
+  "example": "**[九日](ここのか)**は[私](わたし)の[誕生日](たんじょうび)です。",
   "exampleVi": "Ngày 9 là sinh nhật của tôi."
  },
  {
   "word": "十日",
   "reading": "とおか",
   "meaning": "ngày 10",
-  "example": "**[十日](とおか)**に [国](くに)へ [帰](かえ)ります。",
+  "example": "**[十日](とおか)**に[国](くに)へ[帰](かえ)ります。",
   "exampleVi": "Ngày 10 tôi về nước."
  },
  {
   "word": "十一日",
   "reading": "じゅういちにち",
   "meaning": "ngày 11",
-  "example": "**[十一日](じゅういちにち)**は [日曜日](にちようび)です。",
+  "example": "**[十一日](じゅういちにち)**は[日曜日](にちようび)です。",
   "exampleVi": "Ngày 11 là Chủ nhật."
  },
  {
   "word": "十二日",
   "reading": "じゅうににち",
   "meaning": "ngày 12",
-  "example": "**[十二日](じゅうににち)**に [銀行](ぎんこう)へ [行](い)きます。",
+  "example": "**[十二日](じゅうににち)**に[銀行](ぎんこう)へ[行](い)きます。",
   "exampleVi": "Ngày 12 tôi đi ngân hàng."
  },
  {
   "word": "十三日",
   "reading": "じゅうさんにち",
   "meaning": "ngày 13",
-  "example": "**[十三日](じゅうさんにち)**は [休](やす)みです。",
+  "example": "**[十三日](じゅうさんにち)**は[休](やす)みです。",
   "exampleVi": "Ngày 13 là ngày nghỉ."
  },
  {
   "word": "十四日",
   "reading": "じゅうよっか",
   "meaning": "ngày 14",
-  "example": "**[十四日](じゅうよっか)**に [友達](ともだち)と [会](あ)います。",
+  "example": "**[十四日](じゅうよっか)**に[友達](ともだち)と[会](あ)います。",
   "exampleVi": "Ngày 14 tôi gặp bạn."
  },
  {
   "word": "十五日",
   "reading": "じゅうごにち",
   "meaning": "ngày 15",
-  "example": "**[十五日](じゅうごにち)**に [会議](かいぎ)が あります。",
+  "example": "**[十五日](じゅうごにち)**に[会議](かいぎ)があります。",
   "exampleVi": "Ngày 15 có cuộc họp."
  },
  {
   "word": "十六日",
   "reading": "じゅうろくにち",
   "meaning": "ngày 16",
-  "example": "**[十六日](じゅうろくにち)**は [土曜日](どようび)です。",
+  "example": "**[十六日](じゅうろくにち)**は[土曜日](どようび)です。",
   "exampleVi": "Ngày 16 là thứ Bảy."
  },
  {
   "word": "十七日",
   "reading": "じゅうしちにち",
   "meaning": "ngày 17",
-  "example": "**[十七日](じゅうしちにち)**に [旅行](りょこう)します。",
+  "example": "**[十七日](じゅうしちにち)**に[旅行](りょこう)します。",
   "exampleVi": "Ngày 17 tôi đi du lịch."
  },
  {
   "word": "十八日",
   "reading": "じゅうはちにち",
   "meaning": "ngày 18",
-  "example": "**[十八日](じゅうはちにち)**は [私](わたし)の [誕生日](たんじょうび)です。",
+  "example": "**[十八日](じゅうはちにち)**は[私](わたし)の[誕生日](たんじょうび)です。",
   "exampleVi": "Ngày 18 là sinh nhật của tôi."
  },
  {
   "word": "十九日",
   "reading": "じゅうくにち",
   "meaning": "ngày 19",
-  "example": "**[十九日](じゅうくにち)**に [映画](えいが)を [見](み)ます。",
+  "example": "**[十九日](じゅうくにち)**に[映画](えいが)を[見](み)ます。",
   "exampleVi": "Ngày 19 tôi xem phim."
  },
  {
   "word": "二十日",
   "reading": "はつか",
   "meaning": "ngày 20",
-  "example": "**[二十日](はつか)**に [国](くに)へ [帰](かえ)ります。",
+  "example": "**[二十日](はつか)**に[国](くに)へ[帰](かえ)ります。",
   "exampleVi": "Ngày 20 tôi về nước."
  },
  {
   "word": "二十一日",
   "reading": "にじゅういちにち",
   "meaning": "ngày 21",
-  "example": "**[二十一日](にじゅういちにち)**に テストが あります。",
+  "example": "**[二十一日](にじゅういちにち)**にテストがあります。",
   "exampleVi": "Ngày 21 có bài kiểm tra."
  },
  {
   "word": "二十二日",
   "reading": "にじゅうににち",
   "meaning": "ngày 22",
-  "example": "**[二十二日](にじゅうににち)**は [日曜日](にちようび)です。",
+  "example": "**[二十二日](にじゅうににち)**は[日曜日](にちようび)です。",
   "exampleVi": "Ngày 22 là Chủ nhật."
  },
  {
   "word": "二十三日",
   "reading": "にじゅうさんにち",
   "meaning": "ngày 23",
-  "example": "**[二十三日](にじゅうさんにち)**に [友達](ともだち)が [来](き)ます。",
+  "example": "**[二十三日](にじゅうさんにち)**に[友達](ともだち)が[来](き)ます。",
   "exampleVi": "Ngày 23 bạn tôi sẽ đến."
  },
  {
   "word": "二十四日",
   "reading": "にじゅうよっか",
   "meaning": "ngày 24",
-  "example": "**[二十四日](にじゅうよっか)**に [手紙](てがみ)を [出](だ)します。",
+  "example": "**[二十四日](にじゅうよっか)**に[手紙](てがみ)を[出](だ)します。",
   "exampleVi": "Ngày 24 tôi gửi thư."
  },
  {
   "word": "二十五日",
   "reading": "にじゅうごにち",
   "meaning": "ngày 25",
-  "example": "クリスマスは [十二月](じゅうにがつ) **[二十五日](にじゅうごにち)**です。",
+  "example": "クリスマスは[十二月](じゅうにがつ)**[二十五日](にじゅうごにち)**です。",
   "exampleVi": "Giáng sinh là ngày 25 tháng 12."
  },
  {
   "word": "二十六日",
   "reading": "にじゅうろくにち",
   "meaning": "ngày 26",
-  "example": "**[二十六日](にじゅうろくにち)**は [休](やす)みです。",
+  "example": "**[二十六日](にじゅうろくにち)**は[休](やす)みです。",
   "exampleVi": "Ngày 26 là ngày nghỉ."
  },
  {
   "word": "二十七日",
   "reading": "にじゅうしちにち",
   "meaning": "ngày 27",
-  "example": "**[二十七日](にじゅうしちにち)**に [旅行](りょこう)から [帰](かえ)ります。",
+  "example": "**[二十七日](にじゅうしちにち)**に[旅行](りょこう)から[帰](かえ)ります。",
   "exampleVi": "Ngày 27 tôi đi du lịch về."
  },
  {
   "word": "二十八日",
   "reading": "にじゅうはちにち",
   "meaning": "ngày 28",
-  "example": "**[二十八日](にじゅうはちにち)**に [会議](かいぎ)が あります。",
+  "example": "**[二十八日](にじゅうはちにち)**に[会議](かいぎ)があります。",
   "exampleVi": "Ngày 28 có cuộc họp."
  },
  {
   "word": "二十九日",
   "reading": "にじゅうくにち",
   "meaning": "ngày 29",
-  "example": "**[二十九日](にじゅうくにち)**に [映画](えいが)を [見](み)ました。",
+  "example": "**[二十九日](にじゅうくにち)**に[映画](えいが)を[見](み)ました。",
   "exampleVi": "Ngày 29 tôi đã xem phim."
  },
  {
   "word": "三十日",
   "reading": "さんじゅうにち",
   "meaning": "ngày 30",
-  "example": "**[三十日](さんじゅうにち)**は [月曜日](げつようび)です。",
+  "example": "**[三十日](さんじゅうにち)**は[月曜日](げつようび)です。",
   "exampleVi": "Ngày 30 là thứ Hai."
  },
  {
   "word": "三十一日",
   "reading": "さんじゅういちにち",
   "meaning": "ngày 31",
-  "example": "**[三十一日](さんじゅういちにち)**に [国](くに)へ [帰](かえ)ります。",
+  "example": "**[三十一日](さんじゅういちにち)**に[国](くに)へ[帰](かえ)ります。",
   "exampleVi": "Ngày 31 tôi về nước."
  },
  {
   "word": "何日",
   "reading": "なんにち",
   "meaning": "ngày mấy",
-  "example": "[誕生日](たんじょうび)は **[何日](なんにち)**ですか。",
+  "example": "[誕生日](たんじょうび)は**[何日](なんにち)**ですか。",
   "exampleVi": "Sinh nhật bạn là ngày mấy?"
  }
 ]

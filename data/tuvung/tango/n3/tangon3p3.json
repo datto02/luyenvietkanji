@@ -1,102 +1,503 @@
 [
-  "住まい",
-  "リビング",
-  "居間",
-  "家電",
-  "エアコン",
-  "クーラー",
-  "暖める",
-  "天井",
-  "床",
-  "カーペット",
-  "ざぶとん",
-  "ソファー",
-  "クッション",
-  "どかす",
-  "コンセント",
-  "スイッチ",
-  "ドライヤー",
-  "蛇口",
-  "ひねる",
-  "実家",
-  "家賃",
-  "物置",
-  "日当たり",
-  "内側",
-  "お札",
-  "コイン",
-  "小銭",
-  "生活費",
-  "食費",
-  "光熱費",
-  "交際費",
-  "公共料金",
-  "おこづかい",
-  "節約",
-  "ぜいたく",
-  "割り勘",
-  "レンタル",
-  "支払う",
-  "支払い",
-  "勘定",
-  "口座",
-  "キャッシュカード",
-  "暗証番号",
-  "預金",
-  "貯める",
-  "貯まる",
-  "引き出す",
-  "振り込む",
-  "送金",
-  "通帳記入",
-  "品物",
-  "現金",
-  "クレジットカード",
-  "一回払い",
-  "合計",
-  "代金",
-  "税込",
-  "請求書",
-  "領収書",
-  "売り切れ",
-  "品切れ",
-  "日替わり",
-  "割引",
-  "半額",
-  "特売日",
-  "たった",
-  "得",
-  "損",
-  "おまけ",
-  "むだ",
-  "むだづかい",
-  "寄る",
-  "ついでに",
-  "レジ袋",
-  "定休日",
-  "覚ます",
-  "覚める",
-  "夜が明ける",
-  "支度",
-  "合わせる",
-  "しまう",
-  "ひげをそる",
-  "髪をとかす",
-  "そろえる",
-  "昼寝",
-  "腰かける",
-  "暮れる",
-  "おしゃべり",
-  "リラックス",
-  "普段",
-  "普段着",
-  "相変わらず",
-  "たいてい",
-  "夜ふかし",
-  "電源",
-  "充電",
-  "セット",
-  "なでる",
-  "ぐっすり",
-  "運"
+ {
+  "word": "住まい",
+  "example": "[新](あたら)しい**[住](す)まい**は[駅](えき)から[近](ちか)くて[便利](べんり)です。",
+  "exampleVi": "Chỗ ở mới gần nhà ga nên tiện lợi."
+ },
+ {
+  "word": "リビング",
+  "example": "**リビング**で[家族](かぞく)みんなでテレビを[見](み)ます。",
+  "exampleVi": "Cả nhà cùng xem tivi ở phòng khách."
+ },
+ {
+  "word": "居間",
+  "example": "**[居間](いま)**に[座布団](ざぶとん)を[敷](し)いて[座](すわ)りました。",
+  "exampleVi": "Tôi trải đệm ở phòng khách rồi ngồi xuống."
+ },
+ {
+  "word": "家電",
+  "example": "[冷蔵庫](れいぞうこ)や[洗濯機](せんたくき)などの**[家電](かでん)**を[買](か)いました。",
+  "exampleVi": "Tôi đã mua đồ điện gia dụng như tủ lạnh và máy giặt."
+ },
+ {
+  "word": "エアコン",
+  "example": "[暑](あつ)いので、**エアコン**をつけました。",
+  "exampleVi": "Trời nóng nên tôi đã bật điều hòa."
+ },
+ {
+  "word": "クーラー",
+  "example": "[部屋](へや)が[暑](あつ)いので、**クーラー**をつけてください。",
+  "exampleVi": "Phòng nóng nên hãy bật máy lạnh lên."
+ },
+ {
+  "word": "暖める",
+  "example": "ストーブで[部屋](へや)を**[暖](あたた)めます**。",
+  "exampleVi": "Tôi làm ấm phòng bằng lò sưởi."
+ },
+ {
+  "word": "天井",
+  "example": "この[部屋](へや)は**[天井](てんじょう)**が[高](たか)いです。",
+  "exampleVi": "Căn phòng này trần nhà cao."
+ },
+ {
+  "word": "床",
+  "example": "[冬](ふゆ)は**[床](ゆか)**が[冷](つめ)たいです。",
+  "exampleVi": "Mùa đông sàn nhà lạnh."
+ },
+ {
+  "word": "カーペット",
+  "example": "[床](ゆか)に**カーペット**を[敷](し)きました。",
+  "exampleVi": "Tôi đã trải thảm lên sàn."
+ },
+ {
+  "word": "ざぶとん",
+  "example": "[お客](きゃく)さんに**ざぶとん**を[出](だ)しました。",
+  "exampleVi": "Tôi đã đưa đệm ngồi cho khách."
+ },
+ {
+  "word": "ソファー",
+  "example": "[疲](つか)れて、**ソファー**で[寝](ね)てしまいました。",
+  "exampleVi": "Vì mệt nên tôi lỡ ngủ luôn trên ghế sofa."
+ },
+ {
+  "word": "クッション",
+  "example": "いすに**クッション**を[置](お)くと、[楽](らく)です。",
+  "exampleVi": "Đặt gối tựa lên ghế thì thoải mái hơn."
+ },
+ {
+  "word": "どかす",
+  "example": "じゃまな[荷物](にもつ)を**どかして**、[道](みち)を[作](つく)りました。",
+  "exampleVi": "Tôi dời đồ đạc vướng víu đi để tạo lối đi."
+ },
+ {
+  "word": "コンセント",
+  "example": "**コンセント**にプラグを[差](さ)します。",
+  "exampleVi": "Tôi cắm phích vào ổ cắm điện."
+ },
+ {
+  "word": "スイッチ",
+  "example": "[部屋](へや)に[入](はい)ったら、まず**スイッチ**を[押](お)します。",
+  "exampleVi": "Vào phòng thì trước tiên tôi bấm công tắc."
+ },
+ {
+  "word": "ドライヤー",
+  "example": "[髪](かみ)をあらったあと、**ドライヤー**で[乾](かわ)かします。",
+  "exampleVi": "Sau khi gội đầu, tôi sấy khô tóc bằng máy sấy."
+ },
+ {
+  "word": "蛇口",
+  "example": "**[蛇口](じゃぐち)**から[水](みず)が[出](で)ません。",
+  "exampleVi": "Nước không chảy ra từ vòi."
+ },
+ {
+  "word": "ひねる",
+  "example": "[蛇口](じゃぐち)を**ひねる**と、[水](みず)が[出](で)ます。",
+  "exampleVi": "Vặn vòi thì nước chảy ra."
+ },
+ {
+  "word": "実家",
+  "example": "[お正月](しょうがつ)には**[実家](じっか)**に[帰](かえ)ります。",
+  "exampleVi": "Dịp Tết tôi về nhà bố mẹ đẻ."
+ },
+ {
+  "word": "家賃",
+  "example": "[毎月](まいつき)の**[家賃](やちん)**は[六万円](ろくまんえん)です。",
+  "exampleVi": "Tiền nhà mỗi tháng là 60.000 yên."
+ },
+ {
+  "word": "物置",
+  "example": "[使](つか)わない[物](もの)は**[物置](ものおき)**に[入](い)れてあります。",
+  "exampleVi": "Đồ không dùng được cất trong kho chứa đồ."
+ },
+ {
+  "word": "日当たり",
+  "example": "この[部屋](へや)は**[日当](ひあ)たり**がよくて、[明](あか)るいです。",
+  "exampleVi": "Căn phòng này đón nắng tốt nên sáng sủa.",
+  "meaning": "độ đón nắng, hướng nắng"
+ },
+ {
+  "word": "内側",
+  "example": "[窓](まど)の**[内側](うちがわ)**から[鍵](かぎ)をかけました。",
+  "exampleVi": "Tôi đã khóa cửa từ phía bên trong."
+ },
+ {
+  "word": "お札",
+  "example": "**お[札](さつ)**を[小銭](こぜに)に[替](か)えてください。",
+  "exampleVi": "Xin hãy đổi tiền giấy thành tiền lẻ."
+ },
+ {
+  "word": "コイン",
+  "example": "この[機械](きかい)は**コイン**しか[使](つか)えません。",
+  "exampleVi": "Chiếc máy này chỉ dùng được tiền xu."
+ },
+ {
+  "word": "小銭",
+  "example": "バスに[乗](の)るために、**[小銭](こぜに)**を[用意](ようい)しました。",
+  "exampleVi": "Tôi đã chuẩn bị tiền lẻ để đi xe buýt."
+ },
+ {
+  "word": "生活費",
+  "example": "[一人暮](ひとりぐ)らしをして、**[生活費](せいかつひ)**が[大変](たいへん)です。",
+  "exampleVi": "Sống một mình nên chi phí sinh hoạt thật vất vả."
+ },
+ {
+  "word": "食費",
+  "example": "[今月](こんげつ)は**[食費](しょくひ)**が[多](おお)かったです。",
+  "exampleVi": "Tháng này tiền ăn tốn nhiều."
+ },
+ {
+  "word": "光熱費",
+  "example": "[冬](ふゆ)は**[光熱費](こうねつひ)**が[高](たか)くなります。",
+  "exampleVi": "Mùa đông tiền điện ga tăng cao."
+ },
+ {
+  "word": "交際費",
+  "example": "[会社](かいしゃ)の[付](つ)き[合](あ)いで、**[交際費](こうさいひ)**がかかります。",
+  "exampleVi": "Do giao tế ở công ty nên phát sinh chi phí giao tiếp."
+ },
+ {
+  "word": "公共料金",
+  "example": "**[公共料金](こうきょうりょうきん)**は[銀行](ぎんこう)から[自動](じどう)で[払](はら)われます。",
+  "exampleVi": "Tiền điện nước được tự động trả từ ngân hàng."
+ },
+ {
+  "word": "おこづかい",
+  "example": "[母](はは)から[毎月](まいつき)**おこづかい**をもらいます。",
+  "exampleVi": "Mỗi tháng tôi nhận tiền tiêu vặt từ mẹ."
+ },
+ {
+  "word": "節約",
+  "example": "[電気](でんき)をこまめに[消](け)して、**[節約](せつやく)**します。",
+  "exampleVi": "Tôi tắt điện thường xuyên để tiết kiệm."
+ },
+ {
+  "word": "ぜいたく",
+  "example": "たまには**ぜいたく**をして、[高](たか)い[店](みせ)で[食事](しょくじ)します。",
+  "exampleVi": "Thỉnh thoảng tôi cũng xa xỉ một chút và ăn ở quán đắt tiền."
+ },
+ {
+  "word": "割り勘",
+  "example": "[食事](しょくじ)の[代金](だいきん)は**[割](わ)り[勘](かん)**にしましょう。",
+  "exampleVi": "Tiền bữa ăn chúng ta chia đều nhé."
+ },
+ {
+  "word": "レンタル",
+  "example": "[旅行](りょこう)で[車](くるま)を**レンタル**しました。",
+  "exampleVi": "Tôi đã thuê ô tô khi đi du lịch."
+ },
+ {
+  "word": "支払う",
+  "example": "[家賃](やちん)は[毎月](まいつき)、[銀行](ぎんこう)で**[支払](しはら)います**。",
+  "exampleVi": "Tiền nhà tôi thanh toán tại ngân hàng mỗi tháng."
+ },
+ {
+  "word": "支払い",
+  "example": "[代金](だいきん)の**[支払](しはら)い**は[来週](らいしゅう)までです。",
+  "exampleVi": "Hạn thanh toán tiền hàng là đến tuần sau."
+ },
+ {
+  "word": "勘定",
+  "example": "[食事](しょくじ)のあと、[店員](てんいん)に**[勘定](かんじょう)**を[頼](たの)みました。",
+  "exampleVi": "Sau bữa ăn, tôi nhờ nhân viên tính tiền."
+ },
+ {
+  "word": "口座",
+  "example": "[給料](きゅうりょう)を[銀行](ぎんこう)の**[口座](こうざ)**に[振](ふ)り[込](こ)んでもらいます。",
+  "exampleVi": "Tôi nhờ công ty chuyển lương vào tài khoản ngân hàng."
+ },
+ {
+  "word": "キャッシュカード",
+  "example": "**キャッシュカード**で[お金](かね)を[引](ひ)き[出](だ)しました。",
+  "exampleVi": "Tôi đã rút tiền bằng thẻ ATM."
+ },
+ {
+  "word": "暗証番号",
+  "example": "**[暗証番号](あんしょうばんごう)**を[人](ひと)に[教](おし)えてはいけません。",
+  "exampleVi": "Không được cho người khác biết mã PIN."
+ },
+ {
+  "word": "預金",
+  "example": "[少](すこ)しずつ**[預金](よきん)**しています。",
+  "exampleVi": "Tôi đang gửi tiết kiệm từng chút một."
+ },
+ {
+  "word": "貯める",
+  "example": "[旅行](りょこう)のために、お[金](かね)を**[貯](た)めて**います。",
+  "exampleVi": "Tôi đang để dành tiền cho chuyến du lịch."
+ },
+ {
+  "word": "貯まる",
+  "example": "[毎月](まいつき)[貯金](ちょきん)して、お[金](かね)が**[貯](た)まりました**。",
+  "exampleVi": "Tháng nào tôi cũng gửi tiết kiệm nên đã tích lũy được tiền."
+ },
+ {
+  "word": "引き出す",
+  "example": "[銀行](ぎんこう)で[お金](かね)を**[引](ひ)き[出](だ)しました**。",
+  "exampleVi": "Tôi đã rút tiền ở ngân hàng."
+ },
+ {
+  "word": "振り込む",
+  "example": "[家賃](やちん)を[大家](おおや)さんの[口座](こうざ)に**[振](ふ)り[込](こ)みました**。",
+  "exampleVi": "Tôi đã chuyển tiền nhà vào tài khoản của chủ nhà."
+ },
+ {
+  "word": "送金",
+  "example": "[国](くに)の[家族](かぞく)に**[送金](そうきん)**しました。",
+  "exampleVi": "Tôi đã gửi tiền cho gia đình ở quê."
+ },
+ {
+  "word": "通帳記入",
+  "example": "ATMで**[通帳記入](つうちょうきにゅう)**をしました。",
+  "exampleVi": "Tôi đã cập nhật sổ tài khoản ở máy ATM."
+ },
+ {
+  "word": "品物",
+  "example": "この[店](みせ)は[珍](めずら)しい**[品物](しなもの)**が[多](おお)いです。",
+  "exampleVi": "Cửa hàng này có nhiều hàng hiếm."
+ },
+ {
+  "word": "現金",
+  "example": "**[現金](げんきん)**がないときは、カードで[払](はら)います。",
+  "exampleVi": "Khi không có tiền mặt, tôi trả bằng thẻ."
+ },
+ {
+  "word": "クレジットカード",
+  "example": "**クレジットカード**で[払](はら)ってもいいですか。",
+  "exampleVi": "Tôi trả bằng thẻ tín dụng được không?"
+ },
+ {
+  "word": "一回払い",
+  "example": "[支払](しはら)いは**[一回払](いっかいばら)い**にしてください。",
+  "exampleVi": "Xin hãy cho tôi thanh toán một lần."
+ },
+ {
+  "word": "合計",
+  "example": "[全部](ぜんぶ)で**[合計](ごうけい)**[五千円](ごせんえん)です。",
+  "exampleVi": "Tổng cộng tất cả là 5.000 yên."
+ },
+ {
+  "word": "代金",
+  "example": "[商品](しょうひん)が[届](とど)いたら、**[代金](だいきん)**を[払](はら)います。",
+  "exampleVi": "Khi hàng đến, tôi sẽ trả tiền hàng."
+ },
+ {
+  "word": "税込",
+  "example": "この[値段](ねだん)は**[税込](ぜいこ)み**です。",
+  "exampleVi": "Giá này đã bao gồm thuế."
+ },
+ {
+  "word": "請求書",
+  "example": "[月末](げつまつ)に[会社](かいしゃ)から**[請求書](せいきゅうしょ)**が[届](とど)きました。",
+  "exampleVi": "Cuối tháng tôi nhận được hóa đơn từ công ty."
+ },
+ {
+  "word": "領収書",
+  "example": "**[領収書](りょうしゅうしょ)**をお[願](ねが)いします。",
+  "exampleVi": "Xin cho tôi biên lai."
+ },
+ {
+  "word": "売り切れ",
+  "example": "[人気](にんき)の[商品](しょうひん)はもう**[売](う)り[切](き)れ**でした。",
+  "exampleVi": "Sản phẩm được ưa chuộng đã bán hết rồi."
+ },
+ {
+  "word": "品切れ",
+  "example": "あの[商品](しょうひん)は**[品切](しなぎ)れ**で、[来週](らいしゅう)まで[入](はい)りません。",
+  "exampleVi": "Sản phẩm đó hết hàng, đến tuần sau mới có."
+ },
+ {
+  "word": "日替わり",
+  "example": "この[店](みせ)の**[日替](ひが)わり**[定食](ていしょく)は[安](やす)くておいしいです。",
+  "exampleVi": "Suất ăn theo ngày của quán này vừa rẻ vừa ngon."
+ },
+ {
+  "word": "割引",
+  "example": "[学生](がくせい)は[電車](でんしゃ)の[料金](りょうきん)が**[割引](わりびき)**になります。",
+  "exampleVi": "Học sinh được giảm giá vé tàu."
+ },
+ {
+  "word": "半額",
+  "example": "セールで、[服](ふく)が**[半額](はんがく)**になっていました。",
+  "exampleVi": "Nhờ đợt giảm giá, quần áo được bán nửa giá."
+ },
+ {
+  "word": "特売日",
+  "example": "[今日](きょう)はスーパーの**[特売日](とくばいび)**です。",
+  "exampleVi": "Hôm nay là ngày khuyến mãi của siêu thị."
+ },
+ {
+  "word": "たった",
+  "example": "この[本](ほん)は**たった**[五百円](ごひゃくえん)でした。",
+  "exampleVi": "Cuốn sách này chỉ có 500 yên thôi."
+ },
+ {
+  "word": "得",
+  "example": "まとめて[買](か)うと**[得](とく)**です。",
+  "exampleVi": "Mua gộp một lần thì có lợi."
+ },
+ {
+  "word": "損",
+  "example": "[早](はや)く[買](か)えばよかったと、**[損](そん)**をした[気持](きも)ちになりました。",
+  "exampleVi": "Tôi thấy mình bị thiệt vì lẽ ra nên mua sớm hơn."
+ },
+ {
+  "word": "おまけ",
+  "example": "[三つ](みっつ)[買](か)ったら、**おまけ**がついてきました。",
+  "exampleVi": "Mua ba cái thì được tặng thêm quà."
+ },
+ {
+  "word": "むだ",
+  "example": "[使](つか)わない[物](もの)を[買](か)うのは**むだ**です。",
+  "exampleVi": "Mua thứ không dùng đến là lãng phí."
+ },
+ {
+  "word": "むだづかい",
+  "example": "カードで[買](か)いすぎて、**むだづかい**をしてしまいました。",
+  "exampleVi": "Tôi mua quá nhiều bằng thẻ và đã tiêu xài lãng phí."
+ },
+ {
+  "word": "寄る",
+  "example": "[帰](かえ)りに[本屋](ほんや)に**[寄](よ)りました**。",
+  "exampleVi": "Trên đường về tôi đã ghé hiệu sách."
+ },
+ {
+  "word": "ついでに",
+  "example": "[買](か)い[物](もの)の**ついでに**、[郵便局](ゆうびんきょく)にも[寄](よ)りました。",
+  "exampleVi": "Nhân tiện đi mua sắm, tôi cũng ghé bưu điện."
+ },
+ {
+  "word": "レジ袋",
+  "example": "スーパーで**レジ[袋](ぶくろ)**を[断](ことわ)りました。",
+  "exampleVi": "Ở siêu thị tôi đã từ chối túi nilon."
+ },
+ {
+  "word": "定休日",
+  "example": "この[店](みせ)の**[定休日](ていきゅうび)**は[水曜日](すいようび)です。",
+  "exampleVi": "Ngày nghỉ cố định của cửa hàng này là thứ Tư."
+ },
+ {
+  "word": "覚ます",
+  "example": "[夜中](よなか)に[大](おお)きな[音](おと)で[目](め)を**[覚](さ)ましました**。",
+  "exampleVi": "Nửa đêm tôi bị tiếng động lớn đánh thức."
+ },
+ {
+  "word": "覚める",
+  "example": "[今朝](けさ)は[五時](ごじ)に[目](め)が**[覚](さ)めました**。",
+  "exampleVi": "Sáng nay tôi tỉnh dậy lúc 5 giờ."
+ },
+ {
+  "word": "夜が明ける",
+  "example": "**[夜](よる)が[明](あ)けて**、[空](そら)が[明](あか)るくなってきました。",
+  "exampleVi": "Trời sáng dần, bầu trời trở nên sáng hơn."
+ },
+ {
+  "word": "支度",
+  "example": "[出](で)かける**[支度](したく)**はもうできましたか。",
+  "exampleVi": "Bạn đã chuẩn bị xong để ra ngoài chưa?"
+ },
+ {
+  "word": "合わせる",
+  "example": "[時計](とけい)を[正](ただ)しい[時間](じかん)に**[合](あ)わせました**。",
+  "exampleVi": "Tôi đã chỉnh đồng hồ theo đúng giờ."
+ },
+ {
+  "word": "しまう",
+  "example": "[使](つか)った[道具](どうぐ)を[箱](はこ)に**しまいました**。",
+  "exampleVi": "Tôi đã cất dụng cụ đã dùng vào hộp."
+ },
+ {
+  "word": "ひげをそる",
+  "example": "[毎朝](まいあさ)、[顔](かお)を[洗](あら)って**ひげをそります**。",
+  "exampleVi": "Mỗi sáng tôi rửa mặt rồi cạo râu."
+ },
+ {
+  "word": "髪をとかす",
+  "example": "[出](で)かける[前](まえ)に**[髪](かみ)をとかします**。",
+  "exampleVi": "Trước khi ra ngoài tôi chải tóc."
+ },
+ {
+  "word": "そろえる",
+  "example": "[明日](あした)の[会議](かいぎ)の[資料](しりょう)を**そろえました**。",
+  "exampleVi": "Tôi đã chuẩn bị đủ tài liệu cho cuộc họp ngày mai."
+ },
+ {
+  "word": "昼寝",
+  "example": "[日曜日](にちようび)は[家](いえ)で**[昼寝](ひるね)**をしました。",
+  "exampleVi": "Chủ nhật tôi đã ngủ trưa ở nhà."
+ },
+ {
+  "word": "腰かける",
+  "example": "[公園](こうえん)のベンチに**[腰](こし)かけて**[休](やす)みました。",
+  "exampleVi": "Tôi ngồi nghỉ trên ghế đá ở công viên."
+ },
+ {
+  "word": "暮れる",
+  "example": "[冬](ふゆ)は[日](ひ)が**[暮](く)れる**のが[早](はや)いです。",
+  "exampleVi": "Mùa đông trời tối sớm."
+ },
+ {
+  "word": "おしゃべり",
+  "example": "[友達](ともだち)と[喫茶店](きっさてん)で**おしゃべり**をしました。",
+  "exampleVi": "Tôi đã trò chuyện với bạn ở quán cà phê."
+ },
+ {
+  "word": "リラックス",
+  "example": "[温泉](おんせん)に[入](はい)って、ゆっくり**リラックス**しました。",
+  "exampleVi": "Tôi ngâm suối nước nóng và thư giãn thong thả."
+ },
+ {
+  "word": "普段",
+  "example": "**[普段](ふだん)**は[電車](でんしゃ)で[会社](かいしゃ)に[行](い)きます。",
+  "exampleVi": "Thường ngày tôi đi làm bằng tàu điện."
+ },
+ {
+  "word": "普段着",
+  "example": "[家](いえ)では**[普段着](ふだんぎ)**で[楽](らく)にしています。",
+  "exampleVi": "Ở nhà tôi mặc đồ thường ngày cho thoải mái."
+ },
+ {
+  "word": "相変わらず",
+  "example": "[彼](かれ)は**[相変](あいか)わらず**[元気](げんき)です。",
+  "exampleVi": "Anh ấy vẫn khỏe như mọi khi."
+ },
+ {
+  "word": "たいてい",
+  "example": "[休](やす)みの[日](ひ)は**たいてい**[家](いえ)にいます。",
+  "exampleVi": "Ngày nghỉ thì thường là tôi ở nhà."
+ },
+ {
+  "word": "夜ふかし",
+  "example": "**[夜](よる)ふかし**をすると、[次](つぎ)の[日](ひ)が[眠](ねむ)いです。",
+  "exampleVi": "Thức khuya thì hôm sau buồn ngủ."
+ },
+ {
+  "word": "電源",
+  "example": "[使](つか)わないときは、パソコンの**[電源](でんげん)**を[切](き)ります。",
+  "exampleVi": "Khi không dùng, tôi tắt nguồn máy tính."
+ },
+ {
+  "word": "充電",
+  "example": "[寝](ね)る[前](まえ)に、[携帯電話](けいたいでんわ)を**[充電](じゅうでん)**します。",
+  "exampleVi": "Trước khi ngủ tôi sạc điện thoại."
+ },
+ {
+  "word": "セット",
+  "example": "[目覚](めざ)まし[時計](どけい)を[六時](ろくじ)に**セット**しました。",
+  "exampleVi": "Tôi đã cài đồng hồ báo thức lúc 6 giờ."
+ },
+ {
+  "word": "なでる",
+  "example": "[猫](ねこ)の[頭](あたま)を**なでる**と、[喜](よろこ)びます。",
+  "exampleVi": "Xoa đầu con mèo thì nó vui."
+ },
+ {
+  "word": "ぐっすり",
+  "example": "[昨日](きのう)は[疲](つか)れて、**ぐっすり**[眠](ねむ)りました。",
+  "exampleVi": "Hôm qua mệt nên tôi đã ngủ say."
+ },
+ {
+  "word": "運",
+  "example": "[今日](きょう)は**[運](うん)**がよくて、いいことが[続](つづ)きました。",
+  "exampleVi": "Hôm nay may mắn nên chuyện tốt liên tiếp xảy ra."
+ }
 ]

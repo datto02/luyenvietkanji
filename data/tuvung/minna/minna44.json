@@ -3,252 +3,252 @@
     "word": "泣く",
     "reading": "なく",
     "meaning": "khóc",
-    "example": "[赤](あか)ちゃんが **[泣](な)いて** います。",
+    "example": "[赤](あか)ちゃんが**[泣](な)いて**います。",
     "exampleVi": "Em bé đang khóc."
   },
   {
     "word": "笑う",
     "reading": "わらう",
     "meaning": "cười",
-    "example": "[子供](こども)が **[笑](わら)って** います。",
+    "example": "[子供](こども)が**[笑](わら)って**います。",
     "exampleVi": "Đứa trẻ đang cười."
   },
   {
     "word": "かわく",
     "reading": "かわく",
     "meaning": "khô",
-    "example": "せんたくものが **かわきました**。",
+    "example": "せんたくものが**かわきました**。",
     "exampleVi": "Đồ giặt đã khô."
   },
   {
     "word": "ぬれる",
     "reading": "ぬれる",
     "meaning": "ướt",
-    "example": "[雨](あめ)で [服](ふく)が **ぬれました**。",
+    "example": "[雨](あめ)で[服](ふく)が**ぬれました**。",
     "exampleVi": "Quần áo bị ướt vì mưa."
   },
   {
     "word": "すべる",
     "reading": "すべる",
     "meaning": "trượt ngã",
-    "example": "[道](みち)が **すべりやすい**です。",
+    "example": "[道](みち)が**すべりやすい**です。",
     "exampleVi": "Đường dễ bị trơn trượt."
   },
   {
     "word": "起きる",
     "reading": "おきる",
     "meaning": "Thức dậy, xảy ra [sự cố]",
-    "example": "[朝](あさ)、[早](はや)く **[起](お)きすぎました**。",
+    "example": "[朝](あさ)、[早](はや)く**[起](お)きすぎました**。",
     "exampleVi": "Sáng nay tôi đã dậy quá sớm."
   },
   {
     "word": "調節する",
     "reading": "ちょうせつする",
     "meaning": "điều tiết, điều chỉnh",
-    "example": "エアコンの [温度](おんど)を **[調節](ちょうせつ)します**。",
+    "example": "エアコンの[温度](おんど)を**[調節](ちょうせつ)します**。",
     "exampleVi": "Tôi điều chỉnh nhiệt độ máy điều hòa."
   },
   {
     "word": "安全",
     "reading": "あんぜん",
     "meaning": "an toàn",
-    "example": "この [道](みち)は **[安全](あんぜん)**です。",
+    "example": "この[道](みち)は**[安全](あんぜん)**です。",
     "exampleVi": "Con đường này an toàn."
   },
   {
     "word": "細かい",
     "reading": "こまかい",
     "meaning": "nhỏ, chi tiết",
-    "example": "**[細](こま)かい** [字](じ)は [読](よ)みにくいです。",
+    "example": "**[細](こま)かい**[字](じ)は[読](よ)みにくいです。",
     "exampleVi": "Chữ nhỏ thì khó đọc."
   },
   {
     "word": "こい",
     "reading": "こい",
     "meaning": "đậm, đặc",
-    "example": "この コーヒーは **こい**です。",
+    "example": "このコーヒーは**こい**です。",
     "exampleVi": "Cà phê này đậm."
   },
   {
     "word": "うすい",
     "reading": "うすい",
     "meaning": "nhạt, mỏng",
-    "example": "この コーヒーは **うすい**です。",
+    "example": "このコーヒーは**うすい**です。",
     "exampleVi": "Cà phê này nhạt."
   },
   {
     "word": "空気",
     "reading": "くうき",
     "meaning": "không khí",
-    "example": "ここは **[空気](くうき)**が きれいです。",
+    "example": "ここは**[空気](くうき)**がきれいです。",
     "exampleVi": "Không khí ở đây trong lành."
   },
   {
     "word": "なみだ",
     "reading": "なみだ",
     "meaning": "nước mắt",
-    "example": "[映画](えいが)を [見](み)て、**なみだ**が [出](で)ました。",
+    "example": "[映画](えいが)を[見](み)て、**なみだ**が[出](で)ました。",
     "exampleVi": "Xem phim xong tôi rơi nước mắt."
   },
   {
     "word": "和食",
     "reading": "わしょく",
     "meaning": "món ăn Nhật",
-    "example": "[私](わたし)は **[和食](わしょく)**が [好](す)きです。",
+    "example": "[私](わたし)は**[和食](わしょく)**が[好](す)きです。",
     "exampleVi": "Tôi thích món ăn Nhật."
   },
   {
     "word": "洋食",
     "reading": "ようしょく",
     "meaning": "món ăn phương Tây",
-    "example": "[今日](きょう)は **[洋食](ようしょく)**を [食](た)べます。",
+    "example": "[今日](きょう)は**[洋食](ようしょく)**を[食](た)べます。",
     "exampleVi": "Hôm nay tôi ăn món Tây."
   },
   {
     "word": "おかず",
     "reading": "おかず",
     "meaning": "thức ăn",
-    "example": "**おかず**は [魚](さかな)と [野菜](やさい)です。",
+    "example": "**おかず**は[魚](さかな)と[野菜](やさい)です。",
     "exampleVi": "Thức ăn kèm là cá và rau."
   },
   {
     "word": "量",
     "reading": "りょう",
     "meaning": "lượng, khối lượng",
-    "example": "[食](た)べる **[量](りょう)**を [減](へ)らしました。",
+    "example": "[食](た)べる**[量](りょう)**を[減](へ)らしました。",
     "exampleVi": "Tôi đã giảm lượng ăn."
   },
   {
     "word": "倍",
     "reading": "ばい",
     "meaning": "gấp đôi, lần",
-    "example": "[去年](きょねん)の 2**[倍](ばい)**です。",
+    "example": "[去年](きょねん)の2**[倍](ばい)**です。",
     "exampleVi": "Gấp 2 lần năm ngoái."
   },
   {
     "word": "シングル",
     "reading": "シングル",
     "meaning": "đơn, độc thân",
-    "example": "**シングル**の [部屋](へや)を [予約](よやく)します。",
+    "example": "**シングル**の[部屋](へや)を[予約](よやく)します。",
     "exampleVi": "Tôi đặt phòng đơn."
   },
   {
     "word": "ツイン",
     "reading": "ツイン",
     "meaning": "phòng đôi (2 giường)",
-    "example": "**ツイン**の [部屋](へや)は ありますか。",
+    "example": "**ツイン**の[部屋](へや)はありますか。",
     "exampleVi": "Có phòng đôi hai giường không?"
   },
   {
     "word": "たんす",
     "reading": "たんす",
     "meaning": "tủ đựng quần áo",
-    "example": "**たんす**に [服](ふく)を [入](い)れます。",
+    "example": "**たんす**に[服](ふく)を[入](い)れます。",
     "exampleVi": "Tôi cho quần áo vào tủ."
   },
   {
     "word": "せんたくもの",
     "reading": "せんたくもの",
     "meaning": "đồ giặt",
-    "example": "**せんたくもの**が たくさん あります。",
+    "example": "**せんたくもの**がたくさんあります。",
     "exampleVi": "Có nhiều đồ cần giặt."
   },
   {
     "word": "カット",
     "reading": "カット",
     "meaning": "cắt bỏ",
-    "example": "かみを **カット**して もらいます。",
+    "example": "かみを**カット**してもらいます。",
     "exampleVi": "Tôi nhờ cắt tóc."
   },
   {
     "word": "シャンプー",
     "reading": "シャンプー",
     "meaning": "dầu gội đầu",
-    "example": "**シャンプー**を [買](か)いました。",
+    "example": "**シャンプー**を[買](か)いました。",
     "exampleVi": "Tôi đã mua dầu gội đầu."
   },
   {
     "word": "ショート",
     "reading": "ショート",
     "meaning": "ngắn (kiểu tóc)",
-    "example": "かみを **ショート**に しました。",
+    "example": "かみを**ショート**にしました。",
     "exampleVi": "Tôi đã cắt tóc ngắn."
   },
   {
     "word": "いやがる",
     "reading": "いやがる",
     "meaning": "chán ghét, không thích",
-    "example": "[子供](こども)は [野菜](やさい)を **いやがります**。",
+    "example": "[子供](こども)は[野菜](やさい)を**いやがります**。",
     "exampleVi": "Đứa trẻ không thích ăn rau."
   },
   {
     "word": "順序",
     "reading": "じゅんじょ",
     "meaning": "thứ tự",
-    "example": "**[順序](じゅんじょ)**を [守](まも)って ください。",
+    "example": "**[順序](じゅんじょ)**を[守](まも)ってください。",
     "exampleVi": "Xin hãy tuân theo thứ tự."
   },
   {
     "word": "表現",
     "reading": "ひょうげん",
     "meaning": "biểu hiện",
-    "example": "この **[表現](ひょうげん)**は [難](むずか)しいです。",
+    "example": "この**[表現](ひょうげん)**は[難](むずか)しいです。",
     "exampleVi": "Cách diễn đạt này khó."
   },
   {
     "word": "例えば",
     "reading": "たとえば",
     "meaning": "ví dụ",
-    "example": "**[例](たと)えば**、[私](わたし)は [魚](さかな)が [好](す)きです。",
+    "example": "**[例](たと)えば**、[私](わたし)は[魚](さかな)が[好](す)きです。",
     "exampleVi": "Ví dụ, tôi thích cá."
   },
   {
     "word": "別れる",
     "reading": "わかれる",
     "meaning": "chia tay",
-    "example": "[駅](えき)で [友達](ともだち)と **[別](わか)れました**。",
+    "example": "[駅](えき)で[友達](ともだち)と**[別](わか)れました**。",
     "exampleVi": "Tôi đã chia tay bạn ở nhà ga."
   },
   {
     "word": "これら",
     "reading": "これら",
     "meaning": "những cái này",
-    "example": "**これら**は [私](わたし)の [本](ほん)です。",
+    "example": "**これら**は[私](わたし)の[本](ほん)です。",
     "exampleVi": "Những cái này là sách của tôi."
   },
   {
     "word": "えんぎがわるい",
     "reading": "えんぎがわるい",
     "meaning": "vận xấu, không may",
-    "example": "これは **えんぎがわるい**です。",
+    "example": "これは**えんぎがわるい**です。",
     "exampleVi": "Điều này là điềm xấu."
   },
   {
     "word": "上手く",
     "reading": "うまく",
     "meaning": "tốt, giỏi",
-    "example": "**うまく** [話](はな)せません。",
+    "example": "**うまく**[話](はな)せません。",
     "exampleVi": "Tôi không nói giỏi được."
   },
   {
     "word": "厚い",
     "reading": "あつい",
     "meaning": "dày",
-    "example": "この [本](ほん)は **[厚](あつ)い**です。",
+    "example": "この[本](ほん)は**[厚](あつ)い**です。",
     "exampleVi": "Quyển sách này dày."
   },
   {
     "word": "太い",
     "reading": "ふとい",
-    "meaning": "béo, đậm",
-    "example": "この [木](き)は **[太](ふと)い**です。",
+    "meaning": "to, dày (vật)",
+    "example": "この[木](き)は**[太](ふと)い**です。",
     "exampleVi": "Cái cây này to (thân dày)."
   },
   {
     "word": "細い",
     "reading": "ほそい",
-    "meaning": "thon, gầy",
-    "example": "この ひもは **[細](ほそ)い**です。",
+    "meaning": "mảnh, thon",
+    "example": "このひもは**[細](ほそ)い**です。",
     "exampleVi": "Sợi dây này mảnh."
   }
 ]

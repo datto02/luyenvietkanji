@@ -1,104 +1,516 @@
 [
-  "寄りかかる",
-  "もたれかかる",
-  "つかみかかる",
-  "突っかかる",
-  "飛びかかる",
-  "跳びかかる",
-  "取りかかる",
-  "暮れかかる",
-  "落ちかかる",
-  "立てかける",
-  "話しかける",
-  "働きかける",
-  "押しかける",
-  "詰めかける",
-  "見せかける",
-  "言いかける",
-  "溺れかける",
-  "言いつける",
-  "駆けつける",
-  "決めつける",
-  "送りつける",
-  "押し付ける",
-  "にらみつける",
-  "たたきつける",
-  "怒鳴りつける",
-  "備え付ける",
-  "飾り付ける",
-  "やりつける",
-  "行きつける",
-  "勝ち取る",
-  "つかみ取る",
-  "聞き取る",
-  "書き取る",
-  "読み取る",
-  "乗っ取る",
-  "抜き取る",
-  "言い返す",
-  "読み返す",
-  "聞き返す",
-  "思い返す",
-  "見返す",
-  "使い切る",
-  "出し切る",
-  "分かり切る",
-  "困り切る",
-  "澄み切る",
-  "押し切る",
-  "言い切る",
-  "踏み切る",
-  "取り返す",
-  "取り立てる",
-  "取り締まる",
-  "取り組む",
-  "取り込む",
-  "取り下げる",
-  "取り次ぐ",
-  "取り巻く",
-  "取り除く",
-  "取り替える",
-  "取り付ける",
-  "取り扱う",
-  "取り決める",
-  "取りまとめる",
-  "取りやめる",
-  "取り寄せる",
-  "突き返す",
-  "突き飛ばす",
-  "突き上げる",
-  "突き出す",
-  "突き放す",
-  "突きつける",
-  "突き合わせる",
-  "突き止める",
-  "突き詰める",
-  "飛び降りる",
-  "飛び歩く",
-  "飛び起きる",
-  "飛び越える",
-  "飛び越す",
-  "飛びつく",
-  "飛び散る",
-  "飛び跳ねる",
-  "差し出す",
-  "差し伸べる",
-  "差し挟む",
-  "差し引く",
-  "差し控える",
-  "差し替える",
-  "差し迫る",
-  "引き上げる",
-  "引き揚げる",
-  "引き下がる",
-  "引き止める",
-  "引き取る",
-  "引きずる",
-  "引き締める",
-  "引きこもる",
-  "引き伸ばす",
-  "引き延ばす",
-  "振り返る",
-  "振り替える",
-  "振り回す"
+  {
+    "word": "寄りかかる",
+    "example": "[壁](かべ)に**[寄](よ)りかかって**[休](やす)みました。",
+    "exampleVi": "Tôi dựa vào tường nghỉ ngơi."
+  },
+  {
+    "word": "もたれかかる",
+    "example": "[彼女](かのじょ)は[私](わたし)の[肩](かた)に**もたれかかりました**。",
+    "exampleVi": "Cô ấy đã tựa vào vai tôi."
+  },
+  {
+    "word": "つかみかかる",
+    "example": "[酔](よ)った[男](おとこ)が[店員](てんいん)に**つかみかかりました**。",
+    "exampleVi": "Người đàn ông say xông vào túm lấy nhân viên."
+  },
+  {
+    "word": "突っかかる",
+    "example": "[彼](かれ)は[誰](だれ)にでも**[突](つ)っかかります**。",
+    "exampleVi": "Anh ta hay gây sự, lao vào cãi với bất cứ ai."
+  },
+  {
+    "word": "飛びかかる",
+    "example": "[犬](いぬ)が[男](おとこ)に**[飛](と)びかかりました**。",
+    "exampleVi": "Con chó đã nhảy xổ vào người đàn ông."
+  },
+  {
+    "word": "跳びかかる",
+    "example": "[猫](ねこ)が[鼠](ねずみ)に**[跳](と)びかかりました**。",
+    "exampleVi": "Con mèo chồm lấy con chuột."
+  },
+  {
+    "word": "取りかかる",
+    "example": "[明日](あした)から[新](あたら)しい[仕事](しごと)に**[取](と)りかかります**。",
+    "exampleVi": "Từ ngày mai tôi sẽ bắt tay vào công việc mới."
+  },
+  {
+    "word": "暮れかかる",
+    "example": "[日](ひ)が**[暮](く)れかかって**います。",
+    "exampleVi": "Trời sắp tối."
+  },
+  {
+    "word": "落ちかかる",
+    "example": "[棚](たな)の[本](ほん)が**[落](お)ちかかって**います。",
+    "exampleVi": "Cuốn sách trên kệ sắp rơi xuống."
+  },
+  {
+    "word": "立てかける",
+    "example": "はしごを[壁](かべ)に**[立](た)てかけました**。",
+    "exampleVi": "Tôi đã dựng cái thang vào tường."
+  },
+  {
+    "word": "話しかける",
+    "example": "[知](し)らない[人](ひと)に**[話](はな)しかけられました**。",
+    "exampleVi": "Tôi bị một người lạ bắt chuyện."
+  },
+  {
+    "word": "働きかける",
+    "example": "[市民](しみん)に**[働](はたら)きかけて**、[署名](しょめい)を[集](あつ)めました。",
+    "exampleVi": "Chúng tôi vận động người dân để thu thập chữ ký."
+  },
+  {
+    "word": "押しかける",
+    "example": "[大勢](おおぜい)の[人](ひと)が[店](みせ)に**[押](お)しかけました**。",
+    "exampleVi": "Rất đông người đã ùa đến cửa hàng."
+  },
+  {
+    "word": "詰めかける",
+    "example": "ファンが[会場](かいじょう)に**[詰](つ)めかけました**。",
+    "exampleVi": "Người hâm mộ đổ dồn đến hội trường."
+  },
+  {
+    "word": "見せかける",
+    "example": "[病気](びょうき)に**[見](み)せかけて**、[学校](がっこう)を[休](やす)みました。",
+    "exampleVi": "Giả vờ như bị bệnh, tôi đã nghỉ học."
+  },
+  {
+    "word": "言いかける",
+    "example": "[彼](かれ)は[何](なに)か**[言](い)いかけて**、やめました。",
+    "exampleVi": "Anh ấy vừa định nói gì đó rồi lại thôi."
+  },
+  {
+    "word": "溺れかける",
+    "example": "[川](かわ)で**[溺](おぼ)れかけました**。",
+    "exampleVi": "Tôi suýt chết đuối ở sông."
+  },
+  {
+    "word": "言いつける",
+    "example": "[上司](じょうし)に[仕事](しごと)を**[言](い)いつけられました**。",
+    "exampleVi": "Tôi bị sếp giao việc."
+  },
+  {
+    "word": "駆けつける",
+    "example": "[事故](じこ)の[知](し)らせを[聞](き)いて、[病院](びょういん)に**[駆](か)けつけました**。",
+    "exampleVi": "Nghe tin tai nạn, tôi đã vội vã chạy đến bệnh viện."
+  },
+  {
+    "word": "決めつける",
+    "example": "[彼](かれ)が[犯人](はんにん)だと**[決](き)めつけては**いけません。",
+    "exampleVi": "Không được quy kết anh ta là thủ phạm."
+  },
+  {
+    "word": "送りつける",
+    "example": "[知](し)らない[会社](かいしゃ)から[商品](しょうひん)を**[送](おく)りつけられました**。",
+    "exampleVi": "Tôi bị một công ty lạ gửi hàng tới dù không yêu cầu."
+  },
+  {
+    "word": "押し付ける",
+    "example": "[人](ひと)に[仕事](しごと)を**[押](お)し[付](つ)けないで**ください。",
+    "exampleVi": "Xin đừng đùn đẩy công việc cho người khác."
+  },
+  {
+    "word": "にらみつける",
+    "example": "[彼](かれ)は[私](わたし)を**にらみつけました**。",
+    "exampleVi": "Anh ta đã lườm tôi."
+  },
+  {
+    "word": "たたきつける",
+    "example": "[彼](かれ)は[怒](おこ)って[本](ほん)を[床](ゆか)に**たたきつけました**。",
+    "exampleVi": "Anh ta giận dữ đập mạnh cuốn sách xuống sàn."
+  },
+  {
+    "word": "怒鳴りつける",
+    "example": "[父](ちち)に**[怒鳴](どな)りつけられました**。",
+    "exampleVi": "Tôi bị bố quát mắng."
+  },
+  {
+    "word": "備え付ける",
+    "example": "[部屋](へや)にエアコンが**[備](そな)え[付](つ)けて**あります。",
+    "exampleVi": "Trong phòng có trang bị sẵn máy lạnh."
+  },
+  {
+    "word": "飾り付ける",
+    "example": "クリスマスのために[部屋](へや)を**[飾](かざ)り[付](つ)けました**。",
+    "exampleVi": "Tôi đã trang trí phòng cho lễ Giáng sinh."
+  },
+  {
+    "word": "やりつける",
+    "example": "**やりつけて**いない[仕事](しごと)なので、[時間](じかん)がかかります。",
+    "exampleVi": "Đây là việc tôi chưa quen làm nên mất thời gian."
+  },
+  {
+    "word": "行きつける",
+    "example": "**[行](い)きつけ**の[店](みせ)で[食事](しょくじ)しました。",
+    "exampleVi": "Tôi đã dùng bữa ở quán quen hay đến."
+  },
+  {
+    "word": "勝ち取る",
+    "example": "[彼](かれ)は[優勝](ゆうしょう)を**[勝](か)ち[取](と)りました**。",
+    "exampleVi": "Anh ấy đã giành chiến thắng."
+  },
+  {
+    "word": "つかみ取る",
+    "example": "チャンスを**つかみ[取](と)りました**。",
+    "exampleVi": "Tôi đã nắm bắt lấy cơ hội."
+  },
+  {
+    "word": "聞き取る",
+    "example": "[彼](かれ)の[声](こえ)が[小](ちい)さくて**[聞](き)き[取](と)れません**でした。",
+    "exampleVi": "Giọng anh ấy nhỏ nên tôi nghe không rõ."
+  },
+  {
+    "word": "書き取る",
+    "example": "[先生](せんせい)の[話](はなし)を**[書](か)き[取](と)りました**。",
+    "exampleVi": "Tôi đã ghi lại lời thầy nói."
+  },
+  {
+    "word": "読み取る",
+    "example": "[彼](かれ)の[表情](ひょうじょう)から[気持](きも)ちを**[読](よ)み[取](と)りました**。",
+    "exampleVi": "Từ nét mặt anh ấy, tôi đọc được tâm trạng."
+  },
+  {
+    "word": "乗っ取る",
+    "example": "[飛行機](ひこうき)が**[乗](の)っ[取](と)られました**。",
+    "exampleVi": "Máy bay đã bị chiếm đoạt."
+  },
+  {
+    "word": "抜き取る",
+    "example": "[財布](さいふ)からお[金](かね)を**[抜](ぬ)き[取](と)られました**。",
+    "exampleVi": "Tiền bị rút trộm khỏi ví."
+  },
+  {
+    "word": "言い返す",
+    "example": "[私](わたし)は[彼](かれ)に**[言](い)い[返](かえ)しました**。",
+    "exampleVi": "Tôi đã cãi lại anh ta."
+  },
+  {
+    "word": "読み返す",
+    "example": "[手紙](てがみ)をもう[一度](いちど)**[読](よ)み[返](かえ)しました**。",
+    "exampleVi": "Tôi đã đọc lại lá thư thêm một lần nữa."
+  },
+  {
+    "word": "聞き返す",
+    "example": "[聞](き)こえなかったので、**[聞](き)き[返](かえ)しました**。",
+    "exampleVi": "Vì không nghe rõ nên tôi đã hỏi lại."
+  },
+  {
+    "word": "思い返す",
+    "example": "[昔](むかし)のことを**[思](おも)い[返](かえ)して**みました。",
+    "exampleVi": "Tôi đã thử nghĩ lại chuyện ngày xưa."
+  },
+  {
+    "word": "見返す",
+    "example": "[書類](しょるい)を[提出](ていしゅつ)する[前](まえ)に**[見返](みかえ)しました**。",
+    "exampleVi": "Trước khi nộp, tôi đã xem lại tài liệu."
+  },
+  {
+    "word": "使い切る",
+    "example": "[今月](こんげつ)のお[金](かね)を**[使](つか)い[切](き)りました**。",
+    "exampleVi": "Tôi đã tiêu hết tiền của tháng này."
+  },
+  {
+    "word": "出し切る",
+    "example": "[試合](しあい)で[力](ちから)を**[出](だ)し[切](き)りました**。",
+    "exampleVi": "Trong trận đấu tôi đã dốc hết sức."
+  },
+  {
+    "word": "分かり切る",
+    "example": "そんなことは**[分](わ)かり[切](き)って**います。",
+    "exampleVi": "Chuyện như vậy thì rõ như ban ngày rồi."
+  },
+  {
+    "word": "困り切る",
+    "example": "[彼](かれ)は[借金](しゃっきん)で**[困](こま)り[切](き)って**います。",
+    "exampleVi": "Anh ấy khốn đốn vì nợ nần."
+  },
+  {
+    "word": "澄み切る",
+    "example": "**[澄](す)み[切](き)った**[青空](あおぞら)が[広](ひろ)がっています。",
+    "exampleVi": "Bầu trời xanh trong veo trải rộng."
+  },
+  {
+    "word": "押し切る",
+    "example": "[周囲](しゅうい)の[反対](はんたい)を**[押](お)し[切](き)って**[結婚](けっこん)しました。",
+    "exampleVi": "Bất chấp sự phản đối của xung quanh, họ đã kết hôn."
+  },
+  {
+    "word": "言い切る",
+    "example": "[彼](かれ)は[間違](まちが)いないと**[言](い)い[切](き)りました**。",
+    "exampleVi": "Anh ấy đã khẳng định chắc chắn là không sai."
+  },
+  {
+    "word": "踏み切る",
+    "example": "[会社](かいしゃ)は[新](あたら)しい[事業](じぎょう)の[開始](かいし)に**[踏](ふ)み[切](き)りました**。",
+    "exampleVi": "Công ty đã quyết định bắt tay vào việc kinh doanh mới."
+  },
+  {
+    "word": "取り返す",
+    "example": "[失](うしな)った[信頼](しんらい)を**[取](と)り[返](かえ)しました**。",
+    "exampleVi": "Tôi đã lấy lại niềm tin đã mất."
+  },
+  {
+    "word": "取り立てる",
+    "example": "[借金](しゃっきん)を**[取](と)り[立](た)てる**[人](ひと)が[来](き)ました。",
+    "exampleVi": "Người đến đòi nợ đã tới."
+  },
+  {
+    "word": "取り締まる",
+    "example": "[警察](けいさつ)が[違反](いはん)を**[取](と)り[締](し)まって**います。",
+    "exampleVi": "Cảnh sát đang truy quét vi phạm."
+  },
+  {
+    "word": "取り組む",
+    "example": "[環境](かんきょう)[問題](もんだい)に**[取](と)り[組](く)んで**います。",
+    "exampleVi": "Chúng tôi đang nỗ lực giải quyết vấn đề môi trường."
+  },
+  {
+    "word": "取り込む",
+    "example": "[洗濯物](せんたくもの)を**[取](と)り[込](こ)みました**。",
+    "exampleVi": "Tôi đã thu quần áo phơi vào nhà."
+  },
+  {
+    "word": "取り下げる",
+    "example": "[訴](うった)えを**[取](と)り[下](さ)げました**。",
+    "exampleVi": "Đã rút đơn kiện."
+  },
+  {
+    "word": "取り次ぐ",
+    "example": "お[客様](きゃくさま)を[社長](しゃちょう)に**[取](と)り[次](つ)ぎました**。",
+    "exampleVi": "Tôi đã báo khách đến gặp giám đốc."
+  },
+  {
+    "word": "取り巻く",
+    "example": "[大勢](おおぜい)のファンが[彼](かれ)を**[取](と)り[巻](ま)いて**います。",
+    "exampleVi": "Rất đông người hâm mộ đang vây quanh anh ấy."
+  },
+  {
+    "word": "取り除く",
+    "example": "[庭](にわ)の[雑草](ざっそう)を**[取](と)り[除](のぞ)きました**。",
+    "exampleVi": "Tôi đã nhổ bỏ cỏ dại trong vườn."
+  },
+  {
+    "word": "取り替える",
+    "example": "[古](ふる)い[電池](でんち)を**[取](と)り[替](か)えました**。",
+    "exampleVi": "Tôi đã thay pin cũ."
+  },
+  {
+    "word": "取り付ける",
+    "example": "[壁](かべ)に[棚](たな)を**[取](と)り[付](つ)けました**。",
+    "exampleVi": "Tôi đã gắn cái kệ lên tường."
+  },
+  {
+    "word": "取り扱う",
+    "meaning": "xử lý, đối xử; kinh doanh (mặt hàng)",
+    "example": "この[店](みせ)では[輸入](ゆにゅう)[品](ひん)を**[取](と)り[扱](あつか)って**います。",
+    "exampleVi": "Cửa hàng này kinh doanh hàng nhập khẩu."
+  },
+  {
+    "word": "取り決める",
+    "example": "[二人](ふたり)でルールを**[取](と)り[決](き)めました**。",
+    "exampleVi": "Hai người đã thỏa thuận quy tắc với nhau."
+  },
+  {
+    "word": "取りまとめる",
+    "example": "[皆](みな)の[意見](いけん)を**[取](と)りまとめました**。",
+    "exampleVi": "Tôi đã tổng hợp ý kiến của mọi người."
+  },
+  {
+    "word": "取りやめる",
+    "example": "[雨](あめ)のため、[遠足](えんそく)を**[取](と)りやめました**。",
+    "exampleVi": "Vì mưa nên đã hủy chuyến dã ngoại."
+  },
+  {
+    "word": "取り寄せる",
+    "example": "[本](ほん)を[注文](ちゅうもん)して**[取](と)り[寄](よ)せました**。",
+    "exampleVi": "Tôi đã đặt và cho gửi cuốn sách đến."
+  },
+  {
+    "word": "突き返す",
+    "example": "[彼](かれ)は[私](わたし)の[提案](ていあん)を**[突](つ)き[返](かえ)しました**。",
+    "exampleVi": "Anh ta đã bác bỏ đề xuất của tôi."
+  },
+  {
+    "word": "突き飛ばす",
+    "example": "[男](おとこ)に**[突](つ)き[飛](と)ばされました**。",
+    "exampleVi": "Tôi bị một người đàn ông đẩy văng ra."
+  },
+  {
+    "word": "突き上げる",
+    "example": "[選手](せんしゅ)は[拳](こぶし)を[空](そら)に**[突](つ)き[上](あ)げました**。",
+    "exampleVi": "Vận động viên giơ nắm đấm lên trời."
+  },
+  {
+    "word": "突き出す",
+    "example": "[犯人](はんにん)を[警察](けいさつ)に**[突](つ)き[出](だ)しました**。",
+    "exampleVi": "Tôi đã giao thủ phạm cho cảnh sát."
+  },
+  {
+    "word": "突き放す",
+    "example": "[彼](かれ)は[友人](ゆうじん)を**[突](つ)き[放](はな)しました**。",
+    "exampleVi": "Anh ta đã bỏ rơi người bạn."
+  },
+  {
+    "word": "突きつける",
+    "example": "[彼](かれ)に[証拠](しょうこ)を**[突](つ)きつけました**。",
+    "exampleVi": "Tôi đã dí bằng chứng vào mặt anh ta."
+  },
+  {
+    "word": "突き合わせる",
+    "example": "[二](ふた)つの[資料](しりょう)を**[突](つ)き[合](あ)わせて**[確認](かくにん)しました。",
+    "exampleVi": "Tôi đã đối chiếu hai tài liệu để xác nhận."
+  },
+  {
+    "word": "突き止める",
+    "example": "[犯人](はんにん)の[居場所](いばしょ)を**[突](つ)き[止](と)めました**。",
+    "exampleVi": "Đã xác định được nơi ở của thủ phạm."
+  },
+  {
+    "word": "突き詰める",
+    "example": "**[突](つ)き[詰](つ)めて**[考](かんが)えると、[原因](げんいん)は[私](わたし)にあります。",
+    "exampleVi": "Nghĩ cho đến tận cùng thì nguyên nhân nằm ở tôi."
+  },
+  {
+    "word": "飛び降りる",
+    "example": "[電車](でんしゃ)から**[飛](と)び[降](お)りました**。",
+    "exampleVi": "Tôi đã nhảy xuống từ tàu."
+  },
+  {
+    "word": "飛び歩く",
+    "meaning": "chạy đi chạy lại khắp nơi",
+    "example": "[一日中](いちにちじゅう)、[町](まち)を**[飛](と)び[歩](ある)いて**いました。",
+    "exampleVi": "Cả ngày tôi chạy đi khắp phố."
+  },
+  {
+    "word": "飛び起きる",
+    "example": "[地震](じしん)で**[飛](と)び[起](お)きました**。",
+    "exampleVi": "Tôi choàng tỉnh dậy vì động đất."
+  },
+  {
+    "word": "飛び越える",
+    "example": "[溝](みぞ)を**[飛](と)び[越](こ)えました**。",
+    "exampleVi": "Tôi đã nhảy qua rãnh."
+  },
+  {
+    "word": "飛び越す",
+    "example": "[塀](へい)を**[飛](と)び[越](こ)して**[逃](に)げました。",
+    "exampleVi": "Hắn nhảy qua tường rồi chạy trốn."
+  },
+  {
+    "word": "飛びつく",
+    "example": "[犬](いぬ)が[私](わたし)に**[飛](と)びつきました**。",
+    "exampleVi": "Con chó lao vào người tôi."
+  },
+  {
+    "word": "飛び散る",
+    "example": "ガラスが**[飛](と)び[散](ち)りました**。",
+    "exampleVi": "Mảnh kính văng tung tóe."
+  },
+  {
+    "word": "飛び跳ねる",
+    "example": "[子供](こども)が**[飛](と)び[跳](は)ねて**[喜](よろこ)んでいます。",
+    "exampleVi": "Đứa trẻ nhảy cẫng lên vì vui."
+  },
+  {
+    "word": "差し出す",
+    "example": "[名刺](めいし)を**[差](さ)し[出](だ)しました**。",
+    "exampleVi": "Tôi đã đưa danh thiếp ra."
+  },
+  {
+    "word": "差し伸べる",
+    "example": "[困](こま)っている[人](ひと)に[手](て)を**[差](さ)し[伸](の)べました**。",
+    "exampleVi": "Tôi đã đưa tay giúp người đang khó khăn."
+  },
+  {
+    "word": "差し挟む",
+    "example": "[話](はなし)に[意見](いけん)を**[差](さ)し[挟](はさ)みました**。",
+    "exampleVi": "Tôi đã chen ý kiến vào câu chuyện."
+  },
+  {
+    "word": "差し引く",
+    "example": "[家賃](やちん)を**[差](さ)し[引](ひ)くと**、お[金](かね)が[残](のこ)りません。",
+    "exampleVi": "Trừ tiền nhà ra thì chẳng còn lại đồng nào."
+  },
+  {
+    "word": "差し控える",
+    "meaning": "kiềm chế, hạn chế, tránh (làm)",
+    "example": "[発言](はつげん)は**[差](さ)し[控](ひか)えます**。",
+    "exampleVi": "Tôi xin hạn chế phát ngôn."
+  },
+  {
+    "word": "差し替える",
+    "example": "[写真](しゃしん)を[新](あたら)しいものに**[差](さ)し[替](か)えました**。",
+    "exampleVi": "Tôi đã thay tấm ảnh bằng cái mới."
+  },
+  {
+    "word": "差し迫る",
+    "example": "[締](し)め[切](き)りが**[差](さ)し[迫](せま)って**います。",
+    "exampleVi": "Hạn chót đang cận kề."
+  },
+  {
+    "word": "引き上げる",
+    "example": "[荷物](にもつ)を[二階](にかい)に**[引](ひ)き[上](あ)げました**。",
+    "exampleVi": "Tôi đã kéo hành lý lên tầng hai."
+  },
+  {
+    "word": "引き揚げる",
+    "example": "[調査団](ちょうさだん)は[現地](げんち)から**[引](ひ)き[揚](あ)げました**。",
+    "exampleVi": "Đoàn điều tra đã rút khỏi hiện trường."
+  },
+  {
+    "word": "引き下がる",
+    "example": "[彼](かれ)は[簡単](かんたん)には**[引](ひ)き[下](さ)がりません**。",
+    "exampleVi": "Anh ta không dễ dàng bỏ cuộc."
+  },
+  {
+    "word": "引き止める",
+    "example": "[帰](かえ)ろうとする[彼](かれ)を**[引](ひ)き[止](と)めました**。",
+    "exampleVi": "Tôi đã giữ anh ấy lại khi anh định về."
+  },
+  {
+    "word": "引き取る",
+    "example": "[捨](す)て[猫](ねこ)を**[引](ひ)き[取](と)りました**。",
+    "exampleVi": "Tôi đã nhận nuôi con mèo bị bỏ rơi."
+  },
+  {
+    "word": "引きずる",
+    "example": "[失敗](しっぱい)をいつまでも**[引](ひ)きずって**います。",
+    "exampleVi": "Tôi cứ mãi bị ảnh hưởng bởi thất bại."
+  },
+  {
+    "word": "引き締める",
+    "example": "[気](き)を**[引](ひ)き[締](し)めて**[仕事](しごと)をします。",
+    "exampleVi": "Tôi làm việc với tinh thần thắt chặt."
+  },
+  {
+    "word": "引きこもる",
+    "example": "[彼](かれ)は[部屋](へや)に**[引](ひ)きこもって**います。",
+    "exampleVi": "Anh ấy ở lì trong phòng."
+  },
+  {
+    "word": "引き伸ばす",
+    "example": "[写真](しゃしん)を[大](おお)きく**[引](ひ)き[伸](の)ばしました**。",
+    "exampleVi": "Tôi đã phóng to bức ảnh."
+  },
+  {
+    "word": "引き延ばす",
+    "example": "[返事](へんじ)を**[引](ひ)き[延](の)ばして**います。",
+    "exampleVi": "Tôi đang trì hoãn việc trả lời."
+  },
+  {
+    "word": "振り返る",
+    "example": "[後](うし)ろを**[振](ふ)り[返](かえ)りました**。",
+    "exampleVi": "Tôi ngoảnh lại phía sau."
+  },
+  {
+    "word": "振り替える",
+    "meaning": "đổi, chuyển sang (ca, ngày); chuyển khoản",
+    "example": "[休](やす)みを[別](べつ)の[日](ひ)に**[振](ふ)り[替](か)えました**。",
+    "exampleVi": "Tôi đã chuyển ngày nghỉ sang ngày khác."
+  },
+  {
+    "word": "振り回す",
+    "example": "[子供](こども)に**[振](ふ)り[回](まわ)されて**います。",
+    "exampleVi": "Tôi bị đứa con làm cho xoay như chong chóng."
+  }
 ]

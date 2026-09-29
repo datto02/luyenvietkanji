@@ -129,7 +129,7 @@
   "word": "電話番号",
   "reading": "でんわばんごう",
   "meaning": "số điện thoại",
-  "example": "[山田](やまだ)さんの **[電話番号](でんわばんごう)**を [知](し)っていますか。",
+  "example": "[山田](やまだ)さんの**[電話番号](でんわばんごう)**を[知](し)っていますか。",
   "exampleVi": "Bạn có biết số điện thoại của anh/chị Yamada không?"
  },
  {
@@ -185,84 +185,84 @@
   "word": "会社員",
   "reading": "かいしゃいん",
   "meaning": "nhân viên công ty",
-  "example": "[父](ちち)は **[会社員](かいしゃいん)**です。",
+  "example": "[父](ちち)は**[会社員](かいしゃいん)**です。",
   "exampleVi": "Bố tôi là nhân viên công ty."
  },
  {
   "word": "銀行員",
   "reading": "ぎんこういん",
   "meaning": "nhân viên ngân hàng",
-  "example": "[母](はは)は **[銀行員](ぎんこういん)**です。",
+  "example": "[母](はは)は**[銀行員](ぎんこういん)**です。",
   "exampleVi": "Mẹ tôi là nhân viên ngân hàng."
  },
  {
   "word": "医者",
   "reading": "いしゃ",
-  "meaning": "bác sỹ",
-  "example": "[兄](あに)は **[医者](いしゃ)**です。",
+  "meaning": "bác sĩ",
+  "example": "[兄](あに)は**[医者](いしゃ)**です。",
   "exampleVi": "Anh trai tôi là bác sĩ."
  },
  {
   "word": "看護師",
   "reading": "かんごし",
   "meaning": "y tá",
-  "example": "[姉](あね)は **[看護師](かんごし)**です。",
+  "example": "[姉](あね)は**[看護師](かんごし)**です。",
   "exampleVi": "Chị gái tôi là y tá."
  },
  {
   "word": "かいごし",
   "reading": "かいごし",
   "meaning": "điều dưỡng viên",
-  "example": "[妹](いもうと)は **かいごし**です。",
+  "example": "[妹](いもうと)は**かいごし**です。",
   "exampleVi": "Em gái tôi là điều dưỡng viên."
  },
  {
   "word": "警察官",
   "reading": "けいさつかん",
   "meaning": "cảnh sát",
-  "example": "あの [人](ひと)は **[警察官](けいさつかん)**です。",
+  "example": "あの[人](ひと)は**[警察官](けいさつかん)**です。",
   "exampleVi": "Người kia là cảnh sát."
  },
  {
   "word": "駅員",
   "reading": "えきいん",
   "meaning": "nhân viên nhà ga",
-  "example": "**[駅員](えきいん)**に [聞](き)きます。",
+  "example": "**[駅員](えきいん)**に[聞](き)きます。",
   "exampleVi": "Tôi hỏi nhân viên nhà ga."
  },
  {
   "word": "運転手",
   "reading": "うんてんしゅ",
   "meaning": "tài xế",
-  "example": "あの [人](ひと)は バスの **[運転手](うんてんしゅ)**です。",
+  "example": "あの[人](ひと)はバスの**[運転手](うんてんしゅ)**です。",
   "exampleVi": "Người kia là tài xế xe buýt."
  },
  {
   "word": "社長",
   "reading": "しゃちょう",
   "meaning": "giám đốc",
-  "example": "[山田](やまだ)さんは **[社長](しゃちょう)**です。",
+  "example": "[山田](やまだ)さんは**[社長](しゃちょう)**です。",
   "exampleVi": "Anh/chị Yamada là giám đốc."
  },
  {
   "word": "部長",
   "reading": "ぶちょう",
   "meaning": "trưởng phòng",
-  "example": "[田中](たなか)さんは **[部長](ぶちょう)**です。",
+  "example": "[田中](たなか)さんは**[部長](ぶちょう)**です。",
   "exampleVi": "Anh/chị Tanaka là trưởng phòng."
  },
  {
   "word": "課長",
   "reading": "かちょう",
   "meaning": "trưởng ban",
-  "example": "[山田](やまだ)さんは **[課長](かちょう)**です。",
+  "example": "[山田](やまだ)さんは**[課長](かちょう)**です。",
   "exampleVi": "Anh/chị Yamada là trưởng ban."
  },
  {
   "word": "社員",
   "reading": "しゃいん",
   "meaning": "nhân viên",
-  "example": "[私](わたし)は この [会社](かいしゃ)の **[社員](しゃいん)**です。",
+  "example": "[私](わたし)はこの[会社](かいしゃ)の**[社員](しゃいん)**です。",
   "exampleVi": "Tôi là nhân viên của công ty này."
  },
  {
@@ -290,7 +290,7 @@
   "word": "どれ",
   "reading": "どれ",
   "meaning": "cái nào",
-  "example": "[山田](やまだ)さんの かさは **どれ**ですか。",
+  "example": "[山田](やまだ)さんのかさは**どれ**ですか。",
   "exampleVi": "Cái ô của anh/chị Yamada là cái nào?"
  },
  {
@@ -332,112 +332,112 @@
   "word": "めいし",
   "reading": "めいし",
   "meaning": "danh thiếp",
-  "example": "**めいし**を どうぞ。",
+  "example": "**めいし**をどうぞ。",
   "exampleVi": "Danh thiếp của tôi đây ạ."
  },
  {
   "word": "ケータイ",
   "reading": "ケータイ",
   "meaning": "điện thoại di động (cầm tay)",
-  "example": "**ケータイ**で [電話](でんわ)を かけます。",
+  "example": "**ケータイ**で[電話](でんわ)をかけます。",
   "exampleVi": "Tôi gọi điện bằng điện thoại di động."
  },
  {
   "word": "スマホ",
   "reading": "スマホ",
   "meaning": "điện thoại thông minh (nói tắt)",
-  "example": "**スマホ**で [調](しら)べます。",
+  "example": "**スマホ**で[調](しら)べます。",
   "exampleVi": "Tôi tra cứu bằng điện thoại thông minh."
  },
  {
   "word": "電池",
   "reading": "でんち",
   "meaning": "pin",
-  "example": "**[電池](でんち)**が ありません。",
+  "example": "**[電池](でんち)**がありません。",
   "exampleVi": "Không có pin."
  },
  {
   "word": "ノート",
   "reading": "ノート",
   "meaning": "quyển vở, quyển tập",
-  "example": "**ノート**に [名前](なまえ)を [書](か)きます。",
+  "example": "**ノート**に[名前](なまえ)を[書](か)きます。",
   "exampleVi": "Tôi viết tên vào vở."
  },
  {
   "word": "紙",
   "reading": "かみ",
   "meaning": "tờ giấy, giấy",
-  "example": "**[紙](かみ)**に [名前](なまえ)を [書](か)いて ください。",
+  "example": "**[紙](かみ)**に[名前](なまえ)を[書](か)いてください。",
   "exampleVi": "Hãy viết tên vào tờ giấy."
  },
  {
   "word": "手帳",
   "reading": "てちょう",
   "meaning": "sổ tay",
-  "example": "**[手帳](てちょう)**に [宿題](しゅくだい)を [書](か)きます。",
+  "example": "**[手帳](てちょう)**に[宿題](しゅくだい)を[書](か)きます。",
   "exampleVi": "Tôi ghi bài tập về nhà vào sổ tay."
  },
  {
   "word": "ボールペン",
   "reading": "ボールペン",
   "meaning": "bút bi",
-  "example": "**ボールペン**で [書](か)いて ください。",
+  "example": "**ボールペン**で[書](か)いてください。",
   "exampleVi": "Hãy viết bằng bút bi."
  },
  {
   "word": "シャープペンシル",
   "reading": "シャープペンシル",
   "meaning": "bút chì bấm",
-  "example": "**シャープペンシル**で [漢字](かんじ)を [書](か)きます。",
+  "example": "**シャープペンシル**で[漢字](かんじ)を[書](か)きます。",
   "exampleVi": "Tôi viết chữ Hán bằng bút chì bấm."
  },
  {
   "word": "えんぴつ",
   "reading": "えんぴつ",
   "meaning": "bút chì",
-  "example": "**えんぴつ**で [書](か)きます。",
+  "example": "**えんぴつ**で[書](か)きます。",
   "exampleVi": "Tôi viết bằng bút chì."
  },
  {
   "word": "消しゴム",
   "reading": "けしゴム",
   "meaning": "cục gôm, tẩy",
-  "example": "**[消](け)しゴム**を [使](つか)います。",
+  "example": "**[消](け)しゴム**を[使](つか)います。",
   "exampleVi": "Tôi dùng cục tẩy."
  },
  {
   "word": "パンチ",
   "reading": "パンチ",
   "meaning": "đồ bấm lỗ",
-  "example": "**パンチ**を [使](つか)って ください。",
+  "example": "**パンチ**を[使](つか)ってください。",
   "exampleVi": "Hãy dùng đồ bấm lỗ."
  },
  {
   "word": "ホッチキス",
   "reading": "ホッチキス",
-  "meaning": "đồ bấm",
-  "example": "**ホッチキス**は [箱](はこ)の [中](なか)に あります。",
+  "meaning": "cái dập ghim",
+  "example": "**ホッチキス**は[箱](はこ)の[中](なか)にあります。",
   "exampleVi": "Đồ bấm ghim ở trong hộp."
  },
  {
   "word": "セロテープ",
   "reading": "セロテープ",
   "meaning": "băng keo trong",
-  "example": "**セロテープ**を [使](つか)います。",
+  "example": "**セロテープ**を[使](つか)います。",
   "exampleVi": "Tôi dùng băng keo trong."
  },
  {
   "word": "はさみ",
   "reading": "はさみ",
   "meaning": "cái kéo, cây kéo",
-  "example": "この **はさみ**は [父](ちち)のです。",
+  "example": "この**はさみ**は[父](ちち)のです。",
   "exampleVi": "Cái kéo này là của bố tôi."
  },
  {
   "word": "箱",
   "reading": "はこ",
   "meaning": "cái hộp",
-  "example": "**[箱](はこ)**の [中](なか)に [何](なに)が ありますか。",
+  "example": "**[箱](はこ)**の[中](なか)に[何](なに)がありますか。",
   "exampleVi": "Trong hộp có gì?"
  },
  {
@@ -486,77 +486,77 @@
   "word": "何個",
   "reading": "なんこ",
   "meaning": "mấy (cái, cục, trái, chiếc v.v.)",
-  "example": "[消](け)しゴムが **[何個](なんこ)** ありますか。",
+  "example": "[消](け)しゴムが**[何個](なんこ)**ありますか。",
   "exampleVi": "Có mấy cục tẩy?"
  },
  {
   "word": "1個",
   "reading": "いっこ",
   "meaning": "1 cái",
-  "example": "りんごを **[1個](いっこ)** [食](た)べます。",
+  "example": "りんごを**[1個](いっこ)**[食](た)べます。",
   "exampleVi": "Tôi ăn một quả táo."
  },
  {
   "word": "2個",
   "reading": "にこ",
   "meaning": "2 cái",
-  "example": "たまごを **[2個](にこ)** [買](か)いました。",
+  "example": "たまごを**[2個](にこ)**[買](か)いました。",
   "exampleVi": "Tôi đã mua hai quả trứng."
  },
  {
   "word": "3個",
   "reading": "さんこ",
   "meaning": "3 cái",
-  "example": "ケーキを **[3個](さんこ)** [食](た)べました。",
+  "example": "ケーキを**[3個](さんこ)**[食](た)べました。",
   "exampleVi": "Tôi đã ăn ba cái bánh ngọt."
  },
  {
   "word": "4個",
   "reading": "よんこ",
   "meaning": "4 cái",
-  "example": "みかんを **[4個](よんこ)** [買](か)いました。",
+  "example": "みかんを**[4個](よんこ)**[買](か)いました。",
   "exampleVi": "Tôi đã mua bốn quả quýt."
  },
  {
   "word": "5個",
   "reading": "ごこ",
   "meaning": "5 cái",
-  "example": "りんごが **[5個](ごこ)** あります。",
+  "example": "りんごが**[5個](ごこ)**あります。",
   "exampleVi": "Có năm quả táo."
  },
  {
   "word": "6個",
   "reading": "ろっこ",
   "meaning": "6 cái",
-  "example": "パンを **[6個](ろっこ)** [買](か)いました。",
+  "example": "パンを**[6個](ろっこ)**[買](か)いました。",
   "exampleVi": "Tôi đã mua sáu cái bánh mì."
  },
  {
   "word": "7個",
   "reading": "ななこ",
   "meaning": "7 cái",
-  "example": "たまごが **[7個](ななこ)** あります。",
+  "example": "たまごが**[7個](ななこ)**あります。",
   "exampleVi": "Có bảy quả trứng."
  },
  {
   "word": "8個",
   "reading": "はっこ",
   "meaning": "8 cái",
-  "example": "ケーキを **[8個](はっこ)** [作](つく)りました。",
+  "example": "ケーキを**[8個](はっこ)**[作](つく)りました。",
   "exampleVi": "Tôi đã làm tám cái bánh ngọt."
  },
  {
   "word": "9個",
   "reading": "きゅうこ",
   "meaning": "9 cái",
-  "example": "みかんが **[9個](きゅうこ)** あります。",
+  "example": "みかんが**[9個](きゅうこ)**あります。",
   "exampleVi": "Có chín quả quýt."
  },
  {
   "word": "10個",
   "reading": "じゅっこ",
   "meaning": "10 cái",
-  "example": "りんごを **[10個](じゅっこ)** [買](か)いました。",
+  "example": "りんごを**[10個](じゅっこ)**[買](か)いました。",
   "exampleVi": "Tôi đã mua mười quả táo."
  },
  {
@@ -570,70 +570,70 @@
   "word": "1台",
   "reading": "いちだい",
   "meaning": "1 cái (máy móc, xe cộ)",
-  "example": "[車](くるま)が **[1台](いちだい)** あります。",
+  "example": "[車](くるま)が**[1台](いちだい)**あります。",
   "exampleVi": "Có một chiếc xe hơi."
  },
  {
   "word": "2台",
   "reading": "にだい",
   "meaning": "2 cái",
-  "example": "パソコンが **[2台](にだい)** あります。",
+  "example": "パソコンが**[2台](にだい)**あります。",
   "exampleVi": "Có hai cái máy tính."
  },
  {
   "word": "3台",
   "reading": "さんだい",
   "meaning": "3 cái",
-  "example": "[会議室](かいぎしつ)に パソコンが **[3台](さんだい)** あります。",
+  "example": "[会議室](かいぎしつ)にパソコンが**[3台](さんだい)**あります。",
   "exampleVi": "Ở phòng họp có ba cái máy tính."
  },
  {
   "word": "4台",
   "reading": "よんだい",
   "meaning": "4 cái",
-  "example": "[車](くるま)が **[4台](よんだい)** あります。",
+  "example": "[車](くるま)が**[4台](よんだい)**あります。",
   "exampleVi": "Có bốn chiếc xe hơi."
  },
  {
   "word": "5台",
   "reading": "ごだい",
   "meaning": "5 cái",
-  "example": "[事務所](じむしょ)に パソコンが **[5台](ごだい)** あります。",
+  "example": "[事務所](じむしょ)にパソコンが**[5台](ごだい)**あります。",
   "exampleVi": "Ở văn phòng có năm cái máy tính."
  },
  {
   "word": "6台",
   "reading": "ろくだい",
   "meaning": "6 cái",
-  "example": "[工場](こうじょう)に [車](くるま)が **[6台](ろくだい)** あります。",
+  "example": "[工場](こうじょう)に[車](くるま)が**[6台](ろくだい)**あります。",
   "exampleVi": "Ở nhà máy có sáu chiếc xe hơi."
  },
  {
   "word": "7台",
   "reading": "ななだい",
   "meaning": "7 cái",
-  "example": "テレビが **[7台](ななだい)** あります。",
+  "example": "テレビが**[7台](ななだい)**あります。",
   "exampleVi": "Có bảy cái tivi."
  },
  {
   "word": "8台",
   "reading": "はちだい",
   "meaning": "8 cái",
-  "example": "[学校](がっこう)に パソコンが **[8台](はちだい)** あります。",
+  "example": "[学校](がっこう)にパソコンが**[8台](はちだい)**あります。",
   "exampleVi": "Ở trường có tám cái máy tính."
  },
  {
   "word": "9台",
   "reading": "きゅうだい",
   "meaning": "9 cái",
-  "example": "パソコンが **[9台](きゅうだい)** あります。",
+  "example": "パソコンが**[9台](きゅうだい)**あります。",
   "exampleVi": "Có chín cái máy tính."
  },
  {
   "word": "10台",
   "reading": "じゅうだい",
   "meaning": "10 cái",
-  "example": "[会社](かいしゃ)に [車](くるま)が **[10台](じゅうだい)** あります。",
+  "example": "[会社](かいしゃ)に[車](くるま)が**[10台](じゅうだい)**あります。",
   "exampleVi": "Ở công ty có mười chiếc xe hơi."
  },
  {
@@ -654,189 +654,189 @@
   "word": "1時",
   "reading": "いちじ",
   "meaning": "1 giờ",
-  "example": "**[1時](いちじ)**に [会議](かいぎ)が あります。",
+  "example": "**[1時](いちじ)**に[会議](かいぎ)があります。",
   "exampleVi": "Lúc 1 giờ có cuộc họp."
  },
  {
   "word": "2時",
   "reading": "にじ",
   "meaning": "2 giờ",
-  "example": "**[2時](にじ)**に [学校](がっこう)へ [行](い)きます。",
+  "example": "**[2時](にじ)**に[学校](がっこう)へ[行](い)きます。",
   "exampleVi": "Lúc 2 giờ tôi đến trường."
  },
  {
   "word": "3時",
   "reading": "さんじ",
   "meaning": "3 giờ",
-  "example": "**[3時](さんじ)**に [友達](ともだち)が [来](き)ます。",
+  "example": "**[3時](さんじ)**に[友達](ともだち)が[来](き)ます。",
   "exampleVi": "Lúc 3 giờ bạn tôi đến."
  },
  {
   "word": "4時",
   "reading": "よじ",
   "meaning": "4 giờ",
-  "example": "**[4時](よじ)**に [家](うち)へ [帰](かえ)ります。",
+  "example": "**[4時](よじ)**に[家](うち)へ[帰](かえ)ります。",
   "exampleVi": "Lúc 4 giờ tôi về nhà."
  },
  {
   "word": "5時",
   "reading": "ごじ",
   "meaning": "5 giờ",
-  "example": "**[5時](ごじ)**に [会社](かいしゃ)を [出](で)ます。",
+  "example": "**[5時](ごじ)**に[会社](かいしゃ)を[出](で)ます。",
   "exampleVi": "Lúc 5 giờ tôi rời công ty."
  },
  {
   "word": "6時",
   "reading": "ろくじ",
   "meaning": "6 giờ",
-  "example": "**[6時](ろくじ)**に ごはんを [食](た)べます。",
+  "example": "**[6時](ろくじ)**にごはんを[食](た)べます。",
   "exampleVi": "Lúc 6 giờ tôi ăn cơm."
  },
  {
   "word": "7時",
   "reading": "しちじ",
   "meaning": "7 giờ",
-  "example": "**[7時](しちじ)**に [家](うち)を [出](で)ます。",
+  "example": "**[7時](しちじ)**に[家](うち)を[出](で)ます。",
   "exampleVi": "Lúc 7 giờ tôi ra khỏi nhà."
  },
  {
   "word": "8時",
   "reading": "はちじ",
   "meaning": "8 giờ",
-  "example": "**[8時](はちじ)**から [会議](かいぎ)です。",
+  "example": "**[8時](はちじ)**から[会議](かいぎ)です。",
   "exampleVi": "Cuộc họp bắt đầu từ 8 giờ."
  },
  {
   "word": "1分",
   "reading": "いっぷん",
   "meaning": "1 phút",
-  "example": "**[1分](いっぷん)** [休](やす)みます。",
+  "example": "**[1分](いっぷん)**[休](やす)みます。",
   "exampleVi": "Tôi nghỉ 1 phút."
  },
  {
   "word": "2分",
   "reading": "にふん",
   "meaning": "2 phút",
-  "example": "[駅](えき)まで **[2分](にふん)**です。",
+  "example": "[駅](えき)まで**[2分](にふん)**です。",
   "exampleVi": "Đến nhà ga mất 2 phút."
  },
  {
   "word": "3分",
   "reading": "さんぷん",
   "meaning": "3 phút",
-  "example": "**[3分](さんぷん)** [休](やす)みましょう。",
+  "example": "**[3分](さんぷん)**[休](やす)みましょう。",
   "exampleVi": "Nghỉ 3 phút nhé."
  },
  {
   "word": "4分",
   "reading": "よんぷん",
   "meaning": "4 phút",
-  "example": "[学校](がっこう)まで **[4分](よんぷん)**です。",
+  "example": "[学校](がっこう)まで**[4分](よんぷん)**です。",
   "exampleVi": "Đến trường mất 4 phút."
  },
  {
   "word": "5分",
   "reading": "ごふん",
   "meaning": "5 phút",
-  "example": "[駅](えき)から **[5分](ごふん)**です。",
+  "example": "[駅](えき)から**[5分](ごふん)**です。",
   "exampleVi": "Cách nhà ga 5 phút."
  },
  {
   "word": "6分",
   "reading": "ろっぷん",
   "meaning": "6 phút",
-  "example": "[会社](かいしゃ)まで **[6分](ろっぷん)**です。",
+  "example": "[会社](かいしゃ)まで**[6分](ろっぷん)**です。",
   "exampleVi": "Đến công ty mất 6 phút."
  },
  {
   "word": "7分",
   "reading": "ななふん",
   "meaning": "7 phút",
-  "example": "[家](うち)から **[7分](ななふん)**です。",
+  "example": "[家](うち)から**[7分](ななふん)**です。",
   "exampleVi": "Cách nhà tôi 7 phút."
  },
  {
   "word": "8分",
   "reading": "はっぷん",
   "meaning": "8 phút",
-  "example": "[図書館](としょかん)まで **[8分](はっぷん)**です。",
+  "example": "[図書館](としょかん)まで**[8分](はっぷん)**です。",
   "exampleVi": "Đến thư viện mất 8 phút."
  },
  {
   "word": "9分",
   "reading": "きゅうふん",
   "meaning": "9 phút",
-  "example": "**[9分](きゅうふん)** [休](やす)みました。",
+  "example": "**[9分](きゅうふん)**[休](やす)みました。",
   "exampleVi": "Tôi đã nghỉ 9 phút."
  },
  {
   "word": "10分",
   "reading": "じゅっぷん",
   "meaning": "10 phút",
-  "example": "**[10分](じゅっぷん)** [休](やす)みましょう。",
+  "example": "**[10分](じゅっぷん)**[休](やす)みましょう。",
   "exampleVi": "Nghỉ 10 phút nhé."
  },
  {
   "word": "11分",
   "reading": "じゅういっぷん",
   "meaning": "11 phút",
-  "example": "**[11分](じゅういっぷん)** [勉強](べんきょう)しました。",
+  "example": "**[11分](じゅういっぷん)**[勉強](べんきょう)しました。",
   "exampleVi": "Tôi đã học 11 phút."
  },
  {
   "word": "12分",
   "reading": "じゅうにふん",
   "meaning": "12 phút",
-  "example": "[駅](えき)まで **[12分](じゅうにふん)**です。",
+  "example": "[駅](えき)まで**[12分](じゅうにふん)**です。",
   "exampleVi": "Đến nhà ga mất 12 phút."
  },
  {
   "word": "15分",
   "reading": "じゅうごふん",
   "meaning": "15 phút",
-  "example": "[会社](かいしゃ)まで **[15分](じゅうごふん)**です。",
+  "example": "[会社](かいしゃ)まで**[15分](じゅうごふん)**です。",
   "exampleVi": "Đến công ty mất 15 phút."
  },
  {
   "word": "20分",
   "reading": "にじゅっぷん",
   "meaning": "20 phút",
-  "example": "**[20分](にじゅっぷん)** [勉強](べんきょう)します。",
+  "example": "**[20分](にじゅっぷん)**[勉強](べんきょう)します。",
   "exampleVi": "Tôi học 20 phút."
  },
  {
   "word": "30分",
   "reading": "さんじゅっぷん",
   "meaning": "30 phút",
-  "example": "**[30分](さんじゅっぷん)** [休](やす)みましょう。",
+  "example": "**[30分](さんじゅっぷん)**[休](やす)みましょう。",
   "exampleVi": "Nghỉ 30 phút nhé."
  },
  {
   "word": "40分",
   "reading": "よんじゅっぷん",
   "meaning": "40 phút",
-  "example": "[学校](がっこう)まで **[40分](よんじゅっぷん)**です。",
+  "example": "[学校](がっこう)まで**[40分](よんじゅっぷん)**です。",
   "exampleVi": "Đến trường mất 40 phút."
  },
  {
   "word": "45分",
   "reading": "よんじゅうごふん",
   "meaning": "45 phút",
-  "example": "**[45分](よんじゅうごふん)** [勉強](べんきょう)しました。",
+  "example": "**[45分](よんじゅうごふん)**[勉強](べんきょう)しました。",
   "exampleVi": "Tôi đã học 45 phút."
  },
  {
   "word": "50分",
   "reading": "ごじゅっぷん",
   "meaning": "50 phút",
-  "example": "[会議](かいぎ)は **[50分](ごじゅっぷん)**です。",
+  "example": "[会議](かいぎ)は**[50分](ごじゅっぷん)**です。",
   "exampleVi": "Cuộc họp kéo dài 50 phút."
  },
  {
   "word": "半",
   "reading": "はん",
   "meaning": "nửa, rưỡi",
-  "example": "[3時](さんじ)**[半](はん)**に [家](うち)へ [帰](かえ)ります。",
+  "example": "[3時](さんじ)**[半](はん)**に[家](うち)へ[帰](かえ)ります。",
   "exampleVi": "Lúc 3 giờ rưỡi tôi về nhà."
  },
  {

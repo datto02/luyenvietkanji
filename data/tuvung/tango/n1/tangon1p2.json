@@ -1,102 +1,502 @@
 [
-  "家計",
-  "差し引く",
-  "手取り",
-  "倹約",
-  "出費",
-  "かさむ",
-  "内訳",
-  "共働き",
-  "やり繰り",
-  "すずめの涙",
-  "ギャラ",
-  "極力",
-  "セレブ",
-  "ゆとり",
-  "丸々",
-  "手元",
-  "懐",
-  "利子",
-  "桁",
-  "割合",
-  "きっかり",
-  "株",
-  "何でもかんでも",
-  "何だかんだ",
-  "人並み",
-  "老後",
-  "尽きる",
-  "滞納",
-  "首が回らない",
-  "買い込む",
-  "先着",
-  "キャンペーン",
-  "一律",
-  "値打ち",
-  "値する",
-  "良心的",
-  "正味",
-  "国産",
-  "在庫",
-  "有効",
-  "名義",
-  "一括",
-  "換算",
-  "ピンからキリまで",
-  "切りがない",
-  "切りがいい",
-  "手近",
-  "細やか",
-  "緩む",
-  "すかさず",
-  "仕入れる",
-  "不良品",
-  "下取り",
-  "アフターサービス",
-  "味覚",
-  "甘口",
-  "辛口",
-  "辛党",
-  "食わず嫌い",
-  "たしなむ",
-  "すくう",
-  "すする",
-  "つつく",
-  "かみきる",
-  "飲み込む",
-  "ごくごく",
-  "残らず",
-  "とりわけ",
-  "ひたすら",
-  "しなびる",
-  "粘る",
-  "膨れる",
-  "偏る",
-  "添える",
-  "まちまち",
-  "三昧",
-  "心掛ける",
-  "めくる",
-  "目覚める",
-  "ストレッチ",
-  "剥ぐ",
-  "愛犬",
-  "尻尾",
-  "長続き",
-  "三日坊主",
-  "持続",
-  "当番",
-  "拝む",
-  "ゴールデンタイム",
-  "怠る",
-  "浸かる",
-  "逆立ち",
-  "乱れる",
-  "ブログ",
-  "投稿",
-  "取り立てる",
-  "身の回り",
-  "実践",
-  "終日",
-  "四六時中"
+  {
+    "word": "家計",
+    "example": "[物価](ぶっか)が[上](あ)がって、**[家計](かけい)**が[苦](くる)しいです。",
+    "exampleVi": "Vật giá tăng nên kinh tế gia đình khó khăn."
+  },
+  {
+    "word": "差し引く",
+    "example": "[給料](きゅうりょう)から[税金](ぜいきん)が**[差](さ)し[引](ひ)かれます**。",
+    "exampleVi": "Thuế bị trừ từ tiền lương."
+  },
+  {
+    "word": "手取り",
+    "example": "[今月](こんげつ)の**[手取](てど)り**は[二十万円](にじゅうまんえん)です。",
+    "exampleVi": "Lương thực lĩnh tháng này là hai trăm nghìn yên."
+  },
+  {
+    "word": "倹約",
+    "example": "[旅行](りょこう)のために**[倹約](けんやく)**しています。",
+    "exampleVi": "Tôi đang tiết kiệm để đi du lịch."
+  },
+  {
+    "word": "出費",
+    "example": "[今月](こんげつ)は[思](おも)わぬ**[出費](しゅっぴ)**が[続](つづ)きました。",
+    "exampleVi": "Tháng này liên tiếp có những khoản chi bất ngờ."
+  },
+  {
+    "word": "かさむ",
+    "example": "[医療費](いりょうひ)が**かさんで**、[困](こま)っています。",
+    "exampleVi": "Chi phí y tế tăng lên khiến tôi khó khăn."
+  },
+  {
+    "word": "内訳",
+    "example": "[費用](ひよう)の**[内訳](うちわけ)**を[教](おし)えてください。",
+    "exampleVi": "Xin cho tôi biết chi tiết từng khoản chi phí."
+  },
+  {
+    "word": "共働き",
+    "example": "うちは**[共働](ともばたら)き**なので、[家事](かじ)を[分担](ぶんたん)しています。",
+    "exampleVi": "Nhà tôi vợ chồng cùng đi làm nên chia nhau việc nhà."
+  },
+  {
+    "word": "やり繰り",
+    "example": "[少](すく)ない[給料](きゅうりょう)でなんとか**やり[繰](く)り**しています。",
+    "exampleVi": "Tôi xoay sở bằng cách nào đó với đồng lương ít ỏi."
+  },
+  {
+    "word": "すずめの涙",
+    "example": "ボーナスは**すずめの[涙](なみだ)**ほどでした。",
+    "exampleVi": "Tiền thưởng chỉ ít ỏi như nước mắt chim sẻ."
+  },
+  {
+    "word": "ギャラ",
+    "example": "[彼](かれ)は[一回](いっかい)の[出演](しゅつえん)で[高](たか)い**ギャラ**をもらいます。",
+    "exampleVi": "Anh ấy nhận cát-xê cao cho mỗi lần xuất hiện."
+  },
+  {
+    "word": "極力",
+    "example": "**[極力](きょくりょく)**[無駄遣](むだづか)いをしないようにしています。",
+    "exampleVi": "Tôi cố hết mức không tiêu xài lãng phí."
+  },
+  {
+    "word": "セレブ",
+    "example": "**セレブ**の[生活](せいかつ)に[憧](あこが)れています。",
+    "exampleVi": "Tôi ngưỡng mộ cuộc sống của giới nổi tiếng giàu có."
+  },
+  {
+    "word": "ゆとり",
+    "example": "[経済的](けいざいてき)に**ゆとり**がありません。",
+    "exampleVi": "Tôi không dư dả về kinh tế."
+  },
+  {
+    "word": "丸々",
+    "example": "ケーキを**[丸々](まるまる)**[一個](いっこ)[食](た)べてしまいました。",
+    "exampleVi": "Tôi đã ăn hết nguyên cả một cái bánh."
+  },
+  {
+    "word": "手元",
+    "example": "[今](いま)、**[手元](てもと)**に[現金](げんきん)がありません。",
+    "exampleVi": "Bây giờ tôi không có tiền mặt trong tay."
+  },
+  {
+    "word": "懐",
+    "example": "[今月](こんげつ)は**[懐](ふところ)**が[寂](さび)しいです。",
+    "exampleVi": "Tháng này túi tiền của tôi rỗng."
+  },
+  {
+    "word": "利子",
+    "example": "[銀行](ぎんこう)に[預](あず)けても、**[利子](りし)**はほとんど[付](つ)きません。",
+    "exampleVi": "Có gửi ngân hàng thì cũng hầu như không có lãi."
+  },
+  {
+    "word": "桁",
+    "example": "[計算](けいさん)を[間違](まちが)えて、**[桁](けた)**が[違](ちが)ってしまいました。",
+    "exampleVi": "Tôi tính sai nên số chữ số bị lệch."
+  },
+  {
+    "word": "割合",
+    "example": "クラスの[女子](じょし)の**[割合](わりあい)**は[六割](ろくわり)です。",
+    "exampleVi": "Tỉ lệ nữ sinh trong lớp là sáu phần mười (60%)."
+  },
+  {
+    "word": "きっかり",
+    "example": "[三時](さんじ)**きっかり**に[会議](かいぎ)が[始](はじ)まりました。",
+    "exampleVi": "Cuộc họp bắt đầu đúng ba giờ."
+  },
+  {
+    "word": "株",
+    "example": "[祖父](そふ)は**[株](かぶ)**で[財産](ざいさん)を[築](きず)きました。",
+    "exampleVi": "Ông tôi đã gây dựng tài sản nhờ cổ phiếu."
+  },
+  {
+    "word": "何でもかんでも",
+    "example": "**[何](なん)でもかんでも**[買](か)うのはやめましょう。",
+    "exampleVi": "Đừng mua bất cứ thứ gì như vậy nữa."
+  },
+  {
+    "word": "何だかんだ",
+    "example": "**[何](なん)だかんだ**[言](い)っても、[彼](かれ)は[優](やさ)しい[人](ひと)です。",
+    "exampleVi": "Nói này nói nọ vậy thôi chứ anh ấy là người tốt."
+  },
+  {
+    "word": "人並み",
+    "example": "[給料](きゅうりょう)は**[人並](ひとな)み**にもらっています。",
+    "exampleVi": "Tôi nhận lương ngang mức người bình thường."
+  },
+  {
+    "word": "老後",
+    "example": "**[老後](ろうご)**のために、[貯金](ちょきん)をしています。",
+    "exampleVi": "Tôi đang tiết kiệm tiền cho tuổi già."
+  },
+  {
+    "word": "尽きる",
+    "example": "[貯金](ちょきん)が**[尽](つ)きて**しまいました。",
+    "exampleVi": "Tiền tiết kiệm đã cạn sạch."
+  },
+  {
+    "word": "滞納",
+    "example": "[家賃](やちん)を[三](さん)か[月](げつ)**[滞納](たいのう)**しています。",
+    "exampleVi": "Tôi đang nợ tiền nhà ba tháng."
+  },
+  {
+    "word": "首が回らない",
+    "example": "[借金](しゃっきん)で**[首](くび)が[回](まわ)らない**[状態](じょうたい)です。",
+    "exampleVi": "Tôi đang ở tình trạng nợ ngập đầu."
+  },
+  {
+    "word": "買い込む",
+    "example": "[台風](たいふう)の[前](まえ)に、[食料](しょくりょう)を**[買](か)い[込](こ)みました**。",
+    "exampleVi": "Trước bão, tôi đã mua trữ thực phẩm."
+  },
+  {
+    "word": "先着",
+    "example": "**[先着](せんちゃく)**[百名](ひゃくめい)にプレゼントを[差](さ)し[上](あ)げます。",
+    "exampleVi": "Tặng quà cho một trăm người đến trước."
+  },
+  {
+    "word": "キャンペーン",
+    "example": "[今](いま)、[割引](わりびき)の**キャンペーン**をしています。",
+    "exampleVi": "Hiện đang có chiến dịch giảm giá."
+  },
+  {
+    "word": "一律",
+    "example": "[商品](しょうひん)は**[一律](いちりつ)**[千円](せんえん)です。",
+    "exampleVi": "Các sản phẩm đồng loạt một giá nghìn yên."
+  },
+  {
+    "word": "値打ち",
+    "example": "この[絵](え)は[高](たか)い**[値打](ねう)ち**があります。",
+    "exampleVi": "Bức tranh này có giá trị cao."
+  },
+  {
+    "word": "値する",
+    "example": "[彼](かれ)の[努力](どりょく)は[賞賛](しょうさん)に**[値](あたい)します**。",
+    "exampleVi": "Nỗ lực của anh ấy đáng được khen ngợi."
+  },
+  {
+    "word": "良心的",
+    "example": "この[店](みせ)は**[良心的](りょうしんてき)**な[値段](ねだん)です。",
+    "exampleVi": "Quán này có giá cả phải chăng, có tâm."
+  },
+  {
+    "word": "正味",
+    "example": "**[正味](しょうみ)**の[重](おも)さは[五百](ごひゃく)グラムです。",
+    "exampleVi": "Trọng lượng tịnh là năm trăm gram."
+  },
+  {
+    "word": "国産",
+    "example": "この[野菜](やさい)はすべて**[国産](こくさん)**です。",
+    "exampleVi": "Rau này toàn là hàng trong nước."
+  },
+  {
+    "word": "在庫",
+    "example": "その[商品](しょうひん)は[今](いま)**[在庫](ざいこ)**がありません。",
+    "exampleVi": "Sản phẩm đó hiện không còn hàng tồn kho."
+  },
+  {
+    "word": "有効",
+    "example": "このクーポンは[来月](らいげつ)まで**[有効](ゆうこう)**です。",
+    "exampleVi": "Phiếu giảm giá này có hiệu lực đến hết tháng sau."
+  },
+  {
+    "word": "名義",
+    "example": "[車](くるま)は[父](ちち)の**[名義](めいぎ)**になっています。",
+    "exampleVi": "Chiếc xe đứng tên bố tôi."
+  },
+  {
+    "word": "一括",
+    "example": "[代金](だいきん)を**[一括](いっかつ)**で[払](はら)いました。",
+    "exampleVi": "Tôi đã trả tiền một lần gộp."
+  },
+  {
+    "word": "換算",
+    "example": "[円](えん)をドルに**[換算](かんさん)**しました。",
+    "exampleVi": "Tôi đã quy đổi yên sang đô la."
+  },
+  {
+    "word": "ピンからキリまで",
+    "example": "[値段](ねだん)は**ピンからキリまで**あります。",
+    "exampleVi": "Giá cả có đủ loại từ thượng vàng đến hạ cấp."
+  },
+  {
+    "word": "切りがない",
+    "example": "[欲](ほ)しい[物](もの)を[数](かぞ)えたら**[切](き)りがない**です。",
+    "exampleVi": "Đếm những thứ muốn có thì không có điểm dừng."
+  },
+  {
+    "word": "切りがいい",
+    "example": "[今日](きょう)は**[切](き)りがいい**ので、ここで[終](お)わりましょう。",
+    "exampleVi": "Hôm nay dừng ở chỗ đẹp này nên kết thúc tại đây nhé."
+  },
+  {
+    "word": "手近",
+    "example": "**[手近](てぢか)**な[材料](ざいりょう)で[料理](りょうり)を[作](つく)りました。",
+    "exampleVi": "Tôi nấu ăn bằng nguyên liệu có sẵn gần tay."
+  },
+  {
+    "word": "細やか",
+    "example": "[彼女](かのじょ)は**[細](こま)やか**な[心遣](こころづか)いができる[人](ひと)です。",
+    "exampleVi": "Cô ấy là người biết quan tâm tỉ mỉ, chân thành."
+  },
+  {
+    "word": "緩む",
+    "example": "[春](はる)になって、[寒](さむ)さが**[緩](ゆる)みました**。",
+    "exampleVi": "Sang xuân, cái lạnh đã dịu bớt."
+  },
+  {
+    "word": "すかさず",
+    "example": "[質問](しつもん)されて、[彼](かれ)は**すかさず**[答](こた)えました。",
+    "exampleVi": "Được hỏi, anh ấy trả lời ngay không do dự."
+  },
+  {
+    "word": "仕入れる",
+    "example": "[新鮮](しんせん)な[魚](さかな)を**[仕入](しい)れました**。",
+    "exampleVi": "Tôi đã nhập những con cá tươi."
+  },
+  {
+    "word": "不良品",
+    "example": "[届](とど)いた[商品](しょうひん)が**[不良品](ふりょうひん)**でした。",
+    "exampleVi": "Hàng được giao là hàng lỗi."
+  },
+  {
+    "word": "下取り",
+    "example": "[古](ふる)い[車](くるま)を**[下取](したど)り**に[出](だ)しました。",
+    "exampleVi": "Tôi đã đem chiếc xe cũ cho hãng thu mua lại (khi đổi xe mới)."
+  },
+  {
+    "word": "アフターサービス",
+    "example": "この[店](みせ)は**アフターサービス**が[充実](じゅうじつ)しています。",
+    "exampleVi": "Cửa hàng này có dịch vụ hậu mãi đầy đủ."
+  },
+  {
+    "word": "味覚",
+    "example": "[年](とし)を[取](と)ると、**[味覚](みかく)**が[変](か)わります。",
+    "exampleVi": "Già đi thì vị giác thay đổi."
+  },
+  {
+    "word": "甘口",
+    "example": "[子供](こども)は**[甘口](あまくち)**のカレーが[好](す)きです。",
+    "exampleVi": "Trẻ con thích cà ri vị ngọt (không cay)."
+  },
+  {
+    "word": "辛口",
+    "example": "このワインは**[辛口](からくち)**です。",
+    "exampleVi": "Rượu vang này vị khô (không ngọt)."
+  },
+  {
+    "word": "辛党",
+    "example": "[父](ちち)は**[辛党](からとう)**で、お[酒](さけ)が[大好](だいす)きです。",
+    "exampleVi": "Bố tôi là dân nhậu, rất thích rượu."
+  },
+  {
+    "word": "食わず嫌い",
+    "example": "[納豆](なっとう)は**[食](く)わず[嫌](ぎら)い**でした。",
+    "exampleVi": "Natto thì trước giờ tôi ghét khi chưa từng thử."
+  },
+  {
+    "word": "たしなむ",
+    "example": "お[酒](さけ)は**たしなむ**[程度](ていど)です。",
+    "exampleVi": "Rượu thì tôi chỉ biết thưởng thức chút ít."
+  },
+  {
+    "word": "すくう",
+    "example": "スプーンでスープを**すくいました**。",
+    "exampleVi": "Tôi đã múc súp bằng thìa."
+  },
+  {
+    "word": "すする",
+    "example": "[熱](あつ)いお[茶](ちゃ)を**すすりました**。",
+    "exampleVi": "Tôi đã húp ngụm trà nóng."
+  },
+  {
+    "word": "つつく",
+    "example": "[箸](はし)で[料理](りょうり)を**つついて**はいけません。",
+    "exampleVi": "Không được dùng đũa chọc vào món ăn."
+  },
+  {
+    "word": "かみきる",
+    "example": "[硬](かた)い[肉](にく)を[歯](は)で**かみきりました**。",
+    "exampleVi": "Tôi đã cắn đứt miếng thịt cứng bằng răng."
+  },
+  {
+    "word": "飲み込む",
+    "example": "[薬](くすり)を[水](みず)で**[飲](の)み[込](こ)みました**。",
+    "exampleVi": "Tôi đã nuốt thuốc bằng nước."
+  },
+  {
+    "word": "ごくごく",
+    "example": "[運動](うんどう)のあとで、[水](みず)を**ごくごく**[飲](の)みました。",
+    "exampleVi": "Sau khi vận động, tôi uống nước ừng ực."
+  },
+  {
+    "word": "残らず",
+    "example": "[出](だ)された[料理](りょうり)を**[残](のこ)らず**[食](た)べました。",
+    "exampleVi": "Tôi đã ăn hết không chừa món nào."
+  },
+  {
+    "word": "とりわけ",
+    "example": "[果物](くだもの)が[好](す)きで、**とりわけ**[桃](もも)が[好物](こうぶつ)です。",
+    "exampleVi": "Tôi thích trái cây, đặc biệt là đào."
+  },
+  {
+    "word": "ひたすら",
+    "example": "[彼](かれ)は**ひたすら**[勉強](べんきょう)に[励](はげ)んでいます。",
+    "exampleVi": "Anh ấy chỉ một mực chăm chỉ học."
+  },
+  {
+    "word": "しなびる",
+    "example": "[冷蔵庫](れいぞうこ)に[入](い)れておかなかった[野菜](やさい)が**しなびて**しまいました。",
+    "exampleVi": "Rau không cho vào tủ lạnh đã héo rũ."
+  },
+  {
+    "word": "粘る",
+    "example": "[納豆](なっとう)は**[粘](ねば)る**[食](た)べ[物](もの)です。",
+    "exampleVi": "Natto là món ăn dính, nhớt."
+  },
+  {
+    "word": "膨れる",
+    "example": "お[腹](なか)が**[膨](ふく)れる**まで[食](た)べました。",
+    "exampleVi": "Tôi đã ăn đến khi bụng no căng phồng."
+  },
+  {
+    "word": "偏る",
+    "example": "[食事](しょくじ)が**[偏](かたよ)って**いる[人](ひと)は[注意](ちゅうい)が[必要](ひつよう)です。",
+    "exampleVi": "Người có chế độ ăn mất cân bằng cần chú ý."
+  },
+  {
+    "word": "添える",
+    "example": "プレゼントに[手紙](てがみ)を**[添](そ)えました**。",
+    "exampleVi": "Tôi đã đính kèm một lá thư với món quà."
+  },
+  {
+    "word": "まちまち",
+    "example": "[人](ひと)によって[意見](いけん)が**まちまち**です。",
+    "exampleVi": "Ý kiến mỗi người mỗi khác."
+  },
+  {
+    "word": "三昧",
+    "example": "[休日](きゅうじつ)は[読書](どくしょ)**[三昧](ざんまい)**の[日](ひ)を[過](す)ごしました。",
+    "exampleVi": "Ngày nghỉ tôi đã trải qua một ngày say sưa đọc sách."
+  },
+  {
+    "word": "心掛ける",
+    "example": "[毎日](まいにち)[運動](うんどう)するように**[心掛](こころが)けて**います。",
+    "exampleVi": "Tôi luôn lưu tâm cố gắng vận động mỗi ngày."
+  },
+  {
+    "word": "めくる",
+    "example": "[本](ほん)のページを**めくりました**。",
+    "exampleVi": "Tôi đã lật trang sách."
+  },
+  {
+    "word": "目覚める",
+    "example": "[朝](あさ)、[鳥](とり)の[声](こえ)で**[目覚](めざ)めました**。",
+    "exampleVi": "Buổi sáng tôi thức dậy nhờ tiếng chim hót."
+  },
+  {
+    "word": "ストレッチ",
+    "example": "[朝](あさ)、**ストレッチ**をして[体](からだ)を[伸](の)ばします。",
+    "exampleVi": "Buổi sáng tôi tập giãn cơ để duỗi người."
+  },
+  {
+    "word": "剥ぐ",
+    "example": "[寒](さむ)い[朝](あさ)、[母](はは)に[布団](ふとん)を**[剥](は)がされました**。",
+    "exampleVi": "Sáng lạnh, tôi bị mẹ lột tung chăn."
+  },
+  {
+    "word": "愛犬",
+    "example": "**[愛犬](あいけん)**と[毎朝](まいあさ)[散歩](さんぽ)をしています。",
+    "exampleVi": "Mỗi sáng tôi đi dạo với chú cún cưng."
+  },
+  {
+    "word": "尻尾",
+    "example": "[犬](いぬ)が**[尻尾](しっぽ)**を[振](ふ)って[喜](よろこ)んでいます。",
+    "exampleVi": "Con chó vẫy đuôi mừng rỡ."
+  },
+  {
+    "word": "長続き",
+    "example": "ダイエットはなかなか**[長続](ながつづ)き**しません。",
+    "exampleVi": "Tôi ăn kiêng mãi không duy trì được lâu."
+  },
+  {
+    "word": "三日坊主",
+    "example": "[日記](にっき)は**[三日坊主](みっかぼうず)**で、[続](つづ)きませんでした。",
+    "exampleVi": "Nhật ký thì tôi cả thèm chóng chán nên không duy trì được."
+  },
+  {
+    "word": "持続",
+    "example": "この[効果](こうか)は[一年間](いちねんかん)**[持続](じぞく)**します。",
+    "exampleVi": "Hiệu quả này duy trì trong một năm."
+  },
+  {
+    "word": "当番",
+    "example": "[今週](こんしゅう)は[私](わたし)が[掃除](そうじ)**[当番](とうばん)**です。",
+    "exampleVi": "Tuần này tôi là người trực nhật dọn vệ sinh."
+  },
+  {
+    "word": "拝む",
+    "example": "[神社](じんじゃ)で[手](て)を[合](あ)わせて**[拝](おが)みました**。",
+    "exampleVi": "Ở đền thờ, tôi chắp tay cầu nguyện."
+  },
+  {
+    "word": "ゴールデンタイム",
+    "example": "**ゴールデンタイム**に[放送](ほうそう)されるドラマは[人気](にんき)があります。",
+    "exampleVi": "Phim chiếu vào giờ vàng thì được ưa chuộng."
+  },
+  {
+    "word": "怠る",
+    "example": "[準備](じゅんび)を**[怠](おこた)って**はいけません。",
+    "exampleVi": "Không được lơ là việc chuẩn bị."
+  },
+  {
+    "word": "浸かる",
+    "example": "[温泉](おんせん)に**[浸](つ)かって**、[疲](つか)れを[取](と)りました。",
+    "exampleVi": "Tôi ngâm mình trong suối nước nóng để xua tan mệt mỏi."
+  },
+  {
+    "word": "逆立ち",
+    "example": "[子供](こども)の[頃](ころ)、**[逆立](さかだ)ち**が[得意](とくい)でした。",
+    "exampleVi": "Hồi nhỏ, tôi giỏi trồng cây chuối."
+  },
+  {
+    "word": "乱れる",
+    "example": "[不規則](ふきそく)な[生活](せいかつ)で、[生活](せいかつ)のリズムが**[乱](みだ)れました**。",
+    "exampleVi": "Vì sinh hoạt thất thường nên nhịp sống bị rối loạn."
+  },
+  {
+    "word": "ブログ",
+    "example": "[毎日](まいにち)、**ブログ**を[更新](こうしん)しています。",
+    "exampleVi": "Mỗi ngày tôi đều cập nhật blog."
+  },
+  {
+    "word": "投稿",
+    "example": "[写真](しゃしん)をネットに**[投稿](とうこう)**しました。",
+    "exampleVi": "Tôi đã đăng ảnh lên mạng."
+  },
+  {
+    "word": "取り立てる",
+    "example": "[税金](ぜいきん)を**[取](と)り[立](た)てる**のは[国](くに)の[仕事](しごと)です。",
+    "exampleVi": "Thu thuế là công việc của nhà nước."
+  },
+  {
+    "word": "身の回り",
+    "example": "[高齢](こうれい)の[母](はは)の**[身](み)の[回](まわ)り**の[世話](せわ)をしています。",
+    "exampleVi": "Tôi đang lo việc sinh hoạt hằng ngày cho mẹ già."
+  },
+  {
+    "word": "実践",
+    "example": "[学](まな)んだことを[仕事](しごと)で**[実践](じっせん)**しています。",
+    "exampleVi": "Tôi đang thực hành điều đã học vào công việc."
+  },
+  {
+    "word": "終日",
+    "example": "[今日](きょう)は**[終日](しゅうじつ)**[雨](あめ)でした。",
+    "exampleVi": "Hôm nay trời mưa cả ngày."
+  },
+  {
+    "word": "四六時中",
+    "example": "[彼](かれ)は**[四六時中](しろくじちゅう)**スマホを[見](み)ています。",
+    "exampleVi": "Anh ta xem điện thoại suốt ngày đêm."
+  }
 ]

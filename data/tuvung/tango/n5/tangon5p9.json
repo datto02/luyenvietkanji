@@ -59,28 +59,28 @@
   "word": "ダイニングキッチン",
   "reading": "ダイニングキッチン",
   "meaning": "phòng ăn và bếp",
-  "example": "この アパートは **ダイニングキッチン**が あります。",
+  "example": "このアパートは**ダイニングキッチン**があります。",
   "exampleVi": "Căn hộ này có phòng ăn kèm bếp."
  },
  {
   "word": "和室",
   "reading": "わしつ",
   "meaning": "phòng kiểu Nhật",
-  "example": "**[和室](わしつ)**は [広](ひろ)いです。",
+  "example": "**[和室](わしつ)**は[広](ひろ)いです。",
   "exampleVi": "Phòng kiểu Nhật rộng."
  },
  {
   "word": "トイレ",
   "reading": "トイレ",
   "meaning": "nhà vệ sinh",
-  "example": "**トイレ**は どこですか。",
+  "example": "**トイレ**はどこですか。",
   "exampleVi": "Nhà vệ sinh ở đâu ạ?"
  },
  {
   "word": "布団",
   "reading": "ふとん",
-  "meaning": "mền, chăn",
-  "example": "**[布団](ふとん)**で ねます。",
+  "meaning": "chăn đệm (futon)",
+  "example": "**[布団](ふとん)**でねます。",
   "exampleVi": "Tôi ngủ trên nệm futon."
  },
  {
@@ -95,7 +95,7 @@
   "reading": "つくえ",
   "meaning": "bàn (học, làm việc)",
   "example": "[辞書](じしょ)は**[机](つくえ)**の[上](うえ)です。",
-  "exampleVi": "Tự điển ở trên bàn."
+  "exampleVi": "Từ điển ở trên bàn."
  },
  {
   "word": "いす",
@@ -171,27 +171,27 @@
   "word": "冷蔵庫",
   "reading": "れいぞうこ",
   "meaning": "tủ lạnh",
-  "example": "**[冷蔵庫](れいぞうこ)**に [牛乳](ぎゅうにゅう)が あります。",
+  "example": "**[冷蔵庫](れいぞうこ)**に[牛乳](ぎゅうにゅう)があります。",
   "exampleVi": "Trong tủ lạnh có sữa tươi."
  },
  {
   "word": "せんたくき",
   "reading": "せんたくき",
   "meaning": "máy giặt",
-  "example": "**せんたくき**は [新](あたら)しいです。",
+  "example": "**せんたくき**は[新](あたら)しいです。",
   "exampleVi": "Máy giặt còn mới."
  },
  {
   "word": "そうじき",
   "reading": "そうじき",
   "meaning": "máy hút bụi",
-  "example": "**そうじき**で そうじします。",
+  "example": "**そうじき**でそうじします。",
   "exampleVi": "Tôi quét dọn bằng máy hút bụi."
  },
  {
   "word": "建物",
   "reading": "たてもの",
-  "meaning": "tòa nhà ",
+  "meaning": "tòa nhà",
   "example": "デパートはどの**[建物](たてもの)**ですか。",
   "exampleVi": "Trung tâm thương mại là tòa nhà nào ạ?"
  },
@@ -248,77 +248,77 @@
   "word": "1階",
   "reading": "いっかい",
   "meaning": "tầng 1, tầng trệt",
-  "example": "**[1階](いっかい)**に コンビニが あります。",
+  "example": "**[1階](いっかい)**にコンビニがあります。",
   "exampleVi": "Ở tầng 1 có cửa hàng tiện lợi."
  },
  {
   "word": "2階",
   "reading": "にかい",
   "meaning": "tầng 2",
-  "example": "**[2階](にかい)**に [銀行](ぎんこう)が あります。",
+  "example": "**[2階](にかい)**に[銀行](ぎんこう)があります。",
   "exampleVi": "Ở tầng 2 có ngân hàng."
  },
  {
   "word": "3階",
   "reading": "さんがい",
   "meaning": "tầng 3",
-  "example": "**[3階](さんがい)**に レストランが あります。",
+  "example": "**[3階](さんがい)**にレストランがあります。",
   "exampleVi": "Ở tầng 3 có nhà hàng."
  },
  {
   "word": "4階",
   "reading": "よんかい",
   "meaning": "tầng 4",
-  "example": "[私](わたし)の [部屋](へや)は **[4階](よんかい)**です。",
+  "example": "[私](わたし)の[部屋](へや)は**[4階](よんかい)**です。",
   "exampleVi": "Phòng của tôi ở tầng 4."
  },
  {
   "word": "5階",
   "reading": "ごかい",
   "meaning": "tầng 5",
-  "example": "**[5階](ごかい)**に [本屋](ほんや)が あります。",
+  "example": "**[5階](ごかい)**に[本屋](ほんや)があります。",
   "exampleVi": "Ở tầng 5 có tiệm sách."
  },
  {
   "word": "6階",
   "reading": "ろっかい",
   "meaning": "tầng 6",
-  "example": "[会社](かいしゃ)は **[6階](ろっかい)**です。",
+  "example": "[会社](かいしゃ)は**[6階](ろっかい)**です。",
   "exampleVi": "Công ty ở tầng 6."
  },
  {
   "word": "7階",
   "reading": "ななかい",
   "meaning": "tầng 7",
-  "example": "**[7階](ななかい)**に [事務所](じむしょ)が あります。",
+  "example": "**[7階](ななかい)**に[事務所](じむしょ)があります。",
   "exampleVi": "Ở tầng 7 có văn phòng."
  },
  {
   "word": "8階",
   "reading": "はっかい",
   "meaning": "tầng 8",
-  "example": "**[8階](はっかい)**に [会議室](かいぎしつ)が あります。",
+  "example": "**[8階](はっかい)**に[会議室](かいぎしつ)があります。",
   "exampleVi": "Ở tầng 8 có phòng họp."
  },
  {
   "word": "9階",
   "reading": "きゅうかい",
   "meaning": "tầng 9",
-  "example": "[友達](ともだち)の [部屋](へや)は **[9階](きゅうかい)**です。",
+  "example": "[友達](ともだち)の[部屋](へや)は**[9階](きゅうかい)**です。",
   "exampleVi": "Phòng của bạn tôi ở tầng 9."
  },
  {
   "word": "10階",
   "reading": "じゅっかい",
   "meaning": "tầng 10",
-  "example": "**[10階](じゅっかい)**に トイレが あります。",
+  "example": "**[10階](じゅっかい)**にトイレがあります。",
   "exampleVi": "Ở tầng 10 có nhà vệ sinh."
  },
  {
   "word": "地下",
   "reading": "ちか",
   "meaning": "tầng hầm",
-  "example": "**[地下](ちか)**に ちゅうしゃじょうが あります。",
+  "example": "**[地下](ちか)**にちゅうしゃじょうがあります。",
   "exampleVi": "Ở tầng hầm có bãi đậu xe."
  },
  {
@@ -423,7 +423,7 @@
   "word": "年を取る",
   "reading": "としをとる",
   "meaning": "già",
-  "example": "[父](ちち)は **[年](とし)を[取](と)りました**。",
+  "example": "[父](ちち)は**[年](とし)を[取](と)りました**。",
   "exampleVi": "Bố tôi đã già rồi."
  },
  {
@@ -437,35 +437,35 @@
   "word": "広い",
   "reading": "ひろい",
   "meaning": "rộng",
-  "example": "この [部屋](へや)は **[広](ひろ)い**です。",
+  "example": "この[部屋](へや)は**[広](ひろ)い**です。",
   "exampleVi": "Căn phòng này rộng."
  },
  {
   "word": "せまい",
   "reading": "せまい",
   "meaning": "chật, hẹp",
-  "example": "[私](わたし)の [部屋](へや)は **せまい**です。",
+  "example": "[私](わたし)の[部屋](へや)は**せまい**です。",
   "exampleVi": "Phòng của tôi chật."
  },
  {
   "word": "新しい",
   "reading": "あたらしい",
   "meaning": "mới",
-  "example": "**[新](あたら)しい** [車](くるま)を [買](か)いました。",
+  "example": "**[新](あたら)しい**[車](くるま)を[買](か)いました。",
   "exampleVi": "Tôi đã mua xe hơi mới."
  },
  {
   "word": "古い",
   "reading": "ふるい",
   "meaning": "cũ, cổ",
-  "example": "この [建物](たてもの)は **[古](ふる)い**です。",
+  "example": "この[建物](たてもの)は**[古](ふる)い**です。",
   "exampleVi": "Tòa nhà này cũ."
  },
  {
   "word": "いらっしゃい",
   "reading": "いらっしゃい",
   "meaning": "Xin mời.",
-  "example": "**いらっしゃい**。どうぞ [入](はい)って ください。",
+  "example": "**いらっしゃい**。どうぞ[入](はい)ってください。",
   "exampleVi": "Xin mời. Xin mời vào."
  },
  {
@@ -563,7 +563,7 @@
   "word": "ぼく",
   "reading": "ぼく",
   "meaning": "tôi",
-  "example": "**ぼく**は [学生](がくせい)です。",
+  "example": "**ぼく**は[学生](がくせい)です。",
   "exampleVi": "Tớ là học sinh."
  },
  {
@@ -626,56 +626,56 @@
   "word": "一昨日",
   "reading": "おととい",
   "meaning": "hôm kia",
-  "example": "**[一昨日](おととい)**、[友達](ともだち)に [会](あ)いました。",
+  "example": "**[一昨日](おととい)**、[友達](ともだち)に[会](あ)いました。",
   "exampleVi": "Hôm kia tôi đã gặp bạn."
  },
  {
   "word": "明後日",
   "reading": "あさって",
   "meaning": "ngày mốt",
-  "example": "**[明後日](あさって)**、[国](くに)へ [帰](かえ)ります。",
+  "example": "**[明後日](あさって)**、[国](くに)へ[帰](かえ)ります。",
   "exampleVi": "Ngày mốt tôi về nước."
  },
  {
   "word": "先週",
   "reading": "せんしゅう",
   "meaning": "tuần trước",
-  "example": "**[先週](せんしゅう)**、[映画](えいが)を [見](み)ました。",
+  "example": "**[先週](せんしゅう)**、[映画](えいが)を[見](み)ました。",
   "exampleVi": "Tuần trước tôi đã xem phim."
  },
  {
   "word": "今週",
   "reading": "こんしゅう",
   "meaning": "tuần này",
-  "example": "**[今週](こんしゅう)**は テストが あります。",
+  "example": "**[今週](こんしゅう)**はテストがあります。",
   "exampleVi": "Tuần này có bài kiểm tra."
  },
  {
   "word": "来週",
   "reading": "らいしゅう",
   "meaning": "tuần tới",
-  "example": "**[来週](らいしゅう)**、[大阪](おおさか)へ [行](い)きます。",
+  "example": "**[来週](らいしゅう)**、[大阪](おおさか)へ[行](い)きます。",
   "exampleVi": "Tuần tới tôi sẽ đi Osaka."
  },
  {
   "word": "先月",
   "reading": "せんげつ",
   "meaning": "tháng trước",
-  "example": "**[先月](せんげつ)**、[日本](にほん)へ [来](き)ました。",
+  "example": "**[先月](せんげつ)**、[日本](にほん)へ[来](き)ました。",
   "exampleVi": "Tháng trước tôi đã đến Nhật Bản."
  },
  {
   "word": "今月",
   "reading": "こんげつ",
   "meaning": "tháng này",
-  "example": "**[今月](こんげつ)**は [雨](あめ)が [多](おお)いです。",
+  "example": "**[今月](こんげつ)**は[雨](あめ)が[多](おお)いです。",
   "exampleVi": "Tháng này mưa nhiều."
  },
  {
   "word": "来月",
   "reading": "らいげつ",
   "meaning": "tháng tới",
-  "example": "**[来月](らいげつ)**、[国](くに)へ [帰](かえ)ります。",
+  "example": "**[来月](らいげつ)**、[国](くに)へ[帰](かえ)ります。",
   "exampleVi": "Tháng tới tôi sẽ về nước."
  },
  {

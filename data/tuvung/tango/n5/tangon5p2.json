@@ -108,7 +108,7 @@
   "word": "ゼロ",
   "reading": "ゼロ",
   "meaning": "số 0, không",
-  "example": "この [字](じ)は **ゼロ**です。",
+  "example": "この[字](じ)は**ゼロ**です。",
   "exampleVi": "Chữ này là số không."
  },
  {
@@ -206,84 +206,84 @@
   "word": "一月",
   "reading": "いちがつ",
   "meaning": "tháng Một, tháng Giêng",
-  "example": "**[一月](いちがつ)**に [日本](にほん)へ [来](き)ました。",
+  "example": "**[一月](いちがつ)**に[日本](にほん)へ[来](き)ました。",
   "exampleVi": "Tôi đã đến Nhật Bản vào tháng Một."
  },
  {
   "word": "二月",
   "reading": "にがつ",
   "meaning": "tháng Hai",
-  "example": "**[二月](にがつ)**に [友達](ともだち)と [行](い)きます。",
+  "example": "**[二月](にがつ)**に[友達](ともだち)と[行](い)きます。",
   "exampleVi": "Tháng Hai tôi sẽ đi cùng bạn."
  },
  {
   "word": "三月",
   "reading": "さんがつ",
   "meaning": "tháng Ba",
-  "example": "**[三月](さんがつ)**に [大学](だいがく)を [出](で)ます。",
+  "example": "**[三月](さんがつ)**に[大学](だいがく)を[出](で)ます。",
   "exampleVi": "Tháng Ba tôi sẽ ra trường đại học."
  },
  {
   "word": "四月",
   "reading": "しがつ",
   "meaning": "tháng Tư",
-  "example": "**[四月](しがつ)**に [学校](がっこう)へ [行](い)きます。",
+  "example": "**[四月](しがつ)**に[学校](がっこう)へ[行](い)きます。",
   "exampleVi": "Tháng Tư tôi sẽ đến trường."
  },
  {
   "word": "五月",
   "reading": "ごがつ",
   "meaning": "tháng Năm",
-  "example": "**[五月](ごがつ)**に [国](くに)へ [帰](かえ)ります。",
+  "example": "**[五月](ごがつ)**に[国](くに)へ[帰](かえ)ります。",
   "exampleVi": "Tháng Năm tôi sẽ về nước."
  },
  {
   "word": "六月",
   "reading": "ろくがつ",
   "meaning": "tháng Sáu",
-  "example": "**[六月](ろくがつ)**に [兄](あに)と [会](あ)います。",
+  "example": "**[六月](ろくがつ)**に[兄](あに)と[会](あ)います。",
   "exampleVi": "Tháng Sáu tôi sẽ gặp anh trai."
  },
  {
   "word": "七月",
   "reading": "しちがつ",
   "meaning": "tháng Bảy",
-  "example": "**[七月](しちがつ)**に [日本](にほん)へ [行](い)きます。",
+  "example": "**[七月](しちがつ)**に[日本](にほん)へ[行](い)きます。",
   "exampleVi": "Tháng Bảy tôi sẽ đi Nhật Bản."
  },
  {
   "word": "八月",
   "reading": "はちがつ",
   "meaning": "tháng Tám",
-  "example": "**[八月](はちがつ)**に [学校](がっこう)は ありません。",
+  "example": "**[八月](はちがつ)**に[学校](がっこう)はありません。",
   "exampleVi": "Tháng Tám không có học."
  },
  {
   "word": "九月",
   "reading": "くがつ",
   "meaning": "tháng Chín",
-  "example": "**[九月](くがつ)**に [友達](ともだち)が [来](き)ます。",
+  "example": "**[九月](くがつ)**に[友達](ともだち)が[来](き)ます。",
   "exampleVi": "Tháng Chín bạn tôi sẽ đến."
  },
  {
   "word": "十月",
   "reading": "じゅうがつ",
   "meaning": "tháng Mười",
-  "example": "**[十月](じゅうがつ)**に [大学](だいがく)へ [入](はい)ります。",
+  "example": "**[十月](じゅうがつ)**に[大学](だいがく)へ[入](はい)ります。",
   "exampleVi": "Tháng Mười tôi sẽ vào đại học."
  },
  {
   "word": "十一月",
   "reading": "じゅういちがつ",
   "meaning": "tháng Mười một",
-  "example": "**[十一月](じゅういちがつ)**に [父](ちち)が [来](き)ます。",
+  "example": "**[十一月](じゅういちがつ)**に[父](ちち)が[来](き)ます。",
   "exampleVi": "Tháng Mười một bố tôi sẽ đến."
  },
  {
   "word": "十二月",
   "reading": "じゅうにがつ",
   "meaning": "tháng Mười hai, tháng Chạp",
-  "example": "**[十二月](じゅうにがつ)**に [家](うち)へ [帰](かえ)ります。",
+  "example": "**[十二月](じゅうにがつ)**に[家](うち)へ[帰](かえ)ります。",
   "exampleVi": "Tháng Mười hai tôi sẽ về nhà."
  },
  {
@@ -297,56 +297,56 @@
   "word": "曜日",
   "reading": "ようび",
   "meaning": "thứ",
-  "example": "**[曜日](ようび)**を [書](か)いて ください。",
+  "example": "**[曜日](ようび)**を[書](か)いてください。",
   "exampleVi": "Hãy viết thứ trong tuần."
  },
  {
   "word": "日曜日",
   "reading": "にちようび",
   "meaning": "Chủ nhật",
-  "example": "**[日曜日](にちようび)**は [学校](がっこう)が ありません。",
+  "example": "**[日曜日](にちようび)**は[学校](がっこう)がありません。",
   "exampleVi": "Chủ nhật không có học."
  },
  {
   "word": "月曜日",
   "reading": "げつようび",
   "meaning": "thứ Hai",
-  "example": "**[月曜日](げつようび)**に [日本語](にほんご)の テストが あります。",
+  "example": "**[月曜日](げつようび)**に[日本語](にほんご)のテストがあります。",
   "exampleVi": "Thứ Hai có bài kiểm tra tiếng Nhật."
  },
  {
   "word": "火曜日",
   "reading": "かようび",
   "meaning": "thứ Ba",
-  "example": "**[火曜日](かようび)**に [友達](ともだち)と [会](あ)います。",
+  "example": "**[火曜日](かようび)**に[友達](ともだち)と[会](あ)います。",
   "exampleVi": "Thứ Ba tôi gặp bạn."
  },
  {
   "word": "水曜日",
   "reading": "すいようび",
   "meaning": "thứ Tư",
-  "example": "**[水曜日](すいようび)**に [図書館](としょかん)へ [行](い)きます。",
+  "example": "**[水曜日](すいようび)**に[図書館](としょかん)へ[行](い)きます。",
   "exampleVi": "Thứ Tư tôi đi thư viện."
  },
  {
   "word": "木曜日",
   "reading": "もくようび",
   "meaning": "thứ Năm",
-  "example": "**[木曜日](もくようび)**は アルバイトが あります。",
+  "example": "**[木曜日](もくようび)**はアルバイトがあります。",
   "exampleVi": "Thứ Năm tôi có việc làm thêm."
  },
  {
   "word": "金曜日",
   "reading": "きんようび",
   "meaning": "thứ Sáu",
-  "example": "**[金曜日](きんようび)**に [宿題](しゅくだい)を [出](だ)します。",
+  "example": "**[金曜日](きんようび)**に[宿題](しゅくだい)を[出](だ)します。",
   "exampleVi": "Thứ Sáu tôi nộp bài tập về nhà."
  },
  {
   "word": "土曜日",
   "reading": "どようび",
   "meaning": "thứ Bảy",
-  "example": "**[土曜日](どようび)**は [学校](がっこう)が [休](やす)みです。",
+  "example": "**[土曜日](どようび)**は[学校](がっこう)が[休](やす)みです。",
   "exampleVi": "Thứ Bảy trường nghỉ."
  },
  {
@@ -542,28 +542,28 @@
   "word": "平仮名",
   "reading": "ひらがな",
   "meaning": "(chữ) Hiragana",
-  "example": "**ひらがな**で [名前](なまえ)を [書](か)いて ください。",
+  "example": "**ひらがな**で[名前](なまえ)を[書](か)いてください。",
   "exampleVi": "Hãy viết tên bằng hiragana."
  },
  {
   "word": "片仮名",
   "reading": "かたかな",
   "meaning": "(chữ) Katakana",
-  "example": "**かたかな**を [練習](れんしゅう)します。",
+  "example": "**かたかな**を[練習](れんしゅう)します。",
   "exampleVi": "Tôi luyện tập katakana."
  },
  {
   "word": "漢字",
   "reading": "かんじ",
   "meaning": "chữ Hán",
-  "example": "**[漢字](かんじ)**を [書](か)いて ください。",
+  "example": "**[漢字](かんじ)**を[書](か)いてください。",
   "exampleVi": "Hãy viết chữ Hán."
  },
  {
   "word": "ローマ字",
   "reading": "ローマじ",
   "meaning": "chữ Latinh",
-  "example": "**ローマ[字](じ)**で [名前](なまえ)を [書](か)きます。",
+  "example": "**ローマ[字](じ)**で[名前](なまえ)を[書](か)きます。",
   "exampleVi": "Tôi viết tên bằng chữ Latinh."
  },
  {
@@ -591,7 +591,7 @@
   "word": "聞く",
   "reading": "きく",
   "meaning": "nghe",
-  "example": "[先生](せんせい)の [話](はなし)を **[聞](き)きます**。",
+  "example": "[先生](せんせい)の[話](はなし)を**[聞](き)きます**。",
   "exampleVi": "Tôi nghe thầy/cô nói."
  },
  {
@@ -605,7 +605,7 @@
   "word": "買う",
   "reading": "かう",
   "meaning": "mua",
-  "example": "[本](ほん)を **[買](か)いました**。",
+  "example": "[本](ほん)を**[買](か)いました**。",
   "exampleVi": "Tôi đã mua sách."
  },
  {

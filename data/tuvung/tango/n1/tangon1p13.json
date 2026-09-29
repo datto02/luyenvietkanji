@@ -1,102 +1,502 @@
 [
-  "くすくす",
-  "げらげら",
-  "そこそこ",
-  "ぺこぺこ",
-  "ひしひし",
-  "ばらばら",
-  "ぱらぱら",
-  "ぞろぞろ",
-  "ぼちぼち",
-  "ずるずる",
-  "ちくちく",
-  "のこのこ",
-  "くらくら",
-  "ちょくちょく",
-  "ふわふわ",
-  "ちらほら",
-  "ふらりと",
-  "じっとり",
-  "ずばり",
-  "まさしく",
-  "ありあり",
-  "しばし",
-  "まんまと",
-  "まるっきり",
-  "てんで",
-  "とうてい",
-  "第一",
-  "まして",
-  "努めて",
-  "ふんだん",
-  "誠に",
-  "切に",
-  "いささか",
-  "もろに",
-  "もはや",
-  "さほど",
-  "何ら",
-  "無論",
-  "何やら",
-  "何卒",
-  "なにぶん",
-  "とかく",
-  "とやかく",
-  "いやに",
-  "ことのほか",
-  "よほど",
-  "いずれにしても",
-  "なんと",
-  "ぴりぴり",
-  "じかに",
-  "たいそう",
-  "断固",
-  "なんと言っても",
-  "なんとしても",
-  "ことによると",
-  "にわか",
-  "製作",
-  "制作",
-  "抑える",
-  "押さえる",
-  "精算",
-  "清算",
-  "終始",
-  "始終",
-  "冒す",
-  "侵す",
-  "犯す",
-  "保証",
-  "保障",
-  "補償",
-  "追究",
-  "追及",
-  "追求",
-  "分別",
-  "心中",
-  "大家",
-  "市場",
-  "目下",
-  "用品",
-  "洋品",
-  "絶つ",
-  "断つ",
-  "彫る",
-  "掘る",
-  "見下す",
-  "見下ろす",
-  "遠回り",
-  "遠回し",
-  "途切れる",
-  "途絶える",
-  "見過ごす",
-  "見逃す",
-  "交わる",
-  "越す",
-  "超す",
-  "指す",
-  "差す",
-  "刺す",
-  "無口",
-  "無言"
+  {
+    "word": "くすくす",
+    "example": "[彼女](かのじょ)は**くすくす**と[笑](わら)いました。",
+    "exampleVi": "Cô ấy cười khúc khích."
+  },
+  {
+    "word": "げらげら",
+    "example": "[皆](みんな)が**げらげら**[笑](わら)っています。",
+    "exampleVi": "Mọi người đang cười ha hả."
+  },
+  {
+    "word": "そこそこ",
+    "example": "[試験](しけん)は**そこそこ**できました。",
+    "exampleVi": "Bài thi tôi làm cũng tạm được."
+  },
+  {
+    "word": "ぺこぺこ",
+    "example": "お[腹](なか)が**ぺこぺこ**です。",
+    "exampleVi": "Tôi đói meo cả bụng."
+  },
+  {
+    "word": "ひしひし",
+    "example": "[責任](せきにん)の[重](おも)さを**ひしひし**と[感](かん)じました。",
+    "exampleVi": "Tôi cảm nhận rõ rệt sức nặng của trách nhiệm."
+  },
+  {
+    "word": "ばらばら",
+    "example": "[家族](かぞく)の[意見](いけん)が**ばらばら**です。",
+    "exampleVi": "Ý kiến của các thành viên trong nhà mỗi người một khác."
+  },
+  {
+    "word": "ぱらぱら",
+    "example": "[雨](あめ)が**ぱらぱら**[降](ふ)ってきました。",
+    "exampleVi": "Mưa bắt đầu rơi lất phất."
+  },
+  {
+    "word": "ぞろぞろ",
+    "example": "[観客](かんきゃく)が**ぞろぞろ**と[出](で)て[来](き)ました。",
+    "exampleVi": "Khán giả lũ lượt đi ra."
+  },
+  {
+    "word": "ぼちぼち",
+    "example": "**ぼちぼち**[帰](かえ)りましょうか。",
+    "exampleVi": "Chúng ta từ từ về thôi nhé."
+  },
+  {
+    "word": "ずるずる",
+    "example": "[問題](もんだい)を**ずるずる**[先延](さきの)ばしにしています。",
+    "exampleVi": "Tôi cứ lê thê trì hoãn vấn đề."
+  },
+  {
+    "word": "ちくちく",
+    "example": "セーターが**ちくちく**します。",
+    "exampleVi": "Cái áo len châm chích."
+  },
+  {
+    "word": "のこのこ",
+    "example": "[彼](かれ)は**のこのこ**[遅](おく)れて[来](き)ました。",
+    "exampleVi": "Anh ta thản nhiên đến muộn."
+  },
+  {
+    "word": "くらくら",
+    "example": "[暑](あつ)さで[頭](あたま)が**くらくら**します。",
+    "exampleVi": "Vì nóng nên đầu tôi choáng váng."
+  },
+  {
+    "word": "ちょくちょく",
+    "example": "[彼](かれ)は**ちょくちょく**[遊](あそ)びに[来](き)ます。",
+    "exampleVi": "Anh ấy thường xuyên đến chơi."
+  },
+  {
+    "word": "ふわふわ",
+    "example": "[雲](くも)が**ふわふわ**[浮](う)かんでいます。",
+    "exampleVi": "Mây đang bồng bềnh trôi."
+  },
+  {
+    "word": "ちらほら",
+    "example": "[桜](さくら)が**ちらほら**[咲](さ)き[始](はじ)めました。",
+    "exampleVi": "Hoa anh đào bắt đầu nở lác đác."
+  },
+  {
+    "word": "ふらりと",
+    "example": "[彼](かれ)は**ふらりと**[旅](たび)に[出](で)ました。",
+    "exampleVi": "Anh ấy ngẫu hứng lên đường du lịch."
+  },
+  {
+    "word": "じっとり",
+    "example": "[汗](あせ)でシャツが**じっとり**と[濡](ぬ)れています。",
+    "exampleVi": "Áo sơ mi ướt nhớp nháp vì mồ hôi."
+  },
+  {
+    "word": "ずばり",
+    "example": "[彼](かれ)は**ずばり**[問題](もんだい)を[指摘](してき)しました。",
+    "exampleVi": "Anh ấy chỉ thẳng ra vấn đề."
+  },
+  {
+    "word": "まさしく",
+    "example": "これは**まさしく**[彼](かれ)の[字](じ)です。",
+    "exampleVi": "Đây đích thị là chữ của anh ấy."
+  },
+  {
+    "word": "ありあり",
+    "example": "[昔](むかし)のことが**ありあり**と[目](め)に[浮](う)かびます。",
+    "exampleVi": "Chuyện ngày xưa hiện ra rõ mồn một trước mắt."
+  },
+  {
+    "word": "しばし",
+    "example": "**しばし**[休憩](きゅうけい)を[取](と)りましょう。",
+    "exampleVi": "Hãy nghỉ giải lao một lát."
+  },
+  {
+    "word": "まんまと",
+    "example": "[彼](かれ)に**まんまと**[騙](だま)されました。",
+    "exampleVi": "Tôi đã bị anh ta lừa trót lọt."
+  },
+  {
+    "word": "まるっきり",
+    "example": "[彼](かれ)の[話](はなし)は**まるっきり**[分](わ)かりません。",
+    "exampleVi": "Tôi hoàn toàn không hiểu chuyện anh ấy nói."
+  },
+  {
+    "word": "てんで",
+    "example": "そんな[話](はなし)は**てんで**[信](しん)じられません。",
+    "exampleVi": "Chuyện như vậy tôi hoàn toàn không tin nổi."
+  },
+  {
+    "word": "とうてい",
+    "example": "これは**とうてい**[私](わたし)にはできません。",
+    "exampleVi": "Việc này tôi hoàn toàn không thể làm được."
+  },
+  {
+    "word": "第一",
+    "example": "**[第一](だいいち)**、[時間](じかん)がありません。",
+    "exampleVi": "Trước hết, tôi không có thời gian."
+  },
+  {
+    "word": "まして",
+    "example": "[大人](おとな)にも[難](むずか)しい[問題](もんだい)だから、**まして**[子供](こども)には[無理](むり)です。",
+    "exampleVi": "Người lớn còn thấy khó, huống chi là trẻ con."
+  },
+  {
+    "word": "努めて",
+    "example": "**[努](つと)めて**[冷静](れいせい)に[話](はな)しました。",
+    "exampleVi": "Tôi đã cố hết sức nói chuyện bình tĩnh."
+  },
+  {
+    "word": "ふんだん",
+    "example": "この[料理](りょうり)には[野菜](やさい)が**ふんだん**に[使](つか)われています。",
+    "exampleVi": "Món này dùng rất dồi dào rau."
+  },
+  {
+    "word": "誠に",
+    "example": "**[誠](まこと)に**[申](もう)し[訳](わけ)ありません。",
+    "exampleVi": "Thành thật xin lỗi."
+  },
+  {
+    "word": "切に",
+    "example": "[皆](みな)さんの[成功](せいこう)を**[切](せつ)に**[願](ねが)っています。",
+    "exampleVi": "Tôi tha thiết mong mọi người thành công."
+  },
+  {
+    "word": "いささか",
+    "example": "[今日](きょう)は**いささか**[疲](つか)れました。",
+    "exampleVi": "Hôm nay tôi hơi mệt."
+  },
+  {
+    "word": "もろに",
+    "example": "[風](かぜ)を**もろに**[受](う)けました。",
+    "exampleVi": "Tôi đã hứng trọn gió."
+  },
+  {
+    "word": "もはや",
+    "example": "**もはや**[手遅](ておく)れです。",
+    "exampleVi": "Giờ thì đã muộn rồi."
+  },
+  {
+    "word": "さほど",
+    "example": "[今日](きょう)は**さほど**[寒](さむ)くありません。",
+    "exampleVi": "Hôm nay không lạnh lắm."
+  },
+  {
+    "word": "何ら",
+    "example": "[計画](けいかく)に**[何](なん)ら**[問題](もんだい)はありません。",
+    "exampleVi": "Kế hoạch không có vấn đề gì cả."
+  },
+  {
+    "word": "無論",
+    "example": "**[無論](むろん)**、[私](わたし)も[参加](さんか)します。",
+    "exampleVi": "Đương nhiên tôi cũng sẽ tham gia."
+  },
+  {
+    "word": "何やら",
+    "example": "[部屋](へや)の[中](なか)で**[何](なに)やら**[音](おと)がします。",
+    "exampleVi": "Có tiếng động gì đó trong phòng."
+  },
+  {
+    "word": "何卒",
+    "example": "**[何卒](なにとぞ)**、よろしくお[願](ねが)いいたします。",
+    "exampleVi": "Xin quý vị vui lòng giúp đỡ."
+  },
+  {
+    "word": "なにぶん",
+    "example": "**なにぶん**[初](はじ)めてのことなので、[分](わ)かりません。",
+    "exampleVi": "Dù sao đây cũng là lần đầu nên tôi không biết."
+  },
+  {
+    "word": "とかく",
+    "example": "[若](わか)い[時](とき)は**とかく**[無理](むり)をしがちです。",
+    "exampleVi": "Lúc trẻ người ta thường hay cố quá sức."
+  },
+  {
+    "word": "とやかく",
+    "example": "[人](ひと)のことを**とやかく**[言](い)わないでください。",
+    "exampleVi": "Xin đừng nói này nói nọ về người khác."
+  },
+  {
+    "word": "いやに",
+    "example": "[今日](きょう)は**いやに**[静](しず)かですね。",
+    "exampleVi": "Hôm nay sao yên tĩnh lạ thường nhỉ."
+  },
+  {
+    "word": "ことのほか",
+    "example": "[今年](ことし)の[夏](なつ)は**ことのほか**[暑](あつ)いです。",
+    "exampleVi": "Mùa hè năm nay nóng hơn bình thường."
+  },
+  {
+    "word": "よほど",
+    "example": "**よほど**[疲](つか)れていたのか、[彼](かれ)はすぐ[寝](ね)ました。",
+    "exampleVi": "Chắc là mệt lắm nên anh ấy ngủ ngay."
+  },
+  {
+    "word": "いずれにしても",
+    "example": "**いずれにしても**、[明日](あした)までに[決](き)めましょう。",
+    "exampleVi": "Dù sao đi nữa, hãy quyết định trước ngày mai."
+  },
+  {
+    "word": "なんと",
+    "example": "**なんと**[美](うつく)しい[景色](けしき)でしょう。",
+    "exampleVi": "Phong cảnh mới đẹp làm sao!"
+  },
+  {
+    "word": "ぴりぴり",
+    "example": "[試験](しけん)の[前](まえ)で、[皆](みんな)**ぴりぴり**しています。",
+    "exampleVi": "Trước kỳ thi, ai cũng căng thẳng."
+  },
+  {
+    "word": "じかに",
+    "example": "[先生](せんせい)に**じかに**[話](はな)しました。",
+    "exampleVi": "Tôi đã nói trực tiếp với thầy."
+  },
+  {
+    "word": "たいそう",
+    "example": "**たいそう**[立派](りっぱ)なお[宅](たく)ですね。",
+    "exampleVi": "Nhà của anh thật là bề thế quá đỗi."
+  },
+  {
+    "word": "断固",
+    "example": "[不正](ふせい)には**[断固](だんこ)**として[反対](はんたい)します。",
+    "exampleVi": "Tôi kiên quyết phản đối gian lận."
+  },
+  {
+    "word": "なんと言っても",
+    "example": "**なんと[言](い)っても**、[健康](けんこう)が[一番](いちばん)です。",
+    "exampleVi": "Dù nói gì đi nữa, sức khỏe là quan trọng nhất."
+  },
+  {
+    "word": "なんとしても",
+    "example": "**なんとしても**[合格](ごうかく)したいです。",
+    "exampleVi": "Bằng mọi giá tôi cũng muốn thi đỗ."
+  },
+  {
+    "word": "ことによると",
+    "example": "**ことによると**、[明日](あした)は[雨](あめ)かもしれません。",
+    "exampleVi": "Không chừng ngày mai trời sẽ mưa."
+  },
+  {
+    "word": "にわか",
+    "example": "**にわか**に[空](そら)が[暗](くら)くなりました。",
+    "exampleVi": "Đột nhiên bầu trời tối sầm."
+  },
+  {
+    "word": "製作",
+    "example": "[映画](えいが)の**[製作](せいさく)**に[参加](さんか)しました。",
+    "exampleVi": "Tôi đã tham gia sản xuất bộ phim."
+  },
+  {
+    "word": "制作",
+    "example": "[彼](かれ)は[美術](びじゅつ)[作品](さくひん)の**[制作](せいさく)**に[励](はげ)んでいます。",
+    "exampleVi": "Anh ấy đang miệt mài chế tác tác phẩm mỹ thuật."
+  },
+  {
+    "word": "抑える",
+    "example": "[怒](いか)りを**[抑](おさ)えました**。",
+    "exampleVi": "Tôi đã kìm nén cơn giận."
+  },
+  {
+    "word": "押さえる",
+    "example": "ドアを**[押](お)さえて**ください。",
+    "exampleVi": "Xin hãy giữ cánh cửa lại."
+  },
+  {
+    "word": "精算",
+    "example": "[電車](でんしゃ)の[料金](りょうきん)を**[精算](せいさん)**しました。",
+    "exampleVi": "Tôi đã thanh toán lại tiền vé tàu."
+  },
+  {
+    "word": "清算",
+    "example": "[借金](しゃっきん)を**[清算](せいさん)**しました。",
+    "exampleVi": "Tôi đã thanh toán dứt khoản nợ."
+  },
+  {
+    "word": "終始",
+    "example": "[会議](かいぎ)は**[終始](しゅうし)**、[和](なご)やかでした。",
+    "exampleVi": "Cuộc họp từ đầu đến cuối đều hòa nhã."
+  },
+  {
+    "word": "始終",
+    "example": "[彼](かれ)は**[始終](しじゅう)**[文句](もんく)を[言](い)っています。",
+    "exampleVi": "Anh ta suốt ngày phàn nàn."
+  },
+  {
+    "word": "冒す",
+    "example": "[危険](きけん)を**[冒](おか)して**、[山](やま)に[登](のぼ)りました。",
+    "exampleVi": "Tôi mạo hiểm leo núi bất chấp nguy hiểm."
+  },
+  {
+    "word": "侵す",
+    "example": "[他人](たにん)の[権利](けんり)を**[侵](おか)して**はいけません。",
+    "exampleVi": "Không được xâm phạm quyền của người khác."
+  },
+  {
+    "word": "犯す",
+    "example": "[彼](かれ)は[大](おお)きな[罪](つみ)を**[犯](おか)しました**。",
+    "exampleVi": "Anh ta đã phạm tội lớn."
+  },
+  {
+    "word": "保証",
+    "example": "この[商品](しょうひん)は[一年間](いちねんかん)、**[保証](ほしょう)**が[付](つ)いています。",
+    "exampleVi": "Sản phẩm này có bảo đảm một năm."
+  },
+  {
+    "word": "保障",
+    "example": "[社会](しゃかい)**[保障](ほしょう)**が[充実](じゅうじつ)しています。",
+    "exampleVi": "An sinh xã hội đang được cải thiện đầy đủ."
+  },
+  {
+    "word": "補償",
+    "example": "[事故](じこ)の**[補償](ほしょう)**を[受](う)けました。",
+    "exampleVi": "Tôi đã nhận bồi thường cho vụ tai nạn."
+  },
+  {
+    "word": "追究",
+    "example": "[彼](かれ)は[真理](しんり)を**[追究](ついきゅう)**する[学者](がくしゃ)です。",
+    "exampleVi": "Ông ấy là học giả nghiên cứu đến cùng chân lý."
+  },
+  {
+    "word": "追及",
+    "example": "[責任](せきにん)を**[追及](ついきゅう)**しました。",
+    "exampleVi": "Họ đã truy cứu trách nhiệm."
+  },
+  {
+    "word": "追求",
+    "example": "[幸](しあわ)せを**[追求](ついきゅう)**することは[悪](わる)いことではありません。",
+    "exampleVi": "Theo đuổi hạnh phúc không phải điều xấu."
+  },
+  {
+    "word": "分別",
+    "example": "[大人](おとな)なら**[分別](ふんべつ)**を[持](も)つべきです。",
+    "exampleVi": "Đã là người lớn thì nên có sự phân biệt đúng sai."
+  },
+  {
+    "word": "心中",
+    "example": "[彼](かれ)の**[心中](しんちゅう)**を[察](さっ)します。",
+    "exampleVi": "Tôi thấu hiểu nỗi lòng của anh ấy."
+  },
+  {
+    "word": "大家",
+    "example": "アパートの**[大家](おおや)**さんは[親切](しんせつ)な[人](ひと)です。",
+    "exampleVi": "Chủ nhà của căn hộ là người tốt bụng."
+  },
+  {
+    "word": "市場",
+    "example": "[魚](さかな)を[買](か)いに**[市場](いちば)**へ[行](い)きました。",
+    "exampleVi": "Tôi đã đi chợ để mua cá."
+  },
+  {
+    "word": "目下",
+    "example": "**[目下](もっか)**、[調査](ちょうさ)[中](ちゅう)です。",
+    "exampleVi": "Hiện tại đang trong quá trình điều tra."
+  },
+  {
+    "word": "用品",
+    "example": "スポーツ**[用品](ようひん)**を[買](か)いました。",
+    "exampleVi": "Tôi đã mua dụng cụ thể thao."
+  },
+  {
+    "word": "洋品",
+    "example": "デパートの**[洋品](ようひん)**[売](う)り[場](ば)で[買](か)い[物](もの)をしました。",
+    "exampleVi": "Tôi mua sắm ở quầy hàng tây của cửa hàng bách hóa."
+  },
+  {
+    "word": "絶つ",
+    "example": "[連絡](れんらく)を**[絶](た)って**しまいました。",
+    "exampleVi": "Tôi đã cắt đứt liên lạc."
+  },
+  {
+    "word": "断つ",
+    "example": "お[酒](さけ)を**[断](た)つ**ことにしました。",
+    "exampleVi": "Tôi đã quyết định cai rượu."
+  },
+  {
+    "word": "彫る",
+    "example": "[木](き)に[名前](なまえ)を**[彫](ほ)りました**。",
+    "exampleVi": "Tôi đã khắc tên lên gỗ."
+  },
+  {
+    "word": "掘る",
+    "example": "[庭](にわ)に[穴](あな)を**[掘](ほ)りました**。",
+    "exampleVi": "Tôi đã đào một cái hố trong vườn."
+  },
+  {
+    "word": "見下す",
+    "example": "[人](ひと)を**[見下](みくだ)す**[態度](たいど)は[良](よ)くありません。",
+    "exampleVi": "Thái độ coi thường người khác là không tốt."
+  },
+  {
+    "word": "見下ろす",
+    "example": "[山](やま)の[上](うえ)から[町](まち)を**[見下](みお)ろしました**。",
+    "exampleVi": "Từ trên núi tôi nhìn xuống thị trấn."
+  },
+  {
+    "word": "遠回り",
+    "example": "[工事](こうじ)で**[遠回](とおまわ)り**をしました。",
+    "exampleVi": "Vì thi công nên tôi đã đi đường vòng xa."
+  },
+  {
+    "word": "遠回し",
+    "example": "**[遠回](とおまわ)し**に[断](ことわ)られました。",
+    "exampleVi": "Tôi bị từ chối một cách vòng vo."
+  },
+  {
+    "word": "途切れる",
+    "example": "[電話](でんわ)の[声](こえ)が**[途切](とぎ)れました**。",
+    "exampleVi": "Giọng nói trong điện thoại bị đứt quãng."
+  },
+  {
+    "word": "途絶える",
+    "example": "[雪](ゆき)で[連絡](れんらく)が**[途絶](とだ)えました**。",
+    "exampleVi": "Vì tuyết mà liên lạc bị gián đoạn."
+  },
+  {
+    "word": "見過ごす",
+    "example": "[彼](かれ)の[失敗](しっぱい)を**[見過](みす)ごす**ことはできません。",
+    "exampleVi": "Tôi không thể làm ngơ trước thất bại của anh ấy."
+  },
+  {
+    "word": "見逃す",
+    "example": "[見](み)たいドラマを**[見逃](みのが)しました**。",
+    "exampleVi": "Tôi đã bỏ lỡ bộ phim muốn xem."
+  },
+  {
+    "word": "交わる",
+    "example": "[二](ふた)つの[道](みち)が**[交](まじ)わる**[所](ところ)に[店](みせ)があります。",
+    "exampleVi": "Có cửa hàng ở chỗ hai con đường giao nhau."
+  },
+  {
+    "word": "越す",
+    "example": "[来月](らいげつ)、[大阪](おおさか)に[引](ひ)っ**[越](こ)します**。",
+    "exampleVi": "Tháng sau tôi chuyển nhà đến Osaka."
+  },
+  {
+    "word": "超す",
+    "example": "[気温](きおん)が[三十度](さんじゅうど)を**[超](こ)して**います。",
+    "exampleVi": "Nhiệt độ đang vượt quá ba mươi độ."
+  },
+  {
+    "word": "指す",
+    "example": "[先生](せんせい)が[地図](ちず)を**[指](さ)して**[説明](せつめい)しました。",
+    "exampleVi": "Thầy giáo chỉ vào bản đồ để giải thích."
+  },
+  {
+    "word": "差す",
+    "example": "[雨](あめ)が[降](ふ)っていたので、[傘](かさ)を**[差](さ)しました**。",
+    "exampleVi": "Vì trời đang mưa nên tôi giương ô."
+  },
+  {
+    "word": "刺す",
+    "example": "[蚊](か)に**[刺](さ)されました**。",
+    "exampleVi": "Tôi bị muỗi đốt."
+  },
+  {
+    "word": "無口",
+    "example": "[彼](かれ)は**[無口](むくち)**な[人](ひと)です。",
+    "exampleVi": "Anh ấy là người ít nói."
+  },
+  {
+    "word": "無言",
+    "example": "[彼](かれ)は**[無言](むごん)**で[立](た)ち[去](さ)りました。",
+    "exampleVi": "Anh ấy lặng lẽ, không nói gì mà rời đi."
+  }
 ]

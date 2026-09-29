@@ -1,93 +1,458 @@
 [
-  "主催",
-  "企画",
-  "趣旨",
-  "要領",
-  "融通",
-  "便宜",
-  "駆使",
-  "実践",
-  "着手",
-  "措置",
-  "是正",
-  "是非",
-  "模索",
-  "折衷",
-  "許容",
-  "緩和",
-  "解除",
-  "自粛",
-  "治安",
-  "監視",
-  "禁物",
-  "疑惑",
-  "見解",
-  "認識",
-  "概念",
-  "架空",
-  "神秘",
-  "驚異",
-  "有数",
-  "兆し",
-  "幕開け",
-  "経緯",
-  "成り行き",
-  "行き違い",
-  "道のり",
-  "行く手",
-  "果て",
-  "決",
-  "目安",
-  "めど",
-  "宣告",
-  "声明",
-  "樹立",
-  "統率",
-  "勢力",
-  "台頭",
-  "形勢",
-  "突破",
-  "展開",
-  "開拓",
-  "拡散",
-  "膨張",
-  "無数",
-  "固執",
-  "阻害",
-  "擁護",
-  "保障",
-  "補償",
-  "補足",
-  "補給",
-  "摂取",
-  "欠乏",
-  "添加",
-  "成分",
-  "内訳",
-  "除外",
-  "還元",
-  "共存",
-  "奨励",
-  "報酬",
-  "待望",
-  "節度",
-  "義理",
-  "情緒",
-  "動揺",
-  "むら",
-  "風潮",
-  "実態",
-  "暴露",
-  "逃亡",
-  "逃避",
-  "第三者",
-  "言い分",
-  "言いなり",
-  "模倣",
-  "着目",
-  "趣",
-  "渦",
-  "溝",
-  "折",
-  "折り"
+  {
+    "word": "主催",
+    "example": "[市](し)が[祭](まつ)りを**[主催](しゅさい)**します。",
+    "exampleVi": "Thành phố chủ trì tổ chức lễ hội."
+  },
+  {
+    "word": "企画",
+    "example": "[新](あたら)しい**[企画](きかく)**を[立](た)てました。",
+    "exampleVi": "Tôi đã lập một kế hoạch mới."
+  },
+  {
+    "word": "趣旨",
+    "example": "[会](かい)の**[趣旨](しゅし)**を[説明](せつめい)します。",
+    "exampleVi": "Tôi sẽ giải thích mục đích của buổi họp."
+  },
+  {
+    "word": "要領",
+    "example": "[彼](かれ)の[説明](せつめい)は**[要領](ようりょう)**を[得](え)ません。",
+    "exampleVi": "Lời giải thích của anh ta không nắm được điểm mấu chốt."
+  },
+  {
+    "word": "融通",
+    "example": "[友人](ゆうじん)にお[金](かね)を**[融通](ゆうずう)**してもらいました。",
+    "exampleVi": "Tôi được bạn cho vay tiền."
+  },
+  {
+    "word": "便宜",
+    "example": "[外国人](がいこくじん)のために**[便宜](べんぎ)**を[図](はか)りました。",
+    "exampleVi": "Tôi đã sắp xếp thuận tiện cho người nước ngoài."
+  },
+  {
+    "word": "駆使",
+    "example": "[彼](かれ)は[英語](えいご)を**[駆使](くし)**して[交渉](こうしょう)しました。",
+    "exampleVi": "Anh ấy vận dụng thành thạo tiếng Anh để đàm phán."
+  },
+  {
+    "word": "実践",
+    "example": "[学](まな)んだことを**[実践](じっせん)**します。",
+    "exampleVi": "Tôi sẽ thực hành điều đã học."
+  },
+  {
+    "word": "着手",
+    "example": "[新](あたら)しい[研究](けんきゅう)に**[着手](ちゃくしゅ)**しました。",
+    "exampleVi": "Tôi đã bắt tay vào nghiên cứu mới."
+  },
+  {
+    "word": "措置",
+    "example": "[政府](せいふ)は[必要](ひつよう)な**[措置](そち)**を[取](と)りました。",
+    "exampleVi": "Chính phủ đã thực hiện biện pháp cần thiết."
+  },
+  {
+    "word": "是正",
+    "example": "[間違](まちが)いを**[是正](ぜせい)**します。",
+    "exampleVi": "Tôi sẽ chỉnh đốn sai sót."
+  },
+  {
+    "word": "是非",
+    "example": "[計画](けいかく)の**[是非](ぜひ)**を[問](と)いました。",
+    "exampleVi": "Đã đặt vấn đề nên hay không của kế hoạch."
+  },
+  {
+    "word": "模索",
+    "example": "[解決](かいけつ)の[方法](ほうほう)を**[模索](もさく)**しています。",
+    "exampleVi": "Tôi đang tìm tòi cách giải quyết."
+  },
+  {
+    "word": "折衷",
+    "example": "[和](わ)と[洋](よう)を**[折衷](せっちゅう)**したデザインです。",
+    "exampleVi": "Đây là thiết kế pha trộn giữa Nhật và Tây."
+  },
+  {
+    "word": "許容",
+    "example": "[誤差](ごさ)は[五](ご)パーセントまで**[許容](きょよう)**されます。",
+    "exampleVi": "Sai số được chấp nhận đến 5%."
+  },
+  {
+    "word": "緩和",
+    "example": "[薬](くすり)で[痛](いた)みを**[緩和](かんわ)**しました。",
+    "exampleVi": "Tôi đã làm dịu cơn đau bằng thuốc."
+  },
+  {
+    "word": "解除",
+    "example": "[警報](けいほう)が**[解除](かいじょ)**されました。",
+    "exampleVi": "Cảnh báo đã được gỡ bỏ."
+  },
+  {
+    "word": "自粛",
+    "example": "[外出](がいしゅつ)を**[自粛](じしゅく)**しています。",
+    "exampleVi": "Tôi đang tự hạn chế ra ngoài."
+  },
+  {
+    "word": "治安",
+    "example": "この[国](くに)は**[治安](ちあん)**が[良](よ)いです。",
+    "exampleVi": "Đất nước này có an ninh tốt."
+  },
+  {
+    "word": "監視",
+    "example": "[防犯](ぼうはん)カメラで[店](みせ)を**[監視](かんし)**しています。",
+    "exampleVi": "Cửa hàng được giám sát bằng camera an ninh."
+  },
+  {
+    "word": "禁物",
+    "example": "[無理](むり)は**[禁物](きんもつ)**です。",
+    "exampleVi": "Cố quá sức là điều tối kỵ."
+  },
+  {
+    "word": "疑惑",
+    "example": "[彼](かれ)に**[疑惑](ぎわく)**が[持](も)たれています。",
+    "exampleVi": "Có sự nghi ngờ đối với anh ta."
+  },
+  {
+    "word": "見解",
+    "example": "[二人](ふたり)の**[見解](けんかい)**は[異](こと)なります。",
+    "exampleVi": "Quan điểm của hai người khác nhau."
+  },
+  {
+    "word": "認識",
+    "example": "[問題](もんだい)の[重大](じゅうだい)さを**[認識](にんしき)**しています。",
+    "exampleVi": "Tôi nhận thức được sự nghiêm trọng của vấn đề."
+  },
+  {
+    "word": "概念",
+    "example": "**[概念](がいねん)**を[理解](りかい)することが[大切](たいせつ)です。",
+    "exampleVi": "Việc hiểu khái niệm là quan trọng."
+  },
+  {
+    "word": "架空",
+    "example": "**[架空](かくう)**の[人物](じんぶつ)の[物語](ものがたり)です。",
+    "exampleVi": "Đây là câu chuyện về nhân vật hư cấu."
+  },
+  {
+    "word": "神秘",
+    "example": "[宇宙](うちゅう)の**[神秘](しんぴ)**に[驚](おどろ)きます。",
+    "exampleVi": "Tôi kinh ngạc trước sự huyền bí của vũ trụ."
+  },
+  {
+    "word": "驚異",
+    "example": "[科学](かがく)の**[驚異](きょうい)**を[感](かん)じました。",
+    "exampleVi": "Tôi cảm nhận được điều kỳ diệu của khoa học."
+  },
+  {
+    "word": "有数",
+    "example": "[日本](にほん)は[世界](せかい)**[有数](ゆうすう)**の[長寿](ちょうじゅ)の[国](くに)です。",
+    "exampleVi": "Nhật Bản là một trong những nước trường thọ hàng đầu thế giới."
+  },
+  {
+    "word": "兆し",
+    "example": "[景気](けいき)が[回復](かいふく)する**[兆](きざ)し**があります。",
+    "exampleVi": "Có dấu hiệu kinh tế hồi phục."
+  },
+  {
+    "word": "幕開け",
+    "example": "[新](あたら)しい[時代](じだい)の**[幕開](まくあ)け**です。",
+    "exampleVi": "Đây là màn mở đầu của thời đại mới."
+  },
+  {
+    "word": "経緯",
+    "example": "[計画](けいかく)が[変](か)わった**[経緯](けいい)**を[話](はな)しました。",
+    "exampleVi": "Tôi đã kể lại đầu đuôi việc kế hoạch thay đổi."
+  },
+  {
+    "word": "成り行き",
+    "example": "[事](こと)の**[成](な)り[行](ゆ)き**を[見守](みまも)りましょう。",
+    "exampleVi": "Hãy dõi theo diễn biến của sự việc."
+  },
+  {
+    "word": "行き違い",
+    "example": "[連絡](れんらく)の**[行](い)き[違](ちが)い**がありました。",
+    "exampleVi": "Đã có sự lỡ nhau (hiểu lầm) trong liên lạc."
+  },
+  {
+    "word": "道のり",
+    "example": "[駅](えき)までの**[道](みち)のり**は[長](なが)いです。",
+    "exampleVi": "Quãng đường đến ga rất dài."
+  },
+  {
+    "word": "行く手",
+    "example": "[雪](ゆき)が**[行](ゆ)く[手](て)**を[阻](はば)みました。",
+    "exampleVi": "Tuyết đã chặn mất đường đi."
+  },
+  {
+    "word": "果て",
+    "example": "[世界](せかい)の**[果](は)て**まで[行](い)きたいです。",
+    "exampleVi": "Tôi muốn đi đến tận cùng thế giới."
+  },
+  {
+    "word": "決",
+    "meaning": "sự biểu quyết, quyết định (VD: 決を採る = biểu quyết)",
+    "example": "[議長](ぎちょう)が**[決](けつ)**を[採](と)りました。",
+    "exampleVi": "Chủ tọa đã cho biểu quyết."
+  },
+  {
+    "word": "目安",
+    "example": "[予算](よさん)の**[目安](めやす)**は[十万円](じゅうまんえん)です。",
+    "exampleVi": "Mức dự toán tham khảo là một trăm nghìn yên."
+  },
+  {
+    "word": "めど",
+    "example": "[完成](かんせい)の**めど**が[立](た)ちました。",
+    "exampleVi": "Đã có triển vọng hoàn thành."
+  },
+  {
+    "word": "宣告",
+    "example": "[医者](いしゃ)に[余命](よめい)を**[宣告](せんこく)**されました。",
+    "exampleVi": "Tôi bị bác sĩ tuyên bố thời gian sống còn lại."
+  },
+  {
+    "word": "声明",
+    "example": "[会社](かいしゃ)は[謝罪](しゃざい)の**[声明](せいめい)**を[出](だ)しました。",
+    "exampleVi": "Công ty đã đưa ra tuyên bố xin lỗi."
+  },
+  {
+    "word": "樹立",
+    "example": "[新](あたら)しい[記録](きろく)を**[樹立](じゅりつ)**しました。",
+    "exampleVi": "Đã lập kỷ lục mới."
+  },
+  {
+    "word": "統率",
+    "example": "[彼](かれ)はチームを**[統率](とうそつ)**しています。",
+    "exampleVi": "Anh ấy đang lãnh đạo đội."
+  },
+  {
+    "word": "勢力",
+    "example": "[台風](たいふう)の**[勢力](せいりょく)**が[強](つよ)くなりました。",
+    "exampleVi": "Sức mạnh của bão đã mạnh lên."
+  },
+  {
+    "word": "台頭",
+    "example": "[新](あたら)しい[勢力](せいりょく)が**[台頭](たいとう)**してきました。",
+    "exampleVi": "Thế lực mới đã trỗi dậy."
+  },
+  {
+    "word": "形勢",
+    "example": "[試合](しあい)の**[形勢](けいせい)**が[逆転](ぎゃくてん)しました。",
+    "exampleVi": "Tình thế trận đấu đã đảo ngược."
+  },
+  {
+    "word": "突破",
+    "example": "[予選](よせん)を**[突破](とっぱ)**しました。",
+    "exampleVi": "Đã vượt qua vòng loại."
+  },
+  {
+    "word": "展開",
+    "example": "[物語](ものがたり)が[急](きゅう)に**[展開](てんかい)**しました。",
+    "exampleVi": "Câu chuyện bỗng triển khai nhanh chóng."
+  },
+  {
+    "word": "開拓",
+    "example": "[新](あたら)しい[市場](しじょう)を**[開拓](かいたく)**します。",
+    "exampleVi": "Chúng tôi khai phá thị trường mới."
+  },
+  {
+    "word": "拡散",
+    "example": "[情報](じょうほう)がネットで**[拡散](かくさん)**しました。",
+    "exampleVi": "Thông tin đã lan truyền trên mạng."
+  },
+  {
+    "word": "膨張",
+    "example": "[宇宙](うちゅう)は**[膨張](ぼうちょう)**しています。",
+    "exampleVi": "Vũ trụ đang giãn nở."
+  },
+  {
+    "word": "無数",
+    "example": "[空](そら)に**[無数](むすう)**の[星](ほし)があります。",
+    "exampleVi": "Trên bầu trời có vô số ngôi sao."
+  },
+  {
+    "word": "固執",
+    "example": "[彼](かれ)は[自分](じぶん)の[意見](いけん)に**[固執](こしつ)**しています。",
+    "exampleVi": "Anh ta cố chấp giữ ý kiến của mình."
+  },
+  {
+    "word": "阻害",
+    "example": "[開発](かいはつ)の**[阻害](そがい)**になります。",
+    "exampleVi": "Điều đó sẽ cản trở sự phát triển."
+  },
+  {
+    "word": "擁護",
+    "example": "[彼](かれ)は[友人](ゆうじん)を**[擁護](ようご)**しました。",
+    "exampleVi": "Anh ấy đã bảo vệ người bạn."
+  },
+  {
+    "word": "保障",
+    "example": "[生活](せいかつ)の**[保障](ほしょう)**を[求](もと)めます。",
+    "exampleVi": "Tôi đòi hỏi sự bảo đảm cho cuộc sống."
+  },
+  {
+    "word": "補償",
+    "example": "[事故](じこ)の**[補償](ほしょう)**を[求](もと)めました。",
+    "exampleVi": "Tôi đã yêu cầu bồi thường cho vụ tai nạn."
+  },
+  {
+    "word": "補足",
+    "example": "[説明](せつめい)を**[補足](ほそく)**します。",
+    "exampleVi": "Tôi xin bổ sung phần giải thích."
+  },
+  {
+    "word": "補給",
+    "example": "[水分](すいぶん)を**[補給](ほきゅう)**してください。",
+    "exampleVi": "Xin hãy bổ sung nước."
+  },
+  {
+    "word": "摂取",
+    "example": "[野菜](やさい)からビタミンを**[摂取](せっしゅ)**します。",
+    "exampleVi": "Tôi hấp thu vitamin từ rau."
+  },
+  {
+    "word": "欠乏",
+    "example": "ビタミンが**[欠乏](けつぼう)**しています。",
+    "exampleVi": "Đang thiếu hụt vitamin."
+  },
+  {
+    "word": "添加",
+    "example": "この[食品](しょくひん)には**[添加](てんか)**[物](ぶつ)が[入](はい)っています。",
+    "exampleVi": "Thực phẩm này có chứa phụ gia."
+  },
+  {
+    "word": "成分",
+    "example": "この[薬](くすり)の**[成分](せいぶん)**を[調](しら)べました。",
+    "exampleVi": "Tôi đã tìm hiểu thành phần của loại thuốc này."
+  },
+  {
+    "word": "内訳",
+    "example": "[支出](ししゅつ)の**[内訳](うちわけ)**を[教](おし)えてください。",
+    "exampleVi": "Xin cho biết chi tiết các khoản chi."
+  },
+  {
+    "word": "除外",
+    "example": "[対象](たいしょう)から**[除外](じょがい)**されました。",
+    "exampleVi": "Đã bị loại khỏi đối tượng."
+  },
+  {
+    "word": "還元",
+    "example": "[利益](りえき)をお[客様](きゃくさま)に**[還元](かんげん)**します。",
+    "exampleVi": "Chúng tôi hoàn lại lợi nhuận cho khách hàng."
+  },
+  {
+    "word": "共存",
+    "example": "[人間](にんげん)と[自然](しぜん)が**[共存](きょうぞん)**します。",
+    "exampleVi": "Con người và thiên nhiên cùng chung sống."
+  },
+  {
+    "word": "奨励",
+    "example": "[政府](せいふ)は[貯金](ちょきん)を**[奨励](しょうれい)**しています。",
+    "exampleVi": "Chính phủ đang khuyến khích tiết kiệm."
+  },
+  {
+    "word": "報酬",
+    "example": "[仕事](しごと)の**[報酬](ほうしゅう)**を[受](う)け[取](と)りました。",
+    "exampleVi": "Tôi đã nhận thù lao công việc."
+  },
+  {
+    "word": "待望",
+    "example": "**[待望](たいぼう)**の[新](あたら)しい[駅](えき)が[開業](かいぎょう)しました。",
+    "exampleVi": "Nhà ga mới được mong đợi từ lâu đã khai trương."
+  },
+  {
+    "word": "節度",
+    "example": "お[酒](さけ)は**[節度](せつど)**を[持](も)って[飲](の)みましょう。",
+    "exampleVi": "Hãy uống rượu có chừng mực."
+  },
+  {
+    "word": "義理",
+    "example": "[彼](かれ)には**[義理](ぎり)**があります。",
+    "exampleVi": "Tôi mang ơn nghĩa với anh ấy."
+  },
+  {
+    "word": "情緒",
+    "example": "[京都](きょうと)の[町](まち)は**[情緒](じょうちょ)**があります。",
+    "exampleVi": "Phố xá Kyoto có bầu không khí đầy cảm xúc."
+  },
+  {
+    "word": "動揺",
+    "example": "[彼](かれ)はニュースを[聞](き)いて**[動揺](どうよう)**しました。",
+    "exampleVi": "Nghe tin, anh ấy bối rối bất an."
+  },
+  {
+    "word": "むら",
+    "example": "[色](いろ)に**むら**があります。",
+    "exampleVi": "Màu sắc bị loang lổ không đều."
+  },
+  {
+    "word": "風潮",
+    "example": "[最近](さいきん)の**[風潮](ふうちょう)**に[疑問](ぎもん)を[感](かん)じます。",
+    "exampleVi": "Tôi thấy nghi vấn về xu hướng gần đây."
+  },
+  {
+    "word": "実態",
+    "example": "[調査](ちょうさ)で**[実態](じったい)**が[明](あき)らかになりました。",
+    "exampleVi": "Qua điều tra, thực trạng đã được làm rõ."
+  },
+  {
+    "word": "暴露",
+    "example": "[不正](ふせい)が**[暴露](ばくろ)**されました。",
+    "exampleVi": "Hành vi gian lận đã bị phơi bày."
+  },
+  {
+    "word": "逃亡",
+    "example": "[犯人](はんにん)は[海外](かいがい)に**[逃亡](とうぼう)**しました。",
+    "exampleVi": "Thủ phạm đã đào tẩu ra nước ngoài."
+  },
+  {
+    "word": "逃避",
+    "example": "[現実](げんじつ)から**[逃避](とうひ)**してはいけません。",
+    "exampleVi": "Không được trốn tránh thực tại."
+  },
+  {
+    "word": "第三者",
+    "example": "**[第三者](だいさんしゃ)**の[意見](いけん)も[聞](き)きましょう。",
+    "exampleVi": "Hãy nghe cả ý kiến của bên thứ ba."
+  },
+  {
+    "word": "言い分",
+    "example": "[彼](かれ)の**[言](い)い[分](ぶん)**も[聞](き)きましょう。",
+    "exampleVi": "Hãy nghe cả lý lẽ của anh ấy."
+  },
+  {
+    "word": "言いなり",
+    "example": "[彼](かれ)は[上司](じょうし)の**[言](い)いなり**です。",
+    "exampleVi": "Anh ta nghe theo sếp răm rắp."
+  },
+  {
+    "word": "模倣",
+    "example": "[人](ひと)の[作品](さくひん)を**[模倣](もほう)**してはいけません。",
+    "exampleVi": "Không được bắt chước tác phẩm của người khác."
+  },
+  {
+    "word": "着目",
+    "example": "[小](ちい)さな[変化](へんか)に**[着目](ちゃくもく)**しました。",
+    "exampleVi": "Tôi đã chú ý đến sự thay đổi nhỏ."
+  },
+  {
+    "word": "趣",
+    "example": "この[庭](にわ)には**[趣](おもむき)**があります。",
+    "exampleVi": "Khu vườn này có nét quyến rũ riêng."
+  },
+  {
+    "word": "渦",
+    "example": "[水](みず)が**[渦](うず)**を[巻](ま)いています。",
+    "exampleVi": "Nước đang cuộn thành xoáy."
+  },
+  {
+    "word": "溝",
+    "example": "[二人](ふたり)の[間](あいだ)に**[溝](みぞ)**ができました。",
+    "exampleVi": "Giữa hai người đã xuất hiện khoảng cách."
+  },
+  {
+    "word": "折",
+    "example": "[先日](せんじつ)、お[会](あ)いした**[折](おり)**に、お[話](はな)しました。",
+    "exampleVi": "Nhân dịp gặp hôm trước, tôi đã nói chuyện."
+  },
+  {
+    "word": "折り",
+    "example": "お[暇](ひま)な**[折](お)り**に、[遊](あそ)びに[来](き)てください。",
+    "exampleVi": "Nhân lúc rảnh rỗi, xin hãy ghé chơi."
+  }
 ]

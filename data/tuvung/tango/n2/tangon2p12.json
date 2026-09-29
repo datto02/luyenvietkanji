@@ -1,102 +1,508 @@
 [
-  "気が早い",
-  "気が重い",
-  "気が合う",
-  "気が利く",
-  "気がつく",
-  "気が強い",
-  "気が小さい",
-  "気を遣う",
-  "気が進まない",
-  "気にかかる",
-  "気にくわない",
-  "心が通う",
-  "心が狭い",
-  "心が動く",
-  "心を配る",
-  "心を引かれる",
-  "心を許す",
-  "胸が痛む",
-  "胸が一杯になる",
-  "胸をはずませる",
-  "頭が痛い",
-  "頭が固い",
-  "頭にくる",
-  "頭が下がる",
-  "顔が広い",
-  "顔を出す",
-  "目がない",
-  "目が離せない",
-  "目が回る",
-  "目に浮かぶ",
-  "目にする",
-  "目に付く",
-  "目を疑う",
-  "目を向ける",
-  "目を通す",
-  "耳が痛い",
-  "耳が遠い",
-  "耳にする",
-  "耳を傾ける",
-  "耳を疑う",
-  "口がうまい",
-  "口が堅い",
-  "口が軽い",
-  "口が重い",
-  "口が滑る",
-  "口が悪い",
-  "口にする",
-  "口に合う",
-  "口を出す",
-  "手がふさがる",
-  "手が空く",
-  "手がかかる",
-  "手が離せない",
-  "手に入れる",
-  "手にする",
-  "手につかない",
-  "手をつける",
-  "手を貸す",
-  "手を休める",
-  "手を抜く",
-  "腕がいい",
-  "腕を磨く",
-  "腕が上がる",
-  "肩を落とす",
-  "腹が立つ",
-  "腹を抱える",
-  "足が出る",
-  "足を伸ばす",
-  "足を運ぶ",
-  "足を引っ張る",
-  "何かと",
-  "何だかんだ",
-  "なぜか",
-  "何だか",
-  "何しろ",
-  "何とも",
-  "どうか",
-  "どうにか",
-  "どうしても",
-  "どうせ",
-  "どうやら",
-  "とにかく",
-  "とても",
-  "より",
-  "いかに",
-  "いかにも",
-  "それで",
-  "そこで",
-  "すると",
-  "なぜなら",
-  "というのも",
-  "つまり",
-  "いわゆる",
-  "その上",
-  "そればかりか",
-  "しかも",
-  "また",
-  "しかし",
-  "ところが",
-  "それでも"
+  {
+    "word": "気が早い",
+    "example": "[彼](かれ)は**[気](き)が[早](はや)くて**、まだ[春](はる)なのに[夏](なつ)の[服](ふく)を[買](か)いました。",
+    "exampleVi": "Anh ấy nóng vội, mới là mùa xuân mà đã mua quần áo mùa hè."
+  },
+  {
+    "word": "気が重い",
+    "example": "[明日](あした)の[会議](かいぎ)を[思](おも)うと**[気](き)が[重](おも)い**です。",
+    "exampleVi": "Nghĩ đến cuộc họp ngày mai là tôi thấy nặng nề."
+  },
+  {
+    "word": "気が合う",
+    "example": "[彼女](かのじょ)とは**[気](き)が[合](あ)って**、[何](なん)でも[話](はな)せます。",
+    "exampleVi": "Tôi hợp tính với cô ấy nên có thể nói chuyện mọi thứ."
+  },
+  {
+    "word": "気が利く",
+    "example": "[彼女](かのじょ)は**[気](き)が[利](き)く**[人](ひと)です。",
+    "exampleVi": "Cô ấy là người tinh tế, chu đáo."
+  },
+  {
+    "word": "気がつく",
+    "example": "[家](いえ)を[出](で)てから、[財布](さいふ)を[忘](わす)れたことに**[気](き)がつきました**。",
+    "exampleVi": "Sau khi ra khỏi nhà, tôi mới nhận ra mình đã quên ví."
+  },
+  {
+    "word": "気が強い",
+    "example": "[彼女](かのじょ)は**[気](き)が[強](つよ)くて**、[誰](だれ)にも[負](ま)けません。",
+    "exampleVi": "Cô ấy tính mạnh mẽ, không chịu thua ai."
+  },
+  {
+    "word": "気が小さい",
+    "example": "[彼](かれ)は**[気](き)が[小](ちい)さくて**、[人前](ひとまえ)で[話](はな)せません。",
+    "exampleVi": "Anh ấy nhút nhát nên không nói được trước đám đông."
+  },
+  {
+    "word": "気を遣う",
+    "example": "お[客様](きゃくさま)に**[気](き)を[遣](つか)って**、[疲](つか)れました。",
+    "exampleVi": "Vì phải giữ ý với khách nên tôi mệt."
+  },
+  {
+    "word": "気が進まない",
+    "example": "パーティーには**[気](き)が[進](すす)みません**。",
+    "exampleVi": "Tôi không hứng thú với bữa tiệc."
+  },
+  {
+    "word": "気にかかる",
+    "example": "[彼](かれ)の[様子](ようす)が**[気](き)にかかります**。",
+    "exampleVi": "Tôi bận tâm về tình trạng của anh ấy."
+  },
+  {
+    "word": "気にくわない",
+    "example": "[彼](かれ)の[態度](たいど)が**[気](き)にくわない**んです。",
+    "exampleVi": "Tôi không ưa thái độ của anh ta."
+  },
+  {
+    "word": "心が通う",
+    "example": "[長](なが)い[付](つ)き[合](あ)いで、[二人](ふたり)の**[心](こころ)が[通](かよ)う**ようになりました。",
+    "exampleVi": "Qua thời gian dài quen biết, hai người đã hiểu thấu tâm ý nhau."
+  },
+  {
+    "word": "心が狭い",
+    "example": "[人](ひと)の[失敗](しっぱい)を[許](ゆる)せないのは**[心](こころ)が[狭](せま)い**です。",
+    "exampleVi": "Không thể tha thứ cho lỗi lầm của người khác là hẹp hòi."
+  },
+  {
+    "word": "心が動く",
+    "example": "[彼](かれ)の[言葉](ことば)に、**[心](こころ)が[動](うご)きました**。",
+    "exampleVi": "Lòng tôi rung động trước lời anh ấy."
+  },
+  {
+    "word": "心を配る",
+    "example": "[子供](こども)の[安全](あんぜん)に**[心](こころ)を[配](くば)って**います。",
+    "exampleVi": "Tôi quan tâm chu đáo đến sự an toàn của con."
+  },
+  {
+    "word": "心を引かれる",
+    "example": "[珍](めずら)しい[花](はな)に**[心](こころ)を[引](ひ)かれました**。",
+    "exampleVi": "Tôi bị thu hút bởi loài hoa hiếm."
+  },
+  {
+    "word": "心を許す",
+    "example": "[彼](かれ)には**[心](こころ)を[許](ゆる)して**います。",
+    "exampleVi": "Tôi mở lòng tin tưởng anh ấy."
+  },
+  {
+    "word": "胸が痛む",
+    "example": "[被害者](ひがいしゃ)の[話](はなし)を[聞](き)いて、**[胸](むね)が[痛](いた)みました**。",
+    "exampleVi": "Nghe chuyện của nạn nhân, tôi đau lòng."
+  },
+  {
+    "word": "胸が一杯になる",
+    "example": "[卒業式](そつぎょうしき)で、[感謝](かんしゃ)の[気持](きも)ちで**[胸](むね)が[一杯](いっぱい)になりました**。",
+    "exampleVi": "Trong lễ tốt nghiệp, lòng tôi nghẹn ngào vì lòng biết ơn."
+  },
+  {
+    "word": "胸をはずませる",
+    "example": "[子供](こども)たちは[遠足](えんそく)を[楽](たの)しみに**[胸](むね)をはずませて**います。",
+    "exampleVi": "Bọn trẻ háo hức, tim đập rộn ràng chờ chuyến dã ngoại."
+  },
+  {
+    "word": "頭が痛い",
+    "example": "[子供](こども)の[教育](きょういく)のことで**[頭](あたま)が[痛](いた)い**です。",
+    "exampleVi": "Tôi đau đầu vì chuyện giáo dục con cái."
+  },
+  {
+    "word": "頭が固い",
+    "example": "[祖父](そふ)は**[頭](あたま)が[固](かた)くて**、[新](あたら)しいことを[受](う)け[入](い)れません。",
+    "exampleVi": "Ông tôi cứng nhắc nên không chấp nhận điều mới."
+  },
+  {
+    "word": "頭にくる",
+    "example": "[彼](かれ)の[言](い)い[方](かた)に**[頭](あたま)にきました**。",
+    "exampleVi": "Cách nói của anh ta khiến tôi tức điên."
+  },
+  {
+    "word": "頭が下がる",
+    "example": "[彼](かれ)の[努力](どりょく)には**[頭](あたま)が[下](さ)がります**。",
+    "exampleVi": "Tôi khâm phục nỗ lực của anh ấy."
+  },
+  {
+    "word": "顔が広い",
+    "example": "[父](ちち)は**[顔](かお)が[広](ひろ)くて**、いろいろな[人](ひと)を[知](し)っています。",
+    "exampleVi": "Bố tôi quen biết rộng nên biết nhiều người."
+  },
+  {
+    "word": "顔を出す",
+    "example": "[仕事](しごと)の[帰](かえ)りに、[飲](の)み[会](かい)に**[顔](かお)を[出](だ)しました**。",
+    "exampleVi": "Trên đường đi làm về, tôi đã ghé qua buổi nhậu."
+  },
+  {
+    "word": "目がない",
+    "example": "[私](わたし)は[甘](あま)い[物](もの)に**[目](め)がありません**。",
+    "exampleVi": "Tôi mê đồ ngọt hết chỗ nói."
+  },
+  {
+    "word": "目が離せない",
+    "example": "[赤](あか)ちゃんが[小](ちい)さくて、**[目](め)が[離](はな)せません**。",
+    "exampleVi": "Em bé còn nhỏ nên không thể rời mắt."
+  },
+  {
+    "word": "目が回る",
+    "example": "[忙](いそが)しくて**[目](め)が[回](まわ)る**ようです。",
+    "exampleVi": "Bận đến mức chóng cả mặt."
+  },
+  {
+    "word": "目に浮かぶ",
+    "example": "[故郷](こきょう)の[景色](けしき)が**[目](め)に[浮](う)かびます**。",
+    "exampleVi": "Phong cảnh quê nhà hiện ra trước mắt tôi."
+  },
+  {
+    "word": "目にする",
+    "example": "[最近](さいきん)、この[商品](しょうひん)をよく**[目](め)にします**。",
+    "exampleVi": "Gần đây tôi hay nhìn thấy sản phẩm này."
+  },
+  {
+    "word": "目に付く",
+    "example": "[赤](あか)い[服](ふく)は**[目](め)に[付](つ)きやすい**です。",
+    "exampleVi": "Quần áo màu đỏ dễ đập vào mắt."
+  },
+  {
+    "word": "目を疑う",
+    "example": "ニュースを[見](み)て、**[目](め)を[疑](うたが)いました**。",
+    "exampleVi": "Xem tin tức, tôi không tin vào mắt mình."
+  },
+  {
+    "word": "目を向ける",
+    "example": "[若者](わかもの)は[海外](かいがい)に**[目](め)を[向](む)けて**います。",
+    "exampleVi": "Giới trẻ đang hướng mắt ra nước ngoài."
+  },
+  {
+    "word": "目を通す",
+    "example": "[出発](しゅっぱつ)する[前](まえ)に[資料](しりょう)に**[目](め)を[通](とお)しました**。",
+    "exampleVi": "Trước khi xuất phát, tôi đã xem qua tài liệu."
+  },
+  {
+    "word": "耳が痛い",
+    "example": "[先輩](せんぱい)の[注意](ちゅうい)は**[耳](みみ)が[痛](いた)い**です。",
+    "exampleVi": "Lời nhắc của tiền bối nghe thật chối tai (vì đúng)."
+  },
+  {
+    "word": "耳が遠い",
+    "example": "[祖母](そぼ)は**[耳](みみ)が[遠](とお)くて**、[大](おお)きな[声](こえ)で[話](はな)さないと[聞](き)こえません。",
+    "exampleVi": "Bà tôi lãng tai nên không nói to thì không nghe thấy."
+  },
+  {
+    "word": "耳にする",
+    "example": "そんな[噂](うわさ)を**[耳](みみ)にしました**。",
+    "exampleVi": "Tôi đã nghe thấy tin đồn như vậy."
+  },
+  {
+    "word": "耳を傾ける",
+    "example": "[相手](あいて)の[意見](いけん)に**[耳](みみ)を[傾](かたむ)けましょう**。",
+    "exampleVi": "Hãy lắng nghe ý kiến của đối phương."
+  },
+  {
+    "word": "耳を疑う",
+    "example": "[彼](かれ)の[言葉](ことば)に、**[耳](みみ)を[疑](うたが)いました**。",
+    "exampleVi": "Nghe lời anh ta, tôi không tin vào tai mình."
+  },
+  {
+    "word": "口がうまい",
+    "example": "[彼](かれ)は**[口](くち)がうまくて**、つい[信](しん)じてしまいます。",
+    "exampleVi": "Anh ta khéo mồm nên tôi lỡ tin."
+  },
+  {
+    "word": "口が堅い",
+    "example": "[彼](かれ)は**[口](くち)が[堅](かた)い**から、[秘密](ひみつ)を[話](はな)しても[安心](あんしん)です。",
+    "exampleVi": "Anh ấy kín miệng nên nói bí mật cũng yên tâm."
+  },
+  {
+    "word": "口が軽い",
+    "example": "**[口](くち)が[軽](かる)い**[人](ひと)には[秘密](ひみつ)を[話](はな)せません。",
+    "exampleVi": "Không thể nói bí mật với người hay ba hoa."
+  },
+  {
+    "word": "口が重い",
+    "example": "[父](ちち)は**[口](くち)が[重](おも)くて**、あまり[話](はな)しません。",
+    "exampleVi": "Bố tôi ít nói nên không nói nhiều."
+  },
+  {
+    "word": "口が滑る",
+    "example": "うっかり**[口](くち)が[滑](すべ)って**、[秘密](ひみつ)を[話](はな)してしまいました。",
+    "exampleVi": "Lỡ miệng nên tôi đã nói ra bí mật."
+  },
+  {
+    "word": "口が悪い",
+    "example": "[彼](かれ)は**[口](くち)が[悪](わる)い**が、[本当](ほんとう)は[優](やさ)しい[人](ひと)です。",
+    "exampleVi": "Anh ấy độc mồm nhưng thật ra là người hiền."
+  },
+  {
+    "word": "口にする",
+    "example": "[今日](きょう)は[何](なに)も**[口](くち)にしていません**。",
+    "exampleVi": "Hôm nay tôi chưa ăn gì cả."
+  },
+  {
+    "word": "口に合う",
+    "example": "この[料理](りょうり)は[私](わたし)の**[口](くち)に[合](あ)います**。",
+    "exampleVi": "Món ăn này hợp khẩu vị tôi."
+  },
+  {
+    "word": "口を出す",
+    "example": "[他人](たにん)の[問題](もんだい)に**[口](くち)を[出](だ)さない**でください。",
+    "exampleVi": "Xin đừng xen vào chuyện của người khác."
+  },
+  {
+    "word": "手がふさがる",
+    "example": "[今](いま)、**[手](て)がふさがっている**ので、[後](あと)で[電話](でんわ)します。",
+    "exampleVi": "Bây giờ tôi đang bận tay nên lát nữa sẽ gọi lại."
+  },
+  {
+    "word": "手が空く",
+    "example": "**[手](て)が[空](あ)いたら**、[手伝](てつだ)ってください。",
+    "exampleVi": "Nếu rảnh tay thì xin hãy giúp tôi."
+  },
+  {
+    "word": "手がかかる",
+    "example": "[赤](あか)ちゃんは**[手](て)がかかります**。",
+    "exampleVi": "Em bé rất tốn công chăm."
+  },
+  {
+    "word": "手が離せない",
+    "example": "[今](いま)は**[手](て)が[離](はな)せません**。",
+    "exampleVi": "Bây giờ tôi đang dở tay, không rời ra được."
+  },
+  {
+    "word": "手に入れる",
+    "example": "やっと[欲](ほ)しかった[本](ほん)を**[手](て)に[入](い)れました**。",
+    "exampleVi": "Cuối cùng tôi cũng có được cuốn sách mình muốn."
+  },
+  {
+    "word": "手にする",
+    "example": "[彼](かれ)は[大](おお)きな[賞](しょう)を**[手](て)にしました**。",
+    "exampleVi": "Anh ấy đã giành được một giải thưởng lớn."
+  },
+  {
+    "word": "手につかない",
+    "example": "[心配](しんぱい)で、[仕事](しごと)が**[手](て)につきません**。",
+    "exampleVi": "Vì lo lắng nên tôi không tập trung làm việc được."
+  },
+  {
+    "word": "手をつける",
+    "example": "[宿題](しゅくだい)にまだ**[手](て)をつけていません**。",
+    "exampleVi": "Tôi vẫn chưa bắt tay vào làm bài tập."
+  },
+  {
+    "word": "手を貸す",
+    "example": "[引](ひ)っ[越](こ)しの[時](とき)に、**[手](て)を[貸](か)して**くれませんか。",
+    "exampleVi": "Lúc chuyển nhà, bạn giúp một tay được không?"
+  },
+  {
+    "word": "手を休める",
+    "example": "[少](すこ)し**[手](て)を[休](やす)めて**、お[茶](ちゃ)を[飲](の)みましょう。",
+    "exampleVi": "Hãy nghỉ tay một chút uống trà nhé."
+  },
+  {
+    "word": "手を抜く",
+    "example": "[仕事](しごと)で**[手](て)を[抜](ぬ)いて**はいけません。",
+    "exampleVi": "Không được làm qua loa trong công việc."
+  },
+  {
+    "word": "腕がいい",
+    "example": "この[店](みせ)の[料理人](りょうりにん)は**[腕](うで)がいい**です。",
+    "exampleVi": "Đầu bếp của quán này có tay nghề giỏi."
+  },
+  {
+    "word": "腕を磨く",
+    "example": "[毎日](まいにち)[練習](れんしゅう)して、**[腕](うで)を[磨](みが)いて**います。",
+    "exampleVi": "Tôi luyện tập mỗi ngày để mài giũa tay nghề."
+  },
+  {
+    "word": "腕が上がる",
+    "example": "[毎日](まいにち)[作](つく)って、[料理](りょうり)の**[腕](うで)が[上](あ)がりました**。",
+    "exampleVi": "Nhờ nấu mỗi ngày, tay nghề nấu ăn của tôi đã lên."
+  },
+  {
+    "word": "肩を落とす",
+    "example": "[試合](しあい)に[負](ま)けて、[選手](せんしゅ)は**[肩](かた)を[落](お)としました**。",
+    "exampleVi": "Thua trận, các cầu thủ rũ vai thất vọng."
+  },
+  {
+    "word": "腹が立つ",
+    "example": "[彼](かれ)の[嘘](うそ)に**[腹](はら)が[立](た)ちました**。",
+    "exampleVi": "Tôi tức giận vì lời nói dối của anh ta."
+  },
+  {
+    "word": "腹を抱える",
+    "example": "[面白](おもしろ)い[話](はなし)に、**[腹](はら)を[抱](かか)えて**[笑](わら)いました。",
+    "exampleVi": "Nghe chuyện buồn cười, tôi cười ôm bụng."
+  },
+  {
+    "word": "足が出る",
+    "example": "[旅行](りょこう)の[費用](ひよう)が[予算](よさん)を[超](こ)えて、**[足](あし)が[出](で)ました**。",
+    "exampleVi": "Chi phí chuyến du lịch vượt quá ngân sách nên bị lỗ."
+  },
+  {
+    "word": "足を伸ばす",
+    "example": "[京都](きょうと)まで[行](い)ったついでに、[奈良](なら)まで**[足](あし)を[伸](の)ばしました**。",
+    "exampleVi": "Nhân tiện đã đến Kyoto, tôi đi xa thêm tới tận Nara."
+  },
+  {
+    "word": "足を運ぶ",
+    "example": "[展覧会](てんらんかい)に**[足](あし)を[運](はこ)びました**。",
+    "exampleVi": "Tôi đã đến tận nơi xem triển lãm."
+  },
+  {
+    "word": "足を引っ張る",
+    "example": "[私](わたし)のミスがチームの**[足](あし)を[引](ひ)っ[張](ぱ)って**しまいました。",
+    "exampleVi": "Lỗi của tôi đã kéo chân cả đội."
+  },
+  {
+    "word": "何かと",
+    "example": "[引](ひ)っ[越](こ)しの[後](あと)は**[何](なに)かと**[忙](いそが)しいです。",
+    "exampleVi": "Sau khi chuyển nhà thì lúc nào cũng bận cái này cái nọ."
+  },
+  {
+    "word": "何だかんだ",
+    "example": "**[何](なん)だかんだ**[言](い)っても、[結局](けっきょく)[彼](かれ)を[助](たす)けてしまいます。",
+    "exampleVi": "Nói này nói nọ vậy thôi chứ rốt cuộc tôi vẫn giúp anh ấy."
+  },
+  {
+    "word": "なぜか",
+    "example": "**なぜか**[今日](きょう)は[気分](きぶん)が[良](よ)いです。",
+    "exampleVi": "Không hiểu sao hôm nay tâm trạng tôi rất tốt."
+  },
+  {
+    "word": "何だか",
+    "meaning": "không hiểu sao, cảm thấy hơi...",
+    "example": "**[何](なん)だか**[寒](さむ)い[気](き)がします。",
+    "exampleVi": "Không hiểu sao tôi cảm thấy hơi lạnh."
+  },
+  {
+    "word": "何しろ",
+    "meaning": "dù sao thì, vì lẽ (làm gì cũng...)",
+    "example": "**[何](なに)しろ**[忙](いそが)しくて、[休](やす)む[暇](ひま)もありません。",
+    "exampleVi": "Dù sao thì bận quá nên chẳng có thời gian nghỉ."
+  },
+  {
+    "word": "何とも",
+    "example": "この[問題](もんだい)は**[何](なん)とも**[言](い)えません。",
+    "exampleVi": "Về vấn đề này tôi không thể nói gì được."
+  },
+  {
+    "word": "どうか",
+    "meaning": "xin hãy (nhờ vả); có... hay không; có gì đó không ổn",
+    "example": "**どうか**[助](たす)けてください。",
+    "exampleVi": "Xin hãy giúp tôi."
+  },
+  {
+    "word": "どうにか",
+    "example": "**どうにか**[終電](しゅうでん)に[間](ま)に[合](あ)いました。",
+    "exampleVi": "Bằng cách nào đó tôi đã kịp chuyến tàu cuối."
+  },
+  {
+    "word": "どうしても",
+    "example": "**どうしても**あの[店](みせ)のケーキが[食](た)べたいです。",
+    "exampleVi": "Dù thế nào tôi cũng muốn ăn bánh của tiệm đó."
+  },
+  {
+    "word": "どうせ",
+    "example": "**どうせ**[間](ま)に[合](あ)わないから、ゆっくり[行](い)きましょう。",
+    "exampleVi": "Đằng nào cũng không kịp nên cứ thong thả đi thôi."
+  },
+  {
+    "word": "どうやら",
+    "example": "**どうやら**[雨](あめ)が[降](ふ)りそうです。",
+    "exampleVi": "Có lẽ trời sắp mưa."
+  },
+  {
+    "word": "とにかく",
+    "example": "**とにかく**やってみましょう。",
+    "exampleVi": "Dù sao thì cứ thử làm xem."
+  },
+  {
+    "word": "とても",
+    "example": "この[問題](もんだい)は**とても**[私](わたし)には[解](と)けません。",
+    "exampleVi": "Bài này tôi hoàn toàn không giải nổi."
+  },
+  {
+    "word": "より",
+    "meaning": "hơn, càng (VD: より良い = tốt hơn)",
+    "example": "**より**[良](よ)い[方法](ほうほう)を[考](かんが)えましょう。",
+    "exampleVi": "Hãy nghĩ ra phương pháp tốt hơn."
+  },
+  {
+    "word": "いかに",
+    "example": "[仕事](しごと)が**いかに**[大切](たいせつ)か、[彼](かれ)は[知](し)っています。",
+    "exampleVi": "Anh ấy biết công việc quan trọng đến mức nào."
+  },
+  {
+    "word": "いかにも",
+    "example": "**いかにも**[彼](かれ)らしい[考](かんが)え[方](かた)です。",
+    "exampleVi": "Đúng là cách nghĩ rất giống anh ấy."
+  },
+  {
+    "word": "それで",
+    "meaning": "vì vậy, thế nên; rồi sao nữa",
+    "example": "[財布](さいふ)を[落](お)としました。**それで**、[困](こま)っています。",
+    "exampleVi": "Tôi làm rơi ví. Vì thế đang rất khổ sở."
+  },
+  {
+    "word": "そこで",
+    "meaning": "vì vậy, nhân đó, lúc đó",
+    "example": "[道](みち)に[迷](まよ)いました。**そこで**、[交番](こうばん)で[道](みち)を[聞](き)きました。",
+    "exampleVi": "Tôi bị lạc đường. Vì thế tôi đã hỏi đường ở đồn cảnh sát."
+  },
+  {
+    "word": "すると",
+    "example": "ドアを[開](あ)けました。**すると**、[猫](ねこ)が[飛](と)び[出](だ)してきました。",
+    "exampleVi": "Tôi mở cửa. Thế rồi con mèo lao ra."
+  },
+  {
+    "word": "なぜなら",
+    "example": "[今日](きょう)は[行](い)けません。**なぜなら**、[熱](ねつ)があるからです。",
+    "exampleVi": "Hôm nay tôi không đi được. Bởi vì tôi bị sốt."
+  },
+  {
+    "word": "というのも",
+    "example": "[彼](かれ)は[人気](にんき)があります。**というのも**、とても[親切](しんせつ)だからです。",
+    "exampleVi": "Anh ấy được yêu mến. Bởi vì anh ấy rất tốt bụng."
+  },
+  {
+    "word": "つまり",
+    "example": "[彼](かれ)は[私](わたし)の[父](ちち)の[弟](おとうと)、**つまり**[叔父](おじ)です。",
+    "exampleVi": "Ông ấy là em trai bố tôi, tức là chú tôi."
+  },
+  {
+    "word": "いわゆる",
+    "example": "これが**いわゆる**[日本](にほん)の[伝統](でんとう)[文化](ぶんか)です。",
+    "exampleVi": "Đây chính là cái gọi là văn hóa truyền thống của Nhật Bản."
+  },
+  {
+    "word": "その上",
+    "example": "この[店](みせ)は[安](やす)くて、**その[上](うえ)**、おいしいです。",
+    "exampleVi": "Quán này rẻ, hơn nữa còn ngon."
+  },
+  {
+    "word": "そればかりか",
+    "example": "[彼](かれ)は[英語](えいご)が[話](はな)せます。**そればかりか**、[中国語](ちゅうごくご)も[話](はな)せます。",
+    "exampleVi": "Anh ấy nói được tiếng Anh. Không chỉ vậy, còn nói được cả tiếng Trung."
+  },
+  {
+    "word": "しかも",
+    "example": "この[料理](りょうり)は[安](やす)くて、**しかも**おいしいです。",
+    "exampleVi": "Món này rẻ, hơn nữa còn ngon."
+  },
+  {
+    "word": "また",
+    "example": "[来週](らいしゅう)**また**[来](き)ます。",
+    "exampleVi": "Tuần sau tôi lại đến."
+  },
+  {
+    "word": "しかし",
+    "example": "[努力](どりょく)しました。**しかし**、[合格](ごうかく)できませんでした。",
+    "exampleVi": "Tôi đã cố gắng. Tuy nhiên, tôi không đỗ."
+  },
+  {
+    "word": "ところが",
+    "example": "[晴](は)れると[思](おも)っていました。**ところが**、[雨](あめ)が[降](ふ)りました。",
+    "exampleVi": "Tôi đã nghĩ trời sẽ nắng. Nhưng lại mưa."
+  },
+  {
+    "word": "それでも",
+    "example": "[雨](あめ)が[降](ふ)っていました。**それでも**、[彼](かれ)は[出](で)かけました。",
+    "exampleVi": "Trời đang mưa. Dù vậy, anh ấy vẫn ra ngoài."
+  }
 ]

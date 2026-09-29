@@ -1,119 +1,587 @@
 [
-  "大らか",
-  "朗らか",
-  "人懐こい",
-  "生真面目",
-  "几帳面",
-  "誠実",
-  "気さく",
-  "シャイ",
-  "潔い",
-  "まめ",
-  "気立て",
-  "人当たり",
-  "情け深い",
-  "純粋",
-  "クール",
-  "ドライ",
-  "シビア",
-  "繊細",
-  "意地っ張り",
-  "強情",
-  "おっちょこちょい",
-  "おせっかい",
-  "出しゃばり",
-  "荒っぽい",
-  "キレる",
-  "横柄",
-  "冷淡",
-  "無神経",
-  "軽率",
-  "おっかない",
-  "陰気",
-  "せこい",
-  "爽快",
-  "軽快",
-  "和やか",
-  "和気あいあいと",
-  "喜ばしい",
-  "華華しい",
-  "いそいそと",
-  "うきうき",
-  "ときめく",
-  "意気揚揚",
-  "得意満面",
-  "心が躍る",
-  "待ち遠しい",
-  "せいせい",
-  "さばさば",
-  "乗り気",
-  "テンション",
-  "喜怒哀楽",
-  "うっとうしい",
-  "切ない",
-  "やるせない",
-  "しゃくに障る",
-  "へこむ",
-  "くよくよ",
-  "心苦しい",
-  "むなしい",
-  "憂鬱",
-  "惨め",
-  "根に持つ",
-  "ねたむ",
-  "劣等感",
-  "孤独",
-  "屈折",
-  "気が向かない",
-  "未熟",
-  "びくびく",
-  "おどおど",
-  "もやもや",
-  "ポジティブ",
-  "みずみずしい",
-  "しとやか",
-  "優雅",
-  "チャーミング",
-  "ソフト",
-  "シャープ",
-  "明快",
-  "りりしい",
-  "やんわり",
-  "滑らか",
-  "堂堂",
-  "健全",
-  "とびきり",
-  "抜群",
-  "すばしっこい",
-  "恥じらう",
-  "たやすい",
-  "悠悠",
-  "めきめき",
-  "至れり尽くせり",
-  "ネガティブ",
-  "見苦しい",
-  "ややこしい",
-  "悲惨",
-  "みすぼらしい",
-  "乏しい",
-  "貧弱",
-  "汚らわしい",
-  "いやらしい",
-  "卑しい",
-  "希薄",
-  "月並み",
-  "ぶっきらぼう",
-  "むっつり",
-  "不細工",
-  "つれない",
-  "しぼむ",
-  "あやふや",
-  "生ぬるい",
-  "無礼",
-  "気取る",
-  "近寄りがたい",
-  "ちやほや",
-  "窮屈",
-  "ヤバい",
-  "どん底"
+  {
+    "word": "大らか",
+    "example": "[彼](かれ)は**[大](おお)らか**な[性格](せいかく)です。",
+    "exampleVi": "Anh ấy có tính cách rộng lượng, phóng khoáng."
+  },
+  {
+    "word": "朗らか",
+    "example": "[彼女](かのじょ)はいつも**[朗](ほが)らか**に[笑](わら)っています。",
+    "exampleVi": "Cô ấy lúc nào cũng cười tươi tắn."
+  },
+  {
+    "word": "人懐こい",
+    "example": "この[犬](いぬ)は**[人懐](ひとなつ)っこくて**、[誰](だれ)にでも[寄](よ)って[来](き)ます。",
+    "exampleVi": "Chú chó này thân thiện nên ai cũng lại gần."
+  },
+  {
+    "word": "生真面目",
+    "example": "[彼](かれ)は**[生真面目](きまじめ)**で、[冗談](じょうだん)が[通](つう)じません。",
+    "exampleVi": "Anh ấy rất nghiêm túc nên không hiểu đùa."
+  },
+  {
+    "word": "几帳面",
+    "example": "[父](ちち)は**[几帳面](きちょうめん)**で、[部屋](へや)がいつもきれいです。",
+    "exampleVi": "Bố tôi ngăn nắp nên phòng lúc nào cũng sạch sẽ."
+  },
+  {
+    "word": "誠実",
+    "example": "[彼](かれ)は**[誠実](せいじつ)**な[人](ひと)です。",
+    "exampleVi": "Anh ấy là người thành thật."
+  },
+  {
+    "word": "気さく",
+    "example": "[社長](しゃちょう)は**[気](き)さく**な[人](ひと)で、[誰](だれ)とでも[話](はな)します。",
+    "exampleVi": "Giám đốc là người dễ tính, nói chuyện với ai cũng được."
+  },
+  {
+    "word": "シャイ",
+    "example": "[彼](かれ)は**シャイ**で、[人前](ひとまえ)で[話](はな)せません。",
+    "exampleVi": "Anh ấy nhút nhát nên không nói được trước đám đông."
+  },
+  {
+    "word": "潔い",
+    "example": "[彼](かれ)は**[潔](いさぎよ)く**[負](ま)けを[認](みと)めました。",
+    "exampleVi": "Anh ấy đã dứt khoát nhận thua."
+  },
+  {
+    "word": "まめ",
+    "example": "[彼](かれ)は**まめ**に[連絡](れんらく)をくれます。",
+    "exampleVi": "Anh ấy chăm chỉ liên lạc với tôi."
+  },
+  {
+    "word": "気立て",
+    "example": "[彼女](かのじょ)は**[気立](きだ)て**の[優](やさ)しい[人](ひと)です。",
+    "exampleVi": "Cô ấy là người tốt tính, dịu dàng."
+  },
+  {
+    "word": "人当たり",
+    "example": "[彼](かれ)は**[人当](ひとあ)たり**がいい[人](ひと)です。",
+    "exampleVi": "Anh ấy là người có cách đối đãi dễ chịu."
+  },
+  {
+    "word": "情け深い",
+    "example": "[彼](かれ)は**[情](なさ)け[深](ぶか)い**[人](ひと)です。",
+    "exampleVi": "Anh ấy là người giàu lòng nhân từ."
+  },
+  {
+    "word": "純粋",
+    "example": "[子供](こども)の**[純粋](じゅんすい)**な[心](こころ)を[大切](たいせつ)にしたいです。",
+    "exampleVi": "Tôi muốn trân trọng tấm lòng trong sáng của trẻ con."
+  },
+  {
+    "word": "クール",
+    "example": "[彼](かれ)は**クール**な[人](ひと)です。",
+    "exampleVi": "Anh ấy là người lạnh lùng, ngầu."
+  },
+  {
+    "word": "ドライ",
+    "example": "[彼](かれ)は[仕事](しごと)については**ドライ**です。",
+    "exampleVi": "Anh ấy rất khô khan trong chuyện công việc."
+  },
+  {
+    "word": "シビア",
+    "example": "[上司](じょうし)の[評価](ひょうか)は**シビア**です。",
+    "exampleVi": "Sếp đánh giá rất khắt khe."
+  },
+  {
+    "word": "繊細",
+    "example": "[彼女](かのじょ)は**[繊細](せんさい)**な[心](こころ)の[持](も)ち[主](ぬし)です。",
+    "exampleVi": "Cô ấy là người có tâm hồn nhạy cảm, tinh tế."
+  },
+  {
+    "word": "意地っ張り",
+    "example": "[彼](かれ)は**[意地](いじ)っ[張](ぱ)り**で、[謝](あやま)りません。",
+    "exampleVi": "Anh ấy cứng đầu nên không chịu xin lỗi."
+  },
+  {
+    "word": "強情",
+    "example": "[彼](かれ)は**[強情](ごうじょう)**で、[人](ひと)の[意見](いけん)を[聞](き)きません。",
+    "exampleVi": "Anh ấy bướng bỉnh nên không nghe ý kiến người khác."
+  },
+  {
+    "word": "おっちょこちょい",
+    "example": "[弟](おとうと)は**おっちょこちょい**で、よく[物](もの)を[忘](わす)れます。",
+    "exampleVi": "Em trai tôi hậu đậu nên hay quên đồ."
+  },
+  {
+    "word": "おせっかい",
+    "example": "[近所](きんじょ)の[人](ひと)が**おせっかい**で[困](こま)ります。",
+    "exampleVi": "Người hàng xóm hay lo chuyện bao đồng nên tôi khó xử."
+  },
+  {
+    "word": "出しゃばり",
+    "example": "**[出](で)しゃばり**な[態度](たいど)は[嫌](きら)われます。",
+    "exampleVi": "Thái độ thích xen vào bị ghét."
+  },
+  {
+    "word": "荒っぽい",
+    "example": "[彼](かれ)は[言葉](ことば)づかいが**[荒](あら)っぽい**です。",
+    "exampleVi": "Anh ấy ăn nói thô bạo."
+  },
+  {
+    "word": "キレる",
+    "example": "[彼](かれ)はすぐ**キレる**ので、[困](こま)ります。",
+    "exampleVi": "Anh ta hay nổi đóa nên tôi khó xử."
+  },
+  {
+    "word": "横柄",
+    "example": "[店員](てんいん)の**[横柄](おうへい)**な[態度](たいど)に[腹](はら)が[立](た)ちました。",
+    "exampleVi": "Tôi tức vì thái độ hống hách của nhân viên."
+  },
+  {
+    "word": "冷淡",
+    "example": "[彼](かれ)は[人](ひと)の[苦労](くろう)に**[冷淡](れいたん)**です。",
+    "exampleVi": "Anh ta lạnh nhạt trước nỗi vất vả của người khác."
+  },
+  {
+    "word": "無神経",
+    "example": "**[無神経](むしんけい)**な[発言](はつげん)に[傷](きず)つきました。",
+    "exampleVi": "Tôi bị tổn thương bởi phát ngôn vô ý tứ."
+  },
+  {
+    "word": "軽率",
+    "example": "**[軽率](けいそつ)**な[行動](こうどう)は[慎](つつし)みましょう。",
+    "exampleVi": "Hãy tránh hành động thiếu suy nghĩ."
+  },
+  {
+    "word": "おっかない",
+    "example": "あの[先生](せんせい)は**おっかない**です。",
+    "exampleVi": "Thầy giáo đó đáng sợ."
+  },
+  {
+    "word": "陰気",
+    "example": "[彼](かれ)は**[陰気](いんき)**な[顔](かお)をしています。",
+    "exampleVi": "Anh ấy đang có vẻ mặt u ám."
+  },
+  {
+    "word": "せこい",
+    "example": "**せこい**[考](かんが)えはやめましょう。",
+    "exampleVi": "Hãy bỏ suy nghĩ keo kiệt nhỏ mọn."
+  },
+  {
+    "word": "爽快",
+    "example": "[朝](あさ)の[運動](うんどう)は**[爽快](そうかい)**です。",
+    "exampleVi": "Vận động buổi sáng thật sảng khoái."
+  },
+  {
+    "word": "軽快",
+    "example": "**[軽快](けいかい)**な[音楽](おんがく)が[流](なが)れています。",
+    "exampleVi": "Bản nhạc nhẹ nhàng, nhịp nhàng đang vang lên."
+  },
+  {
+    "word": "和やか",
+    "example": "**[和](なご)やか**な[雰囲気](ふんいき)で[会議](かいぎ)が[進](すす)みました。",
+    "exampleVi": "Cuộc họp diễn ra trong bầu không khí hòa nhã."
+  },
+  {
+    "word": "和気あいあいと",
+    "example": "[家族](かぞく)で**[和気](わき)あいあいと**[食事](しょくじ)をしました。",
+    "exampleVi": "Cả nhà đã dùng bữa trong không khí hòa thuận vui vẻ."
+  },
+  {
+    "word": "喜ばしい",
+    "example": "**[喜](よろこ)ばしい**[知](し)らせが[届](とど)きました。",
+    "exampleVi": "Tin vui đã đến."
+  },
+  {
+    "word": "華華しい",
+    "example": "[彼](かれ)は**[華華](はなばな)しい**[活躍](かつやく)を[見](み)せました。",
+    "exampleVi": "Anh ấy đã có màn thể hiện rực rỡ."
+  },
+  {
+    "word": "いそいそと",
+    "example": "[彼](かれ)は**いそいそと**デートに[出](で)かけました。",
+    "exampleVi": "Anh ấy hớn hở ra ngoài đi hẹn hò."
+  },
+  {
+    "word": "うきうき",
+    "example": "[明日](あした)の[旅行](りょこう)を[思](おも)うと**うきうき**します。",
+    "exampleVi": "Nghĩ đến chuyến du lịch ngày mai tôi thấy phấn khởi."
+  },
+  {
+    "word": "ときめく",
+    "example": "[彼](かれ)を[見](み)ると、[胸](むね)が**ときめきます**。",
+    "exampleVi": "Nhìn thấy anh ấy, tim tôi rung động."
+  },
+  {
+    "word": "意気揚揚",
+    "example": "[彼](かれ)は**[意気揚揚](いきようよう)**と[帰](かえ)って[来](き)ました。",
+    "exampleVi": "Anh ấy trở về với vẻ hí hửng đắc ý."
+  },
+  {
+    "word": "得意満面",
+    "example": "[彼](かれ)は**[得意満面](とくいまんめん)**で[賞状](しょうじょう)を[見](み)せました。",
+    "exampleVi": "Anh ấy đắc ý ra mặt khi khoe bằng khen."
+  },
+  {
+    "word": "心が躍る",
+    "example": "[旅行](りょこう)の[計画](けいかく)を[立](た)てると**[心](こころ)が[躍](おど)ります**。",
+    "exampleVi": "Lập kế hoạch du lịch khiến lòng tôi rộn ràng."
+  },
+  {
+    "word": "待ち遠しい",
+    "example": "[夏休](なつやす)みが**[待](ま)ち[遠](どお)しい**です。",
+    "exampleVi": "Tôi mong chờ kỳ nghỉ hè."
+  },
+  {
+    "word": "せいせい",
+    "example": "[嫌](いや)な[仕事](しごと)が[終](お)わって、**せいせい**しました。",
+    "exampleVi": "Công việc chán ghét đã xong, tôi thấy nhẹ nhõm."
+  },
+  {
+    "word": "さばさば",
+    "example": "[彼女](かのじょ)は**さばさば**した[性格](せいかく)です。",
+    "exampleVi": "Cô ấy có tính cách thẳng thắn, vô tư."
+  },
+  {
+    "word": "乗り気",
+    "example": "[彼](かれ)はこの[計画](けいかく)に**[乗](の)り[気](き)**です。",
+    "exampleVi": "Anh ấy hứng thú với kế hoạch này."
+  },
+  {
+    "word": "テンション",
+    "example": "[今日](きょう)は**テンション**が[高](たか)いです。",
+    "exampleVi": "Hôm nay tôi rất hưng phấn."
+  },
+  {
+    "word": "喜怒哀楽",
+    "example": "[彼](かれ)は**[喜怒哀楽](きどあいらく)**が[顔](かお)に[出](で)ます。",
+    "exampleVi": "Hỉ nộ ái ố của anh ấy lộ ra trên mặt."
+  },
+  {
+    "word": "うっとうしい",
+    "example": "[髪](かみ)が[長](なが)くて**うっとうしい**です。",
+    "exampleVi": "Tóc dài nên thấy vướng víu khó chịu."
+  },
+  {
+    "word": "切ない",
+    "example": "[別](わか)れの[場面](ばめん)が**[切](せつ)ない**です。",
+    "exampleVi": "Cảnh chia ly thật nhói lòng."
+  },
+  {
+    "word": "やるせない",
+    "example": "**やるせない**[気持](きも)ちで[家](いえ)に[帰](かえ)りました。",
+    "exampleVi": "Tôi về nhà với cảm giác chán nản, bất lực."
+  },
+  {
+    "word": "しゃくに障る",
+    "example": "[彼](かれ)の[自慢](じまん)[話](ばなし)が**しゃくに[障](さわ)ります**。",
+    "exampleVi": "Những lời khoe khoang của anh ta làm tôi bực mình."
+  },
+  {
+    "word": "へこむ",
+    "example": "[試験](しけん)に[落](お)ちて、**へこんで**います。",
+    "exampleVi": "Tôi trượt kỳ thi nên đang thất vọng."
+  },
+  {
+    "word": "くよくよ",
+    "example": "[失敗](しっぱい)を**くよくよ**[悩](なや)まないでください。",
+    "exampleVi": "Xin đừng lo nghĩ bồn chồn mãi về thất bại."
+  },
+  {
+    "word": "心苦しい",
+    "example": "お[願](ねが)いばかりして**[心苦](こころぐる)しい**です。",
+    "exampleVi": "Tôi áy náy vì cứ nhờ vả mãi."
+  },
+  {
+    "word": "むなしい",
+    "example": "[努力](どりょく)が**むなしく**[終](お)わりました。",
+    "exampleVi": "Nỗ lực đã kết thúc trong vô ích."
+  },
+  {
+    "word": "憂鬱",
+    "example": "[月曜日](げつようび)は**[憂鬱](ゆううつ)**です。",
+    "exampleVi": "Thứ Hai thật u sầu."
+  },
+  {
+    "word": "惨め",
+    "example": "[失敗](しっぱい)して**[惨](みじ)め**な[気持](きも)ちになりました。",
+    "exampleVi": "Thất bại nên tôi cảm thấy thảm hại."
+  },
+  {
+    "word": "根に持つ",
+    "example": "[彼](かれ)は[昔](むかし)のことを**[根](ね)に[持](も)って**います。",
+    "exampleVi": "Anh ấy vẫn để bụng chuyện ngày xưa."
+  },
+  {
+    "word": "ねたむ",
+    "example": "[友人](ゆうじん)の[成功](せいこう)を**ねたんで**はいけません。",
+    "exampleVi": "Không nên ghen tị với thành công của bạn."
+  },
+  {
+    "word": "劣等感",
+    "example": "[彼](かれ)に[対](たい)して**[劣等感](れっとうかん)**を[持](も)っています。",
+    "exampleVi": "Tôi có mặc cảm tự ti với anh ấy."
+  },
+  {
+    "word": "孤独",
+    "example": "[一人](ひとり)で[暮](く)らして**[孤独](こどく)**を[感](かん)じます。",
+    "exampleVi": "Sống một mình nên tôi cảm thấy cô độc."
+  },
+  {
+    "word": "屈折",
+    "example": "[彼](かれ)は**[屈折](くっせつ)**した[感情](かんじょう)を[持](も)っています。",
+    "exampleVi": "Anh ấy có những cảm xúc phức tạp, khúc mắc."
+  },
+  {
+    "word": "気が向かない",
+    "example": "[今日](きょう)は[勉強](べんきょう)する**[気](き)が[向](む)きません**。",
+    "exampleVi": "Hôm nay tôi không có hứng học."
+  },
+  {
+    "word": "未熟",
+    "example": "[私](わたし)はまだ**[未熟](みじゅく)**です。",
+    "exampleVi": "Tôi vẫn còn non nớt."
+  },
+  {
+    "word": "びくびく",
+    "example": "[先生](せんせい)に[叱](しか)られるのではないかと**びくびく**しています。",
+    "exampleVi": "Tôi sợ sệt không biết có bị thầy mắng không."
+  },
+  {
+    "word": "おどおど",
+    "example": "[彼](かれ)は[初](はじ)めての[場所](ばしょ)で**おどおど**していました。",
+    "exampleVi": "Anh ấy lúng túng e ngại ở nơi lần đầu đến."
+  },
+  {
+    "word": "もやもや",
+    "example": "[彼](かれ)の[言葉](ことば)を[聞](き)いて、**もやもや**した[気持](きも)ちになりました。",
+    "exampleVi": "Nghe lời anh ấy, tôi thấy lòng bứt rứt mơ hồ."
+  },
+  {
+    "word": "ポジティブ",
+    "example": "**ポジティブ**に[考](かんが)えましょう。",
+    "exampleVi": "Hãy suy nghĩ tích cực."
+  },
+  {
+    "word": "みずみずしい",
+    "example": "**みずみずしい**[野菜](やさい)を[買](か)いました。",
+    "exampleVi": "Tôi đã mua rau tươi mọng."
+  },
+  {
+    "word": "しとやか",
+    "example": "[彼女](かのじょ)は**しとやか**な[女性](じょせい)です。",
+    "exampleVi": "Cô ấy là người phụ nữ dịu dàng, thùy mị."
+  },
+  {
+    "word": "優雅",
+    "example": "[彼女](かのじょ)は**[優雅](ゆうが)**に[踊](おど)りました。",
+    "exampleVi": "Cô ấy đã nhảy một cách thanh lịch."
+  },
+  {
+    "word": "チャーミング",
+    "example": "[彼女](かのじょ)の[笑顔](えがお)は**チャーミング**です。",
+    "exampleVi": "Nụ cười của cô ấy thật quyến rũ."
+  },
+  {
+    "word": "ソフト",
+    "example": "**ソフト**な[口調](くちょう)で[話](はな)しました。",
+    "exampleVi": "Anh ấy nói bằng giọng nhẹ nhàng."
+  },
+  {
+    "word": "シャープ",
+    "example": "[彼](かれ)は**シャープ**な[頭脳](ずのう)の[持](も)ち[主](ぬし)です。",
+    "exampleVi": "Anh ấy sở hữu bộ óc sắc sảo."
+  },
+  {
+    "word": "明快",
+    "example": "[彼](かれ)の[説明](せつめい)は**[明快](めいかい)**です。",
+    "exampleVi": "Lời giải thích của anh ấy rất rõ ràng."
+  },
+  {
+    "word": "りりしい",
+    "example": "[彼](かれ)の**りりしい**[姿](すがた)に[感動](かんどう)しました。",
+    "exampleVi": "Tôi cảm động trước dáng vẻ oai phong của anh ấy."
+  },
+  {
+    "word": "やんわり",
+    "example": "[彼](かれ)の[誘](さそ)いを**やんわり**[断](ことわ)りました。",
+    "exampleVi": "Tôi đã khéo léo từ chối lời mời của anh ấy."
+  },
+  {
+    "word": "滑らか",
+    "example": "この[布](ぬの)は[手触](てざわ)りが**[滑](なめ)らか**です。",
+    "exampleVi": "Miếng vải này sờ vào rất trơn mịn."
+  },
+  {
+    "word": "堂堂",
+    "example": "[彼](かれ)は**[堂堂](どうどう)**と[意見](いけん)を[述](の)べました。",
+    "exampleVi": "Anh ấy đường đường chính chính trình bày ý kiến."
+  },
+  {
+    "word": "健全",
+    "example": "[子供](こども)の**[健全](けんぜん)**な[育成](いくせい)を[願](ねが)います。",
+    "exampleVi": "Tôi mong trẻ em được nuôi dưỡng lành mạnh."
+  },
+  {
+    "word": "とびきり",
+    "example": "**とびきり**おいしい[料理](りょうり)を[食](た)べました。",
+    "exampleVi": "Tôi đã ăn món ăn ngon tuyệt phẩm."
+  },
+  {
+    "word": "抜群",
+    "example": "[彼](かれ)の[記憶力](きおくりょく)は**[抜群](ばつぐん)**です。",
+    "exampleVi": "Trí nhớ của anh ấy thật xuất chúng."
+  },
+  {
+    "word": "すばしっこい",
+    "example": "[猫](ねこ)は**すばしっこくて**、[捕](つか)まえられません。",
+    "exampleVi": "Con mèo nhanh nhẹn nên tôi không bắt được."
+  },
+  {
+    "word": "恥じらう",
+    "example": "[彼女](かのじょ)は[頬](ほお)を[赤](あか)くして**[恥](は)じらいました**。",
+    "exampleVi": "Cô ấy đỏ má e thẹn."
+  },
+  {
+    "word": "たやすい",
+    "example": "そんなことは**たやすい**ことです。",
+    "exampleVi": "Chuyện như vậy dễ như trở bàn tay."
+  },
+  {
+    "word": "悠悠",
+    "example": "[彼](かれ)は**[悠悠](ゆうゆう)**と[歩](ある)いています。",
+    "exampleVi": "Anh ấy đang thong dong bước đi."
+  },
+  {
+    "word": "めきめき",
+    "example": "[彼](かれ)の[英語](えいご)は**めきめき**[上達](じょうたつ)しました。",
+    "exampleVi": "Tiếng Anh của anh ấy tiến bộ vùn vụt."
+  },
+  {
+    "word": "至れり尽くせり",
+    "example": "このホテルは**[至](いた)れり[尽](つ)くせり**のサービスです。",
+    "exampleVi": "Khách sạn này phục vụ chu đáo từng li từng tí."
+  },
+  {
+    "word": "ネガティブ",
+    "example": "**ネガティブ**な[考](かんが)え[方](かた)はやめましょう。",
+    "exampleVi": "Hãy bỏ cách nghĩ tiêu cực."
+  },
+  {
+    "word": "見苦しい",
+    "example": "[部屋](へや)が[散](ち)らかっていて**[見苦](みぐる)しい**です。",
+    "exampleVi": "Phòng bừa bộn thật khó coi."
+  },
+  {
+    "word": "ややこしい",
+    "example": "この[規則](きそく)は**ややこしくて**、[分](わ)かりません。",
+    "exampleVi": "Quy tắc này phức tạp nên tôi không hiểu."
+  },
+  {
+    "word": "悲惨",
+    "example": "**[悲惨](ひさん)**な[事故](じこ)が[起](お)きました。",
+    "exampleVi": "Đã xảy ra một vụ tai nạn bi thảm."
+  },
+  {
+    "word": "みすぼらしい",
+    "example": "**みすぼらしい**[服](ふく)を[着](き)ていました。",
+    "exampleVi": "Người đó mặc quần áo tồi tàn."
+  },
+  {
+    "word": "乏しい",
+    "example": "この[地域](ちいき)は[資源](しげん)が**[乏](とぼ)しい**です。",
+    "exampleVi": "Khu vực này nghèo tài nguyên."
+  },
+  {
+    "word": "貧弱",
+    "example": "[彼](かれ)の[体](からだ)は**[貧弱](ひんじゃく)**です。",
+    "exampleVi": "Cơ thể anh ấy gầy yếu."
+  },
+  {
+    "word": "汚らわしい",
+    "example": "そんな**[汚](けが)らわしい**[話](はなし)は[聞](き)きたくありません。",
+    "exampleVi": "Tôi không muốn nghe chuyện ghê tởm như vậy."
+  },
+  {
+    "word": "いやらしい",
+    "example": "**いやらしい**[目](め)で[人](ひと)を[見](み)てはいけません。",
+    "exampleVi": "Không được nhìn người khác bằng ánh mắt khiếm nhã."
+  },
+  {
+    "word": "卑しい",
+    "example": "**[卑](いや)しい**[考](かんが)えは[持](も)たないでください。",
+    "exampleVi": "Xin đừng có suy nghĩ hèn hạ."
+  },
+  {
+    "word": "希薄",
+    "example": "[都会](とかい)では[人間](にんげん)[関係](かんけい)が**[希薄](きはく)**です。",
+    "exampleVi": "Ở thành phố, quan hệ giữa người với người mỏng manh."
+  },
+  {
+    "word": "月並み",
+    "example": "**[月並](つきな)み**な[表現](ひょうげん)はつまらないです。",
+    "exampleVi": "Cách diễn đạt tầm thường thì nhàm chán."
+  },
+  {
+    "word": "ぶっきらぼう",
+    "example": "[彼](かれ)は**ぶっきらぼう**な[言](い)い[方](かた)をします。",
+    "exampleVi": "Anh ấy có cách nói cộc lốc."
+  },
+  {
+    "word": "むっつり",
+    "example": "[彼](かれ)は**むっつり**して[何](なに)も[話](はな)しません。",
+    "exampleVi": "Anh ấy lầm lì, chẳng nói gì."
+  },
+  {
+    "word": "不細工",
+    "example": "[縫](ぬ)い[目](め)が**[不細工](ぶさいく)**になってしまいました。",
+    "exampleVi": "Đường khâu của tôi trông vụng về."
+  },
+  {
+    "word": "つれない",
+    "example": "[彼女](かのじょ)の**つれない**[返事](へんじ)に[落](お)ち[込](こ)みました。",
+    "exampleVi": "Tôi chán nản trước câu trả lời lạnh lùng của cô ấy."
+  },
+  {
+    "word": "しぼむ",
+    "example": "[花](はな)が**しぼんで**しまいました。",
+    "exampleVi": "Hoa đã héo mất rồi."
+  },
+  {
+    "word": "あやふや",
+    "example": "[彼](かれ)の[記憶](きおく)は**あやふや**です。",
+    "exampleVi": "Trí nhớ của anh ấy mơ hồ."
+  },
+  {
+    "word": "生ぬるい",
+    "example": "**[生](なま)ぬるい**お[茶](ちゃ)はおいしくありません。",
+    "exampleVi": "Trà âm ấm thì không ngon."
+  },
+  {
+    "word": "無礼",
+    "example": "[目上](めうえ)の[人](ひと)に**[無礼](ぶれい)**な[態度](たいど)を[取](と)ってはいけません。",
+    "exampleVi": "Không được có thái độ vô lễ với bề trên."
+  },
+  {
+    "word": "気取る",
+    "example": "[彼](かれ)は**[気取](きど)って**[歩](ある)いています。",
+    "exampleVi": "Anh ta đang đi đứng làm bộ ra vẻ."
+  },
+  {
+    "word": "近寄りがたい",
+    "example": "[彼](かれ)は**[近寄](ちかよ)りがたい**[雰囲気](ふんいき)があります。",
+    "exampleVi": "Anh ấy có bầu không khí khó gần."
+  },
+  {
+    "word": "ちやほや",
+    "example": "[彼女](かのじょ)は[皆](みな)に**ちやほや**されています。",
+    "exampleVi": "Cô ấy được mọi người nuông chiều, tâng bốc."
+  },
+  {
+    "word": "窮屈",
+    "example": "この[靴](くつ)は**[窮屈](きゅうくつ)**です。",
+    "exampleVi": "Đôi giày này chật."
+  },
+  {
+    "word": "ヤバい",
+    "example": "**ヤバい**！[遅刻](ちこく)しそうだ。",
+    "exampleVi": "Nguy rồi! Sắp trễ mất."
+  },
+  {
+    "word": "どん底",
+    "example": "[失敗](しっぱい)して、[人生](じんせい)の**どん[底](ぞこ)**に[落](お)ちました。",
+    "exampleVi": "Sau thất bại, tôi rơi xuống tận đáy cuộc đời."
+  }
 ]

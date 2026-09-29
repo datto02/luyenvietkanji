@@ -79,7 +79,7 @@
  {
   "word": "まだまだです",
   "reading": "まだまだです",
-  "meaning": "chưa giỏi, vẫn còn kém ",
+  "meaning": "chưa giỏi, vẫn còn kém",
   "example": "いいえ、**まだまだです**。",
   "exampleVi": "Không, tôi chưa giỏi đâu. (Vẫn còn kém lắm.)"
  },
@@ -94,14 +94,14 @@
   "word": "いけばな",
   "reading": "いけばな",
   "meaning": "cắm hoa",
-  "example": "**いけばな**を [習](なら)いたいです。",
+  "example": "**いけばな**を[習](なら)いたいです。",
   "exampleVi": "Tôi muốn học cắm hoa."
  },
  {
   "word": "茶道",
   "reading": "さどう",
   "meaning": "trà đạo",
-  "example": "**[茶道](さどう)**を [習](なら)っています。",
+  "example": "**[茶道](さどう)**を[習](なら)っています。",
   "exampleVi": "Tôi đang học trà đạo."
  },
  {
@@ -227,7 +227,7 @@
   "word": "ジャズ",
   "reading": "ジャズ",
   "meaning": "nhạc jazz",
-  "example": "**ジャズ**を [聞](き)きます。",
+  "example": "**ジャズ**を[聞](き)きます。",
   "exampleVi": "Tôi nghe nhạc jazz."
  },
  {
@@ -389,14 +389,14 @@
   "reading": "のぼる",
   "meaning": "leo (núi)",
   "example": "[七月](しちがつ)に[富士山](ふじさん)に**[登](のぼ)ります**。",
-  "exampleVi": "Tôi sẽ leo núi Phú Sỹ vào tháng 7."
+  "exampleVi": "Tôi sẽ leo núi Phú Sĩ vào tháng 7."
  },
  {
   "word": "山",
   "reading": "やま",
   "meaning": "núi",
   "example": "[富士山](ふじさん)はきれいな**[山](やま)**です。",
-  "exampleVi": "Núi Phú Sỹ là ngọn núi đẹp."
+  "exampleVi": "Núi Phú Sĩ là ngọn núi đẹp."
  },
  {
   "word": "試合",
@@ -430,56 +430,56 @@
   "word": "強い",
   "reading": "つよい",
   "meaning": "mạnh",
-  "example": "あの チームは **[強](つよ)い**です。",
+  "example": "あのチームは**[強](つよ)い**です。",
   "exampleVi": "Đội đó mạnh."
  },
  {
   "word": "弱い",
   "reading": "よわい",
   "meaning": "yếu",
-  "example": "[私](わたし)の チームは **[弱](よわ)い**です。",
+  "example": "[私](わたし)のチームは**[弱](よわ)い**です。",
   "exampleVi": "Đội của tôi yếu."
  },
  {
   "word": "サッカー",
   "reading": "サッカー",
   "meaning": "bóng đá",
-  "example": "**サッカー**が [好](す)きです。",
+  "example": "**サッカー**が[好](す)きです。",
   "exampleVi": "Tôi thích bóng đá."
  },
  {
   "word": "野球",
   "reading": "やきゅう",
   "meaning": "bóng chày",
-  "example": "[兄](あに)は **[野球](やきゅう)**が [上手](じょうず)です。",
+  "example": "[兄](あに)は**[野球](やきゅう)**が[上手](じょうず)です。",
   "exampleVi": "Anh trai tôi giỏi bóng chày."
  },
  {
   "word": "すもう",
   "reading": "すもう",
   "meaning": "sumo",
-  "example": "**すもう**を [見](み)ました。",
+  "example": "**すもう**を[見](み)ました。",
   "exampleVi": "Tôi đã xem sumo."
  },
  {
   "word": "じゅうどう",
   "reading": "じゅうどう",
   "meaning": "judo",
-  "example": "**じゅうどう**を [習](なら)っています。",
+  "example": "**じゅうどう**を[習](なら)っています。",
   "exampleVi": "Tôi đang học judo."
  },
  {
   "word": "テニス",
   "reading": "テニス",
   "meaning": "quần vợt",
-  "example": "**テニス**を [練習](れんしゅう)します。",
+  "example": "**テニス**を[練習](れんしゅう)します。",
   "exampleVi": "Tôi luyện tập quần vợt."
  },
  {
   "word": "ゴルフ",
   "reading": "ゴルフ",
   "meaning": "môn đánh gôn",
-  "example": "[父](ちち)は **ゴルフ**が [好](す)きです。",
+  "example": "[父](ちち)は**ゴルフ**が[好](す)きです。",
   "exampleVi": "Bố tôi thích đánh gôn."
  },
  {
@@ -549,28 +549,28 @@
   "word": "暑い",
   "reading": "あつい",
   "meaning": "nóng",
-  "example": "[今日](きょう)は **[暑](あつ)い**です。",
+  "example": "[今日](きょう)は**[暑](あつ)い**です。",
   "exampleVi": "Hôm nay nóng."
  },
  {
   "word": "すずしい",
   "reading": "すずしい",
   "meaning": "mát",
-  "example": "[朝](あさ)は **すずしい**です。",
+  "example": "[朝](あさ)は**すずしい**です。",
   "exampleVi": "Buổi sáng mát mẻ."
  },
  {
   "word": "寒い",
   "reading": "さむい",
   "meaning": "lạnh",
-  "example": "[今日](きょう)は **[寒](さむ)い**ですね。",
+  "example": "[今日](きょう)は**[寒](さむ)い**ですね。",
   "exampleVi": "Hôm nay lạnh nhỉ."
  },
  {
   "word": "暖かい",
   "reading": "あたたかい",
   "meaning": "ấm",
-  "example": "[春](はる)は **[暖](あたた)かい**です。",
+  "example": "[春](はる)は**[暖](あたた)かい**です。",
   "exampleVi": "Mùa xuân thì ấm áp."
  },
  {
@@ -696,28 +696,28 @@
   "word": "春",
   "reading": "はる",
   "meaning": "mùa xuân",
-  "example": "**[春](はる)**に [桜](さくら)を [見](み)ます。",
+  "example": "**[春](はる)**に[桜](さくら)を[見](み)ます。",
   "exampleVi": "Mùa xuân tôi ngắm hoa anh đào."
  },
  {
   "word": "夏",
   "reading": "なつ",
   "meaning": "mùa hè",
-  "example": "**[夏](なつ)**に [海](うみ)で [泳](およ)ぎます。",
+  "example": "**[夏](なつ)**に[海](うみ)で[泳](およ)ぎます。",
   "exampleVi": "Mùa hè tôi bơi ở biển."
  },
  {
   "word": "秋",
   "reading": "あき",
   "meaning": "mùa thu",
-  "example": "**[秋](あき)**は すずしいです。",
+  "example": "**[秋](あき)**はすずしいです。",
   "exampleVi": "Mùa thu thì mát mẻ."
  },
  {
   "word": "冬",
   "reading": "ふゆ",
   "meaning": "mùa đông",
-  "example": "**[冬](ふゆ)**は [雪](ゆき)が [降](ふ)ります。",
+  "example": "**[冬](ふゆ)**は[雪](ゆき)が[降](ふ)ります。",
   "exampleVi": "Mùa đông tuyết rơi."
  },
  {

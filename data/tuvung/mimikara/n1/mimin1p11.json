@@ -1,83 +1,407 @@
 [
-  "軽率",
-  "怠慢",
-  "いい加減",
-  "投げやり",
-  "素っ気ない",
-  "冷ややか",
-  "なれなれしい",
-  "みっともない",
-  "たくましい",
-  "健やか",
-  "無邪気",
-  "無神経",
-  "無造作",
-  "優雅",
-  "見事",
-  "申し分ない",
-  "模範的",
-  "まめ",
-  "円滑",
-  "迅速",
-  "速やか",
-  "素早い",
-  "敏しょう",
-  "詳細",
-  "緻密",
-  "まれ",
-  "ひそか",
-  "細やか",
-  "ささやか",
-  "ささい",
-  "切実",
-  "痛切",
-  "切ない",
-  "うっとうしい",
-  "煩わしい",
-  "厄介",
-  "たやすい",
-  "思わしい",
-  "悩ましい",
-  "手持ち無沙汰",
-  "淡い",
-  "淡泊",
-  "淡白",
-  "はかない",
-  "あっけない",
-  "むなしい",
-  "なだらか",
-  "緩やか",
-  "のどか", 
-  "和やか",
-  "しなやか",
-  "かけがえのない",
-  "格別",
-  "画期的",
-  "重宝",
-  "無難",
-  "画一的",
-  "紛らわしい",
-  "生ぬるい",
-  "したたか",
-  "もろい",
-  "危うい",
-  "ややこしい",
-  "まちまち",
-  "生々しい",
-  "露骨",
-  "巧妙",
-  "重厚",
-  "厳か",
-  "希薄",
-  "旺盛",
-  "圧倒的",
-  "生理的",
-  "致命的",
-  "著しい",
-  "顕著",
-  "莫大",
-  "おびただしい",
-  "甚だしい",
-  "端的",
-  "堪能"
+  {
+    "word": "軽率",
+    "example": "**[軽率](けいそつ)**な[発言](はつげん)をしてしまいました。",
+    "exampleVi": "Tôi đã lỡ nói lời thiếu suy nghĩ."
+  },
+  {
+    "word": "怠慢",
+    "example": "[仕事](しごと)の**[怠慢](たいまん)**を[注意](ちゅうい)されました。",
+    "exampleVi": "Tôi bị nhắc nhở vì làm việc cẩu thả."
+  },
+  {
+    "word": "いい加減",
+    "example": "**いい[加減](かげん)**な[返事](へんじ)は[困](こま)ります。",
+    "exampleVi": "Câu trả lời cẩu thả thì tôi khó xử."
+  },
+  {
+    "word": "投げやり",
+    "example": "[彼](かれ)は**[投](な)げやり**な[態度](たいど)で[仕事](しごと)をしています。",
+    "exampleVi": "Anh ấy làm việc với thái độ vô trách nhiệm."
+  },
+  {
+    "word": "素っ気ない",
+    "example": "[彼女](かのじょ)は**[素](そ)っ[気](け)ない**[返事](へんじ)をしました。",
+    "exampleVi": "Cô ấy trả lời cộc lốc."
+  },
+  {
+    "word": "冷ややか",
+    "example": "[彼](かれ)は**[冷](ひや)やか**な[目](め)で[私](わたし)を[見](み)ました。",
+    "exampleVi": "Anh ta nhìn tôi bằng ánh mắt lạnh lùng."
+  },
+  {
+    "word": "なれなれしい",
+    "example": "**なれなれしい**[態度](たいど)が[不快](ふかい)です。",
+    "exampleVi": "Thái độ suồng sã thật khó chịu."
+  },
+  {
+    "word": "みっともない",
+    "example": "[人前](ひとまえ)で**みっともない**[姿](すがた)を[見](み)せました。",
+    "exampleVi": "Tôi đã để lộ dáng vẻ đáng xấu hổ trước mặt mọi người."
+  },
+  {
+    "word": "たくましい",
+    "example": "[彼](かれ)は**たくましい**[体](からだ)をしています。",
+    "exampleVi": "Anh ấy có thân hình cường tráng."
+  },
+  {
+    "word": "健やか",
+    "example": "[子供](こども)が**[健](すこ)やか**に[育](そだ)ちました。",
+    "exampleVi": "Đứa trẻ đã lớn lên khỏe mạnh."
+  },
+  {
+    "word": "無邪気",
+    "example": "[子供](こども)の**[無邪気](むじゃき)**な[笑顔](えがお)が[好](す)きです。",
+    "exampleVi": "Tôi thích nụ cười hồn nhiên của trẻ."
+  },
+  {
+    "word": "無神経",
+    "example": "[彼](かれ)は[人](ひと)の[気持](きも)ちに**[無神経](むしんけい)**です。",
+    "exampleVi": "Anh ta vô ý tứ trước cảm xúc người khác."
+  },
+  {
+    "word": "無造作",
+    "example": "[彼](かれ)は[鍵](かぎ)を**[無造作](むぞうさ)**に[置](お)きました。",
+    "exampleVi": "Anh ấy thản nhiên đặt chìa khóa xuống."
+  },
+  {
+    "word": "優雅",
+    "example": "[彼女](かのじょ)は**[優雅](ゆうが)**に[歩](ある)きます。",
+    "exampleVi": "Cô ấy bước đi thanh lịch."
+  },
+  {
+    "word": "見事",
+    "example": "**[見事](みごと)**な[演技](えんぎ)でした。",
+    "exampleVi": "Đó là màn diễn xuất tuyệt vời."
+  },
+  {
+    "word": "申し分ない",
+    "example": "[彼](かれ)の[成績](せいせき)は**[申](もう)し[分](ぶん)ない**です。",
+    "exampleVi": "Thành tích của anh ấy không có chỗ nào chê."
+  },
+  {
+    "word": "模範的",
+    "example": "[彼](かれ)は**[模範的](もはんてき)**な[社員](しゃいん)です。",
+    "exampleVi": "Anh ấy là nhân viên gương mẫu."
+  },
+  {
+    "word": "まめ",
+    "example": "[彼](かれ)は**まめ**に[手紙](てがみ)を[書](か)きます。",
+    "exampleVi": "Anh ấy chăm chỉ viết thư."
+  },
+  {
+    "word": "円滑",
+    "example": "[会議](かいぎ)は**[円滑](えんかつ)**に[進](すす)みました。",
+    "exampleVi": "Cuộc họp đã diễn ra trôi chảy."
+  },
+  {
+    "word": "迅速",
+    "example": "**[迅速](じんそく)**な[対応](たいおう)を[感謝](かんしゃ)します。",
+    "exampleVi": "Tôi cảm ơn sự ứng phó nhanh chóng."
+  },
+  {
+    "word": "速やか",
+    "example": "**[速](すみ)やか**に[報告](ほうこく)してください。",
+    "exampleVi": "Xin hãy báo cáo nhanh chóng."
+  },
+  {
+    "word": "素早い",
+    "example": "[彼](かれ)は**[素早](すばや)く**[動](うご)きました。",
+    "exampleVi": "Anh ấy đã di chuyển nhanh nhẹn."
+  },
+  {
+    "word": "敏しょう",
+    "example": "[猫](ねこ)は**[敏](びん)しょう**な[動物](どうぶつ)です。",
+    "exampleVi": "Mèo là loài vật nhanh nhẹn, lanh lợi."
+  },
+  {
+    "word": "詳細",
+    "example": "[事故](じこ)の**[詳細](しょうさい)**を[教](おし)えてください。",
+    "exampleVi": "Xin cho biết chi tiết vụ tai nạn."
+  },
+  {
+    "word": "緻密",
+    "example": "**[緻密](ちみつ)**な[計画](けいかく)を[立](た)てました。",
+    "exampleVi": "Tôi đã lập kế hoạch tỉ mỉ, chính xác."
+  },
+  {
+    "word": "まれ",
+    "example": "そのようなことは**まれ**です。",
+    "exampleVi": "Chuyện như vậy rất hiếm."
+  },
+  {
+    "word": "ひそか",
+    "example": "**ひそか**に[計画](けいかく)を[立](た)てています。",
+    "exampleVi": "Tôi đang lặng lẽ lên kế hoạch."
+  },
+  {
+    "word": "細やか",
+    "example": "**[細](こま)やか**な[気配](きくば)りに[感謝](かんしゃ)します。",
+    "exampleVi": "Tôi cảm ơn sự quan tâm tỉ mỉ, chân thành."
+  },
+  {
+    "word": "ささやか",
+    "example": "**ささやか**なプレゼントですが、[受](う)け[取](と)ってください。",
+    "exampleVi": "Chỉ là món quà nhỏ giản dị, xin hãy nhận."
+  },
+  {
+    "word": "ささい",
+    "example": "**ささい**なことで[喧嘩](けんか)しました。",
+    "exampleVi": "Chúng tôi cãi nhau vì chuyện vặt vãnh."
+  },
+  {
+    "word": "切実",
+    "example": "**[切実](せつじつ)**な[問題](もんだい)です。",
+    "exampleVi": "Đây là vấn đề cấp bách, nghiêm trọng."
+  },
+  {
+    "word": "痛切",
+    "example": "[自分](じぶん)の[未熟](みじゅく)さを**[痛切](つうせつ)**に[感](かん)じました。",
+    "exampleVi": "Tôi cảm nhận sâu sắc sự non nớt của bản thân."
+  },
+  {
+    "word": "切ない",
+    "example": "**[切](せつ)ない**[気持](きも)ちになりました。",
+    "exampleVi": "Tôi thấy lòng nhói đau."
+  },
+  {
+    "word": "うっとうしい",
+    "example": "[前髪](まえがみ)が**うっとうしい**です。",
+    "exampleVi": "Tóc mái vướng víu khó chịu."
+  },
+  {
+    "word": "煩わしい",
+    "example": "[手続](てつづ)きが**[煩](わずら)わしい**です。",
+    "exampleVi": "Thủ tục thật phiền phức."
+  },
+  {
+    "word": "厄介",
+    "example": "**[厄介](やっかい)**な[問題](もんだい)に[巻](ま)き[込](こ)まれました。",
+    "exampleVi": "Tôi bị cuốn vào rắc rối phiền hà."
+  },
+  {
+    "word": "たやすい",
+    "example": "**たやすい**[仕事](しごと)ではありません。",
+    "exampleVi": "Đây không phải là công việc dễ dàng."
+  },
+  {
+    "word": "思わしい",
+    "example": "[結果](けっか)は**[思](おも)わしく**ありませんでした。",
+    "exampleVi": "Kết quả không được khả quan."
+  },
+  {
+    "word": "悩ましい",
+    "example": "**[悩](なや)ましい**[問題](もんだい)が[続](つづ)いています。",
+    "exampleVi": "Những vấn đề nan giải đau đầu vẫn tiếp diễn."
+  },
+  {
+    "word": "手持ち無沙汰",
+    "example": "[待](ま)っている[間](あいだ)、**[手持](ても)ち[無沙汰](ぶさた)**でした。",
+    "exampleVi": "Trong lúc chờ đợi, tôi buồn tay buồn chân."
+  },
+  {
+    "word": "淡い",
+    "example": "**[淡](あわ)い**[青](あお)の[空](そら)が[広](ひろ)がっています。",
+    "exampleVi": "Bầu trời xanh nhạt trải rộng."
+  },
+  {
+    "word": "淡泊",
+    "example": "[彼](かれ)はお[金](かね)に**[淡泊](たんぱく)**です。",
+    "exampleVi": "Anh ấy thờ ơ với tiền bạc."
+  },
+  {
+    "word": "淡白",
+    "example": "[彼](かれ)は[人間](にんげん)[関係](かんけい)に**[淡白](たんぱく)**です。",
+    "exampleVi": "Anh ấy nhạt nhẽo, lạnh nhạt trong quan hệ giữa người với người."
+  },
+  {
+    "word": "はかない",
+    "example": "[人生](じんせい)は**はかない**ものです。",
+    "exampleVi": "Cuộc đời là thứ mong manh."
+  },
+  {
+    "word": "あっけない",
+    "example": "[試合](しあい)は**あっけなく**[終](お)わりました。",
+    "exampleVi": "Trận đấu đã kết thúc chóng vánh."
+  },
+  {
+    "word": "むなしい",
+    "example": "[一人](ひとり)で[食事](しょくじ)をすると**むなしい**です。",
+    "exampleVi": "Ăn cơm một mình thì thấy trống trải."
+  },
+  {
+    "word": "なだらか",
+    "example": "**なだらか**な[丘](おか)が[続](つづ)いています。",
+    "exampleVi": "Những ngọn đồi thoai thoải nối tiếp."
+  },
+  {
+    "word": "緩やか",
+    "example": "[川](かわ)が**[緩](ゆる)やか**に[流](なが)れています。",
+    "exampleVi": "Dòng sông chảy chậm rãi."
+  },
+  {
+    "word": "のどか",
+    "example": "**のどか**な[田舎](いなか)で[暮](く)らしています。",
+    "exampleVi": "Tôi sống ở miền quê thanh bình."
+  },
+  {
+    "word": "和やか",
+    "example": "**[和](なご)やか**な[雰囲気](ふんいき)でした。",
+    "exampleVi": "Đó là bầu không khí hòa nhã."
+  },
+  {
+    "word": "しなやか",
+    "example": "[彼女](かのじょ)の[動](うご)きは**しなやか**です。",
+    "exampleVi": "Động tác của cô ấy mềm mại uyển chuyển."
+  },
+  {
+    "word": "かけがえのない",
+    "example": "**かけがえのない**[思](おも)い[出](で)です。",
+    "exampleVi": "Đó là kỷ niệm không gì thay thế được."
+  },
+  {
+    "word": "格別",
+    "example": "**[格別](かくべつ)**な[味](あじ)でした。",
+    "exampleVi": "Đó là hương vị đặc biệt."
+  },
+  {
+    "word": "画期的",
+    "example": "**[画期的](かっきてき)**な[発明](はつめい)です。",
+    "exampleVi": "Đây là phát minh mang tính bước ngoặt."
+  },
+  {
+    "word": "重宝",
+    "example": "このナイフは**[重宝](ちょうほう)**します。",
+    "exampleVi": "Con dao này dùng rất tiện."
+  },
+  {
+    "word": "無難",
+    "example": "**[無難](ぶなん)**な[答](こた)えを[選](えら)びました。",
+    "exampleVi": "Tôi đã chọn câu trả lời an toàn."
+  },
+  {
+    "word": "画一的",
+    "example": "**[画一的](かくいつてき)**な[教育](きょういく)は[問題](もんだい)です。",
+    "exampleVi": "Giáo dục đồng loạt rập khuôn là vấn đề."
+  },
+  {
+    "word": "紛らわしい",
+    "example": "[名前](なまえ)が**[紛](まぎ)らわしい**ので、[間違](まちが)えました。",
+    "exampleVi": "Vì tên gọi dễ nhầm nên tôi đã nhầm lẫn."
+  },
+  {
+    "word": "生ぬるい",
+    "example": "**[生](なま)ぬるい**[対応](たいおう)では[問題](もんだい)は[解決](かいけつ)しません。",
+    "exampleVi": "Cách xử lý thiếu nhiệt tình thì vấn đề không giải quyết được."
+  },
+  {
+    "word": "したたか",
+    "example": "[彼](かれ)は**したたか**な[人](ひと)です。",
+    "exampleVi": "Anh ấy là người cứng cỏi, khôn khéo."
+  },
+  {
+    "word": "もろい",
+    "example": "このガラスは**もろい**です。",
+    "exampleVi": "Loại kính này dễ vỡ."
+  },
+  {
+    "word": "危うい",
+    "example": "[彼](かれ)の[立場](たちば)は**[危](あや)うい**です。",
+    "exampleVi": "Vị thế của anh ta đang nguy hiểm."
+  },
+  {
+    "word": "ややこしい",
+    "example": "[手続](てつづ)きが**ややこしい**です。",
+    "exampleVi": "Thủ tục phức tạp."
+  },
+  {
+    "word": "まちまち",
+    "example": "[意見](いけん)は**まちまち**です。",
+    "exampleVi": "Ý kiến mỗi người mỗi khác."
+  },
+  {
+    "word": "生々しい",
+    "example": "**[生々](なまなま)しい**[記憶](きおく)が[残](のこ)っています。",
+    "exampleVi": "Ký ức sống động vẫn còn đó."
+  },
+  {
+    "word": "露骨",
+    "example": "**[露骨](ろこつ)**な[表現](ひょうげん)は[避](さ)けましょう。",
+    "exampleVi": "Hãy tránh cách diễn đạt lộ liễu."
+  },
+  {
+    "word": "巧妙",
+    "example": "**[巧妙](こうみょう)**な[方法](ほうほう)で[解決](かいけつ)しました。",
+    "exampleVi": "Tôi đã giải quyết bằng cách khéo léo, tinh vi."
+  },
+  {
+    "word": "重厚",
+    "example": "**[重厚](じゅうこう)**な[建物](たてもの)ですね。",
+    "exampleVi": "Đây là tòa nhà đồ sộ, trang nghiêm nhỉ."
+  },
+  {
+    "word": "厳か",
+    "example": "**[厳](おごそ)か**な[雰囲気](ふんいき)の[中](なか)で[式](しき)が[行](おこな)われました。",
+    "exampleVi": "Buổi lễ được cử hành trong bầu không khí trang nghiêm."
+  },
+  {
+    "word": "希薄",
+    "example": "[人間](にんげん)[関係](かんけい)が**[希薄](きはく)**になりました。",
+    "exampleVi": "Quan hệ giữa người với người đã trở nên mỏng manh."
+  },
+  {
+    "word": "旺盛",
+    "example": "[彼](かれ)は**[旺盛](おうせい)**な[食欲](しょくよく)です。",
+    "exampleVi": "Anh ấy có khẩu vị mãnh liệt."
+  },
+  {
+    "word": "圧倒的",
+    "example": "**[圧倒的](あっとうてき)**な[勝利](しょうり)でした。",
+    "exampleVi": "Đó là chiến thắng áp đảo."
+  },
+  {
+    "word": "生理的",
+    "example": "**[生理的](せいりてき)**に[受](う)け[付](つ)けません。",
+    "exampleVi": "Tôi ghét theo bản năng, không chấp nhận nổi."
+  },
+  {
+    "word": "致命的",
+    "example": "**[致命的](ちめいてき)**な[欠陥](けっかん)が[見](み)つかりました。",
+    "exampleVi": "Đã phát hiện khiếm khuyết chí mạng."
+  },
+  {
+    "word": "著しい",
+    "example": "[進歩](しんぽ)が**[著](いちじる)しい**です。",
+    "exampleVi": "Sự tiến bộ rất rõ rệt."
+  },
+  {
+    "word": "顕著",
+    "example": "[効果](こうか)が**[顕著](けんちょ)**です。",
+    "exampleVi": "Hiệu quả rất rõ rệt."
+  },
+  {
+    "word": "莫大",
+    "example": "**[莫大](ばくだい)**な[費用](ひよう)がかかります。",
+    "exampleVi": "Tốn chi phí khổng lồ."
+  },
+  {
+    "word": "おびただしい",
+    "example": "[道](みち)に**おびただしい**[車](くるま)が[並](なら)んでいます。",
+    "exampleVi": "Vô số xe xếp hàng trên đường."
+  },
+  {
+    "word": "甚だしい",
+    "example": "[気温](きおん)の[差](さ)が**[甚](はなは)だしい**です。",
+    "exampleVi": "Chênh lệch nhiệt độ cực kỳ lớn."
+  },
+  {
+    "word": "端的",
+    "example": "[問題](もんだい)を**[端的](たんてき)**に[説明](せつめい)します。",
+    "exampleVi": "Tôi sẽ giải thích vấn đề một cách thẳng thắn, rõ ràng."
+  },
+  {
+    "word": "堪能",
+    "example": "[温泉](おんせん)と[料理](りょうり)を**[堪能](たんのう)**しました。",
+    "exampleVi": "Tôi đã thưởng thức trọn vẹn suối nước nóng và ẩm thực."
+  }
 ]

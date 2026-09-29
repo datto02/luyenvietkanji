@@ -1,102 +1,502 @@
 [
-  "求人",
-  "志望",
-  "エントリー",
-  "携わる",
-  "生かす",
-  "貴社",
-  "御中",
-  "動機",
-  "熱意",
-  "学歴",
-  "不問",
-  "制限",
-  "特技",
-  "協調",
-  "肝心",
-  "精一杯",
-  "アピール",
-  "対応",
-  "合同",
-  "望ましい",
-  "好ましい",
-  "公平",
-  "せめて",
-  "受け取る",
-  "内定",
-  "辞退",
-  "契約",
-  "入社",
-  "心得る",
-  "社会人",
-  "自覚",
-  "いよいよ",
-  "大企業",
-  "大手",
-  "代表",
-  "民間",
-  "組織",
-  "従業員",
-  "新入社員",
-  "派遣社員",
-  "オーナー",
-  "重役",
-  "オフィス",
-  "支給",
-  "出世",
-  "昇進",
-  "転勤",
-  "赴任",
-  "有給休暇",
-  "人事",
-  "人材",
-  "人手",
-  "モニター",
-  "業績",
-  "資本",
-  "方針",
-  "我々",
-  "製品",
-  "売れ行き",
-  "売り上げ",
-  "コスト",
-  "果たす",
-  "得る",
-  "認める",
-  "ビジネス",
-  "就く",
-  "生きがい",
-  "やりがい",
-  "抱く",
-  "打ち合わせ",
-  "アポイント",
-  "応対",
-  "伝言",
-  "改めて",
-  "じかに",
-  "プロジェクト",
-  "意図",
-  "新た",
-  "組む",
-  "取り引き",
-  "依頼",
-  "任せる",
-  "引き受ける",
-  "こなす",
-  "成果",
-  "達成",
-  "作業",
-  "保留",
-  "やり直す",
-  "件",
-  "急用",
-  "至急",
-  "手順",
-  "移動",
-  "大工",
-  "ガードマン",
-  "地位",
-  "目上",
-  "敬意",
-  "敬う"
+  {
+    "word": "求人",
+    "example": "[最近](さいきん)は**[求人](きゅうじん)**が[増](ふ)えています。",
+    "exampleVi": "Gần đây số tin tuyển dụng đang tăng lên."
+  },
+  {
+    "word": "志望",
+    "example": "[第一](だいいち)**[志望](しぼう)**の[会社](かいしゃ)から[内定](ないてい)をもらいました。",
+    "exampleVi": "Tôi đã nhận được quyết định tuyển dụng từ công ty nguyện vọng số một."
+  },
+  {
+    "word": "エントリー",
+    "example": "[就職](しゅうしょく)[活動](かつどう)で、[十社](じっしゃ)に**エントリー**しました。",
+    "exampleVi": "Trong quá trình tìm việc, tôi đã đăng ký ứng tuyển vào mười công ty."
+  },
+  {
+    "word": "携わる",
+    "example": "[彼](かれ)は[長年](ながねん)、[教育](きょういく)の[仕事](しごと)に**[携](たずさ)わって**います。",
+    "exampleVi": "Anh ấy đã làm việc trong lĩnh vực giáo dục nhiều năm."
+  },
+  {
+    "word": "生かす",
+    "example": "これまでの[経験](けいけん)を**[生](い)かして**、[新](あたら)しい[仕事](しごと)に[挑戦](ちょうせん)します。",
+    "exampleVi": "Tôi sẽ phát huy kinh nghiệm từ trước đến nay để thử sức với công việc mới."
+  },
+  {
+    "word": "貴社",
+    "example": "**[貴社](きしゃ)**の[製品](せいひん)に[興味](きょうみ)があります。",
+    "exampleVi": "Tôi có hứng thú với sản phẩm của quý công ty."
+  },
+  {
+    "word": "御中",
+    "example": "[会社](かいしゃ)への[手紙](てがみ)の[宛名](あてな)には「**[御中](おんちゅう)**」と[書](か)きます。",
+    "exampleVi": "Ở phần địa chỉ người nhận thư gửi công ty, ta viết \"Kính gửi\"."
+  },
+  {
+    "word": "動機",
+    "example": "[志望](しぼう)の**[動機](どうき)**を[教](おし)えてください。",
+    "exampleVi": "Xin hãy cho biết động cơ ứng tuyển."
+  },
+  {
+    "word": "熱意",
+    "example": "[面接](めんせつ)で[仕事](しごと)への**[熱意](ねつい)**を[伝](つた)えました。",
+    "exampleVi": "Tôi đã truyền đạt nhiệt huyết với công việc trong buổi phỏng vấn."
+  },
+  {
+    "word": "学歴",
+    "example": "この[仕事](しごと)に**[学歴](がくれき)**は[関係](かんけい)ありません。",
+    "exampleVi": "Với công việc này, bằng cấp không liên quan."
+  },
+  {
+    "word": "不問",
+    "example": "[経験](けいけん)は**[不問](ふもん)**です。",
+    "exampleVi": "Không yêu cầu kinh nghiệm."
+  },
+  {
+    "word": "制限",
+    "example": "[年齢](ねんれい)の**[制限](せいげん)**はありません。",
+    "exampleVi": "Không có giới hạn về độ tuổi."
+  },
+  {
+    "word": "特技",
+    "example": "[私](わたし)の**[特技](とくぎ)**はピアノです。",
+    "exampleVi": "Sở trường đặc biệt của tôi là chơi piano."
+  },
+  {
+    "word": "協調",
+    "example": "[仕事](しごと)では[周](まわ)りの[人](ひと)との**[協調](きょうちょう)**が[大切](たいせつ)です。",
+    "exampleVi": "Trong công việc, sự hợp tác với những người xung quanh rất quan trọng."
+  },
+  {
+    "word": "肝心",
+    "example": "[最初](さいしょ)の[印象](いんしょう)が**[肝心](かんじん)**です。",
+    "exampleVi": "Ấn tượng ban đầu là điều quan trọng nhất."
+  },
+  {
+    "word": "精一杯",
+    "example": "[今](いま)の[私](わたし)にできる**[精一杯](せいいっぱい)**のことをしました。",
+    "exampleVi": "Tôi đã làm hết sức mình những gì bản thân có thể làm bây giờ."
+  },
+  {
+    "word": "アピール",
+    "example": "[面接](めんせつ)で[自分](じぶん)の[長所](ちょうしょ)を**アピール**しました。",
+    "exampleVi": "Trong buổi phỏng vấn, tôi đã gây ấn tượng bằng điểm mạnh của bản thân."
+  },
+  {
+    "word": "対応",
+    "example": "お[客様](きゃくさま)のクレームに[丁寧](ていねい)に**[対応](たいおう)**しました。",
+    "exampleVi": "Tôi đã xử lý lịch sự lời phàn nàn của khách."
+  },
+  {
+    "word": "合同",
+    "example": "[二](ふた)つの[会社](かいしゃ)が**[合同](ごうどう)**で[説明会](せつめいかい)を[開](ひら)きました。",
+    "exampleVi": "Hai công ty đã cùng tổ chức buổi giải thích."
+  },
+  {
+    "word": "望ましい",
+    "example": "[経験](けいけん)がある[方](ほう)が**[望](のぞ)ましい**です。",
+    "exampleVi": "Người có kinh nghiệm thì càng đáng mong muốn."
+  },
+  {
+    "word": "好ましい",
+    "example": "[彼](かれ)の[態度](たいど)はとても**[好](この)ましい**です。",
+    "exampleVi": "Thái độ của anh ấy rất đáng khen."
+  },
+  {
+    "word": "公平",
+    "example": "[評価](ひょうか)は**[公平](こうへい)**に[行](おこな)われるべきです。",
+    "exampleVi": "Việc đánh giá cần được tiến hành một cách công bằng."
+  },
+  {
+    "word": "せめて",
+    "example": "**せめて**[週](しゅう)に[一日](いちにち)は[休](やす)みたいです。",
+    "exampleVi": "Ít nhất mỗi tuần tôi cũng muốn nghỉ một ngày."
+  },
+  {
+    "word": "受け取る",
+    "example": "[給料](きゅうりょう)を**[受](う)け[取](と)りました**。",
+    "exampleVi": "Tôi đã nhận lương."
+  },
+  {
+    "word": "内定",
+    "example": "[先週](せんしゅう)、[会社](かいしゃ)から**[内定](ないてい)**の[連絡](れんらく)がありました。",
+    "exampleVi": "Tuần trước công ty đã liên lạc báo quyết định tuyển dụng."
+  },
+  {
+    "word": "辞退",
+    "example": "[別](べつ)の[会社](かいしゃ)に[決](き)まったので、[内定](ないてい)を**[辞退](じたい)**しました。",
+    "exampleVi": "Vì đã được nhận vào công ty khác nên tôi đã từ chối quyết định tuyển dụng."
+  },
+  {
+    "word": "契約",
+    "example": "[来月](らいげつ)から、[新](あたら)しい[会社](かいしゃ)と**[契約](けいやく)**します。",
+    "exampleVi": "Từ tháng sau tôi sẽ ký hợp đồng với công ty mới."
+  },
+  {
+    "word": "入社",
+    "example": "[四月](しがつ)に[大手](おおて)の[会社](かいしゃ)に**[入社](にゅうしゃ)**します。",
+    "exampleVi": "Tháng Tư tôi sẽ vào làm ở một công ty lớn."
+  },
+  {
+    "word": "心得る",
+    "example": "[社会人](しゃかいじん)として[守](まも)るべきルールは**[心得](こころえ)て**います。",
+    "exampleVi": "Tôi nắm rõ những quy tắc cần tuân thủ với tư cách người đi làm."
+  },
+  {
+    "word": "社会人",
+    "example": "[四月](しがつ)から**[社会人](しゃかいじん)**になります。",
+    "exampleVi": "Từ tháng Tư tôi sẽ trở thành người đi làm."
+  },
+  {
+    "word": "自覚",
+    "example": "[新入社員](しんにゅうしゃいん)としての**[自覚](じかく)**を[持](も)ちなさい。",
+    "exampleVi": "Hãy có ý thức của một nhân viên mới."
+  },
+  {
+    "word": "いよいよ",
+    "example": "**いよいよ**[明日](あした)から[新](あたら)しい[仕事](しごと)が[始](はじ)まります。",
+    "exampleVi": "Cuối cùng thì từ ngày mai công việc mới cũng bắt đầu."
+  },
+  {
+    "word": "大企業",
+    "example": "[彼](かれ)は**[大企業](だいきぎょう)**に[勤](つと)めています。",
+    "exampleVi": "Anh ấy làm việc ở một doanh nghiệp lớn."
+  },
+  {
+    "word": "大手",
+    "example": "**[大手](おおて)**の[会社](かいしゃ)に[就職](しゅうしょく)したいです。",
+    "exampleVi": "Tôi muốn xin vào làm ở một công ty lớn."
+  },
+  {
+    "word": "代表",
+    "example": "クラスの**[代表](だいひょう)**が[意見](いけん)を[述](の)べました。",
+    "exampleVi": "Đại diện lớp đã trình bày ý kiến."
+  },
+  {
+    "word": "民間",
+    "example": "[公務員](こうむいん)ではなく、**[民間](みんかん)**の[会社](かいしゃ)に[就職](しゅうしょく)しました。",
+    "exampleVi": "Tôi không làm công chức mà đã vào làm ở một công ty tư nhân."
+  },
+  {
+    "word": "組織",
+    "example": "[大](おお)きな**[組織](そしき)**で[働](はたら)きたいです。",
+    "exampleVi": "Tôi muốn làm việc trong một tổ chức lớn."
+  },
+  {
+    "word": "従業員",
+    "example": "この[会社](かいしゃ)の**[従業員](じゅうぎょういん)**は[五百人](ごひゃくにん)です。",
+    "exampleVi": "Công ty này có năm trăm nhân viên."
+  },
+  {
+    "word": "新入社員",
+    "example": "**[新入](しんにゅう)[社員](しゃいん)**の[研修](けんしゅう)が[始](はじ)まりました。",
+    "exampleVi": "Đợt đào tạo cho nhân viên mới đã bắt đầu."
+  },
+  {
+    "word": "派遣社員",
+    "example": "[彼女](かのじょ)は**[派遣](はけん)[社員](しゃいん)**として[働](はたら)いています。",
+    "exampleVi": "Cô ấy đang làm việc với tư cách nhân viên phái cử."
+  },
+  {
+    "word": "オーナー",
+    "example": "この[店](みせ)の**オーナー**は[若](わか)い[女性](じょせい)です。",
+    "exampleVi": "Chủ sở hữu quán này là một phụ nữ trẻ."
+  },
+  {
+    "word": "重役",
+    "example": "[会議](かいぎ)には[社長](しゃちょう)や**[重役](じゅうやく)**が[出席](しゅっせき)しました。",
+    "exampleVi": "Giám đốc và các lãnh đạo cấp cao đã tham dự cuộc họp."
+  },
+  {
+    "word": "オフィス",
+    "example": "[新](あたら)しい**オフィス**は[駅](えき)から[近](ちか)いです。",
+    "exampleVi": "Văn phòng mới gần nhà ga."
+  },
+  {
+    "word": "支給",
+    "example": "[会社](かいしゃ)から[交通費](こうつうひ)が**[支給](しきゅう)**されます。",
+    "exampleVi": "Công ty chi trả tiền đi lại."
+  },
+  {
+    "word": "出世",
+    "example": "[彼](かれ)は[若](わか)くして**[出世](しゅっせ)**しました。",
+    "exampleVi": "Anh ấy đã thành đạt từ khi còn trẻ."
+  },
+  {
+    "word": "昇進",
+    "example": "[来月](らいげつ)から、[課長](かちょう)に**[昇進](しょうしん)**します。",
+    "exampleVi": "Từ tháng sau tôi sẽ được thăng chức trưởng phòng."
+  },
+  {
+    "word": "転勤",
+    "example": "[父](ちち)の**[転勤](てんきん)**で、[大阪](おおさか)へ[引](ひ)っ[越](こ)しました。",
+    "exampleVi": "Vì bố chuyển công tác nên chúng tôi đã chuyển đến Osaka."
+  },
+  {
+    "word": "赴任",
+    "example": "[彼](かれ)は[来月](らいげつ)、[海外](かいがい)に**[赴任](ふにん)**します。",
+    "exampleVi": "Tháng sau anh ấy sẽ sang nước ngoài nhận nhiệm sở."
+  },
+  {
+    "word": "有給休暇",
+    "example": "**[有給](ゆうきゅう)[休暇](きゅうか)**を[取](と)って、[旅行](りょこう)に[行](い)きました。",
+    "exampleVi": "Tôi đã xin nghỉ phép có lương và đi du lịch."
+  },
+  {
+    "word": "人事",
+    "example": "**[人事](じんじ)**[部](ぶ)の[人](ひと)と[面接](めんせつ)をしました。",
+    "exampleVi": "Tôi đã phỏng vấn với người của phòng nhân sự."
+  },
+  {
+    "word": "人材",
+    "example": "[会社](かいしゃ)は[優秀](ゆうしゅう)な**[人材](じんざい)**を[探](さが)しています。",
+    "exampleVi": "Công ty đang tìm kiếm nhân tài ưu tú."
+  },
+  {
+    "word": "人手",
+    "example": "[忙](いそが)しくて**[人手](ひとで)**が[足](た)りません。",
+    "exampleVi": "Bận rộn nên không đủ nhân lực."
+  },
+  {
+    "word": "モニター",
+    "example": "パソコンの**モニター**が[壊](こわ)れました。",
+    "exampleVi": "Màn hình máy tính bị hỏng."
+  },
+  {
+    "word": "業績",
+    "example": "[今年](ことし)の[会社](かいしゃ)の**[業績](ぎょうせき)**は[良](よ)かったです。",
+    "exampleVi": "Thành tích kinh doanh của công ty năm nay rất tốt."
+  },
+  {
+    "word": "資本",
+    "example": "**[資本](しほん)**がないと、[会社](かいしゃ)は[作](つく)れません。",
+    "exampleVi": "Không có vốn thì không thể lập công ty."
+  },
+  {
+    "word": "方針",
+    "example": "[会社](かいしゃ)の**[方針](ほうしん)**に[従](したが)って[仕事](しごと)をします。",
+    "exampleVi": "Tôi làm việc theo phương châm của công ty."
+  },
+  {
+    "word": "我々",
+    "example": "**[我々](われわれ)**は[新](あたら)しい[商品](しょうひん)を[開発](かいはつ)しました。",
+    "exampleVi": "Chúng tôi đã phát triển sản phẩm mới."
+  },
+  {
+    "word": "製品",
+    "example": "この[会社](かいしゃ)の**[製品](せいひん)**は[品質](ひんしつ)が[良](よ)いです。",
+    "exampleVi": "Sản phẩm của công ty này có chất lượng tốt."
+  },
+  {
+    "word": "売れ行き",
+    "example": "[新](あたら)しい[商品](しょうひん)の**[売](う)れ[行](ゆ)き**は[好調](こうちょう)です。",
+    "exampleVi": "Tình hình tiêu thụ của sản phẩm mới rất tốt."
+  },
+  {
+    "word": "売り上げ",
+    "example": "[今月](こんげつ)の**[売](う)り[上](あ)げ**は[去年](きょねん)より[増](ふ)えました。",
+    "exampleVi": "Doanh thu tháng này đã tăng so với năm ngoái."
+  },
+  {
+    "word": "コスト",
+    "example": "[生産](せいさん)の**コスト**を[下](さ)げたいです。",
+    "exampleVi": "Tôi muốn giảm chi phí sản xuất."
+  },
+  {
+    "word": "果たす",
+    "example": "[自分](じぶん)の[役割](やくわり)を**[果](は)たしました**。",
+    "exampleVi": "Tôi đã hoàn thành vai trò của mình."
+  },
+  {
+    "word": "得る",
+    "example": "[仕事](しごと)を[通](つう)じて、[多](おお)くの[経験](けいけん)を**[得](え)ました**。",
+    "exampleVi": "Qua công việc, tôi đã thu được nhiều kinh nghiệm."
+  },
+  {
+    "word": "認める",
+    "example": "[上司](じょうし)に[努力](どりょく)を**[認](みと)められました**。",
+    "exampleVi": "Nỗ lực của tôi đã được sếp công nhận."
+  },
+  {
+    "word": "ビジネス",
+    "example": "[英語](えいご)は**ビジネス**で[役](やく)に[立](た)ちます。",
+    "exampleVi": "Tiếng Anh có ích trong kinh doanh."
+  },
+  {
+    "word": "就く",
+    "example": "[父](ちち)は[教師](きょうし)の[職](しょく)に**[就](つ)いて**います。",
+    "exampleVi": "Bố tôi đang làm nghề giáo viên."
+  },
+  {
+    "word": "生きがい",
+    "example": "[仕事](しごと)が[私](わたし)の**[生](い)きがい**です。",
+    "exampleVi": "Công việc là lẽ sống của tôi."
+  },
+  {
+    "word": "やりがい",
+    "example": "[大変](たいへん)ですが、**やりがい**のある[仕事](しごと)です。",
+    "exampleVi": "Tuy vất vả nhưng đây là công việc đáng làm."
+  },
+  {
+    "word": "抱く",
+    "example": "[子供](こども)の[頃](ころ)から、[医者](いしゃ)になる[夢](ゆめ)を**[抱](いだ)いて**きました。",
+    "exampleVi": "Từ nhỏ tôi đã ấp ủ ước mơ trở thành bác sĩ."
+  },
+  {
+    "word": "打ち合わせ",
+    "example": "[取引先](とりひきさき)と[来週](らいしゅう)の**[打](う)ち[合](あ)わせ**をしました。",
+    "exampleVi": "Tôi đã bàn bạc trước với đối tác về công việc tuần sau."
+  },
+  {
+    "word": "アポイント",
+    "example": "[社長](しゃちょう)に**アポイント**を[取](と)ってください。",
+    "exampleVi": "Xin hãy đặt lịch hẹn với giám đốc."
+  },
+  {
+    "word": "応対",
+    "example": "[電話](でんわ)の**[応対](おうたい)**は[丁寧](ていねい)にしましょう。",
+    "exampleVi": "Hãy tiếp nhận điện thoại một cách lịch sự."
+  },
+  {
+    "word": "伝言",
+    "example": "[部長](ぶちょう)に**[伝言](でんごん)**をお[願](ねが)いします。",
+    "exampleVi": "Xin nhờ chuyển lời nhắn tới trưởng phòng."
+  },
+  {
+    "word": "改めて",
+    "example": "**[改](あらた)めて**[連絡](れんらく)いたします。",
+    "exampleVi": "Tôi sẽ liên lạc lại lần nữa sau."
+  },
+  {
+    "word": "じかに",
+    "example": "[社長](しゃちょう)から**じかに**[話](はなし)を[聞](き)きました。",
+    "exampleVi": "Tôi đã nghe trực tiếp từ giám đốc."
+  },
+  {
+    "word": "プロジェクト",
+    "example": "[新](あたら)しい**プロジェクト**が[始](はじ)まりました。",
+    "exampleVi": "Một dự án mới đã bắt đầu."
+  },
+  {
+    "word": "意図",
+    "example": "[彼](かれ)の**[意図](いと)**が[分](わ)かりません。",
+    "exampleVi": "Tôi không hiểu ý đồ của anh ta."
+  },
+  {
+    "word": "新た",
+    "example": "**[新](あら)た**な[問題](もんだい)が[見](み)つかりました。",
+    "exampleVi": "Một vấn đề mới đã được phát hiện."
+  },
+  {
+    "word": "組む",
+    "example": "[計画](けいかく)を**[組](く)んで**、[旅行](りょこう)に[行](い)きます。",
+    "exampleVi": "Tôi lập kế hoạch rồi đi du lịch."
+  },
+  {
+    "word": "取り引き",
+    "example": "[新](あたら)しい[会社](かいしゃ)と**[取](と)り[引](ひ)き**を[始](はじ)めました。",
+    "exampleVi": "Chúng tôi đã bắt đầu giao dịch với công ty mới."
+  },
+  {
+    "word": "依頼",
+    "example": "[友人](ゆうじん)から[仕事](しごと)の**[依頼](いらい)**を[受](う)けました。",
+    "exampleVi": "Tôi nhận được yêu cầu công việc từ bạn."
+  },
+  {
+    "word": "任せる",
+    "example": "この[仕事](しごと)は[私](わたし)に**[任](まか)せて**ください。",
+    "exampleVi": "Hãy giao công việc này cho tôi."
+  },
+  {
+    "word": "引き受ける",
+    "example": "[頼](たの)まれた[仕事](しごと)を**[引](ひ)き[受](う)けました**。",
+    "exampleVi": "Tôi đã nhận đảm nhận công việc được nhờ."
+  },
+  {
+    "word": "こなす",
+    "example": "[彼](かれ)はたくさんの[仕事](しごと)を**こなして**います。",
+    "exampleVi": "Anh ấy xử lý xong rất nhiều việc."
+  },
+  {
+    "word": "成果",
+    "example": "[努力](どりょく)の**[成果](せいか)**が[出](で)ました。",
+    "exampleVi": "Thành quả của nỗ lực đã xuất hiện."
+  },
+  {
+    "word": "達成",
+    "example": "[今月](こんげつ)の[目標](もくひょう)を**[達成](たっせい)**しました。",
+    "exampleVi": "Tôi đã đạt được mục tiêu của tháng này."
+  },
+  {
+    "word": "作業",
+    "example": "[工場](こうじょう)で[機械](きかい)の**[作業](さぎょう)**をしています。",
+    "exampleVi": "Tôi đang làm việc với máy móc ở nhà máy."
+  },
+  {
+    "word": "保留",
+    "example": "[返事](へんじ)はしばらく**[保留](ほりゅう)**にしてください。",
+    "exampleVi": "Xin hãy tạm hoãn việc trả lời một thời gian."
+  },
+  {
+    "word": "やり直す",
+    "example": "[間違](まちが)えたので、[最初](さいしょ)から**やり[直](なお)します**。",
+    "exampleVi": "Vì làm sai nên tôi sẽ làm lại từ đầu."
+  },
+  {
+    "word": "件",
+    "example": "[昨日](きのう)の**[件](けん)**について[話](はな)したいです。",
+    "exampleVi": "Tôi muốn nói về việc hôm qua."
+  },
+  {
+    "word": "急用",
+    "example": "**[急用](きゅうよう)**ができて、[会議](かいぎ)に[出](で)られません。",
+    "exampleVi": "Có việc gấp nên tôi không thể dự họp."
+  },
+  {
+    "word": "至急",
+    "example": "**[至急](しきゅう)**、[連絡](れんらく)してください。",
+    "exampleVi": "Xin hãy liên lạc gấp."
+  },
+  {
+    "word": "手順",
+    "example": "[作業](さぎょう)の**[手順](てじゅん)**を[説明](せつめい)します。",
+    "exampleVi": "Tôi sẽ giải thích trình tự công việc."
+  },
+  {
+    "word": "移動",
+    "example": "[電車](でんしゃ)で**[移動](いどう)**しながら、メールを[書](か)きました。",
+    "exampleVi": "Tôi vừa di chuyển bằng tàu vừa viết email."
+  },
+  {
+    "word": "大工",
+    "example": "[父](ちち)は**[大工](だいく)**で、[家](いえ)を[建](た)てています。",
+    "exampleVi": "Bố tôi là thợ mộc, chuyên xây nhà."
+  },
+  {
+    "word": "ガードマン",
+    "example": "ビルの[入口](いりぐち)に**ガードマン**が[立](た)っています。",
+    "exampleVi": "Có bảo vệ đứng ở cửa tòa nhà."
+  },
+  {
+    "word": "地位",
+    "example": "[彼](かれ)は[会社](かいしゃ)で[高](たか)い**[地位](ちい)**に[就](つ)いています。",
+    "exampleVi": "Anh ấy đang giữ vị trí cao trong công ty."
+  },
+  {
+    "word": "目上",
+    "example": "**[目上](めうえ)**の[人](ひと)には[敬語](けいご)を[使](つか)います。",
+    "exampleVi": "Với người bề trên, ta dùng kính ngữ."
+  },
+  {
+    "word": "敬意",
+    "example": "[先生](せんせい)に**[敬意](けいい)**を[表](あらわ)しました。",
+    "exampleVi": "Tôi đã bày tỏ sự kính trọng với thầy."
+  },
+  {
+    "word": "敬う",
+    "example": "お[年寄](としよ)りを**[敬](うやま)う**ことは[大切](たいせつ)です。",
+    "exampleVi": "Việc kính trọng người già là điều quan trọng."
+  }
 ]

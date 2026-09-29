@@ -3,343 +3,343 @@
     "word": "ハンサム",
     "reading": "ハンサム",
     "meaning": "đẹp trai",
-    "example": "ミラーさんは **ハンサム**です。",
+    "example": "ミラーさんは**ハンサム**です。",
     "exampleVi": "Anh Miller đẹp trai."
   },
   {
     "word": "きれい",
     "reading": "きれい",
     "meaning": "đẹp, sạch",
-    "example": "あの [花](はな)は **きれい**です。",
+    "example": "あの[花](はな)は**きれい**です。",
     "exampleVi": "Bông hoa kia đẹp."
   },
   {
     "word": "静か",
     "reading": "しずか",
     "meaning": "yên tĩnh",
-    "example": "この [所](ところ)は **[静](しず)か**です。",
+    "example": "この[所](ところ)は**[静](しず)か**です。",
     "exampleVi": "Nơi này yên tĩnh."
   },
   {
     "word": "にぎやか",
     "reading": "にぎやか",
     "meaning": "náo nhiệt",
-    "example": "あの レストランは **にぎやか**です。",
+    "example": "あのレストランは**にぎやか**です。",
     "exampleVi": "Nhà hàng kia náo nhiệt."
   },
   {
     "word": "有名",
     "reading": "ゆうめい",
     "meaning": "nổi tiếng",
-    "example": "[富士山](ふじさん)は **[有名](ゆうめい)**です。",
+    "example": "[富士山](ふじさん)は**[有名](ゆうめい)**です。",
     "exampleVi": "Núi Phú Sĩ nổi tiếng."
   },
   {
     "word": "親切",
     "reading": "しんせつ",
     "meaning": "tốt bụng",
-    "example": "[田中](たなか)さんは **[親切](しんせつ)**です。",
+    "example": "[田中](たなか)さんは**[親切](しんせつ)**です。",
     "exampleVi": "Anh Tanaka tốt bụng."
   },
   {
     "word": "元気",
     "reading": "げんき",
     "meaning": "khỏe, khỏe mạnh",
-    "example": "ミラーさんは **[元気](げんき)**です。",
+    "example": "ミラーさんは**[元気](げんき)**です。",
     "exampleVi": "Anh Miller khỏe."
   },
   {
     "word": "ひま",
     "reading": "ひま",
     "meaning": "rảnh rỗi",
-    "example": "[今日](きょう)は **ひま**です。",
+    "example": "[今日](きょう)は**ひま**です。",
     "exampleVi": "Hôm nay tôi rảnh."
   },
   {
     "word": "便利",
     "reading": "べんり",
     "meaning": "tiện lợi",
-    "example": "コンピューターは **[便利](べんり)**です。",
+    "example": "コンピューターは**[便利](べんり)**です。",
     "exampleVi": "Máy tính rất tiện lợi."
   },
   {
     "word": "素敵",
     "reading": "すてき",
     "meaning": "đẹp, hay",
-    "example": "これは **[素敵](すてき)**な [時計](とけい)です。",
+    "example": "これは**[素敵](すてき)**な[時計](とけい)です。",
     "exampleVi": "Đây là chiếc đồng hồ đẹp."
   },
   {
     "word": "大きい",
     "reading": "おおきい",
     "meaning": "to, lớn",
-    "example": "[富士山](ふじさん)は **[大](おお)きい** [山](やま)です。",
+    "example": "[富士山](ふじさん)は**[大](おお)きい**[山](やま)です。",
     "exampleVi": "Núi Phú Sĩ là một ngọn núi lớn."
   },
   {
     "word": "小さい",
     "reading": "ちいさい",
     "meaning": "nhỏ, bé",
-    "example": "これは **[小](ちい)さい** カメラです。",
+    "example": "これは**[小](ちい)さい**カメラです。",
     "exampleVi": "Đây là chiếc máy ảnh nhỏ."
   },
   {
     "word": "新しい",
     "reading": "あたらしい",
     "meaning": "mới",
-    "example": "これは **[新](あたら)しい** [車](くるま)です。",
+    "example": "これは**[新](あたら)しい**[車](くるま)です。",
     "exampleVi": "Đây là chiếc xe hơi mới."
   },
   {
     "word": "古い",
     "reading": "ふるい",
     "meaning": "cổ, cũ",
-    "example": "これは **[古](ふる)い** [時計](とけい)です。",
+    "example": "これは**[古](ふる)い**[時計](とけい)です。",
     "exampleVi": "Đây là chiếc đồng hồ cũ."
   },
   {
     "word": "いい",
     "reading": "いい",
     "meaning": "tốt",
-    "example": "これは **いい** カメラです。",
+    "example": "これは**いい**カメラです。",
     "exampleVi": "Đây là chiếc máy ảnh tốt."
   },
   {
     "word": "良い",
     "reading": "よい",
     "meaning": "tốt",
-    "example": "この [店](みせ)は **[良](よ)い** [店](みせ)です。",
+    "example": "この[店](みせ)は**[良](よ)い**[店](みせ)です。",
     "exampleVi": "Cửa hàng này là một cửa hàng tốt."
   },
   {
     "word": "悪い",
     "reading": "わるい",
     "meaning": "xấu",
-    "example": "この カメラは **[悪](わる)い**です。",
+    "example": "このカメラは**[悪](わる)い**です。",
     "exampleVi": "Chiếc máy ảnh này tệ."
   },
   {
     "word": "暑い",
     "reading": "あつい",
     "meaning": "nóng (thời tiết)",
-    "example": "[今日](きょう)は **[暑](あつ)い**です。",
+    "example": "[今日](きょう)は**[暑](あつ)い**です。",
     "exampleVi": "Hôm nay nóng."
   },
   {
     "word": "熱い",
     "reading": "あつい",
     "meaning": "Nóng (cảm giác)",
-    "example": "この コーヒーは **[熱](あつ)い**です。",
+    "example": "このコーヒーは**[熱](あつ)い**です。",
     "exampleVi": "Ly cà phê này nóng."
   },
   {
     "word": "寒い",
     "reading": "さむい",
     "meaning": "lạnh (thời tiết)",
-    "example": "[今日](きょう)は **[寒](さむ)い**です。",
+    "example": "[今日](きょう)は**[寒](さむ)い**です。",
     "exampleVi": "Hôm nay lạnh."
   },
   {
     "word": "冷たい",
     "reading": "つめたい",
     "meaning": "lạnh (cảm giác)",
-    "example": "この ビールは **[冷](つめ)たい**です。",
+    "example": "このビールは**[冷](つめ)たい**です。",
     "exampleVi": "Bia này lạnh."
   },
   {
     "word": "難しい",
     "reading": "むずかしい",
     "meaning": "khó",
-    "example": "[日本語](にほんご)は **[難](むずか)しい**です。",
+    "example": "[日本語](にほんご)は**[難](むずか)しい**です。",
     "exampleVi": "Tiếng Nhật khó."
   },
   {
     "word": "高い",
     "reading": "たかい",
     "meaning": "đắt, cao",
-    "example": "この [時計](とけい)は **[高](たか)い**です。",
+    "example": "この[時計](とけい)は**[高](たか)い**です。",
     "exampleVi": "Chiếc đồng hồ này đắt."
   },
   {
     "word": "安い",
     "reading": "やすい",
     "meaning": "rẻ",
-    "example": "この [店](みせ)の ワインは **[安](やす)い**です。",
+    "example": "この[店](みせ)のワインは**[安](やす)い**です。",
     "exampleVi": "Rượu vang của cửa hàng này rẻ."
   },
   {
     "word": "やさしい",
     "reading": "やさしい",
     "meaning": "dễ, hiền lành",
-    "example": "[日本語](にほんご)は **やさしい**ですか。",
+    "example": "[日本語](にほんご)は**やさしい**ですか。",
     "exampleVi": "Tiếng Nhật có dễ không?"
   },
   {
     "word": "低い",
     "reading": "ひくい",
     "meaning": "thấp",
-    "example": "あの [山](やま)は **[低](ひく)い**です。",
+    "example": "あの[山](やま)は**[低](ひく)い**です。",
     "exampleVi": "Ngọn núi kia thấp."
   },
   {
     "word": "面白い",
     "reading": "おもしろい",
     "meaning": "thú vị, hay",
-    "example": "この [本](ほん)は **[面白](おもしろ)い**です。",
+    "example": "この[本](ほん)は**[面白](おもしろ)い**です。",
     "exampleVi": "Quyển sách này thú vị."
   },
   {
     "word": "美味しい",
     "reading": "おいしい",
     "meaning": "ngon",
-    "example": "この パンは **[美味](おい)しい**です。",
+    "example": "このパンは**[美味](おい)しい**です。",
     "exampleVi": "Chiếc bánh mì này ngon."
   },
   {
     "word": "いそがしい",
     "reading": "いそがしい",
     "meaning": "bận",
-    "example": "[今日](きょう)は **いそがしい**です。",
+    "example": "[今日](きょう)は**いそがしい**です。",
     "exampleVi": "Hôm nay tôi bận."
   },
   {
     "word": "楽しい",
     "reading": "たのしい",
     "meaning": "vui",
-    "example": "[仕事](しごと)は **[楽](たの)しい**です。",
+    "example": "[仕事](しごと)は**[楽](たの)しい**です。",
     "exampleVi": "Công việc vui."
   },
   {
     "word": "白い",
     "reading": "しろい",
     "meaning": "trắng",
-    "example": "これは **[白](しろ)い** シャツです。",
+    "example": "これは**[白](しろ)い**シャツです。",
     "exampleVi": "Đây là chiếc áo sơ mi màu trắng."
   },
   {
     "word": "黒い",
     "reading": "くろい",
     "meaning": "đen",
-    "example": "あれは **[黒](くろ)い** [車](くるま)です。",
+    "example": "あれは**[黒](くろ)い**[車](くるま)です。",
     "exampleVi": "Kia là chiếc xe hơi màu đen."
   },
   {
     "word": "赤い",
     "reading": "あかい",
     "meaning": "đỏ",
-    "example": "これは **[赤](あか)い** [花](はな)です。",
+    "example": "これは**[赤](あか)い**[花](はな)です。",
     "exampleVi": "Đây là bông hoa màu đỏ."
   },
   {
     "word": "青い",
     "reading": "あおい",
     "meaning": "xanh da trời",
-    "example": "これは **[青](あお)い** かばんです。",
+    "example": "これは**[青](あお)い**かばんです。",
     "exampleVi": "Đây là chiếc cặp màu xanh da trời."
   },
   {
     "word": "桜",
     "reading": "さくら",
     "meaning": "Hoa anh đào",
-    "example": "**[桜](さくら)**は [有名](ゆうめい)な [花](はな)です。",
+    "example": "**[桜](さくら)**は[有名](ゆうめい)な[花](はな)です。",
     "exampleVi": "Hoa anh đào là loài hoa nổi tiếng."
   },
   {
     "word": "山",
     "reading": "やま",
     "meaning": "núi",
-    "example": "あの **[山](やま)**は [富士山](ふじさん)です。",
+    "example": "あの**[山](やま)**は[富士山](ふじさん)です。",
     "exampleVi": "Ngọn núi kia là núi Phú Sĩ."
   },
   {
     "word": "町",
     "reading": "まち",
-    "meaning": "thành phố",
-    "example": "あの **[町](まち)**は にぎやかです。",
+    "meaning": "thị trấn, phố",
+    "example": "あの**[町](まち)**はにぎやかです。",
     "exampleVi": "Thành phố kia náo nhiệt."
   },
   {
     "word": "食べ物",
     "reading": "たべもの",
     "meaning": "đồ ăn",
-    "example": "[日本](にほん)の **[食](た)べ[物](もの)**は [美味](おい)しいです。",
+    "example": "[日本](にほん)の**[食](た)べ[物](もの)**は[美味](おい)しいです。",
     "exampleVi": "Đồ ăn của Nhật ngon."
   },
   {
     "word": "所",
     "reading": "ところ",
     "meaning": "nơi, chỗ",
-    "example": "あそこは [有名](ゆうめい)な **[所](ところ)**です。",
+    "example": "あそこは[有名](ゆうめい)な**[所](ところ)**です。",
     "exampleVi": "Chỗ kia là một nơi nổi tiếng."
   },
   {
     "word": "りょう",
     "reading": "りょう",
     "meaning": "kí túc xá",
-    "example": "わたしの **りょう**は [新](あたら)しいです。",
+    "example": "わたしの**りょう**は[新](あたら)しいです。",
     "exampleVi": "Ký túc xá của tôi mới."
   },
   {
     "word": "レストラン",
     "reading": "レストラン",
     "meaning": "nhà hàng",
-    "example": "この **レストラン**は [安](やす)いです。",
+    "example": "この**レストラン**は[安](やす)いです。",
     "exampleVi": "Nhà hàng này rẻ."
   },
   {
     "word": "生活",
     "reading": "せいかつ",
     "meaning": "cuộc sống, sinh hoạt",
-    "example": "[日本](にほん)の **[生活](せいかつ)**は どうですか。",
+    "example": "[日本](にほん)の**[生活](せいかつ)**はどうですか。",
     "exampleVi": "Cuộc sống ở Nhật thế nào?"
   },
   {
     "word": "仕事",
     "reading": "しごと",
     "meaning": "công việc",
-    "example": "**[仕事](しごと)**は いそがしいです。",
+    "example": "**[仕事](しごと)**はいそがしいです。",
     "exampleVi": "Công việc bận rộn."
   },
   {
     "word": "どう",
     "reading": "どう",
     "meaning": "thế nào",
-    "example": "[仕事](しごと)は **どう**ですか。",
+    "example": "[仕事](しごと)は**どう**ですか。",
     "exampleVi": "Công việc thế nào?"
   },
   {
     "word": "どんな",
     "reading": "どんな",
     "meaning": "~ như thế nào",
-    "example": "**どんな** [町](まち)ですか。",
+    "example": "**どんな**[町](まち)ですか。",
     "exampleVi": "Đó là một thành phố như thế nào?"
   },
   {
     "word": "とても",
     "reading": "とても",
     "meaning": "rất, khó có thể",
-    "example": "この [町](まち)は **とても** [便利](べんり)です。",
+    "example": "この[町](まち)は**とても**[便利](べんり)です。",
     "exampleVi": "Thành phố này rất tiện lợi."
   },
   {
     "word": "あまり",
     "reading": "あまり",
     "meaning": "không ~ lắm",
-    "example": "この [本](ほん)は **あまり** [面白](おもしろ)くないです。",
+    "example": "この[本](ほん)は**あまり**[面白](おもしろ)くないです。",
     "exampleVi": "Quyển sách này không thú vị lắm."
   },
   {
     "word": "そして",
     "reading": "そして",
     "meaning": "và, thêm nữa",
-    "example": "この [町](まち)は [静](しず)かです。**そして**、きれいです。",
+    "example": "この[町](まち)は[静](しず)かです。**そして**、きれいです。",
     "exampleVi": "Thành phố này yên tĩnh. Và cũng đẹp nữa."
   },
   {
     "word": "富士山",
     "reading": "ふじさん",
     "meaning": "Núi Phú Sĩ",
-    "example": "**[富士山](ふじさん)**は [高](たか)い [山](やま)です。",
+    "example": "**[富士山](ふじさん)**は[高](たか)い[山](やま)です。",
     "exampleVi": "Núi Phú Sĩ là một ngọn núi cao."
   }
 ]

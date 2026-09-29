@@ -1,102 +1,502 @@
 [
-  "一家",
-  "ありがたい",
-  "向き合う",
-  "つくづく",
-  "養う",
-  "役目",
-  "甘える",
-  "世間知らず",
-  "しつけ",
-  "言いつける",
-  "自立",
-  "言い出す",
-  "意思",
-  "尊重",
-  "説得",
-  "納得",
-  "逆らう",
-  "反省",
-  "放っておく",
-  "介護",
-  "ホームヘルパー",
-  "世代",
-  "継ぐ",
-  "妊娠",
-  "出産",
-  "産む",
-  "友人",
-  "仲",
-  "縁",
-  "ニックネーム",
-  "大半",
-  "恵まれる",
-  "頼る",
-  "頼もしい",
-  "見習う",
-  "打ち明ける",
-  "励ます",
-  "あえて",
-  "慰める",
-  "察する",
-  "思いやり",
-  "何気ない",
-  "からかう",
-  "幹事",
-  "呼び出す",
-  "盛り上がる",
-  "あきれる",
-  "ふざける",
-  "久しい",
-  "初対面",
-  "自己紹介",
-  "おじぎ",
-  "近所付き合い",
-  "大家",
-  "飼い主",
-  "交わす",
-  "呼び止める",
-  "振り返る",
-  "再会",
-  "覚え",
-  "心当たり",
-  "結びつく",
-  "とっさ",
-  "てっきり",
-  "思い込む",
-  "コミュニケーション",
-  "ネットワーク",
-  "直接",
-  "接する",
-  "招く",
-  "気配り",
-  "込める",
-  "同期",
-  "ぐち",
-  "大いに",
-  "カップル",
-  "愛",
-  "同士",
-  "お互いに",
-  "つり合う",
-  "むしろ",
-  "いわば",
-  "視線",
-  "見つめる",
-  "そらす",
-  "ちらっと",
-  "もしかすると",
-  "探る",
-  "示す",
-  "口実",
-  "うつむく",
-  "こそこそ",
-  "ささやく",
-  "禁物",
-  "許す",
-  "合コン",
-  "アプローチ",
-  "運命",
-  "決意",
-  "プロポーズ"
+  {
+    "word": "一家",
+    "example": "**[一家](いっか)**で[京都](きょうと)へ[旅行](りょこう)に[行](い)きました。",
+    "exampleVi": "Cả nhà tôi đã đi du lịch Kyoto."
+  },
+  {
+    "word": "ありがたい",
+    "example": "[困](こま)っている[時](とき)に[助](たす)けてもらえて、**ありがたい**です。",
+    "exampleVi": "Được giúp đỡ lúc khó khăn, tôi thật biết ơn."
+  },
+  {
+    "word": "向き合う",
+    "example": "[親](おや)と**[向](む)き[合](あ)って**[将来](しょうらい)の[話](はなし)をしました。",
+    "exampleVi": "Tôi đã ngồi đối diện với bố mẹ và nói chuyện về tương lai."
+  },
+  {
+    "word": "つくづく",
+    "example": "[親](おや)になって、[母](はは)の[苦労](くろう)を**つくづく**[感](かん)じました。",
+    "exampleVi": "Khi làm cha mẹ rồi, tôi mới thấm thía nỗi vất vả của mẹ."
+  },
+  {
+    "word": "養う",
+    "example": "[両親](りょうしん)は[四人](よにん)の[子供](こども)を**[養](やしな)って**きました。",
+    "exampleVi": "Bố mẹ đã nuôi dưỡng bốn người con."
+  },
+  {
+    "word": "役目",
+    "example": "[長男](ちょうなん)として、[家](いえ)を[守](まも)るのが[私](わたし)の**[役目](やくめ)**です。",
+    "exampleVi": "Là con trai cả, giữ gìn ngôi nhà là vai trò của tôi."
+  },
+  {
+    "word": "甘える",
+    "example": "[妹](いもうと)は[母](はは)に**[甘](あま)えて**ばかりいます。",
+    "exampleVi": "Em gái tôi lúc nào cũng làm nũng mẹ."
+  },
+  {
+    "word": "世間知らず",
+    "example": "[彼](かれ)はお[金持](かねも)ちの[家](いえ)で[育](そだ)った**[世間](せけん)[知](し)らず**です。",
+    "exampleVi": "Anh ấy lớn lên trong gia đình giàu có nên chưa biết sự đời."
+  },
+  {
+    "word": "しつけ",
+    "example": "[子供](こども)の**しつけ**は[家庭](かてい)で[始](はじ)まります。",
+    "exampleVi": "Việc dạy dỗ trẻ con bắt đầu từ gia đình."
+  },
+  {
+    "word": "言いつける",
+    "example": "[母](はは)は[私](わたし)に[買](か)い[物](もの)を**[言](い)いつけました**。",
+    "exampleVi": "Mẹ đã sai tôi đi mua đồ."
+  },
+  {
+    "word": "自立",
+    "example": "[大学](だいがく)を[卒業](そつぎょう)したら、**[自立](じりつ)**して[一人](ひとり)で[暮](く)らしたいです。",
+    "exampleVi": "Sau khi tốt nghiệp đại học, tôi muốn tự lập sống một mình."
+  },
+  {
+    "word": "言い出す",
+    "example": "[彼女](かのじょ)が[突然](とつぜん)、[留学](りゅうがく)したいと**[言](い)い[出](だ)しました**。",
+    "exampleVi": "Cô ấy bỗng nhiên nói ra rằng muốn đi du học."
+  },
+  {
+    "word": "意思",
+    "example": "[本人](ほんにん)の**[意思](いし)**を[確](たし)かめてから、[決](き)めましょう。",
+    "exampleVi": "Hãy xác nhận ý muốn của đương sự rồi hãy quyết định."
+  },
+  {
+    "word": "尊重",
+    "example": "[子供](こども)の[意見](いけん)も**[尊重](そんちょう)**したいと[思](おも)います。",
+    "exampleVi": "Tôi muốn tôn trọng cả ý kiến của con cái."
+  },
+  {
+    "word": "説得",
+    "example": "[父](ちち)を**[説得](せっとく)**するのに[三時間](さんじかん)もかかりました。",
+    "exampleVi": "Tôi mất tới ba tiếng để thuyết phục bố."
+  },
+  {
+    "word": "納得",
+    "example": "[説明](せつめい)を[聞](き)いても、まだ**[納得](なっとく)**できません。",
+    "exampleVi": "Nghe giải thích rồi mà tôi vẫn chưa thấy thuyết phục."
+  },
+  {
+    "word": "逆らう",
+    "example": "[親](おや)に**[逆](さか)らって**[家](いえ)を[出](で)ました。",
+    "exampleVi": "Tôi đã cãi lời bố mẹ và bỏ nhà ra đi."
+  },
+  {
+    "word": "反省",
+    "example": "[約束](やくそく)を[忘](わす)れたことを[深](ふか)く**[反省](はんせい)**しています。",
+    "exampleVi": "Tôi đang tự kiểm điểm sâu sắc việc đã quên lời hứa."
+  },
+  {
+    "word": "放っておく",
+    "example": "[心配](しんぱい)しないで、[少](すこ)し**[放](ほう)っておいて**ください。",
+    "exampleVi": "Đừng lo, xin hãy cứ để mặc tôi một lát."
+  },
+  {
+    "word": "介護",
+    "example": "[祖母](そぼ)の**[介護](かいご)**のために、[仕事](しごと)を[辞](や)めました。",
+    "exampleVi": "Tôi đã nghỉ việc để chăm sóc bà."
+  },
+  {
+    "word": "ホームヘルパー",
+    "example": "[週](しゅう)に[二回](にかい)、**ホームヘルパー**さんが[来](き)てくれます。",
+    "exampleVi": "Mỗi tuần hai lần, người giúp việc chăm sóc tại nhà đến giúp."
+  },
+  {
+    "word": "世代",
+    "example": "**[世代](せだい)**が[違](ちが)っても、[私](わたし)たちは[仲良](なかよ)く[暮](く)らしています。",
+    "exampleVi": "Dù khác thế hệ, chúng tôi vẫn sống hòa thuận."
+  },
+  {
+    "word": "継ぐ",
+    "example": "[兄](あに)が[父](ちち)の[店](みせ)を**[継](つ)ぐ**ことになりました。",
+    "exampleVi": "Anh trai tôi đã quyết định kế nghiệp cửa hàng của bố."
+  },
+  {
+    "word": "妊娠",
+    "example": "[姉](あね)は**[妊娠](にんしん)**して、[仕事](しごと)を[休](やす)んでいます。",
+    "exampleVi": "Chị tôi mang thai nên đang nghỉ làm."
+  },
+  {
+    "word": "出産",
+    "example": "[来月](らいげつ)、[病院](びょういん)で**[出産](しゅっさん)**する[予定](よてい)です。",
+    "exampleVi": "Tháng sau tôi dự định sinh con ở bệnh viện."
+  },
+  {
+    "word": "産む",
+    "example": "[彼女](かのじょ)は[先月](せんげつ)、[男](おとこ)の[子](こ)を**[産](う)みました**。",
+    "exampleVi": "Cô ấy tháng trước đã sinh một bé trai."
+  },
+  {
+    "word": "友人",
+    "example": "[学生](がくせい)[時代](じだい)の**[友人](ゆうじん)**と[今](いま)も[会](あ)っています。",
+    "exampleVi": "Tôi bây giờ vẫn còn gặp người bạn thời sinh viên."
+  },
+  {
+    "word": "仲",
+    "example": "[二人](ふたり)は**[仲](なか)**が[良](よ)くて、いつも[一緒](いっしょ)です。",
+    "exampleVi": "Hai người thân nhau nên lúc nào cũng đi cùng."
+  },
+  {
+    "word": "縁",
+    "example": "[不思議](ふしぎ)な**[縁](えん)**で、[彼](かれ)と[出会](であ)いました。",
+    "exampleVi": "Nhờ một mối duyên kỳ lạ mà tôi đã gặp anh ấy."
+  },
+  {
+    "word": "ニックネーム",
+    "example": "[私](わたし)の**ニックネーム**は「タロウ」です。",
+    "exampleVi": "Biệt danh của tôi là \"Taro\"."
+  },
+  {
+    "word": "大半",
+    "example": "クラスの**[大半](たいはん)**が[女性](じょせい)です。",
+    "exampleVi": "Phần lớn học viên trong lớp là nữ."
+  },
+  {
+    "word": "恵まれる",
+    "example": "[私](わたし)は[良](よ)い[友人](ゆうじん)に**[恵](めぐ)まれて**います。",
+    "exampleVi": "Tôi may mắn có những người bạn tốt."
+  },
+  {
+    "word": "頼る",
+    "example": "[困](こま)った[時](とき)は、[遠慮](えんりょ)しないで**[頼](たよ)って**ください。",
+    "exampleVi": "Khi khó khăn, đừng ngại, cứ nhờ cậy tôi."
+  },
+  {
+    "word": "頼もしい",
+    "example": "[彼](かれ)は[若](わか)いのに**[頼](たの)もしい**[人](ひと)です。",
+    "exampleVi": "Anh ấy tuy trẻ nhưng là người rất đáng tin cậy."
+  },
+  {
+    "word": "見習う",
+    "example": "[先輩](せんぱい)の[仕事](しごと)ぶりを**[見習](みなら)いたい**です。",
+    "exampleVi": "Tôi muốn noi theo cách làm việc của tiền bối."
+  },
+  {
+    "word": "打ち明ける",
+    "example": "[親友](しんゆう)に[悩](なや)みを**[打](う)ち[明](あ)けました**。",
+    "exampleVi": "Tôi đã thổ lộ nỗi phiền muộn với bạn thân."
+  },
+  {
+    "word": "励ます",
+    "example": "[落](お)ち[込](こ)んでいる[友達](ともだち)を**[励](はげ)まして**あげました。",
+    "exampleVi": "Tôi đã động viên người bạn đang chán nản."
+  },
+  {
+    "word": "あえて",
+    "example": "[彼](かれ)のために**あえて**[厳](きび)しいことを[言](い)いました。",
+    "exampleVi": "Vì anh ấy, tôi đã mạnh dạn nói những lời nghiêm khắc."
+  },
+  {
+    "word": "慰める",
+    "example": "[泣](な)いている[子](こ)を[母](はは)が**[慰](なぐさ)めて**います。",
+    "exampleVi": "Mẹ đang an ủi đứa bé đang khóc."
+  },
+  {
+    "word": "察する",
+    "example": "[彼女](かのじょ)の[気持](きも)ちを**[察](さっ)して**、[何](なに)も[聞](き)きませんでした。",
+    "exampleVi": "Tôi đoán được tâm trạng cô ấy nên không hỏi gì cả."
+  },
+  {
+    "word": "思いやり",
+    "example": "[彼](かれ)の**[思](おも)いやり**のある[言葉](ことば)に[感動](かんどう)しました。",
+    "exampleVi": "Tôi cảm động trước lời nói chu đáo của anh ấy."
+  },
+  {
+    "word": "何気ない",
+    "example": "**[何気](なにげ)ない**[一言](ひとこと)が[人](ひと)を[傷](きず)つけることもあります。",
+    "exampleVi": "Một câu nói vô tình cũng có khi làm tổn thương người khác."
+  },
+  {
+    "word": "からかう",
+    "example": "[弟](おとうと)を**からかって**、[母](はは)に[叱](しか)られました。",
+    "exampleVi": "Tôi trêu em trai rồi bị mẹ mắng."
+  },
+  {
+    "word": "幹事",
+    "example": "[今年](ことし)の[忘年会](ぼうねんかい)の**[幹事](かんじ)**を[頼](たの)まれました。",
+    "exampleVi": "Tôi được nhờ làm người phụ trách tiệc tất niên năm nay."
+  },
+  {
+    "word": "呼び出す",
+    "example": "[上司](じょうし)に[会議室](かいぎしつ)に**[呼](よ)び[出](だ)されました**。",
+    "exampleVi": "Tôi bị sếp gọi lên phòng họp."
+  },
+  {
+    "word": "盛り上がる",
+    "example": "パーティーは[最後](さいご)まで**[盛](も)り[上](あ)がりました**。",
+    "exampleVi": "Bữa tiệc sôi nổi cho đến tận phút cuối."
+  },
+  {
+    "word": "あきれる",
+    "example": "[彼](かれ)の[言](い)い[訳](わけ)には**あきれて**しまいました。",
+    "exampleVi": "Tôi chán ngán trước lời bao biện của anh ta."
+  },
+  {
+    "word": "ふざける",
+    "example": "[授業](じゅぎょう)[中](ちゅう)に**ふざけて**、[先生](せんせい)に[注意](ちゅうい)されました。",
+    "exampleVi": "Tôi đùa nghịch trong giờ học nên bị thầy nhắc nhở."
+  },
+  {
+    "word": "久しい",
+    "example": "[故郷](こきょう)を[離](はな)れて**[久](ひさ)しい**です。",
+    "exampleVi": "Tôi đã rời xa quê hương được một thời gian dài rồi."
+  },
+  {
+    "word": "初対面",
+    "example": "[彼](かれ)とは**[初対面](しょたいめん)**なので、[緊張](きんちょう)しました。",
+    "exampleVi": "Vì gặp anh ấy lần đầu nên tôi đã căng thẳng."
+  },
+  {
+    "word": "自己紹介",
+    "example": "[会議](かいぎ)の[前](まえ)に、[簡単](かんたん)に**[自己](じこ)[紹介](しょうかい)**をしました。",
+    "exampleVi": "Trước cuộc họp, tôi đã tự giới thiệu ngắn gọn."
+  },
+  {
+    "word": "おじぎ",
+    "example": "[日本](にほん)では、[挨拶](あいさつ)の[時](とき)に**おじぎ**をします。",
+    "exampleVi": "Ở Nhật, người ta cúi chào khi chào hỏi."
+  },
+  {
+    "word": "近所付き合い",
+    "example": "[都会](とかい)では**[近所](きんじょ)[付](づ)き[合](あ)い**が[少](すく)なくなってきました。",
+    "exampleVi": "Ở thành phố, quan hệ hàng xóm ngày càng ít đi."
+  },
+  {
+    "word": "大家",
+    "example": "[毎月](まいつき)、**[大家](おおや)**さんに[家賃](やちん)を[払](はら)います。",
+    "exampleVi": "Hằng tháng tôi trả tiền nhà cho chủ nhà."
+  },
+  {
+    "word": "飼い主",
+    "example": "この[犬](いぬ)の**[飼](か)い[主](ぬし)**は[誰](だれ)ですか。",
+    "exampleVi": "Chủ của con chó này là ai vậy?"
+  },
+  {
+    "word": "交わす",
+    "example": "[友達](ともだち)と[固](かた)い[約束](やくそく)を**[交](か)わしました**。",
+    "exampleVi": "Tôi đã trao lời hứa chắc chắn với bạn."
+  },
+  {
+    "word": "呼び止める",
+    "example": "[駅](えき)で[知](し)らない[人](ひと)に**[呼](よ)び[止](と)められました**。",
+    "exampleVi": "Ở ga tôi bị một người lạ gọi giật lại."
+  },
+  {
+    "word": "振り返る",
+    "example": "[名前](なまえ)を[呼](よ)ばれて、[後](うし)ろを**[振](ふ)り[返](かえ)りました**。",
+    "exampleVi": "Nghe gọi tên, tôi ngoảnh lại phía sau."
+  },
+  {
+    "word": "再会",
+    "example": "[十年](じゅうねん)ぶりに[友人](ゆうじん)と**[再会](さいかい)**しました。",
+    "exampleVi": "Tôi đã gặp lại bạn sau mười năm."
+  },
+  {
+    "word": "覚え",
+    "example": "そんな[約束](やくそく)をした**[覚](おぼ)え**はありません。",
+    "exampleVi": "Tôi không nhớ là mình đã hứa như vậy."
+  },
+  {
+    "word": "心当たり",
+    "example": "[落](お)とし[物](もの)に**[心当](こころあ)たり**はありませんか。",
+    "exampleVi": "Bạn có manh mối gì về món đồ bị đánh rơi không?"
+  },
+  {
+    "word": "結びつく",
+    "example": "[努力](どりょく)が[成功](せいこう)に**[結](むす)びつきました**。",
+    "exampleVi": "Nỗ lực đã dẫn tới thành công."
+  },
+  {
+    "word": "とっさ",
+    "example": "**とっさ**に[手](て)で[顔](かお)を[守](まも)りました。",
+    "exampleVi": "Theo phản xạ, tôi đưa tay che mặt."
+  },
+  {
+    "word": "てっきり",
+    "example": "**てっきり**[彼](かれ)は[来](こ)ないと[思](おも)っていました。",
+    "exampleVi": "Tôi cứ đinh ninh là anh ấy sẽ không đến."
+  },
+  {
+    "word": "思い込む",
+    "example": "[彼](かれ)が[犯人](はんにん)だと**[思](おも)い[込](こ)んで**いました。",
+    "exampleVi": "Tôi đã tin chắc rằng anh ta là thủ phạm."
+  },
+  {
+    "word": "コミュニケーション",
+    "example": "[家族](かぞく)との**コミュニケーション**が[大切](たいせつ)です。",
+    "exampleVi": "Giao tiếp với gia đình là điều quan trọng."
+  },
+  {
+    "word": "ネットワーク",
+    "example": "[仕事](しごと)を[通](つう)じて、[人](ひと)の**ネットワーク**が[広](ひろ)がりました。",
+    "exampleVi": "Qua công việc, mạng lưới quan hệ của tôi đã mở rộng."
+  },
+  {
+    "word": "直接",
+    "example": "[本人](ほんにん)に**[直接](ちょくせつ)**[聞](き)いてみます。",
+    "exampleVi": "Tôi sẽ hỏi trực tiếp đương sự."
+  },
+  {
+    "word": "接する",
+    "example": "[誰](だれ)にでも[親切](しんせつ)に**[接](せっ)する**よう[心掛](こころが)けています。",
+    "exampleVi": "Tôi luôn cố gắng đối xử tử tế với bất kỳ ai."
+  },
+  {
+    "word": "招く",
+    "example": "[友達](ともだち)を[家](いえ)に**[招](まね)いて**、[食事](しょくじ)をしました。",
+    "exampleVi": "Tôi mời bạn về nhà và cùng dùng bữa."
+  },
+  {
+    "word": "気配り",
+    "example": "[彼女](かのじょ)は[細](こま)かい**[気配](きくば)り**ができる[人](ひと)です。",
+    "exampleVi": "Cô ấy là người biết để ý từng chi tiết nhỏ."
+  },
+  {
+    "word": "込める",
+    "example": "[心](こころ)を**[込](こ)めて**[手紙](てがみ)を[書](か)きました。",
+    "exampleVi": "Tôi đã viết thư bằng cả tấm lòng."
+  },
+  {
+    "word": "同期",
+    "example": "**[同期](どうき)**の[友人](ゆうじん)と[久](ひさ)しぶりに[飲](の)みました。",
+    "exampleVi": "Lâu rồi tôi mới đi uống với người bạn đồng khóa."
+  },
+  {
+    "word": "ぐち",
+    "example": "[上司](じょうし)の**ぐち**を[友達](ともだち)に[聞](き)いてもらいました。",
+    "exampleVi": "Tôi đã kể lể than vãn về sếp với bạn."
+  },
+  {
+    "word": "大いに",
+    "example": "[新](あたら)しい[計画](けいかく)に**[大](おお)いに**[期待](きたい)しています。",
+    "exampleVi": "Tôi rất kỳ vọng vào kế hoạch mới."
+  },
+  {
+    "word": "カップル",
+    "example": "[公園](こうえん)は**カップル**でいっぱいでした。",
+    "exampleVi": "Công viên đầy các cặp đôi."
+  },
+  {
+    "word": "愛",
+    "example": "[親](おや)の**[愛](あい)**は[深](ふか)いものです。",
+    "exampleVi": "Tình yêu của cha mẹ thật sâu sắc."
+  },
+  {
+    "word": "同士",
+    "example": "[学生](がくせい)**[同士](どうし)**で[情報](じょうほう)を[交換](こうかん)しました。",
+    "exampleVi": "Các sinh viên với nhau đã trao đổi thông tin."
+  },
+  {
+    "word": "お互いに",
+    "example": "[二人](ふたり)は**お[互](たが)いに**[助](たす)け[合](あ)っています。",
+    "exampleVi": "Hai người giúp đỡ lẫn nhau."
+  },
+  {
+    "word": "つり合う",
+    "example": "[二人](ふたり)は[性格](せいかく)がよく**つり[合](あ)って**います。",
+    "exampleVi": "Hai người rất hợp nhau về tính cách."
+  },
+  {
+    "word": "むしろ",
+    "example": "[私](わたし)は[肉](にく)より、**むしろ**[魚](さかな)のほうが[好](す)きです。",
+    "exampleVi": "Tôi thích cá hơn là thịt."
+  },
+  {
+    "word": "いわば",
+    "example": "[彼](かれ)は、**いわば**[私](わたし)の[人生](じんせい)の[先生](せんせい)です。",
+    "exampleVi": "Anh ấy có thể nói là người thầy của cuộc đời tôi."
+  },
+  {
+    "word": "視線",
+    "example": "[彼女](かのじょ)の**[視線](しせん)**を[感](かん)じて、[振](ふ)り[向](む)きました。",
+    "exampleVi": "Cảm nhận được ánh nhìn của cô ấy, tôi quay lại."
+  },
+  {
+    "word": "見つめる",
+    "example": "[彼](かれ)は[私](わたし)の[目](め)をじっと**[見](み)つめました**。",
+    "exampleVi": "Anh ấy nhìn chăm chú vào mắt tôi."
+  },
+  {
+    "word": "そらす",
+    "example": "[恥](は)ずかしくて、[思](おも)わず[目](め)を**そらして**しまいました。",
+    "exampleVi": "Vì xấu hổ nên tôi vô thức đảo mắt đi chỗ khác."
+  },
+  {
+    "word": "ちらっと",
+    "example": "[彼](かれ)は[時計](とけい)を**ちらっと**[見](み)ました。",
+    "exampleVi": "Anh ấy liếc nhanh đồng hồ."
+  },
+  {
+    "word": "もしかすると",
+    "example": "**もしかすると**、[彼](かれ)は[私](わたし)のことを[好](す)きなのかもしれません。",
+    "exampleVi": "Biết đâu chừng anh ấy thích tôi cũng nên."
+  },
+  {
+    "word": "探る",
+    "example": "[相手](あいて)の[本心](ほんしん)を**[探](さぐ)って**みました。",
+    "exampleVi": "Tôi đã thử dò xem lòng thật của đối phương."
+  },
+  {
+    "word": "示す",
+    "example": "[気持](きも)ちを[態度](たいど)で**[示](しめ)しました**。",
+    "exampleVi": "Tôi đã thể hiện tình cảm bằng thái độ."
+  },
+  {
+    "word": "口実",
+    "example": "[仕事](しごと)を**[口実](こうじつ)**に、[飲](の)み[会](かい)を[断](ことわ)りました。",
+    "exampleVi": "Tôi lấy cớ công việc để từ chối buổi nhậu."
+  },
+  {
+    "word": "うつむく",
+    "example": "[恥](は)ずかしそうに**うつむいて**[答](こた)えました。",
+    "exampleVi": "Cô ấy trả lời, cúi đầu ngượng ngùng."
+  },
+  {
+    "word": "こそこそ",
+    "example": "[二人](ふたり)は[廊下](ろうか)で**こそこそ**[話](はな)しています。",
+    "exampleVi": "Hai người đang thì thầm lén lút ngoài hành lang."
+  },
+  {
+    "word": "ささやく",
+    "example": "[彼](かれ)は[私](わたし)の[耳](みみ)に「[好](す)きだよ」と**ささやきました**。",
+    "exampleVi": "Anh ấy thì thầm vào tai tôi: \"Anh thích em.\""
+  },
+  {
+    "word": "禁物",
+    "example": "[油断](ゆだん)は**[禁物](きんもつ)**です。",
+    "exampleVi": "Chủ quan là điều tối kỵ."
+  },
+  {
+    "word": "許す",
+    "example": "[彼](かれ)の[失敗](しっぱい)を**[許](ゆる)して**あげました。",
+    "exampleVi": "Tôi đã tha thứ cho lỗi lầm của anh ấy."
+  },
+  {
+    "word": "合コン",
+    "example": "[友達](ともだち)に[誘](さそ)われて**[合](ごう)コン**に[行](い)きました。",
+    "exampleVi": "Tôi được bạn rủ đi tiệc gặp mặt."
+  },
+  {
+    "word": "アプローチ",
+    "example": "[彼女](かのじょ)に[積極的](せっきょくてき)に**アプローチ**しています。",
+    "exampleVi": "Tôi đang chủ động tiếp cận, theo đuổi cô ấy."
+  },
+  {
+    "word": "運命",
+    "example": "[彼](かれ)との[出会](であ)いは**[運命](うんめい)**だと[思](おも)います。",
+    "exampleVi": "Tôi nghĩ cuộc gặp gỡ với anh ấy là định mệnh."
+  },
+  {
+    "word": "決意",
+    "example": "[留学](りゅうがく)する**[決意](けつい)**を[固](かた)めました。",
+    "exampleVi": "Tôi đã củng cố quyết tâm đi du học."
+  },
+  {
+    "word": "プロポーズ",
+    "example": "[彼](かれ)は[夕日](ゆうひ)の[中](なか)で**プロポーズ**しました。",
+    "exampleVi": "Anh ấy đã cầu hôn giữa ánh hoàng hôn."
+  }
 ]
