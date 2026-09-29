@@ -1,103 +1,507 @@
 [
-  "人生",
-  "人間",
-  "人",
-  "祖先",
-  "親戚",
-  "夫婦",
-  "長男",
-  "主人",
-  "双子",
-  "迷子",
-  "他人",
-  "敵",
-  "味方",
-  "筆者",
-  "寿命",
-  "将来",
-  "才能",
-  "能力",
-  "長所",
-  "個性",
-  "遺伝",
-  "動作",
-  "真似",
-  "睡眠",
-  "食欲",
-  "外食",
-  "家事",
-  "出産",
-  "介護",
-  "共働き",
-  "出勤",
-  "出世",
-  "地位",
-  "受験",
-  "専攻",
-  "支度",
-  "全身",
-  "しわ",
-  "服装",
-  "礼",
-  "世辞",
-  "言い訳",
-  "話題",
-  "秘密",
-  "尊敬",
-  "謙遜",
-  "期待",
-  "苦労",
-  "意思",
-  "意志",
-  "感情",
-  "材料",
-  "石",
-  "ひも",
-  "券",
-  "名簿",
-  "表",
-  "針",
-  "栓",
-  "湯気",
-  "日当たり",
-  "空",
-  "斜め",
-  "履歴",
-  "娯楽",
-  "司会",
-  "歓迎",
-  "窓口",
-  "手続き",
-  "徒歩",
-  "駐車",
-  "違反",
-  "平日",
-  "日付",
-  "日中",
-  "日程",
-  "日帰り",
-  "順序",
-  "時期",
-  "現在",
-  "臨時",
-  "費用",
-  "定価",
-  "割引",
-  "お負け",
-  "無料",
-  "現金",
-  "合計",
-  "収入",
-  "支出",
-  "予算",
-  "利益",
-  "赤字",
-  "経費",
-  "勘定",
-  "弁償",
-  "請求",
-  "景気",
-  "募金",
-  "募集",
-  "価値"
+ {
+  "word": "人生",
+  "example": "**[人生](じんせい)**には [楽](たの)しい ことも [苦](くる)しい ことも あります。",
+  "exampleVi": "Cuộc đời có cả những điều vui lẫn những điều khổ."
+ },
+ {
+  "word": "人間",
+  "example": "**[人間](にんげん)**は [他](ほか)の [動物](どうぶつ)と [違](ちが)って、[言葉](ことば)を [使](つか)います。",
+  "exampleVi": "Con người, khác với các loài động vật khác, sử dụng ngôn ngữ."
+ },
+ {
+  "word": "人",
+  "example": "**[人](ひと)**は [一人](ひとり)では [生](い)きて いけません。",
+  "exampleVi": "Con người không thể sống một mình."
+ },
+ {
+  "word": "祖先",
+  "example": "[日本人](にほんじん)の **[祖先](そせん)**は どこから [来](き)たのでしょうか。",
+  "exampleVi": "Tổ tiên của người Nhật đã đến từ đâu nhỉ?"
+ },
+ {
+  "word": "親戚",
+  "example": "[お正月](おしょうがつ)には **しんせき**が [集](あつ)まります。",
+  "exampleVi": "Dịp Tết họ hàng tụ họp lại."
+ },
+ {
+  "word": "夫婦",
+  "example": "あの [二人](ふたり)は [結婚](けっこん)して [三十年](さんじゅうねん)に なる **[夫婦](ふうふ)**です。",
+  "exampleVi": "Hai người đó là cặp vợ chồng đã kết hôn được ba mươi năm."
+ },
+ {
+  "word": "長男",
+  "example": "[山田](やまだ)さんの **[長男](ちょうなん)**は [今年](ことし) [大学](だいがく)に [入](はい)りました。",
+  "exampleVi": "Con trai cả của anh Yamada năm nay đã vào đại học."
+ },
+ {
+  "word": "主人",
+  "example": "**[主人](しゅじん)**は [毎朝](まいあさ) [六時](ろくじ)に [家](いえ)を [出](で)ます。",
+  "exampleVi": "Chồng tôi mỗi sáng ra khỏi nhà lúc 6 giờ."
+ },
+ {
+  "word": "双子",
+  "example": "[姉](あね)は **[双子](ふたご)**の [男](おとこ)の [子](こ)を [産](う)みました。",
+  "exampleVi": "Chị tôi đã sinh đôi hai bé trai."
+ },
+ {
+  "word": "迷子",
+  "example": "デパートで **[迷子](まいご)**の アナウンスが [流](なが)れました。",
+  "exampleVi": "Ở cửa hàng bách hóa đã vang lên thông báo tìm trẻ lạc."
+ },
+ {
+  "word": "他人",
+  "example": "**[他人](たにん)**の [悪口](わるくち)を [言](い)うのは やめましょう。",
+  "exampleVi": "Đừng nói xấu người khác nữa."
+ },
+ {
+  "word": "敵",
+  "example": "**[敵](てき)**の [数](かず)が [多](おお)くて、[勝](か)つのは [難](むずか)しいです。",
+  "exampleVi": "Số kẻ địch đông nên khó mà thắng được."
+ },
+ {
+  "word": "味方",
+  "example": "[困](こま)った とき、[家族](かぞく)は いつも [私](わたし)の **[味方](みかた)**です。",
+  "exampleVi": "Khi gặp khó khăn, gia đình luôn đứng về phía tôi."
+ },
+ {
+  "word": "筆者",
+  "example": "この **[筆者](ひっしゃ)**は [環境](かんきょう)[問題](もんだい)について [次](つぎ)のように [述](の)べて います。",
+  "exampleVi": "Tác giả này trình bày vấn đề môi trường như sau."
+ },
+ {
+  "word": "寿命",
+  "example": "[日本人](にほんじん)の [平均](へいきん)**[寿命](じゅみょう)**は [世界](せかい)でも [長](なが)い ほうです。",
+  "exampleVi": "Tuổi thọ trung bình của người Nhật thuộc hàng dài trên thế giới."
+ },
+ {
+  "word": "将来",
+  "example": "**[将来](しょうらい)**は [自分](じぶん)の [会社](かいしゃ)を [作](つく)りたいと [考](かんが)えて います。",
+  "exampleVi": "Tôi đang nghĩ đến việc sau này sẽ lập công ty của riêng mình."
+ },
+ {
+  "word": "才能",
+  "example": "[彼](かれ)は [音楽](おんがく)の **[才能](さいのう)**が あると [言](い)われて います。",
+  "exampleVi": "Anh ấy được nhận xét là có tài năng âm nhạc."
+ },
+ {
+  "word": "能力",
+  "example": "[自分](じぶん)の **[能力](のうりょく)**に [合](あ)った [仕事](しごと)を [探](さが)して います。",
+  "exampleVi": "Tôi đang tìm công việc phù hợp với năng lực của mình."
+ },
+ {
+  "word": "長所",
+  "example": "[面接](めんせつ)で [自分](じぶん)の **[長所](ちょうしょ)**を [聞](き)かれました。",
+  "exampleVi": "Trong buổi phỏng vấn, tôi bị hỏi về ưu điểm của bản thân."
+ },
+ {
+  "word": "個性",
+  "example": "この [学校](がっこう)では [生徒](せいと)[一人一人](ひとりひとり)の **[個性](こせい)**を [大切](たいせつ)に して います。",
+  "exampleVi": "Trường này coi trọng cá tính của từng học sinh."
+ },
+ {
+  "word": "遺伝",
+  "example": "[背](せ)の [高](たか)さは [親](おや)から **[遺伝](いでん)**する ことが [多](おお)いです。",
+  "exampleVi": "Chiều cao thường di truyền từ cha mẹ."
+ },
+ {
+  "word": "動作",
+  "example": "[彼](かれ)は **[動作](どうさ)**が [速](はや)くて、[仕事](しごと)も [早](はや)いです。",
+  "exampleVi": "Anh ấy có động tác nhanh nhẹn nên làm việc cũng nhanh."
+ },
+ {
+  "word": "真似",
+  "example": "[子供](こども)は [親](おや)の **[真似](まね)**を して [育](そだ)ちます。",
+  "exampleVi": "Trẻ con lớn lên bằng cách bắt chước cha mẹ."
+ },
+ {
+  "word": "睡眠",
+  "example": "[健康](けんこう)の ためには **すいみん**を [十分](じゅうぶん)に [取](と)る ことが [大切](たいせつ)です。",
+  "exampleVi": "Vì sức khỏe, việc ngủ đủ giấc là điều quan trọng."
+ },
+ {
+  "word": "食欲",
+  "example": "[夏風邪](なつかぜ)を ひいて、**[食欲](しょくよく)**が ありません。",
+  "exampleVi": "Tôi bị cảm hè nên không thấy thèm ăn."
+ },
+ {
+  "word": "外食",
+  "example": "[忙](いそが)しくて、[最近](さいきん)は **[外食](がいしょく)**が [多](おお)いです。",
+  "exampleVi": "Bận rộn nên dạo này tôi ăn ngoài nhiều."
+ },
+ {
+  "word": "家事",
+  "example": "[夫婦](ふうふ)で **[家事](かじ)**を [分担](ぶんたん)して います。",
+  "exampleVi": "Vợ chồng tôi chia nhau việc nhà."
+ },
+ {
+  "word": "出産",
+  "example": "[姉](あね)は [来月](らいげつ)、**[出産](しゅっさん)**する [予定](よてい)です。",
+  "exampleVi": "Chị tôi dự định sinh con vào tháng sau."
+ },
+ {
+  "word": "介護",
+  "example": "[両親](りょうしん)の **[介護](かいご)**の ために、[仕事](しごと)を [辞](や)めました。",
+  "exampleVi": "Vì phải chăm sóc bố mẹ nên tôi đã nghỉ việc."
+ },
+ {
+  "word": "共働き",
+  "example": "[私](わたし)たちは **[共働き](ともばたらき)**なので、[子供](こども)を [保育園](ほいくえん)に [預](あず)けて います。",
+  "exampleVi": "Vợ chồng tôi cùng đi làm nên gửi con ở nhà trẻ."
+ },
+ {
+  "word": "出勤",
+  "example": "[今日](きょう)は [雪](ゆき)で、**[出勤](しゅっきん)**に [二時間](にじかん)も かかりました。",
+  "exampleVi": "Hôm nay vì tuyết nên đi làm mất tận hai tiếng."
+ },
+ {
+  "word": "出世",
+  "example": "[彼](かれ)は [若](わか)くして [課長](かちょう)に **[出世](しゅっせ)**しました。",
+  "exampleVi": "Anh ấy thăng tiến lên chức trưởng ban khi còn trẻ."
+ },
+ {
+  "word": "地位",
+  "example": "[彼](かれ)は [会社](かいしゃ)で [高](たか)い **[地位](ちい)**に つきました。",
+  "exampleVi": "Anh ấy đã lên giữ chức vụ cao trong công ty."
+ },
+ {
+  "word": "受験",
+  "example": "[来年](らいねん)、[大学](だいがく)を **[受験](じゅけん)**する [予定](よてい)です。",
+  "exampleVi": "Năm sau tôi dự định thi vào đại học."
+ },
+ {
+  "word": "専攻",
+  "example": "[大学](だいがく)で [経済学](けいざいがく)を **[専攻](せんこう)**しました。",
+  "exampleVi": "Ở đại học tôi đã học chuyên ngành kinh tế học."
+ },
+ {
+  "word": "支度",
+  "example": "[出](で)かける **[支度](したく)**は もう できましたか。",
+  "exampleVi": "Bạn đã chuẩn bị xong để ra ngoài chưa?"
+ },
+ {
+  "word": "全身",
+  "example": "[走](はし)った あとで、**[全身](ぜんしん)**が [汗](あせ)で ぬれて いました。",
+  "exampleVi": "Sau khi chạy, toàn thân tôi ướt đẫm mồ hôi."
+ },
+ {
+  "word": "しわ",
+  "example": "ワイシャツに **しわ**が ついたので、アイロンを かけました。",
+  "exampleVi": "Áo sơ mi bị nhăn nên tôi đã là ủi."
+ },
+ {
+  "word": "服装",
+  "example": "[会社](かいしゃ)の [面接](めんせつ)では、**[服装](ふくそう)**にも [気](き)を つけましょう。",
+  "exampleVi": "Trong buổi phỏng vấn xin việc, hãy chú ý cả trang phục."
+ },
+ {
+  "word": "礼",
+  "example": "[助](たす)けて もらった [人](ひと)に **[礼](れい)**を [言](い)いました。",
+  "exampleVi": "Tôi đã nói lời cảm ơn với người đã giúp mình."
+ },
+ {
+  "word": "世辞",
+  "example": "お**[世辞](せじ)**を [言](い)われても、[全然](ぜんぜん) うれしくありません。",
+  "exampleVi": "Dù bị nịnh nọt tôi cũng chẳng vui chút nào."
+ },
+ {
+  "word": "言い訳",
+  "example": "[遅刻](ちこく)した とき、**[言](い)い[訳](わけ)**を しては いけません。",
+  "exampleVi": "Khi đến muộn thì không được biện minh."
+ },
+ {
+  "word": "話題",
+  "example": "[最近](さいきん)、**[話題](わだい)**に なって いる [映画](えいが)を [見](み)に [行](い)きました。",
+  "exampleVi": "Tôi đã đi xem bộ phim đang là đề tài bàn tán gần đây."
+ },
+ {
+  "word": "秘密",
+  "example": "これは [二人](ふたり)だけの **[秘密](ひみつ)**ですよ。",
+  "exampleVi": "Đây là bí mật chỉ hai chúng ta biết thôi đấy."
+ },
+ {
+  "word": "尊敬",
+  "example": "[私](わたし)は [父](ちち)を **[尊敬](そんけい)**して います。",
+  "exampleVi": "Tôi kính trọng bố tôi."
+ },
+ {
+  "word": "謙遜",
+  "example": "[彼](かれ)は [成功](せいこう)しても **けんそん**して、[自慢](じまん)しません。",
+  "exampleVi": "Dù thành công anh ấy vẫn khiêm tốn, không khoe khoang."
+ },
+ {
+  "word": "期待",
+  "example": "[両親](りょうしん)の **[期待](きたい)**に [応](こた)えたいと [思](おも)って います。",
+  "exampleVi": "Tôi muốn đáp lại sự kỳ vọng của bố mẹ."
+ },
+ {
+  "word": "苦労",
+  "example": "[外国](がいこく)で [生活](せいかつ)するのは **[苦労](くろう)**が [多](おお)いです。",
+  "exampleVi": "Sống ở nước ngoài có nhiều điều vất vả."
+ },
+ {
+  "word": "意思",
+  "example": "[本人](ほんにん)の **[意思](いし)**を [確認](かくにん)してから [決](き)めましょう。",
+  "exampleVi": "Hãy xác nhận ý định của chính người đó rồi mới quyết định."
+ },
+ {
+  "word": "意志",
+  "example": "[彼](かれ)は **[意志](いし)**が [強](つよ)くて、[一度](いちど) [決](き)めた ことは [最後](さいご)まで やり[通](とお)します。",
+  "exampleVi": "Anh ấy ý chí mạnh mẽ, việc đã quyết thì làm đến cùng."
+ },
+ {
+  "word": "感情",
+  "example": "**[感情](かんじょう)**を [顔](かお)に [出](だ)さない [人](ひと)も います。",
+  "exampleVi": "Cũng có người không để lộ cảm xúc ra mặt."
+ },
+ {
+  "word": "材料",
+  "example": "[料理](りょうり)の **[材料](ざいりょう)**を [買](か)いに スーパーへ [行](い)きました。",
+  "exampleVi": "Tôi đã đến siêu thị để mua nguyên liệu nấu ăn."
+ },
+ {
+  "word": "石",
+  "example": "[道](みち)に **[石](いし)**が [落](お)ちて いたので、[拾](ひろ)いました。",
+  "exampleVi": "Có hòn đá rơi trên đường nên tôi đã nhặt lên."
+ },
+ {
+  "word": "ひも",
+  "example": "[荷物](にもつ)を **ひも**で [縛](しば)りました。",
+  "exampleVi": "Tôi đã buộc hành lý bằng dây."
+ },
+ {
+  "word": "券",
+  "example": "この **[券](けん)**を [持](も)って いる [人](ひと)は、[無料](むりょう)で [入](はい)れます。",
+  "exampleVi": "Người có tấm vé này thì được vào cửa miễn phí."
+ },
+ {
+  "word": "名簿",
+  "example": "クラスの **[名簿](めいぼ)**に [名前](なまえ)を [書](か)いて ください。",
+  "exampleVi": "Hãy viết tên vào danh sách của lớp."
+ },
+ {
+  "word": "表",
+  "example": "[結果](けっか)を **[表](ひょう)**に まとめました。",
+  "exampleVi": "Tôi đã tổng hợp kết quả vào bảng."
+ },
+ {
+  "word": "針",
+  "example": "**[針](はり)**と [糸](いと)で ボタンを [付](つ)けました。",
+  "exampleVi": "Tôi đã khâu cúc áo bằng kim và chỉ."
+ },
+ {
+  "word": "栓",
+  "example": "ビールの **せん**を [抜](ぬ)いて、[乾杯](かんぱい)しました。",
+  "exampleVi": "Tôi mở nắp chai bia rồi cùng nâng ly."
+ },
+ {
+  "word": "湯気",
+  "example": "[熱](あつ)い スープから **[湯気](ゆげ)**が [出](で)て います。",
+  "exampleVi": "Hơi nước bốc lên từ bát súp nóng."
+ },
+ {
+  "word": "日当たり",
+  "example": "この [部屋](へや)は **[日当](ひあ)たり**が よくて、[冬](ふゆ)でも [暖](あたた)かいです。",
+  "exampleVi": "Căn phòng này đón nắng tốt nên mùa đông cũng ấm áp."
+ },
+ {
+  "word": "空",
+  "example": "**[空](から)**の [箱](はこ)は [捨](す)てて ください。",
+  "exampleVi": "Hãy vứt những cái hộp rỗng đi."
+ },
+ {
+  "word": "斜め",
+  "example": "[黒板](こくばん)の [字](じ)は **[斜](なな)め**から [見](み)ると [見](み)えにくいです。",
+  "exampleVi": "Chữ trên bảng nhìn từ phía chéo thì khó thấy."
+ },
+ {
+  "word": "履歴",
+  "example": "[買](か)い[物](もの)の **りれき**が [画面](がめん)に [残](のこ)って います。",
+  "exampleVi": "Lịch sử mua sắm vẫn còn lưu trên màn hình."
+ },
+ {
+  "word": "娯楽",
+  "example": "[昔](むかし)は **[娯楽](ごらく)**が [少](すく)なくて、[映画](えいが)が [人気](にんき)でした。",
+  "exampleVi": "Ngày xưa ít trò giải trí nên phim ảnh rất được ưa chuộng."
+ },
+ {
+  "word": "司会",
+  "example": "[結婚式](けっこんしき)で [友達](ともだち)が **[司会](しかい)**を しました。",
+  "exampleVi": "Tại lễ cưới, bạn tôi đã làm người dẫn chương trình."
+ },
+ {
+  "word": "歓迎",
+  "example": "[新入社員](しんにゅうしゃいん)を **[歓迎](かんげい)**する パーティーを [開](ひら)きました。",
+  "exampleVi": "Chúng tôi đã tổ chức tiệc chào đón nhân viên mới."
+ },
+ {
+  "word": "窓口",
+  "example": "[銀行](ぎんこう)の **[窓口](まどぐち)**は [三時](さんじ)に [閉](し)まります。",
+  "exampleVi": "Quầy giao dịch của ngân hàng đóng cửa lúc 3 giờ."
+ },
+ {
+  "word": "手続き",
+  "example": "ビザの **[手続](てつづ)き**に [二週間](にしゅうかん)ぐらい かかります。",
+  "exampleVi": "Thủ tục xin thị thực mất khoảng hai tuần."
+ },
+ {
+  "word": "徒歩",
+  "example": "[駅](えき)から **[徒歩](とほ)**で [十分](じゅっぷん)の [所](ところ)に [住](す)んで います。",
+  "exampleVi": "Tôi sống ở nơi cách nhà ga mười phút đi bộ."
+ },
+ {
+  "word": "駐車",
+  "example": "この [場所](ばしょ)への **[駐車](ちゅうしゃ)**は [禁止](きんし)されて います。",
+  "exampleVi": "Việc đỗ xe ở nơi này bị cấm."
+ },
+ {
+  "word": "違反",
+  "example": "[交通](こうつう)**[違反](いはん)**で [警察](けいさつ)に [注意](ちゅうい)されました。",
+  "exampleVi": "Tôi bị cảnh sát nhắc nhở vì vi phạm giao thông."
+ },
+ {
+  "word": "平日",
+  "example": "**[平日](へいじつ)**は [仕事](しごと)が あるので、[旅行](りょこう)は [週末](しゅうまつ)に [行](い)きます。",
+  "exampleVi": "Ngày thường có việc nên tôi đi du lịch vào cuối tuần."
+ },
+ {
+  "word": "日付",
+  "example": "[書類](しょるい)に **[日付](ひづけ)**を [書](か)き[忘](わす)れました。",
+  "exampleVi": "Tôi đã quên ghi ngày tháng vào giấy tờ."
+ },
+ {
+  "word": "日中",
+  "example": "[夏](なつ)の **[日中](にっちゅう)**は [暑](あつ)いので、[外](そと)に [出](で)ない ほうが いいです。",
+  "exampleVi": "Ban ngày mùa hè nóng nên tốt hơn là đừng ra ngoài."
+ },
+ {
+  "word": "日程",
+  "example": "[旅行](りょこう)の **[日程](にってい)**を [旅行社](りょこうしゃ)と [相談](そうだん)しました。",
+  "exampleVi": "Tôi đã bàn với công ty du lịch về lịch trình chuyến đi."
+ },
+ {
+  "word": "日帰り",
+  "example": "[箱根](はこね)へ **[日帰](ひがえ)り**で [温泉](おんせん)に [入](はい)りに [行](い)きました。",
+  "exampleVi": "Tôi đã đi Hakone trong ngày để tắm suối nước nóng."
+ },
+ {
+  "word": "順序",
+  "example": "[手順](てじゅん)を [正](ただ)しい **[順序](じゅんじょ)**に [並](なら)べて ください。",
+  "exampleVi": "Hãy sắp xếp các bước theo đúng thứ tự."
+ },
+ {
+  "word": "時期",
+  "example": "[桜](さくら)の **[時期](じき)**は [京都](きょうと)が [込](こ)みます。",
+  "exampleVi": "Vào thời kỳ hoa anh đào nở, Kyoto rất đông."
+ },
+ {
+  "word": "現在",
+  "example": "**[現在](げんざい)**、[私](わたし)は [東京](とうきょう)に [住](す)んで います。",
+  "exampleVi": "Hiện tại tôi đang sống ở Tokyo."
+ },
+ {
+  "word": "臨時",
+  "example": "[台風](たいふう)の ため、**[臨時](りんじ)**の バスが [出](で)ました。",
+  "exampleVi": "Vì bão nên đã có xe buýt tăng cường chạy thêm."
+ },
+ {
+  "word": "費用",
+  "example": "[引](ひ)っ[越](こ)しの **[費用](ひよう)**は [十万円](じゅうまんえん)ぐらいでした。",
+  "exampleVi": "Chi phí chuyển nhà khoảng 100.000 yên."
+ },
+ {
+  "word": "定価",
+  "example": "この [本](ほん)の **[定価](ていか)**は [千五百円](せんごひゃくえん)です。",
+  "exampleVi": "Giá niêm yết của cuốn sách này là 1.500 yên."
+ },
+ {
+  "word": "割引",
+  "example": "[学生証](がくせいしょう)を [見](み)せると、**[割引](わりびき)**が あります。",
+  "exampleVi": "Nếu xuất trình thẻ sinh viên thì được giảm giá."
+ },
+ {
+  "word": "お負け",
+  "example": "この [店](みせ)で [三つ](みっつ) [買](か)うと、**おまけ**が ついて きます。",
+  "exampleVi": "Mua ba cái ở cửa hàng này thì được tặng kèm quà."
+ },
+ {
+  "word": "無料",
+  "example": "この サービスは **[無料](むりょう)**で [利用](りよう)できます。",
+  "exampleVi": "Dịch vụ này có thể sử dụng miễn phí."
+ },
+ {
+  "word": "現金",
+  "example": "**[現金](げんきん)**が ない ときは、カードで [払](はら)います。",
+  "exampleVi": "Khi không có tiền mặt thì tôi thanh toán bằng thẻ."
+ },
+ {
+  "word": "合計",
+  "example": "[三人](さんにん)の [料金](りょうきん)の **[合計](ごうけい)**は [九千円](きゅうせんえん)でした。",
+  "exampleVi": "Tổng chi phí của ba người là 9.000 yên."
+ },
+ {
+  "word": "収入",
+  "example": "[毎月](まいつき)の **[収入](しゅうにゅう)**は [安定](あんてい)して います。",
+  "exampleVi": "Thu nhập mỗi tháng đều ổn định."
+ },
+ {
+  "word": "支出",
+  "example": "**[支出](ししゅつ)**が [収入](しゅうにゅう)より [多](おお)いと、[貯金](ちょきん)が できません。",
+  "exampleVi": "Nếu chi tiêu nhiều hơn thu nhập thì không tiết kiệm được."
+ },
+ {
+  "word": "予算",
+  "example": "[旅行](りょこう)の **[予算](よさん)**は [一人](ひとり)、[五万円](ごまんえん)です。",
+  "exampleVi": "Ngân sách cho chuyến đi là 50.000 yên mỗi người."
+ },
+ {
+  "word": "利益",
+  "example": "この [商品](しょうひん)は **[利益](りえき)**が [大](おお)きいです。",
+  "exampleVi": "Sản phẩm này mang lại lợi nhuận lớn."
+ },
+ {
+  "word": "赤字",
+  "example": "[今月](こんげつ)は [家計](かけい)が **[赤字](あかじ)**に なって しまいました。",
+  "exampleVi": "Tháng này chi tiêu gia đình bị thâm hụt mất rồi."
+ },
+ {
+  "word": "経費",
+  "example": "[出張](しゅっちょう)の **[経費](けいひ)**は [会社](かいしゃ)が [払](はら)って くれます。",
+  "exampleVi": "Kinh phí đi công tác do công ty chi trả cho tôi."
+ },
+ {
+  "word": "勘定",
+  "example": "[食事](しょくじ)の あとで、**[勘定](かんじょう)**を お[願](ねが)いしました。",
+  "exampleVi": "Sau bữa ăn, tôi nhờ tính tiền."
+ },
+ {
+  "word": "弁償",
+  "example": "[友達](ともだち)の [本](ほん)を [汚](よご)して しまったので、**べんしょう**しました。",
+  "exampleVi": "Tôi lỡ làm bẩn sách của bạn nên đã bồi thường."
+ },
+ {
+  "word": "請求",
+  "example": "[会社](かいしゃ)から [修理](しゅうり)の [費用](ひよう)を **[請求](せいきゅう)**されました。",
+  "exampleVi": "Tôi bị công ty yêu cầu thanh toán chi phí sửa chữa."
+ },
+ {
+  "word": "景気",
+  "example": "**[景気](けいき)**が [悪](わる)くて、[就職](しゅうしょく)が [難](むずか)しいです。",
+  "exampleVi": "Kinh tế xấu nên việc xin việc rất khó."
+ },
+ {
+  "word": "募金",
+  "example": "[駅前](えきまえ)で **[募金](ぼきん)**[活動](かつどう)を して いました。",
+  "exampleVi": "Họ đang làm hoạt động quyên góp trước nhà ga."
+ },
+ {
+  "word": "募集",
+  "example": "アルバイトを **[募集](ぼしゅう)**して いる [店](みせ)を [探](さが)して います。",
+  "exampleVi": "Tôi đang tìm cửa hàng có tuyển nhân viên làm thêm."
+ },
+ {
+  "word": "価値",
+  "example": "この [絵](え)は [高](たか)い **[価値](かち)**が あるそうです。",
+  "exampleVi": "Nghe nói bức tranh này có giá trị cao."
+ }
 ]

@@ -1,128 +1,632 @@
 [
-  "好む",
-  "嫌う",
-  "願う",
-  "甘える",
-  "かわいがる",
-  "気付く",
-  "疑う",
-  "苦しむ",
-  "悲しむ",
-  "がっかりする",
-  "励ます",
-  "うなずく",
-  "張り切る",
-  "威張る",
-  "怒鳴る",
-  "暴れる",
-  "しゃがむ",
-  "どく",
-  "どける",
-  "かぶる",
-  "かぶせる",
-  "かじる",
-  "撃つ",
-  "漕ぐ",
-  "敷く",
-  "つぐ",
-  "配る",
-  "放る",
-  "掘る",
-  "まく",
-  "計る",
-  "測る",
-  "量る",
-  "図る",
-  "占う",
-  "引っ張る",
-  "突く",
-  "突き当たる",
-  "立ち止まる",
-  "近寄る",
-  "横切る",
-  "転ぶ",
-  "つまずく",
-  "ひく",
-  "おぼれる",
-  "痛む",
-  "かかる",
-  "酔う",
-  "吐く",
-  "診る",
-  "見舞う",
-  "勤める",
-  "稼ぐ",
-  "支払う",
-  "受け取る",
-  "払い込む",
-  "払い戻す",
-  "引き出す",
-  "もうかる",
-  "もうける",
-  "落ち込む",
-  "売れる",
-  "売り切れる",
-  "くっ付く",
-  "くっ付ける",
-  "固まる",
-  "固める",
-  "縮む",
-  "縮まる",
-  "縮める",
-  "沈む",
-  "沈める",
-  "下がる",
-  "下げる",
-  "提げる",
-  "転がる",
-  "転がす",
-  "傾く",
-  "傾ける",
-  "裏返す",
-  "散らかる",
-  "散らかす",
-  "散らばる",
-  "刻む",
-  "挟まる",
-  "挟む",
-  "つぶれる",
-  "つぶす",
-  "へこむ",
-  "ほどける",
-  "ほどく",
-  "枯れる",
-  "枯らす",
-  "傷む",
-  "痛む",
-  "湿る",
-  "凍る",
-  "震える",
-  "輝く",
-  "あふれる",
-  "余る",
-  "目立つ",
-  "見下ろす",
-  "戦う",
-  "闘う",
-  "敗れる",
-  "逃げる",
-  "逃がす",
-  "戻る",
-  "戻す",
-  "はまる",
-  "はめる",
-  "扱う",
-  "関わる",
-  "目指す",
-  "発つ",
-  "迎える",
-  "持てる",
-  "例える",
-  "努める",
-  "務まる",
-  "務める",
-  "取り消す",
-  "終える",
-  "呼びかける",
-  "呼び出す"
+ {
+  "word": "好む",
+  "example": "[彼](かれ)は [甘](あま)い [物](もの)を **[好](この)んで** [食](た)べます。",
+  "exampleVi": "Anh ấy thích ăn đồ ngọt."
+ },
+ {
+  "word": "嫌う",
+  "example": "[虫](むし)を **きらう** [人](ひと)は [多](おお)いです。",
+  "exampleVi": "Có nhiều người ghét côn trùng."
+ },
+ {
+  "word": "願う",
+  "example": "[試験](しけん)に [合格](ごうかく)する ことを [心](こころ)から **[願](ねが)って** います。",
+  "exampleVi": "Tôi thành tâm mong mình thi đỗ."
+ },
+ {
+  "word": "甘える",
+  "example": "[子供](こども)は [母親](ははおや)に **[甘](あま)えて** [泣](な)いて います。",
+  "exampleVi": "Đứa trẻ đang làm nũng mẹ và khóc."
+ },
+ {
+  "word": "かわいがる",
+  "example": "[祖父](そふ)は [孫](まご)を とても **かわいがって** います。",
+  "exampleVi": "Ông rất cưng chiều cháu."
+ },
+ {
+  "word": "気付く",
+  "example": "[家](いえ)を [出](で)てから、[財布](さいふ)を [忘](わす)れた ことに **[気付](きづ)きました**。",
+  "exampleVi": "Ra khỏi nhà rồi tôi mới nhận ra mình quên ví."
+ },
+ {
+  "word": "疑う",
+  "example": "[彼](かれ)の [話](はなし)は [本当](ほんとう)かどうか **[疑](うたが)って** います。",
+  "exampleVi": "Tôi đang nghi ngờ không biết câu chuyện của anh ấy có thật không."
+ },
+ {
+  "word": "苦しむ",
+  "example": "[多](おお)くの [人](ひと)が [病気](びょうき)に **[苦](くる)しんで** います。",
+  "exampleVi": "Nhiều người đang khổ sở vì bệnh tật."
+ },
+ {
+  "word": "悲しむ",
+  "example": "[友達](ともだち)が [亡](な)くなって、みんなが **[悲](かな)しんで** います。",
+  "exampleVi": "Bạn qua đời nên mọi người đều đau buồn."
+ },
+ {
+  "word": "がっかりする",
+  "example": "[楽](たの)しみに して いた [旅行](りょこう)が [中止](ちゅうし)に なって、**がっかりしました**。",
+  "exampleVi": "Chuyến du lịch mong chờ bị hủy nên tôi đã thất vọng."
+ },
+ {
+  "word": "励ます",
+  "example": "[落](お)ち[込](こ)んで いる [友達](ともだち)を **[励](はげ)ましました**。",
+  "exampleVi": "Tôi đã động viên người bạn đang chán nản."
+ },
+ {
+  "word": "うなずく",
+  "example": "[私](わたし)の [話](はなし)を [聞](き)いて、[彼](かれ)は [静](しず)かに **うなずきました**。",
+  "exampleVi": "Nghe tôi nói, anh ấy lặng lẽ gật đầu."
+ },
+ {
+  "word": "張り切る",
+  "example": "[新](あたら)しい [仕事](しごと)が [始](はじ)まるので、[彼](かれ)は **[張](は)り[切](き)って** います。",
+  "exampleVi": "Công việc mới sắp bắt đầu nên anh ấy rất hăng hái."
+ },
+ {
+  "word": "威張る",
+  "example": "[部長](ぶちょう)は いつも [部下](ぶか)に **[威張](いば)って** います。",
+  "exampleVi": "Trưởng phòng lúc nào cũng hống hách với cấp dưới."
+ },
+ {
+  "word": "怒鳴る",
+  "example": "[父](ちち)は [大](おお)きな [声](こえ)で **[怒鳴](どな)りました**。",
+  "exampleVi": "Bố tôi đã quát lớn."
+ },
+ {
+  "word": "暴れる",
+  "example": "[酔](よ)った [客](きゃく)が [店](みせ)で **[暴](あば)れました**。",
+  "exampleVi": "Vị khách say đã làm loạn trong quán."
+ },
+ {
+  "word": "しゃがむ",
+  "example": "[道](みち)に **しゃがんで**、[落](お)ちた [物](もの)を [拾](ひろ)いました。",
+  "exampleVi": "Tôi ngồi xổm xuống nhặt đồ rơi trên đường."
+ },
+ {
+  "word": "どく",
+  "example": "すみません、ちょっと **どいて** ください。",
+  "exampleVi": "Xin lỗi, làm ơn tránh sang một bên."
+ },
+ {
+  "word": "どける",
+  "example": "[道](みち)に [置](お)いて ある [自転車](じてんしゃ)を **どけて** ください。",
+  "exampleVi": "Hãy dời chiếc xe đạp đang để ngoài đường đi."
+ },
+ {
+  "word": "かぶる",
+  "example": "[日差](ひざ)しが [強](つよ)いので、[帽子](ぼうし)を **かぶって** [出](で)かけます。",
+  "exampleVi": "Nắng gắt nên tôi đội mũ rồi ra ngoài."
+ },
+ {
+  "word": "かぶせる",
+  "example": "[母](はは)は [子供](こども)に [帽子](ぼうし)を **かぶせました**。",
+  "exampleVi": "Mẹ đã đội mũ cho đứa trẻ."
+ },
+ {
+  "word": "かじる",
+  "example": "りんごを **かじりながら**、[本](ほん)を [読](よ)みました。",
+  "exampleVi": "Tôi vừa gặm táo vừa đọc sách."
+ },
+ {
+  "word": "撃つ",
+  "example": "[警察](けいさつ)は、[逃](に)げる [犯人](はんにん)に ピストルを **[撃](う)ちました**。",
+  "exampleVi": "Cảnh sát đã bắn súng vào tên tội phạm đang bỏ chạy."
+ },
+ {
+  "word": "漕ぐ",
+  "example": "[湖](みずうみ)で ボートを **こいで** [遊](あそ)びました。",
+  "exampleVi": "Tôi đã chèo thuyền chơi ở hồ."
+ },
+ {
+  "word": "敷く",
+  "example": "[庭](にわ)に シートを **[敷](し)いて**、お[弁当](べんとう)を [食](た)べました。",
+  "exampleVi": "Tôi trải tấm bạt ngoài vườn và ăn cơm hộp."
+ },
+ {
+  "word": "つぐ",
+  "example": "お[客](きゃく)さんに お[茶](ちゃ)を **つぎました**。",
+  "exampleVi": "Tôi rót trà mời khách."
+ },
+ {
+  "word": "配る",
+  "example": "[授業](じゅぎょう)の はじめに、[先生](せんせい)が プリントを **[配](くば)りました**。",
+  "exampleVi": "Đầu tiết học, thầy đã phát tờ tài liệu."
+ },
+ {
+  "word": "放る",
+  "example": "ボールを [遠](とお)くに **[放](ほう)ったら**、[犬](いぬ)が [走](はし)って [取](と)りに [行](い)きました。",
+  "exampleVi": "Tôi ném quả bóng ra xa thì con chó chạy đi lấy."
+ },
+ {
+  "word": "掘る",
+  "example": "[庭](にわ)に [穴](あな)を **[掘](ほ)って**、[木](き)を [植](う)えました。",
+  "exampleVi": "Tôi đào một cái hố trong vườn rồi trồng cây."
+ },
+ {
+  "word": "まく",
+  "example": "[春](はる)に なったら、[庭](にわ)に [花](はな)の [種](たね)を **まきます**。",
+  "exampleVi": "Đến mùa xuân tôi sẽ gieo hạt hoa trong vườn."
+ },
+ {
+  "word": "計る",
+  "example": "ストップウォッチで [走](はし)る [時間](じかん)を **[計](はか)りました**。",
+  "exampleVi": "Tôi đã bấm giờ thời gian chạy bằng đồng hồ bấm giờ."
+ },
+ {
+  "word": "測る",
+  "example": "[定規](じょうぎ)で [机](つくえ)の [長](なが)さを **[測](はか)りました**。",
+  "exampleVi": "Tôi đã đo chiều dài chiếc bàn bằng thước kẻ."
+ },
+ {
+  "word": "量る",
+  "example": "[毎朝](まいあさ)、[体重](たいじゅう)を **[量](はか)って** います。",
+  "exampleVi": "Sáng nào tôi cũng cân trọng lượng cơ thể."
+ },
+ {
+  "word": "図る",
+  "example": "[町](まち)の [人](ひと)たちは [問題](もんだい)の [解決](かいけつ)を **[図](はか)りました**。",
+  "exampleVi": "Người dân thị trấn đã nỗ lực giải quyết vấn đề."
+ },
+ {
+  "word": "占う",
+  "example": "[友達](ともだち)に [今年](ことし)の [運](うん)を **[占](うらな)って** もらいました。",
+  "exampleVi": "Tôi nhờ bạn bói vận thế của năm nay."
+ },
+ {
+  "word": "引っ張る",
+  "example": "[犬](いぬ)が ひもを **[引](ひ)っ[張](ぱ)って** [歩](ある)きます。",
+  "exampleVi": "Con chó vừa kéo dây vừa đi."
+ },
+ {
+  "word": "突く",
+  "example": "[鉛筆](えんぴつ)の [先](さき)で [紙](かみ)を **[突](つ)いたら**、[穴](あな)が あきました。",
+  "exampleVi": "Tôi chọc đầu bút chì vào giấy thì giấy thủng lỗ."
+ },
+ {
+  "word": "突き当たる",
+  "example": "この [道](みち)を まっすぐ [行](い)って、**[突](つ)き[当](あ)たったら** [右](みぎ)に [曲](ま)がって ください。",
+  "exampleVi": "Hãy đi thẳng con đường này, đến cuối đường thì rẽ phải."
+ },
+ {
+  "word": "立ち止まる",
+  "example": "[信号](しんごう)が [赤](あか)に なったので、**[立](た)ち[止](ど)まりました**。",
+  "exampleVi": "Đèn chuyển sang đỏ nên tôi đã dừng lại."
+ },
+ {
+  "word": "近寄る",
+  "example": "[危](あぶ)ないから、[犬](いぬ)に **[近寄](ちかよ)らないで** ください。",
+  "exampleVi": "Nguy hiểm nên xin đừng lại gần con chó."
+ },
+ {
+  "word": "横切る",
+  "example": "ねこが [道](みち)を **[横切](よこぎ)りました**。",
+  "exampleVi": "Con mèo đã băng ngang qua đường."
+ },
+ {
+  "word": "転ぶ",
+  "example": "[雪](ゆき)の [道](みち)で **[転](ころ)んで**、[足](あし)を けがしました。",
+  "exampleVi": "Tôi ngã trên đường tuyết và bị thương ở chân."
+ },
+ {
+  "word": "つまずく",
+  "example": "[道](みち)の [石](いし)に **つまずいて**、[転](ころ)びそうに なりました。",
+  "exampleVi": "Tôi vấp phải hòn đá trên đường và suýt ngã."
+ },
+ {
+  "word": "ひく",
+  "example": "[車](くるま)に **ひかれそう**に なって、[驚](おどろ)きました。",
+  "exampleVi": "Suýt bị xe đâm phải, tôi giật cả mình."
+ },
+ {
+  "word": "おぼれる",
+  "example": "[子供](こども)が [川](かわ)で **おぼれて**、[助](たす)けられました。",
+  "exampleVi": "Đứa trẻ bị đuối nước ở sông và đã được cứu."
+ },
+ {
+  "word": "痛む",
+  "example": "[寒](さむ)い [日](ひ)は [古](ふる)い けがが **[痛](いた)みます**。",
+  "exampleVi": "Những ngày lạnh thì vết thương cũ đau nhức."
+ },
+ {
+  "word": "かかる",
+  "example": "[風邪](かぜ)に **かかって**、[三日](みっか)も [寝](ね)て いました。",
+  "exampleVi": "Tôi bị cảm và đã nằm suốt ba ngày."
+ },
+ {
+  "word": "酔う",
+  "example": "[船](ふね)に **[酔](よ)って**、[気分](きぶん)が [悪](わる)く なりました。",
+  "exampleVi": "Tôi bị say tàu nên thấy khó chịu."
+ },
+ {
+  "word": "吐く",
+  "example": "[食](た)べ[過](す)ぎて、[気持](きも)ちが [悪](わる)くて **[吐](は)いて** しまいました。",
+  "exampleVi": "Ăn nhiều quá nên thấy khó chịu và tôi đã nôn ra."
+ },
+ {
+  "word": "診る",
+  "example": "[医者](いしゃ)が かんじゃを **みて** います。",
+  "exampleVi": "Bác sĩ đang khám cho bệnh nhân."
+ },
+ {
+  "word": "見舞う",
+  "example": "[入院](にゅういん)して いる [友達](ともだち)を **[見舞](みま)い**に [行](い)きました。",
+  "exampleVi": "Tôi đã đi thăm người bạn đang nằm viện."
+ },
+ {
+  "word": "勤める",
+  "example": "[銀行](ぎんこう)に **[勤](つと)めて**、[今年](ことし)で [十年](じゅうねん)に なります。",
+  "exampleVi": "Tôi làm việc ở ngân hàng, năm nay là năm thứ mười."
+ },
+ {
+  "word": "稼ぐ",
+  "example": "アルバイトで [学費](がくひ)を **かせいで** います。",
+  "exampleVi": "Tôi kiếm học phí bằng công việc làm thêm."
+ },
+ {
+  "word": "支払う",
+  "example": "[代金](だいきん)は [来週](らいしゅう)までに **[支払](しはら)って** ください。",
+  "exampleVi": "Xin hãy thanh toán tiền hàng trước tuần sau."
+ },
+ {
+  "word": "受け取る",
+  "example": "[宅配便](たくはいびん)を **[受](う)け[取](と)りました**。",
+  "exampleVi": "Tôi đã nhận bưu phẩm chuyển phát."
+ },
+ {
+  "word": "払い込む",
+  "example": "[授業料](じゅぎょうりょう)を [銀行](ぎんこう)に **[払](はら)い[込](こ)みました**。",
+  "exampleVi": "Tôi đã nộp học phí vào ngân hàng."
+ },
+ {
+  "word": "払い戻す",
+  "example": "[中止](ちゅうし)に なった コンサートの チケット[代](だい)を **[払](はら)いもどして** もらいました。",
+  "exampleVi": "Tôi được hoàn lại tiền vé buổi hòa nhạc bị hủy."
+ },
+ {
+  "word": "引き出す",
+  "example": "[銀行](ぎんこう)で [お金](かね)を **[引](ひ)き[出](だ)しました**。",
+  "exampleVi": "Tôi đã rút tiền ở ngân hàng."
+ },
+ {
+  "word": "もうかる",
+  "example": "この [商売](しょうばい)は あまり **もうかりません**。",
+  "exampleVi": "Việc kinh doanh này không sinh lời mấy."
+ },
+ {
+  "word": "もうける",
+  "example": "[株](かぶ)で [大](おお)きな [お金](かね)を **もうけた** [人](ひと)も います。",
+  "exampleVi": "Cũng có người kiếm được nhiều tiền nhờ cổ phiếu."
+ },
+ {
+  "word": "落ち込む",
+  "example": "[試験](しけん)に [落](お)ちて、[毎日](まいにち) **[落](お)ち[込](こ)んで** います。",
+  "exampleVi": "Trượt kỳ thi nên ngày nào tôi cũng chán nản."
+ },
+ {
+  "word": "売れる",
+  "example": "この [本](ほん)は [若](わか)い [人](ひと)の [間](あいだ)で よく **[売](う)れて** います。",
+  "exampleVi": "Cuốn sách này bán chạy trong giới trẻ."
+ },
+ {
+  "word": "売り切れる",
+  "example": "[人気](にんき)の [商品](しょうひん)は すぐに **[売](う)り[切](き)れて** しまいました。",
+  "exampleVi": "Sản phẩm được ưa chuộng đã bán hết sạch ngay."
+ },
+ {
+  "word": "くっ付く",
+  "example": "ガムが くつに **くっついて**、[取](と)れません。",
+  "exampleVi": "Kẹo cao su dính vào giày không gỡ ra được."
+ },
+ {
+  "word": "くっ付ける",
+  "example": "[切](き)った [紙](かみ)を のりで **くっつけました**。",
+  "exampleVi": "Tôi dán những mảnh giấy đã cắt bằng hồ."
+ },
+ {
+  "word": "固まる",
+  "example": "セメントが **[固](かた)まる** まで、[触](さわ)らないで ください。",
+  "exampleVi": "Xin đừng chạm vào cho đến khi xi măng đông cứng."
+ },
+ {
+  "word": "固める",
+  "example": "チョコレートを [冷蔵庫](れいぞうこ)で [冷](ひ)やして **[固](かた)めます**。",
+  "exampleVi": "Tôi để sô-cô-la trong tủ lạnh cho cứng lại."
+ },
+ {
+  "word": "縮む",
+  "example": "セーターを [洗](あら)ったら、**[縮](ちぢ)んで** しまいました。",
+  "exampleVi": "Giặt chiếc áo len xong thì nó bị co lại mất rồi."
+ },
+ {
+  "word": "縮まる",
+  "example": "[二人](ふたり)の [距離](きょり)が [少](すこ)しずつ **[縮](ちぢ)まって** きました。",
+  "exampleVi": "Khoảng cách giữa hai người đã dần được rút ngắn."
+ },
+ {
+  "word": "縮める",
+  "example": "[近道](ちかみち)を [通](とお)って、[時間](じかん)を **[縮](ちぢ)めました**。",
+  "exampleVi": "Tôi đi đường tắt để rút ngắn thời gian."
+ },
+ {
+  "word": "沈む",
+  "example": "[太陽](たいよう)が [海](うみ)に **[沈](しず)んで** いきます。",
+  "exampleVi": "Mặt trời đang lặn dần xuống biển."
+ },
+ {
+  "word": "沈める",
+  "example": "[水](みず)に [石](いし)を **[沈](しず)めて** みました。",
+  "exampleVi": "Tôi thử nhấn hòn đá chìm xuống nước."
+ },
+ {
+  "word": "下がる",
+  "example": "[薬](くすり)を [飲](の)んだら、[熱](ねつ)が **[下](さ)がりました**。",
+  "exampleVi": "Uống thuốc xong thì cơn sốt đã hạ."
+ },
+ {
+  "word": "下げる",
+  "example": "[部屋](へや)が [暑](あつ)いので、エアコンの [温度](おんど)を **[下](さ)げました**。",
+  "exampleVi": "Phòng nóng nên tôi đã hạ nhiệt độ điều hòa xuống."
+ },
+ {
+  "word": "提げる",
+  "example": "[買](か)い[物](もの)の [袋](ふくろ)を [手](て)に **[提](さ)げて** [歩](ある)きました。",
+  "exampleVi": "Tôi xách túi đồ mua sắm đi bộ."
+ },
+ {
+  "word": "転がる",
+  "example": "ボールが [坂](さか)を **[転](ころ)がって** いきました。",
+  "exampleVi": "Quả bóng lăn xuống con dốc."
+ },
+ {
+  "word": "転がす",
+  "example": "ボールを **[転](ころ)がして**、[犬](いぬ)と [遊](あそ)びました。",
+  "exampleVi": "Tôi lăn quả bóng để chơi với con chó."
+ },
+ {
+  "word": "傾く",
+  "example": "[地震](じしん)で [建物](たてもの)が [少](すこ)し **[傾](かたむ)きました**。",
+  "exampleVi": "Tòa nhà hơi bị nghiêng vì động đất."
+ },
+ {
+  "word": "傾ける",
+  "example": "[彼](かれ)は [首](くび)を [傾](かたむ)けて、[私](わたし)の [話](はなし)に [耳](みみ)を **[傾](かたむ)けました**。",
+  "exampleVi": "Anh ấy nghiêng đầu lắng nghe câu chuyện của tôi."
+ },
+ {
+  "word": "裏返す",
+  "example": "[魚](さかな)を [焼](や)く ときは、[途中](とちゅう)で **[裏返](うらがえ)して** ください。",
+  "exampleVi": "Khi nướng cá, hãy lật mặt giữa chừng."
+ },
+ {
+  "word": "散らかる",
+  "example": "[部屋](へや)が **[散](ち)らかって** いるので、[片付](かたづ)けなければ なりません。",
+  "exampleVi": "Phòng đang bừa bộn nên tôi phải dọn dẹp."
+ },
+ {
+  "word": "散らかす",
+  "example": "[子供](こども)が おもちゃを **[散](ち)らかして**、[片付](かたづ)けません。",
+  "exampleVi": "Đứa trẻ bày bừa đồ chơi mà không chịu dọn."
+ },
+ {
+  "word": "散らばる",
+  "example": "[床](ゆか)に [紙](かみ)が **[散](ち)らばって** います。",
+  "exampleVi": "Giấy rải rác trên sàn nhà."
+ },
+ {
+  "word": "刻む",
+  "example": "[野菜](やさい)を [細](こま)かく **[刻](きざ)んで**、スープに [入](い)れます。",
+  "exampleVi": "Tôi thái nhỏ rau rồi cho vào súp."
+ },
+ {
+  "word": "挟まる",
+  "example": "ドアに [指](ゆび)が **はさまって**、[痛](いた)かったです。",
+  "exampleVi": "Ngón tay bị kẹt vào cửa nên rất đau."
+ },
+ {
+  "word": "挟む",
+  "example": "[本](ほん)に しおりを **はさみました**。",
+  "exampleVi": "Tôi đã kẹp thẻ đánh dấu vào sách."
+ },
+ {
+  "word": "つぶれる",
+  "example": "[不景気](ふけいき)で、[近所](きんじょ)の [店](みせ)が **つぶれました**。",
+  "exampleVi": "Vì suy thoái kinh tế nên cửa hàng gần nhà đã phá sản."
+ },
+ {
+  "word": "つぶす",
+  "example": "[箱](はこ)を **つぶして**、ごみ[箱](ばこ)に [入](い)れました。",
+  "exampleVi": "Tôi ép bẹp cái hộp rồi cho vào thùng rác."
+ },
+ {
+  "word": "へこむ",
+  "example": "[車](くるま)が [壁](かべ)に ぶつかって、ドアが **へこみました**。",
+  "exampleVi": "Xe đâm vào tường nên cửa xe bị móp."
+ },
+ {
+  "word": "ほどける",
+  "example": "くつの ひもが **ほどけて** います。",
+  "exampleVi": "Dây giày đang bị tuột ra."
+ },
+ {
+  "word": "ほどく",
+  "example": "[結](むす)んだ ひもを **ほどいて**、[荷物](にもつ)を [開](あ)けました。",
+  "exampleVi": "Tôi cởi sợi dây đã buộc rồi mở hành lý ra."
+ },
+ {
+  "word": "枯れる",
+  "example": "[水](みず)を やらなかったので、[花](はな)が **[枯](か)れて** しまいました。",
+  "exampleVi": "Vì không tưới nước nên hoa đã héo mất rồi."
+ },
+ {
+  "word": "枯らす",
+  "example": "[大切](たいせつ)な [植木](うえき)を **[枯](か)らして** しまいました。",
+  "exampleVi": "Tôi lỡ làm chết mất cây cảnh quý."
+ },
+ {
+  "word": "傷む",
+  "example": "[夏](なつ)は [食](た)べ[物](もの)が **[傷](いた)みやすい**です。",
+  "exampleVi": "Mùa hè thức ăn dễ bị ôi thiu."
+ },
+ {
+  "word": "痛む",
+  "example": "[歯](は)が **[痛](いた)んで**、[夜](よる)も [眠](ねむ)れません。",
+  "exampleVi": "Răng đau nên ban đêm cũng không ngủ được."
+ },
+ {
+  "word": "湿る",
+  "example": "[雨](あめ)で せんたくものが **[湿](しめ)って** しまいました。",
+  "exampleVi": "Vì mưa nên đồ giặt bị ẩm mất rồi."
+ },
+ {
+  "word": "凍る",
+  "example": "[池](いけ)の [水](みず)が **[凍](こお)りました**。",
+  "exampleVi": "Nước trong ao đã đóng băng."
+ },
+ {
+  "word": "震える",
+  "example": "[寒](さむ)くて、[体](からだ)が **[震](ふる)えました**。",
+  "exampleVi": "Lạnh quá nên người tôi run lên."
+ },
+ {
+  "word": "輝く",
+  "example": "[夜空](よぞら)に [星](ほし)が **[輝](かがや)いて** います。",
+  "exampleVi": "Những vì sao đang tỏa sáng trên bầu trời đêm."
+ },
+ {
+  "word": "あふれる",
+  "example": "[大雨](おおあめ)で [川](かわ)の [水](みず)が **あふれました**。",
+  "exampleVi": "Vì mưa lớn nên nước sông đã tràn bờ."
+ },
+ {
+  "word": "余る",
+  "example": "[お金](かね)が **[余](あま)った**ので、[貯金](ちょきん)しました。",
+  "exampleVi": "Tiền còn dư nên tôi đã để dành."
+ },
+ {
+  "word": "目立つ",
+  "example": "[赤](あか)い [服](ふく)を [着](き)ると、[人](ひと)の [中](なか)でも **[目立](めだ)ちます**。",
+  "exampleVi": "Mặc áo đỏ thì nổi bật cả giữa đám đông."
+ },
+ {
+  "word": "見下ろす",
+  "example": "[高](たか)い ビルの [上](うえ)から [町](まち)を **[見下](みお)ろしました**。",
+  "exampleVi": "Từ trên tòa nhà cao, tôi nhìn xuống thành phố."
+ },
+ {
+  "word": "戦う",
+  "example": "[二つ](ふたつ)の チームが [決勝戦](けっしょうせん)で **[戦](たたか)います**。",
+  "exampleVi": "Hai đội sẽ thi đấu ở trận chung kết."
+ },
+ {
+  "word": "闘う",
+  "example": "[彼](かれ)は [長](なが)い [間](あいだ)、[病気](びょうき)と **[闘](たたか)って** きました。",
+  "exampleVi": "Anh ấy đã chiến đấu với bệnh tật suốt một thời gian dài."
+ },
+ {
+  "word": "敗れる",
+  "example": "[決勝](けっしょう)で **[敗](やぶ)れて**、[優勝](ゆうしょう)は できませんでした。",
+  "exampleVi": "Thua ở trận chung kết nên không thể vô địch."
+ },
+ {
+  "word": "逃げる",
+  "example": "[犯人](はんにん)は [警察](けいさつ)から **[逃](に)げました**。",
+  "exampleVi": "Thủ phạm đã bỏ chạy khỏi cảnh sát."
+ },
+ {
+  "word": "逃がす",
+  "example": "[捕](つか)まえた [魚](さかな)を [川](かわ)に **[逃](に)がしました**。",
+  "exampleVi": "Tôi thả con cá đã bắt được xuống sông."
+ },
+ {
+  "word": "戻る",
+  "example": "[忘](わす)れ[物](もの)を したので、[家](いえ)に **もどりました**。",
+  "exampleVi": "Vì bỏ quên đồ nên tôi đã quay về nhà."
+ },
+ {
+  "word": "戻す",
+  "example": "[使](つか)った [道具](どうぐ)は [元](もと)の [場所](ばしょ)に **もどして** ください。",
+  "exampleVi": "Dụng cụ đã dùng xong hãy trả về chỗ cũ."
+ },
+ {
+  "word": "はまる",
+  "example": "くつが どろに **はまって**、[動](うご)けません。",
+  "exampleVi": "Giày bị mắc kẹt trong bùn nên tôi không cử động được."
+ },
+ {
+  "word": "はめる",
+  "example": "[手袋](てぶくろ)を **はめて**、[外](そと)に [出](で)ました。",
+  "exampleVi": "Tôi đeo găng tay rồi ra ngoài."
+ },
+ {
+  "word": "扱う",
+  "example": "この [機械](きかい)は [大切](たいせつ)に **[扱](あつか)って** ください。",
+  "exampleVi": "Hãy sử dụng chiếc máy này một cách cẩn thận."
+ },
+ {
+  "word": "関わる",
+  "example": "[彼](かれ)は この [事件](じけん)に **[関](かか)わって** いると [言](い)われて います。",
+  "exampleVi": "Anh ấy bị cho là có liên quan đến vụ việc này."
+ },
+ {
+  "word": "目指す",
+  "example": "[彼](かれ)は オリンピックでの [優勝](ゆうしょう)を **[目指](めざ)して** います。",
+  "exampleVi": "Anh ấy đang hướng tới chức vô địch tại Thế vận hội."
+ },
+ {
+  "word": "発つ",
+  "example": "[明日](あした)の [朝](あさ)、[東京](とうきょう)を **[発](た)って** [大阪](おおさか)へ [向](む)かいます。",
+  "exampleVi": "Sáng mai tôi sẽ rời Tokyo và đi về phía Osaka."
+ },
+ {
+  "word": "迎える",
+  "example": "[空港](くうこう)まで [友達](ともだち)を **[迎](むか)え**に [行](い)きました。",
+  "exampleVi": "Tôi đã ra sân bay đón bạn."
+ },
+ {
+  "word": "持てる",
+  "example": "[彼](かれ)は [優](やさ)しくて [背](せ)も [高](たか)いので、よく **もてます**。",
+  "exampleVi": "Anh ấy hiền lành lại cao nên rất được chuộng."
+ },
+ {
+  "word": "例える",
+  "example": "[人生](じんせい)は [旅](たび)に **[例](たと)えられます**。",
+  "exampleVi": "Cuộc đời được ví như một chuyến đi."
+ },
+ {
+  "word": "努める",
+  "example": "[失敗](しっぱい)を [減](へ)らすように **[努](つと)めて** います。",
+  "exampleVi": "Tôi đang cố gắng để giảm bớt sai sót."
+ },
+ {
+  "word": "務まる",
+  "example": "[新人](しんじん)に [責任](せきにん)の [重](おも)い [仕事](しごと)が **[務](つと)まる**でしょうか。",
+  "exampleVi": "Liệu nhân viên mới có đảm đương nổi công việc nhiều trách nhiệm không?"
+ },
+ {
+  "word": "務める",
+  "example": "[彼](かれ)は [会議](かいぎ)の [司会](しかい)を **[務](つと)めました**。",
+  "exampleVi": "Anh ấy đã đảm nhận vai trò dẫn chương trình cuộc họp."
+ },
+ {
+  "word": "取り消す",
+  "example": "[台風](たいふう)で [飛行機](ひこうき)の [予約](よやく)を **[取](と)り[消](け)しました**。",
+  "exampleVi": "Vì bão nên tôi đã hủy đặt vé máy bay."
+ },
+ {
+  "word": "終える",
+  "example": "[仕事](しごと)を **[終](お)えて**、[急](いそ)いで [家](いえ)に [帰](かえ)りました。",
+  "exampleVi": "Xong việc, tôi vội vã về nhà."
+ },
+ {
+  "word": "呼びかける",
+  "example": "[市](し)は [住民](じゅうみん)に [節電](せつでん)を **[呼](よ)びかけて** います。",
+  "exampleVi": "Thành phố đang kêu gọi cư dân tiết kiệm điện."
+ },
+ {
+  "word": "呼び出す",
+  "example": "[先生](せんせい)に **[呼](よ)び[出](だ)されて**、[職員室](しょくいんしつ)に [行](い)きました。",
+  "exampleVi": "Tôi bị thầy gọi nên đã đến phòng giáo viên."
+ }
 ]

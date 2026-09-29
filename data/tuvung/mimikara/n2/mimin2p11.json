@@ -1,102 +1,502 @@
 [
-  "人物",
-  "者",
-  "各自",
-  "気分",
-  "気配",
-  "生きがい",
-  "行儀",
-  "品",
-  "姿",
-  "姿勢",
-  "見かけ",
-  "ふり",
-  "苦情",
-  "口実",
-  "動機",
-  "皮肉",
-  "意義",
-  "主義",
-  "精神",
-  "年代",
-  "世代",
-  "基礎",
-  "基準",
-  "標準",
-  "典型",
-  "方言",
-  "分布",
-  "発展",
-  "文明",
-  "普及",
-  "制限",
-  "限度",
-  "限界",
-  "検討",
-  "選択",
-  "考慮",
-  "重視",
-  "見当",
-  "訂正",
-  "修正",
-  "反抗",
-  "抵抗",
-  "災難",
-  "汚染",
-  "害",
-  "伝染",
-  "対策",
-  "処置",
-  "処分",
-  "処理",
-  "輪",
-  "凸凹",
-  "跡",
-  "手間",
-  "能率",
-  "性能",
-  "操作",
-  "発揮",
-  "頂点",
-  "周辺",
-  "現場",
-  "状況",
-  "組織",
-  "制度",
-  "構成",
-  "形式",
-  "傾向",
-  "方針",
-  "徹底",
-  "分析",
-  "維持",
-  "管理",
-  "行方",
-  "端",
-  "場",
-  "分野",
-  "需要",
-  "供給",
-  "物資",
-  "用途",
-  "関連",
-  "消耗",
-  "欠陥",
-  "予備",
-  "付属",
-  "手当",
-  "元",
-  "面",
-  "説",
-  "差",
-  "間",
-  "分",
-  "筋",
-  "余裕",
-  "負担",
-  "保証",
-  "催促",
-  "成立",
-  "矛盾",
-  "存在"
+ {
+  "word": "人物",
+  "example": "[歴史](れきし)に [出](で)て くる **[人物](じんぶつ)**に ついて [調](しら)べました。",
+  "exampleVi": "Tôi đã tìm hiểu về các nhân vật xuất hiện trong lịch sử."
+ },
+ {
+  "word": "者",
+  "example": "[若](わか)い **[者](もの)**に [負](ま)けないよう、[毎日](まいにち) [運動](うんどう)して います。",
+  "exampleVi": "Tôi tập thể dục mỗi ngày để không thua những người trẻ."
+ },
+ {
+  "word": "各自",
+  "example": "[昼](ひる)ご[飯](はん)は、**[各自](かくじ)**で [用意](ようい)して ください。",
+  "exampleVi": "Cơm trưa thì mỗi người hãy tự chuẩn bị."
+ },
+ {
+  "word": "気分",
+  "example": "[散歩](さんぽ)を すると、**[気分](きぶん)**が [変](か)わります。",
+  "exampleVi": "Đi dạo thì tâm trạng sẽ thay đổi."
+ },
+ {
+  "word": "気配",
+  "example": "[部屋](へや)の [中](なか)には、[人](ひと)の **[気配](けはい)**が ありませんでした。",
+  "exampleVi": "Trong phòng không có dấu hiệu của người."
+ },
+ {
+  "word": "生きがい",
+  "example": "[仕事](しごと)が、[私](わたし)の **[生](い)きがい**です。",
+  "exampleVi": "Công việc chính là lẽ sống của tôi."
+ },
+ {
+  "word": "行儀",
+  "example": "[子供](こども)は [食事](しょくじ)の とき、**[行儀](ぎょうぎ)**よく [座](すわ)って います。",
+  "exampleVi": "Trẻ ngồi ăn rất đúng phép tắc."
+ },
+ {
+  "word": "品",
+  "example": "あの [人](ひと)は **[品](ひん)**が あって、[話](はな)し[方](かた)も ていねいです。",
+  "exampleVi": "Người đó có phong thái, cách nói chuyện cũng lịch sự."
+ },
+ {
+  "word": "姿",
+  "example": "[雲](くも)の [間](あいだ)から、[富士山](ふじさん)の **[姿](すがた)**が [見](み)えました。",
+  "exampleVi": "Từ giữa những đám mây hiện ra dáng núi Phú Sĩ."
+ },
+ {
+  "word": "姿勢",
+  "example": "[勉強](べんきょう)する ときは、**[姿勢](しせい)**を よく しましょう。",
+  "exampleVi": "Khi học hãy giữ tư thế thật tốt."
+ },
+ {
+  "word": "見かけ",
+  "example": "**[見](み)かけ**は [怖](こわ)いですが、[彼](かれ)は とても [優](やさ)しい [人](ひと)です。",
+  "exampleVi": "Bề ngoài trông đáng sợ nhưng anh ấy là người rất hiền."
+ },
+ {
+  "word": "ふり",
+  "example": "[寝](ね)て いる **ふり**を して、[親](おや)の [話](はなし)を [聞](き)きました。",
+  "exampleVi": "Tôi giả vờ ngủ để nghe bố mẹ nói chuyện."
+ },
+ {
+  "word": "苦情",
+  "example": "[近所](きんじょ)の [人](ひと)から、[音](おと)が うるさいと **[苦情](くじょう)**が [来](き)ました。",
+  "exampleVi": "Hàng xóm khiếu nại là tiếng ồn quá lớn."
+ },
+ {
+  "word": "口実",
+  "example": "[彼](かれ)は [仕事](しごと)を **[口実](こうじつ)**に して、パーティーに [来](き)ませんでした。",
+  "exampleVi": "Anh ấy lấy công việc làm cớ nên không đến bữa tiệc."
+ },
+ {
+  "word": "動機",
+  "example": "[彼](かれ)が その [会社](かいしゃ)を [選](えら)んだ **[動機](どうき)**を [聞](き)きました。",
+  "exampleVi": "Tôi đã hỏi về động cơ khiến anh ấy chọn công ty đó."
+ },
+ {
+  "word": "皮肉",
+  "example": "[彼](かれ)は **[皮肉](ひにく)**を [言](い)うのが [好](す)きで、みんなに きらわれて います。",
+  "exampleVi": "Anh ta thích mỉa mai nên bị mọi người ghét."
+ },
+ {
+  "word": "意義",
+  "example": "この [活動](かつどう)には、[大](おお)きな **[意義](いぎ)**が あります。",
+  "exampleVi": "Hoạt động này có ý nghĩa lớn."
+ },
+ {
+  "word": "主義",
+  "example": "[私](わたし)は、[約束](やくそく)は [必](かなら)ず [守](まも)る **[主義](しゅぎ)**です。",
+  "exampleVi": "Nguyên tắc của tôi là đã hứa thì nhất định giữ lời."
+ },
+ {
+  "word": "精神",
+  "example": "[健康](けんこう)な [体](からだ)には、[健康](けんこう)な **[精神](せいしん)**が [必要](ひつよう)です。",
+  "exampleVi": "Một cơ thể khỏe mạnh cần có tinh thần khỏe mạnh."
+ },
+ {
+  "word": "年代",
+  "example": "[八十](はちじゅう)**[年代](ねんだい)**の [音楽](おんがく)が [好](す)きです。",
+  "exampleVi": "Tôi thích âm nhạc của thập niên 80."
+ },
+ {
+  "word": "世代",
+  "example": "[親](おや)と [子](こ)では、**[世代](せだい)**によって [考](かんが)え[方](かた)が [違](ちが)います。",
+  "exampleVi": "Cha mẹ và con cái, tùy theo thế hệ mà cách suy nghĩ khác nhau."
+ },
+ {
+  "word": "基礎",
+  "example": "[何](なに)を [勉強](べんきょう)する ときも、**[基礎](きそ)**が [大切](たいせつ)です。",
+  "exampleVi": "Học gì thì nền tảng cũng là điều quan trọng."
+ },
+ {
+  "word": "基準",
+  "example": "[合格](ごうかく)の **[基準](きじゅん)**は、[七十点](ななじゅってん)[以上](いじょう)です。",
+  "exampleVi": "Tiêu chuẩn để đỗ là từ 70 điểm trở lên."
+ },
+ {
+  "word": "標準",
+  "example": "[彼](かれ)の [身長](しんちょう)は、**[標準](ひょうじゅん)**より [少](すこ)し [高](たか)いです。",
+  "exampleVi": "Chiều cao của anh ấy hơi cao hơn mức tiêu chuẩn."
+ },
+ {
+  "word": "典型",
+  "example": "この [家](いえ)は、[昔](むかし)の [日本](にほん)の [家](いえ)の **[典型](てんけい)**です。",
+  "exampleVi": "Ngôi nhà này là ví dụ điển hình của nhà Nhật ngày xưa."
+ },
+ {
+  "word": "方言",
+  "example": "[田舎](いなか)の おじいさんの **[方言](ほうげん)**は、[意味](いみ)が [分](わ)かりません。",
+  "exampleVi": "Tôi không hiểu nghĩa phương ngữ của ông cụ ở quê."
+ },
+ {
+  "word": "分布",
+  "example": "この [植物](しょくぶつ)は、[日本](にほん)の [北](きた)の [方](ほう)に **[分布](ぶんぷ)**して います。",
+  "exampleVi": "Loài thực vật này phân bố ở phía bắc Nhật Bản."
+ },
+ {
+  "word": "発展",
+  "example": "この [町](まち)は [近](ちか)ごろ、[大](おお)きく **[発展](はってん)**しました。",
+  "exampleVi": "Thị trấn này gần đây đã phát triển mạnh."
+ },
+ {
+  "word": "文明",
+  "example": "[古代](こだい)の **[文明](ぶんめい)**に ついて [勉強](べんきょう)して います。",
+  "exampleVi": "Tôi đang học về nền văn minh cổ đại."
+ },
+ {
+  "word": "普及",
+  "example": "スマートフォンが **[普及](ふきゅう)**して、[生活](せいかつ)が [変](か)わりました。",
+  "exampleVi": "Điện thoại thông minh trở nên phổ biến và cuộc sống đã thay đổi."
+ },
+ {
+  "word": "制限",
+  "example": "この [道](みち)は、[車](くるま)の [速度](そくど)に **[制限](せいげん)**が あります。",
+  "exampleVi": "Con đường này có giới hạn tốc độ xe."
+ },
+ {
+  "word": "限度",
+  "example": "[食](た)べ[放題](ほうだい)でも、**[限度](げんど)**が あります。",
+  "exampleVi": "Dù là ăn buffet tự chọn cũng có giới hạn."
+ },
+ {
+  "word": "限界",
+  "example": "[体力](たいりょく)の **[限界](げんかい)**まで [走](はし)りました。",
+  "exampleVi": "Tôi đã chạy đến giới hạn của thể lực."
+ },
+ {
+  "word": "検討",
+  "example": "その [提案](ていあん)は、[会議](かいぎ)で **[検討](けんとう)**します。",
+  "exampleVi": "Đề xuất đó sẽ được xem xét trong cuộc họp."
+ },
+ {
+  "word": "選択",
+  "example": "[進路](しんろ)の **[選択](せんたく)**は [難](むずか)しいです。",
+  "exampleVi": "Việc lựa chọn hướng đi thật khó."
+ },
+ {
+  "word": "考慮",
+  "example": "[相手](あいて)の [気持](きも)ちを **[考慮](こうりょ)**して [話](はな)しましょう。",
+  "exampleVi": "Hãy nói chuyện có cân nhắc đến cảm xúc của đối phương."
+ },
+ {
+  "word": "重視",
+  "example": "この [会社](かいしゃ)は、[経験](けいけん)より やる[気](き)を **[重視](じゅうし)**します。",
+  "exampleVi": "Công ty này coi trọng động lực hơn kinh nghiệm."
+ },
+ {
+  "word": "見当",
+  "example": "[彼](かれ)が どこに いるのか、**[見当](けんとう)**が つきません。",
+  "exampleVi": "Tôi không đoán ra được anh ấy đang ở đâu."
+ },
+ {
+  "word": "訂正",
+  "example": "[間違](まちが)いが あったので、[書類](しょるい)を **[訂正](ていせい)**しました。",
+  "exampleVi": "Vì có sai sót nên tôi đã đính chính giấy tờ."
+ },
+ {
+  "word": "修正",
+  "example": "[先生](せんせい)に [言](い)われて、レポートを **[修正](しゅうせい)**しました。",
+  "exampleVi": "Được thầy góp ý, tôi đã sửa lại báo cáo."
+ },
+ {
+  "word": "反抗",
+  "example": "[子供](こども)は [大](おお)きく なると、[親](おや)に **[反抗](はんこう)**する ことが あります。",
+  "exampleVi": "Khi lớn lên, trẻ con đôi khi chống đối cha mẹ."
+ },
+ {
+  "word": "抵抗",
+  "example": "[相手](あいて)は、[警察](けいさつ)に **[抵抗](ていこう)**して [暴](あば)れました。",
+  "exampleVi": "Đối phương kháng cự lại cảnh sát và làm loạn."
+ },
+ {
+  "word": "災難",
+  "example": "[旅行中](りょこうちゅう)に [財布](さいふ)を [盗](ぬす)まれて、[大変](たいへん)な **[災難](さいなん)**でした。",
+  "exampleVi": "Đi du lịch mà bị trộm ví, thật là một tai họa."
+ },
+ {
+  "word": "汚染",
+  "example": "[工場](こうじょう)から [出](で)た [水](みず)で、[川](かわ)が **[汚染](おせん)**されました。",
+  "exampleVi": "Vì nước thải ra từ nhà máy nên dòng sông đã bị ô nhiễm."
+ },
+ {
+  "word": "害",
+  "example": "たばこは [体](からだ)に **[害](がい)**が あります。",
+  "exampleVi": "Thuốc lá có hại cho cơ thể."
+ },
+ {
+  "word": "伝染",
+  "example": "[風邪](かぜ)は [人](ひと)から [人](ひと)に **[伝染](でんせん)**します。",
+  "exampleVi": "Bệnh cảm lây truyền từ người này sang người khác."
+ },
+ {
+  "word": "対策",
+  "example": "[地震](じしん)の **[対策](たいさく)**を [考](かんが)えて おきましょう。",
+  "exampleVi": "Hãy suy nghĩ trước các biện pháp đối phó với động đất."
+ },
+ {
+  "word": "処置",
+  "example": "けがを した [人](ひと)に、すぐ **[処置](しょち)**を しました。",
+  "exampleVi": "Tôi đã sơ cứu ngay cho người bị thương."
+ },
+ {
+  "word": "処分",
+  "example": "[古](ふる)い [家具](かぐ)を **[処分](しょぶん)**しました。",
+  "exampleVi": "Tôi đã vứt bỏ đồ nội thất cũ."
+ },
+ {
+  "word": "処理",
+  "example": "[大量](たいりょう)の データを パソコンで **[処理](しょり)**しました。",
+  "exampleVi": "Tôi đã xử lý lượng lớn dữ liệu bằng máy tính."
+ },
+ {
+  "word": "輪",
+  "example": "[子供](こども)たちが **[輪](わ)**に なって、[歌](うた)って います。",
+  "exampleVi": "Bọn trẻ đứng thành vòng tròn và đang hát."
+ },
+ {
+  "word": "凸凹",
+  "example": "この [道](みち)は **でこぼこ**で、[歩](ある)きにくいです。",
+  "exampleVi": "Con đường này gập ghềnh nên khó đi."
+ },
+ {
+  "word": "跡",
+  "example": "[顔](かお)の けがの **[跡](あと)**が まだ [残](のこ)って います。",
+  "exampleVi": "Vết sẹo của vết thương trên mặt vẫn còn."
+ },
+ {
+  "word": "手間",
+  "example": "この [料理](りょうり)は、**[手間](てま)**が かかりますが、おいしいです。",
+  "exampleVi": "Món này tốn công nhưng ngon."
+ },
+ {
+  "word": "能率",
+  "example": "[静](しず)かな [場所](ばしょ)では、[勉強](べんきょう)の **[能率](のうりつ)**が [上](あ)がります。",
+  "exampleVi": "Ở nơi yên tĩnh thì hiệu suất học tập tăng lên."
+ },
+ {
+  "word": "性能",
+  "example": "この パソコンは **[性能](せいのう)**が よくて、[速](はや)いです。",
+  "exampleVi": "Chiếc máy tính này hiệu năng tốt và chạy nhanh."
+ },
+ {
+  "word": "操作",
+  "example": "この [機械](きかい)の **[操作](そうさ)**は、[簡単](かんたん)です。",
+  "exampleVi": "Việc thao tác chiếc máy này rất đơn giản."
+ },
+ {
+  "word": "発揮",
+  "example": "[試合](しあい)で、[練習](れんしゅう)の [成果](せいか)を **[発揮](はっき)**しました。",
+  "exampleVi": "Trong trận đấu, tôi đã phát huy thành quả của việc luyện tập."
+ },
+ {
+  "word": "頂点",
+  "example": "[彼](かれ)は、[世界](せかい)の **[頂点](ちょうてん)**に [立](た)ちました。",
+  "exampleVi": "Anh ấy đã đứng trên đỉnh cao của thế giới."
+ },
+ {
+  "word": "周辺",
+  "example": "[駅](えき)の **[周辺](しゅうへん)**には、[店](みせ)が たくさん あります。",
+  "exampleVi": "Xung quanh nhà ga có rất nhiều cửa hàng."
+ },
+ {
+  "word": "現場",
+  "example": "[事故](じこ)の **[現場](げんば)**に、[警察](けいさつ)が [来](き)ました。",
+  "exampleVi": "Cảnh sát đã đến hiện trường vụ tai nạn."
+ },
+ {
+  "word": "状況",
+  "example": "[今](いま)の **[状況](じょうきょう)**を [説明](せつめい)して ください。",
+  "exampleVi": "Xin hãy giải thích tình hình hiện tại."
+ },
+ {
+  "word": "組織",
+  "example": "[大](おお)きな **[組織](そしき)**で [働](はたら)くのは、[大変](たいへん)です。",
+  "exampleVi": "Làm việc trong một tổ chức lớn thì vất vả."
+ },
+ {
+  "word": "制度",
+  "example": "[新](あたら)しい **[制度](せいど)**が、[来月](らいげつ)から [始](はじ)まります。",
+  "exampleVi": "Chế độ mới sẽ bắt đầu từ tháng sau."
+ },
+ {
+  "word": "構成",
+  "example": "この [文章](ぶんしょう)は、[三つ](みっつ)の [部分](ぶぶん)から **[構成](こうせい)**されて います。",
+  "exampleVi": "Bài văn này được cấu thành từ ba phần."
+ },
+ {
+  "word": "形式",
+  "example": "[書類](しょるい)は、[決](き)まった **[形式](けいしき)**で [書](か)いて ください。",
+  "exampleVi": "Hãy viết giấy tờ theo hình thức đã quy định."
+ },
+ {
+  "word": "傾向",
+  "example": "[最近](さいきん)、[若](わか)い [人](ひと)は [本](ほん)を [読](よ)まない **[傾向](けいこう)**が あります。",
+  "exampleVi": "Gần đây người trẻ có xu hướng không đọc sách."
+ },
+ {
+  "word": "方針",
+  "example": "[会社](かいしゃ)の **[方針](ほうしん)**が [変](か)わりました。",
+  "exampleVi": "Phương châm của công ty đã thay đổi."
+ },
+ {
+  "word": "徹底",
+  "example": "ルールを [守](まも)るように、[全員](ぜんいん)に **てってい**しました。",
+  "exampleVi": "Tôi đã quán triệt đến toàn thể mọi người để tuân thủ quy tắc."
+ },
+ {
+  "word": "分析",
+  "example": "[売](う)り[上](あ)げの データを **ぶんせき**しました。",
+  "exampleVi": "Tôi đã phân tích dữ liệu doanh thu."
+ },
+ {
+  "word": "維持",
+  "example": "[健康](けんこう)を **[維持](いじ)**する ために、[毎日](まいにち) [歩](ある)いて います。",
+  "exampleVi": "Để duy trì sức khỏe, ngày nào tôi cũng đi bộ."
+ },
+ {
+  "word": "管理",
+  "example": "お[金](かね)の **[管理](かんり)**は、[妻](つま)が して います。",
+  "exampleVi": "Việc quản lý tiền bạc do vợ tôi đảm nhận."
+ },
+ {
+  "word": "行方",
+  "example": "**[行方](ゆくえ)**が [分](わ)からなく なった [犬](いぬ)を [探](さが)して います。",
+  "exampleVi": "Tôi đang tìm con chó không rõ tung tích."
+ },
+ {
+  "word": "端",
+  "example": "テーブルの **[端](はし)**に コップを [置](お)くと、[落](お)ちますよ。",
+  "exampleVi": "Đặt cốc ở mép bàn thì sẽ rơi đấy."
+ },
+ {
+  "word": "場",
+  "example": "この [広場](ひろば)は、[町](まち)の [人](ひと)が [集](あつ)まる **[場](ば)**です。",
+  "exampleVi": "Quảng trường này là nơi người dân trong thị trấn tụ họp."
+ },
+ {
+  "word": "分野",
+  "example": "[彼](かれ)は [医学](いがく)の **[分野](ぶんや)**で [有名](ゆうめい)な [人](ひと)です。",
+  "exampleVi": "Anh ấy là người nổi tiếng trong lĩnh vực y học."
+ },
+ {
+  "word": "需要",
+  "example": "[夏](なつ)は、エアコンの **[需要](じゅよう)**が [増](ふ)えます。",
+  "exampleVi": "Vào mùa hè, nhu cầu về máy điều hòa tăng lên."
+ },
+ {
+  "word": "供給",
+  "example": "[電気](でんき)の **[供給](きょうきゅう)**が [止](と)まって しまいました。",
+  "exampleVi": "Nguồn cung cấp điện đã bị ngừng mất rồi."
+ },
+ {
+  "word": "物資",
+  "example": "[被害](ひがい)が あった [地域](ちいき)に、**[物資](ぶっし)**が [届](とど)けられました。",
+  "exampleVi": "Hàng cứu trợ đã được gửi đến khu vực bị thiệt hại."
+ },
+ {
+  "word": "用途",
+  "example": "この [箱](はこ)は、いろいろな **[用途](ようと)**に [使](つか)えます。",
+  "exampleVi": "Chiếc hộp này dùng được cho nhiều mục đích."
+ },
+ {
+  "word": "関連",
+  "example": "[環境](かんきょう)[問題](もんだい)に **[関連](かんれん)**する [本](ほん)を [読](よ)みました。",
+  "exampleVi": "Tôi đã đọc sách liên quan đến vấn đề môi trường."
+ },
+ {
+  "word": "消耗",
+  "example": "[電池](でんち)は、[使](つか)うと **しょうもう**します。",
+  "exampleVi": "Pin bị hao mòn khi sử dụng."
+ },
+ {
+  "word": "欠陥",
+  "example": "[買](か)った [車](くるま)に、**けっかん**が [見](み)つかりました。",
+  "exampleVi": "Chiếc xe mới mua bị phát hiện có khiếm khuyết."
+ },
+ {
+  "word": "予備",
+  "example": "**[予備](よび)**の [電池](でんち)を [持](も)って いきます。",
+  "exampleVi": "Tôi mang theo pin dự phòng."
+ },
+ {
+  "word": "付属",
+  "example": "この カメラには、**[付属](ふぞく)**の ケースが あります。",
+  "exampleVi": "Chiếc máy ảnh này có kèm theo hộp đựng."
+ },
+ {
+  "word": "手当",
+  "example": "けがの **[手当](てあて)**を して もらいました。",
+  "exampleVi": "Tôi đã được sơ cứu vết thương."
+ },
+ {
+  "word": "元",
+  "example": "この [火事](かじ)の **[元](もと)**は、たばこの [火](ひ)でした。",
+  "exampleVi": "Nguyên nhân của vụ cháy này là do lửa từ điếu thuốc."
+ },
+ {
+  "word": "面",
+  "example": "[物事](ものごと)には、[良](よ)い **[面](めん)**と [悪](わる)い **[面](めん)**が あります。",
+  "exampleVi": "Sự việc nào cũng có mặt tốt và mặt xấu."
+ },
+ {
+  "word": "説",
+  "example": "その [病気](びょうき)の [原因](げんいん)には、いろいろな **[説](せつ)**が あります。",
+  "exampleVi": "Về nguyên nhân của căn bệnh đó có nhiều giả thuyết."
+ },
+ {
+  "word": "差",
+  "example": "[二人](ふたり)の [年齢](ねんれい)には、[十歳](じゅっさい)の **[差](さ)**が あります。",
+  "exampleVi": "Giữa hai người có chênh lệch mười tuổi."
+ },
+ {
+  "word": "間",
+  "example": "[駅](えき)と [学校](がっこう)の **[間](あいだ)**に、[公園](こうえん)が あります。",
+  "exampleVi": "Giữa nhà ga và trường học có một công viên."
+ },
+ {
+  "word": "分",
+  "example": "[家](いえ)から [駅](えき)まで、[歩](ある)いて 十**[分](ぷん)**です。",
+  "exampleVi": "Từ nhà đến ga đi bộ mất 10 phút."
+ },
+ {
+  "word": "筋",
+  "example": "この [映画](えいが)は、[話](はなし)の **[筋](すじ)**が [複雑](ふくざつ)で [難](むずか)しいです。",
+  "exampleVi": "Bộ phim này cốt truyện phức tạp và khó hiểu."
+ },
+ {
+  "word": "余裕",
+  "example": "[時間](じかん)に **よゆう**が あるので、[歩](ある)いて [行](い)きましょう。",
+  "exampleVi": "Thời gian còn dư nên hãy đi bộ nhé."
+ },
+ {
+  "word": "負担",
+  "example": "[家賃](やちん)が [高](たか)くて、[生活](せいかつ)の **[負担](ふたん)**に なって います。",
+  "exampleVi": "Tiền nhà cao nên trở thành gánh nặng cho cuộc sống."
+ },
+ {
+  "word": "保証",
+  "example": "この [時計](とけい)には、[一年間](いちねんかん)の **[保証](ほしょう)**が ついて います。",
+  "exampleVi": "Chiếc đồng hồ này có bảo hành một năm."
+ },
+ {
+  "word": "催促",
+  "example": "[借](か)りた [本](ほん)を [返](かえ)すように、**[催促](さいそく)**されました。",
+  "exampleVi": "Tôi bị nhắc nhở phải trả cuốn sách đã mượn."
+ },
+ {
+  "word": "成立",
+  "example": "[二人](ふたり)の [話](はな)し[合](あ)いが **[成立](せいりつ)**して、[契約](けいやく)が [決](き)まりました。",
+  "exampleVi": "Cuộc thương lượng của hai bên đã thành công và hợp đồng được quyết định."
+ },
+ {
+  "word": "矛盾",
+  "example": "[彼](かれ)の [話](はなし)は、[前](まえ)に [言](い)った ことと **[矛盾](むじゅん)**して います。",
+  "exampleVi": "Lời của anh ấy mâu thuẫn với điều đã nói trước đó."
+ },
+ {
+  "word": "存在",
+  "example": "[宇宙人](うちゅうじん)は **[存在](そんざい)**すると [思](おも)いますか。",
+  "exampleVi": "Bạn có nghĩ người ngoài hành tinh tồn tại không?"
+ }
 ]

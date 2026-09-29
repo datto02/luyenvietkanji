@@ -1,52 +1,252 @@
 [
-  "単純",
-  "純粋",
-  "透明",
-  "さわやか",
-  "素直",
-  "率直",
-  "誠実",
-  "謙虚",
-  "賢い",
-  "慎重",
-  "穏やか",
-  "真剣",
-  "正式",
-  "主",
-  "主要",
-  "貴重",
-  "偉大",
-  "偉い",
-  "独特",
-  "特殊",
-  "奇妙",
-  "妙",
-  "怪しい",
-  "異常",
-  "高度",
-  "新た",
-  "合理的",
-  "器用",
-  "手軽",
-  "手ごろ",
-  "高価",
-  "ぜいたく",
-  "豪華",
-  "高級",
-  "上等",
-  "上品",
-  "適度",
-  "快適",
-  "快い",
-  "順調",
-  "活発",
-  "的確",
-  "確実",
-  "明らか",
-  "曖昧",
-  "具体的",
-  "抽象的",
-  "等しい",
-  "平等",
-  "公平"
+ {
+  "word": "単純",
+  "example": "この [問題](もんだい)は **[単純](たんじゅん)**に [見](み)えますが、[実](じつ)は [難](むずか)しいです。",
+  "exampleVi": "Vấn đề này trông đơn giản nhưng thực ra khó."
+ },
+ {
+  "word": "純粋",
+  "example": "[子供](こども)の **[純粋](じゅんすい)**な [心](こころ)に、[感動](かんどう)しました。",
+  "exampleVi": "Tôi xúc động trước tấm lòng trong sáng của đứa trẻ."
+ },
+ {
+  "word": "透明",
+  "example": "**[透明](とうめい)**な ガラスの コップに、[水](みず)を [入](い)れました。",
+  "exampleVi": "Tôi rót nước vào chiếc cốc thủy tinh trong suốt."
+ },
+ {
+  "word": "さわやか",
+  "example": "[朝](あさ)の **さわやか**な [空気](くうき)を [吸](す)うと、[元気](げんき)に なります。",
+  "exampleVi": "Hít thở không khí buổi sáng sảng khoái thì tôi thấy khỏe khoắn hơn."
+ },
+ {
+  "word": "素直",
+  "example": "[子供](こども)は [親](おや)の [言](い)う ことを **[素直](すなお)**に [聞](き)きました。",
+  "exampleVi": "Đứa trẻ ngoan ngoãn nghe lời cha mẹ."
+ },
+ {
+  "word": "率直",
+  "example": "**[率直](そっちょく)**な [意見](いけん)を [聞](き)かせて ください。",
+  "exampleVi": "Hãy cho tôi nghe ý kiến thẳng thắn của bạn."
+ },
+ {
+  "word": "誠実",
+  "example": "[彼](かれ)は **[誠実](せいじつ)**な [人](ひと)なので、[信頼](しんらい)されて います。",
+  "exampleVi": "Anh ấy là người thành thật nên được tin cậy."
+ },
+ {
+  "word": "謙虚",
+  "example": "[成功](せいこう)しても、**けんきょ**な [気持](きも)ちを [忘](わす)れない ことが [大切](たいせつ)です。",
+  "exampleVi": "Dù thành công, việc không quên tấm lòng khiêm tốn là điều quan trọng."
+ },
+ {
+  "word": "賢い",
+  "example": "あの [犬](いぬ)は **[賢](かしこ)くて**、[言葉](ことば)を [理解](りかい)します。",
+  "exampleVi": "Con chó đó thông minh và hiểu được lời nói."
+ },
+ {
+  "word": "慎重",
+  "example": "**[慎重](しんちょう)**に [考](かんが)えてから、[返事](へんじ)を します。",
+  "exampleVi": "Tôi suy nghĩ thận trọng rồi mới trả lời."
+ },
+ {
+  "word": "穏やか",
+  "example": "[今日](きょう)の [海](うみ)は **[穏](おだ)やか**です。",
+  "exampleVi": "Biển hôm nay hiền hòa."
+ },
+ {
+  "word": "真剣",
+  "example": "[彼](かれ)は **[真剣](しんけん)**な [顔](かお)で [先生](せんせい)の [話](はなし)を [聞](き)いて いました。",
+  "exampleVi": "Anh ấy lắng nghe thầy nói với vẻ mặt nghiêm túc."
+ },
+ {
+  "word": "正式",
+  "example": "**[正式](せいしき)**な [結果](けっか)は、[来週](らいしゅう) [発表](はっぴょう)されます。",
+  "exampleVi": "Kết quả chính thức sẽ được công bố vào tuần sau."
+ },
+ {
+  "word": "主",
+  "example": "この [町](まち)の **[主](おも)**な [産業](さんぎょう)は [農業](のうぎょう)です。",
+  "exampleVi": "Ngành nghề chính của thị trấn này là nông nghiệp."
+ },
+ {
+  "word": "主要",
+  "example": "[東京](とうきょう)は [日本](にほん)の **[主要](しゅよう)**な [都市](とし)の [一](ひと)つです。",
+  "exampleVi": "Tokyo là một trong những đô thị chủ yếu của Nhật Bản."
+ },
+ {
+  "word": "貴重",
+  "example": "この [写真](しゃしん)は [昔](むかし)の [様子](ようす)が [分](わ)かる **[貴重](きちょう)**な [物](もの)です。",
+  "exampleVi": "Bức ảnh này là vật quý giá cho biết cảnh tượng ngày xưa."
+ },
+ {
+  "word": "偉大",
+  "example": "[彼](かれ)は **[偉大](いだい)**な [科学者](かがくしゃ)として [知](し)られて います。",
+  "exampleVi": "Ông ấy được biết đến là một nhà khoa học vĩ đại."
+ },
+ {
+  "word": "偉い",
+  "example": "[毎日](まいにち) [自分](じぶん)で [弁当](べんとう)を [作](つく)って、**[偉](えら)い**ですね。",
+  "exampleVi": "Ngày nào cũng tự làm cơm hộp, bạn giỏi thật đấy."
+ },
+ {
+  "word": "独特",
+  "example": "この [町](まち)には、**[独特](どくとく)**な ふんいきが あります。",
+  "exampleVi": "Thị trấn này có bầu không khí độc đáo."
+ },
+ {
+  "word": "特殊",
+  "example": "**[特殊](とくしゅ)**な [技術](ぎじゅつ)が ないと、この [仕事](しごと)は できません。",
+  "exampleVi": "Nếu không có kỹ thuật đặc biệt thì không làm được công việc này."
+ },
+ {
+  "word": "奇妙",
+  "example": "**[奇妙](きみょう)**な [音](おと)が [聞](き)こえて、[目](め)が [覚](さ)めました。",
+  "exampleVi": "Nghe một âm thanh kỳ lạ, tôi tỉnh giấc."
+ },
+ {
+  "word": "妙",
+  "example": "[彼](かれ)の [態度](たいど)が **[妙](みょう)**なので、[心配](しんぱい)です。",
+  "exampleVi": "Thái độ của anh ấy kỳ lạ nên tôi lo lắng."
+ },
+ {
+  "word": "怪しい",
+  "example": "[夜](よる)に、**[怪](あや)しい** [人](ひと)が [家](いえ)の [前](まえ)に いました。",
+  "exampleVi": "Ban đêm có một người đáng ngờ đứng trước nhà."
+ },
+ {
+  "word": "異常",
+  "example": "この [機械](きかい)の [温度](おんど)が **[異常](いじょう)**に [高](たか)く なって います。",
+  "exampleVi": "Nhiệt độ của chiếc máy này đang cao bất thường."
+ },
+ {
+  "word": "高度",
+  "example": "これは **[高度](こうど)**な [技術](ぎじゅつ)が [必要](ひつよう)な [仕事](しごと)です。",
+  "exampleVi": "Đây là công việc cần kỹ thuật cao."
+ },
+ {
+  "word": "新た",
+  "example": "**[新](あら)た**な [問題](もんだい)が [見](み)つかりました。",
+  "exampleVi": "Một vấn đề mới đã được phát hiện."
+ },
+ {
+  "word": "合理的",
+  "example": "**[合理的](ごうりてき)**に [考](かんが)えれば、この [方法](ほうほう)が [一番](いちばん)いいです。",
+  "exampleVi": "Nếu suy nghĩ một cách hợp lý thì phương pháp này là tốt nhất."
+ },
+ {
+  "word": "器用",
+  "example": "[彼](かれ)は [手](て)が **[器用](きよう)**で、[何](なん)でも [上手](じょうず)に [作](つく)ります。",
+  "exampleVi": "Anh ấy khéo tay nên làm gì cũng giỏi."
+ },
+ {
+  "word": "手軽",
+  "example": "この [料理](りょうり)は **[手軽](てがる)**に [作](つく)れます。",
+  "exampleVi": "Món này có thể làm một cách đơn giản, tiện lợi."
+ },
+ {
+  "word": "手ごろ",
+  "example": "**[手](て)ごろ**な [値段](ねだん)の [部屋](へや)を [探](さが)して います。",
+  "exampleVi": "Tôi đang tìm căn phòng có giá vừa phải."
+ },
+ {
+  "word": "高価",
+  "example": "**[高価](こうか)**な [指輪](ゆびわ)は、[箱](はこ)に [入](い)れて あります。",
+  "exampleVi": "Chiếc nhẫn đắt tiền được cất trong hộp."
+ },
+ {
+  "word": "ぜいたく",
+  "example": "たまには **ぜいたく**を して、[高](たか)い [店](みせ)で [食事](しょくじ)を しました。",
+  "exampleVi": "Thỉnh thoảng tôi cũng xa xỉ một chút và ăn ở quán đắt tiền."
+ },
+ {
+  "word": "豪華",
+  "example": "**[豪華](ごうか)**な ホテルに [泊](と)まって、[旅行](りょこう)を [楽](たの)しみました。",
+  "exampleVi": "Tôi ở khách sạn sang trọng và tận hưởng chuyến du lịch."
+ },
+ {
+  "word": "高級",
+  "example": "**[高級](こうきゅう)**な レストランで、[誕生日](たんじょうび)を [祝](いわ)いました。",
+  "exampleVi": "Tôi đã mừng sinh nhật ở nhà hàng cao cấp."
+ },
+ {
+  "word": "上等",
+  "example": "**[上等](じょうとう)**な [肉](にく)は、やわらかくて おいしいです。",
+  "exampleVi": "Thịt thượng hạng thì mềm và ngon."
+ },
+ {
+  "word": "上品",
+  "example": "あの [人](ひと)は [言葉](ことば)づかいが **[上品](じょうひん)**です。",
+  "exampleVi": "Người đó ăn nói rất lịch thiệp."
+ },
+ {
+  "word": "適度",
+  "example": "**[適度](てきど)**な [運動](うんどう)は、[健康](けんこう)に いいです。",
+  "exampleVi": "Vận động vừa phải thì tốt cho sức khỏe."
+ },
+ {
+  "word": "快適",
+  "example": "この [部屋](へや)は [広](ひろ)くて **[快適](かいてき)**です。",
+  "exampleVi": "Căn phòng này rộng rãi và thoải mái."
+ },
+ {
+  "word": "快い",
+  "example": "[彼](かれ)は [私](わたし)の [頼](たの)みを **[快](こころよ)く** [引](ひ)き[受](う)けて くれました。",
+  "exampleVi": "Anh ấy đã vui lòng nhận lời nhờ vả của tôi."
+ },
+ {
+  "word": "順調",
+  "example": "[仕事](しごと)は **[順調](じゅんちょう)**に [進](すす)んで います。",
+  "exampleVi": "Công việc đang tiến triển thuận lợi."
+ },
+ {
+  "word": "活発",
+  "example": "[彼](かれ)は **[活発](かっぱつ)**な [子供](こども)で、[毎日](まいにち) [外](そと)で [遊](あそ)びます。",
+  "exampleVi": "Cậu bé là đứa trẻ năng động, ngày nào cũng chơi ngoài trời."
+ },
+ {
+  "word": "的確",
+  "example": "[先生](せんせい)の [説明](せつめい)は **[的確](てきかく)**で、[分](わ)かりやすいです。",
+  "exampleVi": "Lời giải thích của thầy chính xác nên dễ hiểu."
+ },
+ {
+  "word": "確実",
+  "example": "この [方法](ほうほう)なら、**[確実](かくじつ)**に [成功](せいこう)します。",
+  "exampleVi": "Nếu là phương pháp này thì chắc chắn sẽ thành công."
+ },
+ {
+  "word": "明らか",
+  "example": "[事故](じこ)の [原因](げんいん)は **[明](あき)らか**に なりました。",
+  "exampleVi": "Nguyên nhân của tai nạn đã trở nên rõ ràng."
+ },
+ {
+  "word": "曖昧",
+  "example": "**あいまい**な [返事](へんじ)では、[相手](あいて)は [困](こま)ります。",
+  "exampleVi": "Trả lời mơ hồ thì đối phương sẽ khó xử."
+ },
+ {
+  "word": "具体的",
+  "example": "**[具体的](ぐたいてき)**な [例](れい)を [挙](あ)げて [説明](せつめい)して ください。",
+  "exampleVi": "Xin hãy nêu ví dụ cụ thể để giải thích."
+ },
+ {
+  "word": "抽象的",
+  "example": "[彼](かれ)の [話](はなし)は **[抽象的](ちゅうしょうてき)**で、よく [分](わ)かりませんでした。",
+  "exampleVi": "Câu chuyện của anh ấy trừu tượng nên tôi không hiểu rõ."
+ },
+ {
+  "word": "等しい",
+  "example": "[二](ふた)つの [長](なが)さは **[等](ひと)しい**です。",
+  "exampleVi": "Độ dài của hai cái bằng nhau."
+ },
+ {
+  "word": "平等",
+  "example": "[男女](だんじょ)は **[平等](びょうどう)**であるべきです。",
+  "exampleVi": "Nam và nữ nên được bình đẳng."
+ },
+ {
+  "word": "公平",
+  "example": "[先生](せんせい)は [生徒](せいと)を **[公平](こうへい)**に [扱](あつか)います。",
+  "exampleVi": "Thầy đối xử công bằng với học sinh."
+ }
 ]
