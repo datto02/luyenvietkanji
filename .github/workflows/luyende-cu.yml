@@ -1,0 +1,42 @@
+name: Xuất đề cũ Luyện đề ra JSON
+
+# Mỗi ngày 00:15 giờ VN (= 17:15 UTC), sau khi cron của Supabase chốt bài lúc 00:00: lấy các đề đã mở (da_mo = true)
+# ra file JSON tĩnh (data/luyende-cu/...) để web đọc thẳng từ GitHub Pages thay vì hỏi Supabase (giảm log).
+# Chỉ dùng KEY CÔNG KHAI (anon) - đúng key web đã dùng sẵn trong JS, KHÔNG phải khoá bí mật.
+# workflow_dispatch: bấm 'Run workflow' trên GitHub (hoặc: gh workflow run luyende-cu.yml -R datto02/luyenvietkanji) để chạy ngay khi vừa sửa đề cũ.
+on:
+  schedule:
+    - cron: '15 17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: luyende-cu
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Xuất đề cũ ra JSON
+        run: node .github/export-luyende-cu.mjs
+        env:
+          SUPABASE_URL: https://khmxstoqrtottgizzpjb.supabase.co
+          SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtobXhzdG9xcnRvdHRnaXp6cGpiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODgyMDk0NzUsImV4cCI6MjEwMzc4NTQ3NX0.4dREs6Y1jYx-C-tvXVR4yQxTXYLOW8OIfvEPjwe7u7s
+      - name: Commit nếu có thay đổi
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/luyende-cu
+          if git diff --cached --quiet; then
+            echo 'Không có thay đổi.'
+          else
+            git commit -m 'Cập nhật đề cũ Luyện đề (tự động)'
+            git push
+          fi
