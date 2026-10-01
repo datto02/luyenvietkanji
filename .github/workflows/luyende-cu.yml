@@ -4,10 +4,8 @@ name: Xuất đề cũ Luyện đề ra JSON
 # đọc thẳng từ GitHub Pages thay vì hỏi Supabase (giảm log). Web vẫn chỉ mở đề từ 6h đến 22h giờ VN (tự chặn trong code).
 # Chỉ dùng KEY CÔNG KHAI (anon) - đúng key web đã dùng sẵn trong JS, KHÔNG phải khoá bí mật.
 # workflow_dispatch: bấm 'Run workflow' trên GitHub (hoặc: gh workflow run luyende-cu.yml -R datto02/luyenvietkanji) để chạy ngay khi vừa sửa đề cũ.
+#   ĐÃ TẮT lịch tự chạy (trước đây 00:15 và 05:30 giờ VN) - nay chỉ chạy tay.
 on:
-  schedule:
-    - cron: '15 17 * * *'   # 00:15 giờ VN: sau khi Supabase chốt bài lúc 00:00
-    - cron: '30 22 * * *'   # 05:30 giờ VN: nhặt lại đề bạn sửa từ nửa đêm, trước giờ mở 6h
   workflow_dispatch:
 
 permissions:
