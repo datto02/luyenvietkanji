@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa học | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Khóa học tiếng Nhật cùng DORA: lộ trình rõ ràng, lớp nhỏ, giáo viên N2/N1, trợ giảng 24/7, cam kết đỗ JLPT chỉ 1 lần thi.">
+    <meta property="og:title" content="Khóa học - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="Khóa học tiếng Nhật cùng DORA: lộ trình rõ ràng, lớp nhỏ, giáo viên N2/N1, trợ giảng 24/7, cam kết đỗ JLPT chỉ 1 lần thi.">
+    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
+    <meta property="og:url" content="https://phadaotiengnhat.com/khoahoc/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/khoahoc/" />
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="../icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        // QUY TẮC TRANG /khoahoc/: iPad/máy tính bảng hiển thị Y HỆT điện thoại. Các mốc sm/md/lg/xl/2xl chỉ bật khi màn hình đủ rộng
+        // VÀ thiết bị dùng CHUỘT (hover: hover + pointer: fine) -> thiết bị cảm ứng (iPad dọc/ngang, iPad Pro...) không bao giờ chạm mốc
+        // "máy tính", luôn dùng bố cục điện thoại. sm/md/lg đều cùng mốc 1024px: cửa sổ trình duyệt máy tính hẹp hơn 1024px cũng ra bố cục
+        // điện thoại (không còn bố cục "tablet" ở giữa), từ 1024px trở lên (có chuột) giữ y hệt bản máy tính cũ.
+        // (JS tương ứng: DESKTOP_MQ trong KhoaHocPage.jsx - 2 nơi phải đi cùng nhau.)
+        theme: {
+          screens: {
+            sm: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            md: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            lg: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            xl: { raw: '(min-width: 1280px) and (hover: hover) and (pointer: fine)' },
+            '2xl': { raw: '(min-width: 1536px) and (hover: hover) and (pointer: fine)' },
+          },
+        },
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+
+      /* Class TỰ VIẾT (không phải utility có sẵn của Tailwind) - KhoaHocPage.jsx đặt class này lên
+         khung ngoài cùng (y hệt KanjiPage.jsx/VocabPage.jsx) để giấu thanh cuộn riêng của khung đó.
+         THIẾU định nghĩa này thì class "no-scrollbar" trong JSX không có tác dụng gì (Tailwind CDN
+         không biết "no-scrollbar" là gì) - ĐÂY LÀ NGUYÊN NHÂN THẬT của việc trang /khoahoc/ cuộn/hiện
+         thanh trượt khác hẳn /kanji/ trên điện thoại dù cùng 1 component KanjiNav. */
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - Y HỆT kanji/index.html/tuvung/index.html/taofile/index.html
+         (style này chỉ nằm trong khoahoc/index.html nên không ảnh hưởng trang chủ hay trang nào khác).
+         Trang /khoahoc/ (KhoaHocPage.jsx) tuy đã dùng min-h-dvh, nhưng các popup mở full màn hình trên điện thoại vẫn có thể dư ra vài chục px do cách trình duyệt tính viewport lúc thanh
+         địa chỉ ẩn/hiện, kéo theo thanh trượt/khoảng trắng thừa che mất phần cuối màn hình - CHỈ
+         ẩn thanh trượt, KHÔNG khoá cuộn (không overflow:hidden) để không làm chết cuộn bên trong
+         các popup con (y hệt lý do đã giải thích ở kanji/index.html). */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+
+      /* CSS đi kèm thư viện cuộn mượt Lenis (xem KhoaHocPage.jsx) - khuyến nghị chính thức của Lenis:
+         tắt scroll-behavior gốc khi Lenis đang chạy (nếu không 2 bên "cuộn mượt" đánh nhau), và
+         .lenis-stopped để Lenis tạm khóa cuộn khi cần. */
+      /* Băng chuyền giáo viên (TeacherMarquee trong KhoaHocPage.jsx), CSS thuần. Thời lượng 1 vòng truyền qua biến --dur. Dải được nhân đôi nên trượt
+         từ 0 tới -50% rồi lặp là liền mạch. */
+      @keyframes khoahoc-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      .khoahoc-marquee { animation: khoahoc-marquee var(--dur, 100s) linear infinite; will-change: transform; }
+
+      /* Thanh trượt XÁM NHẠT cho vùng cuộn trong popup "Xem tất cả Sensei" (class khoahoc-scroll, xem AllTeachersModal).
+         Chrome/Edge/Safari dùng ::-webkit-scrollbar, Firefox dùng scrollbar-color + scrollbar-width. Trang chính vẫn
+         ẩn thanh trượt (rule html, body phía trên chỉ áp cho html/body, không ảnh hưởng vùng này). */
+      .khoahoc-scroll { scrollbar-width: thin; scrollbar-color: #CBD5E1 transparent; }
+      .khoahoc-scroll::-webkit-scrollbar { width: 10px; }
+      .khoahoc-scroll::-webkit-scrollbar-track { background: transparent; margin: 6px 0; }
+      .khoahoc-scroll::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
+      .khoahoc-scroll::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+      /* 2 CỘT feedback học viên chạy DỌC ngược chiều nhau (FeedbackColumns trong KhoaHocPage.jsx): cột "up" trượt lên,
+         cột "down" trượt xuống. Danh sách trong mỗi cột được nhân đôi nên trượt 0 -> -50% rồi lặp là liền mạch.
+         Rê chuột / chạm vào cột nào thì CHỈ cột đó dừng (animation-play-state trên chính phần tử đang chạy). */
+      @keyframes khoahoc-vup { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+      @keyframes khoahoc-vdown { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+      .khoahoc-vup { animation: khoahoc-vup var(--dur, 60s) linear infinite; will-change: transform; }
+      .khoahoc-vdown { animation: khoahoc-vdown var(--dur, 60s) linear infinite; will-change: transform; }
+      .khoahoc-vup:hover, .khoahoc-vdown:hover, .khoahoc-vup:active, .khoahoc-vdown:active { animation-play-state: paused; }
+
+      /* 2 HÀNG ảnh học viên đỗ (PassRows trong KhoaHocPage.jsx) chạy NGANG ngược chiều nhau: hàng "l" trượt sang trái,
+         hàng "r" trượt sang phải. Dải trong mỗi hàng được nhân đôi nên 0 <-> -50% lặp lại là liền mạch. Rê chuột / chạm
+         vào hàng nào thì CHỈ hàng đó dừng. */
+      @keyframes khoahoc-pass-l { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      @keyframes khoahoc-pass-r { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+      .khoahoc-pass-l { animation: khoahoc-pass-l var(--dur, 60s) linear infinite; will-change: transform; }
+      .khoahoc-pass-r { animation: khoahoc-pass-r var(--dur, 60s) linear infinite; will-change: transform; }
+
+      /* NỀN TRANG ĐẦU (KhoaHocSkyField.jsx): sao chớp KHÔNG ĐỀU NHAU ở nửa trên + thỉnh thoảng 1 sao băng lướt
+         qua, mô phỏng bầu trời theo đúng dải màu tối -> sáng có sẵn của hero. Chỉ đổi opacity/transform (GPU, nhẹ).
+         Twinkle KHÔNG dùng 1 nhịp sáng-tối đều (sin) mà chớp 2 LẦN NGẮN, LỆCH GIỜ trong 1 vòng - mỗi sao 1 --dur/
+         --delay khác hẳn nhau (xem STARS trong JSX) nên tổng thể trông như chớp ngẫu nhiên, không đồng loạt. */
+      @keyframes kf-star-twinkle {
+        0%, 22%, 40%, 100% { opacity: var(--min, 0.2); }
+        28% { opacity: 1; }
+        34% { opacity: var(--min, 0.2); }
+        68% { opacity: 0.75; }
+      }
+      .kf-star { animation: kf-star-twinkle var(--dur, 3s) ease-in-out infinite; animation-delay: var(--delay, 0s); will-change: opacity; }
+
+      /* Sao băng: 1 vệt trắng thon, lướt chéo rồi tắt NGAY trong ~10% đầu vòng animation, phần còn lại của
+         --dur là khoảng lặng (chờ vòng sau) -> --dur càng dài thì càng lâu mới thấy lại 1 lần.
+         "rotate(--angle)" dựng vệt sáng NẰM ĐÚNG TRÊN đường bay, "translate(--dx,--dy)" (tính từ chính
+         --angle đó trong JSX, xem KhoaHocSkyField.jsx) di chuyển dọc đúng đường đó - 2 thứ LUÔN khớp
+         nhau nên vệt sáng không bao giờ trượt lệch khỏi hướng nó đang bay (đúng vật lý quỹ đạo).
+         Mép TRÁI (x=0%) của thanh trùng điểm neo rotate/translate-origin - đây là đầu bị "kéo theo"
+         (translate dịch ĐÚNG điểm này), còn mép PHẢI (x=100%) nằm lệch về phía --angle so với mép trái
+         1 khoảng cố định = chiều dài thanh -> mép phải luôn ở XA HƠN theo đúng hướng bay, tức nó mới là
+         đầu ĐI TRƯỚC (đầu sao băng, sáng nhất); mép trái đi SAU -> chính là đuôi, phải mờ dần/trong suốt. */
+      @keyframes kf-shooting-star {
+        0% { opacity: 0; transform: translate(0, 0) rotate(var(--angle, 150deg)); }
+        /* Mờ dần VÀO rồi RA (thay vì bật/tắt đột ngột 0->1->0 chỉ trong 1%) - đẹp và tự nhiên hơn hẳn,
+           đặc biệt là vệt sao băng ĐẦU TIÊN thấy ngay lúc vừa vào trang. */
+        2.5% { opacity: 1; }
+        6.5% { opacity: 1; }
+        9% { opacity: 0; transform: translate(var(--dx, -220px), var(--dy, 130px)) rotate(var(--angle, 150deg)); }
+        100% { opacity: 0; transform: translate(var(--dx, -220px), var(--dy, 130px)) rotate(var(--angle, 150deg)); }
+      }
+      .kf-shooting-star {
+        height: 2px;
+        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 60%, #fff 100%);
+        border-radius: 999px;
+        transform-origin: 0 0;
+        animation: kf-shooting-star var(--dur, 10s) linear infinite;
+        animation-delay: var(--delay, 0s);
+        will-change: transform, opacity;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .kf-star { animation: none; opacity: 0.6; }
+        .kf-shooting-star { animation: none; opacity: 0; }
+      }
+
+      html.lenis, html.lenis body { height: auto; }
+      .lenis.lenis-smooth { scroll-behavior: auto !important; }
+      .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+      .lenis.lenis-stopped { overflow: hidden; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Be Vietnam Pro: font hình học đầy đủ dấu tiếng Việt, dùng cho trang /khoahoc/ (phong cách landing page). -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/khoahoc-Bce8w8so.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-Bu3ekw6K.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-BQSlgLcC.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-BftjLjWw.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-Djvxl-7E.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-BP5vBTGk.js">
+    <link rel="modulepreload" crossorigin href="/assets/trophy-VA0nFMXB.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-Bi5u7BWn.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-right-BN41-pIr.js">
+    <link rel="modulepreload" crossorigin href="/assets/message-circle-DWmeUG3B.js">
+    <link rel="modulepreload" crossorigin href="/assets/x-CzhXp9_V.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-tiu3cSuQ.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>
