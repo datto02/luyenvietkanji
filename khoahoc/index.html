@@ -154,6 +154,12 @@
         .kf-star { animation: none; opacity: 0.6; }
         .kf-shooting-star { animation: none; opacity: 0; }
       }
+      /* Điện thoại/iPad (đúng điều kiện ngược lại với DESKTOP_MQ trong KhoaHocPage.jsx): sao đứng yên,
+         không lấp lánh, không sao băng. */
+      @media not all and (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+        .kf-star { animation: none; opacity: 0.6; will-change: auto; }
+        .kf-shooting-star { animation: none; opacity: 0; display: none; }
+      }
 
       html.lenis, html.lenis body { height: auto; }
       .lenis.lenis-smooth { scroll-behavior: auto !important; }
