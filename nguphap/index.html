@@ -12,25 +12,22 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Từ vựng | Phá Đảo Tiếng Nhật</title>
-    <meta name="description" content="Học từ vựng tiếng Nhật với Flashcard, trắc nghiệm, tự luận, luyện viết và lộ trình học từ vựng theo giáo trình JLPT N5-N1. Miễn phí, ghi nhớ nhanh.">
-    <meta name="keywords" content="từ vựng tiếng nhật, học từ vựng, flashcard từ vựng, lộ trình học từ vựng, trắc nghiệm từ vựng, luyện viết từ vựng, JLPT N5 N4 N3 N2 N1">
-    <meta property="og:title" content="Học Từ Vựng Tiếng Nhật - Flashcard, Lộ Trình Học JLPT N5-N1">
-    <meta property="og:description" content="Flashcard từ vựng, trắc nghiệm, tự luận, luyện viết và lộ trình học theo giáo trình - ghi nhớ từ vựng tiếng Nhật toàn diện, miễn phí.">
-    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
-    <meta property="og:url" content="https://phadaotiengnhat.com/tuvung/">
+    <title>Ngữ pháp | Phá Đảo Tiếng Nhật</title>
+    <meta name="robots" content="index, follow">
     <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
 
-    <!-- Y HỆT kanji/index.html: trang này nằm trong THƯ MỤC (tuvung/index.html -> /tuvung/),
-         để nhất quán với /kanji/, /luyende/ - xem giải thích đầy đủ trong kanji/index.html. -->
-    <link rel="canonical" href="https://phadaotiengnhat.com/tuvung/" />
-    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
-    <link rel="icon" type="image/svg+xml" href="../icon/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
-    <link rel="manifest" href="../icon/site.webmanifest">
+    <!-- Khu /dora/ (bài tập cho học viên, không có link nào dẫn vào): head Y HỆT tuvung/index.html
+         (Tailwind CDN + tắt hover giả trên cảm ứng + giấu thanh trượt) để giao diện khớp /tuvung/;
+         khác: noindex (không cho công cụ tìm kiếm index) nhưng CÓ GA (gtag ở trên, cùng ID
+         G-44K3LXVHKX với các trang khác - theo dõi hành vi học viên). Chỉ 1 file HTML thật, các màn
+         bên trong đổi bằng hash - xem DoraPage.jsx. -->
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -72,39 +69,22 @@
       }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-
     <!-- Pháo hoa mừng học xong (Flashcard/Trắc nghiệm/Tự luận/Luyện viết) - FlashcardModal.jsx
          v.v. gọi thẳng biến toàn cục `confetti` (không import qua npm), nên trang nào mở được
          các popup học đó đều PHẢI có script này, y hệt index.html gốc - thiếu là mất pháo hoa
          (gọi `confetti` lúc đó là undefined, code tự bỏ qua trong im lặng, không báo lỗi gì). -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-    <script type="module" crossorigin src="/assets/tuvung-Brg-vmb8.js"></script>
+    <script type="module" crossorigin src="/assets/nguphap-DGS8rm_H.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-DuvQjN15.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-D32TdLV2.js">
-    <link rel="modulepreload" crossorigin href="/assets/fetchData-DDkd99ep.js">
     <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-B2kFiopR.js">
-    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BZu_YtKX.js">
-    <link rel="modulepreload" crossorigin href="/assets/useAuthUser-DUZwJJmA.js">
-    <link rel="modulepreload" crossorigin href="/assets/kana-iCLcBn7u.js">
-    <link rel="modulepreload" crossorigin href="/assets/purify.es-BWYHS3n2.js">
-    <link rel="modulepreload" crossorigin href="/assets/KanjiWritingModal-G7NLSOlx.js">
     <link rel="modulepreload" crossorigin href="/assets/KanjiNav-CWNZ-pIj.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-DjA5SHXK.js">
-    <link rel="modulepreload" crossorigin href="/assets/LoginForm-4JeQlGiW.js">
-    <link rel="modulepreload" crossorigin href="/assets/chevron-right-GHScEZpt.js">
-    <link rel="modulepreload" crossorigin href="/assets/lichSuStore-rI-VMG9D.js">
-    <link rel="modulepreload" crossorigin href="/assets/preload-helper-BYG1BUrt.js">
-    <link rel="modulepreload" crossorigin href="/assets/plus-CCsZoBCv.js">
-    <link rel="modulepreload" crossorigin href="/assets/check-DZI_tpUE.js">
-    <link rel="modulepreload" crossorigin href="/assets/arrow-right-CqTi5zds.js">
+    <link rel="modulepreload" crossorigin href="/assets/list-ordered-D_oJ8m4L.js">
     <link rel="modulepreload" crossorigin href="/assets/list-checks-CLmKGpyL.js">
-    <link rel="modulepreload" crossorigin href="/assets/pen-tool-PP7WbWg6.js">
-    <link rel="modulepreload" crossorigin href="/assets/kanjiInputCache-Bm1Rl7wB.js">
-    <link rel="modulepreload" crossorigin href="/assets/App-B0TlrZ0p.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-CeWzviZX.js">
+    <link rel="modulepreload" crossorigin href="/assets/chevron-right-GHScEZpt.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-DZI_tpUE.js">
     <link rel="stylesheet" crossorigin href="/assets/index-DYwEZIpg.css">
   </head>
   <body>
