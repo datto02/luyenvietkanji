@@ -91,7 +91,7 @@
 
       /* nét vẽ chạy ra dần (path có pathLength="1") */
       @keyframes bcm-draw { to { stroke-dashoffset: 0; } }
-      .bcm-draw { stroke-dasharray: 1; stroke-dashoffset: 1; }
+      .bcm-draw { stroke-dasharray: 1 2; stroke-dashoffset: 1; } /* "1 2" (gap dài hơn nét): với "1" thì đầu mút tròn vẽ 1 CHẤM ở cuối nét trước khi vẽ */
       .bcm-in .bcm-draw, .bcm-draw.bcm-in { animation: bcm-draw 1.2s ease-out forwards; animation-delay: var(--d, .2s); }
 
       @keyframes bcm-float { 0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-14px) rotate(calc(var(--r, 0deg) + 4deg)); } }
@@ -215,7 +215,7 @@
     <!-- Be Vietnam Pro: font hình học đầy đủ dấu tiếng Việt, dùng cho trang /butchimau/ (phong cách landing page). -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <script type="module" crossorigin src="/assets/butchimau-CW4y2RzN.js"></script>
+    <script type="module" crossorigin src="/assets/butchimau-Ck9_2ifm.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-gMRXEVUG.js">
     <link rel="modulepreload" crossorigin href="/assets/users-BbrdL6Z0.js">
@@ -232,7 +232,7 @@
     <link rel="modulepreload" crossorigin href="/assets/search-BRAIQcaZ.js">
     <link rel="modulepreload" crossorigin href="/assets/message-circle-CWJTJzlY.js">
     <link rel="modulepreload" crossorigin href="/assets/check-C3ZdUzXT.js">
-    <link rel="modulepreload" crossorigin href="/assets/ButChiMauPage-C6GiD1K2.js">
+    <link rel="modulepreload" crossorigin href="/assets/ButChiMauPage-B0GepC62.js">
     <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
   </head>
   <body>
