@@ -179,7 +179,7 @@
         /* bộ lọc nhiễu SVG (feTurbulence) trên MỌI hình minh hoạ + tiêu đề là thủ phạm chính gây lag khi cuộn trên điện thoại */
         .bcm-art, .bcm-wobble { filter: none; }
         /* trang tĩnh hoàn toàn: không animation, không transition, không cuộn mượt */
-        *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+        *:not(.bcm-statement-run), *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } /* ngoại lệ: tên dài trong sao kê vẫn chạy qua lại */
         .bcm-card:hover .bcm-icon { animation: none !important; }
         .bcm-card:hover { transform: none !important; }
         /* hero: dvh đổi theo thanh địa chỉ trình duyệt khi vuốt -> hình nền co dãn; dùng svh (cố định) */
@@ -215,7 +215,7 @@
     <!-- Be Vietnam Pro: font hình học đầy đủ dấu tiếng Việt, dùng cho trang /butchimau/ (phong cách landing page). -->
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <script type="module" crossorigin src="/assets/butchimau-DYPufYyr.js"></script>
+    <script type="module" crossorigin src="/assets/butchimau-CW4y2RzN.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-gMRXEVUG.js">
     <link rel="modulepreload" crossorigin href="/assets/users-BbrdL6Z0.js">
@@ -232,7 +232,7 @@
     <link rel="modulepreload" crossorigin href="/assets/search-BRAIQcaZ.js">
     <link rel="modulepreload" crossorigin href="/assets/message-circle-CWJTJzlY.js">
     <link rel="modulepreload" crossorigin href="/assets/check-C3ZdUzXT.js">
-    <link rel="modulepreload" crossorigin href="/assets/ButChiMauPage-CQvSG7Sl.js">
+    <link rel="modulepreload" crossorigin href="/assets/ButChiMauPage-C6GiD1K2.js">
     <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
   </head>
   <body>
