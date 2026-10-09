@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký gói | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="">
+    <meta property="og:title" content="Đăng ký gói - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
+    <meta property="og:url" content="https://phadaotiengnhat.com/dangky/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/dangky/" />
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="../icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        // QUY TẮC TRANG /butchimau/: iPad/máy tính bảng hiển thị Y HỆT điện thoại. Các mốc sm/md/lg/xl/2xl chỉ bật khi màn hình đủ rộng
+        // VÀ thiết bị dùng CHUỘT (hover: hover + pointer: fine) -> thiết bị cảm ứng (iPad dọc/ngang, iPad Pro...) không bao giờ chạm mốc
+        // "máy tính", luôn dùng bố cục điện thoại. sm/md/lg đều cùng mốc 1024px: cửa sổ trình duyệt máy tính hẹp hơn 1024px cũng ra bố cục
+        // điện thoại (không còn bố cục "tablet" ở giữa), từ 1024px trở lên (có chuột) giữ y hệt bản máy tính cũ.
+        // (JS tương ứng: DESKTOP_MQ trong KhoaHocPage.jsx - 2 nơi phải đi cùng nhau.)
+        theme: {
+          screens: {
+            sm: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            md: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            lg: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            xl: { raw: '(min-width: 1280px) and (hover: hover) and (pointer: fine)' },
+            '2xl': { raw: '(min-width: 1536px) and (hover: hover) and (pointer: fine)' },
+          },
+        },
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+      .bcm-scroll { scrollbar-width: thin; scrollbar-color: #CBD5E1 transparent; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Be Vietnam Pro: font hình học đầy đủ dấu tiếng Việt, dùng cho trang /butchimau/ (phong cách landing page). -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/dangky-DWKxLvTj.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-gMRXEVUG.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-ho-NynqT.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-plus-GH6mh46K.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-mKVk7Tgy.js">
+    <link rel="modulepreload" crossorigin href="/assets/users-BbrdL6Z0.js">
+    <link rel="modulepreload" crossorigin href="/assets/shield-check-Ch_6hVbk.js">
+    <link rel="modulepreload" crossorigin href="/assets/target-CUJZEZTS.js">
+    <link rel="modulepreload" crossorigin href="/assets/khoahocData-BDXadGpU.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-C2ey8YjU.js">
+    <link rel="modulepreload" crossorigin href="/assets/file-text-B90yiRWZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/x-B-Y3hB2k.js">
+    <link rel="modulepreload" crossorigin href="/assets/search-BRAIQcaZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/message-circle-CWJTJzlY.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-C3ZdUzXT.js">
+    <link rel="modulepreload" crossorigin href="/assets/ButChiMauPage-Dg1893DO.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
+    <link rel="stylesheet" crossorigin href="/assets/dangky-R22uBWja.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>

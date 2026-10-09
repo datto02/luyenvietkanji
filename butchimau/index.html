@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bút Chì Màu | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="">
+    <meta property="og:title" content="Bút Chì Màu - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
+    <meta property="og:url" content="https://phadaotiengnhat.com/butchimau/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/butchimau/" />
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="../icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        // QUY TẮC TRANG /butchimau/: iPad/máy tính bảng hiển thị Y HỆT điện thoại. Các mốc sm/md/lg/xl/2xl chỉ bật khi màn hình đủ rộng
+        // VÀ thiết bị dùng CHUỘT (hover: hover + pointer: fine) -> thiết bị cảm ứng (iPad dọc/ngang, iPad Pro...) không bao giờ chạm mốc
+        // "máy tính", luôn dùng bố cục điện thoại. sm/md/lg đều cùng mốc 1024px: cửa sổ trình duyệt máy tính hẹp hơn 1024px cũng ra bố cục
+        // điện thoại (không còn bố cục "tablet" ở giữa), từ 1024px trở lên (có chuột) giữ y hệt bản máy tính cũ.
+        // (JS tương ứng: DESKTOP_MQ trong KhoaHocPage.jsx - 2 nơi phải đi cùng nhau.)
+        theme: {
+          screens: {
+            sm: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            md: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            lg: { raw: '(min-width: 1024px) and (hover: hover) and (pointer: fine)' },
+            xl: { raw: '(min-width: 1280px) and (hover: hover) and (pointer: fine)' },
+            '2xl': { raw: '(min-width: 1536px) and (hover: hover) and (pointer: fine)' },
+          },
+        },
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      @media not all and (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+        .bcm-page [data-bank-info] img {
+          width: 176px;
+          max-width: 100%;
+        }
+        .bcm-page [role="dialog"] .shrink-0.border-t-\[3px\] .bcm-btn {
+          white-space: nowrap;
+          padding-left: 12px;
+          padding-right: 12px;
+          gap: 6px;
+        }
+      }
+      * { -webkit-tap-highlight-color: transparent; }
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* ===== PHONG CÁCH BÚT MÀU VẼ TAY =====
+         Mọi hình minh hoạ là SVG mang class bcm-art -> đi qua bộ lọc #bcm-crayon (định nghĩa trong ButChiMauPage.jsx):
+         méo nhẹ nét vẽ cho nguệch ngoạc + khoét hạt li ti như sáp màu. Bộ lọc đặt trên CHÍNH thẻ svg nên hiệu ứng chuyển động
+         (bob/float/spin...) cũng đặt trên thẻ svg đó (transform sau lọc, GPU lo) chứ KHÔNG animate bên trong svg đã lọc. */
+      .bcm-art { filter: url(#bcm-crayon); overflow: visible; }
+      .bcm-wobble { filter: url(#bcm-wobble); }
+
+      /* hiện dần khi cuộn tới (thêm class bcm-in bằng IntersectionObserver) */
+      .bcm-reveal { opacity: 0; transform: translateY(28px) rotate(var(--tilt, 0deg)); transition: opacity .7s ease, transform .8s cubic-bezier(.2,.9,.3,1.15); transition-delay: var(--d, 0s); }
+      .bcm-reveal.bcm-in { opacity: 1; transform: translateY(0) rotate(var(--tilt, 0deg)); }
+
+      /* khối KHÔNG nghiêng (vd thẻ gói): sau khi hiện xong bỏ hẳn transform -> chữ sắc nét, không bị nhoè do xoay/tầng GPU */
+      .bcm-reveal.bcm-in.bcm-flat { transform: none; will-change: auto; }
+
+      /* nét vẽ chạy ra dần (path có pathLength="1") */
+      @keyframes bcm-draw { to { stroke-dashoffset: 0; } }
+      .bcm-draw { stroke-dasharray: 1; stroke-dashoffset: 1; }
+      .bcm-in .bcm-draw, .bcm-draw.bcm-in { animation: bcm-draw 1.2s ease-out forwards; animation-delay: var(--d, .2s); }
+
+      @keyframes bcm-float { 0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-14px) rotate(calc(var(--r, 0deg) + 4deg)); } }
+      .bcm-float { animation: bcm-float var(--dur, 5s) ease-in-out infinite; animation-delay: var(--delay, 0s); will-change: transform; }
+      @keyframes bcm-bob { 0%, 100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(-7px) rotate(1.5deg); } }
+      .bcm-bob { animation: bcm-bob 2.2s ease-in-out infinite; animation-delay: var(--delay, 0s); transform-origin: 50% 100%; will-change: transform; }
+      @keyframes bcm-cloud { from { transform: translateX(-8%); } to { transform: translateX(12%); } }
+      .bcm-cloud { animation: bcm-cloud var(--dur, 40s) ease-in-out infinite alternate; will-change: transform; }
+      @keyframes bcm-spin { to { transform: rotate(360deg); } }
+      .bcm-spin { animation: bcm-spin 50s linear infinite; will-change: transform; }
+      @keyframes bcm-bird { from { transform: translateX(-12vw); } to { transform: translateX(112vw); } }
+      .bcm-bird { animation: bcm-bird var(--dur, 30s) linear infinite; animation-delay: var(--delay, 0s); will-change: transform; }
+      @keyframes bcm-flap { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(.55); } }
+      .bcm-flap { animation: bcm-flap .5s ease-in-out infinite; transform-origin: 50% 50%; }
+      @keyframes bcm-twinkle { 0%, 100% { opacity: 1; transform: scale(1) rotate(0); } 50% { opacity: .35; transform: scale(.65) rotate(12deg); } }
+      .bcm-twinkle { animation: bcm-twinkle var(--dur, 2.6s) ease-in-out infinite; animation-delay: var(--delay, 0s); }
+      @keyframes bcm-rise { 0% { transform: translateY(0) scale(.6); opacity: 0; } 15% { opacity: .9; } 100% { transform: translateY(-170px) scale(1.15); opacity: 0; } }
+      .bcm-rise { animation: bcm-rise var(--dur, 6s) ease-in infinite; animation-delay: var(--delay, 0s); }
+      @keyframes bcm-wiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-8deg) scale(1.06); } 75% { transform: rotate(8deg) scale(1.06); } }
+      .bcm-card:hover .bcm-icon { animation: bcm-wiggle .6s ease-in-out; }
+      .bcm-card { transition: transform .25s ease, box-shadow .25s ease; }
+      .bcm-card:hover { transform: translate(-3px, -4px) rotate(var(--tilt, 0deg)); }
+      @keyframes bcm-rain { from { transform: translateY(-14%); } to { transform: translateY(14%); } }
+      .bcm-rain { animation: bcm-rain 0.9s linear infinite; }
+      @keyframes bcm-rainfall { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+      .bcm-rainfall { animation: bcm-rainfall var(--dur, 5s) linear infinite; will-change: transform; }
+      @keyframes bcm-drip { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateY(190%); opacity: 0; } }
+      .bcm-drip { animation: bcm-drip 1.8s ease-in infinite; }
+      @keyframes bcm-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+      .bcm-pulse { animation: bcm-pulse 2.4s ease-in-out infinite; }
+
+      /* CSS đi kèm thư viện cuộn mượt Lenis (khuyến nghị chính thức, y hệt khoahoc/index.html) */
+      html.lenis, html.lenis body { height: auto; }
+      .lenis.lenis-smooth { scroll-behavior: auto !important; }
+      .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+      .lenis.lenis-stopped { overflow: hidden; }
+
+      /* ===== THANH CÔNG CỤ TRÊN CÙNG, RIÊNG TRANG NÀY =====
+         KanjiNav là component DÙNG CHUNG nhiều trang nên KHÔNG sửa nó; thay vào đó đổi diện mạo bằng CSS đặt ở đây (file này chỉ nạp ở /butchimau/),
+         khoanh vùng bằng class .bcm-page trên khung ngoài cùng của trang. Phong cách: giấy kem + nét nâu bút chì + bóng đổ lệch, chữ viết tay. */
+      .bcm-page > nav.fixed.top-0 { background: #FFF9EC !important; border-bottom: 0 !important; font-family: 'Mali', 'Be Vietnam Pro', cursive; }
+      /* mép dưới thanh: KHÔNG đường kẻ, chỉ đổ bóng nhẹ (nâu mờ) cho thanh nổi lên khỏi nền */
+      .bcm-page > nav.fixed.top-0 { box-shadow: 0 4px 14px rgba(59, 42, 32, 0.14) !important; }
+      .bcm-page > nav.fixed.top-0 a, .bcm-page > nav.fixed.top-0 button { font-family: 'Mali', 'Be Vietnam Pro', cursive; }
+      /* nút "<" quay lại: tròn vàng nhạt, viền nâu, bóng đổ lệch */
+      .bcm-page > nav.fixed.top-0 a[aria-label] { background: #FDE68A !important; color: #3B2A20 !important; border: 2.5px solid #3B2A20; box-shadow: 2px 3px 0 #3B2A20; }
+      .bcm-page > nav.fixed.top-0 a[aria-label]:hover { background: #FCD34D !important; }
+      /* các mục menu giữa: chữ nâu, rê chuột nền vàng nhạt có viền nét đứt */
+      .bcm-page > nav.fixed.top-0 .lg\:flex > a, .bcm-page > nav.fixed.top-0 .lg\:flex button { color: #5B4636 !important; font-weight: 700; border: 2px solid transparent; }
+      .bcm-page > nav.fixed.top-0 .lg\:flex > a:hover, .bcm-page > nav.fixed.top-0 .lg\:flex button:hover { background: #FEF3C7 !important; color: #3B2A20 !important; border: 2px dashed rgba(59,42,32,.55); }
+      /* nút "Thêm" lúc đang mở / đang đứng ở trang con: nền vàng nhạt viền nét liền (KanjiNav tô xanh #E3EEFF, lạc tông giấy kem) */
+      .bcm-page > nav.fixed.top-0 .lg\:flex > a.bg-\[\#E3EEFF\], .bcm-page > nav.fixed.top-0 .lg\:flex button.bg-\[\#E3EEFF\] { background: #FEF3C7 !important; color: #3B2A20 !important; border: 2px solid rgba(59,42,32,.55); }
+      /* nút TRANG CHỦ: xanh nhạt nét nâu bóng đổ lệch như các nút trong trang */
+      .bcm-page > nav.fixed.top-0 a[href="/"]:not([title]):not([aria-label]) { background: #7DD3FC !important; color: #0C4A6E !important; border: 3px solid #3B2A20; border-radius: 16px 20px 16px 22px !important; box-shadow: 3px 4px 0 #3B2A20; font-weight: 800; height: 2.5rem; }
+      .bcm-page > nav.fixed.top-0 a[href="/"]:not([title]):not([aria-label]):hover { background: #38BDF8 !important; }
+      /* bảng "Thêm" thả xuống: giấy kem, viền nâu, bóng đổ lệch */
+      .bcm-page > nav.fixed.top-0 .absolute.top-full { background: #FFF9EC !important; border: 3px solid #3B2A20 !important; border-radius: 18px 22px 18px 24px !important; box-shadow: 5px 6px 0 rgba(59,42,32,.28) !important; }
+      .bcm-page > nav.fixed.top-0 .absolute.top-full a, .bcm-page > nav.fixed.top-0 .absolute.top-full button { color: #5B4636 !important; }
+      /* hàng trong bảng: thụt vào 2 bên + bo góc nên ô tô vàng khi rê chuột không đâm sát/lẹm vào viền nâu bo cong */
+      .bcm-page > nav.fixed.top-0 .absolute.top-full a, .bcm-page > nav.fixed.top-0 .absolute.top-full button { width: calc(100% - 1rem); margin: 0 .5rem; border-radius: 12px 16px 12px 16px; border: 2px solid transparent; }
+      .bcm-page > nav.fixed.top-0 .absolute.top-full a:hover,.bcm-page > nav.fixed.top-0 .absolute.top-full button:hover { background: #FEF3C7 !important; color: #3B2A20 !important; border: 2px dashed rgba(59,42,32,.55); }
+
+      /* thanh trượt của danh sách trong popup sao kê: màu XÁM, mảnh, bo tròn, KHÔNG có mũi tên lên/xuống.
+         Chrome/Edge/Safari dùng ::-webkit-scrollbar (đừng đặt scrollbar-width/scrollbar-color ở đây vì Chrome mới sẽ BỎ QUA các luật ::-webkit-scrollbar nếu thấy chúng);
+         Firefox (không có ::-webkit-scrollbar) dùng scrollbar-width/scrollbar-color trong @supports bên dưới - Firefox vốn không vẽ mũi tên. */
+      .bcm-scroll::-webkit-scrollbar { width: 8px; }
+      .bcm-scroll::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+      /* chừa 24px đáy + 6px đầu: thanh KHÔNG chạm vào góc bo tròn của khung popup */
+      .bcm-scroll::-webkit-scrollbar-track { background: transparent; margin: 6px 0 24px; }
+      .bcm-scroll::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 999px; }
+      .bcm-scroll::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+      @supports not selector(::-webkit-scrollbar) { .bcm-scroll { scrollbar-width: thin; scrollbar-color: #CBD5E1 transparent; } }
+
+      /* nút doodle: rê chuột -> màu TƯƠI hơn (đậm sắc + sáng hơn chút); nút trắng thì chuyển sang xanh trời nhạt. KHÔNG dịch chuyển (tránh nháy ở mép). */
+      .bcm-btn { transition: filter .15s ease, background-color .15s ease; }
+      .bcm-btn:hover { filter: saturate(1.5) brightness(1.07); }
+      .bcm-btn:active { filter: saturate(1.6) brightness(1.0); }
+      .bcm-btn[data-white]:hover { background-color: #BAE6FD !important; filter: none; }
+
+      /* điện thoại: bỏ hiệu ứng hiện dần khi cuộn + các chuyển động trang trí lặp vô hạn (máy tính giữ nguyên) */
+      @media (max-width: 767px) {
+        .bcm-reveal { opacity: 1; transform: rotate(var(--tilt, 0deg)); transition: none; }
+        .bcm-reveal.bcm-in.bcm-flat { transform: none; }
+        .bcm-draw { stroke-dashoffset: 0; animation: none !important; }
+        /* bộ lọc nhiễu SVG (feTurbulence) trên MỌI hình minh hoạ + tiêu đề là thủ phạm chính gây lag khi cuộn trên điện thoại */
+        .bcm-art, .bcm-wobble { filter: none; }
+        /* trang tĩnh hoàn toàn: không animation, không transition, không cuộn mượt */
+        *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+        .bcm-card:hover .bcm-icon { animation: none !important; }
+        .bcm-card:hover { transform: none !important; }
+        /* hero: dvh đổi theo thanh địa chỉ trình duyệt khi vuốt -> hình nền co dãn; dùng svh (cố định) */
+        .bcm-hero { min-height: 100svh !important; --scene-h: clamp(240px, 40svh, 460px) !important; }
+        .backdrop-blur-\[3px\] { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+        .bcm-rainfall, .bcm-rain, .bcm-drip, .bcm-float, .bcm-bob, .bcm-cloud, .bcm-spin, .bcm-bird, .bcm-flap, .bcm-twinkle, .bcm-rise, .bcm-pulse { animation: none; will-change: auto; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .bcm-rainfall, .bcm-rain, .bcm-drip, .bcm-float, .bcm-bob, .bcm-cloud, .bcm-spin, .bcm-bird, .bcm-flap, .bcm-twinkle, .bcm-rise, .bcm-pulse { animation: none; }
+        .bcm-reveal { opacity: 1; transform: none; transition: none; }
+        .bcm-draw { stroke-dashoffset: 0; animation: none !important; }
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Be Vietnam Pro: font hình học đầy đủ dấu tiếng Việt, dùng cho trang /butchimau/ (phong cách landing page). -->
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/butchimau-APobOMs4.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-gMRXEVUG.js">
+    <link rel="modulepreload" crossorigin href="/assets/users-BbrdL6Z0.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-plus-GH6mh46K.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-ho-NynqT.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-mKVk7Tgy.js">
+    <link rel="modulepreload" crossorigin href="/assets/shield-check-Ch_6hVbk.js">
+    <link rel="modulepreload" crossorigin href="/assets/target-CUJZEZTS.js">
+    <link rel="modulepreload" crossorigin href="/assets/khoahocData-BDXadGpU.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-C2ey8YjU.js">
+    <link rel="modulepreload" crossorigin href="/assets/file-text-B90yiRWZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/x-B-Y3hB2k.js">
+    <link rel="modulepreload" crossorigin href="/assets/search-BRAIQcaZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/message-circle-CWJTJzlY.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-C3ZdUzXT.js">
+    <link rel="modulepreload" crossorigin href="/assets/ButChiMauPage-Dg1893DO.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>

@@ -22,6 +22,21 @@ const SAFE_CODE = /^[A-Za-z0-9_-]{1,64}$/;
 
 if (!URL_BASE || !KEY) { console.error('Thiếu SUPABASE_URL / SUPABASE_ANON_KEY'); process.exit(1); }
 
+// Danh sách TẤT CẢ đề đã mở (chỉ metadata - hàm công khai luyende_danh_sach) để khách thấy đủ các ô đề, kể cả đề bị khóa.
+async function fetchList(lv) {
+    const res = await fetch(`${URL_BASE}/rest/v1/rpc/luyende_danh_sach`, {
+        method: 'POST',
+        headers: { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_cap: lv }),
+    });
+    if (!res.ok) throw new Error(`luyende_danh_sach(${lv}): HTTP ${res.status}`);
+    const rows = await res.json();
+    if (!Array.isArray(rows)) throw new Error(`luyende_danh_sach(${lv}): dữ liệu không phải mảng`);
+    return rows;
+}
+
+// NỘI DUNG đề: khóa bằng RLS (supabase/luyende_khoa.sql) - key công khai chỉ đọc được các đề miễn phí (số 1-3); đề còn lại chỉ thành viên đọc
+// được trực tiếp từ Supabase bằng đăng nhập của họ, KHÔNG được xuất ra file tĩnh công khai.
 async function fetchLevel(lv) {
     const res = await fetch(`${URL_BASE}/rest/v1/bai_tap_${lv}?select=${COLUMNS}&da_mo=eq.true&order=thu_tu.desc`, {
         headers: { apikey: KEY, Authorization: `Bearer ${KEY}` },
@@ -62,7 +77,8 @@ async function fetchToday(lv) {
 }
 
 const result = {};
-for (const lv of LEVELS) result[lv] = await fetchLevel(lv); // lỗi ở bất kỳ cấp nào -> ném ra, chưa ghi gì cả
+const lists = {};
+for (const lv of LEVELS) { result[lv] = await fetchLevel(lv); lists[lv] = await fetchList(lv); } // lỗi ở bất kỳ cấp nào -> ném ra, chưa ghi gì cả
 const today = {};
 for (const lv of LEVELS) today[lv] = await fetchToday(lv);
 const todayVn = new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(0, 10); // ngày giờ VN "YYYY-MM-DD"
@@ -72,7 +88,7 @@ for (const lv of LEVELS) {
     const rows = result[lv];
     const dir = join(OUT_DIR, lv);
     mkdirSync(dir, { recursive: true });
-    const list = rows.map((r) => ({ id: r.id, ten_bai_tap: r.ten_bai_tap, thu_tu: r.thu_tu, id_link: r.id_link, loai_de: r.loai_de }));
+    const list = lists[lv]; // đủ mọi đề đã mở (metadata); file nội dung bên dưới chỉ có đề miễn phí
     if (writeIfChanged(join(dir, 'list.json'), JSON.stringify(list))) written++;
     const keep = new Set(['list.json', 'today.json']);
     if (today[lv]) {
