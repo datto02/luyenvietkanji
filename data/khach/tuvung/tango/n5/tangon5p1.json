@@ -4,713 +4,1733 @@
   "reading": "わたし",
   "meaning": "tôi (ngôi thứ nhất số ít)",
   "example": "**[私](わたし)**はアンです。",
-  "exampleVi": "Tôi (tên) là An."
+  "exampleVi": "Tôi (tên) là An.",
+  "examples": [
+   {
+    "ja": "**[私](わたし)**はアンです。",
+    "vi": "Tôi (tên) là An."
+   },
+   {
+    "ja": "**[私](わたし)**は[学生](がくせい)です。",
+    "vi": "Tôi là học sinh."
+   }
+  ]
  },
  {
   "word": "です",
   "reading": "です",
   "meaning": "là ~",
   "example": "[私](わたし)はスミス**です**。",
-  "exampleVi": "Tôi là Smith."
+  "exampleVi": "Tôi là Smith.",
+  "examples": [
+   {
+    "ja": "[私](わたし)はスミス**です**。",
+    "vi": "Tôi là Smith."
+   },
+   {
+    "ja": "[私](わたし)は[学生](がくせい)**です**。",
+    "vi": "Tôi là học sinh."
+   }
+  ]
  },
  {
   "word": "さん",
   "reading": "さん",
   "meaning": "ông / bà / anh / chị ~",
   "example": "トム**さん**ですか。",
-  "exampleVi": "Anh Tom phải không?"
+  "exampleVi": "Anh Tom phải không?",
+  "examples": [
+   {
+    "ja": "トム**さん**ですか。",
+    "vi": "Anh Tom phải không?"
+   },
+   {
+    "ja": "[山田](やまだ)**さん**は[会社員](かいしゃいん)です。",
+    "vi": "Anh Yamada là nhân viên công ty."
+   }
+  ]
  },
  {
   "word": "ちゃん",
   "reading": "ちゃん",
   "meaning": "bé ~",
   "example": "かのじょはララ**ちゃん**です。",
-  "exampleVi": "Cô bé là bé Lala."
+  "exampleVi": "Cô bé là bé Lala.",
+  "examples": [
+   {
+    "ja": "かのじょはララ**ちゃん**です。",
+    "vi": "Cô bé là bé Lala."
+   },
+   {
+    "ja": "[花子](はなこ)**ちゃん**はごさいです。",
+    "vi": "Bé Hanako năm tuổi."
+   }
+  ]
  },
  {
   "word": "貴方",
   "reading": "あなた",
   "meaning": "ông / bà / anh / chị / bạn (ngôi thứ hai số ít)",
   "example": "**[貴方](あなた)**はトムさんですか。",
-  "exampleVi": "Anh là anh Tom phải không?"
+  "exampleVi": "Anh là anh Tom phải không?",
+  "examples": [
+   {
+    "ja": "**[貴方](あなた)**はトムさんですか。",
+    "vi": "Anh là anh Tom phải không?"
+   },
+   {
+    "ja": "**[貴方](あなた)**は[先生](せんせい)ですか。",
+    "vi": "Bạn có phải là giáo viên không?"
+   }
+  ]
  },
  {
   "word": "かれ",
   "reading": "かれ",
   "meaning": "anh ấy (ngôi thứ ba số ít), bạn trai",
   "example": "**かれ**はトムさんです。",
-  "exampleVi": "Anh ấy là anh Tom."
+  "exampleVi": "Anh ấy là anh Tom.",
+  "examples": [
+   {
+    "ja": "**かれ**はトムさんです。",
+    "vi": "Anh ấy là anh Tom."
+   },
+   {
+    "ja": "**かれ**は[私](わたし)の[友達](ともだち)です。",
+    "vi": "Anh ấy là bạn của tôi."
+   }
+  ]
  },
  {
   "word": "かのじょ",
   "reading": "かのじょ",
   "meaning": "cô ấy, chị ấy (ngôi thứ ba số ít), bạn gái",
   "example": "**かのじょ**はヒエンさんです。",
-  "exampleVi": "Chị ấy là chị Hiền."
+  "exampleVi": "Chị ấy là chị Hiền.",
+  "examples": [
+   {
+    "ja": "**かのじょ**はヒエンさんです。",
+    "vi": "Chị ấy là chị Hiền."
+   },
+   {
+    "ja": "**かのじょ**は[先生](せんせい)です。",
+    "vi": "Cô ấy là giáo viên."
+   }
+  ]
  },
  {
   "word": "お名前",
   "reading": "おなまえ",
   "meaning": "tên (của bạn)",
   "example": "**お[名前](なまえ)**は?",
-  "exampleVi": "Tên bạn là gì?"
+  "exampleVi": "Tên bạn là gì?",
+  "examples": [
+   {
+    "ja": "**お[名前](なまえ)**は?",
+    "vi": "Tên bạn là gì?"
+   },
+   {
+    "ja": "**お[名前](なまえ)**を[教](おし)えてください。",
+    "vi": "Xin hãy cho tôi biết tên của bạn."
+   }
+  ]
  },
  {
   "word": "はい",
   "reading": "はい",
   "meaning": "vâng, dạ",
   "example": "**はい**、[学生](がくせい)です。",
-  "exampleVi": "Vâng, tôi là học sinh."
+  "exampleVi": "Vâng, tôi là học sinh.",
+  "examples": [
+   {
+    "ja": "**はい**、[学生](がくせい)です。",
+    "vi": "Vâng, tôi là học sinh."
+   },
+   {
+    "ja": "A：[学生](がくせい)ですか。B：**はい**、[学生](がくせい)です。",
+    "vi": "A: Bạn là học sinh à?  B: Vâng, tôi là học sinh."
+   }
+  ]
  },
  {
   "word": "ええ",
   "reading": "ええ",
   "meaning": "vâng, dạ",
   "example": "**ええ**、そうです。",
-  "exampleVi": "Vâng, đúng vậy."
+  "exampleVi": "Vâng, đúng vậy.",
+  "examples": [
+   {
+    "ja": "**ええ**、そうです。",
+    "vi": "Vâng, đúng vậy."
+   },
+   {
+    "ja": "A：いっしょに[食](た)べませんか。B：**ええ**、[食](た)べましょう。",
+    "vi": "A: Bạn ăn cùng tôi nhé?  B: Vâng, cùng ăn nào."
+   }
+  ]
  },
  {
   "word": "いいえ",
   "reading": "いいえ",
   "meaning": "không",
   "example": "**いいえ**、[私](わたし)は[先生](せんせい)じゃありません。",
-  "exampleVi": "Không, tôi không phải là giáo viên."
+  "exampleVi": "Không, tôi không phải là giáo viên.",
+  "examples": [
+   {
+    "ja": "**いいえ**、[私](わたし)は[先生](せんせい)じゃありません。",
+    "vi": "Không, tôi không phải là giáo viên."
+   },
+   {
+    "ja": "A：[先生](せんせい)ですか。B：**いいえ**、[先生](せんせい)じゃありません。",
+    "vi": "A: Bạn là giáo viên à?  B: Không, tôi không phải giáo viên."
+   }
+  ]
  },
  {
   "word": "そうです",
   "reading": "そうです",
   "meaning": "đúng vậy",
   "example": "はい、**そうです**。",
-  "exampleVi": "Vâng, đúng vậy."
+  "exampleVi": "Vâng, đúng vậy.",
+  "examples": [
+   {
+    "ja": "はい、**そうです**。",
+    "vi": "Vâng, đúng vậy."
+   },
+   {
+    "ja": "A：[学生](がくせい)ですか。B：はい、**そうです**。",
+    "vi": "A: Bạn là học sinh à? B: Vâng, đúng vậy."
+   }
+  ]
  },
  {
   "word": "ちがいます",
   "reading": "ちがいます",
   "meaning": "không phải",
   "example": "いいえ、**ちがいます**。",
-  "exampleVi": "Không, không phải."
+  "exampleVi": "Không, không phải.",
+  "examples": [
+   {
+    "ja": "いいえ、**ちがいます**。",
+    "vi": "Không, không phải."
+   },
+   {
+    "ja": "わたしの[答](こた)えは、[先生](せんせい)の[答](こた)えと**ちがいます**。",
+    "vi": "Câu trả lời của tôi khác với câu trả lời của thầy giáo."
+   }
+  ]
  },
  {
   "word": "おはよう",
   "reading": "おはよう",
   "meaning": "Chào. (buổi sáng)",
   "example": "**おはよう**。[今日](きょう)は[天気](てんき)がいいですね。",
-  "exampleVi": "Chào buổi sáng. Hôm nay trời đẹp nhỉ."
+  "exampleVi": "Chào buổi sáng. Hôm nay trời đẹp nhỉ.",
+  "examples": [
+   {
+    "ja": "**おはよう**。[今日](きょう)は[天気](てんき)がいいですね。",
+    "vi": "Chào buổi sáng. Hôm nay trời đẹp nhỉ."
+   },
+   {
+    "ja": "**おはよう**。[元気](げんき)？",
+    "vi": "Chào buổi sáng. Khỏe không?"
+   }
+  ]
  },
  {
   "word": "おはようございます",
   "reading": "おはようございます",
   "meaning": "Xin chào. (buổi sáng)",
   "example": "**おはようございます**、[先生](せんせい)。",
-  "exampleVi": "Chào buổi sáng, thầy/cô ạ."
+  "exampleVi": "Chào buổi sáng, thầy/cô ạ.",
+  "examples": [
+   {
+    "ja": "**おはようございます**、[先生](せんせい)。",
+    "vi": "Chào buổi sáng, thầy/cô ạ."
+   },
+   {
+    "ja": "**おはようございます**。[今日](きょう)もいい[天気](てんき)ですね。",
+    "vi": "Chào buổi sáng. Hôm nay trời cũng đẹp nhỉ."
+   }
+  ]
  },
  {
   "word": "こんにちは",
   "reading": "こんにちは",
   "meaning": "Xin chào. (buổi trưa)",
   "example": "**こんにちは**、[田中](たなか)さん。",
-  "exampleVi": "Xin chào, anh/chị Tanaka."
+  "exampleVi": "Xin chào, anh/chị Tanaka.",
+  "examples": [
+   {
+    "ja": "**こんにちは**、[田中](たなか)さん。",
+    "vi": "Xin chào, anh/chị Tanaka."
+   },
+   {
+    "ja": "**こんにちは**。[今日](きょう)は[暑](あつ)いですね。",
+    "vi": "Xin chào. Hôm nay nóng nhỉ."
+   }
+  ]
  },
  {
   "word": "こんばんは",
   "reading": "こんばんは",
   "meaning": "Xin chào. (buổi tối)",
   "example": "**こんばんは**。いい[天気](てんき)ですね。",
-  "exampleVi": "Chào buổi tối. Trời đẹp nhỉ."
+  "exampleVi": "Chào buổi tối. Trời đẹp nhỉ.",
+  "examples": [
+   {
+    "ja": "**こんばんは**。いい[天気](てんき)ですね。",
+    "vi": "Chào buổi tối. Trời đẹp nhỉ."
+   },
+   {
+    "ja": "**こんばんは**。[遅](おそ)くまでお[疲](つか)れさまです。",
+    "vi": "Chào buổi tối. Bạn làm việc vất vả đến khuya nhỉ."
+   }
+  ]
  },
  {
   "word": "さようなら",
   "reading": "さようなら",
   "meaning": "Tạm biệt.",
   "example": "[先生](せんせい)、**さようなら**。",
-  "exampleVi": "Chào thầy/cô ạ (tạm biệt)."
+  "exampleVi": "Chào thầy/cô ạ (tạm biệt).",
+  "examples": [
+   {
+    "ja": "[先生](せんせい)、**さようなら**。",
+    "vi": "Chào thầy/cô ạ (tạm biệt)."
+   },
+   {
+    "ja": "**さようなら**。また[来週](らいしゅう)。",
+    "vi": "Tạm biệt. Hẹn gặp lại tuần sau."
+   }
+  ]
  },
  {
   "word": "じゃまた",
   "reading": "じゃまた",
   "meaning": "Vậy nhé, gặp lại sau.",
   "example": "**じゃまた**、[明日](あした)。",
-  "exampleVi": "Vậy nhé, mai gặp lại."
+  "exampleVi": "Vậy nhé, mai gặp lại.",
+  "examples": [
+   {
+    "ja": "**じゃまた**、[明日](あした)。",
+    "vi": "Vậy nhé, mai gặp lại."
+   },
+   {
+    "ja": "**じゃまた**、[来週](らいしゅう)。",
+    "vi": "Vậy nhé, hẹn gặp lại tuần sau."
+   }
+  ]
  },
  {
   "word": "おやすみなさい",
   "reading": "おやすみなさい",
   "meaning": "Chúc ngủ ngon.",
   "example": "**おやすみなさい**。また[明日](あした)。",
-  "exampleVi": "Chúc ngủ ngon. Hẹn mai gặp lại."
+  "exampleVi": "Chúc ngủ ngon. Hẹn mai gặp lại.",
+  "examples": [
+   {
+    "ja": "**おやすみなさい**。また[明日](あした)。",
+    "vi": "Chúc ngủ ngon. Hẹn mai gặp lại."
+   },
+   {
+    "ja": "[先生](せんせい)、**おやすみなさい**。",
+    "vi": "Thầy/cô, chúc thầy/cô ngủ ngon."
+   }
+  ]
  },
  {
   "word": "ありがとう",
   "reading": "ありがとう",
   "meaning": "Cám ơn.",
   "example": "A：これ、どうぞ。B：**ありがとう**。",
-  "exampleVi": "A: Cái này, xin mời.  B: Cảm ơn."
+  "exampleVi": "A: Cái này, xin mời.  B: Cảm ơn.",
+  "examples": [
+   {
+    "ja": "A：これ、どうぞ。B：**ありがとう**。",
+    "vi": "A: Cái này, xin mời.  B: Cảm ơn."
+   },
+   {
+    "ja": "[手伝](てつだ)ってくれて、**ありがとう**。",
+    "vi": "Cảm ơn vì đã giúp tôi."
+   }
+  ]
  },
  {
   "word": "どういたしまして",
   "reading": "どういたしまして",
   "meaning": "Không có chi.",
   "example": "A：ありがとうございます。B：**どういたしまして**。",
-  "exampleVi": "A: Cảm ơn bạn.  B: Không có chi."
+  "exampleVi": "A: Cảm ơn bạn.  B: Không có chi.",
+  "examples": [
+   {
+    "ja": "A：ありがとうございます。B：**どういたしまして**。",
+    "vi": "A: Cảm ơn bạn.  B: Không có chi."
+   },
+   {
+    "ja": "A：[手伝](てつだ)ってくれて、ありがとう。B：**どういたしまして**。",
+    "vi": "A: Cảm ơn vì đã giúp tớ. B: Không có chi."
+   }
+  ]
  },
  {
   "word": "ありがとうございます",
   "reading": "ありがとうございます",
   "meaning": "Xin cám ơn.",
   "example": "A：これ、どうぞ。B：**ありがとうございます**。",
-  "exampleVi": "A: Cái này, xin mời.  B: Xin cảm ơn."
+  "exampleVi": "A: Cái này, xin mời.  B: Xin cảm ơn.",
+  "examples": [
+   {
+    "ja": "A：これ、どうぞ。B：**ありがとうございます**。",
+    "vi": "A: Cái này, xin mời.  B: Xin cảm ơn."
+   },
+   {
+    "ja": "[先生](せんせい)、**ありがとうございます**。",
+    "vi": "Cảm ơn thầy/cô ạ."
+   }
+  ]
  },
  {
   "word": "どうぞ",
   "reading": "どうぞ",
   "meaning": "Xin mời.",
   "example": "A：お[茶](ちゃ)を**どうぞ**。B：ありがとうございます。",
-  "exampleVi": "A: Mời bạn uống trà.  B: Xin cảm ơn."
+  "exampleVi": "A: Mời bạn uống trà.  B: Xin cảm ơn.",
+  "examples": [
+   {
+    "ja": "A：お[茶](ちゃ)を**どうぞ**。B：ありがとうございます。",
+    "vi": "A: Mời bạn uống trà.  B: Xin cảm ơn."
+   },
+   {
+    "ja": "**どうぞ**、[座](すわ)ってください。",
+    "vi": "Xin mời, hãy ngồi xuống."
+   }
+  ]
  },
  {
   "word": "どうも",
   "reading": "どうも",
   "meaning": "Cám ơn.",
   "example": "A：これ、どうぞ。B：**どうも**。",
-  "exampleVi": "A: Cái này, xin mời.  B: Cảm ơn."
+  "exampleVi": "A: Cái này, xin mời.  B: Cảm ơn.",
+  "examples": [
+   {
+    "ja": "A：これ、どうぞ。B：**どうも**。",
+    "vi": "A: Cái này, xin mời.  B: Cảm ơn."
+   },
+   {
+    "ja": "[手伝](てつだ)ってくれて、**どうも**。",
+    "vi": "Cảm ơn vì đã giúp nhé."
+   }
+  ]
  },
  {
   "word": "初めまして",
   "reading": "はじめまして",
   "meaning": "Xin chào. (dùng khi lần đầu tiên gặp mặt)",
   "example": "**はじめまして**。[私](わたし)はアンです。",
-  "exampleVi": "Xin chào (lần đầu gặp). Tôi là An."
+  "exampleVi": "Xin chào (lần đầu gặp). Tôi là An.",
+  "examples": [
+   {
+    "ja": "**はじめまして**。[私](わたし)はアンです。",
+    "vi": "Xin chào (lần đầu gặp). Tôi là An."
+   },
+   {
+    "ja": "**はじめまして**。[山田](やまだ)です。",
+    "vi": "Xin chào (lần đầu gặp). Tôi là Yamada."
+   }
+  ]
  },
  {
   "word": "どうぞよろしく",
   "reading": "どうぞよろしく",
   "meaning": "Xin vui lòng giúp đỡ.",
   "example": "ベトナムから[来](き)ました。**どうぞよろしく**。",
-  "exampleVi": "Tôi đến từ Việt Nam. Xin được giúp đỡ."
+  "exampleVi": "Tôi đến từ Việt Nam. Xin được giúp đỡ.",
+  "examples": [
+   {
+    "ja": "ベトナムから[来](き)ました。**どうぞよろしく**。",
+    "vi": "Tôi đến từ Việt Nam. Xin được giúp đỡ."
+   },
+   {
+    "ja": "[日本語](にほんご)はまだ[下手](へた)です。**どうぞよろしく**。",
+    "vi": "Tiếng Nhật tôi còn kém. Xin được giúp đỡ."
+   }
+  ]
  },
  {
   "word": "こちらこそ",
   "reading": "こちらこそ",
   "meaning": "Tôi mới phải nhờ. / Tôi mới phải cám ơn./ Tôi mới phải xin lỗi.",
   "example": "A：どうぞよろしく。B：**こちらこそ**。",
-  "exampleVi": "A: Xin được giúp đỡ.  B: Tôi mới là người nhờ bạn giúp."
+  "exampleVi": "A: Xin được giúp đỡ.  B: Tôi mới là người nhờ bạn giúp.",
+  "examples": [
+   {
+    "ja": "A：どうぞよろしく。B：**こちらこそ**。",
+    "vi": "A: Xin được giúp đỡ.  B: Tôi mới là người nhờ bạn giúp."
+   },
+   {
+    "ja": "A：ありがとうございます。B：**こちらこそ**。",
+    "vi": "A: Cảm ơn bạn. B: Tôi mới là người phải cảm ơn."
+   }
+  ]
  },
  {
   "word": "家族",
   "reading": "かぞく",
   "meaning": "gia đình",
   "example": "**[家族](かぞく)**は[七](しち)[人](にん)です。",
-  "exampleVi": "Gia đình (tôi) có 7 người."
+  "exampleVi": "Gia đình (tôi) có 7 người.",
+  "examples": [
+   {
+    "ja": "**[家族](かぞく)**は[七](しち)[人](にん)です。",
+    "vi": "Gia đình (tôi) có 7 người."
+   },
+   {
+    "ja": "**[家族](かぞく)**と[国](くに)へ[帰](かえ)ります。",
+    "vi": "Tôi về nước cùng gia đình."
+   }
+  ]
  },
  {
   "word": "両親",
   "reading": "りょうしん",
   "meaning": "cha mẹ, song thân",
   "example": "**[両親](りょうしん)**は[日本](にほん)にいます。",
-  "exampleVi": "Bố mẹ tôi ở Nhật Bản."
+  "exampleVi": "Bố mẹ tôi ở Nhật Bản.",
+  "examples": [
+   {
+    "ja": "**[両親](りょうしん)**は[日本](にほん)にいます。",
+    "vi": "Bố mẹ tôi ở Nhật Bản."
+   },
+   {
+    "ja": "**[両親](りょうしん)**は[国](くに)にいます。",
+    "vi": "Bố mẹ tôi ở quê nhà."
+   }
+  ]
  },
  {
   "word": "父",
   "reading": "ちち",
   "meaning": "cha (tôi), người cha",
   "example": "**[父](ちち)**は[先生](せんせい)です。",
-  "exampleVi": "Bố tôi là giáo viên."
+  "exampleVi": "Bố tôi là giáo viên.",
+  "examples": [
+   {
+    "ja": "**[父](ちち)**は[先生](せんせい)です。",
+    "vi": "Bố tôi là giáo viên."
+   },
+   {
+    "ja": "**[父](ちち)**は[会社](かいしゃ)ではたらいています。",
+    "vi": "Bố tôi đang làm việc ở công ty."
+   }
+  ]
  },
  {
   "word": "母",
   "reading": "はは",
   "meaning": "mẹ (tôi), người mẹ",
   "example": "**[母](はは)**は[家](いえ)にいます。",
-  "exampleVi": "Mẹ tôi ở nhà."
+  "exampleVi": "Mẹ tôi ở nhà.",
+  "examples": [
+   {
+    "ja": "**[母](はは)**は[家](いえ)にいます。",
+    "vi": "Mẹ tôi ở nhà."
+   },
+   {
+    "ja": "**[母](はは)**は、りょうりが[上手](じょうず)です。",
+    "vi": "Mẹ tôi nấu ăn giỏi."
+   }
+  ]
  },
  {
   "word": "姉",
   "reading": "あね",
   "meaning": "chị (tôi), người chị",
   "example": "**[姉](あね)**は[大学生](だいがくせい)です。",
-  "exampleVi": "Chị gái tôi là sinh viên đại học."
+  "exampleVi": "Chị gái tôi là sinh viên đại học.",
+  "examples": [
+   {
+    "ja": "**[姉](あね)**は[大学生](だいがくせい)です。",
+    "vi": "Chị gái tôi là sinh viên đại học."
+   },
+   {
+    "ja": "**[姉](あね)**は[医者](いしゃ)です。",
+    "vi": "Chị gái tôi là bác sĩ."
+   }
+  ]
  },
  {
   "word": "兄",
   "reading": "あに",
   "meaning": "anh (tôi), người anh",
   "example": "**[兄](あに)**は[車](くるま)が[好](す)きです。",
-  "exampleVi": "Anh trai tôi thích xe hơi."
+  "exampleVi": "Anh trai tôi thích xe hơi.",
+  "examples": [
+   {
+    "ja": "**[兄](あに)**は[車](くるま)が[好](す)きです。",
+    "vi": "Anh trai tôi thích xe hơi."
+   },
+   {
+    "ja": "**[兄](あに)**は[大学生](だいがくせい)です。",
+    "vi": "Anh trai tôi là sinh viên đại học."
+   }
+  ]
  },
  {
   "word": "弟",
   "reading": "おとうと",
   "meaning": "em trai (tôi), người em trai",
   "example": "**[弟](おとうと)**は[学生](がくせい)です。",
-  "exampleVi": "Em trai tôi là học sinh."
+  "exampleVi": "Em trai tôi là học sinh.",
+  "examples": [
+   {
+    "ja": "**[弟](おとうと)**は[学生](がくせい)です。",
+    "vi": "Em trai tôi là học sinh."
+   },
+   {
+    "ja": "[私](わたし)の**[弟](おとうと)**は[中学生](ちゅうがくせい)です。",
+    "vi": "Em trai tôi là học sinh cấp hai."
+   }
+  ]
  },
  {
   "word": "妹",
   "reading": "いもうと",
   "meaning": "em gái (tôi), người em gái",
   "example": "**[妹](いもうと)**は[犬](いぬ)が[好](す)きです。",
-  "exampleVi": "Em gái tôi thích chó."
+  "exampleVi": "Em gái tôi thích chó.",
+  "examples": [
+   {
+    "ja": "**[妹](いもうと)**は[犬](いぬ)が[好](す)きです。",
+    "vi": "Em gái tôi thích chó."
+   },
+   {
+    "ja": "**[妹](いもうと)**は[日本](にほん)にいます。",
+    "vi": "Em gái tôi ở Nhật."
+   }
+  ]
  },
  {
   "word": "兄弟",
   "reading": "きょうだい",
   "meaning": "anh chị em",
   "example": "**[兄弟](きょうだい)**は[二人](ふたり)です。",
-  "exampleVi": "Tôi có hai anh chị em."
+  "exampleVi": "Tôi có hai anh chị em.",
+  "examples": [
+   {
+    "ja": "**[兄弟](きょうだい)**は[二人](ふたり)です。",
+    "vi": "Tôi có hai anh chị em."
+   },
+   {
+    "ja": "ミラーさんは**[兄弟](きょうだい)**が[三人](さんにん)います。",
+    "vi": "Anh Miller có ba anh chị em."
+   }
+  ]
  },
  {
   "word": "犬",
   "reading": "いぬ",
   "meaning": "con chó",
   "example": "[私](わたし)の[家](うち)に**[犬](いぬ)**がいます。",
-  "exampleVi": "Nhà tôi có con chó."
+  "exampleVi": "Nhà tôi có con chó.",
+  "examples": [
+   {
+    "ja": "[私](わたし)の[家](うち)に**[犬](いぬ)**がいます。",
+    "vi": "Nhà tôi có con chó."
+   },
+   {
+    "ja": "わたしの[家](いえ)には、**[犬](いぬ)**がいます。",
+    "vi": "Nhà tôi có nuôi một con chó."
+   }
+  ]
  },
  {
   "word": "ねこ",
   "reading": "ねこ",
   "meaning": "con mèo",
   "example": "あの**ねこ**は[白](しろ)いです。",
-  "exampleVi": "Con mèo kia màu trắng."
+  "exampleVi": "Con mèo kia màu trắng.",
+  "examples": [
+   {
+    "ja": "あの**ねこ**は[白](しろ)いです。",
+    "vi": "Con mèo kia màu trắng."
+   },
+   {
+    "ja": "[机](つくえ)の[下](した)に**ねこ**がいます。",
+    "vi": "Dưới bàn có một con mèo."
+   }
+  ]
  },
  {
   "word": "いる",
   "reading": "いる",
   "meaning": "có, ở",
   "example": "あそこに[子供](こども)が**います**。",
-  "exampleVi": "Ở đằng kia có đứa trẻ."
+  "exampleVi": "Ở đằng kia có đứa trẻ.",
+  "examples": [
+   {
+    "ja": "あそこに[子供](こども)が**います**。",
+    "vi": "Ở đằng kia có đứa trẻ."
+   },
+   {
+    "ja": "[教室](きょうしつ)に[学生](がくせい)が**います**。",
+    "vi": "Trong lớp học có học sinh."
+   }
+  ]
  },
  {
   "word": "家",
   "reading": "うち",
   "meaning": "nhà",
   "example": "**[家](うち)**にねこがいます。",
-  "exampleVi": "Nhà tôi có con mèo."
+  "exampleVi": "Nhà tôi có con mèo.",
+  "examples": [
+   {
+    "ja": "**[家](うち)**にねこがいます。",
+    "vi": "Nhà tôi có con mèo."
+   },
+   {
+    "ja": "[私](わたし)の**[家](うち)**はあそこです。",
+    "vi": "Nhà của tôi ở đằng kia."
+   }
+  ]
  },
  {
   "word": "お祖父さん",
   "reading": "おじいさん",
   "meaning": "ông (nội, ngoại), ông cụ",
   "example": "**おじいさん**は[元気](げんき)です。",
-  "exampleVi": "Ông khỏe mạnh."
+  "exampleVi": "Ông khỏe mạnh.",
+  "examples": [
+   {
+    "ja": "**おじいさん**は[元気](げんき)です。",
+    "vi": "Ông khỏe mạnh."
+   },
+   {
+    "ja": "**おじいさん**は[毎日](まいにち)[散歩](さんぽ)をします。",
+    "vi": "Ông tôi ngày nào cũng đi dạo."
+   }
+  ]
  },
  {
   "word": "お祖母さん",
   "reading": "おばあさん",
   "meaning": "bà (nội, ngoại), bà cụ",
   "example": "**おばあさん**は[家](うち)にいます。",
-  "exampleVi": "Bà đang ở nhà."
+  "exampleVi": "Bà đang ở nhà.",
+  "examples": [
+   {
+    "ja": "**おばあさん**は[家](うち)にいます。",
+    "vi": "Bà đang ở nhà."
+   },
+   {
+    "ja": "**おばあさん**は[私](わたし)に[手紙](てがみ)を[書](か)きました。",
+    "vi": "Bà đã viết thư cho tôi."
+   }
+  ]
  },
  {
   "word": "ご両親",
   "reading": "ごりょうしん",
   "meaning": "cha mẹ (của người khác)",
   "example": "**ご[両親](りょうしん)**はお[元気](げんき)ですか。",
-  "exampleVi": "Bố mẹ bạn có khỏe không?"
+  "exampleVi": "Bố mẹ bạn có khỏe không?",
+  "examples": [
+   {
+    "ja": "**ご[両親](りょうしん)**はお[元気](げんき)ですか。",
+    "vi": "Bố mẹ bạn có khỏe không?"
+   },
+   {
+    "ja": "[山田](やまだ)さんの**ご[両親](りょうしん)**は[日本](にほん)にいます。",
+    "vi": "Bố mẹ của anh Yamada ở Nhật Bản."
+   }
+  ]
  },
  {
   "word": "お父さん",
   "reading": "おとうさん",
   "meaning": "bố, người cha (của người khác)",
   "example": "**お[父](とう)さん**は[先生](せんせい)ですか。",
-  "exampleVi": "Bố bạn là giáo viên phải không?"
+  "exampleVi": "Bố bạn là giáo viên phải không?",
+  "examples": [
+   {
+    "ja": "**お[父](とう)さん**は[先生](せんせい)ですか。",
+    "vi": "Bố bạn là giáo viên phải không?"
+   },
+   {
+    "ja": "[田中](たなか)さんの**お[父](とう)さん**は、[先生](せんせい)です。",
+    "vi": "Bố của anh Tanaka là giáo viên."
+   }
+  ]
  },
  {
   "word": "お母さん",
   "reading": "おかあさん",
   "meaning": "mẹ, người mẹ (của người khác)",
   "example": "**お[母](かあ)さん**は[家](うち)にいますか。",
-  "exampleVi": "Mẹ bạn có ở nhà không?"
+  "exampleVi": "Mẹ bạn có ở nhà không?",
+  "examples": [
+   {
+    "ja": "**お[母](かあ)さん**は[家](うち)にいますか。",
+    "vi": "Mẹ bạn có ở nhà không?"
+   },
+   {
+    "ja": "**お[母](かあ)さん**、おなかがすきました。",
+    "vi": "Mẹ ơi, con đói bụng rồi."
+   }
+  ]
  },
  {
   "word": "お姉さん",
   "reading": "おねえさん",
   "meaning": "chị gái (của người khác)",
   "example": "**お[姉](ねえ)さん**は[学生](がくせい)ですか。",
-  "exampleVi": "Chị gái bạn là sinh viên phải không?"
+  "exampleVi": "Chị gái bạn là sinh viên phải không?",
+  "examples": [
+   {
+    "ja": "**お[姉](ねえ)さん**は[学生](がくせい)ですか。",
+    "vi": "Chị gái bạn là sinh viên phải không?"
+   },
+   {
+    "ja": "[田中](たなか)さんの**お[姉](ねえ)さん**は[会社員](かいしゃいん)です。",
+    "vi": "Chị gái của anh Tanaka là nhân viên công ty."
+   }
+  ]
  },
  {
   "word": "お兄さん",
   "reading": "おにいさん",
   "meaning": "anh trai (của người khác)",
   "example": "**お[兄](にい)さん**は[車](くるま)が[好](す)きですか。",
-  "exampleVi": "Anh trai bạn có thích xe hơi không?"
+  "exampleVi": "Anh trai bạn có thích xe hơi không?",
+  "examples": [
+   {
+    "ja": "**お[兄](にい)さん**は[車](くるま)が[好](す)きですか。",
+    "vi": "Anh trai bạn có thích xe hơi không?"
+   },
+   {
+    "ja": "ミラーさんの**お[兄](にい)さん**は[先生](せんせい)です。",
+    "vi": "Anh trai của anh Miller là giáo viên."
+   }
+  ]
  },
  {
   "word": "弟さん",
   "reading": "おとうとさん",
   "meaning": "em trai (của người khác)",
   "example": "**[弟](おとうと)さん**はお[元気](げんき)ですか。",
-  "exampleVi": "Em trai bạn có khỏe không?"
+  "exampleVi": "Em trai bạn có khỏe không?",
+  "examples": [
+   {
+    "ja": "**[弟](おとうと)さん**はお[元気](げんき)ですか。",
+    "vi": "Em trai bạn có khỏe không?"
+   },
+   {
+    "ja": "**[弟](おとうと)さん**はなんさいですか。",
+    "vi": "Em trai của bạn mấy tuổi?"
+   }
+  ]
  },
  {
   "word": "妹さん",
   "reading": "いもうとさん",
   "meaning": "em gái (của người khác)",
   "example": "**[妹](いもうと)さん**は[犬](いぬ)が[好](す)きですか。",
-  "exampleVi": "Em gái bạn có thích chó không?"
+  "exampleVi": "Em gái bạn có thích chó không?",
+  "examples": [
+   {
+    "ja": "**[妹](いもうと)さん**は[犬](いぬ)が[好](す)きですか。",
+    "vi": "Em gái bạn có thích chó không?"
+   },
+   {
+    "ja": "**[妹](いもうと)さん**は[元気](げんき)ですか。",
+    "vi": "Em gái của bạn có khỏe không?"
+   }
+  ]
  },
  {
   "word": "一人",
   "reading": "ひとり",
   "meaning": "một người",
   "example": "[私](わたし)は**[一人](ひとり)**で[来](き)ました。",
-  "exampleVi": "Tôi đã đến một mình."
+  "exampleVi": "Tôi đã đến một mình.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は**[一人](ひとり)**で[来](き)ました。",
+    "vi": "Tôi đã đến một mình."
+   },
+   {
+    "ja": "わたしは**[一人](ひとり)**ですんでいます。",
+    "vi": "Tôi sống một mình."
+   }
+  ]
  },
  {
   "word": "二人",
   "reading": "ふたり",
   "meaning": "hai người",
   "example": "**[二人](ふたり)**で[行](い)きます。",
-  "exampleVi": "Hai người cùng đi."
+  "exampleVi": "Hai người cùng đi.",
+  "examples": [
+   {
+    "ja": "**[二人](ふたり)**で[行](い)きます。",
+    "vi": "Hai người cùng đi."
+   },
+   {
+    "ja": "[兄弟](きょうだい)が**[二人](ふたり)**います。",
+    "vi": "Tôi có hai anh chị em."
+   }
+  ]
  },
  {
   "word": "三人",
   "reading": "さんにん",
   "meaning": "ba người",
   "example": "[家族](かぞく)は**[三人](さんにん)**です。",
-  "exampleVi": "Gia đình tôi có ba người."
+  "exampleVi": "Gia đình tôi có ba người.",
+  "examples": [
+   {
+    "ja": "[家族](かぞく)は**[三人](さんにん)**です。",
+    "vi": "Gia đình tôi có ba người."
+   },
+   {
+    "ja": "[兄弟](きょうだい)は**[三人](さんにん)**います。",
+    "vi": "Tôi có ba anh chị em."
+   }
+  ]
  },
  {
   "word": "四人",
   "reading": "よにん",
   "meaning": "bốn người",
   "example": "[家族](かぞく)は**[四人](よにん)**です。",
-  "exampleVi": "Gia đình tôi có bốn người."
+  "exampleVi": "Gia đình tôi có bốn người.",
+  "examples": [
+   {
+    "ja": "[家族](かぞく)は**[四人](よにん)**です。",
+    "vi": "Gia đình tôi có bốn người."
+   },
+   {
+    "ja": "わたしのかぞくは**[四人](よにん)**です。",
+    "vi": "Gia đình tôi có bốn người."
+   }
+  ]
  },
  {
   "word": "五人",
   "reading": "ごにん",
   "meaning": "năm người",
   "example": "**[五人](ごにん)**で[食](た)べます。",
-  "exampleVi": "Năm người cùng ăn."
+  "exampleVi": "Năm người cùng ăn.",
+  "examples": [
+   {
+    "ja": "**[五人](ごにん)**で[食](た)べます。",
+    "vi": "Năm người cùng ăn."
+   },
+   {
+    "ja": "[友達](ともだち)が**[五人](ごにん)**います。",
+    "vi": "Tôi có năm người bạn."
+   }
+  ]
  },
  {
   "word": "六人",
   "reading": "ろくにん",
   "meaning": "sáu người",
   "example": "**[六人](ろくにん)**で[行](い)きます。",
-  "exampleVi": "Sáu người cùng đi."
+  "exampleVi": "Sáu người cùng đi.",
+  "examples": [
+   {
+    "ja": "**[六人](ろくにん)**で[行](い)きます。",
+    "vi": "Sáu người cùng đi."
+   },
+   {
+    "ja": "[教室](きょうしつ)に[学生](がくせい)が**[六人](ろくにん)**います。",
+    "vi": "Trong lớp có sáu học sinh."
+   }
+  ]
  },
  {
   "word": "七人",
   "reading": "ななにん",
   "meaning": "bảy người",
   "example": "**[七人](ななにん)**の[家族](かぞく)です。",
-  "exampleVi": "Đó là gia đình bảy người."
+  "exampleVi": "Đó là gia đình bảy người.",
+  "examples": [
+   {
+    "ja": "**[七人](ななにん)**の[家族](かぞく)です。",
+    "vi": "Đó là gia đình bảy người."
+   },
+   {
+    "ja": "[会社](かいしゃ)に**[七人](ななにん)**います。",
+    "vi": "Ở công ty có bảy người."
+   }
+  ]
  },
  {
   "word": "八人",
   "reading": "はちにん",
   "meaning": "tám người",
   "example": "**[八人](はちにん)**で[来](き)ました。",
-  "exampleVi": "Chúng tôi đã đến tám người."
+  "exampleVi": "Chúng tôi đã đến tám người.",
+  "examples": [
+   {
+    "ja": "**[八人](はちにん)**で[来](き)ました。",
+    "vi": "Chúng tôi đã đến tám người."
+   },
+   {
+    "ja": "**[八人](はちにん)**でご[飯](はん)を[食](た)べます。",
+    "vi": "Tám người cùng ăn cơm."
+   }
+  ]
  },
  {
   "word": "九人",
   "reading": "きゅうにん",
   "meaning": "chín người",
   "example": "[学生](がくせい)が**[九人](きゅうにん)**います。",
-  "exampleVi": "Có chín học sinh."
+  "exampleVi": "Có chín học sinh.",
+  "examples": [
+   {
+    "ja": "[学生](がくせい)が**[九人](きゅうにん)**います。",
+    "vi": "Có chín học sinh."
+   },
+   {
+    "ja": "**[九人](きゅうにん)**の[先生](せんせい)がいます。",
+    "vi": "Có chín giáo viên."
+   }
+  ]
  },
  {
   "word": "十人",
   "reading": "じゅうにん",
   "meaning": "mười người",
   "example": "[友達](ともだち)が**[十人](じゅうにん)**[来](き)ました。",
-  "exampleVi": "Mười người bạn đã đến."
+  "exampleVi": "Mười người bạn đã đến.",
+  "examples": [
+   {
+    "ja": "[友達](ともだち)が**[十人](じゅうにん)**[来](き)ました。",
+    "vi": "Mười người bạn đã đến."
+   },
+   {
+    "ja": "**[十人](じゅうにん)**で[旅行](りょこう)に[行](い)きました。",
+    "vi": "Mười người đã đi du lịch cùng nhau."
+   }
+  ]
  },
  {
   "word": "何人",
   "reading": "なんにん",
   "meaning": "mấy người, bao nhiêu người",
   "example": "**[何人](なんにん)**ですか。",
-  "exampleVi": "Bao nhiêu người?"
+  "exampleVi": "Bao nhiêu người?",
+  "examples": [
+   {
+    "ja": "**[何人](なんにん)**ですか。",
+    "vi": "Bao nhiêu người?"
+   },
+   {
+    "ja": "ごかぞくは**[何人](なんにん)**ですか。",
+    "vi": "Gia đình bạn có mấy người?"
+   }
+  ]
  },
  {
   "word": "大人",
   "reading": "おとな",
   "meaning": "người lớn",
   "example": "**[大人](おとな)**は[三人](さんにん)です。",
-  "exampleVi": "Người lớn có ba người."
+  "exampleVi": "Người lớn có ba người.",
+  "examples": [
+   {
+    "ja": "**[大人](おとな)**は[三人](さんにん)です。",
+    "vi": "Người lớn có ba người."
+   },
+   {
+    "ja": "**[大人](おとな)**は、[二](に)[百](ひゃく)[円](えん)です。",
+    "vi": "Vé người lớn là 200 yên."
+   }
+  ]
  },
  {
   "word": "子供",
   "reading": "こども",
   "meaning": "trẻ em, trẻ con, con cái",
   "example": "**[子供](こども)**は[二人](ふたり)います。",
-  "exampleVi": "Tôi có hai đứa con."
+  "exampleVi": "Tôi có hai đứa con.",
+  "examples": [
+   {
+    "ja": "**[子供](こども)**は[二人](ふたり)います。",
+    "vi": "Tôi có hai đứa con."
+   },
+   {
+    "ja": "**[子供](こども)**はダンスが[好](す)きです。",
+    "vi": "Con tôi thích khiêu vũ."
+   }
+  ]
  },
  {
   "word": "男の人",
   "reading": "おとこのひと",
   "meaning": "người đàn ông",
   "example": "あの**[男](おとこ)の[人](ひと)**は[先生](せんせい)です。",
-  "exampleVi": "Người đàn ông kia là giáo viên."
+  "exampleVi": "Người đàn ông kia là giáo viên.",
+  "examples": [
+   {
+    "ja": "あの**[男](おとこ)の[人](ひと)**は[先生](せんせい)です。",
+    "vi": "Người đàn ông kia là giáo viên."
+   },
+   {
+    "ja": "あの**[男](おとこ)の[人](ひと)**は、[先生](せんせい)です。",
+    "vi": "Người đàn ông kia là thầy giáo."
+   }
+  ]
  },
  {
   "word": "女の人",
   "reading": "おんなのひと",
   "meaning": "người phụ nữ",
   "example": "あの**[女](おんな)の[人](ひと)**は[母](はは)です。",
-  "exampleVi": "Người phụ nữ kia là mẹ tôi."
+  "exampleVi": "Người phụ nữ kia là mẹ tôi.",
+  "examples": [
+   {
+    "ja": "あの**[女](おんな)の[人](ひと)**は[母](はは)です。",
+    "vi": "Người phụ nữ kia là mẹ tôi."
+   },
+   {
+    "ja": "あの**[女](おんな)の[人](ひと)**は、[田中](たなか)さんです。",
+    "vi": "Người phụ nữ kia là chị Tanaka."
+   }
+  ]
  },
  {
   "word": "男の子",
   "reading": "おとこのこ",
   "meaning": "cậu bé, đứa bé trai",
   "example": "あの**[男](おとこ)の[子](こ)**は[弟](おとうと)です。",
-  "exampleVi": "Cậu bé kia là em trai tôi."
+  "exampleVi": "Cậu bé kia là em trai tôi.",
+  "examples": [
+   {
+    "ja": "あの**[男](おとこ)の[子](こ)**は[弟](おとうと)です。",
+    "vi": "Cậu bé kia là em trai tôi."
+   },
+   {
+    "ja": "あの**[男](おとこ)の[子](こ)**は、わたしの[弟](おとうと)です。",
+    "vi": "Cậu bé kia là em trai tôi."
+   }
+  ]
  },
  {
   "word": "女の子",
   "reading": "おんなのこ",
   "meaning": "cô bé, đứa bé gái",
   "example": "あの**[女](おんな)の[子](こ)**は[妹](いもうと)です。",
-  "exampleVi": "Cô bé kia là em gái tôi."
+  "exampleVi": "Cô bé kia là em gái tôi.",
+  "examples": [
+   {
+    "ja": "あの**[女](おんな)の[子](こ)**は[妹](いもうと)です。",
+    "vi": "Cô bé kia là em gái tôi."
+   },
+   {
+    "ja": "あの**[女](おんな)の[子](こ)**は、とてもかわいいです。",
+    "vi": "Cô bé kia rất dễ thương."
+   }
+  ]
  },
  {
   "word": "国",
   "reading": "くに",
   "meaning": "đất nước, nước",
   "example": "[私](わたし)の**[国](くに)**はマレーシアです。",
-  "exampleVi": "Nước của tôi là Malaysia."
+  "exampleVi": "Nước của tôi là Malaysia.",
+  "examples": [
+   {
+    "ja": "[私](わたし)の**[国](くに)**はマレーシアです。",
+    "vi": "Nước của tôi là Malaysia."
+   },
+   {
+    "ja": "わたしの**[国](くに)**は、とてもあついです。",
+    "vi": "Đất nước của tôi rất nóng."
+   }
+  ]
  },
  {
   "word": "ある",
   "reading": "ある",
   "meaning": "có, ở",
   "example": "テーブルの[上](うえ)に[本](ほん)が**あります**。",
-  "exampleVi": "Trên bàn có quyển sách."
+  "exampleVi": "Trên bàn có quyển sách.",
+  "examples": [
+   {
+    "ja": "テーブルの[上](うえ)に[本](ほん)が**あります**。",
+    "vi": "Trên bàn có quyển sách."
+   },
+   {
+    "ja": "[宿題](しゅくだい)が**あります**。",
+    "vi": "Tôi có bài tập về nhà."
+   }
+  ]
  },
  {
   "word": "どちら",
   "reading": "どちら",
   "meaning": "ở đâu, hướng nào",
   "example": "お[国](くに)は**どちら**ですか。",
-  "exampleVi": "Nước của bạn ở đâu?"
+  "exampleVi": "Nước của bạn ở đâu?",
+  "examples": [
+   {
+    "ja": "お[国](くに)は**どちら**ですか。",
+    "vi": "Nước của bạn ở đâu?"
+   },
+   {
+    "ja": "[会社](かいしゃ)は**どちら**ですか。",
+    "vi": "Công ty của anh/chị ở đâu ạ?"
+   }
+  ]
  },
  {
   "word": "から来ました",
   "reading": "からきました",
   "meaning": "đến từ ~",
   "example": "[私](わたし)はアメリカ**から[来](き)ました**。",
-  "exampleVi": "Tôi đến từ Mỹ."
+  "exampleVi": "Tôi đến từ Mỹ.",
+  "examples": [
+   {
+    "ja": "[私](わたし)はアメリカ**から[来](き)ました**。",
+    "vi": "Tôi đến từ Mỹ."
+   },
+   {
+    "ja": "[私](わたし)はベトナム**から[来](き)ました**。",
+    "vi": "Tôi đến từ Việt Nam."
+   }
+  ]
  },
  {
   "word": "人",
   "reading": "じん",
   "meaning": "người ~",
   "example": "[私](わたし)はイギリス**[人](じん)**です。",
-  "exampleVi": "Tôi là người Anh."
+  "exampleVi": "Tôi là người Anh.",
+  "examples": [
+   {
+    "ja": "[私](わたし)はイギリス**[人](じん)**です。",
+    "vi": "Tôi là người Anh."
+   },
+   {
+    "ja": "[山田](やまだ)さんは[日本](にほん)**[人](じん)**です。",
+    "vi": "Anh Yamada là người Nhật."
+   }
+  ]
  },
  {
   "word": "地図",
   "reading": "ちず",
   "meaning": "bản đồ",
   "example": "[日本](にほん)の**[地図](ちず)**はありますか。",
-  "exampleVi": "Bạn có bản đồ Nhật Bản không?"
+  "exampleVi": "Bạn có bản đồ Nhật Bản không?",
+  "examples": [
+   {
+    "ja": "[日本](にほん)の**[地図](ちず)**はありますか。",
+    "vi": "Bạn có bản đồ Nhật Bản không?"
+   },
+   {
+    "ja": "**[地図](ちず)**を[見](み)て、えきへ[行](い)きます。",
+    "vi": "Tôi xem bản đồ rồi đi đến nhà ga."
+   }
+  ]
  },
  {
   "word": "世界",
   "reading": "せかい",
   "meaning": "thế giới",
   "example": "**[世界](せかい)**の[地図](ちず)はありますか。",
-  "exampleVi": "Bạn có bản đồ thế giới không?"
+  "exampleVi": "Bạn có bản đồ thế giới không?",
+  "examples": [
+   {
+    "ja": "**[世界](せかい)**の[地図](ちず)はありますか。",
+    "vi": "Bạn có bản đồ thế giới không?"
+   },
+   {
+    "ja": "[富士山](ふじさん)は**[世界](せかい)**で[有名](ゆうめい)な[山](やま)です。",
+    "vi": "Núi Phú Sĩ là ngọn núi nổi tiếng trên thế giới."
+   }
+  ]
  },
  {
   "word": "日本",
   "reading": "にほん",
   "meaning": "Nhật Bản",
   "example": "[私](わたし)は**[日本](にほん)**へ[来](き)ました。",
-  "exampleVi": "Tôi đã đến Nhật Bản."
+  "exampleVi": "Tôi đã đến Nhật Bản.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は**[日本](にほん)**へ[来](き)ました。",
+    "vi": "Tôi đã đến Nhật Bản."
+   },
+   {
+    "ja": "[山田](やまだ)さんは**[日本](にほん)**[人](じん)です。",
+    "vi": "Anh Yamada là người Nhật."
+   }
+  ]
  },
  {
   "word": "インド",
   "reading": "インド",
   "meaning": "Ấn Độ",
   "example": "[私](わたし)は**インド**から[来](き)ました。",
-  "exampleVi": "Tôi đến từ Ấn Độ."
+  "exampleVi": "Tôi đến từ Ấn Độ.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は**インド**から[来](き)ました。",
+    "vi": "Tôi đến từ Ấn Độ."
+   },
+   {
+    "ja": "グプタさんは**インド**[人](じん)です。",
+    "vi": "Anh Gupta là người Ấn Độ."
+   }
+  ]
  },
  {
   "word": "インドネシア",
   "reading": "インドネシア",
   "meaning": "Indonesia",
   "example": "[友達](ともだち)は**インドネシア**の[人](ひと)です。",
-  "exampleVi": "Bạn của tôi là người Indonesia."
+  "exampleVi": "Bạn của tôi là người Indonesia.",
+  "examples": [
+   {
+    "ja": "[友達](ともだち)は**インドネシア**の[人](ひと)です。",
+    "vi": "Bạn của tôi là người Indonesia."
+   },
+   {
+    "ja": "[私](わたし)は**インドネシア**[人](じん)じゃありません。",
+    "vi": "Tôi không phải là người Indonesia."
+   }
+  ]
  },
  {
   "word": "かんこく",
   "reading": "かんこく",
   "meaning": "Hàn Quốc",
   "example": "**かんこく**の[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có người bạn ở Hàn Quốc."
+  "exampleVi": "Tôi có người bạn ở Hàn Quốc.",
+  "examples": [
+   {
+    "ja": "**かんこく**の[友達](ともだち)がいます。",
+    "vi": "Tôi có người bạn ở Hàn Quốc."
+   },
+   {
+    "ja": "キムさんは**かんこく**[人](じん)です。",
+    "vi": "Chị Kim là người Hàn Quốc."
+   }
+  ]
  },
  {
   "word": "タイ",
   "reading": "タイ",
   "meaning": "Thái Lan",
   "example": "**タイ**に[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có bạn ở Thái Lan."
+  "exampleVi": "Tôi có bạn ở Thái Lan.",
+  "examples": [
+   {
+    "ja": "**タイ**に[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Thái Lan."
+   },
+   {
+    "ja": "[私](わたし)は**タイ**の[大学](だいがく)の[学生](がくせい)です。",
+    "vi": "Tôi là sinh viên đại học ở Thái Lan."
+   }
+  ]
  },
  {
   "word": "たいわん",
   "reading": "たいわん",
   "meaning": "Đài Loan",
   "example": "**たいわん**の[友達](ともだち)が[来](き)ました。",
-  "exampleVi": "Người bạn ở Đài Loan đã đến."
+  "exampleVi": "Người bạn ở Đài Loan đã đến.",
+  "examples": [
+   {
+    "ja": "**たいわん**の[友達](ともだち)が[来](き)ました。",
+    "vi": "Người bạn ở Đài Loan đã đến."
+   },
+   {
+    "ja": "**たいわん**の[料理](りょうり)が[好](す)きです。",
+    "vi": "Tôi thích món ăn Đài Loan."
+   }
+  ]
  },
  {
   "word": "中国",
   "reading": "ちゅうごく",
   "meaning": "Trung Quốc",
   "example": "**[中国](ちゅうごく)**の[人](ひと)です。",
-  "exampleVi": "Tôi là người Trung Quốc."
+  "exampleVi": "Tôi là người Trung Quốc.",
+  "examples": [
+   {
+    "ja": "**[中国](ちゅうごく)**の[人](ひと)です。",
+    "vi": "Tôi là người Trung Quốc."
+   },
+   {
+    "ja": "ワンさんは**[中国](ちゅうごく)**[人](じん)です。",
+    "vi": "Anh Vương là người Trung Quốc."
+   }
+  ]
  },
  {
   "word": "ネパール",
   "reading": "ネパール",
   "meaning": "Nepal",
   "example": "**ネパール**の[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có người bạn ở Nepal."
+  "exampleVi": "Tôi có người bạn ở Nepal.",
+  "examples": [
+   {
+    "ja": "**ネパール**の[友達](ともだち)がいます。",
+    "vi": "Tôi có người bạn ở Nepal."
+   },
+   {
+    "ja": "**ネパール**から[来](き)ました。",
+    "vi": "Tôi đến từ Nepal."
+   }
+  ]
  },
  {
   "word": "フィリピン",
   "reading": "フィリピン",
   "meaning": "Philippines",
   "example": "**フィリピン**の[友達](ともだち)はお[元気](げんき)です。",
-  "exampleVi": "Bạn tôi ở Philippines vẫn khỏe."
+  "exampleVi": "Bạn tôi ở Philippines vẫn khỏe.",
+  "examples": [
+   {
+    "ja": "**フィリピン**の[友達](ともだち)はお[元気](げんき)です。",
+    "vi": "Bạn tôi ở Philippines vẫn khỏe."
+   },
+   {
+    "ja": "**フィリピン**の[料理](りょうり)はおいしいです。",
+    "vi": "Món ăn của Philippines rất ngon."
+   }
+  ]
  },
  {
   "word": "ベトナム",
   "reading": "ベトナム",
   "meaning": "Việt Nam",
   "example": "[私](わたし)は**ベトナム**[人](じん)です。",
-  "exampleVi": "Tôi là người Việt Nam."
+  "exampleVi": "Tôi là người Việt Nam.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は**ベトナム**[人](じん)です。",
+    "vi": "Tôi là người Việt Nam."
+   },
+   {
+    "ja": "**ベトナム**は[暑](あつ)いです。",
+    "vi": "Việt Nam nóng."
+   }
+  ]
  },
  {
   "word": "マレーシア",
   "reading": "マレーシア",
   "meaning": "Malaysia",
   "example": "**マレーシア**に[兄](あに)がいます。",
-  "exampleVi": "Anh trai tôi ở Malaysia."
+  "exampleVi": "Anh trai tôi ở Malaysia.",
+  "examples": [
+   {
+    "ja": "**マレーシア**に[兄](あに)がいます。",
+    "vi": "Anh trai tôi ở Malaysia."
+   },
+   {
+    "ja": "[夏休](なつやす)みに**マレーシア**へ[行](い)きます。",
+    "vi": "Kỳ nghỉ hè tôi sẽ đi Malaysia."
+   }
+  ]
  },
  {
   "word": "ミャンマー",
   "reading": "ミャンマー",
   "meaning": "Myanmar",
   "example": "**ミャンマー**の[人](ひと)と[話](はな)します。",
-  "exampleVi": "Tôi nói chuyện với người Myanmar."
+  "exampleVi": "Tôi nói chuyện với người Myanmar.",
+  "examples": [
+   {
+    "ja": "**ミャンマー**の[人](ひと)と[話](はな)します。",
+    "vi": "Tôi nói chuyện với người Myanmar."
+   },
+   {
+    "ja": "**ミャンマー**は[暑](あつ)い[国](くに)です。",
+    "vi": "Myanmar là một nước nóng."
+   }
+  ]
  },
  {
   "word": "トルコ",
   "reading": "トルコ",
   "meaning": "Thổ Nhĩ Kỳ",
   "example": "**トルコ**へ[行](い)きます。",
-  "exampleVi": "Tôi sẽ đi Thổ Nhĩ Kỳ."
+  "exampleVi": "Tôi sẽ đi Thổ Nhĩ Kỳ.",
+  "examples": [
+   {
+    "ja": "**トルコ**へ[行](い)きます。",
+    "vi": "Tôi sẽ đi Thổ Nhĩ Kỳ."
+   },
+   {
+    "ja": "**トルコ**の[料理](りょうり)は[有名](ゆうめい)です。",
+    "vi": "Món ăn của Thổ Nhĩ Kỳ nổi tiếng."
+   }
+  ]
  },
  {
   "word": "オーストラリア",
   "reading": "オーストラリア",
   "meaning": "Úc",
   "example": "**オーストラリア**に[行](い)きたいです。",
-  "exampleVi": "Tôi muốn đến Úc."
+  "exampleVi": "Tôi muốn đến Úc.",
+  "examples": [
+   {
+    "ja": "**オーストラリア**に[行](い)きたいです。",
+    "vi": "Tôi muốn đến Úc."
+   },
+   {
+    "ja": "**オーストラリア**まで[飛行機](ひこうき)で10[時間](じかん)かかります。",
+    "vi": "Đến Úc bằng máy bay mất 10 tiếng."
+   }
+  ]
  },
  {
   "word": "ニュージーランド",
   "reading": "ニュージーランド",
   "meaning": "New Zealand",
   "example": "**ニュージーランド**に[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có bạn ở New Zealand."
+  "exampleVi": "Tôi có bạn ở New Zealand.",
+  "examples": [
+   {
+    "ja": "**ニュージーランド**に[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở New Zealand."
+   },
+   {
+    "ja": "**ニュージーランド**は[自然](しぜん)がきれいです。",
+    "vi": "New Zealand có thiên nhiên đẹp."
+   }
+  ]
  },
  {
   "word": "アメリカ",
   "reading": "アメリカ",
   "meaning": "Mỹ",
   "example": "**アメリカ**の[友達](ともだち)が[来](き)ました。",
-  "exampleVi": "Người bạn ở Mỹ đã đến."
+  "exampleVi": "Người bạn ở Mỹ đã đến.",
+  "examples": [
+   {
+    "ja": "**アメリカ**の[友達](ともだち)が[来](き)ました。",
+    "vi": "Người bạn ở Mỹ đã đến."
+   },
+   {
+    "ja": "ミラーさんは**アメリカ**[人](じん)です。",
+    "vi": "Anh Miller là người Mỹ."
+   }
+  ]
  },
  {
   "word": "カナダ",
   "reading": "カナダ",
   "meaning": "Canada",
   "example": "**カナダ**は[大](おお)きい[国](くに)です。",
-  "exampleVi": "Canada là một nước lớn."
+  "exampleVi": "Canada là một nước lớn.",
+  "examples": [
+   {
+    "ja": "**カナダ**は[大](おお)きい[国](くに)です。",
+    "vi": "Canada là một nước lớn."
+   },
+   {
+    "ja": "**カナダ**は[冬](ふゆ)は[寒](さむ)いです。",
+    "vi": "Canada thì mùa đông lạnh."
+   }
+  ]
  },
  {
   "word": "メキシコ",
   "reading": "メキシコ",
   "meaning": "Mexico",
   "example": "**メキシコ**の[人](ひと)と[話](はな)しました。",
-  "exampleVi": "Tôi đã nói chuyện với người Mexico."
+  "exampleVi": "Tôi đã nói chuyện với người Mexico.",
+  "examples": [
+   {
+    "ja": "**メキシコ**の[人](ひと)と[話](はな)しました。",
+    "vi": "Tôi đã nói chuyện với người Mexico."
+   },
+   {
+    "ja": "**メキシコ**のビールを[飲](の)みます。",
+    "vi": "Tôi uống bia của Mexico."
+   }
+  ]
  },
  {
   "word": "ブラジル",
   "reading": "ブラジル",
   "meaning": "Brazil",
   "example": "**ブラジル**の[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có bạn ở Brazil."
+  "exampleVi": "Tôi có bạn ở Brazil.",
+  "examples": [
+   {
+    "ja": "**ブラジル**の[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Brazil."
+   },
+   {
+    "ja": "サントスさんは**ブラジル**[人](じん)です。",
+    "vi": "Anh Santos là người Brazil."
+   }
+  ]
  },
  {
   "word": "ロシア",
   "reading": "ロシア",
   "meaning": "Nga",
   "example": "**ロシア**へ[行](い)きます。",
-  "exampleVi": "Tôi sẽ đi Nga."
+  "exampleVi": "Tôi sẽ đi Nga.",
+  "examples": [
+   {
+    "ja": "**ロシア**へ[行](い)きます。",
+    "vi": "Tôi sẽ đi Nga."
+   },
+   {
+    "ja": "**ロシア**へ[行](い)きたいです。",
+    "vi": "Tôi muốn đi Nga."
+   }
+  ]
  },
  {
   "word": "イギリス",
   "reading": "イギリス",
   "meaning": "Anh",
   "example": "**イギリス**の[学生](がくせい)が[来](き)ました。",
-  "exampleVi": "Sinh viên người Anh đã đến."
+  "exampleVi": "Sinh viên người Anh đã đến.",
+  "examples": [
+   {
+    "ja": "**イギリス**の[学生](がくせい)が[来](き)ました。",
+    "vi": "Sinh viên người Anh đã đến."
+   },
+   {
+    "ja": "ワットさんは**イギリス**[人](じん)です。",
+    "vi": "Anh Watt là người Anh."
+   }
+  ]
  },
  {
   "word": "フランス",
   "reading": "フランス",
   "meaning": "Pháp",
   "example": "**フランス**の[友達](ともだち)は[先生](せんせい)です。",
-  "exampleVi": "Bạn tôi ở Pháp là giáo viên."
+  "exampleVi": "Bạn tôi ở Pháp là giáo viên.",
+  "examples": [
+   {
+    "ja": "**フランス**の[友達](ともだち)は[先生](せんせい)です。",
+    "vi": "Bạn tôi ở Pháp là giáo viên."
+   },
+   {
+    "ja": "このくつは**フランス**のです。",
+    "vi": "Đôi giày này là của Pháp."
+   }
+  ]
  },
  {
   "word": "ドイツ",
   "reading": "ドイツ",
   "meaning": "Đức",
   "example": "**ドイツ**の[友達](ともだち)が[来](き)ます。",
-  "exampleVi": "Bạn tôi ở Đức sẽ đến."
+  "exampleVi": "Bạn tôi ở Đức sẽ đến.",
+  "examples": [
+   {
+    "ja": "**ドイツ**の[友達](ともだち)が[来](き)ます。",
+    "vi": "Bạn tôi ở Đức sẽ đến."
+   },
+   {
+    "ja": "シュミットさんは**ドイツ**[人](じん)です。",
+    "vi": "Anh Schmidt là người Đức."
+   }
+  ]
  },
  {
   "word": "スイス",
   "reading": "スイス",
   "meaning": "Thụy Sĩ",
   "example": "**スイス**に[行](い)きたいです。",
-  "exampleVi": "Tôi muốn đến Thụy Sĩ."
+  "exampleVi": "Tôi muốn đến Thụy Sĩ.",
+  "examples": [
+   {
+    "ja": "**スイス**に[行](い)きたいです。",
+    "vi": "Tôi muốn đến Thụy Sĩ."
+   },
+   {
+    "ja": "この[時計](とけい)は**スイス**の[時計](とけい)です。",
+    "vi": "Đồng hồ này là đồng hồ của Thụy Sĩ."
+   }
+  ]
  },
  {
   "word": "イタリア",
   "reading": "イタリア",
   "meaning": "Ý",
   "example": "**イタリア**の[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có bạn ở Ý."
+  "exampleVi": "Tôi có bạn ở Ý.",
+  "examples": [
+   {
+    "ja": "**イタリア**の[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Ý."
+   },
+   {
+    "ja": "これは**イタリア**のワインです。",
+    "vi": "Đây là rượu vang của Ý."
+   }
+  ]
  },
  {
   "word": "スペイン",
   "reading": "スペイン",
   "meaning": "Tây Ban Nha",
   "example": "**スペイン**へ[行](い)きます。",
-  "exampleVi": "Tôi sẽ đi Tây Ban Nha."
+  "exampleVi": "Tôi sẽ đi Tây Ban Nha.",
+  "examples": [
+   {
+    "ja": "**スペイン**へ[行](い)きます。",
+    "vi": "Tôi sẽ đi Tây Ban Nha."
+   },
+   {
+    "ja": "**スペイン**のワインをもらいました。",
+    "vi": "Tôi đã được tặng rượu vang của Tây Ban Nha."
+   }
+  ]
  },
  {
   "word": "エジプト",
   "reading": "エジプト",
   "meaning": "Ai Cập",
   "example": "**エジプト**の[人](ひと)です。",
-  "exampleVi": "Tôi là người Ai Cập."
+  "exampleVi": "Tôi là người Ai Cập.",
+  "examples": [
+   {
+    "ja": "**エジプト**の[人](ひと)です。",
+    "vi": "Tôi là người Ai Cập."
+   },
+   {
+    "ja": "**エジプト**のピラミッドを[見](み)たいです。",
+    "vi": "Tôi muốn xem kim tự tháp của Ai Cập."
+   }
+  ]
  },
  {
   "word": "ケニア",
   "reading": "ケニア",
   "meaning": "Kenya",
   "example": "**ケニア**に[友達](ともだち)がいます。",
-  "exampleVi": "Tôi có bạn ở Kenya."
+  "exampleVi": "Tôi có bạn ở Kenya.",
+  "examples": [
+   {
+    "ja": "**ケニア**に[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Kenya."
+   },
+   {
+    "ja": "**ケニア**はアフリカの[国](くに)です。",
+    "vi": "Kenya là một nước ở châu Phi."
+   }
+  ]
  }
 ]

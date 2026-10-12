@@ -1,240 +1,580 @@
 [
-  {
-    "word": "私",
-    "reading": "わたし",
-    "meaning": "Tôi",
-    "example": "**[私](わたし)**は[学生](がくせい)です。",
-    "exampleVi": "Tôi là học sinh."
-  },
-  {
-    "word": "貴方",
-    "reading": "あなた",
-    "meaning": "bạn",
-    "example": "**[貴方](あなた)**は[先生](せんせい)ですか。",
-    "exampleVi": "Bạn có phải là giáo viên không?"
-  },
-  {
-    "word": "あの人",
-    "reading": "あのひと",
-    "meaning": "người đó, người kia",
-    "example": "**[あの人](あのひと)**は[田中](たなか)さんです。",
-    "exampleVi": "Người kia là anh Tanaka."
-  },
-  {
-    "word": "あの方",
-    "reading": "あのかた",
-    "meaning": "Vị đó, vị kia",
-    "example": "**[あの方](あのかた)**は[先生](せんせい)です。",
-    "exampleVi": "Vị kia là giáo viên."
-  },
-  {
-    "word": "さん",
-    "reading": "さん",
-    "meaning": "anh, chị, ông, bà",
-    "example": "[山田](やまだ)**さん**は[会社員](かいしゃいん)です。",
-    "exampleVi": "Anh Yamada là nhân viên công ty."
-  },
-  {
-    "word": "ちゃん",
-    "reading": "ちゃん",
-    "meaning": "bé～ (bé gái)",
-    "example": "[花子](はなこ)**ちゃん**はごさいです。",
-    "exampleVi": "Bé Hanako năm tuổi."
-  },
-  {
-    "word": "くん",
-    "reading": "くん",
-    "meaning": "cậu, bé～ (bé trai)",
-    "example": "[山田](やまだ)**くん**は[学生](がくせい)です。",
-    "exampleVi": "Cậu Yamada là học sinh."
-  },
-  {
-    "word": "じん",
-    "reading": "じん",
-    "meaning": "người nước ~",
-    "example": "[私](わたし)はベトナム**[人](じん)**です。",
-    "exampleVi": "Tôi là người Việt Nam."
-  },
-  {
-    "word": "先生",
-    "reading": "せんせい",
-    "meaning": "thầy, cô",
-    "example": "[田中](たなか)さんは[日本語](にほんご)の**[先生](せんせい)**です。",
-    "exampleVi": "Anh Tanaka là giáo viên tiếng Nhật."
-  },
-  {
-    "word": "教師",
-    "reading": "きょうし",
-    "meaning": "giáo viên",
-    "example": "[山田](やまだ)さんは[日本語](にほんご)の**[教師](きょうし)**です。",
-    "exampleVi": "Anh Yamada là giáo viên tiếng Nhật."
-  },
-  {
-    "word": "学生",
-    "reading": "がくせい",
-    "meaning": "học sinh, sinh viên",
-    "example": "[私](わたし)は[大学](だいがく)の**[学生](がくせい)**です。",
-    "exampleVi": "Tôi là sinh viên đại học."
-  },
-  {
-    "word": "会社員",
-    "reading": "かいしゃいん",
-    "meaning": "nhân viên công ty",
-    "example": "ワットさんは**[会社員](かいしゃいん)**です。",
-    "exampleVi": "Anh Watt là nhân viên công ty."
-  },
-  {
-    "word": "社員",
-    "reading": "しゃいん",
-    "meaning": "nhân viên công ty",
-    "example": "[私](わたし)はIMCの**[社員](しゃいん)**です。",
-    "exampleVi": "Tôi là nhân viên của công ty IMC."
-  },
-  {
-    "word": "銀行員",
-    "reading": "ぎんこういん",
-    "meaning": "nhân viên ngân hàng",
-    "example": "[山田](やまだ)さんは**[銀行員](ぎんこういん)**です。",
-    "exampleVi": "Anh Yamada là nhân viên ngân hàng."
-  },
-  {
-    "word": "医者",
-    "reading": "いしゃ",
-    "meaning": "bác sĩ",
-    "example": "カリナさんは**[医者](いしゃ)**じゃありません。",
-    "exampleVi": "Chị Karina không phải là bác sĩ."
-  },
-  {
-    "word": "研究者",
-    "reading": "けんきゅうしゃ",
-    "meaning": "nhà nghiên cứu",
-    "example": "[田中](たなか)さんは**[研究者](けんきゅうしゃ)**です。",
-    "exampleVi": "Anh Tanaka là nhà nghiên cứu."
-  },
-  {
-    "word": "大学",
-    "reading": "だいがく",
-    "meaning": "đại học",
-    "example": "ミラーさんはふじ**[大学](だいがく)**の[先生](せんせい)です。",
-    "exampleVi": "Anh Miller là giáo viên của Đại học Fuji."
-  },
-  {
-    "word": "病院",
-    "reading": "びょういん",
-    "meaning": "bệnh viện",
-    "example": "[山田](やまだ)さんは**[病院](びょういん)**の[医者](いしゃ)です。",
-    "exampleVi": "Anh Yamada là bác sĩ của bệnh viện."
-  },
-  {
-    "word": "だれ",
-    "reading": "だれ",
-    "meaning": "ai",
-    "example": "あの[人](ひと)は**だれ**ですか。",
-    "exampleVi": "Người kia là ai vậy?"
-  },
-  {
-    "word": "どなた",
-    "reading": "どなた",
-    "meaning": "vị nào",
-    "example": "あの[方](かた)は**どなた**ですか。",
-    "exampleVi": "Vị kia là ai vậy ạ? (lịch sự)"
-  },
-  {
-    "word": "さい",
-    "reading": "さい",
-    "meaning": "tuổi",
-    "example": "[私](わたし)は25**さい**です。",
-    "exampleVi": "Tôi 25 tuổi."
-  },
-  {
-    "word": "なんさい",
-    "reading": "なんさい",
-    "meaning": "mấy tuổi",
-    "example": "テレサちゃんは**なんさい**ですか。",
-    "exampleVi": "Bé Teresa mấy tuổi vậy?"
-  },
-  {
-    "word": "はい",
-    "reading": "はい",
-    "meaning": "vâng, dạ",
-    "example": "A：[学生](がくせい)ですか。B：**はい**、[学生](がくせい)です。",
-    "exampleVi": "A: Bạn là học sinh à?  B: Vâng, tôi là học sinh."
-  },
-  {
-    "word": "いいえ",
-    "reading": "いいえ",
-    "meaning": "không",
-    "example": "A：[先生](せんせい)ですか。B：**いいえ**、[先生](せんせい)じゃありません。",
-    "exampleVi": "A: Bạn là giáo viên à?  B: Không, tôi không phải giáo viên."
-  },
-  {
-    "word": "アメリカ",
-    "reading": "アメリカ",
-    "meaning": "Mỹ",
-    "example": "ミラーさんは**アメリカ**[人](じん)です。",
-    "exampleVi": "Anh Miller là người Mỹ."
-  },
-  {
-    "word": "イギリス",
-    "reading": "イギリス",
-    "meaning": "Anh",
-    "example": "ワットさんは**イギリス**[人](じん)です。",
-    "exampleVi": "Anh Watt là người Anh."
-  },
-  {
-    "word": "インド",
-    "reading": "インド",
-    "meaning": "Ấn Độ",
-    "example": "グプタさんは**インド**[人](じん)です。",
-    "exampleVi": "Anh Gupta là người Ấn Độ."
-  },
-  {
-    "word": "インドネシア",
-    "reading": "インドネシア",
-    "meaning": "Indonesia",
-    "example": "[私](わたし)は**インドネシア**[人](じん)じゃありません。",
-    "exampleVi": "Tôi không phải là người Indonesia."
-  },
-  {
-    "word": "かんこく",
-    "reading": "かんこく",
-    "meaning": "Hàn Quốc",
-    "example": "キムさんは**かんこく**[人](じん)です。",
-    "exampleVi": "Chị Kim là người Hàn Quốc."
-  },
-  {
-    "word": "タイ",
-    "reading": "タイ",
-    "meaning": "Thái Lan",
-    "example": "[私](わたし)は**タイ**の[大学](だいがく)の[学生](がくせい)です。",
-    "exampleVi": "Tôi là sinh viên đại học ở Thái Lan."
-  },
-  {
-    "word": "中国",
-    "reading": "ちゅうごく",
-    "meaning": "Trung Quốc",
-    "example": "ワンさんは**[中国](ちゅうごく)**[人](じん)です。",
-    "exampleVi": "Anh Vương là người Trung Quốc."
-  },
-  {
-    "word": "ドイツ",
-    "reading": "ドイツ",
-    "meaning": "Đức",
-    "example": "シュミットさんは**ドイツ**[人](じん)です。",
-    "exampleVi": "Anh Schmidt là người Đức."
-  },
-  {
-    "word": "日本",
-    "reading": "にほん",
-    "meaning": "Nhật Bản",
-    "example": "[山田](やまだ)さんは**[日本](にほん)**[人](じん)です。",
-    "exampleVi": "Anh Yamada là người Nhật."
-  },
-  {
-    "word": "ブラジル",
-    "reading": "ブラジル",
-    "meaning": "Brazil",
-    "example": "サントスさんは**ブラジル**[人](じん)です。",
-    "exampleVi": "Anh Santos là người Brazil."
-  }
+ {
+  "word": "私",
+  "reading": "わたし",
+  "meaning": "Tôi",
+  "example": "**[私](わたし)**は[学生](がくせい)です。",
+  "exampleVi": "Tôi là học sinh.",
+  "examples": [
+   {
+    "ja": "**[私](わたし)**は[学生](がくせい)です。",
+    "vi": "Tôi là học sinh."
+   },
+   {
+    "ja": "**[私](わたし)**はアンです。",
+    "vi": "Tôi (tên) là An."
+   }
+  ]
+ },
+ {
+  "word": "貴方",
+  "reading": "あなた",
+  "meaning": "bạn",
+  "example": "**[貴方](あなた)**は[先生](せんせい)ですか。",
+  "exampleVi": "Bạn có phải là giáo viên không?",
+  "examples": [
+   {
+    "ja": "**[貴方](あなた)**は[先生](せんせい)ですか。",
+    "vi": "Bạn có phải là giáo viên không?"
+   },
+   {
+    "ja": "**[貴方](あなた)**はトムさんですか。",
+    "vi": "Anh là anh Tom phải không?"
+   }
+  ]
+ },
+ {
+  "word": "あの人",
+  "reading": "あのひと",
+  "meaning": "người đó, người kia",
+  "example": "**あの[人](ひと)**は[田中](たなか)さんです。",
+  "exampleVi": "Người kia là anh Tanaka.",
+  "examples": [
+   {
+    "ja": "**あの[人](ひと)**は[田中](たなか)さんです。",
+    "vi": "Người kia là anh Tanaka."
+   },
+   {
+    "ja": "**あの[人](ひと)**は[私](わたし)の[友達](ともだち)です。",
+    "vi": "Người kia là bạn của tôi."
+   }
+  ]
+ },
+ {
+  "word": "あの方",
+  "reading": "あのかた",
+  "meaning": "Vị đó, vị kia",
+  "example": "**あの[方](かた)**は[先生](せんせい)です。",
+  "exampleVi": "Vị kia là giáo viên.",
+  "examples": [
+   {
+    "ja": "**あの[方](かた)**は[先生](せんせい)です。",
+    "vi": "Vị kia là giáo viên."
+   },
+   {
+    "ja": "**あの[方](かた)**は[大学](だいがく)のスミス[先生](せんせい)です。",
+    "vi": "Vị đó là thầy Smith của trường đại học."
+   }
+  ]
+ },
+ {
+  "word": "さん",
+  "reading": "さん",
+  "meaning": "anh, chị, ông, bà",
+  "example": "[山田](やまだ)**さん**は[会社員](かいしゃいん)です。",
+  "exampleVi": "Anh Yamada là nhân viên công ty.",
+  "examples": [
+   {
+    "ja": "[山田](やまだ)**さん**は[会社員](かいしゃいん)です。",
+    "vi": "Anh Yamada là nhân viên công ty."
+   },
+   {
+    "ja": "トム**さん**ですか。",
+    "vi": "Anh Tom phải không?"
+   }
+  ]
+ },
+ {
+  "word": "ちゃん",
+  "reading": "ちゃん",
+  "meaning": "bé～ (bé gái)",
+  "example": "[花子](はなこ)**ちゃん**はごさいです。",
+  "exampleVi": "Bé Hanako năm tuổi.",
+  "examples": [
+   {
+    "ja": "[花子](はなこ)**ちゃん**はごさいです。",
+    "vi": "Bé Hanako năm tuổi."
+   },
+   {
+    "ja": "かのじょはララ**ちゃん**です。",
+    "vi": "Cô bé là bé Lala."
+   }
+  ]
+ },
+ {
+  "word": "くん",
+  "reading": "くん",
+  "meaning": "cậu, bé～ (bé trai)",
+  "example": "[山田](やまだ)**くん**は[学生](がくせい)です。",
+  "exampleVi": "Cậu Yamada là học sinh.",
+  "examples": [
+   {
+    "ja": "[山田](やまだ)**くん**は[学生](がくせい)です。",
+    "vi": "Cậu Yamada là học sinh."
+   },
+   {
+    "ja": "[田中](たなか)**くん**は[日本人](にほんじん)です。",
+    "vi": "Cậu Tanaka là người Nhật."
+   }
+  ]
+ },
+ {
+  "word": "じん",
+  "reading": "じん",
+  "meaning": "người nước ~",
+  "example": "[私](わたし)はベトナム**[人](じん)**です。",
+  "exampleVi": "Tôi là người Việt Nam.",
+  "examples": [
+   {
+    "ja": "[私](わたし)はベトナム**[人](じん)**です。",
+    "vi": "Tôi là người Việt Nam."
+   },
+   {
+    "ja": "[私](わたし)の[友達](ともだち)は[中国](ちゅうごく)**[人](じん)**です。",
+    "vi": "Bạn của tôi là người Trung Quốc."
+   }
+  ]
+ },
+ {
+  "word": "先生",
+  "reading": "せんせい",
+  "meaning": "thầy, cô",
+  "example": "[田中](たなか)さんは[日本語](にほんご)の**[先生](せんせい)**です。",
+  "exampleVi": "Anh Tanaka là giáo viên tiếng Nhật.",
+  "examples": [
+   {
+    "ja": "[田中](たなか)さんは[日本語](にほんご)の**[先生](せんせい)**です。",
+    "vi": "Anh Tanaka là giáo viên tiếng Nhật."
+   },
+   {
+    "ja": "**[先生](せんせい)**は、やさしい[人](ひと)です。",
+    "vi": "Thầy giáo là người hiền lành."
+   }
+  ]
+ },
+ {
+  "word": "教師",
+  "reading": "きょうし",
+  "meaning": "giáo viên",
+  "example": "[山田](やまだ)さんは[日本語](にほんご)の**[教師](きょうし)**です。",
+  "exampleVi": "Anh Yamada là giáo viên tiếng Nhật.",
+  "examples": [
+   {
+    "ja": "[山田](やまだ)さんは[日本語](にほんご)の**[教師](きょうし)**です。",
+    "vi": "Anh Yamada là giáo viên tiếng Nhật."
+   },
+   {
+    "ja": "[兄](あに)は[高校](こうこう)の**[教師](きょうし)**です。",
+    "vi": "Anh trai tôi là giáo viên trường cấp ba."
+   }
+  ]
+ },
+ {
+  "word": "学生",
+  "reading": "がくせい",
+  "meaning": "học sinh, sinh viên",
+  "example": "[私](わたし)は[大学](だいがく)の**[学生](がくせい)**です。",
+  "exampleVi": "Tôi là sinh viên đại học.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は[大学](だいがく)の**[学生](がくせい)**です。",
+    "vi": "Tôi là sinh viên đại học."
+   },
+   {
+    "ja": "わたしは[日本語](にほんご)[学校](がっこう)の**[学生](がくせい)**です。",
+    "vi": "Tôi là học sinh trường tiếng Nhật."
+   }
+  ]
+ },
+ {
+  "word": "会社員",
+  "reading": "かいしゃいん",
+  "meaning": "nhân viên công ty",
+  "example": "ワットさんは**[会社員](かいしゃいん)**です。",
+  "exampleVi": "Anh Watt là nhân viên công ty.",
+  "examples": [
+   {
+    "ja": "ワットさんは**[会社員](かいしゃいん)**です。",
+    "vi": "Anh Watt là nhân viên công ty."
+   },
+   {
+    "ja": "[父](ちち)は**[会社員](かいしゃいん)**です。",
+    "vi": "Bố tôi là nhân viên công ty."
+   }
+  ]
+ },
+ {
+  "word": "社員",
+  "reading": "しゃいん",
+  "meaning": "nhân viên công ty",
+  "example": "[私](わたし)はIMCの**[社員](しゃいん)**です。",
+  "exampleVi": "Tôi là nhân viên của công ty IMC.",
+  "examples": [
+   {
+    "ja": "[私](わたし)はIMCの**[社員](しゃいん)**です。",
+    "vi": "Tôi là nhân viên của công ty IMC."
+   },
+   {
+    "ja": "[私](わたし)はこの[会社](かいしゃ)の**[社員](しゃいん)**です。",
+    "vi": "Tôi là nhân viên của công ty này."
+   }
+  ]
+ },
+ {
+  "word": "銀行員",
+  "reading": "ぎんこういん",
+  "meaning": "nhân viên ngân hàng",
+  "example": "[山田](やまだ)さんは**[銀行員](ぎんこういん)**です。",
+  "exampleVi": "Anh Yamada là nhân viên ngân hàng.",
+  "examples": [
+   {
+    "ja": "[山田](やまだ)さんは**[銀行員](ぎんこういん)**です。",
+    "vi": "Anh Yamada là nhân viên ngân hàng."
+   },
+   {
+    "ja": "[母](はは)は**[銀行員](ぎんこういん)**です。",
+    "vi": "Mẹ tôi là nhân viên ngân hàng."
+   }
+  ]
+ },
+ {
+  "word": "医者",
+  "reading": "いしゃ",
+  "meaning": "bác sĩ",
+  "example": "カリナさんは**[医者](いしゃ)**じゃありません。",
+  "exampleVi": "Chị Karina không phải là bác sĩ.",
+  "examples": [
+   {
+    "ja": "カリナさんは**[医者](いしゃ)**じゃありません。",
+    "vi": "Chị Karina không phải là bác sĩ."
+   },
+   {
+    "ja": "[兄](あに)は**[医者](いしゃ)**です。",
+    "vi": "Anh trai tôi là bác sĩ."
+   }
+  ]
+ },
+ {
+  "word": "研究者",
+  "reading": "けんきゅうしゃ",
+  "meaning": "nhà nghiên cứu",
+  "example": "[田中](たなか)さんは**[研究者](けんきゅうしゃ)**です。",
+  "exampleVi": "Anh Tanaka là nhà nghiên cứu.",
+  "examples": [
+   {
+    "ja": "[田中](たなか)さんは**[研究者](けんきゅうしゃ)**です。",
+    "vi": "Anh Tanaka là nhà nghiên cứu."
+   },
+   {
+    "ja": "[父](ちち)は[経済](けいざい)の**[研究者](けんきゅうしゃ)**です。",
+    "vi": "Bố tôi là nhà nghiên cứu kinh tế."
+   }
+  ]
+ },
+ {
+  "word": "大学",
+  "reading": "だいがく",
+  "meaning": "đại học",
+  "example": "ミラーさんはふじ**[大学](だいがく)**の[先生](せんせい)です。",
+  "exampleVi": "Anh Miller là giáo viên của Đại học Fuji.",
+  "examples": [
+   {
+    "ja": "ミラーさんはふじ**[大学](だいがく)**の[先生](せんせい)です。",
+    "vi": "Anh Miller là giáo viên của Đại học Fuji."
+   },
+   {
+    "ja": "[姉](あね)は**[大学](だいがく)**でべんきょうしています。",
+    "vi": "Chị gái tôi đang học ở đại học."
+   }
+  ]
+ },
+ {
+  "word": "病院",
+  "reading": "びょういん",
+  "meaning": "bệnh viện",
+  "example": "[山田](やまだ)さんは**[病院](びょういん)**の[医者](いしゃ)です。",
+  "exampleVi": "Anh Yamada là bác sĩ của bệnh viện.",
+  "examples": [
+   {
+    "ja": "[山田](やまだ)さんは**[病院](びょういん)**の[医者](いしゃ)です。",
+    "vi": "Anh Yamada là bác sĩ của bệnh viện."
+   },
+   {
+    "ja": "**[病院](びょういん)**へ[行](い)きます。",
+    "vi": "Tôi sẽ đi bệnh viện."
+   }
+  ]
+ },
+ {
+  "word": "だれ",
+  "reading": "だれ",
+  "meaning": "ai",
+  "example": "あの[人](ひと)は**だれ**ですか。",
+  "exampleVi": "Người kia là ai vậy?",
+  "examples": [
+   {
+    "ja": "あの[人](ひと)は**だれ**ですか。",
+    "vi": "Người kia là ai vậy?"
+   },
+   {
+    "ja": "[教室](きょうしつ)に**だれ**がいますか。",
+    "vi": "Ai đang ở trong lớp học vậy?"
+   }
+  ]
+ },
+ {
+  "word": "どなた",
+  "reading": "どなた",
+  "meaning": "vị nào",
+  "example": "あの[方](かた)は**どなた**ですか。",
+  "exampleVi": "Vị kia là ai vậy ạ? (lịch sự)",
+  "examples": [
+   {
+    "ja": "あの[方](かた)は**どなた**ですか。",
+    "vi": "Vị kia là ai vậy ạ? (lịch sự)"
+   },
+   {
+    "ja": "あちらの[方](かた)は**どなた**ですか。",
+    "vi": "Vị ở đằng kia là ai vậy ạ?"
+   }
+  ]
+ },
+ {
+  "word": "さい",
+  "reading": "さい",
+  "meaning": "tuổi",
+  "example": "[私](わたし)は25**さい**です。",
+  "exampleVi": "Tôi 25 tuổi.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は25**さい**です。",
+    "vi": "Tôi 25 tuổi."
+   },
+   {
+    "ja": "[私](わたし)の[妹](いもうと)は12**さい**です。",
+    "vi": "Em gái tôi 12 tuổi."
+   }
+  ]
+ },
+ {
+  "word": "なんさい",
+  "reading": "なんさい",
+  "meaning": "mấy tuổi",
+  "example": "テレサちゃんは**なんさい**ですか。",
+  "exampleVi": "Bé Teresa mấy tuổi vậy?",
+  "examples": [
+   {
+    "ja": "テレサちゃんは**なんさい**ですか。",
+    "vi": "Bé Teresa mấy tuổi vậy?"
+   },
+   {
+    "ja": "ホアンさんは**なんさい**ですか。",
+    "vi": "Hoàng bao nhiêu tuổi?"
+   }
+  ]
+ },
+ {
+  "word": "はい",
+  "reading": "はい",
+  "meaning": "vâng, dạ",
+  "example": "A：[学生](がくせい)ですか。B：**はい**、[学生](がくせい)です。",
+  "exampleVi": "A: Bạn là học sinh à?  B: Vâng, tôi là học sinh.",
+  "examples": [
+   {
+    "ja": "A：[学生](がくせい)ですか。B：**はい**、[学生](がくせい)です。",
+    "vi": "A: Bạn là học sinh à?  B: Vâng, tôi là học sinh."
+   },
+   {
+    "ja": "**はい**、[学生](がくせい)です。",
+    "vi": "Vâng, tôi là học sinh."
+   }
+  ]
+ },
+ {
+  "word": "いいえ",
+  "reading": "いいえ",
+  "meaning": "không",
+  "example": "A：[先生](せんせい)ですか。B：**いいえ**、[先生](せんせい)じゃありません。",
+  "exampleVi": "A: Bạn là giáo viên à?  B: Không, tôi không phải giáo viên.",
+  "examples": [
+   {
+    "ja": "A：[先生](せんせい)ですか。B：**いいえ**、[先生](せんせい)じゃありません。",
+    "vi": "A: Bạn là giáo viên à?  B: Không, tôi không phải giáo viên."
+   },
+   {
+    "ja": "**いいえ**、[私](わたし)は[先生](せんせい)じゃありません。",
+    "vi": "Không, tôi không phải là giáo viên."
+   }
+  ]
+ },
+ {
+  "word": "アメリカ",
+  "reading": "アメリカ",
+  "meaning": "Mỹ",
+  "example": "ミラーさんは**アメリカ**[人](じん)です。",
+  "exampleVi": "Anh Miller là người Mỹ.",
+  "examples": [
+   {
+    "ja": "ミラーさんは**アメリカ**[人](じん)です。",
+    "vi": "Anh Miller là người Mỹ."
+   },
+   {
+    "ja": "**アメリカ**の[友達](ともだち)が[来](き)ました。",
+    "vi": "Người bạn ở Mỹ đã đến."
+   }
+  ]
+ },
+ {
+  "word": "イギリス",
+  "reading": "イギリス",
+  "meaning": "Anh",
+  "example": "ワットさんは**イギリス**[人](じん)です。",
+  "exampleVi": "Anh Watt là người Anh.",
+  "examples": [
+   {
+    "ja": "ワットさんは**イギリス**[人](じん)です。",
+    "vi": "Anh Watt là người Anh."
+   },
+   {
+    "ja": "**イギリス**の[学生](がくせい)が[来](き)ました。",
+    "vi": "Sinh viên người Anh đã đến."
+   }
+  ]
+ },
+ {
+  "word": "インド",
+  "reading": "インド",
+  "meaning": "Ấn Độ",
+  "example": "グプタさんは**インド**[人](じん)です。",
+  "exampleVi": "Anh Gupta là người Ấn Độ.",
+  "examples": [
+   {
+    "ja": "グプタさんは**インド**[人](じん)です。",
+    "vi": "Anh Gupta là người Ấn Độ."
+   },
+   {
+    "ja": "[私](わたし)は**インド**から[来](き)ました。",
+    "vi": "Tôi đến từ Ấn Độ."
+   }
+  ]
+ },
+ {
+  "word": "インドネシア",
+  "reading": "インドネシア",
+  "meaning": "Indonesia",
+  "example": "[私](わたし)は**インドネシア**[人](じん)じゃありません。",
+  "exampleVi": "Tôi không phải là người Indonesia.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は**インドネシア**[人](じん)じゃありません。",
+    "vi": "Tôi không phải là người Indonesia."
+   },
+   {
+    "ja": "[友達](ともだち)は**インドネシア**の[人](ひと)です。",
+    "vi": "Bạn của tôi là người Indonesia."
+   }
+  ]
+ },
+ {
+  "word": "かんこく",
+  "reading": "かんこく",
+  "meaning": "Hàn Quốc",
+  "example": "キムさんは**かんこく**[人](じん)です。",
+  "exampleVi": "Chị Kim là người Hàn Quốc.",
+  "examples": [
+   {
+    "ja": "キムさんは**かんこく**[人](じん)です。",
+    "vi": "Chị Kim là người Hàn Quốc."
+   },
+   {
+    "ja": "**かんこく**の[友達](ともだち)がいます。",
+    "vi": "Tôi có người bạn ở Hàn Quốc."
+   }
+  ]
+ },
+ {
+  "word": "タイ",
+  "reading": "タイ",
+  "meaning": "Thái Lan",
+  "example": "[私](わたし)は**タイ**の[大学](だいがく)の[学生](がくせい)です。",
+  "exampleVi": "Tôi là sinh viên đại học ở Thái Lan.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は**タイ**の[大学](だいがく)の[学生](がくせい)です。",
+    "vi": "Tôi là sinh viên đại học ở Thái Lan."
+   },
+   {
+    "ja": "**タイ**に[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Thái Lan."
+   }
+  ]
+ },
+ {
+  "word": "中国",
+  "reading": "ちゅうごく",
+  "meaning": "Trung Quốc",
+  "example": "ワンさんは**[中国](ちゅうごく)**[人](じん)です。",
+  "exampleVi": "Anh Vương là người Trung Quốc.",
+  "examples": [
+   {
+    "ja": "ワンさんは**[中国](ちゅうごく)**[人](じん)です。",
+    "vi": "Anh Vương là người Trung Quốc."
+   },
+   {
+    "ja": "**[中国](ちゅうごく)**の[人](ひと)です。",
+    "vi": "Tôi là người Trung Quốc."
+   }
+  ]
+ },
+ {
+  "word": "ドイツ",
+  "reading": "ドイツ",
+  "meaning": "Đức",
+  "example": "シュミットさんは**ドイツ**[人](じん)です。",
+  "exampleVi": "Anh Schmidt là người Đức.",
+  "examples": [
+   {
+    "ja": "シュミットさんは**ドイツ**[人](じん)です。",
+    "vi": "Anh Schmidt là người Đức."
+   },
+   {
+    "ja": "**ドイツ**の[友達](ともだち)が[来](き)ます。",
+    "vi": "Bạn tôi ở Đức sẽ đến."
+   }
+  ]
+ },
+ {
+  "word": "日本",
+  "reading": "にほん",
+  "meaning": "Nhật Bản",
+  "example": "[山田](やまだ)さんは**[日本](にほん)**[人](じん)です。",
+  "exampleVi": "Anh Yamada là người Nhật.",
+  "examples": [
+   {
+    "ja": "[山田](やまだ)さんは**[日本](にほん)**[人](じん)です。",
+    "vi": "Anh Yamada là người Nhật."
+   },
+   {
+    "ja": "[私](わたし)は**[日本](にほん)**へ[来](き)ました。",
+    "vi": "Tôi đã đến Nhật Bản."
+   }
+  ]
+ },
+ {
+  "word": "ブラジル",
+  "reading": "ブラジル",
+  "meaning": "Brazil",
+  "example": "サントスさんは**ブラジル**[人](じん)です。",
+  "exampleVi": "Anh Santos là người Brazil.",
+  "examples": [
+   {
+    "ja": "サントスさんは**ブラジル**[人](じん)です。",
+    "vi": "Anh Santos là người Brazil."
+   },
+   {
+    "ja": "**ブラジル**の[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Brazil."
+   }
+  ]
+ }
 ]

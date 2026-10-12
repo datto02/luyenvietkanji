@@ -1,289 +1,699 @@
 [
-  {
-    "word": "ここ",
-    "reading": "ここ",
-    "meaning": "chỗ này, đây",
-    "example": "**ここ**は[教室](きょうしつ)です。",
-    "exampleVi": "Đây là lớp học."
-  },
-  {
-    "word": "そこ",
-    "reading": "そこ",
-    "meaning": "chỗ đó, đó",
-    "example": "**そこ**は[食堂](しょくどう)です。",
-    "exampleVi": "Đó là nhà ăn."
-  },
-  {
-    "word": "あそこ",
-    "reading": "あそこ",
-    "meaning": "chỗ kia, kia",
-    "example": "[事務所](じむしょ)は**あそこ**です。",
-    "exampleVi": "Văn phòng ở đằng kia."
-  },
-  {
-    "word": "どこ",
-    "reading": "どこ",
-    "meaning": "chỗ nào, đâu",
-    "example": "トイレは**どこ**ですか。",
-    "exampleVi": "Nhà vệ sinh ở đâu vậy?"
-  },
-  {
-    "word": "こちら",
-    "reading": "こちら",
-    "meaning": "phía này, đây/vị này (lịch sự)",
-    "example": "**こちら**は[田中](たなか)さんです。",
-    "exampleVi": "Đây là anh Tanaka. (khi giới thiệu)"
-  },
-  {
-    "word": "そちら",
-    "reading": "そちら",
-    "meaning": "phía đó (lịch sự)",
-    "example": "**そちら**は[会議室](かいぎしつ)ですか。",
-    "exampleVi": "Bên đó là phòng họp phải không ạ?"
-  },
-  {
-    "word": "あちら",
-    "reading": "あちら",
-    "meaning": "phía kia (lịch sự)",
-    "example": "[受付](うけつけ)は**あちら**です。",
-    "exampleVi": "Quầy tiếp tân ở phía kia ạ."
-  },
-  {
-    "word": "どちら",
-    "reading": "どちら",
-    "meaning": "phía nào (lịch sự)",
-    "example": "[会社](かいしゃ)は**どちら**ですか。",
-    "exampleVi": "Công ty của anh/chị ở đâu ạ?"
-  },
-  {
-    "word": "教室",
-    "reading": "きょうしつ",
-    "meaning": "lớp học",
-    "example": "**[教室](きょうしつ)**はあそこです。",
-    "exampleVi": "Lớp học ở đằng kia."
-  },
-  {
-    "word": "食堂",
-    "reading": "しょくどう",
-    "meaning": "nhà ăn",
-    "example": "**[食堂](しょくどう)**はそこです。",
-    "exampleVi": "Nhà ăn ở chỗ đó."
-  },
-  {
-    "word": "事務所",
-    "reading": "じむしょ",
-    "meaning": "Văn phòng",
-    "example": "**[事務所](じむしょ)**は[二階](にかい)です。",
-    "exampleVi": "Văn phòng ở tầng 2."
-  },
-  {
-    "word": "会議室",
-    "reading": "かいぎしつ",
-    "meaning": "Phòng họp",
-    "example": "**[会議室](かいぎしつ)**は[三階](さんがい)です。",
-    "exampleVi": "Phòng họp ở tầng 3."
-  },
-  {
-    "word": "部屋",
-    "reading": "へや",
-    "meaning": "Căn phòng",
-    "example": "ミラーさんの**[部屋](へや)**はあそこです。",
-    "exampleVi": "Phòng của anh Miller ở đằng kia."
-  },
-  {
-    "word": "ロビー",
-    "reading": "ロビー",
-    "meaning": "hành lang, đại sảnh",
-    "example": "**ロビー**はそこです。",
-    "exampleVi": "Sảnh ở chỗ đó ạ."
-  },
-  {
-    "word": "受付",
-    "reading": "うけつけ",
-    "meaning": "Bộ phận tiếp tân",
-    "example": "**[受付](うけつけ)**は[一階](いっかい)です。",
-    "exampleVi": "Quầy tiếp tân ở tầng 1."
-  },
-  {
-    "word": "トイレ",
-    "reading": "トイレ",
-    "meaning": "nhà vệ sinh",
-    "example": "**トイレ**はあちらです。",
-    "exampleVi": "Nhà vệ sinh ở phía kia ạ."
-  },
-  {
-    "word": "お手洗い",
-    "reading": "おてあらい",
-    "meaning": "nhà vệ sinh",
-    "example": "**お[手洗](てあら)い**は[二階](にかい)ですか。",
-    "exampleVi": "Nhà vệ sinh ở tầng 2 phải không ạ?"
-  },
-  {
-    "word": "階段",
-    "reading": "かいだん",
-    "meaning": "Cầu thang",
-    "example": "**[階段](かいだん)**はそこです。",
-    "exampleVi": "Cầu thang ở chỗ đó."
-  },
-  {
-    "word": "エレベーター",
-    "reading": "エレベーター",
-    "meaning": "thang máy",
-    "example": "**エレベーター**はあそこです。",
-    "exampleVi": "Thang máy ở đằng kia."
-  },
-  {
-    "word": "エスカレーター",
-    "reading": "エスカレーター",
-    "meaning": "thang cuốn",
-    "example": "**エスカレーター**はそちらです。",
-    "exampleVi": "Thang cuốn ở phía đó ạ."
-  },
-  {
-    "word": "じどうはんばいき",
-    "reading": "じどうはんばいき",
-    "meaning": "máy bán hàng tự động",
-    "example": "**じどうはんばいき**は[食堂](しょくどう)です。",
-    "exampleVi": "Máy bán hàng tự động ở nhà ăn."
-  },
-  {
-    "word": "お国",
-    "reading": "おくに",
-    "meaning": "đất nước",
-    "example": "**お[国](くに)**はどちらですか。",
-    "exampleVi": "Anh/chị là người nước nào ạ?"
-  },
-  {
-    "word": "会社",
-    "reading": "かいしゃ",
-    "meaning": "công ty",
-    "example": "これはイタリアの**[会社](かいしゃ)**の[時計](とけい)です。",
-    "exampleVi": "Đây là đồng hồ của một công ty Ý."
-  },
-  {
-    "word": "家",
-    "reading": "うち/いえ",
-    "meaning": "nhà",
-    "example": "[私](わたし)の**[家](うち)**はあそこです。",
-    "exampleVi": "Nhà của tôi ở đằng kia."
-  },
-  {
-    "word": "くつ",
-    "reading": "くつ",
-    "meaning": "Giày",
-    "example": "この**くつ**は[五千円](ごせんえん)です。",
-    "exampleVi": "Đôi giày này giá 5.000 yên."
-  },
-  {
-    "word": "ネクタイ",
-    "reading": "ネクタイ",
-    "meaning": "cà vạt",
-    "example": "これはイタリアの**ネクタイ**です。",
-    "exampleVi": "Đây là cà vạt của Ý."
-  },
-  {
-    "word": "ワイン",
-    "reading": "ワイン",
-    "meaning": "rượu vang",
-    "example": "これはフランスの**ワイン**です。",
-    "exampleVi": "Đây là rượu vang của Pháp."
-  },
-  {
-    "word": "売り場",
-    "reading": "うりば",
-    "meaning": "Quầy bán hàng",
-    "example": "くつの**[売](う)り[場](ば)**は[三階](さんがい)です。",
-    "exampleVi": "Quầy bán giày ở tầng 3."
-  },
-  {
-    "word": "地下",
-    "reading": "ちか",
-    "meaning": "ngầm, dưới mặt đất",
-    "example": "ワインの[売](う)り[場](ば)は**[地下](ちか)**です。",
-    "exampleVi": "Quầy bán rượu vang ở tầng hầm."
-  },
-  {
-    "word": "階",
-    "reading": "かい",
-    "meaning": "Tầng~",
-    "example": "[会社](かいしゃ)は[五](ご)**[階](かい)**です。",
-    "exampleVi": "Công ty ở tầng 5."
-  },
-  {
-    "word": "何階",
-    "reading": "なんがい",
-    "meaning": "Tầng mấy",
-    "example": "[食堂](しょくどう)は**[何階](なんがい)**ですか。",
-    "exampleVi": "Nhà ăn ở tầng mấy vậy?"
-  },
-  {
-    "word": "百",
-    "reading": "ひゃく",
-    "meaning": "trăm",
-    "example": "このノートは**[百](ひゃく)**[円](えん)です。",
-    "exampleVi": "Cuốn vở này giá 100 yên."
-  },
-  {
-    "word": "千",
-    "reading": "せん",
-    "meaning": "Nghìn",
-    "example": "このネクタイは**[千](せん)**[円](えん)です。",
-    "exampleVi": "Cái cà vạt này giá 1.000 yên."
-  },
-  {
-    "word": "万",
-    "reading": "まん",
-    "meaning": "Vạn, mười nghìn",
-    "example": "その[時計](とけい)は[五](ご)**[万](まん)**[円](えん)です。",
-    "exampleVi": "Cái đồng hồ đó giá 50.000 yên."
-  },
-  {
-    "word": "円",
-    "reading": "えん",
-    "meaning": "Yên",
-    "example": "このかさは[八百](はっぴゃく)**[円](えん)**です。",
-    "exampleVi": "Cái ô này giá 800 yên."
-  },
-  {
-    "word": "いくら",
-    "reading": "いくら",
-    "meaning": "bao nhiêu tiền",
-    "example": "この[本](ほん)は**いくら**ですか。",
-    "exampleVi": "Quyển sách này giá bao nhiêu vậy?"
-  },
-  {
-    "word": "イタリア",
-    "reading": "イタリア",
-    "meaning": "Nước Ý",
-    "example": "これは**イタリア**のワインです。",
-    "exampleVi": "Đây là rượu vang của Ý."
-  },
-  {
-    "word": "スイス",
-    "reading": "スイス",
-    "meaning": "Thụy Sĩ",
-    "example": "この[時計](とけい)は**スイス**の[時計](とけい)です。",
-    "exampleVi": "Đồng hồ này là đồng hồ của Thụy Sĩ."
-  },
-  {
-    "word": "フランス",
-    "reading": "フランス",
-    "meaning": "Pháp",
-    "example": "このくつは**フランス**のです。",
-    "exampleVi": "Đôi giày này là của Pháp."
-  },
-  {
-    "word": "バンコク",
-    "reading": "バンコク",
-    "meaning": "Bangkok (Thái Lan)",
-    "example": "ここは**バンコク**です。",
-    "exampleVi": "Đây là Bangkok."
-  },
-  {
-    "word": "ベルリン",
-    "reading": "ベルリン",
-    "meaning": "Berlin (Đức)",
-    "example": "ここは**ベルリン**です。",
-    "exampleVi": "Đây là Berlin."
-  }
+ {
+  "word": "ここ",
+  "reading": "ここ",
+  "meaning": "chỗ này, đây",
+  "example": "**ここ**は[教室](きょうしつ)です。",
+  "exampleVi": "Đây là lớp học.",
+  "examples": [
+   {
+    "ja": "**ここ**は[教室](きょうしつ)です。",
+    "vi": "Đây là lớp học."
+   },
+   {
+    "ja": "**ここ**は[図書館](としょかん)です。",
+    "vi": "Đây là thư viện."
+   }
+  ]
+ },
+ {
+  "word": "そこ",
+  "reading": "そこ",
+  "meaning": "chỗ đó, đó",
+  "example": "**そこ**は[食堂](しょくどう)です。",
+  "exampleVi": "Đó là nhà ăn.",
+  "examples": [
+   {
+    "ja": "**そこ**は[食堂](しょくどう)です。",
+    "vi": "Đó là nhà ăn."
+   },
+   {
+    "ja": "**そこ**に[名前](なまえ)を[書](か)いてください。",
+    "vi": "Hãy viết tên vào chỗ đó."
+   }
+  ]
+ },
+ {
+  "word": "あそこ",
+  "reading": "あそこ",
+  "meaning": "chỗ kia, kia",
+  "example": "[事務所](じむしょ)は**あそこ**です。",
+  "exampleVi": "Văn phòng ở đằng kia.",
+  "examples": [
+   {
+    "ja": "[事務所](じむしょ)は**あそこ**です。",
+    "vi": "Văn phòng ở đằng kia."
+   },
+   {
+    "ja": "**あそこ**に[銀行](ぎんこう)があります。",
+    "vi": "Ở đằng kia có ngân hàng."
+   }
+  ]
+ },
+ {
+  "word": "どこ",
+  "reading": "どこ",
+  "meaning": "chỗ nào, đâu",
+  "example": "トイレは**どこ**ですか。",
+  "exampleVi": "Nhà vệ sinh ở đâu vậy?",
+  "examples": [
+   {
+    "ja": "トイレは**どこ**ですか。",
+    "vi": "Nhà vệ sinh ở đâu vậy?"
+   },
+   {
+    "ja": "[銀行](ぎんこう)は**どこ**ですか。",
+    "vi": "Ngân hàng ở đâu ạ?"
+   }
+  ]
+ },
+ {
+  "word": "こちら",
+  "reading": "こちら",
+  "meaning": "phía này, đây/vị này (lịch sự)",
+  "example": "**こちら**は[田中](たなか)さんです。",
+  "exampleVi": "Đây là anh Tanaka. (khi giới thiệu)",
+  "examples": [
+   {
+    "ja": "**こちら**は[田中](たなか)さんです。",
+    "vi": "Đây là anh Tanaka. (khi giới thiệu)"
+   },
+   {
+    "ja": "**こちら**は[私](わたし)の[母](はは)です。",
+    "vi": "Đây là mẹ của tôi."
+   }
+  ]
+ },
+ {
+  "word": "そちら",
+  "reading": "そちら",
+  "meaning": "phía đó (lịch sự)",
+  "example": "**そちら**は[会議室](かいぎしつ)ですか。",
+  "exampleVi": "Bên đó là phòng họp phải không ạ?",
+  "examples": [
+   {
+    "ja": "**そちら**は[会議室](かいぎしつ)ですか。",
+    "vi": "Bên đó là phòng họp phải không ạ?"
+   },
+   {
+    "ja": "**そちら**は[事務所](じむしょ)ですか。",
+    "vi": "Bên đó là văn phòng phải không ạ?"
+   }
+  ]
+ },
+ {
+  "word": "あちら",
+  "reading": "あちら",
+  "meaning": "phía kia (lịch sự)",
+  "example": "[受付](うけつけ)は**あちら**です。",
+  "exampleVi": "Quầy tiếp tân ở phía kia ạ.",
+  "examples": [
+   {
+    "ja": "[受付](うけつけ)は**あちら**です。",
+    "vi": "Quầy tiếp tân ở phía kia ạ."
+   },
+   {
+    "ja": "[電話](でんわ)は**あちら**にあります。",
+    "vi": "Điện thoại ở phía kia ạ."
+   }
+  ]
+ },
+ {
+  "word": "どちら",
+  "reading": "どちら",
+  "meaning": "phía nào (lịch sự)",
+  "example": "[会社](かいしゃ)は**どちら**ですか。",
+  "exampleVi": "Công ty của anh/chị ở đâu ạ?",
+  "examples": [
+   {
+    "ja": "[会社](かいしゃ)は**どちら**ですか。",
+    "vi": "Công ty của anh/chị ở đâu ạ?"
+   },
+   {
+    "ja": "コーヒーと[紅茶](こうちゃ)と、**どちら**が[好](す)きですか。",
+    "vi": "Cà phê và trà đen, bạn thích cái nào hơn?"
+   }
+  ]
+ },
+ {
+  "word": "教室",
+  "reading": "きょうしつ",
+  "meaning": "lớp học",
+  "example": "**[教室](きょうしつ)**はあそこです。",
+  "exampleVi": "Lớp học ở đằng kia.",
+  "examples": [
+   {
+    "ja": "**[教室](きょうしつ)**はあそこです。",
+    "vi": "Lớp học ở đằng kia."
+   },
+   {
+    "ja": "**[教室](きょうしつ)**に、[学生](がくせい)が[十](じゅう)[人](にん)います。",
+    "vi": "Trong lớp học có mười học sinh."
+   }
+  ]
+ },
+ {
+  "word": "食堂",
+  "reading": "しょくどう",
+  "meaning": "nhà ăn",
+  "example": "**[食堂](しょくどう)**はそこです。",
+  "exampleVi": "Nhà ăn ở chỗ đó.",
+  "examples": [
+   {
+    "ja": "**[食堂](しょくどう)**はそこです。",
+    "vi": "Nhà ăn ở chỗ đó."
+   },
+   {
+    "ja": "**[食堂](しょくどう)**は[十一時](じゅういちじ)から[七時](しちじ)までです。",
+    "vi": "Quán ăn (bắt đầu) từ 11 giờ đến 7 giờ."
+   }
+  ]
+ },
+ {
+  "word": "事務所",
+  "reading": "じむしょ",
+  "meaning": "Văn phòng",
+  "example": "**[事務所](じむしょ)**は[二階](にかい)です。",
+  "exampleVi": "Văn phòng ở tầng 2.",
+  "examples": [
+   {
+    "ja": "**[事務所](じむしょ)**は[二階](にかい)です。",
+    "vi": "Văn phòng ở tầng 2."
+   },
+   {
+    "ja": "**[事務所](じむしょ)**はたいわんにあります。",
+    "vi": "Văn phòng ở Đài Loan."
+   }
+  ]
+ },
+ {
+  "word": "会議室",
+  "reading": "かいぎしつ",
+  "meaning": "Phòng họp",
+  "example": "**[会議室](かいぎしつ)**は[三階](さんがい)です。",
+  "exampleVi": "Phòng họp ở tầng 3.",
+  "examples": [
+   {
+    "ja": "**[会議室](かいぎしつ)**は[三階](さんがい)です。",
+    "vi": "Phòng họp ở tầng 3."
+   },
+   {
+    "ja": "[山田](やまだ)さんは**[会議室](かいぎしつ)**にいます。",
+    "vi": "Anh / Chị Yamada ở phòng họp."
+   }
+  ]
+ },
+ {
+  "word": "部屋",
+  "reading": "へや",
+  "meaning": "Căn phòng",
+  "example": "ミラーさんの**[部屋](へや)**はあそこです。",
+  "exampleVi": "Phòng của anh Miller ở đằng kia.",
+  "examples": [
+   {
+    "ja": "ミラーさんの**[部屋](へや)**はあそこです。",
+    "vi": "Phòng của anh Miller ở đằng kia."
+   },
+   {
+    "ja": "**[部屋](へや)**にキッチンがあります。",
+    "vi": "Trong phòng có căn bếp."
+   }
+  ]
+ },
+ {
+  "word": "ロビー",
+  "reading": "ロビー",
+  "meaning": "hành lang, đại sảnh",
+  "example": "**ロビー**はそこです。",
+  "exampleVi": "Sảnh ở chỗ đó ạ.",
+  "examples": [
+   {
+    "ja": "**ロビー**はそこです。",
+    "vi": "Sảnh ở chỗ đó ạ."
+   },
+   {
+    "ja": "**ロビー**に[電話](でんわ)があります。",
+    "vi": "Ở sảnh có điện thoại."
+   }
+  ]
+ },
+ {
+  "word": "受付",
+  "reading": "うけつけ",
+  "meaning": "Bộ phận tiếp tân",
+  "example": "**[受付](うけつけ)**は[一階](いっかい)です。",
+  "exampleVi": "Quầy tiếp tân ở tầng 1.",
+  "examples": [
+   {
+    "ja": "**[受付](うけつけ)**は[一階](いっかい)です。",
+    "vi": "Quầy tiếp tân ở tầng 1."
+   },
+   {
+    "ja": "**[受付](うけつけ)**で[聞](き)いてください。",
+    "vi": "Hãy hỏi tiếp tân."
+   }
+  ]
+ },
+ {
+  "word": "トイレ",
+  "reading": "トイレ",
+  "meaning": "nhà vệ sinh",
+  "example": "**トイレ**はあちらです。",
+  "exampleVi": "Nhà vệ sinh ở phía kia ạ.",
+  "examples": [
+   {
+    "ja": "**トイレ**はあちらです。",
+    "vi": "Nhà vệ sinh ở phía kia ạ."
+   },
+   {
+    "ja": "**トイレ**はどこですか。",
+    "vi": "Nhà vệ sinh ở đâu ạ?"
+   }
+  ]
+ },
+ {
+  "word": "お手洗い",
+  "reading": "おてあらい",
+  "meaning": "nhà vệ sinh",
+  "example": "**お[手洗](てあら)い**は[二階](にかい)ですか。",
+  "exampleVi": "Nhà vệ sinh ở tầng 2 phải không ạ?",
+  "examples": [
+   {
+    "ja": "**お[手洗](てあら)い**は[二階](にかい)ですか。",
+    "vi": "Nhà vệ sinh ở tầng 2 phải không ạ?"
+   },
+   {
+    "ja": "**お[手洗](てあら)い**はどこですか。",
+    "vi": "Nhà vệ sinh ở đâu ạ?"
+   }
+  ]
+ },
+ {
+  "word": "階段",
+  "reading": "かいだん",
+  "meaning": "Cầu thang",
+  "example": "**[階段](かいだん)**はそこです。",
+  "exampleVi": "Cầu thang ở chỗ đó.",
+  "examples": [
+   {
+    "ja": "**[階段](かいだん)**はそこです。",
+    "vi": "Cầu thang ở chỗ đó."
+   },
+   {
+    "ja": "**[階段](かいだん)**はあそこです。",
+    "vi": "Cầu thang ở đằng kia."
+   }
+  ]
+ },
+ {
+  "word": "エレベーター",
+  "reading": "エレベーター",
+  "meaning": "thang máy",
+  "example": "**エレベーター**はあそこです。",
+  "exampleVi": "Thang máy ở đằng kia.",
+  "examples": [
+   {
+    "ja": "**エレベーター**はあそこです。",
+    "vi": "Thang máy ở đằng kia."
+   },
+   {
+    "ja": "[十](じゅう)かいまで、**エレベーター**で[行](い)きます。",
+    "vi": "Tôi đi thang máy lên tầng mười."
+   }
+  ]
+ },
+ {
+  "word": "エスカレーター",
+  "reading": "エスカレーター",
+  "meaning": "thang cuốn",
+  "example": "**エスカレーター**はそちらです。",
+  "exampleVi": "Thang cuốn ở phía đó ạ.",
+  "examples": [
+   {
+    "ja": "**エスカレーター**はそちらです。",
+    "vi": "Thang cuốn ở phía đó ạ."
+   },
+   {
+    "ja": "**エスカレーター**で[5階](ごかい)に[行](い)きます。",
+    "vi": "Tôi đi tầng 5 bằng thang cuốn."
+   }
+  ]
+ },
+ {
+  "word": "じどうはんばいき",
+  "reading": "じどうはんばいき",
+  "meaning": "máy bán hàng tự động",
+  "example": "**じどうはんばいき**は[食堂](しょくどう)です。",
+  "exampleVi": "Máy bán hàng tự động ở nhà ăn.",
+  "examples": [
+   {
+    "ja": "**じどうはんばいき**は[食堂](しょくどう)です。",
+    "vi": "Máy bán hàng tự động ở nhà ăn."
+   },
+   {
+    "ja": "**じどうはんばいき**で[飲](の)み[物](もの)を[買](か)います。",
+    "vi": "Tôi mua thức uống bằng máy bán hàng tự động."
+   }
+  ]
+ },
+ {
+  "word": "お国",
+  "reading": "おくに",
+  "meaning": "đất nước",
+  "example": "**お[国](くに)**はどちらですか。",
+  "exampleVi": "Anh/chị là người nước nào ạ?",
+  "examples": [
+   {
+    "ja": "**お[国](くに)**はどちらですか。",
+    "vi": "Anh/chị là người nước nào ạ?"
+   },
+   {
+    "ja": "**お[国](くに)**は、どちらですか。",
+    "vi": "Quê hương của bạn ở đâu vậy?"
+   }
+  ]
+ },
+ {
+  "word": "会社",
+  "reading": "かいしゃ",
+  "meaning": "công ty",
+  "example": "これはイタリアの**[会社](かいしゃ)**の[時計](とけい)です。",
+  "exampleVi": "Đây là đồng hồ của một công ty Ý.",
+  "examples": [
+   {
+    "ja": "これはイタリアの**[会社](かいしゃ)**の[時計](とけい)です。",
+    "vi": "Đây là đồng hồ của một công ty Ý."
+   },
+   {
+    "ja": "[父](ちち)は**[会社](かいしゃ)**ではたらいています。",
+    "vi": "Bố tôi làm việc ở công ty."
+   }
+  ]
+ },
+ {
+  "word": "家",
+  "reading": "うち/いえ",
+  "meaning": "nhà",
+  "example": "[私](わたし)の**[家](うち)**はあそこです。",
+  "exampleVi": "Nhà của tôi ở đằng kia.",
+  "examples": [
+   {
+    "ja": "[私](わたし)の**[家](うち)**はあそこです。",
+    "vi": "Nhà của tôi ở đằng kia."
+   },
+   {
+    "ja": "**[家](うち)**にねこがいます。",
+    "vi": "Nhà tôi có con mèo."
+   }
+  ]
+ },
+ {
+  "word": "くつ",
+  "reading": "くつ",
+  "meaning": "Giày",
+  "example": "この**くつ**は[五千円](ごせんえん)です。",
+  "exampleVi": "Đôi giày này giá 5.000 yên.",
+  "examples": [
+   {
+    "ja": "この**くつ**は[五千円](ごせんえん)です。",
+    "vi": "Đôi giày này giá 5.000 yên."
+   },
+   {
+    "ja": "**くつ**を[買](か)いたいです。",
+    "vi": "Tôi muốn mua giày."
+   }
+  ]
+ },
+ {
+  "word": "ネクタイ",
+  "reading": "ネクタイ",
+  "meaning": "cà vạt",
+  "example": "これはイタリアの**ネクタイ**です。",
+  "exampleVi": "Đây là cà vạt của Ý.",
+  "examples": [
+   {
+    "ja": "これはイタリアの**ネクタイ**です。",
+    "vi": "Đây là cà vạt của Ý."
+   },
+   {
+    "ja": "[父](ちち)は、[毎朝](まいあさ)**ネクタイ**をします。",
+    "vi": "Sáng nào bố tôi cũng đeo cà vạt."
+   }
+  ]
+ },
+ {
+  "word": "ワイン",
+  "reading": "ワイン",
+  "meaning": "rượu vang",
+  "example": "これはフランスの**ワイン**です。",
+  "exampleVi": "Đây là rượu vang của Pháp.",
+  "examples": [
+   {
+    "ja": "これはフランスの**ワイン**です。",
+    "vi": "Đây là rượu vang của Pháp."
+   },
+   {
+    "ja": "**ワイン**を[飲](の)みました。",
+    "vi": "Tôi đã uống rượu vang."
+   }
+  ]
+ },
+ {
+  "word": "売り場",
+  "reading": "うりば",
+  "meaning": "Quầy bán hàng",
+  "example": "くつの**[売](う)り[場](ば)**は[三階](さんがい)です。",
+  "exampleVi": "Quầy bán giày ở tầng 3.",
+  "examples": [
+   {
+    "ja": "くつの**[売](う)り[場](ば)**は[三階](さんがい)です。",
+    "vi": "Quầy bán giày ở tầng 3."
+   },
+   {
+    "ja": "[野菜](やさい)の**[売](う)り[場](ば)**はどこですか。",
+    "vi": "Quầy bán rau ở đâu ạ?"
+   }
+  ]
+ },
+ {
+  "word": "地下",
+  "reading": "ちか",
+  "meaning": "ngầm, dưới mặt đất",
+  "example": "ワインの[売](う)り[場](ば)は**[地下](ちか)**です。",
+  "exampleVi": "Quầy bán rượu vang ở tầng hầm.",
+  "examples": [
+   {
+    "ja": "ワインの[売](う)り[場](ば)は**[地下](ちか)**です。",
+    "vi": "Quầy bán rượu vang ở tầng hầm."
+   },
+   {
+    "ja": "**[地下](ちか)**にちゅうしゃじょうがあります。",
+    "vi": "Ở tầng hầm có bãi đậu xe."
+   }
+  ]
+ },
+ {
+  "word": "階",
+  "reading": "かい",
+  "meaning": "Tầng~",
+  "example": "[会社](かいしゃ)は[五](ご)**[階](かい)**です。",
+  "exampleVi": "Công ty ở tầng 5.",
+  "examples": [
+   {
+    "ja": "[会社](かいしゃ)は[五](ご)**[階](かい)**です。",
+    "vi": "Công ty ở tầng 5."
+   },
+   {
+    "ja": "[食堂](しょくどう)は[地下](ちか)[一](いっ)**[階](かい)**です。",
+    "vi": "Nhà ăn ở tầng hầm 1."
+   }
+  ]
+ },
+ {
+  "word": "何階",
+  "reading": "なんがい",
+  "meaning": "Tầng mấy",
+  "example": "[食堂](しょくどう)は**[何階](なんがい)**ですか。",
+  "exampleVi": "Nhà ăn ở tầng mấy vậy?",
+  "examples": [
+   {
+    "ja": "[食堂](しょくどう)は**[何階](なんがい)**ですか。",
+    "vi": "Nhà ăn ở tầng mấy vậy?"
+   },
+   {
+    "ja": "ホアンさんの[部屋](へや)は**[何階](なんがい)**ですか。",
+    "vi": "Phòng của anh Hoàng ở tầng mấy?"
+   }
+  ]
+ },
+ {
+  "word": "百",
+  "reading": "ひゃく",
+  "meaning": "trăm",
+  "example": "このノートは**[百](ひゃく)**[円](えん)です。",
+  "exampleVi": "Cuốn vở này giá 100 yên.",
+  "examples": [
+   {
+    "ja": "このノートは**[百](ひゃく)**[円](えん)です。",
+    "vi": "Cuốn vở này giá 100 yên."
+   },
+   {
+    "ja": "この[本](ほん)は**[百](ひゃく)**ページあります。",
+    "vi": "Cuốn sách này có một trăm trang."
+   }
+  ]
+ },
+ {
+  "word": "千",
+  "reading": "せん",
+  "meaning": "Nghìn",
+  "example": "このネクタイは**[千](せん)**[円](えん)です。",
+  "exampleVi": "Cái cà vạt này giá 1.000 yên.",
+  "examples": [
+   {
+    "ja": "このネクタイは**[千](せん)**[円](えん)です。",
+    "vi": "Cái cà vạt này giá 1.000 yên."
+   },
+   {
+    "ja": "**[千](せん)**、[二千](にせん)、[三千](さんぜん)。",
+    "vi": "Một nghìn, hai nghìn, ba nghìn."
+   }
+  ]
+ },
+ {
+  "word": "万",
+  "reading": "まん",
+  "meaning": "Vạn, mười nghìn",
+  "example": "その[時計](とけい)は[五](ご)**[万](まん)**[円](えん)です。",
+  "exampleVi": "Cái đồng hồ đó giá 50.000 yên.",
+  "examples": [
+   {
+    "ja": "その[時計](とけい)は[五](ご)**[万](まん)**[円](えん)です。",
+    "vi": "Cái đồng hồ đó giá 50.000 yên."
+   },
+   {
+    "ja": "[一](いち)**[万](まん)**、[二](に)**[万](まん)**、[三](さん)**[万](まん)**。",
+    "vi": "Một vạn, hai vạn, ba vạn."
+   }
+  ]
+ },
+ {
+  "word": "円",
+  "reading": "えん",
+  "meaning": "Yên",
+  "example": "このかさは[八百](はっぴゃく)**[円](えん)**です。",
+  "exampleVi": "Cái ô này giá 800 yên.",
+  "examples": [
+   {
+    "ja": "このかさは[八百](はっぴゃく)**[円](えん)**です。",
+    "vi": "Cái ô này giá 800 yên."
+   },
+   {
+    "ja": "[九万](きゅうまん)**[円](えん)**です。",
+    "vi": "90.000 yên."
+   }
+  ]
+ },
+ {
+  "word": "いくら",
+  "reading": "いくら",
+  "meaning": "bao nhiêu tiền",
+  "example": "この[本](ほん)は**いくら**ですか。",
+  "exampleVi": "Quyển sách này giá bao nhiêu vậy?",
+  "examples": [
+   {
+    "ja": "この[本](ほん)は**いくら**ですか。",
+    "vi": "Quyển sách này giá bao nhiêu vậy?"
+   },
+   {
+    "ja": "このパソコンは**いくら**ですか。",
+    "vi": "Cái máy tính này bao nhiêu tiền?"
+   }
+  ]
+ },
+ {
+  "word": "イタリア",
+  "reading": "イタリア",
+  "meaning": "Nước Ý",
+  "example": "これは**イタリア**のワインです。",
+  "exampleVi": "Đây là rượu vang của Ý.",
+  "examples": [
+   {
+    "ja": "これは**イタリア**のワインです。",
+    "vi": "Đây là rượu vang của Ý."
+   },
+   {
+    "ja": "**イタリア**の[友達](ともだち)がいます。",
+    "vi": "Tôi có bạn ở Ý."
+   }
+  ]
+ },
+ {
+  "word": "スイス",
+  "reading": "スイス",
+  "meaning": "Thụy Sĩ",
+  "example": "この[時計](とけい)は**スイス**の[時計](とけい)です。",
+  "exampleVi": "Đồng hồ này là đồng hồ của Thụy Sĩ.",
+  "examples": [
+   {
+    "ja": "この[時計](とけい)は**スイス**の[時計](とけい)です。",
+    "vi": "Đồng hồ này là đồng hồ của Thụy Sĩ."
+   },
+   {
+    "ja": "**スイス**に[行](い)きたいです。",
+    "vi": "Tôi muốn đến Thụy Sĩ."
+   }
+  ]
+ },
+ {
+  "word": "フランス",
+  "reading": "フランス",
+  "meaning": "Pháp",
+  "example": "このくつは**フランス**のです。",
+  "exampleVi": "Đôi giày này là của Pháp.",
+  "examples": [
+   {
+    "ja": "このくつは**フランス**のです。",
+    "vi": "Đôi giày này là của Pháp."
+   },
+   {
+    "ja": "**フランス**の[友達](ともだち)は[先生](せんせい)です。",
+    "vi": "Bạn tôi ở Pháp là giáo viên."
+   }
+  ]
+ },
+ {
+  "word": "バンコク",
+  "reading": "バンコク",
+  "meaning": "Bangkok (Thái Lan)",
+  "example": "ここは**バンコク**です。",
+  "exampleVi": "Đây là Bangkok.",
+  "examples": [
+   {
+    "ja": "ここは**バンコク**です。",
+    "vi": "Đây là Bangkok."
+   },
+   {
+    "ja": "**バンコク**は[暑](あつ)い[町](まち)です。",
+    "vi": "Bangkok là một thành phố nóng."
+   }
+  ]
+ },
+ {
+  "word": "ベルリン",
+  "reading": "ベルリン",
+  "meaning": "Berlin (Đức)",
+  "example": "ここは**ベルリン**です。",
+  "exampleVi": "Đây là Berlin.",
+  "examples": [
+   {
+    "ja": "ここは**ベルリン**です。",
+    "vi": "Đây là Berlin."
+   },
+   {
+    "ja": "**ベルリン**はドイツの[町](まち)です。",
+    "vi": "Berlin là một thành phố của nước Đức."
+   }
+  ]
+ }
 ]

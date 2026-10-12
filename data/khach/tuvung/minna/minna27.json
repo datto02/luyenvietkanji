@@ -1,366 +1,886 @@
 [
-  {
-    "word": "飼う",
-    "reading": "かう",
-    "meaning": "nuôi [thú cưng]",
-    "example": "[犬](いぬ)を**[飼](か)って**います。",
-    "exampleVi": "Tôi đang nuôi một con chó."
-  },
-  {
-    "word": "建てる",
-    "reading": "たてる",
-    "meaning": "xây dựng",
-    "example": "[新](あたら)しい[家](いえ)を**[建](た)てます**。",
-    "exampleVi": "Tôi sẽ xây một ngôi nhà mới."
-  },
-  {
-    "word": "走る",
-    "reading": "はしる",
-    "meaning": "chạy [trên đường]",
-    "example": "[毎朝](まいあさ)[公園](こうえん)を**[走](はし)ります**。",
-    "exampleVi": "Sáng nào tôi cũng chạy trong công viên."
-  },
-  {
-    "word": "取る",
-    "reading": "とる",
-    "meaning": "lấy",
-    "example": "その[本](ほん)を**[取](と)って**ください。",
-    "exampleVi": "Xin hãy lấy giúp tôi quyển sách đó."
-  },
-  {
-    "word": "見える",
-    "reading": "みえる",
-    "meaning": "nhìn thấy",
-    "example": "ここから[富士山](ふじさん)が**[見](み)えます**。",
-    "exampleVi": "Từ đây có thể nhìn thấy núi Phú Sĩ."
-  },
-  {
-    "word": "聞こえる",
-    "reading": "きこえる",
-    "meaning": "nghe thấy",
-    "example": "[鳥](とり)の[声](こえ)が**[聞](き)こえます**。",
-    "exampleVi": "Nghe thấy tiếng chim hót."
-  },
-  {
-    "word": "できる",
-    "reading": "できる",
-    "meaning": "được làm, hoàn thành",
-    "example": "ここで[買](か)い[物](もの)が**できます**。",
-    "exampleVi": "Có thể mua sắm ở đây."
-  },
-  {
-    "word": "ひらく",
-    "reading": "ひらく",
-    "meaning": "mở, tổ chức",
-    "example": "[来週](らいしゅう)、パーティーを**ひらきます**。",
-    "exampleVi": "Tuần sau chúng tôi sẽ tổ chức một bữa tiệc."
-  },
-  {
-    "word": "心配",
-    "reading": "しんぱい",
-    "meaning": "lo lắng",
-    "example": "**[心配](しんぱい)**しないでください。",
-    "exampleVi": "Xin đừng lo lắng."
-  },
-  {
-    "word": "ペット",
-    "reading": "ペット",
-    "meaning": "thú cưng",
-    "example": "このマンションでは**ペット**を[飼](か)うことができません。",
-    "exampleVi": "Ở chung cư này không được nuôi thú cưng."
-  },
-  {
-    "word": "鳥",
-    "reading": "とり",
-    "meaning": "chim",
-    "example": "[庭](にわ)に**[鳥](とり)**がいます。",
-    "exampleVi": "Trong vườn có chim."
-  },
-  {
-    "word": "声",
-    "reading": "こえ",
-    "meaning": "tiếng, giọng nói",
-    "example": "[大](おお)きい**[声](こえ)**で[話](はな)してください。",
-    "exampleVi": "Xin hãy nói bằng giọng to."
-  },
-  {
-    "word": "波",
-    "reading": "なみ",
-    "meaning": "sóng",
-    "example": "[海](うみ)の**[波](なみ)**は[大](おお)きいです。",
-    "exampleVi": "Sóng biển lớn."
-  },
-  {
-    "word": "花火",
-    "reading": "はなび",
-    "meaning": "pháo hoa",
-    "example": "[夏](なつ)に**[花火](はなび)**を[見](み)ます。",
-    "exampleVi": "Vào mùa hè tôi xem pháo hoa."
-  },
-  {
-    "word": "景色",
-    "reading": "けしき",
-    "meaning": "cảnh sắc, phong cảnh",
-    "example": "ここの**[景色](けしき)**は[素晴](すば)らしいです。",
-    "exampleVi": "Cảnh sắc ở đây thật tuyệt vời."
-  },
-  {
-    "word": "昼間",
-    "reading": "ひるま",
-    "meaning": "ban ngày",
-    "example": "**[昼間](ひるま)**は[暑](あつ)いですが、[夜](よる)はすずしいです。",
-    "exampleVi": "Ban ngày nóng nhưng ban đêm mát."
-  },
-  {
-    "word": "昔",
-    "reading": "むかし",
-    "meaning": "ngày xưa",
-    "example": "**[昔](むかし)**、ここに[川](かわ)がありました。",
-    "exampleVi": "Ngày xưa ở đây có một con sông."
-  },
-  {
-    "word": "道具",
-    "reading": "どうぐ",
-    "meaning": "dụng cụ",
-    "example": "[料理](りょうり)の**[道具](どうぐ)**を[買](か)います。",
-    "exampleVi": "Tôi mua dụng cụ nấu ăn."
-  },
-  {
-    "word": "じどうはんばいき",
-    "reading": "じどうはんばいき",
-    "meaning": "máy bán hàng tự động",
-    "example": "[駅](えき)に**じどうはんばいき**があります。",
-    "exampleVi": "Ở nhà ga có máy bán hàng tự động."
-  },
-  {
-    "word": "つうしんはんばい",
-    "reading": "つうしんはんばい",
-    "meaning": "bán hàng từ xa (qua bưu điện, mạng)",
-    "example": "**つうしんはんばい**で[服](ふく)を[買](か)います。",
-    "exampleVi": "Tôi mua quần áo qua hình thức bán hàng từ xa."
-  },
-  {
-    "word": "クリーニング",
-    "reading": "クリーニング",
-    "meaning": "giặt là",
-    "example": "**クリーニング**に[服](ふく)を[出](だ)します。",
-    "exampleVi": "Tôi gửi quần áo đi giặt là."
-  },
-  {
-    "word": "マンション",
-    "reading": "マンション",
-    "meaning": "chung cư",
-    "example": "この**マンション**は[新](あたら)しいです。",
-    "exampleVi": "Chung cư này mới."
-  },
-  {
-    "word": "家",
-    "reading": "うち/いえ",
-    "meaning": "nhà",
-    "example": "**[家](いえ)**は[駅](えき)から[近](ちか)いです。",
-    "exampleVi": "Nhà tôi gần nhà ga."
-  },
-  {
-    "word": "キッチン",
-    "reading": "キッチン",
-    "meaning": "bếp",
-    "example": "**キッチン**で[料理](りょうり)をします。",
-    "exampleVi": "Tôi nấu ăn trong bếp."
-  },
-  {
-    "word": "教室",
-    "reading": "きょうしつ",
-    "meaning": "lớp học",
-    "example": "この**[教室](きょうしつ)**で[日本語](にほんご)を[勉強](べんきょう)します。",
-    "exampleVi": "Tôi học tiếng Nhật ở lớp học này."
-  },
-  {
-    "word": "パーティールーム",
-    "reading": "パーティールーム",
-    "meaning": "phòng tổ chức tiệc",
-    "example": "**パーティールーム**でパーティーができます。",
-    "exampleVi": "Có thể tổ chức tiệc ở phòng tiệc."
-  },
-  {
-    "word": "後",
-    "reading": "ご",
-    "meaning": "sau (thời gian)",
-    "example": "[二](に)[時間](じかん)**[後](ご)**に[会議](かいぎ)があります。",
-    "exampleVi": "Hai tiếng nữa có cuộc họp."
-  },
-  {
-    "word": "しか",
-    "reading": "しか",
-    "meaning": "chỉ (dùng với phủ định)",
-    "example": "[お金](おかね)が[百円](ひゃくえん)**しか**ありません。",
-    "exampleVi": "Tôi chỉ có 100 yên."
-  },
-  {
-    "word": "他",
-    "reading": "ほか",
-    "meaning": "khác",
-    "example": "**[他](ほか)**に[何](なに)ができますか。",
-    "exampleVi": "Ngoài ra bạn còn làm được gì nữa?"
-  },
-  {
-    "word": "はっきり",
-    "reading": "はっきり",
-    "meaning": "rõ ràng",
-    "example": "**はっきり**[見](み)えます。",
-    "exampleVi": "Nhìn thấy rõ."
-  },
-  {
-    "word": "ほとんど",
-    "reading": "ほとんど",
-    "meaning": "hầu như, hầu hết",
-    "example": "**ほとんど**[毎日](まいにち)[走](はし)ります。",
-    "exampleVi": "Tôi chạy gần như mỗi ngày."
-  },
-  {
-    "word": "関西空港",
-    "reading": "かんさいくうこう",
-    "meaning": "sân bay quốc tế Kansai",
-    "example": "**[関西空港](かんさいくうこう)**は[海](うみ)の[上](うえ)にあります。",
-    "exampleVi": "Sân bay Kansai nằm trên biển."
-  },
-  {
-    "word": "家具",
-    "reading": "かぐ",
-    "meaning": "đồ nội thất",
-    "example": "[新](あたら)しい**[家具](かぐ)**を[買](か)いました。",
-    "exampleVi": "Tôi đã mua đồ nội thất mới."
-  },
-  {
-    "word": "ほんだな",
-    "reading": "ほんだな",
-    "meaning": "giá sách",
-    "example": "**ほんだな**の[上](うえ)に[辞書](じしょ)があります。",
-    "exampleVi": "Trên giá sách có từ điển."
-  },
-  {
-    "word": "夢",
-    "reading": "ゆめ",
-    "meaning": "giấc mơ, ước mơ",
-    "example": "わたしの**[夢](ゆめ)**は[先生](せんせい)になることです。",
-    "exampleVi": "Ước mơ của tôi là trở thành giáo viên."
-  },
-  {
-    "word": "いつか",
-    "reading": "いつか",
-    "meaning": "lúc nào đó",
-    "example": "**いつか**[宇宙](うちゅう)へ[行](い)きたいです。",
-    "exampleVi": "Một ngày nào đó tôi muốn đi vào vũ trụ."
-  },
-  {
-    "word": "素晴らしい",
-    "reading": "すばらしい",
-    "meaning": "tuyệt vời",
-    "example": "**[素晴](すば)らしい**[天気](てんき)ですね。",
-    "exampleVi": "Thời tiết tuyệt vời nhỉ."
-  },
-  {
-    "word": "子供達",
-    "reading": "こどもたち",
-    "meaning": "bọn trẻ",
-    "example": "**[子供達](こどもたち)**は[公園](こうえん)で[遊](あそ)んでいます。",
-    "exampleVi": "Bọn trẻ đang chơi ở công viên."
-  },
-  {
-    "word": "まんが",
-    "reading": "まんが",
-    "meaning": "truyện tranh",
-    "example": "**まんが**を[読](よ)むことが[好](す)きです。",
-    "exampleVi": "Tôi thích đọc truyện tranh."
-  },
-  {
-    "word": "大好き",
-    "reading": "だいすき",
-    "meaning": "rất thích",
-    "example": "[私](わたし)は[音楽](おんがく)が**[大好](だいす)き**です。",
-    "exampleVi": "Tôi rất thích âm nhạc."
-  },
-  {
-    "word": "主人公",
-    "reading": "しゅじんこう",
-    "meaning": "nhân vật chính",
-    "example": "この[映画](えいが)の**[主人公](しゅじんこう)**は[子供](こども)です。",
-    "exampleVi": "Nhân vật chính của bộ phim này là một đứa trẻ."
-  },
-  {
-    "word": "形",
-    "reading": "かたち",
-    "meaning": "hình dạng",
-    "example": "この[箱](はこ)の**[形](かたち)**は[面白](おもしろ)いです。",
-    "exampleVi": "Hình dạng của cái hộp này thú vị."
-  },
-  {
-    "word": "ロボット",
-    "reading": "ロボット",
-    "meaning": "robot",
-    "example": "[子供](こども)は**ロボット**が[好](す)きです。",
-    "exampleVi": "Trẻ con thích robot."
-  },
-  {
-    "word": "不思議",
-    "reading": "ふしぎ",
-    "meaning": "kỳ bí, khó hiểu",
-    "example": "これは**[不思議](ふしぎ)**な[箱](はこ)です。",
-    "exampleVi": "Đây là một chiếc hộp kỳ diệu."
-  },
-  {
-    "word": "ポケット",
-    "reading": "ポケット",
-    "meaning": "túi",
-    "example": "**ポケット**にかぎがあります。",
-    "exampleVi": "Trong túi có chìa khóa."
-  },
-  {
-    "word": "例えば",
-    "reading": "たとえば",
-    "meaning": "ví dụ",
-    "example": "**[例](たと)えば**、[野球](やきゅう)やサッカーです。",
-    "exampleVi": "Ví dụ như bóng chày hay bóng đá."
-  },
-  {
-    "word": "自由に",
-    "reading": "じゆうに",
-    "meaning": "tự do, thoải mái",
-    "example": "**[自由](じゆう)に**[使](つか)ってください。",
-    "exampleVi": "Xin hãy tự do sử dụng."
-  },
-  {
-    "word": "空",
-    "reading": "から",
-    "meaning": "rỗng",
-    "example": "**[空](から)**の[箱](はこ)です。",
-    "exampleVi": "Đây là một cái hộp rỗng."
-  },
-  {
-    "word": "飛ぶ",
-    "reading": "とぶ",
-    "meaning": "bay, biến mất",
-    "example": "[鳥](とり)が**[飛](と)んで**います。",
-    "exampleVi": "Con chim đang bay."
-  },
-  {
-    "word": "自分",
-    "reading": "じぶん",
-    "meaning": "bản thân, mình",
-    "example": "**[自分](じぶん)**で[料理](りょうり)を[作](つく)ります。",
-    "exampleVi": "Tôi tự nấu ăn."
-  },
-  {
-    "word": "将来",
-    "reading": "しょうらい",
-    "meaning": "tương lai",
-    "example": "**[将来](しょうらい)**、[先生](せんせい)になりたいです。",
-    "exampleVi": "Trong tương lai tôi muốn trở thành giáo viên."
-  },
-  {
-    "word": "ドラえもん",
-    "reading": "ドラえもん",
-    "meaning": "Doraemon",
-    "example": "**ドラえもん**は[有名](ゆうめい)なまんがです。",
-    "exampleVi": "Doraemon là một bộ truyện tranh nổi tiếng."
-  }
+ {
+  "word": "飼う",
+  "reading": "かう",
+  "meaning": "nuôi [thú cưng]",
+  "example": "[犬](いぬ)を**[飼](か)っています**。",
+  "exampleVi": "Tôi đang nuôi một con chó.",
+  "examples": [
+   {
+    "ja": "[犬](いぬ)を**[飼](か)っています**。",
+    "vi": "Tôi đang nuôi một con chó."
+   },
+   {
+    "ja": "うさぎを**[飼](か)って**みたいです。",
+    "vi": "Tôi muốn thử nuôi một con thỏ."
+   }
+  ]
+ },
+ {
+  "word": "建てる",
+  "reading": "たてる",
+  "meaning": "xây dựng",
+  "example": "[新](あたら)しい[家](いえ)を**[建](た)てます**。",
+  "exampleVi": "Tôi sẽ xây một ngôi nhà mới.",
+  "examples": [
+   {
+    "ja": "[新](あたら)しい[家](いえ)を**[建](た)てます**。",
+    "vi": "Tôi sẽ xây một ngôi nhà mới."
+   },
+   {
+    "ja": "[来年](らいねん)、こう[外](がい)に[家](いえ)を**[建](た)てる**[予定](よてい)だ。",
+    "vi": "Năm sau tôi định xây nhà ở ngoại ô."
+   }
+  ]
+ },
+ {
+  "word": "走る",
+  "reading": "はしる",
+  "meaning": "chạy [trên đường]",
+  "example": "[毎朝](まいあさ)[公園](こうえん)を**[走](はし)ります**。",
+  "exampleVi": "Sáng nào tôi cũng chạy trong công viên.",
+  "examples": [
+   {
+    "ja": "[毎朝](まいあさ)[公園](こうえん)を**[走](はし)ります**。",
+    "vi": "Sáng nào tôi cũng chạy trong công viên."
+   },
+   {
+    "ja": "[毎朝](まいあさ)、[公園](こうえん)の[中](なか)を**[走](はし)っている**。",
+    "vi": "Sáng nào tôi cũng chạy trong công viên."
+   }
+  ]
+ },
+ {
+  "word": "取る",
+  "reading": "とる",
+  "meaning": "lấy",
+  "example": "その[本](ほん)を**[取](と)って**ください。",
+  "exampleVi": "Xin hãy lấy giúp tôi quyển sách đó.",
+  "examples": [
+   {
+    "ja": "その[本](ほん)を**[取](と)って**ください。",
+    "vi": "Xin hãy lấy giúp tôi quyển sách đó."
+   },
+   {
+    "ja": "さとうを**[取](と)って**ください。",
+    "vi": "Hãy lấy đường giùm tôi."
+   }
+  ]
+ },
+ {
+  "word": "見える",
+  "reading": "みえる",
+  "meaning": "nhìn thấy",
+  "example": "ここから[富士山](ふじさん)が**[見](み)えます**。",
+  "exampleVi": "Từ đây có thể nhìn thấy núi Phú Sĩ.",
+  "examples": [
+   {
+    "ja": "ここから[富士山](ふじさん)が**[見](み)えます**。",
+    "vi": "Từ đây có thể nhìn thấy núi Phú Sĩ."
+   },
+   {
+    "ja": "[窓](まど)から[富士山](ふじさん)がきれいに**[見](み)えます**。",
+    "vi": "Từ cửa sổ có thể nhìn thấy núi Phú Sĩ tuyệt đẹp."
+   }
+  ]
+ },
+ {
+  "word": "聞こえる",
+  "reading": "きこえる",
+  "meaning": "nghe thấy",
+  "example": "[鳥](とり)の[声](こえ)が**[聞](き)こえます**。",
+  "exampleVi": "Nghe thấy tiếng chim hót.",
+  "examples": [
+   {
+    "ja": "[鳥](とり)の[声](こえ)が**[聞](き)こえます**。",
+    "vi": "Nghe thấy tiếng chim hót."
+   },
+   {
+    "ja": "[近所](きんじょ)から[子供](こども)の[声](こえ)が**[聞](き)こえます**。",
+    "vi": "Có thể nghe được tiếng trẻ con từ hàng xóm."
+   }
+  ]
+ },
+ {
+  "word": "できる",
+  "reading": "できる",
+  "meaning": "được làm, hoàn thành",
+  "example": "ここで[買](か)い[物](もの)が**できます**。",
+  "exampleVi": "Có thể mua sắm ở đây.",
+  "examples": [
+   {
+    "ja": "ここで[買](か)い[物](もの)が**できます**。",
+    "vi": "Có thể mua sắm ở đây."
+   },
+   {
+    "ja": "コンビニでチケットの[予約](よやく)が**できます**。",
+    "vi": "Có thể đặt vé ở cửa hàng tiện lợi."
+   }
+  ]
+ },
+ {
+  "word": "ひらく",
+  "reading": "ひらく",
+  "meaning": "mở, tổ chức",
+  "example": "[来週](らいしゅう)、パーティーを**ひらきます**。",
+  "exampleVi": "Tuần sau chúng tôi sẽ tổ chức một bữa tiệc.",
+  "examples": [
+   {
+    "ja": "[来週](らいしゅう)、パーティーを**ひらきます**。",
+    "vi": "Tuần sau chúng tôi sẽ tổ chức một bữa tiệc."
+   },
+   {
+    "ja": "[学校](がっこう)は[九時](くじ)にドアを**ひらきます**。",
+    "vi": "Trường mở cửa lúc 9 giờ."
+   }
+  ]
+ },
+ {
+  "word": "心配",
+  "reading": "しんぱい",
+  "meaning": "lo lắng",
+  "example": "**[心配](しんぱい)しない**でください。",
+  "exampleVi": "Xin đừng lo lắng.",
+  "examples": [
+   {
+    "ja": "**[心配](しんぱい)しない**でください。",
+    "vi": "Xin đừng lo lắng."
+   },
+   {
+    "ja": "[子](こ)どもの[病気](びょうき)が**[心配](しんぱい)**で、ねむれなかった。",
+    "vi": "Tôi lo cho bệnh của con nên không ngủ được."
+   }
+  ]
+ },
+ {
+  "word": "ペット",
+  "reading": "ペット",
+  "meaning": "thú cưng",
+  "example": "このマンションでは**ペット**を[飼](か)うことができません。",
+  "exampleVi": "Ở chung cư này không được nuôi thú cưng.",
+  "examples": [
+   {
+    "ja": "このマンションでは**ペット**を[飼](か)うことができません。",
+    "vi": "Ở chung cư này không được nuôi thú cưng."
+   },
+   {
+    "ja": "このアパートで**ペット**は[飼](か)えません。",
+    "vi": "Không thể nuôi thú cưng ở căn hộ chung cư này."
+   }
+  ]
+ },
+ {
+  "word": "鳥",
+  "reading": "とり",
+  "meaning": "chim",
+  "example": "[庭](にわ)に**[鳥](とり)**がいます。",
+  "exampleVi": "Trong vườn có chim.",
+  "examples": [
+   {
+    "ja": "[庭](にわ)に**[鳥](とり)**がいます。",
+    "vi": "Trong vườn có chim."
+   },
+   {
+    "ja": "[朝](あさ)、[庭](にわ)で**[鳥](とり)**が[鳴](な)いている。",
+    "vi": "Buổi sáng chim hót ngoài vườn."
+   }
+  ]
+ },
+ {
+  "word": "声",
+  "reading": "こえ",
+  "meaning": "tiếng, giọng nói",
+  "example": "[大](おお)きい**[声](こえ)**で[話](はな)してください。",
+  "exampleVi": "Xin hãy nói bằng giọng to.",
+  "examples": [
+   {
+    "ja": "[大](おお)きい**[声](こえ)**で[話](はな)してください。",
+    "vi": "Xin hãy nói bằng giọng to."
+   },
+   {
+    "ja": "[電話](でんわ)の**[声](こえ)**が[小](ちい)さくて、[聞](き)こえなかった。",
+    "vi": "Giọng trong điện thoại nhỏ quá nên tôi nghe không rõ."
+   }
+  ]
+ },
+ {
+  "word": "波",
+  "reading": "なみ",
+  "meaning": "sóng",
+  "example": "[海](うみ)の**[波](なみ)**は[大](おお)きいです。",
+  "exampleVi": "Sóng biển lớn.",
+  "examples": [
+   {
+    "ja": "[海](うみ)の**[波](なみ)**は[大](おお)きいです。",
+    "vi": "Sóng biển lớn."
+   },
+   {
+    "ja": "[今日](きょう)は**[波](なみ)**が[高](たか)いです。",
+    "vi": "Hôm nay sóng lớn (cao)."
+   }
+  ]
+ },
+ {
+  "word": "花火",
+  "reading": "はなび",
+  "meaning": "pháo hoa",
+  "example": "[夏](なつ)に**[花火](はなび)**を[見](み)ます。",
+  "exampleVi": "Vào mùa hè tôi xem pháo hoa.",
+  "examples": [
+   {
+    "ja": "[夏](なつ)に**[花火](はなび)**を[見](み)ます。",
+    "vi": "Vào mùa hè tôi xem pháo hoa."
+   },
+   {
+    "ja": "[夏](なつ)に**[花火](はなび)**を[見](み)ました。",
+    "vi": "Tôi đã xem pháo hoa vào mùa hè."
+   }
+  ]
+ },
+ {
+  "word": "景色",
+  "reading": "けしき",
+  "meaning": "cảnh sắc, phong cảnh",
+  "example": "ここの**[景色](けしき)**は[素晴](すば)らしいです。",
+  "exampleVi": "Cảnh sắc ở đây thật tuyệt vời.",
+  "examples": [
+   {
+    "ja": "ここの**[景色](けしき)**は[素晴](すば)らしいです。",
+    "vi": "Cảnh sắc ở đây thật tuyệt vời."
+   },
+   {
+    "ja": "[山](やま)の[上](うえ)からの**[景色](けしき)**は、[本当](ほんとう)にきれいだった。",
+    "vi": "Phong cảnh nhìn từ trên núi thật sự rất đẹp."
+   }
+  ]
+ },
+ {
+  "word": "昼間",
+  "reading": "ひるま",
+  "meaning": "ban ngày",
+  "example": "**[昼間](ひるま)**は[暑](あつ)いですが、[夜](よる)はすずしいです。",
+  "exampleVi": "Ban ngày nóng nhưng ban đêm mát.",
+  "examples": [
+   {
+    "ja": "**[昼間](ひるま)**は[暑](あつ)いですが、[夜](よる)はすずしいです。",
+    "vi": "Ban ngày nóng nhưng ban đêm mát."
+   },
+   {
+    "ja": "このあたりは**[昼間](ひるま)**は[人](ひと)が[多](おお)いですが、[夜](よる)はしずかです。",
+    "vi": "Khu vực này ban ngày thì đông người nhưng buổi tối thì yên tĩnh."
+   }
+  ]
+ },
+ {
+  "word": "昔",
+  "reading": "むかし",
+  "meaning": "ngày xưa",
+  "example": "**[昔](むかし)**、ここに[川](かわ)がありました。",
+  "exampleVi": "Ngày xưa ở đây có một con sông.",
+  "examples": [
+   {
+    "ja": "**[昔](むかし)**、ここに[川](かわ)がありました。",
+    "vi": "Ngày xưa ở đây có một con sông."
+   },
+   {
+    "ja": "**[昔](むかし)**はここに[店](みせ)がありました。",
+    "vi": "Ngày xưa ở đây có một cửa hàng."
+   }
+  ]
+ },
+ {
+  "word": "道具",
+  "reading": "どうぐ",
+  "meaning": "dụng cụ",
+  "example": "[料理](りょうり)の**[道具](どうぐ)**を[買](か)います。",
+  "exampleVi": "Tôi mua dụng cụ nấu ăn.",
+  "examples": [
+   {
+    "ja": "[料理](りょうり)の**[道具](どうぐ)**を[買](か)います。",
+    "vi": "Tôi mua dụng cụ nấu ăn."
+   },
+   {
+    "ja": "[台所](だいどころ)の[便利](べんり)な**[道具](どうぐ)**を[買](か)いました。",
+    "vi": "Tôi đã mua những vật dụng tiện lợi trong nhà bếp."
+   }
+  ]
+ },
+ {
+  "word": "じどうはんばいき",
+  "reading": "じどうはんばいき",
+  "meaning": "máy bán hàng tự động",
+  "example": "[駅](えき)に**じどうはんばいき**があります。",
+  "exampleVi": "Ở nhà ga có máy bán hàng tự động.",
+  "examples": [
+   {
+    "ja": "[駅](えき)に**じどうはんばいき**があります。",
+    "vi": "Ở nhà ga có máy bán hàng tự động."
+   },
+   {
+    "ja": "**じどうはんばいき**は[食堂](しょくどう)です。",
+    "vi": "Máy bán hàng tự động ở nhà ăn."
+   }
+  ]
+ },
+ {
+  "word": "つうしんはんばい",
+  "reading": "つうしんはんばい",
+  "meaning": "bán hàng từ xa (qua bưu điện, mạng)",
+  "example": "**つうしんはんばい**で[服](ふく)を[買](か)います。",
+  "exampleVi": "Tôi mua quần áo qua hình thức bán hàng từ xa.",
+  "examples": [
+   {
+    "ja": "**つうしんはんばい**で[服](ふく)を[買](か)います。",
+    "vi": "Tôi mua quần áo qua hình thức bán hàng từ xa."
+   },
+   {
+    "ja": "**つうしんはんばい**は[便利](べんり)です。",
+    "vi": "Bán hàng từ xa rất tiện lợi."
+   }
+  ]
+ },
+ {
+  "word": "クリーニング",
+  "reading": "クリーニング",
+  "meaning": "giặt là",
+  "example": "**クリーニング**に[服](ふく)を[出](だ)します。",
+  "exampleVi": "Tôi gửi quần áo đi giặt là.",
+  "examples": [
+   {
+    "ja": "**クリーニング**に[服](ふく)を[出](だ)します。",
+    "vi": "Tôi gửi quần áo đi giặt là."
+   },
+   {
+    "ja": "スーツを**クリーニング**に[出](だ)します。",
+    "vi": "Tôi đưa đồ vét ra tiệm giặt ủi."
+   }
+  ]
+ },
+ {
+  "word": "マンション",
+  "reading": "マンション",
+  "meaning": "chung cư",
+  "example": "この**マンション**は[新](あたら)しいです。",
+  "exampleVi": "Chung cư này mới.",
+  "examples": [
+   {
+    "ja": "この**マンション**は[新](あたら)しいです。",
+    "vi": "Chung cư này mới."
+   },
+   {
+    "ja": "うちの**マンション**は[駅](えき)から[歩](ある)いて3[分](ぷん)です。",
+    "vi": "Chung cư của tôi cách nhà ga 3 phút đi bộ."
+   }
+  ]
+ },
+ {
+  "word": "家",
+  "reading": "うち/いえ",
+  "meaning": "nhà",
+  "example": "**[家](いえ)**は[駅](えき)から[近](ちか)いです。",
+  "exampleVi": "Nhà tôi gần nhà ga.",
+  "examples": [
+   {
+    "ja": "**[家](いえ)**は[駅](えき)から[近](ちか)いです。",
+    "vi": "Nhà tôi gần nhà ga."
+   },
+   {
+    "ja": "わたしの**[家](いえ)**は、えきの[近](ちか)くにあります。",
+    "vi": "Nhà tôi nằm gần nhà ga."
+   }
+  ]
+ },
+ {
+  "word": "キッチン",
+  "reading": "キッチン",
+  "meaning": "bếp",
+  "example": "**キッチン**で[料理](りょうり)をします。",
+  "exampleVi": "Tôi nấu ăn trong bếp.",
+  "examples": [
+   {
+    "ja": "**キッチン**で[料理](りょうり)をします。",
+    "vi": "Tôi nấu ăn trong bếp."
+   },
+   {
+    "ja": "この[家](いえ)の**キッチン**は[広](ひろ)いです。",
+    "vi": "Bếp của ngôi nhà này rộng."
+   }
+  ]
+ },
+ {
+  "word": "教室",
+  "reading": "きょうしつ",
+  "meaning": "lớp học",
+  "example": "この**[教室](きょうしつ)**で[日本語](にほんご)を[勉強](べんきょう)します。",
+  "exampleVi": "Tôi học tiếng Nhật ở lớp học này.",
+  "examples": [
+   {
+    "ja": "この**[教室](きょうしつ)**で[日本語](にほんご)を[勉強](べんきょう)します。",
+    "vi": "Tôi học tiếng Nhật ở lớp học này."
+   },
+   {
+    "ja": "**[教室](きょうしつ)**に、[学生](がくせい)が[十](じゅう)[人](にん)います。",
+    "vi": "Trong lớp học có mười học sinh."
+   }
+  ]
+ },
+ {
+  "word": "パーティールーム",
+  "reading": "パーティールーム",
+  "meaning": "phòng tổ chức tiệc",
+  "example": "**パーティールーム**でパーティーができます。",
+  "exampleVi": "Có thể tổ chức tiệc ở phòng tiệc.",
+  "examples": [
+   {
+    "ja": "**パーティールーム**でパーティーができます。",
+    "vi": "Có thể tổ chức tiệc ở phòng tiệc."
+   },
+   {
+    "ja": "**パーティールーム**を[予約](よやく)しました。",
+    "vi": "Tôi đã đặt phòng tiệc."
+   }
+  ]
+ },
+ {
+  "word": "後",
+  "reading": "ご",
+  "meaning": "sau (thời gian)",
+  "example": "[二](に)[時間](じかん)**[後](ご)**に[会議](かいぎ)があります。",
+  "exampleVi": "Hai tiếng nữa có cuộc họp.",
+  "examples": [
+   {
+    "ja": "[二](に)[時間](じかん)**[後](ご)**に[会議](かいぎ)があります。",
+    "vi": "Hai tiếng nữa có cuộc họp."
+   },
+   {
+    "ja": "[三日](みっか)**[後](ご)**にまた[来](き)ます。",
+    "vi": "Ba ngày nữa tôi sẽ lại đến."
+   }
+  ]
+ },
+ {
+  "word": "しか",
+  "reading": "しか",
+  "meaning": "chỉ (dùng với phủ định)",
+  "example": "お[金](かね)が[百円](ひゃくえん)**しか**ありません。",
+  "exampleVi": "Tôi chỉ có 100 yên.",
+  "examples": [
+   {
+    "ja": "お[金](かね)が[百円](ひゃくえん)**しか**ありません。",
+    "vi": "Tôi chỉ có 100 yên."
+   },
+   {
+    "ja": "[今朝](けさ)はパン**しか**[食](た)べませんでした。",
+    "vi": "Sáng nay tôi chỉ ăn bánh mì."
+   }
+  ]
+ },
+ {
+  "word": "他",
+  "reading": "ほか",
+  "meaning": "khác",
+  "example": "**[他](ほか)**に[何](なに)ができますか。",
+  "exampleVi": "Ngoài ra bạn còn làm được gì nữa?",
+  "examples": [
+   {
+    "ja": "**[他](ほか)**に[何](なに)ができますか。",
+    "vi": "Ngoài ra bạn còn làm được gì nữa?"
+   },
+   {
+    "ja": "**[他](ほか)**の[人](ひと)にも[聞](き)いてみます。",
+    "vi": "Tôi sẽ thử hỏi cả những người khác."
+   }
+  ]
+ },
+ {
+  "word": "はっきり",
+  "reading": "はっきり",
+  "meaning": "rõ ràng",
+  "example": "**はっきり**[見](み)えます。",
+  "exampleVi": "Nhìn thấy rõ.",
+  "examples": [
+   {
+    "ja": "**はっきり**[見](み)えます。",
+    "vi": "Nhìn thấy rõ."
+   },
+   {
+    "ja": "[大](おお)きな[声](こえ)で、**はっきり**[話](はな)してください。",
+    "vi": "Xin hãy nói rõ ràng bằng giọng to."
+   }
+  ]
+ },
+ {
+  "word": "ほとんど",
+  "reading": "ほとんど",
+  "meaning": "hầu như, hầu hết",
+  "example": "**ほとんど**[毎日](まいにち)[走](はし)ります。",
+  "exampleVi": "Tôi chạy gần như mỗi ngày.",
+  "examples": [
+   {
+    "ja": "**ほとんど**[毎日](まいにち)[走](はし)ります。",
+    "vi": "Tôi chạy gần như mỗi ngày."
+   },
+   {
+    "ja": "[漢字](かんじ)を[勉強](べんきょう)したのに、**ほとんど**[忘](わす)れました。",
+    "vi": "Tôi đã học chữ Kanji vậy mà quên hầu hết."
+   }
+  ]
+ },
+ {
+  "word": "関西空港",
+  "reading": "かんさいくうこう",
+  "meaning": "sân bay quốc tế Kansai",
+  "example": "**[関西空港](かんさいくうこう)**は[海](うみ)の[上](うえ)にあります。",
+  "exampleVi": "Sân bay Kansai nằm trên biển.",
+  "examples": [
+   {
+    "ja": "**[関西空港](かんさいくうこう)**は[海](うみ)の[上](うえ)にあります。",
+    "vi": "Sân bay Kansai nằm trên biển."
+   },
+   {
+    "ja": "**[関西空港](かんさいくうこう)**から[飛行機](ひこうき)で[行](い)きます。",
+    "vi": "Tôi đi bằng máy bay từ sân bay Kansai."
+   }
+  ]
+ },
+ {
+  "word": "家具",
+  "reading": "かぐ",
+  "meaning": "đồ nội thất",
+  "example": "[新](あたら)しい**[家具](かぐ)**を[買](か)いました。",
+  "exampleVi": "Tôi đã mua đồ nội thất mới.",
+  "examples": [
+   {
+    "ja": "[新](あたら)しい**[家具](かぐ)**を[買](か)いました。",
+    "vi": "Tôi đã mua đồ nội thất mới."
+   },
+   {
+    "ja": "[引](ひ)っこしのとき、[新](あたら)しい**[家具](かぐ)**を[買](か)った。",
+    "vi": "Lúc chuyển nhà, tôi đã mua đồ nội thất mới."
+   }
+  ]
+ },
+ {
+  "word": "ほんだな",
+  "reading": "ほんだな",
+  "meaning": "giá sách",
+  "example": "**ほんだな**の[上](うえ)に[辞書](じしょ)があります。",
+  "exampleVi": "Trên giá sách có từ điển.",
+  "examples": [
+   {
+    "ja": "**ほんだな**の[上](うえ)に[辞書](じしょ)があります。",
+    "vi": "Trên giá sách có từ điển."
+   },
+   {
+    "ja": "**ほんだな**に[本](ほん)を[入](い)れます。",
+    "vi": "Tôi cho sách vào giá sách."
+   }
+  ]
+ },
+ {
+  "word": "夢",
+  "reading": "ゆめ",
+  "meaning": "giấc mơ, ước mơ",
+  "example": "わたしの**[夢](ゆめ)**は[先生](せんせい)になることです。",
+  "exampleVi": "Ước mơ của tôi là trở thành giáo viên.",
+  "examples": [
+   {
+    "ja": "わたしの**[夢](ゆめ)**は[先生](せんせい)になることです。",
+    "vi": "Ước mơ của tôi là trở thành giáo viên."
+   },
+   {
+    "ja": "[大](おお)きい**[夢](ゆめ)**があります。",
+    "vi": "Tôi có ước mơ to lớn."
+   }
+  ]
+ },
+ {
+  "word": "いつか",
+  "reading": "いつか",
+  "meaning": "lúc nào đó",
+  "example": "**いつか**[宇宙](うちゅう)へ[行](い)きたいです。",
+  "exampleVi": "Một ngày nào đó tôi muốn đi vào vũ trụ.",
+  "examples": [
+   {
+    "ja": "**いつか**[宇宙](うちゅう)へ[行](い)きたいです。",
+    "vi": "Một ngày nào đó tôi muốn đi vào vũ trụ."
+   },
+   {
+    "ja": "**いつか**、[日本](にほん)へ[行](い)きたいです。",
+    "vi": "Một ngày nào đó tôi muốn đến Nhật."
+   }
+  ]
+ },
+ {
+  "word": "素晴らしい",
+  "reading": "すばらしい",
+  "meaning": "tuyệt vời",
+  "example": "**[素晴](すば)らしい**[天気](てんき)ですね。",
+  "exampleVi": "Thời tiết tuyệt vời nhỉ.",
+  "examples": [
+   {
+    "ja": "**[素晴](すば)らしい**[天気](てんき)ですね。",
+    "vi": "Thời tiết tuyệt vời nhỉ."
+   },
+   {
+    "ja": "[留学](りゅうがく)で**[素晴](すば)らしい**[経験](けいけん)ができました。",
+    "vi": "Tôi có được kinh nghiệm tuyệt vời nhờ du học."
+   }
+  ]
+ },
+ {
+  "word": "子供達",
+  "reading": "こどもたち",
+  "meaning": "bọn trẻ",
+  "example": "**[子供達](こどもたち)**は[公園](こうえん)で[遊](あそ)んでいます。",
+  "exampleVi": "Bọn trẻ đang chơi ở công viên.",
+  "examples": [
+   {
+    "ja": "**[子供達](こどもたち)**は[公園](こうえん)で[遊](あそ)んでいます。",
+    "vi": "Bọn trẻ đang chơi ở công viên."
+   },
+   {
+    "ja": "**[子供達](こどもたち)**は[元気](げんき)です。",
+    "vi": "Bọn trẻ rất khỏe mạnh."
+   }
+  ]
+ },
+ {
+  "word": "まんが",
+  "reading": "まんが",
+  "meaning": "truyện tranh",
+  "example": "**まんが**を[読](よ)むことが[好](す)きです。",
+  "exampleVi": "Tôi thích đọc truyện tranh.",
+  "examples": [
+   {
+    "ja": "**まんが**を[読](よ)むことが[好](す)きです。",
+    "vi": "Tôi thích đọc truyện tranh."
+   },
+   {
+    "ja": "**まんが**はあまり[好](す)きじゃありません。",
+    "vi": "Tôi không thích truyện tranh lắm."
+   }
+  ]
+ },
+ {
+  "word": "大好き",
+  "reading": "だいすき",
+  "meaning": "rất thích",
+  "example": "[私](わたし)は[音楽](おんがく)が**[大好](だいす)き**です。",
+  "exampleVi": "Tôi rất thích âm nhạc.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は[音楽](おんがく)が**[大好](だいす)き**です。",
+    "vi": "Tôi rất thích âm nhạc."
+   },
+   {
+    "ja": "[私](わたし)は[甘](あま)いものが**[大好](だいす)き**です。",
+    "vi": "Tôi rất thích đồ ngọt."
+   }
+  ]
+ },
+ {
+  "word": "主人公",
+  "reading": "しゅじんこう",
+  "meaning": "nhân vật chính",
+  "example": "この[映画](えいが)の**[主人公](しゅじんこう)**は[子供](こども)です。",
+  "exampleVi": "Nhân vật chính của bộ phim này là một đứa trẻ.",
+  "examples": [
+   {
+    "ja": "この[映画](えいが)の**[主人公](しゅじんこう)**は[子供](こども)です。",
+    "vi": "Nhân vật chính của bộ phim này là một đứa trẻ."
+   },
+   {
+    "ja": "この[小説](しょうせつ)の**[主人公](しゅじんこう)**は[女](おんな)の[子](こ)です。",
+    "vi": "Nhân vật chính của tiểu thuyết này là một bé gái."
+   }
+  ]
+ },
+ {
+  "word": "形",
+  "reading": "かたち",
+  "meaning": "hình dạng",
+  "example": "この[箱](はこ)の**[形](かたち)**は[面白](おもしろ)いです。",
+  "exampleVi": "Hình dạng của cái hộp này thú vị.",
+  "examples": [
+   {
+    "ja": "この[箱](はこ)の**[形](かたち)**は[面白](おもしろ)いです。",
+    "vi": "Hình dạng của cái hộp này thú vị."
+   },
+   {
+    "ja": "このおか[子](し)は、[星](ほし)の**[形](かたち)**をしている。",
+    "vi": "Món bánh này có hình ngôi sao."
+   }
+  ]
+ },
+ {
+  "word": "ロボット",
+  "reading": "ロボット",
+  "meaning": "robot",
+  "example": "[子供](こども)は**ロボット**が[好](す)きです。",
+  "exampleVi": "Trẻ con thích robot.",
+  "examples": [
+   {
+    "ja": "[子供](こども)は**ロボット**が[好](す)きです。",
+    "vi": "Trẻ con thích robot."
+   },
+   {
+    "ja": "これは[私](わたし)が[作](つく)った**ロボット**です。",
+    "vi": "Đây là con robot do tôi làm."
+   }
+  ]
+ },
+ {
+  "word": "不思議",
+  "reading": "ふしぎ",
+  "meaning": "kỳ bí, khó hiểu",
+  "example": "これは**[不思議](ふしぎ)**な[箱](はこ)です。",
+  "exampleVi": "Đây là một chiếc hộp kỳ diệu.",
+  "examples": [
+   {
+    "ja": "これは**[不思議](ふしぎ)**な[箱](はこ)です。",
+    "vi": "Đây là một chiếc hộp kỳ diệu."
+   },
+   {
+    "ja": "**[不思議](ふしぎ)**な[夢](ゆめ)を[見](み)ました。",
+    "vi": "Tôi đã mơ một giấc mơ kỳ lạ."
+   }
+  ]
+ },
+ {
+  "word": "ポケット",
+  "reading": "ポケット",
+  "meaning": "túi",
+  "example": "**ポケット**にかぎがあります。",
+  "exampleVi": "Trong túi có chìa khóa.",
+  "examples": [
+   {
+    "ja": "**ポケット**にかぎがあります。",
+    "vi": "Trong túi có chìa khóa."
+   },
+   {
+    "ja": "お[金](かね)は、**ポケット**に[入](はい)っています。",
+    "vi": "Tiền ở trong túi."
+   }
+  ]
+ },
+ {
+  "word": "例えば",
+  "reading": "たとえば",
+  "meaning": "ví dụ",
+  "example": "**[例](たと)えば**、[野球](やきゅう)やサッカーです。",
+  "exampleVi": "Ví dụ như bóng chày hay bóng đá.",
+  "examples": [
+   {
+    "ja": "**[例](たと)えば**、[野球](やきゅう)やサッカーです。",
+    "vi": "Ví dụ như bóng chày hay bóng đá."
+   },
+   {
+    "ja": "**[例](たと)えば**、[私](わたし)は[魚](さかな)が[好](す)きです。",
+    "vi": "Ví dụ, tôi thích cá."
+   }
+  ]
+ },
+ {
+  "word": "自由に",
+  "reading": "じゆうに",
+  "meaning": "tự do, thoải mái",
+  "example": "**[自由](じゆう)に**[使](つか)ってください。",
+  "exampleVi": "Xin hãy tự do sử dụng.",
+  "examples": [
+   {
+    "ja": "**[自由](じゆう)に**[使](つか)ってください。",
+    "vi": "Xin hãy tự do sử dụng."
+   },
+   {
+    "ja": "**[自由](じゆう)に**[座](すわ)ってください。",
+    "vi": "Xin hãy ngồi tự do."
+   }
+  ]
+ },
+ {
+  "word": "空",
+  "reading": "から",
+  "meaning": "rỗng",
+  "example": "**[空](から)**の[箱](はこ)です。",
+  "exampleVi": "Đây là một cái hộp rỗng.",
+  "examples": [
+   {
+    "ja": "**[空](から)**の[箱](はこ)です。",
+    "vi": "Đây là một cái hộp rỗng."
+   },
+   {
+    "ja": "この[箱](はこ)は**[空](から)**です。",
+    "vi": "Cái hộp này rỗng."
+   }
+  ]
+ },
+ {
+  "word": "飛ぶ",
+  "reading": "とぶ",
+  "meaning": "bay, biến mất",
+  "example": "[鳥](とり)が**[飛](と)んでいます**。",
+  "exampleVi": "Con chim đang bay.",
+  "examples": [
+   {
+    "ja": "[鳥](とり)が**[飛](と)んでいます**。",
+    "vi": "Con chim đang bay."
+   },
+   {
+    "ja": "[飛行機](ひこうき)が[空](そら)を**[飛](と)んでいます**。",
+    "vi": "Máy bay đang bay trên bầu trời."
+   }
+  ]
+ },
+ {
+  "word": "自分",
+  "reading": "じぶん",
+  "meaning": "bản thân, mình",
+  "example": "**[自分](じぶん)**で[料理](りょうり)を[作](つく)ります。",
+  "exampleVi": "Tôi tự nấu ăn.",
+  "examples": [
+   {
+    "ja": "**[自分](じぶん)**で[料理](りょうり)を[作](つく)ります。",
+    "vi": "Tôi tự nấu ăn."
+   },
+   {
+    "ja": "**[自分](じぶん)**の[部屋](へや)で[勉強](べんきょう)します。",
+    "vi": "Tôi học trong phòng của mình."
+   }
+  ]
+ },
+ {
+  "word": "将来",
+  "reading": "しょうらい",
+  "meaning": "tương lai",
+  "example": "**[将来](しょうらい)**、[先生](せんせい)になりたいです。",
+  "exampleVi": "Trong tương lai tôi muốn trở thành giáo viên.",
+  "examples": [
+   {
+    "ja": "**[将来](しょうらい)**、[先生](せんせい)になりたいです。",
+    "vi": "Trong tương lai tôi muốn trở thành giáo viên."
+   },
+   {
+    "ja": "**[将来](しょうらい)**は[医者](いしゃ)になりたいです。",
+    "vi": "Trong tương lai tôi muốn trở thành bác sĩ."
+   }
+  ]
+ },
+ {
+  "word": "ドラえもん",
+  "reading": "ドラえもん",
+  "meaning": "Doraemon",
+  "example": "**ドラえもん**は[有名](ゆうめい)なまんがです。",
+  "exampleVi": "Doraemon là một bộ truyện tranh nổi tiếng.",
+  "examples": [
+   {
+    "ja": "**ドラえもん**は[有名](ゆうめい)なまんがです。",
+    "vi": "Doraemon là một bộ truyện tranh nổi tiếng."
+   },
+   {
+    "ja": "[子供](こども)は**ドラえもん**が[大好](だいす)きです。",
+    "vi": "Đứa trẻ rất thích Doraemon."
+   }
+  ]
+ }
 ]

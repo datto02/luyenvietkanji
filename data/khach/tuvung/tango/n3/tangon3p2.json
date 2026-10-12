@@ -2,501 +2,1501 @@
  {
   "word": "本日",
   "example": "**[本日](ほんじつ)**はお[忙](いそが)しい[中](なか)、ありがとうございます。",
-  "exampleVi": "Hôm nay xin cảm ơn quý vị đã bớt chút thời gian giữa lúc bận rộn."
+  "exampleVi": "Hôm nay xin cảm ơn quý vị đã bớt chút thời gian giữa lúc bận rộn.",
+  "examples": [
+   {
+    "ja": "**[本日](ほんじつ)**はお[忙](いそが)しい[中](なか)、ありがとうございます。",
+    "vi": "Hôm nay xin cảm ơn quý vị đã bớt chút thời gian giữa lúc bận rộn."
+   },
+   {
+    "ja": "**[本日](ほんじつ)**の[営業](えいぎょう)は、[午後](ごご)[五](ご)[時](じ)までです。",
+    "vi": "Hôm nay chúng tôi bán hàng đến năm giờ chiều."
+   }
+  ]
  },
  {
   "word": "明日",
   "example": "**[明日](あした)**は[朝](あさ)[早](はや)く[出](で)かけます。",
-  "exampleVi": "Ngày mai tôi sẽ ra ngoài từ sáng sớm."
+  "exampleVi": "Ngày mai tôi sẽ ra ngoài từ sáng sớm.",
+  "examples": [
+   {
+    "ja": "**[明日](あした)**は[朝](あさ)[早](はや)く[出](で)かけます。",
+    "vi": "Ngày mai tôi sẽ ra ngoài từ sáng sớm."
+   },
+   {
+    "ja": "**[明日](あした)**は[休](やす)みです。",
+    "vi": "Ngày mai là ngày nghỉ."
+   }
+  ]
  },
  {
   "word": "前日",
   "example": "[試験](しけん)の**[前日](ぜんじつ)**は[早](はや)く[寝](ね)ました。",
-  "exampleVi": "Ngày hôm trước kỳ thi tôi đã đi ngủ sớm."
+  "exampleVi": "Ngày hôm trước kỳ thi tôi đã đi ngủ sớm.",
+  "examples": [
+   {
+    "ja": "[試験](しけん)の**[前日](ぜんじつ)**は[早](はや)く[寝](ね)ました。",
+    "vi": "Ngày hôm trước kỳ thi tôi đã đi ngủ sớm."
+   },
+   {
+    "ja": "[出発](しゅっぱつ)の**[前日](ぜんじつ)**に[荷物](にもつ)を[準備](じゅんび)します。",
+    "vi": "Vào ngày trước khi xuất phát, tôi chuẩn bị hành lý."
+   }
+  ]
  },
  {
   "word": "翌日",
   "example": "[旅行](りょこう)の**[翌日](よくじつ)**は[家](いえ)で[休](やす)みました。",
-  "exampleVi": "Ngày hôm sau chuyến du lịch tôi nghỉ ngơi ở nhà."
+  "exampleVi": "Ngày hôm sau chuyến du lịch tôi nghỉ ngơi ở nhà.",
+  "examples": [
+   {
+    "ja": "[旅行](りょこう)の**[翌日](よくじつ)**は[家](いえ)で[休](やす)みました。",
+    "vi": "Ngày hôm sau chuyến du lịch tôi nghỉ ngơi ở nhà."
+   },
+   {
+    "ja": "パソコンを[買](か)った**[翌日](よくじつ)**、こわしてしまった。",
+    "vi": "Ngay hôm sau khi mua máy tính, tôi đã làm hỏng nó."
+   }
+  ]
  },
  {
   "word": "しあさって",
   "example": "**しあさって**は[友達](ともだち)の[結婚式](けっこんしき)です。",
-  "exampleVi": "Ngày kia nữa là đám cưới của bạn tôi."
+  "exampleVi": "Ngày kia nữa là đám cưới của bạn tôi.",
+  "examples": [
+   {
+    "ja": "**しあさって**は[友達](ともだち)の[結婚式](けっこんしき)です。",
+    "vi": "Ngày kia nữa là đám cưới của bạn tôi."
+   },
+   {
+    "ja": "**しあさって**から[旅行](りょこう)に[行](い)きます。",
+    "vi": "Từ ngày kia nữa tôi đi du lịch."
+   }
+  ]
  },
  {
   "word": "先おととい",
   "example": "**[先](さき)おととい**、[駅](えき)で[田中](たなか)さんに[会](あ)いました。",
-  "exampleVi": "Hôm kia nữa (cách đây ba ngày) tôi đã gặp anh Tanaka ở nhà ga."
+  "exampleVi": "Hôm kia nữa (cách đây ba ngày) tôi đã gặp anh Tanaka ở nhà ga.",
+  "examples": [
+   {
+    "ja": "**[先](さき)おととい**、[駅](えき)で[田中](たなか)さんに[会](あ)いました。",
+    "vi": "Hôm kia nữa (cách đây ba ngày) tôi đã gặp anh Tanaka ở nhà ga."
+   },
+   {
+    "ja": "**[先](さき)おととい**、[雨](あめ)が[降](ふ)りました。",
+    "vi": "Cách đây ba ngày, trời đã mưa."
+   }
+  ]
  },
  {
   "word": "昨日",
   "example": "**[昨日](きのう)**は[雨](あめ)で、[一日中](いちにちじゅう)[家](いえ)にいました。",
-  "exampleVi": "Hôm qua trời mưa nên tôi ở nhà cả ngày."
+  "exampleVi": "Hôm qua trời mưa nên tôi ở nhà cả ngày.",
+  "examples": [
+   {
+    "ja": "**[昨日](きのう)**は[雨](あめ)で、[一日中](いちにちじゅう)[家](いえ)にいました。",
+    "vi": "Hôm qua trời mưa nên tôi ở nhà cả ngày."
+   },
+   {
+    "ja": "**[昨日](きのう)**[勉強](べんきょう)しました。",
+    "vi": "Hôm qua tôi đã học bài."
+   }
+  ]
  },
  {
   "word": "昨年",
   "example": "**[昨年](さくねん)**、[初](はじ)めて[日本](にほん)に[来](き)ました。",
-  "exampleVi": "Năm ngoái tôi đã đến Nhật lần đầu tiên."
+  "exampleVi": "Năm ngoái tôi đã đến Nhật lần đầu tiên.",
+  "examples": [
+   {
+    "ja": "**[昨年](さくねん)**、[初](はじ)めて[日本](にほん)に[来](き)ました。",
+    "vi": "Năm ngoái tôi đã đến Nhật lần đầu tiên."
+   },
+   {
+    "ja": "**[昨年](さくねん)**の[冬](ふゆ)はとても[寒](さむ)かったです。",
+    "vi": "Mùa đông năm ngoái rất lạnh."
+   }
+  ]
  },
  {
   "word": "先日",
   "example": "**[先日](せんじつ)**はありがとうございました。",
-  "exampleVi": "Hôm nọ xin cảm ơn anh/chị rất nhiều."
+  "exampleVi": "Hôm nọ xin cảm ơn anh/chị rất nhiều.",
+  "examples": [
+   {
+    "ja": "**[先日](せんじつ)**はありがとうございました。",
+    "vi": "Hôm nọ xin cảm ơn anh/chị rất nhiều."
+   },
+   {
+    "ja": "**[先日](せんじつ)**お[借](か)りした[本](ほん)を、お[返](かえ)しします。",
+    "vi": "Tôi xin trả lại cuốn sách đã mượn hôm nọ."
+   }
+  ]
  },
  {
   "word": "再来週",
   "example": "[会議](かいぎ)は**[再来週](さらいしゅう)**の[月曜日](げつようび)に[行](おこな)われます。",
-  "exampleVi": "Cuộc họp sẽ được tổ chức vào thứ Hai của tuần sau nữa."
+  "exampleVi": "Cuộc họp sẽ được tổ chức vào thứ Hai của tuần sau nữa.",
+  "examples": [
+   {
+    "ja": "[会議](かいぎ)は**[再来週](さらいしゅう)**の[月曜日](げつようび)に[行](おこな)われます。",
+    "vi": "Cuộc họp sẽ được tổ chức vào thứ Hai của tuần sau nữa."
+   },
+   {
+    "ja": "**[再来週](さらいしゅう)**、[出張](しゅっちょう)します。",
+    "vi": "Tuần sau nữa tôi đi công tác."
+   }
+  ]
  },
  {
   "word": "先々週",
   "example": "**[先々週](せんせんしゅう)**は[出張](しゅっちょう)で[大阪](おおさか)にいました。",
-  "exampleVi": "Tuần kia (cách đây hai tuần) tôi đi công tác ở Osaka."
+  "exampleVi": "Tuần kia (cách đây hai tuần) tôi đi công tác ở Osaka.",
+  "examples": [
+   {
+    "ja": "**[先々週](せんせんしゅう)**は[出張](しゅっちょう)で[大阪](おおさか)にいました。",
+    "vi": "Tuần kia (cách đây hai tuần) tôi đi công tác ở Osaka."
+   },
+   {
+    "ja": "**[先々週](せんせんしゅう)**、[友達](ともだち)に[会](あ)いました。",
+    "vi": "Cách đây hai tuần, tôi đã gặp bạn."
+   }
+  ]
  },
  {
   "word": "上旬",
   "example": "[試験](しけん)は[十月](じゅうがつ)の**[上旬](じょうじゅん)**にあります。",
-  "exampleVi": "Kỳ thi sẽ diễn ra vào thượng tuần tháng Mười."
+  "exampleVi": "Kỳ thi sẽ diễn ra vào thượng tuần tháng Mười.",
+  "examples": [
+   {
+    "ja": "[試験](しけん)は[十月](じゅうがつ)の**[上旬](じょうじゅん)**にあります。",
+    "vi": "Kỳ thi sẽ diễn ra vào thượng tuần tháng Mười."
+   },
+   {
+    "ja": "[四月](しがつ)**[上旬](じょうじゅん)**に[桜](さくら)が[咲](さ)きます。",
+    "vi": "Thượng tuần tháng 4 hoa anh đào nở."
+   }
+  ]
  },
  {
   "word": "中旬",
   "example": "[締](し)め[切](き)りは[今月](こんげつ)の**[中旬](ちゅうじゅん)**です。",
-  "exampleVi": "Hạn chót là vào trung tuần tháng này."
+  "exampleVi": "Hạn chót là vào trung tuần tháng này.",
+  "examples": [
+   {
+    "ja": "[締](し)め[切](き)りは[今月](こんげつ)の**[中旬](ちゅうじゅん)**です。",
+    "vi": "Hạn chót là vào trung tuần tháng này."
+   },
+   {
+    "ja": "[来月](らいげつ)の**[中旬](ちゅうじゅん)**に[出張](しゅっちょう)があります。",
+    "vi": "Trung tuần tháng sau tôi có chuyến công tác."
+   }
+  ]
  },
  {
   "word": "下旬",
   "example": "[家賃](やちん)は[毎月](まいつき)**[下旬](げじゅん)**に[払](はら)います。",
-  "exampleVi": "Tiền nhà tôi trả vào hạ tuần hằng tháng."
+  "exampleVi": "Tiền nhà tôi trả vào hạ tuần hằng tháng.",
+  "examples": [
+   {
+    "ja": "[家賃](やちん)は[毎月](まいつき)**[下旬](げじゅん)**に[払](はら)います。",
+    "vi": "Tiền nhà tôi trả vào hạ tuần hằng tháng."
+   },
+   {
+    "ja": "[三月](さんがつ)**[下旬](げじゅん)**に[引](ひ)っ[越](こ)します。",
+    "vi": "Hạ tuần tháng 3 tôi chuyển nhà."
+   }
+  ]
  },
  {
   "word": "深夜",
   "example": "**[深夜](しんや)**まで[勉強](べんきょう)して、とても[眠](ねむ)いです。",
-  "exampleVi": "Tôi học đến tận khuya nên rất buồn ngủ."
+  "exampleVi": "Tôi học đến tận khuya nên rất buồn ngủ.",
+  "examples": [
+   {
+    "ja": "**[深夜](しんや)**まで[勉強](べんきょう)して、とても[眠](ねむ)いです。",
+    "vi": "Tôi học đến tận khuya nên rất buồn ngủ."
+   },
+   {
+    "ja": "**[深夜](しんや)**に[電話](でんわ)が[鳴](な)りました。",
+    "vi": "Điện thoại đã reo vào lúc nửa đêm."
+   }
+  ]
  },
  {
   "word": "未来",
   "example": "[子供](こども)たちの**[未来](みらい)**のために、[環境](かんきょう)を[守](まも)りましょう。",
-  "exampleVi": "Hãy bảo vệ môi trường vì tương lai của trẻ em."
+  "exampleVi": "Hãy bảo vệ môi trường vì tương lai của trẻ em.",
+  "examples": [
+   {
+    "ja": "[子供](こども)たちの**[未来](みらい)**のために、[環境](かんきょう)を[守](まも)りましょう。",
+    "vi": "Hãy bảo vệ môi trường vì tương lai của trẻ em."
+   },
+   {
+    "ja": "[地球](ちきゅう)の**[未来](みらい)**のために[環境](かんきょう)[問題](もんだい)について[考](かんが)えよう。",
+    "vi": "Hãy cùng suy nghĩ về vấn đề môi trường vì tương lai của Trái Đất."
+   }
+  ]
  },
  {
   "word": "数日",
   "example": "[出張](しゅっちょう)で**[数日](すうじつ)**[家](いえ)を[空](あ)けます。",
-  "exampleVi": "Tôi sẽ vắng nhà vài ngày vì đi công tác."
+  "exampleVi": "Tôi sẽ vắng nhà vài ngày vì đi công tác.",
+  "examples": [
+   {
+    "ja": "[出張](しゅっちょう)で**[数日](すうじつ)**[家](いえ)を[空](あ)けます。",
+    "vi": "Tôi sẽ vắng nhà vài ngày vì đi công tác."
+   },
+   {
+    "ja": "**[数日](すうじつ)**[前](まえ)から[風邪](かぜ)を[引](ひ)いています。",
+    "vi": "Tôi bị cảm từ vài ngày trước."
+   }
+  ]
  },
  {
   "word": "以降",
   "example": "[八時](はちじ)**[以降](いこう)**は[電話](でんわ)に[出](で)られません。",
-  "exampleVi": "Sau 8 giờ tôi không nghe điện thoại được."
+  "exampleVi": "Sau 8 giờ tôi không nghe điện thoại được.",
+  "examples": [
+   {
+    "ja": "[八時](はちじ)**[以降](いこう)**は[電話](でんわ)に[出](で)られません。",
+    "vi": "Sau 8 giờ tôi không nghe điện thoại được."
+   },
+   {
+    "ja": "[午後](ごご)[五](ご)[時](じ)**[以降](いこう)**は、[事務所](じむしょ)には[誰](だれ)もいません。",
+    "vi": "Từ năm giờ chiều trở đi, văn phòng không còn ai."
+   }
+  ]
  },
  {
   "word": "朝食",
   "example": "[忙](いそが)しい[日](ひ)でも、**[朝食](ちょうしょく)**はしっかり[食](た)べます。",
-  "exampleVi": "Dù ngày bận rộn, tôi vẫn ăn sáng đầy đủ."
+  "exampleVi": "Dù ngày bận rộn, tôi vẫn ăn sáng đầy đủ.",
+  "examples": [
+   {
+    "ja": "[忙](いそが)しい[日](ひ)でも、**[朝食](ちょうしょく)**はしっかり[食](た)べます。",
+    "vi": "Dù ngày bận rộn, tôi vẫn ăn sáng đầy đủ."
+   },
+   {
+    "ja": "**[朝食](ちょうしょく)**はパンとコーヒーで[済](す)ませます。",
+    "vi": "Bữa sáng tôi ăn tạm bánh mì và cà phê."
+   }
+  ]
  },
  {
   "word": "モーニング",
   "example": "この[店](みせ)の**モーニング**は[安](やす)くて[人気](にんき)があります。",
-  "exampleVi": "Bữa sáng kiểu Âu ở quán này rẻ nên được ưa chuộng."
+  "exampleVi": "Bữa sáng kiểu Âu ở quán này rẻ nên được ưa chuộng.",
+  "examples": [
+   {
+    "ja": "この[店](みせ)の**モーニング**は[安](やす)くて[人気](にんき)があります。",
+    "vi": "Bữa sáng kiểu Âu ở quán này rẻ nên được ưa chuộng."
+   },
+   {
+    "ja": "[喫茶店](きっさてん)で**モーニング**を[食](た)べました。",
+    "vi": "Tôi đã ăn bữa sáng kiểu Âu ở quán cà phê."
+   }
+  ]
  },
  {
   "word": "昼食",
   "example": "[社員食堂](しゃいんしょくどう)で**[昼食](ちゅうしょく)**を[取](と)りました。",
-  "exampleVi": "Tôi đã dùng bữa trưa ở căng tin công ty."
+  "exampleVi": "Tôi đã dùng bữa trưa ở căng tin công ty.",
+  "examples": [
+   {
+    "ja": "[社員食堂](しゃいんしょくどう)で**[昼食](ちゅうしょく)**を[取](と)りました。",
+    "vi": "Tôi đã dùng bữa trưa ở căng tin công ty."
+   },
+   {
+    "ja": "**[昼食](ちゅうしょく)**は、[会社](かいしゃ)の[近](ちか)くの[食堂](しょくどう)で[食](た)べることが[多](おお)い。",
+    "vi": "Bữa trưa tôi thường ăn ở quán gần công ty."
+   }
+  ]
  },
  {
   "word": "ランチ",
   "example": "[友達](ともだち)と[新](あたら)しい[店](みせ)で**ランチ**を[食](た)べました。",
-  "exampleVi": "Tôi đã ăn trưa với bạn ở quán mới."
+  "exampleVi": "Tôi đã ăn trưa với bạn ở quán mới.",
+  "examples": [
+   {
+    "ja": "[友達](ともだち)と[新](あたら)しい[店](みせ)で**ランチ**を[食](た)べました。",
+    "vi": "Tôi đã ăn trưa với bạn ở quán mới."
+   },
+   {
+    "ja": "[今日](きょう)の**ランチ**はカレーでした。",
+    "vi": "Bữa trưa hôm nay là cà ri."
+   }
+  ]
  },
  {
   "word": "夕食",
   "example": "[家族](かぞく)で**[夕食](ゆうしょく)**を[食](た)べながら、[今日](きょう)の[話](はなし)をしました。",
-  "exampleVi": "Cả nhà vừa ăn tối vừa kể chuyện hôm nay."
+  "exampleVi": "Cả nhà vừa ăn tối vừa kể chuyện hôm nay.",
+  "examples": [
+   {
+    "ja": "[家族](かぞく)で**[夕食](ゆうしょく)**を[食](た)べながら、[今日](きょう)の[話](はなし)をしました。",
+    "vi": "Cả nhà vừa ăn tối vừa kể chuyện hôm nay."
+   },
+   {
+    "ja": "**[夕食](ゆうしょく)**の[準備](じゅんび)をします。",
+    "vi": "Tôi chuẩn bị bữa tối."
+   }
+  ]
  },
  {
   "word": "ディナー",
   "example": "[誕生日](たんじょうび)に[恋人](こいびと)とホテルで**ディナー**を[食](た)べました。",
-  "exampleVi": "Vào sinh nhật, tôi đã ăn tối tại khách sạn cùng người yêu."
+  "exampleVi": "Vào sinh nhật, tôi đã ăn tối tại khách sạn cùng người yêu.",
+  "examples": [
+   {
+    "ja": "[誕生日](たんじょうび)に[恋人](こいびと)とホテルで**ディナー**を[食](た)べました。",
+    "vi": "Vào sinh nhật, tôi đã ăn tối tại khách sạn cùng người yêu."
+   },
+   {
+    "ja": "[夜](よる)はレストランで**ディナー**を[楽](たの)しみました。",
+    "vi": "Buổi tối tôi đã thưởng thức bữa tối ở nhà hàng."
+   }
+  ]
  },
  {
   "word": "デザート",
   "example": "[食事](しょくじ)のあとで**デザート**にケーキを[食](た)べました。",
-  "exampleVi": "Sau bữa ăn, tôi đã ăn bánh kem tráng miệng."
+  "exampleVi": "Sau bữa ăn, tôi đã ăn bánh kem tráng miệng.",
+  "examples": [
+   {
+    "ja": "[食事](しょくじ)のあとで**デザート**にケーキを[食](た)べました。",
+    "vi": "Sau bữa ăn, tôi đã ăn bánh kem tráng miệng."
+   },
+   {
+    "ja": "[食事](しょくじ)のあとで**デザート**を[注文](ちゅうもん)しました。",
+    "vi": "Sau bữa ăn tôi đã gọi món tráng miệng."
+   }
+  ]
  },
  {
   "word": "おやつ",
   "example": "[子供](こども)に**おやつ**を[作](つく)ってあげました。",
-  "exampleVi": "Tôi đã làm đồ ăn vặt cho con."
+  "exampleVi": "Tôi đã làm đồ ăn vặt cho con.",
+  "examples": [
+   {
+    "ja": "[子供](こども)に**おやつ**を[作](つく)ってあげました。",
+    "vi": "Tôi đã làm đồ ăn vặt cho con."
+   },
+   {
+    "ja": "[三時](さんじ)にみんなで**おやつ**を[食](た)べます。",
+    "vi": "Lúc 3 giờ mọi người cùng ăn đồ ăn vặt."
+   }
+  ]
  },
  {
   "word": "おかず",
   "example": "[今日](きょう)の**おかず**は[魚](さかな)の[煮物](にもの)です。",
-  "exampleVi": "Món ăn kèm hôm nay là cá kho."
+  "exampleVi": "Món ăn kèm hôm nay là cá kho.",
+  "examples": [
+   {
+    "ja": "[今日](きょう)の**おかず**は[魚](さかな)の[煮物](にもの)です。",
+    "vi": "Món ăn kèm hôm nay là cá kho."
+   },
+   {
+    "ja": "**おかず**は[魚](さかな)と[野菜](やさい)です。",
+    "vi": "Thức ăn kèm là cá và rau."
+   }
+  ]
  },
  {
   "word": "お弁当",
   "example": "[毎朝](まいあさ)、[自分](じぶん)で**お[弁当](べんとう)**を[作](つく)っています。",
-  "exampleVi": "Sáng nào tôi cũng tự làm cơm hộp."
+  "exampleVi": "Sáng nào tôi cũng tự làm cơm hộp.",
+  "examples": [
+   {
+    "ja": "[毎朝](まいあさ)、[自分](じぶん)で**お[弁当](べんとう)**を[作](つく)っています。",
+    "vi": "Sáng nào tôi cũng tự làm cơm hộp."
+   },
+   {
+    "ja": "これは[母](はは)が[作](つく)った**お[弁当](べんとう)**です。",
+    "vi": "Đây là cơm hộp do mẹ tôi làm."
+   }
+  ]
  },
  {
   "word": "自炊",
   "example": "[節約](せつやく)のために、**[自炊](じすい)**をしています。",
-  "exampleVi": "Để tiết kiệm, tôi đang tự nấu ăn."
+  "exampleVi": "Để tiết kiệm, tôi đang tự nấu ăn.",
+  "examples": [
+   {
+    "ja": "[節約](せつやく)のために、**[自炊](じすい)**をしています。",
+    "vi": "Để tiết kiệm, tôi đang tự nấu ăn."
+   },
+   {
+    "ja": "[私](わたし)は[毎日](まいにち)**[自炊](じすい)しています**。",
+    "vi": "Ngày nào tôi cũng tự nấu ăn."
+   }
+  ]
  },
  {
   "word": "外食",
   "example": "[最近](さいきん)は[忙](いそが)しくて、**[外食](がいしょく)**が[多](おお)いです。",
-  "exampleVi": "Dạo này bận nên tôi ăn ngoài nhiều."
+  "exampleVi": "Dạo này bận nên tôi ăn ngoài nhiều.",
+  "examples": [
+   {
+    "ja": "[最近](さいきん)は[忙](いそが)しくて、**[外食](がいしょく)**が[多](おお)いです。",
+    "vi": "Dạo này bận nên tôi ăn ngoài nhiều."
+   },
+   {
+    "ja": "**[外食](がいしょく)**はお[金](かね)がかかるので、いつも[家](いえ)でご[飯](はん)を[食](た)べています。",
+    "vi": "Ăn ngoài tốn tiền nên tôi luôn ăn cơm ở nhà."
+   }
+  ]
  },
  {
   "word": "グルメ",
   "example": "[京都](きょうと)へ**グルメ**[旅行](りょこう)に[行](い)きました。",
-  "exampleVi": "Tôi đã đi du lịch ẩm thực ở Kyoto."
+  "exampleVi": "Tôi đã đi du lịch ẩm thực ở Kyoto.",
+  "examples": [
+   {
+    "ja": "[京都](きょうと)へ**グルメ**[旅行](りょこう)に[行](い)きました。",
+    "vi": "Tôi đã đi du lịch ẩm thực ở Kyoto."
+   },
+   {
+    "ja": "[彼](かれ)は**グルメ**で、[有名](ゆうめい)な[店](みせ)に[詳](くわ)しいです。",
+    "vi": "Anh ấy sành ăn, biết rõ các quán nổi tiếng."
+   }
+  ]
  },
  {
   "word": "おごる",
   "example": "[今日](きょう)は[私](わたし)が**おごります**よ。",
-  "exampleVi": "Hôm nay để tôi khao nhé."
+  "exampleVi": "Hôm nay để tôi khao nhé.",
+  "examples": [
+   {
+    "ja": "[今日](きょう)は[私](わたし)が**おごります**よ。",
+    "vi": "Hôm nay để tôi khao nhé."
+   },
+   {
+    "ja": "[先輩](せんぱい)にご[飯](はん)を**おごっても**らいました。",
+    "vi": "Tôi đã được đàn anh khao bữa cơm."
+   }
+  ]
  },
  {
   "word": "食欲",
   "example": "[夏](なつ)は[暑](あつ)くて、**[食欲](しょくよく)**がありません。",
-  "exampleVi": "Mùa hè nóng nên tôi không thấy thèm ăn."
+  "exampleVi": "Mùa hè nóng nên tôi không thấy thèm ăn.",
+  "examples": [
+   {
+    "ja": "[夏](なつ)は[暑](あつ)くて、**[食欲](しょくよく)**がありません。",
+    "vi": "Mùa hè nóng nên tôi không thấy thèm ăn."
+   },
+   {
+    "ja": "[風邪](かぜ)を[引](ひ)いて、**[食欲](しょくよく)**がなくなった。",
+    "vi": "Tôi bị cảm nên mất cảm giác thèm ăn."
+   }
+  ]
  },
  {
   "word": "注文",
-  "example": "[店員](てんいん)に[料理](りょうり)を**[注文](ちゅうもん)**しました。",
-  "exampleVi": "Tôi đã gọi món với nhân viên."
+  "example": "[店員](てんいん)に[料理](りょうり)を**[注文](ちゅうもん)しました**。",
+  "exampleVi": "Tôi đã gọi món với nhân viên.",
+  "examples": [
+   {
+    "ja": "[店員](てんいん)に[料理](りょうり)を**[注文](ちゅうもん)しました**。",
+    "vi": "Tôi đã gọi món với nhân viên."
+   },
+   {
+    "ja": "[肉料理](にくりょうり)をたくさん**[注文](ちゅうもん)しました**。",
+    "vi": "Tôi đã gọi nhiều món thịt."
+   }
+  ]
  },
  {
   "word": "乾杯",
-  "example": "みんなでビールを[持](も)って、**[乾杯](かんぱい)**しました。",
-  "exampleVi": "Mọi người cầm bia trên tay và cùng nâng ly."
+  "example": "みんなでビールを[持](も)って、**[乾杯](かんぱい)しました**。",
+  "exampleVi": "Mọi người cầm bia trên tay và cùng nâng ly.",
+  "examples": [
+   {
+    "ja": "みんなでビールを[持](も)って、**[乾杯](かんぱい)しました**。",
+    "vi": "Mọi người cầm bia trên tay và cùng nâng ly."
+   },
+   {
+    "ja": "[新年](しんねん)の[挨拶](あいさつ)の[後](あと)で**[乾杯](かんぱい)しました**。",
+    "vi": "Sau lời chào năm mới, chúng tôi đã nâng ly."
+   }
+  ]
  },
  {
   "word": "かむ",
   "example": "[固](かた)い[肉](にく)はよく**かんで**[食](た)べてください。",
-  "exampleVi": "Thịt dai thì hãy nhai kỹ rồi ăn."
+  "exampleVi": "Thịt dai thì hãy nhai kỹ rồi ăn.",
+  "examples": [
+   {
+    "ja": "[固](かた)い[肉](にく)はよく**かんで**[食](た)べてください。",
+    "vi": "Thịt dai thì hãy nhai kỹ rồi ăn."
+   },
+   {
+    "ja": "かたいからよく**[噛](か)んで**[食](た)べましょう。",
+    "vi": "Vì cứng nên hãy nhai kỹ rồi ăn."
+   }
+  ]
  },
  {
   "word": "味わう",
   "example": "[京都](きょうと)の[料理](りょうり)をゆっくり**[味](あじ)わって**[食](た)べました。",
-  "exampleVi": "Tôi thong thả thưởng thức món ăn Kyoto."
+  "exampleVi": "Tôi thong thả thưởng thức món ăn Kyoto.",
+  "examples": [
+   {
+    "ja": "[京都](きょうと)の[料理](りょうり)をゆっくり**[味](あじ)わって**[食](た)べました。",
+    "vi": "Tôi thong thả thưởng thức món ăn Kyoto."
+   },
+   {
+    "ja": "[旅行](りょこう)で[地方](ちほう)の[料理](りょうり)を**[味](あじ)わいました**。",
+    "vi": "Trong chuyến du lịch, tôi đã thưởng thức món ăn địa phương."
+   }
+  ]
  },
  {
   "word": "お代わり",
-  "example": "おいしかったので、ご[飯](はん)を**お[代](か)わり**しました。",
-  "exampleVi": "Vì ngon nên tôi đã ăn thêm một bát cơm."
+  "example": "おいしかったので、ご[飯](はん)を**お[代](か)わりしました**。",
+  "exampleVi": "Vì ngon nên tôi đã ăn thêm một bát cơm.",
+  "examples": [
+   {
+    "ja": "おいしかったので、ご[飯](はん)を**お[代](か)わりしました**。",
+    "vi": "Vì ngon nên tôi đã ăn thêm một bát cơm."
+   },
+   {
+    "ja": "スープは**お[代](か)わり**が[自由](じゆう)です。",
+    "vi": "Súp được thêm tùy thích."
+   }
+  ]
  },
  {
   "word": "残す",
   "example": "[嫌](きら)いな[野菜](やさい)を[全部](ぜんぶ)**[残](のこ)して**しまいました。",
-  "exampleVi": "Tôi đã để lại hết chỗ rau mình ghét."
+  "exampleVi": "Tôi đã để lại hết chỗ rau mình ghét.",
+  "examples": [
+   {
+    "ja": "[嫌](きら)いな[野菜](やさい)を[全部](ぜんぶ)**[残](のこ)して**しまいました。",
+    "vi": "Tôi đã để lại hết chỗ rau mình ghét."
+   },
+   {
+    "ja": "お[父](とう)さんにもアイスクリームを**[残](のこ)して**おきましょう。",
+    "vi": "Hãy để lại cả phần kem cho bố nữa."
+   }
+  ]
  },
  {
   "word": "残り物",
   "example": "[昨日](きのう)の**[残](のこ)り[物](もの)**を[温](あたた)めて[食](た)べました。",
-  "exampleVi": "Tôi hâm lại đồ ăn thừa hôm qua rồi ăn."
+  "exampleVi": "Tôi hâm lại đồ ăn thừa hôm qua rồi ăn.",
+  "examples": [
+   {
+    "ja": "[昨日](きのう)の**[残](のこ)り[物](もの)**を[温](あたた)めて[食](た)べました。",
+    "vi": "Tôi hâm lại đồ ăn thừa hôm qua rồi ăn."
+   },
+   {
+    "ja": "**[残](のこ)り[物](もの)**で[夕食](ゆうしょく)を[作](つく)りました。",
+    "vi": "Tôi đã làm bữa tối từ đồ ăn thừa."
+   }
+  ]
  },
  {
   "word": "もったいない",
   "example": "[食](た)べ[物](もの)を[捨](す)てるのは**もったいない**です。",
-  "exampleVi": "Vứt đồ ăn đi thì thật lãng phí."
+  "exampleVi": "Vứt đồ ăn đi thì thật lãng phí.",
+  "examples": [
+   {
+    "ja": "[食](た)べ[物](もの)を[捨](す)てるのは**もったいない**です。",
+    "vi": "Vứt đồ ăn đi thì thật lãng phí."
+   },
+   {
+    "ja": "まだ[着](き)られる[服](ふく)を[捨](す)てるのは**もったいない**。",
+    "vi": "Vứt bỏ quần áo vẫn còn mặc được thì thật lãng phí."
+   }
+  ]
  },
  {
   "word": "済ませる",
   "example": "[昼](ひる)ご[飯](はん)は[簡単](かんたん)に**[済](す)ませました**。",
-  "exampleVi": "Bữa trưa tôi ăn qua loa cho xong."
+  "exampleVi": "Bữa trưa tôi ăn qua loa cho xong.",
+  "examples": [
+   {
+    "ja": "[昼](ひる)ご[飯](はん)は[簡単](かんたん)に**[済](す)ませました**。",
+    "vi": "Bữa trưa tôi ăn qua loa cho xong."
+   },
+   {
+    "ja": "[食事](しょくじ)を**[済](す)ませて**から、[出](で)かけます。",
+    "vi": "Tôi ăn xong rồi mới ra ngoài."
+   }
+  ]
  },
  {
   "word": "済む",
   "example": "[買](か)い[物](もの)はもう**[済](す)みました**。",
-  "exampleVi": "Việc mua sắm đã xong rồi."
+  "exampleVi": "Việc mua sắm đã xong rồi.",
+  "examples": [
+   {
+    "ja": "[買](か)い[物](もの)はもう**[済](す)みました**。",
+    "vi": "Việc mua sắm đã xong rồi."
+   },
+   {
+    "ja": "[用事](ようじ)が**[済](す)んだら**、[電話](でんわ)します。",
+    "vi": "Khi xong việc, tôi sẽ gọi điện."
+   }
+  ]
  },
  {
   "word": "量",
   "example": "この[店](みせ)は[料理](りょうり)の**[量](りょう)**が[多](おお)いです。",
-  "exampleVi": "Quán này lượng món ăn nhiều."
+  "exampleVi": "Quán này lượng món ăn nhiều.",
+  "examples": [
+   {
+    "ja": "この[店](みせ)は[料理](りょうり)の**[量](りょう)**が[多](おお)いです。",
+    "vi": "Quán này lượng món ăn nhiều."
+   },
+   {
+    "ja": "[食](た)べる**[量](りょう)**を[減](へ)らしました。",
+    "vi": "Tôi đã giảm lượng ăn."
+   }
+  ]
  },
  {
   "word": "バランス",
   "example": "[栄養](えいよう)の**バランス**を[考](かんが)えて[食事](しょくじ)を[作](つく)ります。",
-  "exampleVi": "Tôi nấu ăn có tính đến sự cân bằng dinh dưỡng."
+  "exampleVi": "Tôi nấu ăn có tính đến sự cân bằng dinh dưỡng.",
+  "examples": [
+   {
+    "ja": "[栄養](えいよう)の**バランス**を[考](かんが)えて[食事](しょくじ)を[作](つく)ります。",
+    "vi": "Tôi nấu ăn có tính đến sự cân bằng dinh dưỡng."
+   },
+   {
+    "ja": "[栄養](えいよう)の**バランス**を[考](かんが)えて、[食事](しょくじ)を[作](つく)ります。",
+    "vi": "Tôi nấu ăn có nghĩ đến sự cân bằng dinh dưỡng."
+   }
+  ]
  },
  {
   "word": "鍋",
   "example": "**[鍋](なべ)**でスープを[作](つく)りました。",
-  "exampleVi": "Tôi đã nấu súp trong nồi."
+  "exampleVi": "Tôi đã nấu súp trong nồi.",
+  "examples": [
+   {
+    "ja": "**[鍋](なべ)**でスープを[作](つく)りました。",
+    "vi": "Tôi đã nấu súp trong nồi."
+   },
+   {
+    "ja": "[冬](ふゆ)は[家族](かぞく)で**[鍋](なべ)**を[食](た)べます。",
+    "vi": "Mùa đông cả nhà tôi ăn lẩu."
+   }
+  ]
  },
  {
   "word": "フライパン",
   "example": "**フライパン**で[卵](たまご)を[焼](や)きました。",
-  "exampleVi": "Tôi đã rán trứng trong chảo."
+  "exampleVi": "Tôi đã rán trứng trong chảo.",
+  "examples": [
+   {
+    "ja": "**フライパン**で[卵](たまご)を[焼](や)きました。",
+    "vi": "Tôi đã rán trứng trong chảo."
+   },
+   {
+    "ja": "**フライパン**を[洗](あら)います。",
+    "vi": "Tôi rửa chảo."
+   }
+  ]
  },
  {
   "word": "包丁",
   "example": "[新](あたら)しい**[包丁](ほうちょう)**はよく[切](き)れます。",
-  "exampleVi": "Con dao bếp mới cắt rất bén."
+  "exampleVi": "Con dao bếp mới cắt rất bén.",
+  "examples": [
+   {
+    "ja": "[新](あたら)しい**[包丁](ほうちょう)**はよく[切](き)れます。",
+    "vi": "Con dao bếp mới cắt rất bén."
+   },
+   {
+    "ja": "**[包丁](ほうちょう)**を[使](つか)うときは、[手](て)を[切](き)らないように[注意](ちゅうい)してください。",
+    "vi": "Khi dùng dao, hãy chú ý đừng để đứt tay."
+   }
+  ]
  },
  {
   "word": "まな板",
   "example": "**まな[板](いた)**の[上](うえ)で[野菜](やさい)を[切](き)ります。",
-  "exampleVi": "Tôi cắt rau trên thớt."
+  "exampleVi": "Tôi cắt rau trên thớt.",
+  "examples": [
+   {
+    "ja": "**まな[板](いた)**の[上](うえ)で[野菜](やさい)を[切](き)ります。",
+    "vi": "Tôi cắt rau trên thớt."
+   },
+   {
+    "ja": "[肉](にく)を[切](き)った[後](あと)、**まな[板](いた)**を[洗](あら)います。",
+    "vi": "Sau khi cắt thịt, tôi rửa thớt."
+   }
+  ]
  },
  {
   "word": "おたま",
   "example": "**おたま**でスープを[皿](さら)に[入](い)れました。",
-  "exampleVi": "Tôi dùng muôi múc súp cho vào đĩa."
+  "exampleVi": "Tôi dùng muôi múc súp cho vào đĩa.",
+  "examples": [
+   {
+    "ja": "**おたま**でスープを[皿](さら)に[入](い)れました。",
+    "vi": "Tôi dùng muôi múc súp cho vào đĩa."
+   },
+   {
+    "ja": "**おたま**でスープをすくいます。",
+    "vi": "Tôi múc súp bằng muôi."
+   }
+  ]
  },
  {
   "word": "しゃもじ",
   "example": "**しゃもじ**でご[飯](はん)を[混](ま)ぜました。",
-  "exampleVi": "Tôi dùng muôi xới cơm để trộn cơm."
+  "exampleVi": "Tôi dùng muôi xới cơm để trộn cơm.",
+  "examples": [
+   {
+    "ja": "**しゃもじ**でご[飯](はん)を[混](ま)ぜました。",
+    "vi": "Tôi dùng muôi xới cơm để trộn cơm."
+   },
+   {
+    "ja": "**しゃもじ**でご[飯](はん)をかき[混](ま)ぜます。",
+    "vi": "Tôi dùng muôi xới cơm để xới tơi cơm."
+   }
+  ]
  },
  {
   "word": "大さじ",
   "example": "[砂糖](さとう)を**[大](おお)さじ**[二杯](にはい)[入](い)れてください。",
-  "exampleVi": "Hãy cho hai muỗng lớn đường vào."
+  "exampleVi": "Hãy cho hai muỗng lớn đường vào.",
+  "examples": [
+   {
+    "ja": "[砂糖](さとう)を**[大](おお)さじ**[二杯](にはい)[入](い)れてください。",
+    "vi": "Hãy cho hai muỗng lớn đường vào."
+   },
+   {
+    "ja": "[醤油](しょうゆ)を**[大](おお)さじ**[一杯](いっぱい)[入](い)れます。",
+    "vi": "Tôi cho vào một muỗng lớn nước tương."
+   }
+  ]
  },
  {
   "word": "炊飯器",
   "example": "**[炊飯器](すいはんき)**でご[飯](はん)を[炊](た)きます。",
-  "exampleVi": "Tôi nấu cơm bằng nồi cơm điện."
+  "exampleVi": "Tôi nấu cơm bằng nồi cơm điện.",
+  "examples": [
+   {
+    "ja": "**[炊飯器](すいはんき)**でご[飯](はん)を[炊](た)きます。",
+    "vi": "Tôi nấu cơm bằng nồi cơm điện."
+   },
+   {
+    "ja": "[新](あたら)しい**[炊飯器](すいはんき)**を[買](か)いました。",
+    "vi": "Tôi đã mua nồi cơm điện mới."
+   }
+  ]
  },
  {
   "word": "流し台",
   "example": "[食器](しょっき)を**[流](なが)し[台](だい)**に[置](お)きました。",
-  "exampleVi": "Tôi đã để bát đĩa vào bồn rửa."
+  "exampleVi": "Tôi đã để bát đĩa vào bồn rửa.",
+  "examples": [
+   {
+    "ja": "[食器](しょっき)を**[流](なが)し[台](だい)**に[置](お)きました。",
+    "vi": "Tôi đã để bát đĩa vào bồn rửa."
+   },
+   {
+    "ja": "**[流](なが)し[台](だい)**をきれいに[掃除](そうじ)します。",
+    "vi": "Tôi dọn sạch bồn rửa."
+   }
+  ]
  },
  {
   "word": "電子レンジ",
   "example": "[冷](つめ)たくなった[料理](りょうり)を**[電子](でんし)レンジ**で[温](あたた)めました。",
-  "exampleVi": "Tôi đã hâm món ăn nguội bằng lò vi sóng."
+  "exampleVi": "Tôi đã hâm món ăn nguội bằng lò vi sóng.",
+  "examples": [
+   {
+    "ja": "[冷](つめ)たくなった[料理](りょうり)を**[電子](でんし)レンジ**で[温](あたた)めました。",
+    "vi": "Tôi đã hâm món ăn nguội bằng lò vi sóng."
+   },
+   {
+    "ja": "**[電子](でんし)レンジ**でお[弁当](べんとう)を[温](あたた)めます。",
+    "vi": "Tôi hâm cơm hộp bằng lò vi sóng."
+   }
+  ]
  },
  {
   "word": "ガスレンジ",
   "example": "**ガスレンジ**の[火](ひ)を[消](け)してください。",
-  "exampleVi": "Xin hãy tắt lửa bếp ga."
+  "exampleVi": "Xin hãy tắt lửa bếp ga.",
+  "examples": [
+   {
+    "ja": "**ガスレンジ**の[火](ひ)を[消](け)してください。",
+    "vi": "Xin hãy tắt lửa bếp ga."
+   },
+   {
+    "ja": "**ガスレンジ**の[具合](ぐあい)が[悪](わる)いです。",
+    "vi": "Bếp ga đang có vấn đề."
+   }
+  ]
  },
  {
   "word": "調味料",
   "example": "[塩](しお)や[砂糖](さとう)などの**[調味料](ちょうみりょう)**を[買](か)いました。",
-  "exampleVi": "Tôi đã mua gia vị như muối và đường."
+  "exampleVi": "Tôi đã mua gia vị như muối và đường.",
+  "examples": [
+   {
+    "ja": "[塩](しお)や[砂糖](さとう)などの**[調味料](ちょうみりょう)**を[買](か)いました。",
+    "vi": "Tôi đã mua gia vị như muối và đường."
+   },
+   {
+    "ja": "**[調味料](ちょうみりょう)**はしょうゆと[砂糖](さとう)です。",
+    "vi": "Gia vị là xì dầu và đường."
+   }
+  ]
  },
  {
   "word": "サラダ油",
   "example": "[揚](あ)げ[物](もの)には**サラダ[油](ゆ)**を[使](つか)います。",
-  "exampleVi": "Với đồ chiên thì tôi dùng dầu ăn."
+  "exampleVi": "Với đồ chiên thì tôi dùng dầu ăn.",
+  "examples": [
+   {
+    "ja": "[揚](あ)げ[物](もの)には**サラダ[油](ゆ)**を[使](つか)います。",
+    "vi": "Với đồ chiên thì tôi dùng dầu ăn."
+   },
+   {
+    "ja": "フライパンに**サラダ[油](あぶら)**を[少](すこ)し[入](い)れます。",
+    "vi": "Tôi cho một ít dầu ăn vào chảo."
+   }
+  ]
  },
  {
   "word": "食品",
   "example": "このスーパーは[新鮮](しんせん)な**[食品](しょくひん)**が[多](おお)いです。",
-  "exampleVi": "Siêu thị này có nhiều thực phẩm tươi."
+  "exampleVi": "Siêu thị này có nhiều thực phẩm tươi.",
+  "examples": [
+   {
+    "ja": "このスーパーは[新鮮](しんせん)な**[食品](しょくひん)**が[多](おお)いです。",
+    "vi": "Siêu thị này có nhiều thực phẩm tươi."
+   },
+   {
+    "ja": "**[食品](しょくひん)**の[売](う)り[場](ば)は[地下](ちか)です。",
+    "vi": "Quầy thực phẩm ở tầng hầm."
+   }
+  ]
  },
  {
   "word": "切らす",
   "example": "[砂糖](さとう)を**[切](き)らして**しまったので、[買](か)いに[行](い)きます。",
-  "exampleVi": "Đường hết mất rồi nên tôi đi mua."
+  "exampleVi": "Đường hết mất rồi nên tôi đi mua.",
+  "examples": [
+   {
+    "ja": "[砂糖](さとう)を**[切](き)らして**しまったので、[買](か)いに[行](い)きます。",
+    "vi": "Đường hết mất rồi nên tôi đi mua."
+   },
+   {
+    "ja": "[砂糖](さとう)を**[切](き)らしている**ので、[買](か)いに[行](い)きます。",
+    "vi": "Vì đã hết đường nên tôi đi mua."
+   }
+  ]
  },
  {
   "word": "腐る",
   "example": "[夏](なつ)は[食](た)べ[物](もの)がすぐ**[腐](くさ)ります**。",
-  "exampleVi": "Mùa hè thức ăn nhanh bị thiu."
+  "exampleVi": "Mùa hè thức ăn nhanh bị thiu.",
+  "examples": [
+   {
+    "ja": "[夏](なつ)は[食](た)べ[物](もの)がすぐ**[腐](くさ)ります**。",
+    "vi": "Mùa hè thức ăn nhanh bị thiu."
+   },
+   {
+    "ja": "[冷蔵庫](れいぞうこ)に[入](い)れなかったので、[肉](にく)が**くさって**しまいました。",
+    "vi": "Vì không cho vào tủ lạnh nên thịt đã bị thiu mất."
+   }
+  ]
  },
  {
   "word": "アルミホイル",
   "example": "[魚](さかな)を**アルミホイル**で[包](つつ)んで[焼](や)きます。",
-  "exampleVi": "Tôi bọc cá bằng giấy bạc rồi nướng."
+  "exampleVi": "Tôi bọc cá bằng giấy bạc rồi nướng.",
+  "examples": [
+   {
+    "ja": "[魚](さかな)を**アルミホイル**で[包](つつ)んで[焼](や)きます。",
+    "vi": "Tôi bọc cá bằng giấy bạc rồi nướng."
+   },
+   {
+    "ja": "**アルミホイル**でおにぎりを[包](つつ)みます。",
+    "vi": "Tôi gói cơm nắm bằng giấy bạc."
+   }
+  ]
  },
  {
   "word": "ラップ",
   "example": "[残](のこ)ったご[飯](はん)に**ラップ**をかけて、[冷蔵庫](れいぞうこ)に[入](い)れました。",
-  "exampleVi": "Tôi bọc màng bọc thực phẩm lên chỗ cơm còn lại rồi cho vào tủ lạnh."
+  "exampleVi": "Tôi bọc màng bọc thực phẩm lên chỗ cơm còn lại rồi cho vào tủ lạnh.",
+  "examples": [
+   {
+    "ja": "[残](のこ)ったご[飯](はん)に**ラップ**をかけて、[冷蔵庫](れいぞうこ)に[入](い)れました。",
+    "vi": "Tôi bọc màng bọc thực phẩm lên chỗ cơm còn lại rồi cho vào tủ lạnh."
+   },
+   {
+    "ja": "お[皿](さら)に**ラップ**をして、[電子](でんし)レンジで[温](あたた)めてください。",
+    "vi": "Hãy bọc màng thực phẩm lên đĩa rồi hâm trong lò vi sóng."
+   }
+  ]
  },
  {
   "word": "おしぼり",
   "example": "[店](みせ)で**おしぼり**で[手](て)をふきました。",
-  "exampleVi": "Ở quán, tôi lau tay bằng khăn ướt."
+  "exampleVi": "Ở quán, tôi lau tay bằng khăn ướt.",
+  "examples": [
+   {
+    "ja": "[店](みせ)で**おしぼり**で[手](て)をふきました。",
+    "vi": "Ở quán, tôi lau tay bằng khăn ướt."
+   },
+   {
+    "ja": "[食事](しょくじ)の[前](まえ)に、**おしぼり**で[手](て)をふきます。",
+    "vi": "Trước bữa ăn, tôi lau tay bằng khăn ướt."
+   }
+  ]
  },
  {
   "word": "食器",
   "example": "[食事](しょくじ)のあと、**[食器](しょっき)**を[洗](あら)います。",
-  "exampleVi": "Sau bữa ăn, tôi rửa bát đĩa."
+  "exampleVi": "Sau bữa ăn, tôi rửa bát đĩa.",
+  "examples": [
+   {
+    "ja": "[食事](しょくじ)のあと、**[食器](しょっき)**を[洗](あら)います。",
+    "vi": "Sau bữa ăn, tôi rửa bát đĩa."
+   },
+   {
+    "ja": "[引](ひ)っ[越](こ)しのために、**[食器](しょっき)**を[新聞紙](しんぶんし)で[包](つつ)んだ。",
+    "vi": "Để chuyển nhà, tôi gói bát đĩa bằng giấy báo."
+   }
+  ]
  },
  {
   "word": "茶碗",
   "example": "ご[飯](はん)を**[茶碗](ちゃわん)**に[入](い)れます。",
-  "exampleVi": "Tôi xới cơm vào chén."
+  "exampleVi": "Tôi xới cơm vào chén.",
+  "examples": [
+   {
+    "ja": "ご[飯](はん)を**[茶碗](ちゃわん)**に[入](い)れます。",
+    "vi": "Tôi xới cơm vào chén."
+   },
+   {
+    "ja": "**[茶碗](ちゃわん)**を[洗](あら)います。",
+    "vi": "Tôi rửa chén."
+   }
+  ]
  },
  {
   "word": "グラス",
   "example": "**グラス**に[水](みず)を[入](い)れて[飲](の)みました。",
-  "exampleVi": "Tôi rót nước vào cốc rồi uống."
+  "exampleVi": "Tôi rót nước vào cốc rồi uống.",
+  "examples": [
+   {
+    "ja": "**グラス**に[水](みず)を[入](い)れて[飲](の)みました。",
+    "vi": "Tôi rót nước vào cốc rồi uống."
+   },
+   {
+    "ja": "ワインを**グラス**に[注](そそ)ぎます。",
+    "vi": "Tôi rót rượu vang vào ly."
+   }
+  ]
  },
  {
   "word": "刻む",
   "example": "[野菜](やさい)を[細](こま)かく**[刻](きざ)んで**、スープに[入](い)れます。",
-  "exampleVi": "Tôi thái nhỏ rau rồi cho vào súp."
+  "exampleVi": "Tôi thái nhỏ rau rồi cho vào súp.",
+  "examples": [
+   {
+    "ja": "[野菜](やさい)を[細](こま)かく**[刻](きざ)んで**、スープに[入](い)れます。",
+    "vi": "Tôi thái nhỏ rau rồi cho vào súp."
+   },
+   {
+    "ja": "[玉](たま)ねぎを[細](こま)かく**[刻](きざ)みます**。",
+    "vi": "Tôi thái nhỏ hành tây."
+   }
+  ]
  },
  {
   "word": "割る",
   "example": "[卵](たまご)を**[割](わ)って**、フライパンに[入](い)れました。",
-  "exampleVi": "Tôi đập trứng rồi cho vào chảo."
+  "exampleVi": "Tôi đập trứng rồi cho vào chảo.",
+  "examples": [
+   {
+    "ja": "[卵](たまご)を**[割](わ)って**、フライパンに[入](い)れました。",
+    "vi": "Tôi đập trứng rồi cho vào chảo."
+   },
+   {
+    "ja": "コップを**[割](わ)って**しまいました。",
+    "vi": "Tôi lỡ làm vỡ cái cốc."
+   }
+  ]
  },
  {
   "word": "むく",
   "example": "りんごの[皮](かわ)を**むいて**[食](た)べました。",
-  "exampleVi": "Tôi gọt vỏ táo rồi ăn."
+  "exampleVi": "Tôi gọt vỏ táo rồi ăn.",
+  "examples": [
+   {
+    "ja": "りんごの[皮](かわ)を**むいて**[食](た)べました。",
+    "vi": "Tôi gọt vỏ táo rồi ăn."
+   },
+   {
+    "ja": "[皮](かわ)を**むいて**りんごを[食](た)べました。",
+    "vi": "Tôi đã gọt vỏ rồi ăn táo."
+   }
+  ]
  },
  {
   "word": "加える",
   "example": "スープに[塩](しお)を[少](すこ)し**[加](くわ)えました**。",
-  "exampleVi": "Tôi thêm một chút muối vào súp."
+  "exampleVi": "Tôi thêm một chút muối vào súp.",
+  "examples": [
+   {
+    "ja": "スープに[塩](しお)を[少](すこ)し**[加](くわ)えました**。",
+    "vi": "Tôi thêm một chút muối vào súp."
+   },
+   {
+    "ja": "[塩](しお)を[少](すこ)し**[加](くわ)える**と、[味](あじ)がよくなります。",
+    "vi": "Thêm một chút muối thì vị sẽ ngon hơn."
+   }
+  ]
  },
  {
   "word": "少々",
   "example": "**[少々](しょうしょう)**の[塩](しお)を[入](い)れてください。",
-  "exampleVi": "Hãy cho vào một chút muối."
+  "exampleVi": "Hãy cho vào một chút muối.",
+  "examples": [
+   {
+    "ja": "**[少々](しょうしょう)**の[塩](しお)を[入](い)れてください。",
+    "vi": "Hãy cho vào một chút muối."
+   },
+   {
+    "ja": "[塩](しお)を**[少々](しょうしょう)**[加](くわ)えます。",
+    "vi": "Tôi thêm vào một chút muối."
+   }
+  ]
  },
  {
   "word": "揚げる",
   "example": "[魚](さかな)を[油](あぶら)で**[揚](あ)げました**。",
-  "exampleVi": "Tôi đã chiên cá trong dầu."
+  "exampleVi": "Tôi đã chiên cá trong dầu.",
+  "examples": [
+   {
+    "ja": "[魚](さかな)を[油](あぶら)で**[揚](あ)げました**。",
+    "vi": "Tôi đã chiên cá trong dầu."
+   },
+   {
+    "ja": "てんぷらは、[油](あぶら)で**[揚](あ)げる**[料理](りょうり)です。",
+    "vi": "Tempura là món ăn được chiên ngập dầu."
+   }
+  ]
  },
  {
   "word": "煮る",
   "example": "[大根](だいこん)を[柔](やわ)らかく**[煮](に)ました**。",
-  "exampleVi": "Tôi đã kho củ cải trắng cho mềm."
+  "exampleVi": "Tôi đã kho củ cải trắng cho mềm.",
+  "examples": [
+   {
+    "ja": "[大根](だいこん)を[柔](やわ)らかく**[煮](に)ました**。",
+    "vi": "Tôi đã kho củ cải trắng cho mềm."
+   },
+   {
+    "ja": "[魚](さかな)を[醤油](しょうゆ)で**[煮](に)ます**。",
+    "vi": "Tôi kho cá với nước tương."
+   }
+  ]
  },
  {
   "word": "ゆでる",
   "example": "[野菜](やさい)を**ゆでて**、サラダにします。",
-  "exampleVi": "Tôi luộc rau rồi làm salad."
+  "exampleVi": "Tôi luộc rau rồi làm salad.",
+  "examples": [
+   {
+    "ja": "[野菜](やさい)を**ゆでて**、サラダにします。",
+    "vi": "Tôi luộc rau rồi làm salad."
+   },
+   {
+    "ja": "[卵](たまご)を[十分](じゅっぷん)**ゆでます**。",
+    "vi": "Tôi luộc trứng 10 phút."
+   }
+  ]
  },
  {
   "word": "蒸す",
   "example": "[魚](さかな)を**[蒸](む)して**[食](た)べます。",
-  "exampleVi": "Tôi hấp cá rồi ăn."
+  "exampleVi": "Tôi hấp cá rồi ăn.",
+  "examples": [
+   {
+    "ja": "[魚](さかな)を**[蒸](む)して**[食](た)べます。",
+    "vi": "Tôi hấp cá rồi ăn."
+   },
+   {
+    "ja": "[野菜](やさい)を**[蒸](む)して**[食](た)べます。",
+    "vi": "Tôi hấp rau rồi ăn."
+   }
+  ]
  },
  {
   "word": "くるむ",
   "example": "ご[飯](はん)を[海苔](のり)で**くるんで**[食](た)べました。",
-  "exampleVi": "Tôi cuộn cơm bằng rong biển rồi ăn."
+  "exampleVi": "Tôi cuộn cơm bằng rong biển rồi ăn.",
+  "examples": [
+   {
+    "ja": "ご[飯](はん)を[海苔](のり)で**くるんで**[食](た)べました。",
+    "vi": "Tôi cuộn cơm bằng rong biển rồi ăn."
+   },
+   {
+    "ja": "[赤](あか)ちゃんをタオルで**くるみました**。",
+    "vi": "Tôi đã quấn em bé bằng khăn."
+   }
+  ]
  },
  {
   "word": "握る",
   "example": "[手](て)でご[飯](はん)を**[握](にぎ)って**、おにぎりを[作](つく)りました。",
-  "exampleVi": "Tôi nắm cơm bằng tay để làm onigiri."
+  "exampleVi": "Tôi nắm cơm bằng tay để làm onigiri.",
+  "examples": [
+   {
+    "ja": "[手](て)でご[飯](はん)を**[握](にぎ)って**、おにぎりを[作](つく)りました。",
+    "vi": "Tôi nắm cơm bằng tay để làm onigiri."
+   },
+   {
+    "ja": "ロープを[強](つよ)く**にぎっていた**せいで、[手](て)が[赤](あか)くなってしまった。",
+    "vi": "Vì nắm chặt sợi dây nên tay tôi bị đỏ lên."
+   }
+  ]
  },
  {
   "word": "熱する",
   "example": "フライパンを[火](ひ)にかけて、[十分](じゅうぶん)に**[熱](ねっ)して**ください。",
-  "exampleVi": "Hãy đặt chảo lên bếp và làm nóng đủ lâu."
+  "exampleVi": "Hãy đặt chảo lên bếp và làm nóng đủ lâu.",
+  "examples": [
+   {
+    "ja": "フライパンを[火](ひ)にかけて、[十分](じゅうぶん)に**[熱](ねっ)して**ください。",
+    "vi": "Hãy đặt chảo lên bếp và làm nóng đủ lâu."
+   },
+   {
+    "ja": "[油](あぶら)を**[熱](ねっ)します**。",
+    "vi": "Tôi làm nóng dầu."
+   }
+  ]
  },
  {
   "word": "こげる",
   "example": "[魚](さかな)を[焼](や)きすぎて、**こげて**しまいました。",
-  "exampleVi": "Tôi nướng cá quá lâu nên bị cháy khét."
+  "exampleVi": "Tôi nướng cá quá lâu nên bị cháy khét.",
+  "examples": [
+   {
+    "ja": "[魚](さかな)を[焼](や)きすぎて、**こげて**しまいました。",
+    "vi": "Tôi nướng cá quá lâu nên bị cháy khét."
+   },
+   {
+    "ja": "パンが**こげて**しまいました。",
+    "vi": "Bánh mì bị cháy mất rồi."
+   }
+  ]
  },
  {
   "word": "取り出す",
   "example": "オーブンからケーキを**[取](と)り[出](だ)しました**。",
-  "exampleVi": "Tôi đã lấy bánh ra khỏi lò nướng."
+  "exampleVi": "Tôi đã lấy bánh ra khỏi lò nướng.",
+  "examples": [
+   {
+    "ja": "オーブンからケーキを**[取](と)り[出](だ)しました**。",
+    "vi": "Tôi đã lấy bánh ra khỏi lò nướng."
+   },
+   {
+    "ja": "[家](いえ)のドアを[開](あ)けるために、かばんの[中](なか)から[鍵](かぎ)を**[取](と)り[出](だ)した**。",
+    "vi": "Để mở cửa nhà, tôi đã lấy chìa khóa ra từ trong túi."
+   }
+  ]
  },
  {
   "word": "塗る",
   "example": "パンにバターを**[塗](ぬ)って**[食](た)べます。",
-  "exampleVi": "Tôi phết bơ lên bánh mì rồi ăn."
+  "exampleVi": "Tôi phết bơ lên bánh mì rồi ăn.",
+  "examples": [
+   {
+    "ja": "パンにバターを**[塗](ぬ)って**[食](た)べます。",
+    "vi": "Tôi phết bơ lên bánh mì rồi ăn."
+   },
+   {
+    "ja": "パンにジャムを**[塗](ぬ)ります**。",
+    "vi": "Tôi phết mứt lên bánh mì."
+   }
+  ]
  },
  {
   "word": "温める",
   "example": "[冷](さ)めたスープをもう[一度](いちど)**[温](あたた)めました**。",
-  "exampleVi": "Tôi hâm lại bát súp đã nguội một lần nữa."
+  "exampleVi": "Tôi hâm lại bát súp đã nguội một lần nữa.",
+  "examples": [
+   {
+    "ja": "[冷](さ)めたスープをもう[一度](いちど)**[温](あたた)めました**。",
+    "vi": "Tôi hâm lại bát súp đã nguội một lần nữa."
+   },
+   {
+    "ja": "このスープを**[温](あたた)めて**ください。",
+    "vi": "Hãy hâm nóng món súp này."
+   }
+  ]
  },
  {
   "word": "冷やす",
   "example": "[飲](の)み[物](もの)を[冷蔵庫](れいぞうこ)で**[冷](ひ)やして**おきます。",
-  "exampleVi": "Tôi để sẵn đồ uống trong tủ lạnh cho lạnh."
+  "exampleVi": "Tôi để sẵn đồ uống trong tủ lạnh cho lạnh.",
+  "examples": [
+   {
+    "ja": "[飲](の)み[物](もの)を[冷蔵庫](れいぞうこ)で**[冷](ひ)やして**おきます。",
+    "vi": "Tôi để sẵn đồ uống trong tủ lạnh cho lạnh."
+   },
+   {
+    "ja": "[頭](あたま)を**[冷](ひ)やした**ほうがいいです。",
+    "vi": "Bạn nên chườm lạnh lên đầu."
+   }
+  ]
  },
  {
   "word": "ぬるい",
-  "example": "お[茶](ちゃ)が**ぬるく**なってしまいました。",
-  "exampleVi": "Trà đã nguội mất rồi."
+  "example": "お[茶](ちゃ)が**ぬるくなって**しまいました。",
+  "exampleVi": "Trà đã nguội mất rồi.",
+  "examples": [
+   {
+    "ja": "お[茶](ちゃ)が**ぬるくなって**しまいました。",
+    "vi": "Trà đã nguội mất rồi."
+   },
+   {
+    "ja": "お[風呂](ふろ)がちょっと**ぬるい**です。",
+    "vi": "Nước tắm hơi ấm (hơi nguội) một chút."
+   }
+  ]
  },
  {
   "word": "水分",
   "example": "[野菜](やさい)の**[水分](すいぶん)**をよく[切](き)ってください。",
-  "exampleVi": "Hãy ráo hết nước của rau cho thật kỹ."
+  "exampleVi": "Hãy ráo hết nước của rau cho thật kỹ.",
+  "examples": [
+   {
+    "ja": "[野菜](やさい)の**[水分](すいぶん)**をよく[切](き)ってください。",
+    "vi": "Hãy ráo hết nước của rau cho thật kỹ."
+   },
+   {
+    "ja": "[果物](くだもの)には**[水分](すいぶん)**がたくさん[含](ふく)まれています。",
+    "vi": "Trong trái cây có chứa nhiều nước."
+   }
+  ]
  },
  {
   "word": "沸かす",
   "example": "やかんでお[湯](ゆ)を**[沸](わ)かします**。",
-  "exampleVi": "Tôi đun nước sôi bằng ấm."
+  "exampleVi": "Tôi đun nước sôi bằng ấm.",
+  "examples": [
+   {
+    "ja": "やかんでお[湯](ゆ)を**[沸](わ)かします**。",
+    "vi": "Tôi đun nước sôi bằng ấm."
+   },
+   {
+    "ja": "お[茶](ちゃ)を[飲](の)むために、お[湯](ゆ)を**わかしました**。",
+    "vi": "Tôi đun nước sôi để uống trà."
+   }
+  ]
  },
  {
   "word": "注ぐ",
   "example": "カップにコーヒーを**[注](そそ)ぎました**。",
-  "exampleVi": "Tôi đã rót cà phê vào tách."
+  "exampleVi": "Tôi đã rót cà phê vào tách.",
+  "examples": [
+   {
+    "ja": "カップにコーヒーを**[注](そそ)ぎました**。",
+    "vi": "Tôi đã rót cà phê vào tách."
+   },
+   {
+    "ja": "コップに[水](みず)を**[注](そそ)ぎます**。",
+    "vi": "Tôi rót nước vào cốc."
+   }
+  ]
  },
  {
   "word": "味見",
   "example": "[塩](しお)が[足](た)りるか、**[味見](あじみ)**をしてください。",
-  "exampleVi": "Hãy nếm thử xem muối đã đủ chưa."
+  "exampleVi": "Hãy nếm thử xem muối đã đủ chưa.",
+  "examples": [
+   {
+    "ja": "[塩](しお)が[足](た)りるか、**[味見](あじみ)**をしてください。",
+    "vi": "Hãy nếm thử xem muối đã đủ chưa."
+   },
+   {
+    "ja": "[料理](りょうり)の**[味見](あじみ)**をします。",
+    "vi": "Tôi nếm thử món ăn."
+   }
+  ]
  },
  {
   "word": "手間",
   "example": "この[料理](りょうり)は**[手間](てま)**がかかりますが、おいしいです。",
-  "exampleVi": "Món này tốn công nhưng ngon."
+  "exampleVi": "Món này tốn công nhưng ngon.",
+  "examples": [
+   {
+    "ja": "この[料理](りょうり)は**[手間](てま)**がかかりますが、おいしいです。",
+    "vi": "Món này tốn công nhưng ngon."
+   },
+   {
+    "ja": "[手作](てづく)りは**[手間](てま)**がかかります。",
+    "vi": "Đồ tự làm tốn nhiều công sức."
+   }
+  ]
  },
  {
   "word": "手軽",
   "example": "[忙](いそが)しい[日](ひ)は**[手軽](てがる)**な[料理](りょうり)を[作](つく)ります。",
-  "exampleVi": "Những ngày bận, tôi nấu các món đơn giản, tiện lợi."
+  "exampleVi": "Những ngày bận, tôi nấu các món đơn giản, tiện lợi.",
+  "examples": [
+   {
+    "ja": "[忙](いそが)しい[日](ひ)は**[手軽](てがる)**な[料理](りょうり)を[作](つく)ります。",
+    "vi": "Những ngày bận, tôi nấu các món đơn giản, tiện lợi."
+   },
+   {
+    "ja": "**[手軽](てがる)**に[作](つく)れる[料理](りょうり)を[教](おし)えてください。",
+    "vi": "Xin hãy chỉ tôi món ăn làm đơn giản."
+   }
+  ]
  },
  {
   "word": "でき上がり",
   "example": "**でき[上](あ)がり**まで[三十分](さんじゅっぷん)ぐらいかかります。",
-  "exampleVi": "Phải mất khoảng 30 phút nữa mới hoàn thành."
+  "exampleVi": "Phải mất khoảng 30 phút nữa mới hoàn thành.",
+  "examples": [
+   {
+    "ja": "**でき[上](あ)がり**まで[三十分](さんじゅっぷん)ぐらいかかります。",
+    "vi": "Phải mất khoảng 30 phút nữa mới hoàn thành."
+   },
+   {
+    "ja": "**でき[上](あ)がり**を[楽](たの)しみにしています。",
+    "vi": "Tôi đang mong chờ thành phẩm."
+   }
+  ]
  },
  {
   "word": "分ける",
   "example": "ケーキを[四](よっ)つに**[分](わ)けました**。",
-  "exampleVi": "Tôi đã chia chiếc bánh làm bốn phần."
+  "exampleVi": "Tôi đã chia chiếc bánh làm bốn phần.",
+  "examples": [
+   {
+    "ja": "ケーキを[四](よっ)つに**[分](わ)けました**。",
+    "vi": "Tôi đã chia chiếc bánh làm bốn phần."
+   },
+   {
+    "ja": "お[菓子](かし)は6[個](こ)あるから、3[人](にん)で**わける**と[一人](ひとり)2[個](こ)になる。",
+    "vi": "Có 6 cái bánh nên nếu chia cho 3 người thì mỗi người được 2 cái."
+   }
+  ]
  },
  {
   "word": "つまむ",
   "example": "[皿](さら)の[上](うえ)のお[菓子](かし)を[指](ゆび)で**つまんで**[食](た)べました。",
-  "exampleVi": "Tôi dùng ngón tay bốc bánh kẹo trên đĩa ăn."
+  "exampleVi": "Tôi dùng ngón tay bốc bánh kẹo trên đĩa ăn.",
+  "examples": [
+   {
+    "ja": "[皿](さら)の[上](うえ)のお[菓子](かし)を[指](ゆび)で**つまんで**[食](た)べました。",
+    "vi": "Tôi dùng ngón tay bốc bánh kẹo trên đĩa ăn."
+   },
+   {
+    "ja": "[鼻](はな)を**つまんで**[薬](くすり)を[飲](の)みました。",
+    "vi": "Tôi bịt mũi rồi uống thuốc."
+   }
+  ]
  },
  {
   "word": "塩辛い",
   "example": "このスープは**[塩辛](しおから)い**です。",
-  "exampleVi": "Món súp này mặn."
+  "exampleVi": "Món súp này mặn.",
+  "examples": [
+   {
+    "ja": "このスープは**[塩辛](しおから)い**です。",
+    "vi": "Món súp này mặn."
+   },
+   {
+    "ja": "この[漬物](つけもの)は**[塩辛](しおから)い**です。",
+    "vi": "Món dưa muối này mặn."
+   }
+  ]
  },
  {
   "word": "酸っぱい",
   "example": "このみかんは**[酸](す)っぱい**です。",
-  "exampleVi": "Quả quýt này chua."
+  "exampleVi": "Quả quýt này chua.",
+  "examples": [
+   {
+    "ja": "このみかんは**[酸](す)っぱい**です。",
+    "vi": "Quả quýt này chua."
+   },
+   {
+    "ja": "このレモンはとても**[酸](す)っぱい**です。",
+    "vi": "Quả chanh này rất chua."
+   }
+  ]
  },
  {
   "word": "冷凍",
-  "example": "[肉](にく)を**[冷凍](れいとう)**しておきます。",
-  "exampleVi": "Tôi cấp đông thịt để sẵn."
+  "example": "[肉](にく)を**[冷凍](れいとう)して**おきます。",
+  "exampleVi": "Tôi cấp đông thịt để sẵn.",
+  "examples": [
+   {
+    "ja": "[肉](にく)を**[冷凍](れいとう)して**おきます。",
+    "vi": "Tôi cấp đông thịt để sẵn."
+   },
+   {
+    "ja": "**[冷凍](れいとう)**の[野菜](やさい)を[使](つか)います。",
+    "vi": "Tôi dùng rau đông lạnh."
+   }
+  ]
  },
  {
   "word": "散らかる",
   "example": "[子供](こども)がいるので、[部屋](へや)がすぐ**[散](ち)らかります**。",
-  "exampleVi": "Vì có trẻ con nên phòng nhanh chóng bị bừa bộn."
+  "exampleVi": "Vì có trẻ con nên phòng nhanh chóng bị bừa bộn.",
+  "examples": [
+   {
+    "ja": "[子供](こども)がいるので、[部屋](へや)がすぐ**[散](ち)らかります**。",
+    "vi": "Vì có trẻ con nên phòng nhanh chóng bị bừa bộn."
+   },
+   {
+    "ja": "[机](つくえ)の[上](うえ)が**[散](ち)らかっています**。",
+    "vi": "Trên bàn đang bừa bộn."
+   }
+  ]
  },
  {
   "word": "片づける",
   "example": "[食事](しょくじ)のあと、[台所](だいどころ)を**[片](かた)づけました**。",
-  "exampleVi": "Sau bữa ăn, tôi đã dọn dẹp nhà bếp."
+  "exampleVi": "Sau bữa ăn, tôi đã dọn dẹp nhà bếp.",
+  "examples": [
+   {
+    "ja": "[食事](しょくじ)のあと、[台所](だいどころ)を**[片](かた)づけました**。",
+    "vi": "Sau bữa ăn, tôi đã dọn dẹp nhà bếp."
+   },
+   {
+    "ja": "[机](つくえ)の[上](うえ)を**[片](かた)づけて**ください。",
+    "vi": "Xin hãy dọn dẹp trên bàn."
+   }
+  ]
  },
  {
   "word": "清潔",
   "example": "[料理](りょうり)をする[前](まえ)に[手](て)を[洗](あら)って**[清潔](せいけつ)**にします。",
-  "exampleVi": "Trước khi nấu ăn, tôi rửa tay cho sạch sẽ."
+  "exampleVi": "Trước khi nấu ăn, tôi rửa tay cho sạch sẽ.",
+  "examples": [
+   {
+    "ja": "[料理](りょうり)をする[前](まえ)に[手](て)を[洗](あら)って**[清潔](せいけつ)**にします。",
+    "vi": "Trước khi nấu ăn, tôi rửa tay cho sạch sẽ."
+   },
+   {
+    "ja": "このホテルは[古](ふる)いが、[部屋](へや)はよく[掃除](そうじ)されていて**[清潔](せいけつ)**だ。",
+    "vi": "Khách sạn này cũ nhưng các phòng được dọn dẹp sạch sẽ và rất sạch."
+   }
+  ]
  }
 ]

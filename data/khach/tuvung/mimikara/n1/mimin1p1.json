@@ -1,508 +1,1508 @@
 [
-  {
-    "word": "青春",
-    "example": "[彼](かれ)は**[青春](せいしゅん)**を[野球](やきゅう)に[捧](ささ)げました。",
-    "exampleVi": "Anh ấy đã dâng hiến tuổi thanh xuân cho bóng chày."
-  },
-  {
-    "word": "晩年",
-    "example": "[彼](かれ)は**[晩年](ばんねん)**を[田舎](いなか)で[過](す)ごしました。",
-    "exampleVi": "Ông ấy đã trải qua những năm cuối đời ở quê."
-  },
-  {
-    "word": "葬式",
-    "example": "[祖父](そふ)の**[葬式](そうしき)**に[参列](さんれつ)しました。",
-    "exampleVi": "Tôi đã dự tang lễ của ông."
-  },
-  {
-    "word": "世帯",
-    "example": "この[町](まち)には[約](やく)[千](せん)**[世帯](せたい)**が[住](す)んでいます。",
-    "exampleVi": "Thị trấn này có khoảng một nghìn hộ gia đình sinh sống."
-  },
-  {
-    "word": "世間",
-    "example": "**[世間](せけん)**は[狭](せま)いと[言](い)います。",
-    "exampleVi": "Người ta nói thế gian này thật nhỏ bé."
-  },
-  {
-    "word": "庶民",
-    "example": "[彼](かれ)は**[庶民](しょみん)**の[味方](みかた)です。",
-    "exampleVi": "Ông ấy là người bênh vực dân thường."
-  },
-  {
-    "word": "おんぶ",
-    "example": "[赤](あか)ちゃんを**おんぶ**して[歩](ある)きました。",
-    "exampleVi": "Tôi đã cõng em bé đi bộ."
-  },
-  {
-    "word": "片言",
-    "example": "[赤](あか)ちゃんが**[片言](かたこと)**で[話](はな)し[始](はじ)めました。",
-    "exampleVi": "Em bé đã bắt đầu nói bập bẹ."
-  },
-  {
-    "word": "夜更かし",
-    "example": "[昨日](きのう)は**[夜更](よふ)かし**をしてしまいました。",
-    "exampleVi": "Hôm qua tôi đã lỡ thức khuya."
-  },
-  {
-    "word": "家出",
-    "example": "[少年](しょうねん)が**[家出](いえで)**をしました。",
-    "exampleVi": "Cậu thiếu niên đã bỏ nhà ra đi."
-  },
-  {
-    "word": "戸締まり",
-    "example": "[寝](ね)る[前](まえ)に**[戸締](とじ)まり**をします。",
-    "exampleVi": "Trước khi ngủ tôi khóa cửa cẩn thận."
-  },
-  {
-    "word": "ずぶぬれ",
-    "example": "[雨](あめ)で**ずぶぬれ**になりました。",
-    "exampleVi": "Tôi ướt sũng vì mưa."
-  },
-  {
-    "word": "顔つき",
-    "example": "[彼](かれ)は[真剣](しんけん)な**[顔](かお)つき**で[話](はな)しました。",
-    "exampleVi": "Anh ấy nói với vẻ mặt nghiêm túc."
-  },
-  {
-    "word": "身なり",
-    "example": "**[身](み)なり**を[整](ととの)えて、[面接](めんせつ)に[行](い)きました。",
-    "exampleVi": "Tôi chỉnh trang diện mạo rồi đi phỏng vấn."
-  },
-  {
-    "word": "身の回り",
-    "example": "[一人暮](ひとりぐ)らしをして、**[身](み)の[回](まわ)り**のことは[全部](ぜんぶ)[自分](じぶん)でしています。",
-    "exampleVi": "Sống một mình nên mọi việc quanh mình tôi đều tự làm."
-  },
-  {
-    "word": "身振り",
-    "example": "[彼](かれ)は[大](おお)きな**[身振](みぶ)り**で[話](はな)します。",
-    "exampleVi": "Anh ấy nói với điệu bộ lớn."
-  },
-  {
-    "word": "良心",
-    "example": "**[良心](りょうしん)**が[痛](いた)みます。",
-    "exampleVi": "Lương tâm tôi day dứt."
-  },
-  {
-    "word": "素質",
-    "example": "[彼](かれ)には[音楽](おんがく)の**[素質](そしつ)**があります。",
-    "exampleVi": "Anh ấy có tố chất về âm nhạc."
-  },
-  {
-    "word": "好意",
-    "example": "[彼](かれ)に**[好意](こうい)**を[持](も)っています。",
-    "exampleVi": "Tôi có cảm tình với anh ấy."
-  },
-  {
-    "word": "ため息",
-    "example": "[彼女](かのじょ)は**ため[息](いき)**をつきました。",
-    "exampleVi": "Cô ấy thở dài."
-  },
-  {
-    "word": "ど忘れ",
-    "example": "[彼](かれ)の[名前](なまえ)を**ど[忘](わす)れ**してしまいました。",
-    "exampleVi": "Tôi tự dưng quên béng tên anh ấy."
-  },
-  {
-    "word": "用心",
-    "example": "[夜](よる)は**[用心](ようじん)**して[歩](ある)きましょう。",
-    "exampleVi": "Ban đêm hãy đi lại cẩn thận."
-  },
-  {
-    "word": "予感",
-    "example": "[悪](わる)い**[予感](よかん)**がします。",
-    "exampleVi": "Tôi có linh cảm chẳng lành."
-  },
-  {
-    "word": "視線",
-    "example": "[彼女](かのじょ)の**[視線](しせん)**が[気](き)になりました。",
-    "exampleVi": "Tôi để ý đến ánh nhìn của cô ấy."
-  },
-  {
-    "word": "迷信",
-    "example": "[彼](かれ)は**[迷信](めいしん)**を[信](しん)じています。",
-    "exampleVi": "Anh ấy tin vào mê tín."
-  },
-  {
-    "word": "縁",
-    "reading": "ふち",
-    "meaning": "mép, viền (cốc, gương…)",
-    "example": "コップの**[縁](ふち)**が[欠](か)けています。",
-    "exampleVi": "Miệng cốc bị mẻ."
-  },
-  {
-    "word": "使い捨て",
-    "example": "**[使](つか)い[捨](す)て**のカメラを[買](か)いました。",
-    "exampleVi": "Tôi đã mua máy ảnh dùng một lần."
-  },
-  {
-    "word": "下取り",
-    "example": "[新](あたら)しい[車](くるま)の[購入](こうにゅう)で、[古](ふる)い[車](くるま)を**[下取](したど)り**してもらいました。",
-    "exampleVi": "Khi mua xe mới, tôi đã được thu mua lại chiếc xe cũ."
-  },
-  {
-    "word": "倹約",
-    "example": "**[倹約](けんやく)**のために、[自炊](じすい)しています。",
-    "exampleVi": "Để tiết kiệm, tôi tự nấu ăn."
-  },
-  {
-    "word": "出費",
-    "example": "[今月](こんげつ)は**[出費](しゅっぴ)**が[多](おお)かったです。",
-    "exampleVi": "Tháng này chi tiêu nhiều."
-  },
-  {
-    "word": "会計",
-    "example": "[店](みせ)で**[会計](かいけい)**を[済](す)ませました。",
-    "exampleVi": "Tôi đã thanh toán tiền ở cửa hàng."
-  },
-  {
-    "word": "所得",
-    "example": "[今年](ことし)は**[所得](しょとく)**が[増](ふ)えました。",
-    "exampleVi": "Năm nay thu nhập tăng."
-  },
-  {
-    "word": "採用",
-    "example": "[新](あたら)しい[社員](しゃいん)を**[採用](さいよう)**しました。",
-    "exampleVi": "Công ty đã tuyển dụng nhân viên mới."
-  },
-  {
-    "word": "雇用",
-    "example": "[会社](かいしゃ)は[社員](しゃいん)を**[雇用](こよう)**しています。",
-    "exampleVi": "Công ty đang thuê nhân viên."
-  },
-  {
-    "word": "所属",
-    "example": "[私](わたし)は[営業部](えいぎょうぶ)に**[所属](しょぞく)**しています。",
-    "exampleVi": "Tôi trực thuộc phòng kinh doanh."
-  },
-  {
-    "word": "待遇",
-    "example": "この[会社](かいしゃ)は**[待遇](たいぐう)**がいいです。",
-    "exampleVi": "Công ty này đãi ngộ tốt."
-  },
-  {
-    "word": "派遣",
-    "example": "[人材](じんざい)**[派遣](はけん)**の[会社](かいしゃ)で[働](はたら)いています。",
-    "exampleVi": "Tôi làm việc ở công ty phái cử nhân lực."
-  },
-  {
-    "word": "赴任",
-    "example": "[来月](らいげつ)、[大阪](おおさか)に**[赴任](ふにん)**します。",
-    "exampleVi": "Tháng sau tôi sẽ nhận chức ở Osaka."
-  },
-  {
-    "word": "地元",
-    "example": "[夏休](なつやす)みに**[地元](じもと)**に[帰](かえ)ります。",
-    "exampleVi": "Kỳ nghỉ hè tôi về quê."
-  },
-  {
-    "word": "現役",
-    "example": "[彼](かれ)は[六十歳](ろくじっさい)ですが、まだ**[現役](げんえき)**です。",
-    "exampleVi": "Ông ấy sáu mươi tuổi nhưng vẫn còn đương chức."
-  },
-  {
-    "word": "指図",
-    "example": "[人](ひと)に**[指図](さしず)**されたくありません。",
-    "exampleVi": "Tôi không muốn bị người khác chỉ thị."
-  },
-  {
-    "word": "操縦",
-    "example": "[飛行機](ひこうき)を**[操縦](そうじゅう)**する[仕事](しごと)です。",
-    "exampleVi": "Đó là công việc lái máy bay."
-  },
-  {
-    "word": "主食",
-    "example": "[日本](にほん)の**[主食](しゅしょく)**はお[米](こめ)です。",
-    "exampleVi": "Lương thực chính của Nhật là gạo."
-  },
-  {
-    "word": "食物",
-    "example": "**[食物](しょくもつ)**アレルギーがあります。",
-    "exampleVi": "Tôi bị dị ứng thực phẩm."
-  },
-  {
-    "word": "穀物",
-    "example": "**[穀物](こくもつ)**は[大切](たいせつ)な[食料](しょくりょう)です。",
-    "exampleVi": "Ngũ cốc là nguồn lương thực quan trọng."
-  },
-  {
-    "word": "豊作",
-    "example": "[今年](ことし)は[米](こめ)が**[豊作](ほうさく)**でした。",
-    "exampleVi": "Năm nay lúa gạo được mùa."
-  },
-  {
-    "word": "例年",
-    "example": "[今年](ことし)は**[例年](れいねん)**より[寒](さむ)いです。",
-    "exampleVi": "Năm nay lạnh hơn mọi năm."
-  },
-  {
-    "word": "種",
-    "example": "[畑](はたけ)に[花](はな)の**[種](たね)**を[蒔](ま)きました。",
-    "exampleVi": "Tôi đã gieo hạt hoa trên cánh đồng."
-  },
-  {
-    "word": "とげ",
-    "example": "バラには**とげ**があります。",
-    "exampleVi": "Hoa hồng có gai."
-  },
-  {
-    "word": "毒",
-    "example": "このキノコは**[毒](どく)**があります。",
-    "exampleVi": "Loại nấm này có độc."
-  },
-  {
-    "word": "くじ",
-    "example": "**くじ**で[順番](じゅんばん)を[決](き)めました。",
-    "exampleVi": "Tôi đã bốc thăm quyết định thứ tự."
-  },
-  {
-    "word": "桁",
-    "meaning": "chữ số, hàng (số); dầm ngang",
-    "example": "[数字](すうじ)の**[桁](けた)**を[間違](まちが)えました。",
-    "exampleVi": "Tôi đã nhầm số chữ số của con số."
-  },
-  {
-    "word": "単位",
-    "example": "[今学期](こんがっき)は[十](じゅう)**[単位](たんい)**を[取](と)りました。",
-    "exampleVi": "Học kỳ này tôi đã lấy mười tín chỉ."
-  },
-  {
-    "word": "一括",
-    "example": "[書類](しょるい)を**[一括](いっかつ)**して[送](おく)りました。",
-    "exampleVi": "Tôi đã gộp tài liệu lại gửi cùng lúc."
-  },
-  {
-    "word": "塊",
-    "example": "[氷](こおり)の**[塊](かたまり)**が[浮](う)かんでいます。",
-    "exampleVi": "Một tảng băng đang trôi nổi."
-  },
-  {
-    "word": "固まり",
-    "example": "[水](みず)を[入](い)れると、[小麦粉](こむぎこ)が**[固](かたま)り**になりました。",
-    "exampleVi": "Cho nước vào thì bột mì vón thành cục."
-  },
-  {
-    "word": "丈",
-    "example": "ズボンの**[丈](たけ)**を[短](みじか)くしました。",
-    "exampleVi": "Tôi đã cắt ngắn chiều dài quần."
-  },
-  {
-    "word": "欄",
-    "example": "[名前](なまえ)の**[欄](らん)**に[記入](きにゅう)してください。",
-    "exampleVi": "Xin hãy điền vào ô tên."
-  },
-  {
-    "word": "隅",
-    "example": "[部屋](へや)の**[隅](すみ)**に[荷物](にもつ)を[置](お)きました。",
-    "exampleVi": "Tôi đã để hành lý ở góc phòng."
-  },
-  {
-    "word": "ひび",
-    "example": "[壁](かべ)に**ひび**が[入](はい)りました。",
-    "exampleVi": "Bức tường bị nứt."
-  },
-  {
-    "word": "分裂",
-    "example": "[細胞](さいぼう)が**[分裂](ぶんれつ)**します。",
-    "exampleVi": "Tế bào phân chia."
-  },
-  {
-    "word": "振動",
-    "example": "[地震](じしん)で[建物](たてもの)が**[振動](しんどう)**しました。",
-    "exampleVi": "Tòa nhà rung động vì động đất."
-  },
-  {
-    "word": "沸騰",
-    "example": "お[湯](ゆ)が**[沸騰](ふっとう)**しています。",
-    "exampleVi": "Nước đang sôi."
-  },
-  {
-    "word": "循環",
-    "example": "[血液](けつえき)が[体](からだ)を**[循環](じゅんかん)**します。",
-    "exampleVi": "Máu tuần hoàn khắp cơ thể."
-  },
-  {
-    "word": "回収",
-    "example": "[空](あ)き[缶](かん)を**[回収](かいしゅう)**します。",
-    "exampleVi": "Tôi thu gom lon rỗng."
-  },
-  {
-    "word": "獲得",
-    "example": "[彼](かれ)は[優勝](ゆうしょう)を**[獲得](かくとく)**しました。",
-    "exampleVi": "Anh ấy đã giành chức vô địch."
-  },
-  {
-    "word": "区間",
-    "example": "この**[区間](くかん)**は[電車](でんしゃ)が[遅](おく)れています。",
-    "exampleVi": "Đoạn này tàu đang chạy chậm."
-  },
-  {
-    "word": "施設",
-    "example": "[市](し)の**[施設](しせつ)**を[利用](りよう)しました。",
-    "exampleVi": "Tôi đã sử dụng cơ sở vật chất của thành phố."
-  },
-  {
-    "word": "運営",
-    "example": "[店](みせ)の**[運営](うんえい)**は[難](むずか)しいです。",
-    "exampleVi": "Việc điều hành cửa hàng thật khó."
-  },
-  {
-    "word": "面会",
-    "example": "[患者](かんじゃ)に**[面会](めんかい)**しました。",
-    "exampleVi": "Tôi đã đến gặp thăm bệnh nhân."
-  },
-  {
-    "word": "返却",
-    "example": "[図書館](としょかん)に[本](ほん)を**[返却](へんきゃく)**しました。",
-    "exampleVi": "Tôi đã trả sách cho thư viện."
-  },
-  {
-    "word": "投書",
-    "meaning": "thư góp ý gửi báo/cơ quan, thư bạn đọc",
-    "example": "[新聞](しんぶん)に**[投書](とうしょ)**しました。",
-    "exampleVi": "Tôi đã gửi thư góp ý cho báo."
-  },
-  {
-    "word": "検索",
-    "example": "インターネットで**[検索](けんさく)**しました。",
-    "exampleVi": "Tôi đã tìm kiếm trên internet."
-  },
-  {
-    "word": "負傷",
-    "example": "[試合](しあい)で[選手](せんしゅ)が**[負傷](ふしょう)**しました。",
-    "exampleVi": "Vận động viên bị thương trong trận đấu."
-  },
-  {
-    "word": "感染",
-    "example": "インフルエンザに**[感染](かんせん)**しました。",
-    "exampleVi": "Tôi đã bị lây nhiễm cúm."
-  },
-  {
-    "word": "作用",
-    "example": "[酸](さん)は[金属](きんぞく)に**[作用](さよう)**します。",
-    "exampleVi": "Axit tác dụng lên kim loại."
-  },
-  {
-    "word": "依存",
-    "example": "[石油](せきゆ)に**[依存](いぞん)**しない[社会](しゃかい)を[目指](めざ)します。",
-    "exampleVi": "Chúng ta hướng tới xã hội không phụ thuộc vào dầu mỏ."
-  },
-  {
-    "word": "解消",
-    "example": "[運動](うんどう)でストレスを**[解消](かいしょう)**します。",
-    "exampleVi": "Tôi giải tỏa căng thẳng bằng vận động."
-  },
-  {
-    "word": "促進",
-    "example": "[運動](うんどう)は[血行](けっこう)を**[促進](そくしん)**します。",
-    "exampleVi": "Vận động thúc đẩy tuần hoàn máu."
-  },
-  {
-    "word": "意向",
-    "example": "[本人](ほんにん)の**[意向](いこう)**を[尊重](そんちょう)します。",
-    "exampleVi": "Chúng tôi tôn trọng ý muốn của đương sự."
-  },
-  {
-    "word": "意図",
-    "example": "[作者](さくしゃ)の**[意図](いと)**を[考](かんが)えました。",
-    "exampleVi": "Tôi đã suy nghĩ về ý đồ của tác giả."
-  },
-  {
-    "word": "向上",
-    "example": "[技術](ぎじゅつ)が**[向上](こうじょう)**しました。",
-    "exampleVi": "Kỹ thuật đã được nâng cao."
-  },
-  {
-    "word": "活気",
-    "example": "[町](まち)に**[活気](かっき)**が[戻](もど)りました。",
-    "exampleVi": "Sinh khí đã trở lại thị trấn."
-  },
-  {
-    "word": "迫力",
-    "meaning": "sức lôi cuốn, cảm giác mạnh mẽ, đầy uy lực",
-    "example": "この[映画](えいが)は**[迫力](はくりょく)**があります。",
-    "exampleVi": "Bộ phim này rất hấp dẫn, đầy uy lực."
-  },
-  {
-    "word": "勝利",
-    "example": "[選手](せんしゅ)たちは**[勝利](しょうり)**を[喜](よろこ)びました。",
-    "exampleVi": "Các cầu thủ mừng chiến thắng."
-  },
-  {
-    "word": "適応",
-    "example": "[新](あたら)しい[環境](かんきょう)に**[適応](てきおう)**しました。",
-    "exampleVi": "Tôi đã thích ứng với môi trường mới."
-  },
-  {
-    "word": "調和",
-    "example": "[色](いろ)の**[調和](ちょうわ)**が[美](うつく)しいです。",
-    "exampleVi": "Sự hài hòa của màu sắc thật đẹp."
-  },
-  {
-    "word": "権力",
-    "example": "[彼](かれ)は**[権力](けんりょく)**を[握](にぎ)っています。",
-    "exampleVi": "Ông ta đang nắm quyền lực."
-  },
-  {
-    "word": "権威",
-    "example": "[彼](かれ)は[医学](いがく)の**[権威](けんい)**です。",
-    "exampleVi": "Ông ấy là bậc quyền uy trong y học."
-  },
-  {
-    "word": "圧迫",
-    "example": "[家計](かけい)を**[圧迫](あっぱく)**しています。",
-    "exampleVi": "Khoản này đang gây áp lực lên kinh tế gia đình."
-  },
-  {
-    "word": "強制",
-    "example": "[参加](さんか)は**[強制](きょうせい)**ではありません。",
-    "exampleVi": "Việc tham gia không mang tính ép buộc."
-  },
-  {
-    "word": "規制",
-    "example": "[政府](せいふ)は[輸入](ゆにゅう)を**[規制](きせい)**しました。",
-    "exampleVi": "Chính phủ đã hạn chế nhập khẩu."
-  },
-  {
-    "word": "拒否",
-    "example": "[彼](かれ)の[要求](ようきゅう)を**[拒否](きょひ)**しました。",
-    "exampleVi": "Tôi đã từ chối yêu cầu của anh ta."
-  },
-  {
-    "word": "対抗",
-    "example": "[相手](あいて)に**[対抗](たいこう)**して、[新](あたら)しい[商品](しょうひん)を[出](だ)しました。",
-    "exampleVi": "Để đối kháng với đối thủ, chúng tôi đã tung ra sản phẩm mới."
-  },
-  {
-    "word": "抗議",
-    "example": "[判定](はんてい)に**[抗議](こうぎ)**しました。",
-    "exampleVi": "Họ đã phản đối phán quyết."
-  },
-  {
-    "word": "革新",
-    "example": "[技術](ぎじゅつ)の**[革新](かくしん)**が[進](すす)んでいます。",
-    "exampleVi": "Sự đổi mới công nghệ đang tiến triển."
-  },
-  {
-    "word": "原則",
-    "example": "**[原則](げんそく)**として、[遅刻](ちこく)は[認](みと)められません。",
-    "exampleVi": "Theo nguyên tắc, việc đi muộn không được chấp nhận."
-  },
-  {
-    "word": "経過",
-    "example": "[手術](しゅじゅつ)の**[経過](けいか)**は[順調](じゅんちょう)です。",
-    "exampleVi": "Diễn biến sau phẫu thuật thuận lợi."
-  },
-  {
-    "word": "中継",
-    "meaning": "truyền hình/phát sóng trực tiếp; chuyển tiếp",
-    "example": "[試合](しあい)を**[中継](ちゅうけい)**で[見](み)ました。",
-    "exampleVi": "Tôi đã xem trận đấu qua truyền hình trực tiếp."
-  },
-  {
-    "word": "規模",
-    "example": "[会社](かいしゃ)の**[規模](きぼ)**を[拡大](かくだい)しました。",
-    "exampleVi": "Công ty đã mở rộng quy mô."
-  }
+ {
+  "word": "青春",
+  "example": "[彼](かれ)は**[青春](せいしゅん)**を[野球](やきゅう)に[捧](ささ)げました。",
+  "exampleVi": "Anh ấy đã dâng hiến tuổi thanh xuân cho bóng chày.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は**[青春](せいしゅん)**を[野球](やきゅう)に[捧](ささ)げました。",
+    "vi": "Anh ấy đã dâng hiến tuổi thanh xuân cho bóng chày."
+   },
+   {
+    "ja": "**[青春](せいしゅん)**の[思](おも)い[出](で)は[忘](わす)れられません。",
+    "vi": "Ký ức tuổi thanh xuân không thể nào quên."
+   }
+  ]
+ },
+ {
+  "word": "晩年",
+  "example": "[彼](かれ)は**[晩年](ばんねん)**を[田舎](いなか)で[過](す)ごしました。",
+  "exampleVi": "Ông ấy đã trải qua những năm cuối đời ở quê.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は**[晩年](ばんねん)**を[田舎](いなか)で[過](す)ごしました。",
+    "vi": "Ông ấy đã trải qua những năm cuối đời ở quê."
+   },
+   {
+    "ja": "[祖母](そぼ)は**[晩年](ばんねん)**に[絵](え)を[描](か)き[始](はじ)めました。",
+    "vi": "Bà tôi bắt đầu vẽ tranh vào những năm cuối đời."
+   }
+  ]
+ },
+ {
+  "word": "葬式",
+  "example": "[祖父](そふ)の**[葬式](そうしき)**に[参列](さんれつ)しました。",
+  "exampleVi": "Tôi đã dự tang lễ của ông.",
+  "examples": [
+   {
+    "ja": "[祖父](そふ)の**[葬式](そうしき)**に[参列](さんれつ)しました。",
+    "vi": "Tôi đã dự tang lễ của ông."
+   },
+   {
+    "ja": "**[葬式](そうしき)**には[黒](くろ)い[服](ふく)を[着](き)ていきます。",
+    "vi": "Đi dự tang lễ thì mặc đồ đen."
+   }
+  ]
+ },
+ {
+  "word": "世帯",
+  "example": "この[町](まち)には[約](やく)[千](せん)**[世帯](せたい)**が[住](す)んでいます。",
+  "exampleVi": "Thị trấn này có khoảng một nghìn hộ gia đình sinh sống.",
+  "examples": [
+   {
+    "ja": "この[町](まち)には[約](やく)[千](せん)**[世帯](せたい)**が[住](す)んでいます。",
+    "vi": "Thị trấn này có khoảng một nghìn hộ gia đình sinh sống."
+   },
+   {
+    "ja": "このアパートには[二十](にじゅう)**[世帯](せたい)**が[住](す)んでいます。",
+    "vi": "Chung cư này có 20 hộ sinh sống."
+   }
+  ]
+ },
+ {
+  "word": "世間",
+  "example": "**[世間](せけん)**は[狭](せま)いと[言](い)います。",
+  "exampleVi": "Người ta nói thế gian này thật nhỏ bé.",
+  "examples": [
+   {
+    "ja": "**[世間](せけん)**は[狭](せま)いと[言](い)います。",
+    "vi": "Người ta nói thế gian này thật nhỏ bé."
+   },
+   {
+    "ja": "その[事件](じけん)は**[世間](せけん)**の[注目](ちゅうもく)を[集](あつ)めた。",
+    "vi": "Vụ việc đó đã thu hút sự chú ý của dư luận."
+   }
+  ]
+ },
+ {
+  "word": "庶民",
+  "example": "[彼](かれ)は**[庶民](しょみん)**の[味方](みかた)です。",
+  "exampleVi": "Ông ấy là người bênh vực dân thường.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は**[庶民](しょみん)**の[味方](みかた)です。",
+    "vi": "Ông ấy là người bênh vực dân thường."
+   },
+   {
+    "ja": "**[庶民](しょみん)**の[生活](せいかつ)は[苦](くる)しくなっています。",
+    "vi": "Cuộc sống của dân thường đang trở nên khó khăn."
+   }
+  ]
+ },
+ {
+  "word": "おんぶ",
+  "example": "[赤](あか)ちゃんを**おんぶして**[歩](ある)きました。",
+  "exampleVi": "Tôi đã cõng em bé đi bộ.",
+  "examples": [
+   {
+    "ja": "[赤](あか)ちゃんを**おんぶして**[歩](ある)きました。",
+    "vi": "Tôi đã cõng em bé đi bộ."
+   },
+   {
+    "ja": "[母親](ははおや)は[子供](こども)を**おんぶして**、[買](か)い[物](もの)に[行](い)きました。",
+    "vi": "Người mẹ cõng con đi mua sắm."
+   }
+  ]
+ },
+ {
+  "word": "片言",
+  "example": "[赤](あか)ちゃんが**[片言](かたこと)**で[話](はな)し[始](はじ)めました。",
+  "exampleVi": "Em bé đã bắt đầu nói bập bẹ.",
+  "examples": [
+   {
+    "ja": "[赤](あか)ちゃんが**[片言](かたこと)**で[話](はな)し[始](はじ)めました。",
+    "vi": "Em bé đã bắt đầu nói bập bẹ."
+   },
+   {
+    "ja": "[彼](かれ)は**[片言](かたこと)**の[日本語](にほんご)で[話](はな)しました。",
+    "vi": "Anh ấy nói bằng tiếng Nhật bập bẹ."
+   }
+  ]
+ },
+ {
+  "word": "夜更かし",
+  "example": "[昨日](きのう)は**[夜更](よふ)かし**をしてしまいました。",
+  "exampleVi": "Hôm qua tôi đã lỡ thức khuya.",
+  "examples": [
+   {
+    "ja": "[昨日](きのう)は**[夜更](よふ)かし**をしてしまいました。",
+    "vi": "Hôm qua tôi đã lỡ thức khuya."
+   },
+   {
+    "ja": "**[夜更](よふ)かしした**ので、[今朝](けさ)は[眠](ねむ)いです。",
+    "vi": "Vì thức khuya nên sáng nay tôi buồn ngủ."
+   }
+  ]
+ },
+ {
+  "word": "家出",
+  "example": "[少年](しょうねん)が**[家出](いえで)**をしました。",
+  "exampleVi": "Cậu thiếu niên đã bỏ nhà ra đi.",
+  "examples": [
+   {
+    "ja": "[少年](しょうねん)が**[家出](いえで)**をしました。",
+    "vi": "Cậu thiếu niên đã bỏ nhà ra đi."
+   },
+   {
+    "ja": "[中学生](ちゅうがくせい)の[時](とき)、[一度](いちど)だけ**[家出](いえで)**をしました。",
+    "vi": "Hồi cấp hai, tôi đã bỏ nhà đi đúng một lần."
+   }
+  ]
+ },
+ {
+  "word": "戸締まり",
+  "example": "[寝](ね)る[前](まえ)に**[戸締](とじ)まり**をします。",
+  "exampleVi": "Trước khi ngủ tôi khóa cửa cẩn thận.",
+  "examples": [
+   {
+    "ja": "[寝](ね)る[前](まえ)に**[戸締](とじ)まり**をします。",
+    "vi": "Trước khi ngủ tôi khóa cửa cẩn thận."
+   },
+   {
+    "ja": "[出](で)かける[前](まえ)に、**[戸締](とじ)まり**を[確認](かくにん)しました。",
+    "vi": "Trước khi ra ngoài, tôi đã kiểm tra khóa cửa."
+   }
+  ]
+ },
+ {
+  "word": "ずぶぬれ",
+  "example": "[雨](あめ)で**ずぶぬれ**になりました。",
+  "exampleVi": "Tôi ướt sũng vì mưa.",
+  "examples": [
+   {
+    "ja": "[雨](あめ)で**ずぶぬれ**になりました。",
+    "vi": "Tôi ướt sũng vì mưa."
+   },
+   {
+    "ja": "[急](きゅう)な[雨](あめ)で、[服](ふく)が**ずぶぬれ**になりました。",
+    "vi": "Vì mưa bất chợt nên quần áo ướt sũng."
+   }
+  ]
+ },
+ {
+  "word": "顔つき",
+  "example": "[彼](かれ)は[真剣](しんけん)な**[顔](かお)つき**で[話](はな)しました。",
+  "exampleVi": "Anh ấy nói với vẻ mặt nghiêm túc.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は[真剣](しんけん)な**[顔](かお)つき**で[話](はな)しました。",
+    "vi": "Anh ấy nói với vẻ mặt nghiêm túc."
+   },
+   {
+    "ja": "[試合](しあい)の[前](まえ)、[選手](せんしゅ)の**[顔](かお)つき**が[変](か)わりました。",
+    "vi": "Trước trận đấu, nét mặt của các cầu thủ đã thay đổi."
+   }
+  ]
+ },
+ {
+  "word": "身なり",
+  "example": "**[身](み)なり**を[整](ととの)えて、[面接](めんせつ)に[行](い)きました。",
+  "exampleVi": "Tôi chỉnh trang diện mạo rồi đi phỏng vấn.",
+  "examples": [
+   {
+    "ja": "**[身](み)なり**を[整](ととの)えて、[面接](めんせつ)に[行](い)きました。",
+    "vi": "Tôi chỉnh trang diện mạo rồi đi phỏng vấn."
+   },
+   {
+    "ja": "[彼](かれ)はいつも**[身](み)なり**がきちんとしています。",
+    "vi": "Anh ấy lúc nào cũng ăn mặc chỉn chu."
+   }
+  ]
+ },
+ {
+  "word": "身の回り",
+  "example": "[一人暮](ひとりぐ)らしをして、**[身](み)の[回](まわ)り**のことは[全部](ぜんぶ)[自分](じぶん)でしています。",
+  "exampleVi": "Sống một mình nên mọi việc quanh mình tôi đều tự làm.",
+  "examples": [
+   {
+    "ja": "[一人暮](ひとりぐ)らしをして、**[身](み)の[回](まわ)り**のことは[全部](ぜんぶ)[自分](じぶん)でしています。",
+    "vi": "Sống một mình nên mọi việc quanh mình tôi đều tự làm."
+   },
+   {
+    "ja": "[高齢](こうれい)の[母](はは)の**[身](み)の[回](まわ)り**の[世話](せわ)をしています。",
+    "vi": "Tôi đang lo việc sinh hoạt hằng ngày cho mẹ già."
+   }
+  ]
+ },
+ {
+  "word": "身振り",
+  "example": "[彼](かれ)は[大](おお)きな**[身振](みぶ)り**で[話](はな)します。",
+  "exampleVi": "Anh ấy nói với điệu bộ lớn.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は[大](おお)きな**[身振](みぶ)り**で[話](はな)します。",
+    "vi": "Anh ấy nói với điệu bộ lớn."
+   },
+   {
+    "ja": "**[身振](みぶ)り**[手振](てぶ)りで[道](みち)を[教](おし)えました。",
+    "vi": "Tôi chỉ đường bằng cử chỉ tay chân."
+   }
+  ]
+ },
+ {
+  "word": "良心",
+  "example": "**[良心](りょうしん)**が[痛](いた)みます。",
+  "exampleVi": "Lương tâm tôi day dứt.",
+  "examples": [
+   {
+    "ja": "**[良心](りょうしん)**が[痛](いた)みます。",
+    "vi": "Lương tâm tôi day dứt."
+   },
+   {
+    "ja": "[彼](かれ)には**[良心](りょうしん)**がありません。",
+    "vi": "Anh ta không có lương tâm."
+   }
+  ]
+ },
+ {
+  "word": "素質",
+  "example": "[彼](かれ)には[音楽](おんがく)の**[素質](そしつ)**があります。",
+  "exampleVi": "Anh ấy có tố chất về âm nhạc.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)には[音楽](おんがく)の**[素質](そしつ)**があります。",
+    "vi": "Anh ấy có tố chất về âm nhạc."
+   },
+   {
+    "ja": "この[子](こ)にはスポーツの**[素質](そしつ)**があります。",
+    "vi": "Đứa trẻ này có tố chất thể thao."
+   }
+  ]
+ },
+ {
+  "word": "好意",
+  "example": "[彼](かれ)に**[好意](こうい)**を[持](も)っています。",
+  "exampleVi": "Tôi có cảm tình với anh ấy.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)に**[好意](こうい)**を[持](も)っています。",
+    "vi": "Tôi có cảm tình với anh ấy."
+   },
+   {
+    "ja": "[彼](かれ)の**[好意](こうい)**に[感謝](かんしゃ)しています。",
+    "vi": "Tôi biết ơn thiện ý của anh ấy."
+   }
+  ]
+ },
+ {
+  "word": "ため息",
+  "example": "[彼女](かのじょ)は**ため[息](いき)**をつきました。",
+  "exampleVi": "Cô ấy thở dài.",
+  "examples": [
+   {
+    "ja": "[彼女](かのじょ)は**ため[息](いき)**をつきました。",
+    "vi": "Cô ấy thở dài."
+   },
+   {
+    "ja": "[仕事](しごと)が[終](お)わらなくて、**ため[息](いき)**が[出](で)ました。",
+    "vi": "Công việc mãi chưa xong nên tôi thở dài."
+   }
+  ]
+ },
+ {
+  "word": "ど忘れ",
+  "example": "[彼](かれ)の[名前](なまえ)を**ど[忘](わす)れして**しまいました。",
+  "exampleVi": "Tôi tự dưng quên béng tên anh ấy.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)の[名前](なまえ)を**ど[忘](わす)れして**しまいました。",
+    "vi": "Tôi tự dưng quên béng tên anh ấy."
+   },
+   {
+    "ja": "[約束](やくそく)の[時間](じかん)を**ど[忘](わす)れして**しまいました。",
+    "vi": "Tôi tự dưng quên béng giờ hẹn."
+   }
+  ]
+ },
+ {
+  "word": "用心",
+  "example": "[夜](よる)は**[用心](ようじん)して**[歩](ある)きましょう。",
+  "exampleVi": "Ban đêm hãy đi lại cẩn thận.",
+  "examples": [
+   {
+    "ja": "[夜](よる)は**[用心](ようじん)して**[歩](ある)きましょう。",
+    "vi": "Ban đêm hãy đi lại cẩn thận."
+   },
+   {
+    "ja": "[夜道](よみち)では**[用心](ようじん)して**[歩](ある)いてください。",
+    "vi": "Trên đường ban đêm xin hãy đi cẩn thận."
+   }
+  ]
+ },
+ {
+  "word": "予感",
+  "example": "[悪](わる)い**[予感](よかん)**がします。",
+  "exampleVi": "Tôi có linh cảm chẳng lành.",
+  "examples": [
+   {
+    "ja": "[悪](わる)い**[予感](よかん)**がします。",
+    "vi": "Tôi có linh cảm chẳng lành."
+   },
+   {
+    "ja": "[試験](しけん)の[前](まえ)、うまくいかない**[予感](よかん)**がした。",
+    "vi": "Trước kỳ thi, tôi có linh cảm là sẽ không suôn sẻ."
+   }
+  ]
+ },
+ {
+  "word": "視線",
+  "example": "[彼女](かのじょ)の**[視線](しせん)**が[気](き)になりました。",
+  "exampleVi": "Tôi để ý đến ánh nhìn của cô ấy.",
+  "examples": [
+   {
+    "ja": "[彼女](かのじょ)の**[視線](しせん)**が[気](き)になりました。",
+    "vi": "Tôi để ý đến ánh nhìn của cô ấy."
+   },
+   {
+    "ja": "[彼女](かのじょ)の**[視線](しせん)**を[感](かん)じて、[振](ふ)り[向](む)きました。",
+    "vi": "Cảm nhận được ánh nhìn của cô ấy, tôi quay lại."
+   }
+  ]
+ },
+ {
+  "word": "迷信",
+  "example": "[彼](かれ)は**[迷信](めいしん)**を[信](しん)じています。",
+  "exampleVi": "Anh ấy tin vào mê tín.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は**[迷信](めいしん)**を[信](しん)じています。",
+    "vi": "Anh ấy tin vào mê tín."
+   },
+   {
+    "ja": "[昔](むかし)の[人](ひと)は**[迷信](めいしん)**を[大切](たいせつ)にしていました。",
+    "vi": "Người xưa coi trọng mê tín."
+   }
+  ]
+ },
+ {
+  "word": "縁",
+  "reading": "ふち",
+  "meaning": "mép, viền (cốc, gương…)",
+  "example": "コップの**[縁](ふち)**が[欠](か)けています。",
+  "exampleVi": "Miệng cốc bị mẻ.",
+  "examples": [
+   {
+    "ja": "コップの**[縁](ふち)**が[欠](か)けています。",
+    "vi": "Miệng cốc bị mẻ."
+   },
+   {
+    "ja": "お[皿](さら)の**[縁](ふち)**に[赤](あか)い[線](せん)があります。",
+    "vi": "Có đường kẻ đỏ ở viền đĩa."
+   }
+  ]
+ },
+ {
+  "word": "使い捨て",
+  "example": "**[使](つか)い[捨](す)て**のカメラを[買](か)いました。",
+  "exampleVi": "Tôi đã mua máy ảnh dùng một lần.",
+  "examples": [
+   {
+    "ja": "**[使](つか)い[捨](す)て**のカメラを[買](か)いました。",
+    "vi": "Tôi đã mua máy ảnh dùng một lần."
+   },
+   {
+    "ja": "**[使](つか)い[捨](す)て**のコップを[用意](ようい)しました。",
+    "vi": "Tôi đã chuẩn bị cốc dùng một lần."
+   }
+  ]
+ },
+ {
+  "word": "下取り",
+  "example": "[新](あたら)しい[車](くるま)の[購入](こうにゅう)で、[古](ふる)い[車](くるま)を**[下取](したど)りして**もらいました。",
+  "exampleVi": "Khi mua xe mới, tôi đã được thu mua lại chiếc xe cũ.",
+  "examples": [
+   {
+    "ja": "[新](あたら)しい[車](くるま)の[購入](こうにゅう)で、[古](ふる)い[車](くるま)を**[下取](したど)りして**もらいました。",
+    "vi": "Khi mua xe mới, tôi đã được thu mua lại chiếc xe cũ."
+   },
+   {
+    "ja": "[古](ふる)い[車](くるま)を**[下取](したど)り**に[出](だ)しました。",
+    "vi": "Tôi đã đem chiếc xe cũ cho hãng thu mua lại (khi đổi xe mới)."
+   }
+  ]
+ },
+ {
+  "word": "倹約",
+  "example": "**[倹約](けんやく)**のために、[自炊](じすい)しています。",
+  "exampleVi": "Để tiết kiệm, tôi tự nấu ăn.",
+  "examples": [
+   {
+    "ja": "**[倹約](けんやく)**のために、[自炊](じすい)しています。",
+    "vi": "Để tiết kiệm, tôi tự nấu ăn."
+   },
+   {
+    "ja": "[旅行](りょこう)のために**[倹約](けんやく)しています**。",
+    "vi": "Tôi đang tiết kiệm để đi du lịch."
+   }
+  ]
+ },
+ {
+  "word": "出費",
+  "example": "[今月](こんげつ)は**[出費](しゅっぴ)**が[多](おお)かったです。",
+  "exampleVi": "Tháng này chi tiêu nhiều.",
+  "examples": [
+   {
+    "ja": "[今月](こんげつ)は**[出費](しゅっぴ)**が[多](おお)かったです。",
+    "vi": "Tháng này chi tiêu nhiều."
+   },
+   {
+    "ja": "[引](ひ)っ[越](こ)しで**[出費](しゅっぴ)**が[増](ふ)えました。",
+    "vi": "Vì chuyển nhà nên chi tiêu tăng lên."
+   }
+  ]
+ },
+ {
+  "word": "会計",
+  "example": "[店](みせ)で**[会計](かいけい)**を[済](す)ませました。",
+  "exampleVi": "Tôi đã thanh toán tiền ở cửa hàng.",
+  "examples": [
+   {
+    "ja": "[店](みせ)で**[会計](かいけい)**を[済](す)ませました。",
+    "vi": "Tôi đã thanh toán tiền ở cửa hàng."
+   },
+   {
+    "ja": "[食事](しょくじ)のあと、**[会計](かいけい)**をお[願](ねが)いしました。",
+    "vi": "Sau bữa ăn, tôi nhờ tính tiền."
+   }
+  ]
+ },
+ {
+  "word": "所得",
+  "example": "[今年](ことし)は**[所得](しょとく)**が[増](ふ)えました。",
+  "exampleVi": "Năm nay thu nhập tăng.",
+  "examples": [
+   {
+    "ja": "[今年](ことし)は**[所得](しょとく)**が[増](ふ)えました。",
+    "vi": "Năm nay thu nhập tăng."
+   },
+   {
+    "ja": "**[所得](しょとく)**が[低](ひく)い[人](ひと)は[税金](ぜいきん)が[少](すく)ないです。",
+    "vi": "Người có thu nhập thấp thì thuế ít."
+   }
+  ]
+ },
+ {
+  "word": "採用",
+  "example": "[新](あたら)しい[社員](しゃいん)を**[採用](さいよう)しました**。",
+  "exampleVi": "Công ty đã tuyển dụng nhân viên mới.",
+  "examples": [
+   {
+    "ja": "[新](あたら)しい[社員](しゃいん)を**[採用](さいよう)しました**。",
+    "vi": "Công ty đã tuyển dụng nhân viên mới."
+   },
+   {
+    "ja": "[会社](かいしゃ)に**[採用](さいよう)されて**、うれしいです。",
+    "vi": "Tôi được công ty tuyển dụng nên rất vui."
+   }
+  ]
+ },
+ {
+  "word": "雇用",
+  "example": "[会社](かいしゃ)は[社員](しゃいん)を**[雇用](こよう)しています**。",
+  "exampleVi": "Công ty đang thuê nhân viên.",
+  "examples": [
+   {
+    "ja": "[会社](かいしゃ)は[社員](しゃいん)を**[雇用](こよう)しています**。",
+    "vi": "Công ty đang thuê nhân viên."
+   },
+   {
+    "ja": "この[工場](こうじょう)は[外国人](がいこくじん)も**[雇用](こよう)しています**。",
+    "vi": "Nhà máy này cũng thuê cả người nước ngoài."
+   }
+  ]
+ },
+ {
+  "word": "所属",
+  "example": "[私](わたし)は[営業部](えいぎょうぶ)に**[所属](しょぞく)しています**。",
+  "exampleVi": "Tôi trực thuộc phòng kinh doanh.",
+  "examples": [
+   {
+    "ja": "[私](わたし)は[営業部](えいぎょうぶ)に**[所属](しょぞく)しています**。",
+    "vi": "Tôi trực thuộc phòng kinh doanh."
+   },
+   {
+    "ja": "[彼](かれ)は[大学](だいがく)の[研究室](けんきゅうしつ)に**[所属](しょぞく)しています**。",
+    "vi": "Anh ấy trực thuộc phòng nghiên cứu của trường đại học."
+   }
+  ]
+ },
+ {
+  "word": "待遇",
+  "example": "この[会社](かいしゃ)は**[待遇](たいぐう)**がいいです。",
+  "exampleVi": "Công ty này đãi ngộ tốt.",
+  "examples": [
+   {
+    "ja": "この[会社](かいしゃ)は**[待遇](たいぐう)**がいいです。",
+    "vi": "Công ty này đãi ngộ tốt."
+   },
+   {
+    "ja": "[給料](きゅうりょう)も**[待遇](たいぐう)**も[悪](わる)くありません。",
+    "vi": "Cả lương lẫn đãi ngộ đều không tệ."
+   }
+  ]
+ },
+ {
+  "word": "派遣",
+  "example": "[人材](じんざい)**[派遣](はけん)**の[会社](かいしゃ)で[働](はたら)いています。",
+  "exampleVi": "Tôi làm việc ở công ty phái cử nhân lực.",
+  "examples": [
+   {
+    "ja": "[人材](じんざい)**[派遣](はけん)**の[会社](かいしゃ)で[働](はたら)いています。",
+    "vi": "Tôi làm việc ở công ty phái cử nhân lực."
+   },
+   {
+    "ja": "[会社](かいしゃ)から[海外](かいがい)に**[派遣](はけん)されました**。",
+    "vi": "Tôi được công ty cử ra nước ngoài."
+   }
+  ]
+ },
+ {
+  "word": "赴任",
+  "example": "[来月](らいげつ)、[大阪](おおさか)に**[赴任](ふにん)します**。",
+  "exampleVi": "Tháng sau tôi sẽ nhận chức ở Osaka.",
+  "examples": [
+   {
+    "ja": "[来月](らいげつ)、[大阪](おおさか)に**[赴任](ふにん)します**。",
+    "vi": "Tháng sau tôi sẽ nhận chức ở Osaka."
+   },
+   {
+    "ja": "**[赴任](ふにん)**。",
+    "vi": "Vì trưởng phòng sẽ sang công tác ở chi nhánh nước ngoài, nên mọi người đã tổ chức tiệc chia tay."
+   }
+  ]
+ },
+ {
+  "word": "地元",
+  "example": "[夏休](なつやす)みに**[地元](じもと)**に[帰](かえ)ります。",
+  "exampleVi": "Kỳ nghỉ hè tôi về quê.",
+  "examples": [
+   {
+    "ja": "[夏休](なつやす)みに**[地元](じもと)**に[帰](かえ)ります。",
+    "vi": "Kỳ nghỉ hè tôi về quê."
+   },
+   {
+    "ja": "[彼](かれ)は**[地元](じもと)**の[大学](だいがく)に[進](すす)みました。",
+    "vi": "Anh ấy đã vào đại học ở địa phương."
+   }
+  ]
+ },
+ {
+  "word": "現役",
+  "example": "[彼](かれ)は[六十歳](ろくじっさい)ですが、まだ**[現役](げんえき)**です。",
+  "exampleVi": "Ông ấy sáu mươi tuổi nhưng vẫn còn đương chức.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は[六十歳](ろくじっさい)ですが、まだ**[現役](げんえき)**です。",
+    "vi": "Ông ấy sáu mươi tuổi nhưng vẫn còn đương chức."
+   },
+   {
+    "ja": "[彼](かれ)は**[現役](げんえき)**の[選手](せんしゅ)として[活躍](かつやく)しています。",
+    "vi": "Anh ấy đang hoạt động tích cực như một vận động viên đương thời."
+   }
+  ]
+ },
+ {
+  "word": "指図",
+  "example": "[人](ひと)に**[指図](さしず)された**くありません。",
+  "exampleVi": "Tôi không muốn bị người khác chỉ thị.",
+  "examples": [
+   {
+    "ja": "[人](ひと)に**[指図](さしず)された**くありません。",
+    "vi": "Tôi không muốn bị người khác chỉ thị."
+   },
+   {
+    "ja": "[人](ひと)に**[指図](さしず)される**のは[嫌](いや)です。",
+    "vi": "Tôi ghét bị người khác sai bảo."
+   }
+  ]
+ },
+ {
+  "word": "操縦",
+  "example": "[飛行機](ひこうき)を**[操縦](そうじゅう)する**[仕事](しごと)です。",
+  "exampleVi": "Đó là công việc lái máy bay.",
+  "examples": [
+   {
+    "ja": "[飛行機](ひこうき)を**[操縦](そうじゅう)する**[仕事](しごと)です。",
+    "vi": "Đó là công việc lái máy bay."
+   },
+   {
+    "ja": "[彼](かれ)は[大型](おおがた)トラックを**[操縦](そうじゅう)します**。",
+    "vi": "Anh ấy lái xe tải cỡ lớn."
+   }
+  ]
+ },
+ {
+  "word": "主食",
+  "example": "[日本](にほん)の**[主食](しゅしょく)**はお[米](こめ)です。",
+  "exampleVi": "Lương thực chính của Nhật là gạo.",
+  "examples": [
+   {
+    "ja": "[日本](にほん)の**[主食](しゅしょく)**はお[米](こめ)です。",
+    "vi": "Lương thực chính của Nhật là gạo."
+   },
+   {
+    "ja": "[日本人](にほんじん)の**[主食](しゅしょく)**は[米](こめ)です。",
+    "vi": "Lương thực chính của người Nhật là gạo."
+   }
+  ]
+ },
+ {
+  "word": "食物",
+  "example": "**[食物](しょくもつ)**アレルギーがあります。",
+  "exampleVi": "Tôi bị dị ứng thực phẩm.",
+  "examples": [
+   {
+    "ja": "**[食物](しょくもつ)**アレルギーがあります。",
+    "vi": "Tôi bị dị ứng thực phẩm."
+   },
+   {
+    "ja": "[私](わたし)はアレルギーがあるので、**[食物](しょくもつ)**に[気](き)を[付](つ)けています。",
+    "vi": "Vì bị dị ứng nên tôi chú ý đến thức ăn."
+   }
+  ]
+ },
+ {
+  "word": "穀物",
+  "example": "**[穀物](こくもつ)**は[大切](たいせつ)な[食料](しょくりょう)です。",
+  "exampleVi": "Ngũ cốc là nguồn lương thực quan trọng.",
+  "examples": [
+   {
+    "ja": "**[穀物](こくもつ)**は[大切](たいせつ)な[食料](しょくりょう)です。",
+    "vi": "Ngũ cốc là nguồn lương thực quan trọng."
+   },
+   {
+    "ja": "この[国](くに)では**[穀物](こくもつ)**がよく[取](と)れます。",
+    "vi": "Ở nước này thu hoạch được nhiều ngũ cốc."
+   }
+  ]
+ },
+ {
+  "word": "豊作",
+  "example": "[今年](ことし)は[米](こめ)が**[豊作](ほうさく)**でした。",
+  "exampleVi": "Năm nay lúa gạo được mùa.",
+  "examples": [
+   {
+    "ja": "[今年](ことし)は[米](こめ)が**[豊作](ほうさく)**でした。",
+    "vi": "Năm nay lúa gạo được mùa."
+   },
+   {
+    "ja": "[雨](あめ)が[多](おお)くて、[野菜](やさい)は**[豊作](ほうさく)**でした。",
+    "vi": "Mưa nhiều nên rau củ được mùa."
+   }
+  ]
+ },
+ {
+  "word": "例年",
+  "example": "[今年](ことし)は**[例年](れいねん)**より[寒](さむ)いです。",
+  "exampleVi": "Năm nay lạnh hơn mọi năm.",
+  "examples": [
+   {
+    "ja": "[今年](ことし)は**[例年](れいねん)**より[寒](さむ)いです。",
+    "vi": "Năm nay lạnh hơn mọi năm."
+   },
+   {
+    "ja": "[今日](きょう)は**[例年](れいねん)**よりも[暖](あたた)かいです。",
+    "vi": "Hôm nay ấm hơn mọi năm."
+   }
+  ]
+ },
+ {
+  "word": "種",
+  "example": "[畑](はたけ)に[花](はな)の**[種](たね)**を[蒔](ま)きました。",
+  "exampleVi": "Tôi đã gieo hạt hoa trên cánh đồng.",
+  "examples": [
+   {
+    "ja": "[畑](はたけ)に[花](はな)の**[種](たね)**を[蒔](ま)きました。",
+    "vi": "Tôi đã gieo hạt hoa trên cánh đồng."
+   },
+   {
+    "ja": "[春](はる)になったら、[花](はな)の**[種](たね)**をまきます。",
+    "vi": "Đến mùa xuân, tôi sẽ gieo hạt hoa."
+   }
+  ]
+ },
+ {
+  "word": "とげ",
+  "example": "バラには**とげ**があります。",
+  "exampleVi": "Hoa hồng có gai.",
+  "examples": [
+   {
+    "ja": "バラには**とげ**があります。",
+    "vi": "Hoa hồng có gai."
+   },
+   {
+    "ja": "[指](ゆび)に**とげ**が[刺](さ)さりました。",
+    "vi": "Gai đâm vào ngón tay tôi."
+   }
+  ]
+ },
+ {
+  "word": "毒",
+  "example": "このキノコは**[毒](どく)**があります。",
+  "exampleVi": "Loại nấm này có độc.",
+  "examples": [
+   {
+    "ja": "このキノコは**[毒](どく)**があります。",
+    "vi": "Loại nấm này có độc."
+   },
+   {
+    "ja": "この[薬](くすり)は[飲](の)みすぎると、[体](からだ)に**[毒](どく)**になる。",
+    "vi": "Thuốc này uống quá nhiều sẽ có hại cho cơ thể."
+   }
+  ]
+ },
+ {
+  "word": "くじ",
+  "example": "**くじ**で[順番](じゅんばん)を[決](き)めました。",
+  "exampleVi": "Tôi đã bốc thăm quyết định thứ tự.",
+  "examples": [
+   {
+    "ja": "**くじ**で[順番](じゅんばん)を[決](き)めました。",
+    "vi": "Tôi đã bốc thăm quyết định thứ tự."
+   },
+   {
+    "ja": "[駅前](えきまえ)の[店](みせ)の**くじ**で[旅行](りょこう)が[当](あ)たりました。",
+    "vi": "Tôi trúng chuyến du lịch nhờ bốc thăm ở cửa hàng trước nhà ga."
+   }
+  ]
+ },
+ {
+  "word": "桁",
+  "meaning": "chữ số, hàng (số); dầm ngang",
+  "example": "[数字](すうじ)の**[桁](けた)**を[間違](まちが)えました。",
+  "exampleVi": "Tôi đã nhầm số chữ số của con số.",
+  "examples": [
+   {
+    "ja": "[数字](すうじ)の**[桁](けた)**を[間違](まちが)えました。",
+    "vi": "Tôi đã nhầm số chữ số của con số."
+   },
+   {
+    "ja": "[計算](けいさん)を[間違](まちが)えて、**[桁](けた)**が[違](ちが)ってしまいました。",
+    "vi": "Tôi tính sai nên số chữ số bị lệch."
+   }
+  ]
+ },
+ {
+  "word": "単位",
+  "example": "[今学期](こんがっき)は[十](じゅう)**[単位](たんい)**を[取](と)りました。",
+  "exampleVi": "Học kỳ này tôi đã lấy mười tín chỉ.",
+  "examples": [
+   {
+    "ja": "[今学期](こんがっき)は[十](じゅう)**[単位](たんい)**を[取](と)りました。",
+    "vi": "Học kỳ này tôi đã lấy mười tín chỉ."
+   },
+   {
+    "ja": "この[科目](かもく)は[二](に)**[単位](たんい)**です。",
+    "vi": "Môn này được 2 tín chỉ."
+   }
+  ]
+ },
+ {
+  "word": "一括",
+  "example": "[書類](しょるい)を**[一括](いっかつ)して**[送](おく)りました。",
+  "exampleVi": "Tôi đã gộp tài liệu lại gửi cùng lúc.",
+  "examples": [
+   {
+    "ja": "[書類](しょるい)を**[一括](いっかつ)して**[送](おく)りました。",
+    "vi": "Tôi đã gộp tài liệu lại gửi cùng lúc."
+   },
+   {
+    "ja": "[代金](だいきん)を**[一括](いっかつ)**で[払](はら)いました。",
+    "vi": "Tôi đã trả tiền một lần gộp."
+   }
+  ]
+ },
+ {
+  "word": "塊",
+  "example": "[氷](こおり)の**[塊](かたまり)**が[浮](う)かんでいます。",
+  "exampleVi": "Một tảng băng đang trôi nổi.",
+  "examples": [
+   {
+    "ja": "[氷](こおり)の**[塊](かたまり)**が[浮](う)かんでいます。",
+    "vi": "Một tảng băng đang trôi nổi."
+   },
+   {
+    "ja": "[大](おお)きな**[塊](かたまり)**の[肉](にく)を[買](か)いました。",
+    "vi": "Tôi đã mua một tảng thịt lớn."
+   }
+  ]
+ },
+ {
+  "word": "固まり",
+  "example": "[水](みず)を[入](い)れると、[小麦粉](こむぎこ)が**[固](かたま)り**になりました。",
+  "exampleVi": "Cho nước vào thì bột mì vón thành cục.",
+  "examples": [
+   {
+    "ja": "[水](みず)を[入](い)れると、[小麦粉](こむぎこ)が**[固](かたま)り**になりました。",
+    "vi": "Cho nước vào thì bột mì vón thành cục."
+   },
+   {
+    "ja": "[粘土](ねんど)を**[固](かた)まり**にしました。",
+    "vi": "Tôi đã nặn đất sét thành một cục."
+   }
+  ]
+ },
+ {
+  "word": "丈",
+  "example": "ズボンの**[丈](たけ)**を[短](みじか)くしました。",
+  "exampleVi": "Tôi đã cắt ngắn chiều dài quần.",
+  "examples": [
+   {
+    "ja": "ズボンの**[丈](たけ)**を[短](みじか)くしました。",
+    "vi": "Tôi đã cắt ngắn chiều dài quần."
+   },
+   {
+    "ja": "この[服](ふく)は[袖](そで)の**[丈](たけ)**が[長](なが)すぎます。",
+    "vi": "Bộ quần áo này tay áo dài quá."
+   }
+  ]
+ },
+ {
+  "word": "欄",
+  "example": "[名前](なまえ)の**[欄](らん)**に[記入](きにゅう)してください。",
+  "exampleVi": "Xin hãy điền vào ô tên.",
+  "examples": [
+   {
+    "ja": "[名前](なまえ)の**[欄](らん)**に[記入](きにゅう)してください。",
+    "vi": "Xin hãy điền vào ô tên."
+   },
+   {
+    "ja": "[履歴書](りれきしょ)の[備考](びこう)**[欄](らん)**に[記入](きにゅう)してください。",
+    "vi": "Xin điền vào cột ghi chú của sơ yếu lý lịch."
+   }
+  ]
+ },
+ {
+  "word": "隅",
+  "example": "[部屋](へや)の**[隅](すみ)**に[荷物](にもつ)を[置](お)きました。",
+  "exampleVi": "Tôi đã để hành lý ở góc phòng.",
+  "examples": [
+   {
+    "ja": "[部屋](へや)の**[隅](すみ)**に[荷物](にもつ)を[置](お)きました。",
+    "vi": "Tôi đã để hành lý ở góc phòng."
+   },
+   {
+    "ja": "[犬](いぬ)が[部屋](へや)の**[隅](すみ)**で[寝](ね)ています。",
+    "vi": "Con chó đang ngủ ở góc phòng."
+   }
+  ]
+ },
+ {
+  "word": "ひび",
+  "example": "[壁](かべ)に**ひび**が[入](はい)りました。",
+  "exampleVi": "Bức tường bị nứt.",
+  "examples": [
+   {
+    "ja": "[壁](かべ)に**ひび**が[入](はい)りました。",
+    "vi": "Bức tường bị nứt."
+   },
+   {
+    "ja": "お[皿](さら)に**ひび**が[入](はい)っています。",
+    "vi": "Cái đĩa bị nứt."
+   }
+  ]
+ },
+ {
+  "word": "分裂",
+  "example": "[細胞](さいぼう)が**[分裂](ぶんれつ)します**。",
+  "exampleVi": "Tế bào phân chia.",
+  "examples": [
+   {
+    "ja": "[細胞](さいぼう)が**[分裂](ぶんれつ)します**。",
+    "vi": "Tế bào phân chia."
+   },
+   {
+    "ja": "[会社](かいしゃ)は[二](ふた)つに**[分裂](ぶんれつ)しました**。",
+    "vi": "Công ty đã chia tách thành hai."
+   }
+  ]
+ },
+ {
+  "word": "振動",
+  "example": "[地震](じしん)で[建物](たてもの)が**[振動](しんどう)しました**。",
+  "exampleVi": "Tòa nhà rung động vì động đất.",
+  "examples": [
+   {
+    "ja": "[地震](じしん)で[建物](たてもの)が**[振動](しんどう)しました**。",
+    "vi": "Tòa nhà rung động vì động đất."
+   },
+   {
+    "ja": "[電車](でんしゃ)が[通](とお)ると、[窓](まど)が**[振動](しんどう)します**。",
+    "vi": "Khi tàu chạy qua, cửa sổ rung lên."
+   }
+  ]
+ },
+ {
+  "word": "沸騰",
+  "example": "お[湯](ゆ)が**[沸騰](ふっとう)しています**。",
+  "exampleVi": "Nước đang sôi.",
+  "examples": [
+   {
+    "ja": "お[湯](ゆ)が**[沸騰](ふっとう)しています**。",
+    "vi": "Nước đang sôi."
+   },
+   {
+    "ja": "お[湯](ゆ)が**[沸騰](ふっとう)したら**、[火](ひ)を[止](と)めてください。",
+    "vi": "Khi nước sôi, xin hãy tắt bếp."
+   }
+  ]
+ },
+ {
+  "word": "循環",
+  "example": "[血液](けつえき)が[体](からだ)を**[循環](じゅんかん)します**。",
+  "exampleVi": "Máu tuần hoàn khắp cơ thể.",
+  "examples": [
+   {
+    "ja": "[血液](けつえき)が[体](からだ)を**[循環](じゅんかん)します**。",
+    "vi": "Máu tuần hoàn khắp cơ thể."
+   },
+   {
+    "ja": "[水](みず)は[自然](しぜん)の[中](なか)で**[循環](じゅんかん)しています**。",
+    "vi": "Nước tuần hoàn trong tự nhiên."
+   }
+  ]
+ },
+ {
+  "word": "回収",
+  "example": "[空](あ)き[缶](かん)を**[回収](かいしゅう)します**。",
+  "exampleVi": "Tôi thu gom lon rỗng.",
+  "examples": [
+   {
+    "ja": "[空](あ)き[缶](かん)を**[回収](かいしゅう)します**。",
+    "vi": "Tôi thu gom lon rỗng."
+   },
+   {
+    "ja": "[午後](ごご)アンケートを**[回収](かいしゅう)します**。",
+    "vi": "Buổi chiều chúng tôi sẽ thu lại phiếu khảo sát."
+   }
+  ]
+ },
+ {
+  "word": "獲得",
+  "example": "[彼](かれ)は[優勝](ゆうしょう)を**[獲得](かくとく)しました**。",
+  "exampleVi": "Anh ấy đã giành chức vô địch.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は[優勝](ゆうしょう)を**[獲得](かくとく)しました**。",
+    "vi": "Anh ấy đã giành chức vô địch."
+   },
+   {
+    "ja": "[彼女](かのじょ)は、[世界](せかい)[大会](たいかい)で[金](きん)メダルを**[獲得](かくとく)した**。",
+    "vi": "Cô ấy đã giành huy chương vàng tại giải thế giới."
+   }
+  ]
+ },
+ {
+  "word": "区間",
+  "example": "この**[区間](くかん)**は[電車](でんしゃ)が[遅](おく)れています。",
+  "exampleVi": "Đoạn này tàu đang chạy chậm.",
+  "examples": [
+   {
+    "ja": "この**[区間](くかん)**は[電車](でんしゃ)が[遅](おく)れています。",
+    "vi": "Đoạn này tàu đang chạy chậm."
+   },
+   {
+    "ja": "この**[区間](くかん)**は[運賃](うんちん)が[安](やす)いです。",
+    "vi": "Đoạn này giá vé rẻ."
+   }
+  ]
+ },
+ {
+  "word": "施設",
+  "example": "[市](し)の**[施設](しせつ)**を[利用](りよう)しました。",
+  "exampleVi": "Tôi đã sử dụng cơ sở vật chất của thành phố.",
+  "examples": [
+   {
+    "ja": "[市](し)の**[施設](しせつ)**を[利用](りよう)しました。",
+    "vi": "Tôi đã sử dụng cơ sở vật chất của thành phố."
+   },
+   {
+    "ja": "この**[施設](しせつ)**は[誰](だれ)でも[無料](むりょう)で[使](つか)えます。",
+    "vi": "Cơ sở này ai cũng được sử dụng miễn phí."
+   }
+  ]
+ },
+ {
+  "word": "運営",
+  "example": "[店](みせ)の**[運営](うんえい)**は[難](むずか)しいです。",
+  "exampleVi": "Việc điều hành cửa hàng thật khó.",
+  "examples": [
+   {
+    "ja": "[店](みせ)の**[運営](うんえい)**は[難](むずか)しいです。",
+    "vi": "Việc điều hành cửa hàng thật khó."
+   },
+   {
+    "ja": "[彼女](かのじょ)は[会社](かいしゃ)を**[運営](うんえい)しています**。",
+    "vi": "Cô ấy đang điều hành công ty."
+   }
+  ]
+ },
+ {
+  "word": "面会",
+  "example": "[患者](かんじゃ)に**[面会](めんかい)しました**。",
+  "exampleVi": "Tôi đã đến gặp thăm bệnh nhân.",
+  "examples": [
+   {
+    "ja": "[患者](かんじゃ)に**[面会](めんかい)しました**。",
+    "vi": "Tôi đã đến gặp thăm bệnh nhân."
+   },
+   {
+    "ja": "[入院](にゅういん)している[友人](ゆうじん)に**[面会](めんかい)**に[行](い)きました。",
+    "vi": "Tôi đã đi thăm người bạn đang nằm viện."
+   }
+  ]
+ },
+ {
+  "word": "返却",
+  "example": "[図書館](としょかん)に[本](ほん)を**[返却](へんきゃく)しました**。",
+  "exampleVi": "Tôi đã trả sách cho thư viện.",
+  "examples": [
+   {
+    "ja": "[図書館](としょかん)に[本](ほん)を**[返却](へんきゃく)しました**。",
+    "vi": "Tôi đã trả sách cho thư viện."
+   },
+   {
+    "ja": "その[本](ほん)は、[明日](あした)までに[必](かなら)ず**[返却](へんきゃく)して**ください。",
+    "vi": "Xin hãy nhất định trả cuốn sách đó trước ngày mai."
+   }
+  ]
+ },
+ {
+  "word": "投書",
+  "meaning": "thư góp ý gửi báo/cơ quan, thư bạn đọc",
+  "example": "[新聞](しんぶん)に**[投書](とうしょ)しました**。",
+  "exampleVi": "Tôi đã gửi thư góp ý cho báo.",
+  "examples": [
+   {
+    "ja": "[新聞](しんぶん)に**[投書](とうしょ)しました**。",
+    "vi": "Tôi đã gửi thư góp ý cho báo."
+   },
+   {
+    "ja": "[彼](かれ)は[雑誌](ざっし)に**[投書](とうしょ)しました**。",
+    "vi": "Anh ấy đã gửi thư góp ý cho tạp chí."
+   }
+  ]
+ },
+ {
+  "word": "検索",
+  "example": "インターネットで**[検索](けんさく)しました**。",
+  "exampleVi": "Tôi đã tìm kiếm trên internet.",
+  "examples": [
+   {
+    "ja": "インターネットで**[検索](けんさく)しました**。",
+    "vi": "Tôi đã tìm kiếm trên internet."
+   },
+   {
+    "ja": "[辞書](じしょ)で[言葉](ことば)を**[検索](けんさく)します**。",
+    "vi": "Tôi tra cứu từ trong từ điển."
+   }
+  ]
+ },
+ {
+  "word": "負傷",
+  "example": "[試合](しあい)で[選手](せんしゅ)が**[負傷](ふしょう)しました**。",
+  "exampleVi": "Vận động viên bị thương trong trận đấu.",
+  "examples": [
+   {
+    "ja": "[試合](しあい)で[選手](せんしゅ)が**[負傷](ふしょう)しました**。",
+    "vi": "Vận động viên bị thương trong trận đấu."
+   },
+   {
+    "ja": "[事故](じこ)で、[三人](さんにん)が**[負傷](ふしょう)しました**。",
+    "vi": "Do tai nạn, ba người bị thương."
+   }
+  ]
+ },
+ {
+  "word": "感染",
+  "example": "インフルエンザに**[感染](かんせん)しました**。",
+  "exampleVi": "Tôi đã bị lây nhiễm cúm.",
+  "examples": [
+   {
+    "ja": "インフルエンザに**[感染](かんせん)しました**。",
+    "vi": "Tôi đã bị lây nhiễm cúm."
+   },
+   {
+    "ja": "ウイルスに**[感染](かんせん)しない**よう、[手洗](てあら)いを[徹底](てってい)している。",
+    "vi": "Tôi rửa tay triệt để để không bị nhiễm virus."
+   }
+  ]
+ },
+ {
+  "word": "作用",
+  "example": "[酸](さん)は[金属](きんぞく)に**[作用](さよう)します**。",
+  "exampleVi": "Axit tác dụng lên kim loại.",
+  "examples": [
+   {
+    "ja": "[酸](さん)は[金属](きんぞく)に**[作用](さよう)します**。",
+    "vi": "Axit tác dụng lên kim loại."
+   },
+   {
+    "ja": "この[薬](くすり)には[眠](ねむ)くなる**[作用](さよう)**があります。",
+    "vi": "Loại thuốc này có tác dụng gây buồn ngủ."
+   }
+  ]
+ },
+ {
+  "word": "依存",
+  "example": "[石油](せきゆ)に**[依存](いぞん)しない**[社会](しゃかい)を[目指](めざ)します。",
+  "exampleVi": "Chúng ta hướng tới xã hội không phụ thuộc vào dầu mỏ.",
+  "examples": [
+   {
+    "ja": "[石油](せきゆ)に**[依存](いぞん)しない**[社会](しゃかい)を[目指](めざ)します。",
+    "vi": "Chúng ta hướng tới xã hội không phụ thuộc vào dầu mỏ."
+   },
+   {
+    "ja": "[彼](かれ)はスマホに**[依存](いぞん)しています**。",
+    "vi": "Anh ta đang phụ thuộc vào điện thoại."
+   }
+  ]
+ },
+ {
+  "word": "解消",
+  "example": "[運動](うんどう)でストレスを**[解消](かいしょう)します**。",
+  "exampleVi": "Tôi giải tỏa căng thẳng bằng vận động.",
+  "examples": [
+   {
+    "ja": "[運動](うんどう)でストレスを**[解消](かいしょう)します**。",
+    "vi": "Tôi giải tỏa căng thẳng bằng vận động."
+   },
+   {
+    "ja": "[新](あたら)しい[道路](どうろ)ができて、[渋滞](じゅうたい)が**[解消](かいしょう)された**。",
+    "vi": "Nhờ con đường mới, tình trạng tắc đường đã được giải quyết."
+   }
+  ]
+ },
+ {
+  "word": "促進",
+  "example": "[運動](うんどう)は[血行](けっこう)を**[促進](そくしん)します**。",
+  "exampleVi": "Vận động thúc đẩy tuần hoàn máu.",
+  "examples": [
+   {
+    "ja": "[運動](うんどう)は[血行](けっこう)を**[促進](そくしん)します**。",
+    "vi": "Vận động thúc đẩy tuần hoàn máu."
+   },
+   {
+    "ja": "[観光](かんこう)を**[促進](そくしん)する**ために、[新](あたら)しい[道](みち)を[作](つく)ります。",
+    "vi": "Để thúc đẩy du lịch, người ta làm con đường mới."
+   }
+  ]
+ },
+ {
+  "word": "意向",
+  "example": "[本人](ほんにん)の**[意向](いこう)**を[尊重](そんちょう)します。",
+  "exampleVi": "Chúng tôi tôn trọng ý muốn của đương sự.",
+  "examples": [
+   {
+    "ja": "[本人](ほんにん)の**[意向](いこう)**を[尊重](そんちょう)します。",
+    "vi": "Chúng tôi tôn trọng ý muốn của đương sự."
+   },
+   {
+    "ja": "[先方](せんぽう)の**[意向](いこう)**を[確認](かくにん)しました。",
+    "vi": "Tôi đã xác nhận ý muốn của phía đối tác."
+   }
+  ]
+ },
+ {
+  "word": "意図",
+  "example": "[作者](さくしゃ)の**[意図](いと)**を[考](かんが)えました。",
+  "exampleVi": "Tôi đã suy nghĩ về ý đồ của tác giả.",
+  "examples": [
+   {
+    "ja": "[作者](さくしゃ)の**[意図](いと)**を[考](かんが)えました。",
+    "vi": "Tôi đã suy nghĩ về ý đồ của tác giả."
+   },
+   {
+    "ja": "[彼](かれ)の**[意図](いと)**が[分](わ)かりません。",
+    "vi": "Tôi không hiểu ý đồ của anh ta."
+   }
+  ]
+ },
+ {
+  "word": "向上",
+  "example": "[技術](ぎじゅつ)が**[向上](こうじょう)しました**。",
+  "exampleVi": "Kỹ thuật đã được nâng cao.",
+  "examples": [
+   {
+    "ja": "[技術](ぎじゅつ)が**[向上](こうじょう)しました**。",
+    "vi": "Kỹ thuật đã được nâng cao."
+   },
+   {
+    "ja": "[毎日](まいにち)[練習](れんしゅう)して、[成績](せいせき)が**[向上](こうじょう)しました**。",
+    "vi": "Nhờ luyện tập mỗi ngày, thành tích đã được cải thiện."
+   }
+  ]
+ },
+ {
+  "word": "活気",
+  "example": "[町](まち)に**[活気](かっき)**が[戻](もど)りました。",
+  "exampleVi": "Sinh khí đã trở lại thị trấn.",
+  "examples": [
+   {
+    "ja": "[町](まち)に**[活気](かっき)**が[戻](もど)りました。",
+    "vi": "Sinh khí đã trở lại thị trấn."
+   },
+   {
+    "ja": "[市場](いちば)は[朝](あさ)から**[活気](かっき)**に[満](み)ちています。",
+    "vi": "Chợ từ sáng đã tràn đầy sinh khí."
+   }
+  ]
+ },
+ {
+  "word": "迫力",
+  "meaning": "sức lôi cuốn, cảm giác mạnh mẽ, đầy uy lực",
+  "example": "この[映画](えいが)は**[迫力](はくりょく)**があります。",
+  "exampleVi": "Bộ phim này rất hấp dẫn, đầy uy lực.",
+  "examples": [
+   {
+    "ja": "この[映画](えいが)は**[迫力](はくりょく)**があります。",
+    "vi": "Bộ phim này rất hấp dẫn, đầy uy lực."
+   },
+   {
+    "ja": "[彼](かれ)の[演奏](えんそう)は**[迫力](はくりょく)**がありました。",
+    "vi": "Phần trình diễn của anh ấy rất mạnh mẽ."
+   }
+  ]
+ },
+ {
+  "word": "勝利",
+  "example": "[選手](せんしゅ)たちは**[勝利](しょうり)**を[喜](よろこ)びました。",
+  "exampleVi": "Các cầu thủ mừng chiến thắng.",
+  "examples": [
+   {
+    "ja": "[選手](せんしゅ)たちは**[勝利](しょうり)**を[喜](よろこ)びました。",
+    "vi": "Các cầu thủ mừng chiến thắng."
+   },
+   {
+    "ja": "チームは[決勝](けっしょう)で**[勝利](しょうり)しました**。",
+    "vi": "Đội đã chiến thắng ở trận chung kết."
+   }
+  ]
+ },
+ {
+  "word": "適応",
+  "example": "[新](あたら)しい[環境](かんきょう)に**[適応](てきおう)しました**。",
+  "exampleVi": "Tôi đã thích ứng với môi trường mới.",
+  "examples": [
+   {
+    "ja": "[新](あたら)しい[環境](かんきょう)に**[適応](てきおう)しました**。",
+    "vi": "Tôi đã thích ứng với môi trường mới."
+   },
+   {
+    "ja": "その[生物](せいぶつ)は、[厳](きび)しい[環境](かんきょう)に**[適応](てきおう)できる**[能力](のうりょく)を[持](も)っている。",
+    "vi": "Sinh vật đó có khả năng thích nghi với môi trường khắc nghiệt."
+   }
+  ]
+ },
+ {
+  "word": "調和",
+  "example": "[色](いろ)の**[調和](ちょうわ)**が[美](うつく)しいです。",
+  "exampleVi": "Sự hài hòa của màu sắc thật đẹp.",
+  "examples": [
+   {
+    "ja": "[色](いろ)の**[調和](ちょうわ)**が[美](うつく)しいです。",
+    "vi": "Sự hài hòa của màu sắc thật đẹp."
+   },
+   {
+    "ja": "[自然](しぜん)と**[調和](ちょうわ)した**[建物](たてもの)です。",
+    "vi": "Đây là tòa nhà hài hòa với thiên nhiên."
+   }
+  ]
+ },
+ {
+  "word": "権力",
+  "example": "[彼](かれ)は**[権力](けんりょく)**を[握](にぎ)っています。",
+  "exampleVi": "Ông ta đang nắm quyền lực.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は**[権力](けんりょく)**を[握](にぎ)っています。",
+    "vi": "Ông ta đang nắm quyền lực."
+   },
+   {
+    "ja": "[彼](かれ)は[大](おお)きな**[権力](けんりょく)**を[持](も)っています。",
+    "vi": "Ông ấy nắm quyền lực lớn."
+   }
+  ]
+ },
+ {
+  "word": "権威",
+  "example": "[彼](かれ)は[医学](いがく)の**[権威](けんい)**です。",
+  "exampleVi": "Ông ấy là bậc quyền uy trong y học.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)は[医学](いがく)の**[権威](けんい)**です。",
+    "vi": "Ông ấy là bậc quyền uy trong y học."
+   },
+   {
+    "ja": "[彼](かれ)はこの[分野](ぶんや)の**[権威](けんい)**です。",
+    "vi": "Ông ấy là bậc quyền uy trong lĩnh vực này."
+   }
+  ]
+ },
+ {
+  "word": "圧迫",
+  "example": "[家計](かけい)を**[圧迫](あっぱく)しています**。",
+  "exampleVi": "Khoản này đang gây áp lực lên kinh tế gia đình.",
+  "examples": [
+   {
+    "ja": "[家計](かけい)を**[圧迫](あっぱく)しています**。",
+    "vi": "Khoản này đang gây áp lực lên kinh tế gia đình."
+   },
+   {
+    "ja": "[胸](むね)が**[圧迫](あっぱく)される**ような[痛](いた)みを[感](かん)じました。",
+    "vi": "Tôi cảm thấy cơn đau như ngực bị đè ép."
+   }
+  ]
+ },
+ {
+  "word": "強制",
+  "example": "[参加](さんか)は**[強制](きょうせい)**ではありません。",
+  "exampleVi": "Việc tham gia không mang tính ép buộc.",
+  "examples": [
+   {
+    "ja": "[参加](さんか)は**[強制](きょうせい)**ではありません。",
+    "vi": "Việc tham gia không mang tính ép buộc."
+   },
+   {
+    "ja": "[参加](さんか)を**[強制](きょうせい)されました**。",
+    "vi": "Tôi bị ép buộc phải tham gia."
+   }
+  ]
+ },
+ {
+  "word": "規制",
+  "example": "[政府](せいふ)は[輸入](ゆにゅう)を**[規制](きせい)しました**。",
+  "exampleVi": "Chính phủ đã hạn chế nhập khẩu.",
+  "examples": [
+   {
+    "ja": "[政府](せいふ)は[輸入](ゆにゅう)を**[規制](きせい)しました**。",
+    "vi": "Chính phủ đã hạn chế nhập khẩu."
+   },
+   {
+    "ja": "[事故](じこ)で[高速](こうそく)[道路](どうろ)が**[規制](きせい)されて**います。",
+    "vi": "Đường cao tốc đang bị hạn chế lưu thông do tai nạn."
+   }
+  ]
+ },
+ {
+  "word": "拒否",
+  "example": "[彼](かれ)の[要求](ようきゅう)を**[拒否](きょひ)しました**。",
+  "exampleVi": "Tôi đã từ chối yêu cầu của anh ta.",
+  "examples": [
+   {
+    "ja": "[彼](かれ)の[要求](ようきゅう)を**[拒否](きょひ)しました**。",
+    "vi": "Tôi đã từ chối yêu cầu của anh ta."
+   },
+   {
+    "ja": "[迷惑](めいわく)なメールの[受信](じゅしん)を**[拒否](きょひ)したい**。",
+    "vi": "Tôi muốn từ chối nhận những email phiền toái."
+   }
+  ]
+ },
+ {
+  "word": "対抗",
+  "example": "[相手](あいて)に**[対抗](たいこう)して**、[新](あたら)しい[商品](しょうひん)を[出](だ)しました。",
+  "exampleVi": "Để đối kháng với đối thủ, chúng tôi đã tung ra sản phẩm mới.",
+  "examples": [
+   {
+    "ja": "[相手](あいて)に**[対抗](たいこう)して**、[新](あたら)しい[商品](しょうひん)を[出](だ)しました。",
+    "vi": "Để đối kháng với đối thủ, chúng tôi đã tung ra sản phẩm mới."
+   },
+   {
+    "ja": "この[二](ふた)つの[会社](かいしゃ)は、[価格](かかく)で[互](たが)いに**[対抗](たいこう)している**。",
+    "vi": "Hai công ty này đang cạnh tranh nhau về giá."
+   }
+  ]
+ },
+ {
+  "word": "抗議",
+  "example": "[判定](はんてい)に**[抗議](こうぎ)しました**。",
+  "exampleVi": "Họ đã phản đối phán quyết.",
+  "examples": [
+   {
+    "ja": "[判定](はんてい)に**[抗議](こうぎ)しました**。",
+    "vi": "Họ đã phản đối phán quyết."
+   },
+   {
+    "ja": "[審判](しんぱん)の[判定](はんてい)に**[抗議](こうぎ)しました**。",
+    "vi": "Họ đã phản đối phán quyết của trọng tài."
+   }
+  ]
+ },
+ {
+  "word": "革新",
+  "example": "[技術](ぎじゅつ)の**[革新](かくしん)**が[進](すす)んでいます。",
+  "exampleVi": "Sự đổi mới công nghệ đang tiến triển.",
+  "examples": [
+   {
+    "ja": "[技術](ぎじゅつ)の**[革新](かくしん)**が[進](すす)んでいます。",
+    "vi": "Sự đổi mới công nghệ đang tiến triển."
+   },
+   {
+    "ja": "この[会社](かいしゃ)は[技術](ぎじゅつ)の**[革新](かくしん)**に[力](ちから)を[入](い)れています。",
+    "vi": "Công ty này đầu tư công sức vào đổi mới công nghệ."
+   }
+  ]
+ },
+ {
+  "word": "原則",
+  "example": "**[原則](げんそく)**として、[遅刻](ちこく)は[認](みと)められません。",
+  "exampleVi": "Theo nguyên tắc, việc đi muộn không được chấp nhận.",
+  "examples": [
+   {
+    "ja": "**[原則](げんそく)**として、[遅刻](ちこく)は[認](みと)められません。",
+    "vi": "Theo nguyên tắc, việc đi muộn không được chấp nhận."
+   },
+   {
+    "ja": "[会議](かいぎ)は**[原則](げんそく)**として[毎週](まいしゅう)[月曜日](げつようび)に[行](おこな)います。",
+    "vi": "Theo nguyên tắc, cuộc họp được tổ chức vào thứ Hai hằng tuần."
+   }
+  ]
+ },
+ {
+  "word": "経過",
+  "example": "[手術](しゅじゅつ)の**[経過](けいか)**は[順調](じゅんちょう)です。",
+  "exampleVi": "Diễn biến sau phẫu thuật thuận lợi.",
+  "examples": [
+   {
+    "ja": "[手術](しゅじゅつ)の**[経過](けいか)**は[順調](じゅんちょう)です。",
+    "vi": "Diễn biến sau phẫu thuật thuận lợi."
+   },
+   {
+    "ja": "[事件](じけん)の**[経過](けいか)**を[説明](せつめい)します。",
+    "vi": "Tôi sẽ giải thích diễn biến của vụ án."
+   }
+  ]
+ },
+ {
+  "word": "中継",
+  "meaning": "truyền hình/phát sóng trực tiếp; chuyển tiếp",
+  "example": "[試合](しあい)を**[中継](ちゅうけい)**で[見](み)ました。",
+  "exampleVi": "Tôi đã xem trận đấu qua truyền hình trực tiếp.",
+  "examples": [
+   {
+    "ja": "[試合](しあい)を**[中継](ちゅうけい)**で[見](み)ました。",
+    "vi": "Tôi đã xem trận đấu qua truyền hình trực tiếp."
+   },
+   {
+    "ja": "オリンピックの[開会](かいかい)[式](しき)の[様子](ようす)が、[会場](かいじょう)から[世界中](せかいじゅう)に**[中継](ちゅうけい)された**。",
+    "vi": "Quang cảnh lễ khai mạc Olympic đã được truyền hình trực tiếp từ địa điểm tổ chức đến khắp thế giới."
+   }
+  ]
+ },
+ {
+  "word": "規模",
+  "example": "[会社](かいしゃ)の**[規模](きぼ)**を[拡大](かくだい)しました。",
+  "exampleVi": "Công ty đã mở rộng quy mô.",
+  "examples": [
+   {
+    "ja": "[会社](かいしゃ)の**[規模](きぼ)**を[拡大](かくだい)しました。",
+    "vi": "Công ty đã mở rộng quy mô."
+   },
+   {
+    "ja": "[大](おお)きな**[規模](きぼ)**の[工事](こうじ)が[始](はじ)まりました。",
+    "vi": "Một công trình quy mô lớn đã bắt đầu."
+   }
+  ]
+ }
 ]
