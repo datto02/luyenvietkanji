@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc hiểu | Phá Đảo Tiếng Nhật</title>
+    <meta name="robots" content="index, follow">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+
+    <!-- Khu /dora/ (bài tập cho học viên, không có link nào dẫn vào): head Y HỆT tuvung/index.html
+         (Tailwind CDN + tắt hover giả trên cảm ứng + giấu thanh trượt) để giao diện khớp /tuvung/;
+         khác: noindex (không cho công cụ tìm kiếm index) nhưng CÓ GA (gtag ở trên, cùng ID
+         G-44K3LXVHKX với các trang khác - theo dõi hành vi học viên). Chỉ 1 file HTML thật, các màn
+         bên trong đổi bằng hash - xem DoraPage.jsx. -->
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+            addVariant('desktop', '@media (min-width: 1024px) and (hover: hover) and (pointer: fine)');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+
+      /* Dải CHẾ ĐỘ của Từ vựng trên điện thoại (KanjiNav) cuộn ngang được nhưng KHÔNG hiện
+         thanh cuộn - thanh cuộn ngang lộ ra giữa thanh công cụ trông rất lệch. */
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - y hệt kanji/index.html (xem giải thích đầy đủ ở đó).
+         CHỈ ẩn thanh trượt, KHÔNG khoá cuộn. */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+    <!-- Pháo hoa mừng học xong (Flashcard/Trắc nghiệm/Tự luận/Luyện viết) - FlashcardModal.jsx
+         v.v. gọi thẳng biến toàn cục `confetti` (không import qua npm), nên trang nào mở được
+         các popup học đó đều PHẢI có script này, y hệt index.html gốc - thiếu là mất pháo hoa
+         (gọi `confetti` lúc đó là undefined, code tự bỏ qua trong im lặng, không báo lỗi gì). -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script type="module" crossorigin src="/assets/dochieu-BsegB4ov.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-CKQ0ZUgu.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-C0nirKkq.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-C2ey8YjU.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-Byhbq2ja.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-plus-SCt5_7O7.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-CK6VxKDJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-right-CZtrt7SP.js">
+    <link rel="modulepreload" crossorigin href="/assets/WebPlanModal-DI3zb4-s.js">
+    <link rel="modulepreload" crossorigin href="/assets/chevron-right-CyPfdBtz.js">
+    <link rel="modulepreload" crossorigin href="/assets/vpsAuth-DJzA9pay.js">
+    <link rel="modulepreload" crossorigin href="/assets/nguPhapVps-B4sxOBAN.js">
+    <link rel="modulepreload" crossorigin href="/assets/VocabBookArt-8rZHSdyJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/purify.es-Ci_o05va.js">
+    <link rel="modulepreload" crossorigin href="/assets/trash-2-fQFT_Coc.js">
+    <link rel="modulepreload" crossorigin href="/assets/ExerciseInfoCard-CNtgH5x4.js">
+    <link rel="modulepreload" crossorigin href="/assets/triangle-alert-BzjE0Iq8.js">
+    <link rel="modulepreload" crossorigin href="/assets/ReadingMixedExercise-C3KcYUgC.js">
+    <link rel="modulepreload" crossorigin href="/assets/khoaData-DBh0AaOC.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-DWYmAr4i.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>
