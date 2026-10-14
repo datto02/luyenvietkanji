@@ -1,0 +1,1 @@
+const s=e=>`luyende-furigana-${e?"n5n4":"n3n2n1"}`,r=e=>{try{const n=sessionStorage.getItem(s(e));if(n==="1"||n==="0")return n==="1"}catch{}return!!e},o=(e,n)=>{try{sessionStorage.setItem(s(e),n?"1":"0")}catch{}};export{r,o as w};
