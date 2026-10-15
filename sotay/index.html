@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta name="robots" content="noindex" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sổ tay Kanji | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Sổ tay Kanji: gom các chữ Kanji thành học phần riêng để học Flashcard, trắc nghiệm, tự luận, luyện viết.">
+    <meta property="og:title" content="Sổ tay Kanji - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="Sổ tay Kanji: gom các chữ Kanji thành học phần riêng để học Flashcard, trắc nghiệm, tự luận, luyện viết.">
+    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
+    <meta property="og:url" content="https://phadaotiengnhat.com/sotay/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/sotay/" />
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="../icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="../icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+
+      /* Class TỰ VIẾT dùng trong LichTrinhKanjiPage.jsx (Tailwind CDN không có sẵn): giấu thanh cuộn của khung ngoài. */
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* Chỉ ẩn thanh trượt của cả trang (không khoá cuộn) - y hệt các trang /kanji/, /kaiwa/. */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+    <!-- BẮT BUỘC - KaiwaPracticeView.jsx dùng thẳng biến toàn cục `Howl` (không import qua npm)
+         để phát audio hội thoại. Thiếu script này thì `Howl` undefined, bấm play không có tác
+         dụng gì (lỗi âm thầm, không báo gì cho người dùng) - y hệt cách index.html gốc đã nạp. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script type="module" crossorigin src="/assets/sotay-B4Cx8Sbx.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-CKQ0ZUgu.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-C0nirKkq.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-C2ey8YjU.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-Byhbq2ja.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-plus-SCt5_7O7.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-CVKcTQxn.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-right-CZtrt7SP.js">
+    <link rel="modulepreload" crossorigin href="/assets/WebPlanModal-S-O4NZVm.js">
+    <link rel="modulepreload" crossorigin href="/assets/vpsAuth-DXsjOEpT.js">
+    <link rel="modulepreload" crossorigin href="/assets/khoaData-Cs1bNmRe.js">
+    <link rel="modulepreload" crossorigin href="/assets/FlashcardModal-D8UafO2T.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-DWYmAr4i.js">
+    <link rel="modulepreload" crossorigin href="/assets/plus-DH-vOcyw.js">
+    <link rel="modulepreload" crossorigin href="/assets/shuffle-BahnIcFw.js">
+    <link rel="modulepreload" crossorigin href="/assets/kana-CH-gdCEc.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiWritingModal-Bbobp_8u.js">
+    <link rel="modulepreload" crossorigin href="/assets/list-checks-BX5jRzVF.js">
+    <link rel="modulepreload" crossorigin href="/assets/pen-tool-Cms3rH2k.js">
+    <link rel="modulepreload" crossorigin href="/assets/file-text-BKX0LewT.js">
+    <link rel="modulepreload" crossorigin href="/assets/list-ordered-Dvfn8hZy.js">
+    <link rel="modulepreload" crossorigin href="/assets/chevron-right-CyPfdBtz.js">
+    <link rel="modulepreload" crossorigin href="/assets/SearchBar-BTNvOy1Y.js">
+    <link rel="modulepreload" crossorigin href="/assets/LibraryModal-7KC6ukNK.js">
+    <link rel="modulepreload" crossorigin href="/assets/star-B1AFuM-b.js">
+    <link rel="modulepreload" crossorigin href="/assets/trash-2-fQFT_Coc.js">
+    <link rel="modulepreload" crossorigin href="/assets/pencil-OpSQySxt.js">
+    <link rel="modulepreload" crossorigin href="/assets/lichSuStore-B3g-7-5Q.js">
+    <link rel="modulepreload" crossorigin href="/assets/lichSuHoc-Dgs0Ph8w.js">
+    <link rel="modulepreload" crossorigin href="/assets/fetchData-vDy1aBfg.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>
