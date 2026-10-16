@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề ngẫu nhiên | Luyện Đề JLPT | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Tạo đề theo ý muốn từ kho 20.000 câu hỏi.">
+    <meta property="og:title" content="Đề ngẫu nhiên - Luyện Đề JLPT - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="Tạo đề theo ý muốn từ kho 20.000 câu hỏi.">
+    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
+    <meta property="og:url" content="https://phadaotiengnhat.com/luyende/dengaunhien/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/luyende/dengaunhien/" />
+    <link rel="icon" type="image/x-icon" href="../../icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="../../icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../icon/apple-touch-icon.png">
+    <link rel="manifest" href="../../icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      // Thêm riêng cho trang Luyện đề: variant "desktop:" = "máy tính thật" (đủ rộng >=1024px
+      // VÀ có chuột/trackpad thật) - dùng để phân biệt máy tính với iPad/điện thoại (iPad
+      // xoay ngang cũng rộng nhưng vẫn là cảm ứng, không tính là "desktop" ở đây).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+            addVariant('desktop', '@media (min-width: 1024px) and (hover: hover) and (pointer: fine)');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - y hệt dochieu/index.html. CHỈ ẩn thanh trượt, KHÔNG khoá cuộn. */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Y hệt index.html gốc - cần cho triggerConfetti() trong FlashcardModal.jsx (bắn pháo hoa
+    lúc "Hoàn thành" 1 lượt Flashcard) - THIẾU thì confetti() không tồn tại (typeof === 'undefined'),
+    hàm tự lặng lẽ bỏ qua (xem guard đầu triggerConfetti), Luyện đề trước giờ không có -> Flashcard
+    "Ôn flashcard" ở Luyện đề học xong không bắn pháo hoa, khác hẳn Flashcard Từ vựng/Kanji chính. -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script type="module" crossorigin src="/assets/index-Cc90qVZN.js"></script>
+    <script type="module" crossorigin src="/assets/arrow-left-C0nirKkq.js"></script>
+    <script type="module" crossorigin src="/assets/timer-CLoPFCCb.js"></script>
+    <script type="module" crossorigin src="/assets/triangle-alert-BzjE0Iq8.js"></script>
+    <script type="module" crossorigin src="/assets/purify.es-Ci_o05va.js"></script>
+    <script type="module" crossorigin src="/assets/ExerciseInfoCard-DtDCl7Fs.js"></script>
+    <script type="module" crossorigin src="/assets/furiSession-C_zFN0ka.js"></script>
+    <script type="module" crossorigin src="/assets/supabaseClient-C2ey8YjU.js"></script>
+    <script type="module" crossorigin src="/assets/useBodyScrollLock-Byhbq2ja.js"></script>
+    <script type="module" crossorigin src="/assets/rotate-ccw-CoVJvtBW.js"></script>
+    <script type="module" crossorigin src="/assets/loader-circle-K-Zs-AE0.js"></script>
+    <script type="module" crossorigin src="/assets/pause-CVYPARHX.js"></script>
+    <script type="module" crossorigin src="/assets/play-l3E5VXss.js"></script>
+    <script type="module" crossorigin src="/assets/NgheMixedExercise-3VHAInc4.js"></script>
+    <script type="module" crossorigin src="/assets/index-CKQ0ZUgu.js"></script>
+    <script type="module" crossorigin src="/assets/readingRefs-BDVDYSve.js"></script>
+    <script type="module" crossorigin src="/assets/trash-2-fQFT_Coc.js"></script>
+    <script type="module" crossorigin src="/assets/ReadingMixedExercise-GAwZY4Vg.js"></script>
+    <script type="module" crossorigin src="/assets/trophy-B0-FcrKX.js"></script>
+    <script type="module" crossorigin src="/assets/user-plus-SCt5_7O7.js"></script>
+    <script type="module" crossorigin src="/assets/user-BrQtVIpo.js"></script>
+    <script type="module" crossorigin src="/assets/KanjiNav-DXFJ6s6O.js"></script>
+    <script type="module" crossorigin src="/assets/FlashcardModal-D8UafO2T.js"></script>
+    <script type="module" crossorigin src="/assets/react-DIsyT2P-.js"></script>
+    <script type="module" crossorigin src="/assets/shield-check-D4f0eKKm.js"></script>
+    <script type="module" crossorigin src="/assets/users-B6Mn_BaY.js"></script>
+    <script type="module" crossorigin src="/assets/chevron-right-CyPfdBtz.js"></script>
+    <script type="module" crossorigin src="/assets/CourseShowcase-DCb14oWE.js"></script>
+    <script type="module" crossorigin src="/assets/vpsAuth-DXsjOEpT.js"></script>
+    <script type="module" crossorigin src="/assets/khoaData-Cs1bNmRe.js"></script>
+    <script type="module" crossorigin src="/assets/fetchData-vDy1aBfg.js"></script>
+    <script type="module" crossorigin src="/assets/vocabLookup-C22J7mVS.js"></script>
+    <script type="module" crossorigin src="/assets/download-DNwlRNJL.js"></script>
+    <script type="module" crossorigin src="/assets/useIsAdmin-B2nUYcIM.js"></script>
+    <script type="module" crossorigin src="/assets/lichSuStore-B3g-7-5Q.js"></script>
+    <script type="module" crossorigin src="/assets/nghehieuData-CnZPAZaF.js"></script>
+    <script type="module" crossorigin src="/assets/luyendeMoi-H-fbeAQh.js"></script>
+    <script type="module" crossorigin src="/assets/VocabBookArt-DIKfHM6U.js"></script>
+    <script type="module" crossorigin src="/assets/arrow-right-CZtrt7SP.js"></script>
+    <script type="module" crossorigin src="/assets/WebPlanModal-S-O4NZVm.js"></script>
+    <script type="module" crossorigin src="/assets/circle-check-cAXb3Y0s.js"></script>
+    <script type="module" crossorigin src="/assets/eye-C5EFaiux.js"></script>
+    <script type="module" crossorigin src="/assets/search-D0HkqOH4.js"></script>
+    <script type="module" crossorigin src="/assets/list-checks-BX5jRzVF.js"></script>
+    <script type="module" crossorigin src="/assets/check-DWYmAr4i.js"></script>
+    <script type="module" crossorigin src="/assets/ActivationThanksPopup-BTaC2NC1.js"></script>
+    <script type="module" crossorigin src="/assets/luyende-main-GpP2eFgP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>

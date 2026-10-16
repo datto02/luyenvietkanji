@@ -48,6 +48,9 @@
     </script>
     <style>
       * { -webkit-tap-highlight-color: transparent; }
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - y hệt dochieu/index.html. CHỈ ẩn thanh trượt, KHÔNG khoá cuộn. */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
     </style>
     <script>
       // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
@@ -72,45 +75,53 @@
     "Ôn flashcard" ở Luyện đề học xong không bắn pháo hoa, khác hẳn Flashcard Từ vựng/Kanji chính. -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-    <script type="module" crossorigin src="/assets/luyende-DFDgFSmD.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/index-Cc90qVZN.js">
-    <link rel="modulepreload" crossorigin href="/assets/index-CKQ0ZUgu.js">
-    <link rel="modulepreload" crossorigin href="/assets/arrow-left-C0nirKkq.js">
-    <link rel="modulepreload" crossorigin href="/assets/ExerciseInfoCard-CNtgH5x4.js">
-    <link rel="modulepreload" crossorigin href="/assets/purify.es-Ci_o05va.js">
-    <link rel="modulepreload" crossorigin href="/assets/readingRefs-BDVDYSve.js">
-    <link rel="modulepreload" crossorigin href="/assets/trash-2-fQFT_Coc.js">
-    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-C2ey8YjU.js">
-    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-Byhbq2ja.js">
-    <link rel="modulepreload" crossorigin href="/assets/furiSession-1mX-mwrw.js">
-    <link rel="modulepreload" crossorigin href="/assets/triangle-alert-BzjE0Iq8.js">
-    <link rel="modulepreload" crossorigin href="/assets/ReadingMixedExercise-B6D3eQ5s.js">
-    <link rel="modulepreload" crossorigin href="/assets/trophy-B0-FcrKX.js">
-    <link rel="modulepreload" crossorigin href="/assets/user-plus-SCt5_7O7.js">
-    <link rel="modulepreload" crossorigin href="/assets/user-BrQtVIpo.js">
-    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-CVKcTQxn.js">
-    <link rel="modulepreload" crossorigin href="/assets/FlashcardModal-D8UafO2T.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-DIsyT2P-.js">
-    <link rel="modulepreload" crossorigin href="/assets/shield-check-D4f0eKKm.js">
-    <link rel="modulepreload" crossorigin href="/assets/users-B6Mn_BaY.js">
-    <link rel="modulepreload" crossorigin href="/assets/chevron-right-CyPfdBtz.js">
-    <link rel="modulepreload" crossorigin href="/assets/CourseShowcase-Brlcrl9t.js">
-    <link rel="modulepreload" crossorigin href="/assets/vpsAuth-DXsjOEpT.js">
-    <link rel="modulepreload" crossorigin href="/assets/khoaData-Cs1bNmRe.js">
-    <link rel="modulepreload" crossorigin href="/assets/fetchData-vDy1aBfg.js">
-    <link rel="modulepreload" crossorigin href="/assets/vocabLookup-C22J7mVS.js">
-    <link rel="modulepreload" crossorigin href="/assets/download-DNwlRNJL.js">
-    <link rel="modulepreload" crossorigin href="/assets/useIsAdmin-B2nUYcIM.js">
-    <link rel="modulepreload" crossorigin href="/assets/lichSuStore-B3g-7-5Q.js">
-    <link rel="modulepreload" crossorigin href="/assets/luyendeMoi-DiMxGFAr.js">
-    <link rel="modulepreload" crossorigin href="/assets/VocabBookArt-DIKfHM6U.js">
-    <link rel="modulepreload" crossorigin href="/assets/arrow-right-CZtrt7SP.js">
-    <link rel="modulepreload" crossorigin href="/assets/WebPlanModal-S-O4NZVm.js">
-    <link rel="modulepreload" crossorigin href="/assets/circle-check-cAXb3Y0s.js">
-    <link rel="modulepreload" crossorigin href="/assets/loader-circle-K-Zs-AE0.js">
-    <link rel="modulepreload" crossorigin href="/assets/eye-C5EFaiux.js">
-    <link rel="modulepreload" crossorigin href="/assets/search-D0HkqOH4.js">
-    <link rel="modulepreload" crossorigin href="/assets/ActivationThanksPopup-BTaC2NC1.js">
+    <script type="module" crossorigin src="/assets/index-Cc90qVZN.js"></script>
+    <script type="module" crossorigin src="/assets/arrow-left-C0nirKkq.js"></script>
+    <script type="module" crossorigin src="/assets/timer-CLoPFCCb.js"></script>
+    <script type="module" crossorigin src="/assets/triangle-alert-BzjE0Iq8.js"></script>
+    <script type="module" crossorigin src="/assets/purify.es-Ci_o05va.js"></script>
+    <script type="module" crossorigin src="/assets/ExerciseInfoCard-DtDCl7Fs.js"></script>
+    <script type="module" crossorigin src="/assets/furiSession-C_zFN0ka.js"></script>
+    <script type="module" crossorigin src="/assets/supabaseClient-C2ey8YjU.js"></script>
+    <script type="module" crossorigin src="/assets/useBodyScrollLock-Byhbq2ja.js"></script>
+    <script type="module" crossorigin src="/assets/rotate-ccw-CoVJvtBW.js"></script>
+    <script type="module" crossorigin src="/assets/loader-circle-K-Zs-AE0.js"></script>
+    <script type="module" crossorigin src="/assets/pause-CVYPARHX.js"></script>
+    <script type="module" crossorigin src="/assets/play-l3E5VXss.js"></script>
+    <script type="module" crossorigin src="/assets/NgheMixedExercise-3VHAInc4.js"></script>
+    <script type="module" crossorigin src="/assets/index-CKQ0ZUgu.js"></script>
+    <script type="module" crossorigin src="/assets/readingRefs-BDVDYSve.js"></script>
+    <script type="module" crossorigin src="/assets/trash-2-fQFT_Coc.js"></script>
+    <script type="module" crossorigin src="/assets/ReadingMixedExercise-GAwZY4Vg.js"></script>
+    <script type="module" crossorigin src="/assets/trophy-B0-FcrKX.js"></script>
+    <script type="module" crossorigin src="/assets/user-plus-SCt5_7O7.js"></script>
+    <script type="module" crossorigin src="/assets/user-BrQtVIpo.js"></script>
+    <script type="module" crossorigin src="/assets/KanjiNav-DXFJ6s6O.js"></script>
+    <script type="module" crossorigin src="/assets/FlashcardModal-D8UafO2T.js"></script>
+    <script type="module" crossorigin src="/assets/react-DIsyT2P-.js"></script>
+    <script type="module" crossorigin src="/assets/shield-check-D4f0eKKm.js"></script>
+    <script type="module" crossorigin src="/assets/users-B6Mn_BaY.js"></script>
+    <script type="module" crossorigin src="/assets/chevron-right-CyPfdBtz.js"></script>
+    <script type="module" crossorigin src="/assets/CourseShowcase-DCb14oWE.js"></script>
+    <script type="module" crossorigin src="/assets/vpsAuth-DXsjOEpT.js"></script>
+    <script type="module" crossorigin src="/assets/khoaData-Cs1bNmRe.js"></script>
+    <script type="module" crossorigin src="/assets/fetchData-vDy1aBfg.js"></script>
+    <script type="module" crossorigin src="/assets/vocabLookup-C22J7mVS.js"></script>
+    <script type="module" crossorigin src="/assets/download-DNwlRNJL.js"></script>
+    <script type="module" crossorigin src="/assets/useIsAdmin-B2nUYcIM.js"></script>
+    <script type="module" crossorigin src="/assets/lichSuStore-B3g-7-5Q.js"></script>
+    <script type="module" crossorigin src="/assets/nghehieuData-CnZPAZaF.js"></script>
+    <script type="module" crossorigin src="/assets/luyendeMoi-H-fbeAQh.js"></script>
+    <script type="module" crossorigin src="/assets/VocabBookArt-DIKfHM6U.js"></script>
+    <script type="module" crossorigin src="/assets/arrow-right-CZtrt7SP.js"></script>
+    <script type="module" crossorigin src="/assets/WebPlanModal-S-O4NZVm.js"></script>
+    <script type="module" crossorigin src="/assets/circle-check-cAXb3Y0s.js"></script>
+    <script type="module" crossorigin src="/assets/eye-C5EFaiux.js"></script>
+    <script type="module" crossorigin src="/assets/search-D0HkqOH4.js"></script>
+    <script type="module" crossorigin src="/assets/list-checks-BX5jRzVF.js"></script>
+    <script type="module" crossorigin src="/assets/check-DWYmAr4i.js"></script>
+    <script type="module" crossorigin src="/assets/ActivationThanksPopup-BTaC2NC1.js"></script>
+    <script type="module" crossorigin src="/assets/luyende-main-GpP2eFgP.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-C5kRDvcj.css">
   </head>
   <body>
