@@ -1,4 +1,4 @@
-import{j as e}from"./index-CaeUf6xV.js";import{c as r}from"./arrow-left-BDYvdBfo.js";import{r as b}from"./index-C3pynB6B.js";import{u as p,X as u}from"./useBodyScrollLock-DR-ZB5p9.js";import{L as k}from"./KanjiNav-t_FhLWlc.js";import{L as y}from"./FlashcardModal-DAcuWmdR.js";/**
+import{j as e}from"./index-CaeUf6xV.js";import{c as r}from"./arrow-left-BDYvdBfo.js";import{r as b}from"./index-C3pynB6B.js";import{u as p,X as u}from"./useBodyScrollLock-DR-ZB5p9.js";import{L as k}from"./KanjiNav-t_FhLWlc.js";import{L as y}from"./FlashcardModal-Wuw5pNFJ.js";/**
  * @license lucide-react v0.546.0 - ISC
  *
  * This source code is licensed under the ISC license.
