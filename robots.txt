@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Trang xem trước / in file (không có giá trị tìm kiếm)
+Disallow: /filekanji
+Disallow: /fileluyenviet
+Disallow: /filetuvung
+
+Sitemap: https://phadaotiengnhat.com/sitemap.xml
