@@ -85,7 +85,7 @@
   },
   "韓国": {
     "reading": "かんこく",
-    "meaning": "hàn quốc"
+    "meaning": "Hàn Quốc"
   },
   "中国": {
     "reading": "ちゅうごく",
@@ -1261,7 +1261,7 @@
   },
   "棚": {
     "reading": "たな",
-    "meaning": "giá sách, kệ sách"
+    "meaning": "kệ, giá"
   },
   "窓": {
     "reading": "まど",
@@ -4469,7 +4469,7 @@
   },
   "通信販売": {
     "reading": "つうしんはんばい",
-    "meaning": "thương mại viễn thông"
+    "meaning": "bán hàng từ xa (qua điện thoại, mạng, bưu điện)"
   },
   "クリーニング": {
     "reading": "クリーニング",
@@ -5933,7 +5933,7 @@
   },
   "諺": {
     "reading": "ことわざ",
-    "meaning": "thành ngữ"
+    "meaning": "tục ngữ"
   },
   "関係": {
     "reading": "かんけい",
@@ -6925,7 +6925,7 @@
   },
   "叔父": {
     "reading": "おじ",
-    "meaning": "chú, cậu, bác trai (của mình)"
+    "meaning": "chú, cậu (em trai của bố/mẹ mình)"
   },
   "叔父さん": {
     "reading": "おじさん",
@@ -6933,7 +6933,7 @@
   },
   "叔母": {
     "reading": "おば",
-    "meaning": "cô, dì, bác gái (của mình)"
+    "meaning": "cô, dì (em gái của bố/mẹ mình)"
   },
   "叔母さん": {
     "reading": "おばさん",
@@ -28181,7 +28181,7 @@
   },
   "新潟県": {
     "reading": "にいがたけん",
-    "meaning": "Tỉnh Nigata"
+    "meaning": "Tỉnh Niigata"
   },
   "岐阜県": {
     "reading": "ぎふけん",
@@ -28417,7 +28417,7 @@
   },
   "諸君": {
     "reading": "しょくん",
-    "meaning": "Kính thưa quý vị (lịch sự)"
+    "meaning": "Các bạn, các anh (người trên nói với người dưới)"
   },
   "仁義": {
     "reading": "じんぎ",
@@ -28581,7 +28581,7 @@
   },
   "解釈": {
     "reading": "かいしゃく",
-    "meaning": "Giải thích"
+    "meaning": "Diễn giải/Cách hiểu"
   },
   "釈放": {
     "reading": "しゃくほう",
@@ -28949,7 +28949,7 @@
   },
   "一斤": {
     "reading": "いっきん",
-    "meaning": "Nửa cân (từ cũ)"
+    "meaning": "Đơn vị cũ, khoảng 600 g (cũng là đơn vị đếm ổ bánh mì)"
   },
   "桑": {
     "reading": "くわ",
@@ -29049,7 +29049,7 @@
   },
   "侍": {
     "reading": "さむらい",
-    "meaning": "Võ sĩ đạo (Samurai)"
+    "meaning": "Võ sĩ (Samurai)"
   },
   "慈悲": {
     "reading": "じひ",
@@ -29097,7 +29097,7 @@
   },
   "水晶": {
     "reading": "すいしょう",
-    "meaning": "Thủy tinh/Pha lê"
+    "meaning": "Thạch anh/Pha lê tự nhiên"
   },
   "鐘": {
     "reading": "かね",
@@ -29301,7 +29301,7 @@
   },
   "分泌": {
     "reading": "ぶんぴつ",
-    "meaning": "Bài tiết"
+    "meaning": "Tiết ra (dịch, hormone)"
   },
   "泌尿器科": {
     "reading": "ひにょうきか",
@@ -29605,7 +29605,7 @@
   },
   "擬音": {
     "reading": "ぎおん",
-    "meaning": "Từ tượng thanh"
+    "meaning": "Âm thanh mô phỏng/Hiệu ứng âm thanh"
   },
   "紛糾": {
     "reading": "ふんきゅう",
@@ -31345,7 +31345,7 @@
   },
   "羞恥心": {
     "reading": "しゅうちしん",
-    "meaning": "Lòng tự trọng/Sự xấu hổ"
+    "meaning": "Sự xấu hổ, cảm giác ngượng"
   },
   "訃報": {
     "reading": "ふほう",
@@ -31533,7 +31533,7 @@
   },
   "執拗": {
     "reading": "しつよう",
-    "meaning": "Kiên trì/Ngoan cố"
+    "meaning": "Dai dẳng/Cố chấp/Ngoan cố"
   },
   "拗れる": {
     "reading": "こじれる",
@@ -31569,7 +31569,7 @@
   },
   "靖国": {
     "reading": "やすくに",
-    "meaning": "An quốc"
+    "meaning": "Yasukuni (đền Yasukuni)"
   },
   "萌える": {
     "reading": "もえる",
@@ -31689,7 +31689,7 @@
   },
   "鱒": {
     "reading": "ます",
-    "meaning": "Cá hồi (Trout)"
+    "meaning": "Cá hồi vân (Trout)"
   },
   "髭": {
     "reading": "ひげ",
@@ -31773,7 +31773,7 @@
   },
   "柚子": {
     "reading": "ゆず",
-    "meaning": "Quả quýt Nhật"
+    "meaning": "Quả yuzu (loại cam chanh Nhật)"
   },
   "狐": {
     "reading": "きつね",
@@ -33125,7 +33125,7 @@
   },
   "微か": {
     "reading": "かすか",
-    "meaning": "nhỏ bé, thấp thoáng"
+    "meaning": "mờ nhạt, thoang thoảng, yếu ớt"
   },
   "鈍感": {
     "reading": "どんかん",
@@ -33705,7 +33705,7 @@
   },
   "倣う": {
     "reading": "ならう",
-    "meaning": "phỏng theo,bắt chước theo,làm theo"
+    "meaning": "phỏng theo, bắt chước theo, làm theo"
   },
   "まあまあ": {
     "reading": "まあまあ",
@@ -35605,7 +35605,7 @@
   },
   "熟語": {
     "reading": "じゅくご",
-    "meaning": "Thành ngữ"
+    "meaning": "Từ ghép (thường là từ ghép Hán tự)"
   },
   "警察署": {
     "reading": "けいさつしょ",
@@ -35893,7 +35893,7 @@
   },
   "事項": {
     "reading": "じこう",
-    "meaning": "Điều khoản"
+    "meaning": "Hạng mục/Vấn đề/Mục"
   },
   "富豪": {
     "reading": "ふごう",
@@ -35993,7 +35993,7 @@
   },
   "装飾": {
     "reading": "そうしょく",
-    "meaning": "Trang sức/Trang trí"
+    "meaning": "Trang trí"
   },
   "繁殖": {
     "reading": "はんしょく",
@@ -36261,7 +36261,7 @@
   },
   "優劣": {
     "reading": "ゆうれつ",
-    "meaning": "Ưu khuyết"
+    "meaning": "Hơn kém"
   },
   "恋": {
     "reading": "こい",
@@ -36881,7 +36881,7 @@
   },
   "疎外": {
     "reading": "そがい",
-    "meaning": "Xa lánh/Gẻ lạnh"
+    "meaning": "Xa lánh/Ghẻ lạnh"
   },
   "喪服": {
     "reading": "もふく",
@@ -36937,7 +36937,7 @@
   },
   "官邸": {
     "reading": "かんてい",
-    "meaning": "Quan邸 (Văn phòng thủ tướng)"
+    "meaning": "Dinh thự công vụ (Dinh Thủ tướng)"
   },
   "雲泥の差": {
     "reading": "うんでいのさ",
@@ -36997,7 +36997,7 @@
   },
   "打撲": {
     "reading": "だぼく",
-    "meaning": "Vết thâm tím/Đánh"
+    "meaning": "Va đập/Bầm tím"
   },
   "研磨": {
     "reading": "けんま",

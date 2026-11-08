@@ -2060,7 +2060,7 @@
     { "word": "感覚", "reading": "かん*かく*", "meaning": "Cảm giác" }
   ],
   "潟": [
-    { "word": "新潟県", "reading": "にい*がた*けん", "meaning": "Tỉnh Nigata" }
+    { "word": "新潟県", "reading": "にい*がた*けん", "meaning": "Tỉnh Niigata" }
   ],
   "完": [
     { "word": "完成", "reading": "*かん*せい", "meaning": "Hoàn thành" },
@@ -4001,7 +4001,7 @@
     { "word": "圧縮", "reading": "あっ*しゅく*", "meaning": "Nén" }
   ],
   "熟": [
-    { "word": "熟語", "reading": "*じゅく*ご", "meaning": "Thành ngữ" },
+    { "word": "熟語", "reading": "*じゅく*ご", "meaning": "Từ ghép (thường là từ ghép Hán tự)" },
     { "word": "未熟", "reading": "み*じゅく*", "meaning": "Chưa thành thạo/Non nớt" }
   ],
   "純": [
@@ -4018,7 +4018,7 @@
   ],
   "諸": [
     { "word": "諸国", "reading": "*しょ*こく", "meaning": "Các nước" },
-    { "word": "諸君", "reading": "*しょ*くん", "meaning": "Kính thưa quý vị (lịch sự)" }
+    { "word": "諸君", "reading": "*しょ*くん", "meaning": "Các bạn, các anh (người trên nói với người dưới)" }
   ],
   "除": [
     { "word": "掃除", "reading": "そう*じ*", "meaning": "Dọn dẹp" },
@@ -4815,7 +4815,7 @@
   ],
   "項": [
     { "word": "項目", "reading": "*こう*もく", "meaning": "Hạng mục" },
-    { "word": "事項", "reading": "じ*こう*", "meaning": "Điều khoản" }
+    { "word": "事項", "reading": "じ*こう*", "meaning": "Hạng mục/Vấn đề/Mục" }
   ],
   "豪": [
     { "word": "豪華", "reading": "*ごう*か", "meaning": "Hào hoa/Sang trọng" },
@@ -4901,7 +4901,7 @@
     { "word": "煮える", "reading": "*に*える", "meaning": "Chín/Nhừ" }
   ],
   "釈": [
-    { "word": "解釈", "reading": "かい*しゃく*", "meaning": "Giải thích" },
+    { "word": "解釈", "reading": "かい*しゃく*", "meaning": "Diễn giải/Cách hiểu" },
     { "word": "釈放", "reading": "*しゃく*ほう", "meaning": "Thả tự do (phạm nhân) " }
   ],
   "寂": [
@@ -4993,7 +4993,7 @@
   ],
   "飾": [
     { "word": "飾る", "reading": "*かざ*る", "meaning": "Trang trí" },
-    { "word": "装飾", "reading": "そう*しょく*", "meaning": "Trang sức/Trang trí" }
+    { "word": "装飾", "reading": "そう*しょく*", "meaning": "Trang trí" }
   ],
   "殖": [
     { "word": "繁殖", "reading": "はん*しょく*", "meaning": "Sinh sôi/Phát triển" },
@@ -5635,7 +5635,7 @@
   ],
   "劣": [
     { "word": "劣る", "reading": "*おと*る", "meaning": "Kém hơn" },
-    { "word": "優劣", "reading": "ゆう*れつ*", "meaning": "Ưu khuyết" }
+    { "word": "優劣", "reading": "ゆう*れつ*", "meaning": "Hơn kém" }
   ],
   "烈": [
     { "word": "猛烈", "reading": "もう*れつ*", "meaning": "Mãnh liệt" },
@@ -5861,7 +5861,7 @@
     { "word": "凝縮", "reading": "*ぎょう*しゅく", "meaning": "Cô đọng" }
   ],
   "斤": [
-    { "word": "一斤", "reading": "いっ*きん*", "meaning": "Nửa cân (từ cũ)" }
+    { "word": "一斤", "reading": "いっ*きん*", "meaning": "Đơn vị cũ, khoảng 600 g (cũng là đơn vị đếm ổ bánh mì)" }
   ],
   "緊": [
     { "word": "緊張", "reading": "*きん*ちょう", "meaning": "Căng thẳng" },
@@ -6055,7 +6055,7 @@
     { "word": "諮問", "reading": "*し*もん", "meaning": "Trưng cầu ý kiến/Hỏi ý kiến" }
   ],
   "侍": [
-    { "word": "侍", "reading": "*さむらい*", "meaning": "Võ sĩ đạo (Samurai)" }
+    { "word": "侍", "reading": "*さむらい*", "meaning": "Võ sĩ (Samurai)" }
   ],
   "慈": [
     { "word": "慈悲", "reading": "*じ*ひ", "meaning": "Từ bi" },
@@ -6112,7 +6112,7 @@
   ],
   "晶": [
     { "word": "結晶", "reading": "けっ*しょう*", "meaning": "Kết tinh/Tinh thể" },
-    { "word": "水晶", "reading": "すい*しょう*", "meaning": "Thủy tinh/Pha lê" }
+    { "word": "水晶", "reading": "すい*しょう*", "meaning": "Thạch anh/Pha lê tự nhiên" }
   ],
   "焦": [
     { "word": "焦げる", "reading": "*こ*げる", "meaning": "Bị cháy/Khét" },
@@ -6460,7 +6460,7 @@
     { "word": "卑屈", "reading": "*ひ*くつ", "meaning": "Thấp hèn" }
   ],
   "泌": [
-    { "word": "分泌", "reading": "ぶん*ぴつ*", "meaning": "Bài tiết" },
+    { "word": "分泌", "reading": "ぶん*ぴつ*", "meaning": "Tiết ra (dịch, hormone)" },
     { "word": "泌尿器科", "reading": "*ひ*にょうきか", "meaning": "Khoa tiết niệu" }
   ],
   "碑": [
@@ -6885,7 +6885,7 @@
   ],
   "擬": [
     { "word": "模擬", "reading": "*も*ぎ", "meaning": "Mô phỏng" },
-    { "word": "擬音", "reading": "*ぎ*おん", "meaning": "Từ tượng thanh" }
+    { "word": "擬音", "reading": "*ぎ*おん", "meaning": "Âm thanh mô phỏng/Hiệu ứng âm thanh" }
   ],
   "窮": [
     { "word": "窮屈", "reading": "*きゅう*くつ", "meaning": "Chật hẹp/Gò bó" },
@@ -7396,7 +7396,7 @@
     { "word": "彫塑", "reading": "ちょう*そ*", "meaning": "Điêu khắc và tạc tượng" }
   ],
   "疎": [
-    { "word": "疎外", "reading": "*そ*がい", "meaning": "Xa lánh/Gẻ lạnh" },
+    { "word": "疎外", "reading": "*そ*がい", "meaning": "Xa lánh/Ghẻ lạnh" },
     { "word": "疎か", "reading": "*おろそ*か", "meaning": "Lơ là/Sao nhãng" }
   ],
   "租": [
@@ -7552,7 +7552,7 @@
   ],
   "邸": [
     { "word": "邸宅", "reading": "*てい*たく", "meaning": "Dinh thự" },
-    { "word": "官邸", "reading": "かん*てい*", "meaning": "Quan邸 (Văn phòng thủ tướng)" }
+    { "word": "官邸", "reading": "かん*てい*", "meaning": "Dinh thự công vụ (Dinh Thủ tướng)" }
   ],
   "泥": [
     { "word": "泥", "reading": "*どろ*", "meaning": "Bùn" },
@@ -7783,7 +7783,7 @@
   ],
   "撲": [
     { "word": "相撲", "reading": "す*もう*", "meaning": "Vật Sumo" },
-    { "word": "打撲", "reading": "だ*ぼく*", "meaning": "Vết thâm tím/Đánh" }
+    { "word": "打撲", "reading": "だ*ぼく*", "meaning": "Va đập/Bầm tím" }
   ],
   "朴": [
     { "word": "素朴", "reading": "そ*ぼく*", "meaning": "Mộc mạc/Chân chất" }
@@ -8578,7 +8578,7 @@
     { "word": "緻密", "reading": "*ち*みつ", "meaning": "Tinh vi/Tỉ mỉ/Chính xác" }
   ],
   "羞": [
-    { "word": "羞恥心", "reading": "*しゅう*ちしん", "meaning": "Lòng tự trọng/Sự xấu hổ" }
+    { "word": "羞恥心", "reading": "*しゅう*ちしん", "meaning": "Sự xấu hổ, cảm giác ngượng" }
   ],
   "訃": [
     { "word": "訃報", "reading": "*ふ*ほう", "meaning": "Cáo phó/Tin buồn" }
@@ -8706,7 +8706,7 @@
     { "word": "挽く", "reading": "*ひ*く", "meaning": "Xay (cà phê)/Cưa (gỗ)" }
   ],
   "拗": [
-    { "word": "執拗", "reading": "しつ*よう*", "meaning": "Kiên trì/Ngoan cố" },
+    { "word": "執拗", "reading": "しつ*よう*", "meaning": "Dai dẳng/Cố chấp/Ngoan cố" },
     { "word": "拗れる", "reading": "*こじ*れる", "meaning": "Trở nên phức tạp/Xấu đi (quan hệ)" }
   ],
   "鹸": [
@@ -8729,7 +8729,7 @@
     { "word": "聡明", "reading": "*そう*めい", "meaning": "Thông minh/Sáng dạ" }
   ],
   "靖": [
-    { "word": "靖国", "reading": "*やす*くに", "meaning": "An quốc" }
+    { "word": "靖国", "reading": "*やす*くに", "meaning": "Yasukuni (đền Yasukuni)" }
   ],
   "萌": [
     { "word": "萌える", "reading": "*も*える", "meaning": "Nảy mầm/Moe (dễ thương)" }
@@ -8810,7 +8810,7 @@
     { "word": "鼠", "reading": "*ねずみ*", "meaning": "Con chuột" }
   ],
   "鱒": [
-    { "word": "鱒", "reading": "*ます*", "meaning": "Cá hồi (Trout)" }
+    { "word": "鱒", "reading": "*ます*", "meaning": "Cá hồi vân (Trout)" }
   ],
   "髭": [
     { "word": "髭", "reading": "*ひげ*", "meaning": "Râu" }
@@ -8874,7 +8874,7 @@
     { "word": "葱", "reading": "*ねぎ*", "meaning": "Hành lá" }
   ],
   "柚": [
-    { "word": "柚子", "reading": "*ゆず*", "meaning": "Quả quýt Nhật" }
+    { "word": "柚子", "reading": "*ゆず*", "meaning": "Quả yuzu (loại cam chanh Nhật)" }
   ],
   "狐": [
     { "word": "狐", "reading": "*きつね*", "meaning": "Con cáo" }
