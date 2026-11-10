@@ -16,6 +16,7 @@
  },
  {
   "word": "桁",
+  "reading": "けた",
   "meaning": "chữ số, hàng (số); dầm ngang",
   "example": "[数字](すうじ)の**[桁](けた)**を[間違](まちが)えました。",
   "exampleVi": "Tôi đã nhầm số chữ số của con số.",
@@ -317,6 +318,7 @@
  },
  {
   "word": "投書",
+  "reading": "とうしょ",
   "meaning": "thư góp ý gửi báo/cơ quan, thư bạn đọc",
   "example": "[新聞](しんぶん)に**[投書](とうしょ)しました**。",
   "exampleVi": "Tôi đã gửi thư góp ý cho báo.",
@@ -498,6 +500,7 @@
  },
  {
   "word": "迫力",
+  "reading": "はくりょく",
   "meaning": "sức lôi cuốn, cảm giác mạnh mẽ, đầy uy lực",
   "example": "この[映画](えいが)は**[迫力](はくりょく)**があります。",
   "exampleVi": "Bộ phim này rất hấp dẫn, đầy uy lực.",
@@ -724,6 +727,7 @@
  },
  {
   "word": "中継",
+  "reading": "ちゅうけい",
   "meaning": "truyền hình/phát sóng trực tiếp; chuyển tiếp",
   "example": "[試合](しあい)を**[中継](ちゅうけい)**で[見](み)ました。",
   "exampleVi": "Tôi đã xem trận đấu qua truyền hình trực tiếp.",
