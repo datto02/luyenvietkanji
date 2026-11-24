@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta name="robots" content="noindex" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Kaiwa | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Luyện shadowing tiếng Nhật theo từng câu với video người bản xứ, có furigana và dịch tiếng Việt.">
+    <meta property="og:title" content="Shadowing - Phá Đảo Tiếng Nhật">
+    <meta property="og:description" content="Luyện shadowing tiếng Nhật theo từng câu với video người bản xứ, có furigana và dịch tiếng Việt.">
+    <meta property="og:image" content="https://i.ibb.co/dwSNXWnX/2434753923115317823.jpg">
+    <meta property="og:url" content="https://phadaotiengnhat.com/kaiwa/video/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/kaiwa/video/" />
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+
+      /* TRANG SHADOWING (src/podcast/PodcastPage.tsx). Class TỰ VIẾT (Tailwind CDN không có sẵn): giấu thanh cuộn của khung ngoài. */
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* Chỉ ẩn thanh trượt của cả trang (không khoá cuộn) - y hệt các trang /kanji/, /kaiwa/. */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+      /* Thanh tua / âm lượng của trình phát (chép từ Dora Kaiwa, đổi sang xanh Phá Đảo) - --fill = phần đã chạy. */
+      .player-range { --fill: 0%; -webkit-appearance: none; appearance: none; height: 4px; border-radius: 999px; outline: none; cursor: pointer;
+        background: linear-gradient(to right, #5B9BFF var(--fill), rgba(255,255,255,.35) var(--fill)); }
+      .player-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 13px; height: 13px; border-radius: 50%; background: #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.45); cursor: pointer; transition: transform .15s ease; }
+      .player-range::-webkit-slider-thumb:hover, .player-range:active::-webkit-slider-thumb { transform: scale(1.2); }
+      .player-range::-moz-range-track { height: 4px; border-radius: 999px; background: rgba(255,255,255,.35); }
+      .player-range::-moz-range-progress { height: 4px; border-radius: 999px; background: #5B9BFF; }
+      .player-range::-moz-range-thumb { width: 13px; height: 13px; border: none; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.45); cursor: pointer; }
+      /* Thẻ "câu đang phát" dưới video: chỉ máy tính - ẩn trên thiết bị cảm ứng thật (không theo độ rộng cửa sổ). */
+      /* furigana: chữ nhỏ phía trên chữ Hán; inline style của khung giữ line-height (tránh Tailwind CDN sm:text-* đè leading) */
+      /* Furigana tự vẽ (xem FuriText trong PodcastPage.tsx): KHÔNG position/transform (nhẹ khi cuộn trên điện thoại); cỡ chữ + lề do style inline. */
+      .pod-furi { display: inline-block; line-height: 1; white-space: nowrap; vertical-align: baseline; }
+      .pod-furi-rt { display: block; text-align: center; font-size: 0.62em; font-weight: 500; line-height: 1; white-space: nowrap; color: #5B6B85; letter-spacing: 0;
+        user-select: none; -webkit-user-select: none; pointer-events: none; }
+      /* KHUNG VIDEO: luôn 16:9. Điện thoại/iPad = rộng hết cột; máy tính: PodcastPage.tsx đặt bề rộng (thu nhỏ khi thẻ câu đang phát dài) */
+      .pod-vid-box { width: 100%; aspect-ratio: 16 / 9; }
+      /* Điện thoại / iPad dọc (<1024px): video nhỏ hơn một chút, căn giữa (user 24/11) */
+      @media (max-width: 1023.98px) { .pod-vid-box { width: 92% !important; } }
+      @media (hover: none) and (pointer: coarse) { .current-sentence-card { display: none !important; } }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/kaiwaVideo-BPHkEfqB.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-WN3x_683.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-vZX-xhxr.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-BPNUywEc.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-CjKlajvh.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-plus-BfsdZZ6E.js">
+    <link rel="modulepreload" crossorigin href="/assets/chevron-right-DpUmIm74.js">
+    <link rel="modulepreload" crossorigin href="/assets/lock-BwO9jtto.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-26vbl3YA.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-right-BYTF6Zxe.js">
+    <link rel="modulepreload" crossorigin href="/assets/WebPlanModal-sjUksdQb.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BGon_vZT.js">
+    <link rel="modulepreload" crossorigin href="/assets/myProfile-BkCZZg7D.js">
+    <link rel="modulepreload" crossorigin href="/assets/useAuthUser-DjxkbJdt.js">
+    <link rel="modulepreload" crossorigin href="/assets/useVaiTro-BTq9hWTF.js">
+    <link rel="modulepreload" crossorigin href="/assets/ketQua-eclQnDwQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/refresh-cw-C4J9GGN6.js">
+    <link rel="modulepreload" crossorigin href="/assets/type-DeS8h4Q6.js">
+    <link rel="modulepreload" crossorigin href="/assets/headphones-V3rA7AIj.js">
+    <link rel="modulepreload" crossorigin href="/assets/loader-circle-nB8Feenk.js">
+    <link rel="modulepreload" crossorigin href="/assets/triangle-alert-CRMFnesJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/trash-2-Dgw4W5I7.js">
+    <link rel="modulepreload" crossorigin href="/assets/play-ohPjiXaX.js">
+    <link rel="modulepreload" crossorigin href="/assets/pause-D4hItbDf.js">
+    <link rel="modulepreload" crossorigin href="/assets/volume-x-BI5tAqTL.js">
+    <link rel="modulepreload" crossorigin href="/assets/volume-2-CSqm8ffL.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-C-Cufi0p.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-pmRnwisX.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo file | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Tạo file PDF Kanji chi tiết, file luyện viết chữ Hán (ô ly) và file từ vựng đi kèm. Tải về in ra học, khỏi cần mua sách ngoài tiệm.">
+    <meta name="keywords" content="tạo file kanji, file luyện viết, file luyện viết kanji, file pdf kanji, file từ vựng đi kèm, in tài liệu học kanji">
+    <meta property="og:title" content="Tạo File PDF Kanji, File Luyện Viết, File Từ Vựng - Miễn Phí">
+    <meta property="og:description" content="Dán Kanji là có ngay file PDF chi tiết, file luyện viết chữ Hán và file từ vựng đi kèm để in ra học ngay.">
+    <meta property="og:image" content="https://phadaotiengnhat.com/og-image.jpg">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="551">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Phá Đảo Tiếng Nhật">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://phadaotiengnhat.com/kanji/taofile/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Y HỆT kanji/index.html: trang này nằm trong THƯ MỤC (taofile/index.html -> /taofile/),
+         để nhất quán với /kanji/, /tuvung/, /luyende/ - xem giải thích đầy đủ trong
+         kanji/index.html. 3 trang con /taofile/filekanji/, /taofile/fileluyenviet/,
+         /taofile/filetuvung/ đi kèm (xem thư mục con cùng cấp) - KHÔNG liên quan tới 3 trang
+         xem trước/in filekanji.html, fileluyenviet.html, filetuvung.html ở gốc dù trùng tên
+         slug, xem TaoFilePage.jsx. -->
+    <link rel="canonical" href="https://phadaotiengnhat.com/kanji/taofile/" />
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+            addVariant('desktop', '@media (min-width: 1024px) and (hover: hover) and (pointer: fine)');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+
+      /* Dải CHẾ ĐỘ trên điện thoại (KanjiNav) cuộn ngang được nhưng KHÔNG hiện thanh cuộn -
+         thanh cuộn ngang lộ ra giữa thanh công cụ trông rất lệch. */
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - y hệt kanji/index.html (xem giải thích đầy đủ ở đó).
+         CHỈ ẩn thanh trượt, KHÔNG khoá cuộn. */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/taofile-Byr77tn6.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-WN3x_683.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabaseClient-BGon_vZT.js">
+    <link rel="modulepreload" crossorigin href="/assets/lichSuStore-6qyDoSZw.js">
+    <link rel="modulepreload" crossorigin href="/assets/lichSuHoc-CODWGyDK.js">
+    <link rel="modulepreload" crossorigin href="/assets/myProfile-BkCZZg7D.js">
+    <link rel="modulepreload" crossorigin href="/assets/useAuthUser-DjxkbJdt.js">
+    <link rel="modulepreload" crossorigin href="/assets/useVaiTro-BTq9hWTF.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-ckwbz45p.js">
+    <link rel="modulepreload" crossorigin href="/assets/ActivationThanksPopup-BhLnbXyN.js">
+    <link rel="modulepreload" crossorigin href="/assets/fetchData-D3NNYQZB.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-BPNUywEc.js">
+    <link rel="modulepreload" crossorigin href="/assets/useBodyScrollLock-CjKlajvh.js">
+    <link rel="modulepreload" crossorigin href="/assets/EssayGameModal-Dm2gl7s0.js">
+    <link rel="modulepreload" crossorigin href="/assets/volume-2-CSqm8ffL.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-vZX-xhxr.js">
+    <link rel="modulepreload" crossorigin href="/assets/lock-BwO9jtto.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-right-BYTF6Zxe.js">
+    <link rel="modulepreload" crossorigin href="/assets/WebPlanModal-sjUksdQb.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-C-Cufi0p.js">
+    <link rel="modulepreload" crossorigin href="/assets/plus-CMSk11AH.js">
+    <link rel="modulepreload" crossorigin href="/assets/star-Cu6iPsHT.js">
+    <link rel="modulepreload" crossorigin href="/assets/FlashcardModal-hnf12lpt.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-plus-BfsdZZ6E.js">
+    <link rel="modulepreload" crossorigin href="/assets/chevron-right-DpUmIm74.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiNav-26vbl3YA.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-presence-0gOlBMJQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-BcL-NT1E.js">
+    <link rel="modulepreload" crossorigin href="/assets/webPlanPricing-BdFmPosI.js">
+    <link rel="modulepreload" crossorigin href="/assets/srsVocab-DwBs5OLj.js">
+    <link rel="modulepreload" crossorigin href="/assets/tuvungSrsSync-BX0XbSpM.js">
+    <link rel="modulepreload" crossorigin href="/assets/nguPhapVps-B_i6a4eq.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiToolArt-Dvxz5PRF.js">
+    <link rel="modulepreload" crossorigin href="/assets/useIsAdmin-DLFHKlhB.js">
+    <link rel="modulepreload" crossorigin href="/assets/useIsAff-qTqLPIL4.js">
+    <link rel="modulepreload" crossorigin href="/assets/useIsTroGiang-DON3r35O.js">
+    <link rel="modulepreload" crossorigin href="/assets/LoginForm-Bx8lYr9w.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-Bboeh6xo.js">
+    <link rel="modulepreload" crossorigin href="/assets/shield-check-CoQBUS0E.js">
+    <link rel="modulepreload" crossorigin href="/assets/handshake-CqrMsomd.js">
+    <link rel="modulepreload" crossorigin href="/assets/log-out-C_Lp4LPW.js">
+    <link rel="modulepreload" crossorigin href="/assets/vocabUnitEntries-O8LSIn9C.js">
+    <link rel="modulepreload" crossorigin href="/assets/vocabSrsView-Dnvng6V7.js">
+    <link rel="modulepreload" crossorigin href="/assets/users-BkC7foeo.js">
+    <link rel="modulepreload" crossorigin href="/assets/headphones-V3rA7AIj.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-Bl9W0z0V.js">
+    <link rel="modulepreload" crossorigin href="/assets/CourseShowcase-ASf7lShr.js">
+    <link rel="modulepreload" crossorigin href="/assets/HomeFooterLazy-D_zVmJBo.js">
+    <link rel="modulepreload" crossorigin href="/assets/promoFlags-BhHRa3F-.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-check-QnPnfDh-.js">
+    <link rel="modulepreload" crossorigin href="/assets/clipboard-list-CV8vqlgh.js">
+    <link rel="modulepreload" crossorigin href="/assets/gift-CkIuZzUa.js">
+    <link rel="modulepreload" crossorigin href="/assets/lightbulb-BLcDYAJA.js">
+    <link rel="modulepreload" crossorigin href="/assets/practice-CFL2Tu4G.js">
+    <link rel="modulepreload" crossorigin href="/assets/visitedTiles-D0-3dCbQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-left-right-B_ggVpJf.js">
+    <link rel="modulepreload" crossorigin href="/assets/vocabLookup-C22J7mVS.js">
+    <link rel="modulepreload" crossorigin href="/assets/purify.es-BiD64p_9.js">
+    <link rel="modulepreload" crossorigin href="/assets/circle-check-big-BahFEmTN.js">
+    <link rel="modulepreload" crossorigin href="/assets/rotate-ccw-BFk0JE2b.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiReadingQuizModal-2aTWnOlh.js">
+    <link rel="modulepreload" crossorigin href="/assets/VocabBookArt-CvHCqAUe.js">
+    <link rel="modulepreload" crossorigin href="/assets/luyendeSync-DvLOPVMP.js">
+    <link rel="modulepreload" crossorigin href="/assets/kanjiBuoi-ChTK0xAQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/KanjiWritingModal-D6Z6XmFd.js">
+    <link rel="modulepreload" crossorigin href="/assets/book-open-check-CtdW6R1U.js">
+    <link rel="modulepreload" crossorigin href="/assets/list-checks-xIA-7ZE5.js">
+    <link rel="modulepreload" crossorigin href="/assets/pen-line-D99ZAroh.js">
+    <link rel="modulepreload" crossorigin href="/assets/pen-tool-D0mPzh_q.js">
+    <link rel="modulepreload" crossorigin href="/assets/file-text-wq-FwPI6.js">
+    <link rel="modulepreload" crossorigin href="/assets/list-ordered-Ck3ooGuw.js">
+    <link rel="modulepreload" crossorigin href="/assets/SearchBar-BMQE0Y5q.js">
+    <link rel="modulepreload" crossorigin href="/assets/segmentVocab-Ctqak9n_.js">
+    <link rel="modulepreload" crossorigin href="/assets/LibraryModal-q9e2zuMb.js">
+    <link rel="modulepreload" crossorigin href="/assets/loader-circle-nB8Feenk.js">
+    <link rel="modulepreload" crossorigin href="/assets/accessFlags-CjeJbuAc.js">
+    <link rel="modulepreload" crossorigin href="/assets/InnerNav-7CXDIw8L.js">
+    <link rel="modulepreload" crossorigin href="/assets/nenDungVideo-D0P1L8Bc.js">
+    <link rel="modulepreload" crossorigin href="/assets/HinhDong-pfjviF0t.js">
+    <link rel="modulepreload" crossorigin href="/assets/arrow-down-6vm4-qp6.js">
+    <link rel="modulepreload" crossorigin href="/assets/DoraJpText-BefYzJs7.js">
+    <link rel="modulepreload" crossorigin href="/assets/App-nmjuoqDO.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-pmRnwisX.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44K3LXVHKX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44K3LXVHKX');
+</script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sách Kaiwa | Phá Đảo Tiếng Nhật</title>
+    <meta name="description" content="Luyện nói tiếng Nhật bằng phương pháp Shadowing: nghe hội thoại thật, nhập vai từng nhân vật, luyện phản xạ giao tiếp JLPT N5-N1.">
+    <meta property="og:title" content="Luyện nói tiếng Nhật với Shadowing - nhập vai hội thoại thật">
+    <meta property="og:description" content="Nghe hội thoại thật, nhập vai từng nhân vật, luyện phản xạ giao tiếp bằng phương pháp Shadowing - JLPT N5-N1.">
+    <meta property="og:image" content="https://phadaotiengnhat.com/og-image.jpg">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="551">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Phá Đảo Tiếng Nhật">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://phadaotiengnhat.com/kaiwa/sach/">
+    <meta name="apple-mobile-web-app-title" content="DORA NIHONGO">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="canonical" href="https://phadaotiengnhat.com/kaiwa/sach/" />
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/icon/site.webmanifest">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Y hệt index.html gốc: tắt hover: giả trên thiết bị chạm, chỉ giữ hover thật (chuột).
+      tailwind.config = {
+        plugins: [
+          function ({ addVariant }) {
+            addVariant('hover', '@media (hover: hover) { &:hover }');
+            addVariant('group-hover', '@media (hover: hover) { :merge(.group):hover & }');
+            addVariant('peer-hover', '@media (hover: hover) { :merge(.peer):hover ~ & }');
+          },
+        ],
+      };
+    </script>
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+
+      /* Class TỰ VIẾT (không phải utility có sẵn của Tailwind) - KaiwaPage.jsx đặt class này lên
+         khung ngoài cùng (y hệt KanjiPage.jsx/VocabPage.jsx) để giấu thanh cuộn riêng của khung đó.
+         THIẾU định nghĩa này thì class "no-scrollbar" trong JSX không có tác dụng gì (Tailwind CDN
+         không biết "no-scrollbar" là gì) - ĐÂY LÀ NGUYÊN NHÂN THẬT của việc trang /kaiwa/ cuộn/hiện
+         thanh trượt khác hẳn /kanji/ trên điện thoại dù cùng 1 component KanjiNav. */
+      .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+
+      /* GIẤU THANH TRƯỢT CỦA CẢ TRANG - Y HỆT kanji/index.html/tuvung/index.html/taofile/index.html
+         (style này chỉ nằm trong kaiwa/index.html nên không ảnh hưởng trang chủ hay trang nào khác).
+         Trang /kaiwa/ (KaiwaPage.jsx) tuy đã dùng min-h-dvh, nhưng KaiwaModal mở full màn hình
+         trên điện thoại vẫn có thể dư ra vài chục px do cách trình duyệt tính viewport lúc thanh
+         địa chỉ ẩn/hiện, kéo theo thanh trượt/khoảng trắng thừa che mất phần cuối màn hình - CHỈ
+         ẩn thanh trượt, KHÔNG khoá cuộn (không overflow:hidden) để không làm chết cuộn bên trong
+         các popup con (y hệt lý do đã giải thích ở kanji/index.html). */
+      html, body { scrollbar-width: none; -ms-overflow-style: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+    </style>
+    <script>
+      // Y hệt index.html gốc: bỏ focus dính lại sau khi chạm trên thiết bị cảm ứng.
+      if (window.matchMedia('(hover: none)').matches) {
+        document.addEventListener('touchend', () => {
+          const el = document.activeElement;
+          if (!el || el === document.body || typeof el.blur !== 'function') return;
+          const tag = el.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || el.isContentEditable) return;
+          el.blur();
+        }, { passive: true });
+      }
+    </script>
+
+    <!-- BẮT BUỘC - KaiwaPracticeView.jsx dùng thẳng biến toàn cục `Howl` (không import qua npm)
+         để phát audio hội thoại. Thiếu script này thì `Howl` undefined, bấm play không có tác
+         dụng gì (lỗi âm thầm, không báo gì cho người dùng) - y hệt cách index.html gốc đã nạp. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/index-WN3x_683.js"></script>
+    <script type="module" crossorigin src="/assets/arrow-left-BPNUywEc.js"></script>
+    <script type="module" crossorigin src="/assets/useBodyScrollLock-CjKlajvh.js"></script>
+    <script type="module" crossorigin src="/assets/user-plus-BfsdZZ6E.js"></script>
+    <script type="module" crossorigin src="/assets/chevron-right-DpUmIm74.js"></script>
+    <script type="module" crossorigin src="/assets/lock-BwO9jtto.js"></script>
+    <script type="module" crossorigin src="/assets/KanjiNav-26vbl3YA.js"></script>
+    <script type="module" crossorigin src="/assets/VocabBookArt-CvHCqAUe.js"></script>
+    <script type="module" crossorigin src="/assets/preload-helper-ckwbz45p.js"></script>
+    <script type="module" crossorigin src="/assets/supabaseClient-BGon_vZT.js"></script>
+    <script type="module" crossorigin src="/assets/useAuthUser-DjxkbJdt.js"></script>
+    <script type="module" crossorigin src="/assets/ActivationThanksPopup-BhLnbXyN.js"></script>
+    <script type="module" crossorigin src="/assets/kaiwa-main-P4DhtqUn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-pmRnwisX.css">
+  </head>
+  <body>
+     <div id="root"></div>
+  </body>
+</html>
