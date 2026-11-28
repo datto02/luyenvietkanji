@@ -1,0 +1,1 @@
+import{c as o,j as t,r}from"./index-Cd3MbNp7.js";import{K as e}from"./KaiwaPage-DgHFlpur.js";import{A as s}from"./ActivationThanksPopup-C7_QYk2Q.js";o.createRoot(document.getElementById("root")).render(t.jsxs(r.StrictMode,{children:[t.jsx(e,{}),t.jsx(s,{})]}));
